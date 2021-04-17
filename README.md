@@ -60,7 +60,7 @@
     <li><a href="#usage">Usage</a>
       <ul>
         <li><a href="#general">General</a></li>
-        <li><a href="#text-analysis-and-indexing>Text Analysis and Indexing</a></li>
+        <li><a href="#text-analysis-and-indexing">Text Analysis and Indexing</a></li>
         <li><a href="#search">Search</a></li>
         <li><a href="#result-presentation">Result Presentation</a></li>
       </ul>
@@ -91,7 +91,8 @@ blabla
 ## Text Analysis and Indexing
 blabla
 
-
+## Search
+blabla
 
 ## Result Presentation
 blabla
