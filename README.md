@@ -32,16 +32,12 @@
   <h3 align="center">Information Retrieval 2021</h3>
 
   <p align="center">
-    project_description
+    Search engine on COVID-19 related documents
     <br />
-    <a href="https://github.com/ppapahr/Information-Retrieval-2021/tree/main/Documents"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/ppapahr/Information-Retrieval-2021/tree/main/Documents"><strong>Explore the documents »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+
   </p>
 </p>
 
