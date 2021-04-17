@@ -39,10 +39,9 @@
     <br />
     Team:
     <br />
-    <ul align="center">
-      <li> Panagiotis Giannakopoulos </li>
-      <li> Filippos-Apostolos Papachristou </li>
-    </ul>
+    Panagiotis Giannakopoulos
+    <br />
+    Filippos-Apostolos Papachristou
   </p>
 </p>
 
