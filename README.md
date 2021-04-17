@@ -37,11 +37,11 @@
     <a href="https://github.com/ppapahr/Information-Retrieval-2021/tree/main/Documents"><strong>Explore the documents »</strong></a>
     <br />
     <br />
-    Team:
+    <h4 align="center">Team:
     <br />
     Panagiotis Giannakopoulos
     <br />
-    Filippos-Apostolos Papachristou
+    Filippos-Apostolos Papachristou </h4>
   </p>
 </p>
 
