@@ -71,18 +71,19 @@
   </ol>
 </details>
 
-### Built With
-
-This is the list of various softwares and plugins we are going to use in order to complete the porject:
-* [Oracle JDK 11](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
-* [Lucene 8.8.2](https://lucene.apache.org/)
-* [Maven](https://maven.apache.org/download.cgi)
 
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 This project was developed for the course of "Information Retrieval" in Department of Computer Science and Engineering in the University Of Ioannina under the supervision
 of Professor Evaggelia Pitoura. The project is about the developement of a search engine specifically for COVID-19 realted documents, using the open-source library Lucene in java.
+
+### Built With
+
+This is the list of softwares and plugins that we are going to use in order to complete the project:
+* [Oracle JDK 11](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
+* [Lucene 8.8.2](https://lucene.apache.org/)
+* [Maven](https://maven.apache.org/download.cgi)
 
 ## About The Dataset
 The dataset that was used was taken from <a href="https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge">Kaggle</a> and consists of documents related to COVID-19. These documents are mainly scientific articles and research focused. All of them are in .json format, and more specifically they have been seperated into fields (inside the json file). In general each document has fields for a unique "paper-id", a title, a list of authors and a body-text that consists of paragraphs. Other fields inside the json format contain information such as references, citations, acknowledgements etc.   
