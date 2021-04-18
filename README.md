@@ -53,6 +53,9 @@
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
     </li>
     <li>
       <a href="#about-the-dataset">About The Dataset</a>
@@ -68,6 +71,12 @@
   </ol>
 </details>
 
+### Built With
+
+This is the list of various softwares and plugins we are going to use in order to complete the porject:
+* [Oracle JDK 11](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
+* [Lucene 8.8.2](https://lucene.apache.org/)
+* [Maven](https://maven.apache.org/download.cgi)
 
 
 <!-- ABOUT THE PROJECT -->
