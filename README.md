@@ -90,11 +90,10 @@ The dataset that was used was taken from <a href="https://www.kaggle.com/allen-i
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-
-The Usage of the program can be split in 4 broader sections that are explained in more detail below:
+The usage of the program will be fairly easy through a simple user interface, where queries can be submitted through a field and results, in general, will be accessible through a list with the relevant document ids as well as other highlighted information as explained furthermore below. 
 
 ## General
-blabla
+The purpose of the search engine that is going to be implemented is the retrieval of COVID-19 related articles, by several search criteria that the user can define. The scientificity of the stored documents will make it easier for a user to safely and accurately search for possible correlations between COVID and other diseases or even statistical data about the growth of the virus. Another use case of the search could be as simple as searching for specific authors based on their credibility in order to read their articles.
 
 
 ## Text Analysis and Indexing
@@ -106,7 +105,7 @@ The search engine is based on keyword searching, where the user submits a query 
 ## Result Presentation
 The query's results will be presented on a list format, in which the documents will be listed based on their relevancy with the user's question. The user will be presented with the top 10 
 results, based on their relevancy, and will be able to see the next 10 results on the following page. Each individual result will be a phrase of the document that includes the term
-from the user's query, with the term highlighted for better visibility.  In addition to this, the user will be able to group up the results based on several criteria, 
+from the user's query, with the term highlighted for better visibility as well as the id of the document.  In addition to this, the user will be able to group up the results based on several criteria, 
 such as the document's date of creation, the value of a specific field (title/body/author), the relevancy score of the document etc. 
 
 
