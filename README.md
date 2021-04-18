@@ -34,7 +34,7 @@
   <p align="center">
     Search engine on COVID-19 related documents
     <br />
-    <a href="https://github.com/ppapahr/Information-Retrieval-2021/tree/main/Documents"><strong>Explore the documents »</strong></a>
+    <a href="https://github.com/ppapahr/Information-Retrieval-2021/tree/main/Documents"><strong>Explore a sample of the documents »</strong></a>
     <br />
     <br />
     <h4 align="center">Team:
