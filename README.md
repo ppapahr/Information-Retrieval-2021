@@ -101,17 +101,13 @@ blabla
 blabla
 
 ## Search
-The search engine is based on keyword searching, where the user would query a word and the program would find said word on the database. Once the IndexWriter is done creating 
-the index, we can use the IndexSearcher along with a Query (gotten from the user) to search for the desired results. This part will utilize embedding in order to make the search 
-more efficient. The program is also able to search on a specific field of a document, whether it is the title of the document or the body, by changing the corresponding argument 
-of the .searchIndex() command. One of the program's function is keeping the user's query history. This is useful to the user since it will show relevant keywords that other
-users have searched for to his current query. 
+The search engine is based on keyword searching, where the user submits a query or a word and the program finds relevant results on the database. Once the IndexWriter is done creating the index, the IndexSearcher can be used combined with a Query (sumbitted by the user) to search for the desired results. This part will utilize embeddings in order to make the search more efficient. The program will also able to search on a specific field of a document, whether it is the title of the document or the body, by changing the corresponding argument of the .searchIndex() command. One of the program's function is keeping the user's query history. This is useful to the user since it will show relevant keywords that other users have searched for when requesting similar results. 
 
 ## Result Presentation
-The query's results will be presented on a list format, in which they will be listed based on their relevancy with the user's question. The user will be shown the top 10 
-results, based on their relevancy, and will be able to see the next 10 results on the following page. The result itself will be a phrase of the document that includes the term
+The query's results will be presented on a list format, in which the documents will be listed based on their relevancy with the user's question. The user will be presented with the top 10 
+results, based on their relevancy, and will be able to see the next 10 results on the following page. Each individual result will be a phrase of the document that includes the term
 from the user's query, with the term highlighted for better visibility.  In addition to this, the user will be able to group up the results based on several criteria, 
-such as the document's date of creation, the value of a specific field (title/body), the relevancy score of the document etc. 
+such as the document's date of creation, the value of a specific field (title/body/author), the relevancy score of the document etc. 
 
 
 
