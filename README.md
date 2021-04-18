@@ -76,7 +76,7 @@ This project was developed for the course of "Information Retrieval" in Departme
 of Professor Evaggelia Pitoura. The project is about the developement of a search engine specifically for COVID-19 realted documents, using the open-source library Lucene in java.
 
 ## About The Dataset
-The dataset that was used was taken from <a href="https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge">Kaggle</a> and consists of documents related to COVID-19. These documents are mainly scientific articles and research focused. All of them are in .json format, and more specifically they have been seperated into fields (inside the json file). In general each document has fields for a unique "paper-id", a title, a list of authors and a body-text that consists of paragraphs. Other fields inside the json format contain information such as refrences, citations, acknowledgements etc.   
+The dataset that was used was taken from <a href="https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge">Kaggle</a> and consists of documents related to COVID-19. These documents are mainly scientific articles and research focused. All of them are in .json format, and more specifically they have been seperated into fields (inside the json file). In general each document has fields for a unique "paper-id", a title, a list of authors and a body-text that consists of paragraphs. Other fields inside the json format contain information such as references, citations, acknowledgements etc.   
 
 <!-- USAGE EXAMPLES -->
 ## Usage
