@@ -91,7 +91,7 @@ The dataset that was used was taken from <a href="https://www.kaggle.com/allen-i
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-The useage of the program can be split in 4 broader sections that are explained in more detail below:
+The Usage of the program can be split in 4 broader sections that are explained in more detail below:
 
 ## General
 blabla
