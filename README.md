@@ -75,18 +75,18 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-This project was developed for the course of "Information Retrieval" in Department of Computer Science and Engineering in the University Of Ioannina under the supervision
-of Professor Evaggelia Pitoura. The project is about the developement of a search engine specifically for COVID-19 realted documents, using the open-source library Lucene in java.
+This project was developed for the course of "Information Retrieval" in Department of Computer Science and Engineering in the University of Ioannina under the supervision
+of Professor Evaggelia Pitoura. The project is about the development of a search engine specifically for COVID-19 related documents, using the open-source library Lucene in java.
 
 ### Built With
 
-This is the list of softwares and plugins that we are going to use in order to complete the project:
+This is the list of software and plugins that we are going to use in order to complete the project:
 * [Oracle JDK 11](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
 * [Lucene 8.8.2](https://lucene.apache.org/)
 * [Maven](https://maven.apache.org/download.cgi)
 
 ## About The Dataset
-The dataset that was used was taken from <a href="https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge">Kaggle</a> and consists of documents related to COVID-19. These documents are mainly scientific articles and research focused. All of them are in .json format, and more specifically they have been seperated into fields (inside the json file). In general each document has fields for a unique "paper-id", a title, a list of authors and a body-text that consists of paragraphs. Other fields inside the json format contain information such as references, citations, acknowledgements etc.   
+The dataset that was used was taken from <a href="https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge">Kaggle</a> and consists of documents related to COVID-19. These documents are mainly scientific articles and research focused. All of them are in .json format, and more specifically they have been separated into fields (inside the json file). In general, each document has fields for a unique "paper-id", a title, a list of authors and a body-text that consists of paragraphs. Other fields inside the json format contain information such as references, citations, acknowledgements etc.   
 
 <!-- USAGE EXAMPLES -->
 ## Usage
@@ -97,10 +97,10 @@ The purpose of the search engine that is going to be implemented is the retrieva
 
 
 ## Text Analysis and Indexing
-As mentioned above, the documents already come in a json format seperated in fields. The basic fields that will be utilized in indexing are, the authors of the article, the full body text, the title and maybe the abstract of the paper. One reversed index could be created for the authors of each document in case a user wants to search quickly for a document based on who wrote it. The full body text of each document, when indexed, could offer a more analytical search but on the other hand will cause very large indexes hence increasing search time by a large margin. The abstract part of the the documents could be a smarter and faster way of searching about the contents of the dataset as it provides a small summary of the body text. Finally, an index on the titles could also provide the user with the capability of searching for a paper id by only knowing the title of the document.  
+As mentioned above, the documents already come in a json format separated in fields. The basic fields that will be utilized in indexing are, the authors of the article, the full body text, the title and maybe the abstract of the paper. One reversed index could be created for the authors of each document in case a user wants to search quickly for a document based on who wrote it. The full body text of each document, when indexed, could offer a more analytical search but on the other hand will cause very large indexes hence increasing search time by a large margin. The abstract part of the documents could be a smarter and faster way of searching about the contents of the dataset as it provides a small summary of the body text. Finally, an index on the titles could also provide the user with the capability of searching for a paper id by only knowing the title of the document.  
 
 ## Search
-The search engine is based on keyword searching, where the user submits a query or a word and the program finds relevant results on the database. Once the IndexWriter is done creating the index, the IndexSearcher can be used combined with a Query (sumbitted by the user) to search for the desired results. This part will utilize embeddings in order to make the search more efficient. The program will also able to search on a specific field of a document, whether it is the title of the document or the body, by changing the corresponding argument of the .searchIndex() command. One of the program's function is keeping the user's query history. This is useful to the user since it will show relevant keywords that other users have searched for when requesting similar results. 
+The search engine is based on keyword searching, where the user submits a query or a word and the program finds relevant results on the database. Once the IndexWriter is done creating the index, the IndexSearcher can be used combined with a Query (submitted by the user) to search for the desired results. This part will utilize embeddings in order to make the search more efficient. The program will also able to search on a specific field of a document, whether it is the title of the document or the body, by changing the corresponding argument of the .searchIndex() command. One of the program's function is keeping the user's query history. This is useful to the user since it will show relevant keywords that other users have searched for when requesting similar results. 
 
 ## Result Presentation
 The query's results will be presented on a list format, in which the documents will be listed based on their relevancy with the user's question. The user will be presented with the top 10 
