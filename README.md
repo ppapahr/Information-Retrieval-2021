@@ -81,9 +81,10 @@ of Professor Evaggelia Pitoura. The project is about the development of a search
 ### Built With
 
 This is the list of software and plugins that we are going to use in order to complete the project:
-* [Oracle JDK 11](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
+* [Oracle Java SE Development Kit 16](https://www.oracle.com/java/technologies/javase-jdk16-downloads.html)
 * [Lucene 8.8.2](https://lucene.apache.org/)
 * [Maven](https://maven.apache.org/download.cgi)
+* [Eclipse](https://www.eclipse.org/downloads) will be used to manage all the plug-ins and create the final executable
 
 ## About The Dataset
 The dataset that was used was taken from <a href="https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge">Kaggle</a> and consists of documents related to COVID-19. These documents are mainly scientific articles and research focused. All of them are in .json format, and more specifically they have been separated into fields (inside the json file). In general, each document has fields for a unique "paper-id", a title, a list of authors and a body-text that consists of paragraphs. Other fields inside the json format contain information such as references, citations, acknowledgements etc.   
