@@ -23,6 +23,7 @@ public class JsonParser {
 		File directory = new File(fileDirectoryName + "txt_Documents");
 	    if (! directory.exists()){
 	        directory.mkdir();
+	        System.out.println("made");
 	    }
 	    
 	}
@@ -41,24 +42,33 @@ public class JsonParser {
 		    JSONObject metadata = (JSONObject) jo.get("metadata");
 		    String title = (String) metadata.get("title");
 		    FileWriter myWriter = new FileWriter(txt);
+		    if (title.isBlank()) {
+		    	title = "empty";
+		    }
 		    myWriter.write(title + "\n");
 		    JSONArray authors = (JSONArray) metadata.get("authors");
-		    for (int i = 0; i < authors.size(); i++) {
-		    	JSONObject jsonobject = (JSONObject) authors.get(i);
-		    	String firstName = (String) jsonobject.get("first");
-		    	String lastName = (String) jsonobject.get("last");
-		    	myWriter.write(firstName + " " + lastName);
-		    	if (i != authors.size() -1) {
-		    		myWriter.write(", ");
-		    	} else {
-		    		myWriter.write("\n");
-		    	}
+		    if (authors.size() == 0) {
+		    	myWriter.write("empty"+"\n");
+		    } else {
+		    	for (int i = 0; i < authors.size(); i++) {
+			    	JSONObject jsonobject = (JSONObject) authors.get(i);
+			    	String firstName = (String) jsonobject.get("first");
+			    	String lastName = (String) jsonobject.get("last");
+			    	myWriter.write(firstName + " " + lastName);
+			    	if (i != authors.size() -1) {
+			    		myWriter.write(", ");
+			    	} else {
+			    		myWriter.write("\n");
+			    	}
+			    }
 		    }
 		    JSONArray abstractObj = (JSONArray) jo.get("abstract");
 		    if (abstractObj.size() > 0) {
 		    	JSONObject jsonobject = (JSONObject) abstractObj.get(0);
 			    String abstractText = (String) jsonobject.get("text");
 			    myWriter.write(abstractText + "\n");
+		    } else {
+		    	myWriter.write("empty"+"\n");
 		    }
 		    JSONArray bodyText = (JSONArray) jo.get("body_text");
 		    for (int i = 0; i < bodyText.size(); i++) {
@@ -72,5 +82,14 @@ public class JsonParser {
 		
 	}
 	
+	/*/
+	public static void main(String[] args) throws FileNotFoundException, IOException, ParseException {
+		String path = System.getProperty("user.dir") + File.separator;
+		System.out.println(path);
+		JsonParser test = new JsonParser(path);
+		test.parseJSONFiles();
+		
+	}
+	/*/
 
 }
