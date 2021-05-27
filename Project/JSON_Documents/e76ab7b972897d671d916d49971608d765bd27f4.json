@@ -1,0 +1,1633 @@
+{
+    "paper_id": "e76ab7b972897d671d916d49971608d765bd27f4",
+    "metadata": {
+        "title": "Evaluation of an innovative pediatric isolation (PI) bed using fluid dynamics simulation and aerosol isolation efficacy",
+        "authors": [
+            {
+                "first": "Tiantian",
+                "middle": [],
+                "last": "Liu",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Guangdong Pharmaceutical University",
+                    "location": {
+                        "postCode": "510310",
+                        "settlement": "Guangzhou",
+                        "region": "Guangdong",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Yubing",
+                "middle": [],
+                "last": "Guo",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "State Key Laboratory of Respiratory Disease",
+                    "institution": "Guangzhou Medical University",
+                    "location": {
+                        "settlement": "Guangzhou",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Xiaotang",
+                "middle": [],
+                "last": "Hao",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Guangdong Pharmaceutical University",
+                    "location": {
+                        "postCode": "510310",
+                        "settlement": "Guangzhou",
+                        "region": "Guangdong",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Mei",
+                "middle": [],
+                "last": "Wang",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Guangdong Pharmaceutical University",
+                    "location": {
+                        "postCode": "510310",
+                        "settlement": "Guangzhou",
+                        "region": "Guangdong",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Shicong",
+                "middle": [],
+                "last": "He",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "State Key Laboratory of Respiratory Disease",
+                    "institution": "Guangzhou Medical University",
+                    "location": {
+                        "settlement": "Guangzhou",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Zhengshi",
+                "middle": [],
+                "last": "Lin",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "State Key Laboratory of Respiratory Disease",
+                    "institution": "Guangzhou Medical University",
+                    "location": {
+                        "settlement": "Guangzhou",
+                        "country": "China"
+                    }
+                },
+                "email": "linzhengshi@yahoo.com"
+            },
+            {
+                "first": "Rong",
+                "middle": [],
+                "last": "Zhou",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "State Key Laboratory of Respiratory Disease",
+                    "institution": "Guangzhou Medical University",
+                    "location": {
+                        "settlement": "Guangzhou",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Airborne transmission is an important mechanism of spread for both viruses and bacteria in hospitals, with nosocomial infections putting a great burden on public health. In this study, we designed and manufactured a bed for pediatric clinic consultation rooms providing air isolation to protect patients and medical personnel from pathogen transmission. The pediatric isolation bed has several primary efficiency filters and a high-efficiency particulate air filter in the bedside unit.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "The air circulation between inlet and outlet forms negative pressure to remove the patient's exhaled air timeously and effectively. A computational fluid dynamics model was used to calculate the speed of the airflow and the angle of sampler. Following this, we conducted purification experiments using cigarette smoke, Staphylococcus albus (S. albus) and human adenovirus type 5 (HAdV-5) to demonstrate the isolation efficacy. The results showed that the patient's head should be placed as close to the air inlet hood as possible, and an air intake wind speed of 0.86 m/s was effective. The isolation efficacy of the pediatric isolation bed was demonstrated by computational fluid dynamics technology. The isolation efficiency against cigarette smoke exceeded 91.8%, and against S. albus was greater than 99.8%, while the isolation efficiency against HAdV-5 was 100%. The pediatric isolation bed could be used where isolation wards are unavailable, such as in intensive care units and primary clinical settings, to control hospital acquired infections.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "Nosocomial infections (NIs), also known as hospital-acquired infections, are mainly caused by airborne pathogens and interpersonal contact in hospitals. It has been reported that the air in hospitals and other health service buildings contains microbial aerosols, and thus controlling the level of pathogenic microbial infections ensures the safety of workers and patient groups (Ai et al. 2019; Lanzerstorfer et al. 2019) . Studies have confirmed that viruses also exist in the air and are very likely to spread via airborne transmission (Guo et al. 2020; Ong et al. 2020) . At present, there are frequent outbreaks of epidemics caused by respiratory viruses (Xiao et al. 2017; Sivagnanasundaram et al. 2019) . For example, norovirus is found seasonally in aerosols, as are avian influenza viruses (Alsved et al. 2019; Shiu et al. 2019) , with airborne transmission representing an important route of dissemination of the H9N2 subtype avian influenza virus (Su et al. 2018) . Furthermore, epidemic respiratory diseases have emerged in recent years, such as the severe acute respiratory syndrome (SARS) epidemic in 2003, the H1N1 flu epidemic in 2009, the Middle East Respiratory Syndrome epidemic in 2015 and the coronavirus disease 2019 pandemic, caused by SARS-coronavirus 2 (SARS-CoV-2) in 2020 (Bertran et al. 2017; Fujiyoshi et al. 2017; Hella et al. 2017; Richard et al. 2017; Tong et al. 2017; Qian and Zheng 2018; Carlos et al. 2020) . SARS-CoV-2 has spread to more than 211 countries, causing major challenges not only to China, but also to economic development, travel and transportation, public health systems and public infrastructure worldwide (Singhal 2020) . According to a report, as of February 11, 2020, 3019 medical staff had been BUILD SIMUL https://doi.org/10.1007/s12273-021-0761-3 infected with SARS-CoV-2, of which 1,716 were confirmed cases and 0.3% died (Jiang et al. 2020) . Therefore, it is necessary to develop a new device that can prevent transmission and plays a key role in controlling hospital-acquired infection (Gosc\u00e9 and Johansson 2018; Xu et al. 2013 ).",
+            "cite_spans": [
+                {
+                    "start": 379,
+                    "end": 395,
+                    "text": "(Ai et al. 2019;",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 396,
+                    "end": 422,
+                    "text": "Lanzerstorfer et al. 2019)",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 539,
+                    "end": 556,
+                    "text": "(Guo et al. 2020;",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 557,
+                    "end": 573,
+                    "text": "Ong et al. 2020)",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 660,
+                    "end": 678,
+                    "text": "(Xiao et al. 2017;",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 679,
+                    "end": 709,
+                    "text": "Sivagnanasundaram et al. 2019)",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 799,
+                    "end": 819,
+                    "text": "(Alsved et al. 2019;",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 820,
+                    "end": 837,
+                    "text": "Shiu et al. 2019)",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 958,
+                    "end": 974,
+                    "text": "(Su et al. 2018)",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 1299,
+                    "end": 1320,
+                    "text": "(Bertran et al. 2017;",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 1321,
+                    "end": 1343,
+                    "text": "Fujiyoshi et al. 2017;",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 1344,
+                    "end": 1362,
+                    "text": "Hella et al. 2017;",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 1363,
+                    "end": 1383,
+                    "text": "Richard et al. 2017;",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 1384,
+                    "end": 1401,
+                    "text": "Tong et al. 2017;",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 1402,
+                    "end": 1422,
+                    "text": "Qian and Zheng 2018;",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 1423,
+                    "end": 1442,
+                    "text": "Carlos et al. 2020)",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 1658,
+                    "end": 1672,
+                    "text": "(Singhal 2020)",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 1881,
+                    "end": 1900,
+                    "text": "(Jiang et al. 2020)",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 2048,
+                    "end": 2074,
+                    "text": "(Gosc\u00e9 and Johansson 2018;",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 2075,
+                    "end": 2089,
+                    "text": "Xu et al. 2013",
+                    "ref_id": "BIBREF27"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Measures to prevent and control NIs include engineering control strategies to reduce the risk of airborne infections. Although indoor air can spread pathogens, studies have shown that filtering or disinfecting air reduces the risk of viral infections that are transmitted through the air (Tang and Li 2019) . A previous study simulated airflow trajectories and virus concentrations to assess airborne probability or risk of highly pathogenic avian influenza virus cases (Ai et al. 2019) . A further study demonstrated the effects of different airflow patterns on droplet removal, identifying droplet carryover of infectious diseases, short-and long-range aerial propagation characteristics, and found that increasing ventilation rates effectively reduces the risk of long-range airborne transmission; spread may therefore be inefficient, indicating that an effective way to prevent cross-contamination is to isolate the airflow (Qian and Zheng 2018) . Computational fluid dynamics (CFD) modeling can be used to assess whether hospital ultraviolet germicidal irradiation devices and ventilation systems are effective for infection control (Shiu et al. 2019) .",
+            "cite_spans": [
+                {
+                    "start": 288,
+                    "end": 306,
+                    "text": "(Tang and Li 2019)",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 470,
+                    "end": 486,
+                    "text": "(Ai et al. 2019)",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 928,
+                    "end": 949,
+                    "text": "(Qian and Zheng 2018)",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 1138,
+                    "end": 1156,
+                    "text": "(Shiu et al. 2019)",
+                    "ref_id": "BIBREF16"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "In our study, we designed a pediatric isolation (PI) bed with integrated air isolation and air purification functions. CFD simulation technology was used to investigate the position of the child and the air supply speed of the purification equipment when testing the local isolation effect of the PI bed. Under laboratory conditions, purification and isolation experiments with cigarette particles, Staphylococcus albus and human adenovirus type 5 (HAdV-5) demonstrated the isolation efficacy of the PI bed. This study provides new methods for the prevention and control of NIs.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "S. albus was purchased from the Microbiology Institute of Guangdong (Guangdong, China). HAdV-5 was provided by the State Key Laboratory of Guangzhou (Guangdong, China). Cigarettes were purchased from a local retailer (Hongtashan, Yunnan, China). AD293 cells were cultured in Dulbecco's Modified Eagle's Medium (DMEM) containing 100 U/mL penicillin-G, 100 \u03bcg/mL streptomycin and 10% fetal bovine serum (Invitrogen, Carlsbad, CA, USA) and frozen using a BioFlash commercial freezing kit (Fibulas, New York, NY, USA).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Materials and equipment"
+        },
+        {
+            "text": "A microbial aerosol generator (Kangjie, Liaoyang, China) was used, which gives an aerosol size of 3.2 \u03bcm. A Y09-301 laser dust particle counter and an Anderson six-level sampler were both purchased from Sujing (Jiangsu, China). A virus collector that specifically collected the virus was purchased from Millipore (Burlington, MA, USA). Viruses were purified using standard CsCl isopycnic centrifugation.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Materials and equipment"
+        },
+        {
+            "text": "The PI bed was designed and developed by our research group ( Figure 1A ). The PI bed was made of acrylonitrile butadiene styrene and consisted of two compartments, a pediatric bed and an air filter system ( Figure 1B ). Adopting the purification principle of high-voltage electrostatic adsorption, gas-solid separation was achieved by filtration. The filter unit contained primary efficiency filters and a high efficiency particulate air (HEPA) filter.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 62,
+                    "end": 71,
+                    "text": "Figure 1A",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 208,
+                    "end": 217,
+                    "text": "Figure 1B",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Structure and function principle of the PI bed"
+        },
+        {
+            "text": "The purification device was positioned to surround the child's head, thus exhaled vapors from the child were directly drawn into the purification device that captures the harmful microorganisms with a sterilization filtering apparatus. The purified air was then blown back into the ward, providing patients with clean air, as well as reducing cross infections by airborne transmission among patients in the same ward ( Figure 1B) . The purification component of the bed can be operated under three different wind speeds to create a negative pressure at the air inlet port, with high speed (0.86 m/s), medium speed (0.55 m/s), and low speed (0.35 m/s), and can also be shut off (0 m/s) as a control. Compared with air quality controlled at the whole room level, the isolation bed reduces energy consumption and has enormous potential for application.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 419,
+                    "end": 429,
+                    "text": "Figure 1B)",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Structure and function principle of the PI bed"
+        },
+        {
+            "text": "The dimensions of the consulting ward set up in our laboratory to conduct the experiment were 5.0 m (L) \u00d7 4.0 m (W) \u00d7 3.0 m (H). The relevant parameters in the geometric model, including the size of the bed, the size of the purification equipment, and the size and position of the air inlet hood were established according to the known parameters of the actual product, and were reasonably simplified ( Figure 2A ). The specific parameters are shown in Table 1 .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 403,
+                    "end": 412,
+                    "text": "Figure 2A",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 453,
+                    "end": 460,
+                    "text": "Table 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Experimental environment and setting of sampling sites"
+        },
+        {
+            "text": "Fluent CFD software was used in this study ). The RNG k-\u03b5 model (Nielsen 2015; Yan et al. 2016) and the SIMPLE algorithm were employed in this study (S\u00f8rensen 2007) . We used a standard model case to calculate the dispersion of droplets and the airflow pattern. The jet velocity from the air column was 3.5 m/s. Automatically forming a set of unstructured tetrahedral grids, the purpose was to cover the irregular solution domain of complex geometric shapes contained therein. The various refinement levels of the grid were tested as grid-independent solutions. The SIMPLE algorithm and second-order upwind style were used to solve the fluid flow control equation by FLUENT 17.0.",
+            "cite_spans": [
+                {
+                    "start": 64,
+                    "end": 78,
+                    "text": "(Nielsen 2015;",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 79,
+                    "end": 95,
+                    "text": "Yan et al. 2016)",
+                    "ref_id": null
+                },
+                {
+                    "start": 149,
+                    "end": 164,
+                    "text": "(S\u00f8rensen 2007)",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Experimental environment and setting of sampling sites"
+        },
+        {
+            "text": "To study the influence of the geometric relationship between the child and the air inlet hood on the effect of the intake airflow, the angle \u03b8, was set at the child's mouth between the longitudinal axis of the body and the highest point of the air inlet hood, according to the equipment and child's geometrical shape in this case. The number and size of the air intake ports were determined from the stp file. c To facilitate the mesh division and ensure the quality of the mesh, the small air outlets of the air supply port were merged into one large air outlet, so the air supply area was simulated. It was larger than the data on the computer-aided design drawings but had little effect on the simulation results.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Experimental environment and setting of sampling sites"
+        },
+        {
+            "text": "Actually, the range of \u03b8 was found to be approximately 44.8\u00b0-73.0\u00b0. Therefore, simulations and comparisons were performed by taking \u03b8 = 50\u00b0, 60\u00b0, and 70\u00b0. The closer the child is to the air inlet hood, the larger \u03b8 is when the shape of the device is unchanged. The schematic \u03b8 and the meshing results of the model are shown in Figure 2B (taking \u03b8 = 70\u00b0 as an example). When \u03b8 was 50\u00b0, 60\u00b0, and 70\u00b0, the total number of body meshes was 3,472,824, 3,341,411, and 3,487,467, respectively. The mesh surrounding the human body was the densest, followed by the mesh around the bed, and the final mesh scattering in the room was the sparsest.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 327,
+                    "end": 336,
+                    "text": "Figure 2B",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Experimental environment and setting of sampling sites"
+        },
+        {
+            "text": "The effects of different angles and different purifying wind speeds on indoor wind speed, pressure and pollutant distribution were investigated in the simulation. The simulation conditions are shown in Table 2 . Among them, according to the actual usage situation, the purifying air volume of the child's bed was 280 m 3 /h, that is, the windspeed of the purifying equipment was 0.86 m/s, as represented in Case 6.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 202,
+                    "end": 209,
+                    "text": "Table 2",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "Simulation condition settings"
+        },
+        {
+            "text": "This simulation simplified the patient's breathing state, considering only the patient's exhalation. The exogenous pathogenic microorganisms were represented by the tracer gas, N 2 O. The species transport model was used and N 2 O was selected in the species as the tracer gas to indicate the contaminants in the exhaled airflow, with an initial volume fraction of 4%.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Simulation condition settings"
+        },
+        {
+            "text": "The governing equations were given in a vector form as follows: where \uf066 is a general scalar quantity, which can represent u, v, w, k, e, T and tracer gas concentration. Heat and mass transfer between indoor air and liquid droplets were considered. Species transport and discrete phase models were applied to calculate the evaporation and dispersion process of the patient's exhaled flow (Ji et al. 2018) . Only steady state simulation was considered, and the exhaled air was set at an average velocity of 0.86 m/s and a temperature of 25 \u00b0C.",
+            "cite_spans": [
+                {
+                    "start": 387,
+                    "end": 403,
+                    "text": "(Ji et al. 2018)",
+                    "ref_id": "BIBREF8"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Calculation equations"
+        },
+        {
+            "text": "Two rooms with dimensions of 5 m \u00d7 4 m \u00d7 3 m (L \u00d7 W \u00d7 H) in our laboratory were used to conduct the experiment. The PI bed was placed in the experimental room. Sampling points were set according to the experimental requirements. Eight sampling points were set for the cigarette smoke experiment (A, B, C, D, E, F, G and H; Figure 3A ) and five sampling points for the S. albus and virus experiments (A, F, E, G and H; Figure 3A ) for both control and experimental groups. For the experimental groups, the isolation bed was switched on in low, medium and high gears, while the bed was operated closed as the control. All sampling points were more than 1 m from the wall, and were approximately 1.4 m from the ground. The test was repeated three times and the average value of the pass efficiency was calculated. All tests were performed at 25 \uf0b0C-26 \uf0b0C and the doors, windows and air conditioners were all closed/off during the test.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 323,
+                    "end": 332,
+                    "text": "Figure 3A",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 418,
+                    "end": 427,
+                    "text": "Figure 3A",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "Experimental environment and setting of sampling sites"
+        },
+        {
+            "text": "Using the smoke of a Hongtashan cigarette as a source of pollution, the cigarette was ignited and the cigarette-smoke generating device was activated. The release port was placed in position A ( Figure 3A ), 20 cm above the bed, at a similar height to the face of the patient. Simultaneously, the purification device of the isolation bed was switched on. After 5 min, the air was sampled at points A, B, C, D, E, F, G and H (Figure 3A ), using a dust particle counter with a flow rate of 2.83 L/min and a sampling time of 20 s, testing every 5 min for a total of 30 minutes, that is, six rounds. The control experiment was performed in this manner also.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 195,
+                    "end": 204,
+                    "text": "Figure 3A",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 424,
+                    "end": 434,
+                    "text": "(Figure 3A",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "Effects of PI bed on removal of cigarette smoke particulates, S. albus and HAdV-5 contaminates"
+        },
+        {
+            "text": "S. albus suspension with concentration 1.0 \u00d7 10 7 colony forming units (CFU)/mL was prepared and added to the microbial aerosol generator, which was activated and positioned with the release port at position A ( Figure 3A) . Simultaneously, the purification device of the isolation bed was switched on and the first round of sampling was begun with sampling port positioned at points A, E, F, G and H ( Figure 3A ). An Anderson six-stage sampler was used to collect and determine the concentration of microorganisms in the room at a flow rate of 28.3 L/min for 3 min, testing every 15 min for a total of three rounds, that is, for 30 min. The sample plates were placed in an incubator at 37 \u00b0C for 24 h, then colonies were counted and the concentration of microorganisms in the air was calculated. The control experiment was performed as above.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 212,
+                    "end": 222,
+                    "text": "Figure 3A)",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 403,
+                    "end": 412,
+                    "text": "Figure 3A",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "Effects of PI bed on removal of cigarette smoke particulates, S. albus and HAdV-5 contaminates"
+        },
+        {
+            "text": "HAdV-5 was cultured in AD293 cells, purified and stored at \u221280 \u00b0C. The 50% tissue culture infective dose of the virus was determined following the routine procedure, as previously described (Liu et al. 2018 ). HAdV-5 was diluted with PBS to prepare a mixed-pathogen suspension, which was placed in the activated microbial aerosol generator with the release port at position A ( Figure 3A) . Simultaneously, the isolation bed was switched on. Air samples were taken with the sampling port positioned at A, E, F, G and H ( Figure 3A) , The virus was collected by the virus collector with a flow rate of 100 L/min for 10 min. The number of viral genome copies at each time point was determined by real-time quantitative PCR (Q-PCR) using a universal adenovirus Q-PCR kit (Hexin Corporation, Guangzhou, China) on an Applied Biosystems 7500 real-time PCR system (Foster City, CA, USA). Each assay was performed three times in duplicate. Quantification of genome copy numbers of HAdV-5 was performed with HAdV type specific primers and purified HAdV genomic DNA as the standard curve. We obtained the template genomic DNA from PubMed. The control experiment was performed as above.",
+            "cite_spans": [
+                {
+                    "start": 190,
+                    "end": 206,
+                    "text": "(Liu et al. 2018",
+                    "ref_id": "BIBREF11"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 378,
+                    "end": 388,
+                    "text": "Figure 3A)",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 521,
+                    "end": 531,
+                    "text": "Figure 3A)",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "Viruses"
+        },
+        {
+            "text": "The calculation formula used in this study was Blocking rate:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Statistical analysis"
+        },
+        {
+            "text": "where C 0 is the average concentration at the initial point, and C 1 is the average concentration at each sampling point around the room. Statistical analysis was performed by t-test, using Prism 7 software (GraphPad, San Diego, CA, USA). P values (P) less than 0.05 were considered statistically significant.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Statistical analysis"
+        },
+        {
+            "text": "The angle \u03b8, as defined above, was set at 50\u00b0, 60\u00b0 and 70\u00b0 for simulation and comparison in Cases 1, 2, and 3, respectively, and the intake airflow speed of the purification equipment was maintained at 1 m/s. The pressure distribution is shown in Figure 4C , velocity distribution is shown in Figure 4A , and the tracer gas mass fraction distribution is shown in Figure 4B . It can be seen from Figure 4C that a slight negative pressure was formed around the air intake vent; the negative pressure on the surface of the air intake vent was about \u22120.8 Pa, and a slight negative pressure was present in the range of about 30 cm around the air intake vent. Figure 4A shows that the indoor airflow velocity fields of the three scenarios were similar because the air intake wind speed of the purification device was kept constant. It can be seen from Figure 4B that the tracer gas concentration in the room was maintained at a low level in all three cases, and the air inlet hood effectively controlled the discharged pollutants (N 2 O), indicating that the isolation effect was good. In addition, as the distance between the child's head and the hood decreased, the concentration of tracer gas in the indoor air was further reduced. Therefore, the shorter the distance between the child's head and the return hood, the more efficient the isolation effect.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 247,
+                    "end": 256,
+                    "text": "Figure 4C",
+                    "ref_id": null
+                },
+                {
+                    "start": 293,
+                    "end": 302,
+                    "text": "Figure 4A",
+                    "ref_id": null
+                },
+                {
+                    "start": 363,
+                    "end": 372,
+                    "text": "Figure 4B",
+                    "ref_id": null
+                },
+                {
+                    "start": 395,
+                    "end": 404,
+                    "text": "Figure 4C",
+                    "ref_id": null
+                },
+                {
+                    "start": 654,
+                    "end": 663,
+                    "text": "Figure 4A",
+                    "ref_id": null
+                },
+                {
+                    "start": 846,
+                    "end": 855,
+                    "text": "Figure 4B",
+                    "ref_id": null
+                }
+            ],
+            "section": "Influence of the relative position of the child and intake airflow (\u03b8) on the isolation effect"
+        },
+        {
+            "text": "The effect of intake air wind speeds of 1 m/s, 2 m/s, 3 m/s, 0.86 m/s on isolation effect was investigated in Cases 3, 4, 5, and 6, respectively, with \u03b8 remaining at 70\u00b0. The pressure distribution is shown in Figure 5A , velocity distribution is shown in Figure 5B and distribution of the mass fraction of the tracer gas is shown in Figure 5C .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 209,
+                    "end": 218,
+                    "text": "Figure 5A",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 255,
+                    "end": 264,
+                    "text": "Figure 5B",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 333,
+                    "end": 342,
+                    "text": "Figure 5C",
+                    "ref_id": "FIGREF3"
+                }
+            ],
+            "section": "Influence of intake air wind speed on the isolation effect of the PI bed"
+        },
+        {
+            "text": "The simulation results show that the intake air wind speed of the purification equipment was 0.86 m/s, which was close to the case of 1 m/s. Figure 5A shows that as the air supply volume increased, the corresponding return air volume also increased, so the negative pressure formed locally near the return air vent gradually increased. The negative pressures on the surface of the return air inlets of Case 3 and Case 6 were approximately \u22120.8 Pa, while the negative pressures on the surface of the return port in Cases 4 and 5 were about \u22123.4 Pa and \u22127.6 Pa, respectively, indicating that the area of negative pressure around the air return port was gradually enlarged. Figure 5B shows that as the wind speed of the air supply increased, the degree of turbulence of the indoor air increased. It can be seen from Figure 5C that because the distance between the head of the child and the returning hood was very short, even if the wind speed of the air supply was great, the vigorous movement of the indoor air did not impede the trajectory of the pollutants, and the pollutants were always removed timeously. Thus, the intended isolation effect was obtained and the rationale of the return hood design was justified. The greater the wind speed, the smaller the area of local infection risk, but the energy consumption must increase accordingly, as will the likelihood of patient discomfort caused by hair movement. Therefore, to meet the purification requirements, a larger supply/return wind speed should be used whenever possible, but energy consumption and comfort must also be considered. At the current supply wind speed of 0.86 m/s, the concentration of pollutants in the region surrounding the patient's head is higher, which conveys a certain risk of infection.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 141,
+                    "end": 150,
+                    "text": "Figure 5A",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 671,
+                    "end": 680,
+                    "text": "Figure 5B",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 813,
+                    "end": 822,
+                    "text": "Figure 5C",
+                    "ref_id": "FIGREF3"
+                }
+            ],
+            "section": "Influence of intake air wind speed on the isolation effect of the PI bed"
+        },
+        {
+            "text": "We used cigarette smoke ( Figures 6A-D) , S. albus ( Figure 6E)   Fig. 4 A, Speed distribution. A1 and A2, case 1, \u03b8 = 50\u00b0; A3 and A4, case 2, \u03b8 = 60\u00b0; A5 and A6, case 3, \u03b8 = 70\u00b0. A1, A3, A5: longitudinal view; A2, A4, A6: transverse view. B, Tracer gas mass fraction distribution. B1, case 1, \u03b8 = 50\u00b0; B2, case 2, \u03b8 = 60\u00b0; B3, case 3, \u03b8 = 70\u00b0. C, Pressure distribution. C1, case 1, \u03b8 = 50\u00b0; C2, case 2, \u03b8 = 60\u00b0; C3, case 3, \u03b8 = 70\u00b0. and HAdV-5 ( Figure 6F ) to test the isolation efficiency of the isolation bed. As shown in Figures 6B, C and D, the numbers of particles detected during high, medium and low gear operation at other sampling points were significantly lower than those found at position A (P < 0.01). In addition, compared with the control ( Figure 6A and Table 3 ), the number of particles at other sampling points during high, medium and low gear operation decreased significantly. The natural isolation efficiency of particles was 13.10%, the isolation efficiency of low, medium and high gears were as high as 92%. As shown in Figure 6E and Table 4 , in the laboratory experiments, the isolation bed was very effective in isolating S. albus. The initial concentration using each gear (point A) was not significantly different from that of the control experiment (P > 0.05). However, the concentration at other sampling points in each gear dropped significantly and was significantly different from the initial concentration (P < 0.05). The natural isolation efficiency of S. albus was 10.34%, the isolation efficiency of low gear was as high as 99.88%, and the isolation efficiency of medium and high gears were as high as 99.9%. As shown in Figure 6F and Table 5 , the virus concentration collected during high, medium, and low gear operation at the various sampling points was much lower than that of the control experiment. The virus isolation efficiency was thus 100%.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 26,
+                    "end": 39,
+                    "text": "Figures 6A-D)",
+                    "ref_id": "FIGREF4"
+                },
+                {
+                    "start": 53,
+                    "end": 72,
+                    "text": "Figure 6E)   Fig. 4",
+                    "ref_id": "FIGREF4"
+                },
+                {
+                    "start": 447,
+                    "end": 456,
+                    "text": "Figure 6F",
+                    "ref_id": "FIGREF4"
+                },
+                {
+                    "start": 758,
+                    "end": 767,
+                    "text": "Figure 6A",
+                    "ref_id": "FIGREF4"
+                },
+                {
+                    "start": 772,
+                    "end": 779,
+                    "text": "Table 3",
+                    "ref_id": "TABREF2"
+                },
+                {
+                    "start": 1046,
+                    "end": 1055,
+                    "text": "Figure 6E",
+                    "ref_id": "FIGREF4"
+                },
+                {
+                    "start": 1060,
+                    "end": 1067,
+                    "text": "Table 4",
+                    "ref_id": "TABREF3"
+                },
+                {
+                    "start": 1661,
+                    "end": 1670,
+                    "text": "Figure 6F",
+                    "ref_id": "FIGREF4"
+                },
+                {
+                    "start": 1675,
+                    "end": 1682,
+                    "text": "Table 5",
+                    "ref_id": "TABREF4"
+                }
+            ],
+            "section": "Isolation efficiency experiments"
+        },
+        {
+            "text": "Effective isolation equipment is vital for protection of both patients and staff, particularly in intensive care settings. We used a CFD model and physical validation methods to investigate the efficacy of a new design of PI bed. At the recommended air intake wind speed of 0.86 m/s, we found that pollutants were satisfactorily removed from the area surrounding the child's head, and that the return air circulated back into the room was free of pollutants. We also found that increasing the air intake wind speed and increasing the angle between the height of the child's face and the air return port (angle \u03b8) resulted in improved isolation effect. We also found that a local negative pressure was formed around the return air hood. The specific values and presentation range of the negative pressure were related to the air supply volume/return air volume.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "The influence of the relative position of the child and the return air on the isolation effect was investigated by varying the values of \u03b8. The simulation results showed that the larger \u03b8, that is, the shorter the distance between the child and the return hood, the lower the tracer gas concentration in the indoor space, the smaller the influence range, and the better the isolation effect. The larger the air supply volume/return air volume, the better the control effect of exhaled pollutants. Because the patient's head was positioned close to the return air outlet, severe turbulence did not impede the elimination of pollutants. However, the greater the wind speed, the greater the energy consumption and the stronger the blowing sensation felt by the patient. Therefore, a suitable wind speed should be chosen to meet purification, energy and comfort requirements. At the manufacturer-recommended air supply speed of the purification equipment (0.86 m/s), the concentration of pollutants in the area surrounding the patient's head was higher, and the concentration of pollutants in most areas of the room was lower than the levels detected at other air supply speeds. We also investigated the isolation effect of the PI bed on cigarette particles, S. albus and viruses in the laboratory. The test results showed that the PI bed successfully isolated the above pollutants and pathogens. It effectively reduced the concentration of various particles and pathogens in the room, while simultaneously blocking the spread of pollutants and pathogens into the room. It can carry out disinfection, sterilization and air purification in a timely manner to successfully protect patients, family members and medical staff from the risk of cross infection or even NI. One study has proposed a definition of aerosols and standards for dividing particle size (Tellier et al. 2019 ). Among them, small particles of < 5-10 \u03bcm aerodynamic diameter that follow airflow streamlines are potentially capable of short and long range transmission; particles of < 5 \u03bcm are more likely to pass through the airway to reach the alveolar space (Tellier et al. 2019) . Small droplets may be involved in shortdistance transmission, but compared with large droplets, these can more easily evaporate and form droplet nuclei, which have the potential for long-distance air transmission, and so can be directly inhaled by susceptible people to cause infection (Tang et al. 2006) .",
+            "cite_spans": [
+                {
+                    "start": 1852,
+                    "end": 1872,
+                    "text": "(Tellier et al. 2019",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 2123,
+                    "end": 2144,
+                    "text": "(Tellier et al. 2019)",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 2433,
+                    "end": 2451,
+                    "text": "(Tang et al. 2006)",
+                    "ref_id": "BIBREF21"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Our laboratory experiments have some limitations. First, even though the patient is lying down, the thermal plume may reach 0.1-0.2 m/s, and we did not consider this in our test, although we will include it in the next experiment. Second, we will also use second order schemes instead of the SIMPLE algorithm used herein for the next stages of our study. Third, the aerosol generator did not produce uniform aerosols, and so we will investigate other brands for further tests. In addition, we only used smoke particulates, S. albus, and viruses to simulate the isolation of patient droplets, which may not be fully reflective of real-world scenarios. Finally, we did not truly test the isolation of patient droplets and the protection of medical personnel. Related experiments have been planned as our next step research. We will conduct experiments in hospitals to study the efficiency of the isolation bed in practical applications with the participation of research subjects.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "In the future, this work would benefit from performance of more parallel or exploratory experiments, particularly using virus, to improve the reliability of our experimental data. We shall continue to further refine the experimental plan based on the experimental results so that our PI bed can be applied to a variety of practical public settings. In particular, we want to focus on its impact on reducing the risk of NI in hospitals and explore its significance for hospital infection control.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "It can be seen from the simulation results that the design of the return hood is effective, and the pollutants exhaled by the patient are sufficiently removed before air recirculation. It should be noted that the patient's head should be placed as close to the return air hood as possible, and a suitable and comfortable wind speed value should be determined. High isolation efficiency was observed against cigarette smoke, S. albus and HAdV-5 contaminants. Our future research will focus on clinical research on PI beds to reduce NIs and cross-infections, to provide a theoretical basis for a new approach to NI prevention and control.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Airborne transmission between room occupants during short-term events: Measurement and evaluation",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Ai",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Hashimoto",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Melikov",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Indoor Air",
+            "volume": "29",
+            "issn": "",
+            "pages": "563--576",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Sources of airborne norovirus in hospital outbreaks",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Alsved",
+                    "suffix": ""
+                },
+                {
+                    "first": "C-J",
+                    "middle": [],
+                    "last": "Fraenkel",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Bohgard",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Clinical Infectious Diseases",
+            "volume": "70",
+            "issn": "",
+            "pages": "2023--2028",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Airborne transmission of highly pathogenic influenza virus during processing of infected poultry",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Bertran",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Balzli",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Kwon",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Emerging Infectious Diseases",
+            "volume": "23",
+            "issn": "",
+            "pages": "1806--1814",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "COVID-19 disease due to SARS-CoV-2 (novel coronavirus)",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Carlos",
+                    "suffix": ""
+                },
+                {
+                    "first": "Csd",
+                    "middle": [],
+                    "last": "Cruz",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Cao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "American Journal of Respiratory and Critical Care Medicine",
+            "volume": "201",
+            "issn": "4",
+            "pages": "7--8",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Transmission of airborne bacteria across built environments and its measurement standards: A review",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Fujiyoshi",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Tanaka",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Maruyama",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Frontiers Microbiol ogy",
+            "volume": "8",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Analysing the link between public transport use and airborne transmission: mobility and contagion in the London underground",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Gosc\u00e9",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Johansson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Environmental Health",
+            "volume": "17",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Aerosol and surface distribution of severe acute respiratory syndrome coronavirus 2 in hospital wards",
+            "authors": [
+                {
+                    "first": "Z-D",
+                    "middle": [],
+                    "last": "Guo",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z-Y",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S-F",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Emerging Infectious Diseases",
+            "volume": "26",
+            "issn": "",
+            "pages": "1583--1591",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Tuberculosis transmission in public locations in Tanzania: A novel approach to studying airborne disease transmission",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Hella",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Morrow",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Mhimbira",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Journal of Infection",
+            "volume": "75",
+            "issn": "",
+            "pages": "191--197",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "The impact of ambient humidity on the evaporation and dispersion of exhaled breathing droplets: A numerical investigation",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Ji",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Qian",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Ye",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Journal of Aerosol Science",
+            "volume": "115",
+            "issn": "",
+            "pages": "164--172",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Clinical Data on hospital environmental hygiene monitoring and medical staff protection during the coronavirus disease",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Jiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "The influence of air-dispersed essential oils from lemon (Citrus Limon) and silver fir (Abies alba) on airborne bacteria and fungi in hospital rooms",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Lanzerstorfer",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Hackl",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Schl\u00f6mer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Journal of Environmental Science and Health, Part A",
+            "volume": "54",
+            "issn": "",
+            "pages": "256--260",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "A recombinant trivalent vaccine candidate against human adenovirus types 3, 7, and 55",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Tian",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Vaccine",
+            "volume": "36",
+            "issn": "",
+            "pages": "2199--2206",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Fifty years of CFD for room air distribution",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Nielsen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Building and Environment",
+            "volume": "91",
+            "issn": "",
+            "pages": "78--90",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Ventilation control for airborne transmission of human exhaled bio-aerosols in buildings",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Qian",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zheng",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Journal of Thoracic Disease",
+            "volume": "10",
+            "issn": "",
+            "pages": "2295--2304",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Mutations driving airborne transmission of A/H5N1 virus in mammals cause substantial attenuation in chickens only when combined",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Richard",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Herfst",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jma",
+                    "middle": [],
+                    "last": "Van Den Brand",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Scientific Reports",
+            "volume": "7",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "An Introduction to Computational Fluid Dynamics: The Finite Volume Method",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "S\u00f8rensen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Controversy around airborne versus droplet transmission of respiratory viruses",
+            "authors": [
+                {
+                    "first": "Eyc",
+                    "middle": [],
+                    "last": "Shiu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Nhl",
+                    "middle": [],
+                    "last": "Leung",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Cowling",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Current Opinion in Infectious Diseases",
+            "volume": "32",
+            "issn": "",
+            "pages": "372--379",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "A review of coronavirus disease-2019 (COVID-19)",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Singhal",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "The Indian Journal of Pediatrics",
+            "volume": "87",
+            "issn": "",
+            "pages": "281--286",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Assessment of airborne bacterial and fungal communities in selected areas of teaching hospital",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Sivagnanasundaram",
+                    "suffix": ""
+                },
+                {
+                    "first": "Rwk",
+                    "middle": [],
+                    "last": "Amarasekara",
+                    "suffix": ""
+                },
+                {
+                    "first": "Rmd",
+                    "middle": [],
+                    "last": "Madegedara",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "BioMed Research International",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Effect of annexin II-mediated conversion of plasmin from plasminogen on airborne transmission of H9N2 avian influenza virus",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Su",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Veterinary Microbiology",
+            "volume": "223",
+            "issn": "",
+            "pages": "100--106",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Air, surface environmental, and personal protective equipment contamination by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) from a symptomatic patient",
+            "authors": [
+                {
+                    "first": "Swx",
+                    "middle": [],
+                    "last": "Ong",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Tan",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Chia",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "JAMA",
+            "volume": "323",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Factors involved in the aerosol transmission of infection and control of ventilation in healthcare premises",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Tang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Eames",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Journal of Hospital Infection",
+            "volume": "64",
+            "issn": "",
+            "pages": "100--114",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "The airborne microbiome-Implications for aerosol transmission and infection control",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Tang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "BMC Infectious Diseases",
+            "volume": "19",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Recognition of aerosol transmission of infectious agents: A commentary",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Tellier",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Cowling",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "BMC Infectious Diseases",
+            "volume": "19",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "High diversity of airborne fungi in the hospital environment as revealed by meta-sequencing-based microbiome analysis",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Tong",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zou",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Scientific Reports",
+            "volume": "7",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "A novel circulated air curtain system to confine the transmission of exhaled contaminants: A numerical and experimental investigation",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Qian",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Building Simulation",
+            "volume": "13",
+            "issn": "",
+            "pages": "1425--1437",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Airborne or fomite transmission for norovirus? A case study revisited",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Xiao",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Tang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "International Journal of Environmental Research and Public Health",
+            "volume": "14",
+            "issn": "12",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Using computational fluid dynamics modeling to evaluate the design of hospital ultraviolet germicidal irradiation systems for inactivating airborne mycobacteria",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Fisher",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Miller",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Photochem Photobiol",
+            "volume": "89",
+            "issn": "",
+            "pages": "792--798",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Numerical investigations of the effects of manikin simplifications on the thermal flow field in indoor spaces",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Yan",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Tu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Building Simulation",
+            "volume": "10",
+            "issn": "",
+            "pages": "219--227",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Structure and function principle of the PI bed: A, schematic diagram; B, structure (1, manual pediatric bed; 2, bedside baffle; 3, connection board; 4, filter system; 5, bedside table)",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "Schematic diagram of mesh generation (\u03b8 = 70\u00b0 in the diagram) child's head was set at the horizontal center of the room. b",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "PI bed experiment: A, design renderings; B1, sampling point design in the test room; B2, sampling points for S. albus in the laboratory experiment; B3, sampling points for HAdV-5 in the laboratory experiment; C1, sampling points for cigarette smoke in the test room; C2, sampling points for S. albus in the test room; C3, sampling points for HAdV-5 in the test room",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "A. Pressure distribution. A1, Case 3, 1 m/s; A2, case 4, 2 m/s; A3, case 5, 3 m/s; A4, case 6, 0.86 m/s. B. Speed distribution. B1, Case 3, 1 m/s; B2, case 4, 2 m/s; B3, case 5, 3 m/s; B4, case 6, 0.86 m/s. B1, B3, B5, B7: longitudinal view; B2, B4, B6, B8: transverse view. C. Tracer gas mass fraction distribution. C1, Case 3, 1 m/s; C2, case 4, 2 m/s; C3, case 5, 3 m/s; C4, case 6, 0.86 m/s",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "Efficacy of the isolation bed. A-D, Changes in the number of cigarette particles between each sampling point at each gear; E, S. albus; F, HAdV-5",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF1": {
+            "text": "Simulation condition settings",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "Blocking efficiency of the PI bed against cigarette smoke particulate matter (size \u2265 0.3 \u03bcm)",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF3": {
+            "text": "Blocking efficiency of PI bed against S. albus aerosols",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF4": {
+            "text": "Blocking efficiency of PI bed against HAdV-5 aerosols",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "Rong Zhou, Tiantian Liu, and Zhengshi Lin were involved in the conception and design of the study. Tiantian Liu, Yubing Guo, Xiaotang Hao, Mei Wang and Shicong He were involved in the acquisition of the data. Tiantian Liu and Zhengshi Lin analyzed the data. Tiantian Liu wrote the manuscript.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Authors' contributions"
+        }
+    ]
+}

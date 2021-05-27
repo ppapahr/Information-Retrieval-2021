@@ -1,0 +1,1369 @@
+{
+    "paper_id": "e78a359a92584e765d7ded5652690d944ce5bf7b",
+    "metadata": {
+        "title": "Consequences of Depletion of Susceptibles for Hazard Ratio Estimators Based on Propensity Scores",
+        "authors": [
+            {
+                "first": "Bruce",
+                "middle": [],
+                "last": "Fireman",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Kaiser Permanente Division of Research",
+                    "location": {
+                        "settlement": "Oakland",
+                        "region": "CA"
+                    }
+                },
+                "email": "bruce.fireman@kp.org."
+            },
+            {
+                "first": "Susan",
+                "middle": [],
+                "last": "Gruber",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Harvard Pilgrim Health Care Institute and Harvard Medical School",
+                    "location": {
+                        "settlement": "Boston",
+                        "region": "MA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Zilu",
+                "middle": [],
+                "last": "Zhang",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Harvard Pilgrim Health Care Institute and Harvard Medical School",
+                    "location": {
+                        "settlement": "Boston",
+                        "region": "MA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Robert",
+                "middle": [],
+                "last": "Wellman",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Kaiser Permanente Washington Health Research Insti-tute",
+                    "location": {
+                        "settlement": "Seattle",
+                        "region": "WA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Jennifer",
+                "middle": [
+                    "Clark"
+                ],
+                "last": "Nelson",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Kaiser Permanente Washington Health Research Insti-tute",
+                    "location": {
+                        "settlement": "Seattle",
+                        "region": "WA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Jessica",
+                "middle": [],
+                "last": "Franklin",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Division of Pharmacoepidemiology and Pharma-coeconomics",
+                    "institution": "Harvard Medical School",
+                    "location": {
+                        "settlement": "Boston",
+                        "region": "MA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Judith",
+                "middle": [],
+                "last": "Maro",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Harvard Pilgrim Health Care Institute and Harvard Medical School",
+                    "location": {
+                        "settlement": "Boston",
+                        "region": "MA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Catherine",
+                "middle": [
+                    "Rogers"
+                ],
+                "last": "Murray",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Harvard Pilgrim Health Care Institute and Harvard Medical School",
+                    "location": {
+                        "settlement": "Boston",
+                        "region": "MA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Sengwee",
+                "middle": [],
+                "last": "Toh",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Harvard Pilgrim Health Care Institute and Harvard Medical School",
+                    "location": {
+                        "settlement": "Boston",
+                        "region": "MA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Joshua",
+                "middle": [],
+                "last": "Gagne",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Division of Pharmacoepidemiology and Pharma-coeconomics",
+                    "institution": "Harvard Medical School",
+                    "location": {
+                        "settlement": "Boston",
+                        "region": "MA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Sebastian",
+                "middle": [],
+                "last": "Schneeweiss",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Division of Pharmacoepidemiology and Pharma-coeconomics",
+                    "institution": "Harvard Medical School",
+                    "location": {
+                        "settlement": "Boston",
+                        "region": "MA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Laura",
+                "middle": [],
+                "last": "Amsden",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Kaiser Permanente Division of Research",
+                    "location": {
+                        "settlement": "Oakland",
+                        "region": "CA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Richard",
+                "middle": [],
+                "last": "Wyss",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Division of Pharmacoepidemiology and Pharma-coeconomics",
+                    "institution": "Harvard Medical School",
+                    "location": {
+                        "settlement": "Boston",
+                        "region": "MA"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "We use simulated data to examine the consequences of depletion of susceptibles for hazard ratio (HR) estimators based on a propensity score (PS). First, we show that the depletion of susceptibles attenuates marginal HRs toward the null by amounts that increase with the incidence of the outcome, the variance of susceptibility, and the impact of susceptibility on the outcome. If susceptibility is binary then the Bross bias multiplier, originally intended to quantify bias in a risk ratio from a binary confounder, also quantifies the ratio of the instantaneous marginal HR to the conditional HR as susceptibles are depleted differentially. Second, we show how HR estimates that are conditioned on a PS tend to be between the true conditional and marginal HRs, closer to the conditional HR if treatment status is strongly associated with susceptibility and closer to the marginal HR if treatment status is weakly associated with susceptibility. We show that associations of susceptibility with the PS matter to the marginal HR in the treated (ATT) though not to the marginal HR in the entire cohort (ATE). Third, we show how the PS can be updated periodically to reduce depletion-of-susceptibles bias in conditional estimators. Although marginal estimators can hit their ATE or ATT targets consistently without updating the PS, we show how their targets themselves can be misleading as they are attenuated toward the null. Finally, we discuss implications for the interpretation of HRs and their relevance to underlying scientific and clinical questions. See video Abstract: http://links.lww.com/EDE/B727. Columns 7 and 8 show prevalences of susceptibility at interval's start; columns 3-6 show the N of survivors (parenthesized) at interval's end. b Bross's formula for sensitivity of a risk ratio estimate to a confounder is shown here to yield the ratio of the iHRm (column 10) to HRc (0.5) at t. FIGURE 1. Divergence of the marginal HR (HRm) from a constant conditional HR (HRc) if susceptibility is binary by cumulative incidence, the prevalence (p) of susceptibility (s) and the effect (b) of susceptibility on risk, in a hypothetical randomized controlled trial where treatment doubles risk and time-to-event is proportional to exp(lnHRc \u00d7 tx + b \u00d7 s). These curves, shown here for HRc = 2, would be similar at any other non-null level of the HRc.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Divergence of the marginal HR (HRm) from a constant conditional HR (HRc) if susceptibility is continuous, by cumulative incidence and the variance of susceptibility (s), where s is normal with mean = 0, variance = v, in a hypothetical RCT where treatment doubles risk and time-to-event is proportional to exp(lnHRc \u00d7 tx + sqrt(v) \u00d7 s). These curves, shown here for HRc = 2, would be similar at any other non-null level of the HRc.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "S usceptibles are defined as individuals whose baseline risk is relatively high. If the outcome can only happen to a person once-like death-then the prevalence of susceptibility in a cohort decreases over time because susceptibles tend to have earlier outcome events. Even in a randomized controlled trial (RCT), if the treatment reduces risk then the treated and untreated groups lose their susceptibles at different rates: the prevalence of susceptibility decreases faster in the untreated group than in the treated group. Consequently, the risk profile of the untreated survivors becomes more favorable than that of the treated survivors. This process, termed \"differential depletion of susceptibles,\" poses challenges for the estimation and interpretation of hazard ratios (HRs) in survival analyses. Unless we ascertain and adjust for all aspects of susceptibility, the HR attenuates toward the null. This is a known source of selection bias, yet it is often overlooked. [1] [2] [3] [4] [5] We use the acronym HRc to denote an HR that is conditional on susceptibility and HRm to denote an HR that is marginal (i.e., population-averaged over time). In an RCT-or a cohort study balanced by propensity score (PS) matching or weighting-the HRm equals the HRc initially, then the HRm diverges toward the null (unless it is already at the null) as outcomes occur. Our aims are to: (1) show how the divergence of the HRm from the HRc is driven by the incidence of the outcome, the distribution of susceptibility, and the effect of susceptibility on the outcome. (2) show how HRc estimators that condition on a PS tend to yield estimates between the HRc and HRm, closer to the HRc if the PS is strongly associated with the outcome (within each treatment group) and closer to the HRm if the PS is weakly associated with the outcome.",
+            "cite_spans": [
+                {
+                    "start": 976,
+                    "end": 979,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 980,
+                    "end": 983,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 984,
+                    "end": 987,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 988,
+                    "end": 991,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 992,
+                    "end": 995,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                }
+            ],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "(3) show how a PS can be updated periodically so that PSbased methods can estimate the HRc without the selection bias that arises from depletion of susceptibles.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "This work was undertaken to evaluate PS-based methods for the Sentinel Initiative, which monitors drug safety with data on over 200 million people. 6, 7 Sentinel is interested in PS-based methods because they can preserve privacy by letting individual-level data remain at Sentinel's partner organizations. 8 A Sentinel workgroup evaluated PS-based methods that use matching, stratification, PS-based covariates, or inverse probability of treatment weighting (IPTW) in a wide range of simulated scenarios, 9 and found bias in PS-based estimators of the HRc, as was previously reported. [10] [11] [12] [13] A subsequent Sentinel workgroup proposed a time-dependent PS to reduce this bias. 14 Here, we provide new insight into the bias, add refinements to the time-dependent PS, and point out features of research questions that can make the HRc-rather than the HRm or alternative effect measure-an appropriate target. Table 1 shows attenuation of the HRm in a hypothetical RCT of a treatment that always reduces mortality by 50% (HRc = 0.5). One million subjects are randomized 1:1 to be treated or not. Half are susceptible (high risk), which multiplies risk ten-fold. Everyone is followed until death. Each row of the table summarizes an interval when 1% of subjects die. The first row shows the 10,000 earliest deaths; the last row shows the last 10,000. Columns 3-6 show the interval's deaths (and survivors) in four subgroups: high-risk treated, low-risk treated, high-risk untreated, and low-risk untreated. Given that 50% of subjects are treated, 50% are susceptible, treatment reduces mortality by 50%, and susceptibility multiplies mortality ten-fold, we have enough information to identify each subgroup's share of each row's 10,000 deaths. (All 100 rows are shown in eTable 1; http://links.lww.com/EDE/ B712.) Column 10 shows the instantaneous HRm (iHRm) in each interval: mortality among the treated divided by mortality among the untreated. Thus, the iHRm in interval 5 is: The iHRm diverges from the HRc toward the null as susceptibles are depleted. It reaches a maximum of 0.95 when 57% of the cohort has died (row 57); then gradually returns to 0.50. For intuition about why the iHRm stops moving away from the HRc and starts returning to it, notice that after row 57 the RCT's untreated arm is so depleted of its susceptibles that mortality no longer exacerbates the imbalance in susceptibility but instead restores balance.",
+            "cite_spans": [
+                {
+                    "start": 148,
+                    "end": 150,
+                    "text": "6,",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 586,
+                    "end": 590,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 591,
+                    "end": 595,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 596,
+                    "end": 600,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 601,
+                    "end": 605,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 917,
+                    "end": 924,
+                    "text": "Table 1",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": ""
+        },
+        {
+            "text": "More insight into the trajectory of the iHRm comes from the bias multiplier \"b\" in column 9. The iHRm equals the HRc (always 0.5 in this illustration) multiplied by \"b,\" which is calculated from the prevalence of susceptibility in the treated (column 7) and the untreated (column 8). These prevalences diverge as susceptibles are depleted differentially. Denote these prevalences p 1 and p 0 and let s denote the risk ratio for the effect of susceptibility on mortality; then this bias multiplier is:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conceptual Framework"
+        },
+        {
+            "text": "Bross derived this bias multiplier over 50 years ago to quantify the bias in a risk ratio estimate attributable to an uncontrolled binary confounder. 15 Table 1 shows how Bross's \"b\" also quantifies the ratio of the instantaneous HRm to the HRc as susceptibles are depleted differentially. The instantaneous HRm can be calculated in two equivalent ways: using the numbers in columns 3-6, as shown for interval 5 above, or else by multiplying the HRc by Bross's \"b.\"",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 153,
+                    "end": 160,
+                    "text": "Table 1",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "Conceptual Framework"
+        },
+        {
+            "text": "This illustrates a similarity between the divergence of the iHRm from the HRc (caused by depletion of susceptibles) and the divergence of a biased risk ratio estimate from the true risk ratio (caused by a confounder). The differential depletion of susceptibles induces a selection bias that moves the HRm away from the HRc similarly to how confounders bias a risk ratio estimate. (See Smith and VanderWeele for analyses of selection bias that take the same analytic form as sensitivity analyses of confounding. 16 )",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conceptual Framework"
+        },
+        {
+            "text": "The overall HRm is in the last column. For row t, it summarizes the instantaneous HRm's from the start through row t. Anchored to its history in this way, the overall HRm changes more gradually than does the instantaneous HRm. It reaches a maximum of 0.68 in row 69 and then gradually moves back to 0.63.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conceptual Framework"
+        },
+        {
+            "text": "The overall HRm moves far from the HRc in this illustration because susceptibility has a large impact on risk-it multiplies risk ten-fold. The HRm and HRc would diverge less if susceptibility had less impact. This is shown in Figure 1 where we plot the divergence of the HRm and HRc while varying the prevalence of susceptibility and its effect on outcomes. The gap between the HRc and HRm widens with the cumulative incidence of the outcome until one of the treatment groups is so depleted of susceptibles that subsequent depletion no longer increases imbalance. Although the iHRm can cross the null as it diverges from the HRc (so that the iHRm might suggest the treatment is harmful at a time when the HRc indicates it is beneficial), the overall HRm does not cross the null as long as the HRc is constant. Figure 2 plots the divergence of HRm and HRc in scenarios where susceptibility is continuous rather than dichotomous. The gap widens with increases in susceptibility's variance and therefore its impact on outcomes. Unlike Figure 1 , these curves are not peaked; the gap never narrowsthe more hazardous treatment group is always depleted faster of more susceptible survivors.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 226,
+                    "end": 234,
+                    "text": "Figure 1",
+                    "ref_id": null
+                },
+                {
+                    "start": 810,
+                    "end": 818,
+                    "text": "Figure 2",
+                    "ref_id": null
+                },
+                {
+                    "start": 1032,
+                    "end": 1040,
+                    "text": "Figure 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Conceptual Framework"
+        },
+        {
+            "text": "In these scenarios, divergence of the HRm and HRc is slight until outcomes occur in 1%-2% of the cohort. However, if an outcome only occurs in susceptibles and susceptibility is rare, then the HRm can diverge far from the HRc when incidence is high among the susceptibles regardless of how low it is in the overall cohort (eTable 2; http://links.lww.com/EDE/B712).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conceptual Framework"
+        },
+        {
+            "text": "If we strengthen the treatment effect by moving the HRc farther from the null, the HRm stays at the same percentage of the distance from the HRc to the null (on the log scale). For example, consider a scenario where the HRm is halfway between the HRc and the null on the log scale: if we double the log HRc we approximately double the log HRm, widening the gap between the HRm and HRc, yet keeping the log HRm halfway between the log HRc and the null (eFigure 1; http:// links.lww.com/EDE/B712).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conceptual Framework"
+        },
+        {
+            "text": "Finally, if the treatment has no effect on outcomes, then depletion of susceptibles is not differential, imbalances do not arise, and the HRm and HRc do not diverge.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conceptual Framework"
+        },
+        {
+            "text": "We conducted plasmode and Monte Carlo simulations. 17",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Simulations and Analyses"
+        },
+        {
+            "text": "We used de-identified Sentinel data on 39,472 new users of an anticoagulant, either rivaroxaban or warfarin. 18 We sampled with replacement to make simulated new-user cohorts with realistic covariate distributions and covariances. Treatments and outcomes were not sampled; they were allocated by mechanisms tailored to control the strength of the treatment effect, strength of confounding, outcome incidence, treatment prevalence, and amount of censoring. The scenario featured in Figure 3 included strong negative confounding such that an unadjusted analysis yields an HRc estimate of 1.0 when the truth is 2.0. We used 15 covariates: age, sex, and 13 binary covariates with the most confounding potential, by Bross's formula. 15 We allocated treatment by a logistic function of the covariates. Time-to-event was assigned by a Weibull function of the covariates. We censored follow-up randomly (unrelated to covariates) at a rate inspired by the Sentinel data.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 481,
+                    "end": 489,
+                    "text": "Figure 3",
+                    "ref_id": null
+                }
+            ],
+            "section": "Plasmode simulations"
+        },
+        {
+            "text": "For each scenario we generated 1,000 datasets using SAS 9.3. 19 In each dataset, we estimated the PS using a logistic regression model consistent with the treatment-generating mechanism. We estimated the HRc and HRm by Cox regression using the PS in one or another of the ways under Lifetable of a hypothetical trial of a treatment that reduces mortality in a cohort with high and low susceptibility. Time scaled as cumulative incidence: 100 time periods bounded by dates marking percentiles of death times. HRc = 0.50 (treatment cuts risk 50%), susceptibility (high risk) multiplies mortality by 10, cohort is 50% high risk. a consideration. The \"true\" HRc was explicit in the data-generating mechanism; we found the corresponding \"true\" HRm by Cox regression in counterfactual cohorts followed for 2 years without censoring. The HRm's are standardized to either the entire cohort (ATE) or the treated group (ATT). The estimators in the top nine rows of Figure 3 target the HRc. The first estimator provides a benchmark by adjusting for the individual covariates without a PS; the next eight estimators condition on the PS. They adjust for PS-based covariates as polynomial terms (row 2), dummy variables for PS deciles (row 3), or cubic B-splines with knots at quintiles of the PS among the treated (row 4). The next estimators use \"greedy\" nearest neighbor matching, either 1:1 (row 5) or 1: M with up to 10 comparators per treated subject (row 6). The estimators in rows 7-9 stratify on the PS using 10 strata (row 7), 20 strata (row 8), or fine stratification (5 subjects per stratum) (row 9). The estimators in rows 5-9 condition the outcome model so that each risk set is restricted to individuals in the same matched set or stratum.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 955,
+                    "end": 963,
+                    "text": "Figure 3",
+                    "ref_id": null
+                }
+            ],
+            "section": "Plasmode simulations"
+        },
+        {
+            "text": "The estimators in the bottom three rows of Figure 3 target an HRm, either ATE or ATT. Matching 1:1 is used for row 10; 1:M variable ratio matching is used for row 11. These matched HRm estimators differ from the matched HRc estimators in that they do not condition the outcome model on matched set; instead they fit unconditional Cox models. The IPTW estimators in row 12 use stabilized weights with robust variance estimation. 20",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 43,
+                    "end": 51,
+                    "text": "Figure 3",
+                    "ref_id": null
+                }
+            ],
+            "section": "Plasmode simulations"
+        },
+        {
+            "text": "To clarify the divergence of the HRm and HRc (aim 1), we varied features of Table 1 's hypothetical RCT. For Figure 1 , the prevalence of susceptibility varied from 2% to 10% to 50%, and susceptibility's effect on mortality varied from an HRc of 2 to 5. For Figure 2 , susceptibility was normally distributed, mean = 0, and variance either 0.5, 1.0, 1.5, 2, 3, or 4. Event times were exponential: time-to-event ,",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 76,
+                    "end": 83,
+                    "text": "Table 1",
+                    "ref_id": "TABREF1"
+                },
+                {
+                    "start": 109,
+                    "end": 117,
+                    "text": "Figure 1",
+                    "ref_id": null
+                },
+                {
+                    "start": 258,
+                    "end": 266,
+                    "text": "Figure 2",
+                    "ref_id": null
+                }
+            ],
+            "section": "Monte Carlo simulations"
+        },
+        {
+            "text": "where Tx is treatment status, u is random uniform.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Monte Carlo simulations"
+        },
+        {
+            "text": "To elucidate the bias in PS-based estimators of the HRc (aim 2), we varied the correlation of the PS with susceptibility, defined as a continuous risk score like Hansen's prognostic score. 21 Our risk score was the sum of 40 normally distributed covariates. Time-to-event was proportional to exp(riskscore + (lnHR c \u00d7 Tx)). Treatment was based on the logit of: (the sum To address our third aim, we developed a time-dependent PS following Wyss 14 in steps 1-4 below, adding refinements to the PS model and outcome model in steps 5-6 (details in eAppendix; http://links.lww.com/EDE/B712): 1. Make a baseline PS from baseline covariates that balances the treatment groups initially. 2. Assess whether the initial balance is sustained over time. If not, then\u2026 3. Chop the timeline into intervals in which the PS can be updated. We made deciles each with 10% of the observed events. 4. Estimate the PS at the midpoint of each interval. Do NOT update the baseline covariates; update the function of them that predicts treatment status in individuals-still-at-risk. 5. The model for the updated PS may balance the treatment groups better if interactions are included even if none were needed for the baseline PS, because treatment status becomes related to the baseline covariates through the outcome mechanism as well as the initial treatment mechanism.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Monte Carlo simulations"
+        },
+        {
+            "text": "6. Specify and fit a Cox model for the outcome that conditions the HRc estimate on the updated PS and interactions-where interactions are cross products of earlier and later PS's.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Monte Carlo simulations"
+        },
+        {
+            "text": "We evaluated the time-varying PS in simulated cohorts, each with N = 100,000, HRc = 2.0, 40 normal covariates (mean = 0, SD = 0.2), and a correlation between PS and risk score of 0.0 or 0.75.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Monte Carlo simulations"
+        },
+        {
+            "text": "HR estimates from the plasmode simulations are compared in Figure 3 with the true HRc and both HRm's (ATE and ATT). The benchmark estimator (first row) was expected to be unbiased because it adjusts for covariates individually (without a PS) in a model consistent with the data-generating mechanism. As expected, it was within 1% of the true HRc.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 59,
+                    "end": 67,
+                    "text": "Figure 3",
+                    "ref_id": null
+                }
+            ],
+            "section": "RESULTS"
+        },
+        {
+            "text": "The PS-based estimators of the HRc (rows 2-9 of Figure 3 ) all yielded estimates that were biased away from the true HRc = 2.0 toward the null. The estimates obtained by 1:1 matching averaged 5% below the HRc; the other conditional PS-based methods landed 10%-16% below the HRc. Although all PS-based conditional estimators were attenuated toward the null, they were not attenuated as much as was the HRm (ATE).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 48,
+                    "end": 56,
+                    "text": "Figure 3",
+                    "ref_id": null
+                }
+            ],
+            "section": "RESULTS"
+        },
+        {
+            "text": "The marginal ATE and ATT targets were 1.57 and 1.65, respectively, well below the HRc (2.0). There was little bias in the marginal estimators-each landed a little above its ATE or ATT target by amounts ranging from 1% to 3%. Censoring-even though it was \"uninformative\"-biased the HRm estimates slightly away from their target toward the HRc. As shown in Table 1 , an overall HRm at t amounts to a summary measure of all instantaneous HRm's from the start of follow-up through t. Censoring reduces the contribution to this overall HRm of the later more-attenuated iHRm's relative to the contribution of earlier less-attenuated iHRm's (because more of the later outcomes are unobserved), unless each risk set is weighted by the probability that its anchoring event is censored. HRc estimators are similarly biased by censoring if the HRc is not constant. Figure 3 also shows the precision of the estimators. Estimators that used 1:1 matching (rows 5 and 10) were less precise. They lost precision because some of the cohort was left unmatched and could not be informative. The conditional matched 1:1 estimator (row 5) was the least precise because whenever follow-up ended for one member of a matched pair, the other member could no longer be informative. For similar reasons, the estimator using fine stratification (row 9) was less precise than estimators using coarser stratification (rows 7-8).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 355,
+                    "end": 362,
+                    "text": "Table 1",
+                    "ref_id": "TABREF1"
+                },
+                {
+                    "start": 854,
+                    "end": 862,
+                    "text": "Figure 3",
+                    "ref_id": null
+                }
+            ],
+            "section": "RESULTS"
+        },
+        {
+            "text": "Among PS-based estimators that were similarly precise (rows 2-4, 7-8, [11] [12] , the HRc estimators yielded slightly more powerful tests than the HRm estimators because the HRc estimates were a little farther from the null. The null was tested with the Wald statistic, which is a ratio of a log HR estimate to its standard error; when we compare Wald statistics with similar standard errors in their denominators, the Wald statistic whose numerator is farther from the null has more power.",
+            "cite_spans": [
+                {
+                    "start": 70,
+                    "end": 74,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 75,
+                    "end": 79,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                }
+            ],
+            "ref_spans": [],
+            "section": "RESULTS"
+        },
+        {
+            "text": "In Monte Carlo simulations, as in plasmode simulations, the PS-based HRc estimates, shown in blue in Figure 4 , were between the true HRc and the true HRm (ATE), shown in black. The PS-based estimates (traced by the blue curves) were closer to the HRc in scenarios where the PS was highly correlated with the risk score (r = 0.84 or 0.89) and closer to the HRm in scenarios where the PS was less correlated with the risk score (r = 0.47). In the scenario where the correlation of the PS with the risk score was 0, the blue curve tracing the PS-based HRc estimates follows the same trajectory as the black curve tracing the HRm (ATE).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 101,
+                    "end": 109,
+                    "text": "Figure 4",
+                    "ref_id": null
+                }
+            ],
+            "section": "RESULTS"
+        },
+        {
+            "text": "The trajectory of the HRm (ATE) is the same in Figure 4 scenarios regardless of the PS-riskscore correlation, but the ATT varies with the correlation between the PS and risk score. We show the ATT for two of the scenarios (the red curves) to illustrate that the ATT is lower when the PS and risk score are positively correlated, and higher when they are negatively correlated. If most high-risk conditions are predictive of being treated then high-risk individuals are upweighted in the ATT (though not the ATE), increasing imbalances from depletionof-susceptibles and moving the ATT farther from the HRc.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 47,
+                    "end": 55,
+                    "text": "Figure 4",
+                    "ref_id": null
+                }
+            ],
+            "section": "RESULTS"
+        },
+        {
+            "text": "The HR estimator that uses a time-varying PS is compared in Table 2 with estimators that use the individual covariates, IPTW, the baseline PS, or the risk score. When the HRc and HRm diverged, the covariate-adjusted HRc estimator stayed on its HRc target, and the IPTW-adjusted HRm estimator stayed on its HRm target, as expected. The baseline-PSadjusted estimates approximated the HRm when the baseline PS was uncorrelated with the risk score and were between the HRc and HRm when the PS-risk score correlation was 0.75. When cumulative incidence was 95% and the PS-risk score correlation was 0 (bottom row), the baseline-PS estimator was most biased-43% below the true HRc on the log scale.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 60,
+                    "end": 67,
+                    "text": "Table 2",
+                    "ref_id": "TABREF2"
+                }
+            ],
+            "section": "RESULTS"
+        },
+        {
+            "text": "The time-varying PS yielded estimates that were near their target, the HRc = 2.0. When the bias in the baseline-PS estimator was 43% (bottom row) the bias was only 2% in the estimator using the time-varying PS. Whereas estimates using the time-varying PS were only slightly below their 2.0 target, the risk-score-adjusted estimates were even less biasedexcept when there were not enough events for a precise risk score (top rows of top panel). See the eAppendix; http://links. lww.com/EDE/B712 for more on adjustment for the timevarying PS, the risk score, or both.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "RESULTS"
+        },
+        {
+            "text": "We examined the consequences of depletion of susceptibles for HR estimators based on a PS. We found that PSbased estimates of the HRc are biased in an interesting way: they tend to be between the HRc and the HRm, closer to the HRc if the baseline PS is highly correlated with susceptibility and closer to the HRm if the PS is weakly correlated with susceptibility. When outcomes are infrequent or unaffected by the treatment, the HRm and HRc are nearly equal and this bias is negligible. However, when susceptibles are depleted differentially, a gap opens between the HRc and HRm, and PS-based HRc estimates fall into the gap. We described how this bias arises and how it can be reduced by updating the PS.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "We found little bias in PS-based estimators that target a HRm. When susceptibles are depleted differentially, both kinds of HRm, ATE and ATT, diverge from the HRc and their PS-based estimators move with them (in the absence of censoring that tends to bias HR estimators toward their earlier levels). Our findings are consistent with Austin who found substantial bias in PS-based estimators of the HRc and negligible bias (in the absence of censoring) in PS-based estimators of the HRm. 10 Even though HRm estimators can hit their targets consistently, their interpretation should consider the contribution from differential depletion-of-susceptibles.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "Given that the HRc and HRm can diverge, when is it appropriate to target the HRc and use a time-varying PS to estimate it?",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "An HR can be an appropriate target if it is plausible that the treatment effect would be multiplicative among the individuals-still-at-risk; and the HRc can be more relevant than the HRm to the underlying scientific and clinical issues if well-measured covariates affect risk. Imagine an RCT that randomly assigns people in September to be vaccinated or not against influenza and examines vaccine effectiveness (VE = (1 -HR) X 100%) each month of a December through March flu season. Imagine that the true HRc is stable at 0.5 yet influenza incidence is high, susceptibles are depleted differentially, and by March so many unvaccinated susceptibles have been infected (and are immune to reinfection this season) that Bross's bias multiplier is 1.89, as in row 57 of Table 1 . If our research question is whether vaccine protection wanes (so that vaccination should be delayed until November for more timely protection), then the relevant target is the trajectory of the HRc-the trajectory of the HRm could be misleading insofar as it reflects depletion of susceptibles. As the HRm attenuates from 0.5 to 0.95, the corresponding VE estimate decreases from 50% to 5% due to selection bias. In this RCT, we should target the HRc, condition our analysis on the aspects of susceptibility that are measured (such as age and preexisting conditions), and assess the sensitivity of our findings to aspects of susceptibility that remain unmeasured.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 766,
+                    "end": 773,
+                    "text": "Table 1",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "An RCT for a SARS-CoV-2 vaccine can examine waning similarly. Waning can be assessed from the trajectory of the HRc adjusted for measured susceptibility. Unmeasured susceptibility may remain, yet we would reduce bias from depletion-of-susceptibles by targeting the HRc rather than the HRm. (See Ray on depletion-of-susceptibles bias in research on the waning of vaccine protection. 22 ) Although our estimators use Cox regression, we need not assume that the HRm or HRc was constant-indeed their divergence implies that one or both changed. To examine a trend in an HRm or HRc, we can specify time-by-treatment interaction effects or divide the timeline into intervals and estimate the HR in each interval. If there is interest in the average effect during follow-up, the overall HR estimate can be interpreted as averaging the interval-specific HR's, as in Table 1 .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 858,
+                    "end": 865,
+                    "text": "Table 1",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "Hern\u00e1n's thoughtful article \"The hazards of hazard ratios\" considers two problems with HRs: first, they tend to be moving targets and second, they are prone to selection bias from depletion of susceptibles. 1 The depletion-of-susceptibles problem is our main concern in this article; the moving target problem is challenging when events are too sparse to ascertain the trajectory of the HRc, but it is not necessarily a reason to de-emphasize the HRc in favor of another effect measure, such as a risk difference or restricted mean survival time. When the treatment effect is expected to be multiplicative, we can target the HRc. If it may be strengthening or weakening, we can target its trajectory. Whereas Hern\u00e1n duly emphasizes the value of marginal survival curves, the HRc and its trajectory answer some research questions more directly. It can be helpful to ascertain the treatment's effect on the individual survivors (as measured by the HRc) apart from The true HRc = 2, each simulated cohort has N = 10 5 , and the Monte Carlo 95% confidence interval for each mean HR estimate is <0.007 in width.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "its effect on the mix of individuals who survive (which attenuates the HRm toward the null). When could the time-varying PS be useful? In our simulations, adjustment for a time-varying PS reduced bias from depletion-of-susceptibles, but it is more burdensome than adjustment for individual covariates and less intuitive than a risk score. However, in a distributed data environment-such as the Sentinel Initiative-privacy concerns may preclude pooling individual covariates, and a risk score is not feasible unless outcome events are frequent at every site. If outcome incidence is high enough to move the HRm away from the HRc, and yet too low for precision in risk score estimation, the timevarying PS may be helpful.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "This article has limitations. First, we do not address challenges to estimating an optimal PS. Second, our scenarios include no unmeasured confounding, time-varying confounding, misclassification, informative censoring, or missing data. These common sources of bias are outside our scope. Third, our findings are supported by illustrative simulated data rather than comprehensive evidence or proof.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "In summary, we elucidated how the HRm and HRc diverge when susceptibles are depleted differentially. We showed how this biases PS-based estimators and how the bias can be reduced by updating the PS.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "The hazards of hazard ratios",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Hern\u00e1n",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Epidemiology",
+            "volume": "21",
+            "issn": "",
+            "pages": "13--15",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Does Cox analysis of a randomized survival study yield a causal treatment effect?",
+            "authors": [
+                {
+                    "first": "O",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Aalen",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Cook",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "R\u00f8ysland",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Lifetime Data Anal",
+            "volume": "21",
+            "issn": "",
+            "pages": "579--593",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Subtleties in the interpretation of hazard ratios",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Martinussen",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Vansteelandt",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Andersen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lifetime Data Anal",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Attenuation of exposureresponse rate ratios at higher exposures: a simulation study focusing on frailty and measurement error",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Steenland",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Karnes",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Darrow",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Barry",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Epidemiology",
+            "volume": "26",
+            "issn": "",
+            "pages": "395--401",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Limitations of hazard ratios in clinical trials",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Stensrud",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Aalen",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Aalen",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Valberg",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Eur Heart J",
+            "volume": "40",
+            "issn": "",
+            "pages": "1378--1383",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "The new Sentinel Network-improving the evidence of medical-product safety",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Platt",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Wilson",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Chan",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Benner",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Marchibroda",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Mcclellan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "N Engl J Med",
+            "volume": "361",
+            "issn": "",
+            "pages": "645--647",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Developing the sentinel system-a national resource for evidence development",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Behrman",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Benner",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Brown",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Mcclellan",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Woodcock",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Platt",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "N Engl J Med",
+            "volume": "364",
+            "issn": "",
+            "pages": "498--499",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Multivariable confounding adjustment in distributed data networks without sharing of patient-level data",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Toh",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Reichman",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Houstoun",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Pharmacoepidemiol Drug Saf",
+            "volume": "22",
+            "issn": "",
+            "pages": "1171--1177",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Evaluation of Propensity Score Based Methods in Sentinel Study Settings Using Simulation Experiments. Sentinel Coordinating Center",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Gruber",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Wellman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "The performance of different propensity score methods for estimating marginal hazard ratios",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Austin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Stat Med",
+            "volume": "32",
+            "issn": "",
+            "pages": "2837--2849",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "The use of propensity score methods with survival or timeto-event outcomes: reporting measures of effect similar to those used in randomized experiments",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Austin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Stat Med",
+            "volume": "33",
+            "issn": "",
+            "pages": "1242--1258",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "An introduction to propensity score methods for reducing the effects of confounding in observational studies",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Austin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Multivariate Behav Res",
+            "volume": "46",
+            "issn": "",
+            "pages": "399--424",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Bias associated with using the estimated propensity score as a regression covariate",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Hade",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Lu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Stat Med",
+            "volume": "33",
+            "issn": "",
+            "pages": "74--87",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Use of time-dependent propensity scores to adjust hazard ratio estimates in cohort studies with differential depletion of susceptibles",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Wyss",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Gagne",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Epidemiology",
+            "volume": "31",
+            "issn": "",
+            "pages": "82--89",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Spurious effects from an extraneous variable",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Bross",
+                    "suffix": ""
+                }
+            ],
+            "year": 1966,
+            "venue": "J Chronic Dis",
+            "volume": "19",
+            "issn": "",
+            "pages": "637--647",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Bounding bias due to selection",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Smith",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Vanderweele",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Epidemiology",
+            "volume": "30",
+            "issn": "",
+            "pages": "509--516",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Plasmode simulation for the evaluation of pharmacoepidemiologic methods in complex healthcare databases",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Franklin",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Schneeweiss",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Polinski",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Rassen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Comput Stat Data Anal",
+            "volume": "72",
+            "issn": "",
+            "pages": "219--226",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Prospective surveillance pilot of rivaroxaban safety within the US Food and Drug Administration Sentinel System",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Chrischilles",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Gagne",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Fireman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Pharmacoepidemiol Drug Saf",
+            "volume": "27",
+            "issn": "",
+            "pages": "263--271",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Statistical Analysis Software 9.3. Cary, NC: Statistical Analysis Software (SAS) Institute",
+            "authors": [],
+            "year": 2002,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "The robust inference for the proportional hazards model",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Wei",
+                    "suffix": ""
+                }
+            ],
+            "year": 1989,
+            "venue": "J Am Stat Assoc",
+            "volume": "84",
+            "issn": "",
+            "pages": "1074--1078",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "The prognostic analogue of the propensity score",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Hansen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Biometrika",
+            "volume": "95",
+            "issn": "",
+            "pages": "481--488",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Depletionof-susceptibles bias in analyses of intra-season waning of influenza vaccine effectiveness",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Ray",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Lewis",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Klein",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Daley",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Lipsitch",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Fireman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Clin Infect Dis",
+            "volume": "70",
+            "issn": "",
+            "pages": "1484--1486",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF1": {
+            "text": "of k covariates) -(the sum of the other 40-k covariates). The correlation of the PS with the risk score was 0.75 if k = 36, 0.0 if k = 20, and -0.75 if k = 4.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF1": {
+            "text": "Divergence of the Marginal Hazard Ratio (HRm) From the Conditional Hazard Ratio (HRc) as Susceptibles Are Depleted",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "Conditional Hazard Ratio (HRc) Estimates Adjusted by an Updated Propensity Score (PS) Compared With HRc or HRm Adjusted by (a) Individual Covariates, (b) Risk Score, (c) IPTW, or (d) Baseline PS, by Cumulative Incidence Correlation of PS with risk score is 0.75 Cumulative Incidence at Endpoint, % of Cohort (a) HRc by Covariates (b) HRc by Risk Score",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "This paper is based on the work of a Sentinel workgroup on hazard ratio estimators that use propensity scores. The authors gratefully acknowledge the contributions to this workgroup of Katherine Freitas, Christian Hampp, Rima Izem, Mark Levenson, and Yuequin Zhao. We also thank Ned Lewis for insightful comments.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "ACKNOWLEDGMENTS"
+        }
+    ]
+}

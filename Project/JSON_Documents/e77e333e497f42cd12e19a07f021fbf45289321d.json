@@ -1,0 +1,2007 @@
+{
+    "paper_id": "e77e333e497f42cd12e19a07f021fbf45289321d",
+    "metadata": {
+        "title": "Higher ACE2 expression levels in epicardial cells than subcutaneous stromal cells from patients with cardiovascular disease: Diabetes and obesity as possible enhancer",
+        "authors": [
+            {
+                "first": "Marinela",
+                "middle": [],
+                "last": "Couselo-Seijas",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Translational Cardiology Group",
+                    "institution": "Health Research Institute",
+                    "location": {
+                        "settlement": "Santiago de Compostela",
+                        "country": "Spain"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Cristina",
+                "middle": [],
+                "last": "Almengl\u00f3",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Santiago de Compostela",
+                    "location": {
+                        "settlement": "Santiago de Compostela",
+                        "country": "Spain"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "|",
+                "middle": [],
+                "last": "Rosa",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "M",
+                "middle": [],
+                "last": "Agra-Bermejo",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Cardiology Group",
+                    "institution": "Santiago de Compostela",
+                    "location": {
+                        "country": "Spain"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "\u00c1ngel",
+                "middle": [],
+                "last": "Luis Fernandez",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Santiago de Compostela",
+                    "location": {
+                        "settlement": "Santiago de Compostela",
+                        "country": "Spain"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Ezequiel",
+                "middle": [],
+                "last": "Alvarez",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Santiago de Compostela",
+                    "location": {
+                        "settlement": "Santiago de Compostela",
+                        "country": "Spain"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "|",
+                "middle": [],
+                "last": "Jose",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "R",
+                "middle": [],
+                "last": "Gonz\u00e1lez-Juanatey",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Santiago de Compostela",
+                    "location": {
+                        "settlement": "Santiago de Compostela",
+                        "country": "Spain"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Sonia",
+                "middle": [],
+                "last": "Eiras",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Translational Cardiology Group",
+                    "institution": "Health Research Institute",
+                    "location": {
+                        "settlement": "Santiago de Compostela",
+                        "country": "Spain"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Aims: Obesity, diabetes and cardiovascular disease are associated with COVID-19 risk and severity. Because epicardial adipose tissue (EAT) expresses ACE2, we wanted to identify the main factors associated with ACE2 levels and its cleavage enzyme, ADAM17, in epicardial fat. Materials and methods: Epicardial and subcutaneous fat biopsies were obtained from 43 patients who underwent open-heart surgery. From 36 patients, biopsies were used for RNA expression analysis by real-time PCR of ACE1, ACE2 and ADAM17. From 8 patients, stromal vascular cells were submitted to adipogenesis or used for studying the treatment effects on gene expression levels. Soluble ACE2 was determined in supernatants by ELISA. Results: Epicardial fat biopsies expressed higher levels of ACE2 (1.53 [1.49-1.61] vs 1.51 [1.47-1.56] a.u., P < .05) and lower ADAM17 than subcutaneous fat (1.67 [1.65-1.70] vs 1.70 [1.66-1.74] a.u., P < .001). Both genes were increased in epicardial fat from patients with type 2 diabetes mellitus (T2DM) (1.62 [1.50-2.28] vs 1.52 [1.49-1.55] a.u., P = .05 for ACE2 and 1.68 [1.66-1.78] vs 1.66 [1.63-1.69]",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "a.u., P < .05 for ADAM17). Logistic regression analysis determined that T2DM was the main associated factor with epicardial ACE2 levels (P < .01). The highest ACE2 levels were found on patients with diabetes and obesity. ACE1 and ACE2 levels were not upregulated by antidiabetic treatment (metformin, insulin or thiazolidinedione).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Its cellular levels, which were higher in epicardial than in subcutaneous stromal cells (1.61 [1.55-1.63] vs 1 [1-1.34]), were not correlated with the soluble ACE2. Conclusion: Epicardial fat cells expressed higher levels of ACE2 in comparison with subcutaneous fat cells, which is enhanced by diabetes and obesity presence in patients with cardiovascular disease. Both might be risk factors for SARS-CoV-2 infection.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "Epidemiology studies have observed that obesity is a risk factor associated with SARS-CoV-2 infection. 1 This evidence becomes more clear in countries with a high percentage of obesity prevalence. 2 Besides, it is a contributor of COVID-19 severity and mortality in young people. 3 Other important associated factor with COVID-19 is the cardiovascular disease. Thus, we should think about a common mechanism among adipose tissue, heart and SARS-CoV-2 infection. In addition, the inflammatory state of hypertrophic adipose tissue might amplify the cytokines storm, caused by the infection, 4 and contribute to the COVID-19 severity. The described virus receptor is angiotensin IIconverting enzyme 2 (ACE2) that converts angiotensin II into angiotensin 1-7. 5 This molecule has anti-inflammatory and vasodilator properties. Its deficiency exacerbates the adipose tissue inflammation and oxidative stress, 6 but its overexpression might also induce a viral tropism. Several cardiovascular tissues express ACE2 (myocardium, endothelium and adipose tissue). 7 It might explain the viral RNA findings in heart from COVID-19-positive patient autopsies. 8 In addition, several cardiovascular pathologies as dilated or ischaemic cardiomyopathy upregulate ACE2 expression, which might counterbalance the angiotensin II effects. 9 Thus, after a myocardial infarction, ACE2 expression is higher in the border/infarct regarding the health area. 10 However, its deficiency accelerates the maladaptive ventricle remodelling. 11 Similarly, ACE2 expression levels are higher in adipose tissue than in heart or kidney and its levels are dependent on high-fat diet and adipogenesis. 12 However, its absence might increment the progression of the metabolic dysfunction caused by obesity and insulin resistance. 13 These two factors contribute to endothelial dysfunction and atherogenesis which is also reduced by the upregulation of ACE2. 14 In addition, the vasculature and myocardial damage might be enhanced by epicardial fat inflammation 15 which is suggested to be a target for COVID-19 treatment. 16 ACE2 expression levels on epicardial fat might reduce inflammation but also improve the viral tropism into the host cell. 17 Inflammation can increase the A disintegrin and metalloprotease (ADAM) 17 activity, that sheds ACE2 from the membrane 18 and abolishes its anti-inflammatory role, but it also might reduce the viral tropism into the host cell. Our main objectives were to (a) identify the drugs and cardiovascular pathologies that regulate the SARS-CoV-2 receptor levels in epicardial fat as possible risk factors of viral infection and (b) to study the relationship between cellular and soluble ACE2, which can be more useful as future marker.",
+            "cite_spans": [
+                {
+                    "start": 103,
+                    "end": 104,
+                    "text": "1",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 197,
+                    "end": 198,
+                    "text": "2",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 280,
+                    "end": 281,
+                    "text": "3",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 589,
+                    "end": 590,
+                    "text": "4",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 751,
+                    "end": 757,
+                    "text": "1-7. 5",
+                    "ref_id": null
+                },
+                {
+                    "start": 903,
+                    "end": 904,
+                    "text": "6",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 1053,
+                    "end": 1054,
+                    "text": "7",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 1146,
+                    "end": 1147,
+                    "text": "8",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 1318,
+                    "end": 1319,
+                    "text": "9",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 1432,
+                    "end": 1434,
+                    "text": "10",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 1510,
+                    "end": 1512,
+                    "text": "11",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 1664,
+                    "end": 1666,
+                    "text": "12",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 1791,
+                    "end": 1793,
+                    "text": "13",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 1919,
+                    "end": 1921,
+                    "text": "14",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 2022,
+                    "end": 2024,
+                    "text": "15",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 2083,
+                    "end": 2085,
+                    "text": "16",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 2208,
+                    "end": 2210,
+                    "text": "17",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 2329,
+                    "end": 2331,
+                    "text": "18",
+                    "ref_id": "BIBREF17"
+                }
+            ],
+            "ref_spans": [],
+            "section": "| INTRODUCTION"
+        },
+        {
+            "text": "Epicardial and subcutaneous adipose tissue biopsies from consecutive patients (n = 43) who underwent open-heart surgery (valve replacement or coronary artery bypass) were included for ACE1, ACE2 and ADAM17 determination or its regulation by drugs in stromal vascular cells. 19 The study complies with the Declaration of Helsinki and was approved by the Clinical Research Ethics Committee of Galicia. All patients signed an informed consent.",
+            "cite_spans": [
+                {
+                    "start": 274,
+                    "end": 276,
+                    "text": "19",
+                    "ref_id": "BIBREF18"
+                }
+            ],
+            "ref_spans": [],
+            "section": "| Study population"
+        },
+        {
+            "text": "Epicardial fat biopsies (100 mg) from 36 patients, after being washed for 24 hours with M199 medium (Lonza Biologics), were used for analysing the ACE1, ACE2 and ADAM17 expression levels. The AllPrep DNA/RNA/Protein Mini Kit (Qiagen) was used for RNA isolation, following the manufacturer's protocol. After retro-transcription, using the Maxima First Strand cDNA Synthesis Kit (Thermo Fisher Scientific), 2 \u03bcL of cDNA was used for amplifying ACE1 (F:5\u2032-CACCAATGACACGGAAAGTG-3\u2032 and R:5\u2032-CACCAATGACACGGAAAGTG-3\u2032), ACE2 (F:5\u2032-TTCGTTTCGGGTAACAGGAG-3\u2032) and R: 5\u2032-GGCTGC AGAAAGTGACATGA-3\u2032), ADAM17 (F:5\u2032-GCACAG GTAATAGCAGTGAGTGC-3\u2032; R: 5\u2032-CACACAATGGA CAAGAATGCTG-3\u2032) and ACTB using the FastStart SYBR Green Master (Roche Diagnostics) at 40 cycles (95\u00b0C for 30 seconds, 58\u00b0C for 60 seconds and 72\u00b0C for 60 seconds) in a QuantStudio 3 (Thermo Fisher Scientific). The cycle threshold (Ct) values of the genes were normalized by the Ct values of ACTB (\u0394Ct). The expression levels were represented as 2 \u2212(ACTB/gene) algorithm.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| ACE2 and ADAM17 regulation by cardiovascular risk factors in epicardial fat"
+        },
+        {
+            "text": "Stromal vascular cells (SVC) were isolated from EAT biopsies of 3 patients and cultured as it was previously described. 20 Adipogenesis was induced by the following cocktail, named IDMT, that contained 5 \u03bcg/mL insulin, 250 nmol/L dexamethasone (DEX), 0.5 mmol/L methylisobutylxanthine (MIX) and 1 \u03bcmol/L thiazolidinedione (TZD) in M199 medium supplemented with 10% foetal bovine serum (FBS). All pharmacological drugs were from Sigma-Aldrich. The M199 | 3 of 10 COUSELO-SEIJAS Et AL. medium supplemented with the adipogenic cocktail was replaced twice per week over 21 days. 20 Afterwards, ACE1, ACE2 and ADAM17 were analysed as it was described before.",
+            "cite_spans": [
+                {
+                    "start": 120,
+                    "end": 122,
+                    "text": "20",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 575,
+                    "end": 577,
+                    "text": "20",
+                    "ref_id": "BIBREF19"
+                }
+            ],
+            "ref_spans": [],
+            "section": "| ACE1, ACE2 and ADAM17 regulation by adipogenesis in epicardial fat stromal cells"
+        },
+        {
+            "text": "Epicardial and subcutaneous stromal vascular cells from 4 nondiabetic patients were cultured on 24-multiwell plates. Four wells were used for each treatment, and RNA expression analysis and soluble ACE2 determination were performed after following treatments: antidiabetic drugs insulin (100 nmol/L), metformin (200 nmol/L) or thiazolidinedione at 1 \u00b5mol/L 12 in M199 medium. After a 24-hour treatment, RNA and expression levels of ACE1, ACE2 and ADAM17 were analysed by real-time PCR. Supernatants from each treatment and primary culture were concentrated 20\u00d7 with Amicon filters 3 kDa (Merck Life Science SLU), and soluble ACE2 was determined by ELISA (OriGene Technologies, Inc) with a sensitivity < 10 pg/mL.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| ACE1, ACE2 and ADAM17 regulation by adipogenesis in epicardial fat stromal cells"
+        },
+        {
+            "text": "Continuous data with normal distribution were expressed as mean \u00b1 standard deviation (SD) and skewed data as median [interquartile range (IQR)]. Comparison between epicardial and subcutaneous fat was performed by paired Student's t test in normal distribution data and Wilcoxon's signed-rank test in skewed data. Comparisons between diabetic and nondiabetic groups were performed by unpaired Student's t test in variables with normal distribution and the Mann-Whitney test in those skewed. Categorical variables were presented as sample size (n) or percentage. Differences between diabetic and nondiabetic groups were performed with Pearson's chi-square test. Logistic regression analysis was used for determining the main associated factors with ACE2 and ADAM17 levels in epicardial fat. Data were represented with \u03b2-coefficient [95% confidence interval]. The regulation of genes by drugs was analysed by comparison among groups with ANOVA or Friedman's test and Dunn's post hoc test. Statistical Package for Social Science (SPSS) for Windows, version 15.0 (software SPSS Inc) package, was used for all statistical analyses. Statistical significance was defined as P < .05.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| Statistical analysis"
+        },
+        {
+            "text": "Epicardial and subcutaneous adipose tissue from patients with cardiovascular disease (70 \u00b1 0.80 years old, 30 \u00b1 0.95 kg/m 2 , 69% male, 86% with hypertension, 41% with type 2 diabetes mellitus (T2DM) and 14% with heart failure) expressed ACE1, ACE2 and ADAM17. Similar levels between both tissues were defined for ACE1 (1.66 \u00b1 0.04 in SAT vs 1.67 \u00b1 0.05 in EAT). However, ACE2 levels were higher in epicardial (1. Figure 1A ). We have included in a logistic regression analysis, hypertension, gender (male), heart failure and T2DM for determining the best associated factor with ACE2 levels on epicardial fat. Our results showed that type 2 diabetes mellitus (T2DM) was the best associated factor with ACE2 levels (0.456 [0.097-0.535], P < .01) ( Figure 1C ). This effect was not detected in subcutaneous fat biopsies ( Figure 1B) . Diabetes is associated with obesity. Then, we split patients attending obesity and/ or T2DM presence. Our results showed that a higher ACE2 expression levels in patients with obesity and diabetes in both subcutaneous (1. Figure 1D ). After testing the differential clinical characteristics between patients with and without T2DM, we observed that the antidiabetic drug intake (metformin or insulin) was the only significantly different one ( Table 2) .",
+            "cite_spans": [
+                {
+                    "start": 410,
+                    "end": 413,
+                    "text": "(1.",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 414,
+                    "end": 423,
+                    "text": "Figure 1A",
+                    "ref_id": null
+                },
+                {
+                    "start": 747,
+                    "end": 756,
+                    "text": "Figure 1C",
+                    "ref_id": null
+                },
+                {
+                    "start": 820,
+                    "end": 830,
+                    "text": "Figure 1B)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1054,
+                    "end": 1063,
+                    "text": "Figure 1D",
+                    "ref_id": null
+                },
+                {
+                    "start": 1275,
+                    "end": 1283,
+                    "text": "Table 2)",
+                    "ref_id": null
+                }
+            ],
+            "section": "| ACE1, ACE2 and ADAM17 on epicardial and subcutaneous adipose tissue"
+        },
+        {
+            "text": "We have also analysed ACE2 and ADAM17 mRNA expression levels on ACE inhibitor (ACEi) or blocker (ARB)treated patients with and without diabetes. Our results showed that those patients without ACEi treatment expressed ACE2 (1. Sig. ACE2 in subcutaneous stromal cells was low or undetectable ( Figure 2B ).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 292,
+                    "end": 301,
+                    "text": "Figure 2B",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "| ACE1, ACE2 and ADAM17 on epicardial and subcutaneous adipose tissue"
+        },
+        {
+            "text": "The antidiabetic treatment of the patients who were included in the study was metformin or insulin. We wanted to test whether these drugs regulate the expression levels of these genes. We have included also thiazolidinedione, which was demonstrated to upregulate ACE2 expression in hepatic cells from rats. 21 We observed a downregulation of ACE1 by insulin in epicardial fat (1.67 \u00b1 0.03 vs 1.72 \u00b1 0.02 a.u., P < .05) ( Figure 3B) . None of the other treatments (metformin, Insulin or thiazolidinedione) modified ACE1 or ADAM 17 ( Figure 3A,B) . ACE2 expression but not soluble levels were downregulated by insulin in epicardial stromal cells (1.56 \u00b1 0.02 vs 1.60 \u00b1 0.02 a.u.; P < .05) ( Figure 4A,B) . In addition, the expression levels of ACE2 in these cells were not correlated with the soluble ACE2 levels with or without treatment.",
+            "cite_spans": [
+                {
+                    "start": 307,
+                    "end": 309,
+                    "text": "21",
+                    "ref_id": "BIBREF20"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 421,
+                    "end": 431,
+                    "text": "Figure 3B)",
+                    "ref_id": null
+                },
+                {
+                    "start": 532,
+                    "end": 544,
+                    "text": "Figure 3A,B)",
+                    "ref_id": null
+                },
+                {
+                    "start": 689,
+                    "end": 701,
+                    "text": "Figure 4A,B)",
+                    "ref_id": null
+                }
+            ],
+            "section": "| ACE1, ACE2 and ADAM17 regulation by antidiabetic drugs"
+        },
+        {
+            "text": "One of the main SARS-CoV-2 receptors is ACE2. 22 The virus tropism by ACE2 expression in cells can increment its replication and infectivity. However, the soluble ACE2 might be a virus decoy and prevent its binding and replication in cells. 23 One of the main enzymes that regulates the ACE2 cleavage is ADAM17. 24 This enzyme also sheds the tumour necrosis factor-\u03b1 (TNF-\u03b1) which might explain its anti-inflammatory 25 and antiatherogenic role. 26 Patients with obesity and cardiovascular disease are more vulnerable to COVID-19. 27 The interplay between epicardial fat and cardiovascular disease is already known, 28 and its differential behaviour regarding subcutaneous adipose tissue 29 might justify the findings of SARS-CoV-2 in heart. 30 For the first time, our results show differential expression levels between epicardial and subcutaneous fat regarding ACE2 and ADAM17. In fact, ACE2 was even undetectable in the majority of subcutaneous fat samples. Similarly, low levels of this gene were also described in subcutaneous adipocytes from animals models. 31 The ACE2 and ADAM17 arise might counterbalance the proinflammatory profile on epicardial fat stromal cells from patients with cardiovascular disease. 32 After testing MCP-1, IL-6 and TNFa mRNA expression levels on these cells, we observed a similar profile with ACE2 levels. These results might suggest a co-regulation among ACE2 and inflammatory genes ( Figure  S1 ). While ACE2 and ADAM17 might protect against the inflammation, they are also involved in the viral infection, specifically ACE2. After testing the main risk factors associated with COVID-19 in patients with cardiovascular disease (gender (male), hypertension, heart failure or diabetes), 33 we observed that diabetes was the main contributor to high ACE2 expression levels in epicardial fat tissue. Because the diabetic patients with obesity expressed higher levels of ACE2 than those without obesity, we could suggest that both factors, in addition to cardiovascular disease, contribute to the SARS-CoV-2 receptor levels in epicardial fat. These results might be one explanation of the higher risk of viral infection in patients with T2DM, obesity and cardiovascular disease. Previous findings described that cardiomyocytes, more than fibroblasts, endothelial cells or pericytes express ACE2. 34 Its levels are upregulated in failing hearts, dilated cardiomyopathy or hypertrophic cardiomyopathy 35, 36 and are higher in treated patients with ACE inhibitors compared with ARB-treated patients. 34 While the ACE2 expression levels can be used as receptor by SARS-CoV-2 on myocardium, its deficiency after infection can also develop and induce the progression of myocardial dysfunction. In addition, our results showed a higher ACE2 mRNA expression level on epicardial fat from ARB-diabetic patients than those without treatment. However, similar levels were detected between ACEi-treated and nontreated diabetic patients. These results suggest an ACE2 regulation in an angiotensin II level-independent manner and a differential behaviour between epicardial and myocardium in these patients. We also found higher expression levels of ADAM17 in patients with diabetes. Some authors have already described that this metallopeptidase is upregulated in diabetes and is involved in the impaired insulin signalling. 40 In this sense, it might explain the higher insulin resistance in epicardial regarding subcutaneous fat from patients with cardiovascular disease. 20 In spite of this, insulin treatment was able to downregulate ACE1 and ACE2 expression levels in epicardial stromal cells which might modulate the renin-angiotensin system in obesity. 41 Therefore, insulin or metformin was not able to increase them. These results indicate that the ACE2 upregulation in epicardial fat from obese and diabetic patients is not dependent on antidiabetic drugs intake. The adipose tissue remodelling and cellular composition on obesity and diabetes 41 might explain the higher ACE2 expression levels in epicardial fat and its viral infection risk. Although the soluble ACE2 levels might reduce the SARS-CoV-2 binding to epicardial cells, further studies need to be demonstrated. Additional approaches not only will help us to understand the virus tropism into epicardial fat, as infection risk, but also will help us to understand how this tissue emphasize the IL-6 levels and the COVID-19 severity 42 after viral infection.",
+            "cite_spans": [
+                {
+                    "start": 46,
+                    "end": 48,
+                    "text": "22",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 241,
+                    "end": 243,
+                    "text": "23",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 312,
+                    "end": 314,
+                    "text": "24",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 417,
+                    "end": 419,
+                    "text": "25",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 446,
+                    "end": 448,
+                    "text": "26",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 531,
+                    "end": 533,
+                    "text": "27",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 742,
+                    "end": 744,
+                    "text": "30",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 1064,
+                    "end": 1066,
+                    "text": "31",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 1217,
+                    "end": 1219,
+                    "text": "32",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 1723,
+                    "end": 1725,
+                    "text": "33",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 2329,
+                    "end": 2331,
+                    "text": "34",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 2432,
+                    "end": 2435,
+                    "text": "35,",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 2436,
+                    "end": 2438,
+                    "text": "36",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 2530,
+                    "end": 2532,
+                    "text": "34",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 3344,
+                    "end": 3346,
+                    "text": "40",
+                    "ref_id": "BIBREF39"
+                },
+                {
+                    "start": 3493,
+                    "end": 3495,
+                    "text": "20",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 3679,
+                    "end": 3681,
+                    "text": "41",
+                    "ref_id": "BIBREF40"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1422,
+                    "end": 1432,
+                    "text": "Figure  S1",
+                    "ref_id": null
+                }
+            ],
+            "section": "| DISCUSSION"
+        },
+        {
+            "text": "Plasma or myocardium biopsy from the same patients was not obtained, and plasma-soluble ACE2 was not quantified neither ACE2 mRNA expression levels on myocardium. Small biopsies and low proliferation rate of stromal vascular did not allow us to perform many treatment combination. In addition, low number of stromal cells on each treatment did not allow us to detect by Western blot the ACE2 protein levels. We show mRNA levels which were detected by the real-time PCR. Although higher epicardial fat amount might be associated with higher ACE2 expression, we cannot get these data. The main antidiabetic treatment of the patients was insulin or metformin, but other antidiabetic drugs might modulate the ACE2 levels. ACE2 regulation by antidiabetic drugs was performed in stromal vascular cells from 4 patients without diabetes. The response might differ between samples with and without insulin resistance.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| Limitations"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Risk of COVID-19 for patients with obesity",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Kassir",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Obes Rev",
+            "volume": "21",
+            "issn": "6",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Presenting characteristics, comorbidities, and outcomes among 5700 patients hospitalized with COVID-19 in the New York City area",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Richardson",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Hirsch",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Narasimhan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "JAMA",
+            "volume": "323",
+            "issn": "20",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "High prevalence of obesity in severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2) requiring invasive mechanical ventilation",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Simonnet",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Chetboun",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Poissy",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Obesity",
+            "volume": "28",
+            "issn": "7",
+            "pages": "1195--1199",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Does epicardial fat contribute to COVID-19 myocardial inflammation?",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Malavazos",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Goldberger",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Iacobellis",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Eur Heart J",
+            "volume": "41",
+            "issn": "24",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/eurheartj/ehaa190"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "A novel angiotensin-converting enzyme-related carboxypeptidase (ACE2) converts angiotensin I to angiotensin 1-9",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Donoghue",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Hsieh",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Baronas",
+                    "suffix": ""
+                }
+            ],
+            "year": 2000,
+            "venue": "Circ Res",
+            "volume": "87",
+            "issn": "5",
+            "pages": "1--9",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "ACE2 deficiency worsens epicardial adipose tissue inflammation and cardiac dysfunction in response to diet-induced obesity",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Patel",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Mori",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Mclean",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Diabetes",
+            "volume": "65",
+            "issn": "1",
+            "pages": "85--95",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Organ-specific distribution of ACE2 mRNA and correlating peptidase activity in rodents",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Gembardt",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Sterner-Kock",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Imboden",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Peptides",
+            "volume": "26",
+            "issn": "7",
+            "pages": "1270--1277",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "SARS-coronavirus modulation of myocardial ACE2 expression and inflammation in patients with SARS",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Oudit",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Kassiri",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Jiang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Eur J Clin Invest",
+            "volume": "39",
+            "issn": "7",
+            "pages": "618--625",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "ACE2 gene expression is up-regulated in the human failing heart",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Goulter",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Goddard",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Allen",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Clark",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "BMC Med",
+            "volume": "2",
+            "issn": "",
+            "pages": "2--19",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "ACE and ACE2: a tale of two enzymes",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Zisman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Eur Heart J",
+            "volume": "26",
+            "issn": "4",
+            "pages": "322--324",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Loss of angiotensin-converting enzyme 2 accelerates maladaptive left ventricular remodeling in response to myocardial infarction",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Kassiri",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhong",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Guo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Circ Heart Fail",
+            "volume": "2",
+            "issn": "5",
+            "pages": "446--455",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "ACE2 is expressed in mouse adipocytes and regulated by a high-fat diet",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Gupte",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Boustany-Kari",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Bharadwaj",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Am J Physiol Regul Integr Comp Physiol",
+            "volume": "295",
+            "issn": "3",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Mas deficiency in FVB/N mice produces marked changes in lipid and glycemic metabolism",
+            "authors": [
+                {
+                    "first": "Shs",
+                    "middle": [],
+                    "last": "Santos",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Fernandes",
+                    "suffix": ""
+                },
+                {
+                    "first": "\u00c9",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Mario",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Diabetes",
+            "volume": "57",
+            "issn": "2",
+            "pages": "340--347",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Angiotensin converting enzyme-2 confers endothelial protection and attenuates atherosclerosis",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Lovren",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Pan",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Quan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Am J Physiol Heart Circ Physiol",
+            "volume": "295",
+            "issn": "4",
+            "pages": "1377--1384",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Epicardial adipose tissue: fuel for COVID-19-induced cardiac injury?",
+            "authors": [
+                {
+                    "first": "I-C",
+                    "middle": [],
+                    "last": "Kim",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Han",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Eur Heart J",
+            "volume": "41",
+            "issn": "",
+            "pages": "2334--2335",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Targeting the adipose tissue in COVID-19",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Malavazos",
+                    "suffix": ""
+                },
+                {
+                    "first": "Corsi",
+                    "middle": [],
+                    "last": "Romanelli",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Bandera",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Iacobellis",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Obesity",
+            "volume": "28",
+            "issn": "7",
+            "pages": "1178--1179",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Angiotensin-converting enzyme 2: SARS-CoV-2 receptor and regulator of the renin-angiotensin system: celebrating the 20th anniversary of the discovery of ACE2",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Gheblawi",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Viveiros",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Circ Res",
+            "volume": "126",
+            "issn": "",
+            "pages": "1456--1474",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Angiotensin II induced proteolytic cleavage of myocardial ACE2 is mediated by TACE/ADAM-17: a positive feedback mechanism in the RAS",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Patel",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Clarke",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "J Mol Cell Cardiol",
+            "volume": "66",
+            "issn": "",
+            "pages": "167--176",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Effects of dapagliflozin on human epicardial adipose tissue: modulation of insulin resistance, inflammatory chemokine production, and differentiation ability",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "D\u00edaz-Rodr\u00edguez",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Agra",
+                    "suffix": ""
+                },
+                {
+                    "first": "\u00c1",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Fern\u00e1ndez",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Cardiovasc Res",
+            "volume": "114",
+            "issn": "2",
+            "pages": "336--346",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Impaired adipogenesis and insulin resistance in epicardial fat-mesenchymal cells from patients with cardiovascular disease",
+            "authors": [
+                {
+                    "first": "\u00c1",
+                    "middle": [],
+                    "last": "Fern\u00e1ndez-Trasancos",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Fandi\u00f1o-Vaquero",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Agra",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "J Cell Physiol",
+            "volume": "229",
+            "issn": "11",
+            "pages": "1722--1730",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Pioglitazone upregulates angiotensin converting enzyme 2 expression in insulin-sensitive tissues in rats with high-fat diet-induced nonalcoholic steatohepatitis",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y-Z",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "ScientificWorldJournal",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "A pneumonia outbreak associated with a new coronavirus of probable bat origin",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "X"
+                    ],
+                    "last": "Lou",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nature",
+            "volume": "579",
+            "issn": "7798",
+            "pages": "270--273",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Angiotensin-converting enzyme 2 is a functional receptor for the SARS coronavirus",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Moore",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Vasllieva",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "Nature",
+            "volume": "426",
+            "issn": "6965",
+            "pages": "450--454",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "TMPRSS2 and ADAM17 cleave ACE2 differentially and only proteolysis by TMPRSS2 augments entry driven by the severe acute respiratory syndrome coronavirus spike protein",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Heurich",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Hofmann-Winkler",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Gierer",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Liepold",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Jahn",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Pohlmann",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "J Virol",
+            "volume": "88",
+            "issn": "2",
+            "pages": "1293--1307",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "ADAM17 at the interface between inflammation and autoimmunity",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Lisi",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "&apos;amore",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Sisto",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Immunol Lett",
+            "volume": "162",
+            "issn": "1",
+            "pages": "159--169",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "ADAM17: a molecular switch to control TNFR2 during atherogenesis in vivo",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Jia",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Kong",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Arterioscler Thromb Vasc Biol",
+            "volume": "37",
+            "issn": "2",
+            "pages": "176--178",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Obesity, the most common comorbidity in SARS-CoV-2: is leptin the link?",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Rebello",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Kirwan",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Greenway",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Int J Obes",
+            "volume": "44",
+            "issn": "9",
+            "pages": "1810--1817",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Epicardial fat in the maintenance of cardiovascular health",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Hamilton",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Deng",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Methodist DeBakey Cardiovasc J",
+            "volume": "13",
+            "issn": "1",
+            "pages": "20--24",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Proteomic analysis of epicardial and subcutaneous adipose tissue reveals differences in proteins involved in oxidative stress",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Salgado-Somoza",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Teijeira-Fern\u00e1ndez",
+                    "suffix": ""
+                },
+                {
+                    "first": "\u00c1",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Fern\u00e1ndez",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Gonz\u00e1lez-Juanatey",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Eiras",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Am J Physiol Heart Circ Physiol",
+            "volume": "",
+            "issn": "1",
+            "pages": "202--209",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Histopathology and ultrastructural findings of fatal COVID-19 infections in Washington State: a case series",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Bradley",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Maioli",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Johnston",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet",
+            "volume": "396",
+            "issn": "",
+            "pages": "320--332",
+            "other_ids": {}
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Characterization of key genes of the renin-angiotensin system in mature feline adipocytes and during in vitro adipogenesis",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Riedel",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Badewien-Rentzsch",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Kohn",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Hoeke",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Einspanier",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "J Anim Physiol Anim Nutr (Berl)",
+            "volume": "100",
+            "issn": "6",
+            "pages": "1139--1148",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Inflammatory and lipid regulation by cholinergic activity in epicardial stromal cells from patients who underwent open-heart surgery",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Couselo-Seijas",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Lopez-Canoa",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Fernandez",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Cell Mol Med",
+            "volume": "24",
+            "issn": "18",
+            "pages": "10958--10969",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Endothelial dysfunction in Coronavirus disease 2019 (COVID-19): gender and age influences",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Froldi",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Dorigo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Med Hypotheses",
+            "volume": "144",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Cell type-specific expression of the putative SARS-CoV-2 receptor ACE2 in human hearts",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Nicin",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Abplanalp",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Mellentin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Eur Heart J",
+            "volume": "41",
+            "issn": "",
+            "pages": "1804--1806",
+            "other_ids": {}
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Myocyte-specific upregulation of ACE2 in cardiovascular disease: implications for SARS-CoV-2-mediated myocarditis",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Tucker",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Chaffin",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Bedi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Circulation",
+            "volume": "142",
+            "issn": "7",
+            "pages": "708--710",
+            "other_ids": {}
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "The ACE2 expression in human heart indicates new potential mechanism of heart injury among patients infected with SARS-CoV-2",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Feng",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Xiong",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Cardiovasc Res",
+            "volume": "116",
+            "issn": "6",
+            "pages": "1097--1100",
+            "other_ids": {}
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Are patients with hypertension and diabetes mellitus at increased risk for COVID-19 infection?",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Fang",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Karakiulakis",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Roth",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet Respir Med",
+            "volume": "8",
+            "issn": "4",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Angiotensin-converting enzyme 2 is an essential regulator of heart function",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Crackower",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Sarao",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Oliveira-Dos-Santos",
+                    "suffix": ""
+                },
+                {
+                    "first": "Da",
+                    "middle": [],
+                    "last": "Costa",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "Nature",
+            "volume": "417",
+            "issn": "6891",
+            "pages": "822--828",
+            "other_ids": {}
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "Angiotensin-converting enzyme-2 overexpression improves left ventricular remodeling and function in a rat model of diabetic cardiomyopathy",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Dong",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Dai",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "J Am Coll Cardiol",
+            "volume": "59",
+            "issn": "8",
+            "pages": "739--747",
+            "other_ids": {}
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "ADAM17 and impaired endothelial insulin signaling in type 2 diabetes",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Restaino",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Castorena-Gonzalez",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Marshall",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Padilla",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Martinez-Lemus",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "FASEB J",
+            "volume": "31",
+            "issn": "",
+            "pages": "837--849",
+            "other_ids": {}
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Protecting the heart in obesity: role of ACE2 and its partners",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Touyz",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Diabetes",
+            "volume": "65",
+            "issn": "1",
+            "pages": "19--21",
+            "other_ids": {}
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "COVID-19 and the cardiovascular system: implications for risk assessment, diagnosis, and treatment options",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Guzik",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Mohiddin",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Dimarco",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Cardiovasc Res",
+            "volume": "116",
+            "issn": "",
+            "pages": "1666--1687",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Adipogenesis on ACE1, ACE2 and ADAM17 from epicardial fat stromal cells Epicardial stromal vascular cells from 3 independent patients (68 \u00b1 15 years old, 33 \u00b1 7.3 kg/m 2 , two of them had hypertension and T2DM) were or not submitted to adipogenesis induction for 21 days. Afterwards ACE1, ACE2 and ADAM17 expression levels were analysed. We observed expression of all genes in stromal vascular cells which did not differ with statistical significance after adipogenesis induction(Figure 2A), although ACE2 expression levels tended to be higher in adipogenized cells (1.71 \u00b1 0.07 vs 1.55 \u00b1 0.07, P = .203).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "I G U R E 1 ACE1, ACE2 and ADAM17 gene expression in human adipose tissue explants. Angiotensin II-converting enzyme (ACE1), angiotensin II-converting enzyme (ACE2) and ADAM metallopeptidase domain 17 (ADAM17) mRNA expressions in paired subcutaneous (SAT) and epicardial adipose tissue (EAT) explants from 36 patients. Whisker bars with dot plots represent median with interquartile range and individual values. Statistical significance analysed by Wilcoxon's rank test is depicted as *P < .05 and ***P < .001 (A). ACE1, ACE2 and ADAM17 regarding type 2 diabetes mellitus (T2DM) in paired SAT (B) and EAT explants (C). ACE2 mRNA expression attending obesity and T2DM presence (D). Whisker bars with dot plots represent median with interquartile range and individual values. Statistical significance analysed by Mann-Whitney's test is depicted as *P < .05 T A B L E 1 Logistic regression analysis of the best predictor for ACE2 in epicardial fat",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "ACE1, ACE2 and ADAM17 gene expression in human adipose tissue stromal vascular cells (SVC). Angiotensin II-converting enzyme (ACE1), angiotensin II-converting enzyme (ACE2) and ADAM metallopeptidase domain 17 (ADAM17) mRNA expressions in epicardial adipose tissue (EAT) SVC adipogenized or not with an insulin, dexamethasone, 3-isobutyl-1-methylxanthine and thiazolidinedione (IDMT) cocktail from 3 patients (B). ACE1, ACE2 and ADAM17 mRNA expression comparison between SAT and EAT SVC (A). Comparison between subcutaneous adipose tissue (SAT) and EAT SVC (B). Whisker bars with dot plots represent median with interquartile range and individual values",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF1": {
+            "text": ". Thus, ACE2 and ADAM17 levels in epicardial fat biopsies were higher in patients with than without T2DM (1.62 [1.50-2.28] vs 1.52 [1.49-1.55] a.u., P = .05 for ACE2 and 1.68 [1.66-1.78] vs 1.66 [1.63-1.69] a.u., P < .05 for ADAM17) (",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "56 [1.52-2.34] vs 1.49 [1.48-1.51] a.u., P = .0018) and epicardial (1.63 [1.53-2.28] vs 1.52 [1.49-1.55] a.u., P = .0073) fat tissues (",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF3": {
+            "text": "53 [1.49-1.69 a.u.]) and ADAM17 (1.67 [1.65-1.76 a.u.]) in epicardial fat samples. Similar levels were detected in samples from patients who were taken ACEi 1.53 [1.51-1.56 a.u.] for ACE2 and 1.68 [1.65-1.70 a.u.] for ADAM17. ACE2 levels in epicardial fat from patients without ARB treatment were 1.53 [1.50-1.55 a.u.] for ACE2 and 1.67 [1.65-1.69 a.u.] for ADAM17. Similar levels were also detected in samples from patients who were taken ARB (1.57 [1.49-1.74 a.u.] for ACE2 and 1.67 [1.65-1.76 a.u.] for ADAM17). However, as can be seen in Table 2, diabetic patients who were taken ARB expressed higher levels of ACE2 and ADAM17 than those without diabetes 1.71 [1.59-2.40] for ACE2 and 1.66 [1.76-1.80] for ADAM17 vs. 1.49 [1.48-1.55] for ACE2 and 1.66 [1.63-1.67] for ADAM17, P < .05. Any differences were found regarding ACEi and diabetes.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF6": {
+            "text": "this sense, ACE2 overexpression, in an animal model with diabetic cardiomyopathy, attenuates myocyte hypertrophy, myocardial fibrosis and left ventricle remodelling. Besides, it improved left ventricle systolic and diastolic function. 39 F I G U R E 3 ACE1 and ADAM17 mRNA expression levels in human adipose tissue stromal vascular cells (SVC) after selected drug treatments. Angiotensin II-converting enzyme (ACE1) (A) and ADAM metallopeptidase domain 17 (ADAM17) (B) mRNA expressions in paired subcutaneous (SAT) (left) and epicardial adipose tissue (right) stromal vascular cells (SVC) after a 24-h treatment with insulin (100 nmol/L), metformin (200 nmol/L) and thiazolidinedione (1 \u00b5mol/L) from 4 nondiabetic patients. Whisker bars with dot plots represent median with interquartile range and individual values. The statistical significance among treatments was analysed by ANOVAs. Friedman's test result is depicted as a P-value within a box, and Dunn's post hoc test results are depicted as # P < .05 and ## P < .01",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "We would like to thank all patients who participate in the study and the institutions who supported the study Fondo de Investigaciones Sanitarias (PI19/01330) from Plan Estatal de I+D+I 2019-2023 and cofunded by ISCIII-Subdirecci\u00f3n General de Evaluaci\u00f3n y Fomento de la Investigaci\u00f3n el Fondo Europeo de Desarrollo Regional (FEDER), Conseller\u00eda de Econom\u00eda, Emprego e Industria (IN607B 2019/02), SERGAS and Health Research Institute of Santiago de Compostela (IDIS).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "ACKNOWLEDGEMENTS"
+        },
+        {
+            "text": "Nothing to declare.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "CONFLICT OF INTERESTS"
+        },
+        {
+            "text": "All authors have contributed substantially to the design, performance, analysis and reporting of the manuscript. MCS, EA and SE have designed the research and experiments. MCS and C.A performed the experimental procedures. ALF and JRGJ contributed to the sample obtaining and data collection. All authors contributed to the data analysis and manuscript redaction.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "AUTHOR CONTRIBUTION"
+        },
+        {
+            "text": "https://orcid. org/0000-0001-6548-477X Sonia Eiras https://orcid.org/0000-0001-7200-253X",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Marinela Couselo-Seijas"
+        }
+    ]
+}

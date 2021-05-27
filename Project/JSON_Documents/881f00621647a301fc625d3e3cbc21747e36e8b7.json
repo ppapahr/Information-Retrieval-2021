@@ -1,0 +1,2268 @@
+{
+    "paper_id": "881f00621647a301fc625d3e3cbc21747e36e8b7",
+    "metadata": {
+        "title": "Immunogenicity of gold nanoparticle-based truncated ORF2 vaccine in mice against Hepatitis E virus",
+        "authors": [
+            {
+                "first": "Rani",
+                "middle": [],
+                "last": "Dibya",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Baibaswata",
+                "middle": [],
+                "last": "Nayak",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Sudha",
+                "middle": [],
+                "last": "Srivastava",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "This study presents nanoparticle-based vaccine development for Hepatitis E virus (HEV). Gold nanoparticles (GNP) of average size 12 nm were synthesized by citrate reduction method followed by functionalization with cysteamine hydrochloride for nano-conjugation. Immune response of nano-conjugates of GNP with 26 kDa protein (368-606 amino acids) and 54 kDa protein (112-606 amino acids) were evaluated. In vitro release kinetics of GNP-conjugated 54 kDa (GNP54) and 26 kDa (GNP26) proteins showed slower rate of release of 54 kDa protein as compared to 26 kDa protein. Humoral immune response of mice immunized intramuscularly with GNP54, GNP26 and GNP alone, exhibited HEV-specific IgG titer of 7.9 \u00b1 2.9, 5.686 \u00b1 4.098 and 0.698 \u00b1 0.089, respectively, after 14 days of booster immunization. In addition to this, HEV-specific cellmediated immune response was demonstrated by splenocyte proliferation assay. Analysis of results using one-way ANOVA, showed statistically significant (p value < 0.05) increase in splenocyte proliferation for GNP54-and GNP26-immunized mice in comparison to GNP alone immunized mice. Stimulation index of HEV ORF2 proteins in GNP54/GNP26-immunized mice were comparable to Concanavalin A-treated positive control. These results indicate GNP-based vaccine as a promising candidate for efficiently mediating both humoral and cell-mediated immune response against HEV.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "HEV is a quasi-enveloped single-stranded, positive sense RNA virus of approximately 27-34 nm in size, which belongs to the genus Orthohepevirus of family Hepeviridae (Yin et al. 2016; Himmelsbach et al. 2018) . HEV is responsible for large outbreaks and sporadic cases of acute hepatitis in developing and developed countries (Zhang 2016) . Hepatitis E is considered as a self-limiting disease which resolves within 4-6 weeks and mortality rate is low (0.5-3%). However, in case of pregnant women during the third trimester, mortality rates as high as 30% have been observed (P\u00e9rez-Gracia et al. 2017) . HEV is also responsible for fulminant hepatitis, acute liver failure (ALF), acute or chronic liver failure (ACLF) and chronic infection in immune-compromised and transplant patients (Kumar et al. 2013) .",
+            "cite_spans": [
+                {
+                    "start": 166,
+                    "end": 183,
+                    "text": "(Yin et al. 2016;",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 184,
+                    "end": 208,
+                    "text": "Himmelsbach et al. 2018)",
+                    "ref_id": null
+                },
+                {
+                    "start": 326,
+                    "end": 338,
+                    "text": "(Zhang 2016)",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 575,
+                    "end": 601,
+                    "text": "(P\u00e9rez-Gracia et al. 2017)",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 786,
+                    "end": 805,
+                    "text": "(Kumar et al. 2013)",
+                    "ref_id": "BIBREF16"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The size of HEV genome is approximately 7.2 kb and encodes three open reading frames (ORFs) (Tam et al. 1991) . ORF1 is the largest ORF which encodes for nonstructural polyprotein including viral polymerase (RdRp) through cap-mediated translation. The ORF2 encodes for structural viral protein and smallest ORF3 overlaps with ORF1 and ORF2, are translated from subgenomic RNA. Recently discovered ORF4 is produced through IRES-mediated translation (Nair et al. 2016) . The major viral capsid protein ORF2 is immunogenic and considered as candidate for vaccine development. The structural protein ORF2 is 660 amino acid long and mammalian expression of pORF2 plasmid-produced bands of sizes ~ 74 kDa and ~ 88 kDa corresponding to non-glycosylated and glycosylated forms, respectively (Jameel et al. 1996) . There are three functional domains, S (shell), M (middle), and P (protruding) as evidenced in the X-ray crystal structure of pORF2 and the P domain is the putative binding site for both neutralizing antibody and cellular receptor (Yamashita et al. 2009 ). There is no commercially available vaccine against HEV and antiviral treatment is not considered as standard care for acute viral hepatitis. For recombinant vaccine development, efforts made till date focused mostly on ORF2 capsid protein. This includes mostly truncated forms of ORF2 protein such as trpE-C2 (aa 221-660) (Purdy et al. 1993) , pE2 (aa 394-607) (Im et al. 2001) , HEV 239 (aa 368-606) (Zhang et al. 2013) , 53 kDa (aa 112-578) , 56 kDa (aa 112-607) (Zhang et al. 2002) , 62 kDa (aa 112-660), rHEV VLP (aa 112-608) (Li et al. 2004 ) and T1-ORF2 (aa 126-621) (Huang et al. 2009 ) vaccines. Among these, only two vaccine candidates (HEV 239 and 56 kDa) have been tested for human clinical trials .",
+            "cite_spans": [
+                {
+                    "start": 92,
+                    "end": 109,
+                    "text": "(Tam et al. 1991)",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 448,
+                    "end": 466,
+                    "text": "(Nair et al. 2016)",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 783,
+                    "end": 803,
+                    "text": "(Jameel et al. 1996)",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 1036,
+                    "end": 1058,
+                    "text": "(Yamashita et al. 2009",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 1384,
+                    "end": 1403,
+                    "text": "(Purdy et al. 1993)",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 1423,
+                    "end": 1439,
+                    "text": "(Im et al. 2001)",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 1463,
+                    "end": 1482,
+                    "text": "(Zhang et al. 2013)",
+                    "ref_id": "BIBREF38"
+                },
+                {
+                    "start": 1527,
+                    "end": 1546,
+                    "text": "(Zhang et al. 2002)",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 1592,
+                    "end": 1607,
+                    "text": "(Li et al. 2004",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 1635,
+                    "end": 1653,
+                    "text": "(Huang et al. 2009",
+                    "ref_id": "BIBREF11"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Recombinant subunit vaccines based on protein antigens are poorly immunogenic when used alone, therefore, require adjuvants to increase the immune response (Cao et al. 2018 ). Among all commonly used adjuvant, alum is the only licensed adjuvant for human use (Gupta 1998) . However, side effects and safety concerns have been reported for alum as adjuvants (Tomljenovic and A. Shaw 2011). Hence, there is a need of effective adjuvant for vaccine development (Gherardi et al. 2001) . Nanoparticle-based platforms displaying subunit antigenic moieties are now considered novel alternative approach of vaccination. Nanoparticles are useful in both parenteral and mucosal (oral and intranasal) immunization as it can penetrate through capillaries as well as mucosal surfaces (Schneider et al. 2017 ). Polymeric as well as inorganic nanoparticles have been used for vaccination because they act as inert carriers of antigen against which no immune response is elicited (Dhas et al. 2014; Karthick et al. 2020) . The most common inorganic nanoparticle used for vaccination is gold nanoparticles (GNPs), which can act as both adjuvant as well as delivery vehicle (Quach et al. 2018) . The GNPs are biocompatible, nontoxic and enhances immunogenic activity due to its rapid internalization by macrophages and dendritic cells (Bast\u00fas et al. 2009; Kang et al. 2017) . GNPs have inherent properties of an adjuvant, at the same time colloidal gold along with antigen can induce high titer antibody response (Dykman and Khlebtsov 2017; Dykman et al. 2018) . Antigen incorporation in/on nanoparticles can be achieved by encapsulation or physical entrapment and by conjugation or covalent functionalization (Chattopadhyay et al. 2017) . The GNPs can be designed in different shape and sizes such as nanospheres, nanorods, nanoshells (core and shell), and nanostars-which influences immune response (Dykman et al. 2018 , Niikura et al. 2013 . Conjugation of GNPs with the antigens has been reported by several researcher for immunization studies against viral diseases such as Foot and mouth disease virus (Chen et al. 2010) , Influenza virus, West Nile fever virus and Hepatitis B virus (Dykman 2020) . For Hepatitis E virus, use of gold fluorescent nanoclusters were reported earlier for tracking the dynamic behavior of vaccine in vivo and its immune response (Wang et al. 2016 ).",
+            "cite_spans": [
+                {
+                    "start": 156,
+                    "end": 172,
+                    "text": "(Cao et al. 2018",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 259,
+                    "end": 271,
+                    "text": "(Gupta 1998)",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 458,
+                    "end": 480,
+                    "text": "(Gherardi et al. 2001)",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 771,
+                    "end": 793,
+                    "text": "(Schneider et al. 2017",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 964,
+                    "end": 982,
+                    "text": "(Dhas et al. 2014;",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 983,
+                    "end": 1004,
+                    "text": "Karthick et al. 2020)",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 1156,
+                    "end": 1175,
+                    "text": "(Quach et al. 2018)",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 1317,
+                    "end": 1337,
+                    "text": "(Bast\u00fas et al. 2009;",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 1338,
+                    "end": 1355,
+                    "text": "Kang et al. 2017)",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 1495,
+                    "end": 1522,
+                    "text": "(Dykman and Khlebtsov 2017;",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 1523,
+                    "end": 1542,
+                    "text": "Dykman et al. 2018)",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 1692,
+                    "end": 1719,
+                    "text": "(Chattopadhyay et al. 2017)",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 1883,
+                    "end": 1902,
+                    "text": "(Dykman et al. 2018",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 1903,
+                    "end": 1924,
+                    "text": ", Niikura et al. 2013",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 2090,
+                    "end": 2108,
+                    "text": "(Chen et al. 2010)",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 2172,
+                    "end": 2185,
+                    "text": "(Dykman 2020)",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 2347,
+                    "end": 2364,
+                    "text": "(Wang et al. 2016",
+                    "ref_id": "BIBREF32"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "In the present study, we have synthesized GNPs by citrate reduction method (Turkevich et al. 1951 ) followed by coating with cysteamine hydrochloride. These GNPs were conjugated with two bacterially expressed truncated HEV ORF2 proteins (112-606 aa: 54 kDa and 368-606 aa: 26 kDa) (Rani et al. 2018) . Immunogenicity of GNPs conjugated HEV vaccines was evaluated in mice and compared with Incomplete Freund's adjuvant (IFA) adjuvanted vaccine. HEV-specific humoral and cell-mediated immune response of two candidate vaccines were evaluated. This study not only evaluated candidate HEV vaccine but also evaluated GNPs as adjuvant and delivery vehicle against HEV.",
+            "cite_spans": [
+                {
+                    "start": 75,
+                    "end": 97,
+                    "text": "(Turkevich et al. 1951",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 281,
+                    "end": 299,
+                    "text": "(Rani et al. 2018)",
+                    "ref_id": "BIBREF26"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Tetrachloroauric acid (HAuCl 4 ) and Concanavalin A were purchased from Sigma. Trisodium citrate (TSC) from Central Drug House (P) Ltd. RPMI1640, Restriction enzymes (NdeI and XhoI), Fetal bovine serum, antibiotic-antimycotic (100X) and Phosphate-buffered saline were purchased from Thermo Fisher Scientific. Ni-NTA column affinity chromatography from G-biosciences. HEV kit received from Diapro, Diagnostic Bioprobes SRL, Italy, MTS from CellTiter 96_AQueousOne Solution Cell Proliferation Assay, Promega. Incomplete Freund's adjuvant was procured from InvivoGen.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Materials used"
+        },
+        {
+            "text": "The truncated ORF2-flanking amino acids 112-606 (1487 bp) and 368-606 (719 bp) regions were PCR amplified from pGEMT-ORF2 (GEV genotype 1, GenBank accession no. AF444003.1). Forward primers containing NdeI sites were ORF2-112-F-ggCAT ATG gcggtcgctccggcccatgac and ORF2-368aa-F-ggCAT ATG atagcgcttaccctgtttaac and reverse primer containing XhoI site was ORF2-606R-ccCTC GAG cacagagtggggggctaaaac. The PCR-amplified products were subjected to double digestion with NdeI/XhoI. The gelpurified product was subcloned directionally in the pET30b vector at NdeI and XhoI site. The ORF2 amino acid region 112-606 and 368-606 were bacterially expressed by IPTG induction of pET30b-112-606 (1487 bp) and 368-606 (719 bp) truncated ORF2 clone in BL21 (DE3) E. coli cells (Rani et al. 2018) . The expressed truncated ORF2 proteins, i.e., 54 kDa (aa 112-606) and 26 kDa (aa 368-606) were purified using Ni-NTA affinity chromatography and eluted fractions were visualized on 10% SDS-PAGE.",
+            "cite_spans": [
+                {
+                    "start": 760,
+                    "end": 778,
+                    "text": "(Rani et al. 2018)",
+                    "ref_id": "BIBREF26"
+                }
+            ],
+            "ref_spans": [],
+            "section": "PCR amplification, subcloning and bacterial expression of truncated ORF2 genes"
+        },
+        {
+            "text": "GNPs were synthesized by citrate reduction method of chloroauric acid (Turkevich et al. 1951) . Briefly, 0.1 mM aqueous solution of HAuCl 4 was heated to boiling followed by dropwise addition of 2 mL of trisodium citrate (100 mM) under continuous stirring till the solution changes from pale-yellow to wine-red color. The colloidal solution was quenched by transferring it into ice bath. Finally, synthesized GNPs were collected by centrifugation at 9000 rpm for 15 min and resuspended in 100 mL of Milli-Q water for further characterization using UV-visible spectroscopy and Transmission Electron microscopy (TEM). The synthesized gold nanoparticles were amino functionalized by adding cysteamine hydrochloride solution to a final concentration of 0.02 M. GNPs were then placed on a rocker for 30 min and collected by centrifugation at 9000 rpm for 15 min.",
+            "cite_spans": [
+                {
+                    "start": 70,
+                    "end": 93,
+                    "text": "(Turkevich et al. 1951)",
+                    "ref_id": "BIBREF31"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Gold nanoparticle synthesis and functionalization"
+        },
+        {
+            "text": "Antigen nano-conjugates were prepared by immobilizing purified truncated ORF2 proteins (26 kDa and 54 kDa) onto amino-functionalized gold nanoparticles. Briefly, 400 \u00b5g of amino-functionalized GNPs were incubated with 400 \u00b5g of protein overnight at 4 \u00b0C, followed by centrifugation at 9000 rpm for 15 min. Nano-conjugated ORF2 proteins were washed thrice with distilled water to remove any unbound protein. The supernatants were pooled and amount of protein present was quantified by Bradford assay. Amount of protein immobilized on GNP surface was estimated as the difference between total protein (400 \u00b5g) and protein in supernatant.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Nano-conjugation of truncated ORF2 proteins"
+        },
+        {
+            "text": "In vitro release of 26 kDa and 54 kDa proteins from nanoconjugates was analyzed by incubating suitable amount of protein antigen-GNP conjugates in phosphate buffer (PB) pH 7.4 (KH 2 PO 4 6.8 g/L, Na 2 HPO 4 3.5 g/L) at 37 \u00b0C for 1 h, 3 h, 5 h, 24 h, 48 h, 72 h and 4 days. After the specified time interval, samples were centrifuged at 9000 rpm for 15 min and amount of protein released in the supernatant was quantified using Bradford assay.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "In vitro antigen release kinetics"
+        },
+        {
+            "text": "Studies on mice were conducted only after approval and review of scientific intent by Institutional Animal Ethics Committee (IAEC) and Institutional Biosafety Committee, Central Animal Facility (CAF), All India Institute of Medical Sciences (AIIMS), New Delhi (IAEC No. 160/ IAEC-1/2019). The Animal Ethics Guidelines and Procedures of AIIMS, New Delhi recommendations were strictly followed while performing experimental procedures on mice. Sufferings of animals were minimized by proper planning of experiments.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Approval of institute animal ethics committee"
+        },
+        {
+            "text": "For immunization studies, 6-to 8-week-old inbred male Swiss albino mice were used. Mice were kept inside microisolator cage and were fed with food and water during the entire period of experiment. Mice were maintained in a ventilated animal-caging system in the animal facility (12-h day/ night cycle, 22 \u00b0C temperature and 50-60% humidity). The mice were monitored daily for general well-being.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Maintenance of mice in animal house"
+        },
+        {
+            "text": "Vaccine formulations for mice immunization were prepared ensuring 30 \u00b5g of antigen per 100 \u00b5g of GNPs for each of the mice. The amino-functionalized GNP as well as ORF2conjugated GNP (GNP26, GNP54) were suspended in phosphate buffer saline (pH 7.4) just before immunization. Freund's incomplete adjuvant (IFA) were used for comparative analysis and as positive control. Thus, the formulation containing IFA along with 26 kDa (IFA26) and 54 kDa protein (IFA54) were prepared by mixing equal amount of protein antigen and adjuvant ensuring 30 \u00b5g of antigen/mice.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Preparation of vaccine formulation for mice immunization"
+        },
+        {
+            "text": "Thirty-six Swiss albino mice, 6-to 8-week-old, were randomly divided into 6 groups with 6 mice in each group. To evaluate immunogenicity of nano-conjugates, mice in each group were given intramuscular injection of 200 \u00b5L vaccine formulation in the hind leg at day-0, day-21, and day-35, respectively. All three mice in groups 1, 2 and 3 were immunized with GNP26, GNP54 and GNP only, while mice in other three groups 4, 5 and 6 were given IFA26, IFA54 and IFA only. Booster dose were given to mice in the same way on day-21 and on day-35 after primary immunization (Fig. 1 ).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 565,
+                    "end": 572,
+                    "text": "(Fig. 1",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Immunization of mice with GNP-conjugated truncated ORF2 formulation"
+        },
+        {
+            "text": "Mice were anesthetized using isoflurane to draw blood samples from retro-orbital vein prior to immunization on day-0, day-21, day-35 and day-42 after primary immunization. Serum were isolated from the blood sample by centrifugation at 3000 rpm for 5 min and stored at \u2212 20 \u00b0C for further immunological assays (Enzyme-linked immunosorbent assay and western blot). Mice were killed by cervical dislocation on day-42 and dissected for organ collection for further studies. Spleen were collected for splenocyte proliferation studies stimulated in the presence of HEV ORF2 proteins.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Sample collection"
+        },
+        {
+            "text": "Modified ELISA using commercial HEV kit for detection of HEV-specific IgG in the mouse serum was carried out. The microwell strips of commercial kits were coated with HEV-specific recombinant immunodominant ORF2 antigens. The mice serum samples were diluted to 1:1000 with diluent buffer and 100 \u00b5L of diluted samples, positive and negative controls were added to the microwells and incubated at 37 \u00b0C for 1 h. This was followed by repeated washing (three times) the microwells with 300 \u00b5L of washing buffer. After washing, 100 \u00b5L of goat anti-mouse IgG HRP conjugate (1:5000 dilution) was added to the microwells and incubated at 37 \u00b0C for 1 h. Microwells were washed thrice for 20-30 s followed by 20 min incubation with 100 \u00b5L of chromogen (tetra-methyl-benzidine). Finally, 100 \u00b5L of sulphuric acid (0.3 M) was added to stop the reaction and optical density (OD) of the color developed was measured at 450 nm using ELISA reader. Test result or antibody titer was interpreted by the sample OD/cut off ratio. Cutoff value was determined by negative control mean OD450 nm + 0.25. Sample/Cutoff ratio more than 1.2 is considered as HEV-positive antibody titer.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Enzyme-linked immunosorbent assay (ELISA)"
+        },
+        {
+            "text": "The presence of HEV-specific antibody in post-immunized mice sera was further confirmed by western blot. Purified HEV ORF2 proteins (26 kDa and 54 kDa) were loaded in triplicate in wells for SDS-PAGE, electrophoresed and transferred onto polyvinylidene difluoride (PVDF) membrane followed by blocking (0.0 M PBS, pH 7.4 + 0.05% Tween 20 + 5% skimmed milk powder) at room temperature for 1 h. After blocking, membrane was cut into strips and incubated overnight separately with primary mouse antibody (pre, day-0 and post-immunization. Day-42 sera) at 4 \u00b0C followed by washing with 0.01 M Phosphate-buffered saline with Tween 20 (PBST). Antibody present in pre-and post-mice sera (1:1000 dilution) binds to 26 kDa and 54 kDa purified HEV ORF2 protein on PVDF membrane transferred from SDS-PAGE gel. Antibody bound to the protein on gel were probed by horseradish peroxidase-conjugated goat antimouse IgG (1:5000 dilution) and finally optical detection with 3\u2032-Diaminobenzidine (DAB) reagent. Mice vaccinated with only gold nanoparticle were taken as negative control. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Western blot"
+        },
+        {
+            "text": "All mice were killed on day-42 to collect spleen. Spleen were washed with PBS (0.01 M, pH 7.4) and placed in cell culture dish containing complete media, i.e., Roswell Park Memorial Institute media (RPMI1640) supplemented with 10% Fetal Bovine Serum (FBS) and 100 U/mL penicillin-streptomycin. Spleen were further processed to prepare a single cell suspension of splenocytes. Using sterile blade, spleen was cut into small pieces in a culture dish containing RPMI1640 media followed by crushing the slices with the plunger end of needle. Above suspension was passed through a cell strainer (70 \u00b5m) and collected in a 50-mL falcon to prepare single cell suspension of splenocytes. Cell suspensions were centrifuged, supernatants were discarded and pellets resuspended in RBC lysis buffer followed by centrifugation to collect pellet. Pellet was washed with PBS three times followed by suspension in RPMI1640 media. Splenocytes were cultured in a 96-well plate and stimulated in the presence of HEV ORF2 protein (20 \u00b5g/mL), wells containing untreated cells served as positive control and wells containing RPMI1640 media alone was taken as blank. Cells treated with Concanavalin A served as positive control. Splenocytes isolated from mice immunized with all formulation with or without antigen (GNP26, GNP54, IFA26, IFA54, GNP only, IFA only) were stimulated with 26 kDa and 54 kDa HEV protein, respectively. To measure antigen-specific proliferation, MTS assay was performed. After 2 days, MTS was added to the microwells and incubated for 3 h and finally absorbance (OD) was taken at 490 nm. Stimulation index was calculated as:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Splenocyte proliferation assay"
+        },
+        {
+            "text": "Statistical analysis was carried out using GraphPad Prism 8 software. Data were presented as mean \u00b1 standard deviation. Multiple comparisons among groups were analyzed by one-way ANOVA and p value < 0.05 was considered to be statistically significant.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Statistical analysis"
+        },
+        {
+            "text": "HEV-truncated ORF2 regions corresponding to 112-606 and 368-606 amino acids were PCR amplified. Figure 2a shows the PCR-amplified products of 1487 bp (Fig. 2a, Lane 1) and",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 96,
+                    "end": 105,
+                    "text": "Figure 2a",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 150,
+                    "end": 167,
+                    "text": "(Fig. 2a, Lane 1)",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Bacterial expression and purification of truncated ORF2 proteins"
+        },
+        {
+            "text": "719 bp (Fig. 2a, Lane 2) . Amplified products were subcloned in pET30b vector with C-terminal His-tag fusion at NdeI/ XhoI site. Positive clones were screened by NdeI/XhoI double digestion and confirmed by a fall out of 1487 bp (Fig. 2b ) and 719 bp (Fig. 2c) . The positive clones pET30b-112-606 ORF2 and pET30b-368-606 ORF2 were transformed in BL21 (DE3) E. coli cells followed by IPTG induction and the culture was analyzed on SDS-PAGE for expressed proteins. Figure 2d shows expression of 54 kDa (Lane 2) and 26 kDa (Lane 4) proteins while Lanes 1 and 3 show the profile of corresponding uninduced samples, respectively. The expressed proteins were purified using Ni-NTA affinity chromatography and analyzed on SDS-PAGE ( Fig. 2e) with Lane 1 and Lane 2 showing 54 kDa and 26 kDa purified proteins.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 7,
+                    "end": 24,
+                    "text": "(Fig. 2a, Lane 2)",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 228,
+                    "end": 236,
+                    "text": "(Fig. 2b",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 250,
+                    "end": 259,
+                    "text": "(Fig. 2c)",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 463,
+                    "end": 472,
+                    "text": "Figure 2d",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 726,
+                    "end": 734,
+                    "text": "Fig. 2e)",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Bacterial expression and purification of truncated ORF2 proteins"
+        },
+        {
+            "text": "GNPs were synthesized by colloidal synthesis using trisodium citrate as reducing agent. Morphological and size analysis of synthesized GNPs was done by Transmission Electron Microscopy. Figure 3a shows spherical nanoparticles of an average size of ~ 12 nm with inset showing size distribution of the synthesized nanoparticles as evaluated from ImageJ software (Schnieder et al. 2012) . These nanoparticles were further characterized by UV-visible absorption spectroscopy. Figure 3b shows an absorption peak having maxima at 520 nm (Fig. 3b , black solid line) that is characteristic of gold nanoparticles. The synthesized nanoparticles were amino functionalized by incubating with cysteamine hydrochloride (Cys-HCl) that is marked by shift in absorption maxima to 521 nm (Fig. 3b , redcolored dash). The GNPs form a strong bond with thiol group of Cys-HCl exposing free amine groups on surface. This was further confirmed by the change in zeta potential of the GNPs from \u2212 20 mV to \u2212 25 mV after cysteamine modification due to the presence of NH 3 + on surface (see Fig. 3c ). Incubation of these amino-functionalized gold nanoparticles with antigens (HEV ORF2 54 kDa and 26 kDa proteins) results in peptide bond formation with carboxyl group of protein molecules. Formation of nano-conjugates between the GNP and protein candidates was confirmed by shift in peak from 521 to 523 nm (blue-colored dash dot dot, Fig. 3b ) and 528 nm (green-colored dot, Fig. 3b ) for 26 kDa and 54 kDa proteins, respectively. This is further marked by reduction in zeta potential to \u2212 16 mV and \u2212 19 mV for GNP-Cys-HCl-26 kDa and GNP-Cys-HCl-54 kDa, respectively, due to amphoteric nature of proteins (Fig. 3c) . The amount of protein immobilized onto GNPs was estimated by quantifying remaining protein in supernatant. The protein-GNP nano-conjugates were separated by centrifugation followed by washing of pellet with MilliQ water 2-3 times. Supernatant after centrifugation was collected in fresh tubes and pooled followed by Bradford Assay for quantification of protein using the following equation:",
+            "cite_spans": [
+                {
+                    "start": 360,
+                    "end": 383,
+                    "text": "(Schnieder et al. 2012)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 186,
+                    "end": 195,
+                    "text": "Figure 3a",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 472,
+                    "end": 481,
+                    "text": "Figure 3b",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 531,
+                    "end": 539,
+                    "text": "(Fig. 3b",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 771,
+                    "end": 779,
+                    "text": "(Fig. 3b",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 1066,
+                    "end": 1073,
+                    "text": "Fig. 3c",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 1411,
+                    "end": 1418,
+                    "text": "Fig. 3b",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 1452,
+                    "end": 1459,
+                    "text": "Fig. 3b",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 1683,
+                    "end": 1692,
+                    "text": "(Fig. 3c)",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "Characterization of gold nanoparticles, nano-conjugation and release of ORF2 proteins"
+        },
+        {
+            "text": "Percentage immobilization was found to be 59% and 44% for 26 kDa and 54 kDa proteins. The lesser percentage immobilization of 54 kDa protein as compared to 26 kDa protein could be attributed to the larger size resulting in steric hindrance.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Characterization of gold nanoparticles, nano-conjugation and release of ORF2 proteins"
+        },
+        {
+            "text": "Antigen release kinetics was evaluated under physiological conditions before evaluating the immune response in mice. Antigen-GNP nano-conjugates were incubated in 1 mL of phosphate buffer at 37 \u00b0C for different times (1 h, 3 h, 5 h, 24 h, 48 h and 72 h). This was followed by % age of protein immobilized = Total amount of protein \u2212 Amount of protein in supernatant Total amount of protein 100.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Characterization of gold nanoparticles, nano-conjugation and release of ORF2 proteins"
+        },
+        {
+            "text": "centrifugation and estimation of amount of protein released in supernatant. Figure 3d shows a sustained release of proteins from GNP nano-conjugates with incubation time. Initially, a faster rate of release is observed that slowed down after 8 h. Rate of release of 54 kDa (red-colored circles) protein was slower than that of the 26 kDa (black-colored squares) protein, though initial rate of release was almost same in both cases upto 8 h. The slower release rate of 54 kDa protein could be attributed to its greater hydrophobic character as compared to 26 kDa protein. ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 76,
+                    "end": 85,
+                    "text": "Figure 3d",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "Characterization of gold nanoparticles, nano-conjugation and release of ORF2 proteins"
+        },
+        {
+            "text": "Humoral immune response was evaluated in mice following immunization of truncated ORF2 with both GNP conjugates and IFA. Anti-HEV IgG titer in serum samples of mice before immunization, at 21 days post-immunization, 14 days of first booster and 7 days of second booster were recorded and tabulated in Table 1 . The anti-HEV IgG titer (Sample/cutoff ratio) in GNP (Table 1a) or IFA (Table 1b) alone group after booster immunization did not show any increase while mice immunized with truncated ORF2 (both 54 kDa and 26 kDa) with GNPs or IFA adjuvant showed an increased anti-HEV IgG titer. A low anti-HEV titer was observed at 21 days post-immunization (GNP54: 0.79 \u00b1 0.41, IFA54: 1.16 \u00b1 0.34 and GNP26: 1.57 \u00b1 0.78, (Table 1 and Fig. 4a, b) . Statistical analysis of the observed increase in anti-HEV titer evaluated by one-way ANOVA analysis showed of statistically significant results with p value less than 0.05 (Table 1 and Fig. 4) . To further confirm anti-HEV antibody in mice serum, immunoblot of immunized mice sera was carried out using truncated ORF2 proteins (Fig. 4c, d) . GNP26, GNP54 and IFA26, IFA54-immunized mice serum showed reaction with truncated ORF2 protein (Fig. 4c, d, Lanes 2, 4) while Pre immunized sera of same mice did not react with HEV protein on membrane (Fig. 4c,  d, Lanes 1, 3) . In addition, GNP-and IFA-immunized mice sera on day-0 and day-42, respectively, did not bind with the truncated ORF2 protein (Fig. 4c , d, Lanes 5, 6) indicating absence of anti-HEV antibody.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 301,
+                    "end": 308,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 363,
+                    "end": 373,
+                    "text": "(Table 1a)",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 381,
+                    "end": 391,
+                    "text": "(Table 1b)",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 716,
+                    "end": 724,
+                    "text": "(Table 1",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 729,
+                    "end": 740,
+                    "text": "Fig. 4a, b)",
+                    "ref_id": null
+                },
+                {
+                    "start": 915,
+                    "end": 923,
+                    "text": "(Table 1",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 928,
+                    "end": 935,
+                    "text": "Fig. 4)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1070,
+                    "end": 1082,
+                    "text": "(Fig. 4c, d)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1180,
+                    "end": 1204,
+                    "text": "(Fig. 4c, d, Lanes 2, 4)",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 1286,
+                    "end": 1311,
+                    "text": "(Fig. 4c,  d, Lanes 1, 3)",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 1439,
+                    "end": 1447,
+                    "text": "(Fig. 4c",
+                    "ref_id": null
+                }
+            ],
+            "section": "Humoral immune response of truncated HEV ORF2 in mice"
+        },
+        {
+            "text": "Adjuvants are crucial for improving the potency of vaccine by modulating humoral and/or cell-mediated immune response to protein antigen. GNPs are promising adjuvant carriers and are well taken up by antigen-presenting cells through endocytosis. GNPs are capable of activating macrophages and other immune cells which serves as the basis for vaccine adjuvants (Dykman and Khlebtsov 2017) . Mice immunized with GNP alone and conjugated with HEV antigens (26 kDa and 54 kDa) had shown increased HEVspecific IgG antibody titer following primary immunization Fig. 4 IgG titer of mice immunized with a nano-conjugates GNP54 (blue-colored triangle), GNP26 (red-colored circled) and GNP only (black-colored square) and b IFA54 (blue-colored triangle), IFA26 (red-colored circle) and IFA only (black-colored square) (data presented as mean \u00b1 SD); western blot image showing presence/absence of antibody in mice sera (day-0, day-42) post-injection with c GNPs only, GNP54 and GNP26 and d IFA only, IFA54 and IFA25. Lanes 1 and 3: day-0 serum of GNP26, GNP54 (c) and IFA26, IFA54 (d); Lanes 2 and 4: day-42 serum of GNP26, GNP54 (c) and IFA26, IFA54 (d). Lanes 5 and 6: day-0 and -42 serum of control group GNP and IFA only and Lane M: prestained protein molecular weight marker (21 days post-immunization) and HEV-specific antibody response further increases after booster immunization at 14 days of first booster and at 7 days after 2nd booster immunization (Fig. 4a) . Significantly high IgG antibody titer was observed for GNP54 as opposed to GNP26 following booster immunization as depicted in Fig. 4a . Similar results were also observed by immunization with adjuvant IFA which indicates that immunogenicity of 54 kDa is much better that 26 kDa HEV protein (Fig. 4b) . It has been observed that 54 kDa protein can form virus-like particles that enhances their immunogenic potential (Chattopadhyay et al. 2017 , Gupta et al. 2020 , Li et al. 2020 . The antibody response is dependent on the neutralization epitopes located at C-terminus of ORF2 (E2, 459-606aa) and bigger protein HEV239 (298-606aa) also contains an additional neutralization epitope . Hence, it is quite likely that an additional neutralizing or conformational epitope might be present in 112-606 aa (54 kDa protein).",
+            "cite_spans": [
+                {
+                    "start": 360,
+                    "end": 387,
+                    "text": "(Dykman and Khlebtsov 2017)",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 1878,
+                    "end": 1904,
+                    "text": "(Chattopadhyay et al. 2017",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 1905,
+                    "end": 1924,
+                    "text": ", Gupta et al. 2020",
+                    "ref_id": null
+                },
+                {
+                    "start": 1925,
+                    "end": 1941,
+                    "text": ", Li et al. 2020",
+                    "ref_id": "BIBREF20"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 555,
+                    "end": 561,
+                    "text": "Fig. 4",
+                    "ref_id": null
+                },
+                {
+                    "start": 1450,
+                    "end": 1459,
+                    "text": "(Fig. 4a)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1589,
+                    "end": 1596,
+                    "text": "Fig. 4a",
+                    "ref_id": null
+                },
+                {
+                    "start": 1753,
+                    "end": 1762,
+                    "text": "(Fig. 4b)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Humoral immune response of truncated HEV ORF2 in mice"
+        },
+        {
+            "text": "HEV-specific cellular immune response in immunized mice was determined by splenocytes proliferation assay following treatment with HEV ORF2 protein (26 kDa and 54 kDa). Stimulation index (SI) value of splenocytes proliferation were determined by MTS method. Splenocytes of immunized mice were seeded in 96-well plate stimulated with Concanavalin A (Con A) as positive control, 54 kDa and 26 kDa proteins while the untreated cells were considered as negative control (NC). Increased SI was observed in GNP54, GNP26 and IFA54, IFA26 group when stimulated with positive control, HEV 26 kDa and HEV 54 kDa proteins as compared to the untreated group as mentioned in Table 2 and Fig. 5a , b. Increased stimulation index was found to be statistically significant for GNP-and IFA-immunized mice (Table 2) with p value less than 0.05. The cellular immune response of GNP-conjugated mice group is comparable with IFA-adjuvanted immunized mice group and the cellular immune response was HEV specific (Fig. 5) . GNP size along with conjugated low or high molecular weight protein influences cell-mediated immune response. Lymphocyte proliferation and natural killer cell stimulation was induced more efficiently by 12 nm GNP but not by 2 nm GNPs (Le Gu\u00e9vel et al. 2015) . The GNP used for this study was ~ 12 nm size conjugated with both low (26 kDa) and high (54 kDa) molecular weight antigen. HEV-specific cell-mediated immune response was assessed by stimulation index of immunized mice splenocyte proliferation assay following stimulation with bacterial-expressed HEV-truncated ORF2 protein. The stimulation index of GNP-conjugated HEV-immunized mice was comparable to Concanavalin A (positive control) -treated splenocyte proliferation (Fig. 5a) .",
+            "cite_spans": [
+                {
+                    "start": 1239,
+                    "end": 1258,
+                    "text": "Gu\u00e9vel et al. 2015)",
+                    "ref_id": "BIBREF17"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 662,
+                    "end": 669,
+                    "text": "Table 2",
+                    "ref_id": "TABREF1"
+                },
+                {
+                    "start": 674,
+                    "end": 681,
+                    "text": "Fig. 5a",
+                    "ref_id": null
+                },
+                {
+                    "start": 788,
+                    "end": 797,
+                    "text": "(Table 2)",
+                    "ref_id": "TABREF1"
+                },
+                {
+                    "start": 990,
+                    "end": 998,
+                    "text": "(Fig. 5)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1730,
+                    "end": 1739,
+                    "text": "(Fig. 5a)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Cellular immune response against truncated HEV ORF2 in mice"
+        },
+        {
+            "text": "This study uses spherical GNPs (~ 12 nm) as antigen carrier for immunization of mice against HEV and presents comparison of its immune response for two different candidate vaccine immunogen. This study conclusively shows the potential of GNP nano-conjugates to induce both humoral and cell-mediated immune responses effectively against HEV, which is comparable to IFA-adjuvanted HEV antigen. Both candidate vaccine immunogens have shown immunogenicity in mice and comparison of immunogenicity using GNP nanocarrier adjuvant has shown 54 kDa protein (112-606 aa) as better immunogen than 26 kDa (368-606 aa) protein.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion"
+        },
+        {
+            "text": "Author contribution DR: concept, data acquisition, and draft writing. BN: concept, data acquisition, and draft writing. SS: study concept, data acquisition, and draft writing.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Peptides conjugated to gold nanoparticles induce macrophage activation",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Bast\u00fas",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "S\u00e1nchez-Till\u00f3",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Pujals",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Mol Immunol",
+            "volume": "46",
+            "issn": "",
+            "pages": "743--748",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.molimm.2008.08.277"
+                ]
+            }
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Augmentation of vaccineinduced humoral and cellular immunity by a physical radiofrequency adjuvant",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Cao",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zhu",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Hossen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Nat Commun",
+            "volume": "9",
+            "issn": "",
+            "pages": "1--13",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41467-018-06151-y"
+                ]
+            }
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Nanoparticle vaccines adopting virus-like features for enhanced immune potentiation",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Chattopadhyay",
+                    "suffix": ""
+                },
+                {
+                    "first": "J-Y",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "H-W",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "C-Mj",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Nanotheranostics",
+            "volume": "1",
+            "issn": "",
+            "pages": "244--260",
+            "other_ids": {
+                "DOI": [
+                    "10.7150/ntno.19796"
+                ]
+            }
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Assessment of gold nanoparticles as a size-dependent vaccine carrier for enhancing the antibody response against synthetic foot-and-mouth disease virus peptide",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Hung",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Huang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Nanotechnology",
+            "volume": "21",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1088/0957-4484/21/19/195101"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Biosynthesis of gold nanoparticles using Sargassum swartzii and its cytotoxicity effect on HeLa cells",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Dhas",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Kumar",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Karthick",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Govindaraju",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Narayana",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Spectrochim Acta A Mol Biomol Spectrosc",
+            "volume": "133",
+            "issn": "",
+            "pages": "102--106",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.saa.2014.05.042"
+                ]
+            }
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Gold nanoparticles for preparation of antibodies and vaccines against infectious diseases",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Dykman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Expert Rev Vaccines",
+            "volume": "19",
+            "issn": "",
+            "pages": "465--477",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/14760584.2020.1758070"
+                ]
+            }
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Immunological properties of gold nanoparticles",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Dykman",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Khlebtsov",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Chem Sci",
+            "volume": "8",
+            "issn": "",
+            "pages": "1719--1735",
+            "other_ids": {
+                "DOI": [
+                    "10.1039/c6sc03631g"
+                ]
+            }
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Gold nanoparticles as an adjuvant: influence of size, shape, and technique of combination with CpG on antibody production",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Dykman",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Staroverov",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Fomin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Int Immunopharmacol",
+            "volume": "54",
+            "issn": "",
+            "pages": "163--168",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.intimp.2017.11.008"
+                ]
+            }
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Macrophagic myofasciitis lesions assess long-term persistence of vaccine-derived aluminium hydroxide in muscle",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Gherardi",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Coquet",
+                    "suffix": ""
+                },
+                {
+                    "first": "Cherin",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2001,
+            "venue": "Brain",
+            "volume": "124",
+            "issn": "",
+            "pages": "1821--1831",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/brain/124.9.1821"
+                ]
+            }
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Aluminum compounds as vaccine adjuvants",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Gupta",
+                    "suffix": ""
+                }
+            ],
+            "year": 1998,
+            "venue": "Adv Drug Deliv Rev",
+            "volume": "32",
+            "issn": "98",
+            "pages": "8--8",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/s0169-409x(98)00008-8"
+                ]
+            }
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Surjit M (2020) Expression, purification and characterization of the Hepatitis E virus like-particles in the Pichia pastoris",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Gupta",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Kaul",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Srivastava",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Kaushik",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Ghosh",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Sharma",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Batra",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Banerjee",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Shalimar",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Ranjith-Kumar",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Emerg Microbes Infect",
+            "volume": "11",
+            "issn": "141",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41426-018-0198-7"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Immunogenicity and protective efficacy in rhesus monkeys of a recombinant ORF2 protein from hepatitis E virus genotype 4",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Harrison",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Arch Virol",
+            "volume": "154",
+            "issn": "",
+            "pages": "481--488",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s00705-009-0335-7"
+                ]
+            }
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "A bacterially expressed peptide prevents experimental infection of primates by the hepatitis E virus",
+            "authors": [
+                {
+                    "first": "Swk",
+                    "middle": [],
+                    "last": "Im",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "Z"
+                    ],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Zhuang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2001,
+            "venue": "Vaccine",
+            "volume": "19",
+            "issn": "",
+            "pages": "100--101",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S0264-410X(01)00100-1"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Expression in animal cells and characterization of the hepatitis E virus structural proteins",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Jameel",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Zafrullah",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Ozdener",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Panda",
+                    "suffix": ""
+                }
+            ],
+            "year": 1996,
+            "venue": "J Virol",
+            "volume": "70",
+            "issn": "",
+            "pages": "207--216",
+            "other_ids": {
+                "DOI": [
+                    "10.1128/jvi.70.1.207-216.1996"
+                ]
+            }
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Effects of gold nanoparticlebased vaccine size on lymph node delivery and cytotoxic T-lymphocyte responses",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Kang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Ahn",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "J Control Release",
+            "volume": "256",
+            "issn": "",
+            "pages": "56--67",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jconrel.2017.04.024"
+                ]
+            }
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Hepatitis B-surface antigen (HBsAg) vaccine fabricated chitosan-polyethylene glycol nanocomposite (HBsAg-CS-PEG-NC) preparation, immunogenicity, controlled release pattern, biocompatibility or non-target toxicity",
+            "authors": [
+                {
+                    "first": "Rms",
+                    "middle": [],
+                    "last": "Karthick",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Nishanth",
+                    "suffix": ""
+                },
+                {
+                    "first": "Arvind",
+                    "middle": [],
+                    "last": "Brs",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Int J Biol Macromol",
+            "volume": "144",
+            "issn": "",
+            "pages": "978--994",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ijbiomac.2019.09.175"
+                ]
+            }
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Hepatitis E virus: the current scenario",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Kumar",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Subhadra",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Singh",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Panda",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Int J Infect Dis",
+            "volume": "17",
+            "issn": "",
+            "pages": "228--233",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ijid.2012.11.026"
+                ]
+            }
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Nanoparticle size influences the proliferative responses of lymphocyte subpopulations",
+            "authors": [
+                {
+                    "first": "Le",
+                    "middle": [],
+                    "last": "Gu\u00e9vel",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Palomares",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Torres",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "RSC Adv",
+            "volume": "5",
+            "issn": "",
+            "pages": "85305--85309",
+            "other_ids": {
+                "DOI": [
+                    "10.1039/c5ra16164a"
+                ]
+            }
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Protection of cynomolgus monkeys against HEV infection by oral administration of recombinant hepatitis e virus-like particles",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Suzaki",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ami",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Vaccine",
+            "volume": "22",
+            "issn": "",
+            "pages": "370--377",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.vaccine.2003.08.004"
+                ]
+            }
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "The development of a recombinant hepatitis E vaccine HEV 239",
+            "authors": [
+                {
+                    "first": "S-W",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Hum Vaccin Immunother",
+            "volume": "11",
+            "issn": "",
+            "pages": "908--914",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/21645515.2015.1008870"
+                ]
+            }
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Prophylactic hepatitis E vaccines: antigenic analysis and serological evaluation",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Viruses",
+            "volume": "12",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3390/v12010109"
+                ]
+            }
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Endoplasmic reticulum stress induced synthesis of a novel viral factor mediates efficient replication of genotype-1 hepatitis E virus",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Nair",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Anang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Subramani",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "PLoS Pathog",
+            "volume": "12",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1371/journal.ppat.1005521"
+                ]
+            }
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Gold nanoparticles as a vaccine platform: influence of size and shape on immunological responses in vitro and in vivo",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Niikura",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Matsunaga",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Suzuki",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "ACS Nano",
+            "volume": "7",
+            "issn": "",
+            "pages": "3926--3938",
+            "other_ids": {
+                "DOI": [
+                    "10.1021/nn3057005"
+                ]
+            }
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Hepatitis E and pregnancy: current state",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "P\u00e9rez-Gracia",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Suay-Garc\u00eda",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Mateos-Lindemann",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Rev Med Virol",
+            "volume": "27",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/rmv.1929"
+                ]
+            }
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Preliminary evidence that a trpE-HEV fusion protein protects cynomolgus macaques against challenge with wild-type hepatitis e virus (HEV)",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Purdy",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Mccaustland",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Krawczynski",
+                    "suffix": ""
+                }
+            ],
+            "year": 1993,
+            "venue": "J Med Virol",
+            "volume": "41",
+            "issn": "",
+            "pages": "90--94",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/jmv.1890410118"
+                ]
+            }
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Size-dependent neutralizing activity of gold nanoparticle-based subunit vaccine against dengue virus",
+            "authors": [
+                {
+                    "first": "Q",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Quach",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Ang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jhj",
+                    "middle": [],
+                    "last": "Chu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jcy",
+                    "middle": [],
+                    "last": "Kah",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Acta Biomater",
+            "volume": "78",
+            "issn": "",
+            "pages": "224--235",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.actbio.2018.08.011"
+                ]
+            }
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Cloning and expression of truncated ORF2 as a vaccine candidate against hepatitis E virus. 3 Biotech 8:414",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Rani",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Saxena",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Nayak",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Srivastava",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s13205-018-1437-2"
+                ]
+            }
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "NIH Image to ImageJ: 25 years of image analysis",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Schneider",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Rasband",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Eliceiri",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Nat Methods",
+            "volume": "9",
+            "issn": "7",
+            "pages": "671--675",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/nmeth.2089"
+                ]
+            }
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Nanoparticles that do not adhere to mucus provide uniform and long-lasting drug delivery to airways following inhalation",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Schneider",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Boylan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Sci Adv",
+            "volume": "3",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1126/sciadv.1601556"
+                ]
+            }
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Hepatitis E virus (HEV): molecular cloning and sequencing of the full-length viral genome",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Tam",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Smith",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Guerra",
+                    "suffix": ""
+                }
+            ],
+            "year": 1991,
+            "venue": "Virology",
+            "volume": "185",
+            "issn": "91",
+            "pages": "90760--90769",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/0042-6822(91)90760-9"
+                ]
+            }
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Aluminum vaccine adjuvants: are they safe",
+            "authors": [
+                {
+                    "first": "Lca",
+                    "middle": [],
+                    "last": "Tomljenovicshaw",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Curr Med Chem",
+            "volume": "18",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.2174/092986711795933740"
+                ]
+            }
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "A study of the nucleation and growth processes in the synthesis of colloidal gold",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Turkevich",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Stevenson",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Hillier",
+                    "suffix": ""
+                }
+            ],
+            "year": 1951,
+            "venue": "Discuss Faraday Soc",
+            "volume": "11",
+            "issn": "",
+            "pages": "55--75",
+            "other_ids": {
+                "DOI": [
+                    "10.1039/DF9511100055"
+                ]
+            }
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Assembly of hepatitis e vaccine by 'In situ' growth of gold clusters as nano-adjuvants: an efficient way to enhance the immune responses of vaccination",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Ding",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Su",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Nanoscale Horiz",
+            "volume": "1",
+            "issn": "",
+            "pages": "394--398",
+            "other_ids": {
+                "DOI": [
+                    "10.1039/c6nh00087h"
+                ]
+            }
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Biological and immunological characteristics of hepatitis E virus-like particles based on the crystal structure",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Yamashita",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Mori",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Miyazaki",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Proc Natl Acad Sci U S A",
+            "volume": "106",
+            "issn": "",
+            "pages": "12986--12991",
+            "other_ids": {
+                "DOI": [
+                    "10.1073/pnas.0903699106"
+                ]
+            }
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Distinct entry mechanisms for nonenveloped and quasi-enveloped hepatitis E viruses",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Yin",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Ambardekar",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Lu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Feng",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "J Virol",
+            "volume": "90",
+            "issn": "",
+            "pages": "4232--4242",
+            "other_ids": {
+                "DOI": [
+                    "10.1128/JVI.02804-15"
+                ]
+            }
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Molecular biology and infection of hepatitis E virus",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Zhang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Front Microbiol",
+            "volume": "7",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3389/fmicb.2016.01419"
+                ]
+            }
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Immunogenicity and protective efficacy of a vaccine prepared from 53 kDa truncated hepatitis E virus capsid protein expressed in insect cells",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "U"
+                    ],
+                    "last": "Emerson",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Nguyen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2001,
+            "venue": "Vaccine",
+            "volume": "20",
+            "issn": "",
+            "pages": "399--400",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S0264-410X(01)00399-1"
+                ]
+            }
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Recombinant vaccine against hepatitis E: duration of protective immunity in rhesus macaques",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "U"
+                    ],
+                    "last": "Emerson",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Nguyen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "Vaccine",
+            "volume": "20",
+            "issn": "",
+            "pages": "314--320",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S0264-410X(02)00314-6"
+                ]
+            }
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "Development of the hepatitis e vaccine: from bench to field",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jwk",
+                    "middle": [],
+                    "last": "Shih",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Semin Liver Dis",
+            "volume": "33",
+            "issn": "",
+            "pages": "79--88",
+            "other_ids": {
+                "DOI": [
+                    "10.1055/s-0033-1338116"
+                ]
+            }
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "A comprehensive study of neutralizing antigenic sites on the Hepatitis E Virus (HEV) capsid by constructing, clustering, and characterizing a tool box",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Tang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "J Biol Chem",
+            "volume": "290",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1074/jbc.M115.649764"
+                ]
+            }
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Schematic representation of humoral and cell-mediated response study plan depicting mice vaccination and serum collection schedule along with route of vaccination",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "Agarose gel image showing PCR-amplified truncated HEV ORF2 of 1487 bp (Lane 1) and 719 bp (Lane 2), with 100 bp DNA Ladder in Lane M; restriction enzyme digestion showing b 1487 bp and c 719 bp fallout band for positive clones of truncated HEV ORF2; d SDS-PAGE showing expression profile of proteins-pre-stained protein marker (Lane M), uninduced samples of 54 kDa clone (Lane 1) and 26 kDa clone(Lane 3), and induced samples (Lane 2: 54 kDa, Lane 4: 26 kDa) and e Ni-NTA column purified proteins (Lane 1: 54 kDa, Lane 2: 26 kDa)",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "TEM micrograph of gold nanoparticles (inset shows size distribution of GNPs), b UV-visible absorption spectra of gold nanoparticles (black solid line), GNP coated with cysteamine (red-colored dash), GNP after covalent conjugation of 26 kDa (blue-colored dash dot dot) and 54 kDa (green-colored dots) protein, c zeta potential of GNPs and its conjugates and d in vitro release of 26 kDa (red dots) and 54 kDa (black squares) HEV ORF2 proteins as a function of incubation time in phosphate buffer(pH 7.4)",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "HEV-specific IgG level in immunized mice",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "Stimulation indexData were presented as mean \u00b1 SD p value calculated from one-way ANOVA using GraphPad Prism 8 software, p value < 0.05 considered to be statistically significant Splenocyte proliferation assay of mice (n = 3) immunized with IFA ORF2 proteinFig. 5 Splenocyte proliferation of mice immunized with a GNP alone (black squares), GNP26 nano-conjugates (red dots), GNP54 nanoconjugates (blue triangles) and b IFA alone (black squares), IFA26 (red dots), stimulated in the presence of HEV ORF2 proteins (data presented as mean \u00b1 SD)",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "We would like to thank Jaypee Institute of Information Technology for providing infrastructure and research facilities. Our sincere thanks to AIIMS, New Delhi, for allowing usage of animal facility. The authors are also thankful to Advanced Instrumentation Facility, Jawaharlal Nehru University for extending the TEM facility. Dibya is also grateful to DST-INSPIRE (IF150454), Government of India for research fellowship and contingency grant. Dibya is also thankful to Mr. Sonu Kumar for assistance during animal studies.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Funding"
+        },
+        {
+            "text": "Availability of data and material Raw data would be available.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Code availability Not applicable."
+        },
+        {
+            "text": "Conflict of interest The authors declare that they have no conflict of interest in the publication.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Compliance with ethical standards"
+        }
+    ]
+}

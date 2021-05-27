@@ -1,0 +1,1748 @@
+{
+    "paper_id": "873b206ab10759d6a65a74a303731875e2dd45b6",
+    "metadata": {
+        "title": "Multi-agent Reinforcement Learning Using Simulated Quantum Annealing",
+        "authors": [
+            {
+                "first": "Niels",
+                "middle": [
+                    "M P"
+                ],
+                "last": "Neumann",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "The Netherlands Organisation for Applied Scientific Research",
+                    "location": {
+                        "addrLine": "Anna van Buerenplein 1, 2595 DA The Hague",
+                        "country": "The Netherlands"
+                    }
+                },
+                "email": "niels.neumann@tno.nl"
+            },
+            {
+                "first": "Paolo",
+                "middle": [
+                    "B U L"
+                ],
+                "last": "De Heer",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "The Netherlands Organisation for Applied Scientific Research",
+                    "location": {
+                        "addrLine": "Anna van Buerenplein 1, 2595 DA The Hague",
+                        "country": "The Netherlands"
+                    }
+                },
+                "email": "paolo.deheer@tno.nl"
+            },
+            {
+                "first": "Irina",
+                "middle": [],
+                "last": "Chiscop",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "The Netherlands Organisation for Applied Scientific Research",
+                    "location": {
+                        "addrLine": "Anna van Buerenplein 1, 2595 DA The Hague",
+                        "country": "The Netherlands"
+                    }
+                },
+                "email": "irina.chiscop@tno.nl"
+            },
+            {
+                "first": "Frank",
+                "middle": [],
+                "last": "Phillipson",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "The Netherlands Organisation for Applied Scientific Research",
+                    "location": {
+                        "addrLine": "Anna van Buerenplein 1, 2595 DA The Hague",
+                        "country": "The Netherlands"
+                    }
+                },
+                "email": "frank.phillipson@tno.nl"
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "With quantum computers still under heavy development, already numerous quantum machine learning algorithms have been proposed for both gate-based quantum computers and quantum annealers. Recently, a quantum annealing version of a reinforcement learning algorithm for grid-traversal using one agent was published. We extend this work based on quantum Boltzmann machines, by allowing for any number of agents. We show that the use of quantum annealing can improve the learning compared to classical methods. We do this both by means of actual quantum hardware and by simulated quantum annealing.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "Currently, there are two different quantum computing paradigms. The first is gate-based quantum computing, which is closely related to classical digital computers. Making gate-based quantum computers is difficult, and state-of-the-art devices therefore typically have only a few qubits. The second paradigm is quantum annealing, based on the work of Kadowaki and Nishimore [17] . Problems have already been solved using quantum annealing, in some cases much faster than with classical equivalents [7, 23] . Applications of quantum annealing are diverse and include traffic optimization [23] , auto-encoders [18] , cyber security problems [24] , chemistry applications [12, 28] and machine learning [7, 8, 21] .",
+            "cite_spans": [
+                {
+                    "start": 373,
+                    "end": 377,
+                    "text": "[17]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 497,
+                    "end": 500,
+                    "text": "[7,",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 501,
+                    "end": 504,
+                    "text": "23]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 586,
+                    "end": 590,
+                    "text": "[23]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 607,
+                    "end": 611,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 638,
+                    "end": 642,
+                    "text": "[24]",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 668,
+                    "end": 672,
+                    "text": "[12,",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 673,
+                    "end": 676,
+                    "text": "28]",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 698,
+                    "end": 701,
+                    "text": "[7,",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 702,
+                    "end": 704,
+                    "text": "8,",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 705,
+                    "end": 708,
+                    "text": "21]",
+                    "ref_id": "BIBREF20"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Especially the latter is of interest as the amount of data the world processes yearly is ever increasing [14] , while the growth of the classical computing power is expected to stop at some point [27] . Quantum annealing might provide the necessary improvements to tackle these upcoming challenges.",
+            "cite_spans": [
+                {
+                    "start": 105,
+                    "end": 109,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 196,
+                    "end": 200,
+                    "text": "[27]",
+                    "ref_id": "BIBREF26"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "One specific type of machine learning is reinforcement learning, where an optimal action policy is learnt through trial and error. Reinforcement learning can be used for a large variety of applications, ranging from autonomous robots [29] to determining optimal social or economical interactions [3] . Recently, reinforcement learning has seen many improvements, most notably the use of neural networks to encode the quality of state-action combinations. Since then, it has been successfully applied to complex games such as Go [25] and solving a Rubik's cube [2] .",
+            "cite_spans": [
+                {
+                    "start": 234,
+                    "end": 238,
+                    "text": "[29]",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 296,
+                    "end": 299,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 528,
+                    "end": 532,
+                    "text": "[25]",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 560,
+                    "end": 563,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "In this work we consider a specific reinforcement learning architecture called a Boltzmann machine [1] . Boltzmann machines are stochastic recurrent neural networks and provide a highly versatile basis to solve optimisation problems. However, the main reason against widespread use of Boltzmann machines is that the training times are exponential in the input size. In order to effectively use Boltzmann machines, efficient solutions for complex (sub)routines must be found. One of the complex subroutines is finding the optimal parameters of a Boltzmann machine. This task is especially well suited for simulated annealing, and hence for quantum annealing.",
+            "cite_spans": [
+                {
+                    "start": 99,
+                    "end": 102,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "So far, little research has been done on quantum reinforcement learning. Early work demonstrated that applying quantum theory to reinforcement learning problems can improve the algorithms, with potential improvements to be quadratic in learning efficiency and exponential in performance [10, 11] . Only recently, quantum reinforcement learning algorithms are implemented on quantum hardware, with [8] one of the first to do so. They demonstrated quantumenabled reinforcement learning through quantum annealer experiments.",
+            "cite_spans": [
+                {
+                    "start": 287,
+                    "end": 291,
+                    "text": "[10,",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 292,
+                    "end": 295,
+                    "text": "11]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 397,
+                    "end": 400,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "In this article, we consider the work of [8] and implement their proposed quantum annealing algorithm to find the best action policy in a gridworld environment. A gridworld environment, shown in Fig. 2 , is a simulation model where an agent can move from cell to cell, and where potential rewards, penalties and barriers are defined for certain cells. Next, we extend the work to an arbitrary number of agents, each searching for the optimal path to certain goals. This work is, to our knowledge, the first simulated quantum annealing-based approach for multi-agent gridworlds. The algorithm can also be run on quantum annealing hardware if available.",
+            "cite_spans": [
+                {
+                    "start": 41,
+                    "end": 44,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 195,
+                    "end": 201,
+                    "text": "Fig. 2",
+                    "ref_id": null
+                }
+            ],
+            "section": "Introduction"
+        },
+        {
+            "text": "In the following section, we will give more details on reinforcement learning and Boltzmann machines. In Sect. 3 we will describe the used method and the extensions towards a multi-agent environment. Results will be presented and discussed in Sect. 4, while Sect. 5 gives a conclusion.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "A reinforcement learning problem is described as a Markov Decision Process (MDP) [6, 15] , which is a discrete time stochastic system. At every timestep t the agent is in a state s t and chooses an action a t from its available actions in that state. The system then moves to the next state s t+1 and the agent receives a reward or penalty R at (s t , s t+1 ) for taking that specific action in that state. A policy \u03c0 maps states to a probability distribution over actions and, when used as \u03c0(s) it returns the highest-valued action a for state s. The policy will be optimized over the cumulative rewards attained by the agent for all state-action combinations. To find the optimal policy \u03c0 * , the Q-function Q(s, a) is used which defines for each state-action pair the Q-value, denoting the expected cumulative reward, or the quality. The Q-function is trained by trial and error, by repeatedly taking actions in the environment and updating the Q-values using the Bellman equation [5] :",
+            "cite_spans": [
+                {
+                    "start": 81,
+                    "end": 84,
+                    "text": "[6,",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 85,
+                    "end": 88,
+                    "text": "15]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 984,
+                    "end": 987,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "Different structures can be used to represent the Q-function, ranging from a simple but very limited tabular Q-function to a (deep) neural network which encodes the values with the state vector as input nodes, and all possible actions as output nodes. In such deep neural networks, the link between nodes i and j is assigned a weight w ij . These weights can then be updated using, for example, gradient descent, which minimizes a loss function. If a multi-layered neural network is used, it is called deep reinforcement learning (DRL). A special type of DRL is given by Boltzmann machines and their restricted variants.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "A Boltzmann machine is a type of neural network that can be used to encode the Q-function. In a general Boltzmann machine, all nodes are connected to each other. In a restricted Boltzmann machine (RBM), nodes are divided into subsets of visible nodes v and hidden nodes h, where nodes in the same subset have no connections. The hidden nodes can be further separated in multiple hidden node subsets, resulting in a multi-layered (deep) RBM, an example of which can be seen in Fig. 1a with two hidden layers of 5 and 3 nodes respectively. There are also two visible layers. Connections between distinct nodes i and j are assigned a weight w ij . Additionally, each node i is assigned a bias w ii , indicating a preference to one of the two possible values \u00b11 for that node. All links are bidirectional in RBMs, meaning w ij = w ji . Hence, they differ from feed-forward neural networks, where the weight of one direction is typically set to 0.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 476,
+                    "end": 483,
+                    "text": "Fig. 1a",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Background"
+        },
+        {
+            "text": "Using v i for visible nodes and h j for hidden ones, we can associate a global energy configuration to an RBM using",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "The probability for nodes being plus or minus one depends on this global energy and is given by",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": ".",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "Here \u0394E i = E node i=1 \u2212 E node i=\u22121 is the difference in global energy if node i is 1 or \u22121 and T is an internal model parameter, referred to as the temperature. Simulated annealing can be used to update the weights w ij quickly. In this approach, a subset of visible nodes are fixed (clamped) to their current values after which the network is sampled. During this process the anneal temperature is decreased slowly. This anneal parameter affects (decreases) the probability that the annealing process moves to a worse solution than the current one to avoid potential local minima. This sampling results in the convergence of the overall probability distribution of the RBM where the global energy of the network fluctuates around the global minimum.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "First, we will explain how the restricted quantum Boltzmann machine can be used to learn an optimal traversal-policy in a single-agent gridworld setting. Next, in Sect. 3.2 we will explain how to extend this model to work for a multiagent environment.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Method"
+        },
+        {
+            "text": "In [8] , an approach to a restricted quantum Boltzmann machine was introduced for a gridworld problem. In their approach, each state is assigned an input node and each action an output node. Additional nodes in the hidden layers are used to be able to learn the best state-action combinations. The topology for the hidden layers is a hyperparameter that is set before the execution of the algorithm. The task presented to the restricted Boltzmann machine is to find the optimal traversal-policy of the grid, given a position and a corresponding action.",
+            "cite_spans": [
+                {
+                    "start": 3,
+                    "end": 6,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Single-Agent Quantum Learning"
+        },
+        {
+            "text": "Using a Hamiltonian associated to a restricted Boltzmann machine, we can find its energy. In its most general form, the Hamiltonian H v is given by",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Single-Agent Quantum Learning"
+        },
+        {
+            "text": "with v denoting the prescribed fixed assignments of the visible nodes, i.e. the input and output nodes. Here V is the set of all visible nodes, while H is the set of all hidden nodes. Note that setting w hh = 0 has the same effect as removing the link between nodes h and h . Also, \u0393 is an annealing parameter, while \u03c3 z i and \u03c3 x i are the spin-values of node i in the z-and x-direction, respectively. Note that in Eq. (3) no \u03c3 z v variables occur, as the visible nodes are fixed for a given sample, indicated by the v-terms. Note the correspondence between this Hamiltonian and the global energy configuration given in Eq. (2) . The optimal traversal-policy is found by training the restricted Boltzmann machine, which means that the weights w vv , w vh and w hh are optimized based on presented training samples.",
+            "cite_spans": [
+                {
+                    "start": 625,
+                    "end": 628,
+                    "text": "(2)",
+                    "ref_id": "BIBREF1"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Single-Agent Quantum Learning"
+        },
+        {
+            "text": "For each training step i, a random state s 1 i is chosen which, together with a chosen action a 1 i , forms the tuple (s 1 i , a 1 i ). Based on this state-action combination, a second state is determined:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Single-Agent Quantum Learning"
+        },
+        {
+            "text": ". The corresponding optimal second action a 2 i can be found by minimizing the free energy of the restricted Boltzmann machine given by the Hamiltonian of Eq. (3). As no closed expression exists for this free energy, an approximate approach based on sampling H v is used.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Single-Agent Quantum Learning"
+        },
+        {
+            "text": "For all possible actions a from state s 2 i , the Q-function corresponding to the RBM is evaluated. The action a that minimizes Q, is taken as a 2",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Single-Agent Quantum Learning"
+        },
+        {
+            "text": "i . Ideally, one would use the Hamiltonian H v from Eq. (3) for the Q-function. However, H v has both \u03c3 x h and \u03c3 z h terms that correspond to the spin of variable h in the xand z-direction. As these two directions are perpendicular, measuring the state of one direction destroys the state of the other. Therefore, instead of H v , we use an effective Hamiltonian H ef f v for the Q-function. In this effective Hamiltonian all \u03c3 x h terms are replaced by \u03c3 z terms by using so-called replica stacking [20] , based on the Suzuki-Trotter expansion of Eq. (3) [13, 26] .",
+            "cite_spans": [
+                {
+                    "start": 501,
+                    "end": 505,
+                    "text": "[20]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 557,
+                    "end": 561,
+                    "text": "[13,",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 562,
+                    "end": 565,
+                    "text": "26]",
+                    "ref_id": "BIBREF25"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Single-Agent Quantum Learning"
+        },
+        {
+            "text": "With replica stacking, the Boltzmann machine is replicated r times in total. Connections between corresponding nodes in adjacent replicas are added. Thus, node i in replica k is connected to node i in replica k \u00b1 1 modulo r. Using the replicas, we obtain a new effective Hamiltonian H ef f v=(s,a) with all \u03c3 x variables replaced by \u03c3 z variables. We refer to the spin variables in the z-direction as \u03c3 i,k for node i in replica k and we identify \u03c3 h,0 \u2261 \u03c3 h,r . All \u03c3 z variables can be measured simultaneously. Additionally, the weights in the effective Hamiltonian are scaled by the number of replicas. In its clamped version, i.e. with v = (s, a) fixed, the effective resulting Hamiltonian H ef f v=(s,a) is given by",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Single-Agent Quantum Learning"
+        },
+        {
+            "text": "Note that J + is an annealing parameter that can be set and relates to the original annealing parameter \u0393 . Throughout this paper, the values selected for \u0393 and J + are identical to those in [8] .",
+            "cite_spans": [
+                {
+                    "start": 191,
+                    "end": 194,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Single-Agent Quantum Learning"
+        },
+        {
+            "text": "For a single evaluation of the Hamiltonian and all corresponding spin variables, we get a specific spin configuration\u0125. We evaluate the circuit n runs times for a fixed combination of s and a, which gives a multi-set\u0125 s,a = {\u0125 1 , . . . ,\u0125 nruns } of evaluations. From\u0125 s,a , we construct a set of configurations C\u0125 s,a of unique spin combinations by removing duplicate solutions and retaining only one occurrence of each spin combination. Each spin configuration in C\u0125 s,a thus corresponds to one or more configurations in\u0125 s,a , and each configuration in\u0125 s,a corresponds to precisely one configuration in C\u0125 s,a .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Single-Agent Quantum Learning"
+        },
+        {
+            "text": "The quality of\u0125 s,a , and implicitly of the weights of the RBM, is evaluated using the Q-function",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Single-Agent Quantum Learning"
+        },
+        {
+            "text": "where the Hamiltonian is averaged over all spin-configurations in\u0125 s,a . Furthermore, \u03b2 is an annealing parameter and the frequency of occurrence of c in\u0125 s,a is given by the probability P(c|s, a). The effective Hamiltonian H ef f v=(s,a) from Eq. (4) is used.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Single-Agent Quantum Learning"
+        },
+        {
+            "text": "Using the Q-function from Eq. (5), the best action a 2 i for state s 2 i is given by ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Single-Agent Quantum Learning"
+        },
+        {
+            "text": "Once the optimal action a 2 i for state s 2 i is found, the weights of the restricted Boltzmann machine are updated following",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Single-Agent Quantum Learning"
+        },
+        {
+            "text": "where, v is one of the clamped variables s 1 i or a 1 i . The averages h and hh are obtained by averaging the spin configurations in\u0125 s,a for each h and all products hh for adjacent h and h . Based on the gridworld, a reward or penalty is given using the reward function R a 1 i (s 1 i , s 2 i ). The learning rate is given by , and \u03b3 is a discount factor related to expected future rewards, representing a feature of the problem.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Single-Agent Quantum Learning"
+        },
+        {
+            "text": "If the training phase is sufficiently long, the weights are updated such that the restricted Boltzmann machine gives the optimal policy for all state-action combinations. The required number of training samples depends on the topology of the RBM and the specific problem at hand. In the next section we will consider the extensions on this model to accommodate multi-agent learning.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Single-Agent Quantum Learning"
+        },
+        {
+            "text": "In the previous section we considered a model with only a single agent having to learn an optimal policy in a grid, however, many applications involve multiple agents having conjoined tasks. For instance, one may think of a search-and-rescue setting where first an asset must be secured before a safe-point can be reached.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Multi-agent Quantum Learning"
+        },
+        {
+            "text": "This model can be solved in different ways. First and foremost, different models can be trained for each task/agent involved. In essence, this is a form of multiple independent single-agent models. We will however focus on a model including all agents and all rewards simultaneously. This can be interpreted as one party giving orders to all agents on what to do next, given the states.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Multi-agent Quantum Learning"
+        },
+        {
+            "text": "We consider the situation where the number of target locations is equal to the number of agents and each agent has to reach a target. The targets are not preassigned to the agents, however, each target can only be occupied by one agent simultaneously.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Multi-agent Quantum Learning"
+        },
+        {
+            "text": "For this multi-agent setting, we extend the restricted Boltzmann machine as presented before. Firstly, each action of each agent is considered as an input state. For M agents, each with N actions, this gives MN input states. The output states are all possible combinations of the different actions of all agents. This means that if each agent has k possible actions, there are k M different output states.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Multi-agent Quantum Learning"
+        },
+        {
+            "text": "When using a one-hot encoding of states to nodes, the number of nodes in the network increases significantly compared to using a binary qubit encoding which allows for a more efficient encoding. Training the model using a binary encoding, however, is more complex than with one-hot encoding since for the former only a few nodes carry information on which states and actions are of interest while for binary encoding all nodes are used to encode the information. Therefore, we chose one-hot encoding similar to [8] .",
+            "cite_spans": [
+                {
+                    "start": 511,
+                    "end": 514,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Multi-agent Quantum Learning"
+        },
+        {
+            "text": "The Boltzmann machine for a multi-agent setting is closely related to that of a single-agent setting. An example is given in Fig. 1b for two agents. Here, input s i,j represents state i of agent j and output (a m , a n ) means action m for the first agent and action n for the second.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 125,
+                    "end": 132,
+                    "text": "Fig. 1b",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Multi-agent Quantum Learning"
+        },
+        {
+            "text": "Apart from a different RBM topology, also the effective Hamiltonian of Eq. (4) changes to accommodate the extra agents and the increase in possible action combinations for all agents. Again, all weights are initialized and state-action combinations denoted by tuples (s i1,1 , . . . , s iM ,M , (a i1 , . . . , a iM ) ), are given as input to the Boltzmann machine. Let a = (a i1 , . . . , a iM ) and S = {s i1,1 , . . . , s iM ,M } and let r be the number of replicas. Nodes corresponding to these states and actions are clamped to 1, and other visible nodes are clamped to 0. The effective Hamiltonian is then given by",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 267,
+                    "end": 317,
+                    "text": "(s i1,1 , . . . , s iM ,M , (a i1 , . . . , a iM )",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Multi-agent Quantum Learning"
+        },
+        {
+            "text": "In each training iteration a random state for each agent is chosen, together with the corresponding action. For each agent, a new state is determined based on these actions. The effective Hamiltonian is sampled n runs times and the next best actions for the agents are found by minimizing the Q-function, with Eq. (10) used as effective Hamiltonian in Eq. (5). Next, the policy and weights of the Boltzmann machine are updated.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Multi-agent Quantum Learning"
+        },
+        {
+            "text": "To update the weights of connections, Eq. (8) and Eq. (9) are used. Note that this requires the reward function to be evaluated for the entirety of the choices, consisting of the new states of all agents and the corresponding next actions.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Multi-agent Quantum Learning"
+        },
+        {
+            "text": "In this section the setup and results of our experiments are presented and discussed. First we explain how the models are sampled in Sect. 4.1, then the used gridworlds are introduced in Sect. 4.2. The corresponding results for the single-agent and multi-agent learning are presented and discussed in Sect. 4.3 and Sect. 4.4, respectively.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Numerical Experiments"
+        },
+        {
+            "text": "There are various annealing dynamics [4] that can be used to sample spin values from the Boltzmann distribution resulting from the effective Hamiltonian of Eq. (3). The case \u0393 = 0 corresponds to purely classical simulated annealing [19] . Simulated annealing (SA) is also known as thermal annealing and finds its origin in metallurgy where the cooling of a material is controlled to improve its quality and correct defects.",
+            "cite_spans": [
+                {
+                    "start": 37,
+                    "end": 40,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 232,
+                    "end": 236,
+                    "text": "[19]",
+                    "ref_id": "BIBREF18"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Simulated Quantum Annealing"
+        },
+        {
+            "text": "For \u0393 = 0, we have quantum annealing (QA) if the annealing process starts from the ground state of the transverse field and ends with a classical energy corresponding to the ground state energy of the Hamiltonian. The ground energy corresponds to the minimum value of the cost function that is optimized. No replicas are used for QA. The devices made by D-Wave Systems physically implement this process of quantum annealing.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Simulated Quantum Annealing"
+        },
+        {
+            "text": "However, we can also simulate quantum annealing using the effective Hamiltonian with replicas (Eq. (4)) instead of the Hamiltonian with the transverse field (Eq. (3)). This representation of the original Hamiltonian as an effective one, corresponds to simulated quantum annealing (SQA). Theoretically, SQA is a method to classically emulate the dynamics of quantum annealing by a quantum Monte Carlo method whose parameters are changed slowly during the simulation [22] . In other words, by employing the Suzuki-Trotter formula with replica stacking, one can simulate the quantum system described by the original Hamiltonian in Eq. (3).",
+            "cite_spans": [
+                {
+                    "start": 465,
+                    "end": 469,
+                    "text": "[22]",
+                    "ref_id": "BIBREF21"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Simulated Quantum Annealing"
+        },
+        {
+            "text": "Although SQA does not reproduce quantum annealing, it provides a way to understand phenomena such as tunneling in quantum annealers [16] . SQA can have an advantage over SA thanks to the capability to change the amplitudes of states in parallel, as proven in [9] . Therefore, we opted for SQA in our numerical experiments. We implemented the effective Hamiltonian on two different back-ends. The first using classical sampling given by simulated annealing (SQA SA). The second by implementing the effective Hamiltonian on the D-Wave 2000Q (SQA D-Wave 2000Q), a 2048 qubits quantum processor. Furthermore, we implemented a classical DRL algorithm for comparison. (b) Gridworld problems considered in multi-agent experiments.",
+            "cite_spans": [
+                {
+                    "start": 132,
+                    "end": 136,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 259,
+                    "end": 262,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Simulated Quantum Annealing"
+        },
+        {
+            "text": "All grids used to test the performance. On the left the three grids used for the single-agent scenario. On the right the grids used for multi-agent learning. The 3 \u00d7 3-grid is used with and without wall.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Fig. 2."
+        },
+        {
+            "text": "We illustrate the free energy-based reinforcement learning algorithm proposed in Sect. 3.2 by applying it on the environments shown in Fig. 2a and Fig. 2b for one and two agents, respectively. In each gridworld, agents are allowed to take the actions up, down, left, right and stand still. We consider only examples with deterministic rewards. Furthermore, we consider environments both with and without forbidden states (walls) or penalty states. The goal of the agent is to reach the reward while avoiding penalty states. In case of multiple agents and rewards, each of the agents must reach a different reward. The considered multiagent gridworlds focus on two agents. These environments are however easily extendable to an arbitrary number of agents.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 135,
+                    "end": 142,
+                    "text": "Fig. 2a",
+                    "ref_id": null
+                },
+                {
+                    "start": 147,
+                    "end": 154,
+                    "text": "Fig. 2b",
+                    "ref_id": null
+                }
+            ],
+            "section": "Gridworld Environments"
+        },
+        {
+            "text": "The discount factor \u03b3, explained in Sect. 3.1, was set to 0.8, similar to [8] . An agent reaching a target location is rewarded a value of 200, while ending up in a penalty state is penalized by \u2212200. An extra penalty of \u221210 is given for each step an agent takes. As the rewards propagate through the network, the penalty assigned to taking steps is overcome. In the multi-agent case, a reward of 100 is given to each agent if each is at a different reward state simultaneously.",
+            "cite_spans": [
+                {
+                    "start": 74,
+                    "end": 77,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Gridworld Environments"
+        },
+        {
+            "text": "To assess the results of the multi-agent QBM-based reinforcement learning algorithm, we compare the learned policy for each environment with the optimal one using a fidelity measure. The optimal policy for this measure was determined logically thanks to the simple nature of these environments. As fidelity measure for the single-agent experiments, the formula from [20] is used. The fidelity at the i-th training sample for the multi-agent case with n agents is defined as",
+            "cite_spans": [
+                {
+                    "start": 366,
+                    "end": 370,
+                    "text": "[20]",
+                    "ref_id": "BIBREF19"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Gridworld Environments"
+        },
+        {
+            "text": "Here, T r denotes the number of independent runs for the method, |S| denotes the total amount of states in the environment, \u03c0 * denotes the optimal policy and A(s, i, k) denotes the action assigned at the k-th run and i-th training sample to the state pair s. Each state pair s is an n-tuple consisting of the state of each agent. This definition of fidelity for the multi-agent case essentially records the amount of state pairs in which all agents took the optimal actions over all runs. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Gridworld Environments"
+        },
+        {
+            "text": "Before running the experiment, a grid search is performed to find the best setting for some hyperparameters. The parameters considered are: structure of the hidden layers, learning rate \u03b3 and number of replicas r used. These replicas are needed for the Suzuki-Trotter expansion of Eq. (3). The SQA SA reinforcement learning algorithm was run T r = 20 times on the 5 \u00d7 3 grid shown in Fig. 2a for T s = 500 training samples each run. In total, 18 different hyperparameter combinations are considered. For each, an average fidelity over all training steps is computed. The four best combinations are shown in the left plot of Fig. 3 . Based on these results, the parameters corresponding to the orange curve (i.e. hidden layer size = [4, 4] , \u03b3 = 0.01, r = 1) have been used in the experiments. These settings are used for all single-agent environments. The three different sampling approaches explained in Sect. 4.1 are used for each of the three environments.",
+            "cite_spans": [
+                {
+                    "start": 732,
+                    "end": 735,
+                    "text": "[4,",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 736,
+                    "end": 738,
+                    "text": "4]",
+                    "ref_id": "BIBREF3"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 384,
+                    "end": 391,
+                    "text": "Fig. 2a",
+                    "ref_id": null
+                },
+                {
+                    "start": 624,
+                    "end": 630,
+                    "text": "Fig. 3",
+                    "ref_id": "FIGREF3"
+                }
+            ],
+            "section": "Single-Agent Results"
+        },
+        {
+            "text": "The results are all shown in Fig. 4 . We achieved similar results compared to the original single-agent reinforcement learning work in [8] . Our common means of comparison is the 5 \u00d7 3 gridworld problem, which in [8] also exhibits the best performance with SQA. Despite the fact that we did not make a distinction on the underlying graph of the SQA method, in our case the algorithm seems to achieve a higher fidelity within the first few training steps (\u223c0.9 at the 100-th step in comparison to \u223c0.6 in [8] ) and to exhibit less variation in the fidelity later on in training. This may be due to the different method chosen for sampling the effective Hamiltonian.",
+            "cite_spans": [
+                {
+                    "start": 135,
+                    "end": 138,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 213,
+                    "end": 216,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 504,
+                    "end": 507,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 29,
+                    "end": 35,
+                    "text": "Fig. 4",
+                    "ref_id": "FIGREF4"
+                }
+            ],
+            "section": "Single-Agent Results"
+        },
+        {
+            "text": "Comparing sampling using SQA simulated annealing with SQA D-Wave 2000Q, we see the latter shows more variance in the results. This can be explained by the stochastic nature of the D-Wave system, the limited availability of QPU time in this research and the fact that only 100 D-Wave 2000Q samples are used at every training step. We expect that increasing the number of D-Wave 2000Q samples per training iteration increases the overall fidelity and results in a smoother curve. However, it could also stem from the translation of the problem to the D-Wave 2000Q architecture. A problem that is too large to be directly embedded on the QPU is decomposed in smaller parts and the result might be suboptimal. This issue can be resolved by a richer QPU architecture or a more efficient decomposition.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Single-Agent Results"
+        },
+        {
+            "text": "Furthermore, the results could also be improved by a more environment specific hyperparameter selection. We now used the hyperparameters optimized for the 5 \u00d7 3 gridworld for each of the other environments. A gridsearch for each environment separately will probably improve the results. Increasing the number of training steps and averaging over more training runs will likely give a better performance and reduce variance for both SQA methods. Finally, adjusting the annealing schedule by optimizing the annealing parameter \u0393 could also lead to significantly better results.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Single-Agent Results"
+        },
+        {
+            "text": "Comparing the DRL to the SQA SA algorithm, we observe that the SQA SA algorithm achieves a higher fidelity using fewer training samples than the DRL for all three environments. Even SQA D-Wave 2000Q, with the limitations listed above, outperforms the classical reinforcement learning approach with exception of the 4 \u00d7 1 gridworld, the simplest environment. It is important to note that the DRL algorithm will ultimately reach a fidelity similar to both SQA approaches, but it does not reach this performance for the 5 \u00d7 3 and 7 \u00d7 5 gridworlds until having taken about six to twenty times as many training steps, respectively. Hence, the simulated quantum annealing approach on the D-Wave system learns more efficiently in terms of timesteps.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Single-Agent Results"
+        },
+        {
+            "text": "As the multi-agent environments are fundamentally different from the singleagent ones, different hyperparameters might be needed. Therefore, we again run a grid search to find the optimal values for the same hyperparameters as in the single-agent case. Additionally, due to the complexity of the multi-agent environments, the number of annealing samples per training step n runs \u2208 {100, 500} is also considered in the grid search. For each combination of hyperparameters, the algorithm was run T r = 15 times for T s = 500 training samples each run for the 2 \u00d7 2 gridworld problem shown in Fig. 2b . In total, 36 combinations are considered and the performance of the best four combinations is given in the right plot in Fig. 3 .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 590,
+                    "end": 597,
+                    "text": "Fig. 2b",
+                    "ref_id": null
+                },
+                {
+                    "start": 721,
+                    "end": 727,
+                    "text": "Fig. 3",
+                    "ref_id": "FIGREF3"
+                }
+            ],
+            "section": "Multi-agent Results"
+        },
+        {
+            "text": "Based on the results from this gridsearch, suitable choices for the model parameters would either be given by the parameter sets corresponding to the green fidelity curve or the blue one. We opt for the blue fidelity curve, corresponding to a hidden layer topology of [8, 8] , a learning rate \u03b3 = 0.01, one replica and n runs = 500 samples per training step, since that one is expected to be generalize better due to the larger hidden network and increased sampling.",
+            "cite_spans": [
+                {
+                    "start": 268,
+                    "end": 271,
+                    "text": "[8,",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 272,
+                    "end": 274,
+                    "text": "8]",
+                    "ref_id": "BIBREF7"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Multi-agent Results"
+        },
+        {
+            "text": "The same hyperparameters found in the grid search conducted on the 2 \u00d7 2 gridworld problem are used for the two other environments. In Fig. 5 , the results for the multi-agent environments are shown. As the available D-Wave 2000Q QPU time was limited in this research, only the results for the multi-agent SQA simulated annealing and the multi-agent DRL method are shown. An aspect that immediately stands out from the performance plots is the fast learning rate achieved by SQA SA within the first 250 training steps. In the case of classical DRL, learning progresses slower and the maximum fidelity reached is still lower than the best values achieved by SQA in the earlier iterations. We also see that the overall achieved fidelity is rather low for each of the environments compared to the single agent environments. This indicates that the learned policies are far from optimal. This can be due to the challenging nature of the small environments where multiple opposing strategies can be optimal, for instance, agent 1 moving to target 1 and agent 2 to target 2, and vice versa.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 135,
+                    "end": 141,
+                    "text": "Fig. 5",
+                    "ref_id": "FIGREF5"
+                }
+            ],
+            "section": "Multi-agent Results"
+        },
+        {
+            "text": "We expect the results for SQA D-Wave 2000Q to be better than the classical results, as SQA D-Wave 2000Q excels at sampling from a Boltzmann distribution, given sufficiently large hardware and sufficiently long decoherence times. We see that for two of the three environments, SQA SA learns faster and achieves at least a similar fidelity as classical methods. This faster learning and higher achieved fidelity is also expected of SQA D-Wave 2000Q.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Multi-agent Results"
+        },
+        {
+            "text": "In this paper we introduced free energy-based multi-agent reinforcement learning based on the Suzuki-Trotter decomposition and SQA sampling of the resulting effective Hamiltonian. The proposed method allows the modelling of arbitrarilysized gridworld problems with an arbitrary number of agents. The results show that this approach outperforms classical deep reinforcement learning, as it finds policies with higher fidelity within a smaller amount of training steps. Some of the shown results are obtained using SQA simulated annealing, opposed to SQA quantum annealing which is expected to perform even better, given sufficient hardware and sufficiently many runs. Hence, a natural progression of this work would be to obtain corresponding results for SQA D-Wave 2000Q. The current architecture of the quantum annealing hardware is rather limited in size and a larger QPU is needed to allow fast and accurate reinforcement learning algorithm implementations of large problems.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion"
+        },
+        {
+            "text": "Furthermore, implementing the original Hamiltonian without replicas on quantum hardware, thus employing proper quantum annealing, might prove beneficial. This takes away the need for the Suzuki-Trotter expansion and thereby a potential source of uncertainty. Moreover, from a practical point of view, it is worthwhile to investigate more complex multi-agent environments, where agents for instance have to compete or cooperate, or environments with stochasticity.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "A learning algorithm for Boltzmann machines",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Ackley",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Hinton",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Sejnowski",
+                    "suffix": ""
+                }
+            ],
+            "year": 1985,
+            "venue": "Cogn. Sci",
+            "volume": "9",
+            "issn": "1",
+            "pages": "147--169",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Solving the Rubik's cube with deep reinforcement learning and search",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Agostinelli",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Mcaleer",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Shmakov",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Baldi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Nat. Mach. Intell",
+            "volume": "1",
+            "issn": "",
+            "pages": "356--363",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Reinforcement learning-based multi-agent system for network traffic signal control",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Arel",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Urbanik",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Kohls",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "IET Intell. Transp. Syst",
+            "volume": "4",
+            "issn": "2",
+            "pages": "128--135",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Thermal, quantum and simulated quantum annealing: analytical comparisons for simple models",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Bapst",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Semerjian",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "J. Phys. Conf. Ser",
+            "volume": "473",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "On the theory of dynamic programming",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Bellman",
+                    "suffix": ""
+                }
+            ],
+            "year": 1952,
+            "venue": "Proc. Natl. Acad. Sci",
+            "volume": "38",
+            "issn": "8",
+            "pages": "716--719",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "A Markovian decision process",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Bellman",
+                    "suffix": ""
+                }
+            ],
+            "year": 1957,
+            "venue": "Indiana Univ. Math. J",
+            "volume": "6",
+            "issn": "",
+            "pages": "679--684",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Quantum-assisted Helmholtz machines: a quantum-classical deep learning framework for industrial datasets in near-term devices",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Benedetti",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Realpe-G\u00f3mez",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Perdomo-Ortiz",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Quantum Sci. Technol",
+            "volume": "3",
+            "issn": "3",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Reinforcement learning using quantum Boltzmann machines",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Crawford",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Levit",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Ghadermarzy",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Oberoi",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Ronagh",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Simulated quantum annealing can be exponentially faster than classical simulated annealing",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Crosson",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Harrow",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "2016 IEEE 57th Annual Symposium on Foundations of Computer Science (FOCS)",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Quantum reinforcement learning",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Dong",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Tarn",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "IEEE Trans. Syst. Man Cybern. Part B (Cybern.)",
+            "volume": "38",
+            "issn": "5",
+            "pages": "1207--1220",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Quantum-enhanced machine learning",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Dunjko",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Taylor",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Briegel",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Phys. Rev. Lett",
+            "volume": "117",
+            "issn": "13",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Quantum annealing: a new method for minimizing multidimensional functions",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Finnila",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Gomez",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Sebenik",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Stenson",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Doll",
+                    "suffix": ""
+                }
+            ],
+            "year": 1994,
+            "venue": "Chem. Phys. Lett",
+            "volume": "219",
+            "issn": "5",
+            "pages": "343--348",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Finding exponential product formulas of higher orders",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Hatano",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Suzuki",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Quantum Annealing and Other Optimization Methods. LNP",
+            "volume": "679",
+            "issn": "",
+            "pages": "37--68",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/11526216_2"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "The world's technological capacity to store, communicate, and compute information",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Hilbert",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "L\u00f3pez",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Science",
+            "volume": "332",
+            "issn": "6025",
+            "pages": "60--65",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Dynamic Programming and Markov Processes. Wiley for The Massachusetts Institute of Technology",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Howard",
+                    "suffix": ""
+                }
+            ],
+            "year": 1964,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Understanding quantum tunneling through quantum Monte Carlo simulations",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Isakov",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Phys. Rev. Lett",
+            "volume": "117",
+            "issn": "18",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Quantum annealing in the transverse Ising model",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Kadowaki",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Nishimori",
+                    "suffix": ""
+                }
+            ],
+            "year": 1998,
+            "venue": "Phys. Rev. E",
+            "volume": "58",
+            "issn": "",
+            "pages": "5355--5363",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Quantum variational autoencoder",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Khoshaman",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Vinci",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Denis",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Andriyash",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Amin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Optimization by simulated annealing",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Kirkpatrick",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Gelatt",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Vecchi",
+                    "suffix": ""
+                }
+            ],
+            "year": 1983,
+            "venue": "Science",
+            "volume": "220",
+            "issn": "4598",
+            "pages": "671--680",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Free energy-based reinforcement learning using a quantum processor",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Levit",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Crawford",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Ghadermarzy",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Oberoi",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Zahedinejad",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Ronagh",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Quantum annealing versus classical machine learning applied to a simplified computational biology problem",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Felice",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Rohs",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Lidar",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "NPJ Quantum Inf",
+            "volume": "4",
+            "issn": "1",
+            "pages": "1--10",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Dynamics of simulated quantum annealing in random Ising chains",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Mbeng",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Privitera",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Arceci",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Santoro",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Phys. Rev. B",
+            "volume": "99",
+            "issn": "6",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Traffic flow optimization using a quantum annealer",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Neukart",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Compostella",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Seidel",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Dollen",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Yarkoni",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Parney",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Front. ICT",
+            "volume": "4",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Quantum-assisted cluster analysis on a quantum annealing device",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Neukart",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Dollen",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Seidel",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Front. Phys",
+            "volume": "6",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Mastering the game of go with deep neural networks and tree search",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Silver",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Nature",
+            "volume": "529",
+            "issn": "7587",
+            "pages": "484--489",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Generalized Trotter's formula and systematic approximants of exponential operators and inner derivations with applications to many-body problems",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Suzuki",
+                    "suffix": ""
+                }
+            ],
+            "year": 1976,
+            "venue": "Commun. Math. Phys",
+            "volume": "51",
+            "issn": "2",
+            "pages": "183--190",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/BF01609348"
+                ]
+            }
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "The chips are down for Moore's law",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Waldrop",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Nature",
+            "volume": "530",
+            "issn": "7589",
+            "pages": "144--147",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Electronic structure calculations and the Ising Hamiltonian",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Xia",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Bian",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Kais",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "J. Phys. Chem. B",
+            "volume": "122",
+            "issn": "13",
+            "pages": "3384--3395",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Target-driven visual navigation in indoor scenes using deep reinforcement learning",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "2017 IEEE International Conference on Robotics and Automation (ICRA)",
+            "volume": "",
+            "issn": "",
+            "pages": "3357--3364",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Examples of restricted Boltzmann machines for reinforcement learning environments with one or more agents.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "Fidelity scores corresponding to hyperparameter choices with the highest average fidelity for the 5 \u00d7 3 single-agent and 2 \u00d7 2 multi-agent gridworld. The hyperparameters considered are the hidden layer size (described as an array of the number of nodes per layer), the learning rate \u03b3 and the number of replicas r. For the multi-agent grid search we also considered the number of samples per training step. The legends indicate the used values. (Color figure online)",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "The performance of the different RL implementations for the three single-agent gridworlds. All algorithms have been run Tr = 10 times.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": "Different RL methods for the three multi-agent gridworlds. All results are averaged over Tr = 5 runs.",
+            "latex": null,
+            "type": "figure"
+        }
+    },
+    "back_matter": []
+}

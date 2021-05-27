@@ -1,0 +1,3782 @@
+{
+    "paper_id": "e79cf411bcb1a29f018ed3c828d0c0c60c6be313",
+    "metadata": {
+        "title": "Phytochemicals of Rhus spp. as Potential Inhibitors of the SARS-CoV-2 Main Protease: Molecular Docking and Drug- Likeness Study",
+        "authors": [
+            {
+                "first": "Yousery",
+                "middle": [
+                    "E"
+                ],
+                "last": "Sherif",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Mansoura University",
+                    "location": {
+                        "settlement": "Mansoura",
+                        "country": "Egypt"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Sami",
+                "middle": [
+                    "A"
+                ],
+                "last": "Gabr",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Rehabilitation Research Chair",
+                    "institution": "King Saud University",
+                    "location": {
+                        "settlement": "Riyadh",
+                        "country": "Saudi Arabia"
+                    }
+                },
+                "email": "dr.samigabr@gmail.com"
+            },
+            {
+                "first": "Nasser",
+                "middle": [
+                    "M"
+                ],
+                "last": "Hosny",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Port Said University",
+                    "location": {
+                        "postBox": "P O Box 42522",
+                        "settlement": "Port Fuad",
+                        "country": "Egypt"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Ahmad",
+                "middle": [
+                    "H"
+                ],
+                "last": "Alghadir",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Rehabilitation Research Chair",
+                    "institution": "King Saud University",
+                    "location": {
+                        "settlement": "Riyadh",
+                        "country": "Saudi Arabia"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Rayan",
+                "middle": [],
+                "last": "Alansari",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Taibah University",
+                    "location": {
+                        "settlement": "Medina",
+                        "country": "Saudi Arabia"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Background. e outbreak of coronavirus disease 2019 induced by the novel coronavirus severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) originated in China and spread to cover the entire world with an ongoing pandemic. e magnitude of the situation and the fast spread of the new and deadly virus, as well as the lack of specific treatment, led to a focus on research to discover new therapeutic agents. Aim. In this study, we explore the potential inhibitory effects of some active polyphenolic constituents of Rhus spp. (sumac) against the SARS-CoV-2 main protease enzyme (M pro ; 6LU7). Methods. 26 active polyphenolic compounds of Rhus spp. were studied for their antiviral activity by molecular docking, drug likeness, and synthetic accessibility score (SAS) as inhibitors against the SARS-CoV-2 M pro . Results. e results show that all tested compounds of sumac provided good interaction with the main active site of SARS-CoV-2 M pro , with better, lower molecular docking energy (kcal/mol) compared to the well-known drugs chloroquine and favipiravir (Avigan). Only six active polyphenolic compounds of Rhus spp. (sumac), methyl 3,4,5-trihydroxybenzoate, (Z)-1-(2,4-dihydroxyphenyl)-3-(3,4-dihydroxyphenyl)-2-hydroxyprop-2-en-1-one, (Z)-2-(3,4-dihydroxybenzylidene)-6-hydroxybenzofuran-3(2H)-one, 3,5,7-trihydroxy-2-(4-hydroxyphenyl)chroman-4-one, 2-(3,4-dihydroxyphenyl)-3,5-dihydroxy-7-methoxy-4H-chroman-4-one, and 3,7-dihydroxy-2-(4-hydroxyphenyl)chroman-4one, were proposed by drug likeness, solubility in water, and SAS analysis as potential inhibitors of M pro that may be used for the treatment of COVID-19. Conclusion. Six phenolic compounds of Rhus spp. are proposed for synthesis as potential inhibitors against M pro and have potential for the treatment of COVID-19. ese results encourage further in vitro and in vivo investigations of the proposed ligands and research on the preventive use of Rhus spp. against SARS-CoV-2.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "e coronavirus disease 2019 (COVID-19) crisis started in China in December 2019. By 30 January 2020, about 213 individuals had died and at least 9066 had been infected [1] . It also spread globally, first to a number of Asian countries, as well as to Canada, France, Germany, and the United States. As a result, due to the spread of this new and deadly virus, governments around the world put several major cities on lockdown and put aside all normal plans to deal with the crisis. In addition, on 30 January 2020, the World Health Organization (WHO) declared the COVID-19 outbreak a global health emergency because it could spread to countries that were not prepared [1] [2] [3] [4] . us, on 11 March 2020, the WHO characterized COVID-19 as a pandemic, which has affected more than 200 countries; by March 2020, there were 30,105 deaths and 638,146 confirmed cases around the world [3] , which have increased considerably over time. Genomic and molecular-based analyses show that SARS-CoV-2 is a new type of human-infected \u03b2-coronavirus (CoV), which suggested that zoonotic hosts like bats might be the original host of this virus [5] . Situation Reports released by the WHO on 13th April revealed that SARS-CoV-2 infection can induce severe collateral disorders such as severe pneumonia, pulmonary edema, acute respiratory disease syndrome (ARDS), or multiple organ failure (such as shock, acute heart injury, or acute kidney injury), which are ultimately responsible for an increased number of deaths worldwide [6] .",
+            "cite_spans": [
+                {
+                    "start": 167,
+                    "end": 170,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 667,
+                    "end": 670,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 671,
+                    "end": 674,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 675,
+                    "end": 678,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 679,
+                    "end": 682,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 882,
+                    "end": 885,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 1131,
+                    "end": 1134,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 1513,
+                    "end": 1516,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "is may be also due to the lack of an effective specific antiviral therapy, since SARS-CoV-2 is a novel pathogen.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "us, several drugs such as lopinavir/ritonavir, neuraminidase inhibitors, and other present antiviral drugs have been proposed for the treatment of COVID-19 infection [7, 8] .",
+            "cite_spans": [
+                {
+                    "start": 166,
+                    "end": 169,
+                    "text": "[7,",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 170,
+                    "end": 172,
+                    "text": "8]",
+                    "ref_id": "BIBREF7"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "ese drugs produce their antiviral potency via an inhibition process against SARS-CoV-2 proteases [7, 8] . e magnitude of the situation and the lack of a specific therapy for the virus have led to a focus on research to find new therapeutic agents [8] . For the management of COVID-19, preventive and supportive therapies based on herbal plants may complement research on existing antiviral agents.",
+            "cite_spans": [
+                {
+                    "start": 97,
+                    "end": 100,
+                    "text": "[7,",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 101,
+                    "end": 103,
+                    "text": "8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 247,
+                    "end": 250,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Medicinal herbs known in ethnopharmacology have been suggested as antiviral agents for the treatment and control of contagious diseases like COVID-19 [9] [10] [11] [12] [13] [14] . Most of these studies use molecular docking analysis to identify the potential activities of phytoconstituents present in herbal plants for the treatment of diseases like COVID-19. ey focus on the activities of these plant constituents on the main proteases present in CoVs [12] [13] [14] .",
+            "cite_spans": [
+                {
+                    "start": 150,
+                    "end": 153,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 154,
+                    "end": 158,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 159,
+                    "end": 163,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 164,
+                    "end": 168,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 169,
+                    "end": 173,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 174,
+                    "end": 178,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 455,
+                    "end": 459,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 460,
+                    "end": 464,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 465,
+                    "end": 469,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Sumac (Rhus spp.), a flowering plant that grows in temperate and tropical regions, contains over 250 individual species worldwide [15] . It is usually used as spice and a medicinal herb in most of the world, particularly for its antiviral [16, 17] , antimicrobial, antibacterial, antioxidant, and wound-healing [18] [19] [20] [21] [22] [23] [24] [25] [26] properties. e antiviral activity of Rhus spp., particularly Rhus chinensis, has been explored in many studies. Different phytochemical fractions of Rhus chinensis showed potent anti-HIV-1 [27] [28] [29] , anti-herpes simplex virus (HSV) type 1 (HSV-1) [30] [31] [32] , and anti-HCV activity.",
+            "cite_spans": [
+                {
+                    "start": 130,
+                    "end": 134,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 239,
+                    "end": 243,
+                    "text": "[16,",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 244,
+                    "end": 247,
+                    "text": "17]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 311,
+                    "end": 315,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 316,
+                    "end": 320,
+                    "text": "[19]",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 321,
+                    "end": 325,
+                    "text": "[20]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 326,
+                    "end": 330,
+                    "text": "[21]",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 331,
+                    "end": 335,
+                    "text": "[22]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 336,
+                    "end": 340,
+                    "text": "[23]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 341,
+                    "end": 345,
+                    "text": "[24]",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 346,
+                    "end": 350,
+                    "text": "[25]",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 351,
+                    "end": 355,
+                    "text": "[26]",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 544,
+                    "end": 548,
+                    "text": "[27]",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 549,
+                    "end": 553,
+                    "text": "[28]",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 554,
+                    "end": 558,
+                    "text": "[29]",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 608,
+                    "end": 612,
+                    "text": "[30]",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 613,
+                    "end": 617,
+                    "text": "[31]",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 618,
+                    "end": 622,
+                    "text": "[32]",
+                    "ref_id": "BIBREF31"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "is antiviral activity was related to the presence of many active compounds such as phenolics, organic acids, proteins, fibers, volatile oils, fatty acids, vitamins, and minerals [33, 34] . Likewise, severe acute respiratory syndrome coronavirus (SARS-CoV) was significantly inhibited by using a 50% effective concentration (4.5 \u03bcm) of tetra-O-galloyl-\u03b2-d-glucose isolated from Galla chinensis (Rhus chinensis) [35] .",
+            "cite_spans": [
+                {
+                    "start": 178,
+                    "end": 182,
+                    "text": "[33,",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 183,
+                    "end": 186,
+                    "text": "34]",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 410,
+                    "end": 414,
+                    "text": "[35]",
+                    "ref_id": "BIBREF34"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "During infection, coronavirus attaches to target cells with the help of angiotensin-converting enzyme 2 (ACE2) present in the spike protein of the virus, which produces a spike protein-host cell protein interaction, whereby the virus genome with its nucleocapsid can easily release into the cytoplasm of the host cells [36, 37] . Sequence analysis of the replicase polyprotein in Avian infectious bronchitis virus, another coronavirus, originally predicted the presence of the coronavirus M pro protease enzyme [38] . is enzyme was related to chymotrypsin-like cysteine proteases which significantly play a potential role in the replication and transcription of the coronavirus (SARS-CoV).",
+            "cite_spans": [
+                {
+                    "start": 319,
+                    "end": 323,
+                    "text": "[36,",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 324,
+                    "end": 327,
+                    "text": "37]",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 511,
+                    "end": 515,
+                    "text": "[38]",
+                    "ref_id": "BIBREF37"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "us, it is considered a prime target for the discovery of antiviral agents [26, [39] [40] [41] .",
+            "cite_spans": [
+                {
+                    "start": 74,
+                    "end": 78,
+                    "text": "[26,",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 79,
+                    "end": 83,
+                    "text": "[39]",
+                    "ref_id": "BIBREF38"
+                },
+                {
+                    "start": 84,
+                    "end": 88,
+                    "text": "[40]",
+                    "ref_id": "BIBREF39"
+                },
+                {
+                    "start": 89,
+                    "end": 93,
+                    "text": "[41]",
+                    "ref_id": "BIBREF40"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "e SARS-CoV genome encodes a number of proteases. e main protease (M pro ) chymotrypsin-like protease (3CL pro ) from SARS-CoV-2 (6LU7) has an important role along with other cysteine proteases in the replication of the CoV genome.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "us, synthetic or herbal-based drugs targeting the proteases of SARS-CoV-2 (6LU7) may have a considerable role in the treatment of COVID-19 [38] . Several inhibitors including boceprevir, GC-376, and calpain inhibitors II and XII were identified to have potent activity to inhibit SARS-CoV-2 viral replication in cell culture [39] . e protease enzyme (6LU7) has been successfully crystallized and deposited in the Protein Data Bank (PDB) [40, 41] ; thus, it is considered as a potential target for therapeutic strategies, particularly for those who use phytochemicals [7, 42, 43] . It was reported that an evaluation of up-to-date knowledge relating to the characteristics of COVID-19 infection and complications encourages the investigation of the effectiveness of sumac extracts for COVID-19 treatment [44] [45] [46] [47] [48] . Recently, active metabolites from 14 cooking seasonings were examined as inhibitors for SARS-CoV-2 main protease (M pro ). A high potency of salvianolic acid A and curcumin as M pro inhibitors with binding energies of \u22129.7 and \u22129.2 kcal/ mol, respectively, was identified by in silico molecular docking analysis [47] ; the potential activity of salvianolic acid A and curcumin as M pro inhibitors against the SARS-CoV-2 main protease significantly depends upon forming from nine and six hydrogen bonds, respectively, with amino acids proximal to M pro 's active site [47] . Supporting review study showed that Rhus spp. (sumac) constituents could have a higher potency against the consequences produced by SARS-CoV-2 during human infection. e review study demonstrated that sumac could be useful in COVID-19 infection due to its versatile activities as anti-inflammatory, antimicrobial, antioxidant, and antimalarial effects [48] . In addition, the review article along with others mentioned that use of sumac as syrup or in capsules with different concentrations has no toxicity on human life and could be recommended in treatment protocol for COVID-19 patients [18, [48] [49] [50] [51] .",
+            "cite_spans": [
+                {
+                    "start": 139,
+                    "end": 143,
+                    "text": "[38]",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 325,
+                    "end": 329,
+                    "text": "[39]",
+                    "ref_id": "BIBREF38"
+                },
+                {
+                    "start": 437,
+                    "end": 441,
+                    "text": "[40,",
+                    "ref_id": "BIBREF39"
+                },
+                {
+                    "start": 442,
+                    "end": 445,
+                    "text": "41]",
+                    "ref_id": "BIBREF40"
+                },
+                {
+                    "start": 567,
+                    "end": 570,
+                    "text": "[7,",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 571,
+                    "end": 574,
+                    "text": "42,",
+                    "ref_id": "BIBREF41"
+                },
+                {
+                    "start": 575,
+                    "end": 578,
+                    "text": "43]",
+                    "ref_id": "BIBREF42"
+                },
+                {
+                    "start": 803,
+                    "end": 807,
+                    "text": "[44]",
+                    "ref_id": "BIBREF43"
+                },
+                {
+                    "start": 808,
+                    "end": 812,
+                    "text": "[45]",
+                    "ref_id": "BIBREF44"
+                },
+                {
+                    "start": 813,
+                    "end": 817,
+                    "text": "[46]",
+                    "ref_id": "BIBREF45"
+                },
+                {
+                    "start": 818,
+                    "end": 822,
+                    "text": "[47]",
+                    "ref_id": "BIBREF46"
+                },
+                {
+                    "start": 823,
+                    "end": 827,
+                    "text": "[48]",
+                    "ref_id": "BIBREF47"
+                },
+                {
+                    "start": 1142,
+                    "end": 1146,
+                    "text": "[47]",
+                    "ref_id": "BIBREF46"
+                },
+                {
+                    "start": 1397,
+                    "end": 1401,
+                    "text": "[47]",
+                    "ref_id": "BIBREF46"
+                },
+                {
+                    "start": 1755,
+                    "end": 1759,
+                    "text": "[48]",
+                    "ref_id": "BIBREF47"
+                },
+                {
+                    "start": 1993,
+                    "end": 1997,
+                    "text": "[18,",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 1998,
+                    "end": 2002,
+                    "text": "[48]",
+                    "ref_id": "BIBREF47"
+                },
+                {
+                    "start": 2003,
+                    "end": 2007,
+                    "text": "[49]",
+                    "ref_id": "BIBREF48"
+                },
+                {
+                    "start": 2008,
+                    "end": 2012,
+                    "text": "[50]",
+                    "ref_id": "BIBREF49"
+                },
+                {
+                    "start": 2013,
+                    "end": 2017,
+                    "text": "[51]",
+                    "ref_id": "BIBREF50"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Regarding previous molecular docking studies [12, 18, 36, [44] [45] [46] [47] [48] [49] [50] [51] [52] , we are trying to explore the potential inhibitory effects of some Rhus spp. (sumac) constituents against the SARS-CoV-2 main protease enzyme using molecular docking, drug likeness, and synthetic accessibility score analysis. e study will give more insight on the use of natural products as new therapeutic agents against the pathogenesis of the SARS-CoV-2 (COVID-19).",
+            "cite_spans": [
+                {
+                    "start": 45,
+                    "end": 49,
+                    "text": "[12,",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 50,
+                    "end": 53,
+                    "text": "18,",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 54,
+                    "end": 57,
+                    "text": "36,",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 58,
+                    "end": 62,
+                    "text": "[44]",
+                    "ref_id": "BIBREF43"
+                },
+                {
+                    "start": 63,
+                    "end": 67,
+                    "text": "[45]",
+                    "ref_id": "BIBREF44"
+                },
+                {
+                    "start": 68,
+                    "end": 72,
+                    "text": "[46]",
+                    "ref_id": "BIBREF45"
+                },
+                {
+                    "start": 73,
+                    "end": 77,
+                    "text": "[47]",
+                    "ref_id": "BIBREF46"
+                },
+                {
+                    "start": 78,
+                    "end": 82,
+                    "text": "[48]",
+                    "ref_id": "BIBREF47"
+                },
+                {
+                    "start": 83,
+                    "end": 87,
+                    "text": "[49]",
+                    "ref_id": "BIBREF48"
+                },
+                {
+                    "start": 88,
+                    "end": 92,
+                    "text": "[50]",
+                    "ref_id": "BIBREF49"
+                },
+                {
+                    "start": 93,
+                    "end": 97,
+                    "text": "[51]",
+                    "ref_id": "BIBREF50"
+                },
+                {
+                    "start": 98,
+                    "end": 102,
+                    "text": "[52]",
+                    "ref_id": "BIBREF51"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "A total of 26 compounds previously extracted from Rhus spp. [52] were selected to study their potential activity against the SARS-CoV-2 main protease enzyme. ese 26 components in Rhus spp. extracts 2",
+            "cite_spans": [
+                {
+                    "start": 60,
+                    "end": 64,
+                    "text": "[52]",
+                    "ref_id": "BIBREF51"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Rhus spp. Phytoconstituents."
+        },
+        {
+            "text": "Evidence-Based Complementary and Alternative Medicine ( Figure 1 ) were selected based on their versatile biological activity, such as antimicrobial, antifungal, antidiabetic, antioxidant, wound-healing, and antiviral activity [26, 36, 52] .",
+            "cite_spans": [
+                {
+                    "start": 227,
+                    "end": 231,
+                    "text": "[26,",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 232,
+                    "end": 235,
+                    "text": "36,",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 236,
+                    "end": 239,
+                    "text": "52]",
+                    "ref_id": "BIBREF51"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 56,
+                    "end": 64,
+                    "text": "Figure 1",
+                    "ref_id": "FIGREF3"
+                }
+            ],
+            "section": "Rhus spp. Phytoconstituents."
+        },
+        {
+            "text": "e crystal structure of the protease enzyme (the molecular target) of SARS-CoV-2 (3cl pro /M pro , PDB ID: 6LU7) was retrieved from RCSB Protein Data Bank (https://www.rcsb.org/) [53] . e proposed natural components in Rhus spp. extracts (Figure 1 ), in addition, well-known drugs, chloroquine and favipiravir (Avigan), widely tested in clinical trials for the treatment of COVID-19 have been subjected to molecular docking [54] . e structures of the selected sumac compounds along with the proposed drugs were drawn by ChemOffice (2015) freeware and were optimized by HyperChem v.8.1 to have the conformer with minimum energy using AMBER force field [54] . According to previously reported methodology and wording [14, [53] [54] [55] , for analysis, an open Babel 2.3.2 software was used to convert a molecular format files into pdb format. en, the ligands under investigations were loaded and their torsion along with rotatable bonds was assigned and saved as ligand PDBQT.",
+            "cite_spans": [
+                {
+                    "start": 178,
+                    "end": 182,
+                    "text": "[53]",
+                    "ref_id": "BIBREF52"
+                },
+                {
+                    "start": 423,
+                    "end": 427,
+                    "text": "[54]",
+                    "ref_id": null
+                },
+                {
+                    "start": 650,
+                    "end": 654,
+                    "text": "[54]",
+                    "ref_id": null
+                },
+                {
+                    "start": 714,
+                    "end": 718,
+                    "text": "[14,",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 719,
+                    "end": 723,
+                    "text": "[53]",
+                    "ref_id": "BIBREF52"
+                },
+                {
+                    "start": 724,
+                    "end": 728,
+                    "text": "[54]",
+                    "ref_id": null
+                },
+                {
+                    "start": 729,
+                    "end": 733,
+                    "text": "[55]",
+                    "ref_id": "BIBREF53"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 237,
+                    "end": 246,
+                    "text": "(Figure 1",
+                    "ref_id": "FIGREF3"
+                }
+            ],
+            "section": "Molecular Docking Analysis."
+        },
+        {
+            "text": "In our experiment by using Molegro Virtual Docker software 6.0, the binding modes of the proposed natural components in Rhus spp. extracts with the protease enzyme (the molecular target) of the SARS-CoV-2 (3cl pro /M pro ; PDB ID: 6LU7) were identified [56] . In addition, a blind docking was performed to enumerate the strength of binding interactions between the proposed ligands and the protease enzyme target [14, 56] . In this step, a lowest binding energy (\u2212kcal/mol) represents the best stable conformations of the ligand with the protease enzyme target [56] . Finally, according to the methodology previously reported [14] , MGLTools-1.5.6 rc3 were used to analyze all released auto Dock output files (.dlg), whereas the docking parameters were represented as coordinates of the center of binding site with x \ufffd 126, y \ufffd 126, z \ufffd 126, and binding radius \ufffd 0.375 \u00c3. In addition, constituents that may hinder the simulation, such as water molecules, other heteroatoms, and native ligands attached to the target, were removed in the process of accommodating the ligands for the molecular docking study.",
+            "cite_spans": [
+                {
+                    "start": 253,
+                    "end": 257,
+                    "text": "[56]",
+                    "ref_id": "BIBREF54"
+                },
+                {
+                    "start": 413,
+                    "end": 417,
+                    "text": "[14,",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 418,
+                    "end": 421,
+                    "text": "56]",
+                    "ref_id": "BIBREF54"
+                },
+                {
+                    "start": 561,
+                    "end": 565,
+                    "text": "[56]",
+                    "ref_id": "BIBREF54"
+                },
+                {
+                    "start": 626,
+                    "end": 630,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Molecular Docking Analysis."
+        },
+        {
+            "text": "is analysis qualitatively assesses the chance for a molecule to become an oral drug with respect to bioavailability, as previously described [57] . In this analysis, structural or physicochemical inspections of the proposed herbal compounds and selected drugs chloroquine and favipiravir (Avigan) were used to assess the drug likeness to be considered as an oral drug candidate. e analysis depends on five rule-based filters, with a diverse range of properties, inside of which the molecule is defined as drug-like. e Lipinski (Pfizer) filter is the pioneer ruleof-five implemented from [57] .",
+            "cite_spans": [
+                {
+                    "start": 141,
+                    "end": 145,
+                    "text": "[57]",
+                    "ref_id": "BIBREF55"
+                },
+                {
+                    "start": 587,
+                    "end": 591,
+                    "text": "[57]",
+                    "ref_id": "BIBREF55"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Drug-Likeness Analysis."
+        },
+        {
+            "text": "e original rule-of-five (RO5) deals with orally active compounds and defines four simple physicochemical parameter ranges (MWT \u2264 500, log P \u2264 5, H-bond donors \u2264 5, and H-bond acceptors \u2264 10) associated with 90% of orally active drugs that have achieved phase II clinical status. ese physicochemical parameters are associated with acceptable aqueous solubility and intestinal permeability and comprise the first steps in oral bioavailability [57] [58] [59] [60] [61] [62] . is analysis is routinely performed to filtrate chemical libraries and exclude compounds with an incompatible or unacceptable pharmacokinetic profile.",
+            "cite_spans": [
+                {
+                    "start": 441,
+                    "end": 445,
+                    "text": "[57]",
+                    "ref_id": "BIBREF55"
+                },
+                {
+                    "start": 446,
+                    "end": 450,
+                    "text": "[58]",
+                    "ref_id": "BIBREF56"
+                },
+                {
+                    "start": 451,
+                    "end": 455,
+                    "text": "[59]",
+                    "ref_id": "BIBREF57"
+                },
+                {
+                    "start": 456,
+                    "end": 460,
+                    "text": "[60]",
+                    "ref_id": "BIBREF58"
+                },
+                {
+                    "start": 461,
+                    "end": 465,
+                    "text": "[61]",
+                    "ref_id": "BIBREF59"
+                },
+                {
+                    "start": 466,
+                    "end": 470,
+                    "text": "[62]",
+                    "ref_id": "BIBREF60"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Drug-Likeness Analysis."
+        },
+        {
+            "text": "In addition, the synthetic accessibility score (SAS) for each molecule extracted from sumac was calculated according to the methodology reported previously [57, 58] . SAS was shown to be essential in both the early drug discovery stage and the drug manufacturing process [59, 60] . To characterize the accessibility of drugs or molecules for synthesis, the synthetic accessibility score was grouped according to previous studies into three groups: easy to synthesize (SAS \u2264 3), moderately easy to synthesize (SAS \ufffd 3-4), and difficult to synthesize (>4) [57] [58] [59] [60] [61] [62] [63] .",
+            "cite_spans": [
+                {
+                    "start": 156,
+                    "end": 160,
+                    "text": "[57,",
+                    "ref_id": "BIBREF55"
+                },
+                {
+                    "start": 161,
+                    "end": 164,
+                    "text": "58]",
+                    "ref_id": "BIBREF56"
+                },
+                {
+                    "start": 271,
+                    "end": 275,
+                    "text": "[59,",
+                    "ref_id": "BIBREF57"
+                },
+                {
+                    "start": 276,
+                    "end": 279,
+                    "text": "60]",
+                    "ref_id": "BIBREF58"
+                },
+                {
+                    "start": 554,
+                    "end": 558,
+                    "text": "[57]",
+                    "ref_id": "BIBREF55"
+                },
+                {
+                    "start": 559,
+                    "end": 563,
+                    "text": "[58]",
+                    "ref_id": "BIBREF56"
+                },
+                {
+                    "start": 564,
+                    "end": 568,
+                    "text": "[59]",
+                    "ref_id": "BIBREF57"
+                },
+                {
+                    "start": 569,
+                    "end": 573,
+                    "text": "[60]",
+                    "ref_id": "BIBREF58"
+                },
+                {
+                    "start": 574,
+                    "end": 578,
+                    "text": "[61]",
+                    "ref_id": "BIBREF59"
+                },
+                {
+                    "start": 579,
+                    "end": 583,
+                    "text": "[62]",
+                    "ref_id": "BIBREF60"
+                },
+                {
+                    "start": 584,
+                    "end": 588,
+                    "text": "[63]",
+                    "ref_id": "BIBREF61"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Drug-Likeness Analysis."
+        },
+        {
+            "text": "e molecular docking parameters, including docking score, ligand-protein interactions, and hydrogen bonds for selected compounds and reference drugs, are provided in Table 1 . e possible interactions with the active sites of protease enzyme in this experiment are discussed herein with some details. e reference drugs, Avigan and chloroquine, interact with active sites of protease enzyme 6LU7 with an energy docking score of \u22122.99 kcal/mol and \u22126.32 kcal/mol, respectively, as shown in Table 1 .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 165,
+                    "end": 172,
+                    "text": "Table 1",
+                    "ref_id": "TABREF1"
+                },
+                {
+                    "start": 486,
+                    "end": 493,
+                    "text": "Table 1",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "Molecular Docking Analysis."
+        },
+        {
+            "text": "All tested compounds of Rhus spp. have lower energy docking scores compared with the reference drugs Avigan and chloroquine (Table 1) , as these compounds are polyphenols and can interact with 6LU7 more strongly through hydrogen bonds, pi-cation interactions, or pi-pi stacking interactions. Compound (14) , although it demonstrated a good binding energy, could not form any hydrogen bond with the viral enzyme. Compound (14) showed no perceptible interactions but only electrostatics (Van der Waals) (see Supplementary file).",
+            "cite_spans": [
+                {
+                    "start": 301,
+                    "end": 305,
+                    "text": "(14)",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 421,
+                    "end": 425,
+                    "text": "(14)",
+                    "ref_id": "BIBREF13"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 124,
+                    "end": 133,
+                    "text": "(Table 1)",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "Molecular Docking Analysis."
+        },
+        {
+            "text": "e obtained results show that the compounds methyl 3,4,5-trihydroxybenzoate (1), (23) , and 3,7-dihydroxy-2-(4hydroxyphenyl)chroman-4-one (26) give efficient interactions when complexed with the active sites of the protease enzyme 6LU7. e interaction between these proposed compounds was efficient at lower energy docking scores, -22.6 kcal/mol for compound (1), \u221221.83 kcal/mol for compound (12) , \u221214.31 kcal/mol for compound (13) , \u221213.34 kcal/mol for compound (22) , \u221215.57 kcal/mol for compound (23) , and \u221217.21 kcal/mol for compound (26) , as shown in Table 1 . Table 2 . Also, the interaction of the proposed drugs, Avigan and chloroquine, with the active sites of protease 6LU7 of SARS-CoV-2 significantly Evidence-Based Complementary and Alternative Medicine proposed their potency for COVID-19 treatment as shown in Figure 8 and Table 2 .",
+            "cite_spans": [
+                {
+                    "start": 80,
+                    "end": 84,
+                    "text": "(23)",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 137,
+                    "end": 141,
+                    "text": "(26)",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 391,
+                    "end": 395,
+                    "text": "(12)",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 427,
+                    "end": 431,
+                    "text": "(13)",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 463,
+                    "end": 467,
+                    "text": "(22)",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 499,
+                    "end": 503,
+                    "text": "(23)",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 539,
+                    "end": 543,
+                    "text": "(26)",
+                    "ref_id": "BIBREF25"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 558,
+                    "end": 565,
+                    "text": "Table 1",
+                    "ref_id": "TABREF1"
+                },
+                {
+                    "start": 568,
+                    "end": 575,
+                    "text": "Table 2",
+                    "ref_id": "TABREF3"
+                },
+                {
+                    "start": 826,
+                    "end": 834,
+                    "text": "Figure 8",
+                    "ref_id": null
+                },
+                {
+                    "start": 839,
+                    "end": 846,
+                    "text": "Table 2",
+                    "ref_id": "TABREF3"
+                }
+            ],
+            "section": "Molecular Docking Analysis."
+        },
+        {
+            "text": "Due to the varied biological activity of the extracted polyphenolic compounds of Rhus spp. as potential active materials in the treatment of several diseases, several compounds are proposed: (1), (12) , (13) , (22) , (23) , and (26) . ese compounds showed the lowest docking energy with efficient interaction with the active sites of protease 6LU7 of SARS-CoV-2 through many hydrogen bonds compared with Avigan and chloroquine (Tables 1 and 2 and Figures 2-8) .",
+            "cite_spans": [
+                {
+                    "start": 196,
+                    "end": 200,
+                    "text": "(12)",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 203,
+                    "end": 207,
+                    "text": "(13)",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 210,
+                    "end": 214,
+                    "text": "(22)",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 217,
+                    "end": 221,
+                    "text": "(23)",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 228,
+                    "end": 232,
+                    "text": "(26)",
+                    "ref_id": "BIBREF25"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 427,
+                    "end": 442,
+                    "text": "(Tables 1 and 2",
+                    "ref_id": "TABREF1"
+                },
+                {
+                    "start": 447,
+                    "end": 459,
+                    "text": "Figures 2-8)",
+                    "ref_id": "FIGREF6"
+                }
+            ],
+            "section": "Molecular Docking Analysis."
+        },
+        {
+            "text": "To study the availability of the proposed sumac compounds for synthesis, drug likeness, physicochemical properties, and synthetic accessibility score (SAS) were assessed according to the Lipinski rule-of-five. e drug likeness, water solubility, bioavailability scores, and SAS scores for all proposed active polyphenolic compounds of sumac and proposed Avigan and chloroquine are reported in Table 3 .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 392,
+                    "end": 399,
+                    "text": "Table 3",
+                    "ref_id": "TABREF7"
+                }
+            ],
+            "section": "Drug-Likeness Analysis."
+        },
+        {
+            "text": "e obtained results showed that six compounds (methyl 3,4,5-trihydroxybenzoate, (Z)-1-(2,4-dihydroxyphenyl)-3- Evidence-Based Complementary and Alternative Medicine Tables 3 and 4. ese scores were efficient and optimal when compared to other docked compounds (4, 5, 6, 7, 8, 9, and 24) that showed [2D] Evidence-Based Complementary and Alternative Medicine no drug likeness (Table 3) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 164,
+                    "end": 179,
+                    "text": "Tables 3 and 4.",
+                    "ref_id": "TABREF7"
+                },
+                {
+                    "start": 373,
+                    "end": 382,
+                    "text": "(Table 3)",
+                    "ref_id": "TABREF7"
+                }
+            ],
+            "section": "Drug-Likeness Analysis."
+        },
+        {
+            "text": "is was due to the higher molecular weight of these compounds, which affects biological interactions and solubility in water, and consequently gave a lower bioavailability score (0.17) with a higher range of SAS (4.13 to 5.33), leading to difficulty in synthesizing them as drugs, as shown in Table 3 . However, only six compounds (methyl 3,4,5-trihydroxybenzoate, (Z)-1-(2,4-dihydroxyphenyl)-3-(3,4-dihydroxyphenyl)-2-hydroxyprop-2-en-1-one, (Z)-2-(3,4-dihydroxybenzylidene)-6 hydroxybenzofuran-3(2H)-one, 3,5,7-trihydroxy-2-(4hydroxyphenyl)chroman-4-one, 2-(3,4-dihydroxyphenyl)-3,5-dihydroxy-7-methoxy-4H-chroman-4-one, and 3,7dihydroxy-2-(4-hydroxyphenyl)chroman-4-one) showed drug likeness with good solubility in water and higher bioavailability scores (0.55-0.56) and lower SAS range (1.5 to 3.42), as shown in Tables 3 and 4 . e obtained physicochemical parameters, particularly higher bioavailability scores, good solubility, lower SAS, and drug likeness, in addition to the lowest energy docking score (kcal/mol), as shown in Table 4 , argue for the use of these six compounds as potential inhibitors against the SARS-CoV-2 main protease enzyme.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 292,
+                    "end": 299,
+                    "text": "Table 3",
+                    "ref_id": "TABREF7"
+                },
+                {
+                    "start": 817,
+                    "end": 831,
+                    "text": "Tables 3 and 4",
+                    "ref_id": "TABREF7"
+                },
+                {
+                    "start": 1035,
+                    "end": 1042,
+                    "text": "Table 4",
+                    "ref_id": "TABREF8"
+                }
+            ],
+            "section": "Drug-Likeness Analysis."
+        },
+        {
+            "text": "[2D] ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Drug-Likeness Analysis."
+        },
+        {
+            "text": "In this study, we are trying to decipher the proposed mechanism of the most potent active polyphenolic compounds extracted from Rhus spp. (sumac) in terms of binding affinity, necessary hydrogen bond formation [18, 54, 56] , drug likeness, physicochemical properties, bioavailability, and synthetic accessibility score (SAS) [56] [57] [58] [59] [60] [61] [62] , responsible for inhibition of target enzyme of the SARS-CoV-2. is study might lead to clinical trials for the treatment of infections caused by coronaviruses. us, a total of 26 known active polyphenolic compounds extracted from Rhus spp. (sumac) were measured for their activity as potential inhibitors against the SARS-CoV-2 main protease enzyme.",
+            "cite_spans": [
+                {
+                    "start": 210,
+                    "end": 214,
+                    "text": "[18,",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 215,
+                    "end": 218,
+                    "text": "54,",
+                    "ref_id": null
+                },
+                {
+                    "start": 219,
+                    "end": 222,
+                    "text": "56]",
+                    "ref_id": "BIBREF54"
+                },
+                {
+                    "start": 325,
+                    "end": 329,
+                    "text": "[56]",
+                    "ref_id": "BIBREF54"
+                },
+                {
+                    "start": 330,
+                    "end": 334,
+                    "text": "[57]",
+                    "ref_id": "BIBREF55"
+                },
+                {
+                    "start": 335,
+                    "end": 339,
+                    "text": "[58]",
+                    "ref_id": "BIBREF56"
+                },
+                {
+                    "start": 340,
+                    "end": 344,
+                    "text": "[59]",
+                    "ref_id": "BIBREF57"
+                },
+                {
+                    "start": 345,
+                    "end": 349,
+                    "text": "[60]",
+                    "ref_id": "BIBREF58"
+                },
+                {
+                    "start": 350,
+                    "end": 354,
+                    "text": "[61]",
+                    "ref_id": "BIBREF59"
+                },
+                {
+                    "start": 355,
+                    "end": 359,
+                    "text": "[62]",
+                    "ref_id": "BIBREF60"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Molecular docking, drug-likeness analysis, and synthetic accessibility score (SAS) were performed for each active polyphenolic compound and compared with the results of Avigan and chloroquine as reference control drugs. All studied active polyphenolic compounds showed interactions with more hydrogen atoms to the main active site of the SARS-CoV-2 protease enzyme. is fits the complexation or interaction performed at lower energy docking score (kcal/mol) compared to that when Avigan and chloroquine interacted with the same active site. e polyphenolic nature of the extracted sumac compounds plays a pivotal role in their versatile biological activity, including antioxidant, antimicrobial, wound-healing, and antiviral activity [16] [17] [18] [19] [20] [21] [22] [23] [24] [25] [26] [27] [28] [29] [30] [31] [32] [33] [34] [35] 64] . e presence of polyphenolic active groups with more hydrogen atoms in sumac compounds [57] [58] [59] [60] easily facilitates the orientation and tight interaction with different amino acids present in the core of the main active site of the SARS-CoV-2 protease enzyme. In addition, it was reported previously that the antiviral activity of most herbal plants, including sumac, is related to the presence of active compounds such as phenolics, organic acids, proteins, fibers, volatile oils, fatty acids, vitamins, and minerals [33, 34] .",
+            "cite_spans": [
+                {
+                    "start": 732,
+                    "end": 736,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 737,
+                    "end": 741,
+                    "text": "[17]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 742,
+                    "end": 746,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 747,
+                    "end": 751,
+                    "text": "[19]",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 752,
+                    "end": 756,
+                    "text": "[20]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 757,
+                    "end": 761,
+                    "text": "[21]",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 762,
+                    "end": 766,
+                    "text": "[22]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 767,
+                    "end": 771,
+                    "text": "[23]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 772,
+                    "end": 776,
+                    "text": "[24]",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 777,
+                    "end": 781,
+                    "text": "[25]",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 782,
+                    "end": 786,
+                    "text": "[26]",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 787,
+                    "end": 791,
+                    "text": "[27]",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 792,
+                    "end": 796,
+                    "text": "[28]",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 797,
+                    "end": 801,
+                    "text": "[29]",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 802,
+                    "end": 806,
+                    "text": "[30]",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 807,
+                    "end": 811,
+                    "text": "[31]",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 812,
+                    "end": 816,
+                    "text": "[32]",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 817,
+                    "end": 821,
+                    "text": "[33]",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 822,
+                    "end": 826,
+                    "text": "[34]",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 827,
+                    "end": 831,
+                    "text": "[35]",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 832,
+                    "end": 835,
+                    "text": "64]",
+                    "ref_id": "BIBREF62"
+                },
+                {
+                    "start": 923,
+                    "end": 927,
+                    "text": "[57]",
+                    "ref_id": "BIBREF55"
+                },
+                {
+                    "start": 928,
+                    "end": 932,
+                    "text": "[58]",
+                    "ref_id": "BIBREF56"
+                },
+                {
+                    "start": 933,
+                    "end": 937,
+                    "text": "[59]",
+                    "ref_id": "BIBREF57"
+                },
+                {
+                    "start": 938,
+                    "end": 942,
+                    "text": "[60]",
+                    "ref_id": "BIBREF58"
+                },
+                {
+                    "start": 1364,
+                    "end": 1368,
+                    "text": "[33,",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 1369,
+                    "end": 1372,
+                    "text": "34]",
+                    "ref_id": "BIBREF33"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "To study the accessibility of the extracted active compounds of sumac for drug synthesis, drug-likeness analysis and SAS were performed. Only six active compounds (methyl 3,4,5-trihydroxybenzoate (1), (Z)-1-(2,4-dihydroxyphenyl)-3-(3,4-dihydroxyphenyl)-2-hydroxyprop-2en-1-one (12) , (Z)-2-(3,4-dihydroxybenzylidene)-6hydroxybenzofuran-3(2H)-one (13), 3,5,7-trihydroxy-2-(4-hydroxyphenyl)chroman-4-one (22), 2-(3,4-dihydroxyphenyl)-3,5-dihydroxy-7-methoxy-4H-chroman-4-one (23) , and 3,7-dihydroxy-2-(4-hydroxyphenyl)chroman-4one (26) ) showed a lower energy docking score (kcal/mol), acceptable with the Lipinski rule-of-five (drug likeness), good water solubility, high bioavailability (0.55-0.56), and ese physicochemical parameters suggest the potential for synthesis as inhibitors against the main active site of the SARS-CoV-2 protease enzyme 6LU7. In our data, most of the proposed compounds, particularly, 12, 13, 23, and 26, along with Avigan and chloroquine, have hydrogen bonds with different lengths but identical bond energies, as shown in Table 2 .",
+            "cite_spans": [
+                {
+                    "start": 277,
+                    "end": 281,
+                    "text": "(12)",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 473,
+                    "end": 477,
+                    "text": "(23)",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 530,
+                    "end": 534,
+                    "text": "(26)",
+                    "ref_id": "BIBREF25"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1053,
+                    "end": 1060,
+                    "text": "Table 2",
+                    "ref_id": "TABREF3"
+                }
+            ],
+            "section": "Discussion"
+        },
+        {
+            "text": "is may be due to the fact that, in most proteins, almost all distances between two atoms are longer than the covalent bond length, so they tend to cause steric hindrance which may affect hydrogen bond energy during interaction with the main active site of the SARS-CoV-2 protease. In addition, all H atoms are donor rotatable, which could be sterically hindered by the surrounding atoms or molecules, thus resulting in the minimization of bond energies of H-bonds with longer lengths.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "In most studies, the calculated SAS, drug likeness, bioavailability, water solubility, and lower energy docking scores (kcal/mol) could be used to support various drug discovery processes, particularly for herbal plants [54, [56] [57] [58] [59] [60] [61] [62] [63] . It was reported previously that the drug discovery process is easier for ligands or compounds with lower SAS than higher SAS [38, 63, 65] . Like our results, ligands or compounds with the lowest energy docking scores, such as Nigellidine compound extracted from Nigella sativa L, when docked into the active site of 6LU7, produced lower energy with good orientation, which argues for its use as a potential drug candidate against COVID-19 [44] . Also, several molecular docking studies that used plant-based ligands such as kaempferol, quercetin, luteolin-7-glucoside, oleuropein, curcumin, catechin, epicatechin-gallate, caffeine, capsaicin, and hypericin show potential inhibitory activity against COVID-19 [9, 14, 38, 63, [65] [66] [67] [68] . In addition, a high potency of salvianolic acid A and curcumin as herbal compounds were reported as M pro inhibitors by using docking calculations [44] .",
+            "cite_spans": [
+                {
+                    "start": 225,
+                    "end": 229,
+                    "text": "[56]",
+                    "ref_id": "BIBREF54"
+                },
+                {
+                    "start": 230,
+                    "end": 234,
+                    "text": "[57]",
+                    "ref_id": "BIBREF55"
+                },
+                {
+                    "start": 235,
+                    "end": 239,
+                    "text": "[58]",
+                    "ref_id": "BIBREF56"
+                },
+                {
+                    "start": 240,
+                    "end": 244,
+                    "text": "[59]",
+                    "ref_id": "BIBREF57"
+                },
+                {
+                    "start": 245,
+                    "end": 249,
+                    "text": "[60]",
+                    "ref_id": "BIBREF58"
+                },
+                {
+                    "start": 250,
+                    "end": 254,
+                    "text": "[61]",
+                    "ref_id": "BIBREF59"
+                },
+                {
+                    "start": 255,
+                    "end": 259,
+                    "text": "[62]",
+                    "ref_id": "BIBREF60"
+                },
+                {
+                    "start": 260,
+                    "end": 264,
+                    "text": "[63]",
+                    "ref_id": "BIBREF61"
+                },
+                {
+                    "start": 392,
+                    "end": 396,
+                    "text": "[38,",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 397,
+                    "end": 400,
+                    "text": "63,",
+                    "ref_id": "BIBREF61"
+                },
+                {
+                    "start": 401,
+                    "end": 404,
+                    "text": "65]",
+                    "ref_id": "BIBREF63"
+                },
+                {
+                    "start": 706,
+                    "end": 710,
+                    "text": "[44]",
+                    "ref_id": "BIBREF43"
+                },
+                {
+                    "start": 976,
+                    "end": 979,
+                    "text": "[9,",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 980,
+                    "end": 983,
+                    "text": "14,",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 984,
+                    "end": 987,
+                    "text": "38,",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 988,
+                    "end": 991,
+                    "text": "63,",
+                    "ref_id": "BIBREF61"
+                },
+                {
+                    "start": 992,
+                    "end": 996,
+                    "text": "[65]",
+                    "ref_id": "BIBREF63"
+                },
+                {
+                    "start": 997,
+                    "end": 1001,
+                    "text": "[66]",
+                    "ref_id": "BIBREF64"
+                },
+                {
+                    "start": 1002,
+                    "end": 1006,
+                    "text": "[67]",
+                    "ref_id": "BIBREF65"
+                },
+                {
+                    "start": 1007,
+                    "end": 1011,
+                    "text": "[68]",
+                    "ref_id": "BIBREF66"
+                },
+                {
+                    "start": 1161,
+                    "end": 1165,
+                    "text": "[44]",
+                    "ref_id": "BIBREF43"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "e antiviral activity of 26 active polyphenolic compounds of Rhus spp. (sumac) was analyzed by molecular docking, drug likeness, and synthetic accessibility score (SAS). e results showed that all tested compounds provided good interaction in the main active site of the SARS-CoV-2 protease enzyme 6LU7 with lower molecular docking energy (kcal/mol) compared to two drugs already under clinical tests. Together, the molecular docking, drug likeness, and synthetic accessibility score (SAS) data proposed six active polyphenolic compounds of Rhus spp. for the synthesis of potential inhibitors against the main active site of the SARS-CoV-2 protease enzyme 6LU7, which may be candidates for the treatment of COVID-19. e data herein provide new directions for in vitro and in vivo investigations of the proposed ligands to develop new inhibitors as SARS-CoV-2 antivirals.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion"
+        },
+        {
+            "text": "e data used to support the findings of this study are available from the corresponding author upon request.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Availability"
+        },
+        {
+            "text": "e authors declare that they have no conflicts of interest. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conflicts of Interest"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "COVID-19 pandemic: a global health crisis",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Pollard",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Morran",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Nestor-Kalinoski",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Physiological Genomics",
+            "volume": "52",
+            "issn": "11",
+            "pages": "549--557",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "World Health Organization",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "e continuing 2019-nCoV epidemic threat of novel coronaviruses to global health-the latest 2019 novel coronavirus outbreak in Wuhan, China",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Hui",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Azhar",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Madani",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "International Journal of Infectious Diseases",
+            "volume": "91",
+            "issn": "",
+            "pages": "264--266",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Emerging novel coronavirus (2019-NCoV)-current scenario, evolutionary perspective based on genome analysis and recent developments",
+            "authors": [
+                {
+                    "first": "Y. Singh",
+                    "middle": [],
+                    "last": "Malik",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Veterinary Quarterly",
+            "volume": "40",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Genomic characterisation and epidemiology of 2019 novel coronavirus: implications for virus origins and receptor binding",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Lu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet",
+            "volume": "395",
+            "issn": "10224",
+            "pages": "565--574",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Clinical characteristics of 138 hospitalized patients with 2019 novel coronavirus-infected pneumonia in Wuhan, China",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "JAMA",
+            "volume": "323",
+            "issn": "11",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Drug treatment options for the 2019-new coronavirus (2019-nCoV)",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Lu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "BioScience Trends",
+            "volume": "14",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Nelfinavir Was Predicted to Be a Potential Inhibitor of 2019-nCoV Main Protease by an Integrative Approach Combining Homology Modelling, Molecular Docking and Binding Free Energy Calculation",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Peng",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Shi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Potential inhibitor of COVID-19 main protease (Mpro) from several medicinal plant compounds by molecular docking study",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Khaerunnisa",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Kurniawan",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Awaluddin",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Suhartati",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Soetjipto",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Preprints",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Jiawei-yupingfeng-tang, a Chinese herbal formula, inhibits respiratory viral infections in vitro and in vivo",
+            "authors": [
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Lu",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Hua",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Journal of Ethnopharmacology",
+            "volume": "150",
+            "issn": "2",
+            "pages": "521--528",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Ethnobotanical study of medicinal plants used by herbalists for the treatment of respiratory diseases in the region of Oran",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Nadia",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Meriem",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Meriem",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Algeria",
+            "volume": "2",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Rapid identification of potential inhibitors of SARS-CoV-2 main protease by deep docking of 1.3 billion compounds",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Ton",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Gentile",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Hsing",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Ban",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Cherkasov",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Molecular Informatics",
+            "volume": "39",
+            "issn": "8",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "A study of the chemical composition of black cumin oil and its effect on penetration enhancement from transdermal formulations",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Amin",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Mir",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Kohli",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Ali",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ali",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Natural Product Research",
+            "volume": "24",
+            "issn": "12",
+            "pages": "1151--1157",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Molecular Docking Study to Identify Potential Inhibitor of COVID-19 Main Protease Enzyme",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Agrawal",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Jain",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Kumar",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Kulkarni",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "An In-Silico Approach-ChemRxiv",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Germplasm Resources Information Network, United States Department of Agriculture",
+            "authors": [],
+            "year": 2007,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Antiviral effect assay of twenty five species of various medicinal plants families in Iran",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Monavari",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Hamkar",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Norooz-Babaei",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Adibi",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Noroozi",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ziaei",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "IJMM",
+            "volume": "1",
+            "issn": "2",
+            "pages": "49--59",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "In vitro anti-HIV activity of biflavonoids isolated from Rhus succedanea and Garcinia multiflora",
+            "authors": [
+                {
+                    "first": "Y.-M",
+                    "middle": [],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Anderson",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Flavin",
+                    "suffix": ""
+                }
+            ],
+            "year": 1997,
+            "venue": "Journal of Natural Products",
+            "volume": "60",
+            "issn": "9",
+            "pages": "884--888",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Efficacy of Rhus coriaria (sumac) juice in reducing muscle pain during aerobic exercise",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Alghadir",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Gabr",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Acta Physiologica Hungarica",
+            "volume": "103",
+            "issn": "2",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Antioxidant and antibacterial active constituents of Rhus coriaria",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Gabr",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "El-Metwall",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Al-Ghadir",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Biotechnology (Faisalabad)",
+            "volume": "13",
+            "issn": "2",
+            "pages": "37--45",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Phytochemical analysis and in vitro antifungal activities of bioactive fractions from leaves of Rhus coriaria (SUMAC)",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Gabr",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Alghadir",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Journal of Pure and Applied Microbiology",
+            "volume": "9",
+            "issn": "1",
+            "pages": "559--565",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Antimicrobial constituents of Rhus glabra",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Saxena",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Mccutcheon",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Farmer",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "E W"
+                    ],
+                    "last": "Hancock",
+                    "suffix": ""
+                }
+            ],
+            "year": 1994,
+            "venue": "Journal of Ethnopharmacology",
+            "volume": "42",
+            "issn": "2",
+            "pages": "95--99",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Inhibition of some foodborne bacteria by alcohol extract of sumac (Rhus coriaria L.)",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Towers",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Halkman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Journal of Food Safety",
+            "volume": "24",
+            "issn": "4",
+            "pages": "257--267",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Antioxidant activities of rosemary, sage, and sumac extracts and their combinations on stability of natural peanut oil",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "\u00d6zcanal-Haq",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "Journal of Medicinal Food",
+            "volume": "6",
+            "issn": "3",
+            "pages": "267--270",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Evaluation of antimicrobial and antioxidant activities of Syrian Sumac fruit extract",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Kossah",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Nsabimana",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Journal of Natural Products",
+            "volume": "6",
+            "issn": "",
+            "pages": "96--102",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "New antifungal aromatic compounds from the seeds of Rhus coriaria L",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Onkar",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Mohammed",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Nida",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "International Research Journal of Pharmacy",
+            "volume": "2",
+            "issn": "",
+            "pages": "188--194",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Evaluation of the biological effects of lyophilized hydrophilic extract of Rhus coriaria on myeloperoxidase (MPO) activity, wound healing, and microbial infections of skin wound tissues",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Gabr",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Alghadir",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Evidence-Based Complementary and Alternative Medicine",
+            "volume": "2019",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Anti-HIV-1 activities of extracts from the medicinal plant Rhus chinensis",
+            "authors": [
+                {
+                    "first": "R.-R",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Gu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L.-M",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J.-J",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "S.-Y.",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y.-T",
+                    "middle": [],
+                    "last": "Zheng",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Journal of Ethnopharmacology",
+            "volume": "105",
+            "issn": "1-2",
+            "pages": "269--273",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Anti-HIV-1 activities of compounds isolated from the medicinal plant Rhus chinensis",
+            "authors": [
+                {
+                    "first": "R.-R",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Gu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y.-H",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Journal of Ethnopharmacology",
+            "volume": "117",
+            "issn": "2",
+            "pages": "249--256",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "A new benzofuranone and anti-HIV constituents from the stems of Rhus chinensis",
+            "authors": [
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Gu",
+                    "suffix": ""
+                },
+                {
+                    "first": "R.-R",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X.-M",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Planta Medica",
+            "volume": "73",
+            "issn": "3",
+            "pages": "279--282",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Purification and characterization of eugeniin as an anti-herpesvirus compound from Geum japonicum and Syzygium aromaticum",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Kurokawa",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Hozumi",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Basnet",
+                    "suffix": ""
+                }
+            ],
+            "year": 1998,
+            "venue": "Journal of Pharmacology and Experimental erapeutics",
+            "volume": "284",
+            "issn": "2",
+            "pages": "728--735",
+            "other_ids": {}
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Efficacy of traditional herbal medicines in combination with acyclovir against herpes simplex virus type 1 infection in vitro and in vivo",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Kurokawa",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Nagasaka",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Hirabayashi",
+                    "suffix": ""
+                }
+            ],
+            "year": 1995,
+            "venue": "Antiviral Research",
+            "volume": "27",
+            "issn": "1-2",
+            "pages": "19--37",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Suppression of recurrent genital herpes simplex virus type 2 infection by Rhus javanica in Guinea pigs",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Nakano",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Kurokawa",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Hozumi",
+                    "suffix": ""
+                }
+            ],
+            "year": 1998,
+            "venue": "Antiviral Research",
+            "volume": "39",
+            "issn": "1",
+            "pages": "25--33",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Rhus coriaria ameliorates insulin resistance in non-insulin-dependent diabetes mellitus (Niddm) rats",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Anwer",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Sharma",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Khan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Acta Poloniae Pharmaceutica-Drug Research",
+            "volume": "70",
+            "issn": "",
+            "pages": "861--867",
+            "other_ids": {}
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "A condiment [sumac (Rhus coriaria L.) fruits]: some physico-chemical properties",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "\u00d6zcan",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Haciseferogullari",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Bulgarian Journal of Plant Physiology",
+            "volume": "30",
+            "issn": "",
+            "pages": "74--84",
+            "other_ids": {}
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Small molecules blocking the entry of severe acute respiratory syndrome coronavirus into host cells",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Yi",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Yuan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Journal of Virology",
+            "volume": "78",
+            "issn": "20",
+            "pages": "11334--11339",
+            "other_ids": {}
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Angiotensin-converting enzyme 2 is a functional receptor for the SARS coronavirus",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Moore",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Vasilieva",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "Nature",
+            "volume": "426",
+            "issn": "6965",
+            "pages": "450--454",
+            "other_ids": {}
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Middle East respiratory syndrome coronavirus (MERS-CoV): infection, immunological response, and vaccine development",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Mubarak",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Alturaiki",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Hemida",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Journal of Immunology Research",
+            "volume": "2019",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Estimation of synthetic accessibility score of drug-like molecules based on molecular complexity and fragment contributions",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Ertl",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Schuffenhauer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Journal of Cheminformatics",
+            "volume": "1",
+            "issn": "8",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "e author's response: case of the index patient who caused tertiary transmission of coronavirus disease 2019 in Korea: the application of lopinavir/ ritonavir for the treatment of COVID-19 pneumonia monitored by quantitative RT-PCR",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Lim",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Jeon",
+                    "suffix": ""
+                },
+                {
+                    "first": "H.-Y.",
+                    "middle": [],
+                    "last": "Shin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Journal of Korean Medical Science",
+            "volume": "35",
+            "issn": "7",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "GC-376, and calpain inhibitors II, XII inhibit SARS-CoV-2 viral replication by targeting the viral main protease",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Boceprevir",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Cell Research",
+            "volume": "30",
+            "issn": "8",
+            "pages": "678--692",
+            "other_ids": {}
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Crystal structure of SARS-CoV-2 main protease provides a basis for design of improved \u03b1-ketoamide inhibitors",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Science",
+            "volume": "368",
+            "issn": "6489",
+            "pages": "409--412",
+            "other_ids": {}
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "Structure and inhibition of the SARS-CoV-2 main protease reveal strategy for developing dual inhibitors against Mpro and cathepsin L",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Sacco",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Ma",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Lagarias",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Science Advances",
+            "volume": "6",
+            "issn": "50",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "e crystal structure of COVID-19 main protease in complex with an inhibitor N3",
+            "authors": [
+                {
+                    "first": "Rcsb",
+                    "middle": [],
+                    "last": "Pdb-6lu7",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "Identification of compounds from Nigella sativa as new potential inhibitors of 2019 novel coronavirus (Covid-19): molecular docking study",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Bouchentouf",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Missoum",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "ChemRxiv",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "Emerging coronaviruses: genome structure, replication, and pathogenesis",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Guo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Journal of Medical Virology",
+            "volume": "92",
+            "issn": "4",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF45": {
+            "ref_id": "b45",
+            "title": "Drugging DNA repair to target T-ALL cells",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Dasgupta",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Golovine",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Nieborowska-Skorska",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Leukemia & Lymphoma",
+            "volume": "59",
+            "issn": "7",
+            "pages": "1746--1749",
+            "other_ids": {}
+        },
+        "BIBREF46": {
+            "ref_id": "b46",
+            "title": "In silico drug discovery of major metabolites from spices as SARS-CoV-2 main protease inhibitors",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "A A"
+                    ],
+                    "last": "Ibrahim",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "H M"
+                    ],
+                    "last": "Abdelrahman",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Hussien",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Computers in Biology and Medicine",
+            "volume": "126",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF47": {
+            "ref_id": "b47",
+            "title": "Could sumac be effective on COVID-19 treatment?",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Korkmaz",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Journal of Medicinal Food",
+            "volume": "",
+            "issn": "",
+            "pages": "1--6",
+            "other_ids": {}
+        },
+        "BIBREF48": {
+            "ref_id": "b48",
+            "title": "Acute and subchronic toxicities of the ethanol and hot-water extracts from Chinese sumac (Rhus chinensis Mill.) fruits by oral administration in rats",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Ma",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Cai",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Cheng",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Food and Chemical Toxicology",
+            "volume": "119",
+            "issn": "",
+            "pages": "14--23",
+            "other_ids": {}
+        },
+        "BIBREF49": {
+            "ref_id": "b49",
+            "title": "e effect of sumac (Rhus coriaria L.) powder on insulin resistance, malondialdehyde, high sensitive C-reactive protein and paraoxonase 1 activity in type 2 diabetic patients",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Rahideh",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Shidfar",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Khandozi",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Rajab",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Hosseini",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Mirtaher",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Journal of Research in Medical Sciences",
+            "volume": "19",
+            "issn": "",
+            "pages": "933--938",
+            "other_ids": {}
+        },
+        "BIBREF50": {
+            "ref_id": "b50",
+            "title": "Pharmacological and antioxidant activities of Rhus coriaria L. (Sumac)",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Alsamri",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Athamneh",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Pintus",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Eid",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Iratni",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Antioxidants",
+            "volume": "10",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF51": {
+            "ref_id": "b51",
+            "title": "Molecular Operating Environment Version",
+            "authors": [],
+            "year": 2014,
+            "venue": "Chemical Computing Group Inc",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF52": {
+            "ref_id": "b52",
+            "title": "Phytochemistry , pharmacological properties and industrial applications of Rhus coriaria L. ( sumac )",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Abu-Reida",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Jamous",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Ali-Shtayeh",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "",
+            "volume": "7",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF53": {
+            "ref_id": "b53",
+            "title": "Biological activities of extracts from sumac (Rhus spp.): a review",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Rayne",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Mazza",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "",
+            "volume": "62",
+            "issn": "",
+            "pages": "165--175",
+            "other_ids": {}
+        },
+        "BIBREF54": {
+            "ref_id": "b54",
+            "title": "Molegro virtual docker 6.0",
+            "authors": [],
+            "year": 2013,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF55": {
+            "ref_id": "b55",
+            "title": "HyperChem Program Version 8.1",
+            "authors": [
+                {
+                    "first": "Hypercube",
+                    "middle": [],
+                    "last": "Inc",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF56": {
+            "ref_id": "b56",
+            "title": "Experimental and computational approaches to estimate solubility and permeability in drug discovery and development settings 1PII of original article: S0169-409X(96)00423-1. e article was originally published in Advanced Drug Delivery",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Lipinski",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Lombardo",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Dominy",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Feeney",
+                    "suffix": ""
+                }
+            ],
+            "year": 1997,
+            "venue": "Advanced Drug Delivery Reviews",
+            "volume": "23",
+            "issn": "1-3",
+            "pages": "3--26",
+            "other_ids": {}
+        },
+        "BIBREF57": {
+            "ref_id": "b57",
+            "title": "What does an HTS file of the future look like?\" in Management of Chemical and Biological Samples for Screening Applications",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Bertelli",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "275--304",
+            "other_ids": {}
+        },
+        "BIBREF58": {
+            "ref_id": "b58",
+            "title": "Lead-and drug-like compounds: the rule-of-five revolution",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Lipinski",
+                    "suffix": ""
+                },
+                {
+                    "first": "December",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Drug Discovery Today: Technologies",
+            "volume": "1",
+            "issn": "",
+            "pages": "337--341",
+            "other_ids": {}
+        },
+        "BIBREF59": {
+            "ref_id": "b59",
+            "title": "Sanjeevini: a freely accessible web-server for target directed lead molecule discovery",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Jayaram",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Singh",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Mukherjee",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Mathur",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Shekhar",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Shekhar",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "BMC Bioinformatics",
+            "volume": "13",
+            "issn": "S17",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF60": {
+            "ref_id": "b60",
+            "title": "SwissADME: a free web tool to evaluate pharmacokinetics, drug-likeness and medicinal chemistry friendliness of small molecules",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Daina",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Michielin",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Zoete",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Scientific Reports",
+            "volume": "7",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF61": {
+            "ref_id": "b61",
+            "title": "Is chemical synthetic accessibility computationally predictable for drug and lead-like molecules? A comparative assessment between medicinal and computational chemists",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Bonnet",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "European Journal of Medicinal Chemistry",
+            "volume": "54",
+            "issn": "",
+            "pages": "679--689",
+            "other_ids": {}
+        },
+        "BIBREF62": {
+            "ref_id": "b62",
+            "title": "Antiviral compounds from traditional Chinese medicines Galla Chinese as inhibitors of HCV NS3 protease",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Duan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Luo",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Bioorganic & Medicinal Chemistry Letters",
+            "volume": "14",
+            "issn": "24",
+            "pages": "6041--6044",
+            "other_ids": {}
+        },
+        "BIBREF63": {
+            "ref_id": "b63",
+            "title": "HPLC-DAD-ESI-MS/MS screening of bioactive components from Rhus coriaria L. (Sumac) fruits",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Abu-Reidah",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Ali-Shtayeh",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Jamous",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Arr\u00e1ez-Rom\u00e1n",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Segura-Carretero",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Food Chemistry",
+            "volume": "166",
+            "issn": "",
+            "pages": "179--191",
+            "other_ids": {}
+        },
+        "BIBREF64": {
+            "ref_id": "b64",
+            "title": "Drug design targeting the main protease, the achilles heel of coronaviruses",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Bartlam",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Rao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Current Pharmaceutical Design",
+            "volume": "12",
+            "issn": "35",
+            "pages": "4573--4590",
+            "other_ids": {}
+        },
+        "BIBREF65": {
+            "ref_id": "b65",
+            "title": "Bioactive constituents from Harpephyllum caffrum Bernh. and Rhus coriaria L",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Shabana",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Sayed",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Yousif",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "M El"
+                    ],
+                    "last": "Sayed",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Sleem",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Pharmacognosy Magazine",
+            "volume": "7",
+            "issn": "28",
+            "pages": "298--306",
+            "other_ids": {}
+        },
+        "BIBREF66": {
+            "ref_id": "b66",
+            "title": "Rhus coriaria Linn, a plant of medicinal, nutritional and industrial importance: a review",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Shabir",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Journal of Animal and Plant Sciences",
+            "volume": "2",
+            "issn": "2",
+            "pages": "505--512",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Interactions between proposed compounds (1), (12), (3), (22), (23), and (26) from Rhus spp. and 6LU7 are reported in Figures 2-7 and illustrated in",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "Chemical structures of 26 compounds (a and b) selected from the extract of Rhus spp.[44].",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": "\ufffd 542.49; H-donor \ufffd 8; H-acceptor \ufffd 10 (9) 5,5\u2032,7,7\u2032-Tetrahydroxy-2,2\u2032-bis(4-hydroxyphenyl)-[6,8\u2032-bichroman]-4,4\u2032-dione \u2212146.88 \u2212173.17 \u22121120 MW \ufffd 542.49; H-donor \ufffd 8; H-acceptor \ufffd 10",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF6": {
+            "text": "Interaction 4-dihydroxyphenyl)-2-hydroxyprop-2-en-1-one, (Z)-2-(3,4-dihydroxybenzylidene)-6 hydroxybenzofuran-3(2H)one, 3,5,7-trihydroxy-2-(4-hydroxyphenyl)chroman-4-one, 2-(3,4-dihydroxyphenyl)-3,5-dihydroxy-7-methoxy-4H-chr oman-4-one, and 3,7-dihydroxy-2-(4-hydroxyphenyl) chroman-4-one) showed drug likeness with good solubility in water and higher bioavailability scores (0.55-0.56), and lower SAS range (1.5 to 3.42), as shown in",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF7": {
+            "text": "Interaction between compound (13) ((Z)-2-(3,4-dihydroxybenzylidene)-6-hydroxybenzofuran-3(2H)-one) with COVID-19 (6LU7).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF8": {
+            "text": "Interaction between compound (23) (2-(3,4-dihydroxyphenyl)-3,5-dihydroxy-7-methoxy-4H-chroman-4-one) with COVID-19 (6LU7). Interaction between compound (22) (3,5,7-trihydroxy-2-(4-hydroxyphenyl)chroman-4-one) with COVID-19 (6LU7).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF9": {
+            "text": "Interaction Interaction of the proposed drugs: favipiravir (Avigan): structure (a) and 2D and 3D structures (b and c); chloroquine: structure (d) and 3D structures (e and f ) with COVID-19 (Interaction between compound (1) (methyl 3,4,5-trihydroxybenzoate) with COVID-19 (6LU7).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF10": {
+            "text": "are possible with the following: Amino acid Tyr 54 (H-donor rotatable) with distance about 2.67\u00c5 and energy of \u22122.5 kcal/mol Amino acid Met 49 (H-donor rotatable) with distance about 2.91\u00c5 and energy of \u22122.5 kcal/mol Chloroquine (Figure 8) Hydrogen interactions are possible with the following: Amino acid Cys 145 by (two H-donors) with distance about 3.15 and 3.02\u00c5 and energy of \u22122.24, 1.33 kcal/mol Amino acid Ser 144 (H-donor) with distance about 3.12\u00c5 and energy of \u22121.13 k cal",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF11": {
+            "text": "interactions are possible with the following: Amino acid His 164 (H-donor rotatable) with distance 2.88\u00c5 and energy of \u22122.5 kcal/mol Amino acid Leu 141 (H-donor rotatable) with distance 2.87\u00c5 and energy of \u22122.50 kcal/mol Amino acid Leu 141 (H-donor rotatable) with distance 2.62\u00c5 and energy of \u22122.50 kcal/mol Amino acid Cys 145 (H-donor) with distance 3.10\u00c5 and energy of \u22121.28 kcal/mol Amino acid Ser 144 (H-donor rotatable) with distance 2.91\u00c5 and energy of \u22122.50 kcal/mol Amino acid Gln 189 (H-donor rotatable) with distance 2.71\u00c5 and energy of \u22122.5 kcal/mol Amino acid Asp 187 (H-donor rotatable) with distance 3.21\u00c5 and energy of \u22121.97 kcal/interactions are possible with the following: Amino acid Asp 187 (H-donor rotatable) with distance 3.17\u00c5 and energy of \u22122.15 kcal/mol Amino acid Tyr 54 (H-donor rotatable) with distance 2.89\u00c5 and energy of \u22122.50 kcal/mol Amino acid Gln 189 (H-donor rotatable) with distance 2.59\u00c5 and energy of \u22122.39 kcal/mol Amino acid Ser 144 (H-acceptor) with distance 2.90\u00c5 and energy of \u22121.21 kcal/mol Amino acid Leu 141 (H-donor rotatable) with distance 3.11\u00c5 and energy of \u22122.45 kcal/mol Amino acid Gly 143 (H-acceptor) with distance 3.16\u00c5 and energy of \u22120.83 kcal/mol Amino acid Cys 145 (H-donor rotatable) with distance 3.00\u00c5 and energy of \u22121.47 kcal/mol Amino acid Glu 166 (H-acceptor) with distance 2.96\u00c5 and energy of \u22122.33 kcal/mol",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF1": {
+            "text": "Physicochemical parameters and molecular docking scores of Rhus spp. (sumac) compounds obtained with 6LU7.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "Continued.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF3": {
+            "text": "Interactions between the sites of 6LU7 in complex with the main proposed Rhus spp. (sumac) compounds for COVID-19 treatment.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF5": {
+            "text": "Continued.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF6": {
+            "text": "Continued.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF7": {
+            "text": "Physicochemical parameters and drug-likeness scores of Rhus spp. (sumac) compounds obtained with 6LU7. 10Z,13E,15E)-Heptadeca-10,13,15-trien-1-yl)benzene-",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF8": {
+            "text": "Chemical structures, physicochemical properties, and energy docking scores (kcal/mol) of the main proposed Rhus spp. (sumac) compounds for COVID-19 treatment.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF9": {
+            "text": "Continued.",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "Interaction between compound (14) (2-((10Z,13 E,15E)heptadeca-10,13,15-trien-1-yl)) phenol with COVID-19 (6LU7). e 2-and 3-dimensional (2D and 3D) structures of compound (14) showed no hydrogen bonding and no perceptible interactions, only electrostatics exist (Van der Waals). (Supplementary Materials) ",
+            "cite_spans": [
+                {
+                    "start": 170,
+                    "end": 174,
+                    "text": "(14)",
+                    "ref_id": "BIBREF13"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 278,
+                    "end": 303,
+                    "text": "(Supplementary Materials)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Supplementary Materials"
+        }
+    ]
+}

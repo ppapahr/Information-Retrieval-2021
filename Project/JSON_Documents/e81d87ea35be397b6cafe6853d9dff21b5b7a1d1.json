@@ -1,0 +1,2439 @@
+{
+    "paper_id": "e81d87ea35be397b6cafe6853d9dff21b5b7a1d1",
+    "metadata": {
+        "title": "Adverse outcomes and mortality in users of non-steroidal anti-inflammatory drugs who tested positive for SARS-CoV-2: A Danish nationwide cohort study",
+        "authors": [
+            {
+                "first": "Lars",
+                "middle": [
+                    "Christian"
+                ],
+                "last": "Lund",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "I",
+                "middle": [
+                    "D"
+                ],
+                "last": "1\u262f",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Southern Denmark",
+                    "location": {
+                        "settlement": "Odense",
+                        "country": "Denmark"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Bruun",
+                "middle": [],
+                "last": "Kasper",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "I",
+                "middle": [
+                    "D"
+                ],
+                "last": "Kristensen",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Mette",
+                "middle": [],
+                "last": "1\u262f",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Southern Denmark",
+                    "location": {
+                        "settlement": "Odense",
+                        "country": "Denmark"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "",
+                "middle": [],
+                "last": "Reilev Id",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Southern Denmark",
+                    "location": {
+                        "settlement": "Odense",
+                        "country": "Denmark"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Steffen",
+                "middle": [],
+                "last": "Christensen",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Aarhus University Hospital",
+                    "location": {
+                        "settlement": "Aarhus",
+                        "country": "Denmark"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Reimar",
+                "middle": [],
+                "last": "Wernich",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Thomsen",
+                "middle": [],
+                "last": "Id",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Aarhus University Hospital",
+                    "location": {
+                        "settlement": "Aarhus",
+                        "country": "Denmark"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Christian",
+                "middle": [],
+                "last": "Fynbo",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Christiansen",
+                "middle": [],
+                "last": "Id",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Aarhus University Hospital",
+                    "location": {
+                        "settlement": "Aarhus",
+                        "country": "Denmark"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Henrik",
+                "middle": [
+                    "St\u00f8vring"
+                ],
+                "last": "Id",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Southern Denmark",
+                    "location": {
+                        "settlement": "Odense",
+                        "country": "Denmark"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Nanna",
+                "middle": [],
+                "last": "Borup",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Johansen",
+                "middle": [],
+                "last": "Id",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Danish Medicines Agency",
+                    "location": {
+                        "settlement": "Copenhagen",
+                        "country": "Denmark"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Nikolai",
+                "middle": [
+                    "Constantin"
+                ],
+                "last": "Brun",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Danish Medicines Agency",
+                    "location": {
+                        "settlement": "Copenhagen",
+                        "country": "Denmark"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Jesper",
+                "middle": [],
+                "last": "Hallas Id",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Southern Denmark",
+                    "location": {
+                        "settlement": "Odense",
+                        "country": "Denmark"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Anton",
+                "middle": [],
+                "last": "Potteg\u00e5rd Id",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Southern Denmark",
+                    "location": {
+                        "settlement": "Odense",
+                        "country": "Denmark"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Concerns over the safety of non-steroidal anti-inflammatory drug (NSAID) use during severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) infection have been raised. We studied whether use of NSAIDs was associated with adverse outcomes and mortality during SARS-CoV-2 infection.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "We conducted a population-based cohort study using Danish administrative and health registries. We included individuals who tested positive for SARS-CoV-2 during the period 27 February 2020 to 29 April 2020. NSAID users (defined as individuals having filled a prescription for NSAIDs up to 30 days before the SARS-CoV-2 test) were matched to up to 4 nonusers on calendar week of the test date and propensity scores based on age, sex, relevant comorbidities, and use of selected prescription drugs. The main outcome was 30-day mortality, and NSAID users were compared to non-users using risk ratios (RRs) and risk differences (RDs). Secondary outcomes included hospitalization, intensive care unit (ICU) admission, mechanical ventilation, and acute renal replacement therapy. A total of 9,236 SARS-CoV-2 PCR-positive individuals were eligible for inclusion. The median age in the study cohort was 50 years, and 58% were female. Of these, 248 (2.7%) had filled a prescription for NSAIDs, and 535 (5.8%) died within 30 days. In the matched analyses, treatment with NSAIDs was not associated with 30-day mortality (RR 1.02, 95% CI 0.57 to 1.82, p = 0.95; RD 0.1%, 95% CI \u22123.5% to 3.7%, p = 0.95), risk of hospitalization (RR 1.16, 95% CI",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "PLOS Medicine | https://doi.Data Availability Statement: Due to data protection regulation, data cannot be shared 0.87 to 1.53, p = 0.31; RD 3.3%, 95% CI \u22123.4% to 10%, p = 0.33), ICU admission (RR 1.04, 95% CI 0.54 to 2.02, p = 0.90; RD 0.2%, 95% CI \u22123.0% to 3.4%, p = 0.90), mechanical ventilation (RR 1.14, 95% CI 0.56 to 2.30, p = 0.72; RD 0.5%, 95% CI \u22122.5% to 3.6%, p = 0.73), or renal replacement therapy (RR 0.86, 95% CI 0.24 to 3.09, p = 0.81; RD \u22120.2%, 95% CI \u22122.0% to 1.6%, p = 0.81).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "a1111111111 a1111111111 a1111111111 a1111111111 a1111111111",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "As severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) began to transmit and spread in Europe and the United States, a letter suggesting that ibuprofen could influence the prognosis of coronavirus disease 2019 (COVID-19) through upregulation of angiotensin converting enzyme 2 receptors was circulated widely [1] . Because of this letter and case reports of otherwise healthy young patients with severe COVID-19 who had used NSAIDs in the early stage of disease [2] , concerns regarding the safety of NSAID use during the COVID-19 pandemic were widely circulated, including warnings against NSAID use in COVID-19 from the French health minister [2] and the World Health Organization. However, the European Medicines Agency stated that evidence to support warnings against use of NSAIDs in COVID-19 was lacking and stressed the need for further evidence on any effects of NSAIDs on disease prognosis in COVID-19 [3] .",
+            "cite_spans": [
+                {
+                    "start": 318,
+                    "end": 321,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 471,
+                    "end": 474,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 654,
+                    "end": 657,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 920,
+                    "end": 923,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The available evidence stems mainly from studies on community-acquired bacterial pneumonia and shows that use of NSAIDs is associated with bacterial complications, specifically empyema and lung abscesses [4] [5] [6] [7] . For viral illness, use of NSAIDs was not associated with mortality in intensive care unit (ICU) patients with influenza H1N1 during the 2009 pandemic [8] , and a recent study found that use of NSAIDs was not associated with mortality in patients hospitalized for influenza [9] . As use of ibuprofen and other NSAIDs is widespread, data on their safety are urgently needed to guide clinicians and patients on how to use NSAIDs during the COVID-19 pandemic. We therefore examined whether use of NSAIDs prior to infection with SARS-CoV-2 was associated with increased risk of hospitalization, ICU admission, and mortality compared to non-use of NSAIDs.",
+            "cite_spans": [
+                {
+                    "start": 204,
+                    "end": 207,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 208,
+                    "end": 211,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 212,
+                    "end": 215,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 216,
+                    "end": 219,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 372,
+                    "end": 375,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 495,
+                    "end": 498,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "We conducted a Danish nationwide registry-based cohort study investigating the association between NSAID use and 30-day mortality and other adverse outcomes, specified as hospitalization, ICU admission, mechanical ventilation, and acute renal replacement therapy, in all patients who tested positive for SARS-CoV-2. For a graphical representation of the study design, see Fig 1. All analyses followed the publicly registered protocol [10] , except for a change in the matching algorithm and a post hoc analysis of test-negative individuals (both detailed below). This study is reported as per the Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) guideline (S1 STROBE Checklist). The institutional data protection board at the University of Southern Denmark and the Danish Health Data Authority approved the research project. According to Danish law, studies based entirely on registry data do not require approval from an ethics review board [11] . All source code used to conduct this study is freely available at https://source.coderefinery.org/lcl/nsaid-covid19.",
+            "cite_spans": [
+                {
+                    "start": 372,
+                    "end": 378,
+                    "text": "Fig 1.",
+                    "ref_id": null
+                },
+                {
+                    "start": 434,
+                    "end": 438,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 971,
+                    "end": 975,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Methods"
+        },
+        {
+            "text": "Data on all Danish residents with a positive test for SARS-CoV-2 were obtained from Danish health and administrative registries as described elsewhere [12] . In brief, identification of the study population was based on prospectively collected data on all Danish residents receiving a polymerase chain reaction (PCR) test for SARS-CoV-2 from the Danish Microbiology Database [13] . Data were linked to the Danish Civil Registration System [14] , the Danish National Prescription Registry [15] , the Danish National Patient Registry [16] , and the Danish Register of Causes of Death [17] by means of the unique personal identifier assigned to all Danish residents at birth or immigration. Data on ICU treatment, mechanical ventilation, and renal replacement therapy from the Danish National Patient Registry were supplemented with daily reports on admitted patients from the 5 Danish regions [16, 18] . For more details regarding individual registries, see S1 Appendix.",
+            "cite_spans": [
+                {
+                    "start": 151,
+                    "end": 155,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 375,
+                    "end": 379,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 439,
+                    "end": 443,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 488,
+                    "end": 492,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 532,
+                    "end": 536,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 582,
+                    "end": 586,
+                    "text": "[17]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 891,
+                    "end": 895,
+                    "text": "[16,",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 896,
+                    "end": 899,
+                    "text": "18]",
+                    "ref_id": "BIBREF17"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Data sources"
+        },
+        {
+            "text": "All Danish residents who had a positive PCR test for SARS-CoV-2 during the period 27 February 2020 to 29 April 2020 were included in the study. To ensure complete information on exposure and covariates prior to cohort entry, individuals with less than 1 year of residence in Denmark prior to the positive test for SARS-CoV-2 were excluded. For all secondary outcomes, individuals with an outcome during 30 days to 1 day prior to cohort entry were excluded, partly to ensure that outcomes were incident and plausibly occurring due to ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Study population"
+        },
+        {
+            "text": "COVID-19 and partly because in-hospital drug use was not available from the Danish National Prescription Registry.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "PLOS MEDICINE"
+        },
+        {
+            "text": "We conducted a post hoc supplementary analysis where we examined the same association in a cohort of all Danish patients who tested negative for SARS-CoV-2 in the study period.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "PLOS MEDICINE"
+        },
+        {
+            "text": "The exposure of interest was current use of any NSAID prior to a positive SARS-CoV-2 test. Current use was defined as having filled a prescription for any NSAID in the 30 days prior to the positive test. Filled NSAID prescriptions were identified from the Danish National Prescription Registry, with information on all dispensed prescriptions at community pharmacies in Denmark since 1995 [19] . Users of NSAIDs were compared to individuals without NSAID use in the corresponding time window. In Denmark, NSAIDs are sold by prescription except for low-dose (200 mg) ibuprofen sold over-the-counter in pack sizes of no more than 20 tablets. In 2018, over-the-counter purchases of ibuprofen constituted 15% of total ibuprofen sales and a smaller proportion of total NSAID sales [20] . Hence, the potential to identify NSAID use from the Danish National Prescription Registry is high compared to many other countries where over-the-counter use of NSAIDs is common [19, 21] .",
+            "cite_spans": [
+                {
+                    "start": 389,
+                    "end": 393,
+                    "text": "[19]",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 776,
+                    "end": 780,
+                    "text": "[20]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 961,
+                    "end": 965,
+                    "text": "[19,",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 966,
+                    "end": 969,
+                    "text": "21]",
+                    "ref_id": "BIBREF20"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Exposure"
+        },
+        {
+            "text": "The main outcome of interest was death within 30 days of a positive test for SARS-CoV-2.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Outcomes"
+        },
+        {
+            "text": "The secondary outcomes included hospitalization, ICU admission, mechanical ventilation, and acute renal replacement therapy within 14 days of a positive test for SARS-CoV-2.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Outcomes"
+        },
+        {
+            "text": "Eligible individuals were followed until the end of follow up (30 days for the main outcome, 14 days for secondary outcomes) or the event of interest.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Follow-up"
+        },
+        {
+            "text": "We used propensity score (PS) matching to increase comparability between NSAID users and non-users. The PS is the estimated probability of receiving the treatment of interest given a set of characteristics [22] . PSs were estimated on the day of the positive SARS-CoV-2 test using logistic regression. Independent variables in the PS model were age, sex, relevant comorbidities, use of selected prescription drugs, and phase of the outbreak. For details of these independent variables, see S2 Appendix. A separate PS was estimated for each exposure definition in the main and supplementary analyses. To evaluate the appropriateness of the model, PS distributions were plotted separately for each cohort and overlap assessed visually. To reduce unmeasured confounding, individuals in the tails of the PS distribution were trimmed asymmetrically [23] . Up to 4 non-users were matched to each NSAID user using a nearest neighbor algorithm. Non-users could be matched to multiple NSAID users, and the maximum allowed difference in the PS between matches was 0.05 [24] . The Danish SARS-CoV-2 test strategy was subject to marked changes from a limited capacity setting in the beginning of the study period to a setting where widespread testing was available at the end of the study period. To account for this [25] , we included calendar week of the test date as a forced matching variable. This decision was made post hoc, i.e., not included in the protocol. Covariate balance before and after matching was assessed using standardized mean differences [26] .",
+            "cite_spans": [
+                {
+                    "start": 206,
+                    "end": 210,
+                    "text": "[22]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 844,
+                    "end": 848,
+                    "text": "[23]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 1059,
+                    "end": 1063,
+                    "text": "[24]",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 1305,
+                    "end": 1309,
+                    "text": "[25]",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 1548,
+                    "end": 1552,
+                    "text": "[26]",
+                    "ref_id": "BIBREF25"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Propensity score matching"
+        },
+        {
+            "text": "Descriptive statistics were used to describe NSAID users and non-users at baseline. Continuous variables were reported as medians and interquartile ranges. Dichotomous variables were reported as frequencies and percentages.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Statistical analyses"
+        },
+        {
+            "text": "Risks and risk differences (RDs) were estimated using generalized linear models with a binomial distribution and an identity link. Risk ratios (RRs) were estimated similarly but using a log link. Matched analyses were implemented using frequency weighting, i.e., NSAID users were assigned a weight of 1, and non-users' weights were assigned according to each individual user's number of matches. Robust 95% confidence intervals were calculated using the sandwich estimator of variance where the assumption regarding independence of observations was relaxed in the matched analyses. Data management and statistical analyses were performed using Stata 16 MP. The codes used to define exposures, covariates, and outcomes are available in S2 Appendix.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Statistical analyses"
+        },
+        {
+            "text": "To explore treatment effect heterogeneity, we repeated the main analyses stratifying by age (<65 years, 65+ years), sex, and history of cardiovascular disease. To examine whether widespread testing of healthcare workers influenced the findings, we repeated the main analyses excluding healthcare workers from the study population. We used the same PS as estimated in the main analyses for the subgroup analyses [27] .",
+            "cite_spans": [
+                {
+                    "start": 411,
+                    "end": 415,
+                    "text": "[27]",
+                    "ref_id": "BIBREF26"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Subgroup analyses"
+        },
+        {
+            "text": "We conducted the following supplementary analyses. (1) We relaxed the exposure definition by using an extended NSAID exposure assessment window of 60 days prior to the positive test and repeated the main analyses with this exposure definition. (2) To explore whether reverse causation may have influenced the findings, effect estimates were obtained using an exposure assessment window of 60 days to 14 days before cohort entry (i.e., disregarding NSAID prescriptions filled during the 14 days immediately prior to cohort entry). (3) To evaluate the robustness of the findings with regards to the chosen outcome assessment windows, we obtained 60-day risk estimates for mortality and 30-day risk estimates for secondary outcomes. (4) To examine the potential for residual confounding, we conducted a negative control analysis by repeating the main analyses within the test-negative population, i.e. individuals who tested negative for SARS-CoV-2 (and did not later test positive). If an individual was tested more than once, the first test date was used as the cohort entry date. This post hoc analysis was not specified in the protocol.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Supplementary analyses"
+        },
+        {
+            "text": "We identified 9,370 individuals who tested positive for SARS-CoV-2 during the study period. Of these, 134 were excluded due to migration within 1 year prior to cohort entry, resulting in an eligible population of 9,236 individuals followed for a total of 705 person-years. The median age in the study cohort was 50 years, and 58% were female. Overall, 535 individuals (5.8%) died within 30 days, 1,512 (16%) were hospitalized within 14 days, 290 (3.1%) were admitted to the ICU, 235 (2.5%) received mechanical ventilation, and 61 (0.7%) received acute renal replacement therapy. In total, 248 (2.7%) patients had filled a prescription for an NSAID within 30 days before the test date. Compared to non-users, NSAID users were older (median age 55 versus 49 years) and more likely to have a history of hospital-diagnosed overweight or obesity (13% versus 9%), to have medical indications for NSAID use such as osteoarthritis (19% versus 12%) or rheumatoid arthritis (7% versus 3%), and to have been prescribed opioids the year before sampling date (24% versus 11%). After matching, covariates were well balanced, with standardized mean differences \ufffd 0.1 ( Table 1) . Use of opioids was strongly associated with use of NSAIDs and 30-day mortality, while cardiovascular disease and dementia was negatively associated with use of NSAIDs and positively associated with death (S1 Table) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 1154,
+                    "end": 1162,
+                    "text": "Table 1)",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 1373,
+                    "end": 1379,
+                    "text": "Table)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "NSAID use was not associated with 30-day mortality in the crude (unmatched) analyses or adjusted (matched) analyses (Table 2 ). In the adjusted analyses, the 30-day mortality rate was 6.3% (95% CI 3.1% to 9.4%) in NSAID users and 6.1% (95% CI 4.4% to 7.8%) in non-users, ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 116,
+                    "end": 124,
+                    "text": "(Table 2",
+                    "ref_id": "TABREF2"
+                }
+            ],
+            "section": "Main outcomes"
+        },
+        {
+            "text": "In the crude analyses, use of NSAIDs was associated with an increased risk of hospitalization (RR 1.42, 95% CI 1.13 to 1.79, p < 0.01) but was not associated with an increased risk of ICU ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Secondary outcomes"
+        },
+        {
+            "text": "The subgroup analyses were limited by low power and wide confidence intervals (Table 3 ). In individuals below 65 years of age, the adjusted RR for death associated with NSAID use was NSAID use was defined as having an NSAID prescription filled within 30 days prior to the date of cohort entry. \ufffd Patients with a secondary outcome occurring during the exclusion assessment window were excluded, resulting in exclusion of n = 594 patients for hospitalization, n = 33 for ICU admission, n = 18 for mechanical ventilation, and n = 6 for renal replacement therapy in unmatched cohorts, and n = 90, n = 8, n = 5, and n < 5, respectively, in matched cohorts. \ufffd\ufffd Censored to preserve anonymity for counts n < 5.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 78,
+                    "end": 86,
+                    "text": "(Table 3",
+                    "ref_id": "TABREF4"
+                }
+            ],
+            "section": "Subgroup analyses"
+        },
+        {
+            "text": "ICU, intensive care unit; NSAID, non-steroidal anti-inflammatory drug.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Subgroup analyses"
+        },
+        {
+            "text": "https://doi.org/10.1371/journal.pmed.1003308.t002 Table 3 . ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 50,
+                    "end": 57,
+                    "text": "Table 3",
+                    "ref_id": "TABREF4"
+                }
+            ],
+            "section": "Subgroup analyses"
+        },
+        {
+            "text": "Increasing the duration of follow-up to 60 days for death and 30 days for hospitalization, ICU admission, mechanical ventilation, and acute renal replacement therapy did not influence the findings (S2 Table) . When extending the definition of current NSAID use to a filled prescription up to 60 days before the test date, we observed similar null findings (S3 Table) . Likewise, defining exposure as a filled prescription 60 days to 14 days before the test date yielded comparable results (S4 Table) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 201,
+                    "end": 207,
+                    "text": "Table)",
+                    "ref_id": null
+                },
+                {
+                    "start": 360,
+                    "end": 366,
+                    "text": "Table)",
+                    "ref_id": null
+                },
+                {
+                    "start": 493,
+                    "end": 499,
+                    "text": "Table)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Supplementary analyses with different outcome or exposure assessment windows"
+        },
+        {
+            "text": "We identified 204,920 individuals with a negative SARS-CoV-2 PCR test in the study period. Of these, 3,506 were excluded due to migration within 1 year prior to cohort entry, resulting in a population of 201,414 individuals followed up for a total of 15,840 person-years. Use of NSAIDs was associated with a decreased risk of death (RR 0.64, 95% CI 0.49 to 0.84, p < 0.01) and increased risk of hospitalization (RR 1.18, 95% CI 1.08 to 1.28, p < 0.001) and ICU admission (RR 1.39, 95% CI 1.00-1.95, p = 0.05) in the adjusted analyses (Table 4 ).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 534,
+                    "end": 542,
+                    "text": "(Table 4",
+                    "ref_id": "TABREF5"
+                }
+            ],
+            "section": "Test-negative individuals"
+        },
+        {
+            "text": "We examined whether use of NSAIDs was associated with 30-day mortality and adverse outcomes in a nationwide population of SARS-CoV-2-positive individuals. Use of NSAIDs was not associated with increased 30-day mortality, a finding that was robust in a range of supplementary analyses. Likewise, use of NSAIDs was not associated with an increased risk of hospitalization, ICU admission, mechanical ventilation, or renal replacement therapy in the adjusted analyses. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "The Danish nationwide registries allowed for identification of all individuals who had been tested for SARS-CoV-2 in Denmark and allowed for obtaining data on prescription drug use, medical history, migration, hospital admissions, and death through individual-level linkage between health and administrative registries. Thus, we were able to include SARS-CoV-2-positive individuals managed in the community, unlike other data sources that mainly record hospitalized patients. Further, the SARS-CoV-2 test-negative population allowed us to conduct a negative control analysis.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Strengths and limitations"
+        },
+        {
+            "text": "The main limitations of our study are potential misclassification of non-users as NSAID users; potentially unmeasured confounding due to a lack of information on study participants' bodyweight, an important risk factor of severe COVID-19; and confounding by indication due to NSAIDs possibly being prescribed due to early symptoms of severe COVID-19.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Strengths and limitations"
+        },
+        {
+            "text": "In Denmark, NSAIDs can only be obtained via prescription, except for low-dose (200 mg) ibuprofen. With the limited availability and use of NSAIDs over-the-counter in Denmark, misclassification from over-the-counter purchases of NSAIDs is of less concern [19] . However, exposure misclassification may still be present since information on adherence, intended duration, and dose was not available. Some patients do not use NSAIDs continuously after filling a prescription, and consequently some of these patients will have been incorrectly classified as NSAID users at the time of the positive test for SARS-CoV-2. The fact that a patient had filled a prescription for an NSAID may be considered an indicator of availability of NSAIDs rather than of actual use of NSAIDs. As information on exposure status was collected prior to our outcomes of interest, the misclassification is nondifferential and may introduce a bias towards the null. This could lead to wrongly dismissing a causal detrimental effect of NSAIDs on the prognosis of COVID-19 if many NSAID users truly were non-users. The time of cohort entry was defined by the SARS-CoV-2 test date because information on time of symptom onset was not available. Thus, the timing of NSAID use relative to cohort entry will not necessarily reflect NSAID use in the early course of COVID-19 disease.",
+            "cite_spans": [
+                {
+                    "start": 254,
+                    "end": 258,
+                    "text": "[19]",
+                    "ref_id": "BIBREF18"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Strengths and limitations"
+        },
+        {
+            "text": "Users of NSAIDs were more likely to be overweight or obese than non-users, both among individuals who tested positive for SARS-CoV-2 and those who tested negative. This is possibly explained by the fact that a diagnosis of overweight or obesity in the Danish National Patient Registry is dependent on a hospital admission or outpatient clinic visit. This is also a likely explanation for the relatively low prevalence of overweight or obesity in this study. The positive predictive value of these diagnoses in the registries is, however, high [28] .",
+            "cite_spans": [
+                {
+                    "start": 543,
+                    "end": 547,
+                    "text": "[28]",
+                    "ref_id": "BIBREF27"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Strengths and limitations"
+        },
+        {
+            "text": "Use of NSAIDs has been associated with lower mortality among elderly individuals, presumably because of confounding by indication [29] , i.e., NSAIDs are preferentially prescribed to younger, less frail patients because of the established renal, gastrointestinal, and cardiovascular adverse effects [30] . Considerable media attention to the hypothesized risks of use of NSAIDs in COVID-19 may also have influenced how physicians prescribed NSAIDs to selected patients. Finally, severe symptoms early in the course of COVID-19 disease, before the patient is known to be infected with SARS-CoV-2, may increase the likelihood of being prescribed NSAIDs, which would bias the effect estimates towards an increased risk of severe disease associated with NSAIDs.",
+            "cite_spans": [
+                {
+                    "start": 130,
+                    "end": 134,
+                    "text": "[29]",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 299,
+                    "end": 303,
+                    "text": "[30]",
+                    "ref_id": "BIBREF29"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Strengths and limitations"
+        },
+        {
+            "text": "The secondary outcomes reflecting in-hospital treatment decisions may be more prone to confounding by indication because of the clinical selection of patients to be hospitalized or admitted to the ICU. For example, besides disease severity, factors such as age, comorbidity, and expected outcomes are involved in the ICU triage decision.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Strengths and limitations"
+        },
+        {
+            "text": "Ideally, confounding by indication would be mitigated using an active comparator; however, a suitable active comparator does not exist for ibuprofen. In a previous study, users of paracetamol differed more from NSAID users than did non-users of NSAIDs [9] .",
+            "cite_spans": [
+                {
+                    "start": 252,
+                    "end": 255,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Strengths and limitations"
+        },
+        {
+            "text": "The lack of association between use of NSAIDs and adverse outcomes in individuals who tested positive for SARS-CoV-2 in our study could be explained by multiple factors. First, NSAIDs may not increase angiotensin converting enzyme 2 in humans. The original hypothesis stems from experiments conducted in diabetic rats [31] , and the findings may not transfer between organisms. Second, increased angiotensin converting enzyme 2 expression may not affect the risk of severe COVID-19. Studies on angiotensin converting enzyme inhibitors and angiotensin receptor blockers and the risk of contracting COVID-19 or experiencing a severe course of disease have not shown any association [32] [33] [34] . Third, the adverse effects of NSAIDs on the course of pneumonia may be specific to bacterial infections. A recent study on the risk of adverse outcomes in users of NSAIDs hospitalized for influenza found no association between use of NSAIDs and ICU admission or death [9] , similar to the findings in this study.",
+            "cite_spans": [
+                {
+                    "start": 318,
+                    "end": 322,
+                    "text": "[31]",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 680,
+                    "end": 684,
+                    "text": "[32]",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 685,
+                    "end": 689,
+                    "text": "[33]",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 690,
+                    "end": 694,
+                    "text": "[34]",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 965,
+                    "end": 968,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Findings in relation to other studies"
+        },
+        {
+            "text": "Considering the available evidence, there is no reason to withdraw well-indicated use of NSAIDs during the SARS-CoV-2 pandemic. However, the well-established adverse effects of NSAIDs, particularly their renal, gastrointestinal, and cardiovascular effects, should always be considered, and NSAIDs should be used in the lowest possible dose for the shortest possible duration for all patients [30] .",
+            "cite_spans": [
+                {
+                    "start": 392,
+                    "end": 396,
+                    "text": "[30]",
+                    "ref_id": "BIBREF29"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Findings in relation to other studies"
+        },
+        {
+            "text": "Use of NSAIDs was not associated with an increased risk of 30-day mortality or adverse outcomes in patients infected with SARS-CoV-2 in this cohort of all Danish residents who tested positive for SARS-CoV-2. Table. Association between current NSAID use and mortality, hospitalization, ICU admission, mechanical ventilation, and renal replacement therapy using an outcome assessment window of 60 days for mortality and 30 days for secondary outcomes. (DOCX) S3 Table. Association between use of NSAIDs within 60 days before cohort entry and 30-day mortality, hospitalization, ICU admission, mechanical ventilation, and renal replacement therapy. (DOCX) S4 Table. Association between NSAID prescription fills within the period 60 days to 14 days before cohort entry and 30-day mortality, hospitalization, ICU admission, mechanical ventilation, and renal replacement therapy. ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 208,
+                    "end": 214,
+                    "text": "Table.",
+                    "ref_id": null
+                },
+                {
+                    "start": 460,
+                    "end": 466,
+                    "text": "Table.",
+                    "ref_id": null
+                },
+                {
+                    "start": 655,
+                    "end": 661,
+                    "text": "Table.",
+                    "ref_id": null
+                }
+            ],
+            "section": "Conclusions"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Are patients with hypertension and diabetes mellitus at increased risk for COVID-19 infection?",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Fang",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Karakiulakis",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Roth",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet Respir Med",
+            "volume": "8",
+            "issn": "",
+            "pages": "30116--30124",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S2213-2600%2820%2930116-8"
+                ],
+                "PMID": [
+                    "32171062"
+                ]
+            }
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Covid-19: ibuprofen should not be used for managing symptoms, say doctors and scientists",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Day",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "BMJ",
+            "volume": "368",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1136/bmj.m1086"
+                ],
+                "PMID": [
+                    "32184201"
+                ]
+            }
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "EMA gives advice on the use of non-steroidal anti-inflammatories for COVID-19. EMA/136850/2020. Amsterdam: European Medicines Agency",
+            "authors": [
+                {
+                    "first": "Agency",
+                    "middle": [],
+                    "last": "European Medicines",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Nonsteroidal antiinflammatory drug use and clinical outcomes of community-acquired pneumonia",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Basille",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Thomsen",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Madsen",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Duhaut",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Andrejak",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Jounieaux",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Am J Respir Crit Care Med",
+            "volume": "198",
+            "issn": "",
+            "pages": "128--159",
+            "other_ids": {
+                "DOI": [
+                    "10.1164/rccm.201802-0229LE"
+                ],
+                "PMID": [
+                    "29461860"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Risks related to the use of nonsteroidal anti-inflammatory drugs in community-acquired pneumonia in adult and pediatric patients",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Voiriot",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Philippot",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Elabbadi",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Elbim",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Chalumeau",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Fartoukh",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "J Clin Med",
+            "volume": "8",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3390/jcm8060786"
+                ],
+                "PMID": [
+                    "31163625"
+                ]
+            }
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Predicting complicated parapneumonic effusion in community acquired pneumonia: hospital based case-control study",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Meganathan",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Awasthi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Indian J Pediatr",
+            "volume": "86",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s12098-018-2769-y"
+                ]
+            }
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Risks of nonsteroidal antiinflammatory drugs in undiagnosed intensive care unit pneumococcal pneumonia: younger and more severely affected patients",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Messika",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Sztrymf",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Bertrand",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Billard-Pomares",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Barnaud",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Branger",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "J Crit Care",
+            "volume": "29",
+            "issn": "",
+            "pages": "733--741",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jcrc.2014.05.021"
+                ],
+                "PMID": [
+                    "24997726"
+                ]
+            }
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Nonsteroidal anti-inflammatory drug and aspirin use, and mortality among critically ill pandemic H1N1 influenza patients: an exploratory analysis",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Epperly",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Vaughn",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Mosholder",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Maloney",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Rubinson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Jpn J Infect Dis",
+            "volume": "69",
+            "issn": "",
+            "pages": "248--51",
+            "other_ids": {
+                "DOI": [
+                    "10.7883/yoken.JJID.2014.577"
+                ],
+                "PMID": [
+                    "26255728"
+                ]
+            }
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Association of nonsteroidal anti-inflammatory drug use and adverse outcomes among patients hospitalized with influenza",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Lund",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Reilev",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Hallas",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Kristensen",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Thomsen",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Christiansen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "JAMA Netw Open",
+            "volume": "3",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1001/jamanetworkopen.2020.13880"
+                ],
+                "PMID": [
+                    "32609352"
+                ]
+            }
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Use of non-steroidal anti-inflammatory drugs and clinical outcome of COVID-19: a Danish nationwide cohort study. EUPAS34734. Amsterdam: European Network of Centres for Pharmacoepidemiology and Pharmacovigilance",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Introduction to Danish (nationwide) registers on health and social issues: structure, access, legislation, and archiving",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Thygesen",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Daasnes",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Thaulow",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Br\u00f8nnum-Hansen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Scand J Public Health",
+            "volume": "39",
+            "issn": "",
+            "pages": "12--18",
+            "other_ids": {
+                "DOI": [
+                    "10.1177/1403494811399956"
+                ],
+                "PMID": [
+                    "21898916"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Existing data sources in clinical epidemiology: the Danish COVID-19 cohort",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Potteg\u00e5rd",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Kristensen",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Reilev",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Lund",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Ernst",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Hallas",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Clin Epidemiol",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "The Danish Microbiology Database (MiBa) 2010 to 2013",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Voldstedlund",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Haarh",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "M\u00f8lbak",
+                    "suffix": ""
+                },
+                {
+                    "first": "Miba",
+                    "middle": [],
+                    "last": "Board",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Representatives",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Euro Surveill",
+            "volume": "19",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.2807/1560-7917.es2014.19.1.20667"
+                ],
+                "PMID": [
+                    "24434175"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "The Danish health care system and epidemiological research: from health care contacts to database records",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Schmidt",
+                    "suffix": ""
+                },
+                {
+                    "first": "Saj",
+                    "middle": [],
+                    "last": "Schmidt",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Adelborg",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Sundb\u00f8ll",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Laugesen",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Ehrenstein",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Clin Epidemiol",
+            "volume": "11",
+            "issn": "",
+            "pages": "563--91",
+            "other_ids": {
+                "DOI": [
+                    "10.2147/CLEP.S179083"
+                ],
+                "PMID": [
+                    "31372058"
+                ]
+            }
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Data resource profile: the Danish National Prescription Registry",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Potteg\u00e5rd",
+                    "suffix": ""
+                },
+                {
+                    "first": "Saj",
+                    "middle": [],
+                    "last": "Schmidt",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Wallach-Kildemoes",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "S\u00f8rensen",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Hallas",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Schmidt",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Int J Epidemiol",
+            "volume": "46",
+            "issn": "",
+            "pages": "798--798",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/ije/dyw213"
+                ],
+                "PMID": [
+                    "27789670"
+                ]
+            }
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "The Danish National Patient Registry: a review of content, data quality, and research potential",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Schmidt",
+                    "suffix": ""
+                },
+                {
+                    "first": "Saj",
+                    "middle": [],
+                    "last": "Schmidt",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Sandegaard",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Ehrenstein",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Pedersen",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "S\u00f8rensen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Clin Epidemiol",
+            "volume": "7",
+            "issn": "",
+            "pages": "449--90",
+            "other_ids": {
+                "DOI": [
+                    "10.2147/CLEP.S91125"
+                ],
+                "PMID": [
+                    "26604824"
+                ]
+            }
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "The Danish Register of Causes of Death",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Helweg-Larsen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Scand J Public Health",
+            "volume": "39",
+            "issn": "",
+            "pages": "26--35",
+            "other_ids": {
+                "DOI": [
+                    "10.1177/1403494811399958"
+                ],
+                "PMID": [
+                    "21775346"
+                ]
+            }
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Validity of the coding for intensive care admission, mechanical ventilation, and acute dialysis in the Danish National Patient Registry: a short report",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Blichert-Hansen",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Nielsson",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Nielsen",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Christiansen",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "N\u00f8rgaard",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Clin Epidemiol",
+            "volume": "5",
+            "issn": "",
+            "pages": "9--12",
+            "other_ids": {
+                "DOI": [
+                    "10.2147/CLEP.S37763"
+                ],
+                "PMID": [
+                    "23359787"
+                ]
+            }
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Potential of prescription registries to capture individual-level use of aspirin and other nonsteroidal anti-inflammatory drugs in Denmark: trends in utilization 1999-2012",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Schmidt",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Hallas",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Friis",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Clin Epidemiol",
+            "volume": "6",
+            "issn": "",
+            "pages": "155--68",
+            "other_ids": {
+                "DOI": [
+                    "10.2147/CLEP.S59156"
+                ],
+                "PMID": [
+                    "24872722"
+                ]
+            }
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Data resource profile: Danish online drug use statistics (MED-STAT)",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Schmidt",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Hallas",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Laursen",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Friis",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Int J Epidemiol",
+            "volume": "45",
+            "issn": "",
+            "pages": "1401--1402",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/ije/dyw116"
+                ],
+                "PMID": [
+                    "27892409"
+                ]
+            }
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Nonaspirin nonsteroidal antiinflammatory drug use in the Nordic countries from a cardiovascular risk perspective, 2000-2016: a drug utilization study",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Kristensen",
+                    "suffix": ""
+                },
+                {
+                    "first": "\u00d8",
+                    "middle": [],
+                    "last": "Karlstad",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Martikainen",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Potteg\u00e5rd",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Wastesson",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Zoega",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Pharmacotherapy",
+            "volume": "39",
+            "issn": "",
+            "pages": "150--60",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/phar.2217"
+                ],
+                "PMID": [
+                    "30636337"
+                ]
+            }
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "The central role of the propensity score in observational studies for causal effects",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Rosenbaum",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Rubin",
+                    "suffix": ""
+                }
+            ],
+            "year": 1983,
+            "venue": "Biometrika",
+            "volume": "70",
+            "issn": "",
+            "pages": "41--55",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/biomet/70.1.41"
+                ]
+            }
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Treatment effects in the presence of unmeasured confounding: dealing with observations in the tails of the propensity score distribution-a simulation study",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Sturmer",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Rothman",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Avorn",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Glynn",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Am J Epidemiol",
+            "volume": "172",
+            "issn": "",
+            "pages": "843--54",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/aje/kwq198"
+                ],
+                "PMID": [
+                    "20716704"
+                ]
+            }
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "PSMATCH2: Stata module to perform full Mahalanobis and propensity score matching, common support graphing, and covariate imbalance testing. Boston: Boston College Department of Economics",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Leuven",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Sianesi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Considerations for pharmacoepidemiological analyses in the SARS-CoV-2 pandemic",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Potteg\u00e5rd",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Kurz",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Moore",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Christiansen",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Klungel",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Pharmacoepidemiol Drug Saf",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/pds.5029"
+                ],
+                "PMID": [
+                    "32369865"
+                ]
+            }
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Metrics for covariate balance in cohort studies of causal effects: metrics for covariate balance in cohort studies of causal effects",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Franklin",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Rassen",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Ackermann",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Bartels",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Schneeweiss",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Stat Med",
+            "volume": "33",
+            "issn": "",
+            "pages": "1685--99",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/sim.6058"
+                ],
+                "PMID": [
+                    "24323618"
+                ]
+            }
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Applying propensity scores estimated in a full cohort to adjust for confounding in subgroup analyses",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Rassen",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Glynn",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Rothman",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Setoguchi",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Schneeweiss",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Pharmacoepidemiol Drug Saf",
+            "volume": "21",
+            "issn": "",
+            "pages": "697--709",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/pds.2256"
+                ],
+                "PMID": [
+                    "22162077"
+                ]
+            }
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Validity of ICD-10 diagnoses of overweight and obesity in Danish hospitals",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Gribsholt",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Pedersen",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Richelsen",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Thomsen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Clin Epidemiol",
+            "volume": "11",
+            "issn": "",
+            "pages": "845--54",
+            "other_ids": {
+                "DOI": [
+                    "10.2147/CLEP.S214909"
+                ],
+                "PMID": [
+                    "31572015"
+                ]
+            }
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Paradoxical relations of drug treatment with mortality in older persons",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Glynn",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Knight",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Levin",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Avorn",
+                    "suffix": ""
+                }
+            ],
+            "year": 2001,
+            "venue": "Epidemiol",
+            "volume": "12",
+            "issn": "",
+            "pages": "682--691",
+            "other_ids": {
+                "DOI": [
+                    "10.1097/00001648-200111000-00017"
+                ],
+                "PMID": [
+                    "11679797"
+                ]
+            }
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Cardiovascular safety of non-aspirin non-steroidal anti-inflammatory drugs: review and position paper by the working group for Cardiovascular Pharmacotherapy of the European Society of Cardiology",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Schmidt",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Lamberts",
+                    "suffix": ""
+                },
+                {
+                    "first": "A-Ms",
+                    "middle": [],
+                    "last": "Olsen",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Fosb\u00f8ll",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Niessner",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Tamargo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Eur Heart J Cardiovasc Pharmacother",
+            "volume": "2",
+            "issn": "",
+            "pages": "108--126",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/ehjcvp/pvv054"
+                ],
+                "PMID": [
+                    "27533522"
+                ]
+            }
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Ibuprofen attenuates cardiac fibrosis in streptozotocin-induced diabetic rats",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Qiao",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Lu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Cardiology",
+            "volume": "131",
+            "issn": "",
+            "pages": "97--106",
+            "other_ids": {
+                "DOI": [
+                    "10.1159/000375362"
+                ],
+                "PMID": [
+                    "25896805"
+                ]
+            }
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Association of use of angiotensinconverting enzyme inhibitors and angiotensin II receptor blockers with testing positive for coronavirus disease 2019 (COVID-19)",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Mehta",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Kalra",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Nowacki",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Anjewierden",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Han",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Bhat",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "JAMA Cardiol",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1001/jamacardio.2020.1855"
+                ],
+                "PMID": [
+                    "32369097"
+                ]
+            }
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Renin-angiotensin-aldosterone system blockers and the risk of Covid-19",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Mancia",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Rea",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ludergnani",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Apolone",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Corrao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "N Engl J Med",
+            "volume": "382",
+            "issn": "",
+            "pages": "2431--2471",
+            "other_ids": {
+                "DOI": [
+                    "10.1056/NEJMoa2006923"
+                ],
+                "PMID": [
+                    "32356627"
+                ]
+            }
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Renin-angiotensin-aldosterone system inhibitors and risk of Covid-19",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Reynolds",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Adhikari",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Pulgarin",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Troxel",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Iturrate",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Johnson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "N Engl J Med",
+            "volume": "382",
+            "issn": "",
+            "pages": "2441--2449",
+            "other_ids": {
+                "DOI": [
+                    "10.1056/NEJMoa2008975"
+                ],
+                "PMID": [
+                    "32356628"
+                ]
+            }
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Study design diagram. NSAID, non-steroidal anti-inflammatory drug; RT-PCR, reverse transcription polymerase chain reaction; SARS-CoV-2, severe acute respiratory syndrome coronavirus 2.https://doi.org/10.1371/journal.pmed.1003308.g001",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "was defined as a filled prescription within 30 days prior to the date of cohort entry. \ufffd Patients with a secondary outcome occurring during the exclusion assessment window were excluded, resulting in exclusion of n = 9,844 patients for hospitalization, n = 535 for ICU admission, n = 274 for mechanical ventilation, and n = 87 for renal replacement therapy in unmatched cohorts, and n = 1,585, 74, 37, and 13, respectively, in matched cohorts.ICU, intensive care unit; NSAID, non-steroidal anti-inflammatory drug; SARS-CoV-2, severe acute respiratory syndrome coronavirus 2.https://doi.org/10.1371/journal.pmed.1003308.t004",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "S1 STROBE Checklist. STROBE checklist of items that should be included in reports of cohort studies. (DOCX) S1 Appendix. Detailed information on registries used in this study. (DOCX) S2 Appendix. Codes used to define exposure, outcome, and covariate variables. (DOCX) S1 Table. Univariate association with death (RRcd) and use of NSAIDs (RRce) for each covariate in the PS. (DOCX) S2",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "Baseline characteristics in the unmatched and propensity-score-matched cohorts.Data are given as number (percent) unless otherwise indicated. \ufffd Defined as 1 or more prescription fills during the period 365 days to 1 day prior to cohort entry. Defined as 1 or more discharge diagnoses assigned up to 1 day prior to cohort entry.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "Association between current NSAID use and 30-day mortality, hospitalization, ICU admission, mechanical ventilation, and renal replacement therapy in unmatched and propensity-score-matched cohorts.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF4": {
+            "text": "(Continued)",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF5": {
+            "text": "Association between current NSAID use and 30-day mortality, hospitalization, ICU admission, mechanical ventilation, and renal replacement therapy in unmatched and propensity-score-matched cohorts of individuals who tested negative for SARS-CoV-2.",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "The departments of clinical microbiology throughout Denmark are acknowledged for contributing to the national infectious disease surveillance. The Danish Health Data Authority and Statens Serum Institut are acknowledged for valuable support with preparation and linkage of data. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Acknowledgments"
+        }
+    ]
+}

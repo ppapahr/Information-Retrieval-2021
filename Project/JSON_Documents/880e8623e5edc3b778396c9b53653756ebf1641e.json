@@ -1,0 +1,1020 @@
+{
+    "paper_id": "880e8623e5edc3b778396c9b53653756ebf1641e",
+    "metadata": {
+        "title": "",
+        "authors": [
+            {
+                "first": "\u00c9lie",
+                "middle": [],
+                "last": "Azoulay",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Paris University",
+                    "location": {
+                        "addrLine": "1 Avenue Claude Vellefaux",
+                        "postCode": "75010",
+                        "settlement": "Paris, Paris",
+                        "country": "France, France"
+                    }
+                },
+                "email": "elie.azoulay@aphp.fr"
+            },
+            {
+                "first": "Sadek",
+                "middle": [],
+                "last": "Beloucif",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Paris University",
+                    "location": {
+                        "addrLine": "1 Avenue Claude Vellefaux",
+                        "postCode": "75010",
+                        "settlement": "Paris, Paris",
+                        "country": "France, France"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Bertrand",
+                "middle": [],
+                "last": "Guidet",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Paris University",
+                    "location": {
+                        "addrLine": "1 Avenue Claude Vellefaux",
+                        "postCode": "75010",
+                        "settlement": "Paris, Paris",
+                        "country": "France, France"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Dominique",
+                "middle": [],
+                "last": "Pateron",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Paris University",
+                    "location": {
+                        "addrLine": "1 Avenue Claude Vellefaux",
+                        "postCode": "75010",
+                        "settlement": "Paris, Paris",
+                        "country": "France, France"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Beno\u00eet",
+                "middle": [],
+                "last": "Vivien",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Paris University",
+                    "location": {
+                        "addrLine": "1 Avenue Claude Vellefaux",
+                        "postCode": "75010",
+                        "settlement": "Paris, Paris",
+                        "country": "France, France"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Matthieu",
+                "middle": [],
+                "last": "Le Dorze",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Paris University",
+                    "location": {
+                        "addrLine": "1 Avenue Claude Vellefaux",
+                        "postCode": "75010",
+                        "settlement": "Paris, Paris",
+                        "country": "France, France"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "SARS-CoV-2 has caused a global pandemic unprecedented in size, spread, severity, and mortality. The influx of patients with severe or life-threatening disease means that in some cases, the available medical resources are not sufficient to meet the needs of all patients. Hence, healthcare providers may be forced to make difficult choices about which patients should be referred to the ICU. This document is intended to provide conceptual support to all healthcare teams currently engaged in the frontline management of the COVID-19 pandemic. It aims to assist physicians in the decision-making process for ICU admission and to help them provide uninterrupted and highquality care.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "This document was written at the request of the Parisarea healthcare authorities in France. This guidance intended to help professionals coordinate patients' pathways and standardize practices among centers to avoid acting on a first-come first-served basis. These recommendations will evolve as knowledge about COVID-19 increases. Previous statements have provided insights into the clinical and ethical challenges that critical care specialists are facing [1] [2] [3] [4] . Moreover, the review from Joebges and Andorno [5] provided a multinational perspective on the ethics guidelines on COVID-19 triage. Alternatives to the first-come first-serve principle have been emphasized [6] by addressing fundamental values such as maximizing the benefits produced by scarce resources, treating people equally, promoting and rewarding instrumental value, and giving priority to the worst off. Patient's wills, age-related considerations, social considerations (no decision can me made based on person's wealth or ability to pay), and the specific issues in patients with cognitive impairment have also been highlighted [5] . As discussed by the authors, guidelines also have the potential to reduce the burden on those who need to determine which patient gets access to a scarce resource.",
+            "cite_spans": [
+                {
+                    "start": 458,
+                    "end": 461,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 462,
+                    "end": 465,
+                    "text": "[2]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 466,
+                    "end": 469,
+                    "text": "[3]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 470,
+                    "end": 473,
+                    "text": "[4]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 522,
+                    "end": 525,
+                    "text": "[5]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 682,
+                    "end": 685,
+                    "text": "[6]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 1114,
+                    "end": 1117,
+                    "text": "[5]",
+                    "ref_id": "BIBREF5"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "Overall, the context is that of a global pandemic unprecedented in size, spread, severity, and mortality [7] . The influx of patients with severe or life-threatening disease means that in some cases, the available medical resources are not sufficient to meet the needs of all patients [8] . Patients with severe illness may present directly at the ED, deteriorate secondarily after medical ward admission, or be referred to emergency physicians from long-term care units.",
+            "cite_spans": [
+                {
+                    "start": 105,
+                    "end": 108,
+                    "text": "[7]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 285,
+                    "end": 288,
+                    "text": "[8]",
+                    "ref_id": "BIBREF8"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "In this exceptional context where human, therapeutic, and material resources may be, or soon become, inadequate, overworked practitioners may be forced to make difficult choices about which patients in the emergency department should be referred to the ICU [9] .",
+            "cite_spans": [
+                {
+                    "start": 257,
+                    "end": 260,
+                    "text": "[9]",
+                    "ref_id": "BIBREF9"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "The ethical principles of distributive justice, nonmaleficence, respect for the autonomy and dignity of patients regardless of their degree of vulnerability, and medical data confidentiality are elementary guidelines for managing these patients with severe forms of COVID-19, but also other patients requiring ICU management for non-COVID-related conditions [10] .",
+            "cite_spans": [
+                {
+                    "start": 358,
+                    "end": 362,
+                    "text": "[10]",
+                    "ref_id": "BIBREF10"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "Emanuel et al. emphasized the role of governments and policymakers to prevent the scarcity of medical resources [6] . However, they formulated six recommendations that shape the development of guidelines that ensure that individual doctors are never tasked with deciding unaided which patients receive life-saving care and which do not. The six specific recommendations for allocating medical resources in the COVID-19 pandemic have been made based on ethical values such as maximizing benefits, treating equally, promoting and rewarding instrumental value, and giving priority to the worst off [6] . These recommendations include to maximize benefits (saving the most lives and at maximizing improvements in individuals' post-treatment length of life even when it requires to remove a patient from a ventilator or an ICU bed to provide it to others in need); prioritize health workers for testing, PPE, ICU beds, ventilators, therapeutics, and vaccines; do not allocate on a first-come first-served basis; be responsive to evidence; recognize research participation; and apply the same principles to all COVID-19 and non-COVID-19 patients.",
+            "cite_spans": [
+                {
+                    "start": 112,
+                    "end": 115,
+                    "text": "[6]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 595,
+                    "end": 598,
+                    "text": "[6]",
+                    "ref_id": "BIBREF6"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "This document is intended to provide conceptual support to all healthcare teams currently engaged in the frontline management of the COVID-19 pandemic. It specifically targets physicians whose culture, training, and/or experience may not have prepared them to the reflection underlying the treatment-limitation decision-making process. This approach cannot be a substitute to a contextualized and personalized clinical decision-making that respects patient's preferences and values, family preferences, and a deliberative and consensual process within the multidisciplinary team. It has two objectives:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "-To assist physicians in the decision-making process for ICU admission, to avoid unreasonable therapeutic obstinacy. These decisions of withholding and withdrawing life-sustaining therapies may be made upon admission or during the course of the stay. -To help physicians continue to provide uninterrupted and high-quality care, in particular at the end of life, when close collaboration among the team and with the families and other loved ones is crucial. Patients not admitted to intensive care or for whom treatment-limitation decisions have been taken should have access to the full spectrum of expertise available in the hospital (emergency doctors, medical services, and mobile palliative care units), which ensures that acute palliative care provides end-of-life comfort to the patient and relieves the distress of the families.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "The elements of reflection relate to both the general case of intensive care patients and the specific case of patients affected by the COVID-19 pandemic. The decisionmaking process should result in a personalized decision for each individual, be discussed by physicians from all the specialties involved in managing this crisis, and be adapted locally, over time, according to the features of each healthcare organization, material resources, human resources, and feedback from the healthcare personnel involved.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "It is essential that these elements also consider the management needs of critical care patients not affected by COVID-19. This re-evaluation is particularly necessary for the most seriously ill and fragile patients, in whom the initial ICU admission was made in a context of uncertainty (admit then re-evaluate rather than do not admit).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "The general strategy must be to anticipate these decisions to the extent possible, regardless of the patient's location (emergency department, standard medical care departments, LTCU, nursing home, etc.), clinical status (with or without signs of severity), and COVID status. In an emergency context, time constraints weigh heavily on the medical decision, and every effort is needed to ensure that despite this burden, the essential duty of compliance with ethical principles is fulfilled.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "For any orientation decision, including outside the context of a pandemic, patients, their relatives, and all healthcare personnel must be informed of the extraordinary and personalized nature of the measures taken. The place and role given to relatives in the decisionmaking process, and the support they receive, may be limited, however, by exceptional circumstances. Finally, these morally and emotionally difficult issues generate anxiety and stress, and support (psychological and/or spiritual) must be offered to everyone, including patients, relatives, and caregivers. We are aware however that pressures regarding ICU admission and discharge may hamper the possibility of an optimal decisionmaking process that allows every person at stake to reach a consensual decision [7] .",
+            "cite_spans": [
+                {
+                    "start": 779,
+                    "end": 782,
+                    "text": "[7]",
+                    "ref_id": "BIBREF7"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "Despite the health emergency, the collegial procedure required by regulations, legislation, and medical ethics must be followed, with emphasis on the principles listed below [11] :",
+            "cite_spans": [
+                {
+                    "start": 174,
+                    "end": 178,
+                    "text": "[11]",
+                    "ref_id": "BIBREF11"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Principles of the ICU admission decision-making process"
+        },
+        {
+            "text": "-Collegiality: the decision remains the responsibility of a single physician, who takes it only after consultation with the healthcare team (the continuity of this collegiality must be organized with at least one other physician and a representative of the non-physician healthcare team) -Respect for the patient's wishes and values, expressed directly by the patient via advance directives, indirectly by the patient, or reported by the support person, healthcare surrogate, or next of kin -Attention to the patient's previous condition, including at least the following: -Frailty assessed using the CFS (Fig. 1 ) [12] -Age (of particular importance for COVID patients) -Comorbidities (major vs. stabilized, single vs. multiple) -Neurocognitive status (normal, mildly impaired, or severely impaired cognitive functions) -Worsening of the patient's general condition over the last few months -Attention to current clinical severity, with an assessment of the number of organ failures at the time of decision-making, one of the doctors involved in the latter having examined and spoken with the patient or relatives/support person -Respiratory: hypoxemia (> 6 l/min O 2 ) or respiratory distress -Hemodynamics: systolic blood pressure < 90 mmHg -Neurological: Glasgow Coma Scale score < 12 -Worsening of organ dysfunction -Possible use of the SOFA score -Assessment of the patient's comfort: pain, anxiety, agitation, dyspnea, congestion, asphyxiation, and isolation -A full commitment to providing support and care for all, in a way that respects the patient's dignity",
+            "cite_spans": [
+                {
+                    "start": 615,
+                    "end": 619,
+                    "text": "[12]",
+                    "ref_id": "BIBREF12"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 605,
+                    "end": 612,
+                    "text": "(Fig. 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Principles of the ICU admission decision-making process"
+        },
+        {
+            "text": "In this context of uncertainty, these decision-making principles apply to both COVID and non-COVID patients. The clinical and contextual data taken into account (such as age, frailty, and comorbidities) are not specific to COVID patients but may have a greater bearing on the nature of the decision taken, depending on the situation.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Principles of the ICU admission decision-making process"
+        },
+        {
+            "text": "Despite the impressive efforts to extend bed capacities at national, regional, and local levels, this pandemic may lead to a substantial lack of available beds [8] . This situation has been frequently encountered in China, in Italy, and, more recently, in France. This clinical issue arises when a single bed is available but two patients meet criteria for ICU admission. The first logical solution may Fig. 1 Clinical frailty scale be to transfer one patient to another ICU with an available bed. Optimal dispatching of patients managed initially by the mobile pre-hospital emergency medical system and the availability of real-time ICU bed counts from Regional Health Agencies and hospitals are paramount.",
+            "cite_spans": [
+                {
+                    "start": 160,
+                    "end": 163,
+                    "text": "[8]",
+                    "ref_id": "BIBREF8"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 403,
+                    "end": 409,
+                    "text": "Fig. 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Special case of absence of an available bed for a patient meeting criteria for ICU admission"
+        },
+        {
+            "text": "The second possibility is to optimize the patient's oxygenation in the hospital or emergency department [13, 14] . This less desirable option may result in sub-optimal treatment and monitoring of the patient and in overcrowding of emergency departments, preventing other patients from accessing them. The ideal solution to this problem is the availability of intermediate structures staffed by qualified personnel and equipped with non-invasive oxygenation devices. However, in the context of a major pandemic, these structures may also eventually reach saturation, leaving the situation unresolved.",
+            "cite_spans": [
+                {
+                    "start": 104,
+                    "end": 108,
+                    "text": "[13,",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 109,
+                    "end": 112,
+                    "text": "14]",
+                    "ref_id": "BIBREF14"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Special case of absence of an available bed for a patient meeting criteria for ICU admission"
+        },
+        {
+            "text": "The third possibility to avoid loss of chance for the patient requiring ICU admission would be to make a bed available. That includes policies and protocols for early extubation, sometimes with bridge to high flow oxygen therapy or non-invasive ventilation. Opening step-down units dedicated to weaning and non-invasive ventilation appears as a very valuable option. Alternatively, we may discharge a patient already in the ICU (bumping). This solution involves earlier-than-planned extubation of the ICU patient, who is then transferred to an intermediate structure (equipped with high oxygen flow devices and facilities to manage tracheostomized patients). Clinicians may also be keen to implement as early as possible a decision to forgo life-sustaining therapy that includes early extubation with immediate ICU discharge. Again, time constraints weigh heavily here. In a pressured environment with the need for urgent ICU admission, early discharge decisions may also apply to seriously ill patients in whom decisions to forgo life-sustaining therapies have been implemented. It is crucial that these decisions can be made following the best ethical standards, including early introduction of palliative care as well as support for families.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Special case of absence of an available bed for a patient meeting criteria for ICU admission"
+        },
+        {
+            "text": "Containment and isolation measures must be rigorously enforced for these highly vulnerable patients at high risk of infection. In addition, emergency medical care dispatchers must have easy access to any advance directives and notes written in the medical records. For example, a doctor on call must be reachable 24/7 to participate, if necessary, in a collegial decision to not admit the patient to the ICU. Careful thinking is needed about the optimal modalities for informing the families, who are no longer allowed to visit their frail relatives, since the condition of these patients may deteriorate suddenly.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Residents of LTCUs and nursing homes"
+        },
+        {
+            "text": "The decision-making process involves (see the algorithm below; Fig. 2 ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 63,
+                    "end": 69,
+                    "text": "Fig. 2",
+                    "ref_id": null
+                }
+            ],
+            "section": "In practice"
+        },
+        {
+            "text": "The decision to withhold or withdraw acute treatment concerns therapies; care is always continued [7] . Accompanying patients at the end of life, and their families, remains a priority for healthcare teams everywhere. The patients and families must receive the best support possible from a palliative care team. This support, which takes the form of an acute palliative care approach, is best performed in close collaboration with other medical and palliative care specialists.",
+            "cite_spans": [
+                {
+                    "start": 98,
+                    "end": 101,
+                    "text": "[7]",
+                    "ref_id": "BIBREF7"
+                }
+            ],
+            "ref_spans": [],
+            "section": "End-of-life support"
+        },
+        {
+            "text": "The right of every patient to receive analgesia and deep and continuous sedation until death in order to prevent all suffering must be guaranteed [15] . Advance prescriptions supervised by experienced teams must, if necessary, be available to respond to urgent requests for relief.",
+            "cite_spans": [
+                {
+                    "start": 146,
+                    "end": 150,
+                    "text": "[15]",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [],
+            "section": "End-of-life support"
+        },
+        {
+            "text": "Efforts must be made to open acute palliative care units designed to meet these needs, as well as to extend critical care capacities [16] .",
+            "cite_spans": [
+                {
+                    "start": 133,
+                    "end": 137,
+                    "text": "[16]",
+                    "ref_id": "BIBREF16"
+                }
+            ],
+            "ref_spans": [],
+            "section": "End-of-life support"
+        },
+        {
+            "text": "In conclusion, the elements of reflection presented here are proposals rather than formal recommendations. They are obviously evolving and attempt to reconcile the essential ethical imperatives of beneficence and respect for the autonomy and dignity of persons, on the one hand, with efficiency of care, equality, equity, social justice, and distributive justice, on the other. Finally, the documented, objective, and explicit nature of the decision-making elements presented here is intended to be a tool for communication and assistance to patients, relatives, and healthcare teams and to serve as a foundation for the solidarity and trust among all that we must nurture during this ordeal.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "End-of-life support"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Recommendations for the admission of patients with COVID-19 to intensive care and intermediate care units (ICUs and IMCUs)",
+            "authors": [
+                {
+                    "first": "Ssoic",
+                    "middle": [],
+                    "last": "Medicine",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Ethical aspects of the COVID-19 crisis: how to deal with an overwhelming shortage of acute beds",
+            "authors": [
+                {
+                    "first": "J-L",
+                    "middle": [],
+                    "last": "Vincent",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Creteur",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Eur Heart J Acute Cardiovasc Care",
+            "volume": "9",
+            "issn": "3",
+            "pages": "248--52",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Allocating scarce resources and triaging patients during the COVID-19 pandemic",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Kirkpatrick",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Hull",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Fedson",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Mullen",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Goodlin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Am Coll Cardiol",
+            "volume": "",
+            "issn": "20",
+            "pages": "35223--35225",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Clinical ethics recommendations for the allocation of intensive care treatments in exceptional, resourcelimited circumstances: the Italian perspective during the COVID-19 epidemic",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Vergano",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Bertolini",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Giannini",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Crit Care Lond Engl",
+            "volume": "24",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Ethics guidelines on COVID-19 triage-an emerging international consensus",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Joebges",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Biller-Andorno",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Crit Care Lond Engl",
+            "volume": "24",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Fair allocation of scarce medical resources in the time of covid-19",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Emanuel",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Persad",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Upshur",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "N Engl J Med",
+            "volume": "382",
+            "issn": "21",
+            "pages": "2049--55",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Surviving Sepsis Campaign: guidelines on the management of critically ill adults with Coronavirus Disease 2019 (COVID-19)",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Alhazzani",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "M\u00f8ller",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Arabi",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Intensive Care Med",
+            "volume": "2020",
+            "issn": "",
+            "pages": "1--34",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "The toughest triage -allocating ventilators in a pandemic",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Truog",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Mitchell",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Daley",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "382",
+            "issn": "",
+            "pages": "1973--75",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Intensive care management of coronavirus disease 2019 (COVID-19): challenges and recommendations",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Phua",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Weng",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Ling",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet Respir Med",
+            "volume": "8",
+            "issn": "5",
+            "pages": "506--523",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Ethical principles for everyone",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Pochard",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Grassin",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Azoulay",
+                    "suffix": ""
+                }
+            ],
+            "year": 2001,
+            "venue": "Ann Intern Med",
+            "volume": "134",
+            "issn": "12",
+            "pages": "1152--1152",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Toward shared decision making at the end of life in intensive care units: opportunities for improvement",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "White",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Braddock",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Bereknyei",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Curtis",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Arch Intern Med",
+            "volume": "167",
+            "issn": "5",
+            "pages": "461--468",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Prevalence and impact of frailty on mortality in elderly ICU patients: a prospective, multicenter, observational study",
+            "authors": [
+                {
+                    "first": "Le",
+                    "middle": [],
+                    "last": "Maguet",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Roquilly",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Lasocki",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Intensive Care Med",
+            "volume": "40",
+            "issn": "5",
+            "pages": "674--82",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Helmet CPAP to treat acute hypoxemic respiratory failure in patients with COVID-19: a management strategy proposal",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Radovanovic",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Rizzi",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Pini",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Saad",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Chiumello",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Santus",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Clin Med",
+            "volume": "9",
+            "issn": "4",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "High-flow nasal cannula for COVID-19 patients: low risk of bio-aerosol dispersion",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Fink",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Ehrmann",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Eur Respir J",
+            "volume": "55",
+            "issn": "5",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Sedation practice and discomfort during withdrawal of mechanical ventilation in critically ill patients at end-of-life: a post-hoc analysis of a multicenter study",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Robert",
+                    "suffix": ""
+                },
+                {
+                    "first": "Le",
+                    "middle": [],
+                    "last": "Gouge",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Kentish-Barnes",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Intensive Care Med",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s00134-020-05930-w"
+                ]
+            }
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Palliative care in the context of a pandemic: similar but different",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Davies",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Hayes",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Clin Med",
+            "volume": "",
+            "issn": "",
+            "pages": "2020--0157",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Publisher's Note",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "TABREF0": {
+            "text": ") the following: and a dignified and peaceful end of life in the presence of her/his loved ones. b) Admission to critical care:i. With periodic re-evaluation, taking into account the response of the organ failures to the treatments used. ii. The re-evaluations show whether the patient improves with treatment or, on the contrary, fails to respond, indicating a need to change the goal of treatment from curative to palliative. 4. In every case, any decision, whatever it may be, and its follow-up, must be:-Recorded and justified in the patient's medical file, communicated to the caregiver teams, and quickly available in case of emergency. -Re-evaluated on a regular basis, based on the clinical developments and possible new decision-making elements, as patient survival depends on a response to prolonged supportive treatment, given the absence to date of etiological treatments. -Clearly and honestly communicated to the patients' next of kin as the first step of the support process to the families; family conferences and psychological support cells have a valuable role to play. -Integrate the permanent requirement to limit tensions, both upstream and downstream.",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "The authors thank G\u00e9rard Reach, M.D., Ph.D., for his assistance.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Acknowledgements"
+        },
+        {
+            "text": "All authors have contributed to the drafting of this manuscript, and have reviewed and edited the last version before submission. The authors read and approved the final manuscript.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Authors' contributions"
+        },
+        {
+            "text": "From the M\u00e9decine Intensive et R\u00e9animation departments from St-Louis and Saint-Antoine hospitals (EA, BG), the anesthesia and critical care departments from Avicenne and Lariboisiere hospitals (SB, ML), and the emergency departments from Saint-Antoine and Neckers hospitals (DP, BV).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Authors' information"
+        },
+        {
+            "text": "Availability of data and materials NA, this is a review article.Ethics approval and consent to participate Not appropriate Fig. 2 Algorithm for the decision to admit to the ICU a severely hypoxemic COVID-19 patient Consent for publication There are no included patients. All authors have contributed to the drafting of this manuscript, and have reviewed and edited the last version before submission.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 123,
+                    "end": 129,
+                    "text": "Fig. 2",
+                    "ref_id": null
+                }
+            ],
+            "section": "Funding None"
+        },
+        {
+            "text": "Neither of the authors has any conflicts of interest to declare. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Competing interests"
+        }
+    ]
+}

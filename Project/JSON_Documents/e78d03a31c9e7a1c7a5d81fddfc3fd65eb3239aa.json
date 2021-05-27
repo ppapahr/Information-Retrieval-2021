@@ -1,0 +1,2520 @@
+{
+    "paper_id": "e78d03a31c9e7a1c7a5d81fddfc3fd65eb3239aa",
+    "metadata": {
+        "title": "Journal Pre-proof Does gender influence clinical expression and disease outcomes in COVID-19? A systematic review and meta-analysis Does gender influence clinical expression and disease outcomes in COVID-19? A systematic review and meta-analysis",
+        "authors": [
+            {
+                "first": "Augusta",
+                "middle": [],
+                "last": "Ortolan",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Rheumatology Unit Department of Medicine-DIMED University of Padova Via Giustiniani",
+                    "institution": "University of Padova",
+                    "location": {
+                        "postCode": "2 35128",
+                        "settlement": "Padova, Padova",
+                        "country": "Italy, (Italy"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Mariagrazia",
+                "middle": [],
+                "last": "Lorenzin",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Rheumatology Unit Department of Medicine-DIMED University of Padova Via Giustiniani",
+                    "institution": "University of Padova",
+                    "location": {
+                        "postCode": "2 35128",
+                        "settlement": "Padova, Padova",
+                        "country": "Italy, (Italy"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Mara",
+                "middle": [],
+                "last": "Felicetti",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Rheumatology Unit Department of Medicine-DIMED University of Padova Via Giustiniani",
+                    "institution": "University of Padova",
+                    "location": {
+                        "postCode": "2 35128",
+                        "settlement": "Padova, Padova",
+                        "country": "Italy, (Italy"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Andrea",
+                "middle": [],
+                "last": "Doria",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Rheumatology Unit Department of Medicine-DIMED University of Padova Via Giustiniani",
+                    "institution": "University of Padova",
+                    "location": {
+                        "postCode": "2 35128",
+                        "settlement": "Padova, Padova",
+                        "country": "Italy, (Italy"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Roberta",
+                "middle": [],
+                "last": "Ramonda",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Rheumatology Unit Department of Medicine-DIMED University of Padova Via Giustiniani",
+                    "institution": "University of Padova",
+                    "location": {
+                        "postCode": "2 35128",
+                        "settlement": "Padova, Padova",
+                        "country": "Italy, (Italy"
+                    }
+                },
+                "email": "roberta.ramonda@unipd.it"
+            },
+            {
+                "first": "",
+                "middle": [
+                    "Roberta"
+                ],
+                "last": "Ramonda",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Rheumatology Unit Department of Medicine-DIMED University of Padova Via Giustiniani",
+                    "institution": "University of Padova",
+                    "location": {
+                        "postCode": "2 35128",
+                        "settlement": "Padova, Padova",
+                        "country": "Italy, (Italy"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "\uf0b7 Males are slightly more susceptible to SARS-CoV2 infection (M:F ratio 1: 0.8) \uf0b7 Male patients affected by COVID 19 have higher chance to present with a more severe disease \uf0b7 Mortality of COVID-19 is nearly twice as high in males than females \uf0b7 Mechanisms underlying this susceptibility are due to genetic, hormonal and biological factors J o u r n a l P r e -p r o o f 1 Abstract Background: Severe Acute Respiratory Syndrome coronavirus-2 (SARS-CoV) has been recently characterized, and soon spread around the world generating a pandemic. It has been suggested that men are more severely affected by the viral disease (COVID-19) than women.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Objective: the aim of the present Systematic Literature Review (SRL) and meta-analysis was to analyse the influence of gender on COVID-19 mortality, severity and disease outcomes. A SRL was performed in PubMed and Embase searching terms corresponding to the \"PEO\" format (Population=adult patients affected with COVID-19, Exposure=gender; Outcome=any available clinical outcomes by gender, including mortality and disease severity), search dates 01/01/2020-31/04/2020. Exclusion criteria were: case reports/series, reviews, commentaries, language other than English. We included full-text original articles. Data about study type, country, patients characteristics were extracted. Study quality was evaluated by Newcastle-Ottawa Scale (NOS). From a total of 950 hits generated by databases search, 85 articles fulfilling inclusion/exclusion criteria were selected. Results: A random-effect meta-analysis was performed to compare mortality, recovery rates and disease severity in men versus women. Male to female ratio was 1: 0.8. A significant association between male sex and mortality (OR=1.81; 95%CI: 1.25-2.62), as well as a lower chance of recovery in men (OR=0.72; 95% CI: 0.55-0.95). Male patients had a higher odd to present with a severe form of COVID-19 (OR=1.46; 95%CI: 1.10-1.94). Conclusions: male are more susceptible to COVID-19 infection, present with a more severe disease and have a worse prognosis. Further studies are warranted to unravel biological mechanisms underlying these observations.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "In December 2019 a cluster of pneumonia cases of unknown origin was recognized in Whuan, China [1] . Full-length genome sequencing from five patients at the early stage of the outbreak unravelled the discovery of a novel coronavirus, with a high homology with the 2003 Severe Acute Respiratory Syndrome coronavirus (SARS-CoV). The novel coronavirus was thus named SARS-CoV-2 (initially provisionally designated as 2019-nCoV), and shortly after its characterization it started to spread rapidly outside China. The disease caused by SARS-Cov2 (Coronavirus disease 2019, immediately raised concerned for its ability to cause severe illness with acute hypoxemic respiratory failure possibly resulting in death [2] . Furthermore, the quickness in human-to-human transmission required prompt adoption of containment measures [3] .",
+            "cite_spans": [
+                {
+                    "start": 95,
+                    "end": 98,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 706,
+                    "end": 709,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 819,
+                    "end": 822,
+                    "text": "[3]",
+                    "ref_id": "BIBREF3"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Nevertheless, the constantly increasing numbers of cases outside China prompt World Health Organization (WHO) to declare COVID-19 was a pandemic on March 11th, 2020.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Among actions taken by health institutions or governments to study and mitigate the COVID-19 pandemic, gender-specific analysis and measures are lacking [4] . However, the pandemic might impact very differently on men and women, both for social and biological reasons [4] . On one hand, from a social standpoint, most health care workers are women in several world region, including Americas, Europe, South-East Asia, Western Pacific and Eastern Mediterranean regions. Furthermore, they have a predominant role in family caring in many countries [5] . Thus, they could represent highly exposed individuals. On the other hand, from a biological standpoint, men might be less favoured: for example, a high expression of the cell entry receptor angiotensin-converting enzyme 2 (ACE2), used by SARS-CoV2 to invade human cells, has been demonstrated in Leydig and Sertoli Cells [6] . This could be one of the explanations for the claimed higher mortality in men, highlighted by some reports [7, 8] .",
+            "cite_spans": [
+                {
+                    "start": 153,
+                    "end": 156,
+                    "text": "[4]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 268,
+                    "end": 271,
+                    "text": "[4]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 546,
+                    "end": 549,
+                    "text": "[5]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 873,
+                    "end": 876,
+                    "text": "[6]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 986,
+                    "end": 989,
+                    "text": "[7,",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 990,
+                    "end": 992,
+                    "text": "8]",
+                    "ref_id": "BIBREF9"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "However, a synthesis of available literature regarding gender differences, and the definition of a precise effect size for potential differences has not been performed so far. Starting from the present J o u r n a l P r e -p r o o f knowledge gaps, the aim of the present systematic literature review was to collect evidence about differential clinical outcomes of COVID-19 in men and females, including disease prevalence in the two genders, mortality, severity of clinical expression, and any other described disease characteristics.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "A systematic review in accordance with the Preferred Reporting Items for Systematic Reviews and Meta-Analyses guidelines (PRISMA) was undertaken [9] . PubMed and Embase were searched, with publication period range 1 st January 2020-29 th April 2020. The scope of the literature search was underlined according to the Population, Exposure, Outcome (PEO) format. The Population (P) of interest was adult (\u2265 18 years) patients affected with COVID-19, the Exposure (E) was gender (male/female) and the outcomes were any available clinical outcomes by gender, including: percentages of affected patients, mortality, disease severity.",
+            "cite_spans": [
+                {
+                    "start": 145,
+                    "end": 148,
+                    "text": "[9]",
+                    "ref_id": "BIBREF10"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Data sources and search"
+        },
+        {
+            "text": "Literature search was performed using the following keys: [\"Sex\" OR \"gender\" OR \"male\" OR \"female\"] AND [\"SARS-Cov2\" OR \"novel coronavirus\" OR \"COVID-19\" OR \"2019-nCoV\"] AND [\"clinical course\" OR \"clinical presentation\" OR \"therapy\" OR \"illness\" OR \"outcome\" OR \"mortality\" OR \"morbidity\" OR \"epidemiology\" OR \"Intensive care unit\" OR \"hospital stay\"]",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data sources and search"
+        },
+        {
+            "text": "Exclusion criteria were: reviews, editorials, case reports and case series, papers in any language other than English, studies on children or pregnant women. We included, instead, full-text studies presenting gender-specific outcomes in adult patients affected with coronavirus. The types of studies considered for inclusion were observational cross-sectional studies, case-control studies J o u r n a l P r e -p r o o f and observational longitudinal studies. Two reviewers (AO, ML) assessed each title and abstract on suitability for inclusion, according to the inclusion/exclusion criteria, followed by a full-text review if necessary. Discrepancies were resolved by consensus.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Study selection"
+        },
+        {
+            "text": "A predefined data extraction sheet was used to gather the following data from all included studies: study design, country, infection definition, population (e.g. hospitalized patients versus general population), setting, number of included patients. The quality of the extracted studies was then evaluated by Newcastle-Ottawa Scale (NOS) for cross-sectional, cohort and case-control studies [10] . NOS study quality was then graded according to the total score. Cross-sectional studies were graded as: very good = 6-7; good = 5; satisfactory= 4; unsatisfactory = 0-3. Cohort and case-control studies were graded as: very good = 9-10; good = 7-8; satisfactory = 5-6; unsatisfactory = 0-4, as previously described [11] .",
+            "cite_spans": [
+                {
+                    "start": 391,
+                    "end": 395,
+                    "text": "[10]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 712,
+                    "end": 716,
+                    "text": "[11]",
+                    "ref_id": "BIBREF12"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Data Extraction and Quality Assessment"
+        },
+        {
+            "text": "A PRISMA flowchart was subsequently generated for the final selection of the studies to be included (see Results section).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Extraction and Quality Assessment"
+        },
+        {
+            "text": "Categorical data were reported as number (percentage). The number of male and females individuals was pooled to get a general male:female ratio.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Synthesis and Analysis"
+        },
+        {
+            "text": "A meta-analysis was performed on studies that were deemed at least of satisfactory quality to evaluate mortality and disease severity in male versus females. In order to do this, a random effect meta-analysis with the De Simonian-Laird method was then performed using Stata SE version 16 (Copyright 1985-2019 StataCorp LLC, College Station, Texas 77845 USA). The random-effect model was chosen because it was unknown whether there was a \"true\" effect size underlying all studies, which would indicate the use of a fixed-effect meta analysis; thus, we selected a more conservative approach. The statistical heterogeneity of meta-analysis was assessed using the I 2 J o u r n a l P r e -p r o o f statistic. Forrest plots were produced to represent effect sizes. Funnel plots were produced to assess outliers or reporting bias.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Synthesis and Analysis"
+        },
+        {
+            "text": "A total of 950 hits were generated by the databases search. After removing duplicates, the remaining 814 references were assessed for eligibility through titles and abstracts' reading first.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Study selection"
+        },
+        {
+            "text": "Other 608 articles were excluded during this process, mainly due to wrong type of publication (review, case reports, case series) or because they were conducted in other populations of interest (children, pregnant women). Full-texts were examined in 134 cases; of these, 49 were excluded.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Study selection"
+        },
+        {
+            "text": "Thirteen articles had a different outcome (e.g performances of diagnostic methods), 14 articles presented data from other populations (e.g screening in general population) without sex-specific data, 21 articles were excluded because of study type (case series, reviews). The remaining 85 articles were considered for qualitative evaluation.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Study selection"
+        },
+        {
+            "text": "The PRISMA flowchart is displayed in Figure 1 .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 37,
+                    "end": 45,
+                    "text": "Figure 1",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "Study selection"
+        },
+        {
+            "text": "The 85 studies included in the qualitative assessment were thoroughly examined to identify: author, country, study design, number of participants, study period, type of patients (general population, hospitalized patients, patients admitted to intensive care unit, dead), infection definition (laboratory confirmed diagnosis through SARS-CoV-2 detection in pharyngeal swab specimens by real-time reverse-transcriptase polymerase-chain-reaction, RT-PCR or clinical suspect). The results of data extraction are displayed in Appendix Table 1 . The designs of the included studies were as follows: longitudinal cohort (n=55), cross-sectional (n=28), and case-control study (n=2).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 530,
+                    "end": 537,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Study characteristics"
+        },
+        {
+            "text": "Among the 46 longitudinal cohort designs, 9 were of unsatisfactory quality, 17 were evaluated as satisfactory, 17 as good and 12 as very good. The cross sectional design studies included: one study of unsatisfactory quality, 8 satisfactory studies, 12 studies that were graded as good and 7 as very good. One case-control study was judged as unsatisfactory and one as satisfactory. In general, comparability (i.e outcome adjustment for relevant confounders) was one of the domains where many studies, both longitudinal and cross sectional, were graded lower. In fact, many papers presented crude outcomes and did not correct for the major confounders such as age and sex, except -in some cases-a minimal stratification by sex and/or age for very relevant outcomes, like death.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Quality assessment"
+        },
+        {
+            "text": "The first gender-related aspect to be examined was disease prevalence. Across all studies, there were a total of 17978 males and 22802 females, corresponding to a male to female ratio of 1: 0.8, thus men and women were approximately equally affected.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Studies included in the meta-analysis"
+        },
+        {
+            "text": "Secondly, a random effect meta-analysis was conducted on studies that presented sex-specific mortality data and were deemed of at least satisfactory quality (Table 1) [8, [12] [13] [14] [15] [16] [17] [18] [19] [20] . Two studies were instead not included in the meta-analysis because they only presented a group of deceased patients, thus it was not possible to derive data from survivors [21, 22] . Data pooling resulted in a significant association between male sex and mortality (OR=1.81; 95%CI: 1.25-2.62) (Forrest plot represented in Figure 2, A) . Among the included studies, two were conducted in the general population, while 11 included only hospitalized patients, with one specifically focusing on intensive care unit (ICU) patients. Sensitivity analyses were therefore conducted in these different populations to assess the robustness of our result. In the hospitalized patients not admitted to ICU, as well as in the general population, a significantly higher chance of death in males was confirmed Only one study on patients admitted to the ICU was available, thus a meta-analysis was not possible J o u r n a l P r e -p r o o f [19] . Overall heterogeneity was significant (I 2 = 60.1%, p = 0.004), but it decreased when examining only hospitalized patients not in ICU and tended to zero in the sensitivity analyses in the general populations (Figure 2 B, C) .",
+            "cite_spans": [
+                {
+                    "start": 167,
+                    "end": 170,
+                    "text": "[8,",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 171,
+                    "end": 175,
+                    "text": "[12]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 176,
+                    "end": 180,
+                    "text": "[13]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 181,
+                    "end": 185,
+                    "text": "[14]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 186,
+                    "end": 190,
+                    "text": "[15]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 191,
+                    "end": 195,
+                    "text": "[16]",
+                    "ref_id": null
+                },
+                {
+                    "start": 196,
+                    "end": 200,
+                    "text": "[17]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 201,
+                    "end": 205,
+                    "text": "[18]",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 206,
+                    "end": 210,
+                    "text": "[19]",
+                    "ref_id": null
+                },
+                {
+                    "start": 211,
+                    "end": 215,
+                    "text": "[20]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 390,
+                    "end": 394,
+                    "text": "[21,",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 395,
+                    "end": 398,
+                    "text": "22]",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 1143,
+                    "end": 1147,
+                    "text": "[19]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 157,
+                    "end": 166,
+                    "text": "(Table 1)",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 540,
+                    "end": 552,
+                    "text": "Figure 2, A)",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 1358,
+                    "end": 1373,
+                    "text": "(Figure 2 B, C)",
+                    "ref_id": "FIGREF3"
+                }
+            ],
+            "section": "Studies included in the meta-analysis"
+        },
+        {
+            "text": "As a countercheck to our observation about mortality, we performed a meta-analysis on those papers describing recovery rates by gender (Figure 3 A) . Six studies were included, with quality ranging from satisfactory to very good: the pooled effect size displayed a negative association between male sex and recovery (OR=0.72; 95% CI: 0.55-0.95). Heterogeneity was of the included studies was modest in amount (I 2 =16.2) but statistically significant (p = 0.006).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 135,
+                    "end": 147,
+                    "text": "(Figure 3 A)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Studies included in the meta-analysis"
+        },
+        {
+            "text": "Finally, a further meta-analysis to compare disease severity between genders was carried out.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Studies included in the meta-analysis"
+        },
+        {
+            "text": "Fourteen studies providing data about COVID-19 severity, that were judged of satisfactory quality at least, were included: one study has been conducted in the general population, whereas all the others in hospitalized patients (not in ICU) ( Table 1) [7, 19, [23] [24] [25] [26] [27] [28] [29] [30] [31] [32] [33] [34] . Only one study was not included due to poor evaluation according to the NOS [35] . Pooled data showed a higher chance for male patients to present with a severe form of COVID-19 (OR=1.46; 95%CI: 1.10-1. 94, Figure 3 B). The heterogeneity across studies was relevant, with I 2 =81.2, p<0.0001.",
+            "cite_spans": [
+                {
+                    "start": 251,
+                    "end": 254,
+                    "text": "[7,",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 255,
+                    "end": 258,
+                    "text": "19,",
+                    "ref_id": null
+                },
+                {
+                    "start": 259,
+                    "end": 263,
+                    "text": "[23]",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 264,
+                    "end": 268,
+                    "text": "[24]",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 269,
+                    "end": 273,
+                    "text": "[25]",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 274,
+                    "end": 278,
+                    "text": "[26]",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 279,
+                    "end": 283,
+                    "text": "[27]",
+                    "ref_id": null
+                },
+                {
+                    "start": 284,
+                    "end": 288,
+                    "text": "[28]",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 289,
+                    "end": 293,
+                    "text": "[29]",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 294,
+                    "end": 298,
+                    "text": "[30]",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 299,
+                    "end": 303,
+                    "text": "[31]",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 304,
+                    "end": 308,
+                    "text": "[32]",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 309,
+                    "end": 313,
+                    "text": "[33]",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 314,
+                    "end": 318,
+                    "text": "[34]",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 397,
+                    "end": 401,
+                    "text": "[35]",
+                    "ref_id": "BIBREF39"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 242,
+                    "end": 250,
+                    "text": "Table 1)",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 524,
+                    "end": 536,
+                    "text": "94, Figure 3",
+                    "ref_id": null
+                }
+            ],
+            "section": "Studies included in the meta-analysis"
+        },
+        {
+            "text": "In order to assess the risk of bias across studies a visual inspection through funnel plot was performed for the studies included in the meta-analysis on mortality, on recovery rate and on disease severity (Appendix figure 1 A, B, C) . In the first case, the funnel plot displayed a symmetrical appearance. As for the analysis on recovery, despite the small number of included study, no major outlier was noted. The funnel plot of studies included in the severity meta-analysis had instead a few outliers, but in both directions, suggesting true heterogeneity rather than publication bias.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 206,
+                    "end": 233,
+                    "text": "(Appendix figure 1 A, B, C)",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "Risk of bias across studies"
+        },
+        {
+            "text": "Since any gender-specific outcome related to COVID-19 infection was extracted during this SLR, we hereby report results of the SLR that could not be included in a quantitative analysis but are still of interest.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Studies not included in the quantitative synthesis (meta-analysis)"
+        },
+        {
+            "text": "Firstly, a large Chinese study considering as a composite endpoint a) admission to ICU, b) the use of mechanical ventilation, or c) death found that females constituted only 32.8% of the subpopulation reaching the composite endpoint (22 females versus 45 males) [24] . However, a formal statistical analysis to assess whether female sex was negatively associated to this endpoint was not performed. Another work by Li et al highlighted that males had a higher Hazard Rate for mortality even after adjustment for age, blood leukocyte count, LDH, cardiac injury, hyperglycemia, and administration of corticosteroids, lopinavir/ritonavir, and umifenovir (HR 1.72; 95%CI 1.05-2.82, p=0.032). Accordingly, female sex was found to be protective for in hospital death [20] . Male sex seemed not to be independently associated, instead, to ICU admission in a retrospective study [36] .",
+            "cite_spans": [
+                {
+                    "start": 262,
+                    "end": 266,
+                    "text": "[24]",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 761,
+                    "end": 765,
+                    "text": "[20]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 871,
+                    "end": 875,
+                    "text": "[36]",
+                    "ref_id": "BIBREF40"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Studies not included in the quantitative synthesis (meta-analysis)"
+        },
+        {
+            "text": "Only one paper, among those selected, systematically evaluated gender differences in COVID-19 characteristics and prognosis, and indeed it confirmed that males with comorbidities presented a higher risk of critical illness than males without comorbidities (OR=3.82, 95%CI=1.28-11.43), while this association tended towards the null for female sex (16]. Differences in disease expression were limited to a higher prevalence of headache and more favourable laboratory examinations in females. In particular, females had a lower neutrophil-to-lymphocite ratio (NLR), ferritin, transaminase, bilirubin, lactate dehydrogenase, kidney function indices, C-reactive protein, procalcitonin [16] . On the subject of laboratory examinations, one work investigated the prognostic value of N terminal pro B type natriuretic peptide (nt-proBNP) on COVID-19 mortality: significant differences between male and females were not highlighted in this marker, although Nt-proBNP per se was a significant predictor of in-hospital death [37] . Fan et al showed instead that elevated transaminase and cholestasic enzymes were associated to a longer hospital stay, and that patients J o u r n a l P r e -p r o o f presenting these abnormalities were more frequently males than females [38] . When evaluating NLR, it was found that, in male sex, NLR was significantly associated to mortality, whereas the same was not observed in female sex [39] .",
+            "cite_spans": [
+                {
+                    "start": 681,
+                    "end": 685,
+                    "text": "[16]",
+                    "ref_id": null
+                },
+                {
+                    "start": 1015,
+                    "end": 1019,
+                    "text": "[37]",
+                    "ref_id": "BIBREF41"
+                },
+                {
+                    "start": 1261,
+                    "end": 1265,
+                    "text": "[38]",
+                    "ref_id": "BIBREF43"
+                },
+                {
+                    "start": 1416,
+                    "end": 1420,
+                    "text": "[39]",
+                    "ref_id": "BIBREF44"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Studies not included in the quantitative synthesis (meta-analysis)"
+        },
+        {
+            "text": "With regard to the infection kinetics, a retrospective study found that male sex was independently associated with the duration of SARS-CoV-2 RNA shedding (OR, 3.24; 95% CI: 1.31-8.02, p=0.011) [40] . This finding was confirmed by another independent study which assessed the virus RNA not only in respiratory samples, but also in stool and serum samples, drawing similar conclusions [34] .",
+            "cite_spans": [
+                {
+                    "start": 194,
+                    "end": 198,
+                    "text": "[40]",
+                    "ref_id": "BIBREF45"
+                },
+                {
+                    "start": 384,
+                    "end": 388,
+                    "text": "[34]",
+                    "ref_id": "BIBREF37"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Studies not included in the quantitative synthesis (meta-analysis)"
+        },
+        {
+            "text": "The results of the present SLR and meta-analysis indicated that male sex seems to be a risk factor for mortality (both in the general population and hospitalized patients), for a lower recovery rate and for disease severity in COVID-19.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Our SLR did not a highlight a striking difference between male and female gender regarding disease susceptibility: a male to female ratio of 1:0.8, slightly favouring male, has been calculated for our pooled studies. However, this modest difference might not be accidental: the higher proneness of men to COVID-19 could be related to differences in innate immunity, steroid hormones and factors related to sex chromosomes [41] . Since some important immune regulatory genes are located in the X chromosome, female individuals -equipped with two copies-might be advantaged due to a higher expression of Toll Like Receptor-7 (TLR7), which is crucial in the defence against viral infections. Beside, it seems in females there is a higher expression of CD4+ lymphocytes, guaranteeing a better virus clearance [41] .",
+            "cite_spans": [
+                {
+                    "start": 422,
+                    "end": 426,
+                    "text": "[41]",
+                    "ref_id": "BIBREF46"
+                },
+                {
+                    "start": 805,
+                    "end": 809,
+                    "text": "[41]",
+                    "ref_id": "BIBREF46"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Regarding mortality, a higher case fatality rate in males had already been suggested in a previous scoping review about clinical characteristics of the SARS-CoV-2 infection [42] , but a specific search on gender-related outcomes has not been performed to date. Beside, a pooled effect size for J o u r n a l P r e -p r o o f mortality risk in male had not been calculated: the results of our work suggest that male patients affected with COVID-19 have an overall 61% higher chance to die from the infection than their female peers. Importantly, this difference seems to hold despite the setting: general population or hospitalized patients. This, again, points toward a biological explanations for the different infection outcome in male and females. It has been observed that, in the most severe cases, SARS-CoV-2 can induce an exaggerated production of pro-inflammatory cytokines (named \"cytokine storm\" or better \"secondary hemophagocytic lymphohistiocytosis\"-sHLH), possibly leading to multi organ failure and death [43] . This mechanism might be less frequently triggered in women, as a lower production of pro-inflammatory cytokines including interleukin (IL)-6 has been observed in women, despite a prompter and more effective anti-viral response [41] .",
+            "cite_spans": [
+                {
+                    "start": 173,
+                    "end": 177,
+                    "text": "[42]",
+                    "ref_id": null
+                },
+                {
+                    "start": 1020,
+                    "end": 1024,
+                    "text": "[43]",
+                    "ref_id": "BIBREF49"
+                },
+                {
+                    "start": 1254,
+                    "end": 1258,
+                    "text": "[41]",
+                    "ref_id": "BIBREF46"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "In order to examine the issue of mortality form a different point of view, we also evaluated whether there was a difference in the recovery rate between genders. This analysis had not exactly the same meaning of the previous, as all examined cohort studies extended their observation period up to a certain point in time -for practical reasons-, but they did not follow all patients up to death or recovery. Thus, at the end of the study, a consistent proportion of patients might still be hospitalized. In this context, the recovery rate could also give an indication about patients that were discharged more rapidly versus those still hospitalized. This analysis confirmed, again, that male sex was negatively associated to recovery in the observation period. Accordingly, our SLR results retrieved data about a prolonged viral RNA shedding in men for SARS-Cov-2, suggesting slower recovery [34, 40] .",
+            "cite_spans": [
+                {
+                    "start": 893,
+                    "end": 897,
+                    "text": "[34,",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 898,
+                    "end": 901,
+                    "text": "40]",
+                    "ref_id": "BIBREF45"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "As far as disease severity is concerned, our meta-analysis showed that men have a significantly higher risk of severe disease. The degree of observed heterogeneity was rather high across studies, and this might depend on the different definitions of disease severity. Indeed, two studies used the American Thoracic Society definition for severe community-acquired pneumonia [24, 30, 44] , some others the definition from the Chinese National Health commission [8, 25, 26, 31, 33, 34] ; two authors applied personal definitions such as \"patients with dyspnea or respiratory failure\" [28] or defined specific levels of oxygen dependence [29] ; finally, in few cases the definition was not exactly explained (though we might hypothesize that Chinese authors used the definition from the national guidelines) [7, 23, 27, 32] . Nonetheless, it is undeniable that all these definitions included patients with a severe respiratory failure and pictured a high-risk clinical situation, so this is unlikely to impact the true clinical meaning of the meta-analysis.",
+            "cite_spans": [
+                {
+                    "start": 374,
+                    "end": 378,
+                    "text": "[24,",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 379,
+                    "end": 382,
+                    "text": "30,",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 383,
+                    "end": 386,
+                    "text": "44]",
+                    "ref_id": "BIBREF50"
+                },
+                {
+                    "start": 460,
+                    "end": 463,
+                    "text": "[8,",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 464,
+                    "end": 467,
+                    "text": "25,",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 468,
+                    "end": 471,
+                    "text": "26,",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 472,
+                    "end": 475,
+                    "text": "31,",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 476,
+                    "end": 479,
+                    "text": "33,",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 480,
+                    "end": 483,
+                    "text": "34]",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 582,
+                    "end": 586,
+                    "text": "[28]",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 635,
+                    "end": 639,
+                    "text": "[29]",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 805,
+                    "end": 808,
+                    "text": "[7,",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 809,
+                    "end": 812,
+                    "text": "23,",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 813,
+                    "end": 816,
+                    "text": "27,",
+                    "ref_id": null
+                },
+                {
+                    "start": 817,
+                    "end": 820,
+                    "text": "32]",
+                    "ref_id": "BIBREF35"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "In line with our results, even reports focusing on single negative prognostic factors highlighted how these were often increased in men: elevated transaminase and cholestasic enzymes or NLR are just some relevant example [38, 39] . It is conceivable that disease phenotype, and thus severity, might be influenced by hormonal factors. In fact, a study conducted in nine pregnant women infected with COVID-19 highlighted that high estrogen levels and increased estrogen receptor signaling was not associated with severe disease [45] . Consistently with this observation, previous animal studies on SARS-CoV found that the estrogen depletion, by ovariectomy or treatment with estrogen receptor antagonist, in infected female mice dramatically increased morbidity and mortality [46] . It might be reasonable to hypothesize this could also apply to SARS-CoV-2. The importance of estrogen in the immune response to virus is linked to the presence of estrogen receptors on the surface of innate immune cells such as monocytes, macrophages and neutrophils. Via this receptor, the production of type I and III interferon by innate immune cells, which is crucial to decrease virus titres, is enhanced [47] . This even brought to the proposal of hormone replacement therapy as a potential treatment aimed at limiting COVID-19 severity [47] . An additional risk factor in males could be represented by the testis, as the analysis of transcription patterns of ACE2 found this receptor is primarily expressed in spermatogonia and Leydig and Sertoli cells. ACE2-positive spermatogonia express a higher number of genes associated with viral reproduction and transmission, and a lower number of genes related to spermatogenesis [6] . Thus, multiple biological explanations might hold for the higher disease severity in males.",
+            "cite_spans": [
+                {
+                    "start": 221,
+                    "end": 225,
+                    "text": "[38,",
+                    "ref_id": "BIBREF43"
+                },
+                {
+                    "start": 226,
+                    "end": 229,
+                    "text": "39]",
+                    "ref_id": "BIBREF44"
+                },
+                {
+                    "start": 526,
+                    "end": 530,
+                    "text": "[45]",
+                    "ref_id": "BIBREF51"
+                },
+                {
+                    "start": 774,
+                    "end": 778,
+                    "text": "[46]",
+                    "ref_id": "BIBREF52"
+                },
+                {
+                    "start": 1191,
+                    "end": 1195,
+                    "text": "[47]",
+                    "ref_id": "BIBREF53"
+                },
+                {
+                    "start": 1324,
+                    "end": 1328,
+                    "text": "[47]",
+                    "ref_id": "BIBREF53"
+                },
+                {
+                    "start": 1711,
+                    "end": 1714,
+                    "text": "[6]",
+                    "ref_id": "BIBREF6"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "The limitations of this work are related to the fact that a growing amount of literature about COVID-19 is accumulating, therefore new information and new papers are published everyday, J o u r n a l P r e -p r o o f therefore this work cannot be considered completely exhaustive. Moreover, the fact that we restricted our choice to full-text studies in English could have limited our results. The strengths of this work are instead the gender medicine perspective and the validated methodology that allowed to collect good-quality evidence for the estimate of effect sizes. Besides, meta-analyses have been considered to be the highest level of evidence [48] . Although it is true that the quality of evidence also depends on the quality of the included studies, our results can be considered reliable, as we limited the meta-analysis to studies of satisfactory quality.",
+            "cite_spans": [
+                {
+                    "start": 655,
+                    "end": 659,
+                    "text": "[48]",
+                    "ref_id": "BIBREF54"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "In conclusion, we showed that male seem to be slightly more prone to SARS-CoV-2 infection and that male patients with COVID-19 have a higher risk of mortality and a higher disease severity compared to females. Male sex should therefore be considered a negative prognostic factor, while more studies are warranted to completely elucidate (and possibly target with therapy) all the biological mechanism underlying this susceptibility.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "No funding was received for this study",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Funding source"
+        },
+        {
+            "text": "No Ethical approval was deemed necessary for this study according to our national regulations.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Ethical statement"
+        },
+        {
+            "text": "The authors have no conflicts of interest to disclose ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conflict of interest"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Clinical features of patients infected with 2019 novel coronavirus in Wuhan",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "China. Lancet",
+            "volume": "395",
+            "issn": "",
+            "pages": "497--506",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Epidemiological and clinical characteristics of 99 cases of",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Dong",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "China: a descriptive study",
+            "authors": [],
+            "year": 2020,
+            "venue": "novel coronavirus pneumonia in Wuhan",
+            "volume": "395",
+            "issn": "",
+            "pages": "507--520",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Early Transmission Dynamics in Wuhan, China, of Novel Coronavirus-Infected Pneumonia",
+            "authors": [
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Guan",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "N Engl J Med",
+            "volume": "382",
+            "issn": "",
+            "pages": "1199--207",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "COVID-19: the gendered impacts of the outbreak",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Wenham",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Smith",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Morgan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet",
+            "volume": "395",
+            "issn": "",
+            "pages": "846--854",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Research to support evidence-informed decisions on optimizing gender equity in health workforce policy and planning",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Gupta",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Hum Resour Health",
+            "volume": "17",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "scRNA-seq Profiling of Human Testes Reveals the Presence of the ACE2 Receptor, A Target for SARS-CoV-2 Infection in Spermatogonia",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Leydig and Sertoli Cells. Cells",
+            "volume": "9",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Risk factors for severity and mortality in adult COVID-19 inpatients in",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Yu",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Risk factors for disease severity, unimprovement, and mortality in COVID-19 patients in Wuhan, China",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Jia",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Clin Microbiol Infect",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.cmi.2020.04.012"
+                ]
+            }
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Preferred reporting items for systematic reviews and meta-analyses: the PRISMA statement",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Moher",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Liberati",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Tetzlaff",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Altman",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Group",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "J Clin Epidemiol",
+            "volume": "62",
+            "issn": "",
+            "pages": "1006--1018",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "The Newcastle-Ottawa Scale (NOS) for assessing the quality of nonrandomised studies in meta-analyses",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Wells",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Sb",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Connell",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Peterson",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Welch",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Losos",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Tugwell",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Breastfeeding and asthma and allergies: a systematic review and meta-analysis",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Lodge",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Tan",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "X"
+                    ],
+                    "last": "Lau",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Acta Paediatr",
+            "volume": "104",
+            "issn": "",
+            "pages": "38--53",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Data Analysis of Coronavirus CoVID-19 Epidemic in South Korea Based on Recovered and Death Cases",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Al-Rousan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Al-Najjar",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Med Virol",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/jmv.25850"
+                ]
+            }
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Clinical Features and Short-term Outcomes of 102 Patients with",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Cao",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Tu",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Cheng",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Corona Virus Disease 2019 in Wuhan, China. Clin Infect Dis. 2020",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/cid/ciaa243"
+                ]
+            }
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Predictors of Mortality for Patients with COVID-19 Pneumonia Caused by SARS-CoV-2: A Prospective Cohort Study",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Du",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Liang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "Q"
+                    ],
+                    "last": "Yang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Eur Respir J",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1183/13993003.00524-2020"
+                ]
+            }
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "COVID-19) Outbreak in the Republic of Korea from",
+            "authors": [],
+            "year": 2019,
+            "venue": "Report on the Epidemiological Features of Coronavirus Disease",
+            "volume": "35",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Sex-specific clinical characteristics and prognosis of coronavirus disease-19 infection in Wuhan, China: A retrospective study of 168 severe patients",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Meng",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Lu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "PLoS Pathog",
+            "volume": "16",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Presenting Characteristics, Comorbidities, and Outcomes Among 5700 Patients Hospitalized With COVID-19 in the New York City Area",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Richardson",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Hirsch",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Narasimhan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Jama",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1001/jama.2020.6775"
+                ]
+            }
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Abnormal coagulation parameters are associated with poor prognosis in patients with novel coronavirus pneumonia",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Tang",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Thromb Haemost",
+            "volume": "18",
+            "issn": "",
+            "pages": "844--851",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "The clinical data from 19 critically ill patients with coronavirus disease 2019: a single-centered, retrospective, observational study",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Z Gesundh Wiss",
+            "volume": "2020",
+            "issn": "",
+            "pages": "1--4",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Clinical course and risk factors for mortality of adult inpatients with COVID-19 in Wuhan, China: a retrospective cohort study",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Du",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet",
+            "volume": "395",
+            "issn": "",
+            "pages": "1054--62",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Hospitalization and Critical Care of 109 Decedents with COVID-19",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Du",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Yin",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Clinical characteristics of 113 deceased patients with coronavirus disease 2019: retrospective study",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Bmj",
+            "volume": "368",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Clinical characteristics of 54 medical staff with COVID-19: A retrospective study in a single center in Wuhan",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Chu",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wei",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "China. J Med Virol",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/jmv.25793"
+                ]
+            }
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Clinical Characteristics of Coronavirus Disease 2019 in China",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Guan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Ni",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "N Engl J Med",
+            "volume": "382",
+            "issn": "",
+            "pages": "1708--1720",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "CT manifestations of coronavirus disease-2019: A retrospective analysis of 73 cases by disease severity",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Lv",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Eur J Radiol",
+            "volume": "126",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Association of Public Health Interventions With the Epidemiology of the COVID-19 Outbreak in Wuhan",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Pan",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1001/jama.2020.613027"
+                ]
+            }
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Host susceptibility to severe COVID-19 and establishment of a host risk score: findings of 487 cases outside Wuhan",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Shi",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Sheng",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Crit Care",
+            "volume": "24",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Characteristics of COVID-19 infection in Beijing",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Tian",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Lou",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Infect",
+            "volume": "80",
+            "issn": "",
+            "pages": "401--407",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Epidemiological and clinical features of 125 Hospitalized Patients with COVID-19 in",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Pan",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Int J Infect Dis",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ijid.2020.03.070"
+                ]
+            }
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Clinical features and short-term outcomes of 221 patients with COVID-19 in Wuhan",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Luo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "China. J Clin Virol",
+            "volume": "127",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Analysis of clinical characteristics and laboratory findings of 95 cases of 2019 novel coronavirus pneumonia in Wuhan, China: a retrospective analysis",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zhu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Qiu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Respir Res",
+            "volume": "21",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Relation Between Chest CT Findings and Clinical Conditions of Coronavirus Disease (COVID-19) Pneumonia: A Multicenter Study",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Zhong",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Xie",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "AJR Am J Roentgenol",
+            "volume": "214",
+            "issn": "",
+            "pages": "1072--1079",
+            "other_ids": {}
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Clinical characteristics of 161 cases of corona virus disease 2019 (COVID-19) in Changsha",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Zheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Tang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Eur Rev Med Pharmacol Sci",
+            "volume": "24",
+            "issn": "",
+            "pages": "3404--3414",
+            "other_ids": {}
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Viral load dynamics and disease severity in patients infected with SARS",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Zheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Fan",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Yu",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "CoV-2 in Zhejiang province, China",
+            "authors": [],
+            "year": 2020,
+            "venue": "retrospective cohort study. Bmj",
+            "volume": "369",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "Clinical features and treatment of COVID-19 patients in northeast Chongqing",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Wan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Xiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Fang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Med Virol",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/jmv.25783"
+                ]
+            }
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Clinical progression of patients with COVID-19 in Shanghai",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Qi",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "China. J Infect",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jinf.2020.03.004"
+                ]
+            }
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "Prognostic value of NT-proBNP in patients with severe COVID-19",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Gao",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Jiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Wen",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "Clinical Features of COVID-19-Related Liver Damage",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Fan",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Clin Gastroenterol Hepatol",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.cgh.2020.04.002"
+                ]
+            }
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "Neutrophil-to-lymphocyte ratio as an independent risk factor for mortality in hospitalized patients with COVID-19",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Du",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Infect",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jinf.2020.04.002"
+                ]
+            }
+        },
+        "BIBREF45": {
+            "ref_id": "b45",
+            "title": "Factors associated with prolonged viral RNA shedding in patients with COVID-19",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Yuan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Clin Infect Dis",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/cid/ciaa351"
+                ]
+            }
+        },
+        "BIBREF46": {
+            "ref_id": "b46",
+            "title": "Coronavirus COV-19/SARS-CoV-2 affects women less than men: clinical response to viral infection",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Conti",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Younes",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Biol Regul Homeost Agents",
+            "volume": "34",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF48": {
+            "ref_id": "b48",
+            "title": "Humans: A Scoping Review and Meta-Analysis",
+            "authors": [],
+            "year": 2020,
+            "venue": "J Clin Med",
+            "volume": "9",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF49": {
+            "ref_id": "b49",
+            "title": "COVID-19, immune system response, hyperinflammation and repurposing antirheumatic drugs",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Tufan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Avanoglu",
+                    "middle": [],
+                    "last": "Guler",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Matucci-Cerinic",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Turk J Med Sci",
+            "volume": "50",
+            "issn": "",
+            "pages": "620--652",
+            "other_ids": {}
+        },
+        "BIBREF50": {
+            "ref_id": "b50",
+            "title": "Diagnosis and Treatment of Adults with Communityacquired Pneumonia. An Official Clinical Practice Guideline of the",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Metlay",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Waterer",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Long",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Am J Respir Crit Care Med",
+            "volume": "200",
+            "issn": "",
+            "pages": "45--67",
+            "other_ids": {}
+        },
+        "BIBREF51": {
+            "ref_id": "b51",
+            "title": "Clinical characteristics and intrauterine vertical transmission potential of COVID-19 infection in nine pregnant women: a retrospective review of medical records",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Guo",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet",
+            "volume": "395",
+            "issn": "",
+            "pages": "809--824",
+            "other_ids": {}
+        },
+        "BIBREF52": {
+            "ref_id": "b52",
+            "title": "Sex-Based Differences in Susceptibility to Severe Acute Respiratory Syndrome Coronavirus Infection",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Channappanavar",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Fett",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Mack",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "J Immunol",
+            "volume": "198",
+            "issn": "",
+            "pages": "4046--53",
+            "other_ids": {}
+        },
+        "BIBREF53": {
+            "ref_id": "b53",
+            "title": "Prevention and therapy of COVID-19 via exogenous estrogen treatment for both male and female patients",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Suba",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Pharm Pharm Sci",
+            "volume": "23",
+            "issn": "",
+            "pages": "75--85",
+            "other_ids": {}
+        },
+        "BIBREF54": {
+            "ref_id": "b54",
+            "title": "Evidence-based medicine. A new approach to teaching the practice of medicine",
+            "authors": [],
+            "year": 1992,
+            "venue": "JAMA",
+            "volume": "268",
+            "issn": "",
+            "pages": "2420--2425",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "(respectively OR=1.81; 95%CI: 1.25-2.62 and OR= 2.62; 95%CI: 1.62-4.24,Figure 2 B and C).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "Figure legends",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "PRISMA",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "Meta-analysis of mortality in males versus females across studies overall (A), in hospitalized non-critical patients only (B) and in the general population (C) 1",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "Studies included in the meta-analysis on: a) mortality and recovery rate (the latter are highlighted with an asterisk) b) disease",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "Legend. *= studies included in both meta-analysis about mortality and recovery rate; SD= Standard Deviation; IQR= Interquartilic Range; M=males; F=females. Newcastle-Ottawa Scale for cross-sectional, cohort and case-control studies evaluates, for each study, three domains named selection, comparability, outcome. These are graded up to a maximum of 4 for selection (5 in case of cross-sectional studies), 2 for comparability and 3 for outcome. Studies were then graded overall according to the total score. Cross-sectional studies were graded as: very good = 6-7; good = 5; satisfactory= 4; unsatisfactory = 0-3. Cohort studies were graded as: very good = 9-10; good = 7-8; satisfactory = 5-6; unsatisfactory = 0-4",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "annex"
+        }
+    ]
+}

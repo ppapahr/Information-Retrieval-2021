@@ -1,0 +1,3274 @@
+{
+    "paper_id": "e74fee567f872432659eec85efc706634dc8b807",
+    "metadata": {
+        "title": "In Search of Concerted Strategies for Competitive and Resilient Regions",
+        "authors": [
+            {
+                "first": "Kamila",
+                "middle": [],
+                "last": "Borsekova",
+                "suffix": "",
+                "affiliation": {},
+                "email": "kamila.borsekova@umb.sk"
+            },
+            {
+                "first": "Samuel",
+                "middle": [],
+                "last": "Kor\u00f3ny",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Peter",
+                "middle": [],
+                "last": "Nijkamp",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "The European space-economy represents a complex system with a great internal heterogeneity, intensive socioeconomic interactions and differential growth trajectories among countries and regions. The present study aims to investigate the connectivity between spatial competitiveness and resilience in Europe and seeks to design an operational framework for concerted strategies of competitive and resilient regions. To assess the linkage between resilience and competitiveness, we have developed a new measure, viz. the Resilience and Competitiveness Index (RACI) as a function of two constituent sub-indices: Resilience and Competitiveness. This approach is tested on the basis of detailed data on European regions. The empirical results from 268 EU NUTS2 regions offer a solid anchor point for the proposed operational framework for concerted development strategies of competitive and resilient regions. Our research distinguishes and proposes several systematic types of concerted regional strategies according to the performance of a region measured by Resilience and Competiveness sub-indices. A key result of the study is the design of an operational constellation for strategic regional policy evaluation, with a major added value for policy-and decisionmaking purposes. The use of official data from Eurostat and of standard indicators in our research assures continuity and consistency with the official Regional Competitiveness Index (RCI) classification and measurement, so that policy makers are able to compare the performance of their regions over time and to develop proper concerted strategies accordingly. The clear evidence of a connectivity between regional competitiveness and resilience may help to develop a governance approach that balances competitiveness (mainly represented by productive assets) with resilience (mainly represented by sustainability and ecological awareness) and thus to deal with the complexity in socioeconomic systems.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "The evolution of the national and regional economies in Europewith its open borders is over the past decades characterized by a high degree of socioeconomic pluriformity and fluctuating dynamics. The economic recession (2008) (2009) (2010) (2011) (2012) has hit the complex European space -economy in different ways. Therefore, examining the determinants of resilience and vulnerabilityand its convergenceis pertinent. Cities and regionsas constituents of a dynamic spatial-economic networkface nowadays the challenges of permanent change, increased complexity and intense competition, while at the same time they have to respond to serious risks or various disruptions. Natural disasters, pandemics and economic or political crises show that cities, regions and nations are characterized by complex interdependent systems (Akhtar and Santos 2013; Burns and Slovic 2012; Caschili et al. 2015a, b; Matsziw et al. 2009; Levin et al. 1998 ). The capacity of agents in such socioeconomic systems to attract and retain productive capital and economic assets is an increasingly important concern in a global economy. Therefore, socioeconomic spatial systems, in particular at the level of regions, tend to become arenas of competitiveness, survival and resilience strategies (see inter alia Bristow 2010a , Hassink 2010 , Krugman 2003 .",
+            "cite_spans": [
+                {
+                    "start": 219,
+                    "end": 225,
+                    "text": "(2008)",
+                    "ref_id": null
+                },
+                {
+                    "start": 226,
+                    "end": 232,
+                    "text": "(2009)",
+                    "ref_id": null
+                },
+                {
+                    "start": 233,
+                    "end": 239,
+                    "text": "(2010)",
+                    "ref_id": null
+                },
+                {
+                    "start": 240,
+                    "end": 246,
+                    "text": "(2011)",
+                    "ref_id": null
+                },
+                {
+                    "start": 247,
+                    "end": 253,
+                    "text": "(2012)",
+                    "ref_id": null
+                },
+                {
+                    "start": 823,
+                    "end": 847,
+                    "text": "(Akhtar and Santos 2013;",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 848,
+                    "end": 870,
+                    "text": "Burns and Slovic 2012;",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 871,
+                    "end": 896,
+                    "text": "Caschili et al. 2015a, b;",
+                    "ref_id": null
+                },
+                {
+                    "start": 897,
+                    "end": 917,
+                    "text": "Matsziw et al. 2009;",
+                    "ref_id": "BIBREF48"
+                },
+                {
+                    "start": 918,
+                    "end": 935,
+                    "text": "Levin et al. 1998",
+                    "ref_id": "BIBREF43"
+                },
+                {
+                    "start": 1285,
+                    "end": 1298,
+                    "text": "Bristow 2010a",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 1299,
+                    "end": 1313,
+                    "text": ", Hassink 2010",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 1314,
+                    "end": 1328,
+                    "text": ", Krugman 2003",
+                    "ref_id": "BIBREF41"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "In the past decades, regional development strategies have increasingly addressed competitiveness as the ultimate objective of regional development policy-making in a globalizing world. Regional competitiveness is based on the potential of a region to generate economic advantages through a superior productivity performance, to attract highly educated and creative manpower, to attract new or innovative firms with stable or rising market shares, and to maintain attractive or increasing standards of living for all actors involved (see for example Bristow 2005 , Cooke 2000 , 2004 , Florida 2002 , Poot 2000 . Competitiveness also means to be able to withstand unexpected external shocks, and thus reflects also to the ability of a regional economy to absorb or overcome an internal or external economic perturbation (Stanickova and Melecky 2018) .",
+            "cite_spans": [
+                {
+                    "start": 549,
+                    "end": 561,
+                    "text": "Bristow 2005",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 562,
+                    "end": 574,
+                    "text": ", Cooke 2000",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 575,
+                    "end": 581,
+                    "text": ", 2004",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 582,
+                    "end": 596,
+                    "text": ", Florida 2002",
+                    "ref_id": null
+                },
+                {
+                    "start": 597,
+                    "end": 608,
+                    "text": ", Poot 2000",
+                    "ref_id": null
+                },
+                {
+                    "start": 818,
+                    "end": 847,
+                    "text": "(Stanickova and Melecky 2018)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The notion of competitiveness is related to the concept of resilience, perceived of as an effective response to an unexpected disturbance, uncertainty or insecurity. The recent increased interest in the concept of resilience originates from both a rising sense of risk (e.g. economic, political or environmental) and the awareness that open economies make places and regions more vulnerable to external shocks or perturbations. In particular, the relationship of economic disruptions and environmental shocks has intensified the perceived sense of vulnerability and, hence, has stimulated the search for new roads to resilience (Christopherson et al. 2010; Hudson 2009; Pike et al. 2010) . Resilience refers generally to the structurally balancing features of a dynamic system and its ability to resist different types of shocks, while maintaining the same functions and structure (Modica and Reggiani 2015) . Clearly, the two concepts of competitiveness and resilience, although interconnected and based on roughly similar principles, do not necessarily work in the same way. For example, actions for increasing spatial competitiveness may harm the environment and increase the vulnerability of socioeconomic systems; and vice versa, strategies for increasing resilience may decrease the competitiveness of regions. The above observations prompt several intriguing questions such as: what is the connectivity between resilience and competitiveness; how do strategies increasing competitiveness influence resilience and vice versa; and is it plausible that these two concepts work coherently in a concerted policy strategy?",
+            "cite_spans": [
+                {
+                    "start": 628,
+                    "end": 656,
+                    "text": "(Christopherson et al. 2010;",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 657,
+                    "end": 669,
+                    "text": "Hudson 2009;",
+                    "ref_id": "BIBREF39"
+                },
+                {
+                    "start": 670,
+                    "end": 687,
+                    "text": "Pike et al. 2010)",
+                    "ref_id": "BIBREF56"
+                },
+                {
+                    "start": 881,
+                    "end": 907,
+                    "text": "(Modica and Reggiani 2015)",
+                    "ref_id": "BIBREF50"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Against the background of the above mentioned questions, the present paper aims to explore the connectivity between resilience and competitiveness of spatial socioeconomic systems at the level of regions and to develop a novel operational framework for its measurement leading to policy implications through concerted strategies and actions.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The remainder of the paper is organised as follows. The next section describes the interesting connection between competitiveness and resilience based on an extensive literature study. Then, Section 3 maps out the drivers of competitiveness and resilience in order to outline their methodological coherence. Next, Section 4 is devoted to an empirical test of our conceptual model and describes in more detail the data and methodology used. Section 5 offers the research results and highlights the most important findings, while it presents also cornerstones for concerted strategies of competitive and resilient regions. The last section concludes with the most important findings and proposes policy lessons.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Since the early 1990s, the concept of regional competitiveness has become a widely discussed topic in public and regional policy circles in developed countries; it was also adopted as a prominent policy goal by the European Commission and national governments across Europe (see inter alia Bristow 2005 , 2010a , b, Thissen et al. 2013 ). Meyer-Stamer (2008) defines regional competitiveness as the ability of a region to generate high and rising incomes while improving the livelihood of people living there. This definition is based entirely on benefits of people living in a region without considering the related strengths or weaknesses of firms localized in the region concerned or participating in the same spatial network (Annoni and Dijkstra 2019) . The definition of Dijkstra et al. (2011) integrates the perspective of both businesses and residents; it regards regional competitiveness as the ability of a region to offer an attractive and sustainable environment for both firms and residents to live and work. The generally accepted definition of regional competitiveness may be formulated as:t he capability of a region to attract and keep firms with stable or increasing market shares in an activity, while maintaining stable or increasing standards of living for those who participate in it\u00b4 (Storper 1997, p.264) .",
+            "cite_spans": [
+                {
+                    "start": 290,
+                    "end": 302,
+                    "text": "Bristow 2005",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 303,
+                    "end": 310,
+                    "text": ", 2010a",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 311,
+                    "end": 335,
+                    "text": ", b, Thissen et al. 2013",
+                    "ref_id": null
+                },
+                {
+                    "start": 729,
+                    "end": 755,
+                    "text": "(Annoni and Dijkstra 2019)",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 776,
+                    "end": 798,
+                    "text": "Dijkstra et al. (2011)",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 1306,
+                    "end": 1327,
+                    "text": "(Storper 1997, p.264)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Connectivity between Competitiveness and Resilience"
+        },
+        {
+            "text": "Other or complementary definitions balance the goals of business success with those of societal well-being, and consider also the notion of sustainability which is related to the region's capacity to provide an attractive environment in both the short and long term (Annoni and Dijkstra 2019) . Besides, regional competitiveness incorporates also the ability of a region to attract skilled labour, creative and knowledge workers, investments, central and supranational government subsidies and funds (Bristow 2010b ). Firms will prosper if a region offers locational conditions better than its competitors and if welfare gains are to be expected (Thissen et al. 2013) . Economists, by tradition, argue that competition is good, as it brings out the best in firms and regions, and will ensure an efficient distribution of investments (Glaeser 2001) . One of the most intriguing questions in economic geography is of course why some regional economies are more competitive, are better able to manage to renew themselves or to lock themselves out, whereas others which are more locked in decline (Hassink 2010; Martin and Sunley 2006) .",
+            "cite_spans": [
+                {
+                    "start": 266,
+                    "end": 292,
+                    "text": "(Annoni and Dijkstra 2019)",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 500,
+                    "end": 514,
+                    "text": "(Bristow 2010b",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 646,
+                    "end": 667,
+                    "text": "(Thissen et al. 2013)",
+                    "ref_id": null
+                },
+                {
+                    "start": 833,
+                    "end": 847,
+                    "text": "(Glaeser 2001)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1093,
+                    "end": 1107,
+                    "text": "(Hassink 2010;",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 1108,
+                    "end": 1131,
+                    "text": "Martin and Sunley 2006)",
+                    "ref_id": "BIBREF47"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Connectivity between Competitiveness and Resilience"
+        },
+        {
+            "text": "It should be noted that regions in Europe have different economic, social, cultural, political and historical backgrounds that might impact on their competitiveness. Regions nowadays face also important future challenges that need proper and effective policy responses, such as: climate change; access to basic services to secure human life (e.g. drinking water, food, clean air, healthcare); housing; transportation; migration influx; and resilience to disasters and to other types of external shocks (Haase et al. 2018; Dahiya 2016) . It is therefore necessary to rethink and critically assess existing theories and approaches to regional planning, in order to tackle the challenges of both the current and future world (see inter alia Bai et al. 2016 , Borsekov\u00e1 and Nijkamp 2019 , Caprotti et al. 2017 , Elmqvist et al. 2013 , Haase et al. 2018 .",
+            "cite_spans": [
+                {
+                    "start": 502,
+                    "end": 521,
+                    "text": "(Haase et al. 2018;",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 522,
+                    "end": 534,
+                    "text": "Dahiya 2016)",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 738,
+                    "end": 753,
+                    "text": "Bai et al. 2016",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 754,
+                    "end": 782,
+                    "text": ", Borsekov\u00e1 and Nijkamp 2019",
+                    "ref_id": null
+                },
+                {
+                    "start": 783,
+                    "end": 805,
+                    "text": ", Caprotti et al. 2017",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 806,
+                    "end": 828,
+                    "text": ", Elmqvist et al. 2013",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 829,
+                    "end": 848,
+                    "text": ", Haase et al. 2018",
+                    "ref_id": "BIBREF34"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Connectivity between Competitiveness and Resilience"
+        },
+        {
+            "text": "The recently emerging regional resilience approach may provide an important concept to explain and cope with differences in regional economic adaptability (Hassink 2010) . The concept of resilience addresses the impact of a change that destabilises human, social or natural systems (Cooke 2018) . It has a long tradition in biological and engineering sciences; in the last decade it has gained also much popularity in urban and regional sciences (see e.g. Adger 2000; Borsekova et al. 2018; Chelleri et al. 2012 Chelleri et al. , 2015 Martin 2012; Modica and Reggiani 2015; Plodinec 2009; Reggiani et al. 2002; Rose and Liao 2005; Simmie and Martin 2010) . Resilience can be seen as a general framework for depicting and analysing the dynamics of complex socioeconomic systems, in particular from the perspective of the recovery of such systems after the occurrence of a shock or perturbation (\u00d6sth et al. 2018) .",
+            "cite_spans": [
+                {
+                    "start": 155,
+                    "end": 169,
+                    "text": "(Hassink 2010)",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 282,
+                    "end": 294,
+                    "text": "(Cooke 2018)",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 468,
+                    "end": 490,
+                    "text": "Borsekova et al. 2018;",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 491,
+                    "end": 511,
+                    "text": "Chelleri et al. 2012",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 512,
+                    "end": 534,
+                    "text": "Chelleri et al. , 2015",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 535,
+                    "end": 547,
+                    "text": "Martin 2012;",
+                    "ref_id": "BIBREF46"
+                },
+                {
+                    "start": 548,
+                    "end": 573,
+                    "text": "Modica and Reggiani 2015;",
+                    "ref_id": "BIBREF50"
+                },
+                {
+                    "start": 574,
+                    "end": 588,
+                    "text": "Plodinec 2009;",
+                    "ref_id": "BIBREF57"
+                },
+                {
+                    "start": 589,
+                    "end": 610,
+                    "text": "Reggiani et al. 2002;",
+                    "ref_id": "BIBREF60"
+                },
+                {
+                    "start": 611,
+                    "end": 630,
+                    "text": "Rose and Liao 2005;",
+                    "ref_id": "BIBREF61"
+                },
+                {
+                    "start": 631,
+                    "end": 654,
+                    "text": "Simmie and Martin 2010)",
+                    "ref_id": "BIBREF63"
+                },
+                {
+                    "start": 893,
+                    "end": 911,
+                    "text": "(\u00d6sth et al. 2018)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Connectivity between Competitiveness and Resilience"
+        },
+        {
+            "text": "Resilience has found different degrees of appreciation among widely divergent groups of scientists; it is also criticized because of the fuzziness and malleability of the term that enables it to act as a \"boundary object\" (Brand and Jax 2007) , representing different things to different sets of players. The fuzziness of the resilience notion generates challenges in terms of usefulness and operationalization for resilience planning, making it difficult to develop clear metrics and indicators of resilience that can be tested and monitored over time. Clearly, resilience, in an urban and regional planning context, has been defined sometimes as a goal, sometimes as a desired outcome, or sometimes as a process, making a system's outcome difficult to grasp or measure (Simon et al. 2018) . Clearly, socioeconomic systems may, in general, be subjected to various types of fluctuations, ranging from cyclical movements to external shocks. The latter type of dynamics may find its origin in both global or national-regional network forces and determinants. Such shocks may include inter alia unexpected layoffs, an economic recession, an unexpected migration influx, an ageing population, and natural or technological catastrophes of various kind. As mentioned, the ability to absorb such shocks is usually referred to as resilience (Caschili et al. 2015a, b; Martin 2012; Reggiani et al. 2002) .",
+            "cite_spans": [
+                {
+                    "start": 222,
+                    "end": 242,
+                    "text": "(Brand and Jax 2007)",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 771,
+                    "end": 790,
+                    "text": "(Simon et al. 2018)",
+                    "ref_id": "BIBREF65"
+                },
+                {
+                    "start": 1333,
+                    "end": 1359,
+                    "text": "(Caschili et al. 2015a, b;",
+                    "ref_id": null
+                },
+                {
+                    "start": 1360,
+                    "end": 1372,
+                    "text": "Martin 2012;",
+                    "ref_id": "BIBREF46"
+                },
+                {
+                    "start": 1373,
+                    "end": 1394,
+                    "text": "Reggiani et al. 2002)",
+                    "ref_id": "BIBREF60"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Connectivity between Competitiveness and Resilience"
+        },
+        {
+            "text": "The importance of resilience planning in an era of increased uncertainty and climate change have led scholars to propose the idea of adaptive regions that should accept concepts of disturbance and change as fundamental to regional planning (Ahern 2011 , Simon et al. 2018 . Resilience thus depicts how vulnerable socioeconomic systems are able to respond to unexpected disturbances and surprises that can suddenly occur (Cooke 2018) . The concept of resilience may in general refer to four main abilities:",
+            "cite_spans": [
+                {
+                    "start": 240,
+                    "end": 251,
+                    "text": "(Ahern 2011",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 252,
+                    "end": 271,
+                    "text": ", Simon et al. 2018",
+                    "ref_id": "BIBREF65"
+                },
+                {
+                    "start": 420,
+                    "end": 432,
+                    "text": "(Cooke 2018)",
+                    "ref_id": "BIBREF26"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Connectivity between Competitiveness and Resilience"
+        },
+        {
+            "text": "(1) the ability to absorb economic, environmental or social shocks or stresses, and to accommodate and to mitigate the impact of these shocks, while retaining the capacity to carry out essential functions and without passing it on to other entities (OECD 2016);",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Connectivity between Competitiveness and Resilience"
+        },
+        {
+            "text": "(2) the ability of a system to adapt to change, or to adapt its structure to adjust, modify or change under changing circumstances (Martin 2012; Reggiani 2013) ; (3) the ability to transform outcomes in the face of a challenge (Chapple and Lester 2010) in terms of the creation of a fundamentally new system, so that the shock will no longer have any impact; (4) the ability to be prepared to learn from past shocks and stresses, and to plan in advance to anticipate future shocks to perform better than before (OECD 2016) .",
+            "cite_spans": [
+                {
+                    "start": 131,
+                    "end": 144,
+                    "text": "(Martin 2012;",
+                    "ref_id": "BIBREF46"
+                },
+                {
+                    "start": 145,
+                    "end": 159,
+                    "text": "Reggiani 2013)",
+                    "ref_id": "BIBREF59"
+                },
+                {
+                    "start": 227,
+                    "end": 252,
+                    "text": "(Chapple and Lester 2010)",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 511,
+                    "end": 522,
+                    "text": "(OECD 2016)",
+                    "ref_id": "BIBREF53"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Connectivity between Competitiveness and Resilience"
+        },
+        {
+            "text": "Based on the above mentioned abilities, resilient socioeconomic systems might thus be characterised as systems able to absorb, adapt, transform and prepare themselves for the time-dependent impact of economic, environmental and social shocks or stresses, in order to promote sustainable development, or well-being, and to maintain an acceptable growth pattern (Borsekova et al. 2018; Chapple and Lester 2010; Martin 2012; OECD 2016; Reggiani 2013) . It should be noted that resilience can be also used as a framework for a systemic thinking about the dynamics of complex socioeconomic systems, since resilience can act as a bridging concept to explore the dynamics of complex systems in varied contexts and to provide potentially innovative theoretical and applied insights (Anderies et al. 2006; Baggio et al. 2016) .",
+            "cite_spans": [
+                {
+                    "start": 360,
+                    "end": 383,
+                    "text": "(Borsekova et al. 2018;",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 384,
+                    "end": 408,
+                    "text": "Chapple and Lester 2010;",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 409,
+                    "end": 421,
+                    "text": "Martin 2012;",
+                    "ref_id": "BIBREF46"
+                },
+                {
+                    "start": 422,
+                    "end": 432,
+                    "text": "OECD 2016;",
+                    "ref_id": "BIBREF53"
+                },
+                {
+                    "start": 433,
+                    "end": 447,
+                    "text": "Reggiani 2013)",
+                    "ref_id": "BIBREF59"
+                },
+                {
+                    "start": 774,
+                    "end": 796,
+                    "text": "(Anderies et al. 2006;",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 797,
+                    "end": 816,
+                    "text": "Baggio et al. 2016)",
+                    "ref_id": "BIBREF8"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Connectivity between Competitiveness and Resilience"
+        },
+        {
+            "text": "After this concise overview, the next section is dedicated to an identification of the drivers of competitiveness and resilience, including their possible interactions, leading to the design of a common operational framework.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Connectivity between Competitiveness and Resilience"
+        },
+        {
+            "text": "\"The pioneers in a classification of the competitiveness concept were Freeman, Lundvall, and Porter, who were the first who have defined the national competitiveness as an outcome of a nation's ability to innovate in order to achieve an advantageous position over other nations in the key industrial sectors\" (Cooke 2000, 154) . In this context, it is noteworthy that the World Economic Forum is preparing annually a Global Competitiveness Report, firstly launched in 1979, in order to classify competitiveness at a national level through mapping the factors and attributes that drive productivity, growth and human development in the era of the Fourth Industrial Revolution. The 2019 edition of this Report covers 141 economies, which account for 99% of the world's GDP. The Global Competiveness Report defines competitiveness as \"the set of institutions, policies, and factors that determine the level of productivity of a country\" (Schwab 2019) . Productivity is the main component in many studies on competitiveness. In a similar way, competitiveness is defined by Porter (2003, p. 22) , who emphasizes the \"productivity with which a nation utilizes its human, capital and natural resources\". The Global Competitiveness Report includes also a Global Competitiveness Index based on a variety of indicators that have shown several changes over time. Current indicators are organized into 12 pillars of competitiveness including: Institutions, Infrastructure, ICT adoption, Macroeconomic stability, Health, Skills, Product market, Labour market, Financial system, Market size, Business dynamism, and Innovation capability (for more information, see Schwab 2019). The Global Competitiveness Index offers the foundation for composing a Regional Competitiveness Index (RCI). The related indicators are grouped into 11 pillars which, in turn, are organised into three sub-indices: basic, efficiency and innovation drivers of competitiveness (Annoni and Dijkstra 2019); see Table 1 .",
+            "cite_spans": [
+                {
+                    "start": 309,
+                    "end": 326,
+                    "text": "(Cooke 2000, 154)",
+                    "ref_id": null
+                },
+                {
+                    "start": 934,
+                    "end": 947,
+                    "text": "(Schwab 2019)",
+                    "ref_id": "BIBREF64"
+                },
+                {
+                    "start": 1069,
+                    "end": 1089,
+                    "text": "Porter (2003, p. 22)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1970,
+                    "end": 1977,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Classification and Drivers of Competitiveness and Resilience"
+        },
+        {
+            "text": "Competitiveness is a multi-faceted and complex concept, spanning economic, social, political and environmental dimensions, while it involves various stakeholders. The achievement of competitiveness across all these dimensions in a sustainable manner will depend inter alia upon appropriate economic, social and environmental policies, as well as an appropriate institutional set-up (Briguglio and Vella 2019). The RCI is clearly a complex, multidimensional and intertwined concept highlighting that improvement of competitiveness requires a concerted effort of many different actors. Knowledge of the RCI, its three sub-indexes and its 11 dimensions helps to highlight the strengths and weaknesses of each region, with the possibility to benchmark each one to the EU average or its peers. Besides, by including numerous indicators on human capital and the quality of institutions, the RCI is meant to measure a region's long-term development potential. The RCI is a unique, comparable and transparent tool for national and local decision-makers responsible for regional development strategies (Annoni and Dijkstra 2019) which is increasingly highlighted in both academia and policy. The orientation, depth and scope of data included in the RCI appears to match our research purpose and, therefore, we will employ the RCI as a suitable operational framework for measuring regional competitiveness in the present study.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Classification and Drivers of Competitiveness and Resilience"
+        },
+        {
+            "text": "Similarly to competitiveness, the concept of resilience is also complicated and multi-faceted as well as quite complex for an operational assessment and measurement. Contrary to competitiveness, however, there is still not a generally accepted methodological framework on how regional resilience should be measured, what its determinants are and how it links to patterns of long-run regional growth. Consequently, its fuzziness leads to several variations in the use of the resilience concept and its analysis. A study of regional resilience may bring about important information on the key problematic issues in the region (and thus in the country) on the one hand, and its development potential on the other. In recent years, after the 2007-09 period of economic recession the notion of resilience has rapidly become a part of the conceptual and analytical object of regional-economic studies, in line with the rising importance of regions as an economic engine, to be managed in decision-making processes and public policies (Stanickova and Meleck\u00fd 2018) . The achievement of resilience after an external shock is of course influenced by a multiplicity of factors, including geographic location, the initial and prevailing social and economic situation, the level and quality of infrastructure, density of population, social capital, cultural habits, environmental conditions, institutional frameworks, and many other factors (Borsekova et al. 2018 ). In (2019) this context, a policy study by the OECD Ministerial Council (2014) has identified four main drivers of resilience, as shown in Fig. 1 . The first driver of resilience in the OECD study is economy. Resilient regions have in general diversified industries, in particular those based on knowledge and empowered by creativity, and are able to generate a great potential for innovation. The level of diversification of economic activity, and the effectiveness of their specialisation in building competitiveness and sustainable competitive advantage will usually influence the internal economic drivers. This is also important for an overall exposure to global economic value chains. It should be noted that reliable infrastructure and skills, knowledge, creativity and experience of the labour force contribute to enhancing resilience and competitive advantage (Diodato and Weterings 2015; Holm and \u00d8stergaard 2015; Martin 2012; OECD 2016) .",
+            "cite_spans": [
+                {
+                    "start": 1028,
+                    "end": 1057,
+                    "text": "(Stanickova and Meleck\u00fd 2018)",
+                    "ref_id": "BIBREF66"
+                },
+                {
+                    "start": 1429,
+                    "end": 1451,
+                    "text": "(Borsekova et al. 2018",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 2323,
+                    "end": 2351,
+                    "text": "(Diodato and Weterings 2015;",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 2352,
+                    "end": 2377,
+                    "text": "Holm and \u00d8stergaard 2015;",
+                    "ref_id": "BIBREF38"
+                },
+                {
+                    "start": 2378,
+                    "end": 2390,
+                    "text": "Martin 2012;",
+                    "ref_id": "BIBREF46"
+                },
+                {
+                    "start": 2391,
+                    "end": 2401,
+                    "text": "OECD 2016)",
+                    "ref_id": "BIBREF53"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1593,
+                    "end": 1599,
+                    "text": "Fig. 1",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Classification and Drivers of Competitiveness and Resilience"
+        },
+        {
+            "text": "A second generic driver of resilience is society, with cohesion and inclusion as prominent attributes. Resilient regions are able to cope with perturbations by adopting a concerted and coherent set of economic and social policies and practices (inter alia Martin 2012; Wilson 2012; Xiao and van Zandt 2012). Consequently, such concerted resilience strategies originate from a societal perspective.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Classification and Drivers of Competitiveness and Resilience"
+        },
+        {
+            "text": "The next driver of resilience is the environment or/and quality of life, focusing in particular on sustainability. Resilience certainly matters in the face of environmental degradation, the over-use of resources and the potential costs of climate change and natural disasters. Environmental factors are crucial for the development of regions because of the large number of people living in relatively densely populated areas and the complexity of spatial systems that interact with them, including infrastructure networks, communication systems, transport, water and energy distribution, housing and urban green spaces (Moriniere 2012; Reggiani 2013; Sage et al. 2015) .",
+            "cite_spans": [
+                {
+                    "start": 619,
+                    "end": 635,
+                    "text": "(Moriniere 2012;",
+                    "ref_id": "BIBREF51"
+                },
+                {
+                    "start": 636,
+                    "end": 650,
+                    "text": "Reggiani 2013;",
+                    "ref_id": "BIBREF59"
+                },
+                {
+                    "start": 651,
+                    "end": 668,
+                    "text": "Sage et al. 2015)",
+                    "ref_id": "BIBREF62"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Classification and Drivers of Competitiveness and Resilience"
+        },
+        {
+            "text": "A the institutional capacity to respond and rebound from external shocks and perturbations (OECD 2014; Paterson et al. 2017) .",
+            "cite_spans": [
+                {
+                    "start": 91,
+                    "end": 102,
+                    "text": "(OECD 2014;",
+                    "ref_id": "BIBREF52"
+                },
+                {
+                    "start": 103,
+                    "end": 124,
+                    "text": "Paterson et al. 2017)",
+                    "ref_id": "BIBREF55"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Classification and Drivers of Competitiveness and Resilience"
+        },
+        {
+            "text": "Adopting the approach advocated by OECD (2014 OECD ( , 2016 there is a clear connectivity between the determinants of resilience and the pillars of RCI, as is depicted in Table 2 .",
+            "cite_spans": [
+                {
+                    "start": 35,
+                    "end": 45,
+                    "text": "OECD (2014",
+                    "ref_id": "BIBREF52"
+                },
+                {
+                    "start": 46,
+                    "end": 59,
+                    "text": "OECD ( , 2016",
+                    "ref_id": "BIBREF53"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 171,
+                    "end": 178,
+                    "text": "Table 2",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "Classification and Drivers of Competitiveness and Resilience"
+        },
+        {
+            "text": "Recent studies in complexity science emphasize the need for systematic research into socioeconomic systems, given the socio-spatial interactivity among actors and complex socio-economic phenomena in space and time, and their resilience to disruptive events (Griffith and Chun 2015; Marincioni et al. 2013; Liu et al. 2007; \u00d6sth et al. 2018) . Considering that competitiveness can be measured through two parameters, namely performance and time, it is in principle possible to establish a formal relationship between resilience and competitiveness (Cavaco and Cruz-Machado 2014) . If regionsas complex socioeconomic systemswant to be successful, they have to be competitive and resilient at the same time, in order to adapt their internal environment to external threats and challenges.",
+            "cite_spans": [
+                {
+                    "start": 282,
+                    "end": 305,
+                    "text": "Marincioni et al. 2013;",
+                    "ref_id": "BIBREF45"
+                },
+                {
+                    "start": 306,
+                    "end": 322,
+                    "text": "Liu et al. 2007;",
+                    "ref_id": "BIBREF44"
+                },
+                {
+                    "start": 323,
+                    "end": 340,
+                    "text": "\u00d6sth et al. 2018)",
+                    "ref_id": "BIBREF54"
+                },
+                {
+                    "start": 547,
+                    "end": 577,
+                    "text": "(Cavaco and Cruz-Machado 2014)",
+                    "ref_id": "BIBREF21"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Classification and Drivers of Competitiveness and Resilience"
+        },
+        {
+            "text": "Since the concept of regional resilience still lacks a comprehensive operational framework and a solid database, we will focus here in particular on the connectivity between competitiveness and resilience. In the next section we propose a comprehensive and complex operational framework considering both concepts (viz. competitiveness and resilience).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Classification and Drivers of Competitiveness and Resilience"
+        },
+        {
+            "text": "The aim of this paper is to investigate the connectivity between competitiveness and resilience and to propose an operational framework for concerted strategies of competitive and resilient regions. Our empirical research strategy will next address the development of regions in the EU. (2019) and OECD (2014 OECD ( , 2016 The starting point of our analysis is formed by the available relevant data on eleven pillars, as composed in the Regional Competitiveness Index (RCI) (see for more information, Annoni and Dijkstra 2019, Annoni et al. 2017 , Annoni and Dijkstra 2013 , Annoni and Kozovska 2010 Dijkstra et al. 2011 ) for all EU regions on a NUTS2 level, forming altogether 268 regions (n = 268). The NUTS classification is the classification of territorial units for statistics providing a harmonised hierarchy of regions as commonly used by the European Union. The NUTS2 level corresponds to core areas as the focal point for the application of regional policies 1 and is the only regional level with available robust data required for an appropriate comparable analysis at European level. The reasoning for using NUTS2 level is availability of data for all pillars of regional competitiveness and possibility to cover the whole European Union spaceeconomy in a complex manner. Using lower regional level (e.g. NUTS3) increased the number of regions (from 268 to more than 1200) but at the same time significantly decreased the number of indicators for which we are able to reach data on the whole EU level. Our intention here was to cover the whole European Union space-economy with a complex set of data covering both resilience and competitiveness indicators.",
+            "cite_spans": [
+                {
+                    "start": 298,
+                    "end": 308,
+                    "text": "OECD (2014",
+                    "ref_id": "BIBREF52"
+                },
+                {
+                    "start": 309,
+                    "end": 322,
+                    "text": "OECD ( , 2016",
+                    "ref_id": "BIBREF53"
+                },
+                {
+                    "start": 527,
+                    "end": 545,
+                    "text": "Annoni et al. 2017",
+                    "ref_id": null
+                },
+                {
+                    "start": 546,
+                    "end": 572,
+                    "text": ", Annoni and Dijkstra 2013",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 573,
+                    "end": 599,
+                    "text": ", Annoni and Kozovska 2010",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 600,
+                    "end": 620,
+                    "text": "Dijkstra et al. 2011",
+                    "ref_id": "BIBREF30"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Data and Methodology"
+        },
+        {
+            "text": "For the purpose of mathematical and statistical ease, we used three stylized fixed nominal categories of regions (viz. capitalist versus post-socialist regions, capital regions, and Eurozone regions) for a further division of the database, as is further explained and depicted in Table 3 . Our spatial division link moderate regional economic-independence to regional interdependence in Europe.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 280,
+                    "end": 287,
+                    "text": "Table 3",
+                    "ref_id": "TABREF2"
+                }
+            ],
+            "section": "Data and Methodology"
+        },
+        {
+            "text": "The values of all pillars in the data set are standardised as z scores. Their means are close to zero and the standard deviations are close to one. The database of the 268 NUTS2 regions is sub-divided into stylized regional groups, according to the characteristics of basic groups, as follows. Capitalist regions are all regions of the so-called \"old\" member EU states, as well as Cyprus and Malta. Post-socialist regions in our study are those which belong to EU countries of Central and Eastern Europe with a former socialist regime, including the Baltic States, as members of the former Soviet Union. Since the collapse of the state socialist systems of Central and Eastern Europe at the end of the 1980s, the countries of this region have undergone a variety of transformation paths. The former European state socialist countries have all attempted to restructure their economies in the direction of market-type, competitive, democratic and capitalist societies. However, they have not all done so with the same speed or to the same degree. An initial effect of the fall of state socialism was a significant decline in economic activity (Lane 2007) . Although 30 years have passed, it is clear that the transition in many countries is not yet over. Several post-socialist countries lag in the level of infrastructure, quality of institutions, level of innovation and technological readiness. Therefore, we have used this criterion as a first nominal factor for a regional subdivision. By using this simplified classification, we are able to put more emphasis on the economic-historical substance of the regions in order to assess how the former socialist countries of Central and Eastern Europe and the Soviet Union have been transformed into capitalist systems and to investigate the substantial differences among them.",
+            "cite_spans": [
+                {
+                    "start": 1141,
+                    "end": 1152,
+                    "text": "(Lane 2007)",
+                    "ref_id": "BIBREF42"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Data and Methodology"
+        },
+        {
+            "text": "Next, we introduce the concept of a capital region. A capital region refers to a region that includes the capital city of the country, while the rest of the regions belong then of course to the group Others. It is noteworthy that the results of RCI 2019 show a polycentric pattern, with capital and metropolitan regions performing particularly strongly in many parts of the EU. Capital regions tend to be the most competitive in their country, with the usual exception of the Netherlands, Italy and Germany (Annoni and Dijkstra 2019) . Based on these results, we have chosen this criterion for distinguishing a second fixed nominal category.",
+            "cite_spans": [
+                {
+                    "start": 507,
+                    "end": 533,
+                    "text": "(Annoni and Dijkstra 2019)",
+                    "ref_id": "BIBREF4"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Data and Methodology"
+        },
+        {
+            "text": "A third and last distinguishing criterion is the usage of the national currency, and therefore we make a division into regions that belong to the Eurozone and regions using their own currency. This division allows us to make a simple division of all EU NUTS2 regions into two currency categories of regions. Currency is usually considered at the level of countries, and therefore we have adopted a slightly different approach in order to investigate its impact on a regional level.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data and Methodology"
+        },
+        {
+            "text": "All 28 EU member states have at least one region at a NUTS2 level, so that all EU countries are involved in our research. The following numbers of NUTS2 regions are covered per country and in alphabetic order: Austria (8), Belgium (9), Bulgaria (6), Croatia (2), Cyprus (1), Czech Republic (7) In order to assess the connectivity between resilience and competitiveness, we develop here a modified version, viz. the Resilience and Competitiveness Index (RACI) as a function of two sub-indexes: Resilience and Competitiveness. The Resilience sub-index is calculated as the arithmetic mean of the first six RCI pillars: Institutions, Macroeconomic stability, Infrastructure, Health, Basic education and Higher education and lifelong learning. So, the Resilience sub-index is equal to the RCI Basic sub-index + the Higher education and lifelong learning pillar. The five remaining RCI pillars -Labour market efficiency, Market size, Technological readiness, Business sophistication and Innovationare used to compose the Competitiveness sub-index. The RACI index is thus an appropriate linear function of the Resilience sub-index and the Competitiveness sub-index.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data and Methodology"
+        },
+        {
+            "text": "Besides conventional descriptive statistics (location parameters -arithmetic mean and median, scale parameters -standard deviation, interquartile range, minimum and maximum), other suitable mathematical and statistical methods were used as well. For sample comparisons of the location parameters, we used a two sample t -test and the nonparametric Wilcoxon (Mann-Whitney) test.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data and Methodology"
+        },
+        {
+            "text": "Next, a three-way analysis of variance (ANOVA) was applied to investigate the connectivity among the three available fixed nominal categories with RCI, the Resilience sub-index and the Competitiveness sub-index. These factors are: CapitalReg = type of region (region including capital city/other regions); Group = type of region according to its development (Post-socialist/Capitalist); and Eurotype of region according to its currency usage (Eurozone/No Euro). The full three-way ANOVA model with all interaction terms can be represented in the following formula:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data and Methodology"
+        },
+        {
+            "text": "where: Mean component: \u03bc -overall mean. Main components: \u03b1 i -effect of level i of factor A, \u03b2 j -effect of level j of factor B, \u03b3 k -effect of level k of factor C.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data and Methodology"
+        },
+        {
+            "text": "The two-way interaction components:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data and Methodology"
+        },
+        {
+            "text": "(\u03b1\u03b2) ij -effect of level i of factor A and of level j of factor B, (\u03b1\u03b3) ik -effect of level i of factor A and of level k of factor C, (\u03b2\u03b3) jk -effect of level j of factor B and of level k of factor C.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data and Methodology"
+        },
+        {
+            "text": "The three-way interaction component:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data and Methodology"
+        },
+        {
+            "text": "(\u03b1\u03b2\u03b3) ijk -effect of level i of factor A, of level j of factor B and of level k of factor C.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data and Methodology"
+        },
+        {
+            "text": "The error component: \u03b5 ijkl -unexplained part of Y ijkl . In our case, we got two nominal measures for all three fixed categories. We applied a first test of association between any of the three pairs of nominal variables. If we want to test now the connectivity between the two nominal variables in a cross-table, then the following formulas are to be used. Let the observed count in the ith row and in the jth column bef ij . Then the sum of the jth column is",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data and Methodology"
+        },
+        {
+            "text": "The Adjusted Residual (AR) (Haberman 1973 ) is represented by the following formula:",
+            "cite_spans": [
+                {
+                    "start": 27,
+                    "end": 41,
+                    "text": "(Haberman 1973",
+                    "ref_id": "BIBREF35"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Data and Methodology"
+        },
+        {
+            "text": "This residual has a normal distribution; so, if its value is larger than 2.58 (3.29) or smaller than -2.58 (\u2212 3.29), then its value is significant at a level 0.01 (0.001). In our empirical work, for the statistical and graphical data analyses, the statistical systems IBM SPSS version 25 and NCSS 2019 were used.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data and Methodology"
+        },
+        {
+            "text": "The present section presents the most important research results oriented towards univariate and multivariate factor associations and a segmentation of the relevant EU regions, respectively, from the viewpoint of Resilience and Competitiveness sub-index values and signs.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Research Results"
+        },
+        {
+            "text": "Firstly, we test the possible influence of background factors on the original RCI index and on the proposed Resilience and Competitiveness sub-indexes. Table 4 depicts basic statistical parameters and results of two sample parametric and nonparametric tests for possible association with the capital region factor. Significance p levels are given in two bottom rows. It can be seen that there are significant differences between location parameters in case of the RCI (mean 0.26 vs -0.14; median 0.26 vs -0.01; p < 0.01) and in case of the Competitiveness sub-index (mean 0.26 vs -0.17; median 0.30 vs -0.05; p < 0.01). On average, larger values of the RCI and the Competitiveness subindex are found in the group of regions possessing a national capital city than in the group of regions without capitals.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 152,
+                    "end": 159,
+                    "text": "Table 4",
+                    "ref_id": "TABREF3"
+                }
+            ],
+            "section": "Univariate Factor Associations"
+        },
+        {
+            "text": "The subsequent Fig. 2 shows the corresponding 95% confidence intervals of means from capital regions.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 15,
+                    "end": 21,
+                    "text": "Fig. 2",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "Univariate Factor Associations"
+        },
+        {
+            "text": "If we examine the boxplots for the RCI, the Resilience sub-index and the Competitiveness sub-index by country, and the capital region versus other regions, we observe Fig. 3 ). While in the case of the RCI and Competitiveness sub-index the disparities between the capital region and the average of the country, respectively other regions, remain similar, this is not the case for the Resilience subindex. This finding suggests that other regions are also approaching the position of the capital regions in terms of basic drivers, namely in terms of Institutions, Macroeconomic stability, Infrastructure, Health, Basic education and Higher education and lifelong learning. At the same time, several other regions are still rather remote from the position of capital regions in terms of Labour market efficiency, Market size, Technological readiness, Business sophistication and Innovation. This contrast suggests an important anchor point for a dedicated effort of policy agencies and decisionmakers.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 167,
+                    "end": 173,
+                    "text": "Fig. 3",
+                    "ref_id": "FIGREF3"
+                }
+            ],
+            "section": "Univariate Factor Associations"
+        },
+        {
+            "text": "The results in the differences in location parameters are more robust from a regional development phase perspective (Post-socialist vs Capitalist) (see Table 5 ). In all three cases, the differences are highly significant (p < 0.001) between the group of postsocialist regions and capitalist regions. Starting from the group of capitalist regions, the results are as follows: RCI (mean 0.04 vs -0.58, median 0.21 vs -0.56), Resilience (mean 0.11 vs -0.65, median 0.18 vs -0.63) and Competitiveness (mean 0.04 vs -0.72, median 0.20 vs -0.75). Figure 4 shows graphically the differences between the values of all three indices that are on average larger in Capitalist regions than in Post-socialist regions.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 152,
+                    "end": 159,
+                    "text": "Table 5",
+                    "ref_id": "TABREF4"
+                },
+                {
+                    "start": 542,
+                    "end": 550,
+                    "text": "Figure 4",
+                    "ref_id": "FIGREF4"
+                }
+            ],
+            "section": "Univariate Factor Associations"
+        },
+        {
+            "text": "The following table (Table 6) shows the results of the Euro currency impacts. The tests are only slightly significant in case of Resilience (p < 0.05) (see also Fig. 5 ). It seems that belonging to the Eurozone does not significantly influence the values of RCI and of the Competitiveness sub-index of regions.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 20,
+                    "end": 29,
+                    "text": "(Table 6)",
+                    "ref_id": "TABREF6"
+                },
+                {
+                    "start": 161,
+                    "end": 167,
+                    "text": "Fig. 5",
+                    "ref_id": "FIGREF5"
+                }
+            ],
+            "section": "Univariate Factor Associations"
+        },
+        {
+            "text": "The next step is to test possible associations between the simultaneous influence of our three fixed factor categories on RCI, Resilience and Competitiveness by a full threeway ANOVA model with all interaction terms. The basic statistical parameters of RCI in an overall summary are presented in Table 7 . It can be seen that the ANOVA model The results of the RCI ANOVA are given in Table 8 . The tested terms of the model are found in the left-hand column. Corresponding significant p values are given in the right column. These results are similar to the case of separate factor association tests. We can see that the CapitalReg factor and Group factor are again significant (p < 0.001), while the Euro factor is non-significant, but the interaction term Group*Euro appears to be also significant (p = 0.006).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 296,
+                    "end": 303,
+                    "text": "Table 7",
+                    "ref_id": "TABREF7"
+                },
+                {
+                    "start": 384,
+                    "end": 391,
+                    "text": "Table 8",
+                    "ref_id": "TABREF8"
+                }
+            ],
+            "section": "Multivariate Factor Associations"
+        },
+        {
+            "text": "The research results show that the influence of the Eurozone is different in the group of Post-socialist regions in comparison to the group of Capitalist regions (p < 0.01). The mean of the RCI index in the group of capitalist regions is significantly larger (i.e., better) in the No Euro case than in the Eurozone case (0.44 vs -0.08), while on the contrary in post-socialist regions this finding is reversedthe RCI mean is significantly smaller (worse) on average in the No Euro regions than in the Eurozone regions (\u2212 0.65 vs -0.25). The error bar plot in Fig. 6 does not present simple common arithmetic means, but estimated means (adjusted by the ANOVA model), so that they are slightly different from the means in Table 8 .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 559,
+                    "end": 565,
+                    "text": "Fig. 6",
+                    "ref_id": "FIGREF7"
+                },
+                {
+                    "start": 720,
+                    "end": 727,
+                    "text": "Table 8",
+                    "ref_id": "TABREF8"
+                }
+            ],
+            "section": "Multivariate Factor Associations"
+        },
+        {
+            "text": "Similar results are found in case of both the Resilience and Competitiveness subindices, and hence we do not present the specific bar plots for these findings.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Multivariate Factor Associations"
+        },
+        {
+            "text": "Considering as an example the current pandemic situation related to Covid-19, its economic consequences and policy measures (including those in the field of monetary policy), our study offers interesting findings for further spatial analysis. While countries and regions that belong to the Eurozone will follow a common course, countries with own currency can use different multiple monetary policy strategies to mitigate consequences of a pandemic situation. Our initial analysis ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Multivariate Factor Associations"
+        },
+        {
+            "text": "Based on the results from Subsection 5.1. and 5.2., we will now try to make a categorization of European regions. Fig. 7 In Fig. 7 , the regions from post-socialist countries are marked by red circles, while blue circles characterize regions from capitalist countries. At first sight it is clear that most of the post-socialist regions have negative values for both the Competitiveness and Resilience sub-indices. This needs to be further examined. The cross-table results (Table 9 ) present absolute and relative counts of the EU regions by their membership of the corresponding segment. The Fisher test of cross-tabulation appears to be significant (p < 0.001). So-called adjusted residuals are generally suitable for the determination of the significance source. We note again that if a residual value is larger than 2.58 (3.29) or smaller than -2.58 (\u2212 3.29), then its value is significant at level 0.01 (0.001). In our case, residuals in the group of post-socialist regions are significant in segments I a (\u2212 3.7) and I b (\u2212 4.5), although counts of post-socialist regions are significantly smaller in segment I a and in segment I b. The other significant residuals of post-socialist region counts are found in segment III a (4.5) and in segment III b (4.1). In this case, the counts of post-socialist regions are significantly larger. The conclusions of capitalist regions are of course reverse. In segments with significantly smaller (larger) counts of post-socialist regions we find significantly larger (smaller) counts of capitalist regions.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 114,
+                    "end": 120,
+                    "text": "Fig. 7",
+                    "ref_id": "FIGREF6"
+                },
+                {
+                    "start": 124,
+                    "end": 130,
+                    "text": "Fig. 7",
+                    "ref_id": "FIGREF6"
+                },
+                {
+                    "start": 473,
+                    "end": 481,
+                    "text": "(Table 9",
+                    "ref_id": "TABREF10"
+                }
+            ],
+            "section": "Segmentation of Regions from the Viewpoint of Resilience and Competitiveness Sub-Index Values and Signs"
+        },
+        {
+            "text": "Of course, it is possible to test also the possible association of membership segments with the other two nominal categories. In Table 10 we offer a cross-tabulation of regions with or without capitals by segment membership. Now the Fisher test is not A cross-tabulation of region segment membership leads also to significant results in case of the Eurozone factorsee Table 11 (Fisher test, p = 0.004). The count of regions with the Euro in segment I a is significantly larger than the expected count ((p < 0.01).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 129,
+                    "end": 137,
+                    "text": "Table 10",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 368,
+                    "end": 376,
+                    "text": "Table 11",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Segmentation of Regions from the Viewpoint of Resilience and Competitiveness Sub-Index Values and Signs"
+        },
+        {
+            "text": "The prominence of competitiveness and the emergence of resilience raise intriguing questions regarding the direction and intensity of policy and governance, specifically how particular ideas emerge and are adopted by key stakeholders, and are then articulated and spread through communication and policy networks and across spatial scales to become salient on the policy agenda (Bristow 2010a, b) . As mentioned above, resilience refers in general to the ability of actors to develop and implement adaptation mechanisms to external perturbations that mitigate the long-run effects of such shocks and that may lead to a restoration of the original equilibrium or to the realization of a new equilibrium state (Borsekova and Nijkamp 2019) . Resilience may also be considered here as the capacity of a socioeconomic system to absorb different types of disturbances, while continuously reconstructing and retaining the same function, structure and identity (Walker et al. 2004 ). The balanced representation and implementation of effective and adaptive governance measures and action mechanisms by various stakeholders, with a multiplicity of policy interests and indicators, will be named here a concerted strategy. Such a capacity may be perceived of as a competitive advantage of complex socioeconomic systems of regions, which due to resilience are then becoming less vulnerable and thus more competitive. Our research results from 268 EU regions and Fig. 7 suggest a novel operational framework for concerted strategies for competitive and resilient regions. The next figures ( Fig. 8a and b) show the basic constellation of concerted strategies for competitive and resilient regions based on their position in four, or alternatively six, quadrants according to their performance in the Competitiveness and Resilience subindices as discussed before.",
+            "cite_spans": [
+                {
+                    "start": 378,
+                    "end": 396,
+                    "text": "(Bristow 2010a, b)",
+                    "ref_id": null
+                },
+                {
+                    "start": 708,
+                    "end": 736,
+                    "text": "(Borsekova and Nijkamp 2019)",
+                    "ref_id": null
+                },
+                {
+                    "start": 953,
+                    "end": 972,
+                    "text": "(Walker et al. 2004",
+                    "ref_id": "BIBREF68"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1451,
+                    "end": 1457,
+                    "text": "Fig. 7",
+                    "ref_id": "FIGREF6"
+                },
+                {
+                    "start": 1579,
+                    "end": 1593,
+                    "text": "Fig. 8a and b)",
+                    "ref_id": "FIGREF8"
+                }
+            ],
+            "section": "An Operational Framework for Concerted Strategies for Competitive and Resilient Regions"
+        },
+        {
+            "text": "In quadrant I we have regions with a positive performance in both sub-indices. We can also sub-divide this quadrant into two parts according to a higher sub-index (8b). Regions in this quadrant might focus on maintaining the current level of their competitiveness and resilient indicators, or alternatively on strengthening areas with a lower performance. Clearly, the presence of the region in the quadrant III is an undesirable situation, as both Competitiveness and Resilience sub-indices are negative. There are three possible development paths (one direct and two indirect) leading to the strengthening of regional performance.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "An Operational Framework for Concerted Strategies for Competitive and Resilient Regions"
+        },
+        {
+            "text": "The first direct path is one step movement from quadrant III to quadrant I through zero. It means concerted improvement of both Competitiveness and Resilience subindices (formal notation IIIa or IIIb \u2192 Ia or Ib). The second indirect path consists of two consecutive steps: firstly, the movement to the right, to quadrant IV (it requires improvement of Resilience), followed by the shift to quadrant I -improvement of Competitiveness ((IIIa \u2192) IIIb \u2192 IV \u2192 Ia or Ib). The third indirect path consists of two consecutive steps: the first step is a shift to quadrant II (improvement of Competitiveness), the second step is a shift to the right to quadrant I -improvement of Resilience ((IIIb \u2192) IIIa \u2192 II \u2192 Ia or Ib).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "An Operational Framework for Concerted Strategies for Competitive and Resilient Regions"
+        },
+        {
+            "text": "Quadrant IV finally, proposes a concerted strategy for regions with a positive level of the Resilience sub-index and a negative Competitiveness sub-index. Therefore, regions in this quadrant might focus on strengthening the indicators of competitiveness and on maintaining at least the current level of resilience indicators. The next figure shows the spatial distribution of possible or proposed concerted strategies across NUTS2 regions in Europe.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "An Operational Framework for Concerted Strategies for Competitive and Resilient Regions"
+        },
+        {
+            "text": "The map of spatial distribution reveals several interesting patterns. Regions in quadrants I a and I b seem to be rather concentrated in capitalist countries and comprise capital regions of three post-soviet countries -Czech Republic, Slovakia and Slovenia. A very interesting pattern is shown by regions in quadrant II, which are rather isolated regions or regions in quadrant IV, which are more widely represented in peripheries of the EU. If we discuss the proposed concerted strategies in the context of the New Economic Geography (NEG) paradigm, we can observe the emergence of large agglomerations mainly represented by regions is green quadrants (I a and I b). On the other hand, the New Economic Geography is sometimes said to be of less relevance when describing current developments in advanced economies, because NEG focuses more on tangible causes of the spatial concentration of economic activities, and not so much on the intangible sources (Krugman 2011) . The choice of a proper concerted strategy depends on specific conditions of a region, the stage of its development or the level of leadership. The proposed framework for concerted strategies for competitive and resilient regions offers a guidance for tailormade and specific place-based strategies, in the line with our robust and multiple indicators. Place-based spatial planning and policy based on the proposed framework might help to set up proper policy measures and to design coherently both development goals -resilience and competitiveness.",
+            "cite_spans": [
+                {
+                    "start": 955,
+                    "end": 969,
+                    "text": "(Krugman 2011)",
+                    "ref_id": "BIBREF40"
+                }
+            ],
+            "ref_spans": [],
+            "section": "An Operational Framework for Concerted Strategies for Competitive and Resilient Regions"
+        },
+        {
+            "text": "Finally, we note that we have used official data from Eurostat and standard indicators involved in RCI. Since all results, updates and further implications are available for decision-and policy-makers, our proposed operational framework is immediately available and applicable in practice. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "An Operational Framework for Concerted Strategies for Competitive and Resilient Regions"
+        },
+        {
+            "text": "The heterogeneity, the interwoven nature of spatial-economic interactions and the strongly fluctuating economic outcomes among European countries and regions demonstrate convincingly that the European space-economy is a complex spatial system. The both principal concepts used on the present paper, namely competitiveness and resilience, refer to complexity of regions. The main aim of the present study was to investigate the connectivity between competitiveness and resilience and to design an operational framework for concerted strategies of competitive and resilient regions in Europe.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion"
+        },
+        {
+            "text": "We used several mathematical and statistical methods in order to investigate the connectivity between competitiveness and resilience. Univariate factor associations show that capital regions positively influence the two analysed indices -RCI and Competitiveness. Their means are significantly larger in regions with capitals than in other regions (p < 0.01). The development phase of a region appears to positively influence all three relevant indices -RCI, Resilience and Competitiveness. Their means are significantly larger in capitalist regions than in post-socialist regions (p < 0.001).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion"
+        },
+        {
+            "text": "The Euro currency appears to positively influence Resilience; the mean is significantly larger in Eurozone regions than in other currency regions (p < 0.05). Next, multivariate factor associations show that two factors (Eurozone and Development phase of regions) are again significant (p < 0.001), also in the three-way analysis of variance (like in univariate factor associations). Besides, the interaction term Group*Euro is also significant (p < 0.01). The mean of the RCI index in the group of capitalist regions is significantly larger (better) in the No Euro case than in Eurozone case, while on the contrary in post-socialist regions it is reversedthe RCI mean is significantly smaller (worse) on average in No Euro regions than in Eurozone regions. Almost the same results are found in case of both Resilience and Competitiveness sub-indices.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion"
+        },
+        {
+            "text": "The segmentation of regions in our study shows that all EU regions at NUTS2 level can be sub-divided into six segments according to their signs of Resilience values and of Competitiveness values and according to whether Resilience is larger or smaller than Competitiveness. Membership in these segments is significantly associated with all three factors: Capital region, Development phase of regions, and Eurozone. The count of regions with capitals is significantly larger (p < 0.001) in segments with a negative Resilience and a positive Competitiveness. The counts of post-socialist regions are significantly smaller (larger) in segments with positive (negative) values in both the Resilience and Competitiveness indices (p < 0.001). On the contrary, the counts of capitalist regions are significantly larger (smaller) in segments with positive (negative) values in both Resilience and Competitiveness indices (p < 0.001). Finally, the counts of regions with a Euro in segments with positive values in both Resilience and Competitiveness indices and Competitiveness are smaller than Resilience (p < 0.01).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion"
+        },
+        {
+            "text": "Our robust research results offer a solid basis for the proposed operational framework for concerted strategies of competitive and resilient regions. Our research suggests four, respectively six, types of concerted regional strategies according to the performance of a region in terms of Resilience and Competiveness sub-indices. The spatial distribution of concerted strategies for competitive and resilient regions reveals several interesting patterns and offers a guidance for tailor-made regional policy. Placebased spatial planning and policy based on our analysis framework may be helpful in developing effective measures to realize coherently both development goals -resilience and competitiveness in order to meet the complexity of European space-economy. A major advantage of the proposed operational framework is its immediate use for policyand decision-making purposes, as we used official and accessible data from Eurostat and standard indicators involved in RCI for 2019. As there is a continuity in the official RCI classification and measurement, policy-makers will be able to compare the performance of their regions over time and to design proper concerted strategies accordingly. From this perspective, our study brings several interesting learning elements and results for policy-makers at various levels. It is also noteworthy that Figs. 7, 8 and 9 may suggest various measures for the current EU cohesion policy.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion"
+        },
+        {
+            "text": "Last but not least, the clear evidence of a connectivity between competitiveness and resilience may help to develop a governance approach that balances competitiveness mainly represented by productive assets with resilience mainly represented by sustainability and ecological awareness. The proposed operational framework for concerted strategies of competitive and resilient regions offers a response for policy on how to deal with the complexity of the European space-economy and dynamics of the current world at the same time.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Social and ecological resilience: are they related?",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Adger",
+                    "suffix": ""
+                }
+            ],
+            "year": 2000,
+            "venue": "Prog Hum Geogr",
+            "volume": "24",
+            "issn": "3",
+            "pages": "347--364",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "From fail-safe to safe-to-fail: Sustainability and resilience in the new urban world",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Ahern",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Landscape and urban Planning",
+            "volume": "100",
+            "issn": "4",
+            "pages": "341--343",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Risk-based input-output analysis of hurricane impacts on interdependent regional workforce systems",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Akhtar",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Santos",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Nat Hazards",
+            "volume": "65",
+            "issn": "1",
+            "pages": "391--405",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Fifteen weddings and a funeral: case studies and resilience-based management",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Anderies",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Walker",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Kinzig",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Ecol Soc",
+            "volume": "11",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "The EU regional competitiveness index 2019. Publication Office of the European Union",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Annoni",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Dijkstra",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "EU regional competitiveness index 2013. Publication Office of the European Union",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Annoni",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Dijkstra",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "EU regional competitiveness index 2010. Publication Office of the European Union",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Annoni",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Kozovska",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Explaining success and failure in the commons: the configural nature of Ostrom's institutional design principles",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Baggio",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Barnett",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Perez-Ibara",
+                    "suffix": ""
+                },
+                {
+                    "first": "U",
+                    "middle": [],
+                    "last": "Brady",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Ratajczyk",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Rollins",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Int J Commons",
+            "volume": "10",
+            "issn": "2",
+            "pages": "417--439",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "In Search of Concerted Strategies for Competitive and Resilient",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Defining and advancing a systems approach for sustainable cities",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Bai",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Surveyer",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Elmqvist",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Gatzweiler",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Guneralp",
+                    "suffix": ""
+                },
+                {
+                    "first": "Parnell",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Curr Opin Environ Sustain",
+            "volume": "23",
+            "issn": "",
+            "pages": "69--78",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Resilience and urban disasters",
+            "authors": [],
+            "year": 2019,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Urban resilience patterns after an external shock: an exploratory study",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Borsekova",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Nijkamp",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Guevara",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Int J Disaster Risk Reduct",
+            "volume": "31",
+            "issn": "",
+            "pages": "381--392",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Focusing the Meaning(s) of Resilience: Resilience as a Descriptive Concept and a Boundary Object",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Brand",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Jax",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Ecology and Society",
+            "volume": "12",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "The small states of the European Union and the resilience/competitiveness nexus",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Briguglio",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Vella",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Small States & Territories",
+            "volume": "2",
+            "issn": "1",
+            "pages": "55--68",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Everyone as winner: problematizing the discourse of regional competitiveness",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Bristow",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "J Econ Geogr",
+            "volume": "5",
+            "issn": "3",
+            "pages": "285--304",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Resilient regions: re-'placing regional competitiveness",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Bristow",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Camb J Reg Econ Soc",
+            "volume": "3",
+            "issn": "1",
+            "pages": "153--167",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Risk perception and behaviors: anticipating and responding to crises",
+            "authors": [
+                {
+                    "first": "London",
+                    "middle": [],
+                    "last": "Bristow G ; Routledge",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Burns",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Slovic",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Risk Anal",
+            "volume": "32",
+            "issn": "",
+            "pages": "579--582",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "The new urban agenda: key opportunities and challenges for policy and practice",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Caprotti",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Cowley",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Datta",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Broto",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Gao",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Georgeson",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Herrick",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Odendaal",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Joss",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Urban Res Pract",
+            "volume": "",
+            "issn": "",
+            "pages": "1--12",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "An interdependent multi-layer model: resilience of international networks",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Caschili",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Medda",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Wilson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Netw Spat Econ",
+            "volume": "15",
+            "issn": "2",
+            "pages": "313--335",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Resilience and vulnerability of spatial economic networks",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Caschili",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Reggiani",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Medda",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Netw Spat Econ",
+            "volume": "15",
+            "issn": "2",
+            "pages": "205--210",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "How to create sustainable competiveness through resilience and innovation: a practical model based on an integrated approach",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Cavaco",
+                    "suffix": ""
+                },
+                {
+                    "first": "Cruz-Machado",
+                    "middle": [],
+                    "last": "Va",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Advances in intelligent systems and computing",
+            "volume": "281",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "The resilient regional labour market? The US case",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Chapple",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Lester",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Camb J Reg Econ Soc",
+            "volume": "3",
+            "issn": "",
+            "pages": "85--104",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "From the Resilient City to urban resilience. A review essay on understanding and integrating the resilience perspective for urban systems",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Chelleri",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Documents d'Analisi Geografica",
+            "volume": "58",
+            "issn": "2",
+            "pages": "287--306",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Resilience trade-offs: addressing multiple scales and temporal aspects of urban resilience",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Chelleri",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Waters",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Olazabal",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Minucci",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Environ Urban",
+            "volume": "27",
+            "issn": "1",
+            "pages": "181--198",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Regional resilience: theoretical and empirical perspectives",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Christopherson",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Michie",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Tyler",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Camb J Reg Econ Soc",
+            "volume": "3",
+            "issn": "1",
+            "pages": "3--10",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Transversality, resilience and innovation: A qualitative regional analysis",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Cooke",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Resilience, crisis and innovation dynamics",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "The role of research in regional innovation systems: new models meeting knowledge economy demands",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Cooke",
+                    "suffix": ""
+                }
+            ],
+            "year": 2000,
+            "venue": "Int J Technol Manag",
+            "volume": "28",
+            "issn": "3-6",
+            "pages": "507--533",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "The role of research in regional innovation systems: new models meeting knowledge economy demands",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Cooke",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "International Journal of Technology Management",
+            "volume": "28",
+            "issn": "3-6",
+            "pages": "507--533",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "ASEAN economic integration and sustainable urbanization",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Dahiya",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "J Urban Culture Res",
+            "volume": "12",
+            "issn": "",
+            "pages": "8--14",
+            "other_ids": {}
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "A New Regional Competitiveness Index: theory, methods and findings 2011. Publication Office of the European Union",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Dijkstra",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Annoni",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Kozovska",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "The resilience of regional labour markets to economic shocks: exploring the role of interactions among firms and workers",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Diodato",
+                    "suffix": ""
+                },
+                {
+                    "first": "Abr",
+                    "middle": [],
+                    "last": "Weterings",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "J Econ Geogr",
+            "volume": "15",
+            "issn": "",
+            "pages": "723--742",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Global Urbanization, Biodiversity and Ecosystem Services: Challenges and Opportunities",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Elmqvist",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Fragkias",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Guneralp",
+                    "suffix": ""
+                }
+            ],
+            "year": 2001,
+            "venue": "Canadian Journal of Policy Research",
+            "volume": "2",
+            "issn": "1",
+            "pages": "34--40",
+            "other_ids": {}
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "The Triumph of the City: How Our Greatest Invention Makes Us Richer, Smarter, Greener, Healthier, and Happier. Harmondsworth: Penguin Griffith DA, Chun Y (2015) Spatial autocorrelation in spatial interactions models: geographic scale and resolution implications for network resilience and vulnerability",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Glaeser",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Netw Spat Econ",
+            "volume": "15",
+            "issn": "2",
+            "pages": "337--365",
+            "other_ids": {}
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Global Urbanization",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Haase",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "G\u00fcneralp",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Dahiya",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Bai",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Elmqvist",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Urban planet: knowledge towards sustainable cities",
+            "volume": "",
+            "issn": "",
+            "pages": "19--44",
+            "other_ids": {}
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "The analysis of residuals in cross-classified tables",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Haberman",
+                    "suffix": ""
+                }
+            ],
+            "year": 1973,
+            "venue": "Biometrics",
+            "volume": "29",
+            "issn": "1",
+            "pages": "205--220",
+            "other_ids": {}
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Regional resilience: a promising concept to explain differences in regional economic adaptability?",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Hassink",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Camb J Reg Econ Soc",
+            "volume": "3",
+            "issn": "1",
+            "pages": "45--58",
+            "other_ids": {}
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "Regional employment growth, shocks and regional industrial resilience: aa quantitative analysis of Danish ICT sector",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Holm",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "\u00d8stergaard",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Reg Stud",
+            "volume": "49",
+            "issn": "",
+            "pages": "95--112",
+            "other_ids": {}
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "Resilient regions in an uncertain world: wishful thinking or a practical reality?",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Hudson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Camb J Reg Econ Soc",
+            "volume": "3",
+            "issn": "1",
+            "pages": "11--25",
+            "other_ids": {}
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "The new economic geography, now middle-aged",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Krugman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Reg Stud",
+            "volume": "45",
+            "issn": "1",
+            "pages": "1--7",
+            "other_ids": {}
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "Second winds for industrial regions",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Krugman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "New wealth for old regions",
+            "volume": "",
+            "issn": "",
+            "pages": "35--47",
+            "other_ids": {}
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "Post-communist states and the European Union",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Lane",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "J Commun Stud Trans Politics",
+            "volume": "23",
+            "issn": "4",
+            "pages": "461--477",
+            "other_ids": {}
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "Resilience in natural and socio-economic systems",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Levin",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Barrett",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Aniyar",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Baumol",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Bliss",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Bolin",
+                    "suffix": ""
+                }
+            ],
+            "year": 1998,
+            "venue": "Environ Dev Econ",
+            "volume": "3",
+            "issn": "2",
+            "pages": "222--234",
+            "other_ids": {}
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "Complexity of coupled human and natural systems",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Dietz",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Carpenter",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Alberti",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Folke",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Moran",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Pell",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Deadman",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Kratz",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Lubchenko",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Ostrom",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Ouyang",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Provencher",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Redman",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Schneider",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Taylor",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Science",
+            "volume": "317",
+            "issn": "",
+            "pages": "1513--1516",
+            "other_ids": {}
+        },
+        "BIBREF45": {
+            "ref_id": "b45",
+            "title": "Enhancing resistance and resilience to disasters with microfinance: parallels with ecological trophic systems",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Marincioni",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Appiotti",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Pusceddu",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Byrne",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Int J Disaster Risk Reduct",
+            "volume": "4",
+            "issn": "",
+            "pages": "52--62",
+            "other_ids": {}
+        },
+        "BIBREF46": {
+            "ref_id": "b46",
+            "title": "Regional economic resilience, hysteresis and recessionary shocks",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Martin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "J Econ Geogr",
+            "volume": "12",
+            "issn": "",
+            "pages": "1--32",
+            "other_ids": {}
+        },
+        "BIBREF47": {
+            "ref_id": "b47",
+            "title": "Path dependence and regional economic evolution",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Martin",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Sunley",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "J Econ Geogr",
+            "volume": "6",
+            "issn": "4",
+            "pages": "395--437",
+            "other_ids": {}
+        },
+        "BIBREF48": {
+            "ref_id": "b48",
+            "title": "Strategic network restoration",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Matsziw",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Murray",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Grubesic",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Netw Spat Econ",
+            "volume": "10",
+            "issn": "",
+            "pages": "345--361",
+            "other_ids": {}
+        },
+        "BIBREF49": {
+            "ref_id": "b49",
+            "title": "Systematic competitiveness and local economic development discussion paper",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Meyer-Stamer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF50": {
+            "ref_id": "b50",
+            "title": "Spatial economic resilience: overview and perspectives",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Modica",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Reggiani",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Netw Spat Econ",
+            "volume": "15",
+            "issn": "2",
+            "pages": "211--233",
+            "other_ids": {}
+        },
+        "BIBREF51": {
+            "ref_id": "b51",
+            "title": "Environmentally influenced urbanisation: footprints bound for town?",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Moriniere",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Urban Stud",
+            "volume": "49",
+            "issn": "2",
+            "pages": "435--450",
+            "other_ids": {}
+        },
+        "BIBREF52": {
+            "ref_id": "b52",
+            "title": "Overview Paper on Resilient Economies and Societies, Meeting of the OECD Council at Ministerial Level. Available at: www.oecd",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Oecd",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF53": {
+            "ref_id": "b53",
+            "title": "Resilient Cities",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Oecd",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF54": {
+            "ref_id": "b54",
+            "title": "Social capital, resilience and accessibility in urban systems: a study on Sweden",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "\u00d6sth",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Dolciotti",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Reggiani",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Nijkamp",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Netw Spat Econ",
+            "volume": "18",
+            "issn": "2",
+            "pages": "313--336",
+            "other_ids": {}
+        },
+        "BIBREF55": {
+            "ref_id": "b55",
+            "title": "Size does matter: city scale and the asymmetries of climate change adaptation in three coastal towns",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Paterson",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Pelling",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Nunes",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Moreira",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Guida",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Marengo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Geoforum",
+            "volume": "81",
+            "issn": "",
+            "pages": "109--119",
+            "other_ids": {}
+        },
+        "BIBREF56": {
+            "ref_id": "b56",
+            "title": "Resilience, adaptation and adaptability",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Pike",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Dawley",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Tomaney",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Camb J Reg Econ Soc",
+            "volume": "3",
+            "issn": "",
+            "pages": "59--70",
+            "other_ids": {}
+        },
+        "BIBREF57": {
+            "ref_id": "b57",
+            "title": "Definitions of resilience: an analysis. Community and Regional Resilience Institute (CARRI), Oak Ridge Poot J (2000) Reflections on local and economy-wide effects of territorial competition",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Plodinec",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Regional competition",
+            "volume": "",
+            "issn": "",
+            "pages": "205--230",
+            "other_ids": {}
+        },
+        "BIBREF58": {
+            "ref_id": "b58",
+            "title": "The economic performance of regions",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Porter",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "Reg Stud",
+            "volume": "37",
+            "issn": "6-7",
+            "pages": "549--578",
+            "other_ids": {}
+        },
+        "BIBREF59": {
+            "ref_id": "b59",
+            "title": "Network resilience for transport security: some methodological considerations",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Reggiani",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Transp Policy",
+            "volume": "28",
+            "issn": "",
+            "pages": "63--68",
+            "other_ids": {}
+        },
+        "BIBREF60": {
+            "ref_id": "b60",
+            "title": "Resilience: an evolutionary approach to spatial economic systems",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Reggiani",
+                    "suffix": ""
+                },
+                {
+                    "first": "De",
+                    "middle": [],
+                    "last": "Graaff",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Nijkamp",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "Netw Spat Econ",
+            "volume": "2",
+            "issn": "2",
+            "pages": "211--229",
+            "other_ids": {}
+        },
+        "BIBREF61": {
+            "ref_id": "b61",
+            "title": "Modelling regional economic resilience of disasters",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Rose",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Liao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "J Reg Sci",
+            "volume": "45",
+            "issn": "",
+            "pages": "75--112",
+            "other_ids": {}
+        },
+        "BIBREF62": {
+            "ref_id": "b62",
+            "title": "Securing and scaling resilient futures: neoliberalization, infrastructure, and topologies of power",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Sage",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Fussey",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Dainty",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Environ Plan D -Soc Space",
+            "volume": "33",
+            "issn": "3",
+            "pages": "494--511",
+            "other_ids": {}
+        },
+        "BIBREF63": {
+            "ref_id": "b63",
+            "title": "Theeconomic resilienceofregions",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Simmie",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Martin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Camb JReg EconSoc",
+            "volume": "3",
+            "issn": "",
+            "pages": "27--44",
+            "other_ids": {}
+        },
+        "BIBREF64": {
+            "ref_id": "b64",
+            "title": "Available at: www.weforum. org/gcr",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Schwab",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF65": {
+            "ref_id": "b65",
+            "title": "Rethinking urban sustainability and resilience. Knowledge Towards Sustainable Cities, The Urban Planet",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Simon",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Griffith",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Nagendra",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF66": {
+            "ref_id": "b66",
+            "title": "Understanding of resilience in the context of regional development using composite index approach: the case of European Union NUTS-2 regions",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Stanickova",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Meleck\u00fd",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Reg Stud Reg Sci",
+            "volume": "5",
+            "issn": "1",
+            "pages": "231--254",
+            "other_ids": {}
+        },
+        "BIBREF67": {
+            "ref_id": "b67",
+            "title": "Regional competitiveness and smart specialization in Europe: Place-based development in international economic networks",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "; M"
+                    ],
+                    "last": "Storper",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Van Oort",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Diodato",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ruijs",
+                    "suffix": ""
+                }
+            ],
+            "year": 1997,
+            "venue": "Elgar In Search of Concerted Strategies for Competitive and Resilient",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF68": {
+            "ref_id": "b68",
+            "title": "Resilience, adaptability and transformability in socialecological systems",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Walker",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Holling",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Carpenter",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Kinzig",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Ecol Soc",
+            "volume": "9",
+            "issn": "2",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF69": {
+            "ref_id": "b69",
+            "title": "Community resilience, globalization, and transitional pathways of decision-making",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Wilson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Geoforum",
+            "volume": "43",
+            "issn": "6",
+            "pages": "1218--1231",
+            "other_ids": {}
+        },
+        "BIBREF70": {
+            "ref_id": "b70",
+            "title": "Building community resiliency: spatial links between household and business post-disaster return",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Xiao",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Van Zandt",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Urban Stud",
+            "volume": "49",
+            "issn": "11",
+            "pages": "2523--2542",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "final driver of resilience is formed by institutions in a spatial network, based on the principle of openness and collaboration. Resilient regions ensure open, transparent and inclusive policymaking and enable effective policy implementation. Institutions play a key role in strengthening resilience, since the impact of any shock depends Drivers of resilience Source: Adapted from OECD (2014, 2016) In Search of Concerted Strategies for Competitive and Resilient...",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": ", Denmark (5), Estonia (1), Finland (5), France (27), Germany (37), Greece (13), Hungary (7), Ireland (3), Italy (21), Latvia (1), Lithuania (2), Luxembourg (1), Malta (1), Netherlands (11), Poland (17), Portugal (7), Romania (8), Slovakia (4), Slovenia (2), Spain (19), Sweden (8), and United Kingdom (35).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "Error bar plot of RCI, Resilience and Competitiveness by capital regions In Search of Concerted Strategies for Competitive and Resilient...",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "Comparison of boxplots for RCI, Resilience sub-index and Competitiveness sub-index by country and capital region versus other regions is rather unbalanced (counts of regions are very different in separate cases), so that the results of the ANOVA model should be interpreted with caution. Nevertheless, they point to some interesting properties of the indices under consideration.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "Error bar plot of RCI, Resilience and Competitiveness by regional development phase",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": "Error bar plot of RCI, Resilience and Competitiveness by Euro currency usage",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF6": {
+            "text": "Scatterplot of Competitiveness versus Resilience",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF7": {
+            "text": "Error bar plot of RCI 2019 by Group and by EurozoneQuadrant II sketches out the concerted strategy for regions with a promising level of the Competitiveness sub-index and a negative Resilience sub-index. Therefore, regions in this quadrant may focus on strengthening the indicators of resilience while maintaining at least the current level of competitiveness indicators.Quadrant III depicts regions with both negative Competitiveness and Resilience indices. In order to set up proper measures for such regions, we may sub-divide this quadrant into two parts. Regions in quadrant IIIa should focus primarily on strengthening indicators of resilience, while those in quadrant IIIb appear to have a lower performance of competitiveness indicators.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF8": {
+            "text": "(a) Concerted strategies in 4 quadrants (b). Concerted strategies in 6 quadrants",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF9": {
+            "text": "Spatial distribution of concerted strategies for competitive and resilient regionsIn Search of Concerted Strategies for Competitive and Resilient...",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "Drivers of regional competitiveness",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "Connectivity between pillars of competitiveness and drivers of resilience Pillars of Regional Competitiveness Index Drivers of Resilience",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "Data on EU NUTS2 regions",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF3": {
+            "text": "Two sample tests for association with the capital region factor",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF4": {
+            "text": "Two sample tests for association with regional development phase",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF6": {
+            "text": "Two sample tests for association with Eurozone",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF7": {
+            "text": "Basic statistical parameters of RCI by three factors",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF8": {
+            "text": "ANOVA results of RCI by CapitalReg, by Group and by Euro",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF9": {
+            "text": "Cross-tabulation of capital (yes/no) regions by segments % within ClassRC 100.0% 100.0% 100.0% 100.0% 100.0% 100.0% 100.0%",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF10": {
+            "text": "Cross-table of development phase regions by segments100.0% 100.0% 100.0% 100.0% 100.0% 100.0% 100.0%",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF11": {
+            "text": "Cross-tabulation of Eurozone regions by segments % within ClassRC 100.0% 100.0% 100.0% 100.0% 100.0% 100.0% 100.0%",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "Acknowledgments This work was supported by a grant of the Romanian Ministry of Research and Innovation, CNCS -UEFISCDI, project number PN-III-P4-ID-PCCF-2016-0166, within the PNCDI III\" project ReGrowEU -Advancing ground-breaking research in regional growth and development theories, through a resilience approach: towards a convergent, balanced and sustainable European Union.Funding This work was supported by a grant VEGA 1/0380/20 Innovative approaches to the development of small and medium-sized cities.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "acknowledgement"
+        },
+        {
+            "text": "Conflict of Interest The authors declare no conflict of interest.Publisher's note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Compliance with Ethical Standards"
+        }
+    ]
+}

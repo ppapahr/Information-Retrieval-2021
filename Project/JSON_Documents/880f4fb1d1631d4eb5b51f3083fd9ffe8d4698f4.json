@@ -1,0 +1,3233 @@
+{
+    "paper_id": "880f4fb1d1631d4eb5b51f3083fd9ffe8d4698f4",
+    "metadata": {
+        "title": "Counting Risk Increments to Make Decisions During an Epidemic",
+        "authors": [
+            {
+                "first": "Lucien",
+                "middle": [],
+                "last": "Hardy",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "I propose a smartphone app that will allow people to participate in the management of their own safety during an epidemic or pandemic such as COVID-19 by enabling them to view, in advance, the risks they would take if they visit some given venue (a cafe, the gym, the workplace, the park, . . . ) and, furthermore, track the accumulation of such risks during the course of any given day or week.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "This idea can be presented to users of the app as counting points. One point represents some constant probability, ppoint, of infection. Then the app would work in a similar way to a calorie counting app (instead of counting calories we count probability increments of being infected). Government could set a maximum recommended number of daily (or weekly) points available to each user in accord with its objectives (bringing the disease under control, allowing essential workers to work, protecting vulnerable individuals, . . . ). It is posited that this, along with other proposed \"levers\" would allow government to manage a gradual transition to normalcy.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "I discuss a circuit framework with wires running between boxes. In this framework the wires represent possible sources of infection, namely individuals and the venues themselves (through deposits of pathogens left at the venue). The boxes represent interactions of these sources (when individuals visit a venue). This circuit framework allows (i) calculation of points cost for visiting venues and (ii) probabilistic contact tracing.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "The points systems proposed here could complement existing contact tracing apps by adding functionality to permit users to participate in decision making up front. * lhardy@perimeterinstitute.ca",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "To make decisions in dangerous environments we need some way of assessing the risk corresponding to different choices we might make. In the context of an epidemic, or a pandemic, such as COVID-19 there are two points of view that can be considered. The first point of view is that of government which wants to minimise the spread of the disease globally in accord with various objectives, such as ensuring: that fewer vulnerable people get the disease, that the health system is not overwhelmed, essential services can continue to function and, in the long run, that the economy recovers. The second point of view is that of individuals, or small collections of individuals (such as families or groups of friends) who want to minimise their risk of getting COVID-19, and (for the altruistic) minimise their contribution to the global spread of the disease. Individuals also want to be able to use essential services, and look after their economic wellbeing. Given sufficient assistance, individuals and small groups of individuals are capable of quite complex decision making behaviours to navigate dangerous situations. For example, a large percentage of the population can drive, and even those that cannot are, by and large, capable of behaving safely around vehicles. Physical (social) distancing measures that are typically considered are rather coarse-grained [43] . Examples include closing schools, asking people to go for only one walk per day, implementing a work from home policy, etc. Such policies are appropriate when we are in a near lock-down state. It would be good if government had its hands on \"levers\" enabling them to transition smoothly from lock-down to full-liberty state where people can move around as they wish (once the disease has ceased to be a concern). The proposal in this paper would allow this smooth transition harnessing the ability and intent of individuals to navigate the dangers of a pandemic by putting in place a framework individuals could use to make informed decisions concerning the risks associated with different actions. Further, this framework could be integrated with government objectives.",
+            "cite_spans": [
+                {
+                    "start": 1366,
+                    "end": 1370,
+                    "text": "[43]",
+                    "ref_id": "BIBREF41"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The concrete proposal to achieve this is a participatory physical distancing smartphone app described in Part I of this paper. This app would allow people to view, in advance, the risks associated with different choices (such as whether to go to a particular cafe or not). It does this by calculating a cost in terms of points. Each point corresponds to a probability increment, p point , for getting infected with the disease. Government can set a certain recommended number of points per day, per week or per fortnight for individuals (this may depend on various factors such as age and underlying health conditions). The points costs associated with the actual activities a person engages in are tallied. This is rather like counting calories. There are numerous venues where people can interact such as a dwelling, a workplace, the gym, or a supermarket. Venues could be managed or unmanaged. For managed venues there is a nominated person who would be tasked with entering information into an installation of the app, perhaps with the objective of keeping the rate at which transmission of the disease occurs at that venue is below some recommended maximum.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "In Part II of this paper I will put in place a mathematical framework for doing quantitative calculations based on the information collected by the app. This will be a circuit framework consisting of boxes with systems passing between them (the mathematics is borrowed from work done in Quantum Foundations [19, 18, 8, 9] ). Here is an example of a small fragment of a circuit describing the behaviour of three individuals visiting two venues (1) Time runs up the page. This shows how individual 7 visits arrives at venue 43, leaves to visit venue 27 then returns to venue 43 before finally leaving. Meanwhile, individuals 23 and 18 arrive at venue 43 at different times and leave at different times. This diagram is descriptive but it can be used to obtain a mathematical object, namely a tensor which captures the pertinent probabilities of the individuals and the venues transitioning between internal states (hidden variables) as they interact. The key aspect of this map from the descriptive to the mathematical is that it preserves the compositional form -calculations can be represented in diagrammatic form by pictures having the same composition as the descriptive pictures. Ideally, every system is maintained by data entry into an installation of the app though we can also accommodate unmanaged systems in the framework. The systems correspond to individual people (e.g. individuals a 7 and a 18 using the app and individual b 23 not using it) and to venues (e.g. x 43 managed by the app and unmanaged venue y 27 ). Examples of a venue are a family home, a cafe, a sidewalk, a work place, a supermarket. . . . The boxes correspond to social interactions (meeting a friend for coffee in a cafe, going to work, a visit to the supermarket. . . ). I will consider strategies for using this mathematical framework to inform the points costs for different social activities. Symptoms and positive or negative test results for the disease can be entered using the app interface. Using this mathematical framework, the app can provide the user with an ongoing report of the probability they have contracted the disease. This probability typically will be low if the user has stuck to the recommended points allocation, though if somebody they have come into contact with subsequently reports symptoms or a positive test result, their probability will increase. In this way, the framework can accomplish what might be termed probabilistic contact tracing. People with probability of infection above some threshold can be asked to self-isolate. It will cost more points to interact with people who have spent more points (who typically have a higher probability of having contracted the disease even if they fall below the threshold at which people are instructed to self isolate) and it is posited that this will help suppress spread of the disease.",
+            "cite_spans": [
+                {
+                    "start": 307,
+                    "end": 311,
+                    "text": "[19,",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 312,
+                    "end": 315,
+                    "text": "18,",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 316,
+                    "end": 318,
+                    "text": "8,",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 319,
+                    "end": 321,
+                    "text": "9]",
+                    "ref_id": "BIBREF7"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The app being proposed involves the notion of agency (users make choices). It is difficult to incorporate agency into physical models. My own research (e.g. [19, 18] ) and that of many of my colleagues (e.g. [8, 27, 9, 36, 32] ) concerns agency in fundamental physics (such as Quantum Theory and General Relativity). Agent based approaches have also been taken in other more relevant fields. For example, in the context of understanding the large scale impact of human actions in the context of behavioural science (see, for example, [17] ).",
+            "cite_spans": [
+                {
+                    "start": 157,
+                    "end": 161,
+                    "text": "[19,",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 162,
+                    "end": 165,
+                    "text": "18]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 208,
+                    "end": 211,
+                    "text": "[8,",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 212,
+                    "end": 215,
+                    "text": "27,",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 216,
+                    "end": 218,
+                    "text": "9,",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 219,
+                    "end": 222,
+                    "text": "36,",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 223,
+                    "end": 226,
+                    "text": "32]",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 534,
+                    "end": 538,
+                    "text": "[17]",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Contact tracing [23] is a tool to find and isolate infected individuals reducing the extent to which they infect others. Numerous contact tracing apps have been developed, or are under development particularly in the wake of the COVID-19 crisis. Here is a very incomplete list [35, 5, 31, 42, 29, 2] . See [25, 41] for some popular articles. Google and Apple have provided notification technology to assist contact tracing app developers [16] while enabling privacy through cryptographic techniques. There has been much discussion of ethics (for example see [14] and the statement [24] on Amnesty International's website co-signed by numerous relevant bodies).",
+            "cite_spans": [
+                {
+                    "start": 16,
+                    "end": 20,
+                    "text": "[23]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 277,
+                    "end": 281,
+                    "text": "[35,",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 282,
+                    "end": 284,
+                    "text": "5,",
+                    "ref_id": null
+                },
+                {
+                    "start": 285,
+                    "end": 288,
+                    "text": "31,",
+                    "ref_id": null
+                },
+                {
+                    "start": 289,
+                    "end": 292,
+                    "text": "42,",
+                    "ref_id": "BIBREF40"
+                },
+                {
+                    "start": 293,
+                    "end": 296,
+                    "text": "29,",
+                    "ref_id": null
+                },
+                {
+                    "start": 297,
+                    "end": 299,
+                    "text": "2]",
+                    "ref_id": null
+                },
+                {
+                    "start": 306,
+                    "end": 310,
+                    "text": "[25,",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 311,
+                    "end": 314,
+                    "text": "41]",
+                    "ref_id": "BIBREF39"
+                },
+                {
+                    "start": 438,
+                    "end": 442,
+                    "text": "[16]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 558,
+                    "end": 562,
+                    "text": "[14]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 581,
+                    "end": 585,
+                    "text": "[24]",
+                    "ref_id": "BIBREF22"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Contact tracing apps tell people after the fact that they have come into contact with somebody who has (or might have had) the disease. There has been very little discussion of frameworks to allow individuals to make decisions up front as proposed here. The COVI project [2] led by Bengio is developing an app that uses machine learning and epidemiological modeling. They discuss empowering individuals by providing a \"tailored recommendations feature that helps users make real-time decisions daily about their activities based on their personal level of risk\". They also discuss probabilistic contact tracing. Wu discusses networks for small groups of individuals that optimise against the spread of the disease in a game theory context [45] . Popa [34] discusses automated tools that make recommendations to local government on physical distancing measures (such as which schools and factories to close).",
+            "cite_spans": [
+                {
+                    "start": 271,
+                    "end": 274,
+                    "text": "[2]",
+                    "ref_id": null
+                },
+                {
+                    "start": 739,
+                    "end": 743,
+                    "text": "[45]",
+                    "ref_id": "BIBREF43"
+                },
+                {
+                    "start": 751,
+                    "end": 755,
+                    "text": "[34]",
+                    "ref_id": "BIBREF32"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Epidemiological models for the spread of disease in a large community (a country, state, province, or city for example) require very large computational resources that are well beyond what is possible on a smartphone, computer, or even readily available in the cloud for large numbers of people to use in real time (for example, see [12] ). There is, then, a need to design the infrastructure for the proposed system such that the computations required are feasible in real time. Machine learning [30, 15, 1] is a rapidly developing field with a wide range of applications across industry and may have applications to the proposal considered here.",
+            "cite_spans": [
+                {
+                    "start": 333,
+                    "end": 337,
+                    "text": "[12]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 497,
+                    "end": 501,
+                    "text": "[30,",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 502,
+                    "end": 505,
+                    "text": "15,",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 506,
+                    "end": 508,
+                    "text": "1]",
+                    "ref_id": "BIBREF0"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "For the sake of definiteness, it is worth considering one version of how a participatory physical distancing app would work. Many variations on this idea are possible. In the proposal below each person participating will manage an individual account through the app. Venues are either managed or unmanaged. For managed venues, a nominated person for every venue using the app will manage a venue account using the app and maintain certain standards. Unmanaged venues can be given a label so they can be identified by individuals visiting them but are not managed. Examples of venues that might be managed are a work place, a train carriage, a cafe, a supermarket, a taxi, and a small park. Examples of venues that might be unmanaged are a large park, footpaths and sidewalks.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Part I A participatory physical distancing app"
+        },
+        {
+            "text": "Individual accounts have the following features.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Individual accounts"
+        },
+        {
+            "text": "Questionnaire. On opening an individual account, the user enters pertinent information like age, underlying health conditions, and occupation (such as whether the individual is working in essential services).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Individual accounts"
+        },
+        {
+            "text": "Recommended points allocation. A recommended daily points allowance is calculated for the user.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Individual accounts"
+        },
+        {
+            "text": "Daily tracking. Activities like going to the supermarket, meeting a friend, etc, are tracked. The tracking can be done manually and be assisted by the GPS function of the smartphone, or it could be largely automated.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Individual accounts"
+        },
+        {
+            "text": "Costs. Each activity the user may engage in costs a certain number of points. An activity costing N points corresponds roughly to a probability of N p point of contracting the disease when engaging in that activity (where p point is some constant probability). The number of points can be viewed beforehand to help the user decide if they want to engage in the activity.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Individual accounts"
+        },
+        {
+            "text": "Rating. A user will be awarded a higher rating for tracking consistently. The calculation of the rating could be coupled with GPS data collected by the smartphone to check the user is tracking.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Individual accounts"
+        },
+        {
+            "text": "Health reporting. The app asks the user to report any changes in health that have a bearing on the disease (such as developing symptoms, or a positive or negative test result for the disease).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Individual accounts"
+        },
+        {
+            "text": "Reporting. The app will report to the user what their probability of having contracted the disease is (according to the mathematical modeling). The app will issue an alert if this rises above some value at which the individual should self isolate.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Individual accounts"
+        },
+        {
+            "text": "Some people (children, some elderly people, people without smartphones, and so on) are incapable of keeping an account by themselves but someone else may maintain an account on their behalf. There will also be people who do not have an account at all -such people need to be taken into account in the modelling.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Individual accounts"
+        },
+        {
+            "text": "Here we distinguish three levels of description of what people might do when in a venue. A behaviour is something a person can reasonably choose to do and, therefore, has control over. Alice can choose to arrive at a cafe between 3:30PM and 3:35PM with her friend Bob, they can queue to order coffee and snacks, then sit at table 8 consume the coffee and snacks after they are delivered by the server, and leave between 4:30PM and 4:35PM. This description is coarse-grained.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Behaviours, trajectories, and paths"
+        },
+        {
+            "text": "A more fine-grained description of what Alice does might be available from the Bluetooth features on her phone. We will call this more fine-grained level of description a trajectory. The information provided by Bluetooth may be relative rather than absolute (for example, it may specify how close Alice is to the server to some level of accuracy without specifying their absolute positions).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Behaviours, trajectories, and paths"
+        },
+        {
+            "text": "We can also consider the actual path taken by Alice where this is specified exactly. There is no instrumentation in place to measure this but it is a useful concept in calculations. In particular, behaviours and trajectories can each be thought of as probability distributions over paths.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Behaviours, trajectories, and paths"
+        },
+        {
+            "text": "Alice may decide on a certain behaviour. This is consistent with many trajectories. If the Bluetooth function is turned on then there is more finegrained information available going beyond what we might reasonably expect Alice to choose. This means that we can calculate \"fine-grained\" probabilities (depending on the trajectory information). This raises an important issue. Should we use the fine-grained probability or the \"coarse-grained\" probability (determined from behaviour) when we calculate the number of points it costs to visit a venue? Since we are endeavouring to provide people with a behavioural framework which influences the way they make choices, it is better to base the number of points on the coarse-grained probabilities based on behaviours (which people have control over). Nevertheless, the app can be designed to provide a more accurate probabilistic picture should users be interested. If the costing is done appropriately, then the average course-grained probability should equal the average fine-grained probability when averaged over many visits to venues.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Behaviours, trajectories, and paths"
+        },
+        {
+            "text": "Venue accounts are run by a nominated manager. Their task is to track visitors to the venue so it is possible to quantify the risk of infection for any given visitor. We use the term \"visitor\" to include any person who enters the venue. For a store, for example, this includes customers, and people working at the store. Risks come from other people physically present at the venue at the same time and from the virus left at the venue (on surfaces or airborne) by visitors who may have since left. Managed venue accounts have the following features.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Managed venues"
+        },
+        {
+            "text": "Questionnaire. On opening a venue account, the nominated venue manager will answer various questions about the venue that can be used to calculate the extent to which that venue can lead to transmission of the disease. This may include details such as square footage, air circulation, typical distances between people, the areas of surfaces that people may touch. There may also be questions about the purpose of the venue (does it constitute essential services for example).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Managed venues"
+        },
+        {
+            "text": "Recommended procedures. The app can recommend procedures which will reduce the chance of transmission of the disease. For example, a supermarket could limit the number of people allowed in at any given time and wipe down surfaces every hour. The app could issue a notification to follow a cleaning procedure when it detected that the probability for disease transmission through contact with exposed surfaces in the venue was bigger than a certain threshold.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Managed venues"
+        },
+        {
+            "text": "Behaviours. Each venue provides a set of behaviours available to visitors to choose from.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Managed venues"
+        },
+        {
+            "text": "Recommended cost rate reporting. The cost rate (points cost per hour) is equal to the infection rate (for a typical individual) divided by p point . The cost rate for a given behaviour at a venue at any given time will depend on who is visiting it, or has visited it recently enough to leave pathogen deposits behind. This rate can be estimated by the app. Venues can adopt one of two strategies. Either they can simply report the current cost rate so that visitors can decide whether or not they wish to visit the venue at that given time. Or a venue can strive to keep the cost rate below a certain recommended threshold.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Managed venues"
+        },
+        {
+            "text": "Tracking. The venue will track people coming through according in order to estimate the infection rate. This tracking information can also be used for probabilistic contact tracing. The venue may, according to its remit, refuse or delay entry to limit spread of the disease.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Managed venues"
+        },
+        {
+            "text": "Rating. Places that track consistently and indicate they follow recommended procedures will get a higher rating. GPS and Bluetooth on smartphones could be used to check that people visiting the venue are being tracked. Feedback from users visiting the venue could be used to indicate that procedures are being carried out.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Managed venues"
+        },
+        {
+            "text": "Reporting. The app will provide reporting to the venue manager on parameters relating to the risks visitors face.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Managed venues"
+        },
+        {
+            "text": "It is impractical for all places to be managed. We can envisage various approaches to such unmanaged venues. Even if no individual is nominated to manage a particular venue, that venue can still have a name (drawn from map data) and we can still envisage people tracking when they are visiting the venue. Under such circumstances, potential visitors at a given time could obtain information about current and recent usage to enable them to decide whether to visit. Costs for such visits could be calculated from generic cost functions for such types of venue. This kind of approach would be well suited to spacious outdoor spaces. For example, the cost for a picnic with a friend in a park would depend on the recent activity of that friend and be calculated by some function taking into account that this is an outdoor space. In other cases, like a poorly ventilated building, unmanaged venues will represent an unquantifiable risk and people may decide not to visit.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Unmanaged venues"
+        },
+        {
+            "text": "To illustrate how this all works consider an example of two friends, Alice and Bob, meeting at a cafe for lunch. Each friend will, beforehand, use the app to see how many points this will cost them. They each enter the identifier of the cafe and also of the friend into the app. Behaviours are allocated and the app does a calculation telling both Alice and Bob the estimated points cost for this. If the points costs are acceptable to both of them and the cafe is happy to accept the risk, then they log their intention, go to the cafe and have lunch.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "How it works"
+        },
+        {
+            "text": "Afterwards, the app does a calculation of the actual points cost -taking into account the actual behaviours (for example, they may stay a little longer than they had intended). These actual points costs are debited against Alice and Bob's points allocation. Most likely, the cost for Alice will depend on Bob's previous behaviour to a greater extent than the behaviour of others because she is sitting close to him for a longer period of time. This means that Bob is motivated to stick to the recommended points allocation. Similar remarks apply to Alice. Thus, there is a negative feedback loop that may help control the spread of the disease.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "How it works"
+        },
+        {
+            "text": "A simplified approach to calculating points is discussed in Appendix A. This involves using a weighted sum over the costs for previous visits to venues of people in the cafe. This simplified approach may be useful but it relies on various assumptions that may not be valid. The best way to calculate the cost to Alice for visiting the cafe is to do a full calculation of the probability increment for Alice on visiting the cafe without these assumptions (and similarly for Bob). This can be done using the circuit techniques developed in Part II (see in particular the Sec. 12.2).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "How it works"
+        },
+        {
+            "text": "We can be more nuanced about costs and probabilities by distinguishing the following Predicted cost. This is the predicted cost for the visit based on the anticipated behaviour of the user.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Predicted and actual costs"
+        },
+        {
+            "text": "Actual cost. This is the actual cost for the visit to the venue based on the actual behaviour. For example, the user may stay longer than they had anticipated so this would increase the cost.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Predicted and actual costs"
+        },
+        {
+            "text": "Fine-grained probability. There may be additional information providing a more fine-grained picture of the individuals behaviour as provided by GPS and bluetooth features. Furthermore, there may be more accurate information about the other visitors to the venue. This may make it possible to do a more accurate calculation of the probability of infection during the visit.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Predicted and actual costs"
+        },
+        {
+            "text": "Updated probability. New information may subsequently become available allowing the probability of infection to be updated. For example, if somebody else at a venue the individual visits subsequently tests negative for the disease then their updated probability of infection may be lower than before.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Predicted and actual costs"
+        },
+        {
+            "text": "A natural question is how should these different costs and probabilities be incorporated into the app? One proposal is the following. The app lets the user know the predicted costs beforehand. Then the app charges the user the actual cost after their visit (so this is subtracted from the recommended daily (or weekly) number of points). The app, further, allows reporting of the finegrained probability to the user and updates this fine-grained probability when new information becomes available. If this updated fine-grained probability rises above various threshold values then various policies may be implemented. Possible policies associated with different thresholds are (i) reduction of allocated points allowance, (ii) increase in coefficients that determine the costs for others to interact with this individual, and (iii) the user is asked to self-isolate. It is worth noting that subsequent information may be made available that may reduce the updated probability. This could happen if, for example, some other person, m, reports that they are infected causing individual n's probability to go up. But then another person, m \u2032 , could report they are infected suggesting a different pathway to m having become infected so that individual n's probability will go down again. In such a circumstance, an instruction to self-isolate could be retracted. If calculations are done properly then the actual cost multiplied by p points should equal the average of the fine-grained probability for visits to the venue. If this is not the case, there is a problem with the model and we could adjust the parameters by which the actual cost is calculated. This could be implemented by a machine learning algorithm. Further information that might be incorporated into a machine learning algorithm could come from reports of symptoms and test results that relate to the given venue. No technical discussions of the use of machine learning are given in the current paper.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Predicted and actual costs"
+        },
+        {
+            "text": "Before looking into how to calculate probabilities, it is useful to see how government agencies could use this app to manage their response to the epidemic or pandemic.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Levers for government"
+        },
+        {
+            "text": "Set recommended number of points. The recommended number of points is a way to put an upper limit on an individuals contribution to the probability of infection at a venue (since this will depend on their recent interactions before visiting the given venue). At different levels of lockdown government agencies may want to be more or less lenient. Also, the government may need set higher recommended numbers of points for essential workers and a lower number for individuals that are more vulnerable to the disease.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Levers for government"
+        },
+        {
+            "text": "Costs. While the costs for different activities would ordinarily be calculated by the algorithms provided with the app, government agencies could artificially increase these costs to control the flow of people for different ends. Additionally, there is a role for government in setting the standards by which these costs are calculated.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Levers for government"
+        },
+        {
+            "text": "Threshold probability for isolation. Government would set the threshold probability above which people are instructed to self-isolate.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Levers for government"
+        },
+        {
+            "text": "Manage risks to essential workers. Health care professionals take greater risks. Nevertheless, it is counterproductive to have large numbers of essential workers falling ill. The app could be used to take a whole system approach to monitoring the risks to essential workers according to the best models and take remedial steps where appropriate.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Levers for government"
+        },
+        {
+            "text": "Coordinate sharing of facilities. Some facilities are under great demand and it may make sense from an epidemiological point of view to coordinate the sharing of these facilities. This could be done by artificially increasing the costs to segments of the population at different times during the course of the day and issuing notifications to share this information.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Levers for government"
+        },
+        {
+            "text": "Establish bubbles. It is possible, through the costs structure, to establish bubbles [4] -larger groups of people -who are have minimal interaction with others. This would be preferable to maintaining physical barriers to limit peoples mobility. The app could provide instruction as to when it is permissible to transfer from one bubble to another.",
+            "cite_spans": [
+                {
+                    "start": 85,
+                    "end": 88,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Levers for government"
+        },
+        {
+            "text": "In some approaches to epidemiological modeling, graphs are used to model the whole population [12] . These are very large graphs requiring vast computing resources to process, or else they are smaller graphs that coarse-grain over large groups of people. There is another place graphs might be used. This is in modelling a smaller number of individuals. Then, typically, we only have access to fragments of the graph associated with a small number of individuals. The specific techniques I will use are adapted from operational probabilistic models as used in the study of the foundations of quantum theory. Individuals are, at all times, in some place (home, a cafe, work, the park, . . . ) which we call venues. We label venues by v = 1, 2, . . . . We will consider direct and indirect infection. Indirect infection is where one person leaves pathogens behind at a venue (for example, on a surface, in some food, or lingering in the air) and these infect another person at a later time. Direct infection is when one person releases pathogens which impinge on the other person more or less immediately (for example, by hand shaking or coughing). This division is, to some extent, arbitrary and different models may divide them up differently. However, main concept is that indirect means of infection are delayed which suggests they can be mitigated on longer time scales by management of the venue (by cleaning surfaces for example).",
+            "cite_spans": [
+                {
+                    "start": 94,
+                    "end": 98,
+                    "text": "[12]",
+                    "ref_id": "BIBREF10"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Circuit model 8 Systems and hidden variables"
+        },
+        {
+            "text": "We will use a circuit to model this wherein systems pass between boxes. We have four types of system. We denote registered individual, n, by a n and the managed venue, v, by x v . Unregistered individuals are represented by b l where l is a temporary label applied for the given visit to the given venue. Unmanaged venues are labeled by y v where the label v may be temporary or might be drawn from map information. We could add additional systems. For example, registered individuals who do not carry a smartphone (like school children) could be denoted by c n . For a disease that is spread by additional agents such as food, or animals we might add additional system types corresponding to these agents. In general it makes sense to add systems if the hidden variables (see below) associated with those systems are different, or the way the calculation deals with the hidden variables for those systems is different from already defined systems.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Circuit model 8 Systems and hidden variables"
+        },
+        {
+            "text": "There are various quantities pertaining to an individual that are relevant to the disease we are studying such as contagiousness and susceptibility. We suppose these are functions of some underlying hidden variables. We will denote the hidden variables associated with a n by a n , with b l by b l .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Circuit model 8 Systems and hidden variables"
+        },
+        {
+            "text": "There are also pertinent quantities pertaining to venues such as the numbers of pathogens deposited on various surfaces, or lingering in the air. We suppose, similarly, that these are functions of hidden variables associated with venues. We denote the hidden variables associated with the managed venue a v by x v , and with the unmanaged venue y v by y v .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Circuit model 8 Systems and hidden variables"
+        },
+        {
+            "text": "The choice of hidden variables will depend on what it is we are trying to calculate, and how precisely we are attempting to calculate it. For the purposes of tractability in computer modeling, it will be necessary to discretize these hidden variables. We will assume that a n , b l , x v and y v , are the discretized versions of these variables. In the framework I will set up these hidden variables will correspond to the indices in tensors and we will, consequently, be summing over them.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Circuit model 8 Systems and hidden variables"
+        },
+        {
+            "text": "In Sec. 10 I will discuss how to describe small scale epidemiological situations in which people interact at venues using circuits (and fragments of circuits). In the kind of approach I am proposing, description comes first. This description can be written in diagrammatic or symbolic form. Once the description is given, we can decide what kind of mathematical questions we wish to ask. The description we will provide of individuals visiting venues is compositional -we wire together boxes. The point of being careful about the compositional description is that we can convert these descriptions directly into calculations having the same compositional form. Indeed, the calculations can be represented by diagrams that look exactly like the diagram representing the description. In [20] this was called the composition principle. This attitude is also present in category theory where we have functors which map between categories [9] .",
+            "cite_spans": [
+                {
+                    "start": 785,
+                    "end": 789,
+                    "text": "[20]",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 934,
+                    "end": 937,
+                    "text": "[9]",
+                    "ref_id": "BIBREF7"
+                }
+            ],
+            "ref_spans": [],
+            "section": "The composition principle"
+        },
+        {
+            "text": "Here are two types of calculation we might consider:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "The composition principle"
+        },
+        {
+            "text": "Probabilistic. We may be interested in probabilities for various outcomes. We can base this calculation on a calculation for joint distributions over the underlying hidden variables. This framework allows us to allocate probabilities of infection to individuals, take into account information acquired from symptoms reporting, test results, and Bluetooth proximity monitoring and also perform probabilistic contact tracing.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "The composition principle"
+        },
+        {
+            "text": "Simulation. We may be interesting in running a simulation where we assume some particular individuals are initially infected and see, for this particular run, which individuals are infected after some time. We can treat infection events probabilistically and consequently, if we redo the simulation we will almost certainly get different results. These simulations could be useful to analyse the impact of different costing strategies.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "The composition principle"
+        },
+        {
+            "text": "We will show how to perform the probabilistic calculations in accord with the composition principle -that is the calculation looks like the description. These calculations can be used for calculating points costs and also implementing probabilistic contact tracing. It is also clear that simulation calculations can also be performed in accord with the composition principle. We will not detail how to do simulation calculations as this falls outside the remit of the present work.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "The composition principle"
+        },
+        {
+            "text": "The composition principle leads us to take seriously the description aspect of setting up a problem since, once we have that, the step to the calculational aspect becomes much simpler.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "The composition principle"
+        },
+        {
+            "text": "In the first place I will discuss how to describe small scale epidemiological situations using circuits (and fragments of circuits). In the kind of approach I am proposing, description comes first. This description can be in diagrammatic or symbolic form. Once the description is given, we can decide what kind of mathematical questions we wish to ask. In the approach I will present, the calculation corresponding to these mathematical questions has the same compositional form as the description (so the diagram representing the calculation looks the same as the diagram representing the description). In Sec. 11 I will outline how to do probabilistic calculations.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Description using circuits"
+        },
+        {
+            "text": "An operation corresponds to people visiting a venue according to various behaviours. In specifying an operation there are various settings corresponding to choices made by the manager of the venue and the visitors to this venue. Examples of settings include (i) implementing procedures such as cleaning, (ii) the choice of behaviour of each individual visiting the venue. Further, there can be outcomes. Outcomes are things that happen. Examples of outcomes are: (i) when one of the individuals visiting the venue reports certain symptoms (through the app), (ii) when an individual receives a positive (or negative) test result for the disease, (iii) when Bluetooth information provides more detailed information about the trajectory of some or all of the individuals visiting the venue than is specified in the assigned behaviours of those individuals. An operation is specified by providing the settings and some given outcomes.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Operations"
+        },
+        {
+            "text": "In the graphical notation an operation is represented by a box. Each person visiting the venue will engage in a certain behaviour. We can partition their behaviour into temporal and spacial aspects. The vertical dimension of the box corresponds to time and the horizontal dimension labels (though does not depict) the spacial aspects of their behaviour. We represent an operation diagrammatically as shown in the following example",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Operations"
+        },
+        {
+            "text": "This has the following features. There is a wire, x v , inputted at the bottom and outputted at the top corresponding to the venue itself (so time runs up the page). Then there are wires inputted and outputted at various times corresponding to visitors who enter and leave at various times. Shown are registered app users a 7 and a 18 and the unregistered individual b 23 . The flags represent choices and outcomes. The Proc 3 flag indicates that procedure 3 is carried out at a time indicated by the vertical position of the black dot. The direction of the arrow indicates this is a setting. The S 1 = 2 flag indicates that the user reports the onset of symptom S 1 at level 2 (perhaps indicating a moderate cough) at a time indicated by the vertical position of the small square. The direction of the arrow indicates this is an outcome. The dashed lines represent the different behaviours that have been chosen by individuals in the venue. Ideally, we would label these behaviours with additional flags indicating that they are choices but the diagram is already quite crowded so we take this information to be implicit in the position of the dashed line. There is additional data associated with venues and individuals that is not represented on this diagram. For a venue this might include the physical dimension of the space and the furniture therein. For an individual this includes any details that may bear on the development of the disease (e.g. age and health conditions). We could include this information in the hidden variables associated with the venue and individuals (this is not done for the simple example of hidden variable allocation given in Sec. 11.1). Alternatively, we can simply assume that this information is available when we perform calculations concerning a given venue and given individuals.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Operations"
+        },
+        {
+            "text": "This diagrammatic information is quite sufficient for our purposes. However, it is sometimes instructive to refer to symbolic notation. We represent this situation symbolically as follows",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Operations"
+        },
+        {
+            "text": "The superscripts on the a's indicate the visit number for that individual. This number is increased by 1 after each visit. This superscript is not necessary in the diagrammatic notation as it is evident from the diagram that the visit number has incremented. The superscript on x is the iteration number for the venue. It is increased by 1 for subsequent operations for that venue. We will use the notation A",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Operations"
+        },
+        {
+            "text": "where the information in the square brackets is implicit in the symbol A. For a different case we use a different symbol (B, C, etc. ). Correspondingly, we can use the following abbreviated diagrammatic notation a 18",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Operations"
+        },
+        {
+            "text": "x v",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Operations"
+        },
+        {
+            "text": "x v This obscures the times at which people arrive and leave the venue.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Operations"
+        },
+        {
+            "text": "A particular individual may visit a venue more than once during the time associated with a given operation. We represent this by sending wires back after visiting one or more other venues. For example",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Repeat visits"
+        },
+        {
+            "text": "x 43",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Repeat visits"
+        },
+        {
+            "text": "x 43",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Repeat visits"
+        },
+        {
+            "text": "x 27",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Repeat visits"
+        },
+        {
+            "text": "x 27 ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Repeat visits"
+        },
+        {
+            "text": "Note how the superscript a 32 7 on A is matched with itself as a subscript on B corresponding to when individual 7 leaves venue 43 and enters venue 27. There is a similar repeated index a 33 7 for the return trip.",
+            "cite_spans": [
+                {
+                    "start": 188,
+                    "end": 192,
+                    "text": "33 7",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Repeat visits"
+        },
+        {
+            "text": "Each operation corresponds to a given duration for the venue. We can choose this duration to be longer or shorter. We can break up longer durations into shorter durations if this is convenient. Diagrammatically this is represented by sequential boxes for the given venue. There is, however, a subtlety. Here individual 7 remains in venue 39 between the two boxes. We use black dots to indicate that individual 7 has remained at the venue. The reason for doing this is that the behaviour, u, for individual 7 will, in general, be specified over the whole duration of his trip to venue 39. In special cases, we may be able to write the behaviour as u 1 for the first box then u 2 for the second box. Then we write u = u 1 u 2 . However, this will not work for a general case. Imagine venue 39 is a store. Individual 7 arrives through the entrance door at a certain time. He then wanders around the store. At the intermediate time associated with the change from the first box to the second, he may be anywhere. Later still, he pays and leaves by the exit door. His behaviour is described by a probability over various random walks through the store which does not factorize into separate probability distributions over the two time intervals. In this example we cannot write the behaviour in the factorized form u = u 1 u 2 .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Sequential boxes for a venue"
+        },
+        {
+            "text": "It is useful to define initialisation operations. First, we let P[n] a n correspond to the initialisation of individual n when they first install the app. This box can be inputted into a circuit. We can have similar boxes for an unregistered individual at the time t associated with the given output wire",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Initialisation operations"
+        },
+        {
+            "text": "This corresponds to somebody who is not using the app. We would always have to use this box for such individuals since no information is available about their past. In this case, the integer l is a temporary label used in the given venue only (since we cannot track unregistered individuals from one venue to the next).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Initialisation operations"
+        },
+        {
+            "text": "We can also have a box for somebody who is using the app but where we do not have information about their past interactions before time t. We write R[n] a n where t is the time associated with the output wire. Such a box is useful if we can only input limited information about this individual into the calculation either for privacy reasons or because of limited computational resources.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Initialisation operations"
+        },
+        {
+            "text": "One more box we might use is the box for a null person 0 a n",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Initialisation operations"
+        },
+        {
+            "text": "The idea here is that we may have characterised a venue with respect to more inputs into a venue than actual visitors at a given time. Then we can feed the null input into the inputs that would otherwise be empty so that the diagram is well formed. We also have an initialisation box for venues",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Initialisation operations"
+        },
+        {
+            "text": "x v corresponding to when they first install the app. We can have a similar initialisation box for an unmanaged venue",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Initialisation operations"
+        },
+        {
+            "text": "We feed this box into an unmanaged venue with start time t associated with the outgoing wire. The label v may be drawn from map information or it could be temporary. The box takes account of the fact that there may be harboured sources of the disease at this start time.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Initialisation operations"
+        },
+        {
+            "text": "We can similarly define boxes that correspond to ignoring everything that happens to a given individual or venue after a given time. We represent them diagrammatically as",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Ignore operations"
+        },
+        {
+            "text": "y v These boxes are useful in setting up calculations as we will see later.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Ignore operations"
+        },
+        {
+            "text": "Venues can perform certain procedures (like cleaning surfaces) to reduce rates of infection at their venue. We represent these by flags added to the box. For example,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Procedures"
+        },
+        {
+            "text": "x v",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Procedures"
+        },
+        {
+            "text": "x v ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Procedures"
+        },
+        {
+            "text": "Individuals can report symptoms and also test results. We represent this by adding a flag. The example",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Symptoms and test results"
+        },
+        {
+            "text": "x v",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Symptoms and test results"
+        },
+        {
+            "text": "x v ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Symptoms and test results"
+        },
+        {
+            "text": "There exist technologies to provide more tracking of peoples movement. In the context of the COVID-19 pandemic the use of GPS and Bluetooth have been discussed [16, 38] . Bluetooth provides more fine-grained information than GPS and can be used to determine whether two smartphones (and thereby their owners) are proximate. There are other technologies, such as using WiFi signals as radar to detect peoples position [22, 46] that may find application to disease control. There are, of course, ethical considerations at play here if this is non-consensual. We will consider the Bluetooth example here but our notation will apply to other tracking technologies. If some of the visitors to a venue have Bluetooth tracking enabled then we will be able to collect additional information that goes beyond the behaviours those individuals have chosen. For example, individual 7 may choose a behaviour whereby they go to a supermarket at a certain time take a basket rather than a trolley and spend 30 to 35 minutes shopping. It would be difficult to be more prescriptive than this in choosing a behaviour. There are many trajectories around the supermarket consistent with this behaviour. Bluetooth can provide fine-grained information on these other trajectories and, in particular, how proximate the individual is with other shoppers who have enabled Bluetooth tracking. We take this additional information to be an outcome rather than a setting they choose (because it is unreasonable to expect individuals to decide on such prescribed trajectories).",
+            "cite_spans": [
+                {
+                    "start": 160,
+                    "end": 164,
+                    "text": "[16,",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 165,
+                    "end": 168,
+                    "text": "38]",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 417,
+                    "end": 421,
+                    "text": "[22,",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 422,
+                    "end": 425,
+                    "text": "46]",
+                    "ref_id": "BIBREF44"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Bluetooth and GPS"
+        },
+        {
+            "text": "The app can investigate relevant functions of the Bluetooth information available. Let these functions be R k where k = 1, 2, . . . , K and we let them have integer values. For example we may have the outcome R 2 = 8. This could mean that a two given individuals were one metre apart for 10 minutes. We add a flag to indicate these outcomes. We indicate that individuals have Bluetooth enabled while visiting a venue by using dotted rather than dashed lines. Here is an example",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Bluetooth and GPS"
+        },
+        {
+            "text": "Here we are collecting Bluetooth positioning information from individuals 7 and 23 and have outcome R 3 = 4. The direction of the arrows indicates that this is an outcome. We see that individual 18 does not have Bluetooth enabled as they have a dashed rather than dotted line (in fact, since they are of type b they also are not a registered user of the app).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Bluetooth and GPS"
+        },
+        {
+            "text": "We may wish to consider a question for which technology does not provide an actual test we can make to find the answer. The most pertinent question is the ontological question as to whether an individual is infected with the given disease. Any test that exists may give a false positive or negative so provides information on this ontological question but does not fully answer it. We represent ontological propositions by flags with dotted borders to indicate that these are not operationally available outcomes.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Ontological interrogations"
+        },
+        {
+            "text": "x v ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Ontological interrogations"
+        },
+        {
+            "text": "The direction of the arrow indicates that this is similar to an outcome. By permitting the consideration of ontological propositions we can use the probabilistic calculus to be developed in Sec. 11 to calculate probabilities for them. This is important as it may determine what advice individuals are given. For example, we may infer that somebody has a high probability of actually being infected and ask them to self-isolate. We may be interested in ontological interrogations in between venue visits. For these we can use the following O \uf731 = \uf734 a n a n Also consider the construction where we have an ontological interrogation followed by an ignore box",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Ontological interrogations"
+        },
+        {
+            "text": "This is useful, for example, if we are interested in whether somebody is infected after a venue visit. We could also define ontological interrogations for venues. These might ask to what extent the venue has harboured pathogens.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Ontological interrogations"
+        },
+        {
+            "text": "If a bunch of people visit various venues then we can represent this by wiring together operations. For example ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Example"
+        },
+        {
+            "text": "We can construct partial pictures of peoples interactions at various venues by wiring together a bunch of boxes as in the example in Sec. 10 x 43",
+            "cite_spans": [
+                {
+                    "start": 138,
+                    "end": 140,
+                    "text": "10",
+                    "ref_id": "BIBREF8"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Circuits, fragments, preparations, and results"
+        },
+        {
+            "text": "x 43",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Circuits, fragments, preparations, and results"
+        },
+        {
+            "text": "x 42 a 7 a 14",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Circuits, fragments, preparations, and results"
+        },
+        {
+            "text": "x 42 a 7",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Circuits, fragments, preparations, and results"
+        },
+        {
+            "text": "x 39",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Circuits, fragments, preparations, and results"
+        },
+        {
+            "text": "x 39",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Circuits, fragments, preparations, and results"
+        },
+        {
+            "text": "x 97 a 26 a 14 x 97 a 26 (6) We will call these combs in accord with similar usage in references [6, 7] . These have gaps where pathogens (either harboured at a venue or carried by individuals can leave and come in at intermediate times. For example, somebody could leave interact with other people and then one of these other people could enter the fragment. The example on the left shows how a single operation can have these gaps and hence count as a comb. The combs illustrated in these examples have a single gap. We can also have combs with multiple gaps.",
+            "cite_spans": [
+                {
+                    "start": 25,
+                    "end": 28,
+                    "text": "(6)",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 97,
+                    "end": 100,
+                    "text": "[6,",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 101,
+                    "end": 103,
+                    "text": "7]",
+                    "ref_id": "BIBREF5"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Circuits, fragments, preparations, and results"
+        },
+        {
+            "text": "It is worth distinguishing further. If a fragment has outcomes on it then we say it is nondeterministic since these outcomes do not have to happen. On the other hand, we have no outcomes on any of the boxes comprising a fragment then it is deterministic. Any operation with a flag for a test, symptom, Bluetooth outcome, or an ontological interrogation is nondeterministic. The ignore operation is deterministic. Deterministic fragments play an important role in establishing the probabilistic theory associated with these descriptions.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Deterministic and nondeterministic fragments"
+        },
+        {
+            "text": "There is, incidentally, an interesting subtlety concerning symptoms. There are two ways we might monitor for symptoms: (a) we might ask people at regular intervals (once per day perhaps) if they are experiencing any symptoms, or (b) we might instruct people to report only when they do have symptoms. In case (a) we will have outcomes like S 2 = 0 (meaning no symptoms). In this case, an operation having no flags is deterministic. In case (b) the lack of a symptoms flag means that the person has not experienced symptoms and, since they might have had symptoms, such we cannot then assume an operation with no flag is deterministic. For the same of simplicity we will assume we are in case (a) in what follows though it is not difficult to deal with case (b).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Deterministic and nondeterministic fragments"
+        },
+        {
+            "text": "Given the compositional description we can consider different kinds of calculation. Here we will pursue probabilistic calculations because we want to be able to calculate costs for visiting venues and implement probabilistic contact tracing. We could, however, consider other kinds of calculation based on this circuit description such as deterministic contact tracing (where everybody within a certain distance of an infected individual for a certain amount of time is traced).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Probabilistic calculations using circuits"
+        },
+        {
+            "text": "We denote the hidden variables associated with a n by a n , with b l by b l , with x v by x v and with y v by y v . For the purposes of tractability in computer modeling, we take these to be discretized versions of these hidden variables. As we will see shortly, these hidden variables will correspond to the indices in tensors and we will, consequently, be summing over them.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Simplified hidden variables"
+        },
+        {
+            "text": "In a very simplified model we could set the hidden variables associated with a registered individual, a n by a n = 0 uninfected, not contagious, no symptoms a n = 1 uninfected, not contagious, symptoms a n = 2 infected, not contagious, no symptoms a n = 3 infected, not contagious, symptoms a n = 4 infected, contagious, no symptoms a n = 5 infected, contagious, symptoms a n = 6 immune, no symptoms a n = 7 immune, symptoms a n = 8 deceased An unregistered individual, b l , could have hidden variables b l = 0 not contagious b l = 1 contagious since, for an unregistered individuals, the app can only be concerned with the possibility they infect registered individuals. A simplified model for the hidden variables for a venue might give only a level on some scale for the risk due to harboured sources. For example,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Simplified hidden variables"
+        },
+        {
+            "text": "gives the risk on a 0 to 4 scale. We can use similar hidden variables for unmanaged venues.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Simplified hidden variables"
+        },
+        {
+            "text": "This is a very simplified model. A more sophisticated model for these hidden variables is described in Appendix 8.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Simplified hidden variables"
+        },
+        {
+            "text": "The basic assumption required to set up the mathematical framework is that we can associate a probability with a circuit where this is the joint probability of seeing all the outcomes associated with the given circuit [19] . For example, ",
+            "cite_spans": [
+                {
+                    "start": 218,
+                    "end": 222,
+                    "text": "[19]",
+                    "ref_id": "BIBREF17"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Circuits have probabilities"
+        },
+        {
+            "text": "is the the joint probability that we see S 2 = 1 and T = 0 at venue 39 (the first operation) and S 2 = 3 at venue 92 (the second operation). We also assume that the probability associated with a circuit that has two disjoint parts factorises",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Circuits have probabilities"
+        },
+        {
+            "text": "where circuit EF consists of disjoint parts E and F (each of which can be regarded as circuits in their own right).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Circuits have probabilities"
+        },
+        {
+            "text": "It is useful to consider preparations that prepare in a given ontological state and results that measure onto a given ontological state. We cannot actually implement these preparations and results in general but they play an important role in the transition from the description to the mathematics used to perform calculations. Consider The object on the right is the result that measures to see if the hidden variable is a 14 . The \"o\" inside the box denotes \"ontological\". We call these the ontological fiducial elements in accord with terminology used elsewhere [19] .",
+            "cite_spans": [
+                {
+                    "start": 565,
+                    "end": 569,
+                    "text": "[19]",
+                    "ref_id": "BIBREF17"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Ontological fiducial preparations and results"
+        },
+        {
+            "text": "Consider the preparation P a 1 14 [14] associated with the initialisation for individual 14. The superscript 1 on a 1 14 indicates that this is the first visit. We can associate the state, P a 1 14 , with this as follows",
+            "cite_spans": [
+                {
+                    "start": 34,
+                    "end": 38,
+                    "text": "[14]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 116,
+                    "end": 120,
+                    "text": "1 14",
+                    "ref_id": null
+                },
+                {
+                    "start": 193,
+                    "end": 197,
+                    "text": "1 14",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Preparations and states"
+        },
+        {
+            "text": "This object, P a 1 14 , is the probability for the hidden variables a 14 associated with this preparation at this time. Note that we have been using LaTeX \\mathsf font for descriptions (such as in P a 1 14 [14] ). For states (and, later, tensors) associated with these descriptions we use the \\mathnormal font of LaTeX. As is standard in the theory of tensors, we will refer to P a 1 14 as a vector even though it is really the a 1 14 component of a vector. This vector represents the state of individual 14 at the given time. The lesson is that we have the following correspondence",
+            "cite_spans": [
+                {
+                    "start": 206,
+                    "end": 210,
+                    "text": "[14]",
+                    "ref_id": "BIBREF12"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Preparations and states"
+        },
+        {
+            "text": "a \uf731\uf734 These initialisation preparations are associated with states represented by a similar picture (except for the font change). Now consider the preparation consisting of initialisations for individuals 7 and 14 along with the initialisation for venue 39. The state is given by",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Preparations and states"
+        },
+        {
+            "text": "x \uf733\uf739 In symbolic notation this is P a 1 7 P a 1 14 P x 1 39 (9) The probabilities factorise at this initialisation stage. This follows from the way we have defined states in (8) and the assumption in (7) that probabilities over circuits with disjoint parts factorise [19] . Having the probabilities factorise on initialisation might be a bad assumption if individuals 7 and 14 have already been spending a lot of time together at venue 39 (this could be the house they live in or an office they share). In this case we may wish to start with correlated initial states. However, even if this starting assumption is wrong, its consequences would be washed out since they would quickly become correlated according to the mathematical machinery we are now introducing. Now consider where individuals 7 and 14 visit venue 39. This is described by the diagram ",
+            "cite_spans": [
+                {
+                    "start": 60,
+                    "end": 63,
+                    "text": "(9)",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 174,
+                    "end": 177,
+                    "text": "(8)",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 267,
+                    "end": 271,
+                    "text": "[19]",
+                    "ref_id": "BIBREF17"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Preparations and states"
+        },
+        {
+            "text": "How do we turn this into a calculation? First consider the tensor",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Preparations and states"
+        },
+        {
+            "text": "This object is a tensor whose entries are probabilities. We are using diagrammatic notation for tensors as introduced by Penrose [33] . We continue to use a thick wire to distinguish the venue type. The same object can be represented in symbolic notation ",
+            "cite_spans": [
+                {
+                    "start": 129,
+                    "end": 133,
+                    "text": "[33]",
+                    "ref_id": "BIBREF31"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Preparations and states"
+        },
+        {
+            "text": "where we have now introduced integers to indicate the visit number (this starts at 1 with initialisation and increments by 1 after each operation). This tensor is the probability that the hidden variables end up as a 2 14 a 2 7 x 2 39 after the operation given that they started as a 1 14 a 1 7 x 1 39 before the operation. Hence, the probability for hidden variables a 2 14 a 2 7 x 2 39 for the situation in (10) and (11) ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Preparations and states"
+        },
+        {
+            "text": "Here we apply Einstein's summation over the repeated indices a 1 14 , a 1 7 , and x 1 39 . In Penrose's diagrammatic notation, this is given by",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Preparations and states"
+        },
+        {
+            "text": "In the diagrammatic notation the wires that go between boxes correspond to summation over the associated indices in Penrose's diagrammatic notation.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Preparations and states"
+        },
+        {
+            "text": "Note that we keep the small circles and dotted lines that play no role in the Penrose notation since they provide some physical interpretation of the calculation that is being done. In the tensor calculation, these small circles and dotted lines can be thought of as part of the label of the operation (provided by A in the symbolic notation).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Preparations and states"
+        },
+        {
+            "text": "If the preparation is deterministic then the corresponding state will be normalised so that the probabilities to add to one. This will be true of initialisations and we can write this normalisation condition as P a 1 14 I a 1 14 = 1 (16) where I a i 14 (for any i) is the vector all of whose components are 1's. The vector I a i 14 is the deterministic effect and is associated with the ignore operation discussed in Sec. 11.5. The deterministic effect is associated with the ignore operation. This is represented",
+            "cite_spans": [
+                {
+                    "start": 233,
+                    "end": 237,
+                    "text": "(16)",
+                    "ref_id": "BIBREF14"
+                }
+            ],
+            "ref_spans": [],
+            "section": "The ignore operation and normalisation"
+        },
+        {
+            "text": "where the object on the left is simply the vector whose components are all 1's. The normalisation condition in (16) If we have more than one system, we can apply the identity to each system to get the normalisation. As an aside, it is worth mentioning that the uniqueness of the ignore effect is equivalent to the causality condition -that future choices do not influence the present [8] .",
+            "cite_spans": [
+                {
+                    "start": 384,
+                    "end": 387,
+                    "text": "[8]",
+                    "ref_id": "BIBREF6"
+                }
+            ],
+            "ref_spans": [],
+            "section": "The ignore operation and normalisation"
+        },
+        {
+            "text": "We are also free to consider states that are subnormalised (for example, a state B a 5 7 having B a 5 14 I a 5 14 less than 1). Indeed, such subnormalised states are the generic situation and occur when we have outcomes. The state",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "The ignore operation and normalisation"
+        },
+        {
+            "text": "is not normalised since ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "The ignore operation and normalisation"
+        },
+        {
+            "text": "and this probability is equal to the probability of individual 14 having a positive test result (and therefore less than 1). We can also use the ignore operation to obtain a preparation just for one system. In the example below, on the left we have a preparation for individual 7 ignoring individual 14 and venue 30. On the right we see a calculation for the state for individual 7 which provides a probability distribution over the hidden variables a 7 marginalising over the hidden variables a 14 and x 39 . ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "The ignore operation and normalisation"
+        },
+        {
+            "text": "Note that this state is subnormalised because of the outcome.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "The ignore operation and normalisation"
+        },
+        {
+            "text": "Generally, to convert descriptions to calculations we substitute operations with the corresponding tensors where these tensors are obtained by a calculation of the form shown in (12) (that is by adding ontological fiducial elements to each wire left open and taking the probability).",
+            "cite_spans": [
+                {
+                    "start": 178,
+                    "end": 182,
+                    "text": "(12)",
+                    "ref_id": "BIBREF10"
+                }
+            ],
+            "ref_spans": [],
+            "section": "From operations to tensors"
+        },
+        {
+            "text": "x",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "From operations to tensors"
+        },
+        {
+            "text": "Symbolically this is the replacement The object on the right is a description. Here we use the LaTeX font \\mathsf for both the A symbol and in the subscripts and superscripts is a description. The object on the left is a tensor and there \\mathnormal font is used for both the A symbol and in the subscripts and superscripts. These subscripts and superscripts correspond to hidden variables associated with people and with venues. We use the usual Einstein summation convention for repeated indices in tensor calculations. For example, the example in (5) corresponds to the tensor sum A ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "From operations to tensors"
+        },
+        {
+            "text": "Here the repeated indices are a 32 7 and a 33 7 and these are summed over. We can represent the summation over repeated indices in diagrammatic notation as follows (this follows from (4)) x \uf733\uf733",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "From operations to tensors"
+        },
+        {
+            "text": "x \uf733\uf733",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "From operations to tensors"
+        },
+        {
+            "text": "once again, the font used for the indices indicates that this is a tensor calculation rather than a compositional description. The indices associated with the wires connecting the two boxes are summed over.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "From operations to tensors"
+        },
+        {
+            "text": "When an individual remains in a venue as represented by sequential boxes in the diagrammatic notation then in general, as discussed in Sec. 10.3, the behaviours will not factorize. The behaviour must be specified over the two boxes. This is denoted in diagrams by black dots. To perform a probabilistic calculation we need to take into account that, at the intermediate time, the individual could be in many different spacial positions. Let the position, q n , of individual n up to some discretization be position q \u2208 S v pos (18) where S v pos is a discrete set of positions in the venue. We define the extended hidden variables\u00e3 n \u2208 S n \u00d7 S v pos (19) for person n where S n is the set of hidden variables, a n , for individual n. The calculation now works as follows x 57 39\u00e3 24 7 where the superscripts denoting the iteration number have been added. Here we see that\u00e3 24 7 is repeated denoting the sum over the extended hidden variables. The need to resort to extended hidden variables in these circumstances is a significant complication and further study is required to see if this can be mitigated in some way (perhaps through the use of Bluetooth to locate the positions of people at the intermediate times).",
+            "cite_spans": [
+                {
+                    "start": 527,
+                    "end": 531,
+                    "text": "(18)",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 650,
+                    "end": 654,
+                    "text": "(19)",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 780,
+                    "end": 784,
+                    "text": "24 7",
+                    "ref_id": null
+                },
+                {
+                    "start": 873,
+                    "end": 877,
+                    "text": "24 7",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Sequential boxes and extended hidden variables"
+        },
+        {
+            "text": "There are conditions on tensors associated with operations. These are to ensure that, when we calculate probabilities associated with circuits we get a number that is (a) greater than 0 and (b) less than 1. To ensure the condition (a) holds we require that the entries of the tensors are themselves in the interval [0, 1]. To ensure condition (b) is more involved and it is possible to give an iterative set of conditions. The simplest of these conditions is expressed as follows. x \uf733\uf739",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conditions on tensors"
+        },
+        {
+            "text": "The inequality is saturated for deterministic operations. This condition is sufficient if there are no \"gaps\" as discussed for combs in Sec. 10.11. If there are gaps (as illustrated in the example on the left in (6) where an individual leaves and then returns to the venue then certain iterative conditions also apply (the more gaps, the more conditions). The analogous conditions have been much in the quantum case [6, 7] (see also the appendix of [21] ) and it is a simple matter to write down the corresponding conditions in the classical (rather than quantum) probability case discussed here.",
+            "cite_spans": [
+                {
+                    "start": 416,
+                    "end": 419,
+                    "text": "[6,",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 420,
+                    "end": 422,
+                    "text": "7]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 449,
+                    "end": 453,
+                    "text": "[21]",
+                    "ref_id": "BIBREF19"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Conditions on tensors"
+        },
+        {
+            "text": "How do we calculate the tensor associated with an operation? One way to do this is to adapt the Kolmogorov forward equation from the theory of Markov processes (see [39] for example). The Kolmogorov forward equation (in notation typical for that literature) is",
+            "cite_spans": [
+                {
+                    "start": 165,
+                    "end": 169,
+                    "text": "[39]",
+                    "ref_id": "BIBREF37"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Obtaining tensors from rates"
+        },
+        {
+            "text": "where i, j, and k label the hidden variable states, P ij (s, t), is the probability of having jumped to state j at time t having been in state i at time s, and Q kj (t) is the transition rate matrix. The off-diagonal terms, q kj , of Q(t) correspond to the rate of jumping from k to j at time t. They are taken to be positive. For deterministic processes, if system starts at time s in any given i hidden variable state, then the total probability over all j states it can end up in must be equal to 1 for all subsequent times t. This means \u2211 j P ij = 1 and consequently",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Obtaining tensors from rates"
+        },
+        {
+            "text": "Hence,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Obtaining tensors from rates"
+        },
+        {
+            "text": "Processes that give rise to nondeterministic operations where there are outcomes (as described in Sec. 10.12) are not treated in the literature on Markov jump processes. However, we can easily adapt the above by relaxing the conditions on the elements of Q. For each outcome for a process happening over some duration (such as our operations) we have a set of possible outcomes which we will label o = 1, 2, . . . , L. Associated with each outcome will P o ij (s, t) where this is equal to the joint probability of being in state j at time t and having outcome o given that the state was i at time s. We require that",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Obtaining tensors from rates"
+        },
+        {
+            "text": "is a deterministic process (since this is the case where we ignore the outcome).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Obtaining tensors from rates"
+        },
+        {
+            "text": "We also have transition rate matrices, Q o kj , associated with each outcome. These objects satisfy the outcome-enabled Kolmogorov forward equation",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Obtaining tensors from rates"
+        },
+        {
+            "text": "The off diagonal element, q o kj of Q o is the rate of transition to jo for the state k. Consequently the transition rate from k to j ignoring o is",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Obtaining tensors from rates"
+        },
+        {
+            "text": "The constraints on the matrix elements of",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Obtaining tensors from rates"
+        },
+        {
+            "text": "and",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Obtaining tensors from rates"
+        },
+        {
+            "text": "is a transition rate matrix corresponding to a deterministic process (where we ignore the outcome, o). There is a subtlety in that the outcome, o, is something that happens over the course of the process and may not be complete at time t. This means that if, up to some time t \u2032 , we cannot distinguish whether o or o \u2032 is going to happen, then we should use a single transition matrix, Q o,o \u2032 (t), for times s \u2264 t < t \u2032 .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Obtaining tensors from rates"
+        },
+        {
+            "text": "We will now apply this to see how to calculate the tensors associated with operations. First, we can rewrite any operation as a sequence of sub-operations where each of these sub-operations has the same number of systems going in and out. We do this by partitioning (as in Sec. 10.3) every time an individual enters or leaves the venue. Note this will introduce extended hidden variables such as\u00e3 7 (as discussed in Sec. 11.7). For each operation having a fixed number of systems in and out we can solve the corresponding Kolmogorov forward equation. For example, consider calculating Such models would be essential for implementing the approach outlined in this paper.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Obtaining tensors from rates"
+        },
+        {
+            "text": "12 Using circuit techniques in counting app",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Obtaining tensors from rates"
+        },
+        {
+            "text": "When we do a calculation pertaining to an individual or venue we cannot expect to have a circuit or fragment representing the venue visits of all the people in the entire community. Thus we need to use the biggest available fragment (BAF) to perform our calculations. How big a fragment can be is limited by (i) privacy issues, (ii) computational issues (iii) temporal issues. Privacy is a factor because who visits where and with whom is clearly sensitive information individuals may want to keep private both from government and from other people. There is a need to consider the extent to which this information can be encrypted while still allowing the necessary calculations to be performed. Computational issues are significant because the tensors discussed here contain a significant amount of information and this may limit the size of fragments for which calculations can be efficiently performed. Temporal issues are important because calculations at a given time can only use information available at that time. Given a BAF, how do we calculate a probability? There are two approaches. The first approach is where we close the fragment into a circuit using standard preparations, ignore results (as discussed in Sec. 11.5), and ontological results. The second approach is to use the machinery of formalism locality whereby we look to see if the tensors associated with different fragments are proportional.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Biggest available fragment"
+        },
+        {
+            "text": "For details on this second approach see [19] . Here I will discuss the first approach. Consider the fragment ",
+            "cite_spans": [
+                {
+                    "start": 40,
+                    "end": 44,
+                    "text": "[19]",
+                    "ref_id": "BIBREF17"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Biggest available fragment"
+        },
+        {
+            "text": "Now we can calculate the probability for this circuit by replacing each operation with the corresponding tensor.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Biggest available fragment"
+        },
+        {
+            "text": "In Sec. 6 we described various probabilities and points costs we are interested in calculating. The circuit methods described in this part of the paper can be used to calculate these. To calculate the points cost for a visit to a venue we find the biggest available fragment and calculate the increase in probability of infection between the start and the end of this visit (from which the points cost can be calculated by dividing by p points ). Let x \uf734\uf732 ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Calculating probabilities and points"
+        },
+        {
+            "text": "Of course, in practise, we would be using much bigger fragments. We calculate the probabilities discussed in Sec. 6 by substituting the appropriate operation for the venue in question. For the example above of a visit by individual 14 to venue 97 we work as follows.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Calculating probabilities and points"
+        },
+        {
+            "text": "Predicted cost. For the predicted cost we substitute y 97 a 26 a 14 a 14 y 97 a 26 pred into the expression for \u2206p. The \"pred\" flag indicates that we should use an operation describing the anticipated behaviour at the venue. One question is what assumptions we should make in this calculation about the other visitor (labeled as 26) to this venue. There are various possibilities. First, they may be somebody who is known in advance (for example, somebody who works at the venue, or a previously confirmed visitor). In this case it is reasonable to use R a26 as an input into this operation. We may have even more knowledge about this person that could be expressed through a bigger BAF. Second, the slot that 26 occupies may not have been filled yet -so they are an unknown person. In this case we should use an input to this node that reflects this (and takes into account the admissions policy of the venue).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Calculating probabilities and points"
+        },
+        {
+            "text": "Actual cost. When the actual visit has taken place we can use an operation that describes the actual behaviour at the venue.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Calculating probabilities and points"
+        },
+        {
+            "text": "y 97 a 26 a 14 a 14 y 97 a 26",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Calculating probabilities and points"
+        },
+        {
+            "text": "Now we can input more information about the other visitors to the venue. Ideally, this calculation will not yield a significantly bigger probability than the predicted calculation unless the actual behaviour of individual 26 is very different. It is preferable for the behavioural reasons discussed in Sec. 6 not to charge individuals more points on account of matters that are beyond their control. To deal with these issues, we could charge individual 14 points corresponding to the minimum of the \u2206p predicted (though recalculated with individual 14's actual behaviour) and \u2206p actual calculated using all the actual behaviours.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Calculating probabilities and points"
+        },
+        {
+            "text": "Fine-grained probability. The app is proposed to provide regular updating on the actual probability of infection based on the best information available. This will take into account Bluetooth information, symptoms reporting, test results of the given individual and others. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Calculating probabilities and points"
+        },
+        {
+            "text": "Updated probability. As new information becomes available, this can be incorporated into the calculation for the fine-grained probability possibly in the form of a bigger BAF with more information included on it.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Calculating probabilities and points"
+        },
+        {
+            "text": "Governments have resorted to physical distancing [43] as the main tool to limit the spread of COVID-19. As currently implemented it is a rather blunt tool consisting of general advice and directives to the entire population. Physical distancing brings its own considerable risks however. First, it is not mentally healthy for people to be isolated from friends and taken out of their regular habits. With such large numbers of people affected, this could take its own toll [40] . Second, it impedes the regular functioning of society. This affects the provision of essential services during the crisis itself. It also affects the longer term economic health of society with potential knock-on effects that may be enormous in the fullness of time [10, 37, 28] . When these considerations are taken into account, the total death toll of too strong a physical distancing policy could be comparable to that due to COVID-19. There is a need, then, to enable people to find way for people to interact to as great an extent as possible while stemming the spread of the disease. In this paper I have described a way for people to make decisions in an epidemic to reduce their exposure and that of others. There are many challenges on the way to implementing this idea.",
+            "cite_spans": [
+                {
+                    "start": 49,
+                    "end": 53,
+                    "text": "[43]",
+                    "ref_id": "BIBREF41"
+                },
+                {
+                    "start": 473,
+                    "end": 477,
+                    "text": "[40]",
+                    "ref_id": "BIBREF38"
+                },
+                {
+                    "start": 746,
+                    "end": 750,
+                    "text": "[10,",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 751,
+                    "end": 754,
+                    "text": "37,",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 755,
+                    "end": 758,
+                    "text": "28]",
+                    "ref_id": "BIBREF26"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Remarks and further challenges"
+        },
+        {
+            "text": "Apps that solely implement contact tracing rely on the uptake to be very large before there is a significant benefit to individuals using the app. This may not be the case for apps that enable upfront decisions such as the present proposal since then these individuals are enabled with a means to participate in actively avoiding infection for themselves and others rather than present themselves as \"sitting ducks\" for infection. There is a role for large scale simulations to prove that the points counting approach proposed here would work. There are various questions we could ask. Consider the case where some fraction, \u03b1, of people and some fraction, \u03b2, of venues participate. (i) Is there an overall reduction in the spread of the disease for the whole population and how strongly does this depend on \u03b1 and \u03b2? (ii) Do the individual people participating significantly reduce their own chance of infection even when the fractions \u03b1 and \u03b2 are small? (iii) Do participating venues reduce their contribution to the spread of the disease even \u03b1 and \u03b2 are small? If the answer to (ii) is that the app is effective even when \u03b1 and \u03b2 are small then there is an immediate benefit to registering and this may encourage the registration drive.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Remarks and further challenges"
+        },
+        {
+            "text": "We would need to have in place a means to calculate the transition rate matrices described in Sec. 11.9 for different venues. This would be aided by physical models detailing how the disease spreads. In the context of COVID 19 there has been some research concerning the physical aspects of disease spread (for example, [26, 3, 11, 13] ). It would be necessary to adapt this research to enable us to calculate the transition rate matrices. The more sophisticated our models the more reliable they will be. However, even very primitive models (such as assuming a probability of infection function that depends on distance from an infected person and duration of exposure) would give us something to go on. There is the possibility of using machine learning techniques to improve these models over time. One way to use machine learning is to implement it to lean good points costings in the context of large scale simulations.",
+            "cite_spans": [
+                {
+                    "start": 218,
+                    "end": 226,
+                    "text": "COVID 19",
+                    "ref_id": null
+                },
+                {
+                    "start": 320,
+                    "end": 324,
+                    "text": "[26,",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 325,
+                    "end": 327,
+                    "text": "3,",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 328,
+                    "end": 331,
+                    "text": "11,",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 332,
+                    "end": 335,
+                    "text": "13]",
+                    "ref_id": "BIBREF11"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Remarks and further challenges"
+        },
+        {
+            "text": "An important challenge is to ensure that the calculations that have to be done are tractable in real time. It is worth investigating simpler models for calculating points costs (of the sort outlined in Appendix A) since these might be more tractable. As such, a simpler approach to implement the points counting ideas in this paper would be as a supplement to an existing contact tracing app.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Remarks and further challenges"
+        },
+        {
+            "text": "Implementation of an app like this would require management and governance structures. Setting these up goes beyond the kinds of mathematical questions discussed in this article but would be important for the practical success of such a proposal.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Remarks and further challenges"
+        },
+        {
+            "text": "There are serious ethical concerns [24] with any technology that tracks peoples movements and collects sensitive information, especially if government needs to be involved. To deal with these we need to (i) identify what the ethical issues are in any given proposal and (ii) find solutions where possible. Task (i) requires input from experts with practical experience in ethics and policy [44] while task (ii) is often dealt with through cryptography. There has been much work on cryptography for [16] for contact tracing apps and many of these ideas could be applied here also. The challenge would be to use cryptography could be applied to hide personal identifiers, circuit information, test results, and so on, while still allowing the necessary calculations to be performed. The probabilistic nature of the app would help provide cover for sensitive information. For example, somebody may get a self-isolate instruction because they have interacted with one person for a long time or because they have been in the vicinity of many people for a short time.",
+            "cite_spans": [
+                {
+                    "start": 35,
+                    "end": 39,
+                    "text": "[24]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 390,
+                    "end": 394,
+                    "text": "[44]",
+                    "ref_id": "BIBREF42"
+                },
+                {
+                    "start": 498,
+                    "end": 502,
+                    "text": "[16]",
+                    "ref_id": "BIBREF14"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Remarks and further challenges"
+        },
+        {
+            "text": "joined sufficiently recently that they may be contagious to Alice from the time before they started tracking. The cost, c 0 m , can be set to ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Remarks and further challenges"
+        },
+        {
+            "text": "We normalise by p point so we can work in terms of the user friendly points. An alternative approach would be to choose c 0 m to be much bigger than in (33) . This would reduce the users ability to visit venues for a period of time effectively allowing a cooling off period.",
+            "cite_spans": [
+                {
+                    "start": 152,
+                    "end": 156,
+                    "text": "(33)",
+                    "ref_id": "BIBREF31"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Remarks and further challenges"
+        },
+        {
+            "text": "A slightly more advanced approach is to substitute (32) for the weighted expressions",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Remarks and further challenges"
+        },
+        {
+            "text": "where the \u03b3's are a measure of how contagious person m during the visit to the cafe if they were infected during their earlier visit, j m , to some venue. This will depend what stage the disease is expected to have developed to in the interim. A fraction of the population will not use the app. In the case that such people can be identified and their behaviour modeled, they can be treated by allocating a value S m = kc(t) (35) to such individuals (as used in (31)) where the constant k is greater than or equal to 1 and c(t) is the fraction c(t) 1 p point upper estimate of number of people infected at time t population (36) This approach would treat individuals not using the app as presenting a greater risk than those that do. Some venues may only admit people who track using the app so they can keep the infection rate for their venue below a certain recommended value. In (32) we added costs. This is justified under certain circumstances. Consider an individual who goes to the cafe, then to the supermarket, then to the bank. Let the corresponding probabilities of infection for each of these stops be p 1 , p 2 , and p 3 respectively. If each of these three chances of infection are uncorrelated then the probability of not being infected is (1 \u2212 p 1 )(1 \u2212 p 2 )(1 \u2212 p 3 ). Hence Prob of infection = 1\u2212(1\u2212p 1 )(1\u2212p 2 )(1\u2212p 3 ) \u2248 p 1 +p 2 +p 3 for p 1 , p 2 , p 3 << 1 (37) This means there is a linear regime when probabilities are small and the risks are uncorrelated. If the probability of infection is large enough or if the situations are correlated then we cannot simply add probabilities. In this regime, the total cost associated with these activities total cost = c 1 + c 2 + c 3 where c i = p i p point (38) is approximately proportional to the probability of infection. We will provide a simple framework for calculating the probabilities p i so that costs can be calculated.",
+            "cite_spans": [
+                {
+                    "start": 425,
+                    "end": 429,
+                    "text": "(35)",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 624,
+                    "end": 628,
+                    "text": "(36)",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 1381,
+                    "end": 1385,
+                    "text": "(37)",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 1725,
+                    "end": 1729,
+                    "text": "(38)",
+                    "ref_id": "BIBREF36"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Remarks and further challenges"
+        },
+        {
+            "text": "The motivation for the approach here is that individual m is infected at some earlier time then there is a certain probability he will infect Alice and so we sum up all such probabilities -this being justified when these probabilities are small and uncorrelated. However, both these assumptions will break down. Probabilities will become big if somebody is showing symptoms or has a positive test result. Probabilities will necessarily become correlated through the complex pattern of interactions of people with each other One source of error in the formula (31) is double counting. For example, if Alice and Bob had met several days earlier in a restaurant then there would be a contribution to Bob's total, S 2 , from having met Alice. This, in turn, contributes to Alice's cost when she meets Bob at the cafe. This means we have a contribution for Alice infecting herself. If being infected with the disease infers immunity over the timescale we are looking at then this cannot happen. Either Alice is still infected in which case she cannot be reinfected. Or she is recovered in which case she cannot be reinfected. We could consider tweaking the above formulae to remove such contributions taking into account previous interactions. One way to tweak is to go back and look at each of the c jm m 's appearing in (32) (or (34) ) and see if the visit j m involved Alice. If it did, then the calculation of c jm m can be redone setting the appropriate \u03b2 v \u2032 u1um to zero where v \u2032 is the venue for visit j m . Call this redone (or tweaked) value c jm m 1 (where the 1 refers to Alice). We can then redo the calculations of S m using c jm m 1 instead of c jm m and obtain the tweaked value S m 1 . With these tweaked values of S m we obtain a tweaked value for c j1",
+            "cite_spans": [
+                {
+                    "start": 1326,
+                    "end": 1330,
+                    "text": "(34)",
+                    "ref_id": "BIBREF32"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Remarks and further challenges"
+        },
+        {
+            "text": "1 . These tweaked values should be used going forward.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Remarks and further challenges"
+        },
+        {
+            "text": "In the main text we considered a simplified way of ascribing hidden variables to individuals and venues. Here we consider a more sophisticated approach.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "B Appendix: Hidden variables"
+        },
+        {
+            "text": "The hidden variables, a n , associated with person n could detail the full biological configuration of that individual. However, for epidemiological purposes, it is sufficient that it only details those quantities that have a bearing on the given disease. So we can require that a n is sufficient to determine the following appropriately discretized internal quantities infected I(a n ) \u2208 S I = {0, 1, 2, . . . , L I } (39) contagiousness C(a n ) \u2208 S C = {0, 1, 2, . . . L C }",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "B Appendix: Hidden variables"
+        },
+        {
+            "text": "susceptibility S(a n ) \u2208 S S = {0, 1, 2, . . . L S } (41) symptoms s k (a n ) \u2208 S s k = {0, 1, 2 . . . L s k } k=1 to K",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "B Appendix: Hidden variables"
+        },
+        {
+            "text": "alive/dead A(a n ) \u2208 S A = {1, 0}",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "B Appendix: Hidden variables"
+        },
+        {
+            "text": "where, L I , L C , L S , and L s k are integers. To elucidate the above list a little, I(a n ) = 0 indicates that individual n is uninfected and higher integers indicate a greater level of infection, C(a n ) = 4 indicates the contagiousness level of n, and S k (a n ) = 3 indicates that individual n has the symptom k (for example, a cough) at level 3. We are taking a simplified approach here by assuming that C and S are each represented by a single number (and an integer at that) rather than being represented by a vector. A more detailed model might require that some of these quantities are modeled by vectors. For example, the degree of contagiousness of an individual might be different through different channels (coughing, sweat deposits, . . . ) and these different degrees of contagiousness could be represented by different components of a vector. Should the vectorial aspect of these quantities be essential in the modeling, we could easily adapt approach above so that each component of the vectors is discretized (indeed, we do this below for the contagiousness of a venue). We may want to include more quantities. For example, the quantity T (a n ), equal to the number of days since initial infection (set equal to \u22121 for the uninfected), might help modeling the development of the disease. We might also want to include quantities relating to traces that are detected in diagnostic tests for the disease. We can simply put a n \u2208 S I \u00d7 S C \u00d7 S S \u00d7 S s1 \u00d7 \u22c5 \u22c5 \u22c5 \u00d7 S s K \u00d7 S A",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "B Appendix: Hidden variables"
+        },
+        {
+            "text": "These quantities are related and consequently it may be possible to work with a more compressed version of the hidden variables.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "B Appendix: Hidden variables"
+        },
+        {
+            "text": "For an unregistered individual our modeling need only concern itself with whether they are contagious or not and so we can put b n \u2208 S C (45) for such people. The hidden variables for a venue may give a contagiousness level for each of the harboured sources (due to pathogen deposits on different surfaces, or lingering in the air). Let",
+            "cite_spans": [
+                {
+                    "start": 137,
+                    "end": 141,
+                    "text": "(45)",
+                    "ref_id": "BIBREF43"
+                }
+            ],
+            "ref_spans": [],
+            "section": "B Appendix: Hidden variables"
+        },
+        {
+            "text": "where l indicates the lth component (corresponding the lth harboured source).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "B Appendix: Hidden variables"
+        },
+        {
+            "text": "Then we can put",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "B Appendix: Hidden variables"
+        },
+        {
+            "text": "for the hidden variables (here \u2a09 l indicates the cartesian product over l).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "B Appendix: Hidden variables"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Introduction to machine learning",
+            "authors": [
+                {
+                    "first": "Ethem",
+                    "middle": [],
+                    "last": "Alpaydin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Could sars-cov-2 be transmitted via speech droplets? medRxiv",
+            "authors": [
+                {
+                    "first": "Philip",
+                    "middle": [],
+                    "last": "Anfinrud",
+                    "suffix": ""
+                },
+                {
+                    "first": "Christina",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Bax",
+                    "suffix": ""
+                },
+                {
+                    "first": "Valentyn",
+                    "middle": [],
+                    "last": "Stadnytskyi",
+                    "suffix": ""
+                },
+                {
+                    "first": "Adriaan",
+                    "middle": [],
+                    "last": "Bax",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Social network-based distancing strategies to flatten the covid-19 curve in a post-lockdown world",
+            "authors": [
+                {
+                    "first": "Per",
+                    "middle": [],
+                    "last": "Block",
+                    "suffix": ""
+                },
+                {
+                    "first": "Marion",
+                    "middle": [],
+                    "last": "Hoffman",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Isabel",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jennifer",
+                    "middle": [
+                        "Beam"
+                    ],
+                    "last": "Raabe",
+                    "suffix": ""
+                },
+                {
+                    "first": "Charles",
+                    "middle": [],
+                    "last": "Dowd",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ridhi",
+                    "middle": [],
+                    "last": "Rahal",
+                    "suffix": ""
+                },
+                {
+                    "first": "Melinda",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Kashyap",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Mills",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nature Human Behaviour",
+            "volume": "",
+            "issn": "",
+            "pages": "1--9",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Quantum circuit architecture",
+            "authors": [
+                {
+                    "first": "Giulio",
+                    "middle": [],
+                    "last": "Chiribella",
+                    "suffix": ""
+                },
+                {
+                    "first": "Mauro",
+                    "middle": [],
+                    "last": "Dariano",
+                    "suffix": ""
+                },
+                {
+                    "first": "Paolo",
+                    "middle": [],
+                    "last": "Perinotti",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Physical review letters",
+            "volume": "101",
+            "issn": "6",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Theoretical framework for quantum networks",
+            "authors": [
+                {
+                    "first": "Giulio",
+                    "middle": [],
+                    "last": "Chiribella",
+                    "suffix": ""
+                },
+                {
+                    "first": "Giacomo",
+                    "middle": [
+                        "Mauro"
+                    ],
+                    "last": "Dariano",
+                    "suffix": ""
+                },
+                {
+                    "first": "Paolo",
+                    "middle": [],
+                    "last": "Perinotti",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Physical Review A",
+            "volume": "80",
+            "issn": "2",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Probabilistic theories with purification",
+            "authors": [
+                {
+                    "first": "Giulio",
+                    "middle": [],
+                    "last": "Chiribella",
+                    "suffix": ""
+                },
+                {
+                    "first": "Giacomo",
+                    "middle": [
+                        "Mauro"
+                    ],
+                    "last": "Dariano",
+                    "suffix": ""
+                },
+                {
+                    "first": "Paolo",
+                    "middle": [],
+                    "last": "Perinotti",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Physical Review A",
+            "volume": "81",
+            "issn": "6",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Picturing quantum processes",
+            "authors": [
+                {
+                    "first": "Bob",
+                    "middle": [],
+                    "last": "Coecke",
+                    "suffix": ""
+                },
+                {
+                    "first": "Aleks",
+                    "middle": [],
+                    "last": "Kissinger",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Is there a statistical relationship between economic crises and changes in government health expenditure growth? an analysis of twenty-four european countries. Health services research",
+            "authors": [
+                {
+                    "first": "Jonathan",
+                    "middle": [],
+                    "last": "Cylus",
+                    "suffix": ""
+                },
+                {
+                    "first": "Philipa",
+                    "middle": [],
+                    "last": "Mladovsky",
+                    "suffix": ""
+                },
+                {
+                    "first": "Martin",
+                    "middle": [],
+                    "last": "Mckee",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "",
+            "volume": "47",
+            "issn": "",
+            "pages": "2204--2224",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Avoiding covid-19: Aerosol guidelines",
+            "authors": [
+                {
+                    "first": "Matthew",
+                    "middle": [],
+                    "last": "Evans",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "arXiv": [
+                    "arXiv:2005.10988"
+                ]
+            }
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Impact of nonpharmaceutical interventions (npis) to reduce covid-19 mortality and healthcare demand. London: Imperial College COVID-19 Response Team",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Neil",
+                    "suffix": ""
+                },
+                {
+                    "first": "Daniel",
+                    "middle": [],
+                    "last": "Ferguson",
+                    "suffix": ""
+                },
+                {
+                    "first": "Gemma",
+                    "middle": [],
+                    "last": "Laydon",
+                    "suffix": ""
+                },
+                {
+                    "first": "Natsuko",
+                    "middle": [],
+                    "last": "Nedjati-Gilani",
+                    "suffix": ""
+                },
+                {
+                    "first": "Kylie",
+                    "middle": [],
+                    "last": "Imai",
+                    "suffix": ""
+                },
+                {
+                    "first": "Marc",
+                    "middle": [],
+                    "last": "Ainslie",
+                    "suffix": ""
+                },
+                {
+                    "first": "Sangeeta",
+                    "middle": [],
+                    "last": "Baguelin",
+                    "suffix": ""
+                },
+                {
+                    "first": "Adhiratha",
+                    "middle": [],
+                    "last": "Bhatia",
+                    "suffix": ""
+                },
+                {
+                    "first": "Zulma",
+                    "middle": [],
+                    "last": "Boonyasiri",
+                    "suffix": ""
+                },
+                {
+                    "first": "Gina",
+                    "middle": [],
+                    "last": "Cucunub\u00e1",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Cuomo-Dannenburg",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Covid-19 surface persistence: A recent data summary and its importance for medical and dental settings",
+            "authors": [
+                {
+                    "first": "Luca",
+                    "middle": [],
+                    "last": "Fiorillo",
+                    "suffix": ""
+                },
+                {
+                    "first": "Gabriele",
+                    "middle": [],
+                    "last": "Cervino",
+                    "suffix": ""
+                },
+                {
+                    "first": "Marco",
+                    "middle": [],
+                    "last": "Matarese",
+                    "suffix": ""
+                },
+                {
+                    "first": "Cesare",
+                    "middle": [],
+                    "last": "Damico",
+                    "suffix": ""
+                },
+                {
+                    "first": "Giovanni",
+                    "middle": [],
+                    "last": "Surace",
+                    "suffix": ""
+                },
+                {
+                    "first": "Valeria",
+                    "middle": [],
+                    "last": "Paduano",
+                    "suffix": ""
+                },
+                {
+                    "first": "Maria",
+                    "middle": [
+                        "Teresa"
+                    ],
+                    "last": "Fiorillo",
+                    "suffix": ""
+                },
+                {
+                    "first": "Antonio",
+                    "middle": [],
+                    "last": "Moschella",
+                    "suffix": ""
+                },
+                {
+                    "first": "Alessia",
+                    "middle": [
+                        "La"
+                    ],
+                    "last": "Bruna",
+                    "suffix": ""
+                },
+                {
+                    "first": "Giovanni",
+                    "middle": [
+                        "Luca"
+                    ],
+                    "last": "Romano",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "International Journal of Environmental Research and Public Health",
+            "volume": "17",
+            "issn": "9",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Digital tools against covid-19: Framing the ethical challenges and how to address them",
+            "authors": [
+                {
+                    "first": "Urs",
+                    "middle": [],
+                    "last": "Gasser",
+                    "suffix": ""
+                },
+                {
+                    "first": "Marcello",
+                    "middle": [],
+                    "last": "Ienca",
+                    "suffix": ""
+                },
+                {
+                    "first": "James",
+                    "middle": [],
+                    "last": "Scheibner",
+                    "suffix": ""
+                },
+                {
+                    "first": "Joanna",
+                    "middle": [],
+                    "last": "Sleigh",
+                    "suffix": ""
+                },
+                {
+                    "first": "Effy",
+                    "middle": [],
+                    "last": "Vayena",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "arXiv": [
+                    "arXiv:2004.10236"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Deep Learning",
+            "authors": [
+                {
+                    "first": "Ian",
+                    "middle": [],
+                    "last": "Goodfellow",
+                    "suffix": ""
+                },
+                {
+                    "first": "Yoshua",
+                    "middle": [],
+                    "last": "Bengio",
+                    "suffix": ""
+                },
+                {
+                    "first": "Aaron",
+                    "middle": [],
+                    "last": "Courville",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Privacy-preserving contact tracing",
+            "authors": [
+                {
+                    "first": "Apple",
+                    "middle": [],
+                    "last": "Google",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Individual-based modeling and ecology",
+            "authors": [
+                {
+                    "first": "Volker",
+                    "middle": [],
+                    "last": "Grimm",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Steven F Railsback",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "",
+            "volume": "8",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Operational general relativity: Possibilistic, probabilistic, and quantum",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Hardy",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "arXiv": [
+                    "arXiv:1608.06940"
+                ]
+            }
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "A formalism-local framework for general probabilistic theories, including quantum theory",
+            "authors": [
+                {
+                    "first": "Lucien",
+                    "middle": [],
+                    "last": "Hardy",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Mathematical Structures in Computer Science",
+            "volume": "23",
+            "issn": "2",
+            "pages": "399--440",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "On the theory of composition in physics",
+            "authors": [
+                {
+                    "first": "Lucien",
+                    "middle": [],
+                    "last": "Hardy",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Computation, logic, games, and quantum foundations",
+            "volume": "",
+            "issn": "",
+            "pages": "83--106",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "The construction interpretation",
+            "authors": [
+                {
+                    "first": "Lucien",
+                    "middle": [],
+                    "last": "Hardy",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Conceptual roads to quantum gravity",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "arXiv": [
+                    "arXiv:1807.10980"
+                ]
+            }
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Holography of wi-fi radiation",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Philipp",
+                    "suffix": ""
+                },
+                {
+                    "first": "Friedemann",
+                    "middle": [],
+                    "last": "Holl",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Reinhard",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Physical review letters",
+            "volume": "118",
+            "issn": "18",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Contact tracing and epidemics control in social networks",
+            "authors": [
+                {
+                    "first": "Ramon",
+                    "middle": [],
+                    "last": "Huerta",
+                    "suffix": ""
+                },
+                {
+                    "first": "Lev",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Tsimring",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "Physical Review E",
+            "volume": "66",
+            "issn": "5",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Joint civil society statement: States use of digital surveillance technologies to fight pandemic must respect human rights",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Phones could track the spread of covid-19",
+            "authors": [
+                {
+                    "first": "Will",
+                    "middle": [],
+                    "last": "Knight",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Droplet evaporation residue indicating sars-cov-2 survivability on surfaces",
+            "authors": [
+                {
+                    "first": "Siyao",
+                    "middle": [],
+                    "last": "S Santosh Kumar",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jiaqi",
+                    "middle": [],
+                    "last": "Shao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Zilong",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jiarong",
+                    "middle": [],
+                    "last": "He",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Hong",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "arXiv": [
+                    "arXiv:2005.12262"
+                ]
+            }
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Towards a formulation of quantum theory as a causally neutral theory of bayesian inference",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Matthew",
+                    "suffix": ""
+                },
+                {
+                    "first": "Robert",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Leifer",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Spekkens",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Physical Review A",
+            "volume": "88",
+            "issn": "5",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "How large was the mortality increase directly and indirectly caused by the covid-19 epidemic? an analysis on all-causes mortality data in italy",
+            "authors": [
+                {
+                    "first": "Corrado",
+                    "middle": [],
+                    "last": "Magnani",
+                    "suffix": ""
+                },
+                {
+                    "first": "Danila",
+                    "middle": [],
+                    "last": "Azzolina",
+                    "suffix": ""
+                },
+                {
+                    "first": "Elisa",
+                    "middle": [],
+                    "last": "Gallo",
+                    "suffix": ""
+                },
+                {
+                    "first": "Daniela",
+                    "middle": [],
+                    "last": "Ferrante",
+                    "suffix": ""
+                },
+                {
+                    "first": "Dario",
+                    "middle": [],
+                    "last": "Gregori",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "International Journal of Environmental Research and Public Health",
+            "volume": "17",
+            "issn": "10",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Neural networks and deep learning",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Michael",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Nielsen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Quantum correlations with no causal order",
+            "authors": [
+                {
+                    "first": "Ognyan",
+                    "middle": [],
+                    "last": "Oreshkov",
+                    "suffix": ""
+                },
+                {
+                    "first": "Fabio",
+                    "middle": [],
+                    "last": "Costa",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Brukner",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Nature communications",
+            "volume": "3",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Applications of negative dimensional tensors",
+            "authors": [
+                {
+                    "first": "Roger",
+                    "middle": [],
+                    "last": "Penrose",
+                    "suffix": ""
+                }
+            ],
+            "year": 1971,
+            "venue": "Combinatorial mathematics and its applications",
+            "volume": "1",
+            "issn": "",
+            "pages": "221--244",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "A decision support system for optimizing the cost of social distancing in order to stop the spread of covid-19",
+            "authors": [
+                {
+                    "first": "Alexandru",
+                    "middle": [],
+                    "last": "Popa",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "arXiv": [
+                    "arXiv:2004.02807"
+                ]
+            }
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Apps gone rogue: Maintaining personal privacy in an epidemic",
+            "authors": [
+                {
+                    "first": "Ramesh",
+                    "middle": [],
+                    "last": "Raskar",
+                    "suffix": ""
+                },
+                {
+                    "first": "Isabel",
+                    "middle": [],
+                    "last": "Schunemann",
+                    "suffix": ""
+                },
+                {
+                    "first": "Rachel",
+                    "middle": [],
+                    "last": "Barbar",
+                    "suffix": ""
+                },
+                {
+                    "first": "Kristen",
+                    "middle": [],
+                    "last": "Vilcans",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jim",
+                    "middle": [],
+                    "last": "Gray",
+                    "suffix": ""
+                },
+                {
+                    "first": "Praneeth",
+                    "middle": [],
+                    "last": "Vepakomma",
+                    "suffix": ""
+                },
+                {
+                    "first": "Suraj",
+                    "middle": [],
+                    "last": "Kapa",
+                    "suffix": ""
+                },
+                {
+                    "first": "Andrea",
+                    "middle": [],
+                    "last": "Nuzzo",
+                    "suffix": ""
+                },
+                {
+                    "first": "Rajiv",
+                    "middle": [],
+                    "last": "Gupta",
+                    "suffix": ""
+                },
+                {
+                    "first": "Alex",
+                    "middle": [],
+                    "last": "Berke",
+                    "suffix": ""
+                },
+                {
+                    "first": "Dazza",
+                    "middle": [],
+                    "last": "Greenwood",
+                    "suffix": ""
+                },
+                {
+                    "first": "Christian",
+                    "middle": [],
+                    "last": "Keegan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Shriank",
+                    "middle": [],
+                    "last": "Kanaparti",
+                    "suffix": ""
+                },
+                {
+                    "first": "Robson",
+                    "middle": [],
+                    "last": "Beaudry",
+                    "suffix": ""
+                },
+                {
+                    "first": "David",
+                    "middle": [],
+                    "last": "Stansbury",
+                    "suffix": ""
+                },
+                {
+                    "first": "Beatriz",
+                    "middle": [],
+                    "last": "Botero Arcila",
+                    "suffix": ""
+                },
+                {
+                    "first": "Rishank",
+                    "middle": [],
+                    "last": "Kanaparti",
+                    "suffix": ""
+                },
+                {
+                    "first": "Vitor",
+                    "middle": [],
+                    "last": "Pamplona",
+                    "suffix": ""
+                },
+                {
+                    "first": "Francesco",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Benedetti",
+                    "suffix": ""
+                },
+                {
+                    "first": "Alina",
+                    "middle": [],
+                    "last": "Clough",
+                    "suffix": ""
+                },
+                {
+                    "first": "Riddhiman",
+                    "middle": [],
+                    "last": "Das",
+                    "suffix": ""
+                },
+                {
+                    "first": "Kaushal",
+                    "middle": [],
+                    "last": "Jain",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "arXiv": [
+                    "arXiv:2003.08567"
+                ]
+            }
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Modelling collective motion based on the principle of agency: General framework and the case of marching locusts",
+            "authors": [
+                {
+                    "first": "Katja",
+                    "middle": [],
+                    "last": "Ried",
+                    "suffix": ""
+                },
+                {
+                    "first": "Thomas",
+                    "middle": [],
+                    "last": "M\u00fcller",
+                    "suffix": ""
+                },
+                {
+                    "first": "Hans",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Briegel",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "PloS one",
+            "volume": "14",
+            "issn": "2",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Early estimates of the indirect effects of the covid-19 pandemic on maternal and child mortality in low-income and middle-income countries: a modelling study. The Lancet Global Health",
+            "authors": [
+                {
+                    "first": "Timothy",
+                    "middle": [],
+                    "last": "Roberton",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Emily",
+                    "suffix": ""
+                },
+                {
+                    "first": "Victoria",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Carter",
+                    "suffix": ""
+                },
+                {
+                    "first": "Angela",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Chou",
+                    "suffix": ""
+                },
+                {
+                    "first": "Bianca",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Stegmuller",
+                    "suffix": ""
+                },
+                {
+                    "first": "Yvonne",
+                    "middle": [],
+                    "last": "Jackson",
+                    "suffix": ""
+                },
+                {
+                    "first": "Talata",
+                    "middle": [],
+                    "last": "Tam",
+                    "suffix": ""
+                },
+                {
+                    "first": "Neff",
+                    "middle": [],
+                    "last": "Sawadogo-Lewis",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Walker",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Risk estimation of sars-cov-2 transmission from bluetooth low energy measurements",
+            "authors": [
+                {
+                    "first": "Felix",
+                    "middle": [],
+                    "last": "Sattler",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jackie",
+                    "middle": [],
+                    "last": "Ma",
+                    "suffix": ""
+                },
+                {
+                    "first": "Patrick",
+                    "middle": [],
+                    "last": "Wagner",
+                    "suffix": ""
+                },
+                {
+                    "first": "David",
+                    "middle": [],
+                    "last": "Neumann",
+                    "suffix": ""
+                },
+                {
+                    "first": "Markus",
+                    "middle": [],
+                    "last": "Wenzel",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ralf",
+                    "middle": [],
+                    "last": "Sch\u00e4fer",
+                    "suffix": ""
+                },
+                {
+                    "first": "Wojciech",
+                    "middle": [],
+                    "last": "Samek",
+                    "suffix": ""
+                },
+                {
+                    "first": "Klaus-Robert",
+                    "middle": [],
+                    "last": "M\u00fcller",
+                    "suffix": ""
+                },
+                {
+                    "first": "Thomas",
+                    "middle": [],
+                    "last": "Wiegand",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "arXiv": [
+                    "arXiv:2004.11841"
+                ]
+            }
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "An introduction to Markov processes",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Daniel",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Stroock",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "",
+            "volume": "230",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "The role of social isolation in suicide",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Deborah",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Trout",
+                    "suffix": ""
+                }
+            ],
+            "year": 1980,
+            "venue": "Suicide and Life-Threatening Behavior",
+            "volume": "10",
+            "issn": "1",
+            "pages": "10--23",
+            "other_ids": {}
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "Google may help uk officials track coronavirus social distancing",
+            "authors": [
+                {
+                    "first": "Adam",
+                    "middle": [],
+                    "last": "Vaughan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Shopify volunteers",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "Isolation, quarantine, social distancing and community containment: pivotal role for old-style public health measures in the novel coronavirus (2019-ncov) outbreak",
+            "authors": [
+                {
+                    "first": "-",
+                    "middle": [],
+                    "last": "Wilder",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Smith",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Freedman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Journal of travel medicine",
+            "volume": "27",
+            "issn": "2",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "Ethics and public policy: a philosophical inquiry",
+            "authors": [
+                {
+                    "first": "Jonathan",
+                    "middle": [],
+                    "last": "Wolff",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "Social distancing as a network population game in a socially connected world",
+            "authors": [
+                {
+                    "first": "Zhijun",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "arXiv": [
+                    "arXiv:2005.12506"
+                ]
+            }
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "Through-wall human pose estimation using radio signals",
+            "authors": [
+                {
+                    "first": "Mingmin",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Tianhong",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Mohammad",
+                    "middle": [],
+                    "last": "Abu Alsheikh",
+                    "suffix": ""
+                },
+                {
+                    "first": "Yonglong",
+                    "middle": [],
+                    "last": "Tian",
+                    "suffix": ""
+                },
+                {
+                    "first": "Hang",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Antonio",
+                    "middle": [],
+                    "last": "Torralba",
+                    "suffix": ""
+                },
+                {
+                    "first": "Dina",
+                    "middle": [],
+                    "last": "Katabi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition",
+            "volume": "",
+            "issn": "",
+            "pages": "7356--7365",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF3": {
+            "text": "Proc 3 and Proc 1 being performed. The vertical height of the flag indicates when the procedure is performed. The direction of the arrows indicates that these are settings (choices).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "7 reporting that they have symptom S 1 at level 2 and individual 23 reporting a negative test result for test T . The direction of the arrows indicate that these are outcomes.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF6": {
+            "text": "on the left is the preparation of a 14 in the hidden variable state a 14 .",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF10": {
+            "text": "time t = T to T \u2032 . Let the tensor associated with the operation up to time t (where T \u2264 t \u2264 T \u2032 down a Q matrix we need a model for the spread of the disease in the given venue. This matrix would encode 1. Direct transmission of the disease from one individual to another, 2. Indirect transmission of the disease whereby an individual deposits pathogens at the venue and then these infect another individual, 3. The development of the disease in a given individual once they are infected and the decay of pathogen deposits at venues.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF11": {
+            "text": "O 1 = 0 if an individual is not infected and O 1 = 1 if they are infected. For example, for individual 14 we can calculate the increase in probability of infection on visiting venue 97 as \u2206p =",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF12": {
+            "text": "of number of people infected when m joins population",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF3": {
+            "text": ".10. In general, there will be open wires. It is useful to distinguish the following special cases Circuits. If there are no open wires then we have a circuit. Fragment. If we have open wires then we have a fragment (we can think of this as a fragment of a circuit). Results. If we have only past pointing open wires then we have a result.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF5": {
+            "text": "P[\uf731\uf734] P[\uf737] P[\uf733\uf739]",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF12": {
+            "text": "We would typically expect much bigger fragments in real examples. This fragment has a number of open wires. We can close all these wires using the most appropriate box obtaining a circuit as follows.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF15": {
+            "text": "To calculate this we need to use an operation with any such information available recorded on it. For example,",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "I am grateful to Zivy Hardy both for a comment that inspired this idea and also for proof-reading and comments on an earlier version of this article. I am also grateful to Scott McPhee for discussions.Research at Perimeter Institute is supported in part by the Government of Canada through the Department of Innovation, Science and Economic Development Canada and by the Province of Ontario through the Ministry of Colleges and Universities.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Acknowledgements"
+        },
+        {
+            "text": "We can set up a simplified way to calculate points as illustrated here. Let Alice have n = 1 and Bob have n = 2. Let c jn n be the cost to person n for their j n th visit to a venue since they started tracking. In the simplified approach to calculating the cost for Alice for this cafe lunch with Bob is as followswhere the visit to the cafe is her j 1 th visit to a venue, \u2206t 1 is the duration of Alice's visit, and where V v is the set of all visitors except Alice either present during Alice's visit or who have visited sufficiently recently that they may have left pathogen deposits there that are still active during Alice's visit. The set V v includes Bob and the people working at the cafe. Also, we defineis the sum of the costs of previous visits to venues that individual m made during such a time that they may have been infected and now be infectious (to Alice). The label, u m , indicates the behaviour of individual m at the cafe (such as sitting at table number 4 from 1pm to 1:30pm). The coefficients \u03b2 v u1um are weighted according to the risks posed at venue v to Alice. These coefficients will depend on various factors such as the layout of the cafe, how well ventilated it is, and cleaning procedures.The calculation for the cost for Alice in (31) includes a contribution, \u03b2 v u1u2 S m , from her interaction with Bob. Since Bob will be sitting at the same table, the \u03b2 v u1um coefficient is likely bigger than the contributions from other people at the cafe and so Alice will care more about S 2 for Bob.When user m first begins using the app there is some probability going in that they have the disease. We represent this assuming that they have already accrued a certain cost, c 0 m . This cost is included in the sum in (32) if they have",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Appendices A Simplified calculation of points"
+        }
+    ]
+}

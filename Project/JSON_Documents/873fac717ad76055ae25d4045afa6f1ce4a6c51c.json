@@ -1,0 +1,4518 @@
+{
+    "paper_id": "873fac717ad76055ae25d4045afa6f1ce4a6c51c",
+    "metadata": {
+        "title": "Dynamics of B-cell repertoires and emergence of cross-reactive responses in COVID-19 patients with different disease severity",
+        "authors": [
+            {
+                "first": "Zachary",
+                "middle": [],
+                "last": "Montague",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Washington",
+                    "location": {
+                        "addrLine": "3910 15th Ave Northeast",
+                        "postCode": "98195",
+                        "settlement": "Seattle",
+                        "region": "WA",
+                        "country": "USA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Huibin",
+                "middle": [],
+                "last": "Lv",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Li Ka Shing",
+                    "institution": "The University of Hong Kong",
+                    "location": {
+                        "settlement": "Hong Kong SAR",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Jakub",
+                "middle": [],
+                "last": "Otwinowski",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "William",
+                "middle": [
+                    "S"
+                ],
+                "last": "Dewitt",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Washington",
+                    "location": {
+                        "addrLine": "3720 15th Ave NE",
+                        "postCode": "98195",
+                        "settlement": "Seattle",
+                        "region": "WA",
+                        "country": "USA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Giulio",
+                "middle": [],
+                "last": "Isacchini",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Garrick",
+                "middle": [
+                    "K"
+                ],
+                "last": "Yip",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Li Ka Shing",
+                    "institution": "The University of Hong Kong",
+                    "location": {
+                        "settlement": "Hong Kong SAR",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Wilson",
+                "middle": [
+                    "W"
+                ],
+                "last": "Ng",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Li Ka Shing",
+                    "institution": "The University of Hong Kong",
+                    "location": {
+                        "settlement": "Hong Kong SAR",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Owen",
+                "middle": [],
+                "last": "Tak",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Yin",
+                "middle": [],
+                "last": "Tsang",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Hospital Authority of Hong Kong",
+                    "location": {}
+                },
+                "email": ""
+            },
+            {
+                "first": "Meng",
+                "middle": [],
+                "last": "Yuan",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "The Scripps Research Institute",
+                    "location": {
+                        "postCode": "92037",
+                        "settlement": "La Jolla",
+                        "region": "CA",
+                        "country": "USA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Hejun",
+                "middle": [],
+                "last": "Liu",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "The Scripps Research Institute",
+                    "location": {
+                        "postCode": "92037",
+                        "settlement": "La Jolla",
+                        "region": "CA",
+                        "country": "USA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Ian",
+                "middle": [
+                    "A"
+                ],
+                "last": "Wilson",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "The Scripps Research Institute",
+                    "location": {
+                        "postCode": "92037",
+                        "settlement": "La Jolla",
+                        "region": "CA",
+                        "country": "USA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "J",
+                "middle": [
+                    "S Malik"
+                ],
+                "last": "Peiris",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Li Ka Shing",
+                    "institution": "The University of Hong Kong",
+                    "location": {
+                        "settlement": "Hong Kong SAR",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Nicholas",
+                "middle": [
+                    "C"
+                ],
+                "last": "Wu",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "The Scripps Research Institute",
+                    "location": {
+                        "postCode": "92037",
+                        "settlement": "La Jolla",
+                        "region": "CA",
+                        "country": "USA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Armita",
+                "middle": [],
+                "last": "Nourmohammad",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Washington",
+                    "location": {
+                        "addrLine": "3910 15th Ave Northeast",
+                        "postCode": "98195",
+                        "settlement": "Seattle",
+                        "region": "WA",
+                        "country": "USA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Chris",
+                "middle": [],
+                "last": "Ka",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Pun",
+                "middle": [],
+                "last": "Mok",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Li Ka Shing",
+                    "institution": "The University of Hong Kong",
+                    "location": {
+                        "settlement": "Hong Kong SAR",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "COVID-19 patients show varying severity of the disease ranging from asymptomatic to requiring intensive care. Although a number of monoclonal antibodies against SARS-CoV-2 have been identified, we still lack an understanding of the overall landscape of B-cell receptor (BCR) repertoires in COVID-19 patients. Here, we used high-throughput sequencing of BCR repertoires collected over multiple time points during an infection to characterize statistical and dynamical signatures of the Bcell response to SARS-CoV-2 in 19 patients with different disease severities. Based on principled statistical approaches, we determined differential sequence features of BCRs associated with different disease severity. We identified 34 significantly expanded rare clonal lineages shared among patients as candidates for a specific response to SARS-CoV-2. Moreover, we identified natural emergence of a BCR with cross-reactivity to SARS-CoV and SARS-CoV-2 in a number of patients. Overall, our results provide important insights for development of rational therapies and vaccines against COVID-19.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "The novel coronavirus SARS-CoV-2, which causes the severe respiratory disease COVID-19, has now spread to 216 countries and caused more than ten million infections with a mortality rate around 5% (WHO, 2020) . COVID-19 patients show varying disease severity ranging from asymptomatic to requiring intensive care. While epidemiological and clinical data report that many factors such as age, gender, genetic background, and preexisting conditions are associated with disease severity, host immunity against the virus infection is the crucial component of controlling disease progression (Ellinghaus et al., 2020; Guan et al., 2020; McKechnie and Blish, 2020; Vabret et al., 2020; Wu et al., 2020a) . Shedding light on signatures of a protective immune response against SARS-CoV-2 infections can help understand the nature of COVID-19 and guide the therapeutic developments as well as vaccine design and assessment.",
+            "cite_spans": [
+                {
+                    "start": 196,
+                    "end": 207,
+                    "text": "(WHO, 2020)",
+                    "ref_id": null
+                },
+                {
+                    "start": 586,
+                    "end": 611,
+                    "text": "(Ellinghaus et al., 2020;",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 612,
+                    "end": 630,
+                    "text": "Guan et al., 2020;",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 631,
+                    "end": 657,
+                    "text": "McKechnie and Blish, 2020;",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 658,
+                    "end": 678,
+                    "text": "Vabret et al., 2020;",
+                    "ref_id": "BIBREF54"
+                },
+                {
+                    "start": 679,
+                    "end": 696,
+                    "text": "Wu et al., 2020a)",
+                    "ref_id": "BIBREF57"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Adaptive immunity is considered as one of the core protective mechanisms in humans against infectious diseases. A vast diversity of surface receptors on B-and T-cells enables us to recognize and counter new or repeated invasions from a multitude of pathogens (Janeway et al., 2005; Nielsen and Boyd, 2018) . In particular, antibodies produced by B-cells can provide long-lasting protection against specific pathogens through neutralization or other antibody-mediated immune mechanisms (Janeway et al., 2005) . During the early phase of an infection, antigens of a pathogen are recognized by a group of na\u00efve B-cells, which then undergo affinity maturation in a germinal center through somatic hypermutation and selection. The B-cell receptors (BCRs) of mature B-cells can strongly react to infecting antigens, resulting in B-cell stimulation, clonal expansion, and ultimately secretion of high affinity antibodies in the blood (Burnet, 1959; Burnet, 1960; Cyster and Allen, 2019) . The specificity of a BCR is determined by a number of features such as V-, (D-) or J-gene usage, length and sequence composition of the HCDR3 region. It has been found that SARS-CoV-2-specific IgG antibodies can be detected in plasma samples of COVID-19 patients starting from the first week after the onset of symptoms . These antibodies bind to different antigens including spike protein and nucleoprotein as well as other structural or non-structural proteins (Hachim et al., 2020) . In addition, multiple studies have isolated SARS-CoV-2-specific B-cells from COVID-19 patients and determined their germline origin (Brouwer et al., 2020; Cao et al., 2020; Chi et al., 2020; Ju et al., 2020; Robbiani et al., 2020; Rogers et al., 2020; Seydoux et al., 2020a; Seydoux et al., 2020b; Wu et al., 2020b; Zost et al., 2020) . However, we still lack a comprehensive view of the patients' entire BCR repertoires during SARS-CoV-2 infections.",
+            "cite_spans": [
+                {
+                    "start": 259,
+                    "end": 281,
+                    "text": "(Janeway et al., 2005;",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 282,
+                    "end": 305,
+                    "text": "Nielsen and Boyd, 2018)",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 485,
+                    "end": 507,
+                    "text": "(Janeway et al., 2005)",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 927,
+                    "end": 941,
+                    "text": "(Burnet, 1959;",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 942,
+                    "end": 955,
+                    "text": "Burnet, 1960;",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 956,
+                    "end": 979,
+                    "text": "Cyster and Allen, 2019)",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 1445,
+                    "end": 1466,
+                    "text": "(Hachim et al., 2020)",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 1601,
+                    "end": 1623,
+                    "text": "(Brouwer et al., 2020;",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 1624,
+                    "end": 1641,
+                    "text": "Cao et al., 2020;",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 1642,
+                    "end": 1659,
+                    "text": "Chi et al., 2020;",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 1660,
+                    "end": 1676,
+                    "text": "Ju et al., 2020;",
+                    "ref_id": null
+                },
+                {
+                    "start": 1677,
+                    "end": 1699,
+                    "text": "Robbiani et al., 2020;",
+                    "ref_id": "BIBREF43"
+                },
+                {
+                    "start": 1700,
+                    "end": 1720,
+                    "text": "Rogers et al., 2020;",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 1721,
+                    "end": 1743,
+                    "text": "Seydoux et al., 2020a;",
+                    "ref_id": null
+                },
+                {
+                    "start": 1744,
+                    "end": 1766,
+                    "text": "Seydoux et al., 2020b;",
+                    "ref_id": "BIBREF51"
+                },
+                {
+                    "start": 1767,
+                    "end": 1784,
+                    "text": "Wu et al., 2020b;",
+                    "ref_id": "BIBREF58"
+                },
+                {
+                    "start": 1785,
+                    "end": 1803,
+                    "text": "Zost et al., 2020)",
+                    "ref_id": "BIBREF60"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Antibody repertoire sequencing has advanced our understanding of the diversity of adaptive immune repertoires and their response to pathogens (Boyd et al., 2009; Georgiou et al., 2014; Kreer et al., 2020; Robins, 2013) . A few studies have performed BCR repertoire sequencing to characterize the statistical signatures of the immune response to SARS-CoV-2 (Galson et al., 2020; Nielsen et al., 2020; Schulthei\u00df et al., 2020) . However, these studies have limited data on the dynamics of BCR repertoires, which could otherwise provide significant insight into specific responses to the infection. In this study, we have established a principled statistical approach to study the statistics and dynamics of BCR repertoires and to characterize the immune responses in 19 COVID-19 patients with different disease severities. Importantly, by combining information from the statistics of sequence features in BCR repertoires, the expanding dynamics of clonal lineages during infection, and sharing of BCRs among COVID-19 patients, we identified 34 clonal lineages that are potential candidates for a response to SARS-CoV-2. Moreover, we identified cross-reactive responses to SARS-CoV in some of the COVID-19 patients and a natural emergence of a previously isolated SARS-reactive antibody (Pinto et al., 2020) in three patients.",
+            "cite_spans": [
+                {
+                    "start": 142,
+                    "end": 161,
+                    "text": "(Boyd et al., 2009;",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 162,
+                    "end": 184,
+                    "text": "Georgiou et al., 2014;",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 185,
+                    "end": 204,
+                    "text": "Kreer et al., 2020;",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 205,
+                    "end": 218,
+                    "text": "Robins, 2013)",
+                    "ref_id": "BIBREF44"
+                },
+                {
+                    "start": 356,
+                    "end": 377,
+                    "text": "(Galson et al., 2020;",
+                    "ref_id": null
+                },
+                {
+                    "start": 378,
+                    "end": 399,
+                    "text": "Nielsen et al., 2020;",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 400,
+                    "end": 424,
+                    "text": "Schulthei\u00df et al., 2020)",
+                    "ref_id": "BIBREF47"
+                },
+                {
+                    "start": 1284,
+                    "end": 1304,
+                    "text": "(Pinto et al., 2020)",
+                    "ref_id": "BIBREF39"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "We obtained total RNA from the PBMC isolated from 19 patients infected with SARS-CoV-2 and three healthy individuals (see Methods and Tables S1, S2 for details). The patients showed different severity of symptoms, forming three categories of infected cohorts: 2 patients with mild symptoms, 12 patients with moderate symptoms, and 5 patients with severe symptoms. Specimens from all patients, except patient 19, were collected over two or more time points during the course of the infection. The sampled time points for all patients are indicated in Fig. 1 and Tables S1. IgG heavy chains of B-cell repertoires were sequenced by next-generation sequencing, and the statistics of the collected BCR read data from each sample are shown in Table S1 . Statistical models were applied to analyze the length of the HCDR3 region, IGHV-or IGHJ-gene usage, and insertion/deletion patterns as well as the expansion of specific clonal lineages (Fig. 1 ).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 550,
+                    "end": 556,
+                    "text": "Fig. 1",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 737,
+                    "end": 745,
+                    "text": "Table S1",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 933,
+                    "end": 940,
+                    "text": "(Fig. 1",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "B-cell repertoires differ in receptor compositions across cohorts."
+        },
+        {
+            "text": "We first aimed to investigate whether cohorts with different disease severities can be distinguished by molecular features of their B-cell repertoires. Since sequence features of immune receptors (e.g. HCDR3 length, V-or J-gene usage, and insertion/deletion patterns) are often associated with their binding specificity, we used statistical methods to compare these features both at the level of clonal lineages, including the inferred receptor sequence of lineage progenitors (Figs. 2, S2), and unique sequences (Figs. S1, S2) in a repertoire. Lineage progenitors of IgG repertoires are closest to the ensemble of na\u00efve receptors in the periphery. Features of lineage progenitors reflect receptor characteristics that are necessary for activating and forming a clonal lineage in response to an infection. Statistics of unique sequences in a repertoire, on the other hand, contain information about the size of the circulating lineages. Importantly, these two statistical ensembles are relatively robust to PCR amplification biases that directly impact read abundances (see Methods for error correction and processing of sequence reads).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "B-cell repertoires differ in receptor compositions across cohorts."
+        },
+        {
+            "text": "IGHV genes cover a large part of pathogen-engaging regions of BCRs, including the three complementarity-determining regions HCDR1, HCDR2, and a portion of HCDR3. Therefore, we investigated if there are any differences in V-gene usage across cohorts, which may indicate preferences relevant for response to a particular pathogen. We found that the variation in V-gene usage among individuals within each cohort was far larger than differences among cohorts ( Fig. 2A) . Data from unique sequences also indicated large background amplitudes due to vast differences in the sizes of lineages within a repertoire (Fig. S1) . Similarly, IGHJ-gene usage was also comparable across different cohorts (Fig. S2 ). Our results suggest that the SARS-CoV-2 V-gene specific responses are highly individualized at the repertoire level.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 458,
+                    "end": 466,
+                    "text": "Fig. 2A)",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 608,
+                    "end": 617,
+                    "text": "(Fig. S1)",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 692,
+                    "end": 700,
+                    "text": "(Fig. S2",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "B-cell repertoires differ in receptor compositions across cohorts."
+        },
+        {
+            "text": "HCDR3 is part of the variable chain of B-cell receptors and is often a crucial region in determining specificity. Importantly, HCDR3 is highly variable in its sequence content and length due to insertion and deletion of sequence fragments at the VD and DJ junctions of the germline receptor. Therefore, differential characteristics of the HCDR3 sequence in BCR repertoires of different cohorts can signal preferences for sequence features specific to a class of antigens. We find that HCDR3s in COVID-19 patients with moderate and severe symptoms are significantly longer than in the healthy control, both at the level of clonal lineages (Fig. 2B ) and unique sequences in each repertoire (Fig. S1B) . The difference between HCDR3s length in healthy individuals and patients with mild symptoms is insignificant (p-values for significance of these deviations are given in the corresponding Figure  captions ). Recent studies have also identified propensity for longer HCDR3s in BCR repertoires of COVID-19 patients (Galson et al., 2020; Nielsen et al., 2020; Schulthei\u00df et al., 2020) . We find that the longer HCDR3 length in patients with moderate and severe symptoms is primarily due to insertion of larger sequence fragments and also shorter deletions at the VD junction (Figs. 2C-D, S1C-D). Interestingly, the insertion/deletion patterns at the DJ junctions did not show a substantial difference across cohorts ( Fig. S2C -F).",
+            "cite_spans": [
+                {
+                    "start": 1014,
+                    "end": 1035,
+                    "text": "(Galson et al., 2020;",
+                    "ref_id": null
+                },
+                {
+                    "start": 1036,
+                    "end": 1057,
+                    "text": "Nielsen et al., 2020;",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 1058,
+                    "end": 1082,
+                    "text": "Schulthei\u00df et al., 2020)",
+                    "ref_id": "BIBREF47"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 638,
+                    "end": 646,
+                    "text": "(Fig. 2B",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 689,
+                    "end": 699,
+                    "text": "(Fig. S1B)",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 889,
+                    "end": 905,
+                    "text": "Figure  captions",
+                    "ref_id": null
+                },
+                {
+                    "start": 1416,
+                    "end": 1424,
+                    "text": "Fig. S2C",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "B-cell repertoires differ in receptor compositions across cohorts."
+        },
+        {
+            "text": "Longer sequence insertions in HCDR3 can introduce more sequence diversity at the repertoire level. Quantifying sequence diversity of a B-cell repertoire, however, is very sensitive to the sampling depth in each individual. Despite progress in the quality of high-throughput repertoire sequencing (RepSeq) techniques, sequenced BCRs still present a highly under-sampled view of the entire repertoire. To characterize the diversity of repertoires and the statistics of sequence features that make up this diversity, we inferred principled models of repertoire generation and selection for the entry of receptors into the periphery (Methods) (Elhanati et al., 2014; Marcou et al., 2018) . To do so, we first used data from unproductive B-cell receptors to infer the highly non-uniform baseline model that characterizes the probability gen (\u03c3) to generate a given receptor sequence (Elhanati et al., 2014; Marcou et al., 2018) (Fig. 1 and Methods). This baseline model reflects sequence biases in generating BCRs in the bone marrow.",
+            "cite_spans": [
+                {
+                    "start": 639,
+                    "end": 662,
+                    "text": "(Elhanati et al., 2014;",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 663,
+                    "end": 683,
+                    "text": "Marcou et al., 2018)",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 878,
+                    "end": 901,
+                    "text": "(Elhanati et al., 2014;",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 902,
+                    "end": 922,
+                    "text": "Marcou et al., 2018)",
+                    "ref_id": "BIBREF32"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 923,
+                    "end": 930,
+                    "text": "(Fig. 1",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "B-cell repertoires differ in receptor compositions across cohorts."
+        },
+        {
+            "text": "The functional, yet pathogen-na\u00efve BCRs that enter the periphery experience selection through processes known as central tolerance (Janeway et al., 2005) . In addition, the inferred progenitors of clonal lineages in the IgG repertoire have undergone antigen-dependent selection that led to expansion of their clonal lineage in response to an infection. These two levels of selection make sequence features of functional lineage progenitors distinct from the pool of unproductive BCRs that reflects biases of the generation process prior to any selection. To identify these distinguishing sequence features, we inferred a selection model for lineage progenitors (Methods). We characterized the probability to observe a clonal lineage ancestor in the periphery as post (\u03c3) \u223c gen (\u03c3) ' (:features * ( (+) , which deviates from the inferred generation probability of the receptor gen (\u03c3) by selection factors . ( ) (Isacchini et al., 2020a; Isacchini et al., 2020b; Sethna et al., 2020) . These selection factors . ( ) depend on sequence features, including IGHV-gene and IGHJ-gene usages, HCDR3 length, and amino acid preferences at different positions in the HCDR3 (Methods) (Elhanati et al., 2014; Isacchini et al., 2020a; Isacchini et al., 2020b; Marcou et al., 2018; Sethna et al., 2020) .",
+            "cite_spans": [
+                {
+                    "start": 131,
+                    "end": 153,
+                    "text": "(Janeway et al., 2005)",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 911,
+                    "end": 936,
+                    "text": "(Isacchini et al., 2020a;",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 937,
+                    "end": 961,
+                    "text": "Isacchini et al., 2020b;",
+                    "ref_id": null
+                },
+                {
+                    "start": 962,
+                    "end": 982,
+                    "text": "Sethna et al., 2020)",
+                    "ref_id": "BIBREF48"
+                },
+                {
+                    "start": 1173,
+                    "end": 1196,
+                    "text": "(Elhanati et al., 2014;",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 1197,
+                    "end": 1221,
+                    "text": "Isacchini et al., 2020a;",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 1222,
+                    "end": 1246,
+                    "text": "Isacchini et al., 2020b;",
+                    "ref_id": null
+                },
+                {
+                    "start": 1247,
+                    "end": 1267,
+                    "text": "Marcou et al., 2018;",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 1268,
+                    "end": 1288,
+                    "text": "Sethna et al., 2020)",
+                    "ref_id": "BIBREF48"
+                }
+            ],
+            "ref_spans": [],
+            "section": "B-cell repertoires differ in receptor compositions across cohorts."
+        },
+        {
+            "text": "The distribution of the log-probability log 34 post (\u03c3) for the inferred progenitors of clonal lineages observed in individuals from different cohorts is shown in Fig. 3A . We find an overabundance of BCR lineages with progenitors that have a low probability of entering the periphery (i.e., a lower post (\u03c3)) in COVID-19 patients compared to healthy individuals (Fig. 3A) . Moreover, we estimated the diversity of the repertoires in each cohort by evaluating the entropy of receptor sequences generated by the respective repertoire models (see Methods). In particular, diverse repertoires that contain B-cell lineages with rare receptors (i.e., those with a lower post (\u03c3)), should have larger entropies. Based on this analysis, we find that immune repertoires are more diverse in COVID-19 patients compared to healthy individuals ( Fig. 3A and Methods). Specifically, the entropy (i.e., diversity) of BCR repertoires grew with severity of the disease, from 38.7 bits in the healthy cohort to 40.5 bits in the mild cohort, to 41.6 bits in the moderate cohort, and to 41.3 bits in the severe cohort (see Methods).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 163,
+                    "end": 170,
+                    "text": "Fig. 3A",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 363,
+                    "end": 372,
+                    "text": "(Fig. 3A)",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 834,
+                    "end": 841,
+                    "text": "Fig. 3A",
+                    "ref_id": "FIGREF3"
+                }
+            ],
+            "section": "B-cell repertoires differ in receptor compositions across cohorts."
+        },
+        {
+            "text": "Selection factors . ( ) determine the deviation in preferences for different sequence features of BCRs in each cohort, including their HCDR3 length and composition, and IGHV-gene usages. A comparison of selection factors among cohorts can characterize their distinctive sequence features. Consistent with our previous analysis of lineage characteristics in Fig. 2A , we find that selection factors associated with V-gene usage are strongly correlated across cohorts (Fig. 3B ). However, we find a weaker correlation for selection factors associated with preference for HCDR3 length between healthy individuals and the cohorts of COVID-19 patients (Fig. 3B) , which is consistent with our observation in Fig. 2B . Moreover, there are only weak correlations for HCDR3 amino acid preferences between healthy individuals and the cohorts of COVID-19 patients (Fig. 3B) . Interestingly, the HCDR3 composition was most distinct between patients with moderate symptoms and the healthy cohort, with 73% correlation for length and 65% correlation for amino acid preferences (Fig. 3B ). The HCDR3 composition was most similar between patients with moderate and severe symptoms, with 92% correlation for length and 89% correlation for amino acid preferences (Fig. 3B ). Taken together, HCDR3 represents a molecular feature that is distinguishable among cohorts.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 357,
+                    "end": 364,
+                    "text": "Fig. 2A",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 466,
+                    "end": 474,
+                    "text": "(Fig. 3B",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 647,
+                    "end": 656,
+                    "text": "(Fig. 3B)",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 703,
+                    "end": 710,
+                    "text": "Fig. 2B",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 854,
+                    "end": 863,
+                    "text": "(Fig. 3B)",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 1064,
+                    "end": 1072,
+                    "text": "(Fig. 3B",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 1246,
+                    "end": 1254,
+                    "text": "(Fig. 3B",
+                    "ref_id": "FIGREF3"
+                }
+            ],
+            "section": "B-cell repertoires differ in receptor compositions across cohorts."
+        },
+        {
+            "text": "Expansion of BCR clonal lineages over time as a proxy for response to SARS-CoV-2. Next, we examined the dynamics of BCR repertoires in the COVID-19 patients. The binding level (measured by OD450 in ELISA assays) of both IgM and IgG antibodies against the receptor-binding domain (RBD) or N-terminal domain (NTD) of SARS-CoV-2 increased in most of the COVID-19 patients in our study over the course of their infection (Figs. 4A, S3). We expected that the increase of OD450 binding level is associated with activation of specific B-cells, resulting in an increase in mRNA production of the corresponding BCRs. Detecting expansion of specific clonal lineages is challenging due to subsampling of the repertoires. In fact, only a limited overlap of BCR lineages was found if we simply compared the data between different time points or between replicates of a repertoire sampled at the same time point (Fig. S4 ). To identify expanding clonal lineages, we examined lineages only in patients whose plasma showed an increase in binding level (OD450) to the RBD of SARS-CoV-2 and compared the sequence abundance of those lineages that appear in two or more time points (Figs. 4A, S3 and Methods). Using a hypothesis test with a false discovery rate of 7.5%, as determined by analyzing replicate data (Methods, Fig. S5 ), we detected significant expansion of clonal lineages within all investigated patients. The results reflect a dynamic repertoire in all patients, ranging from 5% to 15% of lineages with significant expansion and large changes in sequence abundances over time (Figs. 4, S6) . The expanding lineages had comparable HCDR3 length to the rest of the repertoire in COVID-19 patients (Fig. S6 ). Moreover, we observed expanding lineages to show V-gene preferences comparable to those of previously identified antibodies against SARS-CoV-2 (RBD). This includes the abundance of IGHV4-59, IGHV4-39, IGHV3-23, IGHV3-53, IGH3-66, IGHV2-5, and IGHV2-70 (Brouwer et al., 2020; Ju et al., 2020; Pinto et al., 2020; Rogers et al., 2020) . However, it should be noted that these preferences in V-gene usage among expanding lineages are comparable to the overall biases in V-gene usage within patients, and expanded lineages roughly make up 25% of lineages with a given V gene (Fig. 4C ). Therefore, Our results suggest that the overall response to SARS-CoV-2 is not driven by only a specific class of IGHV gene.",
+            "cite_spans": [
+                {
+                    "start": 1572,
+                    "end": 1581,
+                    "text": "(Figs. 4,",
+                    "ref_id": null
+                },
+                {
+                    "start": 1582,
+                    "end": 1585,
+                    "text": "S6)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1954,
+                    "end": 1976,
+                    "text": "(Brouwer et al., 2020;",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 1977,
+                    "end": 1993,
+                    "text": "Ju et al., 2020;",
+                    "ref_id": null
+                },
+                {
+                    "start": 1994,
+                    "end": 2013,
+                    "text": "Pinto et al., 2020;",
+                    "ref_id": "BIBREF39"
+                },
+                {
+                    "start": 2014,
+                    "end": 2034,
+                    "text": "Rogers et al., 2020)",
+                    "ref_id": "BIBREF35"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 898,
+                    "end": 906,
+                    "text": "(Fig. S4",
+                    "ref_id": "FIGREF7"
+                },
+                {
+                    "start": 1303,
+                    "end": 1310,
+                    "text": "Fig. S5",
+                    "ref_id": null
+                },
+                {
+                    "start": 1690,
+                    "end": 1698,
+                    "text": "(Fig. S6",
+                    "ref_id": null
+                },
+                {
+                    "start": 2273,
+                    "end": 2281,
+                    "text": "(Fig. 4C",
+                    "ref_id": null
+                }
+            ],
+            "section": "B-cell repertoires differ in receptor compositions across cohorts."
+        },
+        {
+            "text": "Despite the vast diversity of BCRs, we observe a significant number of identical progenitors of BCR clonal lineages among COVID-19 patients (Fig. 5 ) and among healthy individuals (Fig. S7) . Previous work has also identified sharing of BCRs among COVID-19 patients, which was interpreted by the authors as evidence for large-scale convergence of immune responses (Galson et al., 2020; Nielsen et al., 2020; Schulthei\u00df et al., 2020) . Although BCR sharing can be due to convergent response to common antigens, it can also arise from convergent recombination leading to the same receptor sequence (Elhanati et al., 2018; Pogorelyy et al., 2018a) or simply from experimental biases. Therefore, it is imperative to formulate a null statistical model to identify the outliers among shared BCRs as candidates for common responses to antigens. Convergent recombination defines a null expectation for the amount of sharing within a cohort based on only the underlying biases for receptor generation within a repertoire (Elhanati et al., 2018; Pogorelyy et al., 2018a) (Methods) . Intuitively, sharing is more likely among commonly generated receptors (i.e., with a high post (\u03c3)) and within cohorts with larger sampling (Methods). Importantly, rare receptors (i.e., with a low post (\u03c3)) that are shared among individuals in a common disease group can signal commonality in function and a response to a common antigen, as previously observed for TCRs in response to a yellow fever vaccine (Pogorelyy et al., 2018b) , CMV and diabetes (Pogorelyy et al., 2018a) . We used the receptors' probabilities post (\u03c3) to assess the significance of sharing by identifying a probabilistic threshold to limit the shared outliers both among the COVID-19 patients (dashed line in Fig. 5 ) and the healthy individuals (dashed line in Fig. S7 ). Out of a total of 33,660 (unique) progenitors of clonal lineages (Fig. 5A) , we found 5,112 progenitors to be shared among at least two individuals; 152 of the 5,112 were classified as rare, having a probability of occurrence below the indicated threshold (dashed line) in Fig. 5B . Moreover, we found that 439 lineages shared a common sequence ancestor in at least two individuals and have expanded in at least one of the individuals ( Fig. 5C -D). 34 of these shared, expanding lineages stemmed from rare na\u00efve progenitors (below the dashed line in Fig. 5B , D). The sharing of these rare expanding BCRs among COVID-19 patients indicates a potentially convergent response to SARS-CoV-2 (Table S3) .",
+            "cite_spans": [
+                {
+                    "start": 364,
+                    "end": 385,
+                    "text": "(Galson et al., 2020;",
+                    "ref_id": null
+                },
+                {
+                    "start": 386,
+                    "end": 407,
+                    "text": "Nielsen et al., 2020;",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 408,
+                    "end": 432,
+                    "text": "Schulthei\u00df et al., 2020)",
+                    "ref_id": "BIBREF47"
+                },
+                {
+                    "start": 596,
+                    "end": 619,
+                    "text": "(Elhanati et al., 2018;",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 620,
+                    "end": 644,
+                    "text": "Pogorelyy et al., 2018a)",
+                    "ref_id": "BIBREF40"
+                },
+                {
+                    "start": 1012,
+                    "end": 1035,
+                    "text": "(Elhanati et al., 2018;",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 1036,
+                    "end": 1070,
+                    "text": "Pogorelyy et al., 2018a) (Methods)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1481,
+                    "end": 1506,
+                    "text": "(Pogorelyy et al., 2018b)",
+                    "ref_id": "BIBREF41"
+                },
+                {
+                    "start": 1526,
+                    "end": 1551,
+                    "text": "(Pogorelyy et al., 2018a)",
+                    "ref_id": "BIBREF40"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 140,
+                    "end": 147,
+                    "text": "(Fig. 5",
+                    "ref_id": null
+                },
+                {
+                    "start": 180,
+                    "end": 189,
+                    "text": "(Fig. S7)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1757,
+                    "end": 1763,
+                    "text": "Fig. 5",
+                    "ref_id": null
+                },
+                {
+                    "start": 1810,
+                    "end": 1817,
+                    "text": "Fig. S7",
+                    "ref_id": null
+                },
+                {
+                    "start": 1886,
+                    "end": 1895,
+                    "text": "(Fig. 5A)",
+                    "ref_id": null
+                },
+                {
+                    "start": 2094,
+                    "end": 2101,
+                    "text": "Fig. 5B",
+                    "ref_id": null
+                },
+                {
+                    "start": 2258,
+                    "end": 2265,
+                    "text": "Fig. 5C",
+                    "ref_id": null
+                },
+                {
+                    "start": 2372,
+                    "end": 2379,
+                    "text": "Fig. 5B",
+                    "ref_id": null
+                },
+                {
+                    "start": 2509,
+                    "end": 2519,
+                    "text": "(Table S3)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Sharing of BCRs among individuals."
+        },
+        {
+            "text": "Interestingly, we found that 20% of receptors in these rare shared, expanding lineages contain multiple cysteines in their HCDR3s, in contrast to only 10% of the receptors in the whole repertoire. Such sequence patterns with cysteine pairs in the HCDR3 have been associated with stabilization of the HCDR3 loop by forming disulfide bonds with particular patterns and spacings of the cysteines (Lee et al., 2014; Prabakaran and Chowdhury, 2020) . Disulfide bonds in the HCDR3 can decrease the conformational flexibility of the loop, thus decreasing the entropic cost of binding to improve the affinity of the receptor (Almagro et al., 2012) . The significantly larger fraction of multi-cysteine HCDR3s among the candidate SARS-CoV-2 responsive receptors (p-value = 10 -9 based on binomial sampling) indicates an underlying molecular mechanism for developing a potent response to SARS-CoV-2.",
+            "cite_spans": [
+                {
+                    "start": 393,
+                    "end": 411,
+                    "text": "(Lee et al., 2014;",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 412,
+                    "end": 443,
+                    "text": "Prabakaran and Chowdhury, 2020)",
+                    "ref_id": "BIBREF42"
+                },
+                {
+                    "start": 617,
+                    "end": 639,
+                    "text": "(Almagro et al., 2012)",
+                    "ref_id": "BIBREF0"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Sharing of BCRs among individuals."
+        },
+        {
+            "text": "Previous studies have identified a number of antibodies responsive to the RBD of SARS-CoV-2 (Cao et al., 2020; Pinto et al., 2020; Robbiani et al., 2020) . In repertoires of the COVID-19 patients, we found that several HCDR3s matched with SARS-CoV-2-specific monoclonal antibodies (mAbs) that were previously isolated in other studies (Table S3) . Specifically, three distinct SARS-CoV-2-specific mAbs were found to be close in sequence to HCDR3s in our data, with only one amino acid difference, and one of these mAbs also had a matching V gene (Table 1) . Among these, we found a class of antibodies containing multiple cysteines in their HCDR3s, with the potential to form disulfide bonds to enhance their affinity to antigens and paratope diversity (Almagro et al., 2012; Lee et al., 2014; Prabakaran and Chowdhury, 2020) .",
+            "cite_spans": [
+                {
+                    "start": 92,
+                    "end": 110,
+                    "text": "(Cao et al., 2020;",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 111,
+                    "end": 130,
+                    "text": "Pinto et al., 2020;",
+                    "ref_id": "BIBREF39"
+                },
+                {
+                    "start": 131,
+                    "end": 153,
+                    "text": "Robbiani et al., 2020)",
+                    "ref_id": "BIBREF43"
+                },
+                {
+                    "start": 753,
+                    "end": 775,
+                    "text": "(Almagro et al., 2012;",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 776,
+                    "end": 793,
+                    "text": "Lee et al., 2014;",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 794,
+                    "end": 825,
+                    "text": "Prabakaran and Chowdhury, 2020)",
+                    "ref_id": "BIBREF42"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 335,
+                    "end": 345,
+                    "text": "(Table S3)",
+                    "ref_id": null
+                },
+                {
+                    "start": 546,
+                    "end": 555,
+                    "text": "(Table 1)",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Presence of SARS-CoV-2 and SARS-specific neutralizing antibodies within repertoires."
+        },
+        {
+            "text": "In addition, we found that two patients had exact HCDR3 matches to a previously identified antibody (S304) that has cross-reactivity to SARS-CoV and SARS-CoV-2 (Pinto et al., 2020) . We also observed in one patient a HCDR3 with only one amino acid difference to this antibody (Table 1) . Importantly, the plasma in these patients showed a substantial binding level (OD450) to SARS-CoV (Fig. S3 ), which indicates a possibility of cross-reactive antibody responses to SARS-CoV and SARS-CoV-2.",
+            "cite_spans": [
+                {
+                    "start": 160,
+                    "end": 180,
+                    "text": "(Pinto et al., 2020)",
+                    "ref_id": "BIBREF39"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 276,
+                    "end": 285,
+                    "text": "(Table 1)",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 385,
+                    "end": 393,
+                    "text": "(Fig. S3",
+                    "ref_id": "FIGREF3"
+                }
+            ],
+            "section": "Presence of SARS-CoV-2 and SARS-specific neutralizing antibodies within repertoires."
+        },
+        {
+            "text": "It should be noted that all of the previously verified antibodies that we identify in the patients' repertoires have a relatively high probability post (\u03c3) of generation and entry to the periphery (indicated by yellow diamonds in Fig. 5B ). This is not surprising as it is very unlikely to observe rare BCRs (with small post (\u03c3)) to be shared in multiple individuals. Overall, our results are encouraging for vaccine development since they indicate that even common antibodies can confer specific responses against SARS-CoV-2.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 230,
+                    "end": 237,
+                    "text": "Fig. 5B",
+                    "ref_id": null
+                }
+            ],
+            "section": "Presence of SARS-CoV-2 and SARS-specific neutralizing antibodies within repertoires."
+        },
+        {
+            "text": "A repertoire of immune receptor sequences presents a unique snapshot of the history of immune responses in an individual (Boyd et al., 2009; Georgiou et al., 2014; Kreer et al., 2020; Robins, 2013) , and the changes in a repertoire during an infection can signal specific responses to pathogens (Horns et al., 2019; Nourmohammad et al., 2019) . Identifying signatures of a functional response to a given pathogen from the pool of mostly unspecific BCRs collected from the blood is challenging-it is a problem of finding a needle in a haystack. Therefore, principled statistical inference approaches are necessary to extract functional signal from such data. Here, we characterized the B-cell repertoire response to SARS-CoV-2 in COVID-19 patients with different disease severity by combining evidence from the overall statistics of repertoires together with dynamics of clonal lineages during infection and the sharing of immune receptors among patients.",
+            "cite_spans": [
+                {
+                    "start": 121,
+                    "end": 140,
+                    "text": "(Boyd et al., 2009;",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 141,
+                    "end": 163,
+                    "text": "Georgiou et al., 2014;",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 164,
+                    "end": 183,
+                    "text": "Kreer et al., 2020;",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 184,
+                    "end": 197,
+                    "text": "Robins, 2013)",
+                    "ref_id": "BIBREF44"
+                },
+                {
+                    "start": 295,
+                    "end": 315,
+                    "text": "(Horns et al., 2019;",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 316,
+                    "end": 342,
+                    "text": "Nourmohammad et al., 2019)",
+                    "ref_id": "BIBREF36"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "At the repertoire level, we showed that HCDR3 of BCRs in COVID-19 patients are significantly longer than HDCR3 in healthy individuals, and the amino acid composition of this receptor region varies among cohorts of patients with mild, moderate, and severe symptoms. Moreover, we observed largescale sharing of B-cell receptors among COVID-19 patients, consistent with previous findings in COVID-19 patients (Galson et al., 2020; Nielsen et al., 2020; Schulthei\u00df et al., 2020) . Sharing of receptors among individuals can signal common immune responses to a pathogen. However, BCR sharing can also be due to convergent recombination leading to the same receptor sequence or other experimental biases that influence statistics of shared sequences. These statistical nuances can substantially sway conclusions drawn from the sharing analysis and, therefore, should be carefully accounted for. Here, we established a null expectation of BCR sharing due to convergent recombination by inferring a model of receptor generation and migration to the periphery and used this null model to identify sequence outliers. Our analysis identified a subset of rare BCRs shared among COVID-19 patients, which appears to signal convergent responses to SARS-CoV-2.",
+            "cite_spans": [
+                {
+                    "start": 406,
+                    "end": 427,
+                    "text": "(Galson et al., 2020;",
+                    "ref_id": null
+                },
+                {
+                    "start": 428,
+                    "end": 449,
+                    "text": "Nielsen et al., 2020;",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 450,
+                    "end": 474,
+                    "text": "Schulthei\u00df et al., 2020)",
+                    "ref_id": "BIBREF47"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "In addition to the statistics of repertoires, we observed that the activity of many B-cell lineages (i.e., mRNA production) in COVID-19 patients significantly increases during infection, accompanied by an increase in the binding level (OD450) of the patients' sera to the RBD and NTD of SARS-CoV-2. Dynamics of clonal lineages during an infection provide significant insights into the characteristics of responsive antibodies (Horns et al., 2019; Nourmohammad et al., 2019) . By taking advantage of data collected at multiple time points in most patients, we identified expanded lineages shared among patients and found 34 clonal lineages that are candidates for a specific response specific to SARS-CoV-2 antigens. Further analysis would be required to determine the reactivity of these antibodies against the RBD or NTD of SARS-CoV-2.",
+            "cite_spans": [
+                {
+                    "start": 426,
+                    "end": 446,
+                    "text": "(Horns et al., 2019;",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 447,
+                    "end": 473,
+                    "text": "Nourmohammad et al., 2019)",
+                    "ref_id": "BIBREF36"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Identifying antibodies with cross-reactive neutralization abilities against viruses in the SARS family is of significant interest. Interestingly, in nine patients, we see a substantial increase in the binding level (OD450) of their sera to SARS-CoV epitopes during the course of COVID-19 infection. Moreover, in three patients, we identify a BCR identical to the heavy chain of antibody S304 (Pinto et al., 2020) , which was previously isolated from a patient who recovered from a SARS-CoV infection. This antibody was shown to be moderately cross-reactive to both SARS-CoV and SARS-CoV-2, and our results further indicate a possibility for such cross-reactive antibodies to emerge naturally in response to SARS-CoV-2 (Brouwer et al., 2020; Lv et al., 2020; Rogers et al., 2020) . Taken together, our findings provide substantial insight and strong implications for devising vaccines and therapies with a broad applicability against SARS-CoV-2.",
+            "cite_spans": [
+                {
+                    "start": 392,
+                    "end": 412,
+                    "text": "(Pinto et al., 2020)",
+                    "ref_id": "BIBREF39"
+                },
+                {
+                    "start": 718,
+                    "end": 740,
+                    "text": "(Brouwer et al., 2020;",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 741,
+                    "end": 757,
+                    "text": "Lv et al., 2020;",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 758,
+                    "end": 778,
+                    "text": "Rogers et al., 2020)",
+                    "ref_id": "BIBREF35"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Sample collection and PBMC isolation. Specimens of heparinized blood were collected from the RT-PCR-confirmed COVID-19 patients at the Infectious Disease Centre of the Princess Margaret Hospital, Hong Kong. The study was approved by the institutional review board of the Hong Kong West Cluster of the Hospital Authority of Hong Kong (approval number: UW20-169). All study procedures were performed after informed consent was obtained. Day 1 of clinical onset was defined as the first day of the appearance of clinical symptoms. The severity of the COVID-19 cases was classified based on the adaptation of the Sixth Revised Trial Version of the Novel Coronavirus Pneumonia Diagnosis and Treatment Guidance. The severity of the patients was categorized as follows: Mild -no sign of pneumonia on imaging, mild clinical symptoms; Moderate -fever, respiratory symptoms and radiological evidence of pneumonia; Severe -dyspnea, respiratory frequency >30/min, blood oxygen saturation 93%, partial pressure of arterial oxygen to fraction of inspired oxygen ratio <300, and/or lung infiltrates >50% within 24 to 48 hours; Critical -respiratory failure, septic shock, and/or multiple organ dysfunction or failure or death.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Experimental procedures"
+        },
+        {
+            "text": "The blood samples were first centrifuged at 3000 xg for 10 minutes at room temperature for plasma collection. The remaining blood was diluted with equal volume of PBS buffer, transferred onto the Ficoll-Paque Plus medium (GE Healthcare), and centrifuged at 400 xg for 20 minutes. Peripheral Blood Mononuclear Cells (PBMC) samples were then collected and washed with cold RPMI-1640 medium for three times. The isolated PBMC samples were finally stored at cell freezing solution (10% DMSO + 90% FBS) and kept in -80 o C until used.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Experimental procedures"
+        },
+        {
+            "text": "RNA extraction and reverse transcription. Total RNA was extracted from 5 \u00d7 10 9 PBMC using the RNeasy Mini isolation kit (Qiagen) according to the manufacturer's protocol. Reverse transcription of the RNA samples was performed using the Proto-Script\u00ae II Reverse Transcriptase kit (New England Biolabs, NEB) with random hexamer primers according to the manufacturer's protocol. The thermal cycling conditions were designed as follows: 25 o C for 5 minutes, 42 o C for 60 minutes, and 80 o C for 5 minutes. The resulting cDNA samples were stored in 80 o C freezer before PCR was performed.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Experimental procedures"
+        },
+        {
+            "text": "Amplification of B cell repertoire from the samples by PCR. The cDNA samples were used as a template to amplify the antibody IgG heavy chain gene with six FR1-specific forward primers and one constant region-specific reversed primer using the Phusion\u00ae High-Fidelity DNA Polymerase. The primer sequences were the same as previously described (Wu et al., 2015) ; primer sequences are listed in Table S2 . The thermal cycling conditions were set as follows: 98 o C for 30 seconds; 30 cycles of 98 o C for 10 seconds, 58 o C for 15 seconds, and 72 o C for 30 seconds; and 72 o C for 10 minutes. Then 10 ng of the PCR product was used as a template for the next round of gene amplification with samplespecific barcode primers. The thermal cycling conditions were set as follow: 98 o C for 3 min; 30 cycles of 98 o C for 10 seconds, 58 o C for 15 seconds, and 72 o C for 15 seconds; and a final extension at 72 o C for 10 min using Phusion\u00ae High-Fidelity DNA Polymerase. The PCR product was purified by QIAquick Gel Extraction Kit (Qiagen), and quantified by NanoDrop Spectrophotometers (Thermofisher). Protein expression and purification. The receptor-binding domain (RBD, residues 319-541) and Nterminal domain (NTD, residues 14 to 305) of the SARS-CoV-2 spike protein (GenBank: QHD43416.1) as well as the RBD (residues 306-527) and NTD (residues 14-292) of SARS-CoV spike protein (GenBank: ABF65836.1) were cloned into a customized pFastBac vector (Lv et al., 2020; Wec et al., 2020) . The RBD and NTD constructs were fused with an N-terminal gp67 signal peptide and a C-terminal His6 tag. Recombinant bacmid DNA was generated using the Bac-to-Bac system (Life Technologies, Thermo Fisher Scientific). Baculovirus was generated by transfecting purified bacmid DNA into Sf9 cells using FuGENE HD (Promega, Madison, US) and subsequently used to infect suspension cultures of High Five cells (Life Technologies) at a multiplicity of infection (moi) of 5 to 10. Infected High Five cells were incubated at 28 \u00b0C with shaking at 110 rpm for 72 h for protein expression. The supernatant was then concentrated using a Centramate cassette (10 kDa molecular weight cutoff for RBD, Pall Corporation, New York, USA). RBD and NTD proteins were purified by Ni-NTA Superflow (Qiagen, Hilden, Germany), followed by size exclusion chromatography and buffer exchange to phosphate-buffered saline (PBS).",
+            "cite_spans": [
+                {
+                    "start": 341,
+                    "end": 358,
+                    "text": "(Wu et al., 2015)",
+                    "ref_id": "BIBREF59"
+                },
+                {
+                    "start": 1445,
+                    "end": 1462,
+                    "text": "(Lv et al., 2020;",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 1463,
+                    "end": 1480,
+                    "text": "Wec et al., 2020)",
+                    "ref_id": "BIBREF56"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 392,
+                    "end": 400,
+                    "text": "Table S2",
+                    "ref_id": "TABREF4"
+                }
+            ],
+            "section": "Experimental procedures"
+        },
+        {
+            "text": "A 96-well enzyme-linked immunosorbent assay (ELISA) plate (Nunc MaxiSorp, Thermo Fisher Scientific) was first coated overnight with 100 ng per well of purified recombinant protein in PBS buffer. The plates were then blocked with 100 \u00b5l of Chonblock blocking/sample dilution ELISA buffer (Chondrex Inc, Redmon, US) and incubated at room temperature for 1 h. Each human plasma sample was diluted to 1:100 in Chonblock blocking/sample dilution ELISA buffer. Each sample was then added into the ELISA plates for a two-hour incubation at 37\u00b0C. After extensive washing with PBS containing 0.1% Tween 20, each well in the plate was further incubated with the anti-human IgG secondary antibody (1:5000, Thermo Fisher Scientific) for 1 hour at 37\u00b0C. The ELISA plates were then washed five times with PBS containing 0.1% Tween 20. Subsequently, 100 \u00b5L of HRP substrate (Ncm TMB One; New Cell and Molecular Biotech Co. Ltd, Suzhou, China) was added into each well.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "ELISA."
+        },
+        {
+            "text": "After 15 min of incubation, the reaction was stopped by adding 50 \u00b5L of 2 M H2SO4 solution and analyzed on a Sunrise (Tecan, M\u00e4nnedorf, Switzerland) absorbance microplate reader at 450 nm wavelength.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "ELISA."
+        },
+        {
+            "text": "BCR processing and computational procedures BCR preprocessing. For initial processing of the raw reads, we used pRESTO (version 0.5.13) (Vander Heiden et al., 2014) to assemble paired-end reads, remove sequences with a mean quality score less than 30, mask primer subsequences, and collapse duplicate sequences into unique sequences. The small fraction of paired-end reads that overlapped were assumed to be anomalous and were discarded from the analysis. Additionally, after preprocessing with pRESTO, we discarded unique reads that contained ambiguous calls (N's) in their receptor sequence.",
+            "cite_spans": [
+                {
+                    "start": 136,
+                    "end": 164,
+                    "text": "(Vander Heiden et al., 2014)",
+                    "ref_id": "BIBREF55"
+                }
+            ],
+            "ref_spans": [],
+            "section": "ELISA."
+        },
+        {
+            "text": "We performed two rounds of error correction on sequences that passed the quality control check. In the first round, we clustered singletons and other low-frequency sequences into larger sequences if they were similar in sequence. The intent of this round was to correct for sequencing errors (e.g. from reverse transcription of mRNA to cDNA) that caused large abundance clones to be split into many similar sequences. We used two parameters: \u0394 ; = 1.0, the marginal Hamming distance tolerance per decade in log-ratio abundance (each log10 unit allowing \u0394 ; additional sequence differences), and \u0394 > = 1.0, the marginal abundance tolerance of clusterable sequences per decade in log-ratio abundance (each log10 unit allowing abundance \u0394 > higher as clusterable). For example, a sequence with abundance 3 and a Hamming distance away from a higher abundance sequence with abundance A was absorbed into the latter only if \u2264 \u0394 ; log 34 > C > D and 3 \u2264 \u0394 > log 34",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "BCR error correction."
+        },
+        {
+            "text": "We used the output of this first round as input for the second round of error correction, in which we more aggressively target correction of reverse transcriptase errors. In the second round, we used two different parameters to assess sequence similarity: thresh = 2.0, the Hamming distance between sequences, and thresh = 1.0 , the ratio of sequence abundances. A sequence with abundance 3 and a Hamming distance away from a sequence of larger abundance A was absorbed into the latter only if \u2264 thresh and the ratio of the sequence abundances was greater than thresh , i.e. > C > D \u2265 thresh . This round of error correction allows much larger abundance sequences to potentially be clustered than is possible in the first round. For both of the above steps, we performed clustering greedily and approximately by operating on sequences sorted by descending abundance, assigning the counts of the lower abundance sequence to the higher abundance one iteratively.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "BCR error correction."
+        },
+        {
+            "text": "After error correction, the sequences still contained a large number of singletons, i.e. sequences with no duplicates (Table S1 ). We discarded these singletons from all analyses that relied on statistics of unique sequences (i.e., the results presented in Figs. S1, S2C,E,F).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 118,
+                    "end": 127,
+                    "text": "(Table S1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "BCR error correction."
+        },
+        {
+            "text": "For each individual, error-corrected sequences from all timepoints and replicates were pooled and annotated by abstar (version 0.3.5) (Briney and Burton, 2018) . We processed the output of abstar, which included the estimated V gene/allele, J gene/allele, location of the HCDR3 region, and an inferred na\u00efve sequence (germline before hypermutation). Sequences which had indels outside of the HCDR3 were discarded. We partitioned the sequences into two sets: productive BCRs, which were in-frame and had no stop codons, and unproductive BCRs, which were out-of-frame.",
+            "cite_spans": [
+                {
+                    "start": 134,
+                    "end": 159,
+                    "text": "(Briney and Burton, 2018)",
+                    "ref_id": "BIBREF2"
+                }
+            ],
+            "ref_spans": [],
+            "section": "BCR annotation."
+        },
+        {
+            "text": "Unproductive BCRs. Due to a larger sequencing depth in healthy individuals, we were able to reconstruct relatively large unproductive BCR lineages. Unproductive sequences are BCRs that are generated but, due to a frameshift or insertion of stop codons, are never expressed. These BCRs reside with productive (functional) BCRs in a nucleus and undergo hypermutation during B-cell replication and, therefore, provide a suitable null expectation for generation of BCRs in immune repertoires.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "BCR annotation."
+        },
+        {
+            "text": "To identify BCR clonal lineages, we first grouped sequences by their assigned V gene, J gene, and HCDR3 length and then used single-linkage clustering with a threshold of 85% Hamming distance. A similar threshold has been suggested previously by (Gupta et al., 2017) to identify BCR lineages. Clusters of size smaller than three were discarded from our analysis, size being defined as the sum of the amount of unique sequences per time point within a lineage. For each cluster, there may have been multiple inferred na\u00efve sequences, as this was an uncertain estimate. Therefore, the most common na\u00efve sequence was chosen to be the na\u00efve progenitor of the lineage. When the most common na\u00efve sequence of a productive lineage contained a stop codon, the progenitor of the lineage was chosen iteratively by examining the next most common na\u00efve sequence until it did not contain any stop codons. If all inferred na\u00efve sequences in a productive lineage had a stop codon, that lineage was discarded from the analysis. Table S1 shows the statistics of constructed clonal lineages in each individual.",
+            "cite_spans": [
+                {
+                    "start": 246,
+                    "end": 266,
+                    "text": "(Gupta et al., 2017)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1012,
+                    "end": 1020,
+                    "text": "Table S1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Clonal lineage reconstruction."
+        },
+        {
+            "text": "We used IGoR (version 1.4) (Marcou et al., 2018 ) to obtain a model of receptor generation. This model characterized the probability of generation gen (\u03c3) of a receptor dependent on the features of the receptor, including the V, D, and J genes and the deletion and insertion profiles at the VD and DJ junctions. To characterize the parameters of this model, we trained IGoR on the progenitors of all unproductive lineages, regardless of size, pooled from all cohorts. For consistency with our receptor annotations based on abstar, we used abstar's genomic templates and the HCDR3 anchors of abstar's reference genome as inputs for IGoR's genomic templates and HCDR3 anchors.",
+            "cite_spans": [
+                {
+                    "start": 27,
+                    "end": 47,
+                    "text": "(Marcou et al., 2018",
+                    "ref_id": "BIBREF32"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Inference of generation probability and selection for BCRs."
+        },
+        {
+            "text": "We used SONIA (version 0.27) (Sethna et al., 2020) to infer a selection model for progenitors of productive clonal lineages. The SONIA model evaluated selection factors to characterize the deviation in the probability post (\u03c3) to observe a functional sequence in the periphery from the null expectation, based on the generation probability gen (\u03c3): post (\u03c3) = 3 G gen (\u03c3) ' (:features * ( (+) , where is the normalization factor and . (\u03c3) are selection factors dependent on the sequence features .",
+            "cite_spans": [
+                {
+                    "start": 29,
+                    "end": 50,
+                    "text": "(Sethna et al., 2020)",
+                    "ref_id": "BIBREF48"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Inference of generation probability and selection for BCRs."
+        },
+        {
+            "text": "These sequence features include V-gene and J-gene usages and HCDR3 length and amino acid composition (Sethna et al., 2020) .",
+            "cite_spans": [
+                {
+                    "start": 101,
+                    "end": 122,
+                    "text": "(Sethna et al., 2020)",
+                    "ref_id": "BIBREF48"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Inference of generation probability and selection for BCRs."
+        },
+        {
+            "text": "In our analysis, we used the SONIA left-right model with independent V-and J-gene usages (Sethna et al., 2020) . We used the output from IGoR as the receptor generation model for SONIA. We trained four cohort-specific SONIA models on progenitors of all productive lineages, regardless of size, pooled from all individuals within a cohort. 150 epochs and 500,000 generated sequences were used to train each SONIA model. Fig. 3 shows the distributions for the probabilities of observing productive receptors sampled from each cohort post (\u03c3) and the correlation of feature-specific selection factors . among cohorts.",
+            "cite_spans": [
+                {
+                    "start": 89,
+                    "end": 110,
+                    "text": "(Sethna et al., 2020)",
+                    "ref_id": "BIBREF48"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 419,
+                    "end": 425,
+                    "text": "Fig. 3",
+                    "ref_id": "FIGREF3"
+                }
+            ],
+            "section": "Inference of generation probability and selection for BCRs."
+        },
+        {
+            "text": "Characterizing repertoire diversity. We quantified the diversity of each cohort by evaluating the entropy of receptor sequences in each cohort. Estimates of entropy can be influenced by how each distribution is sampled. To avoid such sampling biases, we used the inferred IGoR and SONIA models to generate 500,000 synthetics receptors based on each of the cohort-specific models. We evaluated cohort entropies as the expected log-probabilities to observe a functional sequence in the respective cohort:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Inference of generation probability and selection for BCRs."
+        },
+        {
+            "text": "= \u2212 \u2211 post (\u03c3) log post (\u03c3) + .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Inference of generation probability and selection for BCRs."
+        },
+        {
+            "text": "For comparison, we also evaluated the entropy estimated on the repertoire data in each cohort, which showed a similar pattern to the estimates from the generated cohorts (in the main text). Specifically, the entropy of BCR repertoires estimated from the data follows: 39.8 \u00b1 0.3 bits in healthy individuals, 41.9 \u00b1 0.7 bits for patients in the mild cohort, 42.6 \u00b1 0.3 bits for patients in the moderate cohort, and 42.8 \u00b1 0.5 for patients in the severe cohort. The error bars indicate the standard error due to differences among individuals within a cohort.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Inference of generation probability and selection for BCRs."
+        },
+        {
+            "text": "Clonal Lineage expansion. We studied clonal lineage expansion of BCR repertoires in individuals that showed an increase in the binding level (OD450) of their plasma to SARS-CoV-2 (RBD) during infection (Figs. 4A, S3): patients 2, 3, 4, 5, 6, 7, 9, 10, 11, 13, 14. Other individuals showed no increase in IgG binding to SARS-CoV-2 (RBD), either due to already high levels of binding at early time points or to natural variation and noise (Fig. S3 ). Our expansion test compared two time points. Therefore, for individuals with three time points, we combined data from different time points such that the separated times coincided with larger changes in binding levels (OD450). Specifically, we combined the last two time points for patients 2 and 7 and the first two time points for patient 9. In addition, we combined replicates at the same time point and filtered out small lineages with size < 3, where size was defined as the sum of the amount of unique sequences per time-point within a lineage.",
+            "cite_spans": [
+                {
+                    "start": 230,
+                    "end": 263,
+                    "text": "3, 4, 5, 6, 7, 9, 10, 11, 13, 14.",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 437,
+                    "end": 445,
+                    "text": "(Fig. S3",
+                    "ref_id": "FIGREF3"
+                }
+            ],
+            "section": "Inference of generation probability and selection for BCRs."
+        },
+        {
+            "text": "To test for expansion, we compared lineage abundances (i.e., total number of reads in a lineage) between early and late time points. Many lineages appeared only in one time point due to the sparse sampling of clonal lineages and the cells that generate them (Fig. S4 ). Therefore, we tested for expansion only for lineages that had nonzero abundances at both time points.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 258,
+                    "end": 266,
+                    "text": "(Fig. S4",
+                    "ref_id": "FIGREF7"
+                }
+            ],
+            "section": "Inference of generation probability and selection for BCRs."
+        },
+        {
+            "text": "Our expansion test relied on comparing the relative abundance of a given lineage with other lineages. However, due to primer-specific amplification biases, abundances were not comparable between reads amplified with different primers. Therefore, in our analysis we only compare a lineage with all other lineages that were amplified with the same primer.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Inference of generation probability and selection for BCRs."
+        },
+        {
+            "text": "We applied a hypergeometric test (Fisher's exact test) to characterize significance of abundance fold change for a focal lineage. A similar method was used to study clonal expansion in TCRs (DeWitt et al., 2015) . For each focal clonal lineage (in a given individual), we defined a 2 \u00d7 2 contingency matrix ,",
+            "cite_spans": [
+                {
+                    "start": 190,
+                    "end": 211,
+                    "text": "(DeWitt et al., 2015)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Inference of generation probability and selection for BCRs."
+        },
+        {
+            "text": "where Y early and Y late are the abundances of the focal lineage at the early and late time, and /Y early and /Y late are the total abundances of all reads (with the same primer) minus those from lineage at the early and late times. The ratio ( Y late / Y early )/( /Y ]^_` / /\u1ef2^a ]b ) describes the fold change, or odds ratio, of lineage relative to the rest of the reads in the same primer group. Based on the contingency matrix , one-sided p-values for Fisher's exact test were calculated using the \"fisher.test\" function in R version 4.0. Fold change and p-values are shown in Fig. S6A .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 581,
+                    "end": 589,
+                    "text": "Fig. S6A",
+                    "ref_id": null
+                }
+            ],
+            "section": "Inference of generation probability and selection for BCRs."
+        },
+        {
+            "text": "To determine a significance threshold for the Fisher's exact test, we examined the replicate data from samples collected from the same time point in each individual because we did not expect any significant expansion among replicates. We calculated the expansion test on pairs of replicates (Fig.  S5B,C) , and we compared the empirical cumulative distributions of the time point and replicate expansion data (Fig. S5D,E) (Storey, 2002; Storey and Tibshirani, 2003) . We chose a p-value threshold of 10 cd44 , where there were 12.3 as many significant expansions as in the replicate data, and therefore the false discovery rate was approximately 1/(1 + 12.3) = 0.075.",
+            "cite_spans": [
+                {
+                    "start": 422,
+                    "end": 436,
+                    "text": "(Storey, 2002;",
+                    "ref_id": "BIBREF52"
+                },
+                {
+                    "start": 437,
+                    "end": 465,
+                    "text": "Storey and Tibshirani, 2003)",
+                    "ref_id": "BIBREF53"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 291,
+                    "end": 304,
+                    "text": "(Fig.  S5B,C)",
+                    "ref_id": null
+                },
+                {
+                    "start": 409,
+                    "end": 421,
+                    "text": "(Fig. S5D,E)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Inference of generation probability and selection for BCRs."
+        },
+        {
+            "text": "The probability that receptor \u03c3 is shared among a given number of individuals due to convergent recombination can be evaluated based on the probability to observe the receptor in the periphery post (\u03c3), the size of the cohort , and the size of the repertoire (sequence sample size) . First, we evaluated the probability \u03c1(\u03c3; ) that receptor \u03c3 with probability post (\u03c3) appears at least once in a sample of size ,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Significance of BCR sharing among individuals."
+        },
+        {
+            "text": "The probability that receptor \u03c3 is shared among individuals out of a cohort of individuals, each with a (comparable) sample size , follows the binomial distribution,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Significance of BCR sharing among individuals."
+        },
+        {
+            "text": "We aimed to identify shared receptors that were outliers such that their probability of sharing is too small to be explained by convergent recombination or other biases in the data. To do so, we identified the receptors with the smallest sharing probabilities share and found a threshold of post (dashed lines in Fig. 5 and Fig. S7 ) at the 1% quantile of share in the data. Specifically, since share is a function of post and (number of individuals sharing), for each we solved for post such that share = , and tuned the constant such that only 1% of the data lay below share . This was a conservative choice to identify the rare shared outliers in the data.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 313,
+                    "end": 331,
+                    "text": "Fig. 5 and Fig. S7",
+                    "ref_id": null
+                }
+            ],
+            "section": "Significance of BCR sharing among individuals."
+        },
+        {
+            "text": "BCR repertoire data can be accessed through: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA645245 All codes for data processing and statistical analysis can be found at: https://github.com/StatPhysBio/covid-BCR infection (shown in center). We distinguished between productive receptors and unproductive receptors that had frameshifts due to V(D)J recombination. In each patient, we constructed clonal lineages for productive and unproductive BCRs and inferred the na\u00efve progenitor of the lineage (Methods). Bottom: 1. We inferred a model (Marcou et al., 2018) to characterize a null probability for generation of receptors gen ( ), trained on the set of unproductive inferred na\u00efve BCRs. We inferred a selection model (Isacchini et al., 2020b) to characterize the deviation from the null among inferred na\u00efve productive BCRs using the probability of entry to the periphery post ( ) and characterize selection factors . ( ) dependent on sequence features to differentiate between cohort statistics. 2. Based on temporal information of sampled BCRs, we identified clonal lineages that showed significant expansion during infection. 3. We identified progenitors of clonal lineages shared among individuals and assess the significance of these sharing statistics based on the probabilities to find each receptor in the periphery. We also identified previously characterized monoclonal antibodies (mAbs) specific to SARS-CoV-2 and SARS-CoV. IGH94-39  IGH94-59  IGH96-1  IGH94-34  IGH93-23  IGH94-4  IGH94-61  IGH93-7  IGH93-74  IGH93-30  IGH92-5  IGH94-31  IGH94-38-2  IGH93-21  IGH93-48  IGH94-30-4  IGH95-51  IGH93-9  IGH93-30-3  IGH93-33  IGH91-18  IGH93-53  IGH93-11  IGH92- Single amino acid mutations among HCDR3 of verified antibodies are in cyan. The complete list of verified antibodies is given in Table S3 . Figure S3 . ELISA binding assays for IgG and IgM repertoires against SARS-CoV-2 and SARS-CoV. Plasma binding levels (measured by OD450 in ELISA) against RBD, NTD, and S2 epitopes of SARS-CoV-2 and against RBD and NTD epitopes of SARS-CoV are shown. As seen in binding assays, many individuals developed a cross-reactive response to SARS-CoV-2 and SARS-CoV. Some individuals showed no increase in IgG binding to SARS-CoV-2 RBD due to already high levels at sampling time or natural variation. For the expansion analysis (Fig. 4) , we analyzed only individuals whose IgG repertoires showed an increase in binding to SARS-CoV-2 (RBD): 2, 3, 4, 5, 6, 7, 9, 10, 11, 13, and 14 . Histogram bin size is 0.5. The counts in each bin are scaled such that the maximum is equal to one for each column.",
+            "cite_spans": [
+                {
+                    "start": 537,
+                    "end": 558,
+                    "text": "(Marcou et al., 2018)",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 717,
+                    "end": 742,
+                    "text": "(Isacchini et al., 2020b)",
+                    "ref_id": null
+                },
+                {
+                    "start": 2448,
+                    "end": 2484,
+                    "text": "3, 4, 5, 6, 7, 9, 10, 11, 13, and 14",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1435,
+                    "end": 1672,
+                    "text": "IGH94-39  IGH94-59  IGH96-1  IGH94-34  IGH93-23  IGH94-4  IGH94-61  IGH93-7  IGH93-74  IGH93-30  IGH92-5  IGH94-31  IGH94-38-2  IGH93-21  IGH93-48  IGH94-30-4  IGH95-51  IGH93-9  IGH93-30-3  IGH93-33  IGH91-18  IGH93-53  IGH93-11  IGH92-",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 1802,
+                    "end": 1810,
+                    "text": "Table S3",
+                    "ref_id": null
+                },
+                {
+                    "start": 1813,
+                    "end": 1822,
+                    "text": "Figure S3",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 2332,
+                    "end": 2340,
+                    "text": "(Fig. 4)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Accessibility and resources."
+        },
+        {
+            "text": "The numbers above each column indicate the total number of sequences in the respective column. Sharing of rare lineages with log 34 post below the dashed line is statistically significant (see Methods). Ppost below the dashed line in Fig. 5 ) that exhibit lineage expansion in at least one individual is shown. These receptors are indicated by red diamonds in Fig. 5 . The 34 rare expanding lineage progenitors shown here are shared among four to 12 COVID-19 patients. ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 234,
+                    "end": 240,
+                    "text": "Fig. 5",
+                    "ref_id": null
+                },
+                {
+                    "start": 360,
+                    "end": 366,
+                    "text": "Fig. 5",
+                    "ref_id": null
+                }
+            ],
+            "section": "Accessibility and resources."
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Characterization of a high-affinity human antibody with a disulfide bridge in the third complementarity-determining region of the heavy chain",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Almagro",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Raghunathan",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Beil",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Janecki",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Dinh",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Lacombe",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Connor",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ware",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Kim",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "J Mol Recognit",
+            "volume": "25",
+            "issn": "",
+            "pages": "125--135",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Measurement and clinical monitoring of human lymphocyte clonality by massively parallel VDJ pyrosequencing",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Boyd",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Marshall",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Merker",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Maniar",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Sahaf",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Jones",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Simen",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Hanczaruk",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Nguyen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Sci Transl Med",
+            "volume": "1",
+            "issn": "",
+            "pages": "12--23",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Massively scalable genetic analysis of antibody repertoires",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Briney",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Burton",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1101/447813"
+                ]
+            }
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Potent neutralizing antibodies from COVID-19 patients define multiple targets of vulnerability",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "J M"
+                    ],
+                    "last": "Brouwer",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Caniels",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Van Der Straten",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Snitselaar",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Aldon",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Bangaru",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Torres",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "M A"
+                    ],
+                    "last": "Okba",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Claireaux",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Kerster",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1126/science.abc5902"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "The clonal selection theory of acquired immunity",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Burnet",
+                    "suffix": ""
+                }
+            ],
+            "year": 1959,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.5962/bhl.title.8281"
+                ]
+            }
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Immunity as an aspect of general biology",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Burnet",
+                    "suffix": ""
+                }
+            ],
+            "year": 1960,
+            "venue": "Mechanisms of antibody formation",
+            "volume": "",
+            "issn": "",
+            "pages": "15--21",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Potent neutralizing antibodies against SARS-CoV-2 identified by high-throughput single-cell sequencing of convalescent patients' B cells",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Cao",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Su",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Guo",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Deng",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Bao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Zhu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Geng",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.cell.2020.05.025"
+                ]
+            }
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "A neutralizing human antibody binds to the N-terminal domain of the spike protein of SARS-CoV-2",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Chi",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Yan",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Hao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Fan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Dong",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1126/science.abc6952"
+                ]
+            }
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "B cell responses: cell interaction dynamics and decisions",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Cyster",
+                    "suffix": ""
+                },
+                {
+                    "first": "Allen",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "D C"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Cell",
+            "volume": "177",
+            "issn": "",
+            "pages": "524--540",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Dynamics of the cytotoxic T cell response to a model of acute viral infection",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Utsugi",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Warren",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Mcelrath",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "J Virol",
+            "volume": "89",
+            "issn": "",
+            "pages": "4517--4526",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Quantifying selection in immune receptor repertoires",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Elhanati",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Murugan",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Callan",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Mora",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Walczak",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Proc Natl Acad Sci U S A",
+            "volume": "111",
+            "issn": "",
+            "pages": "9875--9880",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Predicting the spectrum of TCR repertoire sharing with a data-driven model of recombination",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Elhanati",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Sethna",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Callan",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Mora",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Walczak",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Immunol Rev",
+            "volume": "284",
+            "issn": "",
+            "pages": "167--179",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Genomewide association study of severe Covid-19 with respiratory failure",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Ellinghaus",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Degenhardt",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Bujanda",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Buti",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Albillos",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Invernizzi",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Fern\u00e1ndez",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Prati",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Baselli",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Asselta",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "N Engl J Med",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1056/NEJMoa2020283"
+                ]
+            }
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Deep sequencing of B cell receptor repertoires from COVID-19 patients reveals strong convergent immune signatures",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Minter",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Finch",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Dias",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "James",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1101/2020.05.20.106294"
+                ]
+            }
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "The promise and challenge of high-throughput sequencing of the antibody repertoire",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Georgiou",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Ippolito",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Beausang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Busse",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Wardemann",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Quake",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Nat Biotechnol",
+            "volume": "32",
+            "issn": "",
+            "pages": "158--168",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Clinical characteristics of coronavirus disease 2019 in China",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Guan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Ni",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Liang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "Q"
+                    ],
+                    "last": "Ou",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "X"
+                    ],
+                    "last": "He",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Shan",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Lei",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "S C"
+                    ],
+                    "last": "Hui",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "N Engl J Med",
+            "volume": "382",
+            "issn": "",
+            "pages": "1708--1720",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Hierarchical clustering can identify B cell clones with high confidence in Ig repertoire sequencing data",
+            "authors": [],
+            "year": null,
+            "venue": "J Immunol",
+            "volume": "198",
+            "issn": "",
+            "pages": "2489--2499",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Beyond the spike: identification of viral targets of the antibody response to SARS-CoV-2 in COVID-19 patients",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Hachim",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Kavian",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Cohen",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Chin",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Chu",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "K P"
+                    ],
+                    "last": "Mok",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Tsang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Yeung",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Perera",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Poon",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1101/2020.04.30.20085670"
+                ]
+            }
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Signatures of selection in the human antibody repertoire: selective sweeps, competing subclones, and neutral drift",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Horns",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Vollmers",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Dekker",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Quake",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Proc Natl Acad Sci U S A",
+            "volume": "116",
+            "issn": "",
+            "pages": "1261--1266",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "SOS: online probability estimation and generation of T and B cell receptors",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Isacchini",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Olivares",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Nourmohammad",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Walczak",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Mora",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/bioinformatics/btaa574"
+                ]
+            }
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Generative models of T-cell receptor sequences",
+            "authors": [],
+            "year": null,
+            "venue": "Phys Rev E",
+            "volume": "101",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Immunobiology: the immune system in health and disease",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Janeway",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Travers",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Walport",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Shlomchik",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "",
+            "volume": "6",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Human neutralizing antibodies elicited by SARS-CoV-2 infection",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41586-020-2380-z"
+                ]
+            }
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Exploiting B cell receptor analyses to inform on HIV-1 vaccination strategies. Vaccines (Basel) 8",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Kreer",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Gruell",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Mora",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Walczak",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Klein",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Receptor mimicry by antibody F045-092 facilitates universal binding to the H3 subtype of influenza virus",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Ohshima",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Stanfield",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Iba",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Okuno",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Kurosawa",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Wilson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Nat Commun",
+            "volume": "5",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Potent neutralizing monoclonal antibodies directed to multiple epitopes on the SARS-CoV-2 spike",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Nair",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Rapp",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Luo",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Sahi",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Figueroa",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1101/2020.06.17.153486"
+                ]
+            }
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Cross-reactive antibody response between SARS-CoV-2 and SARS-CoV infections",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Lv",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Tsang",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Yuan",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Perera",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Leung",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "T Y"
+                    ],
+                    "last": "So",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M C"
+                    ],
+                    "last": "Chan",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Yip",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "S H"
+                    ],
+                    "last": "Chik",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Cell Rep",
+            "volume": "31",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "High-throughput immune repertoire analysis with IGoR",
+            "authors": [
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Marcou",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Mora",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Walczak",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Nat Commun",
+            "volume": "9",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "The innate immune system: fighting on the front lines or fanning the flames of COVID-19?",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Mckechnie",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Blish",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Cell Host Microbe",
+            "volume": "27",
+            "issn": "",
+            "pages": "863--869",
+            "other_ids": {}
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Human adaptive immune receptor repertoire analysis-past, present, and future",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "C A"
+                    ],
+                    "last": "Nielsen",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Boyd",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Immunol Rev",
+            "volume": "284",
+            "issn": "",
+            "pages": "9--23",
+            "other_ids": {}
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "B cell clonal expansion and convergent antibody responses to SARS-CoV-2",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "C A"
+                    ],
+                    "last": "Nielsen",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Hoh",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "J L"
+                    ],
+                    "last": "Jackson",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Roeltgen",
+                    "suffix": ""
+                },
+                {
+                    "first": "J.-Y",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Rustagi",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Rogers",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Powell",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Kim",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.21203/rs.3.rs-27220/v1"
+                ]
+            }
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Fierce selection and interference in B-cell repertoire response to chronic HIV-1",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Nourmohammad",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Otwinowski",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "\u0141uksza",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Mora",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Walczak",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Mol Biol Evol",
+            "volume": "36",
+            "issn": "",
+            "pages": "2184--2194",
+            "other_ids": {}
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "Serological assays for severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2)",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Chik",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Euro Surveill",
+            "volume": "25",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "Cross-neutralization of SARS-CoV-2 by a human monoclonal SARS-CoV antibody",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Pinto",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y.-J",
+                    "middle": [],
+                    "last": "Park",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Beltramello",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Walls",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Tortorici",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Bianchi",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Jaconi",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Culap",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Zatta",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "De Marco",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41586-020-2349-y"
+                ]
+            }
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Method for identification of condition-associated public antigen receptor sequences",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Pogorelyy",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Minervina",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Chudakov",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [
+                        "Z"
+                    ],
+                    "last": "Mamedov",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Lebedev",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Mora",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Walczak",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "",
+            "volume": "7",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "Precise tracking of vaccine-responding T cell clones reveals convergent and personalized response in identical twins",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Pogorelyy",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Minervina",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Touzel",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Sycheva",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Komech",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Kovalenko",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Karganova",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Egorov",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Komkov",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Chudakov",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Proc Natl Acad Sci U S A",
+            "volume": "115",
+            "issn": "",
+            "pages": "12704--12709",
+            "other_ids": {}
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "Landscape of non-canonical cysteines in human VH repertoire revealed by immunogenetic analysis",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Prabakaran",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Chowdhury",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Cell Rep",
+            "volume": "31",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "Convergent antibody responses to SARS-CoV-2 in convalescent individuals",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Robbiani",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Gaebler",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Muecksch",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "C C"
+                    ],
+                    "last": "Lorenzi",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Cho",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Agudelo",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Barnes",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Gazumyan",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Finkin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41586-020-2456-9"
+                ]
+            }
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "Immunosequencing: applications of immune repertoire deep sequencing",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Robins",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Curr Opin Immunol",
+            "volume": "25",
+            "issn": "",
+            "pages": "646--652",
+            "other_ids": {}
+        },
+        "BIBREF46": {
+            "ref_id": "b46",
+            "title": "Isolation of potent SARS-CoV-2 neutralizing antibodies and protection from disease in a small animal model",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Woehl",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1126/science.abc7520"
+                ]
+            }
+        },
+        "BIBREF47": {
+            "ref_id": "b47",
+            "title": "Next generation sequencing of T and B cell receptor repertoires from COVID-19 patients showed signatures associated with severity of disease",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Schulthei\u00df",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Paschold",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Simnica",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Mohme",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Willscher",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Von Wenserski",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Scholz",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Wieters",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Dahlke",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Tolosa",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.immuni.2020.06.024"
+                ]
+            }
+        },
+        "BIBREF48": {
+            "ref_id": "b48",
+            "title": "Population variability in the generation and thymic selection of T-cell repertoires",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Sethna",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Isacchini",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Dupic",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Mora",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Walczak",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Elhanati",
+                    "suffix": ""
+                }
+            ],
+            "year": 2001,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1101/2020.01.08.899682"
+                ]
+            }
+        },
+        "BIBREF50": {
+            "ref_id": "b50",
+            "title": "Characterization of neutralizing antibodies from a SARS-CoV-2 infected individual",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Stuart",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Wan",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Feng",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1101/2020.05.12.091298"
+                ]
+            }
+        },
+        "BIBREF51": {
+            "ref_id": "b51",
+            "title": "Analysis of a SARS-CoV-2-infected individual reveals development of potent neutralizing antibodies with limited somatic mutation",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Seydoux",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Homad",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Maccamy",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Parks",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Hurlburt",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Jennewein",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Akins",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Stuart",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Wan",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Feng",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.immuni.2020.06.001"
+                ]
+            }
+        },
+        "BIBREF52": {
+            "ref_id": "b52",
+            "title": "A direct approach to false discovery rates",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Storey",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "J R Stat Soc Series B Stat Methodol",
+            "volume": "64",
+            "issn": "",
+            "pages": "479--498",
+            "other_ids": {}
+        },
+        "BIBREF53": {
+            "ref_id": "b53",
+            "title": "Statistical significance for genomewide studies",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Storey",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Tibshirani",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "Proc Natl Acad Sci U S A",
+            "volume": "100",
+            "issn": "",
+            "pages": "9440--9445",
+            "other_ids": {}
+        },
+        "BIBREF54": {
+            "ref_id": "b54",
+            "title": "Immunology of COVID-19: current state of the science",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Vabret",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Britton",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Gruber",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Hegde",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Kim",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Kuksin",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Levantovsky",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Malle",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Moreira",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Park",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Immunity",
+            "volume": "52",
+            "issn": "",
+            "pages": "910--941",
+            "other_ids": {}
+        },
+        "BIBREF55": {
+            "ref_id": "b55",
+            "title": "pRESTO: a toolkit for processing high-throughput sequencing raw reads of lymphocyte receptor repertoires",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Vander Heiden",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Yaari",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Uduman",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Stern",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "O&apos;connor",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Hafler",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Vigneault",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Kleinstein",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Bioinformatics",
+            "volume": "30",
+            "issn": "",
+            "pages": "1930--1932",
+            "other_ids": {}
+        },
+        "BIBREF56": {
+            "ref_id": "b56",
+            "title": "Broad sarbecovirus neutralizing antibodies define a key site of vulnerability on the SARS-CoV-2 spike protein",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "Z"
+                    ],
+                    "last": "Wec",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Wrapp",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Herbert",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Maurer",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Haslwanter",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Sakharkar",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Jangra",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Dieterle",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Lilov",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1101/2020.05.15.096511.WHO"
+                ]
+            }
+        },
+        "BIBREF57": {
+            "ref_id": "b57",
+            "title": "Estimating clinical severity of COVID-19 from the transmission dynamics in Wuhan, China",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Leung",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Bushman",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Kishore",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Niehus",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "De Salazar",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Cowling",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Lipsitch",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Leung",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nat Med",
+            "volume": "26",
+            "issn": "",
+            "pages": "506--510",
+            "other_ids": {}
+        },
+        "BIBREF58": {
+            "ref_id": "b58",
+            "title": "A noncompeting pair of human neutralizing antibodies block COVID-19 virus binding to its receptor ACE2",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Shen",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Peng",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Bi",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Science",
+            "volume": "368",
+            "issn": "",
+            "pages": "1274--1278",
+            "other_ids": {}
+        },
+        "BIBREF59": {
+            "ref_id": "b59",
+            "title": "Assessment of B cell repertoire in humans",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Kipling",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Dunn-Walters",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Methods Mol Biol",
+            "volume": "1343",
+            "issn": "",
+            "pages": "199--218",
+            "other_ids": {}
+        },
+        "BIBREF60": {
+            "ref_id": "b60",
+            "title": "Rapid isolation and profiling of a diverse panel of human monoclonal antibodies targeting the SARS-CoV-2 spike protein",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Zost",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Gilchuk",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Case",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "X"
+                    ],
+                    "last": "Reidy",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Trivette",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Nargi",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Sutton",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Suryadevara",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1101/2020"
+                ]
+            }
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Cell lines. Sf9 cells (Spodoptera frugiperda ovarian cells, female, ATCC catalogue no. CRL-1711) and High Five cells (Trichoplusia ni ovarian cells, female; Thermo Fisher Scientific, Waltham, United States (US), catalogue number: B85502) were maintained in HyClone (GE Health Care, Chicago, US) insect cell culture medium.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "Roadmap for analysis of BCR repertoires. Top: We collected bulk blood IgG BCR samples from three healthy individuals and 19 COVID-19 patients where two patients had mild symptoms, 12 had moderate symptoms, and five had severe symptoms (different markers and colors) (See Methods). Samples were collected at different time points during",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "Sequence features of immune receptors across cohorts. (A) The normalized probability density function (PDF) for IGHV-gene usage is shown for inferred na\u00efve progenitors of clonal lineages in cohorts of healthy individuals and COVID-19 cohorts of patients exhibiting mild, moderate, and severe symptoms. The bars indicate the usage frequency averaged over individuals in each cohort, and dots indicate the variation in V-gene frequencies across individuals within each cohort. (B) Distribution of length of HCDR3 amino acid sequence, (C) length of nucleotide sequence insertions at the VD junction, and (D) length of nucleotide sequence deletions at the VD junction are shown for each cohort. Full lines show distributions averaged over individuals in each cohort, and shadings indicate regions containing one standard deviation of variation among individuals within a cohort. The inferred na\u00efve progenitors of clonal lineages in healthy individuals show significantly shorter HCDR3s, shorter VD deletions, and longer VD insertions compared to COVID-19 patients with moderate and sever symptoms. ANOVA statistics for mean HCDR3 length between cohorts: Healthy-Mild: 3,d = 12.0, p-value = 0.040; Healthy-Moderate: 3,3d = 15.7, p-value = 0.002; Healthy-Severe: 3,} = 37.3, p-value = 0.001. ANOVA statistics for mean VD deletion length between cohorts: Healthy-Mild: 3,d = 4.2, p-value = 0.133; Healthy-Moderate: 3,3d = 12.6, p-value = 0.004; Healthy-Severe: 3,} = 19.1, p-value = 0.005. ANOVA statistics for mean VD insertion length between cohorts: Healthy-Mild: 3,d = 3.7, p-value = 0.152; Healthy-Moderate: 3,3d = 10.0, p-value = 0.008; Healthy-Severe: 3,} = 8.2, p-value = 0.03.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "Differential statistics of immune repertoires across cohorts. (A) The distribution of the log-probability to observe a sequence in the periphery log 34 post ( ) is shown for inferred na\u00efve progenitors of clonal lineages in cohorts of healthy individuals and the mild, moderate, and severe cohorts of COVID-19 patients. Full lines show distributions averaged over individuals in each cohort, and shadings indicate regions containing one standard deviation of variation among individuals within a cohort. (B) Correlation between the inferred feature-specific selection factors . for V-gene usage (left), HCDR3 length preference (middle), and HCDR3 amino acid usage (right) is shown among cohorts.Correlation values associated with each color is indicated in the matrices.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "Dynamics of BCR repertoires during infection. (A) The binding level (measured by OD450 in ELISA assay) of the IgM (left) and IgG (right) repertoires to SARS-CoV-2 (RBD) epitopes increases over time in most individuals. (B) The log-ratio of BCR (mRNA) abundance at late time versus early time is shown for all clonal lineages that are present at least in two time points (see Methods). Each panel shows dynamics of lineages for a given individual, as indicated in the label. The analysis is shown in individuals for whom the binding level (OD450) of the IgG repertoire increases over time (shown in (A)). The count density indicates the number of lineages at each point. Lineages that show a significant expansion over time are indicated in red (see Methods for estimation of associated p-values). (C) IGHV-gene usage of lineages is shown for non-expanded (left) and expanded (middle) lineages in all individuals (colors). The right panel shows, for each patient (colors), the fraction of expanded lineages with a given IGHV gene as the number of expanded lineages divided by the total number of lineages with that given IGHV gene. The size of the circles indicates the total number of lineages in each category. Sharing of BCRs among patients. (A) The histogram shows the number of clonal lineages that share a common progenitor in a given number of individuals, indicated on the horizontal axis. (B) The density plot shows the distribution of post for progenitors of clonal lineages shared in a given number of individuals, indicated on the horizontal axis; Histogram bin size is 0.5. The scaling of sequence counts sets the maximum of density in each column to one. Sharing of rare lineages with post below the dashed line is statistically significant (see Methods). Red diamonds indicate clonal lineages below the dashed line with significant expansion in at least one of the individuals, identified in Fig. 4. Yellow triangles indicate HCDR3 matches with previously identified SARS-CoV-2 specific mAbs. (C) The histogram shows the number of clonal lineages that share a common progenitor in a given number individuals, indicated on the horizontal axis, and which have significantly expanded (Fig. 4) during infection in at least one of the individuals. (D) The scatter plot with transparent overlapping markers shows post for progenitors of clonal lineages shared in a given number individuals that have expanded in at least one individual, shown in (C). The dashed line indicates post -dependent significance of sharing,",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": "Features of unique immune receptors across cohorts. (A) IGHV-gene usage is shown for unique receptors in cohorts of healthy individuals and COVID-19 cohorts of patients exhibiting mild, moderate, and severe symptoms. The bars indicate the usage frequency averaged over individuals in each cohort, and dots indicate the variation in V-gene frequencies across individuals within each cohort. (B) Distribution of the length of HCDR3 amino acid sequence, (C) the length of nucleotide sequence insertion at the VD junction, and (D) the length of nucleotide sequence deletion at the VD junction are shown for each cohort. Full lines show distributions averaged over individuals in each cohort, and shading indicates regions containing one standard deviation of variation among individuals within a cohort. Unique BCRs in healthy individuals show significantly shorter HCDR3s compared to moderate and sever cohorts, and significantly shorter VD deletions, and longer VD insertions compared to only the moderate cohort. ANOVA statistics for mean HCDR3 length between cohorts: Healthy-Mild: 3,d = 8.7, p-value = 0.060; Healthy-Moderate: 3,3d = 17.2, p-value = 0.001; Healthy-Severe: 3,} = 10.0, p-value = 0.020. ANOVA statistics for mean VD deletion length between cohorts: Healthy-Mild:3,d = 1.7, p-value = 0.288; Healthy-Moderate: 3,3d = 9.5, p-value = 0.009; Healthy-Severe: 3,} = 4.5, p-value = 0.08. ANOVA statistics for mean VD insertion length between cohorts: Healthy-Mild: 3,d = 2.1, p-value = 0.241; Healthy-Moderate: 3,3d = 10.1, p-value = 0.007; Healthy-Severe: 3,} = 4.3, p-value = 0.08.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF6": {
+            "text": "IGHJ-gene usage and insertion/deletion at DJ junctions. IGHJ-gene usage is shown for lineage progenitors (A) and for unique receptors (B) in cohorts of healthy individuals and COVID-19 cohorts of patients exhibiting mild, moderate, and severe symptoms. The bars indicate the usage frequency averaged over individuals in each cohort, and dots indicate the variation in J-gene frequencies across individuals within each cohort. Distributions of the length of nucleotide sequence insertion (C) and deletion (D) at the DJ junction are shown for lineage progenitors. (E) and (F) show similar statistics to (C) and (D) for unique receptors in each cohort. (C-F) Full lines show distributions averaged over individuals in each cohort, and shadings indicates regions containing one standard deviation of variation among individuals within a cohort. The inferred na\u00efve progenitors of clonal lineages in healthy individuals show significantly longer DJ insertions,",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF7": {
+            "text": "Overlap of BCR lineages between samples from each individual. BCR repertoires are highly undersampled, and relatively few BCR lineages appear in multiple time points and replicates. (A) Fraction of lineages present in only one time point before (blue) and after (red) filtering out small lineages (i.e., those with less than three unique sequences per time point) are shown. (B) Fraction of lineages present in only one replicate before (blue) andafter (red) filtering out small lineages (i.e., those with less than three unique sequences per time point) are shown.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF8": {
+            "text": "Expansion test with replicate data. (A) The log-ratio of abundance of receptors for all clonal lineages present in two replicates are shown. Each panel shows the test result for a given patient, as indicated in the label. The count density indicates the number of lineages at each point. Lineages that show a significant expansion over time are indicated in red. Since this is replicate data and represents a null model, red points indicate false positives. (B) log10 p-values of the expansion test versus log10 fold change (or odds ratio) for replicate data are shown. Color indicates density of points, and p-values of zero are displayed at the minimum nonzero value. See Methods for normalization, data processing, and hypothesis test. (C) Empirical cumulative distributions of expansion data from multiple time points (red) and replicate data (blue) show that many more tests in expansion data result in low pvalues compared to replicate data. (D) Ratio of empirical cumulative distributions indicates that at a significance threshold of 10 cd44 there are roughly 12.3 times more positives than false positives. Statistics of expansion tests. (A) log10 p-values of the expansion test versus log10 fold change (or odds ratio) for data corresponding to Fig. 4B is shown. Color indicates density of points, and p-values of zero are displayed at the minimum nonzero value. See Methods for normalization, data processing, and hypothesis test. (B) Fraction of lineages expanded for different individuals is shown. HCDR3 length distributions of expanded and non-expanded lineages, (C) with each lineage having equal weight, and (D) with each lineage weighted by the number of unique sequences per time point (excluding singletons) are shown. Sharing of BCRs among healthy individuals. The density plot shows the distribution of log 34 post for progenitors of clonal lineages shared in a given number of healthy individuals, indicated on the horizontal axis;",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF9": {
+            "text": "S1. Statistics of BCR repertoire sequence data from healthy individuals, and COVID-19 patients. The Information about individuals in each cohort is shown. Detailed statistics of the processed data for productive BCRs are shown for read abundance, number of singletons, and number of unique sequences for all replicates and sampled time-points in each individual. For each individual, the number of lineages with more than two and ten unique sequences across all time points are shown in separate columns. Read statistics for unproductive receptors pooled from all individuals is shown separately.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "Verified antibodies detected in BCR repertoires of COVID-19 patients. Verified antibodies responsive to",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "and shorter DJ deletions compared to COVID-19 patients with moderate symptoms. ANOVA statistics for mean DJ insertion length between Healthy-Moderate: 3,3d = 12.4, p-value = 0.004, and for mean DJ deletion length between Healthy-Moderate: 3,3d = 10.9, p-value = 0.006. The differences in the statistics of DJ indels between healthy individuals and other infected cohorts are insignificant (ANOVA p-value > 0.01). The differences in statistics of DJ indels for unique BCRs are insignificant between cohorts.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF4": {
+            "text": "List of primers used for PCR amplification of B-cell repertoires samples.Table S3. Rare expanding BCRs shared among individuals. The list of rare progenitors of clonal lineages (i.e., with",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "The authors declare no competing interests. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Competing Interests"
+        }
+    ]
+}

@@ -1,0 +1,621 @@
+{
+    "paper_id": "873f5237a8efba27a9872adc8839814aa6a8e360",
+    "metadata": {
+        "title": "Symbiotic 7: Integration of Predator and More \u22c6 (Competition Contribution)",
+        "authors": [
+            {
+                "first": "Marek",
+                "middle": [],
+                "last": "Chalupa",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Masaryk University",
+                    "location": {
+                        "settlement": "Brno",
+                        "country": "Czech Republic"
+                    }
+                },
+                "email": "chalupa@fi.muni.cz."
+            },
+            {
+                "first": "Tom\u00e1\u0161",
+                "middle": [],
+                "last": "Ja\u0161ek",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Masaryk University",
+                    "location": {
+                        "settlement": "Brno",
+                        "country": "Czech Republic"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Luk\u00e1\u0161",
+                "middle": [],
+                "last": "Tomovi\u010d",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Masaryk University",
+                    "location": {
+                        "settlement": "Brno",
+                        "country": "Czech Republic"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Martin",
+                "middle": [],
+                "last": "Hru\u0161ka",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "IT4Innovations Centre of Excellence",
+                    "location": {
+                        "settlement": "Brno",
+                        "region": "CZ",
+                        "country": "Czech Republic"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "",
+                "middle": [],
+                "last": "Veronika\u0161okov\u00e1",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "IT4Innovations Centre of Excellence",
+                    "location": {
+                        "settlement": "Brno",
+                        "region": "CZ",
+                        "country": "Czech Republic"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Paul\u00edna",
+                "middle": [],
+                "last": "Ayaziov\u00e1",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Masaryk University",
+                    "location": {
+                        "settlement": "Brno",
+                        "country": "Czech Republic"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Jan",
+                "middle": [],
+                "last": "Strej\u010dek",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Masaryk University",
+                    "location": {
+                        "settlement": "Brno",
+                        "country": "Czech Republic"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Tom\u00e1\u0161",
+                "middle": [],
+                "last": "Vojnar",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "IT4Innovations Centre of Excellence",
+                    "location": {
+                        "settlement": "Brno",
+                        "region": "CZ",
+                        "country": "Czech Republic"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Symbiotic 7 brings improvements in all parts of the tool. In particular, we integrated the advanced shape analysis implemented in Predator to our instrumentation process for memory safety checking. Further, we extended our slicer to correctly handle non-terminating programs. This new slicing is applied in termination analysis, where we also added instrumentation for detection of simple cycles in the program state space. The witness generation process changed as well.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "Symbiotic 7 follows the same basic schema as all previous versions [4, 5] : the program to be verified is first instrumented (if needed), then reduced by static program slicing, and finally symbolically executed using Klee [2] . We describe the main modifications since Symbiotic 5 (participating in SV-COMP 2018) as modifications in Symbiotic 6 (competing in 2019) have not been published.",
+            "cite_spans": [
+                {
+                    "start": 67,
+                    "end": 70,
+                    "text": "[4,",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 71,
+                    "end": 73,
+                    "text": "5]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 223,
+                    "end": 226,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Verification Approach"
+        },
+        {
+            "text": "Memory safety checking improvements Symbiotic uses a static pointer analysis to detect instructions that can potentially violate memory safety. To check these instructions, Symbiotic 5 [5, 3] instrumented the program with code that keeps records about allocated memory and uses the records to assert the validity of potentially misbehaving instructions. Then we sliced the program with respect to these assertions and called Klee to check assertion validity.",
+            "cite_spans": [
+                {
+                    "start": 185,
+                    "end": 188,
+                    "text": "[5,",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 189,
+                    "end": 191,
+                    "text": "3]",
+                    "ref_id": "BIBREF2"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Verification Approach"
+        },
+        {
+            "text": "Since Symbiotic 6, we slice the program directly with respect to the potentially misbehaving instructions without inserting any additional code. Then we call Klee to check memory safety of the sliced program.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Verification Approach"
+        },
+        {
+            "text": "Symbiotic 7 newly integrates Predator [6] , a static analyzer specialized on memory safety. We first run Predator in its over-approximating mode and \u22c6 M. Chalupa, T. Ja\u0161ek, P. Ayaziov\u00e1, and J. Strej\u010dek Accepted in a configuration that analyses all branches in the given program and tries to recover from found errors. If Predator says that the program is safe, we simply answer true. Otherwise, we take bug reports from Predator and combine them with results of our static pointer analysis to get a more precise (i.e., smaller) set of potentially misbehaving instructions. Then we proceed like Symbiotic 6.",
+            "cite_spans": [
+                {
+                    "start": 38,
+                    "end": 41,
+                    "text": "[6]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 193,
+                    "end": 201,
+                    "text": "Strej\u010dek",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Verification Approach"
+        },
+        {
+            "text": "Symbiotic 7 is also the first version that can distinguish between validmemcleanup and valid-memtrack properties. To do this, our clone of Klee now reconstructs the shape of memory at the program exit if unfreed memory is found: Klee starts with local and global variables and resolves pointers in these (if any). Then it resolves pointers in the pointed memory, etc. This way we can find out if the unfreed memory is reachable via a chain of dereferences or not.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Verification Approach"
+        },
+        {
+            "text": "Termination analysis Symbiotic 6 introduced a simple support for termination property: a call to VERIFIER error is inserted before trivial infinite loops, e.g., while (true); loops. If the symbolic execution detects that such a call is reachable, Symbiotic answers false as the program can reach an infinite loop. If all paths of the program are explored by symbolic execution without reaching any of these calls, all program executions are clearly terminating and we answer true (an infinite program path cannot be fully explored by symbolic execution). Note that program slicing was disabled for non-termination checking in Symbiotic 6 as the slicer could remove infinite loops in some specific cases.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Verification Approach"
+        },
+        {
+            "text": "Symbiotic 7 brings two improvements. First, since we extended our slicer to correctly handle non-terminating programs [7] , we now apply slicing with slicing criteria set to all exit points (including the instrumented error calls) of the program. Second, we instrument the program with checks for simple cycles in the state space. The instrumentation detects non-nested loops with a single entry for which it can conservatively determine a set {V 1 , . . . , V k } that includes all variables potentially modified by the loop. At the beginning of the loop body, we insert assignments that store the value of each variable V i into a new variable V \u2032 i . At the end of the loop body, we insert the assertion assert(",
+            "cite_spans": [
+                {
+                    "start": 118,
+                    "end": 121,
+                    "text": "[7]",
+                    "ref_id": "BIBREF8"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Verification Approach"
+        },
+        {
+            "text": "to check a change in the vector of these variables. If this assertion is violated, the program has a non-terminating execution.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Verification Approach"
+        },
+        {
+            "text": "Error path replay Although the slicer in Symbiotic now provides algorithms that preserve non-termination properties of programs, outside the Termination category we still use the original non-termination insensitive slicing as it may remove more instructions. The price is, however, that Symbiotic may report false alarms: an unreachable error location situated below an infinite loop may become reachable when the loop is sliced out. To fix this issue, we try to reproduce each error found by symbolic execution in the original (unsliced) program. If the error is reproduced, we report it as a real error. Otherwise, we say unknown.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Verification Approach"
+        },
+        {
+            "text": "Improved witness generation Symbiotic 5 and 6 generated violation witnesses that describe only the initialization of non-deterministic variables at the beginning of the main function. Symbiotic 7, on the other hand, generates violation witnesses that contain a complete test vector, i.e., the whole sequence of values returned from VERIFIER nondet * functions during the error path replay. To get and correctly identify all these values, we have modified our fork of Klee to support interpretation of VERIFIER nondet * functions (and other undefined functions in general) internally. Currently, more than 99% of our violation witnesses (outside the Termination category) are confirmed. Symbiotic 7 still generates trivial correctness witnesses if no error is found.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Verification Approach"
+        },
+        {
+            "text": "Other improvements Other improvements in Symbiotic 7 used in SV-COMP 2020 include a faster data dependence analysis (a part of slicing) and better handling of assume statements in the slicer. Symbiotic is now also able to continue in verification if the instrumentation or slicer crashes or exceeds the time limit. In such a case, Klee is run on the original program which has been only optimized by standard llvm optimizations. For SV-COMP 2020, we set the time limit of 400 s on instrumentation and the time limit of 300 s on slicing.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Verification Approach"
+        },
+        {
+            "text": "Symbiotic 7 is built on top of llvm 8.0.1 [8] . The tool consists of a set of modules written in C++ that process llvm bitcode, and Python scripts that chain these modules according to given configuration.",
+            "cite_spans": [
+                {
+                    "start": 42,
+                    "end": 45,
+                    "text": "[8]",
+                    "ref_id": "BIBREF9"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Software Architecture"
+        },
+        {
+            "text": "For use in Symbiotic, we have made several bugfixes in Predator's llvm backend and ported it to llvm 8.0.1. Further, we have introduced distinguishing between safe and possibly erroneous program instructions.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Software Architecture"
+        },
+        {
+            "text": "Symbiotic uses its own fork of Klee that contains several modifications compared to the mainstream Klee. In particular, the fork has been extended to handle symbolic-sized memory allocations, to process marks delimiting the lifetime of scoped variables, to check for memory leaks, and to generate violation witnesses in the SV-COMP format.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Software Architecture"
+        },
+        {
+            "text": "In SV-COMP 2020 [1] , Symbiotic 7 won the SoftwareSystems category and scored second in the MemSafety category and the FalsificationOverall meta category. Overall, Symbiotic ended up on the fourth place.",
+            "cite_spans": [
+                {
+                    "start": 16,
+                    "end": 19,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Strengths and Weaknesses"
+        },
+        {
+            "text": "The main reason for winning SoftwareSystems is having only a few incorrect answers. Indeed, Symbiotic did not win in the number of correct answers in any of the SoftwareSystems subcategories. However, we had only 4 incorrect answers and all of them in the subcategory DeviceDriversLinux64. This subcategory is huge and these incorrect answers have only a small impact on the weighted score.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Strengths and Weaknesses"
+        },
+        {
+            "text": "In MemSafety, we took the second place after PredatorHP which executes several instances of the Predator tool with different configurations in parallel. Symbiotic calls just one of these instances as mentioned above. Additionally, PredatorHP uses gcc, while we use Predator running on llvm, which is not as mature as the former. Also, we had a number of new unknown answers because Klee does not support pointer comparisons, which we incorrectly did not detect in the previous versions of Symbiotic.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Strengths and Weaknesses"
+        },
+        {
+            "text": "In general, Symbiotic's results stems from the good performance of Klee supported by efficient static analysis and slicing: the official results show that Symbiotic can decide many benchmarks very quickly.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Strengths and Weaknesses"
+        },
+        {
+            "text": "The main weakness of our tool is the inherent complexity of symbolic execution and the limited possibility of analysing potentially unbounded loops or infinite paths with this technique. Indeed, as symbolic execution actually follows all paths in the program, it does not terminate if the program contains an unbounded loop or an infinite path (unless an error is found). Even when the number of paths is finite and all the paths are finite, symbolic execution usually runs out of resources if the number of paths is large. Although this problem is slightly alleviated by program slicing, our tool still does not scale well on complex programs. \u2022 --prp=file, which sets the property specification file to use, \u2022 --witness=file, which sets the output file for the witness,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Strengths and Weaknesses"
+        },
+        {
+            "text": "\u2022 --32, which sets the 32-bit environment,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Tool Setup and Configuration"
+        },
+        {
+            "text": "\u2022 --help, which shows the full list of possible options. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Tool Setup and Configuration"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Advances in automatic software verification: SV-COMP 2020",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Beyer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Proc. TACAS (2), LNCS 12079",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Unassisted and automatic generation of high-coverage tests for complex systems programs",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Cadar",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Dunbar",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Engler",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Klee",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "OSDI",
+            "volume": "",
+            "issn": "",
+            "pages": "209--224",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Joint forces for memory safety checking",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Chalupa",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Strej\u010dek",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Vitovsk\u00e1",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "LNCS",
+            "volume": "10869",
+            "issn": "",
+            "pages": "115--132",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Symbiotic 4: Beyond reachability (competition contribution)",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Chalupa",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Vitovsk\u00e1",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Jon\u00e1\u0161",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Slaby",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Strej\u010dek",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "TACAS, volume 10206 of LNCS",
+            "volume": "",
+            "issn": "",
+            "pages": "385--389",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/978-3-662-54580-5_28"
+                ]
+            }
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Symbiotic 5: Boosted instrumentation",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Chalupa",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Vitovsk\u00e1",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Strej\u010dek",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "TACAS, volume 10806 of LNCS",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "In",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Beyer",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Huisman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "442--446",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/978-3-319-89963-3_29"
+                ]
+            }
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Predator: A practical tool for checking manipulation of dynamic data structures using separation logic",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Dudka",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Peringer",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Vojnar",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "LNCS",
+            "volume": "6806",
+            "issn": "",
+            "pages": "372--378",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/978-3-642-36742-7_49"
+                ]
+            }
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Slicing of parallel programs",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Tomovi\u010d",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "LLVM",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "), which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license and indicate if changes were made. The images or other third party material in this chapter are included in the chapter's Creative Commons license, unless indicated otherwise in a credit line to the material. If material is not included in the chapter's Creative Commons license and your intended use is not permitted by statutory regulation or exceeds the permitted use",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF1": {
+            "text": "http://doi.org/10.5281/zenodo.3678328. -Installation: Unpack the archive. -Participation Statement: Symbiotic 7 participates in all categories. -Execution: Run bin/symbiotic --sv-comp OPTS <source>, where available OPTS include:",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "6 and 7 have been developed by M. Chalupa, T. Ja\u0161ek, M. Vitovsk\u00e1, M.\u0160im\u00e1\u010dek, L. Tomovi\u010d, and P. Ayaziov\u00e1 under the supervision of J. Strej\u010dek. Predator has been adjusted for the described integration by M. Hru\u0161ka and V.\u0160okov\u00e1 under the supervision of T. Vojnar. Symbiotic and its components are available under the MIT license. The project is hosted by the Faculty of Informatics, Masaryk University. Klee, llvm, and Predator are also available under open-source licenses. Source codes of the project and references to all its components can be found at: https://github.com/staticafi/symbiotic",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "have been supported by the Czech Science Foundation grant GA18-02177S. M. Hru\u0161ka, V.\u0160okov\u00e1, and T. Vojnar have been supported by the IT4Innovations Excellence in Science project (LQ1602) and the FIT BUT internal project FIT-S-20-6427. \u22c6\u22c6 Jury member and corresponding author: chalupa@fi.muni.cz.",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": []
+}

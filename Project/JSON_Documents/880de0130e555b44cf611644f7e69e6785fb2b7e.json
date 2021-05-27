@@ -1,0 +1,287 @@
+{
+    "paper_id": "880de0130e555b44cf611644f7e69e6785fb2b7e",
+    "metadata": {
+        "title": "Supplementary Information",
+        "authors": []
+    },
+    "abstract": [
+        {
+            "text": "The main model we use here corresponds to the one described in [1] but without explicitly including the population age structure; it is schematically represented in the figure below.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Upon infection, susceptible individuals (compartment ) become exposed while still not infectious (compartment # ). Their subsequent entry in the $ compartment marks the start of the infectious period (compartments $ and ), which lasts until recovery (compartment ) or hospital admission.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "The compartment is split into two compartments to represent individuals that develop mild ( ' ) or severe disease ( ( ). A subset of severely ill individuals further requires hospital admission (compartments ) , # , and $ ) or hospital and then ICU admission (compartments +,-, +,-, # , and $ ).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "The system of ordinary differential equations that governs the dynamics is then:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "where is the transmission rate, 1/ # the time it takes for an exposed individual to become infectious (while still asymptomatic), 1/ $ + 1/ < = is the infectious period (so that E = ),",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": ") is the probability of hospitalization given infection, and +,-the probability of hospitalized individuals to require intensive cares. Following [1] we set: 1/ # = 4 days, 1/ $ = 1 day, and 1/ < = 3 days, resulting in an incubation period of 5 days and in an infectious period of 4 days.",
+            "cite_spans": [
+                {
+                    "start": 146,
+                    "end": 149,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                }
+            ],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "The other parameters represent the flow between compartments for severely ill individuals: ) => (and ),+,-=> ) is the rate of hospital admissions for individuals not requiring intensive care (requiring intensive care), respectively, while +,-=> is the rate of ICU admissions; finally, 2/ ) ?@A is the time spent in the hospital general ward, and 2/ +,-?@A is the time spent in ICU. Following [1] we set 1/ ) => = 4 days.",
+            "cite_spans": [
+                {
+                    "start": 392,
+                    "end": 395,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                }
+            ],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "We fit our model to both admissions and number of occupied beds, so that the likelihood function is given by:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "where denotes the density of a Poisson distribution, is the time point, A and A are the number of hospital and ICU admissions, ),A and +,-,A are the number of occupied general ward and ICU beds, and the barred variables correspond to expected values obtained by solving the system of differential equations above.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "For one of our sensitivity analyses (see Supplementary Table 2 and Supplementary Figure 5 ), we included in the likelihood another Poisson term representing the contribution of the seroprevalence measured in [2] . More precisely, we added the term ( N | N ), with = July 17 (the mid-point of the seroprevalence study period), N the estimated number of seropositive individuals at time according to [2] , and N the expected number of seropositive individuals at time obtained from our model. ",
+            "cite_spans": [
+                {
+                    "start": 208,
+                    "end": 211,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 398,
+                    "end": 401,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 41,
+                    "end": 62,
+                    "text": "Supplementary Table 2",
+                    "ref_id": null
+                },
+                {
+                    "start": 81,
+                    "end": 89,
+                    "text": "Figure 5",
+                    "ref_id": null
+                }
+            ],
+            "section": ""
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Estimating the burden of SARS-CoV-2 in France",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Salje",
+                    "suffix": ""
+                },
+                {
+                    "first": "Tran",
+                    "middle": [],
+                    "last": "Kiem",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Lefrancq",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Courtejoie",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Bosetti",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Paireau",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Science",
+            "volume": "369",
+            "issn": "",
+            "pages": "208--211",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Seroprevalence of anti-SARS-CoV-2 IgG at the epidemic peak in French Guiana",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Flamand",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Enfissi",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Bailly",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Sarmento",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Beillard",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Gaillet",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1101/2020.09.27.20202465v1"
+                ]
+            }
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Evolution of outcomes for patients hospitalized during the first SARS-CoV-2 pandemic wave in France",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Lefrancq",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Paireau",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Hoz\u00e9",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Courtejoie",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Yazdanpanah",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Bouadma",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF1": {
+            "text": "number of ICU beds according to different severity scenarios: baseline ( ) = 1.1%, red), low ( ) = 0.6%, green), and high ( ) = 1.8%, blue). b Projected number of ICU beds according to different durations of stay in ICU: baseline ( +,-= 11.4 days, red), short ( +,-= 8.0 days, brown), and long ( +,-= 15.0 days, purple). Solid lines indicate model posterior means while color areas indicate 95% credible intervals. Black dots indicate data used to calibrate the models, while empty circles denote data not available at the time of the analyses. Supplementary Figure 3. Choice of transmission rate change point for model M2. Model DIC for change points ranging from June 6th to June 26th. The lowest DIC is obtained for a change point on June 15th. The dashed lines indicate a DIC difference of 4 units. Supplementary Figure 4. Analyses made on August 25th 2020. Projections for the number of daily ICU (a) and hospital admissions (b), and ICU (c) and general ward (d) beds. Darker red colors correspond to older projections while lighter yellow colors correspond to more recent ones (from July 1st to August 26th). Black dots indicate actual data. Supplementary",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "SupplementaryTable 1. Model Parameters. a Value from[1], estimated using data from mainland France. b Values estimated using the mixture distribution described in[3] and using data from French Guiana available at the time the analyses were performed. All other values were estimated with our compartmental model.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "Adding seroprevalence estimates to the statistical framework. WeSupplementary Figure 5. Per-Capita Hospitalizations in French Guiana and MetropolitanFrance. Number of hospital admission between March 1st and August 25th divided by the population size of each age group.Supplementary Figure 6. Comparison between the final version of M2 and a modifiedversion that includes seroprevalence estimates. We used the seroprevalence estimates obtained by[2]. Solid lines indicate model posterior means while color areas indicate 95% credible intervals. The baseline model -in blue -corresponds to the final model M2 inSupplementary Supplementary Figure 7. Comparison between the final version of M2 and a version of M2that includes age structure. Solid blue lines indicate model M2 posterior means while color areas indicate 95% credible intervals. The black lines denote trajectories obtained with the model that includes age structure: these were simulated by using the parameters' posterior means obtained by calibrating M2 to data available on August 25th.",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": []
+}

@@ -1,0 +1,5018 @@
+{
+    "paper_id": "874d2a83ea8d0e456c06954627f166ef1bc00fcb",
+    "metadata": {
+        "title": "The evidence gap on gendered impacts of performance-based financing among family physicians for chronic disease care: a systematic review reanalysis in contexts of single-payer universal coverage",
+        "authors": [
+            {
+                "first": "Neeru",
+                "middle": [],
+                "last": "Gupta",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Holly",
+                "middle": [
+                    "M"
+                ],
+                "last": "Ayles",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Background: Although pay-for-performance (P4P) among primary care physicians for enhanced chronic disease management is increasingly common, the evidence base is fragmented in terms of socially equitable impacts in achieving the quadruple aim for healthcare improvement: better population health, reduced healthcare costs, and enhanced patient and provider experiences. This study aimed to assess the literature from a systematic review on how P4P for diabetes services impacts on gender equity in patient outcomes and the physician workforce. Methods: A gender-based analysis was performed of studies retrieved through a systematic search of 10 abstract and citation databases plus grey literature sources for P4P impact assessments in multiple languages over the period Analyses (PRISMA) guidelines. The study was restricted to single-payer national health systems to minimize the risk of physicians sorting out of health organizations with a strong performance pay component. Two reviewers scored and synthesized the integration of sex and gender in assessing patient-and provider-oriented outcomes as well as the quality of the evidence. Findings: Of the 2218 identified records, 39 studies covering eight P4P interventions in seven countries were included for analysis. Most (79%) of the studies reported having considered sex/gender in the design, but only 28% presented sex-disaggregated patient data in the results of the P4P assessment models, and none (0%) assessed the interaction of patients' sex with the policy intervention. Few (15%) of the studies controlled for the provider's sex, and none (0%) discussed impacts of P4P on the work life of providers from a gender perspective (e.g., pay equity).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Conclusions: There is a dearth of evidence on gender-based outcomes of publicly funded incentivizing physician payment schemes for chronic disease care. As the popularity of P4P to achieve health system goals continues to grow, so does the risk of unintended consequences. There is a critical need for research integrating gender concerns to help inform performance-based health workforce financing policy options in the era of the Sustainable Development Goals.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "Governments and healthcare service organizations around the world have increasingly adopted financial incentives to stimulate guideline-based practice for the prevention, diagnostics, and treatment of prevalent diseases. Such incentives, also known as pay-for-performance (P4P), may be offered as added rewards to healthcare practitioners for changes in clinical behaviors in terms of time, services delivered, patients reached, quantity or quality of care, continuity of care, or other established targets to achieve health system goals [1, 2] . The World Health Organization advocates that health system efficiencies could be achieved in countries at all levels of economic development through better incentives for primary care providers and other means of focused financing [3] . Performance incentive schemes have been implemented in several high-income countries and introduced in many low-and middleincome countries, the latter often as donor-supported pilot projects [3, 4] . However, it remains unclear to what extent, if at all, financial incentives positively influence the delivery of care in terms of equitable outcomes by gender or other personal characteristics of either patients or providers [1, 5] . The risk of potential unintended consequences of P4P schemes has tended to be overlooked in the available literature [6] .",
+            "cite_spans": [
+                {
+                    "start": 538,
+                    "end": 541,
+                    "text": "[1,",
+                    "ref_id": null
+                },
+                {
+                    "start": 542,
+                    "end": 544,
+                    "text": "2]",
+                    "ref_id": null
+                },
+                {
+                    "start": 778,
+                    "end": 781,
+                    "text": "[3]",
+                    "ref_id": null
+                },
+                {
+                    "start": 975,
+                    "end": 978,
+                    "text": "[3,",
+                    "ref_id": null
+                },
+                {
+                    "start": 979,
+                    "end": 981,
+                    "text": "4]",
+                    "ref_id": null
+                },
+                {
+                    "start": 1209,
+                    "end": 1212,
+                    "text": "[1,",
+                    "ref_id": null
+                },
+                {
+                    "start": 1213,
+                    "end": 1215,
+                    "text": "5]",
+                    "ref_id": null
+                },
+                {
+                    "start": 1335,
+                    "end": 1338,
+                    "text": "[6]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Enhancing the efficiency and effectiveness of healthcare investments is important in many countries; incentivizing physician payments to improve chronic disease management-versus relying on traditional fee-forservice, capitation, or bundled payments-is an area of increasing attention [2, 7] . Several systematic reviews have examined the impacts of P4P among medical practitioners on different indicators of healthcare processes, costs, and patient outcomes across different contexts and different systems of healthcare financing [1, 2, 4, 5, [7] [8] [9] [10] [11] [12] [13] . However, heterogeneity of incentive schemes and evaluation methods has meant there are fragmentation and general deficiency in the evidence base to support the use (or non-use) of incentive reimbursements among physicians to improve primary care for diabetes and other chronic non-communicable diseases (NCDs). Some research has found that physicians may react to incentives differently depending on whether they were for acute or chronic illness [8] . Investing in better management to lessen the impact of chronic NCDs is critical, given that these diseases account for 71% of the total mortality burden worldwide [14] . Moreover, much of the evidence on the impacts of P4P for NCDs pertains to diabetes [6] . Reducing the number of diabetes-related premature deaths is one of the key targets of the international Sustainable Development Goals (SDG) agenda (target 3.4.1). Diabetes and its complications place a substantial long-term burden on health budgets [15] . The greater susceptibility of patients with pre-existing diabetes to COVID-19 has further highlighted the cruciality of addressing diabetes management in health emergencies [14] .",
+            "cite_spans": [
+                {
+                    "start": 285,
+                    "end": 288,
+                    "text": "[2,",
+                    "ref_id": null
+                },
+                {
+                    "start": 289,
+                    "end": 291,
+                    "text": "7]",
+                    "ref_id": null
+                },
+                {
+                    "start": 531,
+                    "end": 534,
+                    "text": "[1,",
+                    "ref_id": null
+                },
+                {
+                    "start": 535,
+                    "end": 537,
+                    "text": "2,",
+                    "ref_id": null
+                },
+                {
+                    "start": 538,
+                    "end": 540,
+                    "text": "4,",
+                    "ref_id": null
+                },
+                {
+                    "start": 541,
+                    "end": 543,
+                    "text": "5,",
+                    "ref_id": null
+                },
+                {
+                    "start": 544,
+                    "end": 547,
+                    "text": "[7]",
+                    "ref_id": null
+                },
+                {
+                    "start": 548,
+                    "end": 551,
+                    "text": "[8]",
+                    "ref_id": null
+                },
+                {
+                    "start": 552,
+                    "end": 555,
+                    "text": "[9]",
+                    "ref_id": null
+                },
+                {
+                    "start": 556,
+                    "end": 560,
+                    "text": "[10]",
+                    "ref_id": null
+                },
+                {
+                    "start": 561,
+                    "end": 565,
+                    "text": "[11]",
+                    "ref_id": null
+                },
+                {
+                    "start": 566,
+                    "end": 570,
+                    "text": "[12]",
+                    "ref_id": null
+                },
+                {
+                    "start": 571,
+                    "end": 575,
+                    "text": "[13]",
+                    "ref_id": null
+                },
+                {
+                    "start": 1025,
+                    "end": 1028,
+                    "text": "[8]",
+                    "ref_id": null
+                },
+                {
+                    "start": 1194,
+                    "end": 1198,
+                    "text": "[14]",
+                    "ref_id": null
+                },
+                {
+                    "start": 1284,
+                    "end": 1287,
+                    "text": "[6]",
+                    "ref_id": null
+                },
+                {
+                    "start": 1539,
+                    "end": 1543,
+                    "text": "[15]",
+                    "ref_id": null
+                },
+                {
+                    "start": 1719,
+                    "end": 1723,
+                    "text": "[14]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "While the number of P4P policies continues to increase, along with the number of studies on P4P effects, it is uncertain whether and how P4P is related to better equity in patient outcomes. Some limited research has suggested that certain patient groups, notably older patients and those with multiple chronic NCDs, may benefit less from incentivized care compared to their younger and healthier counterparts [16] . At the same time, rising global prevalence of NCDs and other health challenges run the risk of fueling gender-related health inequalities [14] . Despite the evidence of biological and psychosocial differences between female and male patients in the progression of diabetes and related complications, clinical care guidelines tend not to differentiate by sex or consider gender-sensitive approaches to improve adherence to therapy [17] .",
+            "cite_spans": [
+                {
+                    "start": 409,
+                    "end": 413,
+                    "text": "[16]",
+                    "ref_id": null
+                },
+                {
+                    "start": 554,
+                    "end": 558,
+                    "text": "[14]",
+                    "ref_id": null
+                },
+                {
+                    "start": 846,
+                    "end": 850,
+                    "text": "[17]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Specifically, we are unaware of any reviews evaluating P4P schemes that consider a measure of better gender equity in patient outcomes. Achieving gender equality through strengthened policies and public allocations is another key SDG indicator (target 5.c). Health systems can make important contributions to this SDG by tracking gender inequalities and addressing underlying structural issues, including gender-based assessments of approaches to budgeting [18] . While it is increasingly acknowledged that monitoring sex-specific impacts of health interventions is a critical starting point, sex and gender reporting remains inadequate in health research [19, 20] . Petkovic et al.'s study of recent systematic reviews documented that less than 30% of reviews reported on sex or gender in the results [20] . There is growing recognition that, unless explicit attention is paid in health financing to gender, movement towards meeting population needs can fail to achieve gender balance or improve equity and may even exacerbate gender inequity [21] . This knowledge gap led us to our first research question: Do incentive reimbursements for primary care physicians reflect or even exacerbate gender inequalities in patient-oriented diabetes outcomes, compared to the absence of incentivizing remuneration?",
+            "cite_spans": [
+                {
+                    "start": 457,
+                    "end": 461,
+                    "text": "[18]",
+                    "ref_id": null
+                },
+                {
+                    "start": 656,
+                    "end": 660,
+                    "text": "[19,",
+                    "ref_id": null
+                },
+                {
+                    "start": 661,
+                    "end": 664,
+                    "text": "20]",
+                    "ref_id": null
+                },
+                {
+                    "start": 802,
+                    "end": 806,
+                    "text": "[20]",
+                    "ref_id": null
+                },
+                {
+                    "start": 1044,
+                    "end": 1048,
+                    "text": "[21]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "We are further unaware of any P4P schemes adjusted for physicians' gender or other individual characteristics (aside from practice location), or reviews that consider performance pay in regard to gender wage gaps or other workforce equity measures [5] . Males, including those in medical and other high-paying occupations, have long earned more than their female counterparts. The genderrelated pay gaps have not been readily explained by objective labor market characteristics, including educational attainments [22] . Studies from different countries have indicated that female physicians continue to earn on average 13% less than male physicians, after controlling for factors such as specialty and working hours [23, 24] . While health systems are often considered insufficiently responsive to women's specific health needs, they are also highly dependent on women as providers of care [25] . Women are increasingly predominant in the physician workforce, and specifically the primary care physician workforce, in many countries [24, 26] . As healthcare organizations strive to enhance patient experiences, improve population health, and reduce per capita costs of care, there is also growing recognition that achieving the ultimate goal of a high-performing health system requires improving the work life of service providers-collectively known as the Quadruple Aim for healthcare improvement [27, 28] . The World Health Organization acknowledges that health workforce gender imbalances, including wage differences, are a major challenge for health policymakers to enhance system efficiencies [29] . For one, Hedden et al.'s systematic review presented evidence that female primary care physicians present different clinical practice patterns compared to their male counterparts, including spending more time with each patient and dealing with multiple health issues during a given visit [26] . How differences in physician remuneration mechanisms and financing policies across jurisdictions over time may influence the differences between male and female physicians in observed practice patterns is an important area for a new investigation. This gap incited us to raise our second research question: Do incentive reimbursements reflect or even exacerbate gender inequalities in physician remuneration?",
+            "cite_spans": [
+                {
+                    "start": 248,
+                    "end": 251,
+                    "text": "[5]",
+                    "ref_id": null
+                },
+                {
+                    "start": 513,
+                    "end": 517,
+                    "text": "[22]",
+                    "ref_id": null
+                },
+                {
+                    "start": 716,
+                    "end": 720,
+                    "text": "[23,",
+                    "ref_id": null
+                },
+                {
+                    "start": 721,
+                    "end": 724,
+                    "text": "24]",
+                    "ref_id": null
+                },
+                {
+                    "start": 890,
+                    "end": 894,
+                    "text": "[25]",
+                    "ref_id": null
+                },
+                {
+                    "start": 1033,
+                    "end": 1037,
+                    "text": "[24,",
+                    "ref_id": null
+                },
+                {
+                    "start": 1038,
+                    "end": 1041,
+                    "text": "26]",
+                    "ref_id": null
+                },
+                {
+                    "start": 1398,
+                    "end": 1402,
+                    "text": "[27,",
+                    "ref_id": null
+                },
+                {
+                    "start": 1403,
+                    "end": 1406,
+                    "text": "28]",
+                    "ref_id": null
+                },
+                {
+                    "start": 1598,
+                    "end": 1602,
+                    "text": "[29]",
+                    "ref_id": null
+                },
+                {
+                    "start": 1893,
+                    "end": 1897,
+                    "text": "[26]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "To address these questions, we conducted a reanalysis of a systematic review of the literature on impacts of P4P among primary care physicians for diabetes management and analyzed the evidence concentrating on the extent to which patients' and/or physicians' sex/gender is considered or influential in the results to achieve the Quadruple Aim for healthcare improvement. The aim was to enhance the understanding as to whether increasing numbers of women in medicine may drive change in clinical practice patterns without P4P, whether \"genderblind\" P4P schemes have a different impact on male versus female patients, and whether such schemes are contributing to gender inequities in professional earnings among providers.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "A reanalysis was conducted using a gender-based analysis approach of the authors' previously published and unpublished data from a systematic review of P4P evaluation studies for the management of diabetes and other NCDs in publicly funded national health systems [5] . The scope of the review focuses on the contexts of single-payer universal health coverage, thus minimizing the risk of unintended consequences of P4P from physicians gaming the payment system, that is, from physicians potentially moving between health organizations within a jurisdiction to benefit from an incentive, or avoiding high-risk patients altogether to not upset clinical performance metrics [30] . This approach also discounts the specific effects of female medical practitioners potentially sorting out of health organizations with a strong performance pay component or having other characteristics that may be less attractive to women [31] . Substantively, government-funded health systems further have the responsibility in the SDG era to ensure gender-responsive human resources for health (HRH) budgeting, as an important measure to realizing their international commitments to achieving gender equality.",
+            "cite_spans": [
+                {
+                    "start": 264,
+                    "end": 267,
+                    "text": "[5]",
+                    "ref_id": null
+                },
+                {
+                    "start": 672,
+                    "end": 676,
+                    "text": "[30]",
+                    "ref_id": null
+                },
+                {
+                    "start": 918,
+                    "end": 922,
+                    "text": "[31]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Study design"
+        },
+        {
+            "text": "In accordance with other systematic review reanalyses and subanalyses, this study was designed to reconsider a previously published systematic review from a distinct implementation and reporting perspective, thereby allowing for new research questions to be examined in detail while avoiding unwarranted research duplication. The protocol for the present study was published in the PROSPERO prospective register of systematic reviews (registration number CRD42018090021) [32] . Whereas the authors' original review focused on patient-oriented outcomes before and after the introduction of P4P (e.g., patient morbidity, avoidable hospitalization, premature death) [5] , for this study, the primary outcomes of interest are gender equity in P4P effects from the patient and also provider perspectives. The review aligns with the Preferred Reporting Items for Systematic Reviews and Meta-analyses (PRISMA) guidelines [33] .",
+            "cite_spans": [
+                {
+                    "start": 471,
+                    "end": 475,
+                    "text": "[32]",
+                    "ref_id": null
+                },
+                {
+                    "start": 663,
+                    "end": 666,
+                    "text": "[5]",
+                    "ref_id": null
+                },
+                {
+                    "start": 914,
+                    "end": 918,
+                    "text": "[33]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Study design"
+        },
+        {
+            "text": "Studies were eligible to be included in the systematic review if they addressed the question of whether the introduction of physician practice incentives for diabetes management in primary and community care led to improved population health and health system outcomes through some sort of evaluative component. This could include incentives for diabetes-specific care or management of multiple morbidities, from all countries with single-payer health insurance systems.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data extraction"
+        },
+        {
+            "text": "Ten abstract and citation databases were searched: ABI Inform, Business Source Premier, Canadian Business and Current Affairs, Cochrane Library, EconLit, PAIS, PubMed, Scopus, SocIndex, and Sociological Abstracts. Free text and formal search terms and filters were translated to respect database-specific requirements, with the advice and assistance of library professionals. Several Medical Subject Headings (MeSH) terms and combinations were used to identify the intervention [including \"pay#for#performance,\" \"incentive reimbursement*,\" \"value#based purchasing,\" \"performance pay*,\" \"merit pay*.\" and related nomenclature] and the health condition of interest [\"diabetes mellitus,\" \"diabetes,\" \"hyperglyc*,\" \"prediabetes,\" \"dysglyc*,\" and related nomenclature]. Reference lists of systematic reviews on the topic that were found during the database searches [1, 2, 4, [7] [8] [9] [10] [11] [12] [13] as well as of selected global health literature sources were further hand-searched [3] .",
+            "cite_spans": [
+                {
+                    "start": 861,
+                    "end": 864,
+                    "text": "[1,",
+                    "ref_id": null
+                },
+                {
+                    "start": 865,
+                    "end": 867,
+                    "text": "2,",
+                    "ref_id": null
+                },
+                {
+                    "start": 868,
+                    "end": 870,
+                    "text": "4,",
+                    "ref_id": null
+                },
+                {
+                    "start": 871,
+                    "end": 874,
+                    "text": "[7]",
+                    "ref_id": null
+                },
+                {
+                    "start": 875,
+                    "end": 878,
+                    "text": "[8]",
+                    "ref_id": null
+                },
+                {
+                    "start": 879,
+                    "end": 882,
+                    "text": "[9]",
+                    "ref_id": null
+                },
+                {
+                    "start": 883,
+                    "end": 887,
+                    "text": "[10]",
+                    "ref_id": null
+                },
+                {
+                    "start": 888,
+                    "end": 892,
+                    "text": "[11]",
+                    "ref_id": null
+                },
+                {
+                    "start": 893,
+                    "end": 897,
+                    "text": "[12]",
+                    "ref_id": null
+                },
+                {
+                    "start": 898,
+                    "end": 902,
+                    "text": "[13]",
+                    "ref_id": null
+                },
+                {
+                    "start": 986,
+                    "end": 989,
+                    "text": "[3]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Data extraction"
+        },
+        {
+            "text": "Eligible studies included those published in English, French, Portuguese, or Spanish between 1 January 2000 and 30 April 2018. Two reviewers independently screened a sample of eligible abstracts and in turn fulltext articles, to identify and secure consensus on studies for review inclusion. The country and its health financing arrangement, characteristics of the incentive scheme, study objective, provider and patient populations, data gathering techniques, comparison groups, and outcomes measured were recorded. The full eligibility criteria and search strategy, which were guided by a Population, Intervention, Comparison, Outcomes, and Study (PICOS) design framework, are available elsewhere in the original review and related protocol [5, 34] .",
+            "cite_spans": [
+                {
+                    "start": 743,
+                    "end": 746,
+                    "text": "[5,",
+                    "ref_id": null
+                },
+                {
+                    "start": 747,
+                    "end": 750,
+                    "text": "34]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Data extraction"
+        },
+        {
+            "text": "For this analysis, we developed gender-based analysis grading criteria for the retrieved records. Each study's contents were vetted distinguishing between \"sex\" (a biological/physiological characteristic distinguishing males from females) and \"gender\" (the roles, behaviors, activities, and attributes that a given society may construct or consider appropriate for men and women) [20] . Studies were categorized by five items based on the level of inclusion and reporting of sex and gender data and analysis, pertaining to both patients and providers (Table 1) .",
+            "cite_spans": [
+                {
+                    "start": 380,
+                    "end": 384,
+                    "text": "[20]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 551,
+                    "end": 560,
+                    "text": "(Table 1)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Data analysis"
+        },
+        {
+            "text": "Simple mentions of the terms sex or gender as statistical control variables were assigned lower scores, while discussions of gender perspectives in the narrative of the results were given higher scores.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data analysis"
+        },
+        {
+            "text": "Two reviewers independently extracted and graded sex and gender reporting information from a sample of eligible full-text articles, with any disagreements resolved by consensus. Articles that received a non-zero score in terms of analyzing P4P from a gender perspective (items 3 and 5) were included in the narrative synthesis of the results. Table 1 Evaluation grid for consideration of sex and gender in P4P impact assessments Item 1: Relates sex and/or gender in the study design 2 = Methods describe that the analysis will be disaggregated by sex of both patients and providers 1 = Methods describe that the analysis will be disaggregated by sex of either patients or providers (not both) 0 = No sex disaggregation described Item 2: Includes disaggregated data by sex of the patient in the results 2 = Results include sex-disaggregated data for patients in the P4P assessment 1 = Results include only descriptives of sex-disaggregated data (e.g., general demographic characteristics of the patient population in tables/figures)",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 343,
+                    "end": 350,
+                    "text": "Table 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Data analysis"
+        },
+        {
+            "text": "Item 3: Considers gender perspective of the patient as part of the P4P assessment 2 = Narrative substantively discusses the influence of P4P in genderbased analysis from an equity perspective (in the results, discussion, and/or conclusion) 1 = Narrative only describes how sex and other identity factors impacted on patient outcomes in the results (i.e., minimal attention to gender as relevant to P4P) 0 = No mention of patient sex/gender in the results, discussion, or conclusion Item 4: Includes disaggregated data by sex of the provider in the results 2 = Results include sex-disaggregated data for providers in the P4P assessment 1 = Results include only descriptives of sex-disaggregated data (e.g., general demographic characteristics of the provider workforce in tables/figures) 0 = No sex-disaggregated provider data presented in the results Item 5: Considers gender perspective of the provider as part of the P4P assessment 2 = Narrative substantively discusses the influence of P4P in genderbased analysis from an equity perspective (in the results, discussion, and/or conclusion) 1 = Narrative only describes how sex and other identity factors impacted on provider outcomes in the results (i.e., minimal attention to gender as relevant to P4P) 0 = No mention of provider sex/gender in the results, discussion, or conclusion Building on the authors' previous work, the quality of the evidence reported in the studies was evaluated following the Grading of Recommendations, Assessment, Development and Evaluations (GRADE) approach for complex social interventions [35] , with a letter grade assigned to each study based on two predetermined criteria. The evidence was narratively synthesized in terms of the following:",
+            "cite_spans": [
+                {
+                    "start": 1574,
+                    "end": 1578,
+                    "text": "[35]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "= No sex-disaggregated patient data presented in the results"
+        },
+        {
+            "text": "Outcome relevance: the study measured different dimensions for achieving the Quadruple Aim, notably in terms of improvement of outcomes in relation to patient-oriented care (e.g., fewer complications of chronic disease and other measures that matter to patients), population health (e.g., lower rate of onset of major chronic diseases, fewer premature deaths), healthcare costs (e.g., fewer hospital bed days), and/or work life of providers (e.g., pay equity, fewer burnouts, fewer early retirements) [27, 35] . Methodological rigor: the study utilized populationgeneralizable data and assessment techniques accounting for potential selection bias and unobservables (e.g., models for analyzing endogenous treatment effects of guideline-based diabetes care) [5] .",
+            "cite_spans": [
+                {
+                    "start": 501,
+                    "end": 505,
+                    "text": "[27,",
+                    "ref_id": null
+                },
+                {
+                    "start": 506,
+                    "end": 509,
+                    "text": "35]",
+                    "ref_id": null
+                },
+                {
+                    "start": 757,
+                    "end": 760,
+                    "text": "[5]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "= No sex-disaggregated patient data presented in the results"
+        },
+        {
+            "text": "Because of the heterogeneity of the outcomes and analytical approaches under review, performing a metaanalysis was not possible [5] .",
+            "cite_spans": [
+                {
+                    "start": 128,
+                    "end": 131,
+                    "text": "[5]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "= No sex-disaggregated patient data presented in the results"
+        },
+        {
+            "text": "A total of 2218 records were initially retrieved: 2155 records from the ten electronic databases plus 63 records from hand searches. In the first step, 2128 duplicates [5] and other records were removed based on the title and abstract screening. Following this screening, 90 articles were retained for full-text review, of which 51 were eventually screened from further consideration. This process left for analysis 39 articles evaluative of introducing P4P among physicians for diabetes and NCD management in primary and community care [5] . A PRISMA depiction of the flow of information is found in Fig. 1 .",
+            "cite_spans": [
+                {
+                    "start": 168,
+                    "end": 171,
+                    "text": "[5]",
+                    "ref_id": null
+                },
+                {
+                    "start": 537,
+                    "end": 540,
+                    "text": "[5]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 601,
+                    "end": 607,
+                    "text": "Fig. 1",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Article retrieval and inclusion"
+        },
+        {
+            "text": "The studies covered eight unique P4P interventions in seven countries with single-payer health insurance: Australia, Canada (two provincial-level schemes), Denmark, Italy, Sweden, Taiwan, and the United Kingdom [5] . The characteristics of the eight schemes are described in Table 2 . Many of the studies used administrative health data sources for the evaluation analyses, typically considered complete and populationrepresentative given the focus on single-payer systems. The full references of the 39 articles reviewed are listed in the Appendix.",
+            "cite_spans": [
+                {
+                    "start": 211,
+                    "end": 214,
+                    "text": "[5]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 275,
+                    "end": 282,
+                    "text": "Table 2",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Article retrieval and inclusion"
+        },
+        {
+            "text": "Of the 39 studies retained for narrative analysis, 31 (79%) reported that the study considered sex/gender of the patient and/or provider (Fig. 2) . Only one substantively detailed that the results would be disaggregated by sex/gender as an integral component of the design. Among the 31 studies indicating any consideration of sex/gender of the patient, two thirds (20 studies or 65%) included only sex-disaggregated descriptives of the patient population among other general demographic characteristics, with the other one third (11 studies or 35%) further reporting sex-disaggregated data in the results of the statistical model assessing the impacts of P4P on patient outcomes. Twelve studies narratively described the sex-disaggregated results, of which nine limited the discussion to the descriptives and three substantively discussed the results in terms of gender-based patient outcomes from an equity perspective.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 137,
+                    "end": 145,
+                    "text": "(Fig. 2)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Reporting of sex/gender in P4P assessments"
+        },
+        {
+            "text": "While most of the studies controlled statistically for the patient's sex as a demographic variable, few (15%) controlled for the provider's sex. Of the six studies that did, four presented sex-disaggregated results of the P4P evaluation model. Two discussed the data in terms of sex-specific patterns of provider behaviors. None substantively discussed gender equity from the provider perspective as part of the P4P assessment.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Reporting of sex/gender in P4P assessments"
+        },
+        {
+            "text": "In terms of being able to address our first research question on P4P and gender equity in patient-oriented diabetes outcomes, the 12 studies that narratively discussed sex-disaggregated patient data covered four different P4P schemes: Canada (province of New Brunswick), Italy (Emilia-Romagna region), Taiwan, and the United Kingdom. Eight (67%) of these studies were from Taiwan. For Taiwan, to reduce the risk of bias from multiple reporting of effects of the same intervention, we retained for reporting only the one study classifying gender differences as an integral component of the design as well as the two most recent publications. Table 3 presents the characteristics of the eight studies retained for further analysis following the PICOS framework [6, [36] [37] [38] [39] [40] [41] [42] .",
+            "cite_spans": [
+                {
+                    "start": 759,
+                    "end": 762,
+                    "text": "[6,",
+                    "ref_id": null
+                },
+                {
+                    "start": 763,
+                    "end": 767,
+                    "text": "[36]",
+                    "ref_id": null
+                },
+                {
+                    "start": 768,
+                    "end": 772,
+                    "text": "[37]",
+                    "ref_id": null
+                },
+                {
+                    "start": 773,
+                    "end": 777,
+                    "text": "[38]",
+                    "ref_id": null
+                },
+                {
+                    "start": 778,
+                    "end": 782,
+                    "text": "[39]",
+                    "ref_id": null
+                },
+                {
+                    "start": 783,
+                    "end": 787,
+                    "text": "[40]",
+                    "ref_id": "BIBREF78"
+                },
+                {
+                    "start": 788,
+                    "end": 792,
+                    "text": "[41]",
+                    "ref_id": "BIBREF79"
+                },
+                {
+                    "start": 793,
+                    "end": 797,
+                    "text": "[42]",
+                    "ref_id": "BIBREF80"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 641,
+                    "end": 648,
+                    "text": "Table 3",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "Reporting of sex/gender in P4P assessments"
+        },
+        {
+            "text": "In terms of addressing our second research question on P4P and gender equity in physician remuneration, the two studies that substantively discussed sexdisaggregated provider data in relation to the P4P assessment results were both from Italy. The characteristics of both studies are found in Table 3 [6, 37] .",
+            "cite_spans": [
+                {
+                    "start": 301,
+                    "end": 304,
+                    "text": "[6,",
+                    "ref_id": null
+                },
+                {
+                    "start": 305,
+                    "end": 308,
+                    "text": "37]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 293,
+                    "end": 300,
+                    "text": "Table 3",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "Reporting of sex/gender in P4P assessments"
+        },
+        {
+            "text": "Among the eight studies narratively discussing sex/ gender results among patients and/or providers, the number of records on diabetes patients totaled more than 800 000 (ranging from a survey sample of 1173 to a whole-population assessment of 396 838) ( Table 4 ). Most (63%) of the studies did not report the number of providers captured in the data.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 254,
+                    "end": 261,
+                    "text": "Table 4",
+                    "ref_id": "TABREF2"
+                }
+            ],
+            "section": "Reporting of sex/gender in P4P assessments"
+        },
+        {
+            "text": "Based on the quality assessment grid, three of the retained studies discussing sex-disaggregated patient data can be considered full evaluations yielding high-quality evidence on the impacts of P4P on health system outcomes ( Table  4 ). Examples of the narratives describing sex/gender issues in these studies can be found in Table 5 . Lippi Bruni et al. reported that patients' age, insulin dependence, and frequency of visits to diabetes outpatient clinics-but not sex-were the most important determinants of emergency hospitalizations, with the findings robust to different specifications of physician financial incentives in an Italian jurisdiction [37] . In relation to Taiwan's P4P scheme, Hsiesh et al. reported that all-cause and diabetes-related mortality were lower among patient participants compared to nonparticipants and that, in terms of confounding factors, female patients with diabetes tended to have a lower risk of cancer mortality than males [39] . Pan et al. reported that patient participants had higher physician continuity than non-participants and that, based on the multiple regression analyses, female patients had significantly higher continuity of care and lower hazard of mortality than male patients [40] . None of the studies discussed sex-specific differences in patient-oriented outcomes by physicians' P4P uptake. Among the results of the partial evaluations, Yuan et al. systemically disaggregated patient data by sex in their assessment of an outpatient diabetes quality improvement plan operating within Taiwan's P4P scheme [38] . The authors found that male patients in the plan tended to have better glycemic control, but that age and socioeconomics were more important drivers of reported patient outcomes. In a Canadian province, LeBlanc et al. indicated no sex-specific difference in the likelihood of patients receiving the guideline-based number of A1c tests between patients followed by physicians who claimed the P4P incentive for diabetes management compared to those followed by physicians who had never claimed the incentive over the period of observation [36] . Reporting on the United Kingdom's Quality and Outcomes Framework (QOF), Millett et al. indicated that female patients with diabetes were more likely to have multiple comorbid conditions and that diabetes patients with comorbid conditions seemingly benefited more from the introduction of P4P in terms of achievement of established targets for blood glucose and cholesterol than those without comorbidity [42] . Crawley et al. did not report results by patients' sex in their statistical analysis, which focused on the differences across social class groups but substantively discussed the increasing evidence of inequities in care by socioeconomic status and the limited number of studies using individual-level data in the United Kingdom that consider gender and other characteristics potentially related to persistent inequitable outcomes after P4P introduction [41] .",
+            "cite_spans": [
+                {
+                    "start": 654,
+                    "end": 658,
+                    "text": "[37]",
+                    "ref_id": null
+                },
+                {
+                    "start": 964,
+                    "end": 968,
+                    "text": "[39]",
+                    "ref_id": null
+                },
+                {
+                    "start": 1233,
+                    "end": 1237,
+                    "text": "[40]",
+                    "ref_id": "BIBREF78"
+                },
+                {
+                    "start": 1564,
+                    "end": 1568,
+                    "text": "[38]",
+                    "ref_id": null
+                },
+                {
+                    "start": 2108,
+                    "end": 2112,
+                    "text": "[36]",
+                    "ref_id": null
+                },
+                {
+                    "start": 2519,
+                    "end": 2523,
+                    "text": "[42]",
+                    "ref_id": "BIBREF80"
+                },
+                {
+                    "start": 2979,
+                    "end": 2983,
+                    "text": "[41]",
+                    "ref_id": "BIBREF79"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 226,
+                    "end": 234,
+                    "text": "Table  4",
+                    "ref_id": "TABREF2"
+                },
+                {
+                    "start": 327,
+                    "end": 334,
+                    "text": "Table 5",
+                    "ref_id": "TABREF3"
+                }
+            ],
+            "section": "Impacts of P4P on gender equity in patient outcomes"
+        },
+        {
+            "text": "The two full evaluations that narratively discussed sexdisaggregated HRH data in the P4P assessments were both from Italy (Tables 4 and 5 ). Lippi Bruni et al. reported that higher shares of practitioners' income received through P4P was associated with significantly reduced adverse outcomes among their patients, but only under schemes Fig. 2 Reporting of sex and gender in P4P impact assessments requiring adherence to clinical guidelines [37] . The authors also reported that physicians' sex, but not their age or postgraduate qualifications, was significantly associated with patients' risk of emergency hospitalization and notably that patients of female physicians had a significantly lower risk. Iezzi et al. also reported a lower risk of potentially avoidable hospitalization for patients followed by practitioners receiving a higher share of their pay through P4P but that practitioners' sex and other individual characteristics did not produce systematic effects contributing to the risk [6] . Neither of the studies discussed the impacts of physicians' P4P uptake on sex-specific differences in professional earnings or other work life indicators.",
+            "cite_spans": [
+                {
+                    "start": 442,
+                    "end": 446,
+                    "text": "[37]",
+                    "ref_id": null
+                },
+                {
+                    "start": 999,
+                    "end": 1002,
+                    "text": "[6]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 122,
+                    "end": 137,
+                    "text": "(Tables 4 and 5",
+                    "ref_id": "TABREF2"
+                },
+                {
+                    "start": 338,
+                    "end": 344,
+                    "text": "Fig. 2",
+                    "ref_id": null
+                }
+            ],
+            "section": "Impacts of P4P on gender equity in provider outcomes"
+        },
+        {
+            "text": "In their partial evaluation of a low-powered scheme, LeBlanc et al. described that female physicians were more likely than their male counterparts to order the guideline-informed number of A1c tests for their patients, independent of P4P participation [36] . Greene noted that 66% of general practitioners included in the Australian study's sample were male, similar to the national demographic for all GPs [43] . ",
+            "cite_spans": [
+                {
+                    "start": 252,
+                    "end": 256,
+                    "text": "[36]",
+                    "ref_id": null
+                },
+                {
+                    "start": 407,
+                    "end": 411,
+                    "text": "[43]",
+                    "ref_id": "BIBREF81"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Impacts of P4P on gender equity in provider outcomes"
+        },
+        {
+            "text": "Pay-for-performance among primary care physicians is increasingly used to enhance guideline-based care practices for diabetes mellitus and other prevalent NCDs. As the number of P4P schemes continues to grow, the potential for unintended consequences may also rise [44] , which may possibly include exacerbated gender inequalities in health. This review of P4P impact evaluations in single-payer national health insurance systems revealed that the analysis and reporting of sex and gender in P4P assessments remains inadequate. Of the 39 studies narratively reviewed, most (79%) indicated consideration of the sex/gender of the patient and/or provider in the study design, but only one split all the analyses by patients' sex as an integral component. One quarter (11 or 28%) of the 39 studies reported sex-disaggregated data in the results of the statistical models assessing influences of P4P on patient outcomes, and three (8%) substantively discussed the results. None (0%) included an interaction term of patients' sex with the P4P treatment variable, thereby precluding interpretation of gendered impacts of the intervention itself. The already limited discussions concentrated on the presence or absence of sex differentials in the patient-level clinical goals (e.g., glycemic control) rather than in the policy option under investigation. Consideration of gendered outcomes in the physician workforce was even less extensive. Six (15%) of the 39 studies reported controlling statistically for the providers' sex. None (0%) included an interaction term of physicians' sex with the P4P treatment variable or considered an outcome relevant to gender equity in the work life of providers.",
+            "cite_spans": [
+                {
+                    "start": 265,
+                    "end": 269,
+                    "text": "[44]",
+                    "ref_id": "BIBREF82"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "In other words, we were unable to answer our original research questions as to whether P4P contributes to gender equity in patient and provider outcomes due to a lack of comprehensive consideration of the issue in the available literature. This finding highlights a critical evidence gap to support physician workforce financing policy decisions that may lead to unintentionally aggravated pre-existing gender inequalities. Some limited research, for example, Boeckxstaens et al.'s review of the United Kingdom's QOF [45] , has suggested that male patients may have benefited more from P4P in terms of quality of care than female patients. A descriptive analysis of physician service billings data from a Canadian province indicated that female family physicians have been under-represented in performance-based payments compared to their male counterparts, potentially exacerbating gender pay gaps [46] . The social, cultural, and psychological reasons why women may respond less to P4P remain largely unknown [31, 46, 47] . Overall, P4P impact assessments focusing on gender and other equity dimensions have been substantially less common compared to those investigating cost-effectiveness [45] .",
+            "cite_spans": [
+                {
+                    "start": 517,
+                    "end": 521,
+                    "text": "[45]",
+                    "ref_id": "BIBREF83"
+                },
+                {
+                    "start": 899,
+                    "end": 903,
+                    "text": "[46]",
+                    "ref_id": "BIBREF84"
+                },
+                {
+                    "start": 1011,
+                    "end": 1015,
+                    "text": "[31,",
+                    "ref_id": null
+                },
+                {
+                    "start": 1016,
+                    "end": 1019,
+                    "text": "46,",
+                    "ref_id": "BIBREF84"
+                },
+                {
+                    "start": 1020,
+                    "end": 1023,
+                    "text": "47]",
+                    "ref_id": "BIBREF85"
+                },
+                {
+                    "start": 1192,
+                    "end": 1196,
+                    "text": "[45]",
+                    "ref_id": "BIBREF83"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "The results of this review were consistent with Petkovic et al.'s examination of systematic reviews extracted from the Campbell and Cochrane Libraries, which revealed inadequate reporting of sex and gender in health research and, specifically, a large gap between the mention of sex/gender in studies' methods section (51-83%) versus reporting on sex/gender in the results section (less than 30%) [20] . Similarly to Petkovic et al. [20] , we did not assess whether the terms \"sex\" (biological) and \"gender\" (sociocultural) were used appropriately by the studies' authors, given the challenge of evolving terminology that is often used interchangeably. In contrast, since we did not restrict any of our database searches using sex/gender search terms, our approach was less likely to have potentially missed instances of sex/gender reporting. It is possible, however, that some studies were missed altogether in our searches given the range in terminology for P4P [5] .",
+            "cite_spans": [
+                {
+                    "start": 397,
+                    "end": 401,
+                    "text": "[20]",
+                    "ref_id": null
+                },
+                {
+                    "start": 433,
+                    "end": 437,
+                    "text": "[20]",
+                    "ref_id": null
+                },
+                {
+                    "start": 964,
+                    "end": 967,
+                    "text": "[5]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "The lack of acknowledgment of gender bias in scientific publishing could help explain the knowledge and evidence gaps on gendered impacts of performance- based HRH financing. Gender-blindness in health research and across the sciences is increasingly documented as potentially contributing to reinforce existing gender inequalities, related to a wide range of factors, including bias against research on gender bias [25, [48] [49] [50] . For instance, while social science research is often seen as central to enhance understanding of equity in health systems [51] , a review of bibliometrics in the social sciences found that articles focusing on gender bias were more often published in journals with a lower impact factor than those considering other dimensions of social discrimination [48] . Some peer-reviewed journals have taken a stance to promote research to help inform actions to address persistent gender inequalities and mitigate gender bias in publication processes [25, 52] ; however, avoidance of the identification and reduction of bias remains a seemingly acceptable occurrence. Not all published studies included in this review used gender-inclusive language throughout (e.g., referring to physicians' characteristics as \"the GP himself\" [ Table 5 ]). Pervasive (unconscious) gender bias has been quantified in peer review and editorial decision-making outcomes, with men reportedly less likely than women to acknowledge the existence of such a bias [49, 53] . Gender imbalances have also been documented in processes of clinical and public health guidelines development, which \u2212 Methods: \"Patient demographics include dummies for gender and age classes. Other patient characteristics such as insulin dependence and number of visits to a diabetic outpatient clinic (DOC) are expected to capture severity. We control for GP gender, age and type of practice\" (p. 143). \u2212 Results: \"\u2026the area where the practice is located contributes to the variability between physicians more than the (observed) individual characteristics of the GP himself and of his group of patients. [Regarding the probability of emergency hospitalisations\u2026] as for physician characteristics, age and postgraduate qualifications are not significant, whereas gender is significant and with a positive sign\" (p. 145).",
+            "cite_spans": [
+                {
+                    "start": 416,
+                    "end": 420,
+                    "text": "[25,",
+                    "ref_id": null
+                },
+                {
+                    "start": 421,
+                    "end": 425,
+                    "text": "[48]",
+                    "ref_id": "BIBREF86"
+                },
+                {
+                    "start": 426,
+                    "end": 430,
+                    "text": "[49]",
+                    "ref_id": "BIBREF87"
+                },
+                {
+                    "start": 431,
+                    "end": 435,
+                    "text": "[50]",
+                    "ref_id": "BIBREF88"
+                },
+                {
+                    "start": 560,
+                    "end": 564,
+                    "text": "[51]",
+                    "ref_id": "BIBREF89"
+                },
+                {
+                    "start": 790,
+                    "end": 794,
+                    "text": "[48]",
+                    "ref_id": "BIBREF86"
+                },
+                {
+                    "start": 980,
+                    "end": 984,
+                    "text": "[25,",
+                    "ref_id": null
+                },
+                {
+                    "start": 985,
+                    "end": 988,
+                    "text": "52]",
+                    "ref_id": "BIBREF90"
+                },
+                {
+                    "start": 1469,
+                    "end": 1473,
+                    "text": "[49,",
+                    "ref_id": "BIBREF87"
+                },
+                {
+                    "start": 1474,
+                    "end": 1477,
+                    "text": "53]",
+                    "ref_id": "BIBREF91"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1259,
+                    "end": 1266,
+                    "text": "Table 5",
+                    "ref_id": "TABREF3"
+                }
+            ],
+            "section": "Discussion"
+        },
+        {
+            "text": "Iezzi et al. [6] \u2212 Results: \"Individual characteristics of the GP display certain effects [on the risk of diabetes complications], albeit not in a systematic manner. For instance, gender and seniority are not significant and neither practice type nor rural practice location produce any effect\" (p. 112).",
+            "cite_spans": [
+                {
+                    "start": 13,
+                    "end": 16,
+                    "text": "[6]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Yuan et al. [38] \u2212 Background: \"The purpose of our study was to investigate how the degree of glycemic control in patients with type 2 diabetes associates with lifestyle interventions as well as sociodemographic factors and further examine the differences by gender. \u2026 In addition, we analyzed whether inequalities in health status and disease control existed between genders\" (p. 2). \u2212 Results: \"The average age of the female patients was greater than that of the male patients\u2026 Females were less well educated overall in this study population\u2026 [and] having physical activities (150 min/weekly) is more associated with the degree of glycemic control in males (P=0.003) than in females ( =0.052)\" (p. 3). \u2212 Discussion: \"The results of this study are intriguing and show that there appear to be sex-based differences in the stage and severity of diabetes... The impact of this health inequality seems to be related to socioeconomic conditions\" (p. 8).",
+            "cite_spans": [
+                {
+                    "start": 12,
+                    "end": 16,
+                    "text": "[38]",
+                    "ref_id": null
+                },
+                {
+                    "start": 546,
+                    "end": 551,
+                    "text": "[and]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "\u2212 Conclusion: \"Health inequality is associated with gender and socioeconomic status in Taiwan and is disease-specific\" (p. 10).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Hsiesh et al. [39] \u2212 Results: \"Regarding other [patient-level] confounding factors, men, older patients, patients with more severe comorbidity and patients with higher baseline density of cancer care tended to have higher risk of all-cause mortality\" (p. 5).",
+            "cite_spans": [
+                {
+                    "start": 14,
+                    "end": 18,
+                    "text": "[39]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Pan et al. [40] \u2212 Methods: \"The independent variables consisted of\u2026 personal characteristics of the research patients, including gender, age, and monthly salary\" (p. e58). \u2212 Results: \"Compared with female patients, the COCI score of male patients was lower by 0.010 (P<.05)\u2026 Male patients showed a higher [hazard ratio] of mortality of 1.75 (95% CI, 1.71-1.80) compared with female patients\" (p.e59).",
+            "cite_spans": [
+                {
+                    "start": 11,
+                    "end": 15,
+                    "text": "[40]",
+                    "ref_id": "BIBREF78"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Crawley et al. [41] \u2212 Methods: \"logistic regression was performed adjusting for age and gender\" (p. 105). \u2212 Discussion: \"Our findings are consistent with several UK studies have examined equity in quality of care after the introduction of QOF using area-based measures of socioeconomic status\u2026 There is increasing evidence that inequities in care between age, gender and ethnic groups have persisted after the introduction of this pay for performance programme in the UK\u2026 Policymakers and purchasers of healthcare should ensure that all such programmes are monitored for possible negative impacts on healthcare equity\" (p. 106).",
+            "cite_spans": [
+                {
+                    "start": 15,
+                    "end": 19,
+                    "text": "[41]",
+                    "ref_id": "BIBREF79"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Millet et al. [42] \u2212 Methods: \"Patient-level variables were age, sex, ethnicity, neighborhood socioeconomic status (SES), and duration of diabetes\" (p. 405). \u2212 Results: \"Pay for performance was associated with a significantly greater improvement in diastolic blood pressure in men than in women, but this pattern was reversed for A1C\" (p. 407). \u2212 Conclusions: \"Our findings represent a more complete picture of disparities in diabetes management than that derived from national contract data, which lack patient level information on variables such as age, sex, ethnicity, and socioeconomic status and may underestimate variations in care\u2026 Our findings suggest that policy makers and health care planners should consider the potential negative impacts of pay for performance incentives on health care disparities\" (p. 408).",
+            "cite_spans": [
+                {
+                    "start": 14,
+                    "end": 18,
+                    "text": "[42]",
+                    "ref_id": "BIBREF80"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "may impact the attention given to sex-and genderspecific differences in assessing the value of the evidence [54] .",
+            "cite_spans": [
+                {
+                    "start": 108,
+                    "end": 112,
+                    "text": "[54]",
+                    "ref_id": "BIBREF92"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "This study presented a critical interpretation of previously reviewed research from the unique and prospectively planned perspective of gender-based analysis. With the growing number of systematic reviews being published every year, the approach contributed to the literature aiming to optimize the use of identified studies on a given issue where there remained considerable unexplained heterogeneity and unreported information to help support decision making (for example, [55, 56] ). The study design was intended to shed light on whether publicly funded primary care physician financing policies for chronic disease care were aligned with international commitments for gender-responsive budgeting for gender equality. The dearth of high-quality evidence suggests that research mechanisms to assess government's accountability in delivering on gender equality remain insufficient. The present reanalysis, however, inherited some of the limitations of the original review. Most notably, it was restricted to single-payer national health systems, which meant that relatively few countries were included, none of which were low-income or middle-income countries [5] . This design choice was intended to minimize the risk of measuring physicians' ability to \"game\" the payment system rather than true performance; however, such concerns have also been raised in the United Kingdom, as regards P4P potentially reflecting distorted \"embellishing\" of patient diagnosis codes over the quality of care [57] . Performance pay as a mechanism to improve quality of care first emerged in high-income countries, and much of the research on P4P still tends to be siloed by income setting [58] . Given the proliferation of P4P schemes in low-and middle-income countries, coupled with weaker information systems and the more limited research on P4P effectiveness in many of these contexts [4, 59, 60] , rigorous empirical assessments are needed of the relationships (if any) between the allocation of limited resources to performance-based payments and consequences for gender equity from countries at all levels of development.",
+            "cite_spans": [
+                {
+                    "start": 475,
+                    "end": 479,
+                    "text": "[55,",
+                    "ref_id": "BIBREF93"
+                },
+                {
+                    "start": 480,
+                    "end": 483,
+                    "text": "56]",
+                    "ref_id": "BIBREF94"
+                },
+                {
+                    "start": 1162,
+                    "end": 1165,
+                    "text": "[5]",
+                    "ref_id": null
+                },
+                {
+                    "start": 1496,
+                    "end": 1500,
+                    "text": "[57]",
+                    "ref_id": "BIBREF95"
+                },
+                {
+                    "start": 1676,
+                    "end": 1680,
+                    "text": "[58]",
+                    "ref_id": "BIBREF96"
+                },
+                {
+                    "start": 1875,
+                    "end": 1878,
+                    "text": "[4,",
+                    "ref_id": null
+                },
+                {
+                    "start": 1879,
+                    "end": 1882,
+                    "text": "59,",
+                    "ref_id": "BIBREF97"
+                },
+                {
+                    "start": 1883,
+                    "end": 1886,
+                    "text": "60]",
+                    "ref_id": "BIBREF98"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Strengths and limitations of the study"
+        },
+        {
+            "text": "This systematic review reanalysis through a sex and gender lens weighed the evidence on how publicly funded performance-based physician remuneration policies may be contributing, positively or negatively, to gender equity in health system outcomes-in this case, in the health outcomes among patients living with diabetes and/or in the work environments among physicians providing diabetes care. Performance-based HRH financing is typically conceptualized as a means to strengthen health systems; however, its implementation and evaluation inadequately consider equity issues [61] . The issue of gender equity has been neglected altogether. Despite the growing recognition of the importance of integrating sex and gender in health research, its practice remains uneven [19] . Gender blindness in health systems and health workforce benchmarking and evidence may miss significant opportunities for gender equity promotion [62] . This review underscored that consideration of gendered impacts in either patient-oriented outcomes or work life of providers is largely overlooked in the P4P literature. Measuring and evaluating the inequitable distribution of power and resources by gender and other social strata, as prerequisites to addressing the problem, remain important on the international health agenda, even if national interests may have waned [63] . Our analysis was consistent with the findings elsewhere revealing a paucity of gendered analyses of health financing arrangements [21] . While it is acknowledged that P4P will exercise different impacts on quality and costs of care depending on the structure of the scheme [44] , the evidence base on how such payment models may attenuate or exacerbate gender inequities remains surprisingly weak. Research is needed on HRH financing options to better understand how P4P and other physician payment models may have unintended consequences in terms of gender-specific patient and provider outcomes in the longer term.",
+            "cite_spans": [
+                {
+                    "start": 575,
+                    "end": 579,
+                    "text": "[61]",
+                    "ref_id": "BIBREF99"
+                },
+                {
+                    "start": 768,
+                    "end": 772,
+                    "text": "[19]",
+                    "ref_id": null
+                },
+                {
+                    "start": 920,
+                    "end": 924,
+                    "text": "[62]",
+                    "ref_id": "BIBREF100"
+                },
+                {
+                    "start": 1348,
+                    "end": 1352,
+                    "text": "[63]",
+                    "ref_id": "BIBREF101"
+                },
+                {
+                    "start": 1485,
+                    "end": 1489,
+                    "text": "[21]",
+                    "ref_id": null
+                },
+                {
+                    "start": 1628,
+                    "end": 1632,
+                    "text": "[44]",
+                    "ref_id": "BIBREF82"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Conclusions"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "An examination of pay-for-performance in general practice in Australia",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Greene",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Health Serv Res",
+            "volume": "48",
+            "issn": "4",
+            "pages": "1415--1447",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "The effects of an incentive program on quality of care in diabetes management",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Scott",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Schurer",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Jensen",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Sivey",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Health Econ",
+            "volume": "18",
+            "issn": "9",
+            "pages": "1091--108",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Influence of a pay-for-performance program on glycemic control in patients living with diabetes by family physicians in a Canadian province",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Leblanc",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "B\u00e9langer",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Thibault",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Babin",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Greene",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Halpine",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Mancuso",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Can J Diabetes",
+            "volume": "1",
+            "issn": "2",
+            "pages": "190--96",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "A population based analysis of incentive payments to primary care physicians for the care of patients with complex disease",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Lavergne",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Law",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Peterson",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Garrison",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Hurley",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Cheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Mcgrail",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "CMAJ",
+            "volume": "188",
+            "issn": "15",
+            "pages": "375--383",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Incentive-based primary care: cost and utilization analysis",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Hollander",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Kadlec",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Perm J",
+            "volume": "19",
+            "issn": "4",
+            "pages": "46--56",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Evaluation of a policy to strengthen case management and quality of diabetes care in general practice in Denmark",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Rudkj\u00f8binga A Vrangbaek",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Birk",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Andersen",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Krasnik",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Health Policy",
+            "volume": "119",
+            "issn": "8",
+            "pages": "1023--1053",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "The role of GP's compensation schemes in diabetes care: evidence from panel data",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Iezzi",
+                    "suffix": ""
+                },
+                {
+                    "first": "Lippi",
+                    "middle": [],
+                    "last": "Bruni",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ugolini",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "J Health Econ",
+            "volume": "34",
+            "issn": "",
+            "pages": "104--124",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Economic incentives in general practice: the impact of payfor-participation and pay-for-compliance programs on diabetes care",
+            "authors": [
+                {
+                    "first": "Lippi",
+                    "middle": [],
+                    "last": "Bruni",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Nobilio",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Ugolini",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Health Policy",
+            "volume": "90",
+            "issn": "",
+            "pages": "140--188",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Short-term effects of a pay-forperformance programme for diabetes in a primary care setting: an observational study",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "\u00d6desj\u00f6",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Anell",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Gudbj\u00f6rnsdottir",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Thorn",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Bj\u00f6rck",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Scand J Prim Health Care",
+            "volume": "33",
+            "issn": "4",
+            "pages": "291--97",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "A diabetes pay-for-performance program and risks of cancer incidence and death in patients with type 2 diabetes in Taiwan",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Hsieh",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "He",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Shin",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Chiu",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Prev Chronic Dis",
+            "volume": "14",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "A diabetes pay-for-performance program and the competing causes of death among cancer survivors with type 2 diabetes in Taiwan",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Hsieh",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Chiu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Shin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Int J Qual Health Care",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Patients with diabetes in pay-for-performance programs have better physician continuity of care and survival",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Pan",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Kung",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Chiu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Liao",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Tsai",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Am J Manag Care",
+            "volume": "23",
+            "issn": "2",
+            "pages": "57--66",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Does pay-for-performance benefit patients with multiple chronic conditions? Evidence from a universal coverage health care system",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Cheng",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Health Policy Plan",
+            "volume": "31",
+            "issn": "1",
+            "pages": "83--90",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Impact of pay-for-performance on mortality in diabetes patients in Taiwan: a population-based study",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Chang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Shi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Medicine",
+            "volume": "95",
+            "issn": "27",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Effects and factors related to adherence to a diabetes pay-forperformance program: analyses of a national health insurance claims database",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Chi",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Chou",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Pei",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "J Am Med Dir Assoc",
+            "volume": "17",
+            "issn": "7",
+            "pages": "613--632",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "The association between participation in a pay-for-performance program and macrovascular complications in patients with type 2 diabetes in Taiwan: a nationwide population-based cohort study",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Hsieh",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Preventive Medicine",
+            "volume": "85",
+            "issn": "",
+            "pages": "53--59",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Effectiveness of pay-for-performance incentive designs on diabetes care",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Hsieh",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Shin",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Tsai",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Chiu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Med Care",
+            "volume": "54",
+            "issn": "12",
+            "pages": "1063--69",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Diseasespecific pay-for-performance programs: do the P4P effects differ between diabetic patients with and without multiple chronic conditions?",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Chou",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Med Care",
+            "volume": "54",
+            "issn": "11",
+            "pages": "977--83",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "The effectiveness of a pay for performance program on diabetes care in Taiwan: a nationwide populationbased longitudinal study",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Huang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Health Policy",
+            "volume": "120",
+            "issn": "11",
+            "pages": "1313--1334",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Does enhanced diabetes management reduce the risk and improve the outcome of tuberculosis?",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Lo",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Bai",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Chiang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Int J Tuberc Lung Dis",
+            "volume": "20",
+            "issn": "3",
+            "pages": "376--82",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Factors related to continuing care and interruption of P4P program participation in patients with diabetes",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Yen",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Kung",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Sheen",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Chiu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Tsai",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Am J Manag Care",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Cost-effectiveness of a diabetes pay-for-performance program in diabetes patients with multiple chronic conditions",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Hsieh",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Gu",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Shin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "PLoS ONE",
+            "volume": "10",
+            "issn": "7",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Cost-effectiveness of diabetes pay-for-performance incentive designs",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Hsieh",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Tsai",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Shin",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Mau",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Chiu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Med Care",
+            "volume": "53",
+            "issn": "2",
+            "pages": "106--121",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Is a diabetes pay-for-performance program cost-effective under the National Health Insurance in Taiwan?",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Tan",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Pwu",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Yang",
+                    "middle": [],
+                    "last": "Mc",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Qual Life Res",
+            "volume": "23",
+            "issn": "2",
+            "pages": "687--96",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Does the pay-forperformance programme reduce the emergency department visits for hypoglycemia in type 2 diabetic patients?",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Tsai",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Kung",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Health Policy Plan",
+            "volume": "29",
+            "issn": "6",
+            "pages": "732--773",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Glycemic control outcomes by gender in the pay-forperformance system: a retrospective database analysis in patients with type 2 diabetes mellitus",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Yuan",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Liao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Int J Endocrinol",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "The association of clinical guideline adherence and pay-for-performance among patients with diabetes",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Lai",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Hou",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "J Chin Med Assoc",
+            "volume": "76",
+            "issn": "2",
+            "pages": "102--109",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "A pay-forperformance program in Taiwan improved care for some diabetes patients, but doctors may have excluded sicker ones",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Chang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Aron",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Health Affairs",
+            "volume": "31",
+            "issn": "1",
+            "pages": "93--102",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "A longitudinal examination of a pay-for-performance program for diabetes care: evidence from a natural experiment",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Cheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Med Care",
+            "volume": "50",
+            "issn": "2",
+            "pages": "109--125",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "A pay-forperformance program for diabetes care in Taiwan: a preliminary assessment",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Cheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Lai",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Am J Manag Care",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Investigating the relationship between quality of primary care and premature mortality in England: a spatial wholepopulation study",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Kontopantelis",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Springate",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ashworth",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Webb",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Buchan",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Doran",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "BMJ",
+            "volume": "350",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Effect of a UK pay-for-performance program on ethnic disparities in diabetes outcomes: interrupted time series analysis",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Alshamsan",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Majeed",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Ann Fam Med",
+            "volume": "10",
+            "issn": "3",
+            "pages": "228--262",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Improvements in glycaemic control and cholesterol concentrations associated with the Quality and Outcomes Framework: a regional 2-year audit of diabetes care in the UK",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Oluwatowoju",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Abu",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Wild",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Byrne",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Diabet Med",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Effects of pay for performance on the quality of primary care in England",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Campbell",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Reeves",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Kontopantelis",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "N Engl J Med",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Impact of pay for performance on quality of chronic disease management by social class group in England",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Crawley",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ng",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Mainous",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "J R Soc Med",
+            "volume": "102",
+            "issn": "3",
+            "pages": "103--110",
+            "other_ids": {}
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Pay for performance and the quality of diabetes management in individuals with and without comorbid medical conditions",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Millett",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Bottle",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ng",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "J R Soc Med",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Impact of pay for performance on ethnic disparities in intermediate outcomes for diabetes: a longitudinal study",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Millett",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Netuveli",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Saxena",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Majeed",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Diabetes Care",
+            "volume": "32",
+            "issn": "3",
+            "pages": "404--413",
+            "other_ids": {}
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Population intermediate outcomes of diabetes under pay-for-performance incentives in England from",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Vaghela",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ashworth",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Schofield",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Gulliford",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Diabetes Care",
+            "volume": "32",
+            "issn": "3",
+            "pages": "427--456",
+            "other_ids": {}
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "Ethnic disparities in diabetes management and pay-for-performance in the UK: the Wandsworth prospective study",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Millet",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Gray",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Saxena",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "PLoS Med",
+            "volume": "4",
+            "issn": "6",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "An overview of reviews evaluating the effectiveness of financial incentives in changing healthcare professional behaviours and patient outcomes",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Flodgren",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Eccles",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Shepperd",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Scott",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Parmelli",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Beyer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Cochrane Database Syst Rev",
+            "volume": "7",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Pay-for-performance in disease management: a systematic review of the literature",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "De Bruin",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Baan",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Struijs",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "BMC Health Serv Res",
+            "volume": "11",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "World Health Organization. The World Health Report-health systems financing: the path to universal coverage. Geneva: World Health Organization",
+            "authors": [],
+            "year": 2010,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "Does performance-based financing increase value for money in low-and middleincome countries? A systematic review",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Turcotte-Tremblay",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Spagnolo",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "De Allegri",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Riddle",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Heal Econ Rev",
+            "volume": "6",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "Effects of pay-for-performance for primary care physicians on diabetes outcomes in single-payer health systems: a systematic review",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Gupta",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Ayles",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Eur J Health Econ",
+            "volume": "20",
+            "issn": "",
+            "pages": "1303--1318",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s10198-019-01097-4"
+                ]
+            }
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "The role of GP's compensation schemes in diabetes care: evidence from panel data",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Iezzi",
+                    "suffix": ""
+                },
+                {
+                    "first": "Lippi",
+                    "middle": [],
+                    "last": "Bruni",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ugolini",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "J Health Econ",
+            "volume": "34",
+            "issn": "",
+            "pages": "104--124",
+            "other_ids": {}
+        },
+        "BIBREF45": {
+            "ref_id": "b45",
+            "title": "Economic evaluation of pay-for-performance in health care: a systematic review",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Emmert",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Eijkenaar",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Kemter",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Esslinger",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Sch\u00f6ffski",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Eur J Health Econ",
+            "volume": "13",
+            "issn": "",
+            "pages": "755--67",
+            "other_ids": {}
+        },
+        "BIBREF46": {
+            "ref_id": "b46",
+            "title": "Effects of financial incentives on medical practice: results from a systematic review of the literature and methodological issues",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Chaix-Couturier",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Durand-Zaleski",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Jolly",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Durieux",
+                    "suffix": ""
+                }
+            ],
+            "year": 2000,
+            "venue": "Int J Qual Health Care",
+            "volume": "12",
+            "issn": "",
+            "pages": "133--175",
+            "other_ids": {}
+        },
+        "BIBREF47": {
+            "ref_id": "b47",
+            "title": "The effect of financial incentives on the quality of health care provided by primary care physicians",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Scott",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Sivey",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ait",
+                    "middle": [],
+                    "last": "Ouakrim",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Willenberg",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Naccarella",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Furler",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Young",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Cochrane Database Syst Rev",
+            "volume": "9",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF48": {
+            "ref_id": "b48",
+            "title": "Systematic review: effects, design choices, and context of pay-forperformance in health care",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Van Herck",
+                    "suffix": ""
+                },
+                {
+                    "first": "De",
+                    "middle": [],
+                    "last": "Smedt",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Annemans",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Remmen",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Rosenthal",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Sermeus",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "BMC Health Serv Res",
+            "volume": "10",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF49": {
+            "ref_id": "b49",
+            "title": "The impact of reimbursement systems on equity in access and quality of primary care: a systematic literature review",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Tao",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Agerholm",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Burstr\u00f6m",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "BMC Health Serv Res",
+            "volume": "16",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF50": {
+            "ref_id": "b50",
+            "title": "Payment methods for ambulatory care health professionals",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Jia",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Yuan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Meng",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Scott",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Cochrane Database Syst Rev",
+            "volume": "9",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF51": {
+            "ref_id": "b51",
+            "title": "The role of the Quality and Outcomes Framework in the care of long-term conditions: a systematic review",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Forbes",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Marchand",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Doran",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Peckham",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Br J Gen Pract",
+            "volume": "67",
+            "issn": "664",
+            "pages": "775--84",
+            "other_ids": {}
+        },
+        "BIBREF52": {
+            "ref_id": "b52",
+            "title": "World Health Organization. World Health Statistics 2020: Monitoring Health for the Sustainable Development Goals (SDGs). Geneva: World Health Organization",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF53": {
+            "ref_id": "b53",
+            "title": "Obesity and diabetes: the slow-motion disaster",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Chan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Milbank Q",
+            "volume": "95",
+            "issn": "1",
+            "pages": "11--15",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/1468-0009.12238"
+                ]
+            }
+        },
+        "BIBREF54": {
+            "ref_id": "b54",
+            "title": "Associations between exemption and survival outcomes in the UK's primary care pay-forperformance programme: a retrospective cohort study",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Kontopantelis",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Springate",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Ashcroft",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "BMJ Qual Saf",
+            "volume": "25",
+            "issn": "9",
+            "pages": "657--70",
+            "other_ids": {}
+        },
+        "BIBREF55": {
+            "ref_id": "b55",
+            "title": "Sex and gender differences in therapy of type 2 diabetes",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Kautzky-Willer",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Harreiter",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Diabetes Res Clin Pract",
+            "volume": "131",
+            "issn": "",
+            "pages": "230--271",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.diabres.2017.07.012"
+                ]
+            }
+        },
+        "BIBREF56": {
+            "ref_id": "b56",
+            "title": "How can gender equity be addressed through health systems? Health Systems and Policy Analysis Policy Brief No. 12. Copenhagen: World Health Organization and European Observatory on Health Systems and Policies",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Payne",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF57": {
+            "ref_id": "b57",
+            "title": "Integrating and evaluating sex and gender in health research",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Day",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Mason",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Lagosky",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Rochon",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Health Res Policy Syst",
+            "volume": "14",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/s12961-016-0147-7"
+                ]
+            }
+        },
+        "BIBREF58": {
+            "ref_id": "b58",
+            "title": "Sex/ gender reporting and analysis in Campbell and Cochrane systematic reviews: a cross-sectional methods study",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Petkovic",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Trawin",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Dewidar",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Yoganathan",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Tugwell",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Welch",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Syst Rev",
+            "volume": "7",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/s13643-018-0778-6"
+                ]
+            }
+        },
+        "BIBREF59": {
+            "ref_id": "b59",
+            "title": "Minding the gaps: health financing, universal health coverage and gender. Health Policy Plan",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Witter",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Govender",
+                    "suffix": ""
+                },
+                {
+                    "first": "Tks",
+                    "middle": [],
+                    "last": "Ravindran",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Yates",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "",
+            "volume": "32",
+            "issn": "",
+            "pages": "4--12",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/heapol/czx063"
+                ]
+            }
+        },
+        "BIBREF60": {
+            "ref_id": "b60",
+            "title": "What lies behind gender pay gaps. Geneva: International Labour Organization",
+            "authors": [],
+            "year": 2018,
+            "venue": "International Labour Organization. Global Wage Report",
+            "volume": "19",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF61": {
+            "ref_id": "b61",
+            "title": "The gender earnings gap for physicians and its increase over time",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Esteves-Sorenson",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Snyder",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Econ Lett",
+            "volume": "116",
+            "issn": "1",
+            "pages": "37--41",
+            "other_ids": {}
+        },
+        "BIBREF62": {
+            "ref_id": "b62",
+            "title": "Gender equity in the health workforce: analysis of 104 countries. Geneva: World Health Organization",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Boniol",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Mcisaac",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF63": {
+            "ref_id": "b63",
+            "title": "Research to support evidence-informed decisions on optimizing gender equity in health workforce policy and planning",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Gupta",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Hum Resour Health",
+            "volume": "17",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/s12960-019-0380-6"
+                ]
+            }
+        },
+        "BIBREF64": {
+            "ref_id": "b64",
+            "title": "The implications of the feminization of the primary care physician workforce on service supply: a systematic review",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Hedden",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Barer",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Cardiff",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Mcgrail",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Law",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Bourgeault",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Hum Resour Health",
+            "volume": "12",
+            "issn": "32",
+            "pages": "1--11",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/1478-4491-12-32"
+                ]
+            }
+        },
+        "BIBREF65": {
+            "ref_id": "b65",
+            "title": "Pursuing the Triple Aim: the first 7 years",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Whittington",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Nolan",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Lewis",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Torres",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Milbank Q",
+            "volume": "93",
+            "issn": "2",
+            "pages": "263--300",
+            "other_ids": {}
+        },
+        "BIBREF66": {
+            "ref_id": "b66",
+            "title": "Evidence for the Quadruple Aim: a systematic review of the literature on physician burnout and patient outcomes",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Rathert",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Williams",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Linhart",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Med Care",
+            "volume": "56",
+            "issn": "12",
+            "pages": "976--84",
+            "other_ids": {}
+        },
+        "BIBREF67": {
+            "ref_id": "b67",
+            "title": "Delivered by women, led by men: a gender and equity analysis of the global health and social workforce",
+            "authors": [],
+            "year": 2019,
+            "venue": "Human Resources for Health Observer Series No",
+            "volume": "24",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF68": {
+            "ref_id": "b68",
+            "title": "Exclusion of patients from pay-for-performance targets by English physicians",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Doran",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Fullwood",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Doran",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Reeves",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Gravelle",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Roland",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "N Engl J Med",
+            "volume": "359",
+            "issn": "",
+            "pages": "274--84",
+            "other_ids": {}
+        },
+        "BIBREF69": {
+            "ref_id": "b69",
+            "title": "Do women respond less to performance pay? Building evidence from multiple experiments. CEPR Discussion Paper No. DP11724. London: Centre for Economic Policy Research",
+            "authors": [
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Bandiera",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Fischer",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Prat",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Ytsma",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF70": {
+            "ref_id": "b70",
+            "title": "Implications of feminization of the primary care medical workforce on pay-for-performance for chronic disease management",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Gupta",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Ayles",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Protocol Registration No. CRD42018090021",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF71": {
+            "ref_id": "b71",
+            "title": "The PRISMA statement for reporting systematic reviews and meta-analyses of studies that evaluate health care interventions: explanation and elaboration",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Liberati",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Altman",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Tetzlaff",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Mulrow",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "G\u00f8tzsche",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "PLoS Med",
+            "volume": "6",
+            "issn": "7",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF72": {
+            "ref_id": "b72",
+            "title": "Systematic review protocol: examining the effects of introducing pay-for-performance for primary care physicians in diabetes outcomes in single-payer healthcare systems",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Gupta",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Ayles",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Diabetes Population Health and Health Services Research Working Paper",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF73": {
+            "ref_id": "b73",
+            "title": "Users identified challenges in applying GRADE to complex interventions and suggested an extension to GRADE",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Movsisyan",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Melendez-Torres",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Montgomery",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "J Clin Epidemiol",
+            "volume": "70",
+            "issn": "",
+            "pages": "191--200",
+            "other_ids": {}
+        },
+        "BIBREF74": {
+            "ref_id": "b74",
+            "title": "Influence of a pay-for-performance program on glycemic control in patients living with diabetes by family physicians in a Canadian province",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Leblanc",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "B\u00e9langer",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Thibault",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Can J Diabetes",
+            "volume": "1",
+            "issn": "2",
+            "pages": "190--196",
+            "other_ids": {}
+        },
+        "BIBREF75": {
+            "ref_id": "b75",
+            "title": "Economic incentives in general practice: the impact of pay-for-participation and pay-for-compliance programs on diabetes care",
+            "authors": [
+                {
+                    "first": "Lippi",
+                    "middle": [],
+                    "last": "Bruni",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Nobilio",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Ugolini",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Health Policy",
+            "volume": "90",
+            "issn": "",
+            "pages": "140--148",
+            "other_ids": {}
+        },
+        "BIBREF76": {
+            "ref_id": "b76",
+            "title": "Glycemic control outcomes by gender in the pay-for-performance system: a retrospective database analysis in patients with type 2 diabetes mellitus",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Yuan",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Liao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Int J Endocrinol",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF77": {
+            "ref_id": "b77",
+            "title": "A diabetes pay-for-performance program and the competing causes of death among cancer survivors with type 2 diabetes in Taiwan",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Hsieh",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Chiu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Shin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Int J Qual Health Care",
+            "volume": "29",
+            "issn": "4",
+            "pages": "512--532",
+            "other_ids": {}
+        },
+        "BIBREF78": {
+            "ref_id": "b78",
+            "title": "Patients with diabetes in payfor-performance programs have better physician continuity of care and survival",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Pan",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Kung",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Chiu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Liao",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Tsai",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Am J Manag Care",
+            "volume": "23",
+            "issn": "2",
+            "pages": "57--66",
+            "other_ids": {}
+        },
+        "BIBREF79": {
+            "ref_id": "b79",
+            "title": "Impact of pay for performance on quality of chronic disease management by social class group in England",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Crawley",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ng",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Mainous",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "J R Soc Med",
+            "volume": "102",
+            "issn": "3",
+            "pages": "103--110",
+            "other_ids": {}
+        },
+        "BIBREF80": {
+            "ref_id": "b80",
+            "title": "Pay for performance and the quality of diabetes management in individuals with and without co-morbid medical conditions",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Millett",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Bottle",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ng",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "J R Soc Med",
+            "volume": "102",
+            "issn": "9",
+            "pages": "369--77",
+            "other_ids": {}
+        },
+        "BIBREF81": {
+            "ref_id": "b81",
+            "title": "An examination of pay-for-performance in general practice in Australia",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Greene",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Health Serv Res",
+            "volume": "48",
+            "issn": "4",
+            "pages": "1415--1447",
+            "other_ids": {}
+        },
+        "BIBREF82": {
+            "ref_id": "b82",
+            "title": "Getting real performance out of pay-for-performance",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Nicholson",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Pauly",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ayj",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Murray",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Teutsch",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Berger",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Milbank Q",
+            "volume": "86",
+            "issn": "3",
+            "pages": "435--57",
+            "other_ids": {}
+        },
+        "BIBREF83": {
+            "ref_id": "b83",
+            "title": "The equity dimension in evaluations of the quality and outcomes framework: a systematic review",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Boeckxstaens",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Smedt",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Maeseneer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "BMC Health Serv Res",
+            "volume": "11",
+            "issn": "209",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/1472-6963-11-209"
+                ]
+            }
+        },
+        "BIBREF84": {
+            "ref_id": "b84",
+            "title": "Gendered effects of pay for performance among family physicians for chronic disease care: an economic evaluation in a context of universal health coverage",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Gupta",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Lavall\u00e9e",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Ayles",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Hum Resour Health",
+            "volume": "17",
+            "issn": "4",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/s12960-019-0378-0"
+                ]
+            }
+        },
+        "BIBREF85": {
+            "ref_id": "b85",
+            "title": "Performance pay in China: gender aspects",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Xiu",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Gunderson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Br J Ind Relat",
+            "volume": "51",
+            "issn": "1",
+            "pages": "124--171",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/j.1467-8543.2011.00887.x"
+                ]
+            }
+        },
+        "BIBREF86": {
+            "ref_id": "b86",
+            "title": "Bias against research on gender bias",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Cislak",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Formanowicz",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Saguy",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Scientometrics",
+            "volume": "115",
+            "issn": "1",
+            "pages": "189--200",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s11192-018-2667-0"
+                ]
+            }
+        },
+        "BIBREF87": {
+            "ref_id": "b87",
+            "title": "Gender differences in peer review outcomes and manuscript impact at six journals of ecology and evolution",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Fox",
+                    "suffix": ""
+                },
+                {
+                    "first": "Cet",
+                    "middle": [],
+                    "last": "Paine",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Ecol Evol",
+            "volume": "9",
+            "issn": "6",
+            "pages": "3599--619",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/ece3.4993"
+                ]
+            }
+        },
+        "BIBREF88": {
+            "ref_id": "b88",
+            "title": "Gender bias in publishing: double-blind reviewing as a solution? eNeuro",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Bernard",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "",
+            "volume": "5",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1523/ENEURO.0225-18.2018"
+                ]
+            }
+        },
+        "BIBREF89": {
+            "ref_id": "b89",
+            "title": "What have the social sciences ever done for equity in health policy and health systems?",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Greenhalgh",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Int J Equity Health",
+            "volume": "17",
+            "issn": "124",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/s12939-018-0842-9"
+                ]
+            }
+        },
+        "BIBREF90": {
+            "ref_id": "b90",
+            "title": "Feminism is for everybody",
+            "authors": [],
+            "year": 2019,
+            "venue": "The Lancet",
+            "volume": "393",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF91": {
+            "ref_id": "b91",
+            "title": "Gender bias in scholarly peer review",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Helmer",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Schottdorf",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Neef",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Battaglia",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "",
+            "volume": "6",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.7554/eLife.21718"
+                ]
+            }
+        },
+        "BIBREF92": {
+            "ref_id": "b92",
+            "title": "Gender balance in WHO panels for guidelines published from",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Bohren",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Javadi",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Vogel",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Bull World Health Organ",
+            "volume": "97",
+            "issn": "",
+            "pages": "477--85",
+            "other_ids": {}
+        },
+        "BIBREF93": {
+            "ref_id": "b93",
+            "title": "Just how plain are plain tobacco packs: re-analysis of a systematic review using multilevel metaanalysis suggests lessons about the comparative benefits of synthesis methods",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Melendez-Torres",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Thomas",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Lorenc",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Syst Rev",
+            "volume": "",
+            "issn": "153",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/s13643-018-0821-7"
+                ]
+            }
+        },
+        "BIBREF94": {
+            "ref_id": "b94",
+            "title": "Factors explaining the heterogeneity of effects of patient decision aids on knowledge of outcome probabilities: a systematic review sub-analysis. Syst Rev",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Gentles",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Stacey",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Bennett",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "2013",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/2046-4053-2-95"
+                ]
+            }
+        },
+        "BIBREF95": {
+            "ref_id": "b95",
+            "title": "Why pay for performance may be incompatible with quality improvement",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Woolhandler",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Ariely",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "U"
+                    ],
+                    "last": "Himmelstein",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "BMJ",
+            "volume": "345",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF96": {
+            "ref_id": "b96",
+            "title": "Pay for performance: a reflection on how a global perspective could enhance policy and research",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Anselmi",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Borghi",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Brown",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Int J Health Policy Manag",
+            "volume": "9",
+            "issn": "9",
+            "pages": "365--374",
+            "other_ids": {}
+        },
+        "BIBREF97": {
+            "ref_id": "b97",
+            "title": "Pay-for-performance debate: not seeing the forest for the trees",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Soucat",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Dale",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Mathauer",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Kutzin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Health Syst Reform",
+            "volume": "3",
+            "issn": "2",
+            "pages": "74--83",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/23288604.2017.1302902"
+                ]
+            }
+        },
+        "BIBREF98": {
+            "ref_id": "b98",
+            "title": "Paying for performance to improve the delivery of health interventions in low-and middle-income countries",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Witter",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Fretheim",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Kessy",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Lindahl",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Cochrane Database Syst Rev",
+            "volume": "2",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/14651858.CD007899.pub2"
+                ]
+            }
+        },
+        "BIBREF99": {
+            "ref_id": "b99",
+            "title": "Performance-based financing in Africa: time to test measures for equity",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Ridde",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Gautier",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Turcotte-Tremblay",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Int J Health Serv",
+            "volume": "48",
+            "issn": "3",
+            "pages": "549--61",
+            "other_ids": {
+                "DOI": [
+                    "10.1177/0020731418779508"
+                ]
+            }
+        },
+        "BIBREF100": {
+            "ref_id": "b100",
+            "title": "Are health systems interventions gender blind? Examining health system reconstruction in conflict affected states",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Percival",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Dusabe-Richards",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Wurie",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Glob Health",
+            "volume": "14",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/s12992-018-0401-6"
+                ]
+            }
+        },
+        "BIBREF101": {
+            "ref_id": "b101",
+            "title": "Advocacy for health equity: a synthesis review",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Farrer",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Marinetti",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Cavaco",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Costongs",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Milbank Q",
+            "volume": "93",
+            "issn": "2",
+            "pages": "392--437",
+            "other_ids": {}
+        },
+        "BIBREF102": {
+            "ref_id": "b102",
+            "title": "Publisher's Note",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF103": {
+            "ref_id": "b103",
+            "title": "Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Flow chart for the selection of studies included in the systematic review reanalysis of gendered impacts of P4P for diabetes management in single-payer national health systems, January 2000 to April 2018. Source: Adapted from",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "Characteristics of the P4P schemes for diabetes management in single-payer national health systems",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "Characteristics of the most recent studies narratively discussing the impacts of P4P for diabetes management by patients' and/or providers' sex/gender",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "Assessment scores for outcome relevance and methodological quality of the studies included in the review narratively discussing the impacts of P4P by patients' and/or providers' sex/gender",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF3": {
+            "text": "Illustrative examples of the reporting of sex/gender in P4P impact studies",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "The authors acknowledge and thank Barry Cull and Richelle Witherspoon, from the University of New Brunswick Libraries, for the assistance with developing the search tools. Some of the findings of this research were presented at the Canadian Health Workforce Conference (Gatineau, Canada, 3-5 October 2018) and the International Health Workforce Collaborative Conference (Ottawa, Canada, 22-24 October 2019).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Acknowledgements"
+        },
+        {
+            "text": "List of studies included in the systematic review: Authors' contributions NG conceptualized the study, developed the abstraction and grading tools, and wrote the first draft. HMA developed the search tools and extracted the data. NG and HMA contributed to the selection, abstraction, and interpretation of the data. All authors contributed to the writing of the manuscript, and read and approved the final version.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Appendix"
+        },
+        {
+            "text": "Financial support for this study was received from the Diabetes Canada, the New Brunswick Health Research Foundation, and the University of New Brunswick. The funders had no role in the study design, data analysis, manuscript writing, or decision to submit for publication.Availability of data and materials Not applicable. No datasets were generated or analyzed.Ethics approval and consent to participate Not applicable.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Funding"
+        },
+        {
+            "text": "Not applicable.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Consent for publication"
+        },
+        {
+            "text": "The authors declare that they have no competing interests.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Competing interests"
+        }
+    ]
+}

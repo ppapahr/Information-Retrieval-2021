@@ -1,0 +1,2225 @@
+{
+    "paper_id": "884fd919a47bdc82d6cf1460a469221bd9dae2a6",
+    "metadata": {
+        "title": "Scheduling in Industry 4.0 and Cloud Manufacturing",
+        "authors": [
+            {
+                "first": "Dmitry",
+                "middle": [],
+                "last": "Ivanov",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Saint Petersburg Institute for Informatics and Automation of the RAS (SPIIRAS)",
+                    "institution": "",
+                    "location": {
+                        "settlement": "Berlin, Berlin, St. Petersburg",
+                        "country": "Germany, Russia"
+                    }
+                },
+                "email": "divanov@hwr-berlin.de"
+            },
+            {
+                "first": "Boris",
+                "middle": [],
+                "last": "Sokolov",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Saint Petersburg Institute for Informatics and Automation of the RAS (SPIIRAS)",
+                    "institution": "",
+                    "location": {
+                        "settlement": "Berlin, Berlin, St. Petersburg",
+                        "country": "Germany, Russia"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "D",
+                "middle": [],
+                "last": "Ivanov",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Saint Petersburg Institute for Informatics and Automation of the RAS (SPIIRAS)",
+                    "institution": "",
+                    "location": {
+                        "settlement": "Berlin, Berlin, St. Petersburg",
+                        "country": "Germany, Russia"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "B",
+                "middle": [],
+                "last": "Sokolov",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Saint Petersburg Institute for Informatics and Automation of the RAS (SPIIRAS)",
+                    "institution": "",
+                    "location": {
+                        "settlement": "Berlin, Berlin, St. Petersburg",
+                        "country": "Germany, Russia"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "This chapter develops a model for dynamic integrated scheduling of information services and logistics flows in the omnichannel system. The proposed service-oriented description makes it possible to coordinate the information services and material process schedules simultaneously. It also becomes possible to determine the volume of information services needed for physical supply processes. In addition, impact of disruptions in information services on the schedule execution in the physical structure is analyzed. The results provide a base for information service scheduling according to actual physical process execution.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "Nowadays, companies start adopting the decentralized distributed information services (ISs). One of these concepts is omnichannel that is commonly understood as a multichannel promotion actions (in-store, social media, and mobile applications) to improve the customer experience (Ailawadi and Farris 2017) . Combination of traditional retail stores and online sales is the core idea in the omnichannel concept.",
+            "cite_spans": [
+                {
+                    "start": 279,
+                    "end": 305,
+                    "text": "(Ailawadi and Farris 2017)",
+                    "ref_id": "BIBREF0"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "Omnichannel implementation in practice is challenged by cross-channel logistics coordination, the resulting increase in coordination complexity. In addition, it requires extensions to traditional functionality in enterprise resource planning (ERP) and warehouse management system (WMS) systems (Pagani and Pardo 2017) . At the same time, omnichannel is expected to increase the reaction flexibility to demand fluctuations as well as to positively influence the lead times and capacity utilization.",
+            "cite_spans": [
+                {
+                    "start": 294,
+                    "end": 317,
+                    "text": "(Pagani and Pardo 2017)",
+                    "ref_id": "BIBREF38"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "Moreover, the literature on supply chain resilience and first analyses of COVID-19 pandemic impacts on the supply chains and production systems show that firms with omnichannel distribution systems were able to sustain the disruptions along with the ripple effect control (Lee et al. 2020; Hosseini et al. 2019; Panetto et al. 2019; Ivanov 2020; Ivanov and Dolgui 2020a, b; Ivanov and Das 2020) .",
+            "cite_spans": [
+                {
+                    "start": 272,
+                    "end": 289,
+                    "text": "(Lee et al. 2020;",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 290,
+                    "end": 311,
+                    "text": "Hosseini et al. 2019;",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 312,
+                    "end": 332,
+                    "text": "Panetto et al. 2019;",
+                    "ref_id": "BIBREF39"
+                },
+                {
+                    "start": 333,
+                    "end": 345,
+                    "text": "Ivanov 2020;",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 346,
+                    "end": 373,
+                    "text": "Ivanov and Dolgui 2020a, b;",
+                    "ref_id": null
+                },
+                {
+                    "start": 374,
+                    "end": 394,
+                    "text": "Ivanov and Das 2020)",
+                    "ref_id": "BIBREF13"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "Omnichannel concept is based on the IS usage. Due to the increasing role of IS in different forms, for example, cloud computing requires service-based approaches to integrated scheduling of both material and information flows (Bardhan et al. 2010; Li et al. 2010 ). The impact of information technology (IT) on the material processes in supply network (SN) became crucial in recent years (Choi et al. 2002; Giard and Mendy 2008; Camarinha-Matos and Macedo 2010; Cannella et al. 2014 ). Recent research indicated that an aligning of business processes and information systems may potentially provide new quality of decision-making support and an increased performance (Surana et al. 2005; Dedrick et al. 2008; Jain et al. 2009; Ivanov et al. 2014) .",
+            "cite_spans": [
+                {
+                    "start": 226,
+                    "end": 247,
+                    "text": "(Bardhan et al. 2010;",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 248,
+                    "end": 262,
+                    "text": "Li et al. 2010",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 388,
+                    "end": 406,
+                    "text": "(Choi et al. 2002;",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 407,
+                    "end": 428,
+                    "text": "Giard and Mendy 2008;",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 429,
+                    "end": 461,
+                    "text": "Camarinha-Matos and Macedo 2010;",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 462,
+                    "end": 482,
+                    "text": "Cannella et al. 2014",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 667,
+                    "end": 687,
+                    "text": "(Surana et al. 2005;",
+                    "ref_id": "BIBREF41"
+                },
+                {
+                    "start": 688,
+                    "end": 708,
+                    "text": "Dedrick et al. 2008;",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 709,
+                    "end": 726,
+                    "text": "Jain et al. 2009;",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 727,
+                    "end": 746,
+                    "text": "Ivanov et al. 2014)",
+                    "ref_id": "BIBREF28"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "Most of the new IT share attributes of intelligence. Examples include data mining, cloud computing, physical internet, pattern recognition, knowledge discovery, to name a few. In addition, the beginning era of Internet of Things and explicit inclusion of wireless sensor networks, machine-to-machine systems, and mobile apps into the management require the data-driven business models instead of static information architectures. Elements of physical processes are supported by information services. In addition, such systems evolve through adaptation and reconfiguration of their structures, that is, through structural dynamics (Ivanov et al. 2004 (Ivanov et al. , 2007 (Ivanov et al. , 2015 Ivanov and Sokolov 2012a, b, 2013) . Such SCs are common not only in manufacturing but also in different cyber-physical systems, for example, in networks of emergency response units, energy supply, city traffic control, and security control systems.",
+            "cite_spans": [
+                {
+                    "start": 630,
+                    "end": 649,
+                    "text": "(Ivanov et al. 2004",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 650,
+                    "end": 671,
+                    "text": "(Ivanov et al. , 2007",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 672,
+                    "end": 693,
+                    "text": "(Ivanov et al. , 2015",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 694,
+                    "end": 704,
+                    "text": "Ivanov and",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 705,
+                    "end": 728,
+                    "text": "Sokolov 2012a, b, 2013)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "It can be observed that current concepts and models for schedule integration do not provide adequate decision support from intelligent IS; we regard this shortcoming as an opportunity for research and development, which could significantly improve the practice of logistics management. On one hand, the alignment of new intelligent elements of IS infrastructures with real material flows can be achieved. On the other hand, investments into IS can be estimated regarding real schedules.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "This chapter faces these two decision domains on the basis of structural dynamics control approach that is built upon tools from optimal program control theory (Ivanov et al. 2005 . Although recent research has extensively dealt with supply chain (SC) scheduling (Chen 2010) and IS scheduling (see, e.g., works on scheduling in telecommunications) in isolation, the integrated scheduling of both material and information flows still represents a research gap Ivanov et al. 2016 Ivanov et al. , 2018 Panetto et al. 2019) .",
+            "cite_spans": [
+                {
+                    "start": 160,
+                    "end": 179,
+                    "text": "(Ivanov et al. 2005",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 263,
+                    "end": 274,
+                    "text": "(Chen 2010)",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 459,
+                    "end": 477,
+                    "text": "Ivanov et al. 2016",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 478,
+                    "end": 498,
+                    "text": "Ivanov et al. , 2018",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 499,
+                    "end": 519,
+                    "text": "Panetto et al. 2019)",
+                    "ref_id": "BIBREF39"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "In this chapter, the problem of coordinated dynamic scheduling of IS and material flows in the context of cyber-physical systems is stated and solved with the help of optimal control approach. In addition, specific research contributions are the ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "Consider a simple example of the interrelations among physical processes, ISs, information functions, and information resources (IRs) that is presented in Fig. 7 .1.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 155,
+                    "end": 161,
+                    "text": "Fig. 7",
+                    "ref_id": null
+                }
+            ],
+            "section": "Problem Statement"
+        },
+        {
+            "text": "Such a framework is based on recent developments in cloud computing, see for example, studies by Wang et al. (2010) and Jiang et al. (2012) . For material flow scheduling and control, some ISs are needed. They should be available when material flow is scheduled and executed. The ISs are provided by some distributed IRs which may be subject to full or partial unavailability due to planned upgrades or unpredicted disruptions. Therefore, such network needs to be considered as a dynamic system Ivanov et al. 2012) .",
+            "cite_spans": [
+                {
+                    "start": 97,
+                    "end": 115,
+                    "text": "Wang et al. (2010)",
+                    "ref_id": "BIBREF42"
+                },
+                {
+                    "start": 120,
+                    "end": 139,
+                    "text": "Jiang et al. (2012)",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 495,
+                    "end": 514,
+                    "text": "Ivanov et al. 2012)",
+                    "ref_id": "BIBREF27"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Problem Statement"
+        },
+        {
+            "text": "Let us define a formal scheduling problem for this framework. The majority of the technical part of this chapter is based upon the study by Ivanov et al. (2014) .",
+            "cite_spans": [
+                {
+                    "start": 140,
+                    "end": 160,
+                    "text": "Ivanov et al. (2014)",
+                    "ref_id": "BIBREF28"
+                }
+            ],
+            "ref_spans": [],
+            "section": "General Assumptions"
+        },
+        {
+            "text": "\u2022 The jobs in material flows are independent and available for processing at time zero. Each of the jobs has a release date that is known in advance through the schedule coordination. \u2022 Precedence constraints exist, that is, the operations are logically arranged in jobs.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "General Assumptions"
+        },
+        {
+            "text": "\u2022 The material flow operations are executed at one of the enterprises in the network and are supported by ISs from different IRs. \u2022 Machines and IRs have unequal information processing rates which may also differ for various operations and therefore influence the processing time and processing volume. \u2022 Each IS may be composed of functions from different IRs and is characterized by availability time windows, productivity, that is, the processed volume of operations at an instant of time, and costs (fixed cost and operation cost). \u2022 Setup times are independent and included in the processing time.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "General Assumptions"
+        },
+        {
+            "text": "\u2022 Initial state and the desired end state of the dynamic system are known.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "General Assumptions"
+        },
+        {
+            "text": "\u2022 Transition from the initial state to the end state depends on selection of controls in material flow, IS, and IR reconfiguration scheduling models.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "General Assumptions"
+        },
+        {
+            "text": "\u2022 Denote A = {A \u03bd ; \u03bd = 1, . . . , n} as jobs in a material flow.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Notations"
+        },
+        {
+            "text": "\u2022 Each of the jobs A \u03bd is composed of the operations D (\u03bd) = D (\u03bd) i ; i = 1, . . . , k \u03bd . \u2022 a i is the planned processing volume (e.g., lot-size) of the operation D (\u03bd) i .",
+            "cite_spans": [
+                {
+                    "start": 63,
+                    "end": 66,
+                    "text": "(\u03bd)",
+                    "ref_id": null
+                },
+                {
+                    "start": 167,
+                    "end": 170,
+                    "text": "(\u03bd)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Notations"
+        },
+        {
+            "text": "\u2022 Consider a set of enterprises (machines) B = {B j ; j = 1, . . . , m}.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Notations"
+        },
+        {
+            "text": "; r = 1, . . . , \u03c1 \u03bd as a set of IRs.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Notations"
+        },
+        {
+            "text": "\u2022 Denote a i as processing volume of the operation D \u2022 Let t be current instant of time, T = (t 0 , t f ] the scheduling horizon, and t 0 (t f ) the start (end) instant of time for the scheduling horizon, respectively. \u2022 Denote \u03b5(t) as an element of the matrix of time-spatial constraints (",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Notations"
+        },
+        {
+            "text": "where k are the numbers of time windows available for operation execution (e.g., subject to maintenance).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Notations"
+        },
+        {
+            "text": ". . , S l as a set of functions of IR to implement the service.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Notations"
+        },
+        {
+            "text": "\u2022 Denote fixed cost as c (\u03bd,1) il (t) and operation cost as c",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Notations"
+        },
+        {
+            "text": "l as a number of operations D (\u03bd) i which may be processed by a service S",
+            "cite_spans": [
+                {
+                    "start": 30,
+                    "end": 33,
+                    "text": "(\u03bd)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Notations"
+        },
+        {
+            "text": "as a given number of services S (\u03bd) l which may be simultaneously used by execution of the operation D (\u03bd) i .",
+            "cite_spans": [
+                {
+                    "start": 103,
+                    "end": 106,
+                    "text": "(\u03bd)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Notations"
+        },
+        {
+            "text": ". . , S l as operations of IR (e.g., information processing, storage, transmission, and protection).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Notations"
+        },
+        {
+            "text": "\u03c7 as the online storage capacity of the IR B (\u03bd,i) r to execute the operation D (\u03bd,i) <l,\u03c7 > and \u03b4 (\u03bd,l) \u03c7 r (\u03c4 ) as a quality function to estimate the execution results. In order to describe the execution of operations, let us introduce the state variables:",
+            "cite_spans": [
+                {
+                    "start": 45,
+                    "end": 52,
+                    "text": "(\u03bd,i) r",
+                    "ref_id": null
+                },
+                {
+                    "start": 80,
+                    "end": 85,
+                    "text": "(\u03bd,i)",
+                    "ref_id": null
+                },
+                {
+                    "start": 99,
+                    "end": 104,
+                    "text": "(\u03bd,l)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Notations"
+        },
+        {
+            "text": "is an auxiliary variable characterizing the current state of the operation D (\u03bd) i . Its value is numerically equal to the time interval that has elapsed since the beginning of the scheduling interval and the execution start of the operation D",
+            "cite_spans": [
+                {
+                    "start": 77,
+                    "end": 80,
+                    "text": "(\u03bd)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Notations"
+        },
+        {
+            "text": "is an auxiliary variable characterizing the current state of the processing operation. Its value is numerically equal to the time interval that has elapsed since the end of the execution of the operation D ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Notations"
+        },
+        {
+            "text": "is an auxiliary variable characterizing the current state of the information processing operation. Its value is numerically equal to the time interval that has elapsed since the end of the execution of the operation D (\u03bd,j ) <l,\u03c7 > and the instant of",
+            "cite_spans": [
+                {
+                    "start": 218,
+                    "end": 224,
+                    "text": "(\u03bd,j )",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Notations"
+        },
+        {
+            "text": "i has not started and is equal 0 otherwise; \u2022 w (\u03bd,l) \u03c7 r is a control that is equal to 1 if the operation D (\u03bd,j ) <l,\u03c7 > is assigned to the IR B (\u03bd,i) r and is equal 0 otherwise;",
+            "cite_spans": [
+                {
+                    "start": 48,
+                    "end": 53,
+                    "text": "(\u03bd,l)",
+                    "ref_id": null
+                },
+                {
+                    "start": 109,
+                    "end": 115,
+                    "text": "(\u03bd,j )",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Notations"
+        },
+        {
+            "text": "\u2022 \u03c9 (\u03bd,l) rS l (t) is auxiliary control that is equal to 1 if all the operations D (\u03bd,j ) <l,\u03c7 > in the function F (\u03bd,l) \u03c7 are completed and is equal 0 otherwise;",
+            "cite_spans": [
+                {
+                    "start": 4,
+                    "end": 9,
+                    "text": "(\u03bd,l)",
+                    "ref_id": null
+                },
+                {
+                    "start": 83,
+                    "end": 89,
+                    "text": "(\u03bd,j )",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Notations"
+        },
+        {
+            "text": "\u2022 \u03d1 (p,2) r (t) is auxiliary control that is equal to 1 if the reconfiguration from old parameters e (i)",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Notations"
+        },
+        {
+            "text": "r is completed and is 0 otherwise.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Notations"
+        },
+        {
+            "text": "The problem is to find a joint schedule for dynamic execution of information services and physical flows, that is, two schedules should be generated in a coordinated manner, that is,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Notations"
+        },
+        {
+            "text": "\u2022 an optimal program control (OPC) (schedule) for the integrated execution of material flows and information services (model M1), \u2022 an OPC (schedule) for the execution of information services within the IRs (model M2).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Notations"
+        },
+        {
+            "text": "Jobs are to be scheduled subject to maximal customer service level (i.e., minimal lateness), minimal backlogs, minimal idle time of services, and minimal costs of IT (e.g., fixed, operation, and idle costs).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Notations"
+        },
+        {
+            "text": "In this section, we describe both general methodology and method for formulation of the integrated scheduling model in particular.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Methodology"
+        },
+        {
+            "text": "The logistics network dynamic characteristics are distributed upon different structures, that is:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Structure Dynamics Control Methodology"
+        },
+        {
+            "text": "\u2022 organizational structure dynamics (i.e., agile supply structure), \u2022 functional structure dynamics (i.e., flexible competencies), \u2022 information structure dynamics (i.e., fluctuating information availability), and \u2022 financial structure dynamics (i.e., cost and profit sharing).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Structure Dynamics Control Methodology"
+        },
+        {
+            "text": "This multidimensional dynamic space along with the coordinated and distributed decision-making leads us to the understanding of the logistics network as multistructural systems with structure dynamics. The main idea of the proposed method is the dynamic interpretation of planning in accordance with the natural logic of time with the help of OPC. The solution procedure is transferred to mathematical programming (MP). In this setting, the solution procedure becomes undependable from the continuous optimization and can be of a discrete nature, for example, an integer linear program .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Structure Dynamics Control Methodology"
+        },
+        {
+            "text": "The modeling procedure is based on the dynamic representation where the scheduling decisions are taken for certain intervals of structural constancy and regarding problems of significantly smaller dimensionality. For each interval, a static optimization problem of a smaller dimensionality can be solved with the help of MP. The transitions between the intervals are modeled in the dynamic OPC model. The computational time decreases considerably.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Structure Dynamics Control Methodology"
+        },
+        {
+            "text": "Besides, a priori knowledge of the logistics network structure, and moreover, structure dynamics, is no more necessary-the structures and corresponding functions are optimized simultaneously as the control becomes a function of both states and structures. The splitting of the planning period into the intervals occurs according to the natural logic of time and events. As the proposed method is based on control theory, it is a convenient approach to describe intangible services due to abstract nature of state variables which can be interpreted as abstract service volumes.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Structure Dynamics Control Methodology"
+        },
+        {
+            "text": "The basic conceptual idea of this approach is that the operations and machine availability are dynamically distributed in time on the scheduling horizon. As such, not all operations and machines are involved in decision-making at the same time. Therefore, it becomes quite natural to transit from large-size allocation matrices with a high number of binary variables to a scheduling problem that is dynamically decomposed.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Formulation of the Integrated Scheduling Model"
+        },
+        {
+            "text": "In following an approach to decompose the solution space and to use exact methods over its restricted subspaces, we propose to use the OPC theory for the dynamic scheduling problem decomposition. Computational procedure will be based on modified maximum principle in continuous form blended with MP.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Formulation of the Integrated Scheduling Model"
+        },
+        {
+            "text": "That is why the basic technical idea of our approach, which extends the previous application of maximum principle to production and logistics, is to apply the methods of discrete optimization for combinatorial tasks within certain time intervals and to use the OPC with all its advantages (i.e., accuracy of continuous time, integration of planning and control, and the operation execution parameters as time functions) for (1) flow control within the operations and (2) interlinking the partial (decomposed) solutions into the optimal schedule.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Formulation of the Integrated Scheduling Model"
+        },
+        {
+            "text": "The SN is modeled as a networked control system described through a dynamic interpretation of the operations' execution. The execution of operations is characterized by (1) results (e.g., processed volume and completion time), (2) intensity consumption of the machines, and (3) supply and information flows resulting from the schedule execution. The operations control model (M1) is first used to assign and sequence ISs to operations in material flows, and then a flow control model (M2) is employed to assign and schedule jobs at IRs subject to the requirements on the ISs availability. The basic interaction of these two models is that after the solving M1, the found control variables are used in the constraints of M2. Note that in the calculation procedure, the models M1 and M2 will be solved simultaneously, that is, the scheduling problems in all the structures (i.e., material flows, ISs, and IRs) will be integrated.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Formulation of the Integrated Scheduling Model"
+        },
+        {
+            "text": "The model of operation execution dynamics can be expressed as (7.1)-(7.3):",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Mathematical Model M1"
+        },
+        {
+            "text": "3) Equation (7.1) describes operation execution dynamics subject to availability of IS described in the matrix function \u03b5 il (t). u (\u03bd) The control actions are constrained as follows:",
+            "cite_spans": [
+                {
+                    "start": 132,
+                    "end": 135,
+                    "text": "(\u03bd)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Mathematical Model M1"
+        },
+        {
+            "text": "Constraints (7.4) are assignment problem constraints. They define possibilities of parallel use of many services for one operation and for parallel processing of many operations at one service. Constraints (7.5) determine the precedence relations. Constraints (7.6) interconnect main and auxiliary controls. Equation (7.7) constraints control to be Boolean variables.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Mathematical Model M1"
+        },
+        {
+            "text": "Remark 7.1 Note that constraints (7.4)-(7.7) are identical to those in MP models. However, at each t-point of time, the number of variables is determined by the operations which are currently in the \"scheduling window.\" Therefore, the tendency will be to have small-size instances and to apply known methods for the solution of MP models (e.g., Hungarian or Branch & Bound methods) subject to the problems (7.1)-(7.12).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Mathematical Model M1"
+        },
+        {
+            "text": "The boundary conditions are defined as shown in Eqs. (7.8) and (7.9):",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Mathematical Model M1"
+        },
+        {
+            "text": "\u2208 R 1 (7.9) Equations (7.8) and (7.9) define initial and end values of the variables x (\u03bd)",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Mathematical Model M1"
+        },
+        {
+            "text": "Remark 7.2 End conditions in OPC models play the role of demand variables in MP models. Conditions (7.9) reflect the desired end state. The right parts of equations are predetermined at the planning stage subject to the planned demand for each job.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Mathematical Model M1"
+        },
+        {
+            "text": "The goals are defined as shown in Eqs. (7.10)-(7.12):",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Mathematical Model M1"
+        },
+        {
+            "text": "il (\u03c4 ) d\u03c4 (7.12) Equation (7.10) minimizes losses from the idle time of services. Equation (7.11) estimates the service level by the volume of on-time completed jobs in the material flow. Equation (7.12) minimizes total costs of IS.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Mathematical Model M1"
+        },
+        {
+            "text": "The model of operation execution dynamics in the IRs can be expressed as (7.13):",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Mathematical Model M2"
+        },
+        {
+            "text": "(7.13) Equation (7.13) describes operation's execution dynamic in the IR subject to operation of the IRs and recovery operations in the case of disruptions in the information structure.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Mathematical Model M2"
+        },
+        {
+            "text": "The control actions are constrained as shown in Eqs. (7.14)-(7.20): ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Mathematical Model M2"
+        },
+        {
+            "text": "The developed modeling complex is composed of dynamic models of IS and IR control subject to execution of material flows. It also includes elements of IR reconfiguration [e.g., in Eqs. (7.14)-(7.16) and (7.20)]. Full consideration of the reconfiguration model can be found in (Ivanov and Sokolov 2013) . The presented models M1 and M2 are interconnected with the help of Eq. (7.6) where elements from M2 are used in M1. In its turn, M1 influences M2 through Eqs. (7.14) and (7.20).",
+            "cite_spans": [
+                {
+                    "start": 276,
+                    "end": 301,
+                    "text": "(Ivanov and Sokolov 2013)",
+                    "ref_id": "BIBREF20"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Model Integration"
+        },
+        {
+            "text": "The proposed models and algorithms have been validated in a developed prototype based on C++ and XML. The OPC calculation is based on the Hamiltonian function. In integrating the main and the conjunctive equation systems, the values of variables in both of the systems can be obtained at each point of time. The maximum principle guarantees that the optimal solutions (i.e., the solution with maximal values) of the instantaneous problems (i.e., at each point of time) give the optimal solution to the overall problem. For these subproblems, optimal solutions can be found, for example, with the help of MP. Then these solutions are linked into an OPC.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model Integration"
+        },
+        {
+            "text": "Let us discuss optimality and sufficiency properties that have been proved theoretically and experimentally. The formulated scheduling model satisfies the conditions of the existence theorem in Lee and Markus (1967, Theorem 4, Corollary 2) , which allows us to assert the existence of the optimal solution in the appropriate class of admissible controls. The formulated scheduling problem is the standard problem of OPC with mixed constraints and its optimal solution and relaxed system can be obtained with the help of local cut method-based modification of the continuous maximum principle. An analysis of constraints in M1 and M2 shows that both state and control variables are constrained (i.e., the mixed state-control constraints exist Boltyanskiy 1973) and form therefore a dynamic system with a variable control domain. To obtain necessary conditions of control optimality, Boltyansky's method of local sections can be used. Then the necessary conditions can be formulated in the form of the Boltyanskiy's theorem (maximum principle) (1973).",
+            "cite_spans": [
+                {
+                    "start": 194,
+                    "end": 239,
+                    "text": "Lee and Markus (1967, Theorem 4, Corollary 2)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Model Analysis"
+        },
+        {
+            "text": "Corollary 7.1 Analysis of Boltyanskiy (1973) and Moiseev (1974) shows that for the linear nonstationary finite-dimensional systems (models M1 and M2) with the convex area of admissible control Q(x) and performance indicators (7.10)-(7.12) and (7.23)-(7.26), the stated necessary conditions of optimality are also the conditions of sufficiency.",
+            "cite_spans": [
+                {
+                    "start": 26,
+                    "end": 44,
+                    "text": "Boltyanskiy (1973)",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 49,
+                    "end": 63,
+                    "text": "Moiseev (1974)",
+                    "ref_id": "BIBREF37"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Model Analysis"
+        },
+        {
+            "text": "According to study (Ivanov and Sokolov 2012a) , the initial problem of nonclassical calculus of variations can be transformed to the two-point boundary problem help of local cut method. The assignment and routing at each instant of time are performed on the basis of the \"dynamic priority\" of the operations. The dynamic priority includes both the values of conjunctive variables and the current values of the goal functions (7.10)-(7.12) and (7.23)-(7.26).",
+            "cite_spans": [
+                {
+                    "start": 19,
+                    "end": 45,
+                    "text": "(Ivanov and Sokolov 2012a)",
+                    "ref_id": "BIBREF18"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Model Analysis"
+        },
+        {
+            "text": "Theorem 7.1 Let be a relaxed problem for the basic OPC problem. Then (a) If the problem does not have allowable solutions, then this is true for the problem PS as well. (b) If the OPC of the problem is allowable, then it is the OPC for the problem PS as well.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Algorithmic Realization"
+        },
+        {
+            "text": "(a) If the problem does not have allowable solutions, then a control u(t) transferring dynamic system (7.1)-(7.3) and (7.13)\u1e8b = f (x, u, t) from a given initial state to a given final state does not exist. The same end conditions are violated in the OPC problem. (b) Let u * (t), \u2200 t \u2208 (T 0 , T f ] be an OPC in and x(t) be a solution to models M1 and M2 subject to u(t) = u * (t). Then u * (t) meets the requirements of the local cut method and maximizes Hamiltonian for the OPC problem. Hence, vector u * (t) and x * (t) return minimum to performance indicators (7.10)-(7.12) and (7.23)-(7.26). The proof is complete.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Proof"
+        },
+        {
+            "text": "As the dynamics of state and conjunctive variables is described by differential equations, it becomes possible to calculate these variables at any instant of time subject to given initial conditions. Therefore, the Hamiltonian becomes the function of only one variable u that can be calculated at any t subject to allowable control from u \u2208 G u . Therefore, the OPC problem can be reduced to a boundary problem with the help of the local cut method.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Proof"
+        },
+        {
+            "text": "Let us consider the algorithmic realization of the above-described modified maximum principle. After transforming to the boundary problem, a relaxed problem can be solved to receive OPC for the schedule of the model M1, for computation of which the main and conjunctive systems are integrated, that is, the OPC vector u * (t) and the state trajectory x * (t) are obtained. The OPC vector at time t = T 0 and for the given value of \u03c8(t) should return maximum criteria indicators (7.10)-(7.12) and (7.23)-(7.26) have been transformed to a general performance index and expressed in a scalar form J G .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Proof"
+        },
+        {
+            "text": "The basic peculiarity of the considered boundary problem is that the initial conditions for the conjunctive variables \u03c8(t 0 ) are not given. At the same time, an OPC should be calculated subject to end conditions (7.8) and (7.9) and (7.21) and (7.22). To obtain the conjunctive system vector, we use the Krylov-Chernousko method for OPC problem with free right end that is based on joint use of modified successive approximations method and branch-and-bound method. We propose to use a heuristics schedule u(t) to obtain the initial conditions for \u03c8(t 0 ). Then, the algorithm can be stated as follows:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Proof"
+        },
+        {
+            "text": "\u2022 Step 1: An initial solution u(t), t \u2208 T 0 , T f is calculated and iteration step r = 0.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Proof"
+        },
+        {
+            "text": "\u2022 Step 2: The parameters of the gained schedule u(t), t \u2208 T 0 , T f are put into Eqs. (7.1)-(7.3) and (7.13) and integrated. As a result of the dynamic model run, a new trajectory of operation states x (r) (t) is received. Besides, if t = T f then the record value J G = J (r) G can be calculated. \u2022 Step 3: Then, the transversality conditions are evaluated. The conjugate system is integrated subject to u(t) = u(t) and over the interval from t = T f to t = T 0 . For t = T 0 , the first approximation \u03c8 (r) l (T 0 ) is received as a result. Here, the iteration number r = 0 is completed.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Proof"
+        },
+        {
+            "text": "\u2022 Step 4: The control u (r) (t) being searched for subject to maximization of the Hamiltonian function. The iterative process of the optimal schedule search is terminated as follows: either the allowable solution is determined, or at the fourth step no significant improvement is achieved.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Proof"
+        },
+        {
+            "text": "Analogously, the OPC for the schedule of the model M2 can be obtained through the integration of corresponding conjunctive systems. Subsequently, through the reverse integration of the main equation systems, the mutual interrelating of the models M1 and M2 is realized.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Proof"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Managing multi-and omni-channel distribution: Metrics and research directions",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Ailawadi",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Farris",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Journal of Retailing",
+            "volume": "93",
+            "issn": "1",
+            "pages": "120--135",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "An interdisciplinary perspective on IT services management and service science",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Bardhan",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Demirkan",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Kannan",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Kauffman",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Sougstad",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Journal of Manufacturing Information Systems",
+            "volume": "26",
+            "issn": "4",
+            "pages": "13--64",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Optimal control of discrete systems",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Boltyanskiy",
+                    "suffix": ""
+                }
+            ],
+            "year": 1973,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "A conceptual model of value systems in collaborative networks",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Camarinha-Matos",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Macedo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Journal of Intelligent Manufacturing",
+            "volume": "21",
+            "issn": "3",
+            "pages": "287--299",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "An IT-enabled supply chain model: A simulation study",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Cannella",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Framinan",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Barbosa-P\u00f3voa",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "International Journal of Systems Science",
+            "volume": "45",
+            "issn": "11",
+            "pages": "2327--2341",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Integrated production and outbound distribution scheduling: Review and extensions",
+            "authors": [
+                {
+                    "first": "Z.-L",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Operations Research",
+            "volume": "58",
+            "issn": "1",
+            "pages": "130--148",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Agent-based product-support logistics system using XML and RDF",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Choi",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Kim",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Park",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Kang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "International Journal of Systems Science",
+            "volume": "33",
+            "issn": "6",
+            "pages": "467--484",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "How does information technology shape supply-chain structure? Evidence on the number of suppliers",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Dedrick",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Zhu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Journal of Manufacturing Information Systems",
+            "volume": "25",
+            "issn": "2",
+            "pages": "41--72",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Blockchain-oriented dynamic modelling of smart contract design and execution control in the supply chain",
+            "authors": [],
+            "year": null,
+            "venue": "International Journal of Production Research",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/00207543.2019.1627439"
+                ]
+            }
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Scheduling coordination in a supply chain using advance demand information",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Giard",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Mendy",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Production Planning and Control",
+            "volume": "19",
+            "issn": "7",
+            "pages": "655--667",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Review of quantitative methods for supply chain resilience analysis",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Hosseini",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Ivanov",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Dolgui",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Transportation Research: Part E",
+            "volume": "125",
+            "issn": "",
+            "pages": "285--307",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Predicting the impact of epidemic outbreaks on the global supply chains: A simulation-based analysis on the example of coronavirus (COVID-19 / SARS-CoV-2) case. Transportation research -Part E",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Ivanov",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "136",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.tre.2020.101922"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Coronavirus (COVID-19 / SARS-CoV-2) and supply chain resilience: A research note. International journal of integrated supply management",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Ivanov",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Das",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "New disruption risk management perspectives in supply chains: Digital twins, the ripple effect, and resileanness. 9th IFAC conference on manufacturing modelling",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Ivanov",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Dolgui",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "",
+            "volume": "52",
+            "issn": "",
+            "pages": "337--342",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Viability of intertwined supply networks: Extending the supply chain resilience angles towards survivability. In A position paper motivated by COVID-19 outbreak",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Ivanov",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Dolgui",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "International Journal of Production: Research",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/00207543.2020.1750727"
+                ]
+            }
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "A digital supply chain twin for managing the disruptions risks and resilience in the era of",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Ivanov",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Dolgui",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Adaptive supply chain management",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Ivanov",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Sokolov",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Dynamic supply chain scheduling",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Ivanov",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Sokolov",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Journal of Scheduling",
+            "volume": "15",
+            "issn": "2",
+            "pages": "201--216",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Structure dynamics control approach to supply chain planning and adaptation",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Ivanov",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Sokolov",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "International Journal of Production Research",
+            "volume": "50",
+            "issn": "21",
+            "pages": "6133--6149",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Dynamic coordinated scheduling in the supply chain under a process modernization",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Ivanov",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Sokolov",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "International Journal of Production Research",
+            "volume": "51",
+            "issn": "9",
+            "pages": "2680--2697",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Intelligent supply chain planning in virtual enterprises",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Ivanov",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Arkhipov",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Sokolov",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Virtual Enterprises and Collaborative Networks, Proceedings of the IFIP Conference on Virtual Enterprises PRO-VE",
+            "volume": "",
+            "issn": "",
+            "pages": "215--223",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "The impact of digital technology and industry 4.0 on the ripple effect and supply chain risk analytics",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Ivanov",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Dolgui",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Sokolov",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "International Journal of Production Research",
+            "volume": "57",
+            "issn": "3",
+            "pages": "829--846",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Quantitative models of collaborative networks",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Ivanov",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "K\u00e4schel",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Arkhipov",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Sokolov",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zschorn",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Collaborative Networks and Their Breeding Environments, Proceedings of the IFIP Conference on Virtual Enterprises PRO-VE 2005",
+            "volume": "",
+            "issn": "",
+            "pages": "387--394",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Integrated modeling of agile enterprise networks",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Ivanov",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Kaeschel",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Sokolov",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "International Journal of Agile Systems and Management",
+            "volume": "2",
+            "issn": "1",
+            "pages": "23--49",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "A multi-structural framework for adaptive supply chain planning and operations with structure dynamics considerations",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Ivanov",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Sokolov",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Kaeschel",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "European Journal of Operational Research",
+            "volume": "200",
+            "issn": "2",
+            "pages": "409--420",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "On applicability of optimal control theory to adaptive supply chain planning and scheduling",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Ivanov",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Dolgui",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Sokolov",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Annual Reviews in Control",
+            "volume": "36",
+            "issn": "1",
+            "pages": "73--84",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Integrated dynamic scheduling of material flows and distributed information services in collaborative cyber-physical supply networks",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Ivanov",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Sokolov",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Dilou Raguinia",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "International Journal of Systems Science: Operations & Logistics",
+            "volume": "1",
+            "issn": "1",
+            "pages": "18--26",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Integration of aggregate distribution and dynamic transportation planning in a supply chain with capacity disruptions and ripple effect considerations",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Ivanov",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Sokolov",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Hartl",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Dolgui",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Pavlov",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Solovyeva",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "International Journal of Production Research",
+            "volume": "53",
+            "issn": "23",
+            "pages": "6963--6979",
+            "other_ids": {}
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "A dynamic model and an algorithm for short-term supply chain scheduling in the smart factory Industry 4.0",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Ivanov",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Sokolov",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Dolgui",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Werner",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ivanova",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "International Journal of Production Research",
+            "volume": "54",
+            "issn": "2",
+            "pages": "386--402",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "A survey on the control theory applications to operational systems, supply chain management and Industry 4.0",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Ivanov",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Sethi",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Dolgui",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Sokolov",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Annual Reviews in Control",
+            "volume": "46",
+            "issn": "",
+            "pages": "134--147",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "A control approach to scheduling flexibly configurable jobs with dynamic structural-logical constraints",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Ivanov",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Sokolov",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Dolgui",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Werner",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Potryasaev",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "IISE Transactions",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/24725854.2020.1739787"
+                ]
+            }
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Revisiting information systems to support a dynamic supply chain: Issues and perspectives. Production Planning and Control",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Jain",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Wadhwa",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Deshmukh",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "",
+            "volume": "20",
+            "issn": "",
+            "pages": "17--29",
+            "other_ids": {}
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "A cloud based data integration framework",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Jiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Vrieze",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Lim",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Jarabo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Proceedings of the IFIP Conference on Virtual Enterprises PRO-VE 2012 IFIP AICT",
+            "volume": "380",
+            "issn": "",
+            "pages": "177--185",
+            "other_ids": {}
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "The Effects of COVID-19 on Global Supply Chains:Responsiveness, Resilience, and Restoration (3Rs)",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Markus",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Voss",
+                    "suffix": ""
+                }
+            ],
+            "year": 1967,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Business processes oriented heterogeneous systems integration platform for networked enterprises",
+            "authors": [
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q.-R",
+                    "middle": [],
+                    "last": "Peng",
+                    "suffix": ""
+                },
+                {
+                    "first": "C.-Q",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "B.-E",
+                    "middle": [],
+                    "last": "Shao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Computers in Industry",
+            "volume": "61",
+            "issn": "2",
+            "pages": "127--144",
+            "other_ids": {}
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Element of the optimal systems theory",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Moiseev",
+                    "suffix": ""
+                }
+            ],
+            "year": 1974,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "The impact of digital technology on relationships in a business network",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Pagani",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Pardo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Industrial Marketing Management",
+            "volume": "67",
+            "issn": "",
+            "pages": "185--192",
+            "other_ids": {}
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "Challenges for the cyberphysical manufacturing enterprises of the future",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Panetto",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Iung",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Ivanov",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Weichhart",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Annual Reviews in Control",
+            "volume": "47",
+            "issn": "",
+            "pages": "200--213",
+            "other_ids": {}
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Challenges for the cyberphysical manufacturing enterprises of the future",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Panetto",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Iung",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Ivanov",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Weichhart",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Annual Reviews in Control",
+            "volume": "47",
+            "issn": "",
+            "pages": "200--213",
+            "other_ids": {}
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "Supply-chain networks: A complex adaptive systems perspective",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Surana",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Kumara",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Greaves",
+                    "suffix": ""
+                },
+                {
+                    "first": "U",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Raghavan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "International Journal of Production Research",
+            "volume": "43",
+            "issn": "20",
+            "pages": "4235--4265",
+            "other_ids": {}
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "Cloud computing: A perspective study",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Von Laszewski",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Younge",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "He",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Kunze",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Tao",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Cheng",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "New Generation Computing",
+            "volume": "28",
+            "issn": "2",
+            "pages": "137--146",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Interrelations among material flows, sales channels, IS, functions, and IR considerations of IS reconfiguration in a real execution stage and monetary estimation of investments into IS.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "given variables characterizing the same domains but after a disruption-based reconfiguration.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "t) as a given time function which characterizes the costs of idle time of services for the operation D denotes the value of current idle cost due to a backlog in the operation D",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "auxiliary variable which characterizes the execution of the operation D",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "t) = 0 otherwise. Equation (7.2) represents idle time in the material flow caused by unavailability of the IS S (\u03bd) l . Equation (7.3) represents the dynamics of operation's execution according to precedence constraints.",
+            "latex": null,
+            "type": "figure"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "(j,1) r (t) \u2264 1 and 0 \u2264 \u03be (j,2) r (t) \u2264 1, perturbation impacts on the IR B (\u03bd,j ) r can be modeled. Equations (7.14)-(7.16) constraint information processing at B (\u03bd,j ) r before and after the reconfiguration. Constraints (7.17) set precedence relations on information processing operation similar to Eq. (7.5). Constraints (7.18) are related to assignment problem and are similar to (7.4). Equation (7.19) determines the conditions of processing completion.The boundary conditions are defined as shown in Eqs. (7.21) and (7.22):The goals are defined as shown in Eqs. (7.23)-(7.26): ",
+            "cite_spans": [
+                {
+                    "start": 76,
+                    "end": 84,
+                    "text": "(\u03bd,j ) r",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "annex"
+        }
+    ]
+}

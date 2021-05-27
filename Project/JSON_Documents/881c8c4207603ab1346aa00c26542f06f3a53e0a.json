@@ -1,0 +1,2746 @@
+{
+    "paper_id": "881c8c4207603ab1346aa00c26542f06f3a53e0a",
+    "metadata": {
+        "title": "Mucosal immune responses in COVID19 -a living review",
+        "authors": [
+            {
+                "first": "Claire",
+                "middle": [
+                    "F"
+                ],
+                "last": "Pearson",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Oxford",
+                    "location": {
+                        "addrLine": "Roosevelt Drive",
+                        "postCode": "OX3 7FY",
+                        "settlement": "Oxford",
+                        "country": "UK"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Rebecca",
+                "middle": [],
+                "last": "Jeffery",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Oxford",
+                    "location": {
+                        "addrLine": "Roosevelt Drive",
+                        "postCode": "OX3 7FY",
+                        "settlement": "Oxford",
+                        "country": "UK"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Emily",
+                "middle": [
+                    "E"
+                ],
+                "last": "Thornton",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Oxford",
+                    "location": {
+                        "addrLine": "Roosevelt Drive",
+                        "postCode": "OX3 7FY",
+                        "settlement": "Oxford",
+                        "country": "UK"
+                    }
+                },
+                "email": "emily.thornton@ndm.ox.ac.uk"
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "COVID-19 was initially characterized as a disease primarily of the lungs, but it is becoming increasingly clear that the SARS-CoV2 virus is able to infect many organs and cause a broad pathological response. The primary infection site is likely to be a mucosal surface, mainly the lungs or the intestine, where epithelial cells can be infected with virus. Although it is clear that virus within the lungs can cause severe pathology, driven by an exaggerated immune response, infection within the intestine generally seems to cause minor or no symptoms. In this review, we compare the disease processes between the lungs and gastrointestinal tract, and what might drive these different responses. As the microbiome is a key part of mucosal barrier sites, we also consider the effect that microbial species may play on infection and the subsequent immune responses. Because of difficulties obtaining tissue samples, there are currently few studies focused on the local mucosal response rather than the systemic response, but understanding the local immune response will become increasingly important for understanding the mechanisms of disease in order to develop better treatments.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "The immune system has been shown to play a critical role in the clearance of severe acute respiratory syndrome coronavirus 2 (SARS-CoV2) and the pathogenesis of resulting coronavirus infectious disease 2019 . Much of the immunological analysis in this disease has focused on the systemic immune response found in the blood. By focusing on recent data from lung and gut, the mucosal sites of infection, we can gain insights into the local immune response, which is likely key to viral clearance,s limiting pathogenesis and vaccine efficacy.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "INTRODUCTION"
+        },
+        {
+            "text": "SARS-CoV2 enters cells via the angiotensin-converting enzyme (ACE2) [1] . As with other coronaviruses, the spike protein is important for viral attachment and binding to ACE2, and must be cleaved for entry. Transmembrane serine protease 2 has been identified as a cellular serine protease able to cleave the spike protein. The broad spectrum of cell types that express ACE2 goes some way to explaining the wide variety of tissues that can be infected and damaged. ACE2 is particularly abundant on the epithelial cells that line the lung and intestine, specifically secretory goblet cells in the nasal mucosa, Type II pneumocytes in the lung, and absorptive enterocytes in the small intestine [2] .",
+            "cite_spans": [
+                {
+                    "start": 68,
+                    "end": 71,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 692,
+                    "end": 695,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                }
+            ],
+            "ref_spans": [],
+            "section": "SARS-CoV2 infection at mucosal sites"
+        },
+        {
+            "text": "In clinical settings, infection with SARS-CoV2 is defined on the basis of viral RNA amplification from nasopharyngeal swab samples. More recently, saliva tests have gained the popularity because of their less invasive nature while maintaining a similar sensitivity [3] , due to ACE2 expression in oral cavity epithelial cells [4] . Diagnosis of COVID-19 depends upon a positive test for viral RNA from an oropharyngeal, nasopharyngeal or saliva swab, but it has become clear that the faeces can also contain SARS-CoV2 RNA, in many cases before symptoms appear and long after a patient has tested negative from a conventional swab [5] . Indeed, testing of wastewater for viral RNA is gaining popularity as a way for authorities to quickly identify local hotspots of infection in the community [6] .",
+            "cite_spans": [
+                {
+                    "start": 265,
+                    "end": 268,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 326,
+                    "end": 329,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 630,
+                    "end": 633,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 792,
+                    "end": 795,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                }
+            ],
+            "ref_spans": [],
+            "section": "SARS-CoV2 infection at mucosal sites"
+        },
+        {
+            "text": "However, the detection of RNA from SARS-CoV2 in different samples does not necessarily indicate the presence of infectious virus. The gold standard is isolation of virus that can infect an epithelial cell line Vero E in vitro, which has been clearly shown in lung samples [7] and documented in faecal samples [8] . High RNA levels may correlate with infectious virus, which has been isolated from nasal swabs, sputum and faeces [7, 9] . However, another study that used small intestine biopsy samples failed to isolate infectious virions [10] . It is also unclear whether any virus from the intestine is infectious once it is egested, or whether it is degraded in the intestine with remaining nucleic acid detectable by qPCR.",
+            "cite_spans": [
+                {
+                    "start": 272,
+                    "end": 275,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 309,
+                    "end": 312,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 428,
+                    "end": 431,
+                    "text": "[7,",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 432,
+                    "end": 434,
+                    "text": "9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 538,
+                    "end": 542,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                }
+            ],
+            "ref_spans": [],
+            "section": "SARS-CoV2 infection at mucosal sites"
+        },
+        {
+            "text": "Viral infection of human enterocytes of the small intestine has been shown by microscopy in organoid systems [11] and biopsies [10] , indicating that SARS-CoV2 can productively infect cells of the intestine. Around 20% of patients with COVID-19 experience gastrointestinal symptoms, but these are generally mild and include diarrhoea, nausea and vomiting [12] . A COVID-19 symptom tracker has been used to classify six different disease symptom clusters, including a gastrointestinal cluster with diarrhoea but no cough or fever [13] . It remains unclear whether the faecal-oral route is a significant infection risk and whether it may be related to this disease cluster. A summary of the currently understood differences between infection of the lung and gastrointestinal tract is shown in Fig. 1 .",
+            "cite_spans": [
+                {
+                    "start": 109,
+                    "end": 113,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 127,
+                    "end": 131,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 355,
+                    "end": 359,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 529,
+                    "end": 533,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 791,
+                    "end": 797,
+                    "text": "Fig. 1",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "SARS-CoV2 infection at mucosal sites"
+        },
+        {
+            "text": "It has long been appreciated that the local microbiota may interact directly with invading viruses or immune cells, or indirectly through metabolite production that modulates the environment [14, 15] . Studies have implicated pharyngeal microbial communities in susceptibility to influenza [16, 17] and secondary bacterial infections [17] , but interactions through the gutlung axis indicate that gut microbes also play a role-the gut bacterium Lactobacillus paracasei was able to modulate the immune response to influenza in mice, decreasing damaging inflammatory cell accumulation within the lungs [18] . This all suggests that the microbiome may play a role in modulating both susceptibility and immune responses to viral pathogens. Antibiotic-driven dysbiosis, which would be common among COVID-19 patients, can also affect the immune response to viral infection [19] . In COVID-19, diseases associated with microbial dysbiosis, particularly comorbidities related to metabolic syndrome (including insulin resistance and Type 2 diabetes, obesity and hypertension), have also been implicated in worse outcome. In one study, patients in intensive care units with critical COVID-19 were nearly twice as likely to be obese as the general population [20] . It is therefore unsurprising that many studies are ongoing to investigate associations between lung and gut microbiota and COVID-19. Such studies are complicated by the difficulties of unpicking cause versus effect in an already sick population, as an excessive immune response is likely to affect both local and distal bacterial populations. Initial results indicate decreased microbial diversity in patients with COVID-19 compared with both healthy controls and influenza or pneumonia patients, which may gradually recover over time [21, 22] but can persist long after viral clearance from the respiratory tract",
+            "cite_spans": [
+                {
+                    "start": 191,
+                    "end": 195,
+                    "text": "[14,",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 196,
+                    "end": 199,
+                    "text": "15]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 290,
+                    "end": 294,
+                    "text": "[16,",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 295,
+                    "end": 298,
+                    "text": "17]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 334,
+                    "end": 338,
+                    "text": "[17]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 600,
+                    "end": 604,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 867,
+                    "end": 871,
+                    "text": "[19]",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 1248,
+                    "end": 1252,
+                    "text": "[20]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 1790,
+                    "end": 1794,
+                    "text": "[21,",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 1795,
+                    "end": 1798,
+                    "text": "22]",
+                    "ref_id": "BIBREF21"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Microbiome and SARS-CoV2"
+        },
+        {
+            "text": "There is a broad consensus that an over-exuberant immune response is a key driver of severe disease following SARS-CoV2 infection, and that inducing a moderate immune response will be important in vaccine efficacy. Studies are starting to investigate the immune response at the local site of infection as immunity here will be the first line of defence. There is conflicting data about whether gut involvement in SARS-CoV2 is beneficial or harmful. The microbiome has also become a focus of investigation given the strengthening link between obesity (which is associated with reduced microbial diversity) and worse disease outcome. Mucosal studies remain limited due to the lack of sample access but will become increasingly important in understanding disease.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Box 1 Is there a consensus on the topic discussed? And what is the consensus?"
+        },
+        {
+            "text": "Understanding the mucosal immune response to SARS-CoV2 will help to enable better treatment of COVID-19 and the development of successful vaccines for prevention. Presently available data on the immunology of COVID-19 generally reflect systemic responses in the blood, with comparatively little on the local immune response within the lung or intestine, both sites of viral infection. Given that intestinal immune responses to infection appear to be regulated, while those in the lung are exaggerated, understanding the similarities and differences between the sites will help to unravel the differing immune responses between mild and severe disease. [5] . Common commensal microbes such as Faecalibacterium prausnitzii, a known producer of short-chain fatty acid metabolites associated with health [23] are significantly transiently reduced in the gut at peak disease, even in patients with mild symptoms [21] , and abundance was inversely correlated with lung disease severity and in the absence of gut symptoms [24] . Interestingly, however, a pilot study of the microbiome of infected patients described an increase in Faecalibacterium within bronchoalveolar lavage fluid compared with healthy controls [25] . As Faecalibacterium is reduced in metabolic disease including obesity and Type 2 diabetes [26] , it may be that preexisting microbial factors alter initial susceptibility to SARS-CoV2 infection, and location of microbes within the body may also play a role. In addition, an increase in certain Clostridial and Pseudomonas opportunistic pathogens have been associated with COVID-19 severity, possibly due to increased risk of secondary bacterial infection [21, 22, 24] . Similarly, infection with SARS-CoV2 may also reduce the diversity of the nasopharyngeal microbiome [27] , and increase abundance of specific genii that can play a role in mucosal immunity, such as Prevotella, the presence of which has been associated with more severe symptoms [28] . However, data are currently limited to small-scale studies, and more prospective, longitudinal analysis of larger cohorts will be required to unpick the many variables that may contribute to microbial changes.",
+            "cite_spans": [
+                {
+                    "start": 652,
+                    "end": 655,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 800,
+                    "end": 804,
+                    "text": "[23]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 907,
+                    "end": 911,
+                    "text": "[21]",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 1015,
+                    "end": 1019,
+                    "text": "[24]",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 1208,
+                    "end": 1212,
+                    "text": "[25]",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 1305,
+                    "end": 1309,
+                    "text": "[26]",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 1670,
+                    "end": 1674,
+                    "text": "[21,",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 1675,
+                    "end": 1678,
+                    "text": "22,",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 1679,
+                    "end": 1682,
+                    "text": "24]",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 1784,
+                    "end": 1788,
+                    "text": "[27]",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 1962,
+                    "end": 1966,
+                    "text": "[28]",
+                    "ref_id": "BIBREF27"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Box 2 Why does the subject matter?"
+        },
+        {
+            "text": "A key feature of severe COVID-19 disease is the extensive lung damage caused by an over-exuberant immune response, but the immune response in the gut remains enigmatic. Despite the evidence for viral infection within the intestine, where a high viral burden might also be expected, gastrointestinal (GI) symptoms are generally mild, although pro-inflammatory interleukin (IL)-23 and IL-8 are increased in faecal samples from COVID-19 patients compared with healthy controls [29] . The presence of diarrhoea in severe patients has been associated with a worse outcome in some studies [13, 30] , which could be related either to systemic immune activation or more widespread viral invasion of tissues. Interestingly, another study using three patient cohorts found an association between GI symptoms and reduced disease severity and mortality even when comorbidities were accounted for [10] . A few patients with GI symptoms who underwent endoscopic evaluation had no evidence of mucosal inflammation despite the epithelial infection. GI infection was associated with reduced levels of circulating pro-inflammatory cytokines including IL-1b, tumour necrosis factor (TNF)a and IL-6, but increased IL-7, a critical T-cell development and survival cytokine [31] . This would suggest that GI infection may lead to a less inflammatory response than in the lungs in adults. However, in multisystem inflammatory system in children, a rare but severe disease following SARS-CoV2 infection in children, a common feature is gastrointestinal symptoms rather than lung involvement [32] . Symptoms seem to occur up to 4 weeks after COVID-19 exposure so are likely to involve an aberrant immune response rather than direct damage from the virus [33] . Treatment with intravenous immunoglobulin (Ig), anti-IL-6 or anti-IL-1 has had beneficial effects [34] , suggesting that in these children there is an excessive immune response despite the gastrointestinal involvement.",
+            "cite_spans": [
+                {
+                    "start": 474,
+                    "end": 478,
+                    "text": "[29]",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 583,
+                    "end": 587,
+                    "text": "[13,",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 588,
+                    "end": 591,
+                    "text": "30]",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 884,
+                    "end": 888,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 1252,
+                    "end": 1256,
+                    "text": "[31]",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 1567,
+                    "end": 1571,
+                    "text": "[32]",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 1729,
+                    "end": 1733,
+                    "text": "[33]",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 1834,
+                    "end": 1838,
+                    "text": "[34]",
+                    "ref_id": "BIBREF33"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Disease processes and protection in mucosal tissues"
+        },
+        {
+            "text": "Neutrophils have emerged as potentially important regulators of lung disease, due to the significant formation of neutrophil extracellular traps (NETs) in COVID-19 patients in respiratory failure, and the correlation between neutrophilia and poor outcome [35] . NETs trap viral particles upon neutrophil death by NETosis [36] , but their extrusion can also cause coagulation, a feature of severe COVID-19. An increase in both neutrophil and pro-inflammatory macrophage accumulation in bronchoalveolar fluid has been noted in severe COVID-19 patients [37] along with an increase in neutrophil degranulation [38] . Post-mortem examination of lung samples from patients who died with respiratory involvement showed a significant macrophage and monocyte exudate in alveolar cavities, as well as some neutrophil and lymphocyte accumulation [39] [40] [41] [42] .",
+            "cite_spans": [
+                {
+                    "start": 255,
+                    "end": 259,
+                    "text": "[35]",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 321,
+                    "end": 325,
+                    "text": "[36]",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 550,
+                    "end": 554,
+                    "text": "[37]",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 606,
+                    "end": 610,
+                    "text": "[38]",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 835,
+                    "end": 839,
+                    "text": "[39]",
+                    "ref_id": "BIBREF38"
+                },
+                {
+                    "start": 840,
+                    "end": 844,
+                    "text": "[40]",
+                    "ref_id": "BIBREF39"
+                },
+                {
+                    "start": 845,
+                    "end": 849,
+                    "text": "[41]",
+                    "ref_id": "BIBREF40"
+                },
+                {
+                    "start": 850,
+                    "end": 854,
+                    "text": "[42]",
+                    "ref_id": "BIBREF41"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Disease processes and protection in mucosal tissues"
+        },
+        {
+            "text": "The cytokine environment induced by the different immune cell players is also likely to play a critical role in outcome. Treatment with the steroid Dexamethasone demonstrated that inhibiting the immune response can improve survival in severely ill patients [43] . Damage to alveolar epithelial cells is likely to stimulate early responding monocytes, macrophages and neutrophils to make high levels of IL-1b, IL-6, IL-18, interferon (IFN)c and TNFa, which can act downstream on T-cell activation and differentiation. The presence of high serum IL-6 has been associated with poor outcome [44] , but treatment with anti-IL-6, however, has shown mixed results [45] and may be beneficial only in a subset of patients with the highest hyperinflammation. Type I interferons are directly induced by viral infection and are the important component of anti-viral responses. About 15% of severe cases have been associated with genetic variants in the interferon pathway or auto-antibodies against the cytokines [46, 47] . Circulating IFNb expression has been shown to be reduced in all patients with COVID-19 regardless of disease severity [48] . As Type I IFNs are potent stimulators of natural killer and T cells, perhaps it is unsurprising that overall there appears to be a decrease in natural killer cells and all T cells in COVID-19 lungs. Most notably CD8 \u00fe T cells are reduced in the lung and bronchoalveolar fluid in severe COVID-19, as well as in the blood [48] , and these cells showed fewer markers of proliferation and tissue residency than those found in moderate or no disease [37] . Indeed, a broad T-cell memory of the virus is associated with a milder course of disease [49] and local lung CD4 T-cell responses are associated with survival from severe disease [41] . This could suggest that in severe disease there are fewer SARS-CoV2-specific anti-viral CD8 \u00fe T cells within the tissues but continued innate cell activation from high viral load. Treatment with IFNb subcutaneously may shorten disease duration and reduce symptoms [50] , but inhalation directly into the lungs may be a better method of delivery, as this is where the biggest problem lies. Indeed, Synairgen has reported (in a pre-print) that treatment with inhaled IFNb reduced the development of severe disease by up to 79% in an early trial [51] . It may be that mucosal administration by inhalation of other treatments leads to a better response than when given systemically.",
+            "cite_spans": [
+                {
+                    "start": 257,
+                    "end": 261,
+                    "text": "[43]",
+                    "ref_id": "BIBREF42"
+                },
+                {
+                    "start": 587,
+                    "end": 591,
+                    "text": "[44]",
+                    "ref_id": "BIBREF43"
+                },
+                {
+                    "start": 657,
+                    "end": 661,
+                    "text": "[45]",
+                    "ref_id": "BIBREF44"
+                },
+                {
+                    "start": 1001,
+                    "end": 1005,
+                    "text": "[46,",
+                    "ref_id": "BIBREF45"
+                },
+                {
+                    "start": 1006,
+                    "end": 1009,
+                    "text": "47]",
+                    "ref_id": "BIBREF46"
+                },
+                {
+                    "start": 1130,
+                    "end": 1134,
+                    "text": "[48]",
+                    "ref_id": "BIBREF47"
+                },
+                {
+                    "start": 1457,
+                    "end": 1461,
+                    "text": "[48]",
+                    "ref_id": "BIBREF47"
+                },
+                {
+                    "start": 1582,
+                    "end": 1586,
+                    "text": "[37]",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 1678,
+                    "end": 1682,
+                    "text": "[49]",
+                    "ref_id": "BIBREF48"
+                },
+                {
+                    "start": 1768,
+                    "end": 1772,
+                    "text": "[41]",
+                    "ref_id": "BIBREF40"
+                },
+                {
+                    "start": 2039,
+                    "end": 2043,
+                    "text": "[50]",
+                    "ref_id": "BIBREF49"
+                },
+                {
+                    "start": 2318,
+                    "end": 2322,
+                    "text": "[51]",
+                    "ref_id": "BIBREF50"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Disease processes and protection in mucosal tissues"
+        },
+        {
+            "text": "Although lung T cells decrease in severe COVID-19, there appears to be an increase in B cells [48] , reflecting their importance in antibody production. A number of studies have measured immunoglobulin levels in the serum, particularly IgG and IgA, both of which are found in convalescent patients. However, as IgG comprises the majority of serum immunoglobulin, current antibody tests use IgM and IgG only, although IgA is mainly found in mucosal tissues such as the lung, and may therefore be of as great or greater importance. Limited data hint at early neutralizing IgA responses being associated with milder infection [52, 53] , and that IgA peaks earlier than IgG [53] . Analysis of faecal samples from COVID-19 patients suggests viral-specific antibody responses can develop in the gut [29] , but the effect of this antibody on systemic levels is unknown. Serum antibody appears to wane in the weeks and months post-infection [54] , however, it is unclear what happens within the lung tissue. Antibody concentrations in the saliva suggest IgA rapidly wanes, but IgG is maintained, at least in the oral cavity [55] . Measurement of SARS-CoV2-specific antibody and memory B and T cells within mucosal tissues rather than just serum may give a more accurate picture as to the impact of antibody on recovery and protection from reinfection. Given the difficulties in obtaining mucosal tissue samples from humans with COVID-19, and the advent of a host of animal models including ferrets, non-human primates and the use of a mouse-adapted virus [56] , investigation of mucosal responses in animal models may help to increase our understanding of the immune response to SARS-CoV2 in lung and intestinal sites.",
+            "cite_spans": [
+                {
+                    "start": 94,
+                    "end": 98,
+                    "text": "[48]",
+                    "ref_id": "BIBREF47"
+                },
+                {
+                    "start": 623,
+                    "end": 627,
+                    "text": "[52,",
+                    "ref_id": "BIBREF51"
+                },
+                {
+                    "start": 628,
+                    "end": 631,
+                    "text": "53]",
+                    "ref_id": "BIBREF52"
+                },
+                {
+                    "start": 670,
+                    "end": 674,
+                    "text": "[53]",
+                    "ref_id": "BIBREF52"
+                },
+                {
+                    "start": 793,
+                    "end": 797,
+                    "text": "[29]",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 933,
+                    "end": 937,
+                    "text": "[54]",
+                    "ref_id": "BIBREF53"
+                },
+                {
+                    "start": 1116,
+                    "end": 1120,
+                    "text": "[55]",
+                    "ref_id": "BIBREF54"
+                },
+                {
+                    "start": 1547,
+                    "end": 1551,
+                    "text": "[56]",
+                    "ref_id": "BIBREF55"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Disease processes and protection in mucosal tissues"
+        },
+        {
+            "text": "Antibody responses are critical for design and interpretation of the efficacy of vaccine trials, as they are one of the primary readouts for an immune response, and length of antibody response is an important consideration for vaccine success. However, a successful vaccine is likely to have wider effects than the antibody induction alone, possibly also inducing a memory T-cell response that can contribute to protection. Early results of ChAdOx1 nCoV-19 vaccination in rhesus macaques indicated that while the animals were protected from pneumonia, nasal carriage of the virus remained at the same level as non-vaccinated animals [21] , hence, animals may be protected from the worst COVID-19 symptoms but remain infectious to others. A single dose of ChAd vaccine can lead to a local sterilizing response [57] when given intranasally rather than intramuscularly, highlighting the importance of induction of a local mucosal immune response.",
+            "cite_spans": [
+                {
+                    "start": 633,
+                    "end": 637,
+                    "text": "[21]",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 809,
+                    "end": 813,
+                    "text": "[57]",
+                    "ref_id": "BIBREF56"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Disease processes and protection in mucosal tissues"
+        },
+        {
+            "text": "Although the great strides have been made in our understanding of SARS-CoV2 infection and subsequent disease in the past 9 months, the study of mucosal immunity will be critical to future endeavours to prevent and treat disease.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "CONCLUSION"
+        },
+        {
+            "text": "No new data were generated or analysed in support of this review.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "DATA AVAILABILITY STATEMENT"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "SARS-CoV-2 cell entry depends on ACE2 and TMPRSS2 and is blocked by a clinically proven protease inhibitor",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Hoffmann",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Kleine-Weber",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Schroeder",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Cell",
+            "volume": "2020",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "SARS-CoV-2 receptor ACE2 is an interferon-stimulated gene in human airway epithelial cells and is detected in specific cell subsets across tissues",
+            "authors": [
+                {
+                    "first": "Cgk",
+                    "middle": [],
+                    "last": "Ziegler",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Allon",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Nyquist",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Cell",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.cell.2020.04.035"
+                ]
+            }
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Nasopharyngeal swabs are more sensitive than oropharyngeal swabs for COVID-19 diagnosis and monitoring the SARS-CoV-2 load",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Front Med",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3389/fmed.2020.00334"
+                ]
+            }
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "SARS-CoV-2: what can saliva tell us?",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Braz-Silva",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Pallos",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Giannecchini",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Oral Dis",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/odi.13365"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Prolonged presence of SARS-CoV-2 viral RNA in faecal samples",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Guo",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Tang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet Gastroenterol Hepatol",
+            "volume": "5",
+            "issn": "",
+            "pages": "434--439",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "SARS-CoV-2 RNA concentrations in primary municipal sewage sludge as a leading indicator of COVID-19 outbreak dynamics",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Peccia",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Zulli",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Brackney",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "2020",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1101/2020.05.19.20105999"
+                ]
+            }
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Virological assessment of hospitalized patients with COVID-2019",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "W\u00f6 Lfel",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Corman",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Guggemos",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nature",
+            "volume": "581",
+            "issn": "",
+            "pages": "465--474",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Isolation of 2019-nCoV from a stool specimen of a laboratory-confirmed case of the coronavirus disease 2019 (COVID-19)",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Zhu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "China CDC Wkly",
+            "volume": "2",
+            "issn": "",
+            "pages": "123--127",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Infectious SARS-CoV-2 in feces of patient with severe COVID-19",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Xiao",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Emerg Infect Dis",
+            "volume": "26",
+            "issn": "",
+            "pages": "1920--1922",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Gastrointestinal involvement attenuates COVID-19 severity and mortality",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Livanos",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Jha",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Cossarini",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "2020",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1101/2020.09.07.20187666"
+                ]
+            }
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "SARS-CoV-2 productively infects human gut enterocytes",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Lamers",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Beumer",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Vaart",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Science",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1126/science.abc1669"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Features of 20 133 UK patients in hospital with covid-19 using the ISARIC WHO Clinical Characterisation Protocol: Prospective observational cohort study",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Docherty",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Harrison",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Green",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "BMJ",
+            "volume": "369",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1136/bmj.m1985"
+                ]
+            }
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Symptom clusters in Covid19: a potential clinical prediction tool from the COVID symptom study app",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Sudre",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Lochlainn",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "2020",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Gut microbiota, metabolites and host immunity",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Rooks",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Garrett",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Nat Rev Immunol",
+            "volume": "16",
+            "issn": "",
+            "pages": "341--52",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Microbiota and its role on viral evasion: is it with us or against us?",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Dom\u00ednguez-D\u00edaz",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Garc\u00eda-Orozco",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Riera-Leal",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Front Cell Infect Microbiol",
+            "volume": "9",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "The respiratory microbiome and susceptibility to influenza virus infection",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Gordon",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Shedden",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "PLoS One",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1371/journal.pone.0207898"
+                ]
+            }
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Staphylococcus aureus and influenza a virus: partners in coinfection",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Mulcahy",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Mcloughlin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "MBio",
+            "volume": "7",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1128/mBio.02068-16"
+                ]
+            }
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Lactobacillus paracasei feeding improves immune control of influenza infection in mice",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Belkacem",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Serafini",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Wheeler",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "PLoS One",
+            "volume": "12",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Intestinal microbiota disruption reduces regulatory T cells and increases respiratory viral infection mortality through increased IFNc production",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Grayson",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Camarda",
+                    "suffix": ""
+                },
+                {
+                    "first": "Sra",
+                    "middle": [],
+                    "last": "Hussain",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Front Immunol",
+            "volume": "9",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Prevalence of obesity among adult inpatients with COVID-19 in France",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Caussy",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Pattou",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Wallet",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet Diabetes Endocrinol",
+            "volume": "8",
+            "issn": "",
+            "pages": "562--566",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Analysis of the intestinal microbiota in COVID-19 patients and its correlation with the inflammatory factor IL-18 and SARS-CoV-2-specific IgA",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Tao",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "2020",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Temporal dynamics of human respiratory and gut microbiomes during the course of COVID",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Lu",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "2020",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1101/2020.07.21.20158758"
+                ]
+            }
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Growth requirements and fermentation products of Fusobacterium prausnitzii, and a proposal to reclassify it as Faecalibacterium prausnitzii gen. nov., comb. nov",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Duncan",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Hold",
+                    "suffix": ""
+                },
+                {
+                    "first": "Hjm",
+                    "middle": [],
+                    "last": "Harmsen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "Int J Syst Evol Microbiol",
+            "volume": "52",
+            "issn": "",
+            "pages": "2141--2147",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Alterations in gut microbiota of patients with COVID-19 during time of hospitalization",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Zuo",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Gcy",
+                    "middle": [],
+                    "last": "Lui",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Gastroenterology",
+            "volume": "159",
+            "issn": "",
+            "pages": "944--955",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "The active lung microbiota landscape of COVID-19 patients",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Han",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Jia",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Shi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "",
+            "volume": "2020",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1101/2020.08.20"
+                ]
+            }
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Mining the human gut microbiota for immunomodulatory organisms",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Geva-Zatorsky",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Sefik",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Kua",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Cell",
+            "volume": "168",
+            "issn": "",
+            "pages": "928--943",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Metagenomic nextgeneration sequencing of nasopharyngeal specimens collected from confirmed and suspect COVID-19 patients",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Mostafa",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Fissel",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Fanelli",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "MBio",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1128/mBio.01969-20"
+                ]
+            }
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Nasopharyngeal microbial communities of patients infected with SARS-COV-2 that 1 developed COVID-19",
+            "authors": [
+                {
+                    "first": "Paz",
+                    "middle": [],
+                    "last": "Ventero",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ricardo",
+                    "middle": [],
+                    "last": "Castro Cuadrat",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Vidal",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "2020",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1101/2020.12.01.407486"
+                ]
+            }
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "SARS-CoV-2-specific IgA and limited inflammatory cytokines are present in the stool of select patients with acute COVID-19",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Britton",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Chen-Liaw",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Cossarini",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "2020",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Clinical characteristics of COVID-19 patients with digestive symptoms in Hubei, China: A descriptive, cross-sectional, multicenter study",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Pan",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Mu",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Am J Gastroenterol",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.14309/ajg.0000000000000620"
+                ]
+            }
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Flip the coin: IL-7 and IL-7R in health and disease",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Barata",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Durum",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Seddon",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Nat Immunol",
+            "volume": "20",
+            "issn": "",
+            "pages": "1584--93",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Multisystem inflammatory syndrome in U.S. children and adolescents",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Feldstein",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Rose",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Horwitz",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "N Engl J Med",
+            "volume": "383",
+            "issn": "",
+            "pages": "334--380",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "COVID-19 and multisystem inflammatory syndrome in children and adolescents",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Jiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Tang",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Levin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet Infect Dis",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S1473-3099(20)30651-4"
+                ]
+            }
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "COVID-19 associated Multisystem Inflammatory Syndrome in Children (MIS-C) guidelines; a Western New York approach",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Hennon",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Penque",
+                    "suffix": ""
+                },
+                {
+                    "first": "Abdul-Aziz",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Prog Pediatr Cardiol",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ppedcard.2020.101232"
+                ]
+            }
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Clinical characteristics of 138 hospitalized patients with 2019 novel coronavirus-infected pneumonia in Wuhan",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "China. J Am Med Assoc",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Neutrophil extracellular traps kill bacteria",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Brinkmann",
+                    "suffix": ""
+                },
+                {
+                    "first": "U",
+                    "middle": [],
+                    "last": "Reichard",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Goosmann",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Science",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1126/sci-ence.1092385"
+                ]
+            }
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Single-cell landscape of bronchoalveolar immune cells in patients with COVID-19",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Liao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Yuan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nat Med",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41591-020-0901-9"
+                ]
+            }
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "IFN signaling and neutrophil degranulation transcriptional signatures are induced during SARS-CoV-2 infection",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Rosa",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ahmed",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Singh",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "2020",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "Alveolar macrophage dysfunction and cytokine storm in the pathogenesis of two severe COVID-19 patients",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Xie",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "2020",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ebiom.2020.102833"
+                ]
+            }
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "Pulmonary and cardiac pathology in African American patients with COVID-19: an autopsy series from New Orleans",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Fox",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Akmatbekov",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Harbert",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet Respir Med",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S2213-2600(20)30243-5"
+                ]
+            }
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Analysis of respiratory and systemic immune responses in COVID-19 reveals mechanisms of disease pathogenesis",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Szabo",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Dogra",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Gray",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "2020",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "The spatio-temporal landscape of lung pathology in SARS-CoV-2 infection",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Figueiredo Rendeiro",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Ravichandran",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Bram",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "2020",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1101/2020.10.26.20219584"
+                ]
+            }
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "Dexamethasone in hospitalized patients with Covid-19-preliminary report",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Recovery Collaborative Group; Peter",
+                    "suffix": ""
+                },
+                {
+                    "first": "Wei",
+                    "middle": [
+                        "Shen"
+                    ],
+                    "last": "Horby",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jonathan",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Lim",
+                    "suffix": ""
+                },
+                {
+                    "first": "Marion",
+                    "middle": [],
+                    "last": "Emberson",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jennifer",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Mafham",
+                    "suffix": ""
+                },
+                {
+                    "first": "Louise",
+                    "middle": [],
+                    "last": "Bell",
+                    "suffix": ""
+                },
+                {
+                    "first": "Natalie",
+                    "middle": [],
+                    "last": "Linsell",
+                    "suffix": ""
+                },
+                {
+                    "first": "Christopher",
+                    "middle": [],
+                    "last": "Staplin",
+                    "suffix": ""
+                },
+                {
+                    "first": "Andrew",
+                    "middle": [],
+                    "last": "Brightling",
+                    "suffix": ""
+                },
+                {
+                    "first": "Einas",
+                    "middle": [],
+                    "last": "Ustianowski",
+                    "suffix": ""
+                },
+                {
+                    "first": "Benjamin",
+                    "middle": [],
+                    "last": "Elmahi",
+                    "suffix": ""
+                },
+                {
+                    "first": "Christopher",
+                    "middle": [],
+                    "last": "Prudon",
+                    "suffix": ""
+                },
+                {
+                    "first": "Timothy",
+                    "middle": [],
+                    "last": "Green",
+                    "suffix": ""
+                },
+                {
+                    "first": "David",
+                    "middle": [],
+                    "last": "Felton",
+                    "suffix": ""
+                },
+                {
+                    "first": "Kanchan",
+                    "middle": [],
+                    "last": "Chadwick",
+                    "suffix": ""
+                },
+                {
+                    "first": "Christopher",
+                    "middle": [],
+                    "last": "Rege",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Fegan",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Lucy",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Chappell",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Saul",
+                    "suffix": ""
+                },
+                {
+                    "first": "Thomas",
+                    "middle": [],
+                    "last": "Faust",
+                    "suffix": ""
+                },
+                {
+                    "first": "Katie",
+                    "middle": [],
+                    "last": "Jaki",
+                    "suffix": ""
+                },
+                {
+                    "first": "Alan",
+                    "middle": [],
+                    "last": "Jeffery",
+                    "suffix": ""
+                },
+                {
+                    "first": "Kathryn",
+                    "middle": [],
+                    "last": "Montgomery",
+                    "suffix": ""
+                },
+                {
+                    "first": "Edmund",
+                    "middle": [],
+                    "last": "Rowan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Kenneth",
+                    "middle": [],
+                    "last": "Juszczak",
+                    "suffix": ""
+                },
+                {
+                    "first": "Richard",
+                    "middle": [],
+                    "last": "Baillie",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Haynes",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Martin",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Landray",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "N Engl J Med",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1056/nejmoa2021436"
+                ]
+            }
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "Risk factors associated with acute respiratory distress syndrome and death in patients with coronavirus disease 2019 pneumonia in Wuhan, China",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Cai",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "JAMA Intern Med",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1001/jamainternmed.2020.0994"
+                ]
+            }
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "The conundrum of interleukin-6 blockade in COVID-19",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Campochiaro",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Dagna",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet Rheumatol",
+            "volume": "",
+            "issn": "",
+            "pages": "30287--30290",
+            "other_ids": {}
+        },
+        "BIBREF45": {
+            "ref_id": "b45",
+            "title": "Auto-antibodies against type I IFNs in patients with life-threatening COVID-19",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Bastard",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Rosen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Science",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1126/science.abd4585"
+                ]
+            }
+        },
+        "BIBREF46": {
+            "ref_id": "b46",
+            "title": "Inborn errors of type I IFN immunity in patients with life-threatening COVID-19",
+            "authors": [
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Bastard",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Science",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1126/science.abd4570"
+                ]
+            }
+        },
+        "BIBREF47": {
+            "ref_id": "b47",
+            "title": "Impaired type I interferon activity and inflammatory responses in severe COVID-19 patients",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Hadjadj",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Yatim",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Barnabei",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Science",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1126/science.abc6027"
+                ]
+            }
+        },
+        "BIBREF48": {
+            "ref_id": "b48",
+            "title": "Broad and strong memory CD4\u00fe and CD8\u00fe T cells induced by SARS-CoV-2 in UK convalescent individuals following COVID-19",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Peng",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Mentzer",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nat Immunol",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41590-020-0782-6"
+                ]
+            }
+        },
+        "BIBREF49": {
+            "ref_id": "b49",
+            "title": "Triple combination of interferon beta-1b, lopinavir-ritonavir, and ribavirin in the treatment of patients admitted to hospital with COVID-19: an open-label, randomised, phase 2 trial",
+            "authors": [
+                {
+                    "first": "Ifn",
+                    "middle": [],
+                    "last": "Hung",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Lung",
+                    "suffix": ""
+                },
+                {
+                    "first": "Eyk",
+                    "middle": [],
+                    "last": "Tso",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S0140-6736(20)31042-4"
+                ]
+            }
+        },
+        "BIBREF50": {
+            "ref_id": "b50",
+            "title": "Safety and efficacy of inhaled nebulised interferon beta-1a (SNG001) for treatment of SARS-CoV-2 infection: a randomised, double-blind, placebocontrolled, phase 2 trial",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Monk",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Marsden",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Tear",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet Respir Med",
+            "volume": "",
+            "issn": "20",
+            "pages": "30511--30518",
+            "other_ids": {}
+        },
+        "BIBREF51": {
+            "ref_id": "b51",
+            "title": "IgA dominates the early neutralizing antibody response to SARS-CoV-2",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Sterlin",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Mathian",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Miyara",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "2020",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF52": {
+            "ref_id": "b52",
+            "title": "COVID-19 diagnosis and study of serum SARS-CoV-2 specific IgA, IgM and IgG by a quantitative and sensitive immunoassay",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Ma",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Zeng",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "He",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "2020",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF53": {
+            "ref_id": "b53",
+            "title": "Clinical and immunological assessment of asymptomatic SARS-CoV-2 infections",
+            "authors": [
+                {
+                    "first": "Q",
+                    "middle": [
+                        "X"
+                    ],
+                    "last": "Long",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Tang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Shi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nat Med",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41591-020-0965-6"
+                ]
+            }
+        },
+        "BIBREF54": {
+            "ref_id": "b54",
+            "title": "Persistence of serum and saliva antibody responses to SARS-CoV-2 spike antigens in COVID-19 patients",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Isho",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Abe",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Zuo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Sci Immunol",
+            "volume": "5",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF55": {
+            "ref_id": "b55",
+            "title": "Animal models for COVID-19",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Mu\u00f1oz-Fontela",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Dowling",
+                    "suffix": ""
+                },
+                {
+                    "first": "Sgp",
+                    "middle": [],
+                    "last": "Funnell",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nature",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41586-020-2787-6"
+                ]
+            }
+        },
+        "BIBREF56": {
+            "ref_id": "b56",
+            "title": "A single-dose intranasal ChAd vaccine protects upper and lower respiratory tracts against SARS-CoV-2",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Hassan",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Kafai",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Dmitriev",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Cell",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.cell.2020.08.026"
+                ]
+            }
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Despite being sites of viral infection with SARS-CoV2, the lungs and gastrointestinal tract show very different responses to the virus. These differences may be important for mounting the most appropriate immune response to the virus",
+            "latex": null,
+            "type": "figure"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "We would like to thank all members of the Oxford-Cardiff COVID-19 Literature Consortium for their hard work and commitment during the pandemic. We would also like to thank Jethro Johnson and Kelsey Jones for critical reading of the manuscript. Figure was created using Biorender.com.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "ACKNOWLEDGEMENTS"
+        }
+    ]
+}

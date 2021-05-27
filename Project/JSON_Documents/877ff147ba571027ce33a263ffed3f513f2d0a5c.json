@@ -1,0 +1,950 @@
+{
+    "paper_id": "877ff147ba571027ce33a263ffed3f513f2d0a5c",
+    "metadata": {
+        "title": "Variant analysis of SARS-CoV-2 genomes in the Middle East",
+        "authors": [
+            {
+                "first": "Khalid",
+                "middle": [],
+                "last": "Mubarak Bindayna",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Arabian Gulf University",
+                    "location": {
+                        "settlement": "Manama",
+                        "country": "Bahrain"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Shane",
+                "middle": [],
+                "last": "Crinion",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "National University of Ireland",
+                    "location": {
+                        "addrLine": "University Road",
+                        "settlement": "Galway, Galway",
+                        "country": "Ireland"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [],
+    "body_text": [
+        {
+            "text": "On January 9 h 2020, the China Centre for Disease Control reported that 15 of 59 suspected cases of pneumonia were due to a novel human coronavirus (CoV), now known as Severe Acute Respiratory Syndrome CoV 2 (SARS-CoV-2) 1 . The genome for this novel virus was then made publicly available on the Global Initiative on Sharing All Influenza Data (GISAID) the next day. SARS-CoV-2 is an easily spreadable virus which would evolve into a global pandemic of at least 26 million cases and 850,000 deaths 2 . One of the first countries to experience a significant outbreak was Iran. The country reported its first confirmed case on 19 th February 2020 from a merchant in Qom who travelled from China 3. . Many of the first countries with infections in the Middle East were linked to travellers from Iran including Lebanon, Kuwait, Bahrain, Iraq, Oman and UAE. COVID-19 continued to spread to the remaining Middle Eastern countries with a death toll of over 50,000 people according to health authorities. This number is expected to be an underestimation due to countries effected by war including Libya, Syria and Yemen. Needless to say, there have been devastating effects to the region and the real effects are expected to be unreported 4 .",
+            "cite_spans": [
+                {
+                    "start": 221,
+                    "end": 222,
+                    "text": "1",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 1232,
+                    "end": 1233,
+                    "text": "4",
+                    "ref_id": "BIBREF3"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Researchers are racing to develop a vaccine that can provide viral immunity and avoid additional deaths. SAR-CoV-2 is transmitted using the spike protein which binds to human angiotensin-converting enzyme 2 (ACE2) receptor; the virus is easily transmittable due to mutations in the receptor-binding (S1) and fusion (S2) domain of the strain 5 . Transmission could be made even easier if more mutations accumulate. Although mutations are rare, they can create new strains and it is not guaranteed that the current leading vaccine trials will be effective as SARS-CoV-2 continues to mutate 6 . By categorizing variants, we can identify any new strains and how the mutations are likely to affect spread. As the Middle East is often under reported, it is important to characterise the variants of strains that are commonly present. Analysis of the common variants in the Middle East is essential to develop a vaccine that treats the strains in the region. This analysis helps understand the viral genome landscape and identify clades of the region.",
+            "cite_spans": [
+                {
+                    "start": 588,
+                    "end": 589,
+                    "text": "6",
+                    "ref_id": "BIBREF5"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "\u2022 Our hypothesis is that variants found in SARS-CoV-2 genomes from Middle Eastern samples will indicate delivery from Iran. We will use bioinformatics tools and publicly available samples to explore the composition of strains within each country. We expect that many strains will show evidence of Iranian origin.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Objectives:"
+        },
+        {
+            "text": "\u2022 The aim is to explore the structure of Middle Eastern genome strains using multiple sequence alignment, tree generation and variant prediction (and others). If we explore the structure and common variants of SARS-CoV-2 strains in these populations, we expect to learn more about how the virus spread.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Objectives:"
+        },
+        {
+            "text": "Sample Source: We obtained the publicly available data from the Global Initiative on Sharing All Influenza Data (GISAID) 7 . Samples were also filtered to high quality when possible. 10 samples was selected as the optimum number to cover all possible countries and remain within alignment file limit of size 4 Mb (maximum size for Clustal Omega tool). In countries with 10 samples, to prevent sample sourcing from same outbreak, the 5 earliest and 5 most recent samples were taken. All samples were downloaded from GISAID and then concatenated into a single multi-sample file and saved in FASTA format.",
+            "cite_spans": [
+                {
+                    "start": 121,
+                    "end": 122,
+                    "text": "7",
+                    "ref_id": "BIBREF6"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Methods:"
+        },
+        {
+            "text": "Multiple sequence alignment: Using the collected samples, multiple sequence alignment (MSA) was performed using Clustal Omega (https://www.ebi.ac.uk/Tools/ msa/clustalo/) 8 . The Clustal Omega online tool was used to perform the alignment (found at: https://www.ebi.ac.uk/Tools/msa/clustalo/). The online tools allows up to 4000 sequences or a maximum file size of 4 MB, therefore the maximum number of samples was used. The concatenated file of samples was uploaded to the online tool. For step 2, the output parameters selected were PEARSON/FASTA. All other options were kept at the default option. The output file generated is an alignment file; the file consists of all sequences with gaps denoted by '-'. The output file format is also a FASTA file.",
+            "cite_spans": [
+                {
+                    "start": 171,
+                    "end": 172,
+                    "text": "8",
+                    "ref_id": "BIBREF7"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Methods:"
+        },
+        {
+            "text": "Variant identification: Variant calling was performed using the alignment FASTA file and the SNP extraction tool snp-sites 9 (https://github.com/sanger-pathogens/snp-sites). These tools identify the SNP sites by taking a multi-sample FASTA file as input. The program then restructures the data as a variant call format (VCF) file. The VCF file provides a clear mapping of SNPs from the aligned sequences -this allows us to easily identify the SNP location and the genotype for each sample at a given locus. In the outputted VCF file, the rows correspond with each unique variant and the column provides the genotype at the given site.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Methods:"
+        },
+        {
+            "text": "We used SNP-eff 10 to perform the variant annotation information such as the variant definition and the overlapping gene (found at: (https://pcingola.github.io/SnpEff/SnpEff.html). SnpEff also predicts the effect of the variants. SNPeff is integrated into the Galaxy web-based tool for bioinformatics analysis (found at: usegalaxy.org) 11 . We utilised the Galaxy platform and uploaded our VCF file to Galaxy using their online upload tool. To annotate variants, you must first build a database from the reference genome. This is performed using the \"SnpEff build\" tool on Galaxy. To create the SnpEff database, we downloaded data from NCBI for Wuhan reference NC_045512.2 and uploaded to Galaxy. To build the database, we directed to NCBI and searched for NC_045512. We then downloaded the corresponding GFF file, which contains the annotations, and the FASTA file, which contains the entire genome. We then selected the build database option. Once the database was built, we selected the \"SnpEff eff\" tool to annotate variants. Galaxy populates the fields for VCF with the uploaded file from the previous step. The output format is selected as VCF and CSV report was also selected for additional useful information for downstream analysis. For Genome source parameter, the option \"Custom\" was selected to use the newly created database. Other default parameters were used including 5000 bases for Upstream / Downstream length and 2 bases as set size for splice sites (donors and acceptor) in bases. All filter output and additional annotation options were deselected and analysis was ran. Once the analysis was executed, the annotation data is outputted as an annotated VCF and a HTML report file.",
+            "cite_spans": [
+                {
+                    "start": 16,
+                    "end": 18,
+                    "text": "10",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 336,
+                    "end": 338,
+                    "text": "11",
+                    "ref_id": "BIBREF10"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Variant annotation:"
+        },
+        {
+            "text": "Data visualisation: Once the annotated VCF was generated, the VCF was imported to R for extraction of the variant annotation information. The annotated data was imported, manipulated and plotted using R v3.6.2 12 . The dplyr v0.8.4 package was used to summarise and align the data 13 . The ggplot2 package was used to align the identified variants and visualise the types of mutations that re-occur 14 . The x-axis in the plots indicates the variant position along the SARS-CoV-2 genome; the left y-axis indicates the sample name and the right y-axis represents the country of origin for each sample. This plot is used to compare the genome in different populations. The data was then ordered by date of first reported case, meaning that Wuhan is followed by United Arab Emirates and the final country is Cyprus.",
+            "cite_spans": [
+                {
+                    "start": 281,
+                    "end": 283,
+                    "text": "13",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 399,
+                    "end": 401,
+                    "text": "14",
+                    "ref_id": "BIBREF13"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Variant annotation:"
+        },
+        {
+            "text": "Phylogenetic analysis: Phylogenetic analysis was performed using BEAST (Bayesian Evolutionary Analysis Sample Trees) v1.10.4, to perform Bayesian analysis of molecular sequences using Monte Carlo Markov Chains (MCMC) 15 . The analysis followed the approach recommended to reconstruct the evolutionary dynamics of an epidemic. The aim of this is to obtain an estimate of the origin of the epidemic in the region and understand how it spread through the Middle East. To undertake the analysis, we opened BEAUTi, the graphical application used to analyse the control file. Although it requests a NEXUS file, the FASTA file can also be used. The data was uploaded using the Import Data option and appeared under the Partitions section. BEAUTi confirmed that 30851 sites are present in the uploaded data. The default options are selected for site model and clock model. Next, we specified the individual virus dates by selecting the \"Tips\" panel and selecting the \"Use tip dates\" option. A tab delimited file was uploaded which specified the upload date. This information was extracted from the names as they were downloaded from GISAID. Next, we set the substitution model by selecting the \"Sites\" tab and selected the default options of HKY model, the default Estimated base frequencies and select Gamma as Site Heterogeneity Model. Next, the molecular clock was selected under the \"Clock\" tab as a strict clock since we know that the frequency of mutation is low. The tree options are elected under the \"Tree Prior\" tab as \"Random starting tree\" for the tree model and \"Coalescent: Exponential Growth\", a model that assumes a finite but constant population size and predicts that all alleles will be removed from the population individually. This provides additional predictions on the reproductive rate. In the \"Priors\" tab, select the scale as 100 for prior distribution which models the expected growth for a pandemic. The operators require no changes from the default. The MCMC option for chain length is set as 100,000 and sampling frequency to 100.",
+            "cite_spans": [
+                {
+                    "start": 217,
+                    "end": 219,
+                    "text": "15",
+                    "ref_id": "BIBREF14"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Variant annotation:"
+        },
+        {
+            "text": "Tree visualisation: Finally, we summarised the tree using the TreeAnnotator tool, an additional package as part of BEAST. We first select the file generated using BEAST and outputted the tree file. Then the output NEXUS file was imported to FigTree program to display. Once we opened FigTree to display, we re-ordered the order by increasing value and then switched on Branch Labels. We switched on Node Bars and selected the 95% highest posterior density (HPD) credible intervals for the node heights. We plotted a time scale by turning on the Scale Axis and then setting the Time Scale section for Offset as 2020.7, the latest date of collection for our samples.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Variant annotation:"
+        },
+        {
+            "text": "Sequence alignment and variant calling were completed successfully. Once these were complete, variation annotation was performed. We identified 2200 distinct genome variants which are recorded in Table 1 . The most common, high impact variants were 10818delTinsG, 2772delCinsC, 14159delCinsC and 2789delAinsA. The frequency of each unique variant type can be found in Table  2 , which outlines the locus of all SNPs with over 50 instances.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 196,
+                    "end": 203,
+                    "text": "Table 1",
+                    "ref_id": "TABREF1"
+                },
+                {
+                    "start": 368,
+                    "end": 376,
+                    "text": "Table  2",
+                    "ref_id": "TABREF2"
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "Frame shift variants 298",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Downstream gene variants 129"
+        },
+        {
+            "text": "Start lost 1",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Missense variants 789"
+        },
+        {
+            "text": "Stop lost 1",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Start gained 13"
+        },
+        {
+            "text": "Upstream gene variant 720 These results were then used to generate the dotplot of variant alignment (Figure 1 ). The dotplot successfully indicated a pattern in variants that could not be easily identified from the alignment or annotation files. The alignment includes samples in facets based on their country. The alignment shows a pattern in variants that occur between each country. For example, this is prominent in Qatar, Jordan and Oman where the pattern makes the country distinctive from the variants plotted for other countries. In addition, the phylogenetic tree generated branching indicative of an Iranian origin ( Figure 2 ) ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 100,
+                    "end": 109,
+                    "text": "(Figure 1",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 627,
+                    "end": 635,
+                    "text": "Figure 2",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Synonymous variant 249"
+        },
+        {
+            "text": "The aim of this study was to identify whether COVID-19 was introduced to the Middle East from Iran and also to explore the genomic composition in the region.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Our study performs sequence alignment to compare all sequences against the reference genome. Once this is complete, the annotated variants were extracted to generate a plot mapping variants, grouping samples by country. The plot as seen in Figure 1 , shows clear distinctive patterns within countries that are not obvious from the generated alignment and annotation files. This may indicate a diverse, new strain is circulating in the country. Cyprus has little diversity in the variant mapping which is surprising given its late date for first reported cases. Another interesting point is that time-varied samples were taken for countries with 10 samples. We see not indication that there are distinct groups within countries. This further indicates the the mutation frequency is low. It also indicates that there is more variation in the genomic composition in samples from different countries than differences found in samples from different collection times. Smaller populations can cause greater accumulation of variants through genetic drift. This may occur given local lockdowns and travel restrictions that have been enforced worldwide. It is possible that these genomic strains with new mutations may create a situation where the countries develop a deathly strain that is not prominent in other parts of the world. This could result in a situation where a country is disproportionately affected by accumulating deaths or an inefficient vaccine.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 240,
+                    "end": 248,
+                    "text": "Figure 1",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Discussion"
+        },
+        {
+            "text": "Phylogenetic trees help in understanding the evolutionary relationships between groups. In the present context, we use them to identify the earliest strains and to track the spread of COVID-19 across the Middle East. The tree shows that UAE samples are distinguished and form one clade. This correlates with their early intervention and lockdown and subsequently appears to have resulted in a unique genome.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Samples from Qatar also form the majority of 1 clade, with many of the Wuhan samples, indicating that they are similar to the Wuhan samples and show little distinction. Egypt also becomes a distinct branch earlier than most samples. These examples are indicative of the global response -the lockdown of each country and prevention of spreading has resulted in SARS-CoV-2 strains of great similarity within each country. If lockdowns were not enforced, it is likely that these clades would be less distinguisable as mutations are spread between countries. As we expected, 2 of the highest branches points attach to Iranian samples, further implementing Iran in the initial spread across the Middle East. The phylogenetic tree therefore indicates what we suggest in our hypothesis -most samples originate from the Iranian sample. This is not surprising given the vast number of cases and early crisis state of the country. However, it is useful to see that the variant analysis shows what we suspect at the genome level. A related study also came to this conclusion by using contact tracing from cases related to religious events in the city of Qom, Iran 16 .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Risk assessment: Outbreak of acute respiratory syndrome associated with a novel coronavirus",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "2020",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "COVID-19 situation reports",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Mapping the incidence of the COVID-19 hotspot in Iran -Implications for Travellers",
+            "authors": [],
+            "year": 2020,
+            "venue": "Travel Med Infect Dis",
+            "volume": "34",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.tmaid.2020.101630"
+                ]
+            }
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Challenges to testing COVID-19 in conflict zones: Yemen as an example",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Dhabaan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Al-Soneidar",
+                    "middle": [],
+                    "last": "Wa",
+                    "suffix": ""
+                },
+                {
+                    "first": "Al-Hebshi",
+                    "middle": [],
+                    "last": "Nn",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Glob Health",
+            "volume": "10",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.7189/jogh.10.010375"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Phylogenetic Analysis and Structural Modeling of SARS-CoV-2 Spike Protein Reveals an Evolutionary Distinct and Proteolytically Sensitive Activation Loop",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Jaimes",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Andr\u00e9",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Chappie",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Millet",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Whittaker",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Mol Biol",
+            "volume": "432",
+            "issn": "10",
+            "pages": "3309--3334",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "On the origin and continuing evolution of SARS-CoV-2",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Tang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Song",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Yao",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Data, disease and diplomacy: GISAID's innovative contribution to global health",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Elbe",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Buckland-Merrett",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Global Challenges",
+            "volume": "1",
+            "issn": "",
+            "pages": "33--46",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/gch2.1018"
+                ],
+                "PMCID": [
+                    "PMC31565258"
+                ]
+            }
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Fast, scalable generation of high-quality protein multiple sequence alignments using Clustal Omega",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Sievers",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Wilm",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Dineen",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Gibson",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Karplus",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Lopez",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Mcwilliam",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Remmert",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "S\u00f6ding",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Thompson",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Higgins",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Molecular systems biology",
+            "volume": "7",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/msb.2011.75"
+                ]
+            }
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "SNP-sites: rapid efficient extraction of SNPs from multi-FASTA alignments",
+            "authors": [
+                {
+                    "first": "Andrew",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Page",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ben",
+                    "middle": [],
+                    "last": "Taylor",
+                    "suffix": ""
+                },
+                {
+                    "first": "Aidan",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Delaney",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jorge",
+                    "middle": [],
+                    "last": "Soares",
+                    "suffix": ""
+                },
+                {
+                    "first": "Torsten",
+                    "middle": [],
+                    "last": "Seemann",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jacqueline",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Keane",
+                    "suffix": ""
+                },
+                {
+                    "first": "Simon",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Harris",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Microbial Genomics",
+            "volume": "2",
+            "issn": "4",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "http:/mgen.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.000056"
+                ]
+            }
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "A program for annotating and predicting the effects of single nucleotide polymorphisms, SnpEff: SNPs in the genome of Drosophila melanogaster strain w1118",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Cingolani",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Platts",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Coon",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Nguyen",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "The Galaxy platform for accessible, reproducible and collaborative biomedical analyses: 2018 update",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Afgan",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Baker",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "B\u00e9r\u00b4",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Batut",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Van Den Beek",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Bouvier",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Nucleic Acids Res [Internet]",
+            "volume": "46",
+            "issn": "",
+            "pages": "537--581",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "R: A language and environment for statistical computing. R Foundation for Statistical Computing",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "R Core Team",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "dplyr: A Grammar of Data Manipulation",
+            "authors": [
+                {
+                    "first": "Hadley",
+                    "middle": [],
+                    "last": "Wickham",
+                    "suffix": ""
+                },
+                {
+                    "first": "Romain",
+                    "middle": [],
+                    "last": "Fran\u00e7ois",
+                    "suffix": ""
+                },
+                {
+                    "first": "Lionel",
+                    "middle": [],
+                    "last": "Henry",
+                    "suffix": ""
+                },
+                {
+                    "first": "Kirill",
+                    "middle": [],
+                    "last": "M\u00fcller",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "ggplot2: Elegant Graphics for Data Analysis",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Wickham",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Bayesian phylogenetic and phylodynamic data integration using BEAST 1.10 Virus Evolution 4",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Suchard",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Lemey",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Baele",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Ayres",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Drummond",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Rambaut",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/ve/vey016"
+                ]
+            }
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Is visiting Qom spread CoVID-19 epidemic in the Middle East?",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Al-Rousan",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Al-Najjar",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Eur Rev Med Pharmacol Sci",
+            "volume": "24",
+            "issn": "",
+            "pages": "5813--5818",
+            "other_ids": {
+                "DOI": [
+                    "10.26355/eurrev_202005_21376"
+                ]
+            }
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Dotplot of variants per sample by country. All samples included in the above plot are grouped by country of origin. The left x-axis denotes the accession ID and the right x-axis denotes the country of origin. The y-axis is the position along the SARS-CoV-2 genome. The order of countries is based on date of first reported of COVID-19. All variants are in relation to Wuhan reference sequence NC_045512.2. The Wuhan samples are in the top facet and show low mutation frequency in comparison to the reference. The following samples show a greater accumulation of mutations. One Iranian sample has many more variants than orders. The Saudi Arabia also appears to have a low mutation rate which may be due to their early contraction of the virus. Oman samples also indicate evidence of a distinctive strain. Many cases feature a missense variant at 3037, 14408 and 24351 base pairs.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "Phylogenetic tree for the SARS-CoV-2 genomes. Contains all 128 samples (including reference NC_045512). The colours represent the greatest height in association. The blue lines represent the 95 % HDP for each region. The highest branching point is with Iran samples EPI_ISL_507007 and EPI_ISL_514753 with length of 4.319 and 0.8752 respectively.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF1": {
+            "text": "The frequency of each type of mutation found in the data.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "The frequency of mutations at each locus with > 50 hits.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF3": {
+            "text": "high frequency of variants that is not seen in others. THE GISAID detection system indicates no faults were found with sample EPI_ISL_507007 and report a full sequence match so it was not removed. It is noteworthy that the Iran samples appear to have a lower average SNP frequency than other countries. This may indicate that the virus transmitted to Iran earlier than other countries, as we expected. Israel, Bahrain, Kuwait, Oman, Saudi Arabia, Jordan and Turkey all share similar variant mapping. Qatar shows an usual mapping with a high frequency of frameshift variants.",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "The authors are grateful for the timely sequencing and release of genomes to make this study possible and to Dr. Anusha C P for her comments.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Acknowledgements"
+        },
+        {
+            "text": "This research received no specific grant from any funding agency in the public, commercial, or not-for-profit sectors.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Funding"
+        },
+        {
+            "text": " Iran  EPI_ISL_424349  30  Iran  EPI_ISL_445088  31  Iran  EPI_ISL_507007  32  Iran  EPI_ISL_514753  33  Iran  EPI_ISL_437512  34  Iran  EPI_ISL_442044  35  Iran  EPI_ISL_442523  36  Israel  EPI_ISL_435291  37  Israel  EPI_ISL_514303  38  Israel  EPI_ISL_514305  39  Israel  EPI_ISL_514302  40  Israel  EPI_ISL_435286  41  Israel  EPI_ISL_435289  42  Israel  EPI_ISL_419211  43  Israel  EPI_ISL_435284  44  Israel  EPI_ISL_514306  45  Israel  EPI_ISL_514301  46  Jordan  EPI_ISL_430012  47 Jordan EPI_ISL_430002 SaudiArabia  EPI_ISL_512924  93  SaudiArabia  EPI_ISL_512926  94  SaudiArabia  EPI_ISL_489996  95  SaudiArabia  EPI_ISL_489998  96  SaudiArabia  EPI_ISL_490000  97  SaudiArabia  EPI_ISL_489999  98  SaudiArabia  EPI_ISL_489997  99  SaudiArabia  EPI_ISL_512927   100   SaudiArabia  EPI_ISL_512922  101  SaudiArabia  EPI_ISL_512923  102  Turkey  EPI_ISL_495421  103  Turkey  EPI_ISL_495445  104  Turkey  EPI_ISL_495433  105  Turkey  EPI_ISL_429868  106  Turkey  EPI_ISL_429867  107  Turkey  EPI_ISL_429866  108  Turkey  EPI_ISL_428712  109  Turkey  EPI_ISL_495436  110  Turkey  EPI_ISL_495429  111  Turkey  EPI_ISL_424366  112  UnitedArabEmirates  EPI_ISL_469277  113  UnitedArabEmirates  EPI_ISL_469279  114  UnitedArabEmirates  EPI_ISL_435126  115  UnitedArabEmirates  EPI_ISL_435121  116  UnitedArabEmirates  EPI_ISL_435131  117  UnitedArabEmirates  EPI_ISL_463740  118  UnitedArabEmirates  EPI_ISL_469281  119  UnitedArabEmirates  EPI_ISL_469280  120  UnitedArabEmirates  EPI_ISL_435137  121  UnitedArabEmirates  EPI_ISL_435134  122  Wuhan  EPI_ISL_402123  123  Wuhan  EPI_ISL_454949  124  Wuhan  EPI_ISL_454948  125  Wuhan  EPI_ISL_406798  126  Wuhan  EPI_ISL_454951  127 Wuhan EPI_ISL_403931 Table 3 : Catalogue of sample accession ID by country.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 1,
+                    "end": 489,
+                    "text": "Iran  EPI_ISL_424349  30  Iran  EPI_ISL_445088  31  Iran  EPI_ISL_507007  32  Iran  EPI_ISL_514753  33  Iran  EPI_ISL_437512  34  Iran  EPI_ISL_442044  35  Iran  EPI_ISL_442523  36  Israel  EPI_ISL_435291  37  Israel  EPI_ISL_514303  38  Israel  EPI_ISL_514305  39  Israel  EPI_ISL_514302  40  Israel  EPI_ISL_435286  41  Israel  EPI_ISL_435289  42  Israel  EPI_ISL_419211  43  Israel  EPI_ISL_435284  44  Israel  EPI_ISL_514306  45  Israel  EPI_ISL_514301  46  Jordan  EPI_ISL_430012  47",
+                    "ref_id": null
+                },
+                {
+                    "start": 512,
+                    "end": 1685,
+                    "text": "SaudiArabia  EPI_ISL_512924  93  SaudiArabia  EPI_ISL_512926  94  SaudiArabia  EPI_ISL_489996  95  SaudiArabia  EPI_ISL_489998  96  SaudiArabia  EPI_ISL_490000  97  SaudiArabia  EPI_ISL_489999  98  SaudiArabia  EPI_ISL_489997  99  SaudiArabia  EPI_ISL_512927   100   SaudiArabia  EPI_ISL_512922  101  SaudiArabia  EPI_ISL_512923  102  Turkey  EPI_ISL_495421  103  Turkey  EPI_ISL_495445  104  Turkey  EPI_ISL_495433  105  Turkey  EPI_ISL_429868  106  Turkey  EPI_ISL_429867  107  Turkey  EPI_ISL_429866  108  Turkey  EPI_ISL_428712  109  Turkey  EPI_ISL_495436  110  Turkey  EPI_ISL_495429  111  Turkey  EPI_ISL_424366  112  UnitedArabEmirates  EPI_ISL_469277  113  UnitedArabEmirates  EPI_ISL_469279  114  UnitedArabEmirates  EPI_ISL_435126  115  UnitedArabEmirates  EPI_ISL_435121  116  UnitedArabEmirates  EPI_ISL_435131  117  UnitedArabEmirates  EPI_ISL_463740  118  UnitedArabEmirates  EPI_ISL_469281  119  UnitedArabEmirates  EPI_ISL_469280  120  UnitedArabEmirates  EPI_ISL_435137  121  UnitedArabEmirates  EPI_ISL_435134  122  Wuhan  EPI_ISL_402123  123  Wuhan  EPI_ISL_454949  124  Wuhan  EPI_ISL_454948  125  Wuhan  EPI_ISL_406798  126  Wuhan  EPI_ISL_454951  127",
+                    "ref_id": null
+                },
+                {
+                    "start": 1707,
+                    "end": 1714,
+                    "text": "Table 3",
+                    "ref_id": null
+                }
+            ],
+            "section": "Region ID"
+        }
+    ]
+}

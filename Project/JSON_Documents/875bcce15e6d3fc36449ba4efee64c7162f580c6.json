@@ -1,0 +1,2530 @@
+{
+    "paper_id": "875bcce15e6d3fc36449ba4efee64c7162f580c6",
+    "metadata": {
+        "title": "Privacy-preserving Travel Time Prediction with Uncertainty Using GPS Trace Data",
+        "authors": [
+            {
+                "first": "Fang",
+                "middle": [],
+                "last": "Liu",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Dong",
+                "middle": [],
+                "last": "Wang",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Zhengquan",
+                "middle": [],
+                "last": "Xu",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "The rapid growth of GPS technology and mobile devices has led to a massive accumulation of location data, bringing considerable benefits to individuals and society. One of the major usages of such data is travel time prediction, a typical service provided by GPS navigation devices and apps. Meanwhile, the constant collection and analysis of the individual location data also pose unprecedented privacy threats. We leverage the notion of geo-indistinguishability (GI), an extension of differential privacy to the location privacy setting, and propose a procedure for privacy-preserving travel time prediction without collecting actual individual GPS trace data. We propose new concepts to examine the impact of the GI sanitization on the usefulness of GPS traces, and provide analytical and experimental utility analysis of the privacy-preserving travel time reliability analysis. We also propose new metrics to measure the adversary error in learning individual GPS traces from the collected sanitized data. Our experiment results suggest that the proposed procedure provides travel time analysis with satisfactory accuracy at reasonably small privacy costs.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "The rapid growth of GPS technology and mobile devices has led to a quick accumulation of massive location data. While collection and applications of location data provide enormous benefits and convenience to individuals and society, processing of location information can easily expose personal behaviors, interests, social relations, or other private information, especially if combined with other data sources. [1] studies human location movement data of 1.5 million people for 15 months and concludes that as little as four space-time points can uniquely identify 95% individuals. In the COVID-19 pandemic, tracing apps have been used in some countries to collect individual spatiotemporal data to identify and isolate those who came into contact with COVID-19 patients, raising privacy concerns [2] [3] [4] . On the * Co-first authors. top of that, users are often not fully aware of the privacy risks from sharing their personal location information with servers and how their data are used [5, 6] .",
+            "cite_spans": [
+                {
+                    "start": 413,
+                    "end": 416,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 799,
+                    "end": 802,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 803,
+                    "end": 806,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 807,
+                    "end": 810,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 996,
+                    "end": 999,
+                    "text": "[5,",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 1000,
+                    "end": 1002,
+                    "text": "6]",
+                    "ref_id": "BIBREF5"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "To mitigate the privacy risk associated with collection and analysis of location data, several location privacy protection frameworks have been proposed, including encryption, anonymization and obfuscation. Location encryption methods [7] [8] [9] [10] [11] [12] [13] often come with high computational and resource costs [14] . Once decrypted, the data are no longer private, though still safe, to those who have the authority to access and view the data. In other words, the privacy:utility ratio from the data user perspective is either 100:0% or 0:100%, corresponding to the two states of encryption and decryption, respectively. These two extreme ways of providing data access often do not meet the practical needs of data sharing. As a matter of fact, a non-zero small privacy cost is often acceptable so to create more options between the two extremes to release data and share information with more data users.",
+            "cite_spans": [
+                {
+                    "start": 235,
+                    "end": 238,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 239,
+                    "end": 242,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 243,
+                    "end": 246,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 247,
+                    "end": 251,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 252,
+                    "end": 256,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 257,
+                    "end": 261,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 262,
+                    "end": 266,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 321,
+                    "end": 325,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "Location anonymization/pseudonymization and obfuscation [15] [16] [17] [18] [19] [20] [21] [22] [23] [24] [25] [26] [27] provide one such option. These methods focus on privacy-preserving data processing and analysis via methods such as data suppression, removal of identifiers, development of perturbation mechanisms to report dummy locations, among others. If properly implemented at the data collection stage, the true responses of an individual can be made known only to the individual with 100% confidence but no one else. The key in implementing anonymization and obfuscation is to strike a good balance between privacy loss and data utility (the higher the privacy cost, the more data utility there is).",
+            "cite_spans": [
+                {
+                    "start": 56,
+                    "end": 60,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 61,
+                    "end": 65,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 66,
+                    "end": 70,
+                    "text": "[17]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 71,
+                    "end": 75,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 76,
+                    "end": 80,
+                    "text": "[19]",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 81,
+                    "end": 85,
+                    "text": "[20]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 86,
+                    "end": 90,
+                    "text": "[21]",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 91,
+                    "end": 95,
+                    "text": "[22]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 96,
+                    "end": 100,
+                    "text": "[23]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 101,
+                    "end": 105,
+                    "text": "[24]",
+                    "ref_id": null
+                },
+                {
+                    "start": 106,
+                    "end": 110,
+                    "text": "[25]",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 111,
+                    "end": 115,
+                    "text": "[26]",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 116,
+                    "end": 120,
+                    "text": "[27]",
+                    "ref_id": "BIBREF27"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "The state-of-art concept for privacy protection through data obfuscation in general is differential privacy (DP) [28] . DP is a ground-breaking and mathematically robust concept for data privacy protection and has quickly become the mainstream in privacy research and applications, including adoption by big tech companies (e.g., Apple, Google, IBM) and government agencies (Census2020) of the classical DP concept or its variants. For location privacy, [20] extends DP to formulate the notion of geo-indistinguishability (GI). GI follows similar mathematical reasoning as DP, and many properties of DP are thus directly applicable to GI such as privacy loss composability [29] , immunity to post processing [30] , being future-proof [30] , and robustness to a wide range of adversary attacks [31, 32] . GI has been ex- Fig. 1 : Privacy Protection Strategies for Analysis using GPS Data plored in a wide range of applications in location privacy protection. For example, [21] extends GI by developing an elastic indistinguishability metric that adapts injected noises according to the area density. [23] proposes a clustering privacy-preserving mechanism for continuous location traces clustering application. [25] applies GI to preserve location information uploaded by passengers in vacant transportation network company vehicles. [26] proposes a GI task allocation mechanism to preserve location privacy in mobile crowd-sensing applications.",
+            "cite_spans": [
+                {
+                    "start": 113,
+                    "end": 117,
+                    "text": "[28]",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 454,
+                    "end": 458,
+                    "text": "[20]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 673,
+                    "end": 677,
+                    "text": "[29]",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 708,
+                    "end": 712,
+                    "text": "[30]",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 734,
+                    "end": 738,
+                    "text": "[30]",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 793,
+                    "end": 797,
+                    "text": "[31,",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 798,
+                    "end": 801,
+                    "text": "32]",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 971,
+                    "end": 975,
+                    "text": "[21]",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 1099,
+                    "end": 1103,
+                    "text": "[23]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 1210,
+                    "end": 1214,
+                    "text": "[25]",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 1333,
+                    "end": 1337,
+                    "text": "[26]",
+                    "ref_id": "BIBREF26"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 820,
+                    "end": 826,
+                    "text": "Fig. 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Background"
+        },
+        {
+            "text": "We aim to develop a procedure to provide Privacy-Preserving Travel time Prediction with Uncertainty (PP-TPU) using GPS data; a topic hasn't been explored in either research or applications, to the best of our knowledge. Travel time Prediction with Uncertainty (TPU) examines whether and how quickly a person arrives at a destination through a certain means of transportation with a certain level of confidence, and is an important topic for transportation geography, urban planning, among others [33] . It is also a typical route planning service provided by navigation systems or mapping services and apps. TPU depends on collection of users' travel trajectory data by a service provider. Without sufficient privacy protection, such data can pose non-ignorable privacy risks ( Fig. 1(a) ) and it is easy for adversaries, both honest-but-curious (e.g., the service provider itself) and malicious, to infer and disclose users' private behavioral patterns and habits using the collected and released location information [34] . Fig. 1 also displays two strategies that can be used for PP-TPU. The sanitization strategy in Fig. 1(b) focuses on sanitizing aggregated statistics calculated from the actual user data, say via the randomization mechanisms (e.g, Laplace mechanism) by achieving classical DP. This strategy will mitigate the privacy risk due to adversaries learning new information about their targets from the released aggregate information, but it cannot decrease the privacy risk brought by other adversaries who can access the original collected data, such as the service provider itself. Fig. 1(c) illustrates a strategy where the sanitization occurs during data collection. In other words, the true responses are only to known the users themselves, not anyone else. To achieve this, the true individual responses will go through a sanitization mechanism prior to them being shared with the data collector or service provider. Therefore, the strategy in Fig. 1(c) is more robust than that in Fig. 1 (b) from a privacy protection perspective, and it is the strategy behind our proposed procedure for PP-TPU. The conceptual and methodological contributions of the proposed PP-TPU procedure and its potential practical impacts are summarized as follows.",
+            "cite_spans": [
+                {
+                    "start": 496,
+                    "end": 500,
+                    "text": "[33]",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 1019,
+                    "end": 1023,
+                    "text": "[34]",
+                    "ref_id": "BIBREF34"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 778,
+                    "end": 787,
+                    "text": "Fig. 1(a)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1026,
+                    "end": 1032,
+                    "text": "Fig. 1",
+                    "ref_id": null
+                },
+                {
+                    "start": 1120,
+                    "end": 1129,
+                    "text": "Fig. 1(b)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1601,
+                    "end": 1610,
+                    "text": "Fig. 1(c)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1967,
+                    "end": 1976,
+                    "text": "Fig. 1(c)",
+                    "ref_id": null
+                },
+                {
+                    "start": 2005,
+                    "end": 2011,
+                    "text": "Fig. 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Our contributions"
+        },
+        {
+            "text": "\u2022 We apply GI to collect GPS records from individual travel trajectories, taking into account the privacy loss composability. To improve the utility of sanitized location trajectories, we curb the number of GPS records collected per trajectory and leverage road network maps in a PP-TPU analysis to filter out the non-usable sanitized trajectories. \u2022 We propose new concepts including usable set of travel trajectories and effective number of full trajectories for a given target route, to quantify the impact of GI sanitization on the utility of sanitized trajectories for PP-TPU analysis. \u2022 We define the usefulnessconcept and different types of deviations in distance measures to examine the utility of sanitized GPS data. \u2022 We propose two new metrics continuous positioning degree and total distance to quantify the adversary error in learning individual trajectories given sanitized GPS records. \u2022 We examine the feasibility of the proposed PP-TPU procedure by quantifying the trade-off between privacy loss and the utility of sanitized GPS records and traces analytically and empirically and provide insights on choosing privacy loss parameters in different application scenarios. \u2022 Our PP-TPU procedure is easy to implement and can be easily adopted by service providers and GPS navigation systems and apps to collect user location data and provide TPU service with guaranteed privacy protection.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Our contributions"
+        },
+        {
+            "text": "To the best of our knowledge, there is no work focusing on PP-TPU analysis. The first step in our proposed PP-TPU procedure is to collect individual travel trajectories with privacy guarantees, on which there exists some work. First, the planar Laplace mechanism [20] can be used to perturb multiple locations from the same individual or trajectory. Due to the sequential composition of privacy costs for GI [20] and DP in general [29] , either the overall privacy cost for releasing an informative yet sanitized trajectory can be unrealistically high if the mechanism is na\u00efvely applied to each GPS record, or the sanitized trajectory is useless if the overall cost is kept reasonable. Our PP-TPU procedure improves the practical feasibility of this approach by imposing a ceiling on the number of collected locations per individual and excluding non-usable sanitized trajectories from a TPU perspective given a target route. [22] proposes concepts \"\u03b4-location set\" and \"sensitivity hull\" to account for temporal correlations in travel trajectories and bound the sanitization error. However, despite aiming at releasing multiple locations per trajectory, the work does not consider the composition in privacy loss in the same individual. [23] designs the clustering GI to aggregate nearby locations into a single perturbed location, which would lead to too much information loss if adopted for TPU. [21] proposes the concepts of privacy mass and elastic distinguishability to adjust the level of noises according to different area densities, offering some interesting ideas to improve the utility of PP-TPU that we plan to investigate in the future.",
+            "cite_spans": [
+                {
+                    "start": 263,
+                    "end": 267,
+                    "text": "[20]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 408,
+                    "end": 412,
+                    "text": "[20]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 431,
+                    "end": 435,
+                    "text": "[29]",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 927,
+                    "end": 931,
+                    "text": "[22]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 1239,
+                    "end": 1243,
+                    "text": "[23]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 1400,
+                    "end": 1404,
+                    "text": "[21]",
+                    "ref_id": "BIBREF20"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Related work"
+        },
+        {
+            "text": "TPU starts with collection of GPS records that contain the spatial-temporal information of a traveller, and then matches the GPS locations with physical road network maps. Each GPS record contains the location P i (latitude and longitude coordinates) and timestamp t i information. Due to satellite signal blockage, multi-path effects, and other factor that may affect GPS signals, collected GPS location information is not always accurate. It is common that direct projections of GPS coordinates may not correspond to any meaningful real map coordinate, and road mapping algorithms often involve some level of approximation. Fig.  2 shows an example of the shortest path map-matching algorithm [35] that project 3 GPS registration points onto the physical road network. ",
+            "cite_spans": [
+                {
+                    "start": 695,
+                    "end": 699,
+                    "text": "[35]",
+                    "ref_id": "BIBREF35"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 626,
+                    "end": 633,
+                    "text": "Fig.  2",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Map Matching of GPS Records"
+        },
+        {
+            "text": "Various approaches on travel time prediction have been developed. The na\u00efve travel time prediction outputs a single projected travel time value, but the reachable time-space range of a traveller is rather stochastic, due to the dynamic nature of human behaviors, traffics, etc [36] . Studies [37] have shown that individuals, when facing uncertainty in travel time, tend to avoid the risk of lateness and often reserve some time to ensure that they can arrive on time with a high level of confidence [1] . It is also important for transportation and urban planning to understand the uncertainty around travel time for infrastructure development and designs, among others.",
+            "cite_spans": [
+                {
+                    "start": 277,
+                    "end": 281,
+                    "text": "[36]",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 292,
+                    "end": 296,
+                    "text": "[37]",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 500,
+                    "end": 503,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Travel Time Prediction with Uncertainty"
+        },
+        {
+            "text": "The analysis of Travel time Prediction with Uncertainty (TPU) aims to obtain f (t), the probability density function (pdf) of travel time t spent over a trip with starting point A and destination B. The probability that the destination B can be reached within time b can be easily obtained from the cumulative density function (CDF) of t, that is,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Travel Time Prediction with Uncertainty"
+        },
+        {
+            "text": "For example, suppose b = 10 minutes and p = 0.9, then there is a 90% chance of arriving at the destination within 10 minutes. In reality, f (t) is unknown and is often estimated by an empiricalf (t) based on collected individual travel data, such as via the GPS.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Travel Time Prediction with Uncertainty"
+        },
+        {
+            "text": "Differential privacy (DP) is a state-of-art privacy protection model that guarantees privacy for released information in mathematically rigorous terms.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Differential Privacy and Geo-indistinguishability"
+        },
+        {
+            "text": "Definition 1 ( -differential privacy [28] ). A randomization mechanism M is -differentially private, if for any pair data sets X and X that differ by one record and every possible outcome set \u2126 to a query,",
+            "cite_spans": [
+                {
+                    "start": 37,
+                    "end": 41,
+                    "text": "[28]",
+                    "ref_id": "BIBREF28"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Differential Privacy and Geo-indistinguishability"
+        },
+        {
+            "text": "where > 0 is the privacy budget or loss parameter. The smaller is, the more privacy protection there is on the individuals in the data set. X and X differ by one record may refer to the case that X and X are of the same size but differ in the attribute values in exactly one record, or the case that X is one record more than X or vice versa. The classical DP in Definition 1 is a mathematical model for privacy guarantees when releasing aggregate query results and statistics from a group of individuals. The local DP [38, 39] is an extension of the classical DP to a single user's data and can be used to develop mechanism for releasing individual responses rather than aggregate results, with privacy.",
+            "cite_spans": [
+                {
+                    "start": 519,
+                    "end": 523,
+                    "text": "[38,",
+                    "ref_id": "BIBREF38"
+                },
+                {
+                    "start": 524,
+                    "end": 527,
+                    "text": "39]",
+                    "ref_id": "BIBREF39"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Differential Privacy and Geo-indistinguishability"
+        },
+        {
+            "text": "for all pairs of an individual's possible personal data x and x and all possible output subset \u2126 from M.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Definition 2 ( -local differential privacy [39, 40]). A randomization mechanism M provides local DP if"
+        },
+        {
+            "text": "The local DP implies that even if an adversary has access to the sanitized personal responses from a randomization mechanism that satisfies local DP, the adversary is still unable to learn much new about the user's actual responses.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Definition 2 ( -local differential privacy [39, 40]). A randomization mechanism M provides local DP if"
+        },
+        {
+            "text": "GI is an extension of the DP notion in the setting of location privacy and aims at releasing individual location records.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Definition 2 ( -local differential privacy [39, 40]). A randomization mechanism M provides local DP if"
+        },
+        {
+            "text": "In that sense, GI is more similar to the local DP concept than the classical DP; but all three concepts are based similar mathematical formulations. The formal definition of GI is given below.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Definition 2 ( -local differential privacy [39, 40]). A randomization mechanism M provides local DP if"
+        },
+        {
+            "text": "). Let d(P, P ) denote the Euclidean distance between any two distinct locations P and P , and be the unit-distance privacy loss. A randomization mechanism M satisfies GI iff for all possible released location P * , any \u03b3 > 0 and any possible pair of P and P within the radius of \u03b3,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Definition 3 (Geo-indistinguishability [20]"
+        },
+        {
+            "text": "In other words, M in Eq (3) enjoys ( \u03b3)-privacy for any specified \u03b3, and the probability of distinguishing any two locations with a radius of \u03b3, given the released location P * , is e \u03b3 times the probability when not having P * . For a fixed , the larger \u03b3 is, the larger the privacy loss ( \u03b3) will be. For example, Tom is standing in Times Square in NYC and looking for a restaurant for lunch. He sends a request to a service provider for a list of restaurants nearby. However, he does not want to disclosure his exact location and chooses to release a perturbed location P * via GI with = 0.1 per mile. The probability the service provider will identify his true location within a radius of \u03b3 = 1 mile given the perturbed location information is at most 1.1 folds of the probability when not having the information, and at most 148 folds within a radius of \u03b3 = 50 miles. In the latter case, though the probability of distinguishing locations given P * dramatically increases compared to not having P * , it is not practically alarming from a privacy perspective as the increase is caused by the large \u03b3 rather than a large . In other words, the service provider will have great confident that Tom is in NYC given the released P * , but little confidence in pinpointing exactly where in NYC. If it were the combination of = 50 and \u03b3 = 1, then the probability the service provider identifying Tom's true location within a radius of 1 mile would increase by 248 folds given the perturbed location information, constituting a disastrous situation in privacy.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Definition 3 (Geo-indistinguishability [20]"
+        },
+        {
+            "text": "To employ GI in location data protection, the planar Laplace mechanism can be used to perturb the coordinates of a location by injecting noises drawn from the polar coordinates. [20] ). The sanitized location P * , given the actual location P with coordinates (x, y) in the Euclidean space, satisfies GI with coordinates (x * , y * ) = (x + r cos(\u03b8), y + r sin(\u03b8)),",
+            "cite_spans": [
+                {
+                    "start": 178,
+                    "end": 182,
+                    "text": "[20]",
+                    "ref_id": "BIBREF19"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Definition 3 (Geo-indistinguishability [20]"
+        },
+        {
+            "text": "where the joint distribution of R and \u03b8 is",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Definition 4 (polar Laplace mechanism"
+        },
+        {
+            "text": "Eq (5) implies R and \u03b8 are independently distributed and",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Definition 4 (polar Laplace mechanism"
+        },
+        {
+            "text": "In summary, to generate a sanitized location P * , one may draw R from the gamma distribution with shape 2 and scale \u22121 and \u03b8 from Unif(0, 2\u03c0), and then calculate the coordinates of P * in the Euclidean space per Eq (4).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Definition 4 (polar Laplace mechanism"
+        },
+        {
+            "text": "Applied to the collections of GPS records, the GI notion can help to protect individual privacy on several types of information, including an individual's location at a given time point, the travel trajectory of an individual over a time period, and any derived information from the collected sanitized trajectories, including the TPU analysis.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "PRIVACY-PRESERVING TPU WITH GI"
+        },
+        {
+            "text": "In what follows, we present a procedure to achieve PP-TPU in the framework of GI, taking into the composability of privacy costs from disclosing multiple location points from a trajectory and leveraging public knowledge of maps and road networks to improve the utility of PP-TPU on a given target road. We also examine the accuracy of sanitized information relative to the original information; analyze the privacy guarantees and indistinguishability of the proposed procedure, along with newly proposed metrics for quantifying adversary errors.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "PRIVACY-PRESERVING TPU WITH GI"
+        },
+        {
+            "text": "Algorithm 1 lists the steps for the PP-TPU procedure. As demonstrated in Fig 1(c) , we start PP-TPU with sanitizing GPS records via GI before they are sent to and shared with the service provider. This approach mitigates privacy risks of learning new private information about an individual from the collected GPS records for various types of adversaries, as the true responses are only know to the users themselves. In addition, we take several measures to improve the accuracy of the proposed PP-TPU procedure and to quantify the utility of sanitized trajectories.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 73,
+                    "end": 81,
+                    "text": "Fig 1(c)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Proposed PP-TPU Procedure"
+        },
+        {
+            "text": "First, given a fixed total per-trajectory privacy cost, we limit the number of records to be collected per traveller so that the sanitization of each location record does not inject too much noise to make the sanitized record (near) useless.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Proposed PP-TPU Procedure"
+        },
+        {
+            "text": "Steps of the PP-TPU Procedure input : GPS location coordinates (x ij , y ij ) with timestamp \u03c4 ij for i = 1, . . . , K trajectories and j = 1, . . . , n i (\u2264 n the maximum records per trajectory); per-trajectory privacy budget i ; target route with total distance d. Perturb P j = (x ij , y ij ) via the planar Laplace mechanism in Eq (4) with privacy budget",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Algorithm 1:"
+        },
+        {
+            "text": "Map P * j onto the area map to obtain the map coordinates Q * j ;",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Algorithm 1:"
+        },
+        {
+            "text": "Second, we filter out non-usable trajectories for the PP-TPU analysis given a target route. Due to the sanitization noise injected to satisfy GI at each location, it is possible that the travel direction between two consecutive time points is opposite the target route R, which has a pre-specified direction. To not bias the total travel distance, we keep the sanitized locations as is, as long as they can be mapped onto route R, but attach a sign to indicate the travel direction consistency with R, namely, positive distance if the travelling direction is consistent with the direction of route R, negative if opposite, and 0 if the two mapped locations completely overlap. After the complete set of the GPS records from the traveller are mapped, we sum the signed distances on R for the traveller. If the summed distance is negative, then the trajectory is not usable, as defined in Definition 5.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "end 16 end"
+        },
+        {
+            "text": "A usable trajectory given a target route is a trajectory that satisfies the following two conditions: 1) at two least consecutive locations are mapped onto the target route R; 2) the total travel distance summed over distance segments calculated from the mapped coordinates on R is non-negative. The set of usable trajectories is the usable set U.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Definition 5 (usable trajectory)."
+        },
+        {
+            "text": "Third, we provide an option in Algorithm 1 to weigh different trajectories for their various levels of contribution towards the TPU analysis on a given target route R. The motivation behind this is given as follows. It is very possible that not all the GPS records will be mapped to the target route, even if the traveller in fact stays on R all the time at least for the time period of interest, due to a few reasons. First, GPS information is not always accurate due to satellite signal blockage and multi-path effects, causing difficulty in road matching. Second, road mapping procedures themselves often involve approximation and errors. Third, with the additional randomness introduced by the GI sanitization, the location accuracy will further decrease. Therefore, each trajectory may different number of GPS records mapped onto R, some of which are consecutive in times and others are not. When calculating the travel distance on R for a traveller, it makes sense to only count the distances between the locations at two consecutive time points if both are mapped onto R. One way to formulate the weight is to let it be proportional to how much a sanitized mapped trajectory overlaps with the target route.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Definition 5 (usable trajectory)."
+        },
+        {
+            "text": "Definition 6 (trajectory weight). Denote by d * i the travel distance of traveller i on the target route R of length d from the usable set U. The weight that traveller i carries in the TPU analysis is",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Definition 5 (usable trajectory)."
+        },
+        {
+            "text": "With the weight being define, we can calculate the effective number of full trajectories to provide an overall metric on the impact of mapping and sanitation of GPS records on the TPU analysis on a target road.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Definition 5 (usable trajectory)."
+        },
+        {
+            "text": "Definition 7 (effective number of full trajectory). The effective full trajectory number is K eff = i\u2208U w i .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Definition 5 (usable trajectory)."
+        },
+        {
+            "text": "Since w i \u2208 [0, 1], K eff \u2264 |U|, where |U| is the number of trajectories in U. |U| in turn is \u2264 K, where K is the number of raw GPS trajectories before mapping, sanitation, and filtering out. K eff in a PP-TPU analysis depends on , the number of GPS trajectories K before mapping, and the pattern and complexity of the road networks onto which the GPS records are projected. Besides using weights to calculate K eff , we can also incorporate the weights in the TPU analysis by define a weighted version of f * w (t). For example, we may sample K eff travel times from set (t * 1 , . . . , t * |U | ) with the sampling probabilities proportional to w = {w 1 , . . . , w |U | } and obtain an empiricalf * w (t) based on the samples.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Definition 5 (usable trajectory)."
+        },
+        {
+            "text": "As mentioned above, road mapping procedures involve approximation and errors, the quantification of which is challenging and case-dependent. As such, we focus on the accuracy of the perturbed GPS records relative to their original, instead of on the mapped coordinates. It is reasonable to assume that if sanitized and original GPS records are close, so are their mapped locations.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Accuracy of Sanitized Information"
+        },
+        {
+            "text": "First, we can quantify the closeness between a sanitized GPS location vs its original using the \"usefulness\" definition [20] . A location perturbation mechanism is (\u03b1, \u03b4)-usefulness if the distance between the sanitized and original locations is \u2264 \u03b1 with a probability of 1 \u2212 \u03b4, for every original location. For example, for a unit-distance privacy budget = 2, the probability that a sanitized location via the planar Laplace mechanism is within \u03b1 = 1.5 units of the original location is 1 \u2212 \u03b4 = 0.8, calculated directly from the CDF of gamma(2, 1.5). If other words, the planar Laplace mechanism of = 2 GI is (1.5, 0.2)-useful for sanitizing locations. We plot the relationships between \u03b1 and 1 \u2212 \u03b4 for a range of values for the planar Laplace mechanism in Fig. 3(a) .",
+            "cite_spans": [
+                {
+                    "start": 120,
+                    "end": 124,
+                    "text": "[20]",
+                    "ref_id": "BIBREF19"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 758,
+                    "end": 767,
+                    "text": "Fig. 3(a)",
+                    "ref_id": "FIGREF3"
+                }
+            ],
+            "section": "Accuracy of Sanitized Information"
+        },
+        {
+            "text": "Next, we assess the accuracy of the distance between two sanitized locations. Denote by (x j , y j ) and (x j , y j ) the coordinates of two recorded GPS locations at times \u03c4 j and \u03c4 j , respectively. The sanitized coordinates for the two locations via the planar Laplace mechanism in Eq (5) are respectively, x * j = x j + r cos(\u03b8), y * j = y j + r sin(\u03b8) x * j = x j + r cos(\u03b8 ), y * j = y j + r sin(\u03b8 )",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Accuracy of Sanitized Information"
+        },
+        {
+            "text": ",",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Accuracy of Sanitized Information"
+        },
+        {
+            "text": "the distance between which can be calculated by the Euclidean distance",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Accuracy of Sanitized Information"
+        },
+        {
+            "text": "where (9) \u2206 jj = r 2 +r 2 \u22122rr (cos(\u03b8 j ) cos(\u03b8 j ) + sin(\u03b8) sin(\u03b8 ))+ 2(x j \u2212 x j )(r cos(\u03b8 ) \u2212 r cos(\u03b8))+ 2(y j \u2212 y j )(r sin(\u03b8 ) \u2212 r sin(\u03b8)),",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Accuracy of Sanitized Information"
+        },
+        {
+            "text": "and d jj is the Euclidean distance between the original GPS records at times \u03c4 j and \u03c4 j . \u2206 jj can be regarded as the bias of the squared sanitized distance from the original distance, d * jj conditional on d jj is a random variable as r, r , \u03b8, \u03b8 are all random variables. We propose two metrics to examine the accuracy of d * jj relative to d jj . For the first metric, we define (d, \u03b1, \u03b4)-usefulness for sanitized distances, in a similar manner to the (\u03b1, \u03b4)-usefulness in general [41] and for sanitized locations [20] .",
+            "cite_spans": [
+                {
+                    "start": 485,
+                    "end": 489,
+                    "text": "[41]",
+                    "ref_id": "BIBREF41"
+                },
+                {
+                    "start": 518,
+                    "end": 522,
+                    "text": "[20]",
+                    "ref_id": "BIBREF19"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Accuracy of Sanitized Information"
+        },
+        {
+            "text": "A randomization mechanism is (d, \u03b1, \u03b4)-useful, if there is a probability of 1 \u2212 \u03b4 that the sanitized distance d * satisfies |d * /d \u2212 1| < \u03b1 for every pair of locations with a distance of at least d. \u03b1 is the relative error of the sanitized d * to the original d. The smaller \u03b1 and the larger \u03b4 are for a given d, the more useful the mechanism is in terms of distance preservation. Figs. 3(b) to 3(d) depict the relationship between \u03b1 and \u03b4 when the original distance d is 5, 10, and 20 at different levels of unit-distance privacy cost . As d increases, \u03b4 decreases for the same \u03b1. From the plots, we can claim that there is a 80% probability that the distance d * between the perturbed locations via the planar Laplace mechanism of = 1 GI is \u00b125% of d \u2265 10; in other words, the mechanism is (10, 0.25, 0.2)-useful at = 1. Similarly, we may also claim the mechanism is (5, 0.5, 0.2)-useful for = 1, and (5, 1.0, 0.3)-useful for = 0.5, etc. For the second metric to measure the utility of a sanitized distance, we calculate the expected and root mean squared (RMS) percentage deviations of the sanitized distance from the original distance E(d * ij /d ij \u2212 1) and E(d * ij /d ij \u22121) 2 , respectively. Eqs (9) and (10) suggest there is no closeform expression for either of them; but we can always examine the numerical deviations for a given scenario. Table  1 lists the expected %deviation and RMS %deviation in distance for different scenarios of and d. As expected, the larger or the larger d is, the smaller the %deviation is. Also listed in Table 1 is the expected %deviation in squared distance from the original squared distance, which has a closed-form solution from Eqs (9) and (10) . Specifically, E(r 2 ) = E 2 (r) + V(r) = 6 \u22122 , so is E(r 2 ), and since 2(x j \u2212 x j )(E(r )E(cos(\u03b8 )) \u2212 E(r)E(cos(\u03b8)) + 2(y j \u2212 y j )(E(r )E(sin(\u03b8 ))\u2212E(r)E(sin(\u03b8)) = 0, then",
+            "cite_spans": [
+                {
+                    "start": 1205,
+                    "end": 1208,
+                    "text": "(9)",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 1687,
+                    "end": 1691,
+                    "text": "(10)",
+                    "ref_id": "BIBREF9"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1352,
+                    "end": 1360,
+                    "text": "Table  1",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 1546,
+                    "end": 1553,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Definition 8 ((d, \u03b1, \u03b4)-usefulness of sanitized distance)."
+        },
+        {
+            "text": "and",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Definition 8 ((d, \u03b1, \u03b4)-usefulness of sanitized distance)."
+        },
+        {
+            "text": "Eq (11) indicates that, in expectation, the squared distance between two sanitized GPS locations always deviates from the squared original distance by the same amount 12 \u22122 , regardless of d ij ; however, Eq (12) implies that the deviation is not meaningful for large d ij . ",
+            "cite_spans": [
+                {
+                    "start": 3,
+                    "end": 7,
+                    "text": "(11)",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 208,
+                    "end": 212,
+                    "text": "(12)",
+                    "ref_id": "BIBREF11"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Definition 8 ((d, \u03b1, \u03b4)-usefulness of sanitized distance)."
+        },
+        {
+            "text": "As illustrated in Fig 1(c) , the proposed PP-TPU procedure is based on sanitized GPS trajectory data, mitigating the privacy risk from both the honest-and-curious and malicious adversaries. The employed privacy model, GI, is an extension of the notion of DP to location settings with a similar mathematical concept for controlling privacy loss when sharing information. DP is known to provide \"provable privacy protection against a wide range of potential attacks, including those currently unforeseen\" [31, 32] . The proposed PP-TPU procedure in Sec 3.1 protects several types of spatial-temporal information: the location of a traveller at a given time point, a travel trajectory of the traveller for a given time period, any calculated statistics from the trajectory (e.g, travel distance, travel speed) per the the immunity property of DP and GI against post-processing. We examine each type of the yielded privacy protection below in more detail below, especially the protection of a travel trajectory.",
+            "cite_spans": [
+                {
+                    "start": 503,
+                    "end": 507,
+                    "text": "[31,",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 508,
+                    "end": 511,
+                    "text": "32]",
+                    "ref_id": "BIBREF32"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 18,
+                    "end": 26,
+                    "text": "Fig 1(c)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Privacy Guarantee and Adversary Error"
+        },
+        {
+            "text": "First, per the definition of GI in Definition 3, the probability of distinguishing the true location P from any other locations with a radius of \u03b3, given the released perturbed location P * increases by e \u03b3 \u2212 1 folds compared to the probability when not having P * . In other words, the same privacy guarantees and indistinguishability as illustrated in Definition 3 apply to the GPS records collected at each timestamp for the PP-TPU analysis.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Privacy Guarantee and Adversary Error"
+        },
+        {
+            "text": "Second, the proposed PP-TPU procedure protects the privacy of a collected travel trajectory over a time period. Though each of the location records on the trajectory is perturbed via the planar Laplace mechanism has a straightforward interpretation on indistinguishability as presented above, how to quantify the adversary error in learning about the original trajectory based on the released sanitized trajectory is less studied. Below we propose two metrics -the total distance (TD) and the consecutive positioning rate (CPD)to quantify the adversary error and assess the effectiveness of a randomization procedure in protecting travel trajectory privacy. We apply both metrics to examine the adversary error in the experiments in Sec. 4.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Privacy Guarantee and Adversary Error"
+        },
+        {
+            "text": "Definition 9 (total distance). The total distance (TD) between the sanitized and original travel trajectories is the summed distance between the two sets of GPS locations and on the sanitized and original trajectories at the same set of timestamps.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Privacy Guarantee and Adversary Error"
+        },
+        {
+            "text": "Say there K trajectories. The original and sanitized coordinates on trajectory i are {(x ij , y ij )} and {(x * ij , y * ij )} recorded at time {\u03c4 ij }. The TD is calculated as",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Privacy Guarantee and Adversary Error"
+        },
+        {
+            "text": "For a fixed set {n i } for i = 1, . . . , K, the larger TD is, the larger the adversary error and the more difficult it is to recover the original trajectory.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Privacy Guarantee and Adversary Error"
+        },
+        {
+            "text": "Definition 10 (consecutive positioning degree). The consecutive positioning degree (CPD) is a probability of distribution p(l) of correctly identified l consecutive locations on a trajectory based on the released sanitized trajectory with n GPS records, for l = 0, . . . , n. The expected value of correctly identified positions out of n is n c = n l=0 l \u00d7 p(l).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Privacy Guarantee and Adversary Error"
+        },
+        {
+            "text": "We choose to examine the distribution of correctly identified consecutive positions p(l) instead of that of correctly identified positions p(m) for m = 0, . . . , n (regardless of whether they are consecutive or not) is because the former would be regarded by many as more revealing of travel trajectory and thus carrying more privacy concern than latter protection. How to define \"correctly identified positions\" is up to the user. One approach is hard-thresholding. Specifically, we choose a clip radius C. if the sanitized location falls within the circle of radius C centered at the original location, then it is a correct positioning. Certainly, the smaller C is, the harder it is to meet the criterion, but the more meaningful \"correct\" is. Since each location on a trajectory is perturbed independently via the polar Laplace mechanism, with the hard-thresholding rule, the probability of correctly identifying a location can be determined analytically, which is p = F (C; 2, /n), where n is the number of recorded positions on a GPS trajectory and F is the CDF of gamma(2, /n). The number of correctly identified positions m given p follows a binomial distribution m \u223c Binom(n, p). As for the distribution of CPD l, we can leverage Binom(n, p) to express p(l) analytically when n is small, but p(l) for 1 \u2264 l < n \u2212 k with small k \u2265 0 becomes less tractable as n increases considering that a trajectory may contain multiple location strings of different l. For example, a GPS trace with n = 10 records may have 2 occurrences of 1 = 1, 1 occurrence of l = 2, and 1 occurrence of l = 3. When the analytical work becomes difficult, we may resort to Monte Carlo (MC) simulations to calculate p(l), as presented in Algorithm 2. Though the algorithm is presented with the hardthresholding rule to define correct positioning, the steps are applicable to other ways of defining correct positioning by updating line 4 of the algorithm. n ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Privacy Guarantee and Adversary Error"
+        },
+        {
+            "text": "We conduct four experiments to investigate empirically the impact of GI sanitization of GPS records on the utility of TPU. Each experiment examines a different road network Algorithm 2: Calculation of CPD p(l) input : K GPS trajectories and their sanitized counterparts with n records per trajectory; clip radius C output: n (l) scenario. We are interested in TPU on a pre-specified target route in each experiment. Besides the PP-TPU and utility analysis, we also examine the adversary error in learning individual trajectories using TD and CPD.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "EXPERIMENTS"
+        },
+        {
+            "text": "In Experiments 1, the simulated road network contains a single road. In Experiments 2, the simulated road network contains three roughly parallel roads, and of them is the target route. In Experiment 3, the road network contains a large roundabout in the town of Creteil in France (Fig  4(a) ), and the target route AB is about 1.5 kilometers long around the roundabout. In Experiment 4, we examine the San Francisco Bay Area (Fig 4(b) ) and the target road AB is about 50 kilometers long.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 281,
+                    "end": 291,
+                    "text": "(Fig  4(a)",
+                    "ref_id": "FIGREF7"
+                },
+                {
+                    "start": 426,
+                    "end": 435,
+                    "text": "(Fig 4(b)",
+                    "ref_id": "FIGREF7"
+                }
+            ],
+            "section": "Experiment Settings"
+        },
+        {
+            "text": "In terms of the GPS trajectory data, the data in Experiment 1 (2,000 travel trajectories) and Experiment 2 (3,000 travel trajectories with 1,000 per road) are simulated as follows. We first simulated speeds from the inverse Weibull distribution with mean \u00b5 = 24 meter per second and variance \u03c3 2 = 8 (the values are chosen as is to mimic the real-world traffic speed distributions). For each of the simulated speeds, 10 location records were generated at a fixed timestamp of every \u03c4 = 20 seconds, leading to travel trajectories of different length, depending on the speed. The vehicular mobility trace data in Experiment 3 are downloadable from [42] and contains 857,136 sets of location coordinates per second from around 5102 trips in the roundabout area from the morning rush hour (7 to 9 AM), simulated based on real data. The dataset in Experiment 4 contains real mobility traces of taxi cabs and is downloadable from [43] . The raw data contains the GPS coordinates of approximately 500 taxis over 30 days. For this experiment, we used a subset of 30,900 location-time GPS records over the morning rush hours (8 to 9 AM) from 500+ car trips.",
+            "cite_spans": [
+                {
+                    "start": 646,
+                    "end": 650,
+                    "text": "[42]",
+                    "ref_id": "BIBREF42"
+                },
+                {
+                    "start": 924,
+                    "end": 928,
+                    "text": "[43]",
+                    "ref_id": "BIBREF43"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Experiment Settings"
+        },
+        {
+            "text": "The simulated GPS records were sanitized via the planar Laplace mechanism and projected into the road map in each experiment using the shortest path algorithm. Since Experiment 1 has a single road, the mappings of all the GPS coordinates land on the target route; in the other 3 experiments, a GPS record can land anywhere on the road network per the shorted path algorithm employed. We set the maximum number of GPS records at 10 per trajectory. Specifically, if a traveller had \u2264 10 records, we used all of them; if a traveller had > 10 records, we randomly sampled 10 records or had 10 records spaced equally over the trajectory if there were enough records to allow that. For the GI sanitization, we set the per-location per-meter privacy loss at 0.005, 0.01, 0.03, 0.05 and 0.08 in all 4 experiments. Since the maximum of GPS records is 10, the total privacy cost for releasing a trajectory is \u2264 0.05, 0.1, 0.3, 0.5, 0.8, respectively. The PP-TPU analysis was then conducted via algorithm 1 in each experiment. ample. The original GPS records from the traveller in the leftmost plot are all mapped onto the target road. Though each sanitized GPS location deviates from the original, the shorted path mapping algorithm still projects all of them onto the target road, which are used for the subsequent PP-TPU analysis. For the middle traveller, all the original GPS records of the traveller are mapped onto the target road, but 2 out of 10 of the sanitized consecutive GPS records are not and the 8 on-target mapped records forms 2 location strings of l = 4 and l = 2, respectively and are used for the subsequent of the PP-TPU analysis. For the rightmost traveller, 3 out of 10 sanitized GPS records are mapped onto the target road and they are not consecutive, so this traveller does not contribute toward the PP-TPU in this experiment. In summary, among the 3 trajectories, the first two belong to U, bu not the third one. Fig 6, we also performed the weighted TPU analysis in Experiment 2, and the results are presented in Fig 7. A similar overall trend in the accuracy of the TPU analysis across is observed as in the nonweighted version. The weighting also seems to polarize the PP-TPU accuracy in that the CDF curves at \u2264 0. 7 : Weighted PP-TPU analysis in Experiment 2 It is practically important to understand the relationship among the per-trajectory privacy budget , the number of travel trajectories K to be collected for PP-TPU, and the accuracy of PP-TPU. This information can be used to help determine how many users' data need to be collected to control the relative error in TPU below a certain threshold for a given , especially for real-time TPU as K varies by weather, car accident, periods of the day, etc. Fig 8 presents the relationship between K, , and the relative error in travel time, defined as the normalized l 1 deviance of the sanitized travel time from the original travel time over K trajectories, based on the data from Experiment 2. As expected, as K increases or per trajectory goes down, the error decreases. For \u2265 0.3, the error can be controlled below 5% for K as small as 100. Similar relationships can be obtained from the other three experiments. ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 1930,
+                    "end": 1936,
+                    "text": "Fig 6,",
+                    "ref_id": null
+                },
+                {
+                    "start": 2031,
+                    "end": 2037,
+                    "text": "Fig 7.",
+                    "ref_id": null
+                },
+                {
+                    "start": 2236,
+                    "end": 2237,
+                    "text": "7",
+                    "ref_id": null
+                },
+                {
+                    "start": 2732,
+                    "end": 2746,
+                    "text": "Fig 8 presents",
+                    "ref_id": "FIGREF10"
+                }
+            ],
+            "section": "Sanitization and Implementation Details"
+        },
+        {
+            "text": "We examined the adversary error via the proposed TD and CPD p(l) in Sec 3.3. For demonstration purposes, we present the results in Experiment 2 only; similar measures can be obtained from the other three experiments. Table 3 shows the expected distance between the sanitized trajectories and the original trajectory calculated via Eq (13) for per-trajectory privacy budget . As expected, the smaller is, the larger the distance is. The utility analysis in Sec 4.3 suggests that satisfactory accuracy can be achieved at = 0.3 for the PP-TPU analysis. Per Table 3 , the adversary error measured by the TD at = 0.3 is 447 meters across the 10 records per trajectory, which would be regarded as large. Taken together, we may claim that a good trade-off between the TPU utility and privacy protection can be achieved at = 0.3. 9 presents the probability distributions of CPD l and correctly identified positions m (whether consecutive or not) for three different clip radius C (20, 40, and 80 meters) when the number of records per trajectory n = 10 for the same set of per trajectory as examined in all 4 experiments. As expected, as C increases (the criterion for claiming correct positioning loosens) or as per-trajectory increases, the adversary's accuracy for correctly identifying more positions and more consecutive positions increase. In the case of C = 80 meters -a rather relaxed criterion for correct identification, the probability of identifying 10 positions out of 10 is > 80%. The probability decreases to \u223c 10% for C = 40 meters and \u223c 0% for C = 20 meters. The plots also illustrate the differences between CPD l and the number of correctly identified locations m. For example, for C = 20, Pr(l = 6) is close to 0%, but Pr(m = 6) is \u223c 20%, regardless of whether the 6 positions are consecutive or not. ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 217,
+                    "end": 224,
+                    "text": "Table 3",
+                    "ref_id": "TABREF5"
+                },
+                {
+                    "start": 554,
+                    "end": 561,
+                    "text": "Table 3",
+                    "ref_id": "TABREF5"
+                },
+                {
+                    "start": 822,
+                    "end": 823,
+                    "text": "9",
+                    "ref_id": "FIGREF13"
+                }
+            ],
+            "section": "Adversary Error"
+        },
+        {
+            "text": "This paper addresses privacy-preserving TPU analyses. We adopt the notation of GI to protect individual spatialtemporal records collected via the GPS, and any subsequent analysis based on it. The proposed PP-TPU procedure can be adopted by service providers (e.g., mobile phone companies, GPS navigator apps) at the GPS data collection stage. We also proposed the concepts of total distance and consecutive positioning degree to assess the adversary error based on released GPS trajectory records, and defined the usefulness concept and different types of deviations in distance measures based on sanitized GPS records. We provided analytical and empirical utility analysis for sanitized locations, distances, and TPU analysis. Our study suggests it is feasible to employ the GI concept to collect and release GPS information for TPU analysis while guaranteeing location privacy for the individuals who contribute their GPS data. Our future work will look into incorporating the dependency among the location points on the same travel trajectory and better utilizing the public road network maps to develop new randomisation mechanisms of better utility without comprising privacy.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "CONCLUSIONS"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Unique in the crowd: The privacy bounds of human mobility",
+            "authors": [
+                {
+                    "first": "Y.-A",
+                    "middle": [],
+                    "last": "De Montjoye",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Hidalgo",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Verleysen",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Blondel",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Scientific reports",
+            "volume": "3",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Phones could track the spread of covid-19. is it a good idea",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Knight",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Cellphone tracking could help stem the spread of coronavirus. is privacy the price",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Servick",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Can we fight covid-19 without resorting to mass surveillance",
+            "authors": [
+                {
+                    "first": "Y.-A",
+                    "middle": [],
+                    "last": "De Montjoye",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Houssiau",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "CPG Blog",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Privacy in location-based social networks: Researching the interrelatedness of scripts and usage",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Coppens",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Claeys",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Veeckman",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Pierson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Proceedings of the Symposium on Usable Privacy and Security",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "A geoprivacy manifesto",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Ke\u00dfler",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Mckenzie",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Transactions in GIS",
+            "volume": "22",
+            "issn": "1",
+            "pages": "3--19",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Privacy and accountability for location-based aggregate statistics",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Popa",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Blumberg",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Balakrishnan",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Proceedings of the 18th ACM conference on Computer and communications security",
+            "volume": "",
+            "issn": "",
+            "pages": "653--666",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Applaus: A privacy-preserving location proof updating system for location-based services",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Zhu",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Cao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "2011 Proceedings IEEE INFOCOM",
+            "volume": "",
+            "issn": "",
+            "pages": "1889--1897",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Louis, lester and pierre: Three protocols for location privacy",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Zhong",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Goldberg",
+                    "suffix": ""
+                },
+                {
+                    "first": "U",
+                    "middle": [],
+                    "last": "Hengartner",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "International Workshop on Privacy Enhancing Technologies",
+            "volume": "",
+            "issn": "",
+            "pages": "62--76",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Privacy in geo-social networks: proximity notification with untrusted service providers and curious buddies",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Mascetti",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Freni",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Bettini",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Jajodia",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "The VLDB journal",
+            "volume": "20",
+            "issn": "4",
+            "pages": "541--566",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Privacy-preserving traffic monitoring with false report filtering via fog-assisted vehicular crowdsensing",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zhu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Lin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "IEEE Transactions on Services Computing",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Traffic monitoring in self-organizing vanets: A privacy-preserving mechanism for speed collection and analysis",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zhu",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Du",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Guizani",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Sharif",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "IEEE Wireless Communications",
+            "volume": "26",
+            "issn": "6",
+            "pages": "18--23",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "A privacy-preserving traffic monitoring scheme via vehicular crowdsourcing",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zhu",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Du",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Guizani",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Sensors",
+            "volume": "19",
+            "issn": "6",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Privacy-preserving online task allocation in edgecomputing-enabled massive crowdsensing",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Ji",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Jiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "IEEE Internet of Things Journal",
+            "volume": "6",
+            "issn": "5",
+            "pages": "7773--7787",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Protection of location privacy using dummies for location-based services",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Kido",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Yanagisawa",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Satoh",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "21st International Conference on Data Engineering Workshops (ICDEW'05)",
+            "volume": "",
+            "issn": "",
+            "pages": "1248--1248",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Enhancing security and privacy in traffic-monitoring systems",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Hoh",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Gruteser",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Xiong",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Alrabady",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "IEEE Pervasive Computing",
+            "volume": "5",
+            "issn": "4",
+            "pages": "38--46",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Preserving privacy in gps traces via uncertainty-aware path cloaking",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Hoh",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Gruteser",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Xiong",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Proceedings of the 14th ACM conference on Computer and communications security",
+            "volume": "",
+            "issn": "",
+            "pages": "161--171",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Spotme if you can: Randomized responses for location obfuscation on mobile phones",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Quercia",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Leontiadis",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Mcnamara",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Mascolo",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Crowcroft",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "2011 31st International Conference on Distributed Computing Systems",
+            "volume": "",
+            "issn": "",
+            "pages": "363--372",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Privacy-aware querying over sensitive trajectory data",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Pelekis",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Gkoulalas-Divanis",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Vodas",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Kopanaki",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Theodoridis",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Proceedings of the 20th ACM international conference on Information and knowledge management",
+            "volume": "",
+            "issn": "",
+            "pages": "895--904",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Geo-indistinguishability: Differential privacy for location-based systems",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Andr\u00e9s",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Bordenabe",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Chatzikokolakis",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Palamidessi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Proceedings of the 2013 ACM SIGSAC conference on Computer & communications security",
+            "volume": "",
+            "issn": "",
+            "pages": "901--914",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Constructing elastic distinguishability metrics for location privacy",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Chatzikokolakis",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Palamidessi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Proceedings on Privacy Enhancing Technologies",
+            "volume": "2015",
+            "issn": "",
+            "pages": "156--170",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Protecting locations with differential privacy under temporal correlations",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Xiao",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Xiong",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Proceedings of the 22nd ACM SIGSAC Conference on Computer and Communications Security",
+            "volume": "",
+            "issn": "",
+            "pages": "1298--1309",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Clustering geoindistinguishability for privacy of continuous location traces",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Cunha",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Mendes",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Vilela",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "2019 4th International Conference on Computing, Communications and Security (ICCCS)",
+            "volume": "",
+            "issn": "",
+            "pages": "1--8",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "On the privacy-conscientious use of mobile phone data",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Garcia-Herranz",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Kendall",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Kerry",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Scientific data",
+            "volume": "5",
+            "issn": "1",
+            "pages": "1--6",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Deep Q-network-based route scheduling for tnc vehicles with passengers' location differential privacy",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Shi",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Ding",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Errapotu",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Yue",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Pan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "IEEE Internet of Things Journal",
+            "volume": "6",
+            "issn": "5",
+            "pages": "7681--7692",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Privacy-preserving based task allocation with mobile edge clouds",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Qian",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Jiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Hossain",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Muhammad",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "U"
+                    ],
+                    "last": "Amin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Information Sciences",
+            "volume": "507",
+            "issn": "",
+            "pages": "288--297",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Covid watch: Reduce the spread of covid-19 without increasing the spread of surveillance",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Team",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Calibrating noise to sensitivity in private data analysis",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Dwork",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Mcsherry",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Nissim",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Smith",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Theory of cryptography conference",
+            "volume": "",
+            "issn": "",
+            "pages": "265--284",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Mechanism design via differential privacy",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Mcsherry",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Talwar",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "48th Annual IEEE Symposium on Foundations of Computer Science (FOCS'07)",
+            "volume": "",
+            "issn": "",
+            "pages": "94--103",
+            "other_ids": {}
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "The algorithmic foundations of differential privacy",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Dwork",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Roth",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Foundations and Trends in Theoretical Computer Science",
+            "volume": "9",
+            "issn": "3-4",
+            "pages": "211--407",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Differential privacy: A primer for a nontechnical audience",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Nissim",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Steinke",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Wood",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Altman",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Bembenek",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Bun",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Gaboardi",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "O&apos;brien",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Vadhan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Privacy Law Scholars Conf",
+            "volume": "3",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Exposed! a survey of attacks on private data",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Dwork",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Smith",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Steinke",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Ullman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Reliability measures of an origin and destination pair in a deteriorated road network with variable flows",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Asakura",
+                    "suffix": ""
+                }
+            ],
+            "year": 1999,
+            "venue": "Transportation Networks: Recent Methodological Advances. Selected Proceedings of the 4th EURO Transportation Meeting Association of European Operational Research Societies",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "A dual model/artificial neural network framework for privacy analysis in traffic monitoring systems",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Canepa",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Claudel",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Transportation Research Part C: Emerging Technologies",
+            "volume": "105",
+            "issn": "",
+            "pages": "126--144",
+            "other_ids": {}
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Shortest-path and minimumdelay algorithms in networks with time-dependent edge-length",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Orda",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Rom",
+                    "suffix": ""
+                }
+            ],
+            "year": 1990,
+            "venue": "Journal of the ACM (JACM)",
+            "volume": "37",
+            "issn": "3",
+            "pages": "607--625",
+            "other_ids": {}
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Travel-time uncertainty, departure time choice, and the cost of morning commutes",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Noland",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Small",
+                    "suffix": ""
+                }
+            ],
+            "year": 1995,
+            "venue": "Transportation research record",
+            "volume": "",
+            "issn": "1493",
+            "pages": "150--158",
+            "other_ids": {}
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Most reliable path-finding algorithm for maximizing on-time arrival probability",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Shi",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Lam",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Xiang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Transportmetrica B: Transport Dynamics",
+            "volume": "5",
+            "issn": "3",
+            "pages": "248--264",
+            "other_ids": {}
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "What can we learn privately?",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Kasiviswanathan",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Nissim",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Raskhodnikova",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Smith",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "SIAM Journal on Computing",
+            "volume": "40",
+            "issn": "3",
+            "pages": "793--826",
+            "other_ids": {}
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "Local privacy and statistical minimax rates",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Duchi",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Jordan",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Wainwright",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "2013 IEEE 54th Annual Symposium on Foundations of Computer Science",
+            "volume": "",
+            "issn": "",
+            "pages": "429--438",
+            "other_ids": {}
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "What can we learn privately?",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Kasiviswanathan",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Nissim",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Raskhodnikova",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Smith",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "SIAM Journal on Computing",
+            "volume": "40",
+            "issn": "3",
+            "pages": "793--826",
+            "other_ids": {}
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "A learning theory approach to non-interactive database privacy",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Blum",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Ligett",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Roth",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Proc. of STOC",
+            "volume": "",
+            "issn": "",
+            "pages": "609--618",
+            "other_ids": {}
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "Microscopic vehicular mobility trace of europarc roundabout,\" vTC'2016-Spring",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [
+                        "L M"
+                    ],
+                    "last": "Marie-Ange L\u00e9bre",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "Dataset of mobility traces of taxi cabs in san francisco, usa",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Piorkowski",
+                    "suffix": ""
+                },
+                {
+                    "first": "Natasa",
+                    "middle": [],
+                    "last": "Sarafijanovic Djukic",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "F. Liu is with the Department of Applied and Computational Mathematics and Statistics, University of Notre Dame, Notre Dame, IN, 46556, USA (corresponding author; e-mail: Fang.Liu.131@nd.edu); D. Wang is with the Department of State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing, Wuhan University, Wuhan, 430079, China (e-mail: dwang22@nd.edu). Z. Xu is with the Department of State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing, Wuhan University, Wuhan, 430079, China (e-mail: xuzq@whu.edu.cn)",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "Shortest path map matching",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "output: sanitized travel time t * , trajectory weight w. 1 U \u2190 \u2205 (see Definition 5); 2 for i = 1, . . . , K do 3 d * i \u2190 0; \u03b4t i \u2190 0; 4 for j = 1, . . . , n i do 5",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "Usefulness analysis on perturbed GPS location (a) and distances (b) to (d)",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "0.01 5.00 2.09 0.75 6.17 2.80 1.23 48 12 3 = 0.05 0.51 0.13 0.03 0.95 0.47 0.24 1.92 0.48 0.12 = 0.25 0.02 0.00 0.00 0.19 0.10 0.05 0.0768 0.0192 0.0048 \u2020 numerical results; \u2021 analytical results via Eq (12)..",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": "the frequency distribution l in trajectory i, its average over K trajectories gives the MC estimate p(l). The algorithm also outputsn c , the MC estimate of the expected value of correctly identified positions n c in Definition 10.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF6": {
+            "text": "distance d ij between sanitized location P * ij and original location P ij ; 4 If d ij \u2264 C, then e ij = 1; else e ij = If e ij = 0 \u2200j = 1, . . . , n, then n j = 1, . . . , n \u2212 l + 1 do 12 if (e ij = 1 \u2200j = j, . . . , j+l\u22121) & (e i,",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF7": {
+            "text": "Area maps in Experiments 3 and 4 (source: Google Map). AB is the target route for TPU in each experiment.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF8": {
+            "text": "present some examples on the original GPS records, their sanitized counterparts, the mapped travel trajectory based on the GPS records. Take Experiment 2 as an ex-",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF9": {
+            "text": "Examples of GPS records and mapped travel trajectories at per-trajectory privacy cost = 0.1",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF10": {
+            "text": "Relationship between number of travel trajectories and normalized l 1 (mean \u00b1 SE) distance between sanitized and original travel times in Experiment 2.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF11": {
+            "text": "\u2020 TD: total distance in meter. .",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF13": {
+            "text": "Probability distributions of CPD l (left column) and correctly identified positions m (right column)",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "Expected and root mean squared %deviation in distance, and expected %deviation in squared distance",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "Fig 6presents the empirical CDFs of the privacy-preserving travel times in the four experiments. As expected, the sanitization deviates the travel time distribution from the original; the smaller per-trajectory privacy cost is, the more deviation there is. For piratically small \u2265 0.3, satisfactory utility can be reached for PP-TPU in all experiments. From the CDF curves, we can read how long it takes for an traveller to arrive at the destination with a certain level of confidence, and vice versa. For example, in Experiment 4, there is a 80% probability that a travel finishes the trip AB within 100 minutes if = 0.5 is used. In addition to the unweighted TPU analysis in",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "1 deviate further from the original whereas those at \u2265 0.2 are more similar to the original compared to the non-weighted PP-TPU analysis. Similar weighted analysis can be conducted in the other 3 experiments and any PP-TPU analysis.Fig. 6: PP-TPU analysisFig.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF3": {
+            "text": "presents the effective number of full trajectory K eff in Experiment 2. Due to the inherent error of the mapping algorithm, not every GPS record on an original GPS trace is mapped onto the target route. Therefore, K eff without any GI sanitization is only 876, out of the 1,000 simulated trajectories for the target route. With the GI sanitization, K eff decreases as decreases. K eff can also be calculated in other 3 experiments or in any real-life PP-TPU analysis.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF4": {
+            "text": "Effective number of full trajectory K eff on the target route in Experiment 2",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF5": {
+            "text": "Average total distance in meters (mean \u00b1 SD over 100 repeats) between the sanitized and original trajectories in Experiment 2Fig.",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "Fang Liu is supported by NSF Grant #1717417 and Dong Wang is supported by the China Scholarships Council program (NO. 201906270230). We also thank the editor, associate editor, and four reviewers for their comments and suggestions that helped improve the manuscript.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "ACKNOWLEDGMENTS"
+        }
+    ]
+}

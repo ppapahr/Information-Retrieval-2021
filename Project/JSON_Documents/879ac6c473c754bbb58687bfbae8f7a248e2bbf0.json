@@ -1,0 +1,2558 @@
+{
+    "paper_id": "879ac6c473c754bbb58687bfbae8f7a248e2bbf0",
+    "metadata": {
+        "title": "Mobility and COVID-19 in Andorra: Country-scale analysis of high-resolution mobility patterns and infection spread",
+        "authors": [
+            {
+                "first": "Ronan",
+                "middle": [],
+                "last": "Doorley",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Alex",
+                "middle": [],
+                "last": "Berke",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Ariel",
+                "middle": [],
+                "last": "Noyman",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Luis",
+                "middle": [],
+                "last": "Alonso",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Josep",
+                "middle": [],
+                "last": "Rib\u00f3",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Vanessa",
+                "middle": [],
+                "last": "Arroyo",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Marc",
+                "middle": [],
+                "last": "Pons",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Kent",
+                "middle": [],
+                "last": "Larson",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "In the absence of e\u21b5ective vaccines, non-pharmaceutical interventions, such as mobility restrictions, were globally adopted as critically important strategies for curbing the spread of COVID-19. However, such interventions come with immense social and economic costs and the relative effectiveness of di\u21b5erent mobility restrictions are not well understood. This study analyzed uniquely comprehensive datasets for the entirety of a small country, consisting of serology data, telecoms data, and COVID-19 case reports, in order to examine the relationship between mobility and transmission of COVID-19.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Andorra is a small European country where tourism is a large part of the economy. Stringent mobility restrictions were put in place in Spring 2020. Additionally, 91% of the population participated in a voluntary COVID-19 serology testing programme and those data were made available for this study. Furthermore, high resolution telecoms data for the entire population were available for analysis of mobility and proximity patterns. A set of mobility metrics were developed to indicate levels of crowding, stay-at-home rates, trip-making and contact with tourists. Mobility metrics were compared to infection rates across communities and transmission rate over time.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Several of these metrics were highly correlated with transmission rate, with a lead time of approximately 18 days, with some metrics more highly correlated than others. There was a stronger correlation for measures of crowding and inter-community trip-making, and a weaker correlation for total trips (including intra-community trips) and stay-at-homes rates.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "The rapid spread of the COVID-19 pandemic in 2020, has led to an unprecedented global e\u21b5ort to curb the disease and its resulting mortality and morbidity. As of early 2021, given the lack of e\u21b5ective therapeutics or widely distributed vaccines, Nonpharmaceutical Interventions (NPIs) remain the primary public health strategies for achieving these goals [10, 23] . While several COVID-19 vaccines are being o\u21b5ered to European and global populations in early 2021, it might take significant time for vaccinations to accomplish 'herd immunity' and thereby significantly a\u21b5ect the trajectory of the pandemic. Furthermore, many countries in the developing world will likely not reach adequate levels of vaccination until 2022 or later [37] . It is therefore fair to asses that alongside vaccination e\u21b5orts, NPIs will continue to be an important tool in the fight against COVID-19 for the foreseeable future.",
+            "cite_spans": [
+                {
+                    "start": 354,
+                    "end": 358,
+                    "text": "[10,",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 359,
+                    "end": 362,
+                    "text": "23]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 731,
+                    "end": 735,
+                    "text": "[37]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "During the pandemic, government mandates restricting mobility and economic activity have become widespread in ways that were unimagined only months previously. Economic lockdowns, border closures and mobility restrictions are clearly e\u21b5ective to some degree in curbing transmission of COVID-19 [6] . However, these measures have enormous economic, social and mental health impacts and therefore policy-makers must carefully consider the relative costs and benefits of every policy. Unfortunately, neither the costs nor benefits of NPIs for COVID-19 are well understood due the enormous complexity of the problem in terms of both virology and human dynamics. To further complicate matters, governments have been forced to introduce wide ranges of measures at once, from closing borders to restricting people's radius of movement. This has made it di cult to directly study the impacts of any one intervention on transmission rates.",
+            "cite_spans": [
+                {
+                    "start": 294,
+                    "end": 297,
+                    "text": "[6]",
+                    "ref_id": "BIBREF3"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Until recently, gathering fine grained movement patterns data for large populations of people was nearly impossible [31] . With the advent of GPS-enabled smartphones, most people around the world today are continuously generating data on their mobility patterns. These data are collected and aggregated in several ways: Telecoms companies routinely record histories of device connections to cell towers for billing purposes, and these data can be used to reconstruct individual device trajectories. There are also companies who collect location data from users through Software Development Kits (SDKs) embedded in a set of partner apps [11, 32] . These data can have finer spatial resolution than those collected by telecoms companies due to the use of GPS. However, since they only collect data from users who use specific apps and opt in to having their location data collected, sample sizes are small and there is potential for demographic self-selection bias.",
+            "cite_spans": [
+                {
+                    "start": 116,
+                    "end": 120,
+                    "text": "[31]",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 636,
+                    "end": 640,
+                    "text": "[11,",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 641,
+                    "end": 644,
+                    "text": "32]",
+                    "ref_id": "BIBREF29"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Numerous studies that use mobile phone data to analyze urban mobility and behaviour have been published over the past several years [20, 21, 31] . In the past year, there have also been several studies using telecoms data to study mobility in the context of the COVID-19 pandemic. Some studies only look at how behaviour has changed and do not incorporate data on COVID-19 infections [7, 9, 24, 32] . Other studies build metapopulation compartmental models, which divide the population into smaller communities and assume that transmission within each community is governed by a model such as random mixing, with reduced transmission between communities [25] . Previously, the mixing of communities in these models has been informed by traditional commuting data but recent studies have used O-D matrices and/or visits to POIs inferred from telecoms data [5, 38] . As discussed in [22] , this approach assumes a known model of the exact social-contact pattern of individuals within each origin, destination and/or POI. The sub-communities should therefore be small enough that contact patterns are uniform, and the model for these contact patterns must be realistic. The most commonly assumed model of contact patterns is mass-action, whereby interactions per person are independent of the density of people. However, other studies assume that infection rates in a location are proportional to density of people [12] . There is also variation across recent studies in the size of the area used as sub-communities. The accuracy of such simulation models depend on a good understanding of the influence of density on transmission within communities.",
+            "cite_spans": [
+                {
+                    "start": 132,
+                    "end": 136,
+                    "text": "[20,",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 137,
+                    "end": 140,
+                    "text": "21,",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 141,
+                    "end": 144,
+                    "text": "31]",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 384,
+                    "end": 387,
+                    "text": "[7,",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 388,
+                    "end": 390,
+                    "text": "9,",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 391,
+                    "end": 394,
+                    "text": "24,",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 395,
+                    "end": 398,
+                    "text": "32]",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 654,
+                    "end": 658,
+                    "text": "[25]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 855,
+                    "end": 858,
+                    "text": "[5,",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 859,
+                    "end": 862,
+                    "text": "38]",
+                    "ref_id": null
+                },
+                {
+                    "start": 881,
+                    "end": 885,
+                    "text": "[22]",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 1412,
+                    "end": 1416,
+                    "text": "[12]",
+                    "ref_id": "BIBREF9"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "This study is based in the country of Andorra and explores the relationships between government policies, several inferred mobility metrics and the nature by which COVID-19 spread across the country. More specifically, this work attempts to answer the following questions: How did travel patterns change before, during and after lockdown policies were implemented? Did changes in mobility behaviour and crowding over time correspond to changes in transmission rate over time? Which changes in mobility behavior are most closely correlated with changes in transmission rate?",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The study makes use of telecoms data for all mobile users in the country for a period before and during the government lockdown, allowing for a comprehensive analysis of the population's mobility behaviors over time. Additionally, this study makes use of COVID-19 antibody test results covering over 91% of the population. The combination of full coverage telecoms data and antibodies data provided a unique opportunity to study the spread of COVID-19 in a relatively closed population.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Section 2 provides context for the work by briefly introducing the COVID-19 pandemic in Andorra. The data sources, pre-processing and mobility metrics used in the study are then described in section 3. Section 4 presents analysis and findings about the relationship between mobility and COVID-19 infections in Andorra. The implications of the findings are discussed in section 5, followed by a conclusion. Figure 1 : Andorra is situated between France (north) and Spain (south). It has no airport or train service so the primary means to enter or exit the country is by crossing the French or Spanish borders by car. Highlighted are the main entry routes to the country, as well secondary roads leading to the di\u21b5erent parishes.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 406,
+                    "end": 414,
+                    "text": "Figure 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Introduction"
+        },
+        {
+            "text": "Spain during the pandemic e\u21b5ectively closed the borders of Andorra.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Andorra is small in terms of both geography and population, and derives much of its income from the tourism industry. It has a population of approximately 77,000 people and receives about 8 million visitors during normal seasons [13] . Partly due to Andorra's small size, the government is able to collect and provide comprehensive datasets that contributed to our study. There is one telecoms provider for the entire country, which contributes a comprehensive view of all mobile subscribers who spend any time in Andorra, whether they are Andorran nationals or have foreign SIM cards. Andorra was also able to conduct serology tests for its entire population (91% participation rate). Moreover, Andorra was able to implement swift and comprehensive policy measures at the start of the pandemic. The ability for Andorra to implement new and comprehensive policy changes will likely continue with future developments in the epidemic. On March 2, 2020, the country's first coronavirus case was confirmed. Announcements of lockdown measures beginning on March 13, as well as border closures [14, 30] , soon followed. A list of key dates and policies is given in Table 1 .",
+            "cite_spans": [
+                {
+                    "start": 229,
+                    "end": 233,
+                    "text": "[13]",
+                    "ref_id": null
+                },
+                {
+                    "start": 1088,
+                    "end": 1092,
+                    "text": "[14,",
+                    "ref_id": null
+                },
+                {
+                    "start": 1093,
+                    "end": 1096,
+                    "text": "30]",
+                    "ref_id": "BIBREF27"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1159,
+                    "end": 1166,
+                    "text": "Table 1",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "Introduction"
+        },
+        {
+            "text": "Three primary data sources were used in this study: (i) the results of COVID-19 serology testing in which more than 91% of the population participated, (ii) daily reported COVID-19 case counts for Andorra and (iii) the telecoms data for nearly all subscribers within Andorra. The telecoms data were used to develop and analyze metrics that are indicative of people's mobility and behaviors. The mobility and behavioral metrics include the daily number of entrances to the country, the fraction of the population staying home, the number of people making trips between the country's regions (parishes), and measures of crowding. In addition, serology and reported cases data were used to analyze infection rates and the temporal relationship between infection rates and mobility behaviors. Each of the data sources and the computation of metrics are described in the sub-sections below.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data and Methodology"
+        },
+        {
+            "text": "This analysis uses daily confirmed COVID-19 cases reported from March 1st to October 31st of 2020. This period spans the time from the first reported case in Andorra to the end of the period of mobility metrics used in this study. The data source is the COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University [19] .",
+            "cite_spans": [
+                {
+                    "start": 364,
+                    "end": 368,
+                    "text": "[19]",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Reported Cases Data"
+        },
+        {
+            "text": "The reported cases data are subject to error due to reporting lags and irregular testing periods. In particular, there was an influx of late case reports on June 3rd which were identified through the mass serology testing. These reports were removed for the purposes of temporal analysis because they were not registered at the actual date of testing, and because they resulted from testing 5 All rights reserved. No reuse allowed without permission.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Reported Cases Data"
+        },
+        {
+            "text": "(which was not certified by peer review) is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. Bars and restaurants access is restricted. Oct. 10 -12 Massive entry of Spanish tourists due to Spanish holiday.",
+            "cite_spans": [
+                {
+                    "start": 184,
+                    "end": 190,
+                    "text": "10 -12",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Reported Cases Data"
+        },
+        {
+            "text": "Massive testing strategy to test 40% of the population every week begins. Oct. 26 Restrictions on movement between both the Spanish and French borders. Oct. 28 Restrictions on in-person meetings. Working at home is mandatory if possible. All rights reserved. No reuse allowed without permission.",
+            "cite_spans": [
+                {
+                    "start": 79,
+                    "end": 81,
+                    "text": "26",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 157,
+                    "end": 159,
+                    "text": "28",
+                    "ref_id": "BIBREF24"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Oct. 22"
+        },
+        {
+            "text": "(which was not certified by peer review) is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Oct. 22"
+        },
+        {
+            "text": "The copyright holder for this preprint this version posted February 19, 2021. which was not carried out at other time periods and would therefore bias the temporal analysis. To mitigate reporting irregularities, this analysis smooths the case reports data by averaging over a rolling window of 14 days (see Figure  2 ).",
+            "cite_spans": [
+                {
+                    "start": 59,
+                    "end": 77,
+                    "text": "February 19, 2021.",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 307,
+                    "end": 316,
+                    "text": "Figure  2",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Oct. 22"
+        },
+        {
+            "text": "In May, 2020, the Andorran government launched a campaign to provide voluntary serology testing for its entire population. As shown in Figure 2 , during this period and the preceding weeks, the cumulative case count was relatively flat, implying that the number of people with either current or prior infections remained stable during this period. Participants were tested for presence of both IgM and IgG antibodies twice, with two weeks between each round of testing. 91% of the population completed the first round of testing and 86% completed the second round. The test data were annonymised, so that individual-level analysis of risk was not possible. However, the data included additional variables, including parish of residence and residency status, allowing group infection rates to be compared. Livzon IgM/IgG Diagnostic Kits were used [29] . All such screenings are subject to some level of error, both false positives and false negatives. Independent testing of the kits had previously been carried out to establish the sensitivity and specificity of the tests. Maximum likelihood estimation was used to estimate the actual number of people with current or previous infections, accounting for sensitivity and specificity [35] , as shown in equation 1 below. Having estimated the overall prevalence, the probability of every individual having a current or previous infection was calculated using Bayes' Rule as shown in equation 2.",
+            "cite_spans": [
+                {
+                    "start": 846,
+                    "end": 850,
+                    "text": "[29]",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 1233,
+                    "end": 1237,
+                    "text": "[35]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 135,
+                    "end": 143,
+                    "text": "Figure 2",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Serology Data"
+        },
+        {
+            "text": "Where n T = number of positive tests N = size of the population D = actually has a current or previous infection T = tested positive for IgG and/or IgM antibodies se = combined sensitivity of the test for IgG and/or IgM sp = combined specificity of the test for IgG and/or IgM 7 All rights reserved. No reuse allowed without permission.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Serology Data"
+        },
+        {
+            "text": "(which was not certified by peer review) is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Serology Data"
+        },
+        {
+            "text": "For this study, telecoms data were provided by Andorra Telecom (AT). Since AT is the sole telecoms provider in Andorra, the data cover all mobile subscribers in the country, unlike most telecoms datsets where the market is fragmented. Each observation in the AT data includes a unique ID for the subscriber, a timestamp, the coordinates of the device at the time of the update, and nationality for the subscriber's home network. The coordinates are given in the standard WGS84 system and estimated by AT to be accurate to within 25-100m in urban areas. AT utilizes enhanced triangulation using the angle, time and RSS received by the device from di\u21b5erent base-stations as well as error mitigation using a proprietary algorithm. The AT data have been further described in [20, 31] . In order to comply with data protection policies, the telecoms data were anonymised and only used to compute metrics which contained no identifying information. Any attributes associated with metrics, such as parish of residence, represent groups of several thousand people at least.",
+            "cite_spans": [
+                {
+                    "start": 771,
+                    "end": 775,
+                    "text": "[20,",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 776,
+                    "end": 779,
+                    "text": "31]",
+                    "ref_id": "BIBREF28"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Telecoms Data"
+        },
+        {
+            "text": "This study used data from March 2019 to June 2019 and January 2020 to October 2020, from both the 3G and 4G networks. Data recorded by AT were missing or incomplete in periods of the study (February 14 -March 1, June 28 -June 29, July 21 -July 27, and October 1 -October 6, 2020). These gaps resulted in missing values in the computed mobility metrics, and are displayed as gaps in the time series plots of these metrics.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Telecoms Data"
+        },
+        {
+            "text": "In 2020, the population of Andorra was approximately 77,000 people [18] . During the period of January through October 2020, a total of 1,288,799 unique subscriber IDs were observed in the AT data. The vast majority of these subscribers were tourists who entered the country with both Andorrans and international SIM cards. As described below, the data for all subscribers were pre-processed in order to identify stay-points, home parishes, days present in Andorra and residency status.",
+            "cite_spans": [
+                {
+                    "start": 67,
+                    "end": 71,
+                    "text": "[18]",
+                    "ref_id": "BIBREF14"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Pre-Processing"
+        },
+        {
+            "text": "To reduce noise, and increase the probability of actual location, the series of location observations for each subscriber was reduced to a series of stay-points of 10 minutes or more within a radius of 200m or less. The stay-point extraction algorithm of Li et al. (2008) [28] was used for this purpose. In order to compute daily mobility metrics across all people present in the country, it was necessary to know which people were present on any day. Some devices were found to be unobserved in the data for several days, even during the full government lockdown. This may be due to a combination of inactivity, lack of telecoms reception in certain areas, and/or noisy data. It was assumed that gaps in data of two weeks or more represented true absence from the country. The beginnings and endings of periods of presence were counted as entrances to and departures from the country respectively.",
+            "cite_spans": [
+                {
+                    "start": 255,
+                    "end": 271,
+                    "text": "Li et al. (2008)",
+                    "ref_id": null
+                },
+                {
+                    "start": 272,
+                    "end": 276,
+                    "text": "[28]",
+                    "ref_id": "BIBREF24"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Pre-Processing"
+        },
+        {
+            "text": "By observing the distribution of total number of days present across all subscribers, it was found that the majority of subscribers were present fewer than 8 All rights reserved. No reuse allowed without permission.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Pre-Processing"
+        },
+        {
+            "text": "(which was not certified by peer review) is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Pre-Processing"
+        },
+        {
+            "text": "The copyright holder for this preprint this version posted February 19, 2021. ;  50 days. The rest of the subscribers were present for a significantly greater number of days. 50 days of presence in Andorra was therefore considered as an appropriate cuto\u21b5 for identifying tourists (see Figure 7 .14 in the Supplementary Material). Further analysis uses this categorization of tourists versus non-tourists.",
+            "cite_spans": [
+                {
+                    "start": 59,
+                    "end": 79,
+                    "text": "February 19, 2021. ;",
+                    "ref_id": null
+                },
+                {
+                    "start": 80,
+                    "end": 80,
+                    "text": "",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 285,
+                    "end": 293,
+                    "text": "Figure 7",
+                    "ref_id": "FIGREF3"
+                }
+            ],
+            "section": "Pre-Processing"
+        },
+        {
+            "text": "Home parishes Home parishes were inferred for each subscriber on a monthly basis, since some residents of Andorra moved during the periods of study and since the tourist population fluctuated. To infer home parish, each stay-point first was assigned to the parish in which it was contained. Each subscriber's home parish was then determined to be the parish in which they spent the most cumulative time during night-time hours (12:00am to 6:00am). This method is similar to those employed in related studies of human mobility that use cellular data [15, 26, 32, 33] . To evaluate the representativeness of the telecoms data and this methodology, the distribution of home parishes inferred for subscribers was compared to the projected 2020 population statistics published by the Andorran government [18] . This evaluation used AT data from May, 2020 and was restricted to the subscribers using Andorra as their home network, and that the pre-processing stage categorized as non-tourists. The month of May was used because it was the last month of the lockdown before the country reopened its borders. These data restrictions were made in order to more likely capture the permanent residents of Andorra for a better comparison to the published population statistics. The Pearson correlation coe cient between the parish-level populations inferred from this analysis and the published population statistics is 0.959, suggesting that the telecoms data is highly representative of the true population (see Figure 3 ).",
+            "cite_spans": [
+                {
+                    "start": 549,
+                    "end": 553,
+                    "text": "[15,",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 554,
+                    "end": 557,
+                    "text": "26,",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 558,
+                    "end": 561,
+                    "text": "32,",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 562,
+                    "end": 565,
+                    "text": "33]",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 799,
+                    "end": 803,
+                    "text": "[18]",
+                    "ref_id": "BIBREF14"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1502,
+                    "end": 1510,
+                    "text": "Figure 3",
+                    "ref_id": null
+                }
+            ],
+            "section": "Pre-Processing"
+        },
+        {
+            "text": "A number of key mobility metrics were computed based on the AT data and used for this report. The metrics are described below.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Mobility Metrics"
+        },
+        {
+            "text": "Stay-at-Home Rates Advising people to stay at home as much as possible is widely recognised as an e\u21b5ective policy for reducing transmission of infection. The stay-at-home rate for a parish on a given day was defined as the number of residents of that parish present and staying home divided by the total number of people present. A person was assumed to have stayed at home if they had at most one stay-point in their own parish and no stay points in other parishes. This assumes that anyone making a trip would have recorded at least two staypoints as they moved between cell coverage areas.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Mobility Metrics"
+        },
+        {
+            "text": "Trips One purpose of lockdown policies was to reduce the population's mobility, and the risk of a mobile population potentially carrying disease between places they go. The population's mobility may be coarsely viewed by its trips between places. This analysis uses the number of total daily trips as well as the Figure 3 : The parish-level populations inferred from the telecoms data for May 2020 were compared to the published 2020 population statistics [18] . There is a Pearson correlation coe cient of 0.959, suggesting that the telecoms data is highly representative of the true population.",
+            "cite_spans": [
+                {
+                    "start": 456,
+                    "end": 460,
+                    "text": "[18]",
+                    "ref_id": "BIBREF14"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 313,
+                    "end": 321,
+                    "text": "Figure 3",
+                    "ref_id": null
+                }
+            ],
+            "section": "Mobility Metrics"
+        },
+        {
+            "text": "daily number of trips between parishes. Trips between parishes may be more indicative of when people make larger trips outside their community and so may also be associated with higher risk. This analysis further uses the daily number of distinct subscribers present in Andorra who are making any trips, as well as those making trips between parishes.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Mobility Metrics"
+        },
+        {
+            "text": "Daily trips for subscribers are counted as their daily number of stay points minus 1, since a new stay point is recorded when a subscriber moves beyond a 200m radius. Trips between parishes are counted when consecutive stay points occur in di\u21b5erent parishes.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Mobility Metrics"
+        },
+        {
+            "text": "Interaction Potential Dense crowds of people create high potential for human interaction and therefore transmission. Indoor crowding involves the additional risk of aerosol transmission even when e\u21b5orts are made to social distance. As a proxy for such crowding, interaction potential was defined as follows. The time period and study region were first divided into discrete spatio-temporal intervals. H3 cells of resolution 11 [1] were used as the geographic intervals. At this resolution, the H3 cells have an approximate diameter of 50m [4] which roughly corresponds to the resolution of the telecoms data in urban areas. Time was divided in 20 minute intervals. In every spatio-temporal interval, the number of potential interactions was counted as the number of unique person pairs in the interval. This is illustrated in Figure 4 . The interactions were further subdivided by the home parishes and/or residence status of the people. Additionally, a distinction was made between indoor interaction potential and outdoor in-teraction potential based on the percentage of indoor and outdoor area in the H3 cell. These percentages were calculated using the Global Human Settlement Layers (GHSL) [16] . The interaction potential metrics can be defined as below: Unique person-to-person interactions per day were also quantified. The daily person-to-person interaction graph, G d was defined as follows. A node was created for every person present in the country that day. A pair of nodes was linked if those two people had been co-located in one or more spatio-temporal intervals during that day. The degree of each node was defined as the number of Daily Contacts of the corresponding person.",
+            "cite_spans": [
+                {
+                    "start": 539,
+                    "end": 542,
+                    "text": "[4]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 1196,
+                    "end": 1200,
+                    "text": "[16]",
+                    "ref_id": "BIBREF12"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 826,
+                    "end": 834,
+                    "text": "Figure 4",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "Mobility Metrics"
+        },
+        {
+            "text": "All rights reserved. No reuse allowed without permission.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "11"
+        },
+        {
+            "text": "(which was not certified by peer review) is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "11"
+        },
+        {
+            "text": "In the first round of serology testing, IgM and IgG antibodies were detected in 9.6% of participants. In the second round of testing, this fell to 8%. In addition, participation rates fell from 91% to 86% between rounds. The reduction in antibody detection suggests that the antibodies fell below the detection limit rapidly. For this reason, as well as the reduction in test participation, the first round results alone were considered as a better indicator of overall exposure, while still being conservative. Using the maximum likelihood estimation formula of equation 1, the overall infection rate was estimated to be 11%. By comparing the number of reported cases before May 1st to the inferred number of infections, it was estimated that just 1 in 11 cases of COVID-19 were recorded in o cial statistics before this date.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Infections"
+        },
+        {
+            "text": "The probabilities of each individual having a current or prior infection during the first round were then calculated using Bayes' Rule as described in equation 2. These probabilities were then averaged across residence parishes and residency status to estimate the percentage of infections in each group. Note that the adjacent parishes of Andorra La Vella and Escaldes-Engordany were combined for the serology analysis. This was done on the advice of Andorran o cials because the two parishes comprise a single urban area and were sometimes interchanged in the address field of the serology data. The populations and infection rates in each parish are shown in Table 2 . The overall infection rate for temporary workers was estimated to be 14% compared to 11% for ordinary 12 All rights reserved. No reuse allowed without permission.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 662,
+                    "end": 669,
+                    "text": "Table 2",
+                    "ref_id": "TABREF5"
+                }
+            ],
+            "section": "Infections"
+        },
+        {
+            "text": "(which was not certified by peer review) is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Infections"
+        },
+        {
+            "text": "The copyright holder for this preprint this version posted February 19, 2021. ;  residents. La Massanna was the parish with the highest overall infection rate of 14% compared to the lowest rate of 9% in Andorra la Vella. In order to determine whether the di\u21b5erences in infection rate across temporary status and parish of residence were significant, chi squared tests were performed. It was found that both temporary status and parish of residence were significantly associated with infection rate (p<1e-5).",
+            "cite_spans": [
+                {
+                    "start": 59,
+                    "end": 79,
+                    "text": "February 19, 2021. ;",
+                    "ref_id": null
+                },
+                {
+                    "start": 80,
+                    "end": 80,
+                    "text": "",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Infections"
+        },
+        {
+            "text": "Participants ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Parish"
+        },
+        {
+            "text": "The mobility of the population is reported on in several phases. Firstly, in order to understand the initial outbreak, mobility patterns during January and February 2020 were analysed with an emphasis on tourists. Mobility patterns from March onward were then analyzed in order to assess how the population responded to the pandemic and to government policies. The distribution of mobility behaviours is also analyzed in order to explore whether highly active people and events may have disproportionately contributed to transmission risk. The evolution of mobility behaviour over time is then compared to the transmission rate during this period.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Mobility"
+        },
+        {
+            "text": "The pre-outbreak analysis was focused on the period from January 1st to February 14th, 2020. Unfortunately, the telecoms data for the last 2 weeks of February were unavailable. The first recorded case of COVID-19 in Andorra was on March 2. January and February are part of the ski season in Andorra and ski resorts were identified as high risk environments for the spread of COVID-19 in Europe [2, 3, 17] . Mobility of tourists and contact with tourists were therefore key considerations. The largest number of tourists during this period (45%) were found to have stayed in the parish of Canillo. In order to more directly assess the level of interactions between tourists and residents of each parish, people were categorised as either a resident of one of the seven parishes or as a tourist. Tourists were further categorised as Spanish, French or Other based on their their home network. The average Daily Cross Interaction Potential 13 All rights reserved. No reuse allowed without permission.",
+            "cite_spans": [
+                {
+                    "start": 394,
+                    "end": 397,
+                    "text": "[2,",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 398,
+                    "end": 400,
+                    "text": "3,",
+                    "ref_id": null
+                },
+                {
+                    "start": 401,
+                    "end": 404,
+                    "text": "17]",
+                    "ref_id": "BIBREF13"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Tourism before Outbreak"
+        },
+        {
+            "text": "(which was not certified by peer review) is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Tourism before Outbreak"
+        },
+        {
+            "text": "The copyright holder for this preprint this version posted February 19, 2021. ; Figure 5 : Average Daily Cross Interaction Potential (DCIP) between residents of each parish and tourists by country of origin. The value of row i, column j corresponds to the DCIP between groups i and j, normalised by the population of group i. between each of these 10 groups was computed as described in section 3.3.2. As shown in Figure 5 , the potential for interaction with tourists was much higher for residents of Canillo than for any other parish.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 80,
+                    "end": 88,
+                    "text": "Figure 5",
+                    "ref_id": null
+                },
+                {
+                    "start": 414,
+                    "end": 422,
+                    "text": "Figure 5",
+                    "ref_id": null
+                }
+            ],
+            "section": "Tourism before Outbreak"
+        },
+        {
+            "text": "Throughout the pre-lockdown and lockdown periods, entrances into and departures from the country corresponded with border restrictions. As shown in Figure 6 , this behavior di\u21b5ered by residency status. As expected, the initial lockdown policies that began March 13th, and the border closures by neighbor-14 All rights reserved. No reuse allowed without permission.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 148,
+                    "end": 156,
+                    "text": "Figure 6",
+                    "ref_id": null
+                }
+            ],
+            "section": "Entrances and Departures"
+        },
+        {
+            "text": "(which was not certified by peer review) is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Entrances and Departures"
+        },
+        {
+            "text": "The copyright holder for this preprint this version posted February 19, 2021. ; Figure 6 : Daily presence, entrances, and departures inferred from telecoms data, by residency status (tourists versus non-tourists). There were gaps in the available telecoms data during the study (February 14 -March 1, June 28 -June 29, July 21 -July 27, and October 1 -October 6, 2020). These data gaps resulted in missing values in the computed mobility metrics, and are displayed as gaps in the time series plots of these metrics. The gaps also resulted in spikes in inferred departures and entrances directly before and after the gaps, respectively. 15 All rights reserved. No reuse allowed without permission.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 80,
+                    "end": 88,
+                    "text": "Figure 6",
+                    "ref_id": null
+                }
+            ],
+            "section": "Entrances and Departures"
+        },
+        {
+            "text": "(which was not certified by peer review) is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. ing countries, led to mass departures from Andorra. This is observed in the telecoms data as a large drop-o\u21b5 in the number of subscribers present in mid-March. Many of these subscribers were tourists, and some may also have been temporary workers. The population was relatively stable between mid March and the end of May while lockdown was in e\u21b5ect and serology testing was carried out. In early May, there was a small surge of non-tourists arriving to the country and towards the end of May, there was a small surge of non-tourists leaving the country. This is shown in Figure 6 . These observations may reflect people arriving in order to participate in serology testing as well as leaving the country after receiving one or both test results. Further analysis found that the surge in departures by non-tourists at the end of May was driven by people who did not return to the country.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 708,
+                    "end": 716,
+                    "text": "Figure 6",
+                    "ref_id": null
+                }
+            ],
+            "section": "Entrances and Departures"
+        },
+        {
+            "text": "On June 1st, the lockdown in Andorra was lifted and both tourists and nontourists immediately began to enter the country again. Initially, the tourists were mostly French, followed by an influx of Spanish tourists later in June, corresponding to the reopening of Spanish borders on June 21st. There was a spike in departures by non-tourists in the second weekend of July (July 9 saw over 3100 departures), corresponding to the weekend at the start of the common holiday period of Andorrans.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Entrances and Departures"
+        },
+        {
+            "text": "Daily mobility metrics were computed by parish in order to explore whether there were any di\u21b5erences in mobility behaviours or adherence to social distancing policies by parish and whether such di\u21b5erences corresponded to di\u21b5erences in infection rates by parish.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Lockdown Mobility Behaviour by Parish"
+        },
+        {
+            "text": "Andorra's parishes di\u21b5er in the extent to which the number of people within them are tourists in a normal year. The di\u21b5erences in their population characteristics elicit di\u21b5erences in their mobility behaviors. Di\u21b5erences in their tourism populations are displayed in Figure 7 . It shows the daily number of Andorran and non-Andorran subscribers reporting stays in each parish, comparing 2019, a normal tourism year, to the same period in 2020. In a normal tourism season, the populations of some smaller parishes, such as Canillo, are primarily non-Andorran. A mass departure by non-Andorran subscribers can be seen at the start of the lockdown in mid March 2020. In a normal year there would have been spikes in the non-Andorran tourist population throughout the spring, particularly on weekends. This influx of tourism did not occur in 2020, as it was prohibited by border restrictions that did not subside until June 1st.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 267,
+                    "end": 275,
+                    "text": "Figure 7",
+                    "ref_id": "FIGREF3"
+                }
+            ],
+            "section": "Lockdown Mobility Behaviour by Parish"
+        },
+        {
+            "text": "The parishes di\u21b5ered in the extent to which their residents stayed at home during the lockdown, as shown in Figure 8 . All parishes exhibit a similar trend with a sharp increase in the portion of people staying home at the start of the most restrictive lockdown measures in mid March. There is then a gradual drop o\u21b5 as lockdown policies were relaxed. At the start of the lockdown period, there were two distinct clusters of parishes in terms of the average stay-at-home rate: Andorra la Vella, Canillo, and Sant Juli\u00e0 de L\u00f2ria exhibited the highest portion of users staying home. However, this di\u21b5erence gradually diminished as the months continued.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 108,
+                    "end": 116,
+                    "text": "Figure 8",
+                    "ref_id": "FIGREF4"
+                }
+            ],
+            "section": "Lockdown Mobility Behaviour by Parish"
+        },
+        {
+            "text": "The above described stay-at-home rate is normalised by parish population. In general, without normalisation, the mobility metrics are dominated by the most populous parishes, such as Andorra la Vella and Escaldes-Engordany. For example, the most populous parishes see the most trips in and out of them, as shown in Figure 9 . The trends in mobility behaviour di\u21b5ered across parishes, possibly due to di\u21b5erences in tourism or other economic factors.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 315,
+                    "end": 323,
+                    "text": "Figure 9",
+                    "ref_id": "FIGREF5"
+                }
+            ],
+            "section": "Lockdown Mobility Behaviour by Parish"
+        },
+        {
+            "text": "The distributions of mobility behaviours were analyzed in order to determine the extent to which potentially risky mobility behaviours were dominated by relatively small numbers of people and events. This would be the case if the distributions of the mobility metrics had high positive skew or \"fat-tails\". This concept is closely related to the Pareto Principle or 80/20 rule, the observation that in many real-world phenomena, 80% of the consequences come from 20% of the causes [34] . Quantities such as the number of people a person comes into contact with in a day, or the number of interactions which occur at an event can vary widely and may show such positive skew.",
+            "cite_spans": [
+                {
+                    "start": 481,
+                    "end": 485,
+                    "text": "[34]",
+                    "ref_id": "BIBREF31"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Distributions of Interaction Potential"
+        },
+        {
+            "text": "In order to evaluate how evenly or unevenly interaction potential was distributed across people, and how this changed over time, the daily contact graphs described in section 3.3.2 were used. The distributions of Daily Contacts were evaluated for a sample of 3 days in each month from March 2020 to October 2020 (the first available Monday-Wednesday period) in order to smooth out unusual behaviours on any one day. As shown in Figure 10 , the distribution of number of connections per individual had a high positive skew in every period considered. Contacts were highest in March (before the lockdown) and lowest in April. For each month, the individuals were then ranked by their Daily Contacts and the top 20% of users were removed from the daily interaction graphs. It was found that by removing these top 20% most active people in each month, 18 All rights reserved. No reuse allowed without permission.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 428,
+                    "end": 437,
+                    "text": "Figure 10",
+                    "ref_id": "FIGREF6"
+                }
+            ],
+            "section": "Distributions of Interaction Potential"
+        },
+        {
+            "text": "(which was not certified by peer review) is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Distributions of Interaction Potential"
+        },
+        {
+            "text": "The copyright holder for this preprint this version posted February 19, 2021. ;  between 78% (May) and 85% (August) of the connections were eliminated.",
+            "cite_spans": [
+                {
+                    "start": 59,
+                    "end": 79,
+                    "text": "February 19, 2021. ;",
+                    "ref_id": null
+                },
+                {
+                    "start": 80,
+                    "end": 80,
+                    "text": "",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Distributions of Interaction Potential"
+        },
+        {
+            "text": "In order to evaluate the contribution of potential super-spreader events, an event was defined as any spatio-temporal interval between March and October 2020 where at least 2 people were co-located, as defined in section 3.3.2. The distribution of events sizes was evaluated for each month. As shown in Figure  10 , the number of people-per event showed high positive skew in each month. The distribution of event sizes contracted significantly in April and to a lesser extend in May and October. The interaction potential, IP tj , for every event was computed as described in section 3.3.2 and it was found that the top 20% of events across the whole period were responsible for 96% of all interaction potential. (which was not certified by peer review) is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 303,
+                    "end": 313,
+                    "text": "Figure  10",
+                    "ref_id": "FIGREF6"
+                }
+            ],
+            "section": "Distributions of Interaction Potential"
+        },
+        {
+            "text": "The transmission rate of an infectious disease, can be simply defined as the average number of people an infected person would infect per unit time, if everyone they met were susceptible [8] . This metric can serve as a decent proxy for risky behaviours in a population. In standard SIR modelling, the rate of occurrence of new cases is equal to the product of the transmission rate, the number of currently infectious people and the fraction of the population who are still susceptible [25] .",
+            "cite_spans": [
+                {
+                    "start": 187,
+                    "end": 190,
+                    "text": "[8]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 487,
+                    "end": 491,
+                    "text": "[25]",
+                    "ref_id": "BIBREF21"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Transmission Rate"
+        },
+        {
+            "text": "Therefore, a simple proxy for the transmission rate per day can be estimated by normalising the new infections per day by the number of currently infectious people and by the fraction of the population who are susceptible. A common approach to estimate this metric is to take the log case growth over a suitable period, such as 2 weeks [36] . In this study, the availability of an estimated reporting factor and the number of people present in the country on each day allowed for normalisation by a real-time estimated susceptible fraction. Note that the assumption of a constant reporting rate may have led to an overestimation of the susceptible population in the latter part of the study period. The rest of this subsection describes the calculation of the susceptible-normalised log case growth.",
+            "cite_spans": [
+                {
+                    "start": 336,
+                    "end": 340,
+                    "text": "[36]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Transmission Rate"
+        },
+        {
+            "text": "In order to smooth out stochastic variations in case reporting, 14 day rolling averages of new case reports, c(t), and cumulative case reports, cc(t), were taken. The population present on any day, n(t), was estimated as described in section 3.3.1. A reporting rate, \u21e2, of 1 11 was estimated as described in section 4.1. The susceptible fraction of the population, S, was estimated as in equation 4:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Transmission Rate"
+        },
+        {
+            "text": "This estimate considers cumulative cases as the recovered population ('R' in SIR), with the naive assumption that infected people do not leave the country.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Transmission Rate"
+        },
+        {
+            "text": "The susceptible-normalised new cases per day, C, were then estimated as in equation 5:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Transmission Rate"
+        },
+        {
+            "text": "The following analysis uses the log of the growth in daily new cases, LCG, estimated as the relative change in the susceptible-normalised new cases since the 14 days prior (equation 6). (which was not certified by peer review) is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Transmission Rate"
+        },
+        {
+            "text": "The copyright holder for this preprint this version posted February 19, 2021. ;  calculation of LCG. Due to many days of zero cases between March and May, the LCG shows some volatility and undefined values.",
+            "cite_spans": [
+                {
+                    "start": 59,
+                    "end": 79,
+                    "text": "February 19, 2021. ;",
+                    "ref_id": null
+                },
+                {
+                    "start": 80,
+                    "end": 80,
+                    "text": "",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Transmission Rate"
+        },
+        {
+            "text": "Eight mobility metrics, shown in Figure 11 , were compared to the LCG(t) over time. The mobility metrics all follow a broadly similar trend over time. They drop o\u21b5 sharply during March and remain close to their minimum levels throughout April. During May, the mobility metrics gradually increase, corresponding with a gradual relaxation of policies, or adherence to those policies. The five metrics related to trip making in Figure 11 ((i) the number of subscribers making trips between parishes, (ii) the number of trips between parishes, (iii) the portion of subscribers not staying home, (iv) the number of subscribers not staying home, (v) total trips) remain relatively steady after June at levels slightly lower than their peak in March. The indoor and outdoor interaction potential in Figure 11 appear to track one another very closely throughout the period of March to mid-September but after mid-September, these apparent trends diverge as indoor interactions increase while outdoor interactions decrease. This is likely due to crowded events moving indoors during the colder months. Entrances to the country, shown in Figure 11 increase throughout the summer, peaking in late August before decreasing.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 33,
+                    "end": 42,
+                    "text": "Figure 11",
+                    "ref_id": null
+                },
+                {
+                    "start": 425,
+                    "end": 434,
+                    "text": "Figure 11",
+                    "ref_id": null
+                },
+                {
+                    "start": 792,
+                    "end": 801,
+                    "text": "Figure 11",
+                    "ref_id": null
+                },
+                {
+                    "start": 1128,
+                    "end": 1137,
+                    "text": "Figure 11",
+                    "ref_id": null
+                }
+            ],
+            "section": "Mobility Metrics"
+        },
+        {
+            "text": "For any mobility metrics that are correlated with transmission rate, a lag should be expected between changes in these mobility metrics and changes in case growth. If mobility behaviours are responsible for infections, then the mobility metrics would be expected to lead infections by some period. The incubation period for COVID-19 can range up to 14 days [27] and there may be further delays between symptom onset, testing and reporting of results. On the other hand, if people restrict their mobility behaviours in response to changes in the rate of reported infections, then the infections would lead the mobility metrics by some period. For each metric, it is unknown a priori whether mobility leads infections, infections lead mobility, or both. In order to address this question, the time series data for daily mobility metrics were compared to the daily LCG time series with a range of lag times. The lag times ranged from -30 to 30 days, where a lag of -30 days corresponds with the mobility metrics leading the LCG time series by 30 days, and a lag of 30 days corresponds with the LCG leading the mobility metrics time series by 30 days. The Spearman's Rank Correlation Coe cient was computed at every lag value. The Spearman's Coe cient was deemed to be more appropriate than the Pearson's Coe cient because it can identify monotonic relationships which are not necessarily linear.",
+            "cite_spans": [
+                {
+                    "start": 357,
+                    "end": 361,
+                    "text": "[27]",
+                    "ref_id": "BIBREF23"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Correlations between transmission rate and mobility metrics"
+        },
+        {
+            "text": "As shown in Figure 12 , several correlation patterns with transmission rate are present across the 8 mobility metrics considered. Figure 12 (A) shows 4 mobility metrics which are highly correlated with transmission rate, leading by 2-3 weeks. This suggests that when the behaviors associated with these mobility metrics Figure 11 : The time series for 8 mobility metrics are plotted ((i) indoor interaction potential, (ii) outdoor interaction potential, (iii) number of subscribers making trips between parishes, (iv) total trips between parishes, (v) portion of subscribers not staying home normalised by population, (vi) number of subscribers not staying home, (vii) total trips, (viii) country entrances). The time series for the estimated log case growth (LCG), shifted by a lag of -18 days is superimposed on the mobility metrics plots to better display the correlations between mobility and transmission rates. Changes in LCG are expected to lag behind changes in the mobility behaviors that a\u21b5ect transmission rate. The most notable correlation is between LCG and the indoor interaction potential metric (i).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 12,
+                    "end": 21,
+                    "text": "Figure 12",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 130,
+                    "end": 139,
+                    "text": "Figure 12",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 320,
+                    "end": 329,
+                    "text": "Figure 11",
+                    "ref_id": null
+                }
+            ],
+            "section": "Correlations between transmission rate and mobility metrics"
+        },
+        {
+            "text": "All rights reserved. No reuse allowed without permission.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "22"
+        },
+        {
+            "text": "(which was not certified by peer review) is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "22"
+        },
+        {
+            "text": "The copyright holder for this preprint this version posted February 19, 2021. ; Figure 12 : Correlations between the daily mobility metrics and log case growth (LCG) time series, for lags ranging from -30 to 30 days. Negative lag values correspond with the LCG time series shifted to lag behind the mobility metrics time series. e.g. At a lag of -30 days, mobility at day (t-30) is compared to LCG at day t, while a lag of (positive) 30 days measures the relationship between mobility metrics at day (t+30) and LCG at day t. change, transmission rates respond about 15-20 days later. Conversely, there is no evidence that these metrics increase or decrease in response to changes in transmission rate, as there is a small negative correlation between these mobility metrics and transmission rate when mobility metrics lag LCG. Figure 12 (B) shows 3 metrics which exhibit the same correlation trends as (A), but with slightly weaker correlation values. Again, these metrics are positively correlated with transmission with a lead of 2-3 weeks, and also moderately negatively correlated with transmission rate, with a lag of about 2-3 weeks. This suggests that (i) when these mobility behaviours increase, there is a moderate increase in transmission rate 2-3 weeks later and (ii) when the transmission rate increases, there is a moderate decrease in the mobility behaviours 2-3 weeks later. Figure  12 (C) shows that new entrances to the country seem to be highly correlated with infection rate, with a lead of 30 days. However, the correlation remains positive when changes in entrances lag LCG, making the relationship between country entrances and transmission less clear. Lead times greater than 30 days were not explored in this study because relationships between mobility and transmission rate at greater lead times would be less plausible. Table 3 in the Supplementary Material shows the numeric list of all correlation values between each mobility metric and LCG at each lag ranging from -30 to 30 days.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 80,
+                    "end": 89,
+                    "text": "Figure 12",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 827,
+                    "end": 836,
+                    "text": "Figure 12",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 1390,
+                    "end": 1400,
+                    "text": "Figure  12",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 1847,
+                    "end": 1854,
+                    "text": "Table 3",
+                    "ref_id": null
+                }
+            ],
+            "section": "22"
+        },
+        {
+            "text": "The results of this analysis have highlighted a number of key insights about the nature of the spread of COVID-19 infection in Andorra. These insights and their potential policy implications are discussed in this section.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Early in the COVID-19 pandemic, some of the most high-profile hotspots were European ski destinations and other areas which experienced high levels of international tourism. At the start of 2020, Andorra experienced a relatively normal ski season. This quickly transitioned in March to an economic lockdown, with border closures through the end of May. It therefore might have been expected that the areas with highest infection rates in May would be those where the most tourists had visited and interacted with residents before the lockdown. However, in this study it has been shown that there was no correlation between tourist contact and the COVID-19 exposure rates across Andorran parishes as measured in May 2020. In particular, the parish of Canillo accommodated 45% of tourists in February and residents of Canillo had a higher potential for interacting with tourists than residents of any other parish. Despite this, 3 of the 5 other parishes considered had an equal or higher infection rate. These findings suggest that, while tourists likely imported Andorra's initial COVID-19 cases, subsequent geographical mixing quickly spread the infection to less touristic areas, even as the country was in full lockdown.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Tourism"
+        },
+        {
+            "text": "Exposures to COVID-19 were distributed across the parishes of Andorra in a way that was unrelated to tourism or measured mobility behaviours. Possible reasons for this are that (i) the spatial resolution of data was coarse (7 parishes), there may have been unobserved socio-demographic di\u21b5erences between parishes which led to di\u21b5erences in infection rate or (iii) there was su cient mixing across parish populations that the e\u21b5ects of di\u21b5erences in behavior did not last.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Social Distancing and Mobility Behaviour"
+        },
+        {
+            "text": "Changes in the infection transmission rate over time were closely related to changes in mobility behaviours of the population over time. Specifically, it was found that mobility metrics related to crowding and trips between parishes were highly correlated with infection rates 2-3 weeks later. Conversely, measures of overall trip making (including intra-parish travel) were only moderately correlated with later infection rates. Furthermore, the phenomenon most highly correlated with subsequent infection rates -interaction potential -was shown to be a fat-tailed phenomenon dominated by a small number of people and events. Finally, some measures of stay-at-home rates and total trip making could be seen to reduce in response to high infection rates, which may have been due to policy responses or to individual volition.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Social Distancing and Mobility Behaviour"
+        },
+        {
+            "text": "These findings suggest that, in order to reduce transmission rates, policies should focus on encouraging people to remain distributed in their own home communities, thereby preventing both inter-community transmission and crowding. Furthermore, the events which draw the highest density of crowds should be identified and discouraged. On the other hand, policies which aim to reduce mobility across the board, are likely to be less e\u21b5ective and have higher social and economic costs. For example, between April 19th and May 13th in Andorra, outdoor exercise was restricted to a 1km radius for 1 hour every second day. Such measures would have likely reduced intra-parish outdoor trips while having little impact on the most relevant metrics like inter-parish trips and crowded indoor events.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Social Distancing and Mobility Behaviour"
+        },
+        {
+            "text": "The finding that trips between communities were correlated with transmission rate has important implications for simulating the transmission of respiratory diseases since many studies use areas significantly larger than the state of Andorra as the sub-populations. Also, the fact that interaction potential was highly correlated with transmission rate shows that the density with which people crowd together is an important determinant of transmission rate and therefore, the common assumption of mass-action (as discussed in section 1) is unrealistic for models of human respiratory disease spread.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Social Distancing and Mobility Behaviour"
+        },
+        {
+            "text": "The combination of population serology testing and telecoms data for all of Andorra provided a uniquely comprehensive dataset to study the progression of the pandemic in an entire country. However, the serology testing only occurred during a single period in May, 2020 and so the analysis of temporal trends in transmission rate were based on the public case report data. The fraction 25 All rights reserved. No reuse allowed without permission.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Collection and Accuracy"
+        },
+        {
+            "text": "(which was not certified by peer review) is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Collection and Accuracy"
+        },
+        {
+            "text": "The copyright holder for this preprint this version posted February 19, 2021. ;  of true cases represented by these reports could not be precisely known. The combination of the serology data and case reports allowed estimation of this reporting factor for the period up to the start of May. However it is likely that the reporting rate subsequently changed with new testing procedures and policies, and as people entered and left the country. The problem of underreporting is not unique to this study and in many studies there is no accounting for under-reporting as no serology data are available.",
+            "cite_spans": [
+                {
+                    "start": 59,
+                    "end": 79,
+                    "text": "February 19, 2021. ;",
+                    "ref_id": null
+                },
+                {
+                    "start": 80,
+                    "end": 80,
+                    "text": "",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Data Collection and Accuracy"
+        },
+        {
+            "text": "During the COVID-19 pandemic, policy makers worldwide were faced with the task of designing policies and interventions to try to curb the spread of infection. Numerous options have been available, including travel bans, economic shutdowns, stay-at-home orders and widespread testing to name a few. Yet all of these options are associated with social and economic costs and unknown levels of e\u21b5ectiveness. This study set out to provide decision support to policymakers in Andorra and around the world by identifying which types of internal and external mobility are strongly associated with transmission risk and which are not, thereby enabling a greater focus on the most promising policies. A secondary contribution of this work was to provide empirical evidence to inform models for respiratory infection simulations.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion"
+        },
+        {
+            "text": "The combination of a country-wide serology testing programme and high resolution telecoms data for the entire country presented a unique opportunity for granular insights into the relationship between mobility behaviour and COVID-19 exposure. Additionally, the isolation of Andorra during lockdown and the subsequent reintroduction of tourism provided a natural experiment to examine the relative importance of external versus internal mobility.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion"
+        },
+        {
+            "text": "It has been shown in this study that internal mobility behaviours relating to crowding and rates of inter-community trips were most closely related to the spread of infection in Andorra. Conversely contact with tourists, intracommunity trips and entrances to the country had lower or unclear correlations with transmission rates. Furthermore, interaction potential was characterised by highly skewed distributions with small numbers of people and events accounting for large proportions of the human contact.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion"
+        },
+        {
+            "text": "Overall, the results of this study point policy-makers towards a targeted approach to mobility restrictions to curb the spread of COVID-19, based on discouraging the most risky behaviours rather than full economic lockdowns and border closures.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion"
+        },
+        {
+            "text": "[35] Rogan, W. J., and Gladen, B. Estimating prevalence from the results of a screening test. American journal of epidemiology 107, 1 (1978), 71-76.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion"
+        },
+        {
+            "text": "[36] Siedner, M. J., Harling, G., Reynolds, Z., Gilbert, R. F., Haneuse, S., Venkataramani, A. S., and Tsai, A. C. Social distancing to slow the us covid-19 epidemic: Longitudinal pretest-posttest comparison group study. PLoS medicine 17, 8 (2020), e1003244.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion"
+        },
+        {
+            "text": "[37] World Health Organisation. COVAX Announces additional deals to access promising COVID-19 vaccine candidates; plans global rollout starting Q1 2021. https://www.who.int/news/item/18-12-2020covax-announces-additional-deals-to -access-promising-covid-19-vaccinecandidates-plans-global-rollout-starting-q1-2021. Accessed: 2020-12-23.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion"
+        },
+        {
+            "text": "[38] Zhou, Y., Xu, R., Hu, D., Yue, Y., Li, Q., and Xia, J. E\u21b5ects of human mobility restrictions on the spread of covid-19 in shenzhen, china: a modelling study using mobile phone data. The Lancet Digital Health 2, 8 (2020), e417-e424.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion"
+        },
+        {
+            "text": "All rights reserved. No reuse allowed without permission.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "30"
+        },
+        {
+            "text": "(which was not certified by peer review) is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "30"
+        },
+        {
+            "text": "The copyright holder for this preprint this version posted February 19, 2021. ; https://doi.org/10.1101/2021.02.18.21251977 doi: medRxiv preprint",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "30"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "The travel rules that let covid-19 take flight",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "2020--2032",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Table of cell areas for h3 resolutions",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "2020--2032",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Modeling the impact of social distancing, testing",
+            "authors": [
+                {
+                    "first": "Aleta",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Martin-Corral",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Piontti",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Ajelli",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Litvinova",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Chinazzi",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Dean",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Halloran",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Longini",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Merler",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "A simple planning problem for covid-19 lockdown",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Alvarez",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Argente",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Lippi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Early evidence on social distancing in response to covid-19 in the united states",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Andersen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Available at SSRN",
+            "volume": "3569368",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Infectious diseases of humans: dynamics and control",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Anderson",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "May",
+                    "suffix": ""
+                }
+            ],
+            "year": 1992,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "E\u21b5ect of social distancing measures in the new york city metropolitan area",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Bakker",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Berke",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Groh",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Pentland",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Moro",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Technology",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "The e\u21b5ectiveness and perceived burden of nonpharmaceutical interventions against covid-19 transmission: a modelling study with 41 countries",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Brauner",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Sharma",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Mindermann",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Stephenson",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Gaven\u010diak",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Johnston",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Salvatier",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Leech",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Besiroglu",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Altman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "The tradeo\u21b5 between the utility and risk of location data and implications for public good",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Calacci",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Berke",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Larson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "arXiv": [
+                    "arXiv:1905.09350"
+                ]
+            }
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Mobility network models of covid-19 explain inequities and inform reopening",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Chang",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Pierson",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Koh",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Gerardin",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Redbird",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Grusky",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Leskovec",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nature",
+            "volume": "",
+            "issn": "",
+            "pages": "1--6",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Analyzing cell phone location data for urban travel: current methods, limitations, and opportunities",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "\u00c7 Olak",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Alexander",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Alvim",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Mehndiratta",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Gonz\u00e1lez",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Transportation Research Record",
+            "volume": "2526",
+            "issn": "",
+            "pages": "126--135",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Ghs built-up grid, derived from sentinel-1 (2016), r2018a. European Commission",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Corbane",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Politis",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Syrris",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Pesaresi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "A pandemic in times of global tourism: Superspreading and exportation of covid-19 cases from a ski area in austria",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Correa-Mart\u00ednez",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Kampmeier",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "K\u00fcmpers",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Schwierzeck",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Hennies",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Hafezi",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "K\u00fchn",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Pavenst\u00e4dt",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Ludwig",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Mellmann",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Journal of Clinical Microbiology",
+            "volume": "58",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Estimacions de poblaci\u00f3, gener 2020 and estad\u00edstica dels censos parroquials, gener 2020",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Departament-D&apos;estad\u00edstica",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Govern d'Andorra (Reports No. A001 and A003",
+            "volume": "",
+            "issn": "",
+            "pages": "1--11",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "An interactive web-based dashboard to track covid-19 in real time",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Dong",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Du",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Gardner",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "The Lancet infectious diseases",
+            "volume": "20",
+            "issn": "",
+            "pages": "533--534",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Travel demand and tra c prediction with cell phone data: Calibration by mathematical program with equilibrium constraints",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Doorley",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Alonso",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Grignard",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Maci\u00e1",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Larson",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "2020 IEEE Intelligent Transportation Systems Conference (ITSC) (2020)",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Understanding individual human mobility patterns",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Gonzalez",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Hidalgo",
+                    "suffix": ""
+                },
+                {
+                    "first": "A.-L",
+                    "middle": [],
+                    "last": "Barabasi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "nature",
+            "volume": "453",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "The use of mobile phone data to inform analysis of covid-19 pandemic epidemiology",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Grantz",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Meredith",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Cummings",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "J E"
+                    ],
+                    "last": "Metcalf",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Grenfell",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Giles",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Mehta",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Solomon",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Labrique",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Kishore",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nature communications",
+            "volume": "11",
+            "issn": "",
+            "pages": "1--8",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Ranking the e\u21b5ectiveness of worldwide covid-19 government interventions",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Haug",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Geyrhofer",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Londei",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Dervic",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Desvars-Larrive",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Loreto",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Pinior",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Thurner",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Klimek",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nature human behaviour",
+            "volume": "",
+            "issn": "",
+            "pages": "1--10",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "E\u21b5ect of covid-19 response policies on walking behavior in us cities. medRxiv",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Hunter",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Garcia",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "De Sa",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Zapata-Diomedi",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Millett",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Woodcock",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Pentland",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Moro",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Modeling infectious diseases in humans and animals",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Keeling",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Rohani",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Exploring universal patterns in human home-work commuting from mobile phone data",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Kung",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Greco",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Sobolevsky",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Ratti",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "PloS one",
+            "volume": "9",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "The incubation period of coronavirus disease 2019 (covid-19) from publicly reported confirmed cases: estimation and application",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Lauer",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Grantz",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Bi",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Jones",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Zheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Meredith",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Azman",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Reich",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Lessler",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Annals of internal medicine",
+            "volume": "172",
+            "issn": "",
+            "pages": "577--582",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Mining user similarity based on location history",
+            "authors": [
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Xie",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "W.-Y",
+                    "middle": [],
+                    "last": "Ma",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Proceedings of the 16th",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "ACM SIGSPATIAL international conference on Advances in geographic information systems",
+            "authors": [],
+            "year": 2008,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "1--10",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "The Diagnostic Kit for IgM / IgG Antibody to Coronavirus (SARS-CoV-2) (Lateral Flow)",
+            "authors": [
+                {
+                    "first": "Livzon",
+                    "middle": [],
+                    "last": "Diagnostics",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Uni\u00f3n Europea y Cooperaci\u00f3n. Frontera Espa\u00f1a-Andorra ante las crisis del COVID 19",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "2021--2023",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Reversed urbanism: Inferring urban performance through behavioral patterns in temporal telecom data",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Noyman",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Doorley",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Xiong",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Alonso",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Grignard",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Larson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Environment and Planning B: Urban Analytics and City Science",
+            "volume": "46",
+            "issn": "",
+            "pages": "1480--1498",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Covid-19 outbreak response: a first assessment of mobility changes in italy following national lockdown",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Pepe",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Bajardi",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Gauvin",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Privitera",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Lake",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Cattuto",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Tizzoni",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Sociogeography of human mobility: A study using longitudinal mobile phone data",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Phithakkitnukoon",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Smoreda",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Olivier",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "PloS one",
+            "volume": "7",
+            "issn": "6",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "The pareto, zipf and other power laws",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Reed",
+                    "suffix": ""
+                }
+            ],
+            "year": 2001,
+            "venue": "Economics letters",
+            "volume": "74",
+            "issn": "",
+            "pages": "15--19",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "A timeline of new and cumulative case reports. The dotted line shows the day cases are reported. The solid lines show values smoothed over a 14-day rolling average.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "IP tj = Interaction Potential: the number of potential interactions in cell j during time interval t. N tj = the number of subscribers observed in cell j during time interval t. CIP x,y tj = Cross Interaction Potential: the number of potential interactions between person categories x and y in cell j during time interval t. N c tj = the number of subscribers of category c observed in cell j during time interval t. IIP tj = Indoor Interaction Potential: the number of potential interactions in cell j during time interval t, attributable to indoor areas. j = the fraction of land area of cell j covered by buildings. DCIP x,y d = Daily Cross Interaction Potential: the number of potential interactions between person categories x and y during day d. DIIP d = Daily Indoor Interaction Potential: the number of potential interactions during day d, attributable to indoor areas. D = the set of all intervals t in day d. P = the set of all intervals t in the analysis period. J = the set of all spatial cells in the study area.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "The computation of interaction potential based on individual spatial observations contained in H3 cells.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "Daily subscribers reporting stays in each parish for March through June, comparing 2020 to 2019. A mass departure from the smaller tourism heavy parishes can be seen at the start of the lockdown in mid March 2020.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "The daily percent of subscribers staying home by parish of residence. The dotted lines show daily estimates, while the solid lines show 7-day rolling averages.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": "The daily number of trips between parishes, by parish origin. The dotted lines show daily estimates, while the solid lines show 7-day rolling averages.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF6": {
+            "text": "Box plots showing distributions of (Top) average daily contacts per person for 3-day periods and (Bottom) \"event\" sizes, in each month 19 All rights reserved. No reuse allowed without permission.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF7": {
+            "text": "13 in the Supplementary Material shows a time series of the daily LCG(t) values along with the estimated daily values of the variables used in the 20 All rights reserved. No reuse allowed without permission.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF1": {
+            "text": "Timeline of the COVID-19 related dates in Andorra",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF5": {
+            "text": "Participants numbers and aggregated infection rates by parish from serology testing.",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": []
+}

@@ -1,0 +1,3820 @@
+{
+    "paper_id": "e79e68ebbbd5d1dd8bea17c85910a89385030346",
+    "metadata": {
+        "title": "Role of Monocytes/Macrophages in Covid-19 Pathogenesis: Implications for Therapy",
+        "authors": [
+            {
+                "first": "Jose",
+                "middle": [],
+                "last": "G\u00f3mez-Rial",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Infectious Diseases Research Group (GENVIP)",
+                    "institution": "Hospital Cl\u00ednico Universitario Santiago de Compostela (SERGAS)",
+                    "location": {
+                        "addrLine": "Galicia 15706",
+                        "country": "Spain"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Irene",
+                "middle": [],
+                "last": "Rivero-Calle",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Infectious Diseases Research Group (GENVIP)",
+                    "institution": "Hospital Cl\u00ednico Universitario Santiago de Compostela (SERGAS)",
+                    "location": {
+                        "addrLine": "Galicia 15706",
+                        "country": "Spain"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Antonio",
+                "middle": [],
+                "last": "Salas",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Infectious Diseases Research Group (GENVIP)",
+                    "institution": "Hospital Cl\u00ednico Universitario Santiago de Compostela (SERGAS)",
+                    "location": {
+                        "addrLine": "Galicia 15706",
+                        "country": "Spain"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Federico",
+                "middle": [],
+                "last": "Martin\u00f3n-Torres",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Infectious Diseases Research Group (GENVIP)",
+                    "institution": "Hospital Cl\u00ednico Universitario Santiago de Compostela (SERGAS)",
+                    "location": {
+                        "addrLine": "Galicia 15706",
+                        "country": "Spain"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Emerging studies from SARS-CoV-2-infected patients indicate a preponderant role of monocytes/macrophages in the pathogenesis of this viral infection, in a similar way to that previously observed in other coronavirus outbreaks (SARS and MERS). The clinical presentation of severe patients resembles viral-associated hemophagocytic syndrome, a rare condition previously seen during lethal influenza pandemics and during previous SARS and MERS coronavirus outbreaks. SARS-CoV-2 infection triggers an over-exuberant inflammatory response due to the development of a cytokine storm and the depletion of the adaptative immune compartment, which may prelude sepsis in many cases. The present review summarizes past evidence on the role of monocytes/macrophages in previous coronavirus outbreaks and the emerging knowledge on their role in COVID-19 pathogenesis. Treatment strategies incorporating the blockade of migration and differentiation of monocyte-macrophage, such as granulocyte macrophage-colony stimulating factor inhibitors, might enhance the promising results seen so far with selective cytokine blockade.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "Novel coronavirus infection (SARS-Cov-2) produces a severe respiratory syndrome, similar to the severe acute respiratory syndrome (SARS) observed in previous coronavirus outbreaks. This syndrome is associated to intensive care unit (ICU) admission and high lethality rates. 1 Emerging studies on SARS-CoV-2 pathogenesis point to infiltration of pro-inflammatory monocytes as key mediators of the hyper-inflammatory response produced during viral shedding in the infectious phase, and mainly involved in the cytokine storm observed during the inflammatory phase in severe cases. Zhang et al observed that during SARS-CoV-2 infection, there are morphological and inflammation-related phenotypic changes in peripheral blood monocytes that correlate with the patient's outcome, suggesting that an excessive monocyte-macrophage activation may lead to the subsequent respiratory failure in severe patients. 2 Characterization of lung immune microenvironment through bronchoalveolar lavage fluid in first SARS-CoV-2 patients also showed a predominant monocyte-derived macrophage infiltration in the severely damaged lungs and a highly expanded clonal CD8+T cell in mild patients; suggesting that a robust adaptive immune response is connected to a successful control of SARS-CoV-2 infection. 3 Dysregulation of the immune response is one of the hallmarks of severe SARS-CoV-2 infection, with lower lymphocytes counts and an increased neutrophil-lymphocyte ratio. Acute phase reactants levels (C-reactive protein (CRP) and ferritin) are highly increased along with inflammatory cytokines such as IL-6. 4 This stimulates the production of an excessive, noneffective host immune response by innate cells, which is associated with severe lung injury. Hyperinflammation observed in severe infection results in an immunosuppression status with a clinical course that resembles hemophagocytic syndrome, triggering the production of fatal hypercytokinaemia and consequently multiorgan failure. 5 ",
+            "cite_spans": [
+                {
+                    "start": 274,
+                    "end": 275,
+                    "text": "1",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 901,
+                    "end": 902,
+                    "text": "2",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 1285,
+                    "end": 1286,
+                    "text": "3",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 1594,
+                    "end": 1595,
+                    "text": "4",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 1979,
+                    "end": 1980,
+                    "text": "5",
+                    "ref_id": "BIBREF9"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Other coronaviruses have caused major outbreaks of severe respiratory infections in the 21 st century. In 2002, SARS-Cov-1 was identified as the cause of severe acute respiratory syndrome (SARS) in the Guangdong province of China, which subsequently spread to more than 30 countries with more than 8000 cases reported worldwide and a 10% case fatality rate. 6 Ten years later, an outbreak of another coronavirus in the Arabian Peninsula was identified, called Middle East respiratory syndrome (MERS), provoking a severe, acute respiratory illness similar to SARS with nearly of 2500 cases in at least 27 countries. 7 These previous highly pathogenic human respiratory coronaviruses showed close similitudes with the current SARS-CoV-2 outbreak, triggering an exuberant inflammatory response leading to respiratory failure and lung damage. Studies of these previous coronavirus outbreaks showed that a robust viral replication was accompanied by a delayed type I interferon (IFN-I) signalling and a lung immunopathology with very low survival. 8, 9 This delayed activation of the IFN-I pathway and promoted the accumulation of inflammatory monocytes infiltrating from peripheral blood, resulting in a cytokine storm and the absence of a virus-specific T cell response. A characteristic of patients who developed severe SARS was an increased number of macrophages in the lungs 10, 11 signalling this cell as the key mediator to lung destruction.",
+            "cite_spans": [
+                {
+                    "start": 358,
+                    "end": 359,
+                    "text": "6",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 615,
+                    "end": 616,
+                    "text": "7",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 1043,
+                    "end": 1045,
+                    "text": "8,",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 1046,
+                    "end": 1047,
+                    "text": "9",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 1375,
+                    "end": 1378,
+                    "text": "10,",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 1379,
+                    "end": 1381,
+                    "text": "11",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Lessons Learned from SARS and MERS Coronavirus Outbreaks"
+        },
+        {
+            "text": "Furthermore, human coronaviruses have showed their ability to infect human leukocytic cell lines and peripheral blood mononuclear cells. 12 Moreover, coronavirus infection of a primary monocytic cell line leads to cell activation and an aberrant production of pro-inflammatory mediators with increased chemoattraction. This observation suggests that, for some human coronavirus, monocytes/macrophages could serve as a reservoir which, consequently, would work as vectors for viral dissemination to other tissues. 13, 14 This fact has so far not been proven for SARS-CoV-2. Infection of macrophages might be enhanced by an antibody-dependent effect, where previous non-neutralizing antibodies against coronavirus facilitate binding to Fc receptors in monocytes and macrophages. 15 In vitro infection of human macrophages by SARS-CoV-1 induced high expression of chemokines such as CXCL10 and CCL2 and a poor induction of Interferon-\u03b2. 16 In another study, strong up-regulation of several inflammatory chemokines (MIP-1\u03b1, RANTES, IP-10 and MCP-1) linked to a low expression of the antiviral cytokines interferon-\u03b1/\u03b2/\u03b3 and IL-12 in SARSinfected monocytes was interpreted as a escape mechanism for coronavirus. 17 Differences in the transcriptional profile of monocytic cells infected with different coronaviruses were also observed. SARS-CoV-1 induced down-regulation of interferon-\u03b1/\u03b2 and cathepsin/proteasome genes, while hypoxia/ hyperoxia related genes were up-regulated. However, coronavirus 229E (Cov-229E), causing common cold, does not induce these changes, showing that regulation of immune-related genes in monocyte/macrophage might be important for differences in pathogenesis between coronavirus strains. 18 Modulation of intrinsic functions of monocyte-derived macrophages and dendritic cells by coronavirus-induced lung epithelial cytokines (IL-6 and IL-8) was responsible for the exacerbated pathogenesis during SARS-CoV-1 infection of human lung epithelial cells in culture. 19 Given the importance of monocyte/ macrophage cells during the immune response, it is possible that infection by coronaviruses and alteration of their function may be an important clue to unravel the course of infection in humans.",
+            "cite_spans": [
+                {
+                    "start": 137,
+                    "end": 139,
+                    "text": "12",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 513,
+                    "end": 516,
+                    "text": "13,",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 517,
+                    "end": 519,
+                    "text": "14",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 777,
+                    "end": 779,
+                    "text": "15",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 934,
+                    "end": 936,
+                    "text": "16",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 1207,
+                    "end": 1209,
+                    "text": "17",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 1714,
+                    "end": 1716,
+                    "text": "18",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 1988,
+                    "end": 1990,
+                    "text": "19",
+                    "ref_id": "BIBREF23"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Lessons Learned from SARS and MERS Coronavirus Outbreaks"
+        },
+        {
+            "text": "SARS-CoV-1 also demonstrated potential neurotropism, as several patients experienced central nervous symptoms during the course of the illness. Moreover, the brain tissue revealed the presence of high amounts of the monokine-induced by interferon-\u03b3 (MIG) produced by monocytic cells, and infiltration of CD68+ monocytes/ macrophages and CD3+ T lymphocytes in the brain mesenchyme 20 during pathologic examination.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Lessons Learned from SARS and MERS Coronavirus Outbreaks"
+        },
+        {
+            "text": "A large number of clinical data collected from SARS-CoV -2 patients suggest the presence of a mild-to-severe cytokine storm in patients requiring admission, which has also been argued as an important cause of death. 5, 21 Cytokine storm or cytokine release syndrome (CRS) is a form of systemic inflammatory response usually triggered by a variety of factors such as infections and drugs. 22 CRS occurs when large numbers of leucocytes are activated and release pro-inflammatory cytokines, which recruits and activates more leucocytes in a positive feedback loop of hyperinflammation. 23 Recently, a key role for macrophages in driving CRS was revealed by analysing CRS produced following chimeric antigen receptor-modified T (CAR T) therapy. 24, 25 These studies identified human monocytes as the major source of IL-1, IL-6 and nitric oxidethe main hallmarks of CRS. Monocyte depletion or therapeutic depletion of IL-6 and IL-1 prevented CRS in this model. Similarly, in two clinically relevant animal models, depletion of macrophages at disease onset was shown to decrease lethality and limit the cytokine storm, pointing to macrophage-based therapies for CRS. 26 CRS is closely linked to the macrophage activation syndrome (MAS), a life-threatening complication of several autoimmune diseases related to hemophagocytic lymphohistiocytosis (HLH). MAS is characterized by pancytopenia, liver insufficiency, hyperferritinemia, coagulopathy and neurologic symptoms due to uncontrolled proliferation of well-differentiated macrophages; leading to widespread hemophagocytosis and cytokine overproduction. 27, 28 Severe COVID-19 patients developing pneumonia exhibit features of the systemic hyper-inflammation that is characteristic of MAS. 29, 30 This overexuberant immune response associated with MAS may be driving SARS-CoV-2 related adult respiratory distress syndrome (ARDS), as typical of severe SARS pathogenesis.",
+            "cite_spans": [
+                {
+                    "start": 216,
+                    "end": 218,
+                    "text": "5,",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 219,
+                    "end": 221,
+                    "text": "21",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 388,
+                    "end": 390,
+                    "text": "22",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 584,
+                    "end": 586,
+                    "text": "23",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 742,
+                    "end": 745,
+                    "text": "24,",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 746,
+                    "end": 748,
+                    "text": "25",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 1162,
+                    "end": 1164,
+                    "text": "26",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 1601,
+                    "end": 1604,
+                    "text": "27,",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 1605,
+                    "end": 1607,
+                    "text": "28",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 1737,
+                    "end": 1740,
+                    "text": "29,",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 1741,
+                    "end": 1743,
+                    "text": "30",
+                    "ref_id": "BIBREF34"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Cytokine Storm and Immunopathology"
+        },
+        {
+            "text": "At the same time, viral infection can trigger MAS and HLH, in what is known as virus-associated hemophagocytic syndrome (VAHS), a severe complication of various viral infections often resulting in multiorgan failure and death. 31 These phenomena have been observed during lethal influenza pandemics, such as 2009 influenza A H1N1, 1998 avian influenza H5N1, and 1918 Spanish flu H1N1. 32, 33 VAHS clinical course presented as an aggressive, lifethreatening condition, analogous to HLH, and associated with massive pro-inflammatory cytokine release, elevated plasma levels of acute phase reactants, and the accumulation of activated T-lymphocytes and macrophages in various organs. Further, VAHS has been linked to the high fatality rate in MERS-Cov outbreak and SARS-CoV, 34 and is now linked to the current SARS-CoV-2. 5, 35 Also, MAS and VAHS are linked to thrombotic events and coagulopathy 36, 37 highlighting the key role of monocyte-macrophages in the regulation of coagulation events. 38 Monocytes and macrophages can act as procoagulant factors, and interact with blood coagulation mechanisms resulting in thrombus formation and extravascular fibrin accumulation 39 COVID-19 is linked to a microvascular vessel obstructive thrombo-inflammatory syndrome in lung and other vital organs, leading to multiple organ failure and death. 40, 41 Action of IL-6 and GM-CSF on Monocyte-Macrophage Differentiation IL-6 and granulocyte macrophage-colony stimulating factor (GM-CSF) are cytokines closely linked to regulation of monocyte activation and differentiation to macrophages. Both cytokines increased during the cytokine storm in SARS-CoV-2 patients requiring ICU 29 and are involved in the immunopathology of autoimmunity and the inflammatory condition; they were identified as therapeutic blockade targets of the cytokine storm during systemic inflammatory responses, as observed in MAS and HLH. 42, 43 In this sense, emerging reports indicate that SARS-CoV-2 infection precedes the onset of various autoimmune and autoinflammatory diseases, including the newly described paediatric inflammatory multisystemic syndrome. 44 This new evidence reinforces the link between infectious diseases and the triggering of autoimmune and autoinflammatory sequelae. 45 IL-6 is an essential factor in the molecular control of monocyte activation and differentiation. It is secreted by a variety of cellular types, including macrophages, fibroblasts, T-cells and endothelial cells 46 in response to infection, and it sends out an early warning signal to the entire body, activating inflammatory events and immunity. IL-6 regulates the differentiation of monocytes to macrophages, up-regulating expression of functional GM-CSF receptors on monocytes, and switching the differentiation of monocytes from dendritic cells with antigen-presenting functions to inflammatory macrophages. 47 IL-6 is the chief stimulator of the production of most acute phase proteins, and critical for the febrile response. During systemic inflammation such as in MAS, IL-6 is pyrogenic by binding to IL-6 receptors on brain endothelial cells to induce prostaglandin synthesis and aggravate inflammation; 48 furthermore, it dictates the transition from acute to chronic inflammation by changing the nature of the leucocyte infiltrate from polymorphonuclear neutrophils to monocyte/macrophages. 49 Obesity and diabetes, both risk factors for greater severity in COVID-19 patients, are closely related to perturbation of the monocyte compartment, with a marked shift toward a pro-inflammatory phenotype which might contribute to the development of low-grade inflammation observed in obesity. 50 IL-6 has been highlighted as a driver of this metabolic inflammation 51 and therefore increased risk for severe COVID-19 condition.",
+            "cite_spans": [
+                {
+                    "start": 227,
+                    "end": 229,
+                    "text": "31",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 385,
+                    "end": 388,
+                    "text": "32,",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 389,
+                    "end": 391,
+                    "text": "33",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 772,
+                    "end": 774,
+                    "text": "34",
+                    "ref_id": "BIBREF38"
+                },
+                {
+                    "start": 820,
+                    "end": 822,
+                    "text": "5,",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 823,
+                    "end": 825,
+                    "text": "35",
+                    "ref_id": "BIBREF39"
+                },
+                {
+                    "start": 894,
+                    "end": 897,
+                    "text": "36,",
+                    "ref_id": "BIBREF40"
+                },
+                {
+                    "start": 898,
+                    "end": 900,
+                    "text": "37",
+                    "ref_id": "BIBREF41"
+                },
+                {
+                    "start": 992,
+                    "end": 994,
+                    "text": "38",
+                    "ref_id": "BIBREF42"
+                },
+                {
+                    "start": 1338,
+                    "end": 1341,
+                    "text": "40,",
+                    "ref_id": "BIBREF44"
+                },
+                {
+                    "start": 1342,
+                    "end": 1344,
+                    "text": "41",
+                    "ref_id": "BIBREF45"
+                },
+                {
+                    "start": 1667,
+                    "end": 1669,
+                    "text": "29",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 1901,
+                    "end": 1904,
+                    "text": "42,",
+                    "ref_id": "BIBREF46"
+                },
+                {
+                    "start": 1905,
+                    "end": 1907,
+                    "text": "43",
+                    "ref_id": "BIBREF47"
+                },
+                {
+                    "start": 2125,
+                    "end": 2127,
+                    "text": "44",
+                    "ref_id": "BIBREF48"
+                },
+                {
+                    "start": 2258,
+                    "end": 2260,
+                    "text": "45",
+                    "ref_id": "BIBREF49"
+                },
+                {
+                    "start": 2471,
+                    "end": 2473,
+                    "text": "46",
+                    "ref_id": "BIBREF50"
+                },
+                {
+                    "start": 2871,
+                    "end": 2873,
+                    "text": "47",
+                    "ref_id": "BIBREF51"
+                },
+                {
+                    "start": 3171,
+                    "end": 3173,
+                    "text": "48",
+                    "ref_id": "BIBREF52"
+                },
+                {
+                    "start": 3360,
+                    "end": 3362,
+                    "text": "49",
+                    "ref_id": "BIBREF53"
+                },
+                {
+                    "start": 3656,
+                    "end": 3658,
+                    "text": "50",
+                    "ref_id": "BIBREF54"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Cytokine Storm and Immunopathology"
+        },
+        {
+            "text": "Moreover, during CRS, IL-6 is an important member of the cytokine network and plays a key role in acute inflammation. In SARS-CoV-2 infection, blockade of IL-6 signal transduction with Tocilizumab has become an important therapeutic weapon in a small series of severe cases with early reports of success; this evidence demonstrates that blockade of cytokine storm is an effective therapeutic option. 21 GM-CSF, another monocyte/macrophage-related cytokine, has an important effect under inflammatory conditions, promoting neutrophil and monocyte migration, proliferation and maturation. GM-CSF stimulates stem cells to produce granulocytes and monocytes, and promotes migration of monocytes to the inflammatory tissues and differentiation to inflammatory macrophages. 52 In autoimmune inflammatory diseases, such as rheumatoid arthritis and multiple sclerosis, GM-CSF has a pathogenic role; several inhibitory drugs are currently undergoing clinical trials. 53 Both autoimmune conditions are frequently associated with viral infections, suggesting a key role for viruses in the dysregulation of tolerance immune mechanisms and the triggering of autoimmune diseases. 54 In a similar way, GM-CSF blockade has been demonstrated to inhibit the cytokine release syndrome and neuroinflammation in the management of CART cell therapy-associated toxicities, 55 thus arising as a promising drug for SARS-CoV -2 patients.",
+            "cite_spans": [
+                {
+                    "start": 400,
+                    "end": 402,
+                    "text": "21",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 768,
+                    "end": 770,
+                    "text": "52",
+                    "ref_id": "BIBREF56"
+                },
+                {
+                    "start": 958,
+                    "end": 960,
+                    "text": "53",
+                    "ref_id": "BIBREF57"
+                },
+                {
+                    "start": 1166,
+                    "end": 1168,
+                    "text": "54",
+                    "ref_id": "BIBREF58"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Cytokine Storm and Immunopathology"
+        },
+        {
+            "text": "It has been reported that ACE2 is the main host cell receptor for human pathogenic coronaviruses (SARS-CoV-1, MERS and SARS-CoV-2) and that it plays a key role in the entry of the virus into the cell and viral spreading and pathogenesis, interfering in the renin-angiotensin-aldosterone system (RAAS). 56 ACE2 is widely distributed in various human tissues and may be a determinant factor of activity in severe disease pathogenesis 57 Several immune cells are involved in the RAAS, playing a pivotal role in the regulation of vascular inflammation and hypertension. 58 Human monocyte subsets exhibit different expression on angiotensin-converting enzyme type 1 and 2 (ACE1 and ACE2) and may be directly involved in the regulation of vascular homeostasis via the RAAS mechanisms 59 Therefore, SARS-CoV-2 activated-monocytes could also be critically involved in the pathogenic effect on the vascular homeostasis, through perturbation of ACE2 function.",
+            "cite_spans": [
+                {
+                    "start": 302,
+                    "end": 304,
+                    "text": "56",
+                    "ref_id": "BIBREF60"
+                },
+                {
+                    "start": 432,
+                    "end": 434,
+                    "text": "57",
+                    "ref_id": "BIBREF61"
+                },
+                {
+                    "start": 566,
+                    "end": 568,
+                    "text": "58",
+                    "ref_id": "BIBREF62"
+                },
+                {
+                    "start": 778,
+                    "end": 780,
+                    "text": "59",
+                    "ref_id": "BIBREF63"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Monocytes, ACE2 and RAAS"
+        },
+        {
+            "text": "RAAS activation in monocytes through its physiological effectors plays a key role in promoting and maintaining inflammation. Monocytes have been demonstrated to be actively involved in all key stages of acute coronary syndromes and constitute an important part of the coagulation system 60 Therefore, SARS-CoV-2 activation of monocytes and perturbation of RAAS through ACE2-monocyte activation may trigger acute coronary syndromes in predisposed patients, as shown in COVID-19 infection. 61",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Monocytes, ACE2 and RAAS"
+        },
+        {
+            "text": "Antibody-dependent enhancement (ADE) of virus infection is a phenomenon whereby virus-specific nonneutralizing antibodies enhance the entry of the virus, and in some cases the replication, into monocytes/macrophages through interaction with Fc receptors; 62 the result is that a normally mild viral infection becomes lifethreatening. This phenomenon has been described as mediator of acute lung injury in both SARS and MERS outbreaks 63, 64 and demonstrated in animal models. This evidence suggests that people exposed to MERS-CoV who failed to develop a neutralizing antibody response may be at risk of severe lung disease on reexposure to MERS-CoV. 65 Similarly, evaluation of SARS vaccines in mice induced protection against infection but challenged animals exhibited an exacerbated immunopathologic-type lung disease. 66 Anti-spike viral protein antibodies were identified as mediators of the infection of immune cells 15, 67 causing severe acute lung injury by skewing macrophage responses during acute SARS-CoV-1 infection. 34 Recent studies have revealed complex roles for antibodies in viral entry, describing an ADE effect with neutralizing antibody to the surface spike protein of coronaviruses, and molecular mechanisms for ADE in coronavirus entry. 68 Binding of these antibodies to the viral spike triggers a conformational change that mediates viral entry into Fc receptor-expressing cells. This evidence reveals the impact of antibody dosages on viral entry and serves as a guide for future vaccine design and antibody-based drug therapies 69 The potential danger of these suboptimal antibody responses has been also noted for COVID-19 highlighting the importance of safety evaluation of candidate vaccines. 70 ADE effect on monocytes is also currently proposed as an explanation for the geographic discrepancy in the pathogenesis of the current SARS-CoV-2 epidemic around the world. Prior exposure to similar antigenic epitopes from local circulating coronaviruses might be a possible explanation for the geographic differences of lethality rates; it may also provide an explanation to the high death rates among elderly people, more exposed to previous coronaviruses. 71 This ADE mechanism is not exclusive to coronaviruses and was also observed during influenza pandemics, 72 in dengue 73 and VIH 74 viral infections, leading to enhanced pathology.",
+            "cite_spans": [
+                {
+                    "start": 434,
+                    "end": 437,
+                    "text": "63,",
+                    "ref_id": "BIBREF67"
+                },
+                {
+                    "start": 438,
+                    "end": 440,
+                    "text": "64",
+                    "ref_id": "BIBREF68"
+                },
+                {
+                    "start": 651,
+                    "end": 653,
+                    "text": "65",
+                    "ref_id": "BIBREF69"
+                },
+                {
+                    "start": 822,
+                    "end": 824,
+                    "text": "66",
+                    "ref_id": "BIBREF70"
+                },
+                {
+                    "start": 923,
+                    "end": 926,
+                    "text": "15,",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 927,
+                    "end": 929,
+                    "text": "67",
+                    "ref_id": "BIBREF71"
+                },
+                {
+                    "start": 1030,
+                    "end": 1032,
+                    "text": "34",
+                    "ref_id": "BIBREF38"
+                },
+                {
+                    "start": 1261,
+                    "end": 1263,
+                    "text": "68",
+                    "ref_id": "BIBREF72"
+                },
+                {
+                    "start": 1555,
+                    "end": 1557,
+                    "text": "69",
+                    "ref_id": "BIBREF73"
+                },
+                {
+                    "start": 1723,
+                    "end": 1725,
+                    "text": "70",
+                    "ref_id": "BIBREF74"
+                },
+                {
+                    "start": 2185,
+                    "end": 2187,
+                    "text": "71",
+                    "ref_id": "BIBREF75"
+                },
+                {
+                    "start": 2291,
+                    "end": 2293,
+                    "text": "72",
+                    "ref_id": "BIBREF76"
+                },
+                {
+                    "start": 2304,
+                    "end": 2306,
+                    "text": "73",
+                    "ref_id": "BIBREF77"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Antibody-Dependent Enhancement of Macrophages"
+        },
+        {
+            "text": "Several biological agents targeting pro-inflammatory cytokines have demonstrated effectiveness in SARS-CoV-2 severe pathology 75 Tocilizumab is a recombinant human IL-6 monoclonal antibody, which binds to soluble and membrane-bound IL-6 receptors (IL-6R). Blocking IL-6 signalling is highly effective in the attenuation of inflammatory responses 76 according to the experience gained in rheumatic and other inflammatory diseases, and the prevention of CRS caused by CART immunotherapy.",
+            "cite_spans": [
+                {
+                    "start": 126,
+                    "end": 128,
+                    "text": "75",
+                    "ref_id": "BIBREF79"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Targeting IL-6 and GM-CSF as a Therapeutic Approach in SARS-CoV-2 Patients"
+        },
+        {
+            "text": "Other drugs proposed for avoiding harmful CRS syndrome in SARS-CoV-2 patients are JAK inhibitors drugs, which inhibit signalling cascades for a variety of inflammatory cytokines. 77 However, one of the most significant concerns about JAK inhibitors is the inhibition of IFN-\u03b1, with anti-viral properties and theoretically useful against SARS-Cov2; further, JAK inhibitors also inhibit IL-10, which is the main regulator cytokine of the immune system.",
+            "cite_spans": [
+                {
+                    "start": 179,
+                    "end": 181,
+                    "text": "77",
+                    "ref_id": "BIBREF81"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Targeting IL-6 and GM-CSF as a Therapeutic Approach in SARS-CoV-2 Patients"
+        },
+        {
+            "text": "An interesting alternative, in combination with cytokine blocking drugs, could be the use of GM-CSF inhibitors to inhibit monocyte/macrophage differentiation and migration to pulmonary tissues. Several GM-CSF inhibitor drugs are currently undergoing clinical trials for rheumatic arthritis (RA) and other inflammatory conditions. Otilimab (GSK3196165) is a fully human antibody against GM-CSF, currently in Phase III in patients with RA, and it has shown promising results in initial developmental phases. Namilumab (MT203) is currently being tested for application in RA and psoriatic arthritis. Lenzilumab (KB003), is a humanized monoclonal antibody that targets GM-CSF originally designed for the treatment of chronic myelomonocytic leukaemia; it is currently under clinical trial for refractory large B-cell lymphoma and has demonstrated to be effective in vitro to avoid CRS in CARTassociated toxicities. 55 Very recently, GM-CSF neutralization with lenzilumab showed positive results related to improved clinical outcomes, oxygen requirement and ameliorated cytokine storm in a single-centre study 78 Mavrilimumab is a human monoclonal antibody that inhibits human GM-CSF receptor (GM-CSF-R) and is also an investigational drug for the treatment of rheumatic diseases 79 Also, very recently, mavrilimumab treatment has shown improved clinical outcomes in non-mechanically ventilated patients with severe COVID-19 pneumonia and systemic hyperinflammation in a single-centre study 80 The use of this monocytemacrophage differentiation inhibitor drugs could be employed at initial phases of CRS to avoid massive migration of inflammatory monocytes to pulmonary tissues, preventing the cytokine storm and immunopathology associated to SARS-CoV-2 infection. A combination of GM-CSF inhibitor drugs and selective cytokine blockers could act synergistically to ameliorate lung injury ( Figure 1 ) in patients at high risk of ICU admission and mechanical ventilation support. Monitorization of pro-inflammatory cytokines and acute phase reactants levels would help identify patients who can benefit from this therapy. Results from ongoing clinical trials will provide more extensive knowledge about indications and potential limitations of this therapy.",
+            "cite_spans": [
+                {
+                    "start": 910,
+                    "end": 912,
+                    "text": "55",
+                    "ref_id": "BIBREF59"
+                },
+                {
+                    "start": 1104,
+                    "end": 1106,
+                    "text": "78",
+                    "ref_id": "BIBREF82"
+                },
+                {
+                    "start": 1274,
+                    "end": 1276,
+                    "text": "79",
+                    "ref_id": "BIBREF83"
+                },
+                {
+                    "start": 1485,
+                    "end": 1487,
+                    "text": "80",
+                    "ref_id": "BIBREF84"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1885,
+                    "end": 1893,
+                    "text": "Figure 1",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Targeting IL-6 and GM-CSF as a Therapeutic Approach in SARS-CoV-2 Patients"
+        },
+        {
+            "text": "Undoubtedly, monocyte-macrophage cells have a preponderant role in the immunopathology associated to severe outcome in SARS-CoV-2 infection. Given that these cells are considered drivers of CRS, future studies should focus on monitoring them, aiming to early detect individuals initiating uncontrolled and ineffective immune responses and developing targeted therapeutic approaches. This could shed light on strategies to prevent or at least decrease lung injury and the high lethal rates associated to SARS-CoV-2. Treatment strategies that encompass blocking migration and differentiation of these cells, such as GM-CSF inhibitors, might enhance the promising results seen with selective cytokine blockade.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Future Directions"
+        },
+        {
+            "text": "Jose Gomez-Rial reports personal fees from and being a speaker in scientific meetings and advisor for Merck Sharp and Dohme, GlaxoSmithkline, and Pfizer, outside the submitted work. Irene Rivero-Calle reports trials fees paid to the institution from Ablynx, Jansen, and Mediummune, grants, personal fees, other from GSK, grants and personal fees (research grants and honoraria as an advisor and speaker, and for attending conferences and practical courses; trials fees paid to the institution) from Pfizer, MSD, Sanofi Pasteur, outside the submitted work. Federico Martin\u00f3n-Torres has received honoraria from GSK, Pfizer, Sanofi Pasteur, MSD, Seqirus, and Janssen for taking part in advisory boards and expert meetings, and for acting as speaker in congresses outside the scope of the submitted work. FM-T has also acted as principal investigator in RCTs of the above-mentioned companies as well as Ablynx, Regeneron, Roche, Abbott, Novavax, and MedImmune, with honoraria paid to his institution. The authors report no other possible conflicts of interest in this work.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Disclosure"
+        },
+        {
+            "text": "Infection and Drug Resistance is an international, peer-reviewed openaccess journal that focuses on the optimal treatment of infection (bacterial, fungal and viral) and the development and institution of preventive strategies to minimize the development and spread of resistance. The journal is specifically concerned with the epidemiology of antibiotic resistance and the mechanisms of resistance development and diffusion in both hospitals and the community. The manuscript management system is completely online and includes a very quick and fair peerreview system, which is all easy to use. Visit http://www.dovepress.com/ testimonials.php to read real quotes from published authors.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Publish your work in this journal"
+        },
+        {
+            "text": "Submit your manuscript here: https://www.dovepress.com/infection-and-drug-resistance-journal",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Publish your work in this journal"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "DIAVIR (Instituto de Salud Carlos III(ISCIII)/DTS19/00049/Cofinanciado FEDER",
+            "authors": [
+                {
+                    "first": "Feder",
+                    "middle": [],
+                    "last": "Cofinanciado",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Proyecto de Desarrollo Tecnol\u00f3gico en Salud) and Resvi-Omics (Instituto de Salud Carlos III(ISCIII)/PI19/01039/ Cofinanciado FEDER) and project BI-BACVIR",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Servicio Gallego de Salud (SERGAS)-Xunta de Galicia",
+            "authors": [
+                {
+                    "first": "Agencia",
+                    "middle": [],
+                    "last": "De Conocimiento En Salud",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Instituto de Salud Carlos III(ISCIII)/PI16/01569/Cofinanciado FEDER), and Enterogen (Instituto de Salud Carlos III(ISCIII)/PI19/01090/ Cofinanciado FEDER)",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Spain) Given To",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Resvinext",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Clinical features and diagnosis of new malignancy in patients with acute pulmonary embolism and without a history of cancer",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Huang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Chin Med Assoc",
+            "volume": "83",
+            "issn": "3",
+            "pages": "245--250",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Usage of venous thromboembolism prophylaxis at a tertiary care hospital in Aseer region of Saudi Arabia",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Albshabshe",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Al-Asmary",
+                    "suffix": ""
+                },
+                {
+                    "first": "Al-Harthi",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Saudi Med J",
+            "volume": "36",
+            "issn": "11",
+            "pages": "1367--1368",
+            "other_ids": {
+                "DOI": [
+                    "10.15537/smj.2015.11.12231"
+                ]
+            }
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "The change in mitral regurgitation severity after trans-catheter aortic valve implantation",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Almasood",
+                    "suffix": ""
+                },
+                {
+                    "first": "Al",
+                    "middle": [],
+                    "last": "Ahmari",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "El-Shurafa",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Dysregulation of immune response in patients with COVID-19 in Wuhan, China",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Qin",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Clin Infect Dis",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "COVID-19: consider cytokine storm syndromes and immunosuppression",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Mehta",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Mcauley",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Brown",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet",
+            "volume": "395",
+            "issn": "",
+            "pages": "1033--1034",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S0140-6736(20)30628-0"
+                ]
+            }
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Severe acute respiratory syndrome",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Peiris",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Guan",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Yuen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Nat Med",
+            "volume": "10",
+            "issn": "12",
+            "pages": "88--97",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/nm1143"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Middle East respiratory syndrome",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Zumla",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Hui",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Perlman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Lancet",
+            "volume": "386",
+            "issn": "9997",
+            "pages": "60454--60462",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S0140-6736(15)60454-8"
+                ]
+            }
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Dysregulated type I interferon and inflammatory monocyte-macrophage responses cause lethal pneumonia in SARS-CoV-infected mice",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Channappanavar",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Fehr",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Vijay",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Cell Host Microbe",
+            "volume": "19",
+            "issn": "2",
+            "pages": "181--193",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.chom.2016.01.007"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Delayed induction of proinflammatory cytokines and suppression of innate antiviral response by the novel Middle East respiratory syndrome coronavirus: implications for pathogenesis and treatment",
+            "authors": [
+                {
+                    "first": "Skp",
+                    "middle": [],
+                    "last": "Lau",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ccy",
+                    "middle": [],
+                    "last": "Lau",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Chan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "J Gen Virol",
+            "volume": "94",
+            "issn": "",
+            "pages": "2679--2690",
+            "other_ids": {
+                "DOI": [
+                    "10.1099/vir.0.055533-0"
+                ]
+            }
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Lung pathology of severe acute respiratory syndrome (SARS): a study of 8 autopsy cases from Singapore",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Franks",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Chong",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Chui",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "Hum Pathol",
+            "volume": "34",
+            "issn": "8",
+            "pages": "367--375",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S0046-8177(03)00367-8"
+                ]
+            }
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "SARS: clinical virology and pathogenesis",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Nicholls",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Dong",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Jiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Peiris",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "Respirology",
+            "volume": "8",
+            "issn": "s1",
+            "pages": "6--8",
+            "other_ids": {
+                "DOI": [
+                    "10.1046/j.1440-1843.2003.00517.x"
+                ]
+            }
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "SARS-coronavirus replication in human peripheral monocytes/macrophages",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Yilla",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Harcourt",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Hickman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Virus Res",
+            "volume": "107",
+            "issn": "1",
+            "pages": "93--101",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.virusres.2004.09.004"
+                ]
+            }
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Activation of human monocytes after infection by human coronavirus 229E",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Desforges",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Miletti",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Gagnon",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Talbot",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Virus Res",
+            "volume": "130",
+            "issn": "1-2",
+            "pages": "228--240",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.virusres.2007.06.016"
+                ]
+            }
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Active replication of Middle East respiratory syndrome coronavirus and aberrant induction of inflammatory cytokines and chemokines in human macrophages: implications for pathogenesis",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Chu",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "J Infect Dis",
+            "volume": "209",
+            "issn": "9",
+            "pages": "1331--1342",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/infdis/jit504"
+                ]
+            }
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Antibody-dependent infection of human macrophages by severe acute respiratory syndrome coronavirus",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Yip",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Leung",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Cheung",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Virol J",
+            "volume": "11",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/1743-422X-11-82"
+                ]
+            }
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Cytokine responses in severe acute respiratory syndrome coronavirus-infected macrophages in vitro: possible relevance to pathogenesis",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Cheung",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Poon",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Ng",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "J Virol",
+            "volume": "79",
+            "issn": "12",
+            "pages": "7819--7826",
+            "other_ids": {
+                "DOI": [
+                    "10.1128/JVI.79.12.7819-7826.2005"
+                ]
+            }
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Chemokine up-regulation in SARS-coronavirus-infected, monocyte-derived human dendritic cells",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Law",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Cheung",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Ng",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Blood",
+            "volume": "106",
+            "issn": "7",
+            "pages": "2366--2374",
+            "other_ids": {
+                "DOI": [
+                    "10.1182/blood-2004-10-4166"
+                ]
+            }
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "SARS-CoV regulates immune function-related gene expression in human monocytic cells",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Yen",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Singh",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Kao",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Wu-Hsieh",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Viral Immunol",
+            "volume": "25",
+            "issn": "4",
+            "pages": "277--288",
+            "other_ids": {
+                "DOI": [
+                    "10.1089/vim.2011.0099"
+                ]
+            }
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Severe acute respiratory syndrome (SARS) coronavirus-induced lung epithelial cytokines exacerbate SARS pathogenesis by modulating intrinsic functions of monocyte-derived macrophages and dendritic cells",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Yoshikawa",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Hill",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Peters",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Tseng",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "J Virol",
+            "volume": "83",
+            "issn": "7",
+            "pages": "3039--3048",
+            "other_ids": {
+                "DOI": [
+                    "10.1128/JVI.01792-08"
+                ]
+            }
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Detection of severe acute respiratory syndrome coronavirus in the brain: potential role of the chemokine mig in pathogenesis",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Zhong",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Clin Infect Dis",
+            "volume": "41",
+            "issn": "8",
+            "pages": "1089--1096",
+            "other_ids": {
+                "DOI": [
+                    "10.1086/444461"
+                ]
+            }
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "The cytokine release syndrome (CRS) of severe COVID-19 and Interleukin-6 receptor (IL-6R) antagonist Tocilizumab may be the key to reduce the mortality",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "Q"
+                    ],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Int J Antimicrob Agents",
+            "volume": "55",
+            "issn": "5",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ijantimicag.2020.105954"
+                ]
+            }
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Cytokine release syndrome",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Shimabukuro-Vornhagen",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Godel",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Subklewe",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "J Immunother Cancer",
+            "volume": "6",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/s40425-018-0343-9"
+                ]
+            }
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Current concepts in the diagnosis and management of cytokine release syndrome",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Gardner",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Porter",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Blood",
+            "volume": "124",
+            "issn": "2",
+            "pages": "188--195",
+            "other_ids": {
+                "DOI": [
+                    "10.1182/blood-2014-05-552729"
+                ]
+            }
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Monocyte-derived IL-1 and IL-6 are differentially required for cytokine-release syndrome and neurotoxicity due to CAR T cells",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Norelli",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Camisa",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Barbiera",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Nat Med",
+            "volume": "24",
+            "issn": "6",
+            "pages": "739--748",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41591-018-0036-4"
+                ]
+            }
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "CAR T cell-induced cytokine release syndrome is mediated by macrophages and abated by IL-1 blockade",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Giavridis",
+                    "suffix": ""
+                },
+                {
+                    "first": "Sjc",
+                    "middle": [],
+                    "last": "Van Der Stegen",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Eyquem",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Hamieh",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Piersigilli",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Sadelain",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Nat Med",
+            "volume": "24",
+            "issn": "6",
+            "pages": "731--738",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41591-018-0041-7"
+                ]
+            }
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Outcome of pediatric patients with lymphoma following stem cell transplant: a single institution report",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Sumaili",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Al-Kofide",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Al-Seraihi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Leuk Lymphoma",
+            "volume": "56",
+            "issn": "5",
+            "pages": "1327--1334",
+            "other_ids": {
+                "DOI": [
+                    "10.3109/10428194.2014.951846"
+                ]
+            }
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Macrophage activation syndrome",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ravelli",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "Curr Opin Rheumatol",
+            "volume": "14",
+            "issn": "5",
+            "pages": "548--552",
+            "other_ids": {
+                "DOI": [
+                    "10.1097/00002281-200209000-00012"
+                ]
+            }
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Macrophage activation syndrome: early diagnosis is key",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Lerkvaleekul",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Vilaiyuk",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Open Access Rheumatol",
+            "volume": "10",
+            "issn": "",
+            "pages": "117--128",
+            "other_ids": {
+                "DOI": [
+                    "10.2147/OARRR.S151013"
+                ]
+            }
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Clinical features of patients infected with 2019 novel coronavirus in Wuhan",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "China. Lancet",
+            "volume": "395",
+            "issn": "",
+            "pages": "497--506",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S0140-6736(20)30183-5"
+                ]
+            }
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "The role of cytokines including interleukin-6 in COVID-19 induced pneumonia and macrophage activation syndrome-like disease",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Mcgonagle",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Sharif",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "O&apos;regan",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Bridgewood",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Autoimmun Rev",
+            "volume": "19",
+            "issn": "6",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.autrev.2020.102537"
+                ]
+            }
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Virus-associated hemophagocytic syndrome as a major contributor to death in patients with 2009 influenza A (H1N1) infection",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Beutel",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Wiesner",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Eder",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Crit Care",
+            "volume": "15",
+            "issn": "2",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/cc10073"
+                ]
+            }
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Influenza pandemics: past, present and future",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Hsieh",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "Z"
+                    ],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Liu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "J Formos Med Assoc",
+            "volume": "105",
+            "issn": "1",
+            "pages": "60102--60111",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S0929-6646(09)60102-9"
+                ]
+            }
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Cytotoxic therapy for severe avian influenza A (H5N1) infection",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Henter",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Chow",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Leung",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Lau",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Lancet",
+            "volume": "367",
+            "issn": "9513",
+            "pages": "870--873",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S0140-6736(06)68232-9"
+                ]
+            }
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "Anti-spike IgG causes severe acute lung injury by skewing macrophage responses during acute SARS-CoV infection",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Wei",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Lin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "JCI Insight",
+            "volume": "4",
+            "issn": "4",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1172/jci.insight.123158"
+                ]
+            }
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "The pathogenesis and treatment of th\u00e8 Cytokine Storm' in COVID-19",
+            "authors": [
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Ye",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Mao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Infect",
+            "volume": "80",
+            "issn": "6",
+            "pages": "607--613",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jinf.2020.03.037"
+                ]
+            }
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Thrombotic microangiopathy in hemophagocytic syndrome: a case report",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Chiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Tsai",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Tsai",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Hsieh",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "J Formos Med Assoc",
+            "volume": "101",
+            "issn": "5",
+            "pages": "362--367",
+            "other_ids": {}
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "Coagulation disorders in hemophagocytic lymphohistiocytosis/macrophage activation syndrome",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Valade",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Mariotte",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Azoulay",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Crit Care Clin",
+            "volume": "36",
+            "issn": "2",
+            "pages": "415--426",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ccc.2019.12.004"
+                ]
+            }
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "Monocyte/macrophage regulation of coagulant events",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Tracy",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Allen",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Worfolk",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Lawler",
+                    "suffix": ""
+                }
+            ],
+            "year": 1996,
+            "venue": "Haemostasis",
+            "volume": "26",
+            "issn": "1",
+            "pages": "6--11",
+            "other_ids": {
+                "DOI": [
+                    "10.1159/000217230"
+                ]
+            }
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "Macrophage procoagulant factors-mediators of inflammatory and neoplastic tissue lesions",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Helin",
+                    "suffix": ""
+                }
+            ],
+            "year": 1986,
+            "venue": "Med Biol",
+            "volume": "64",
+            "issn": "4",
+            "pages": "167--176",
+            "other_ids": {}
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "Microvascular COVID-19 lung vessels obstructive thromboinflammatory syndrome (MicroCLOTS): an atypical acute respiratory distress syndrome working hypothesis",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Ciceri",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Beretta",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Scandroglio",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Crit Care Resusc",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF45": {
+            "ref_id": "b45",
+            "title": "Incidence of thrombotic complications in critically ill ICU patients with COVID-19",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Klok",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Kruip",
+                    "suffix": ""
+                },
+                {
+                    "first": "Njm",
+                    "middle": [],
+                    "last": "Van Der Meer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Thromb Res",
+            "volume": "191",
+            "issn": "",
+            "pages": "145--147",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.thromres.2020.04.013"
+                ]
+            }
+        },
+        "BIBREF46": {
+            "ref_id": "b46",
+            "title": "Immunotherapeutic implications of IL-6 blockade for cytokine storm",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Tanaka",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Narazaki",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Kishimoto",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Immunotherapy",
+            "volume": "8",
+            "issn": "8",
+            "pages": "959--970",
+            "other_ids": {
+                "DOI": [
+                    "10.2217/imt-2016-0020"
+                ]
+            }
+        },
+        "BIBREF47": {
+            "ref_id": "b47",
+            "title": "Dysregulation of the cytokine GM-CSF induces spontaneous phagocyte invasion and immunopathology in the central nervous system",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Spath",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Komuczki",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Hermann",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Immunity",
+            "volume": "46",
+            "issn": "2",
+            "pages": "245--260",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.immuni.2017.01.007"
+                ]
+            }
+        },
+        "BIBREF48": {
+            "ref_id": "b48",
+            "title": "Clinical characteristics of 58 children with a pediatric inflammatory multisystem syndrome temporally associated with SARS-CoV-2",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Whittaker",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Bamford",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Kenny",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "JAMA",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1001/jama.2020.10369"
+                ]
+            }
+        },
+        "BIBREF49": {
+            "ref_id": "b49",
+            "title": "Autoimmune and inflammatory diseases following COVID-19",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Galeotti",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Bayry",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nat Rev Rheumatol",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41584-020-0448-7"
+                ]
+            }
+        },
+        "BIBREF50": {
+            "ref_id": "b50",
+            "title": "Interleukin-6 in biology and medicine",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Akira",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Taga",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Kishimoto",
+                    "suffix": ""
+                }
+            ],
+            "year": 1993,
+            "venue": "Adv Immunol",
+            "volume": "54",
+            "issn": "",
+            "pages": "1--78",
+            "other_ids": {}
+        },
+        "BIBREF51": {
+            "ref_id": "b51",
+            "title": "IL-6 switches the differentiation of monocytes from dendritic cells to macrophages",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Chomarat",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Banchereau",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Davoust",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Palucka",
+                    "suffix": ""
+                }
+            ],
+            "year": 2000,
+            "venue": "Nat Immunol",
+            "volume": "1",
+            "issn": "6",
+            "pages": "510--514",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/82763"
+                ]
+            }
+        },
+        "BIBREF52": {
+            "ref_id": "b52",
+            "title": "Immune-induced fever is mediated by IL-6 receptors on brain endothelial cells coupled to STAT3-dependent induction of brain endothelial prostaglandin synthesis",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Eskilsson",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Mirrasekhian",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Dufour",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Schwaninger",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Engblom",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Blomqvist",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "J Neurosci",
+            "volume": "34",
+            "issn": "48",
+            "pages": "15957--15961",
+            "other_ids": {
+                "DOI": [
+                    "10.1523/JNEUROSCI.3520-14.2014"
+                ]
+            }
+        },
+        "BIBREF53": {
+            "ref_id": "b53",
+            "title": "Interleukin-6 and chronic inflammation",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Gabay",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Arthritis Res Ther",
+            "volume": "8",
+            "issn": "2",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/ar1917"
+                ]
+            }
+        },
+        "BIBREF54": {
+            "ref_id": "b54",
+            "title": "Perturbation of the monocyte compartment in human obesity",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Friedrich",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Sommer",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Strobel",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Front Immunol",
+            "volume": "10",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3389/fimmu.2019.01874"
+                ]
+            }
+        },
+        "BIBREF55": {
+            "ref_id": "b55",
+            "title": "Obesity is a positive modulator of IL-6R and IL-6 expression in the subcutaneous adipose tissue: significance for metabolic inflammation",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Sindhu",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Thomas",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Shihab",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Sriraman",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Behbehani",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Ahmad",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "PLoS One",
+            "volume": "10",
+            "issn": "7",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1371/journal.pone.0133494"
+                ]
+            }
+        },
+        "BIBREF56": {
+            "ref_id": "b56",
+            "title": "GM-CSF in inflammation and autoimmunity",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Hamilton",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "Trends Immunol",
+            "volume": "23",
+            "issn": "8",
+            "pages": "403--408",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S1471-4906(02)02260-3"
+                ]
+            }
+        },
+        "BIBREF57": {
+            "ref_id": "b57",
+            "title": "Roles of GM-CSF in the pathogenesis of autoimmune diseases: an update",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Lotfi",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Thome",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Rezaei",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Front Immunol",
+            "volume": "10",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3389/fimmu.2019.01265"
+                ]
+            }
+        },
+        "BIBREF58": {
+            "ref_id": "b58",
+            "title": "Viruses and autoimmunity: a review on the potential interaction and molecular mechanisms",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Smatti",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Cyprian",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Nasrallah",
+                    "suffix": ""
+                },
+                {
+                    "first": "Al",
+                    "middle": [],
+                    "last": "Thani",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Almishal",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Yassine",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Viruses",
+            "volume": "11",
+            "issn": "8",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3390/v11080762"
+                ]
+            }
+        },
+        "BIBREF59": {
+            "ref_id": "b59",
+            "title": "GM-CSF inhibition reduces cytokine release syndrome and neuroinflammation but enhances CAR-T cell function in xenografts",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Sterner",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Sakemura",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Cox",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Blood",
+            "volume": "133",
+            "issn": "7",
+            "pages": "697--709",
+            "other_ids": {
+                "DOI": [
+                    "10.1182/blood-2018-10-881722"
+                ]
+            }
+        },
+        "BIBREF60": {
+            "ref_id": "b60",
+            "title": "Genomic characterisation and epidemiology of 2019 novel coronavirus: implications for virus origins and receptor binding",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Lu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet",
+            "volume": "395",
+            "issn": "20",
+            "pages": "30251--30259",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S0140-6736(20)30251-8"
+                ]
+            }
+        },
+        "BIBREF61": {
+            "ref_id": "b61",
+            "title": "SARS-CoV-2 and the pathophysiology of coronavirus disease 2019 (COVID-19)",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Bourgonje",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Abdulle",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Timens",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Pathol",
+            "volume": "251",
+            "issn": "3",
+            "pages": "228--248",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/path.5471"
+                ]
+            }
+        },
+        "BIBREF62": {
+            "ref_id": "b62",
+            "title": "Immune mechanisms of hypertension",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Drummond",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Vinh",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Guzik",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Sobey",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Nat Rev Immunol",
+            "volume": "19",
+            "issn": "8",
+            "pages": "517--532",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41577-019-0160-5"
+                ]
+            }
+        },
+        "BIBREF63": {
+            "ref_id": "b63",
+            "title": "Human monocyte subsets exhibit divergent angiotensin I-converting activity",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Rutkowska-Zapala",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Suski",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Szatanek",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Clin Exp Immunol",
+            "volume": "181",
+            "issn": "1",
+            "pages": "126--132",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/cei.12612"
+                ]
+            }
+        },
+        "BIBREF64": {
+            "ref_id": "b64",
+            "title": "Monocytes in acute coronary syndromes",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Shantsila",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Lip",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Arterioscler Thromb Vasc Biol",
+            "volume": "29",
+            "issn": "10",
+            "pages": "1433--1438",
+            "other_ids": {
+                "DOI": [
+                    "10.1161/ATVBAHA.108.180513"
+                ]
+            }
+        },
+        "BIBREF65": {
+            "ref_id": "b65",
+            "title": "ST-segment elevation in patients with Covid-19 -a case series",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Bangalore",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Sharma",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Slotwiner",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "N Engl J Med",
+            "volume": "382",
+            "issn": "25",
+            "pages": "2478--2480",
+            "other_ids": {
+                "DOI": [
+                    "10.1056/NEJMc2009020"
+                ]
+            }
+        },
+        "BIBREF66": {
+            "ref_id": "b66",
+            "title": "Antibody-dependent enhancement of virus infection and disease",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Tirado",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Yoon",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "Viral Immunol",
+            "volume": "16",
+            "issn": "1",
+            "pages": "69--86",
+            "other_ids": {
+                "DOI": [
+                    "10.1089/088282403763635465"
+                ]
+            }
+        },
+        "BIBREF67": {
+            "ref_id": "b67",
+            "title": "Evasion of antibody neutralization in emerging severe acute respiratory syndrome coronaviruses",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Werner",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Kong",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Proc Natl Acad Sci U S A",
+            "volume": "102",
+            "issn": "3",
+            "pages": "797--801",
+            "other_ids": {
+                "DOI": [
+                    "10.1073/pnas.0409065102"
+                ]
+            }
+        },
+        "BIBREF68": {
+            "ref_id": "b68",
+            "title": "Neutralizing antibody response and SARS severity",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Ho",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Emerg Infect Dis",
+            "volume": "11",
+            "issn": "11",
+            "pages": "1730--1737",
+            "other_ids": {
+                "DOI": [
+                    "10.3201/eid1111.040659"
+                ]
+            }
+        },
+        "BIBREF69": {
+            "ref_id": "b69",
+            "title": "Enhanced inflammation in New Zealand white rabbits when MERS-CoV reinfection occurs in the absence of neutralizing antibody",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Houser",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Broadbent",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Gretebeck",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "PLoS Pathog",
+            "volume": "13",
+            "issn": "8",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1371/journal.ppat.1006565"
+                ]
+            }
+        },
+        "BIBREF70": {
+            "ref_id": "b70",
+            "title": "Immunization with SARS coronavirus vaccines leads to pulmonary immunopathology on challenge with the SARS virus",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Tseng",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Sbrana",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Iwata-Yoshikawa",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "PLoS One",
+            "volume": "7",
+            "issn": "4",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1371/journal.pone.0035421"
+                ]
+            }
+        },
+        "BIBREF71": {
+            "ref_id": "b71",
+            "title": "Anti-severe acute respiratory syndrome coronavirus spike antibodies trigger infection of human immune cells via a pH-and cysteine protease-independent FcgammaR pathway",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Jaume",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Yip",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Cheung",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "J Virol",
+            "volume": "85",
+            "issn": "20",
+            "pages": "10582--10597",
+            "other_ids": {
+                "DOI": [
+                    "10.1128/JVI.00671-11"
+                ]
+            }
+        },
+        "BIBREF72": {
+            "ref_id": "b72",
+            "title": "Molecular mechanism for antibody-dependent enhancement of coronavirus entry",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wan",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Shang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Virol",
+            "volume": "94",
+            "issn": "5",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF73": {
+            "ref_id": "b73",
+            "title": "Receptor recognition by the Novel Coronavirus from Wuhan: an analysis based on decade-long structural studies of SARS Coronavirus",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wan",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Shang",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Graham",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Baric",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Gallagher",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Virol",
+            "volume": "94",
+            "issn": "7",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1128/JVI.00127-20"
+                ]
+            }
+        },
+        "BIBREF74": {
+            "ref_id": "b74",
+            "title": "The potential danger of suboptimal antibody responses in COVID-19",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Iwasaki",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nat Rev Immunol",
+            "volume": "20",
+            "issn": "6",
+            "pages": "339--341",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41577-020-0321-6"
+                ]
+            }
+        },
+        "BIBREF75": {
+            "ref_id": "b75",
+            "title": "Is COVID-19 receiving ADE from other coronaviruses? Microbes Infect",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Tetro",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "22",
+            "issn": "",
+            "pages": "72--73",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.micinf.2020.02.006"
+                ]
+            }
+        },
+        "BIBREF76": {
+            "ref_id": "b76",
+            "title": "Primary influenza A virus infection induces cross-reactive antibodies that enhance uptake of virus into Fc receptor-bearing cells",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Gotoff",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Tamura",
+                    "suffix": ""
+                },
+                {
+                    "first": "Janus",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Thompson",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Wright",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Ennis",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 1994,
+            "venue": "J Infect Dis",
+            "volume": "169",
+            "issn": "1",
+            "pages": "200--203",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/infdis/169.1.200"
+                ]
+            }
+        },
+        "BIBREF77": {
+            "ref_id": "b77",
+            "title": "Role of dendritic cells in antibody-dependent enhancement of dengue virus infection",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Boonnak",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Slike",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Burgess",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "J Virol",
+            "volume": "82",
+            "issn": "8",
+            "pages": "3939--3951",
+            "other_ids": {
+                "DOI": [
+                    "10.1128/JVI.02484-07"
+                ]
+            }
+        },
+        "BIBREF78": {
+            "ref_id": "b78",
+            "title": "Antibody-dependent and antibody-independent complement-mediated enhancement of human immunodeficiency virus type 1 infection in a human, Epstein-Barr virus-transformed B-lymphocytic cell line",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Gras",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Dormont",
+                    "suffix": ""
+                }
+            ],
+            "year": 1991,
+            "venue": "J Virol",
+            "volume": "65",
+            "issn": "1",
+            "pages": "541--545",
+            "other_ids": {
+                "DOI": [
+                    "10.1128/JVI.65.1.541-545.1991"
+                ]
+            }
+        },
+        "BIBREF79": {
+            "ref_id": "b79",
+            "title": "The use of anti-inflammatory drugs in the treatment of people with severe coronavirus disease 2019 (COVID-19): the perspectives of clinical immunologists from China",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Clin Immunol",
+            "volume": "214",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.clim.2020.108393"
+                ]
+            }
+        },
+        "BIBREF80": {
+            "ref_id": "b80",
+            "title": "Tocilizumab treatment in COVID-19: a single center experience",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Luo",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Qiu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Med Virol",
+            "volume": "92",
+            "issn": "7",
+            "pages": "814--818",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/jmv.25801"
+                ]
+            }
+        },
+        "BIBREF81": {
+            "ref_id": "b81",
+            "title": "COVID-19: combining antiviral and anti-inflammatory treatments",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Stebbing",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Phelan",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Griffin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet Infect Dis",
+            "volume": "20",
+            "issn": "4",
+            "pages": "400--402",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S1473-3099(20)30132-8"
+                ]
+            }
+        },
+        "BIBREF82": {
+            "ref_id": "b82",
+            "title": "First clinical use of Lenzilumab to neutralize GM-CSF in patients with severe COVID-19 pneumonia. medRxiv",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Temesgen",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Assi",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Vergidis",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF83": {
+            "ref_id": "b83",
+            "title": "Mavrilimumab, a human monoclonal antibody targeting GM-CSF receptor-alpha, in subjects with rheumatoid arthritis: a randomised, double-blind, placebo-controlled, phase I, first-in-human study",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Burmester",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Feist",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Sleeman",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "White",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Magrini",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Ann Rheum Dis",
+            "volume": "70",
+            "issn": "9",
+            "pages": "1542--1549",
+            "other_ids": {
+                "DOI": [
+                    "10.1136/ard.2010.146225"
+                ]
+            }
+        },
+        "BIBREF84": {
+            "ref_id": "b84",
+            "title": "GM-CSF blockade with mavrilimumab in severe COVID-19 pneumonia systemic hyperinflamation: a single-centre, prospective cohort study",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "De Luca",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Cavalli",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Campochiaro",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Della-Torre",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Angelillo",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Tomelleri",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet Rheumatol",
+            "volume": "",
+            "issn": "20",
+            "pages": "30170--30173",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S2665-9913(20)30170-3"
+                ]
+            }
+        },
+        "BIBREF85": {
+            "ref_id": "b85",
+            "title": "Dovepress submit your manuscript | www.dovepress.com DovePress Infection and Drug Resistance",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "G\u00f3mez-Rial",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "2020",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Role of monocyte-macrophage in SARS-CoV-2 pathogenesis: 1) SARS-CoV-2 infection of lung tissue induces release of chemoattractant proinflammatory cytokines by epithelial cells and fibroblasts. 2) Viral antibody-dependent enhancement (ADE) of macrophages could trigger SARS-CoV-2 infection of leucocytes. 3) Chemoattractant gradient induces massive recruitment of inflammatory monocytes from peripheral blood. 4) Monocyte-macrophage activation and differentiation is triggered by GM-CSF and IL-6. 5) An overexuberant activation of macrophages produces the cytokine release syndrome (CRS) responsible for the acute respiratory distress syndrome (ARDS) typical of severe patients. 6) Therapeutical blockade of IL-6 and GM-CSF combination could avoid severe lung immunopathology in COVID-19 patients.",
+            "latex": null,
+            "type": "figure"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "This study received support from the Instituto de Salud Carlos III: project GePEM (Instituto de Salud Carlos III(ISCIII)/PI16/",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Acknowledgments"
+        }
+    ]
+}

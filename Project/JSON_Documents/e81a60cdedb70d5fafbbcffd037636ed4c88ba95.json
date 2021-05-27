@@ -1,0 +1,2943 @@
+{
+    "paper_id": "e81a60cdedb70d5fafbbcffd037636ed4c88ba95",
+    "metadata": {
+        "title": "Longitudinal Metabolomics of Human Plasma Reveals Robust Prognostic Markers of COVID-19 Disease Severity 2 3",
+        "authors": [
+            {
+                "first": "Miriam",
+                "middle": [],
+                "last": "Sindelar",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Washington University",
+                    "location": {
+                        "settlement": "St. Louis",
+                        "region": "MO"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Ethan",
+                "middle": [],
+                "last": "Stancliffe",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Washington University",
+                    "location": {
+                        "settlement": "St. Louis",
+                        "region": "MO"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Michaela",
+                "middle": [],
+                "last": "Schwaiger-Haber",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Washington University",
+                    "location": {
+                        "settlement": "St. Louis",
+                        "region": "MO"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Dhanalakshmi",
+                "middle": [
+                    "S"
+                ],
+                "last": "",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Anbukumar",
+                "middle": [],
+                "last": "",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Randy",
+                "middle": [
+                    "A"
+                ],
+                "last": "Albrecht",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Washington University",
+                    "location": {
+                        "settlement": "St. Louis",
+                        "region": "MO"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Wen-Chun",
+                "middle": [],
+                "last": "Liu",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Kayla",
+                "middle": [
+                    "Adkins"
+                ],
+                "last": "Travis",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Akron",
+                    "location": {
+                        "postCode": "15",
+                        "settlement": "Akron",
+                        "region": "OH"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Adolfo",
+                "middle": [],
+                "last": "Garc\u00eda-5 Sastre",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Leah",
+                "middle": [
+                    "P"
+                ],
+                "last": "Shriver",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Washington University",
+                    "location": {
+                        "settlement": "St. Louis",
+                        "region": "MO"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Gary",
+                "middle": [
+                    "J"
+                ],
+                "last": "Patti",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Washington University",
+                    "location": {
+                        "settlement": "St. Louis",
+                        "region": "MO"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "medRxiv preprint SARS-CoV-2 infections through comparison to patient demographics, comorbidities, clinical 75 measurements, and longitudinal samples taken from individuals over the course of disease 76 progression. Lastly, we validated that the same biomarkers appeared in an established hamster 77 model of SARS-CoV-2 infection (Chan et al., 2020; Imai et al., 2020; Mu\u00f1oz-Fontela et al., 78 2020).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Results",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Clinical cohort The clinical cohort presented in this study consisted of 155 female and 186 male participants.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Out of the 341 patients, 274 tested positive for SARS-CoV-2 by nasopharyngeal swab PCR and 84 67 tested negative. The demographic information for the patients is summarized in Table 1 . 85 Significant differences were observed in several demographic factors for the SARS-CoV-2-86 positive (COV+) cohort compared to the SARS-CoV-2-negative (COV-) cohort. The age ranges 87 of both the COV+ and COV-cohorts are comparable (Figure S1a). However, the COV+ group 88 has significantly older study participants (p<0.0001). The COV+ group is also enriched for 89 African American, male, and non-smoking individuals. There was no significant difference in 90 the body mass index (BMI) between the two groups (Figure S1b). 91 Out of 274 COV+ individuals, 253 were admitted to the hospital and 129 of those patients 92 were admitted to the ICU. As expected, the incidence of both factors (hospitalization and ICU 93 admission), were significantly increased in the COV+ cohort. Treatment of severe COVID-19 94 cases often results in intubation and mechanical ventilation (Goyal et al., 2020). In total, 49 of 95 the COV+ patients required mechanical ventilation, whereas only four COV-individuals 96 required mechanical ventilation. The mortality rate in the COV+ group was 19%, which was 97 significantly higher than in the COV-group (6.0%). A total of 52 COV+ patients died, with 48 98 of the deaths being attributed to COVID-19 and 4 being attributed to other causes. 99 Out of 274 COV+ patients, 253 showed at least one COVID-19-related symptom mentioned 100 by the Centers for Disease Control and Prevention (CDC) including fever, chills, conjunctival 101 congestion, nasal congestion, headaches, cough, sore throat, shortness of breath, nausea or 102 vomiting, diarrhea, myalgia, fatigue, and loss of taste or smell (CDC, 2020). The remaining 21 105",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 176,
+                    "end": 183,
+                    "text": "Table 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Abstract"
+        },
+        {
+            "text": "hospital for reasons unrelated to the pandemic (e.g., accidents, trauma, routine procedures, pre-106 operation testing, or cancer screening/treatment). Out of the 67 COV-cases, 58 presented with at 107 least one COVID-19-related symptom, while two did not have any symptoms characteristic of 108 COVID-19. The frequency of COVID-19-related symptoms is shown in Table 1 , and the 109 distributions across the COV+ and COV-cohorts are depicted in Figure S1c . In both the COV-110 and COV+ groups, the number of COVID-19 related symptoms reported per individual was 111 comparable. The breakdown of how many symptoms were experienced per individual in both the 112 COV+ and COV-groups is shown in Figure S1d . 113 Next, we examined the distribution of comorbidities in the presented WU-350 cohort. The 114 incidence of acute respiratory failure with hypoxia and/or hypercapnia, chronic kidney disease 115 (CKD), and diabetes was significantly higher in the COV+ group compared to the COV-group 116 (Table 1) . Of the COV+ patients, 43% were hypoxic at some point during their hospitalization, a 117 significantly higher proportion than in the COV-group (25%). Furthermore, 34% of COV+ 118 individuals showed an abnormal arterial pH compared to 12% in the COV-group.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 361,
+                    "end": 368,
+                    "text": "Table 1",
+                    "ref_id": null
+                },
+                {
+                    "start": 445,
+                    "end": 455,
+                    "text": "Figure S1c",
+                    "ref_id": null
+                },
+                {
+                    "start": 694,
+                    "end": 704,
+                    "text": "Figure S1d",
+                    "ref_id": null
+                },
+                {
+                    "start": 995,
+                    "end": 1004,
+                    "text": "(Table 1)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "There is an urgent need to identify which COVID-19 patients will develop life-23 threatening illness so that scarce medical resources can be optimally allocated and rapid 24 treatment can be administered early in the disease course, when clinical management is most 25 effective. To aid in the prognostic classification of disease severity, we performed untargeted 26 metabolomics profiling of 341 patients with plasma samples collected at six longitudinal time 27 points. Using the temporal metabolic profiles and machine learning, we then built a predictive 28 model of disease severity. We determined that the levels of 25 metabolites measured at the time 29 of hospital admission successfully predict future disease severity. Through analysis of 30 longitudinal samples, we confirmed that these prognostic markers are directly related to disease 31 progression and that their levels are restored to baseline upon disease recovery. Finally, we 32 validated that these metabolites are also altered in a hamster model of COVID-19. Our results 33 indicate that metabolic changes associated with COVID-19 severity can be effectively used to 34 stratify patients and inform resource allocation during the pandemic. Coronavirus disease 2019 (COVID-19), which is caused by infection with the novel coronavirus 37 SARS-CoV-2, has led to a global health crisis (Wu et al., 2020b) . As of January 2021, more than 38 100 million cases of COVID-19 have been reported worldwide and resulted in over 2.1 million 39 deaths (2020d). The infection fatality rate of SARS-CoV-2 can be reduced with the appropriate 40 care (e.g., intensive care unit beds, staff, extracorporeal life support, and therapeutics). Such 41 resources are limited, however, and with fewer than five million individuals in the United States 42 fully vaccinated, they continue to be in high demand (2020d). In the United States, one out of 43 five hospitals with an intensive care unit (ICU) has at least 95% of their ICU beds full (Conlen 44 F., 2021) and fewer than 150,000 patient courses of casirivimab and imdevimab monoclonal 45 antibodies have been distributed (2020c). Availability of bamlanivimab, the only other 46 monoclonal antibody that currently has emergency use authorization, has been similarly limited 47 (2020b). 48 To reduce mortality, patients who develop critical illness from COVID-19 must be treated 49 early in the disease course before the onset of severe symptoms (Kim et al., 2020) . 50 Unfortunately, COVID-19 progresses rapidly and it is currently difficult to determine which 51 subset of infected patients will develop life-threatening disease (Kattan et al., 2020) . If these 52 patients could be identified, however, then the limited amount of resources available could be 53 optimally allocated to save the greatest number of lives. To this end, the objective of the current 54 study was to identify metabolites in patient plasma that accurately predict life-threatening cases 55 of COVID-19 prior to the onset of severe symptoms. Metabolites in Frozen Human Plasma) was measured repeatedly as a quality control (QC) and Figure S2c but no longer clustered based on batch ( Figure S2d ).",
+            "cite_spans": [
+                {
+                    "start": 462,
+                    "end": 464,
+                    "text": "27",
+                    "ref_id": null
+                },
+                {
+                    "start": 1044,
+                    "end": 1046,
+                    "text": "33",
+                    "ref_id": null
+                },
+                {
+                    "start": 1140,
+                    "end": 1142,
+                    "text": "34",
+                    "ref_id": null
+                },
+                {
+                    "start": 1355,
+                    "end": 1373,
+                    "text": "(Wu et al., 2020b)",
+                    "ref_id": "BIBREF81"
+                },
+                {
+                    "start": 1990,
+                    "end": 2000,
+                    "text": "(Conlen 44",
+                    "ref_id": null
+                },
+                {
+                    "start": 2090,
+                    "end": 2092,
+                    "text": "45",
+                    "ref_id": null
+                },
+                {
+                    "start": 2290,
+                    "end": 2292,
+                    "text": "48",
+                    "ref_id": null
+                },
+                {
+                    "start": 2449,
+                    "end": 2467,
+                    "text": "(Kim et al., 2020)",
+                    "ref_id": "BIBREF39"
+                },
+                {
+                    "start": 2470,
+                    "end": 2472,
+                    "text": "50",
+                    "ref_id": null
+                },
+                {
+                    "start": 2634,
+                    "end": 2655,
+                    "text": "(Kattan et al., 2020)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 3114,
+                    "end": 3124,
+                    "text": "Figure S2c",
+                    "ref_id": "FIGREF10"
+                },
+                {
+                    "start": 3166,
+                    "end": 3176,
+                    "text": "Figure S2d",
+                    "ref_id": "FIGREF10"
+                }
+            ],
+            "section": "Abstract:"
+        },
+        {
+            "text": "The goal of this study was to find metabolic alterations that are predictive of disease severity 152 in SARS-CoV-2 positive individuals. We used admission to the ICU during disease progression 153 to classify patients as having severe or non-severe disease, as has been done previously 154 (Arunachalam et al., 2020; Petrilli et al., 2020 ). An ideal biomarker panel would allow an 155 individual presenting at the hospital and receiving a positive SARS-CoV-2-PCR-test result to be 156 screened for metabolic markers associated with severe disease progression to guide the best 157 treatment at the earliest stage of hospitalization. Thus, we grouped the presented COV+ cohort 158 into a non-severe (COV+ non-severe) group that did not require ICU admission and a severe 159 group (COV+ severe) that did require ICU admission. For data interpretation purposes, two 160 study samples were excluded due to a missing SARS-CoV-2-PCR-test result, one sample due to CC-BY-ND 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. (which was not certified by peer review)",
+            "cite_spans": [
+                {
+                    "start": 290,
+                    "end": 316,
+                    "text": "(Arunachalam et al., 2020;",
+                    "ref_id": null
+                },
+                {
+                    "start": 317,
+                    "end": 338,
+                    "text": "Petrilli et al., 2020",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "151"
+        },
+        {
+            "text": "The copyright holder for this preprint this version posted February 8, 2021. ; https://doi.org/10.1101/2021.02.05.21251173 doi: medRxiv preprint phosphatidylcholines (PCs), and triglycerides (TGs). Further, several polar metabolites known to 172 be related to COVID-19 including gluconate (Song et al., 2020) and dimethylguanosine (Migaud 173 et al., 2020) were also significantly altered (Figure 1b) .",
+            "cite_spans": [
+                {
+                    "start": 289,
+                    "end": 308,
+                    "text": "(Song et al., 2020)",
+                    "ref_id": "BIBREF69"
+                },
+                {
+                    "start": 331,
+                    "end": 342,
+                    "text": "(Migaud 173",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 389,
+                    "end": 400,
+                    "text": "(Figure 1b)",
+                    "ref_id": "FIGREF4"
+                }
+            ],
+            "section": "151"
+        },
+        {
+            "text": "CC-BY-ND 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. (which was not certified by peer review) . CC-BY-ND 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. severe patients in the test set ( Figure S3b ). This indicates that the model can not only 211 differentiate disease severity but also can distinguish COV+ and COV-patients. We wish to 212 emphasize that PCR is the gold standard to diagnose SARS-CoV-2 infection. As such, we 213 present this result only as confirmation that our model correctly predicts disease severity and not 214 as a diagnostic for viral infection.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 395,
+                    "end": 405,
+                    "text": "Figure S3b",
+                    "ref_id": "FIGREF20"
+                }
+            ],
+            "section": "151"
+        },
+        {
+            "text": ". CC-BY-ND 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. (which was not certified by peer review)",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "215"
+        },
+        {
+            "text": "The copyright holder for this preprint this version posted February 8, 2021. ; https://doi.org/10.1101/2021.02.05.21251173 doi: medRxiv preprint We next sought to interpret which metabolites were most salient to the model's predictions. 216 First, we computed the variable importance of the model when trained on the complete dataset, . CC-BY-ND 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity.",
+            "cite_spans": [
+                {
+                    "start": 237,
+                    "end": 240,
+                    "text": "216",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "215"
+        },
+        {
+            "text": "The copyright holder for this preprint this version posted February 8, 2021. ; https://doi.org/10.1101/2021.02.05.21251173 doi: medRxiv preprint Demographics, laboratory values, comorbidities, and COVID-19 severity. 255 After evaluating the efficacy of the ML model, we wished to deduce the relationship of our 25 256 robust metabolite predictors to COVID-19 disease severity. We examined whether these 257 metabolites were reflective of an underlying condition, risk factor for severe disease, or related to Table 2 ). The COV+ severe group is 262 significantly biased towards patients with advanced age, however, the age ranges in both groups 263 are comparable (Figure 3a ). There was no significant difference in BMI (Figure 3b ), but we note 264 that there was variability in BMI for both patient groups. CO2 levels were not significantly ",
+            "cite_spans": [
+                {
+                    "start": 216,
+                    "end": 219,
+                    "text": "255",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 509,
+                    "end": 516,
+                    "text": "Table 2",
+                    "ref_id": "TABREF4"
+                },
+                {
+                    "start": 664,
+                    "end": 674,
+                    "text": "(Figure 3a",
+                    "ref_id": "FIGREF20"
+                },
+                {
+                    "start": 721,
+                    "end": 731,
+                    "text": "(Figure 3b",
+                    "ref_id": "FIGREF20"
+                }
+            ],
+            "section": "(which was not certified by peer review)"
+        },
+        {
+            "text": "These data indicate more severe inflammation in the COV+ severe group compared to the non- Table 2 ). The COV+ severe patients had a significantly greater proportion of 277 . CC-BY-ND 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. CC-BY-ND 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 91,
+                    "end": 98,
+                    "text": "Table 2",
+                    "ref_id": "TABREF4"
+                }
+            ],
+            "section": "268"
+        },
+        {
+            "text": "The copyright holder for this preprint this version posted February 8, 2021. ; https://doi.org/10.1101/2021.02.05.21251173 doi: medRxiv preprint the majority of our predictor metabolites had only weak or insignificant correlations with the 301 comorbidities or patient parameters. 302 We next sought to assess the predictive power of our ML model (when trained on the training . CC-BY-ND 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity.",
+            "cite_spans": [
+                {
+                    "start": 281,
+                    "end": 284,
+                    "text": "302",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "(which was not certified by peer review)"
+        },
+        {
+            "text": "The copyright holder for this preprint this version posted February 8, 2021. ; https://doi.org/10.1101/2021.02.05.21251173 doi: medRxiv preprint Data are presented as mean \u00b1 standard deviation, p values of numeric parameters calculated using a 2-tailed Student's t-test with unequal variance, p value of categorical parameters calculated using a chi-square test. CC-BY-ND 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "(which was not certified by peer review)"
+        },
+        {
+            "text": "The copyright holder for this preprint this version posted February 8, 2021. ; . CC-BY-ND 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. patients. Further, we wished to compare the end points in these groups to the COV-d0 patients. 347 We constructed representative metabolite profiles for the groups by using the 25 predictor 348 metabolites at each of the study time points (d0, d3, d7, d14, d28, and d84) and performed a 349 principal component analysis that enabled the trajectory of each group to be drawn out in two 350 dimensions (Figure 4b) . Strikingly, the analysis revealed three distinct trajectories with starting 351 . CC-BY-ND 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. . CC-BY-ND 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity.",
+            "cite_spans": [
+                {
+                    "start": 335,
+                    "end": 338,
+                    "text": "347",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 640,
+                    "end": 651,
+                    "text": "(Figure 4b)",
+                    "ref_id": "FIGREF24"
+                }
+            ],
+            "section": "(which was not certified by peer review)"
+        },
+        {
+            "text": "The copyright holder for this preprint this version posted February 8, 2021. ; https://doi.org/10.1101/2021.02.05.21251173 doi: medRxiv preprint Next, we sought to compare the longitudinal progression of the predictor metabolites between 382 the surviving COV+ patients. In the COV+ severe group, the LPC levels increased over the 383 course of 84 days to levels that are comparable to the COV-group (FC=1, Figure 5a ). In the 384 COV+ non-severe group, the LPC levels recovered faster, and, at day 28, an overcompensation 385 occurred resulting in higher LPC levels than in the COV-group (FC=1, Figure 5b ). In total, 22 was assessed with a 2-tailed Student's t-test with unequal variance between d2 and d4 samples. c.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 407,
+                    "end": 416,
+                    "text": "Figure 5a",
+                    "ref_id": "FIGREF27"
+                },
+                {
+                    "start": 596,
+                    "end": 605,
+                    "text": "Figure 5b",
+                    "ref_id": "FIGREF27"
+                }
+            ],
+            "section": "(which was not certified by peer review)"
+        },
+        {
+            "text": "Nasal infection",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "d0 d2 d4 d6 d14"
+        },
+        {
+            "text": "Mock SARS-CoV-2",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Blood draws"
+        },
+        {
+            "text": "Influenza Normalized Intensity d.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Blood draws"
+        },
+        {
+            "text": "Normalized abundance * * * * * * * * . CC-BY-ND 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "SARS-CoV-2 Influenza"
+        },
+        {
+            "text": "The copyright holder for this preprint this version posted February 8, 2021. (Fraser et al., 2020; Shen et al., 2020) . Although these studies found higher AUC scores than that 484 of our model, they used considerably smaller patient cohorts than what our model was trained 485 and evaluated on. When we tested non-linear models (RF and SVM), we found worse cross-486 validated performance than ElasticNet (see Figure S3a ). Another challenge we faced in building 487 a model of disease severity is that the size of our study required normalizing metabolic profiles 488 acquired in multiple batches. We demonstrated that ComBat normalization was able to remove 489 the variance resulting from these batch effects. In removing this variance, however, true 490 biological variation was undoubtedly removed. Despite these limitations, our model still 491 accurately predicted patient disease severity.",
+            "cite_spans": [
+                {
+                    "start": 77,
+                    "end": 98,
+                    "text": "(Fraser et al., 2020;",
+                    "ref_id": null
+                },
+                {
+                    "start": 99,
+                    "end": 117,
+                    "text": "Shen et al., 2020)",
+                    "ref_id": "BIBREF66"
+                },
+                {
+                    "start": 274,
+                    "end": 277,
+                    "text": "485",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 411,
+                    "end": 421,
+                    "text": "Figure S3a",
+                    "ref_id": "FIGREF20"
+                }
+            ],
+            "section": "(which was not certified by peer review)"
+        },
+        {
+            "text": "Interpretation of our model led us to identify 25 robust predictor metabolites whose identities 493 were rigorously confirmed. Using this reduced predictor set, we were able to retrain our model CC-BY-ND 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "492"
+        },
+        {
+            "text": "The copyright holder for this preprint this version posted February 8, 2021. ; https://doi.org/10.1101/2021.02.05.21251173 doi: medRxiv preprint followed by 2 min, 1000 x g, 4 \u00b0C). Polar eluates were stored at -80 \u00b0C until the day of LC/MS 529 analysis.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "(which was not certified by peer review)"
+        },
+        {
+            "text": "The SPE-plates were then washed twice with 500 \u00b5L 80% acetonitrile in water (v/v). Lipids Figure S2c . Importantly, 605 within the research samples, there is no clustering by batch (see Figure S2d ). CC-BY-ND 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. (which was not certified by peer review) Table S1 and Table S2 . CC-BY-ND 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 90,
+                    "end": 100,
+                    "text": "Figure S2c",
+                    "ref_id": "FIGREF10"
+                },
+                {
+                    "start": 186,
+                    "end": 196,
+                    "text": "Figure S2d",
+                    "ref_id": "FIGREF10"
+                },
+                {
+                    "start": 400,
+                    "end": 421,
+                    "text": "Table S1 and Table S2",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "530"
+        },
+        {
+            "text": "The copyright holder for this preprint this version posted February 8, 2021. ; https://doi.org/10.1101/2021.02.05.21251173 doi: medRxiv preprint sorted by absolute correlation were taken as the predictors for the ML model. In the statistic-640 based approach, a student's t-test was performed to assess the statistical significance of the 641 differences in each metabolite's intensity between COV+ severe and COV+ non-severe patients.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "(which was not certified by peer review)"
+        },
+        {
+            "text": "Absolute fold-change and p-value cutoffs were used to select metabolites. Performance was positive the variable importance, the more predictive that metabolite is to severe disease. The 659 more negative the variable importance, the more predictive the metabolite is to non-severe 660 disease. To find the metabolites that significantly contribute to the model fit, the training dataset 661 . CC-BY-ND 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "642"
+        },
+        {
+            "text": "The copyright holder for this preprint this version posted February 8, 2021. ; https://doi.org/10.1101/2021.02.05.21251173 doi: medRxiv preprint was resampled with replacement 10,000 times. At each iteration, the ElasticNet model was 662 trained and the variable importance was calculated. After the iterations were complete, the 95% 663 confidence interval of the variable importance was calculated for each metabolite using the 2.5 664 and 97.5 percentiles. If this interval included zero, the metabolite did not significantly contribute 665 to the model fit. Professional Software (Agilent Technologies, v15.5). All p-values were corrected for multiple 679 hypothesis testing using the Benjamini-Hochberg procedure (Benjamini and Hochberg, 1995) . 680 Permutation test 681 To assess the significance of the model fit and compare the predictive power to what is 682 expected from random chance, we performed a permutation test. After the feature selection and 683 . CC-BY-ND 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. (which was not certified by peer review)",
+            "cite_spans": [
+                {
+                    "start": 718,
+                    "end": 748,
+                    "text": "(Benjamini and Hochberg, 1995)",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 751,
+                    "end": 754,
+                    "text": "680",
+                    "ref_id": null
+                },
+                {
+                    "start": 772,
+                    "end": 775,
+                    "text": "681",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "(which was not certified by peer review)"
+        },
+        {
+            "text": "The copyright holder for this preprint this version posted February 8, 2021. ; https://doi.org/10.1101/2021.02.05.21251173 doi: medRxiv preprint model hyperparameters were optimized, the training dataset labels were permuted, and the model 684 was retrained on the permuted data. Then, the performance of this model was assessed on the 685 non-permuted test set and the AUC was computed. This process was repeated 1,000 times. The 686 empirical p-value was computed by calculating the percentage of the 1,000 permutations that 687 achieved an AUC higher than that of the model's performance when trained on non-permuted 688 data. has been previously reported as being more abundant from LPCs with the fatty acid chain in the 711 sn1 position from the sodium adducts when studying the lysophospholipid regioisomers (Han 712 and Gross, 1996). We note that sn2 LPCs can be converted to sn1 during sample preparation, and CC-BY-ND 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. (which was not certified by peer review)",
+            "cite_spans": [
+                {
+                    "start": 814,
+                    "end": 822,
+                    "text": "(Han 712",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "(which was not certified by peer review)"
+        },
+        {
+            "text": "The copyright holder for this preprint this version posted February 8, 2021. ; https://doi.org/10.1101/2021.02.05.21251173 doi: medRxiv preprint used. MS/MS spectra were acquired at a scan rate of 3 spectra/s with different intensity 730 thresholds and collision energies of 10, 20, and 40 V to increase identification rates.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "(which was not certified by peer review)"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "HHS Allocates Regeneron Therapeutic to Treat Patients With Mild to Moderate COVID-19",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "US Department of Health & Human Services (Office of the 774 Assistant Secretary for Preparedness and Response)",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Mcm/Bamlanivimab",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "776 US Department of Health & Human Services (Office of the Assistant Secretary for Preparedness and Response)",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Integrative clinical, 779 genomics and metabolomics data analysis for mainstream precision medicine to investigate COVID-19",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Ahmed",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Zeeshan",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Foran",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Kleinman",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Wondisford",
+                    "suffix": ""
+                },
+                {
+                    "first": "Dong",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "BMJ",
+            "volume": "780",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Systems biological assessment of immunity to mild versus severe COVID-19 783 infection in humans",
+            "authors": [
+                {
+                    "first": "Tak-Yin",
+                    "middle": [],
+                    "last": "Tsang",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Science",
+            "volume": "369",
+            "issn": "",
+            "pages": "1210--1220",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "A White Paper, Community 786 Perspective",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Hankemeier",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Metabolomics : Official journal of the Metabolomic Society",
+            "volume": "12",
+            "issn": "",
+            "pages": "149--149",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Noise Reduction in Speech Processing",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Benesty",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Cohen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "",
+            "volume": "2",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Controlling the False Discovery Rate: A Practical and Powerful Approach 790 to Multiple Testing",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Benjamini",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Hochberg",
+                    "suffix": ""
+                }
+            ],
+            "year": 1995,
+            "venue": "Journal of the Royal Statistical Society Series B (Methodological)",
+            "volume": "57",
+            "issn": "",
+            "pages": "289--300",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Coronavirus Disease 2019 (COVID-19) -SymptomsCenters for Disease Control and Prevention 792",
+            "authors": [],
+            "year": 2020,
+            "venue": "CDC",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Simulation of the Clinical and Pathological Manifestations of Coronavirus Disease 2019 (COVID-19) in 795 a Golden Syrian Hamster Model: Implications for Disease Pathogenesis and Transmissibility",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Chan",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Yuan",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Poon",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Chan",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Chan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Fan",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Tsoi",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Wen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Clin Infect Dis",
+            "volume": "71",
+            "issn": "",
+            "pages": "2428--2446",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "MetaboAnalyst 4.0: 798 towards more transparent and integrative metabolomics analysis",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Chong",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Soufan",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Caraus",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Bourque",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Wishart",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Xia",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Nucleic Acids Res",
+            "volume": "46",
+            "issn": "",
+            "pages": "486--494",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "How Full Are Hospital I.C.U.s Near You? The New York Times",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Conlen",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Leatherby",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Smart",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Non-targeted UHPLC-MS metabolomic data processing methods: a comparative investigation of normalisation, 802 missing value imputation, transformation and scaling",
+            "authors": [],
+            "year": null,
+            "venue": "Metabolomics",
+            "volume": "12",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Fact sheet for health care providers emergency use authorization (EUA) of casirivimab and imdevimab 804",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Fda",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Intensity drift removal in LC/MS metabolomics by common variance compensation",
+            "authors": [],
+            "year": null,
+            "venue": "Bioinformatics",
+            "volume": "30",
+            "issn": "",
+            "pages": "2899--2905",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Metabolomics Profiling of Critically Ill Coronavirus Disease 2019 Patients: 809 Identification of Diagnostic and Prognostic Biomarkers",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Gill",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Wishart",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Crit Care Explor",
+            "volume": "2",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Exploring blood 811 alterations in chronic kidney disease and haemodialysis using metabolomics",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Gagnebin",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Jaques",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Rudaz",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "De Seigneux",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Boccard",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Ponte",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Sci Rep",
+            "volume": "10",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Statistical Analysis of Proteomics, Metabolomics, and Lipidomics Data Using Mass Spectrometry 813",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Ghosh",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Mertens Springer Frontiers in Probability and the Statistical Sciences",
+            "authors": [
+                {
+                    "first": "Susmita",
+                    "middle": [],
+                    "last": "Datta",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Bart",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "International Statistical Review",
+            "volume": "295",
+            "issn": "",
+            "pages": "544--545",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Clinical Characteristics of Covid-19 in New York City",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Ringel",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "N Engl J Med",
+            "volume": "382",
+            "issn": "",
+            "pages": "2372--2374",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Structural Determination of Lysophospholipid Regioisomers by Electrospray 818",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Han",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Gross",
+                    "suffix": ""
+                }
+            ],
+            "year": 1996,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Ionization Tandem Mass Spectrometry \u2020",
+            "authors": [],
+            "year": null,
+            "venue": "Journal of the American Chemical Society",
+            "volume": "118",
+            "issn": "",
+            "pages": "451--457",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "MassBank: a public repository for sharing mass spectral data for life sciences",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Horai",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Arita",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Kanaya",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Nihei",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Ikeda",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Suwa",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Ojima",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Tanaka",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Tanaka",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Aoshima",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "J Mass Spectrom",
+            "volume": "45",
+            "issn": "",
+            "pages": "703--821",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "SARS-CoV-2 Reverse Genetics Reveals a Variable Infection Gradient in the 824 Respiratory Tract",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Mascenik",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Cell",
+            "volume": "182",
+            "issn": "",
+            "pages": "429--446",
+            "other_ids": {}
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Syrian hamsters as a small animal model for SARS-CoV-2 infection and 827 countermeasure development",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Takahashi",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ito",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Proc Natl Acad Sci U S A",
+            "volume": "117",
+            "issn": "",
+            "pages": "16587--16595",
+            "other_ids": {}
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Syrian Hamster as an Animal Model for the Study of Human Influenza Virus Infection",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Iwatsuki-Horimoto",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Nakajima",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Ichiko",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Sakai-Tagawa",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Noda",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Hasegawa",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Kawaoka",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "J Virol",
+            "volume": "92",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Predictive symptoms and comorbidities for severe COVID-19 and intensive care 831 unit admission: a systematic review and meta-analysis",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Jain",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Yuan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Int J Public Health",
+            "volume": "65",
+            "issn": "",
+            "pages": "533--546",
+            "other_ids": {}
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Adjusting batch effects in microarray expression data using 833 empirical Bayes methods",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Johnson",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Rabinovic",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Biostatistics",
+            "volume": "8",
+            "issn": "",
+            "pages": "118--127",
+            "other_ids": {}
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "An Algorithm for Classifying Patients Most Likely to Develop Severe Coronavirus Disease 2019 836 Illness",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Jehi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Critical Care Explorations",
+            "volume": "2",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "Therapy for Early COVID-19: A Critical Need",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Kim",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Read",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Fauci",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "JAMA",
+            "volume": "324",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "Integrative Modeling of Quantitative Plasma Lipoprotein, Metabolic, and Amino Acid 841",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Begum",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "Data Reveals a Multiorgan Pathological Signature of SARS-CoV-2 Infection",
+            "authors": [],
+            "year": null,
+            "venue": "J Proteome Res",
+            "volume": "19",
+            "issn": "",
+            "pages": "4442--4454",
+            "other_ids": {}
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "Quantitative lysophospholipidomics in human 843 plasma and skin by LC-MS/MS",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Koistinen",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Suoniemi",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Simolin",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Ekroos",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Anal Bioanal Chem",
+            "volume": "407",
+            "issn": "",
+            "pages": "5091--5099",
+            "other_ids": {}
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "Applications of machine learning and artificial 845 intelligence for Covid-19 (SARS-CoV-2) pandemic: A review",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Lalmuanawma",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Hussain",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Chhakchhuak",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Chaos Solitons Fractals",
+            "volume": "139",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF45": {
+            "ref_id": "b45",
+            "title": "Single-847 cell landscape of bronchoalveolar immune cells in patients with COVID-19",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Liao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Yuan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wen",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Cheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nat Med",
+            "volume": "26",
+            "issn": "",
+            "pages": "842--844",
+            "other_ids": {}
+        },
+        "BIBREF47": {
+            "ref_id": "b47",
+            "title": "Prognostic Value of C-Reactive Protein in Patients With Coronavirus",
+            "authors": [],
+            "year": 2019,
+            "venue": "Clin Infect Dis",
+            "volume": "71",
+            "issn": "",
+            "pages": "2174--2179",
+            "other_ids": {}
+        },
+        "BIBREF48": {
+            "ref_id": "b48",
+            "title": "Migrating from partial least squares discriminant analysis 851 to artificial neural networks: a comparison of functionally equivalent visualisation and feature contribution tools 852 using jupyter notebooks",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Mendez",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Broadhurst",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Reinke",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Metabolomics",
+            "volume": "16",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF49": {
+            "ref_id": "b49",
+            "title": "A comparative evaluation of the generalised predictive 854 ability of eight machine learning algorithms across ten clinical metabolomics data sets for binary classification",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Mendez",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Reinke",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Broadhurst",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "855 Metabolomics",
+            "volume": "15",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF50": {
+            "ref_id": "b50",
+            "title": "Metabolomics 857 to Predict Antiviral Drug Efficacy in COVID-19",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Migaud",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Gandotra",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Chand",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Gillespie",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Thannickal",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Langley",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Am J Respir Cell Mol Biol",
+            "volume": "63",
+            "issn": "",
+            "pages": "396--398",
+            "other_ids": {}
+        },
+        "BIBREF52": {
+            "ref_id": "b52",
+            "title": "Distinct inflammatory profiles distinguish COVID-19 from influenza with 860 limited contributions from cytokine storm",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Striker",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Martin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Sci Adv",
+            "volume": "6",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF54": {
+            "ref_id": "b54",
+            "title": "Animal models for COVID-19",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Baric",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Carroll",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Cavaleri",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nature",
+            "volume": "586",
+            "issn": "",
+            "pages": "509--515",
+            "other_ids": {}
+        },
+        "BIBREF55": {
+            "ref_id": "b55",
+            "title": "Separation and quantification of 2-acyl-1-lysophospholipids and 1-acyl-2-lysophospholipids in biological 865 samples by LC-MS/MS",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Okudaira",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Inoue",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Shuto",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Nakanaga",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Kano",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Makide",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Saigusa",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Tomioka",
+                    "suffix": ""
+                },
+                {
+                    "first": "Aoki",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "J Lipid Res",
+            "volume": "864",
+            "issn": "",
+            "pages": "2178--2192",
+            "other_ids": {}
+        },
+        "BIBREF57": {
+            "ref_id": "b57",
+            "title": "Large-Scale Multi-omic Analysis of COVID-19 Severity",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Muehlbauer",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Trujillo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Cell Syst",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF58": {
+            "ref_id": "b58",
+            "title": "Re-analysis of Single Cell Transcriptome Reveals That the",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Park",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "3--4",
+            "other_ids": {}
+        },
+        "BIBREF59": {
+            "ref_id": "b59",
+            "title": "Neutrophil Axis Determines the Severity of COVID-19",
+            "authors": [],
+            "year": null,
+            "venue": "Front Immunol",
+            "volume": "11",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF60": {
+            "ref_id": "b60",
+            "title": "Innovation: Metabolomics: the apogee of the omics trilogy",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Patti",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Yanes",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Siuzdak",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Mol Cell Biol",
+            "volume": "871",
+            "issn": "",
+            "pages": "263--269",
+            "other_ids": {}
+        },
+        "BIBREF62": {
+            "ref_id": "b62",
+            "title": "Scikit-learn: Machine Learning in Python",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Weiss",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Dubourg",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "J Mach Learn Res",
+            "volume": "12",
+            "issn": "",
+            "pages": "2825--2830",
+            "other_ids": {}
+        },
+        "BIBREF64": {
+            "ref_id": "b64",
+            "title": "Factors associated with hospital admission and critical illness among 5279 876 people with coronavirus disease",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Francois",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Horwitz",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "prospective cohort study",
+            "volume": "369",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF66": {
+            "ref_id": "b66",
+            "title": "Proteomic 879 and Metabolomic Characterization of COVID-19",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Shen",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Yi",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Bi",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Du",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Quan",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Qian",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Patient Sera. Cell",
+            "volume": "182",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF68": {
+            "ref_id": "b68",
+            "title": "Impaired glucose metabolism in patients with diabetes, prediabetes, and obesity is associated 882 with severe COVID-19",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Connor",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Med Virol",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF69": {
+            "ref_id": "b69",
+            "title": "Omics-Driven Systems Interrogation of Metabolic Dysregulation in COVID-19 Pathogenesis",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Song",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Lam",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Fan",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Cao",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Tian",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Chua",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Meng",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Cell Metab",
+            "volume": "884",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF70": {
+            "ref_id": "b70",
+            "title": "Correlation Between a Discrete and a Continuous Variable. Point-Biserial Correlation",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Tate",
+                    "suffix": ""
+                }
+            ],
+            "year": 1954,
+            "venue": "Ann Math 887 Statist",
+            "volume": "25",
+            "issn": "",
+            "pages": "603--607",
+            "other_ids": {}
+        },
+        "BIBREF72": {
+            "ref_id": "b72",
+            "title": "COVID-19 infection alters kynurenine and fatty acid metabolism, correlating 890 with IL-6 levels and renal status",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Hansen",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Hod",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "JCI Insight",
+            "volume": "5",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF74": {
+            "ref_id": "b74",
+            "title": "Author Correction: SciPy 1.0: fundamental algorithms for scientific 893 computing in Python",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Weckesser",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Bright",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nat Methods",
+            "volume": "17",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF76": {
+            "ref_id": "b76",
+            "title": "SciPy 1.0: fundamental algorithms for scientific computing in Python",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Weckesser",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Bright",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nature methods",
+            "volume": "896",
+            "issn": "",
+            "pages": "261--272",
+            "other_ids": {}
+        },
+        "BIBREF78": {
+            "ref_id": "b78",
+            "title": "HMDB 4.0: the human metabolome database for 2018",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Karu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Nucleic Acids Res",
+            "volume": "46",
+            "issn": "",
+            "pages": "608--617",
+            "other_ids": {}
+        },
+        "BIBREF80": {
+            "ref_id": "b80",
+            "title": "Plasma metabolomic and lipidomic alterations associated with COVID-19",
+            "authors": [],
+            "year": null,
+            "venue": "National Science Review",
+            "volume": "7",
+            "issn": "",
+            "pages": "1157--1168",
+            "other_ids": {}
+        },
+        "BIBREF81": {
+            "ref_id": "b81",
+            "title": "A new coronavirus associated with human respiratory disease in China",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Song",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Tao",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Tian",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Pei",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nature",
+            "volume": "579",
+            "issn": "",
+            "pages": "265--269",
+            "other_ids": {}
+        },
+        "BIBREF82": {
+            "ref_id": "b82",
+            "title": "COVID-19: 904 immunopathogenesis and Immunotherapeutics",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Wan",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "5",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF83": {
+            "ref_id": "b83",
+            "title": "Angiotensin-converting enzyme 2 (ACE2) 906 as a SARS-CoV-2 receptor: molecular mechanisms and potential therapeutic target",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Penninger",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Zhong",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Slutsky",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Intensive Care Med",
+            "volume": "46",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF84": {
+            "ref_id": "b84",
+            "title": "A pneumonia outbreak associated with a new coronavirus of probable bat origin",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Si",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhu",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Huang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nature",
+            "volume": "579",
+            "issn": "",
+            "pages": "270--273",
+            "other_ids": {}
+        },
+        "BIBREF85": {
+            "ref_id": "b85",
+            "title": "Regularization and Variable Selection via the Elastic Net",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Zou",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Hastie",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Journal of the Royal 911 Statistical Society Series B (Statistical Methodology)",
+            "volume": "67",
+            "issn": "",
+            "pages": "301--320",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF1": {
+            "text": "56SARS-CoV-2 is an enveloped, single-stranded positive-sense RNA virus that gains entry into57 host cells through binding of the viral S protein to the angiotensin-converting enzyme 2 (ACE2) 58 receptor (Hou et al., 2020; Zhang et al., 2020). Multiple studies have established that patients 59 infected with SARS-CoV-2 have metabolic dysregulation, possibly due to immune-triggered 60 inflammation or other changes in host physiology (Fraser et al., 2020; Kimhofer et al., 2020; 61 Overmyer et al., 2020; Shen et al., 2020; Thomas et al., 2020; Wu et al., 2020a). To date, 62 however, unique alterations in metabolites upon SARS-CoV-2 infection have not been validated 63 in large patient cohorts. Moreover, metabolites have not been profiled longitudinally from early 64 after infection through recovery to assess which changes are indicative of disease course. 65 In this study, we performed untargeted metabolomics profiling on the polar and non-polar 66 fractions of over 700 human plasma samples collected from 341 patients as part of the WU-350 67 cohort recruited during the first phase of the pandemic in St. Louis, MO. Untargeted 68 metabolomics allows for the unbiased profiling of the human metabolome (Patti et al., 2012) and 69 has been successful at discovering metabolite biomarkers associated with disease pathology 70 (Beger et al., 2016). Using machine learning, we built a predictive model of COVID-19 disease 71 severity based on the metabolic profiles of samples collected from patients at hospital 72 presentation. The model led us to identify 25 unique metabolite biomarkers that were highly 73predictive of future disease severity. We confirmed that these metabolites were directly related to 74",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "137 blank samples were used to assess background signals. Polar and lipid metabolite fractions were 138 extracted from each sample, and a global metabolomics profile was acquired in both positive and 139 negative ionization modes. Processing of the data led to the putative identification of 235 polar 140 and 472 lipid metabolites based on accurate mass and MS/MS matching. Peak areas were 141 extracted for these 707 metabolites to form the metabolic profile of each patient. 142 Given that the metabolic profiles were acquired over several months, the combined data 143 showed strong batch effects as demonstrated by the principal component analysis (PCA) in To remove the variance introduced by the individual batches, but not lose the 145 differentiating biological variance within the research (WU-350) samples, we tested several 146 normalization approaches (Figure S2b) and selected a Combined Batch Correction (ComBat) 147 (Fern\u00e1ndez-Albert et al., 2014) approach that outperformed the other common normalization approaches tested (e.g., PQN, unit length, constant sum, quantile, etc.). After normalization, the 149 metabolic profiles retained differences according to sample origin (WU-350, QC, blank) as 150 shown in",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "161 missing clinical information, and 15 samples were excluded as they represented longitudinal 162 samples from COV-individuals. The final patient cohort consisted of 67 COV-cases, 145 163 COV+ non-severe cases, and 129 COV+ severe cases. Unsupervised analysis of the metabolic 164 profiles for the 324 d0 samples available in our patient cohort demonstrated a clear trend in 165 principal components space that separated COV+ severe, COV+ non-severe, and COV-patients 166 (Figure 1a). Further, several significantly varying metabolites suggested that the metabolic 167 profiles at d0 may indeed be predictive of disease severity. Hierarchical clustering analysis 168 (HCA) of the 54 statistically significant metabolites (p<0.05, Welch's ANOVA) with an absolute 169 fold change greater than two when compared to the COV-group revealed striking changes in 170 multiple representatives of lipid classes including lysophophatidylcholines (LPCs), 171 .",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "Study design. a) Principal component analysis based on all polar (n=235) and lipid 177 (n=472) metabolites in SARS-CoV-2-negative individuals (COV-, n= 67, green), SARS-CoV-2-178 positive individuals with non-severe disease (COV+ non-severe, n=142, orange), and SARS-179 CoV-2-positive individuals with severe disease (COV+ severe, n=123, red) based on the sample 180 provided during presentation at the hospital (d0). b) Hierarchical cluster analysis of metabolic 181 profiles of COV-, COV+ non-severe, and COV+ severe patients at d0. Represented are 54 182 significantly changing polar and lipid metabolites (p<0.05, Welch's ANOVA, Benjamini-183 Hochberg correction). Each column is a sample and each row is a metabolite. c) Human cohort 184 of 341 patients presenting at Barnes Jewish Hospital and Christian Hospital in St. Louis, 185 Missouri. Nasal swab SARS-CoV-2-PCR testing resulted in 67 SARS-CoV-2-negative and 274 186 SARS-CoV-2-positive participants. The cohort was divided into a training cohort and a test 187 cohort. The study design incorporated 6 blood draws for SARS-CoV-2-positive individuals on 188 days 0 (d0), 3 (d3), 7 (d7), 14 (d14), 28 (d28), and 84 (d84) days after presentation at the 189 hospital.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF7": {
+            "text": "Predictive model of COVID-19 disease severity193    The global trends in the d0 metabolic profiles visible in the PCA and HCA visualizations 194 prompted us to develop a machine learning (ML) model of disease severity that would predict195 ICU admission caused by SARS-CoV-2-infection. To make this prediction, we relied on the 196 metabolic signatures in blood plasma at the day of hospital presentation (d0). The 707 197 metabolites that composed the metabolic profiles served as the predictors for our ML model. To 198 assess predictive power, we split our dataset into two distinct groups: a training set (165 patients) 199 that we used to select, optimize, and train our ML model and a test set (98 patients) that was only 200 used to evaluate the model's performance (Figure 1c, Table S1, Table S2). Using our training 201 set, we evaluated the efficacy of five ML algorithms with 20-fold cross validation and found that 202 a linear ElasticNet (Zou and Hastie, 2005) regression model was the most effective (Figure S3a). 203 After training the model, we applied it to the patients in the test set and assessed performance by 204 using the area under the receiver operating characteristic curve (AUC). On the test set, we see 205 strong predictive performance (AUC = 0.72) that outperforms a simple model that only uses 206 BMI and age to predict disease severity (Figure 2a) and is significantly more predictive than a 207 random model (Figure 2b, see Permutation test in Methods). As further validation, when the 208 trained model was applied to the COV-patients (no COV-patients were in the training set), the 209 mean scores output by the model were lower than those for the COV+ non-severe and the COV+210",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF8": {
+            "text": "metabolites that contributed to the model's predictions. Among this group of 93 218 compounds were metabolites that have been previously implicated in SARS-CoV-2 infection 219 such as bilirubin, kynurenate, nicotinamide, creatinine, LPCs, and others (Shen et al., 2020; Song 220 et al., 2020; Thomas et al., 2020; Wu et al., 2020a). The mean intensity of each metabolite in the 221 COV-, COV+ non-severe, and COV+ severe groups can be seen in Figure S4. Next, we aimed to 222 assess the robustness of the metabolites selected by the ML model. We used bootstrap 223 resampling of our training dataset to construct confidence intervals for the variable importance of 224 each of the 707 metabolites profiled (Mendez et al., 2020). The analysis led to the identification 225 of 25 metabolites that significantly contributed to the model's fit. The structural identities of 226 these metabolites were rigorously confirmed (see Methods). Strikingly, 14 of the 25 metabolites 227 are LPCs. Using this reduced predictor set, we re-trained and re-optimized our ElasticNet model 228 on the training set and assessed the predictive power of these 25 metabolites on our test set.229Using only these 25 metabolites resulted in nearly an identical AUC to when the full set of 230 metabolites was used (AUC = 0.70) and still performed better than a random model or a model 231 that used only BMI and age as predictors (Figure S5). The variable importance of these 25 232 metabolites when trained on the entire dataset is shown inFigure 2c. The mean intensity of the 233 25 metabolites in the COV-, COV+ non-severe, and COV+ severe groups is shown inFigure 2d",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF9": {
+            "text": "All LPCs and PCs that contributed to the model, as well as serine, presented a 235 downward trend of signal abundance with disease severity. Conversely, the other polar 236 metabolites, (kynurenate and 1-methyladenosine) and two phosphatidylethanolamines (PEs), 237 exhibited an upward trend in signal intensity (Figure 2e).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF10": {
+            "text": "Predicting SARS-COV-2 severity by machine learning. a) Receiver operating 239 characteristic (ROC) curve of prediction model on training set (green) and test set (blue).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF11": {
+            "text": "Random performance is shown in grey. ROC of BMI and age as predictors for severe COVID-19 241 (red) results in nearly random performance. b) Permutation test results from permuting training242 set labels and training the model on the permuted data. With every permutation, the area under 243 the ROC curve (AUC) was computed. The histogram shows the distribution of these AUC values 244 for 1000 random permutations. In blue, the model performance on the test set when trained on 245 the non-permuted training data results in an empirical p-value of 0.003. c) Variable importance 246 in reduced ElasticNet prediction model (25 metabolite predictors) for disease severity of SARS-247 CoV-2-infection in humans. Negative values are predictive of non-severe disease and positive 248 values are predictive of severe disease. Variable importance is after the model is trained on the 249 complete dataset. d) Profile plot of the normalized signal abundance of 25 prediction model 250 metabolites grouped into COV-(control, n=67), COV+ non-severe (n=142), and COV+ severe 251 (n=123). e) Boxplots showing predictor metabolite intensities in the COV-, COV+ severe, and 252 COV+ non-severe groups. Box limits represent the quartiles of each sample group. Whiskers are 253 drawn to 1.5x of the inter-quartile range.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF13": {
+            "text": "258 the disease progression of COVID-19. We addressed the former by asking whether any of the 25 259 metabolites correlated with demographic factors, laboratory values, or individual patient 260 comorbidities available for the patient cohort. A comparison of the COV+ non-severe and severe 261 groups identified several significantly different parameters (",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF14": {
+            "text": "265 altered between groups (Figure 3c), with values mostly being in the normal range. In contrast, 266 there were significantly increased levels of the inflammatory marker C-reactive protein (Figure 267 3d). D-dimer, absolute neutrophil count, and neutrophil % were also increased (Figure 3e-g).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF15": {
+            "text": "269 severe group and are consistent with reports from previous studies (Ahmed et al., 2020; Luo et 270 al., 2020; Thomas et al., 2020). Neutrophil recruitment has also been shown to be dysregulated in 271 severe COVID-19 disease (Liao et al., 2020; Park and Lee, 2020; Yang et al., 2020; Zhou et al., 272 2020).273 Next, because specific comorbidities increase the risk of having a severe case of COVID-19 274 (Jain and Yuan, 2020; Petrilli et al., 2020; Smith et al., 2020), we also asked which co-275 morbidities are enriched in the COV+ severe group compared to the COV+ non-severe group 276 (Figure 3h,",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF16": {
+            "text": "from acute respiratory failure, CKD, and/or diabetes. The number of 278 individuals with cancer (or a history of cancer) and acute renal failure was not significantly 279 different between the groups. Further, laboratory tests showed an increased proportion of 280 individuals having hypoxia and abnormal arterial pH in the COV+ severe group compared to 281 COV+ non-severe patients. Critically high/low pH values were only observed in the COV+ 282 severe group. We note that timestamps for laboratory tests and measurements were not available 283 for the patient cohort due to HIPPA privacy regulations. As such, these tests and measurements 284 could have been performed at any point during an individual's hospital stay. 285 Considering the number of significant associations in the patient parameters between COV+ 286 severe and non-severe patients, we wanted to check whether any of our predictor metabolites 287 significantly correlated with the clinical data. To that end, we computed the Pearson correlation 288 (Benesty et al., 2009) (for continuous parameters) or the point biserial correlation (Tate, 1954) 289 (for binary parameters) between each predictor metabolite and patient parameter (Figure 3i). The 290 analysis did not reveal any strong correlations between patient parameters and our predictor 291 metabolites. The only significant but moderate correlation with age was with 1-methyladenosine 292 (r=0.4), which was also correlated weakly with CKD (r=0.37) and neutrophil percentage 293 (r=0.39). Significant but weak correlations (r=0.37) were observed for kynurenate and CKD, 294 which has been described previously (Gagnebin et al., 2020). Further, C-reactive protein and 295 neutrophil percentages have a moderate positive correlation with the ceramide (Cer) Cer-NS 296 d18:1_16:0 (r=0.47) and PE 16:0_18:2 (r=0.43). Both the C-reactive protein values and the 297 neutrophil percentages are weakly to moderately negatively correlated with most of the LPCs 298 and serine levels (r = [-0.4, -0.31]), indicating that the reduction of LPCs and serine is 299 concomitant with the immune response to SARS-CoV-2 infection (Mudd et al., 2020). Notably, 300 .",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF17": {
+            "text": "303 set) relative to the predictive power of the patient comorbidities. Thus, for each patient 304 comorbidity we computed the AUC when predicting disease severity based on the comorbidity 305 status for each patient in the test set (Figure 3j). For all evaluated comorbidities, the model 306 achieves a higher AUC. Taken together, these results suggest that our predictor metabolites are 307 indeed relevant to the pathogenesis of SARS-CoV-2 infection and not merely markers of other 308 risk factors.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF19": {
+            "text": "Abbreviations: M -male, F -female, yr -years, B -African American, W -White, O -Other, Y -yes, N -no .",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF20": {
+            "text": "COV+ patient parameters. Demographics, comorbidities, and laboratory values of 318 SARS-CoV-2-positive cases grouped by disease severity (non-severe, severe) for age (a), BMI 319 (b), CO2 (c), C-reactive protein (d), D-dimer (e), absolute neutrophil levels (f), and neutrophil 320 percentage (g). Statistical significance was assessed with a 2-tailed Student's t-test with unequal 321 variance for data shown in (a-g). h) proportion of COV+ severe and non-severe patients with 322 particular comorbidities and laboratory test results. i) Pearson correlation of listed 323 demographic/laboratory results/comorbidities with abundances of the predictor metabolites. j) 324 Area under the ROC curve (AUC) values for patient comorbidities and the ML model when 325 predicting disease severity on the test set patients.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF22": {
+            "text": "further confidence that our predictor metabolites are associated with COVID-19 330 pathogenesis, we next aimed to determine how the levels of these metabolites changed over the 331 course of disease progression. First, we considered the portion of the COV+ severe cohort that 332 survived SARS-CoV-2-infection. We sought to determine the temporal behavior of their 333 metabolic profiles as patients reach peak disease severity and after recovery. Accordingly, we 334 compared the longitudinal metabolite abundances from individuals who had severe disease but 335 survived and were discharged from the hospital. We compared their initial d0 plasma sample336 with the sample taken closest to the day of ICU admission and the last sample provided by the 337 patient at or after hospital discharge. For several LPCs and one PC, a V-shaped trend was 338 observed (Figure 4a). After the initial sample (d0), the level of these metabolites dropped further 339 as the disease worsened but then began to restore during recovery. The reverse trend was 340 observed for Cer-NS d18:1_16:0. Its levels significantly increased until the patients were 341 admitted to the ICU. However, the levels sharply dropped to below the initial d0 levels in the 342 final sample obtained. 343 These pronounced longitudinal trends in surviving COV+ severe patients raised the question 344 of how the trajectory of disease progression (as marked by our predictor metabolites) differed 345 among COV+ non-severe patients, surviving COV+ severe patients, and deceased COV+ severe346",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF23": {
+            "text": "trended with disease severity. The groups then followed a common trajectory through 352 d14, after which deceased and surviving COV+ severe patients diverge, and COV+ non-severe 353 patients rapidly progress to the end of the trajectory that is constant for d28 and d84. For both354    surviving COV+ severe patients and COV+ non-severe patients, the endpoint is close to that of355 the d0 COV-patients. However, COV+ non-severe patients reach this point faster. Conversely, 356 for deceased COV+ patients, after d14, the metabolic profile moves further away from the COV-357 profile staying relatively constant in principal component one (explaining 84% of the variance) 358 but increasing away from COV-in principal component two (explaining 8% of variance). No 359 d84 samples were available for deceased COV+ severe patients. We next examined the 360 individual metabolite levels within the four groups at each time point. The deceased COV+ 361 severe patients show the same direction of dysregulation across the predictor metabolites as the 362 surviving COV+ severe patients, but the magnitude of the perturbation is increased. Unlike the 363 other groups, these deceased patients show no recovery throughout the disease progression",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF24": {
+            "text": "Course of disease progression. a) Prediction model metabolites that significantly vary 368 in intensity as a function of disease progression for SARS-CoV-2 positive patients surviving 369 severe disease (COV+ severe). d0 denotes the first sample after hospital admission, ICU denotes 370 the sample collected closest to ICU admission, and the last sample is the final sample collected 371 for the patient. Only patients where these time points were distinct samples were used. Statistical 372 significance was assessed by using a repeated measures one-way ANOVA with Benjamini-373 Hochberg correction. b) Principal components analysis showing the trajectory of the mean 374 metabolic profile of the 25 predictor metabolites in COV+ non-severe patients (orange), 375 surviving COV+ severe patients (red), and deceased COV+ severe patients (black). No d84 376 samples were available for deceased COV+ severe patients. The last two points for COV+ non-377 severe patients overlap. In green, the mean d0 metabolic profile of COV-patients is shown. The 378surviving COV+ patient profiles approach the d0 COV-profile by d84.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF26": {
+            "text": "386 out of the 25 predictor metabolites showed a significant change (p<0.05, Welch's ANOVA) 387 across the longitudinal timepoints in the COV+ severe group (Figure 5c). All 14 LPCs 388 significantly increased over time, as well as lysophosphatidylethanolamine (LPE) 18:0, PC 38:6, 389 PC 20:4_20:4, and PC 18:2_22:6. Kynurenate, Cer-NS d18:1_16:0, Cer-NS d18:2_16:0, and PE 390 16:0_20:4 showed a decreasing trend after initially being increased compared to the d0 sample of 391 the COV-group. Due to lower sample numbers, the COV+ non-severe group had only 11 392 metabolites that showed a significant trend (p<0.05, Welch's ANOVA, Figure 5d). These 11 393 metabolites are composed of 8 LPCs, Cer-NS d18:1_16:0, PC 38:6, and LPE 18:0.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF27": {
+            "text": "Longitudinal trends in COV+ patients. Changes in plasma levels of the 25 predictor 397 metabolites over the course of the SARS-CoV-2-infection (d0 through d84). a) Profile plot of the 398 mean predictor metabolite intensities relative to d0 COV-samples (n=67, grey) in SARS-CoV-2-399 positive individuals with severe COVID-19-disease (n=123, COV+ severe) who survived and 400 were discharged from the hospital. b) Profile plot of the mean predictor metabolite intensities in 401 SARS-CoV-2-positive individuals with non-severe disease (n=142, COV+ non-severe). c-d) 402 Heatmaps showing relative mean intensity of predictor metabolites in longitudinal profiles of 403 COV+ severe patients (c) or COV+ non-severe patients (d). The mean COV-d0 profiles are 404 included as the control for reference. * indicates a p-value < 0.05. Statistical significance was 405 assessed using a one-way Welch's ANOVA with Benjamini-Hochberg correction.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF29": {
+            "text": "Syrian Hamster Model Confirms Metabolite Changes in COVID-19 Disease408    Lastly, we aimed to validate that the trends observed for the predictor metabolites in the patient409 samples also appeared in an established animal model of SARS-CoV-2 infection (Chan et al., 410 2020; Imai et al., 2020). Syrian hamsters have been found to be susceptible to SARS-CoV-2 411 infection, with the virus mainly replicating in the upper and lower respiratory tract of intranasally 412 challenged animals for approximately six days post-infection. The animals also show signs of 413 disease characterized by body weight lost and pathological lung inflammation. We obtained 414 plasma samples from golden Syrian hamsters that were intranasally inoculated with SARS-CoV-415 2, influenza virus, or nasally treated with saline solution as a mock infection. Relative to the 416 body weights of the mock hamsters, hamsters infected with SARS-CoV-2 experienced 417 significant bodyweight loss (approximately 15%) while hamsters infected with influenza virus 418 did not lose body weight, which is consistent with a previous report (Iwatsuki-Horimoto et al., 419 2018). After 2, 4, 6, and 14 days (d2, d4, d6, and d14) post-infection, plasma was harvested from 420 the SARS-CoV-2 and influenza virus-infected hamsters (Figure 6a). For the mock group, plasma 421 was harvested on days 4 and 14 relative to the infection timeline. All plasma samples were 422 subjected to the same LC/MS workflow as described above. Of our 25 metabolite predictors, all 423 but PC 20:4_20:4 was detected in the hamster plasma. We compared samples from the three 424 groups (SARS-CoV-2, influenza, and mock) harvested on d4, when the disease was fully 425 established (Chan et al., 2020; Imai et al., 2020). Figure 6b summarizes the significantly 426 changing predictor metabolites (p<0.05, Welch's ANOVA) across the three groups. The LPCs 427 showed the same trend as what was observed in the human samples (i.e., a significant depression 428 when compared to the control group). For all significantly varying metabolites, with the 429 exception of PE 16:2_20:4, infection with the influenza virus showed a similar trend of . This is consistent with lower rates of body weight loss in influenza virus-432 infected hamsters as compared to those infected with SARS-CoV-2. Finally, we wanted to 433 determine whether the predictor metabolites in hamsters showed a similar recovery trend over 14 434 days of infection to what we observed in human patients over a period of 84 days of infection. 435 Indeed, there is a similar trend in the SARS-CoV-2 infected hamsters (Figure 6c) as in the 436 human COV+ samples when compared to the d4 control (mock) samples. LPC levels dropped 437 significantly on d4 and slowly recovered towards the control levels on d14. By comparison, in 438 the influenza virus-infected group, levels of most metabolites approached that of the control 439 group more rapidly (Figure 6d).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF30": {
+            "text": "Syrian Hamster model confirms SARS-CoV-2-dependent metabolite changes. a) 443 Experimental design of Syrian hamster model. Hamsters (n=3-6 per group) were infected 444 through intranasal installation of SARS-CoV-2 (1e5 PFU), influenza virus (1e5 PFU), or nasally 445 treated with a saline solution (mock) on day 0 (d0). Blood was drawn 2, 4, 6, and 14 days (d2, 446 d4, d6, d14) post-infection. Nasal washes were performed on day 1, 3, 5, 7, and 9 post-infection. 447 b) Comparing metabolite intensity between hamsters infected with influenza (n=6), SARS-CoV-448 2 (n=5), and mock (n=6) on d4 shows many of the predictor metabolites are significantly altered 449 in the hamster model (p<0.05, Welch's ANOVA). Box limits represent the quartiles of each 450 sample group. Whiskers are drawn to 1.5x of the inter-quartile range. c-d) Metabolite changes 451 during disease progression in SARS-CoV-2 (c) and influenza (d) infected animals show a faster 452 recovery for influenza infected animals. All groups are n=6 with the exception of SARS-CoV-2 453 hamsters at d2 (n=3) and d4 (n=5). * indicates a p-value less than 0.05. Statistical significance 454",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF32": {
+            "text": "study sought to predict COVID-19 disease severity based on the metabolic profiles 459 of human plasma samples obtained early in the disease course, prior to the onset of critical 460 illness. We applied untargeted metabolomics to profile a patient cohort of 341 individuals, which 461 amounted to over 700 study samples in addition to QC and method blanks. In these samples, we462 putatively identified 235 polar metabolites and 472 lipid metabolite species. Using these 463 metabolites, we applied machine learning techniques to build a predictive model that can 464 accurately classify a patient's disease severity from their day 0 metabolic profile obtained at the 465 time of initial hospital admission. This differentiating power may be critical in the coming 466 months as SARS-CoV-2 infections continue to rise and hospital resources for treating severe 467 disease become increasingly more limited. Due to insufficient availability, for example, 468 casirivimab and imdevimab are currently only indicated for the treatment of patients who are at 469 high risk of progressing to severe COVID-19 (2020a). At this time, risk assessment is based on 470BMI and age (FDA, 2020). Even though we see a significant difference between the age of the 471 non-severe and severe disease group (p<0.0001), the results of this study show that risk 472 assessment based on our 25 predictor metabolites is more reliable than age and BMI and 473 therefore provides a better metric for resource allocation.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF33": {
+            "text": "Our linear ElasticNet model is relatively simple compared to other popular ML models,475 including artificial neural networks, support vector machines (SVM), or ensemble based 476 approaches such as random forest (RF) that have been applied to metabolomics datasets 477 previously (Mendez et al., 2019). However, linear models can be easily interpreted and provide 478 robust performance (Mendez et al., 2019; Zou and Hastie, 2005). Indeed, a previous study 479 (Overmyer et al., 2020) successfully used an ElasticNet model to predict disease severity from a",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF34": {
+            "text": "494and found similarly strong predictive ability. Our large sample size that included longitudinal 495 measurements of patient plasma and collection of patient metadata (laboratory values,496    comorbidities, and demographics) allowed us to uniquely validate the relationship of these 25 497 metabolites to COVID-19 disease severity. Further, we confirmed the relevance of these 498 metabolites to the pathology associated with SARS-CoV-2 infection by using an established 499 animal model of COVID-19. It is important to point out that the 25 metabolites we discovered to 500 predict disease severity can be readily measured by using targeted methods on triple quadrupole 501 mass spectrometers that are widely available in most clinical laboratories. Thus, the test we 502 present here to assess the risk of a severe case of COVID-19 does not require intensive Barnes Jewish Hospital or Christian Hospital located in Saint Louis, Missouri, USA 510 were collected. Inclusion criteria were a physician-ordered SARS-CoV-2-PCR test with a 511 positive or negative outcome, availability of gender and age information, and an age greater than 512 18. Informed consent was obtained from all study participants. Samples were collected at the 513 time of enrollment (d0), which was during or immediately following presentation at the hospital,514 and 3, 7, 14, 28, or 84 days post hospital presentation. Clinically relevant medical information 515 (e.g., patient-reported symptoms, date of symptom-onset, age, race, and BMI) was collected at 516 the time of enrollment from the subject, their legally authorized representative, or the medical 517 record. 518 Metabolomics sample preparation 519 Participant plasma, which had been stored at -80 \u00b0C upon collection, was thawed on ice. A 520 50 \u00b5L aliquot was transferred onto the solid-phase-extraction (SPE)-system CAPTIVA-EMR 521 Lipid 96-wellplate (Agilent Technologies) before addition of 250 \u00b5L of acetonitrile containing 522 1% formic acid (v/v) and 10 \u00b5M internal standard (consisting of uniformly 13 C and 15 N labeled 523 amino acids from Cambridge Isotope Laboratories, Inc). The samples were mixed for 1 min at 524 360 rpm on an orbital shaker at room temperature prior to a 10 min incubation period at 4 \u00b0C. 525 Afterwards, 200 \u00b5L 80% acetonitrile in water (v/v) were added to the samples. The samples were 526 mixed on an orbital shaker (360 rpm) for an additional 10 min at room temperature. The samples 527 were then eluted into a 96-deepwell collection plate by centrifugation (10 min, 57 x g, 4 \u00b0C 528 .",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF35": {
+            "text": "531still bound to the SPE-material were then released into a second elution plate, in two elution 532 steps applying 2x 500 \u00b5L 1:1 methyl tert-butyl ether:methanol (v/v) onto the SPE cartridge and 533 centrifuging for 2 min at 1000 g and 4 \u00b0C. The combined eluates were dried under a stream of 534 nitrogen (Biotage SPE Dry Evaporation System) at room temperature and reconstituted with 100 535 \u00b5L 1:1 2-propanol:methanol (v/v) prior to LC/MS analysis.536Hamster plasma samples were diluted 1:4 with methanol (v/v), vortexed for 30 seconds and 537 incubated at -20\u00b0C for 2 hours. Samples were centrifuged for 10 minutes at 13,500 x g at 4\u00b0C 538 and supernatant was transferred to a new centrifuge tube, concentrated, and stored at -80\u00b0C until 539 reconstitution as described above.540 LC/MS analysis of polar metabolites 541 An aliquot of 2 \u00b5L of polar metabolite extract was subjected to LC/MS analysis by using an 542 Agilent 1290 Infinity II liquid-chromatography (LC) system coupled to an Agilent 6540 543 Quadrupole-Time-of-Flight (Q-TOF) mass spectrometer with a dual Agilent Jet Stream 544 electrospray ionization source. Polar metabolites were separated on a SeQuant\u00ae ZIC\u00ae-pHILIC 545 column (100 x 2.1 mm, 5 \u00b5m, polymer, Merck-Millipore) including a ZIC\u00ae-pHILIC guard 546 column (2.1 mm x 20 mm, 5 \u00b5m). The column compartment temperature was maintained at 40 547 \u00b0C and the flow rate was set to 250 \u00b5L\u00d7min -1 . The mobile phases consisted of A: 95% water, 5% 548 acetonitrile, 20 mM ammonium bicarbonate, 0.1% ammonium hydroxide solution (25% 549 ammonia in water), 2.5 \u00b5M medronic acid, and B: 95% acetonitrile, 5% water, 2.250 \u00b5L\u00d7min -1 . Metabolites were detected in positive and negative ion mode with the 553 following source parameters: gas temperature 200 \u00b0C, drying gas flow 10 L\u00d7min -1 , nebulizer 554 pressure 44 psi, sheath gas temperature 300\u00b0C, sheath gas flow 12 L\u00d7min -1 , VCap 3000 V, nozzle 555 voltage 2000 V, Fragmentor 100 V, Skimmer 65 V, Oct 1 RF Vpp 750 V, and m/z range 50-556 1700. Data were acquired under continuous reference mass correction at m/z 121.0509 and 557 922.0890 for positive ion mode and m/z 119.0363 and 966.0007 for negative ion mode. Samples 558 were randomized prior to analysis. In addition, a quality control sample was injected after every 559 12 th sample to monitor signal stability of the instrument. 560 LC/MS analysis of lipid metabolites 561 An aliquot of 2 \u00b5L of lipid extract was subjected to LC/MS analysis by using an Agilent 562 1290 Infinity II LC-system coupled to an Agilent 6545 Q-TOF mass spectrometer with a dual 563 Agilent Jet Stream electrospray ionization source. Lipids were separated on an Acquity UPLC\u00ae 564 HSS T3 column (2.1 x 150 mm, 1.8 \u00b5m) including an Acquity UPLC\u00ae HSS T3 VanGuard Pre-565 Column (2.1 x 5mm, 1.8 \u00b5m) at a temperature of 60 \u00b0C and a flow rate of 250 \u00b5L\u00d7min -1 . The 566 mobile phases consisted of A: 60% acetonitrile, 40% water, 0.1% formic acid, 10 mM 567 ammonium formate, 2.5 \u00b5M medronic acid, and B: 90% 2-propanol, 10% acetonitrile, 0.1% 568 formic acid, 10 mM ammonium formate (dissolved in 1 mL water). The following linear gradient 569 was used: 0-2 min, 30% B; 17 min, 75% B; 20 min, 85%; 23-26 min, 100% B; 26, 30% B 570 followed by a re-equilibration phase of 5 min.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF36": {
+            "text": "detected in positive and negative ion mode with the following source parameters: 572 gas temperature 250 \u00b0C, drying gas flow 11 L\u00d7min -1 , nebulizer pressure 35 psi, sheath gas 573 temperature 300 \u00b0C, sheath gas flow 12 L\u00d7min -1 , VCap 3000 V, nozzle voltage 500 V, 574 Fragmentor 160 V, Skimmer 65 V, Oct 1 RF Vpp 750 V, and m/z range 50-1700. Data were 575 acquired under continuous reference mass correction at m/z 121.0509 and 922.0890 in positive 576 ion mode and m/z 119.0363 and 966.0007 in negative ion mode. Samples were randomized 577 before analysis. In addition, a quality control sample was injected after every 12 th sample to 578 monitor signal stability of the instrument.579 Data preprocessing and normalization 580 Polar metabolite identifications were supported by matching the retention time, accurate 581 mass, and MS/MS fragmentation data to our in-house retention time and MS/MS library created 582 from authentic reference standards (Mass Spectrometry Metabolite Library supplied by IROA 583 Technologies, Millipore Sigma, St. Louis, MO, USA) and online MS/MS libraries (Human 584 Metabolome Database (HMDB, https://hmdb.ca, (Wishart et al., 2018)), Mass Bank of North 585 America (MoNA, https://mona.fiehnlab.ucdavis.edu/, (Horai et al., 2010)), and mzCloud 586 (https://mzcloud.org). Lipid iterative MS/MS data were annotated with the Agilent Lipid 587 Annotator software. All data files were then analyzed in Skyline (Version 20.1.0.155) to obtain 588 peak areas. m/z values of the metabolite and lipid target lists obtained from the metabolite 589 identification workflow, which had at least an MS/MS match to an online library, were extracted 590 under consideration of retention times.591 Due to the risk of handling plasma samples from SARS-CoV-2 positive patients and not 592 knowing how many batches of samples we would receive, we refrained from preparing a pooled 593 sample and instead used the NIST SRM 1950 plasma reference material as quality control (QC) 594sample in each batch. The QC sample was injected after every 12 th sample. After peak area 595 extraction, batch effects were observed in the research samples (seeFigure S2a). The research 596 samples and QC data were used to test typical batch normalization methods (seeFigure S2b) 597 including constant sum, unit length, scale, percentile shift, minimum-maximum, PQN, quantile 598 and ComBat correction used in metabolomics (Chong et al., 2018; Di Guida et al., 2016; 599 Fern\u00e1ndez-Albert et al., 2014; Ghosh, 2017; Johnson et al., 2007). In Figure S2b, the variance 600 remaining in the research samples normalized to the variance in the QC samples is shown for 601 each method. The higher this ratio, the more variance remains in the research samples and the 602 more batch derived variance in the QC samples is reduced. ComBat correction outperformed the 603 other batch correction approaches tested using this metric. After correction, samples are well 604 clustered according to sample type (WU-350, QC, blank) as shown in",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF37": {
+            "text": "were performed at Mount Sinai School of Medicine. Outbred female LVG golden 608 Syrian hamsters were sourced from Charles River Laboratories (Kingston, NY). The hamsters 609 were anesthetized by intraperitoneal injection of a mixture of ketamine and xylazine prior to 610 intranasal inoculation with 0.1 mL of 1e5 plaque-forming units (PFU) of SARS-CoV-2 (WA-1) 611 or H1N1 influenza A virus (A/California/04/2009). On day 2, 4, 6, and 14 days post-infection, 3-612 6 anesthetized hamsters per infection group were euthanized by exsanguination followed by 613 intracardiac injection of veterinary euthanasia solution (SleepAway; Fort Dodge). Plasma",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF38": {
+            "text": "614samples were treated by exposure to germicidal UV-C light.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF40": {
+            "text": "were split into two distinct cohorts for training and testing the ML model. D0 625 COV+ patient samples within batches 1-6 made up the training set and d0 COV+ patient samples 626 from batches 7 through 9 made up the test set. Training and tests sets were treated independently 627 except for batch normalization which was carried out for all patients (including samples 628 collected after d0 and COV-samples) together. Demographics of both training and tests sets are 629 available in",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF41": {
+            "text": "630 Model selection was based on 20-fold cross validation of the training set. Five different ML 631 models: logistic regression, ElasticNet linear regression, partial least squares discriminant 632 analysis (PLSDA), support vector machine (SVM), and random forest were selected for 633 consideration based on interpretability and previous studies (Fraser et al., 2020; Lalmuanawma et 634 al., 2020; Mendez et al., 2019; Shen et al., 2020). Hyperparameters of all models and feature 635 selection strategies were optimized using 20-fold cross validation and a grid search. Two 636 separate feature selection strategies were tested: a correlation-based approach and a statistic-637 based approach. In the correlation-based approach, the Pearson correlation was computed 638 between each metabolite's intensity and the disease severity. Then, the top % of metabolites 639 .",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF42": {
+            "text": "643 assessed with the area under the receiver operating characteristic curve (AUC). After 644 optimization, ElasticNet regression achieved the highest AUC on the cross validated training 645 dataset. The ElasticNet model is given below in Equation 1 where is matrix of metabolic 646 profiles (# of samples x # of metabolites), is the bias term, is the sample labels (0 = COV+ 647 non-severe, 1 = COV+ severe), is the weight of each metabolite to the model prediction, is 648 the weight of the regularization, and is the mixing parameter between the ! and \" optimization, the correlation-based feature selection was used taking the top 33% most 652 correlated metabolites with model hyperparameters = 10.0 and = 0.0. In the reduced 653 predictor model, no feature selection was performed and model hyperparameters = 1.0 and 654 = 0.0 were used. 655 The variable importance of each metabolite in the ElasticNet model is easily computed from 656 the optimized weights, . To normalize for the different abundances of the metabolites, each 657 weight was normalized by the median abundance of the metabolite across all samples. The more 658",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF43": {
+            "text": "ML analyses were carried out using Python (v3.7) with extensive use of the packages 667 SciPy (v1.4.1) (Virtanen et al., 2020a) and Scikit-learn (v0.23.1) (Pedregosa et al., 2011).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF44": {
+            "text": "code used to perform the ML analyses is available on GitHub (https://github.com/raw LC/MS data as well as the processed metabolic profiles and their corresponding 673 deidentified metadata for the human and animal samples will be made publicly available on the 674 Metabolomics Workbench repository. 675 Statistical analysis 676 All statistical analyses were performed using the SciPy (v1.4.1) (Virtanen et al., 2020b) and 677 statsmodels (v0.11.1) (Seabold and Perktold, 2010) Python packages and with the Mass Profiler678",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF45": {
+            "text": "Confirming metabolite identities of predictor metabolites690    The identities of the 25 predictor metabolites were rigorously confirmed with authentic691 standards. For the polar compounds, authentic standards were purchased to not only match 692 MS/MS but also retention times for identification. For lipids, one or two standards per lipid class 693 were matched to an authentic standard to compare MS/MS spectra and retention times. PCs were 694 identified based on m/z and the two characteristic fragments 184.0733 and 86.0964 in positive 695 ionization mode. For PCs where no peaks for the acyl-chains were observed, only the sum 696 composition can be given. LPE 18:0 was matched to its authentic standard based on retention 697 time and MS/MS spectra. PEs were identified based on the neutral loss of 698 phosphorylethanolamine (141.0191) in positive mode. The fatty acyl composition could be 699 derived from the spectra, but no differentiation of regioisomers was possible, as was the case for 700 ceramides. To denote regiospecificity, metabolites whose regioisomers could be differentiated 701 have their acyl-chains are separated with a \"/\" while those that could not have a \"_\". Cer-NS 702 d18:1_16:0 was matched to its authentic standard. Cer-NS d18:2_16:0 matched the MS/MS 703 library spectrum and eluted slightly before Cer-NS d18:1_16:0 as expected due to having one 704 less double bond. LPCs were identified based on MS/MS spectral matches. Standards were 705 available for LPC 14:0/0:0 and LPC 18:1/0:0. Their retention times were used as a reference for acyl-LPC (sn2) has a more pronounced 184.0733 fragment. The 104.1070 fragment (choline) 710",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF46": {
+            "text": "713 our sample preparation was not dedicated to preserve those isomers (Koistinen et al., 2015; 714 Okudaira et al., 2014). 715 Acquiring MS/MS data 716 MS/MS spectra for polar metabolites were acquired on an Orbitrap ID-X Tribrid mass 717 spectrometer (Thermo Scientific). A Vanquish Horizon UHPLC system, with the same 718 chromatographic conditions as described in the Methods, was interfaced with the mass 719 spectrometer via electrospray ionization in both positive and negative mode with a spray voltage 720 of 3.5 and 2.8 kV, respectively. The RF lens value was 35%. Data were acquired in data 721 dependent acquisition (DDA) mode using the built-in deep scan option (AcquireX) with a mass 722 range of 67-900 m/z. MS/MS scans were acquired at 15K resolution on a NIST SRM 1950 723 plasma sample from and 4 individual samples from d0, d3, d7, and d14 in both positive and 724 negative polarity with different collision energies in the range of 20 NCE to 50 NCE for HCD 725 and 30 NCE for CID to maximize identifications.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF47": {
+            "text": "726MS/MS spectra for polar metabolites and lipids were acquired using an iterative approach in727 the MassHunter Acquisition Software (Version 10.1.48, Agilent Technologies) on an Agilent 728 6540 and 6545 QTOF respectively. The same source settings as for MS1 data acquisition were 729 .",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "Demographics of All Subjects 1,2,3 .Data are presented as mean \u00b1 standard deviation, p values of numeric parameters calculated using a 2-tailed Student's t-test with unequal variance, p value of categorical parameters calculated using a chi-square test.Abbreviations: M -male, F -female, yr -years, B -African American, W -White, O -Other, Y -yes, N -no CDC guideline symptom was added to the symptom questionnaire late in the study, parameter is not available for the majority of the subjects SARS-CoV-2 test was routinely administered at presentation at the hospital. The latter was for reasons other than the COVID-19 disease, e.g. accidents, pre-operation tests, regular check-ups, cancer screening, injuries, chest pain Hospital and/or ICU admission for other reasons than COVID-19 disease symptoms, e.g. accidents, acute respiratory failure due to pneumonia, intentional self-harm, possible heart failure, hypertension, trauma, cancerStudy designBlood was collected from study participants enrolled in the WU-350 study during their initial d84) days after the initial blood collection when possible. However, the collection of longitudinal samples depended on survival of the study participants as well as the participants' compliance to donate blood samples after being discharged from the hospital.A total of 704 human plasma samples from 341 patients were available for metabolomics profiling, including 324 d0 samples, 165 d3 samples, 111 d7 samples, 54 d14 samples, 31 d28 samples, and 19 d84 samples. All samples were divided into nine randomized sample batches and 134 analyzed by liquid chromatography/mass spectrometry (LC/MS). An extract of the standard 135 reference material SRM 1950 from NIST (National Institute of Standards and Technology,",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF4": {
+            "text": "Demographics, Comorbidities and Lab values of SARS-CoV-2-infected individualswith d0 sample available 1,2,3 .Includes both training and test cohort",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF6": {
+            "text": "407",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF7": {
+            "text": "multi-omic dataset. A limitation of the ElasticNet approach is that it is a linear model and most biological systems are innately non-linear. Other studies have used non-linear ML models such as RF to predict disease severity from metabolomics, lipidomics, and/or proteomics profiles",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF8": {
+            "text": "The copyright holder for this preprint this version posted February 8, 2021. ; https://doi.org/10.1101/2021.02.05.21251173 doi: medRxiv preprint Study Approval Portions of the human study relevant to Barnes Jewish Hospital, Christian Hospital, and Washington University were reviewed and approved by the Washington University in Saint Louis Institutional Review Board (WU-350 study approval #202003085, and plasma metabolomics study approval #202004204). All animal studies were approved by the Institutional Care and Use Committee at Mount Sinai School of Medicine, following the humane care and use guidelines set by the institution.",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": []
+}

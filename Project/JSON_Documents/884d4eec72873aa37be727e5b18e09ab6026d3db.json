@@ -1,0 +1,1907 @@
+{
+    "paper_id": "884d4eec72873aa37be727e5b18e09ab6026d3db",
+    "metadata": {
+        "title": "Distribution of Incubation Period of COVID-19 in the Canadian Context: Modeling and Computational Study",
+        "authors": [
+            {
+                "first": "Subhendu",
+                "middle": [],
+                "last": "Paul",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Carleton University",
+                    "location": {
+                        "postCode": "K1S 5B6",
+                        "settlement": "Ottawa",
+                        "country": "Canada"
+                    }
+                },
+                "email": "subhendu.paul@carleton.ca."
+            },
+            {
+                "first": "Emmanuel",
+                "middle": [],
+                "last": "Lorin",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Carleton University",
+                    "location": {
+                        "postCode": "K1S 5B6",
+                        "settlement": "Ottawa",
+                        "country": "Canada"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "We propose an original model based on a set of coupled delay differential equations with fourteen delays in order to accurately estimate the incubation period of COVID-19, employing publicly available data of confirmed corona cases. In this goal, we separate the total cases into fourteen groups for the corresponding fourteen incubation periods. The estimated mean incubation period we obtain is 6.74 days (95% Confidence Interval(CI): 6.35 to 7.13), and the 90th percentile is 11.64 days (95% CI: 11.22 to 12.17), corresponding to a good agreement with statistical supported studies. This model provides an almost zero-cost approach to estimate the incubation period. : medRxiv preprint NOTE: This preprint reports new research that has not been certified by peer review and should not be used to guide clinical practice. cer etc., and older people are vulnerable to severe complications and death from coronavirus, although we are discovering new features of COVID-19 every day. In the absence of vaccination and proper medication, we can merely obey some non-pharmaceutical containments, lockdown, social distancing, hand hygiene, face masking, mobile app to trace corona-positive individuals, to help prevent the spread of the this infectious disease. To minimize transmission of the virus through human-to-human interaction, quarantine of individuals with exposure to infectious pathogen is an effective strategy for containing contagious diseases. To govern a quarantine period for asymptomatic as well as presymptomatic individuals, it is essential to fully estimate the incubation period of COVID-19 disease.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "period for COVID-19 range from 2 to 14 days, according to the investigation so far. Precise knowledge of the incubation period is crucial to control infectious disease like COVID-19; a long incubation period means a high risk of further spreading the disease. The distribution of the incubation period can be used to estimate the basic reproduction number R 0 , a key factor of epidemics, in order to measure the potential for disease transmission. It is indeed difficult to obtain a good estimate of the incubation period on the basis of limited data.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "There are several statistical studies (3, 4, 9, 11-15, 17, 23, 28), using a single measure (17), estimating the incubation period of the current pandemic. In addition to those statistical approaches, there are numerous analytical and computational studies based on mathematical models, involving Ordinary Differential Equations (ODE) (5, 8, 10, 19, 21) as well as Delay Differential Equations (DDE) (6, 7, 18, 22, 26, 27), to calculate the basic reproduction number R 0 and understand the underlying dynamics of the epidemic. Researchers usually consider a single delay models, occasionally two delays.",
+            "cite_spans": [
+                {
+                    "start": 334,
+                    "end": 337,
+                    "text": "(5,",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 338,
+                    "end": 340,
+                    "text": "8,",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 341,
+                    "end": 344,
+                    "text": "10,",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 345,
+                    "end": 348,
+                    "text": "19,",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 349,
+                    "end": 352,
+                    "text": "21)",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 399,
+                    "end": 402,
+                    "text": "(6,",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 403,
+                    "end": 405,
+                    "text": "7,",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 406,
+                    "end": 409,
+                    "text": "18,",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 410,
+                    "end": 413,
+                    "text": "22,",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 414,
+                    "end": 417,
+                    "text": "26,",
+                    "ref_id": "BIBREF23"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "To the best of our knowledge, we are proposing for the first time a mathematical model, 2 . CC-BY 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "The outbreak of coronavirus disease 2019 (COVID- 19) , first appeared in Wuhan (China) and spread around the world (20) , and is creating dramatic and daily changes with profound impacts worldwide. People with underlying medical condition, respiratory disease, diabetes, can-1 comprising fourteen delays, to estimate the incubation period utilizing publicly available data of the total number of corona-positive cases. This approach is free from any special type of samples in order to produce the distribution of the incubation period. It is then almost cost free, as it only involves a small scale computations. After a single calculation employing this method, we can generate the current distribution as well as previous distributions of the incubation period. We can also observe the change in the incubation period. In the statistical based approach, it is usually difficult to consider a large incubation period if the sample size is small.",
+            "cite_spans": [
+                {
+                    "start": 49,
+                    "end": 52,
+                    "text": "19)",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 115,
+                    "end": 119,
+                    "text": "(20)",
+                    "ref_id": "BIBREF17"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "However, in this approach, we can go well beyond 14 days, the incubation period we have set for the current work. In this context, we demonstrate the incubation period of the COVID-19 epidemic in Canada employing publicly available data of confirmed corona-positive cases (1)",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": ". As of November 7, 2020, the World Health Organization (WHO) had confirmed a total of 251,338 cases of COVID-19 in Canada, including 10,381 deaths (20) .",
+            "cite_spans": [
+                {
+                    "start": 148,
+                    "end": 152,
+                    "text": "(20)",
+                    "ref_id": "BIBREF17"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "There are several studies on incubation period mainly based on Chinese patients that can only provide a rough estimation for rest of the world. The incubation period may depends on age (25) (median-age / country), hard immunity, public health system, corona testing capacities, daily corona cases, etc. For a better estimation of the incubation period for a particular region, we need to study local patients. Data collection is a bottleneck in studying the incubation period. However, one can easily estimate the incubation period using the approach we propose and publicly available data of confirmed cases.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "In this section, we introduce a compartment based infectious disease model including a total of seventeen partitions, Lockdown, Susceptible, Infected and fourteen compartments of Total confirmed cases (LSIT). The model is constructed as a set of coupled delay differential equations involving several variables and parameters.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "METHODS"
+        },
+        {
+            "text": ". CC-BY 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. (which was not certified by peer review) preprint",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "3"
+        },
+        {
+            "text": "The copyright holder for this this version posted November 23, 2020. ; https://doi.org/10.1101/2020.11.20.20235648 doi: medRxiv preprint",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "3"
+        },
+        {
+            "text": "Modeling the spread of epidemics is an essential tool for projecting its outcome. By estimating important epidemiological parameters using the available database, we can make forecasts of different intervention scenarios. In the context of compartment based model, where the population of a region is distributed into several population groups, such as susceptible, infected, total cases etc., is a simple but useful tool to demonstrate the panorama of an epidemics.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "The Model"
+        },
+        {
+            "text": "In this article, we introduce a infectious disease model, extending the standard SIR model, including the phenomenon lockdown, a non-pharmaceutical way to prevent the spread of the epidemics. The schematic diagram of the model is presented in Fig. S1 with several compartments and various model parameters. The following are the underlying principles of the present model.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 243,
+                    "end": 250,
+                    "text": "Fig. S1",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "The Model"
+        },
+        {
+            "text": "\u2022 The total population is constant (neglecting the migrations, births and unrelated deaths) and initially every individual is assumed susceptible to contract the disease.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "The Model"
+        },
+        {
+            "text": "\u2022 The disease is spread through the direct (face-to-face meeting) or indirect (through air current, common used or delivery items like door handles, grocery products) contact of susceptible individuals with the infective individuals.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "The Model"
+        },
+        {
+            "text": "\u2022 The quarantined area or the compartment for corona cases contains only members of the infected population who are tested corona-positive.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "The Model"
+        },
+        {
+            "text": "\u2022 The virus always kills some percent of the people it infects; the survivors percent represents the recovered group.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "The Model"
+        },
+        {
+            "text": "\u2022 There is a non-pharmaceutical policy (stay at home), commonly known as lockdown, to stop the spread of the disease.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "The Model"
+        },
+        {
+            "text": ". CC-BY 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. (which was not certified by peer review) preprint",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "4"
+        },
+        {
+            "text": "The copyright holder for this this version posted November 23, 2020. ; https://doi.org/10.1101/2020.11.20.20235648 doi: medRxiv preprint Based on the above principles, we consider several compartments:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "4"
+        },
+        {
+            "text": "\u2022 Susceptible (S): the group of individuals who can be infected.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "4"
+        },
+        {
+            "text": "\u2022 Infected (I): the group of people who are spreading the contiguous disease.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "4"
+        },
+        {
+            "text": "\u2022 Total cases (T ): the group of individuals who tested corona-positive (Active cases + Recovered + Deaths).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "4"
+        },
+        {
+            "text": "\u2022 Lockdown (insusceptible) (L): the group of persons who are keeping themselves safe.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "4"
+        },
+        {
+            "text": "The goal of the present model is to estimate the distribution of the incubation period of COVID-19. In this goal, we split the compartment T into J subcomponents T 1 , \u00b7 \u00b7 \u00b7 , T J , where",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "4"
+        },
+        {
+            "text": "(1)",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "4"
+        },
+        {
+            "text": "In Eqn. 1, k represents the time index and T (k) i represents the total corona-positive cases corresponding the incubation period \u03c4 i , presented in Fig. S1 .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 149,
+                    "end": 156,
+                    "text": "Fig. S1",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "4"
+        },
+        {
+            "text": "The time-dependent model is the following set of coupled delay differential equations:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "4"
+        },
+        {
+            "text": "where \u03b1(t), \u03b2(t), \u03b4 i (t), for i = 1, \u00b7 \u00b7 \u00b7 , J and \u03bd(t) are real positive parameters respectively modeling the rate of lockdown, the rate of infection, the rate of tested corona-positive corresponding the incubation period \u03c4 i and the rate of ignoring lockdown, respectively. It follows from Eqn.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "4"
+        },
+        {
+            "text": "2, that for any t",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "4"
+        },
+        {
+            "text": "where N (constant) is the total population size.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "4"
+        },
+        {
+            "text": ". CC-BY 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. (which was not certified by peer review) preprint",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "5"
+        },
+        {
+            "text": "The copyright holder for this this version posted November 23, 2020. ; https://doi.org/10.1101/2020.11.20.20235648 doi: medRxiv preprint",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "5"
+        },
+        {
+            "text": "We solve Eqn. 2 using matlab inner-embedded program dde23 with particular sets of model parameters. To solve the initial value problem Eqn. 2, in the interval [t 0 , t 1 ], we consider L(t 0 ), S(t 0 ), I(t 0 ) and T (t 0 ) as follows:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "5"
+        },
+        {
+            "text": "where T (t 0 ) is the available data at time t 0 , and q is the initial value adjusting parameters.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "5"
+        },
+        {
+            "text": "Initially, there is no lockdown individual so that we can consider L(t 0 ) = 0.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "5"
+        },
+        {
+            "text": "We focus on the exponential growth phase of the COVID-19 epidemic in Canada; one can use the approach to estimate the incubation period distribution for any region affected by the infectious disease. The time resolved (daily updated) database (1) provides the number of total corona-positive cases. The optimal values of p(t) = (q, \u03b1(t), \u03b2(t), \u03b4 1 (t), \u00b7 \u00b7 \u00b7 , \u03b4 J (t), \u03bd) T , that is the set of initial values and model parameters, is obtained by minimizing the root mean square error function E(p(t)), defined as",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Parameter estimation of the model"
+        },
+        {
+            "text": "where T (k) is the available data of total corona-positive cases on the particular kth day, and ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Parameter estimation of the model"
+        },
+        {
+            "text": "In this section, we propose a detailed description of the computational procedure for the proposed model. On 23 January 2020, a 56-year old man admitted to Toronto hospital emergency 6 . CC-BY 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. (which was not certified by peer review) preprint",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Numerical Experiment"
+        },
+        {
+            "text": "The copyright holder for this this version posted November 23, 2020. ; https://doi.org/10.1101/2020.11.20.20235648 doi: medRxiv preprint department in Toronto with a new onset of fever and nonproductive cough, and returning from Wuhan, China, the day prior (16, 24) . It is believed this is the first confirmed case of 2019-nCoV in Canada, and according to the government report, the novel coronavirus arrived on the Canadian coast on January 25, 2020, first reported case. The above information suggests that the start date of the current pandemic in Canada is possibly xsto be January 22, 2020. Additionally, some research studies reported that the estimation of the incubation period of COVID-19",
+            "cite_spans": [
+                {
+                    "start": 257,
+                    "end": 261,
+                    "text": "(16,",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 262,
+                    "end": 265,
+                    "text": "24)",
+                    "ref_id": "BIBREF21"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Numerical Experiment"
+        },
+        {
+            "text": "is from 2 to 14 days (2, 20). As a consequence, in the present study we consider 14 delays, \u03c4 1 = 1 day, \u03c4 2 = 2 days, \u00b7 \u00b7 \u00b7, \u03c4 14 = 14 days. Here we consider a calculation of 276 days, from January 22, 2020 to October 23, 2020. We decompose the time domain of 276 days into two parts : the time domain splitter is in the interval where the first wave is slowed down and the \"second wave\" begins, i.e. the splitter is in the interphase of two different scenarios. In this goal, we can choose the parameters p(t) as p(t) = p (1) from January 22, 2020 to July 19, 2020 , p(t) = p (2) from July 20, 2020 to October 23, 2020 ,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Numerical Experiment"
+        },
+        {
+            "text": "where",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Numerical Experiment"
+        },
+        {
+            "text": "14 , \u03bd (1) ) T and p (2) = (\u03b1 (2) , \u03b2 (2) , \u03b4",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Numerical Experiment"
+        },
+        {
+            "text": "1 , \u00b7 \u00b7 \u00b7 , \u03b4",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Numerical Experiment"
+        },
+        {
+            "text": "(2) 14 , \u03bd (2) ) T are some constants. The capability of an optimization package depends on the initial values of the parameters: for q, \u03b1, \u03b2, \u03bd we consider any positive random number less than unity, where as a choice of x = (\u03b4 1 , \u00b7 \u00b7 \u00b7 , \u03b4 14 ) T is tricky. For this purpose, we consider a vector of 14 positive",
+            "cite_spans": [
+                {
+                    "start": 4,
+                    "end": 6,
+                    "text": "14",
+                    "ref_id": "BIBREF11"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Numerical Experiment"
+        },
+        {
+            "text": "random numbers x such that \u03b4 1 < \u00b7 \u00b7 \u00b7 < \u03b4 4 > \u03b4 5 > \u03b4 6 > \u00b7 \u00b7 \u00b7 > \u03b4 14 and 14 i=1 \u03b4 i = 0.9. We observe, from numerous numerical experiments, the renormalization factor 0.9 works perfectly for the computation.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Numerical Experiment"
+        },
+        {
+            "text": "For a complete calculation, we run the matlab code twice. Firstly, we run the code for the period January 22, 2020 to July 19, 2020 to obtain the estimated value p",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Numerical Experiment"
+        },
+        {
+            "text": "(1) est of p (1) , presented",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Numerical Experiment"
+        },
+        {
+            "text": "in Table S1 , and the value of the error function E(p Table S1 , and the value of the error function E(p ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 3,
+                    "end": 11,
+                    "text": "Table S1",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 54,
+                    "end": 62,
+                    "text": "Table S1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Numerical Experiment"
+        },
+        {
+            "text": "where M 1 corresponds the date July 19, 2020.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Numerical Experiment"
+        },
+        {
+            "text": "After estimating the model parameters with sufficiently small values of the error functions, we compare in Fig. 1 total corona cases calculated with our model and the available data (1). This 8 . CC-BY 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. (which was not certified by peer review) preprint",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 107,
+                    "end": 113,
+                    "text": "Fig. 1",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "RESULTS"
+        },
+        {
+            "text": "The copyright holder for this this version posted November 23, 2020. ; https://doi.org/10.1101/2020.11.20.20235648 doi: medRxiv preprint Figure 2 : The cumulative data of confirmed corona cases as of October 23, 2020 is splitted into several incubation periods.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 137,
+                    "end": 145,
+                    "text": "Figure 2",
+                    "ref_id": "FIGREF10"
+                }
+            ],
+            "section": "RESULTS"
+        },
+        {
+            "text": ". CC-BY 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. (which was not certified by peer review) preprint",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "9"
+        },
+        {
+            "text": "The copyright holder for this this version posted November 23, 2020. ; Figure 3 : Probability densities of incubation period, presented in Eqn. 8. The 'first 100 days' indicates that the density of incubation period based on the cumulative data of the first 100 days during the epidemic starting from January 22, 2020 and similar for other two.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 71,
+                    "end": 79,
+                    "text": "Figure 3",
+                    "ref_id": "FIGREF11"
+                }
+            ],
+            "section": "9"
+        },
+        {
+            "text": ". CC-BY 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "10"
+        },
+        {
+            "text": "The copyright holder for this this version posted November 23, 2020. ; https://doi.org/10.1101/2020.11.20.20235648 doi: medRxiv preprint ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "(which was not certified by peer review) preprint"
+        },
+        {
+            "text": ". CC-BY 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "11"
+        },
+        {
+            "text": "The copyright holder for this this version posted November 23, 2020. ; https://doi.org/10.1101/2020.11.20.20235648 doi: medRxiv preprint 12 . CC-BY 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "(which was not certified by peer review) preprint"
+        },
+        {
+            "text": "The copyright holder for this this version posted November 23, 2020. ; https://doi.org/10.1101/2020.11.20.20235648 doi: medRxiv preprint shows excellent agreement between the model results and the data. In Fig. 2 , the confirmed cases 211,735 of 276 days are divided into fourteen groups. The ith compartment T i , defined in",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 206,
+                    "end": 212,
+                    "text": "Fig. 2",
+                    "ref_id": "FIGREF10"
+                }
+            ],
+            "section": "(which was not certified by peer review) preprint"
+        },
+        {
+            "text": "Eqn. 1, is the confirmed cases of 276 days corresponding to the incubation period of i day(s) for i = 1, 2, \u00b7 \u00b7 \u00b7, 14. In addition T i is the frequency of the incubation period of i day(s), and using the bar chat, we obtain a mean incubation period of 6.89 days, a median of the incubation period of 6 days, 90th percentile of 11 days, 95th percentile of 12 days and 99th percentile of 13.5",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "(which was not certified by peer review) preprint"
+        },
+        {
+            "text": "days. The bar chat shows that mode of the incubation period is of 6 days, and there is a second peak for the incubation period at 10 days. However, the second peak is strongly dominated by the first. From the bar chat presented in Fig. 2 , we can also obtain the probability densities of incubation period of the first k days during the epidemic, thanks to the total confirmed cases of the first k days starting on January 22, 2020. The probability densities p (k) i of the first k days 13 . CC-BY 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 231,
+                    "end": 237,
+                    "text": "Fig. 2",
+                    "ref_id": "FIGREF10"
+                }
+            ],
+            "section": "(which was not certified by peer review) preprint"
+        },
+        {
+            "text": "The copyright holder for this this version posted November 23, 2020. ; https://doi.org/10.1101/2020.11.20.20235648 doi: medRxiv preprint and corresponding incubation period i days for i = 1, 2, \u00b7 \u00b7 \u00b7, 14 can be defined as",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "(which was not certified by peer review) preprint"
+        },
+        {
+            "text": "where T \u00b7 \u00b7 \u00b7, 14. The estimated incubation period, obtained using lognormal distribution, has a mean of 6.74 (95% CI: 6.35 to 7.13), and the 90th percentile is 11.64 days (95% CI : 11.22 to 12.17). In addition, we focus on the distribution of the incubation period for a single day, October 23, 2020",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "(which was not certified by peer review) preprint"
+        },
+        {
+            "text": "which is the 276th day of the epidemic, with 2258 confirmed cases. The probability densityp",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "(which was not certified by peer review) preprint"
+        },
+        {
+            "text": "for a single day can be calculated a\u015d",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "(which was not certified by peer review) preprint"
+        },
+        {
+            "text": "where T (k) i is defined in Eqn. 1. The estimated incubation period, obtained from frequency table of 276th day and population size of 2258, has a mean of 7.14 days, a median of 7 days, the 90th percentile of 11 days, 95th percentile of 12.5 days and 99th percentile of 14 days. We generate the lognormal distribution function from the 276th day's frequency data and obtain 14 . CC-BY 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. (which was not certified by peer review) preprint",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "(which was not certified by peer review) preprint"
+        },
+        {
+            "text": "The copyright holder for this this version posted November 23, 2020. ; https://doi.org/10.1101/2020.11.20.20235648 doi: medRxiv preprint the lognormal distribution parameters \u00b5 = 1.83 and \u03c3 = 0.53. Fig. 5 shows the lognormal distribution of 276th day along withp ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 198,
+                    "end": 204,
+                    "text": "Fig. 5",
+                    "ref_id": "FIGREF5"
+                }
+            ],
+            "section": "(which was not certified by peer review) preprint"
+        },
+        {
+            "text": "The calculated mean incubation period using two different ways, the raw data as well as the lognormal distribution are indeed closed, indicating that the raw data calculated using our mathematical model, are statistically significant for a lognormal distribution (statistical p value less than 0.001). It follows from the \"Math.-Model\" calculation, presented in Table 1 , that the mean incubation period of 276th day, population size 2258, is greater than the mean incubation period of 276 days, population size 221,735 which demonstrates that the mean incubation period of COVID-19 is slightly increasing with time.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 362,
+                    "end": 369,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "In this paper, we have derived a mathematical model based on a set of coupled delay differential equations, which was used to estimate the incubation period with good agreement with statistical works. Using the proposed model and publicly available data of confirmed cases, one could accurately estimate the incubation period in any region. We obtain the distribution of the incubation period from the population, so that it is better than any sample-dependent result. We have considered fourteen delays, but it is possible to consider an arbitrary number of delays. After estimating the model parameters, one can estimate the incubation period of confirmed cases over a long period, over a small time interval, and even over a single day. The present approach 15 . CC-BY 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. (which was not certified by peer review) preprint . CC-BY 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. (which was not certified by peer review) preprint",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "The copyright holder for this this version posted November 23, 2020. ; https://doi.org/10.1101/2020.11.20.20235648 doi: medRxiv preprint . CC-BY 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. (which was not certified by peer review) preprint",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "The copyright holder for this this version posted November 23, 2020. ; https://doi.org/10.1101/2020.11.20.20235648 doi: medRxiv preprint . CC-BY 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. (which was not certified by peer review) preprint",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "The copyright holder for this this version posted November 23, 2020. ; https://doi.org/10.1101/2020.11.20.20235648 doi: medRxiv preprint . CC-BY 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": ". CC-BY 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. (which was not certified by peer review) preprint",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "20"
+        },
+        {
+            "text": "The copyright holder for this this version posted November 23, 2020. ; https://doi.org/10.1101/2020.11.20.20235648 doi: medRxiv preprint Figure 1 shows the compartmental based epidemic model; the set of coupled delay differential equations is generated from the model diagram. The estimated values of the model parameters are listed in Table 1 . In Figure 2 , the confirmed cases of first 100 days are divided into fourteen groups. The bar chat represents the frequency diagram of the incubation periods. From the bar chat, we also obtain the probability densities for first 100 days. The confirmed cases of first 200 days are bifurcated into fourteen groups, presented in Figure 3 . In Figure 4 we report that the distribution of confirmed cases of October 23, 2020, a single day, for different incubation periods.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 137,
+                    "end": 145,
+                    "text": "Figure 1",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 336,
+                    "end": 343,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 349,
+                    "end": 357,
+                    "text": "Figure 2",
+                    "ref_id": "FIGREF10"
+                },
+                {
+                    "start": 673,
+                    "end": 681,
+                    "text": "Figure 3",
+                    "ref_id": "FIGREF11"
+                },
+                {
+                    "start": 687,
+                    "end": 695,
+                    "text": "Figure 4",
+                    "ref_id": "FIGREF4"
+                }
+            ],
+            "section": "20"
+        },
+        {
+            "text": "1 . CC-BY 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. (which was not certified by peer review) preprint",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "20"
+        },
+        {
+            "text": "The copyright holder for this this version posted November 23, 2020. ; https://doi.org/10.1101/2020.11.20.20235648 doi: medRxiv preprint 3 . CC-BY 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. (which was not certified by peer review) preprint",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "20"
+        },
+        {
+            "text": "The copyright holder for this this version posted November 23, 2020. ; https://doi.org/10.1101/2020.11.20.20235648 doi: medRxiv preprint Figure 4 : The confirmed corona cases as of October 23, 2020 is splitted into several incubation periods.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 137,
+                    "end": 145,
+                    "text": "Figure 4",
+                    "ref_id": "FIGREF4"
+                }
+            ],
+            "section": "20"
+        },
+        {
+            "text": ". CC-BY 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. (which was not certified by peer review) preprint",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "4"
+        },
+        {
+            "text": "The copyright holder for this this version posted November 23, 2020. ; https://doi.org/10.1101/2020.11.20.20235648 doi: medRxiv preprint",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "4"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Incubation period of 2019 novel coronavirus (2019-ncov) infections among travellers from",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Backer",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Klinkenberg",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Wallinga",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "20--28",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Epidemiology and transmission of covid-19 in shenzhen China: Analysis of 391 cases and 1,286 of their close contacts",
+            "authors": [
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Bi",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Mei",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Ye",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zou",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Wei",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Truelove",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "A hybrid multi-scale model of covid-19 transmission dynamics to assess the potential of non-pharmaceutical interventions",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Bouchnita",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Jebrane",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Chaos, Solitons & Fractals",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "A time delay dynamic system with external source for the local outbreak of 2019-ncov",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Cheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Jiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Applicable Analysis",
+            "volume": "",
+            "issn": "",
+            "pages": "1--12",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Solvable delay model for epidemic spreading: the case of covid-19 in italy",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Dell&apos;anna",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "arXiv": [
+                    "arXiv:2003.13571"
+                ]
+            }
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Modeling the dynamics of the covid-19 population in australia: A probabilistic analysis",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Eshragh",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Alizamir",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Howley",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Stojanovski",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "arXiv": [
+                    "arXiv:2005.12455"
+                ]
+            }
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Is a 14-day quarantine period optimal for effectively controlling coronavirus disease 2019 (covid-19)? medRxiv",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Jiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Niu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Cai",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Liao",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Early dynamics of transmission and control of covid-19: a mathematical modelling study. The lancet infectious diseases",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Kucharski",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Russell",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Diamond",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Edmunds",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Funk",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Eggo",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Jit",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Munday",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "The incubation period of coronavirus disease 2019 (covid-19) from publicly reported confirmed cases: estimation and application",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Lauer",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Grantz",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Bi",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Jones",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Zheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Meredith",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Azman",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Reich",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Lessler",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Annals of internal medicine",
+            "volume": "172",
+            "issn": "9",
+            "pages": "577--582",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "The difference in the incubation period of 2019 novel coronavirus (sars-cov-2) infection between travelers to Hubei and nontravelers: The need for a longer quarantine period",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Leung",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Infection Control & Hospital Epidemiology",
+            "volume": "41",
+            "issn": "5",
+            "pages": "594--596",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Early transmission dynamics in Wuhan, China, of novel coronavirusinfected pneumonia",
+            "authors": [
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Guan",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Tong",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Ren",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "S M"
+                    ],
+                    "last": "Leung",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "H Y"
+                    ],
+                    "last": "Lau",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Wong",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "New England Journal of Medicine",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Incubation period and other epidemiological characteristics of 2019 novel coronavirus infections with right truncation: a statistical analysis of publicly available case data",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Linton",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Kobayashi",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Hayashi",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Akhmetzhanov",
+                    "suffix": ""
+                },
+                {
+                    "first": "S.-M",
+                    "middle": [],
+                    "last": "Jung",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Yuan",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Kinoshita",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Nishiura",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Journal of clinical medicine",
+            "volume": "9",
+            "issn": "2",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Epidemiological parameters of coronavirus disease 2019: a pooled analysis of publicly reported individual data of 1155 cases from seven countries",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Ma",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Zeng",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Yun",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Guo",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Diagnosis and management of first case of covid-19 in Canada: Lessons applied from sars",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Marchand-Sen\u00e9cal",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Kozak",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Mubareka",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Salt",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Gubbay",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Eshaghi",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Allen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Bastien",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Gilmour",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Clinical Infectious Diseases",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Incubation period of covid-19: a rapid systematic review and meta-analysis of observational research",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Mcaloon",
+                    "suffix": ""
+                },
+                {
+                    "first": "\u00c1",
+                    "middle": [],
+                    "last": "Collins",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Hunt",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Barber",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Byrne",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Butler",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Casey",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Griffin",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Lane",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Mcevoy",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "BMJ open",
+            "volume": "10",
+            "issn": "8",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Elementary time-delay dynamics of covid-19 disease. medRxiv",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Menendez",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Covid-19: Development of a robust mathematical model and simulation package with consideration for ageing population and time delay for control action and resusceptibility",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Ng",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Gui",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Physica D: Nonlinear Phenomena",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Rolling updates on coronavirus disease (covid-19)",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Lockdown: a non-pharmaceutical policy to prevent the spread of covid-19. mathematical modeling and computation",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Paul",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Lorin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Analysis of a vector-borne diseases model with a two-lag delay differential equation",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Qaddura",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Mavinga",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "The North Carolina Journal of Mathematics and Statistics",
+            "volume": "4",
+            "issn": "",
+            "pages": "12--28",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Estimation of incubation period distribution of covid-19 using disease onset forward time: a novel cross-sectional and forward follow-up study. medRxiv",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Qin",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "You",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X.-H",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "First imported case of 2019 novel coronavirus in Canada, presenting as mild pneumonia",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Silverstein",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Stroud",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Cleghorn",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Leis",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "The Lancet",
+            "volume": "395",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Does incubation period of covid-19 vary with age? a study of epidemiologically linked cases in singapore",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [
+                        "Y T"
+                    ],
+                    "last": "Tan",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Wong",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Leo",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "P H S"
+                    ],
+                    "last": "Toh",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Epidemiology & Infection",
+            "volume": "148",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "New approximations, and policy implications, from a delayed dynamic model of a fast pandemic",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Vyasarayani",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Chatterjee",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "arXiv": [
+                    "arXiv:2004.03878"
+                ]
+            }
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "the calculated results obtained from System Eqn. 2. The integer M , used in Eqn. 5, is the size of the data set. Due to the complexity of the error function, the minimization using the matlab function fminsearch requires a very large number of iterations.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": ") = 54.92. Then, we run the code for the entire period from January 22, 2020 to October 23, 2020, but using the estimated value p",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "Estimation of the total number of confirmed coronavirus cases (T ) compared to the available data (1) . Here blue circles indicates the results obtained from model, and red line is the publicly available data (1). the interval January 22, 2020 to July 19, 2020, and obtain the estimated value p(2) est of p (2) for the rest of the period, presented in",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "Probability density function of the lognormal distribution of the incubation period with \u00b5 = 1.79 and \u03c3 = 0.52. The result based on the total confirmed corona cases of 276 days. The blue circles indicate the densities obtained from the model calculation.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": "Probability density function of the lognormal distribution of the incubation period with \u00b5 = 1.83 and \u03c3 = 0.53. The result based on the confirmed corona cases of a particular day, October 23, 2020. The blue circles indicate the densities obtained from the model calculation.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF6": {
+            "text": "14 are presented inFig. 3. The density curves for the first 100, 200 and 276 days are similar, and the densities obey a remarkable configuration: for 2 \u2264 i \u2264 5, the second peak, for i = 10, does not follow the decreasing-increasing convention. For the incubation period an oscillatory behaviour is observed. The descending pattern for 2 \u2264 i \u2264 5 and the ascending order for 7 \u2264 i \u2264 9 and 11 \u2264 i \u2264 14 indicate that the mean incubation period is rising. Now, we fit the frequency data for the first 276 days, presented in the bar chatFig. 2, with the lognormal distribution function and obtain the lognormal distribution parameters \u00b5 = 1.79 and \u03c3 = 0.52.Fig. 4shows the lognormal distribution function of the incubation period of the first 276 days and population size 211,735 with p",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF7": {
+            "text": "The estimated incubation period of 276th day, population size of 2258 and obtained using a lognormal distribution, has a mean of 6.98 days (95% CI: 6.41 to 7.55) and the 90th percentile of 12.29 days. A list of several studies along with the present calculation \"Math.-Model\" are presented inTable 1; we present the mean incubation period for the raw data as well as the lognormal distribution function. The list shows that our calculated data are closed the value reported by Ma et. al.(15) using a larger sample size of 587.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF8": {
+            "text": ", Y. Yu, and Z. Lu. Stability analysis of an age-structured seirs model with time delay. Mathematics, 8(3):455, 2020. 28. J. Zhang, M. Litvinova, W. Wang, Y. Wang, X. Deng, X. Chen, M. Li, W. Zheng, L. Yi, X. Chen, et al. Evolving epidemiology of novel coronavirus diseases 2019 and possible interruption of local transmission outside Hubei province in China: a descriptive and modeling study. MedRxiv, 2020.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF9": {
+            "text": "Schematic diagram of the compartmental based epidemic model, presented in Equation 2.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF10": {
+            "text": "The cumulative data of confirmed corona cases for first 100 days is splitted into several incubation periods.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF11": {
+            "text": "The cumulative data of confirmed corona cases for first 200 days is splitted into several incubation periods.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "A list of several studies along with sample size, mean and lognormal parameters \u00b5, \u03c3.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "The estimated values of the model parameters for two different time domains defined in Equation6.Parameters Estimated value Parameters Estimated value",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "Competing interests: The authors declare that they have no competing interests.Data and materials availability: All data needed to evaluate the conclusions in the paper are present in the paper and/or the Supplementary Materials. Additional information related to this paper may be requested from the authors.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "annex"
+        }
+    ]
+}

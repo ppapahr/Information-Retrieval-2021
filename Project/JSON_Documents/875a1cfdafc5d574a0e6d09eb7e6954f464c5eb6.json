@@ -1,0 +1,2027 @@
+{
+    "paper_id": "875a1cfdafc5d574a0e6d09eb7e6954f464c5eb6",
+    "metadata": {
+        "title": "The excess costs of childhood food allergy on Canadian families: a cross-sectional study",
+        "authors": [
+            {
+                "first": "Michael",
+                "middle": [
+                    "A"
+                ],
+                "last": "Golding",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Elinor",
+                "middle": [],
+                "last": "Simons",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Elissa",
+                "middle": [
+                    "M"
+                ],
+                "last": "Abrams",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Jennifer",
+                "middle": [],
+                "last": "Gerdts",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Jennifer",
+                "middle": [
+                    "L P"
+                ],
+                "last": "Protudjer",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Background: The impact of childhood food allergy on household costs has not been examined in Canada. The current study sought to examine differences in direct, indirect, and intangible costs among Canadian families with and without a food-allergic child.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Methods: Families with a child with a specialist-diagnosed food allergy (cases) were recruited from two tertiary pediatric allergy clinics in the Province of Manitoba, Canada, and matched, based on age and sex, to families without a food-allergic child (controls). Cost data for the two groups were collected via an adapted version of the Food Allergy Economic Questionnaire (FA-EcoQ). Consideration was given to income, defined as above vs. below the provincial annual median income.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Results from 35 matched case/control pairs revealed that while total household costs did not significantly differ between cases and controls, food-allergic families did incur higher direct costs ($12,455.69 vs. $10,078.93, p = 0.02), which were largely attributed to spending on food. In contrast, cases reported lower, but not statistically significant, total indirect costs compared to controls ($10,038.76 vs. $12,294.12, p = 0.06). Families also perceived their food-allergic child as having poorer quality of life relative to their healthy peers. Lastly, stratification of the analyses by annual income revealed several differences between the higher and lower income groups.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Relative to families without a food-allergic child, food-allergic families incurred higher direct costs across a number of different areas.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "An estimated 6-8% of all children live with food allergy [1, 2] , which has a considerable impact on the child and their family [2] [3] [4] . While the impact of childhood food allergy on quality of life is well described [3] [4] [5] [6] , researchers are just beginning to trace the economic consequences of this condition [7] [8] [9] . Relative to those without a food-allergic child, families with food-allergic children are burdened with the added responsibilities of avoiding allergens, attending regular appointments with healthcare professionals, and teaching their children how to manage their allergy independently. In a 2019 systematic review, Bilaver et al. [10] found that food allergy imposes a considerable economic burden on the healthcare system, and on families. The greatest proportion of costs shouldered by families with a foodallergic child stemmed from the wages, leisure time, and productivity lost as a result of managing a pediatric food allergy. However, out-of-pocket expenses were found to account for a sizeable proportion of the additional costs of food allergy as well. Not surprisingly, research suggests lower income families are disproportionately affected by the costs of pediatric food allergy [11] [12] [13] , including the costs of epinephrine auto-injectors (EAIs) [11] . However,",
+            "cite_spans": [
+                {
+                    "start": 57,
+                    "end": 60,
+                    "text": "[1,",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 61,
+                    "end": 63,
+                    "text": "2]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 128,
+                    "end": 131,
+                    "text": "[2]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 132,
+                    "end": 135,
+                    "text": "[3]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 136,
+                    "end": 139,
+                    "text": "[4]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 222,
+                    "end": 225,
+                    "text": "[3]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 226,
+                    "end": 229,
+                    "text": "[4]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 230,
+                    "end": 233,
+                    "text": "[5]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 234,
+                    "end": 237,
+                    "text": "[6]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 324,
+                    "end": 327,
+                    "text": "[7]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 328,
+                    "end": 331,
+                    "text": "[8]",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 332,
+                    "end": 335,
+                    "text": "[9]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 669,
+                    "end": 673,
+                    "text": "[10]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 1230,
+                    "end": 1234,
+                    "text": "[11]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 1235,
+                    "end": 1239,
+                    "text": "[12]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 1240,
+                    "end": 1244,
+                    "text": "[13]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 1304,
+                    "end": 1308,
+                    "text": "[11]",
+                    "ref_id": "BIBREF12"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "Allergy, Asthma & Clinical Immunology the economic impact of pediatric food allergy on lower income families is not fully understood.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Open Access"
+        },
+        {
+            "text": "The present literature on food allergy-related household costs comes primarily from Sweden [3, 14, 15] , in which healthcare and school food programs are heavily subsidized, and from the United States [13, 16] , where healthcare costs may be offset by private insurance and school food programs are not universal. The Canadian system reflects a mix of both government subsidies and private/workplace insurance [17] . At present, the literature has yet to investigate the impact of pediatric food allergy on household spending among Canadian families. As healthcare systems and the cost of living vary considerably between countries, an investigation of household spending among Canadian food-allergic families is warranted in order to quantify the financial burden they face.",
+            "cite_spans": [
+                {
+                    "start": 91,
+                    "end": 94,
+                    "text": "[3,",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 95,
+                    "end": 98,
+                    "text": "14,",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 99,
+                    "end": 102,
+                    "text": "15]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 201,
+                    "end": 205,
+                    "text": "[13,",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 206,
+                    "end": 209,
+                    "text": "16]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 410,
+                    "end": 414,
+                    "text": "[17]",
+                    "ref_id": "BIBREF18"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Open Access"
+        },
+        {
+            "text": "In light of the gaps in the literature, the current study aims to investigate the impact of pediatric food allergy on household expenditures in Canada by comparing the direct, indirect, and intangible costs reported by families with and without a food-allergic child. Given the apparent disparities in the economic impact of pediatric food allergy, a particular focus will be placed on understanding how differences in income affect the magnitude and types of costs incurred by food-allergic families.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Open Access"
+        },
+        {
+            "text": "Recruitment of participants took place from March 2019 to 10 March 2020 in Winnipeg, Manitoba, Canada (i.e. ending before the COVID-19 pandemic began). Specifically, cases, defined as families of children aged 0-17 years diagnosed by a pediatric allergist with at least one food allergy, were recruited from two tertiary pediatric asthma and allergy clinics. Controls, defined as families with no food allergy or other chronic conditions that would affect food choices, were recruited via the same allergy and asthma clinics, and from local schools, childcare centres, and social media (e.g. Facebook). All families needed to speak and read English comfortably as the recruitment materials, consent form and survey were in English.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Methods"
+        },
+        {
+            "text": "All participants completed an adapted version of the Food Allergy Economic Questionnaire (FA-EcoQ) [18] . The original English language FA-EcoQ is a validated self-report measure, designed to measure the direct, indirect, and intangible costs associated with managing a food allergy. To date, the measure has been translated into several languages and has been successfully adapted for use in a number of different countries [14, [18] [19] [20] . For the current study, several terms were modified to reflect the Canadian vernacular. For instance, references to day hospitals were replaced with the term \"hospital\" and the currency of reference was Canadian dollars (CAD) rather than British Pounds (\u20a4). To limit participant burden, items that were irrelevant to the aims of the current study were omitted. As part of the questionnaire, participants completed questions regarding their sociodemographics, number of food allergies, types of symptoms, allergic comorbidities (i.e., eczema, atopic dermatitis, rhinitis, asthma), healthcare utilization, spending habits, and quality of life.",
+            "cite_spans": [
+                {
+                    "start": 99,
+                    "end": 103,
+                    "text": "[18]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 425,
+                    "end": 429,
+                    "text": "[14,",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 430,
+                    "end": 434,
+                    "text": "[18]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 435,
+                    "end": 439,
+                    "text": "[19]",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 440,
+                    "end": 444,
+                    "text": "[20]",
+                    "ref_id": "BIBREF21"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Measures"
+        },
+        {
+            "text": "Based on the collected data, four broad outcome variables were created:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Measures"
+        },
+        {
+            "text": "Calculated as the sum of the annual direct and indirect costs for the household.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Total household costs"
+        },
+        {
+            "text": "Direct costs Comprised of the costs paid by the household for medical and non-medical expenses. In the current study, these included costs related to medications, food, and travel to healthcare providers. Mileage costs were calculated by multiplying the number of kilometers travelled by $0.35. This value was selected based on the University of Manitoba's mileage reimbursement rate and is consistent with the per-kilometer fuel and depreciation costs of a mid-size sedan as estimated by the Canadian Automobile Association [21] . In instances when cost data were measured discretely by a Likert scale, the mid-point of the category was used in the estimations.",
+            "cite_spans": [
+                {
+                    "start": 525,
+                    "end": 529,
+                    "text": "[21]",
+                    "ref_id": "BIBREF22"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Total household costs"
+        },
+        {
+            "text": "Indirect costs Include the costs associated with the loss of time and/or wages. Herein, indirect costs included those incurred by travelling to healthcare appointments and hospital admissions, waiting for and meeting with healthcare professionals, grocery shopping, preparing food, and seeking health-related information. They also included any wages that were lost in the pursuit of pediatric healthcare. Indirect costs were calculated by multiplying the number of hours lost by the after-tax hourly wage reported by the family member/s incurring the cost. When hours lost were measured on a discrete, Likert-style scale, the mid-point of the category was used in any estimations employing that variable. For family members who were unemployed, their time was valued at the provincial after-tax minimum wage. For individuals who indicated they were employed, but did not report their income, their wage was imputed with the average for that family member.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Total household costs"
+        },
+        {
+            "text": "Intangible costs Are costs that are not easily quantifiable. These included the responding parent's well-being as well as their perceptions of their spouse's and child's wellbeing. Intangible costs also included a measure of income sufficiency, quantified as the difference between a family's annual household income and the annual household income they deem to be sufficient.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Total household costs"
+        },
+        {
+            "text": "Prior to conducting the substantive analyses, case and control families were matched based on the age and sex of the reference child. Age matching was done in \u00b1 2 year intervals. Descriptive statistics (n/N, %, mean \u00b1 standard deviation (SD)) were used to analyse the demographics of the sample. T-tests and chi-squared tests were used to assess the demographic similarity of cases and controls. For each of the outcome variables, cost estimates were derived using a series of linear multiple regression analyses, in which controls were the reference group. In order to control for the impact of allergic comorbidities, household income, and household composition on the cost estimates, annual after-tax household income, the number of individuals living in the household, and a binary variable that indexed whether the target child had been diagnosed with an allergic comorbidity (i.e., eczema, atopic dermatitis, rhinitis, asthma) were included as covariates in each of the regression models, with the exception of the models predicting income sufficiency. In these analyses, annual income was omitted from the aforementioned list of covariates. We then performed a sensitivity analysis, in which we considered the excess costs of food allergy, amongst cases, categorized at above or below the provincial median household income of $68,147 [22] . In each of the sensitivity analyses, the number of household members and the allergic comorbidity variable were included as covariates. All regression analyses employed the use of robust standard errors. Statistical significance was set a priori at \u03b1 = 0.05.",
+            "cite_spans": [
+                {
+                    "start": 1342,
+                    "end": 1346,
+                    "text": "[22]",
+                    "ref_id": "BIBREF23"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Statistical analysis"
+        },
+        {
+            "text": "The final sample consisted of 35 ( Children were, on average, 6.42 \u00b1 0.76 years old among cases and 7.02 \u00b1 0.80 among controls (p = 0.59). The average age of the parent completing the questionnaire was comparable between cases and controls (37.08 \u00b1 1.07 vs, 37.67 \u00b1 1.35, respectively). Family size was also comparable, with an average of 4 people per household. Overall, families reported a mean annual after-tax household income of $73,160.74 \u00b1 3052.63, which was comparable between cases and controls ($74,676.20 vs. $71,554.29, respectively; p = 0.60). Amongst cases, peanut and tree nut allergies were most prevalent (82.86%).",
+            "cite_spans": [
+                {
+                    "start": 33,
+                    "end": 34,
+                    "text": "(",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Participant characteristics"
+        },
+        {
+            "text": "Total household costs did not significantly differ between cases and controls ($22,494.46 vs. $22,373.05, p = 0.94). However, allergic families did report greater overall direct costs compared to families without a food-allergic child ($12,455.69 vs. $10,078.93, p = 0.02; see Table 1 ). This difference was largely driven by spending on food as cases, on average, spent $2280.44 more on groceries and restaurant meals annually ($12,344.20 vs. $10,063.76, p = 0.03). Food-allergic families also spent more on travel to medical appointments ($64.86 vs. $19.61, p < 0.01) and on medications ($46.64 vs. $ \u2212 4.43, p = 0.01) 1 relative to controls.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 277,
+                    "end": 284,
+                    "text": "Table 1",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "Excess costs amongst cases vs. controls"
+        },
+        {
+            "text": "While the difference in overall indirect costs between case and control families fell above our \u03b1 value ($10,038.76 vs. $12,294.12, p = 0.06), food-allergic families were found to incur significantly lower food shopping and preparation costs ($9373.09 vs. $11,931.53, p = 0.02; Table 2 ). In contrast, food-allergic families had higher, but not statistically significant differences for healthcare consultation costs ($238.47 vs. $131.41, p = 0.06), lost wages ($144.78 vs. $81.54, p = 0.51), and costs as a result of seeking healthcare-related information in print and online ($282.43 vs. $149.65, p = 0.08).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 278,
+                    "end": 285,
+                    "text": "Table 2",
+                    "ref_id": "TABREF2"
+                }
+            ],
+            "section": "Excess costs amongst cases vs. controls"
+        },
+        {
+            "text": "Despite incurring greater direct costs in a number of areas, cases did not perceive the sufficiency of their income as significantly different from controls (see Additional file 2). Similarly, cases did not rate their quality of life, nor the quality of life of their spouse as significantly different from controls. Parents of foodallergic children did, however, perceive their child as having a lower quality of life relative to their healthy peers (\u00df = \u2212 0.96, 95% CI \u2212 1.72, \u2212 0.21; p = 0.01).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Excess costs amongst cases vs. controls"
+        },
+        {
+            "text": "In order to untangle the impact of income on the current findings, a number of stratified analyses were conducted in which participants were divided into two groups: above (n = 39) vs. below (n = 31) the provincial median income. There were no significant differences in total costs between cases and controls across the higher and lower income strata (see Additional file 3). However, food-allergic families above the median income reported greater total direct costs in comparison to controls ($14,427.65 vs. $10,197.60, p = 0.01), a finding which was driven by higher annual food costs ($14,329.68 vs. $10,178.23, p = 0.02; see Table 3 ). In contrast, total direct costs and spending on food amongst cases below the median income did not differ significantly from controls. However, cases in the lower income stratum did report spending more on medical-related travel ($81.06 vs. $18.93, p = 0.004).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 631,
+                    "end": 638,
+                    "text": "Table 3",
+                    "ref_id": "TABREF3"
+                }
+            ],
+            "section": "Findings stratified by after-tax annual income"
+        },
+        {
+            "text": "Across both income groups, differences in total indirect costs between cases and controls failed to reach statistical significance (Table 4 ). Significant differences were found, however, in a number of specific cost categories among those in the lower income stratum. In particular, cases below the median income reported spending more time consulting with healthcare professionals relative to controls ($227.42 vs. $59.58, p = 0.002). Cases in the lower income stratum also reported losing significantly more earnings as a result of their child's healthcare visits compared to those in the control group ($109.97 vs. $15.65, p = 0.04). The same was not true, however, for cases above the median income level. Cases in the higher income stratum did, however, report spending less time shopping for and preparing food ($10,706.87 vs. $13,696.94, p = 0.06), although this effect was not statistically significant.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 131,
+                    "end": 139,
+                    "text": "(Table 4",
+                    "ref_id": null
+                }
+            ],
+            "section": "Findings stratified by after-tax annual income"
+        },
+        {
+            "text": "Similar to indirect costs, findings differed between strata in terms of the intangible costs incurred by families. (Table 5 ). In particular, parents of food-allergic children in the lower income stratum rated the wellbeing of their child as significantly lower than controls (\u00df = \u2212 1.36, 95% CI \u2212 2.67, \u2212 0.06; p = 0.04), but they did not rate their spouse's well-being, nor their own, as significantly different from the non-food-allergic families. In contrast, cases in the higher income stratum did not rate their own well-being nor the well-being of their family members as significantly different from controls. Lastly, no significant differences emerged with regards to income sufficiency in either strata.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 115,
+                    "end": 123,
+                    "text": "(Table 5",
+                    "ref_id": null
+                }
+            ],
+            "section": "Findings stratified by after-tax annual income"
+        },
+        {
+            "text": "A series of regression analyses were used to investigate the impact of family income on both the magnitude and types of costs incurred by families with a food-allergic child. In each analysis, costs were compared among cases above vs. below the provincial median income level. While few significant differences emerged between the two groups, cases falling above the median income level did report higher annual direct costs ($13,722.33 vs. $10,752.63, p = 0.02) due to greater spending on food ($13,625.03 vs. $10,620.03, p = 0.02). It is important to note, however, that food-allergic families in the higher income stratum reported spending a lower proportion of their income on food (15% vs. 22%). Not surprisingly, higher income food-allergic families also reported greater income sufficiency relative to lower income families ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "The impact of income on household costs among food-allergic families"
+        },
+        {
+            "text": "Annual household income, number of household members, and allergic comorbidities status (i.e., presence vs. absence) are included as covariates in each of the models 95% CI 95th percent confidence interval ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Table 4 Multiple linear regression analyses predicting annual indirect household costs among participants falling above and below the provincial median annual income level"
+        },
+        {
+            "text": "In this cross-sectional study of families with a foodallergic child matched by age and sex to non-food-allergic families, total annual direct costs were approximately 20% higher amongst food-allergic families, a difference that was largely driven by food costs. While differences in total annual indirect costs between cases and controls fell just above our \u03b1 value, annual indirect food costs were significantly lower among food-allergic families. Intangible costs were higher for food-allergic children, but not for other family members. With consideration to income above or below the provincial median, differences in annual direct costs largely persisted amongst families above the median income only. In contrast, annual indirect cost differences between cases and controls were largely limited to those falling below the median income level.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "In the present study, all types of direct costs were significantly higher amongst cases vs. controls, with cases spending approximately $2300 CAD more, out-of-pocket, annually. These costs are approximately half of those identified in a recent review article, in which food-allergic families were found to spend $4507 CAD (converted from $3339 USD on 2 July 2020) per year, out-of-pocket, when cost estimates were averaged across 4 samples and three studies [14, 23, 24] . These costs were largely attributed to the cost of living, but were also influenced to a lesser degree by spending on health-related travel, medications, and health insurance premiums [10, 14, 16, 23] . These differences highlight the need to consider excess food allergy-related costs within different settings, owing to differences in healthcare, social systems, and costs of living. This is the first Canadian study to capture food allergy-related costs. Although Canada has universal healthcare, we nonetheless found significant cost differences between cases and controls. Likewise, food costs differed significantly, a difference which was not seen in a Swedish study [14] . A main contributor to food cost differences in Canada, but not Sweden may be the Swedish universal school lunch program, in which students are provided, by law, a free hot daily lunch that complies with their medical dietary restrictions [25] . In Manitoba, some schools in economically disadvantaged areas do offer meal programs, although these are typically subsidized locally and are not mandated to comply with dietary restrictions.",
+            "cite_spans": [
+                {
+                    "start": 458,
+                    "end": 462,
+                    "text": "[14,",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 463,
+                    "end": 466,
+                    "text": "23,",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 467,
+                    "end": 470,
+                    "text": "24]",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 657,
+                    "end": 661,
+                    "text": "[10,",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 662,
+                    "end": 665,
+                    "text": "14,",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 666,
+                    "end": 669,
+                    "text": "16,",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 670,
+                    "end": 673,
+                    "text": "23]",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 1147,
+                    "end": 1151,
+                    "text": "[14]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 1392,
+                    "end": 1396,
+                    "text": "[25]",
+                    "ref_id": "BIBREF26"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Interestingly, while cases in the present study reported higher direct food costs, they were found to have lower costs related to food shopping/preparation relative to families without a food-allergic child. Admittedly, this finding is perplexing at first glance as it runs counter to Swedish research that has found both non-significant differences and greater indirect food costs among foodallergic families [14, 15] . However, it is possible that the lower indirect food costs reported by food-allergic families in the current study may reflect the greater time",
+            "cite_spans": [
+                {
+                    "start": 410,
+                    "end": 414,
+                    "text": "[14,",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 415,
+                    "end": 418,
+                    "text": "15]",
+                    "ref_id": "BIBREF16"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Number of household members and allergic comorbidities status (i.e., presence vs. absence) are included as covariates in each of the models. Annual household income was also included as a covariate in each of the models predicting well-being. Income sufficiency quantifies the difference between a family's actual income and the income they deem sufficient to meet their needs 95% CI 95th percent confidence interval pressures faced by North American families [26] . Given this scarcity of leisure time, Canadian food-allergic families may rely more heavily on a narrow selection of food items, including prepackaged allergen-friendly products, that are known to be safe. While such a strategy should confer indirect cost savings by limiting the need for purchase decisions and preparation time, it would likely result in higher direct costs and more monotonous diets. Consistent with this reasoning, food-allergic families in the current study did report higher direct food costs relative to families without a food-allergic child. Unlike previous studies, in which parents of children with food allergy, but not the children themselves, had a lower quality of life [14] , our results point toward a significantly poorer quality of life for the child only. Although intangible costs have no measurable dollar cost per se, these costs are nonetheless an important part of food allergy-related excess costs. Intangible costs speak to the need for community education to normalize and support the condition and provide credible and easily accessible information to support those living with the condition. Annual direct costs differed by food allergy status for families above, but not below the provincial median, with the exception of travel costs. Interestingly, results revealed a large difference in direct food costs between cases and controls in the higher income stratum, but the same effect was not found among lower income families. Arguably, differences in food costs between the income strata reflect the fact that higher income families often have more disposable income [27] . As such, they may be more inclined to purchase allergen-friendly products as a way to save preparation time and to ensure the safety of their food-allergic child. In contrast, lower income families may not be able to justify the increased costs of specialized allergen-friendly products and may be forced to purchase products that require more preparation or those that have precautionary allergen labelling.",
+            "cite_spans": [
+                {
+                    "start": 460,
+                    "end": 464,
+                    "text": "[26]",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 1167,
+                    "end": 1171,
+                    "text": "[14]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 2082,
+                    "end": 2086,
+                    "text": "[27]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Table 5 Multiple linear regression analyses predicting intangible costs incurred by the household, responding parent, spouse, and child among participants falling above and below the provincial median annual income level"
+        },
+        {
+            "text": "Interestingly, while significant food cost differences between cases and controls only emerged among higher income families, several findings particular to the lower income stratum were also found. Specifically, lower income food-allergic families reported greater travel expenses, healthcare consultation costs, and lost wages as result of their child's healthcare visits, relative to families without a food-allergic child. The same differences, however, were not found among higher income families. Arguably, this discrepancy may reflect the fact that lower wage workers are not only less likely to have paid time off, but also have lower rates of vehicle ownership [28] [29] [30] . Moreover, we recently reported that a small proportion of mothers in high-income households reported career limitations, because of their child's food allergy, which may provide insight into the lack of difference in lost wages between high-income families vs. controls [31] .",
+            "cite_spans": [
+                {
+                    "start": 669,
+                    "end": 673,
+                    "text": "[28]",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 674,
+                    "end": 678,
+                    "text": "[29]",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 679,
+                    "end": 683,
+                    "text": "[30]",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 956,
+                    "end": 960,
+                    "text": "[31]",
+                    "ref_id": "BIBREF32"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Participants above the median income level"
+        },
+        {
+            "text": "While medication cost differences between cases and controls were not significant in either stratum, it is interesting to note that the amount that food-allergic families spent on medication was comparable regardless of income status ($51.45 vs $40.62, above and below the median, respectively). This observation is highly concerning as these amounts are less than half of the outof-pocket expense for a single EAI in Manitoba. Whereas some families may have supplementary insurance to offset these out-of-pocket costs, it is also possible that families are not renewing their EAI prescriptions on an annual basis due to the high cost. Elsewhere, it has been reported that only about half of Canadians with food allergy have access to an EAI [32] . Whereas there are many hypotheses for low EAI carriage, our data do point toward a likelihood that costs may be a contributing factor. For families with incomes above the annual median, out-of-pocket medication costs total about 0.36% of their total direct costs. Families with incomes below the annual median spend approximately 11% more on out-of-pocket medications, for a total of 0.4%. Moreover, our observation highlights the need for federal and/or provincial funding to cover the costs of this potentially life-saving medication. In Canada, the rates of allergy-related emergency department visits, including anaphylaxis, have increased over the past decade [32] . In contrast, corresponding rates decreased in Sweden in the two years following the elimination of co-payments for EAIs for pediatric patients [33] . Whereas it was beyond the scope of the Swedish study to perform a cost-effectiveness analysis of the elimination of co-payments, we are confident that the costs absorbed by the healthcare system for EAIs are dramatically less than those associated with allergy-related hospitalization.",
+            "cite_spans": [
+                {
+                    "start": 742,
+                    "end": 746,
+                    "text": "[32]",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 1414,
+                    "end": 1418,
+                    "text": "[32]",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 1564,
+                    "end": 1568,
+                    "text": "[33]",
+                    "ref_id": "BIBREF34"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Participants above the median income level"
+        },
+        {
+            "text": "With consideration to costs amongst cases above vs. below the annual median, no significant differences were found in terms of indirect costs; however, food-allergic families above the median income were found to have significantly higher direct costs, a finding that was largely attributed to greater spending on food. It is important to note, however, that food-allergic families below the median income level devoted a greater proportion of their income to food. The financial burden faced by low income, food-allergic families, and the associated coping mechanisms, have been previously described qualitatively. In Canada, economically disadvantaged food-allergic families, report having to procure their food from discount supermarkets and food banks where they face concerns with cross-contamination [11] . Moreover, low-income food allergic families also report difficulties maintaining a nutritious diet over and above their allergy-related dietary requirements [11] . This is the first study to systematically examine the excess costs associated with food allergy, with consideration to income status, and to subsequently compare food allergy-related costs between economically disadvantaged vs. advantaged families. All food-allergic children in this study had been diagnosed with food allergy by a pediatric allergist prior to completing the FA-EcoQ questionnaire. As such, their families have had time to incorporate the necessary changes and reflect on the excess costs of food allergy. Finally, we highlight that we made use of a validated questionnaire [18] , with which our group has previous experience [14, 15] , but which was situationally adapted for use in this study population.",
+            "cite_spans": [
+                {
+                    "start": 806,
+                    "end": 810,
+                    "text": "[11]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 970,
+                    "end": 974,
+                    "text": "[11]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 1568,
+                    "end": 1572,
+                    "text": "[18]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 1620,
+                    "end": 1624,
+                    "text": "[14,",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 1625,
+                    "end": 1628,
+                    "text": "15]",
+                    "ref_id": "BIBREF16"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Participants above the median income level"
+        },
+        {
+            "text": "We acknowledge the limitations of this study, including that the mean incomes reported by cases and controls were slightly (but not significantly) higher than the median provincial income. Similarly, we lacked power to consider the costs amongst low-income Manitobans, defined by national cut-offs [34] . Finally, we applied some estimates when analyzing certain costs. For example, we estimated mileage costs when calculating travel to healthcare providers, who are based in Winnipeg, the largest urban centre in our province, and which is approximately 100 km from the border with the United States. As such, healthcare delivery in our province covers a vast catchment area, of approximately 650,000 km 2 [35] . Consequently, rural-dwelling families may incur additional costs when accessing healthcare, including food and lodging, which were not available in the current dataset. Given the lack of food and lodging data, it is possible that the current study may have underestimated the actual travel costs incurred by rural families. Rural food-allergic families may have been particularly affected by this underestimation given the relatively low number of allergists in Canada and the consequent need for travel [32, 36] . The current study holds the potential to inform policy and programs aimed at supporting families burdened with the added costs of caring for a food-allergic child. Our results on reported income insufficiency amongst cases below the median income point toward a need for financial support for these families. There is a need to open discussions for health coverage for potentially life-saving medications, including EAIs, as well as tax credits for allergy-friendly foods for those with allergistdiagnosed food allergy. Notably, our cost estimates were based on data collected in the year prior to the COVID-19 pandemic. Going forward, it will be important to examine the impact of the pandemic on families' abilities to absorb food allergy-related costs.",
+            "cite_spans": [
+                {
+                    "start": 298,
+                    "end": 302,
+                    "text": "[34]",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 707,
+                    "end": 711,
+                    "text": "[35]",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 1218,
+                    "end": 1222,
+                    "text": "[32,",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 1223,
+                    "end": 1226,
+                    "text": "36]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Participants above the median income level"
+        },
+        {
+            "text": "In conclusion, results suggest that compared to families without a food-allergic child, food-allergic families assume greater costs in a number of different areas. As spending on food accounts for much of the difference in direct costs between cases and controls, future researchers should strive to determine what products and practices are responsible for the differences in food spending between food-allergic and non-food-allergic families. Moreover, policy makers should consider how to alleviate this burden for those most adversely affected.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Participants above the median income level"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Comparing food allergy prevalence in vulnerable and nonvulnerable Page",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Clarke",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Elliott",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "St Pierre",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Soller",
+                    "suffix": ""
+                },
+                {
+                    "first": "La",
+                    "middle": [],
+                    "last": "Vieille",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Ben-Shoshan",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "11",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "17:28 \u2022 fast, convenient online submission \u2022 thorough peer review by experienced researchers in your field \u2022 rapid publication on acceptance \u2022 support for research data, including large and complex data types \u2022 gold Open Access which fosters wider collaboration and increased citations maximum visibility for your research: over 100M website views per year submit your research ? Choose BMC",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Golding",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Choose BMC and benefit from",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Food allergy: A review and update on epidemiology, pathogenesis, diagnosis, prevention, and management",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Sicherer",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Sampson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "J Allergy Clin Immunol",
+            "volume": "141",
+            "issn": "1",
+            "pages": "41--58",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Health-related quality of life worsens by school age amongst children with food allergy",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Th\u00f6rnqvist",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Middelveld",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Wai",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Ballardini",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Nilsson",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Str\u00f6mquist",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Clin Translation Allergy",
+            "volume": "9",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Food allergy-related concerns during the transition to selfmanagement",
+            "authors": [
+                {
+                    "first": "Jlp",
+                    "middle": [],
+                    "last": "Protudjer",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Middelveld",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Dahl\u00e9n",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Ahlstedt",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Jansson",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "\u00d6stblom",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Allergy Asthma Clin Immunol",
+            "volume": "15",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Food allergy quality of life and living with food allergy",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Greenhawt",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Curr Opin Allergy Clin Immunol",
+            "volume": "16",
+            "issn": "3",
+            "pages": "284--90",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "An Examination of the Food Allergy Quality of Life Questionnaire Performance in a Countrywide American Sample of Children: Cross-Cultural Differences in Age and Impact in the United States and Europe",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Dunngalvin",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Koman",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Raver",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Frome",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Adams",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Keena",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "J Allergy Clin Immunol Pract",
+            "volume": "5",
+            "issn": "2",
+            "pages": "363--371",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Quality of Life in Food Allergy Patients and Their Families",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Walkner",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Warren",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Gupta",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Pediatr Clin North Am",
+            "volume": "62",
+            "issn": "6",
+            "pages": "1453--61",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Qualitative analysis of perceived impacts on childhood food allergy on caregiver mental health and lifestyle",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Abrams",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Simons",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Ross",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Hurst",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Protudjer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Ann Allergy Asthma Immunol",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3389/fimmu.2020.00996"
+                ]
+            }
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Health-related quality of life in children with food allergy and their parents: A systematic review of the literature",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Morou",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Tatsioni",
+                    "suffix": ""
+                },
+                {
+                    "first": "Idk",
+                    "middle": [],
+                    "last": "Dimoliatis",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Papadopoulos",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "J Investig Allergol Clin Immunol",
+            "volume": "24",
+            "issn": "6",
+            "pages": "382--95",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Economic burden of food allergy: A systematic review",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Bilaver",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Chadha",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Doshi",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Dwyer",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Gupta",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Ann Allergy Asthma Immunol",
+            "volume": "122",
+            "issn": "4",
+            "pages": "373--80",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Low income, high risk: the overlapping stigmas of food allergy and poverty",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Minaker",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Elliott",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Clarke",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Critical Public Health",
+            "volume": "25",
+            "issn": "5",
+            "pages": "599--614",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Impact of food allergy on food insecurity and health literacy in a tertiary care pediatric allergy population",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Dilley",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Rettiganti",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Christie",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "O&apos;brien",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Patterson",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Weeks",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Pediatr Allergy Immunol",
+            "volume": "30",
+            "issn": "3",
+            "pages": "363--372",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Socioeconomic Disparities in the Economic Impact of Childhood Food Allergy",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Bilaver",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Kester",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Smith",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Gupta",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Pediatrics",
+            "volume": "137",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Household costs associated with objectively diagnosed allergy to staple foods in children and adolescents",
+            "authors": [
+                {
+                    "first": "Jlp",
+                    "middle": [],
+                    "last": "Protudjer",
+                    "suffix": ""
+                },
+                {
+                    "first": "S-A",
+                    "middle": [],
+                    "last": "Jansson",
+                    "suffix": ""
+                },
+                {
+                    "first": "Heibert",
+                    "middle": [],
+                    "last": "Arnlind",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Bengtsson",
+                    "suffix": ""
+                },
+                {
+                    "first": "U",
+                    "middle": [],
+                    "last": "Kallstr\u00f6m-Bengtsson",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Marklund",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "J Allergy Clin Immunol Pract",
+            "volume": "3",
+            "issn": "1",
+            "pages": "68--75",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Pediatric food allergy-related household costs are influenced by age, but not disease severity",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Wai",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Middelveld",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Th\u00f6rnqvist",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Ballardini",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Nilsson",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Str\u00f6mquist",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "World Allergy Org J",
+            "volume": "12",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "The economic impact of childhood food allergy in the United States",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Gupta",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Holdford",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Bilaver",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Dyer",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Holl",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Meltzer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "JAMA pediatrics",
+            "volume": "167",
+            "issn": "11",
+            "pages": "1026--1057",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Canada: health system review",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Marchildon",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Health Syst Transit",
+            "volume": "15",
+            "issn": "1",
+            "pages": "1--179",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Social and economic costs of food allergies in europe: Development of a questionnaire to measure costs and health utility",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Fox",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Voordouw",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Mugford",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Cornelisse",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Antonides",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Frewer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Health Services Res",
+            "volume": "44",
+            "issn": "5",
+            "pages": "1662--78",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Health sector costs of self-reported food allergy in Europe: a patient-based cost of illness study",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Fox",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Mugford",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Voordouw",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Cornelisse-Vermaat",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Antonides",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "De La Hoz",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Eur J Pub Health",
+            "volume": "23",
+            "issn": "5",
+            "pages": "757--62",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Household costs associated with food allergy: an exploratory study",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Voordouw",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Fox",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Cornelisse-Vermaat",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Antonides",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Mugford",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Frewer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "British Food J",
+            "volume": "112",
+            "issn": "11",
+            "pages": "1205--1220",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Canadian Automobile Association. Driving Costs Calculator. Ottawa: Canadian Automobile Association",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Census Profile -Winnipeg, Manitoba and Manitoba Ottawa. ON: Statistics Canada",
+            "authors": [],
+            "year": 2016,
+            "venue": "Statistics Canada",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Socioeconomic evaluation of wellcharacterized allergy to staple foods in adults",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Jansson",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jlp",
+                    "middle": [],
+                    "last": "Protudjer",
+                    "suffix": ""
+                },
+                {
+                    "first": "Arnlind",
+                    "middle": [],
+                    "last": "Heibert",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Bengtsson",
+                    "suffix": ""
+                },
+                {
+                    "first": "U",
+                    "middle": [],
+                    "last": "Kallstr\u00f6m-Bengtsson",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Marklund",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Allergy",
+            "volume": "69",
+            "issn": "9",
+            "pages": "1241--1248",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "The impact of double-blind placebo-controlled food challenge (DBPCFC) on the socioeconomic cost of food allergy in Europe",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Cerecedo",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zamora",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Fox",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Voordouw",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Plana",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Rokicka",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "J Investig Allergol Clin Immunol",
+            "volume": "24",
+            "issn": "6",
+            "pages": "418--442",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "School Lunches Uppsala Livsmedelsverket",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "How's Life? 2017: Measuring Well-Being. Paris: Credo Reference",
+            "authors": [],
+            "year": 2017,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "COVID-19 and the Canadian workforce. Ottawa: Canadian Centre for Policy Alternatives",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Macdonald",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Modelling car ownership in urban areas: A case study of",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Potoglou",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Kanaroglu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "A dynamic analysis of household car ownership",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Nolan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Transpl Res A",
+            "volume": "44",
+            "issn": "6",
+            "pages": "446--55",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Mothers of children with food allergies report poorer perceived life status which may be explained by limited career choices",
+            "authors": [
+                {
+                    "first": "Tlm",
+                    "middle": [],
+                    "last": "Frykas",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Golding",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Abrams",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Simons",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jlp",
+                    "middle": [],
+                    "last": "Protudjer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Allergy Asthma Clin Immunol",
+            "volume": "17",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/s13223-021-00515-8"
+                ]
+            }
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "National Food Allergy Action Plan: Charting the Path Forward Toronto",
+            "authors": [
+                {
+                    "first": "Immunology",
+                    "middle": [],
+                    "last": "Faccsoaac",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Epinephrine dispensings, allergy hospitalizations and the elimination of co-payments in Sweden",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Protudjer",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Middelveld",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Ballardini",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Wai",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Ahlstedt",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Nilsson",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Kivist\u00f6",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Allergy",
+            "volume": "74",
+            "issn": "6",
+            "pages": "1197--200",
+            "other_ids": {}
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Low-income measures thresholds (LIM-AT and LIM-BT) for private households of Canada",
+            "authors": [],
+            "year": 2015,
+            "venue": "Statistics Canada",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Health Intelligence Inc. Provincial clinical and preventive services planning for Manitoba: doing things differently and better. Halibut Bay, NS: Health Intelligence Inc",
+            "authors": [],
+            "year": 2017,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "TABREF1": {
+            "text": "Multiple linear regression analyses predicting annual direct household costsAnnual household income, number of household members, and allergic comorbidities status (i.e., presence vs. absence) are included as covariates in each of the models",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "Multiple linear regression analyses predicting annual indirect household costsIndirect costs refer to lost wages or time. For instance, indirect food shopping and preparation costs quantify the costs associated with the time lost as a result of food shopping and preparation. Annual household income, number of household members, and allergic comorbidities status (i.e., presence vs. absence) are included as covariates in each of the models 95% CI 95th percent confidence interval",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF3": {
+            "text": "Multiple linear regression analyses predicting annual direct household costs among participants falling above and below the provincial median annual income level",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF6": {
+            "text": "Multiple linear regression analyses predicting annual direct household costs from income level among foodallergic familiesNumber of household members and allergic comorbidities status (i.e., presence vs. absence) are included as covariates in each of the models",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF7": {
+            "text": "Number of household members and allergic comorbidities status (i.e., presence vs. absence) are included as covariates in each of the models",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF8": {
+            "text": "",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "We acknowledge the research assistants who helped with data collection and entry, as well as the allergists who provided access to patient populations. 1 ",
+            "cite_spans": [
+                {
+                    "start": 152,
+                    "end": 153,
+                    "text": "1",
+                    "ref_id": "BIBREF0"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Acknowledgements"
+        },
+        {
+            "text": "The online version contains supplementary material available at https ://doi. org/10.1186/s1322 3-021-00530 -9.Additional file 1. Atopic conditions. Frequencies of atopic conditions among cases and controls (N=70 case-control pairs). Additional file 3. Total costs stratified by income. Multiple linear regression analyses predicting total annual household costs among participants falling above and below the provincial median annual income level. Table displaying the results from a series of income-stratified linear regression analyses predicting total household costs among cases and controls.Abbreviations CAD: Canadian dollars; EAI: Epinephrine auto-injector; USD: United States (American) Dollars.Authors' contributions MG analyzed the data and was a contributor to the writing of the manuscript. ES and EA provided access to patient populations and were involved in the design of the study and the interpretation of the data. JG was involved in the design of the project and in the interpretation of the data. JP was involved in the study design, the interpretation of the data, and the writing of the manuscript. All authors read and approved the final manuscript.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 449,
+                    "end": 465,
+                    "text": "Table displaying",
+                    "ref_id": null
+                }
+            ],
+            "section": "Supplementary Information"
+        },
+        {
+            "text": "Funding for this project was provided by a New Investigator Grant jointly provided by the Manitoba Medical Services Foundation and The Children's Hospital Research Institute of Manitoba, awarded to J Protudjer. These funding bodies had no influence on the study design; data collection, analysis and interpretation; or, manuscript writing.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Funding"
+        },
+        {
+            "text": "Datasets generated and analyzed during the current study are not publically available out of respect for participant privacy, but are available from the corresponding author upon reasonable request.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Availability of data and materials"
+        },
+        {
+            "text": "This study was approved by the University of Manitoba Health Research Ethics Board (H2018:319 (HS22066)). All participants provided their informed consent before participating.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Ethics approval and consent to participate"
+        },
+        {
+            "text": "Not applicable.Competing Interests MG has no real or perceived conflicts of interest in relation to this manuscript. ES has no real or perceived conflicts of interest in relation to this manuscript. EMA is a member of the healthcare advisory board for Food Allergy Canada, and does research with DBV Technologies. JG is Executive Director, Food Allergy Canada, and co-leads Canada's National Food Allergy Action Plan. JP is a member on the steering committee of Canada's National Food Allergy Action Plan, and does research with DBV Technologies.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Consent for publication"
+        }
+    ]
+}

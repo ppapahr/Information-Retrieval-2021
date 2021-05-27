@@ -1,0 +1,4239 @@
+{
+    "paper_id": "884aa5b369d67901c91cdecfc9a40a689a47bb19",
+    "metadata": {
+        "title": "molecules MALDI MSI Reveals the Spatial Distribution of Protein Markers in Tracheobronchial Lymph Nodes and Lung of Pigs after Respiratory Infection",
+        "authors": [
+            {
+                "first": "Tomas",
+                "middle": [],
+                "last": "Do",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Mendel University",
+                    "location": {
+                        "postCode": "613 00",
+                        "settlement": "Brno, Brno",
+                        "country": "Czech Republic"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Roman",
+                "middle": [],
+                "last": "Guran",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Mendel University",
+                    "location": {
+                        "postCode": "613 00",
+                        "settlement": "Brno, Brno",
+                        "country": "Czech Republic"
+                    }
+                },
+                "email": "roman.guran@mendelu.czr.g."
+            },
+            {
+                "first": "Rea",
+                "middle": [],
+                "last": "Jarosova",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Mendel University in Brno",
+                    "location": {
+                        "postCode": "613 00",
+                        "settlement": "Brno",
+                        "country": "Czech Republic"
+                    }
+                },
+                "email": "rea.jarosova@mendelu.czr.j."
+            },
+            {
+                "first": "Petra",
+                "middle": [],
+                "last": "Ondrackova",
+                "suffix": "",
+                "affiliation": {},
+                "email": "ondrackovap@vri.czp.o."
+            },
+            {
+                "first": "Zbysek",
+                "middle": [],
+                "last": "Sladek",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Mendel University in Brno",
+                    "location": {
+                        "postCode": "613 00",
+                        "settlement": "Brno",
+                        "country": "Czech Republic"
+                    }
+                },
+                "email": "zbysek.sladek@mendelu.czz.s."
+            },
+            {
+                "first": "Martin",
+                "middle": [],
+                "last": "Faldyna",
+                "suffix": "",
+                "affiliation": {},
+                "email": "faldyna@vri.czm.f."
+            },
+            {
+                "first": "Vojtech",
+                "middle": [],
+                "last": "Adam",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Mendel University",
+                    "location": {
+                        "postCode": "613 00",
+                        "settlement": "Brno, Brno",
+                        "country": "Czech Republic"
+                    }
+                },
+                "email": "vojtech.adam@mendelu.czv.a."
+            },
+            {
+                "first": "Ondrej",
+                "middle": [],
+                "last": "Zitka",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Mendel University",
+                    "location": {
+                        "postCode": "613 00",
+                        "settlement": "Brno, Brno",
+                        "country": "Czech Republic"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Respiratory infections are a real threat for humans, and therefore the pig model is of interest for studies. As one of a case for studies, Actinobacillus pleuropneumoniae (APP) caused infections and still worries many pig breeders around the world. To better understand the influence of pathogenic effect of APP on a respiratory system-lungs and tracheobronchial lymph nodes (TBLN), we aimed to employ matrix-assisted laser desorption/ionization time-of-flight mass spectrometry imaging (MALDI-TOF MSI). In this study, six pigs were intranasally infected by APP and two were used as non-infected control, and 48 cryosections have been obtained. MALDI-TOF MSI and immunohistochemistry (IHC) were used to study spatial distribution of infectious markers, especially interleukins, in cryosections of porcine tissues of lungs (necrotic area, marginal zone) and tracheobronchial lymph nodes (TBLN) from pigs infected by APP. CD163, interleukin 1\u03b2 (IL-1\u03b2) and a protegrin-4 precursor were successfully detected based on their tryptic fragments. CD163 and IL-1\u03b2 were confirmed also by IHC. The protegrin-4 precursor was identified by MALDI-TOF/TOF directly on the tissue cryosections. CD163, IL-1\u03b2 and protegrin-4 precursor were all significantly (p < 0.001) more expressed in necrotic areas of lungs infected by APP than in marginal zone, TBLN and in control lungs.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "Actinobacillus pleuropneumoniae (APP) is a common bacterial agent, belonging to the Pasteurellaceae family, causing swine contagious pleuropneumonia, which belongs to the ordinary swine respiratory disease and highly influences the incomes of pig breeders. To date, there exist 2 biovars and 18 serovars of APP, which have different virulence [1] . The virulence of APP is dependent on factors like a biofilm formation, production of exotoxins (Apx) or pore-forming repeats-in-toxin exoproteins and an antimicrobial resistance [2, 3] . As main virulence factors are deemed ApxI-III toxins [4] .",
+            "cite_spans": [
+                {
+                    "start": 343,
+                    "end": 346,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 527,
+                    "end": 530,
+                    "text": "[2,",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 531,
+                    "end": 533,
+                    "text": "3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 589,
+                    "end": 592,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The innate production of monocyte/macrophage specific markers like CD163 and the production of pro-inflammatory cytokines (IL-1\u03b2, IL-6, IL-17, TNF-alpha and others) is a sign of a typical immune response of organism against APP [4] [5] [6] . In addition, CD8-negative \u03b3\u03b4-TCR T cells and Th17 cells (CD4+CD8\u03b1dimIL-17A+) are linked to immune responses against APP, too [4, 7, 8] . For a detection and characterization of interleukins and other infectious markers connected to APP infection, the in vitro model of porcine immortalized epithelial cell lines can be used [9] . The virulence of A. pleuropneumoniae can be attenuated by creating double-deletion DNA mutants with the purpose of obtaining possible vaccines [10, 11] .",
+            "cite_spans": [
+                {
+                    "start": 228,
+                    "end": 231,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 232,
+                    "end": 235,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 236,
+                    "end": 239,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 367,
+                    "end": 370,
+                    "text": "[4,",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 371,
+                    "end": 373,
+                    "text": "7,",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 374,
+                    "end": 376,
+                    "text": "8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 566,
+                    "end": 569,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 715,
+                    "end": 719,
+                    "text": "[10,",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 720,
+                    "end": 723,
+                    "text": "11]",
+                    "ref_id": "BIBREF10"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The APP infection in porcine lungs and other organs can be studied by various methods, such as: PCR/cDNA microarrays [12] , flow cytometry [5, 8, 13] , ELISA [8, 14, 15] , histology [14, 16] and immunohistochemistry (IHC) [17] . To the best of our knowledge, regarding the mass spectrometry imaging (MSI), only two techniques were used so far to study porcine infection by APP: nanoscale secondary ion mass spectrometry (nanoSIMS) and matrix-assisted laser desorption/ionization time-of-flight mass spectrometry imaging (MALDI-TOF MSI). NanoSIMS was used for APP cells [10] , whereas our group used MALDI-TOF MSI for imaging cryosections of porcine lungs and other tissues [18, 19] .",
+            "cite_spans": [
+                {
+                    "start": 117,
+                    "end": 121,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 139,
+                    "end": 142,
+                    "text": "[5,",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 143,
+                    "end": 145,
+                    "text": "8,",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 146,
+                    "end": 149,
+                    "text": "13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 158,
+                    "end": 161,
+                    "text": "[8,",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 162,
+                    "end": 165,
+                    "text": "14,",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 166,
+                    "end": 169,
+                    "text": "15]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 182,
+                    "end": 186,
+                    "text": "[14,",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 187,
+                    "end": 190,
+                    "text": "16]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 222,
+                    "end": 226,
+                    "text": "[17]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 569,
+                    "end": 573,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 673,
+                    "end": 677,
+                    "text": "[18,",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 678,
+                    "end": 681,
+                    "text": "19]",
+                    "ref_id": "BIBREF18"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The classical approach, when spatial information about various biological processes in tissues is required, uses the IHC, in situ hybridization or similar techniques. These techniques need a knowledge of the targeted analyte prior the analysis and only few analytes can be analyzed simultaneously during one run of the analysis. Moreover, these methods often lack specificity for molecules such as drugs and their metabolites, lipids, protein isoforms, and mutations, post-translational modifications, and products of protein cleavage [20] .",
+            "cite_spans": [
+                {
+                    "start": 535,
+                    "end": 539,
+                    "text": "[20]",
+                    "ref_id": "BIBREF19"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "MALDI-TOF MSI belongs to label-free imaging methods and is used to detect and identify, if possible, different (bio-)molecules in tissue sections and to map their spatial distribution in these sections [21, 22] . This method can be used to support histology/IHC and vice versa [22] . It is worth to mention that mass spectrometry imaging, in general, makes possible the detection/identification of (bio-)molecules for which the IHC antibodies are not available [23] , as it is the case for protegrin-4 precursor in this study, or for which other imaging methods are not suitable. MALDI-TOF MSI is commonly applied for a detection/identification of smaller proteins (usually with molecular weights not exceeding 30 kDa) [18, 24] , peptides [25, 26] , lipids [27] , oligosaccharides [28] , etc. [29] . It was successfully used in a research of various tumors and infections [30] [31] [32] .",
+            "cite_spans": [
+                {
+                    "start": 202,
+                    "end": 206,
+                    "text": "[21,",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 207,
+                    "end": 210,
+                    "text": "22]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 277,
+                    "end": 281,
+                    "text": "[22]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 461,
+                    "end": 465,
+                    "text": "[23]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 719,
+                    "end": 723,
+                    "text": "[18,",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 724,
+                    "end": 727,
+                    "text": "24]",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 739,
+                    "end": 743,
+                    "text": "[25,",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 744,
+                    "end": 747,
+                    "text": "26]",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 757,
+                    "end": 761,
+                    "text": "[27]",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 781,
+                    "end": 785,
+                    "text": "[28]",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 793,
+                    "end": 797,
+                    "text": "[29]",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 872,
+                    "end": 876,
+                    "text": "[30]",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 877,
+                    "end": 881,
+                    "text": "[31]",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 882,
+                    "end": 886,
+                    "text": "[32]",
+                    "ref_id": "BIBREF31"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "In this study, we have focused on the possibilities of a MALDI-TOF MSI for a detection and identification of CD163, interleukins and other infectious markers in cryosections of porcine lungs and other closely connected tissues in pigs infected by APP. We wanted to show the possible new markers of porcine lungs infection and if they correlate with interleukin and/CD163. In addition, we wanted to show the capability of MALDI-TOF MSI and its use for detection of analytes which do not have IHC antibodies.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "During the development and optimization of our MALDI-TOF MSI method we were able to map distribution of cell markers of lymphocytes, monocytes and/or macrophages in porcine tissue cryosections infected by APP [18] . This achievement followed a recent publication by Holzechner et al. [33] , who used MALDI-TOF MSI to visualize the localization of lymphocytes and macrophages in human colon tissue sections.",
+            "cite_spans": [
+                {
+                    "start": 209,
+                    "end": 213,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 284,
+                    "end": 288,
+                    "text": "[33]",
+                    "ref_id": "BIBREF32"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Results and Discussion"
+        },
+        {
+            "text": "In the present study, we have focused on detecting, identifying, and mapping a typical inflammation marker CD163 [34] , and specific interleukins and other infectious markers in cryosections of porcine lung tissue affected by APP. After on-tissue trypsinization, we searched MALDI MSI data for specific peptides of CD163 and different interleukins (IL-1\u03b2; IL-6; IL-8). The sequences of specific peptides were determined from protein sequences (downloaded from UniProt database) after in silico digestion with trypsin using SequenceEditor (Bruker Daltonik GmbH, Bremen, Germany).",
+            "cite_spans": [
+                {
+                    "start": 113,
+                    "end": 117,
+                    "text": "[34]",
+                    "ref_id": "BIBREF33"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Results and Discussion"
+        },
+        {
+            "text": "The experimental data, corresponding to in silico data, matched with peptides of CD163 and IL-1\u03b2. The CD163 tryptic fragment/peptide TSYQVYSK was represented by a mass peak at m/z 975.478 \u00b1 0.100 Da. The IL-1\u03b2 tryptic fragment/peptide NLYLSCVLKDDKPTLQLESVDPKNYPK was represented by a mass peak at m/z 3119.621 \u00b1 0.100 Da. To support information from MALDI MSI, an IHC analysis for CD163 and IL-1\u03b2 of consecutive cryosections was performed. We have demonstrated some preliminary data for the IL-1\u03b2 tryptic peptide in our previous work [19] . In the present study, we have used different consecutive and other cryosections for MALDI MSI and IHC analysis. Immunohistochemistry (IHC) is a classical technique to study protein localization in tissues, as well as to confirm a protein's identity, and it is therefore complimentary to MALDI MSI studies [35] . IHC analysis was used in many protein or cancer studies as support method for MALDI MSI such as studies of prostate tumor [23, 36] , skin tumors [31, 32] , head and neck tumor [37] or non-small cell lung tumor [38] .",
+            "cite_spans": [
+                {
+                    "start": 534,
+                    "end": 538,
+                    "text": "[19]",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 846,
+                    "end": 850,
+                    "text": "[35]",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 975,
+                    "end": 979,
+                    "text": "[23,",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 980,
+                    "end": 983,
+                    "text": "36]",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 998,
+                    "end": 1002,
+                    "text": "[31,",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 1003,
+                    "end": 1006,
+                    "text": "32]",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 1029,
+                    "end": 1033,
+                    "text": "[37]",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 1063,
+                    "end": 1067,
+                    "text": "[38]",
+                    "ref_id": "BIBREF37"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Results and Discussion"
+        },
+        {
+            "text": "In Figure 1 is presented one zoomed cryosection to provide more detailed information on spatial distribution. The regions I. (Figure 1 , highlighted by purple ellipses) are showing the correspondence of IHC positive signal (brown color) for IL-1\u03b2 with MSI data of IL-1\u03b2 tryptic fragment (see the Figure S18 for zoomed mean mass spectrum of IL-1\u03b2 peptide). The IL-1\u03b2 tryptic fragment was detected also in regions, where IHC showed no or small signal, as it is demonstrated in region II. (Figure 1 ; highlighted by purple ellipses). . The region II. shows only MSI signal, no IHC signal was detected. The zoomed mean mass spectrum of IL-1\u03b2 peptide is presented in Figure S18 . Figure S18 .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 3,
+                    "end": 11,
+                    "text": "Figure 1",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 125,
+                    "end": 134,
+                    "text": "(Figure 1",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 296,
+                    "end": 306,
+                    "text": "Figure S18",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 486,
+                    "end": 495,
+                    "text": "(Figure 1",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 662,
+                    "end": 672,
+                    "text": "Figure S18",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 675,
+                    "end": 685,
+                    "text": "Figure S18",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Results and Discussion"
+        },
+        {
+            "text": "We have also tried to identify infectious markers directly on a surface of porcine lung cryosections by using MALDI-LIFT-TOF/TOF for selected highly intensive mass peaks of tryptic peptides. We were successful to identify some normally present proteins like hemoglobin (data not shown), but more importantly, even a Protegrin-4 precursor, belonging among the porcine leukocyte-derived protegrins, which have antimicrobial properties. Expression of these antimicrobial peptides supports the innate immune response and prevent from further tissue damage [39] . For the results from MASCOT search, see Figure S13 . The annotated LIFT fragment spectrum of Protegrin-4 precursor peptide is presented in Figure S14 , the sequence coverage of whole Protegrin-4 precursor is presented in Figure S15 and LIFT spectrum analysis report is presented in Figure S16 . The obtained sequence coverage is low (4%), but the identified peptide is a unique peptide for the Protegrin-4 protein family (according to MASCOT search results in Figure S13 ). The zoomed mean mass spectrum of Protegrin-4 precursor peptide is presented in Figure S19 .",
+            "cite_spans": [
+                {
+                    "start": 552,
+                    "end": 556,
+                    "text": "[39]",
+                    "ref_id": "BIBREF38"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 599,
+                    "end": 609,
+                    "text": "Figure S13",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 698,
+                    "end": 708,
+                    "text": "Figure S14",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 780,
+                    "end": 790,
+                    "text": "Figure S15",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 841,
+                    "end": 851,
+                    "text": "Figure S16",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 1019,
+                    "end": 1029,
+                    "text": "Figure S13",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 1112,
+                    "end": 1122,
+                    "text": "Figure S19",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Results and Discussion"
+        },
+        {
+            "text": "There are no antibodies for IHC of Protegrin-4 precursor (according to our knowledge), so we have used only MSI data to show the spatial distribution of Protegrin-4 precursor ( Figure 3 ). The Protegrin-4 precursor tryptic fragment/peptide FPPPNFPGPR, represented by a mass peak at m/z 1126.216 \u00b1 0.100 Da, was used to visualize the distribution. Figure 3 also shows representative MSI and IHC data for CD163 detected in porcine tissue cryosections of control lungs, lungs infected by APP-necrotic area (NA) and marginal zone (MZ), tracheobronchial lymph nodes (TBLN). The zoomed mean mass spectrum of CD163 peptide is presented in Figure S20 .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 177,
+                    "end": 185,
+                    "text": "Figure 3",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 347,
+                    "end": 355,
+                    "text": "Figure 3",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 632,
+                    "end": 642,
+                    "text": "Figure S20",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Results and Discussion"
+        },
+        {
+            "text": "The intensity box plots from MALDI MSI data for IL-1\u03b2 tryptic peptide ( Figure 4A ), CD163 tryptic peptide ( Figure 4B ) and for Protegrin-4 precursor tryptic peptide ( Figure 4C ), together with Kruskal-Wallis test (Table 1) , revealed, that all peptides were significantly (p < 0.001) more expressed in porcine tissue cryosections of lungs infected by APP-NA, than in other cryosections like control lungs, MZ and TBLN. Therefore, all these peptides could be used as the possible infection markers. The results from MALDI MSI are in a good correlation with IHC data for IL-1\u03b2 and CD163. Figure S13 ). The representative images were used. The more detailed IHC images before and after their modification in GIMP 2.10.22 are presented in Supplementary Data as Figures S7-S12. The zoomed mean mass spectrum of protegrin-4 precursor peptide is presented in Figure S19 and of CD163 peptide in Figure S20 . Regarding IL-1\u03b2, its connection to inflammation caused (not only) by APP is well known [40, 41] , but there are no publications on Web of Science, at the time of writing this article, after using searching words \"interleukin AND mass spectrometry imaging AND pig\", dealing with detection of IL-1\u03b2 by mass spectrometry imaging in porcine tissue samples. Additionally, for protegrin-4 precursor, there exist some connections of protegrin-like antimicrobial peptide with APP infection [42] but, at the time of writing this article, after using searching words \"protegrin AND mass spectrometry imaging\", there are no publications on Web of Science devoted to protegrin-4 precursor detection by mass spectrometry imaging.",
+            "cite_spans": [
+                {
+                    "start": 990,
+                    "end": 994,
+                    "text": "[40,",
+                    "ref_id": "BIBREF39"
+                },
+                {
+                    "start": 995,
+                    "end": 998,
+                    "text": "41]",
+                    "ref_id": "BIBREF40"
+                },
+                {
+                    "start": 1385,
+                    "end": 1389,
+                    "text": "[42]",
+                    "ref_id": "BIBREF41"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 72,
+                    "end": 81,
+                    "text": "Figure 4A",
+                    "ref_id": "FIGREF4"
+                },
+                {
+                    "start": 109,
+                    "end": 118,
+                    "text": "Figure 4B",
+                    "ref_id": "FIGREF4"
+                },
+                {
+                    "start": 169,
+                    "end": 178,
+                    "text": "Figure 4C",
+                    "ref_id": "FIGREF4"
+                },
+                {
+                    "start": 216,
+                    "end": 225,
+                    "text": "(Table 1)",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 589,
+                    "end": 599,
+                    "text": "Figure S13",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 855,
+                    "end": 865,
+                    "text": "Figure S19",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 890,
+                    "end": 900,
+                    "text": "Figure S20",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Results and Discussion"
+        },
+        {
+            "text": "Based on MSI images of IL-1\u03b2 peptide ( Figure 2 ) and protegrin-4 precursor peptide (Figure 3 ) in necrotic area (NA), both peptides showed co-detection. We can assume that IL-1B and protegrin-4 are connected and that they can have similar effect, possibly also synergistic effect. For that there is no direct evidence in literature on Web of Science, but there exists a connection of protegrins 1 and 3 with initiation of IL-1B posttranslational processing described by Perregaux et al. [43] . It is probable, that protegrin 4 acts similarly. In terms of the therapy of the swines, the detection itself of the presence of protegrin-4 precursor in NA must be considered as a positive result due to the existence of antibiotic-resistent A. pleuropneumoniae strains [44] or other multidrug-resistent patogens. Antibiotic resistance is a global problem, and protegrins as therapeutic agent are considered as a possible solution and a replacement of conventional antibiotics [45] .",
+            "cite_spans": [
+                {
+                    "start": 488,
+                    "end": 492,
+                    "text": "[43]",
+                    "ref_id": "BIBREF42"
+                },
+                {
+                    "start": 764,
+                    "end": 768,
+                    "text": "[44]",
+                    "ref_id": "BIBREF43"
+                },
+                {
+                    "start": 971,
+                    "end": 975,
+                    "text": "[45]",
+                    "ref_id": "BIBREF44"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 39,
+                    "end": 47,
+                    "text": "Figure 2",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 84,
+                    "end": 93,
+                    "text": "(Figure 3",
+                    "ref_id": "FIGREF3"
+                }
+            ],
+            "section": "Results and Discussion"
+        },
+        {
+            "text": "Regarding the CD163 protein, there is no direct connection with the expression of protegrins described in the literature, but the connection of CD163 protein and expression of interleukins is described well [46] [47] [48] .",
+            "cite_spans": [
+                {
+                    "start": 207,
+                    "end": 211,
+                    "text": "[46]",
+                    "ref_id": "BIBREF45"
+                },
+                {
+                    "start": 212,
+                    "end": 216,
+                    "text": "[47]",
+                    "ref_id": "BIBREF46"
+                },
+                {
+                    "start": 217,
+                    "end": 221,
+                    "text": "[48]",
+                    "ref_id": "BIBREF47"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Results and Discussion"
+        },
+        {
+            "text": "The need of detecting cytokines and other infectious markers in different tissues, mainly human, is getting more attention in past months especially because of the COVID-19 pandemic and its connection to cytokine storm caused by the SARS-CoV-2 [49] [50] [51] . Currently, increased level of IL-6 in patients infected with COVID-19 and its correlation with the disease mortality is a very discussed issue [52] . By using direct analytical approaches, as is in this case a mass spectrometry imaging, it may be possible to react to the need of detecting spatial distribution of interleukins and other molecules connected to the inflammatory response of the organism quicker than by using indirect analytical methods like IHC-especially if the IHC-antibody for the targeted molecule has not been developed yet. In addition, based on comparison between IHC and MSI images, MALDI MSI is able to display the occurrence of the infectious markers in the specific regions of the cryosections where IHC method is not able to detect the presence of the selected markers. This knowledge could be potentially beneficial in future clinical studying in the field of a targeted therapy. Of course, the mass spectrometry imaging is not an in vivo method, nevertheless it can provide more information about the inflammation and/or other processes in organism.",
+            "cite_spans": [
+                {
+                    "start": 244,
+                    "end": 248,
+                    "text": "[49]",
+                    "ref_id": "BIBREF48"
+                },
+                {
+                    "start": 249,
+                    "end": 253,
+                    "text": "[50]",
+                    "ref_id": "BIBREF49"
+                },
+                {
+                    "start": 254,
+                    "end": 258,
+                    "text": "[51]",
+                    "ref_id": "BIBREF50"
+                },
+                {
+                    "start": 404,
+                    "end": 408,
+                    "text": "[52]",
+                    "ref_id": "BIBREF51"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Results and Discussion"
+        },
+        {
+            "text": "The MALDI matrix 2,5-dihydroxybenzoic acid (DHB) and other chemicals/material were ordered in suitable quality from Sigma-Aldrich (St. Louis, MO, USA) if not otherwise noted. Conductive indium-tin oxide (ITO) glass slides and peptide calibration standards were purchased from Bruker Daltonik GmbH (Bremen, Germany).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Chemicals and Materials"
+        },
+        {
+            "text": "For the study, pigs of Large White breed of 28 days old originated from herd at experimental accredited stables of Veterinary Research Institute (Brno, Czech Republic), with a good epidemiological situation, were used. The experiment was approved by the Branch Commission for Animal Welfare of the Ministry of Agriculture of the Czech Republic (approval no. 31674/2018-MZE-17214) and complied with the Act No. 246/1992 Coll. of the Czech National Council on the protection of animals against cruelty. Pigs were negatively tested for a presence of APP-specific antibodies. The total number of pigs includes six individuals infected by APP and two individuals as non-infected control. The infection of pigs with infectious dose of 2 \u00d7 10 9 APP (field-origin strain, biotype 1, serotype 9, KL2-2000), the collection of pulmonary tissue samples after euthanasia-specifically necrotic area of lungs (NA), area between necrosis and visually unaffected area-marginal zone (MZ) and tracheobronchial lymph nodes (TBLN), and the preparation of cryosections onto ITO glass slides for MALDI MSI was performed according to Jarosova et al. [19] : The infection of pigs with the infectious dose of 2 \u00d7 10 9 APP (field-origin strain, biotype 1, serotype 9, KL2-2000) was performed by administration of the infectious bacterium to the second third of each nasal cavity intranasally during inhalation.",
+            "cite_spans": [
+                {
+                    "start": 1126,
+                    "end": 1130,
+                    "text": "[19]",
+                    "ref_id": "BIBREF18"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Sample Collection"
+        },
+        {
+            "text": "Immediately after euthanasia, samples of pulmonary tissue were acquired. Lung tissue was sampled from necrotic areas (NA), from visually unaffected areas (UA) and from areas bordering on necrotic areas-marginal zone (MZ). Samples of lungs were filled with mixture of cryoprotective embedding medium Tissue Tek (O.C.T. Compound, Sakura-Finetek, Tokyo, Japan) (OCT) with phosphate buffered saline (Bio Whittaker, Lonza, Basel, Switzerland) (PBS) in ratio 1:1 for preserved open alveolar structure, embedded in OCT and frozen by supercooled n-heptane placed on dry ice.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Sample Collection"
+        },
+        {
+            "text": "The tissue samples were cut to a thickness of 10 \u00b5m on the cryostat (Leica Microsystems, CM 1900, GmbH, Wetzlar, Germany) at temperature \u221220 \u2022 C. The cuts of tissue were placed on ITO slides, the sections were allowed to dry at room temperature, fixed in pre-cooled acetone (PENTA s.r.o., Praha, Czech Republic) at \u221218 \u2022 C for 5 min and stored at \u221280 \u2022 C.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Sample Collection"
+        },
+        {
+            "text": "The preparation of cryosections for MALDI matrix application and on-tissue trypsinization followed the protocol of Jarosova et al. [19] : The ITO glass slides were warmed by a hand at room temperature to thaw-mount the cryosections and desiccated under vacuum for 15 min at a Vacufuge Concentrator (Eppendorf, CZ). Then, the slides were washed in a glass Coplin jar with 70% ethanol for 2 min twice and 100% ethanol for 2 min once. In the next steps prior the extraction of peptides, samples were desiccated under vacuum for 15 min, after that three guide marks using a white pencil corrector were marked for determining positions of cryosections in FlexImaging 3.0 software (Bruker Daltonik GmbH, Bremen, Germany). Afterwards, images of the ITO glass slides at a resolution of 3200 DPI were taken by an Epson Perfection V500 Office scanner (Epson Europe B.V., Amsterdam, The Netherlands).",
+            "cite_spans": [
+                {
+                    "start": 131,
+                    "end": 135,
+                    "text": "[19]",
+                    "ref_id": "BIBREF18"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Preparation of Cryosections for MALDI-TOF MSI"
+        },
+        {
+            "text": "On-tissue trypsinization: Trypsin solution (0.075 \u00b5g/\u00b5L) was prepared by reconstituting trypsin powder (20 \u00b5g) with 40 \u00b5L of 50 mM acetic acid and adding 200 \u00b5L of 100 mM ammonium bicarbonate and 60 \u00b5L of acetonitrile in water. Trypsin solution was sprayed onto ITO glass slides using ImagePrep TM (Bruker Daltonik GmbH, Bremen, Germany). The digestion was carried out at 37 \u2022 C for 18 h in a small humid box.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Preparation of Cryosections for MALDI-TOF MSI"
+        },
+        {
+            "text": "To maintain a humid atmosphere for a long-time trypsinization we have come with a solution how to prepare a humid chamber/humid box. During the optimization of our on-tissue trypsinization method, we have tried different setups (not shown), but the best setup was the one where we have used an old tip rack, which was filled with water and on top was placed Kimwipe tissue soaked in LC-MS water. The ITO glass slides with applied trypsin solution were placed on the soaked Kimwipe tissue and the humid box/tip rack was closed. For heating the box, we have used a magnetic stirrer with a hotplate. Our whole setup is presented in Figure S21 . The other trick was with applying a trypsin solution. We have used the Bruker ImagePrep device, which is normally used for application of MALDI matrix for the tissue sections, but we have discussed that with our local Bruker representative and he send us a method for ImagePrep, which is used for application of trypsin solution, and then he showed us a trick how to put a small volume of trypsin solution (300 \u00b5L of trypsin solution vs. 5-10 mL used normally for MALDI matrix solution) by not using a normal glass container (with volume up to 10 mL) but using a pipette which tip was inserted as close as possible to the vibrating/spraying microgrid of the ImagePrep.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 629,
+                    "end": 639,
+                    "text": "Figure S21",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Preparation of Cryosections for MALDI-TOF MSI"
+        },
+        {
+            "text": "After the digest, the samples were dried under vacuum for 15 min. Then, MALDI matrix was sprayed onto ITO glass slides using ImagePrep standard programs. As MALDI matrix was used DHB in concentration of 30 mg/mL in 50% methanol and 1% trifluoroacetic acid (TFA). The samples were ready for MALDI MSI analysis after drying.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Preparation of Cryosections for MALDI-TOF MSI"
+        },
+        {
+            "text": "For mass spectrometry imaging was used the Bruker ultrafleXtreme MALDI-TOF/TOF mass spectrometer (Bruker Daltonik GmbH, Bremen, Germany). The MALDI MSI analysis and calibration of the instrument was performed according to optimized method described in Jarosova et al. [19] . The total sample set contained 48 cryosections on 24 ITO glass slides. There were 12 cryosections for each sample type: control lungs from non-infected pigs, lungs infected by APP-necrotic area (NA), marginal zone (MZ) and tracheobronchial lymph nodes (TBLN). The regions of measurement were set with 50 \u00b5m raster width. An external calibration was performed using a peptide calibration standard in an m/z range of 500-3500 Da. SCiLS Lab 2014b software (SCiLS-Bruker Daltonik GmbH, Bremen, Germany) was used for processing MSI spectra (baseline removal and normalization), generating MSI images and for MSI statistics. The parameters of MALDI MSI method were: reflector positive mode, m/z range of 500-3500 Da and the laser power was set to 85%. A total of 500 spectra were summed for each spot using a random walk raster pattern.",
+            "cite_spans": [
+                {
+                    "start": 268,
+                    "end": 272,
+                    "text": "[19]",
+                    "ref_id": "BIBREF18"
+                }
+            ],
+            "ref_spans": [],
+            "section": "MALDI-TOF Mass Spectrometry Imaging"
+        },
+        {
+            "text": "The LIFT cell of the instrument was used for MS/MS analysis of detected peptides [31, 53] . To optimize parameters of LIFT method, the most intensive peak (1957.126 \u00b1 0.100 Da) from MALDI MSI mean mass spectra of all measured sections ( Figure S17 ) was selected. Then the parent and fragment ion mass spectra were measured on random positions of selected tissue sections. The laser power was set 5-10% above the threshold (the S/N ratio of the peak intensity was \u226510). Identification of detected peptides was achieved using the BioTools 3.2 (Bruker Daltonik GmbH, Bremen, Germany) and in-house MASCOT server (Matrix Science, Boston, MA, USA). The following parameters were used for MASCOT MS/MS Ion Search: NCBI protein database from 9th April 2019 was used, trypsin was used as the enzyme, zero or one missed cleavage was allowed, taxonomy was set to other mammalia, peptide mass tolerance was set to \u00b10.1 Da, fragment mass tolerance was set to \u00b10.5 Da with no variable modifications. The MASCOT score above 50 was chosen as significant. The results were displayed and analyzed in BioTools 3.2. The MASCOT results of Protegrin-4 precursor are presented in Figure S13 , the LIFT mass spectrum with annotated fragments of Protegrin-4 precursor is presented in Figure S14 , Protegrin-4 precursor protein sequence coverage covered by FPPPNFPGPR is presented in Figure S15 and LIFT spectrum analysis report is presented in Figure S16 . The peptides of IL-1\u03b2 and CD163 were not successfully identified based on LIFT fragment spectra, but they were identified by matching the measured m/z values with calculated values from in silico trypsinization of CD163 protein sequence and IL-1\u03b2 protein sequence (obtained from UniProt database for Sus scrofa), and then they were confirmed by IHC. The in silico trypsinization was performed in SequenceEditor 3.2 (Bruker Daltonik GmbH, Bremen, Germany) using these parameters: trypsin was used as the enzyme, one or two missed cleavage was allowed and carbamidomethylation (C) was selected as optional modification.",
+            "cite_spans": [
+                {
+                    "start": 81,
+                    "end": 85,
+                    "text": "[31,",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 86,
+                    "end": 89,
+                    "text": "53]",
+                    "ref_id": "BIBREF52"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 237,
+                    "end": 247,
+                    "text": "Figure S17",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 1158,
+                    "end": 1168,
+                    "text": "Figure S13",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 1260,
+                    "end": 1270,
+                    "text": "Figure S14",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 1359,
+                    "end": 1369,
+                    "text": "Figure S15",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 1420,
+                    "end": 1430,
+                    "text": "Figure S16",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "MALDI-TOF Mass Spectrometry Imaging"
+        },
+        {
+            "text": "The MSI data were processed in SCiLS Lab 2014b software (SCiLS-Bruker Daltonik GmbH, Bremen, Germany) according to our previous study [32] : The preprocessing pipeline applied baseline removal using the iterative convolution algorithm with sigma = 20 and iterations = 20. Subsequently, the total ion current (TIC) of every spectrum was normalized to one. At the same time, the mean spectrum was calculated. The segmentation pipeline applied the spectral group resulting from the preprocessing pipeline to find peaks using orthogonal matching with sigma estimated from the mean spectrum. This process found a maximum of 50 peaks per spectrum and was applied to every 15th spectrum. The consensus threshold was 1%. Then, a peak alignment was applied to the resulting histogram peak list together with the mean spectrum. Finally, the denoising and segmentation pipeline was applied to the spectral group produced by the preprocessing pipeline, and the peak list was produced by the peak alignment. The denoising level was the same as that selected in the settings of the segmentation pipeline.",
+            "cite_spans": [
+                {
+                    "start": 134,
+                    "end": 138,
+                    "text": "[32]",
+                    "ref_id": "BIBREF31"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Spectral Processing, Statistics and MSI Image Preparation"
+        },
+        {
+            "text": "The Anderson-Darling normality test revealed non-normal distribution of MSI data, therefore a Kruskal-Wallis test was used. The semi-quantitation of peptides was based on their peak intensities only. All images/figures were finally prepared in GIMP 2.10.22 software.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Spectral Processing, Statistics and MSI Image Preparation"
+        },
+        {
+            "text": "H&E staining of cryosections after MALDI MSI was performed following the protocol of Kaya et al. [54] : MALDI matrix was washed away using 2 \u00d7 1 min submersions in 100% EtOH. Tissue was rehydrated in 70% EtOH, 50% EtOH, and Milli-Q water, 2 min each. The slide was placed in hematoxylin for 2 min and washed with water for 2 min. The slide was then counterstained in 0.2% eosin for 2 min and washed in water for 2 min. The section was finally washed and dehydrated in 50% EtOH, 70% EtOH, and 100% EtOH for 1 min each. Tissue was mounted with Entellan mounting medium. Some of the cryosections were washed away during the preparation, therefore other consecutive cryosections were used for staining. The pictures of stained sections were made by EVOS FL Auto Cell Imaging System (Thermo Fisher Scientific, Waltham, MA, USA) using scanning mode with 4\u00d7 magnification.",
+            "cite_spans": [
+                {
+                    "start": 97,
+                    "end": 101,
+                    "text": "[54]",
+                    "ref_id": "BIBREF53"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Staining by H&E"
+        },
+        {
+            "text": "The IHC analysis of IL-1\u03b2 and CD163 was performed according to Jarosova et al. [19] : The endogenous peroxidase was blocked with Dual Endogenous Enzyme-Blocking Reagent (DAKO, Glostrup, Denmark) for 10 min. Slides were washed and the Protein Block (DAKO, Glostrup Denmark) was applied for 5 min. Then, primary antibodies of cytokines: anti-CD163 (clone 2A10/11, IgG1 subclass, dilution 1:800, Serotec, Oxford, UK) and anti-porcine IL-1beta (IgG subclass, dilution 1:600, Antibodies-online, Aachen, Germany) were applied and the slides were incubated for 60 min at 37 \u2022 C in a humid chamber. Then, the slides were washed and EnVision reagent HRP anti-Mouse or anti-Rabbit (DAKO, Glostrup, Denmark) was added. The slides were incubated for 30 min at 37 \u2022 C in a humid chamber. As a negative control, immunohistochemistry was performed using secondary antibodies without the primary antibody. The slides were washed and stained with DAB + Liquid (DAKO, Glostrup Denmark) for approx. 30 sec. Then, the slides were washed with distilled water, lightly counterstained with Mayer hematoxylin (PENTA s.r.o., Praha, Czech Republic) and mounted in glycerol-gelatin.",
+            "cite_spans": [
+                {
+                    "start": 79,
+                    "end": 83,
+                    "text": "[19]",
+                    "ref_id": "BIBREF18"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Immunohistochemistry"
+        },
+        {
+            "text": "The histological slides were evaluated by using the light microscope Olympus BH-2 (Olympus, Japan), two magnifications 100\u00d7 and 400\u00d7 were used. Images of sections were taken with a VH-Z500R high resolution zoom lens (Keyence, Itasca, IL, USA) mounted on a Keyence VHX-5000 digital microscope (Keyence, Itasca, IL, USA), magnification 300\u00d7 was used. The original IHC images were modified in GIMP 2.10.22 by changing the contrast, brightness and RGB values. The original and modified IHC images are presented in Figures S1-S6 for IL-1\u03b2 and in Figures S7-S12 for CD163.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 510,
+                    "end": 523,
+                    "text": "Figures S1-S6",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Immunohistochemistry"
+        },
+        {
+            "text": "Using MALDI-TOF mass spectrometry imaging, we were able to map spatial distribution of CD163, IL-1\u03b2 and protegrin-4 precursor in cryosections of porcine lungs and tracheobronchial lymph nodes, based on their tryptic fragments after on-tissue trypsinization. The presence of CD163 and IL-1\u03b2 was confirmed also by IHC; moreover, the MALDI MSI added more information for positions on sections where IHC antibody was not bound properly. For protegrin-4 precursor, there is no suitable IHC antibody, but we were able to identify it directly on-tissue using MALDI-LIFT-TOF/TOF and MASCOT. CD163, IL-1\u03b2 and protegrin-4 precursor were significantly (p < 0.001; Kruskal-Wallis test) more expressed in porcine lungs infected by APP-necrotic area (NA) than in other samples, like control lungs or marginal zone (MZ) and tracheobronchial lymph nodes (TBLN) from APP-infected pigs. From the results we can conclude that MALDI-TOF MSI is suitable for analyzing infectious markers in porcine lung tissue and it is a complementary method to other imaging methods such as IHC. It can be used for detection of markers for which the IHC antibody does not exist, as it is in a case of protegrin-4 precursor. The applicability of MALDI-TOF MSI and other MSI methods therefore surpasses IHC from this point of view. Moreover, the co-detection of higher expression of protegrin-4 precursor with the higher expression of IL-1\u03b2 can give us more information about APP infection of porcine lungs and therefore should be studied more.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusions"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Direct detection of Actinobacillus pleuropneumoniae in swine lungs and tonsils by real-time recombinase polymerase amplification assay",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "X"
+                    ],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Hao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Han",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "Z"
+                    ],
+                    "last": "Yuan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Mol. Cell. Probes",
+            "volume": "45",
+            "issn": "",
+            "pages": "14--18",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.mcp.2019.03.007"
+                ]
+            }
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Antimicrobial resistance, biofilm formation and virulence reveal Actinobacillus pleuropneumoniae strains' pathogenicity complexity",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Pereira",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Rossi",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Seide",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Martins",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Dolinski",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Bazzolli",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Res. Vet. Sci",
+            "volume": "118",
+            "issn": "",
+            "pages": "498--501",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.rvsc.2018.05.003"
+                ]
+            }
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Hennig-Pauka, I. Comparison of metabolic adaptation and biofilm formation of Actinobacillus pleuropneumoniae field isolates from the upper and lower respiratory tract of swine with respiratory disease",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Aper",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Frombling",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Bagcioglu",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ehling-Schulz",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Vet. Microbiol",
+            "volume": "2020",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.vetmic.2019.108532"
+                ]
+            }
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "New trends in innovative vaccine development against Actinobacillus pleuropneumoniae",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Loera-Muro",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Angulo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Vet. Microbiol",
+            "volume": "217",
+            "issn": "",
+            "pages": "66--75",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.vetmic.2018.02.028"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Distribution of porcine monocytes in different lymphoid tissues and the lungs during experimental Actinobacillus pleuropneumoniae infection and the role of chemokines",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Ondrackova",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Leva",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Kucerova",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Vicenova",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Mensikova",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Faldyna",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Vet. Res",
+            "volume": "44",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/1297-9716-44-98"
+                ]
+            }
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Kowal-Bielecka, O. CD163 and its role in inflammation",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Kowal",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Silver",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "S\u0142awi\u0144ska",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Bielecki",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Chyczewski",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Folia Histochem. Cytobiol",
+            "volume": "49",
+            "issn": "",
+            "pages": "365--374",
+            "other_ids": {
+                "DOI": [
+                    "10.5603/FHC.2011.0052"
+                ]
+            }
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Experimental Actinobacillus pleuropneumoniae infection in piglets with different types and levels of specific protection: Immunophenotypic analysis of lymphocyte subsets in the circulation and respiratory mucosal lymphoid tissue",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Faldyna",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Nechvatalova",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Sinkora",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Knotigova",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Leva",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Krejci",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Toman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Vet. Immunol. Immunopathol",
+            "volume": "107",
+            "issn": "",
+            "pages": "143--152",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.vetimm.2005.04.007"
+                ]
+            }
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Frequency of Th17 cells correlates with the presence of lung lesions in pigs chronically infected with Actinobacillus pleuropneumoniae",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Sassu",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ladinig",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Talker",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Stadler",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Knecht",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Stein",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Fr\u00f6mbling",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Richter",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Spergser",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ehling-Schulz",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Vet. Res",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/s13567-017-0411-z"
+                ]
+            }
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Host-pathogen interactions of Actinobacillus pleuropneumoniae with porcine lung and tracheal epithelial cells",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Auger",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Deslandes",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ramjeet",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Contreras",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "H E"
+                    ],
+                    "last": "Nash",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Harel",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Gottschalk",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Olivier",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Jacques",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Infect. Immun",
+            "volume": "77",
+            "issn": "",
+            "pages": "1426--1441",
+            "other_ids": {
+                "DOI": [
+                    "10.1128/IAI.00297-08"
+                ]
+            }
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Link between heterotrophic carbon fixation and virulence in the porcine lung pathogen Actinobacillus pleuropneumoniae",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Konze",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Abraham",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Goethe",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Surges",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "M M"
+                    ],
+                    "last": "Kuypers",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Hoeltig",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Meens",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Vogel",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Stiesch",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Valentin-Weigand",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Infect. Immun",
+            "volume": "87",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1128/IAI.00768-18"
+                ]
+            }
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Attenuated Actinobacillus pleuropneumoniae double-deletion mutant S-8\u2206clpP/apxIIC confers protection against homologous or heterologous strain challenge",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Xie",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Cui",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "BMC Vet. Res",
+            "volume": "13",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/s12917-016-0928-9"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Molecular characterisation of the early response in pigs to experimental infection with Actinobacillus pleuropneumoniae using cDNA microarrays",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Hedegaard",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Skovgaard",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Mortensen",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Sorensen",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Jensen",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Hornshoj",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Bendixen",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Heegaard",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Acta Vet. Scand",
+            "volume": "49",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/1751-0147-49-11"
+                ]
+            }
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Porcine mononuclear phagocyte subpopulations in the lung, blood and bone marrow: Dynamics during inflammation induced by Actinobacillus pleuropneumoniae",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Ondrackova",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Nechvatalova",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Kucerova",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Leva",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Dominguez",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Faldyna",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Vet. Res",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1051/vetres/2010035"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Antibodies against Actinobacillus pleuropneumoniae, Mycoplasma hyopneumoniae and influenza virus and their relationships with risk factors, clinical signs and lung lesions in pig farms with one-site production systems in Brazil",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Baraldi",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "R N"
+                    ],
+                    "last": "Cruz",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Pereira",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "V B"
+                    ],
+                    "last": "Galdeano",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [
+                        "R H"
+                    ],
+                    "last": "Gatto",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "F D"
+                    ],
+                    "last": "Silva",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Panzardi",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "C L"
+                    ],
+                    "last": "Linhares",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Mathias",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "De Oliveira",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Prev. Vet. Med",
+            "volume": "171",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.prevetmed.2019.104748"
+                ]
+            }
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Pig lung immune cytokine response to the swine influenza virus and the Actinobacillus pleuropneumoniae infection",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Czyzewska-Dors",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Dors",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Kwit",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Stasiak",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Pomorska-Mol",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "J. Vet. Res",
+            "volume": "61",
+            "issn": "",
+            "pages": "259--265",
+            "other_ids": {
+                "DOI": [
+                    "10.1515/jvetres-2017-0036"
+                ]
+            }
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Anti-Ascaris suum IgG antibodies in fattening pigs with different respiratory conditions",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Lassen",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Geldhof",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Halli",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Vlaminck",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Oliviero",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Orro",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Heinonen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Vet. Parasitol",
+            "volume": "265",
+            "issn": "",
+            "pages": "85--90",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.vetpar.2018.12.005"
+                ]
+            }
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Multi-organ spreading of Actinobacillus pleuropneumoniae serovar 7 in weaned pigs during the first week after experimental infection",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Hoeltig",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Rohde",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Frase",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Nietfeld",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Waldmann",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Valentin-Weigand",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Meens",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Vet. Res",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/s13567-018-0592-0"
+                ]
+            }
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "MALDI-TOF MSI method for determining spatial distribution of infection markers in pulmonary tissues of pigs",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Do",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Jarosova",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Smidova",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Guran",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Ondrackova",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Faldyna",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Sladek",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Zitka",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Proceedings of the MendelNet 2018-Proceedings of 25th International PhD Students Conference",
+            "volume": "",
+            "issn": "",
+            "pages": "495--500",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Determining spatial distribution of interleukin-1\u03b2 as an infection marker in pulmonary porcine tissues",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Jarosova",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Do",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Tesarova",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Smidova",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Guran",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Ondrackova",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Faldyna",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Sladek",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Zitka",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Proceedings of the MendelNet 2019-Proceedings of 26th International PhD Students Conference",
+            "volume": "",
+            "issn": "",
+            "pages": "459--464",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Matrix-assisted laser desorption ionization imaging mass spectrometry: In situ molecular mapping",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Angel",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Caprioli",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Biochemistry",
+            "volume": "52",
+            "issn": "",
+            "pages": "3818--3828",
+            "other_ids": {
+                "DOI": [
+                    "10.1021/bi301519p"
+                ]
+            }
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "1,1 -binaphthyl-2,2 -diamine as a novel MALDI matrix to enhance the in situ imaging of metabolic heterogeneity in lung cancer",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Sun",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Mu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Talanta",
+            "volume": "2020",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.talanta.2019.120557"
+                ]
+            }
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Imaging mass spectrometry: Current frontiers and perspectives in pathology research and practice",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Aichler",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Walch",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Maldi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Lab. Investig",
+            "volume": "95",
+            "issn": "",
+            "pages": "422--431",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/labinvest.2014.156"
+                ]
+            }
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "MALDI tissue imaging: From biomarker discovery to clinical applications",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Cazares",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Troyer",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Drake",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Semmes",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Anal. Bioanal. Chem",
+            "volume": "401",
+            "issn": "",
+            "pages": "17--27",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s00216-011-5003-6"
+                ]
+            }
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Precision biomarker discovery powered by microscopy image fusion-assisted high spatial resolution ambient ionization mass spectrometry imaging",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Chung",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Peng",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Ding",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Shen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Anal. Chim. Acta",
+            "volume": "1100",
+            "issn": "",
+            "pages": "75--87",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.aca.2019.11.014"
+                ]
+            }
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Using the chemical noise background in MALDI mass spectrometry imaging for mass alignment and calibration",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Boskamp",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Lachmund",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Casadonte",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Hauberg-Lotte",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Kobarg",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Kriegsmann",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Maass",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Anal. Chem",
+            "volume": "92",
+            "issn": "",
+            "pages": "1301--1308",
+            "other_ids": {
+                "DOI": [
+                    "10.1021/acs.analchem.9b04473"
+                ]
+            }
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Optimization of MALDI-TOF mass spectrometry imaging for the visualization and comparison of peptide distributions in dry-cured ham muscle fibers",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Maslov",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Svirkova",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Allmaier",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Marchetti-Deschamann",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Pavelic",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Food Chem",
+            "volume": "283",
+            "issn": "",
+            "pages": "275--286",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.foodchem.2018.12.126"
+                ]
+            }
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Combining salt doping and matrix sublimation for high spatial resolution MALDI imaging mass spectrometry of neutral lipids",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Dufresne",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Patterson",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Norris",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Caprioli",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Anal. Chem",
+            "volume": "91",
+            "issn": "",
+            "pages": "12928--12934",
+            "other_ids": {
+                "DOI": [
+                    "10.1021/acs.analchem.9b02974"
+                ]
+            }
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Hydroxyl-group-dominated graphite dots reshape laser desorption/ionization mass spectrometry for small biomolecular analysis and imaging",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Shi",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Dai",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Lu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Qu",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Tian",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Wu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "ACS Nano",
+            "volume": "11",
+            "issn": "",
+            "pages": "9500--9513",
+            "other_ids": {
+                "DOI": [
+                    "10.1021/acsnano.7b05328"
+                ]
+            }
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Analysis of tissue specimens by matrix-assisted laser desorption/ionization imaging mass spectrometry in biological and clinical research",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Norris",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Caprioli",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Chem. Rev",
+            "volume": "113",
+            "issn": "",
+            "pages": "2309--2342",
+            "other_ids": {
+                "DOI": [
+                    "10.1021/cr3004295"
+                ]
+            }
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Recent advances of MALDI-mass spectrometry imaging in cancer research",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Jung",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Mass Spectrom. Lett",
+            "volume": "10",
+            "issn": "",
+            "pages": "71--78",
+            "other_ids": {
+                "DOI": [
+                    "10.5478/msl.2019.10.3.71"
+                ]
+            }
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Mass spectrometric imaging of cysteine rich proteins in human skin",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Vanickova",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Guran",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Koll\u00e1r",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Emri",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Krizkova",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Do",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Heger",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Zitka",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Adam",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Int. J. Biol. Macromol",
+            "volume": "125",
+            "issn": "",
+            "pages": "270--277",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ijbiomac.2018.11.272"
+                ]
+            }
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Searching for differences in protein profiles",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Guran",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Vanickova",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Horak",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Krizkova",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Michalek",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Heger",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Zitka",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Adam",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Maldi Msi Of Melim Melanoma",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "PLoS ONE",
+            "volume": "12",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1371/journal.pone.0189305"
+                ]
+            }
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "In situ characterization of tissue-resident immune cells by MALDI mass spectrometry imaging",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Holzlechner",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Strasser",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Zareva",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Steinh\u00e4user",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Birnleitner",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Beer",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Bergmann",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Oehler",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Marchetti-Deschmann",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "J. Proteome Res",
+            "volume": "16",
+            "issn": "",
+            "pages": "65--76",
+            "other_ids": {
+                "DOI": [
+                    "10.1021/acs.jproteome.6b00610"
+                ]
+            }
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Targeting of CD163(+) macrophages in inflammatory and malignant diseases",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Skytthe",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Graversen",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Moestrup",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Int. J. Mol. Sci",
+            "volume": "21",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3390/ijms21155497"
+                ]
+            }
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "MALDI (matrix assisted laser desorption ionization) imaging mass spectrometry (IMS) of skin: Aspects of sample preparation",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "De Macedo",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Anderson",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Schey",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "",
+            "volume": "174",
+            "issn": "",
+            "pages": "325--335",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.talanta.2017.06.018"
+                ]
+            }
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Evaluation of small molecule drug uptake in patient-derived prostate cancer explants by mass spectrometry",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Mutuku",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Trim",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Prabhala",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Irani",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Bremert",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Logan",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Brooks",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Stahl",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Centenera",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Snel",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Sci. Rep",
+            "volume": "9",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41598-019-51549-3"
+                ]
+            }
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Identification of proteomic markers in head and neck cancer using MALDI-MS imaging, LC-MS/MS, and immunohistochemistry",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Hoffmann",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Umbreit",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Kr\u00fcger",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Pelzel",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Ernst",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Kniemeyer",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Guntinas-Lichius",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Berndt",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Von Eggeling",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Proteom. Clin. Appl",
+            "volume": "13",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/prca.201700173"
+                ]
+            }
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Mass spectrometry imaging for reliable and fast classification of non-small cell lung cancer subtypes",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Kriegsmann",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Zgorzelski",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Casadonte",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Schwamborn",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Muley",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Winter",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Eichhorn",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Eichhorn",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Warth",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Deininger",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Cancers",
+            "volume": "12",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3390/cancers12092704"
+                ]
+            }
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "Mammalian antimicrobial peptide protegrin-4 self assembles and forms amyloid-like aggregates: Assessment of its functional relevance",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Gour",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Kumar",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Singh",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Gadhave",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Goyal",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Pandey",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Giri",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Yadav",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "J. Pept. Sci. Off. Publ. Eur. Pept. Soc",
+            "volume": "25",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/psc.3151"
+                ]
+            }
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "Effects of pentoxifylline on inflammatory cytokine expression and acute pleuropneumonia in swine",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Myers",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Baarsch",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Murtaugh",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "Immunobiology",
+            "volume": "205",
+            "issn": "",
+            "pages": "17--34",
+            "other_ids": {
+                "DOI": [
+                    "10.1078/0171-2985-00108"
+                ]
+            }
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Circulating cortisol, tumor necrosis factor-alpha interleukin-1\u03b2, and interferon-gamma in pigs infected with Actinobacillus pleuropneumoniae",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Balaji",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Wright",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Turner",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Hill",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Dritz",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Fenwick",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Carroll",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Zannelli",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Beausang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Minton",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "J. Anim. Sci",
+            "volume": "80",
+            "issn": "",
+            "pages": "202--207",
+            "other_ids": {
+                "DOI": [
+                    "10.2527/2002.801202x"
+                ]
+            }
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "Constitutive expression of antimicrobial peptide PR-39 in transgenic mice significantly enhances resistance to bacterial infection and promotes growth",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Zeng",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Dong",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "Q"
+                    ],
+                    "last": "Zheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "X"
+                    ],
+                    "last": "Song",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Transgenic Res",
+            "volume": "27",
+            "issn": "",
+            "pages": "409--422",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s11248-018-0084-z"
+                ]
+            }
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "Antimicrobial peptides initiate IL-1 beta posttranslational processing: A novel role beyond innate immunity",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Perregaux",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Bhavsar",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Contillo",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Shi",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Gabel",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "J. Immunol",
+            "volume": "168",
+            "issn": "",
+            "pages": "3024--3032",
+            "other_ids": {
+                "DOI": [
+                    "10.4049/jimmunol.168.6.3024"
+                ]
+            }
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "Antimicrobial resistance genes in Actinobacillus pleuropneumoniae, Haemophilus parasuis and Pasteurella multocida isolated from Australian pigs",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "A E"
+                    ],
+                    "last": "Dayao",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Gibson",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Blackall",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Turni",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Aust. Vet. J",
+            "volume": "94",
+            "issn": "",
+            "pages": "227--231",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/avj.12458"
+                ]
+            }
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "A review on bioactive porcine peptide, protegrin-1",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Ranade",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Ramalingam",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Int. J. Pept. Res",
+            "volume": "26",
+            "issn": "",
+            "pages": "1493--1501",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s10989-019-09955-8"
+                ]
+            }
+        },
+        "BIBREF45": {
+            "ref_id": "b45",
+            "title": "Pigs Lacking the scavenger receptor cysteine-rich domain 5 of CD163 are resistant to porcine reproductive and respiratory syndrome virus 1 infection",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Burkard",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Opriessnig",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Mileham",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Stadejek",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Ait-Ali",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Lillico",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "B A"
+                    ],
+                    "last": "Whitelaw",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Archibald",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "J. Virol",
+            "volume": "92",
+            "issn": "",
+            "pages": "415--00418",
+            "other_ids": {
+                "DOI": [
+                    "10.1128/JVI.00415-18"
+                ]
+            }
+        },
+        "BIBREF46": {
+            "ref_id": "b46",
+            "title": "The immunology of macrophage activation syndrome",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Crayne",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Albeituni",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Nichols",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "Q"
+                    ],
+                    "last": "Cron",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Front. Immunol",
+            "volume": "10",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3389/fimmu.2019.00119"
+                ]
+            }
+        },
+        "BIBREF47": {
+            "ref_id": "b47",
+            "title": "The regulatory actions of retinoic acid on M2 polarization of porcine macrophages",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Perry",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Chitko-Mckown",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Smith",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Cheung",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Beshah",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Urban",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Dawson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Dev. Comp. Immunol",
+            "volume": "98",
+            "issn": "",
+            "pages": "20--33",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.dci.2019.03.020"
+                ]
+            }
+        },
+        "BIBREF48": {
+            "ref_id": "b48",
+            "title": "The role of cytokines including interleukin-6 in COVID-19 induced pneumonia and macrophage activation syndrome-like disease",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Mcgonagle",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Sharif",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "O&apos;regan",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Bridgewood",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Autoimmun. Rev",
+            "volume": "19",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.autrev.2020.102537"
+                ]
+            }
+        },
+        "BIBREF49": {
+            "ref_id": "b49",
+            "title": "Pathological inflammation in patients with COVID-19: A key role for monocytes and macrophages",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Merad",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Martin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nat. Rev. Immunol",
+            "volume": "20",
+            "issn": "",
+            "pages": "355--362",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41577-020-0331-4"
+                ]
+            }
+        },
+        "BIBREF50": {
+            "ref_id": "b50",
+            "title": "Effective treatment of severe COVID-19 patients with tocilizumab",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Han",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "Q"
+                    ],
+                    "last": "Fu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Zheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Proc. Natl. Acad. Sci. USA 2020",
+            "volume": "117",
+            "issn": "",
+            "pages": "10970--10975",
+            "other_ids": {
+                "DOI": [
+                    "10.1073/pnas.2005615117"
+                ]
+            }
+        },
+        "BIBREF51": {
+            "ref_id": "b51",
+            "title": "Cytokine Storm in COVID-19: The Current evidence and treatment strategies. Front",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Tang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Ji",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Wen",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3389/fimmu.2020.01708"
+                ]
+            }
+        },
+        "BIBREF52": {
+            "ref_id": "b52",
+            "title": "A novel MALDI LIFT-TOF/TOF mass spectrometer for proteomics",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Suckau",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Resemann",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Schuerenberg",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Hufnagel",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Franzen",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Holle",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "Anal. Bioanal. Chem",
+            "volume": "376",
+            "issn": "",
+            "pages": "952--965",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s00216-003-2057-0"
+                ]
+            }
+        },
+        "BIBREF53": {
+            "ref_id": "b53",
+            "title": "Histology-compatible MALDI mass spectrometry based imaging of neuronal lipids for subsequent immunofluorescent staining",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Kaya",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Michno",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Brinet",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Iacone",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Zanni",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Blennow",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Zetterberg",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Hanrieder",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Anal. Chem",
+            "volume": "89",
+            "issn": "",
+            "pages": "4685--4694",
+            "other_ids": {
+                "DOI": [
+                    "10.1021/acs.analchem.7b00313"
+                ]
+            }
+        },
+        "BIBREF54": {
+            "ref_id": "b54",
+            "title": "Sample Availability: Samples (cryosections) on ITO glass slides are available from the authors",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF55": {
+            "ref_id": "b55",
+            "title": "This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Publisher&apos;s Note",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "MDPI stays neutral with regard to jurisdictional claims in published maps and institutional affiliations. \u00a9 2020 by the authors. Licensee MDPI",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Spatial distribution of IL-1\u03b2 peptide on one zoomed cryosection of lung tissue from pig infected by Actinobacillus pleuropneumoniae (APP)-necrotic area (NA). The matrix-assisted laser desorption/ionization time-of-flight mass spectrometry imaging (MALDI-TOF MSI) detection of IL-1\u03b2 peptide NLYLSCVLKDDKPTLQLESVDPKNYPK (3119.621 \u00b1 0.100 Da) was confirmed by comparison with immunohistochemistry (IHC) of IL-1\u03b2 on consecutive tissue cryosection. The purple ellipses are highlighting regions with detected IL-1\u03b2. The regions I. show MSI signal corresponding with IHC signal (light purple)",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "shows representative MSI and IHC data for IL-1\u03b2 detected in more porcine tissue cryosections of control lungs, lungs infected by APP-necrotic area (NA) and marginal zone (MZ), tracheobronchial lymph nodes (TBLN). The more detailed representative IHC images, before and after their modification in GIMP 2.10.22, of control lung (Figure S1), NA (Figures S2-S4), TBLN (Figure S5) and MZ (Figure S6) are provided in the Supplementary Data. The MSI data were detected IL-1\u03b2 tryptic fragment even in the positions where IHC antibody anti-IL-1\u03b2 was not bound properly.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "Spatial distribution of IL-1\u03b2 peptide on porcine tissue sections of control lungs and necrotic area (NA), marginal zone (MZ) and tracheobronchial lymph nodes (TBLN) from pigs infected by APP. For MALDI-TOF MSI images, the IL-1\u03b2 peptide NLYLSCVLKDDKPTLQLESVDPKNYPK (3119.621 \u00b1 0.100 Da) was detected. The representative images were used. The more detailed IHC images before and after their modification in GIMP 2.10.22 are presented in Supplementary Data as Figures S1-S6. The zoomed mean mass spectrum of IL-1\u03b2 peptide is presented in",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "Spatial distribution of CD163 peptide and Protegrin-4 precursor peptide on porcine tissue sections of control lungs and NA, MZ and TBMU from pigs infected by APP. For MALDI-TOF MSI images, the CD163 peptide TSYQVYSK (975.478 \u00b1 0.100 Da) and Protegrin-4 precursor peptide FPPPNFPGPR (1126.216 \u00b1 0.100 Da) were detected. The Protegrin-4 precursor protein was identified by on-tissue MALDI-LIFT-TOF/TOF of his peptide FPPPNFPGPR and by using in-house MASCOT Server. The MASCOT score was 54 (see more info in",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "Intensity box plots for (A) IL-1\u03b2 peptide NLYLSCVLKDDKPTLQLESVDPKNYPK (3119.621 \u00b1 0.100 Da), (B) CD163 peptide TSYQVYSK (975.478 \u00b1 0.100 Da) and (C) Protegrin-4 precursor peptide FPPPNFPGPR (1126.216 \u00b1 0.100 Da) showing statistically significant (p < 0.001) differences between lungs infected by APP-NA and other samples, including control lungs, MZ and TBLN. The number of measured cryosections used for statistical analysis was 12 cryosections per each sample type.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "Kruskal-Wallis tests for CD163, IL-1\u03b2 and protegrin-4 precursor tryptic fragments/peptides. The statistical significance of differences between lungs control, lungs infected by APP-NA, MZ and TBLN was tested.",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "The authors would like to thank to Zdenek Patocka for helping with creating of IHC images, to Andrej Batik for H&E staining of cryosections after MALDI MSI and to Frantisek Petrlak for making microphotographs of H&E stained sections.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Acknowledgments:"
+        },
+        {
+            "text": "The authors declare no conflict of interest.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conflicts of Interest:"
+        }
+    ]
+}

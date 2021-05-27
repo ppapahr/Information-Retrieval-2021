@@ -1,0 +1,575 @@
+{
+    "paper_id": "875c9b7cd298591bd47bc5453f0dd6879fc33722",
+    "metadata": {
+        "title": "EPIC: A Proposed Model for Approaching Metadata Improvement",
+        "authors": [
+            {
+                "first": "Hannah",
+                "middle": [],
+                "last": "Tarver",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of North Texas Libraries",
+                    "location": {
+                        "settlement": "Denton",
+                        "region": "TX",
+                        "country": "USA"
+                    }
+                },
+                "email": "hannah.tarver@unt.edu"
+            },
+            {
+                "first": "Mark",
+                "middle": [
+                    "Edward"
+                ],
+                "last": "Phillips",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of North Texas Libraries",
+                    "location": {
+                        "settlement": "Denton",
+                        "region": "TX",
+                        "country": "USA"
+                    }
+                },
+                "email": "mark.phillips@unt.edu"
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "This paper outlines iterative steps involved in metadata improvement within a digital library: Evaluate, Prioritize, Identify, and Correct (EPIC). The process involves evaluating metadata values system-wide to identify errors; prioritizing errors according to local criteria; identifying records containing a particular error; and correcting individual records to eliminate the error. Based on the experiences at the University of North Texas (UNT) Libraries, we propose that these cyclical steps can serve as a model for organizations that are planning and conducting metadata quality assessment.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "The Digital Collections at the University of North Texas (UNT) Libraries comprise over 3 million records and represent more than fifteen years of digitization, web harvesting, and metadata activities. Publicly, users can access a wide range of materials -printed and handwritten text; photos and other images; large maps and technical drawings; audio/video recordings; physical objects; and other items -from three public interfaces: The Portal to Texas History (materials from partner institutions and collectors across the state), the UNT Digital Library (materials owned by UNT or created at the university), and the Gateway to Oklahoma History (materials from organizations in Oklahoma, managed by the Oklahoma Historical Society). Although many of the items have been digitized and described in-house, the Digital Collections also include items and metadata harvested from government databases, or provided by partner institutions; additionally, editors include a wide range of highly-trained specialists, trained students of various expertise, and volunteers who may have little-to-no experience.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "Given the size and scope of the Digital Collections, we have conducted extensive quality-control and clean-up projects, as well as research related to methods of determining metadata quality system-wide (e.g., evaluating dates [9] , overall change [10] , and interconnectedness of values [7] ). While there has been extensive research about metadata quality as a concept, most of it has focused on frameworks and metrics for evaluating the quality of metadata in an individual record or in a larger collection; most notably the quality frameworks put forth by Moen et al. in 1998 [3] , by Bruce and Hillmann in 2004 [1] , and by Stvilia et al. in 2007 [8] . In each case, these papers outlined specific aspects of metadata quality -such as accuracy or completeness -and how these aspects ought to be defined as distinct and important when evaluating metadata records.",
+            "cite_spans": [
+                {
+                    "start": 227,
+                    "end": 230,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 248,
+                    "end": 252,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 288,
+                    "end": 291,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 560,
+                    "end": 583,
+                    "text": "Moen et al. in 1998 [3]",
+                    "ref_id": null
+                },
+                {
+                    "start": 589,
+                    "end": 619,
+                    "text": "Bruce and Hillmann in 2004 [1]",
+                    "ref_id": null
+                },
+                {
+                    "start": 629,
+                    "end": 655,
+                    "text": "Stvilia et al. in 2007 [8]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "This case study outlines a model based on the experiences at UNT with practical metadata evaluation and correction, but has wide applications for other digital libraries. Rather than focusing on how to determine quality or the best methods of evaluation, the proposed model encompasses the overarching process of iterative metadata improvement, breaking assessment and mitigation into discrete steps in a replicable way.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "The model comprises four steps (EPIC): Evaluate (determine quality and identify errors), Prioritize (order errors according to resources and impact), Identify (connect an error to the affected record/s), and Correct (make appropriate changes to affected records and eliminate the error). These steps function as an ongoing, repeatable cycle (see Fig. 1 ). The first two steps -evaluate and prioritize -occur primarily at a system or aggregated collection level, to determine what errors or issues exist, and to make decisions about which problems should be corrected immediately. The third and fourth steps -identify and correct -refer to individual records as issues are remediated. Although this is a cyclical process, not all steps necessarily take the same amount of time, or happen with the same frequency.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 346,
+                    "end": 352,
+                    "text": "Fig. 1",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "EPIC Model"
+        },
+        {
+            "text": "The key component for assessment is to evaluate the existing level of quality in records and to identify areas that need improvement. Organizations may employ various processes, e.g., \"Methods of conducting assessment can include focus groups, surveys, benchmarking, observational analyses, interviews, and methodologies that we borrow from other disciplines such as business\" [4] . Ideally, this would cover a range of quality types -e.g., accuracy, accessibility, completeness, conformance to expectations, consistency, provenance, timeliness -as well as content and structural elements. Realistically, some aspects are more easily evaluated or verified than others. Many repositories rely on manually checking records [2] and some problems can only be found by looking at a record -e.g., mismatches between the item and record values. However, as a primary method of analysis, manual checks do not scale to large collections and require a significant time commitment. Additionally, manual checks may not be the best method to evaluate overall consistency within a collection(s); however usage of system-wide tools depends on the digital infrastructure an organization is using.",
+            "cite_spans": [
+                {
+                    "start": 377,
+                    "end": 380,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 721,
+                    "end": 724,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Evaluate"
+        },
+        {
+            "text": "At UNT, we do not have to evaluate structural aspects of metadata (e.g., whether XML is well-formed) because validation happens as part of our upload processes. Similarly, we use the same fields and qualifiers for all records, so it is easy to validate the metadata format. For descriptive content, we use tools (called count, facet, and cluster) that are integrated directly into our system [6] . These are based on similar operations in command-line functions and in OpenRefine, to rearrange metadata values in ways that assist editors to identify records needing correction or review for accuracy, completeness, and consistency.",
+            "cite_spans": [
+                {
+                    "start": 392,
+                    "end": 395,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Evaluate"
+        },
+        {
+            "text": "Before these tools were implemented in 2017, we used a Python-based program (metadata breakers [5] ) to evaluate values after harvesting records via OAI-PMH. Other organizations also use the metadata breakers as well as tools based in various programming languages or made to evaluate metadata in spreadsheets [2] .",
+            "cite_spans": [
+                {
+                    "start": 95,
+                    "end": 98,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 310,
+                    "end": 313,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Evaluate"
+        },
+        {
+            "text": "System-wide, there are likely to be a large number of identified issues, ranging from relatively simple fixes that affect only a handful of records (e.g., typos), to larger issues across entire collections (e.g., legacy or imported values that do not align with current standards). A number of possible criteria may determine which issues are fixed immediately or addressed in the future, based on local needs. In our system, we place higher priority on values that directly affect public-facing functionality or search results -such as coverage places and content descriptions -versus fields that are less-frequently used, or not browseable (e.g., source or relation). Other criteria may include the amount of expertise or time required, number of records affected, available resources/editors, or information known about the materials. At UNT, determining the most useful criteria for prioritization is an ongoing process.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Prioritize"
+        },
+        {
+            "text": "This step requires connection between values or attributes and unique identifiers for the relevant records. When we used tools outside of our system, one challenge was determining which records contained errors found during evaluation. Although we had unique identifiers and persistent links in the harvested records, an editor would have to track down every record from a list of identifiers for a particular error. This made the process complicated if an error occurred in a large number of records. Organizations that can export and reload corrected records may not have this problem; however, not all systems have this capability, which means that a specialized process may be necessary to coordinate between value analysis and affected records. Once our tools were integrated into the system, editors had a direct link between attributes and records, although we do have to manually edit individual records to change values.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Identify"
+        },
+        {
+            "text": "The final step is to correct records identified with a particular issue. Although we encourage editors to change other, obvious errors that they might see in the records, the priority is on fixing specific issues rather than more comprehensive reviews. This process promotes relatively quick, precise editing system-wide, resulting in iterative improvements. With tool integration, any editor in our system may access the tools (e.g., for self-review) and managers can link to records containing an error -or to a tool with set criteria for multiple errors -to distribute review and corrections. Other organizations could choose to approach correction more comprehensively, or according to methods that work within their systems; the essential purpose of this step is to ensure that records are improved, even if further edits are needed.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Correct"
+        },
+        {
+            "text": "We have described metadata editing in stages, but we approach it as an ongoing cycle, where some stages take longer -or happen more often -than others. Higher-priority issues or small issues affecting few records may be fixed immediately while others are documented for later correction. Additionally, we add thousands of items every month and complete most records after ingest, so the possibility of new errors is a constant concern. Organizations that employ more rigorous review prior to upload or that add new materials less frequently, might evaluate and prioritize issues periodically, or on a schedule (e.g., annually, biannually, or quarterly).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "EPIC as a Cycle"
+        },
+        {
+            "text": "Evaluation can also inform managers about the work of less-experienced students and mitigate problems related to individual editors. Additionally, we start with the premise that a metadata record is never \"done,\" i.e., there may always be new information, updated formatting or preferred guidelines, or the identification of errors. Under this approach, a single record may be edited or \"touched\" many times and/or by many editors, but the overarching goal is always that metadata improves over time.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "EPIC as a Cycle"
+        },
+        {
+            "text": "We use and suggest this approach for several reasons:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Benefits of EPIC"
+        },
+        {
+            "text": "The Cycle Works at Scale. Iterative metadata editing works for collections of any size; but, importantly, it is functional even as a system gets extremely large, when it is more difficult to determine record quality and to direct resources. Evaluating quality at the system level ensures meaningful changes that can improve consistency, findability, and usability across large numbers of records, even when quality in individual records may remain less than ideal.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Benefits of EPIC"
+        },
+        {
+            "text": "Individual Processes Allow for Planning. Although we are presenting this model as distinct steps in the cycle, in practical use some components may overlap or only occur occasionally -e.g., an editor evaluating records at a collection level may identify a small number of records containing a problem and correct them without \"prioritizing.\" However, it is difficult to plan ongoing work that would be required for system-level issues affecting thousands of records without breaking down the components. Some problems are more systemic or less important than others and we need a way to discuss and determine the best approach -i.e., prioritization -as well as methods within each step that are most appropriate for a particular digital library or institution. The model also provides a way to contextualize the experiences and research within the metadata quality domain from various organizations.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Benefits of EPIC"
+        },
+        {
+            "text": "Fixing systemic problems requires a large number of people over time. By determining specific issues and documenting them -preferably with some level of priority -we can assign records to editors based on a number of criteria. For example, some errors are time consuming (e.g., they affect a large number of records) but are easy to correct without training or expertise by new editors, volunteers, or editors working outside their area. Other problems may affect fewer records but require familiarity with metadata or a subject area; those could be assigned to appropriate editors as time permits.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Division of Labor."
+        },
+        {
+            "text": "This has been particularly useful during the COVID-19 pandemic when we offered metadata editing tasks to library staff who could not perform their usual duties from home. Approximately 100 new editors were added to our system and assigned to metadata work with relatively little training. Those editors can make inroads on some of the simple, yet frequently-occurring problems (such as name formatting in imported records).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Division of Labor."
+        },
+        {
+            "text": "This proposed model explicates discrete steps in metadata improvement to disambiguate conversations around these activities. For example, discussions about how to evaluate metadata (or specific fields) is sometimes conflated with prioritization of issues or relative importance of individual fields. We have found these to be two distinct and equally important facets of metadata quality. Likewise, identifying records within a large collection that have a specific set of metadata characteristics can be challenging by itself, sometimes requiring specialized tools, indexing, or analysis separate from other components. Organizing planning activities and methods within individual steps provides additional context and more productive discourse. At UNT, we are continuing our research around metadata evaluation and prioritization of quality issues, and also plan work to test and apply the EPIC model in a more structured way. By presenting this model, we hope to encourage other researchers and practitioners to explore these components individually as they create tools, workflows, and documentation that supports metadata improvement.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "The continuum of metadata quality: defining, expressing, exploiting",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Bruce",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Hillmann",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "ISBN 9780838908822",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Survey of benchmarks in metadata quality: initial findings",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Gentry",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Hale",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Payant",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Tarver",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "White",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Wittmann",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Assessing metadata quality: findings and methodological considerations from an evaluation of the US Government Information Locator Service (GILS)",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Moen",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Stewart",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Mcclure",
+                    "suffix": ""
+                }
+            ],
+            "year": 1998,
+            "venue": "Proceedings IEEE International Forum on Research and Technology Advances in Digital Libraries",
+            "volume": "",
+            "issn": "",
+            "pages": "246--255",
+            "other_ids": {
+                "DOI": [
+                    "10.1109/ADL.1998.670425"
+                ]
+            }
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Assessment of cataloging and metadata services: introduction",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Mugridge",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "435--437",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/01639374.2017.1362913"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Metadata analysis at the command-line",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Phillips",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Experiments in operationalizing metadata quality interfaces: a case study at the University of North Texas libraries",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Phillips",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Tarver",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "15--23",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Using metadata record graphs to understand digital library metadata",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Phillips",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Zavalina",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Tarver",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "49--58",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "A framework for information quality assessment",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Stvilia",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Gasser",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Twidale",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Smith",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "J. Am. Soc. Inf. Sci. Technol",
+            "volume": "58",
+            "issn": "12",
+            "pages": "1720--1733",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Lessons learned in implementing the extended date/time format in a large digital library",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Tarver",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Phillips",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "60--67",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "How descriptive metadata changes in the UNT Libraries' collection: a case study",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Tarver",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Zavalina",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Phillips",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Alemneh",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Shakeri",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "43--52",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Illustration of the EPIC model.",
+            "latex": null,
+            "type": "figure"
+        }
+    },
+    "back_matter": []
+}

@@ -1,0 +1,1778 @@
+{
+    "paper_id": "e75f59b337ebe6a40ce7dc8ffc71d72ac011020f",
+    "metadata": {
+        "title": "Journal Pre-proof Investigation of potential aerosol transmission and infectivity of SARS-CoV-2 through central ventilation systems Air Handling System Illness? Investigation of Potential Aerosol Transmission and Infectivity of SARS-CoV-2 through Central Ventilation Systems",
+        "authors": [
+            {
+                "first": "Leonard",
+                "middle": [
+                    "F"
+                ],
+                "last": "Pease",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Na",
+                "middle": [],
+                "last": "Wang",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Timothy",
+                "middle": [
+                    "I"
+                ],
+                "last": "Salsbury",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Ronald",
+                "middle": [
+                    "M"
+                ],
+                "last": "Underhill",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Julia",
+                "middle": [
+                    "E"
+                ],
+                "last": "Flaherty",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Alex",
+                "middle": [],
+                "last": "Vlachokostas",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Gourihar",
+                "middle": [],
+                "last": "Kulkarni",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Daniel",
+                "middle": [
+                    "P"
+                ],
+                "last": "James",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Alex",
+                "middle": [],
+                "last": "",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Gourihar",
+                "middle": [],
+                "last": "Vlachokostas",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Daniel",
+                "middle": [
+                    "P"
+                ],
+                "last": "Kulkarni",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "",
+                "middle": [],
+                "last": "James",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "The COVID-19 pandemic has raised concern of viral spread within buildings. Although the near-19 field transmission and the infectious spread within individual rooms are well studied, the impact of 20 aerosolized spread of SARS-CoV-2 via air handling systems within buildings remains unexplored. This 21 study evaluates the concentrations and probabilities of infection for both building interior and exterior 22 exposure sources using a well-mixed model in a multi-room building served by a central air handling 23 system (without packaged terminal air conditioning). In particular, we compare the influence of filtration, 24 air change rates, and the fraction of outdoor air. When the air supplied to the rooms comprises both 25 outdoor air and recirculated air, we find filtration lowers the concentration and probability of infection the 26 most in both source and connected rooms. We find that increasing the air change rate removes virus from 27 the source room faster but also increases the rate of exposure in connected rooms. Therefore, slower air 28 change rates reduce infectivity in connected rooms at shorter durations. We further find that increasing 29 the fraction of virus-free outdoor air is helpful, unless outdoor air is infective in which case pathogen 30 exposure inside persists for hours after a short-term release. Increasing the outdoor air to 33% or the filter 31 to MERV-13 decreases the infectivity in the connected rooms by 19% or 93% respectively, relative to a 32 MERV-8 filter with 9% outdoor air based on 100 quanta/h of 5 \u00b5m droplets, a breathing rate of 0.48 m 3 /h, 33 and the building dimensions and air handling system considered. 34 35",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "reviewed study by de Man, et al., (2020) found that 81% of residents and 50% of health care workers 50 (using surgical masks) became infected in one ward in contrast to the other six wards in the same facility 51 that had no COVID-19 cases. The authors attributed the spread in the ward with infections to the 52 ventilation system, which had recently been remodeled with carbon dioxide sensors that added outdoor air 53 only when the levels were elevated (>1000 ppm) to save energy in contrast to the other wards that had 54 older HVAC systems that supplied a regular rate of outdoor air through the supply ducts. These findings, 55 coupled with widespread evidence of airborne spread of SARS-CoV-2 (Lu, et al., 2020; Ho, 2020 of COVID-19, primarily focused on single room analyses similar to a prior review of bio-aerosol spread 67 by Qian and Zheng (2018) . Their primary multiroom recommendation, without a quantitative argument, 68 was that air recirculation should be avoided, which is ideal from an infectivity perspective but not always 69 possible (e.g., HVAC system are not designed and most cannot sustain introduction of 100% outdoor air 70 during particularly hot/humid or cold outdoor conditions). In general, models of aerosolized pathogen 71 spread throughout buildings divide into those that account for local concentration gradients, typically 72 using computational fluid dynamics codes (e.g., Shao, et al., 2020 , for recirculation flows within elevators, 73 classrooms, and supermarkets using a single room formulation inclusive of obstacles), and those that 74 neglect concentration gradients and use well-mixed models (Firrantello, et al., 2007) . Thus far, most 75 J o u r n a l P r e -p r o o f common plenum, and an air handling system that receives the external source. The air handling system 102 mixes outdoor air with air from the return plenum and delivers that air through a minimum efficiency 103 reporting value (MERV) rated filter to the individual rooms. A well-mixed approximation (although not 104 appropriate for some buildings and room configurations not considered here) is used where the 105 concentration within each room may be assumed to be spatially uniform (gradients in concentration 106 remain negligible or vanish much faster than the concentrations with the rooms). Equations are written 107 out explicitly below to clarify assumptions. 108 109 110 Figure 1 . Essential elements of a central air handling system (a) in a generic small building (b) with their 111 process flow representation. The two scenarios considered with a virus containing particle source that 112 was either internal or external to the building (from a source room or outdoor air, respectively). The virus 113 spreads to the connected rooms via a centrally connected plenum and air handling unit (AHU). 114 115 We begin with the source room. Species conservation of momentum (Deen, 2012) requires 116",
+            "cite_spans": [
+                {
+                    "start": 18,
+                    "end": 40,
+                    "text": "de Man, et al., (2020)",
+                    "ref_id": null
+                },
+                {
+                    "start": 700,
+                    "end": 718,
+                    "text": "(Lu, et al., 2020;",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 719,
+                    "end": 727,
+                    "text": "Ho, 2020",
+                    "ref_id": null
+                },
+                {
+                    "start": 837,
+                    "end": 858,
+                    "text": "Qian and Zheng (2018)",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 1413,
+                    "end": 1431,
+                    "text": "Shao, et al., 2020",
+                    "ref_id": null
+                },
+                {
+                    "start": 1641,
+                    "end": 1668,
+                    "text": "(Firrantello, et al., 2007)",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 2831,
+                    "end": 2834,
+                    "text": "115",
+                    "ref_id": null
+                },
+                {
+                    "start": 2899,
+                    "end": 2911,
+                    "text": "(Deen, 2012)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 2400,
+                    "end": 2408,
+                    "text": "Figure 1",
+                    "ref_id": "FIGREF20"
+                }
+            ],
+            "section": ""
+        },
+        {
+            "text": "(1) 117 J o u r n a l P r e -p r o o f where c is the local concentration, t is time, N is the flux vector, and R V is a bulk source term. Integration 118 over a room volume V and application of Reynold's transport theorem returns 119",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "(2) 120",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "where n is the outward pointing normal vector and A is a surface area along the boundary of the room. 121",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "Application across one inlet (a supply) and two outlets (one for a return and one for a small, perhaps 122 negligible gap under the door) with deposition on the floor finds 123",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "where C is the volume average concentration, N without bolding is a positive flux magnitude averaged 125 across the area of A, each with subscript i, o, d, and s indicating the inlet supply, outlet return, door 126 (assumed shut hereafter), and settling, respectively. Inward leaks of virus laden air are not included in 127 this formulation. Outward leaks (where present) are included in this formulation and are lumped into the 128 term for the door, yet both outward leaks and flow through the door (where shut) are taken to be small in 129 these simulations. Any leaks are small if the product of area and flux for the leaks are substantially 130 smaller than the product of area and flux for inlet supply or outlet return. The bulk source term accounts 131 for both release or generation within a space, R generation , and for viral decay, R decay , which is treated as first 132 order based on experimental findings of Schuit, et al., (2020) . The volume of the room is constant, fluxes 133 in and out of a space may be expressed as a concentration times a velocity (in the absence of significant 134 diffusion, electrostatic forces, or thermophoretic phenomena), and the bulk source term is divided into a 135 transient source term (e.g., coughing, sneezing, singing, laughing, talking, breathing, etc.) and a viral 136 decay term so that 137",
+            "cite_spans": [
+                {
+                    "start": 925,
+                    "end": 947,
+                    "text": "Schuit, et al., (2020)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "(4) 138",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "where C represents volumetric or area-wise averaged concentration, the over dot indicates a rate, and 139 k decay is a first-order rate constant that represents viral decay by either physical or photonic means. Now 140 we impose the well-mixed approximation so that the outlet concentrations through the return (and under 141 J o u r n a l P r e -p r o o f the door) are the same as in the bulk volume. Because the concentration is uniform within the room, the 142 concentration that determines the flux to the floor is also uniform so that 143",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "(5) 144",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "In keeping with Yang and Marr (2011) , we recognize that the number of air changes (given in air changes 145 per hour or ACH) is the product of all entering (or all leaving) areas and velocities divided by the volume 146 of the room so that we may define \u03bb=(",
+            "cite_spans": [
+                {
+                    "start": 16,
+                    "end": 36,
+                    "text": "Yang and Marr (2011)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "(6) 148",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "where H=A s /V is vertical height of the room (not the height at which the particles are released). Grouping 149 then returns 150",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "This form concurs with that of Yang and Marr (2011) for a single room in the absence of inlet and 152 generation terms. In their case, they begin with an initial well-mixed concentration of C o (instead of an 153 internal pulse as given below) and integrate to find 154",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "For a given air change rate, a decay rate constant, and settling velocity (as a function of particle size), this 156 expression can be used to adjust the particle size distribution as a function of time within a single room. 157",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "Our analysis includes the first two terms on the right of Eq. 7 neglected in prior analyses but needed to 158 describe multiple rooms. 159",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "We now consider a small building where the rooms are connected and the common plenum (that 160 collects air from the rooms and returns it to the air handling unit) is well mixed. The room in which the 161 viral source or dose is generated is termed the \"source room\" below, and its concentration is labeled as 162 C=C source in Eq. 7 with a generation term included (either as shown in Eq. 8 or as an initial condition). Eq. 163 C=C connected , when the generation term is zeroed. When the common plenum is well mixed, multiple 165 connected rooms are considered to be identical, so that their concentrations may be represented by a 166 single expression. 167",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "We now address the functional form of the plenum and the air handling unit (AHU). The plenum 168 between the ceiling and the roof extends to AHU ducting. The first portion of the AHU starts at the 169 ducting from the plenum and extends to the filter including the exhaust and outside air intake; this portion 170 of the AHU is labeled pre meaning prefilter below. A second portion within the AHU extends from the 171 downstream side of the filter to the source and connected rooms; this portion of the AHU is labeled post 172 meaning postfilter below. In each physical volume, settling and viral decay are incorporated. Application 173 of Eq. 2 to a plenum with multiple inlets (one from a source room and the rest from connected rooms 174 starting at the return grilles) and one outlet (common return to the AHU, which starts at the ducting from 175 the plenum) finds 176",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "The volume of the plenum is constant, and fluxes in and out of a space may be expressed as a 178 concentration times a velocity as above, and the well-mixed approximation is imposed so that the outlet 179 concentration to the AHU is the same as in the bulk volume of the plenum. Following the same steps as 180 ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "where f OA is the fraction of the outdoor air that is added to the flow (i.e., the outdoor air volumetric flow 196 rate, which is equivalent to the exhaust volumetric flow rate, is the fraction of outdoor air multiplied by ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "where the subscript postfilter indicates the downstream face of the filter. The physical volume of the 204 filtered portion of the AHU is constant, and fluxes in and out of a space may be expressed as a 205 concentration times a velocity in the absence of significant diffusion, and we impose the well-mixed 206 approximation so that the outlet concentrations through the AHU are the same as in the bulk of its 207 physical volume. Because the concentration is uniform within the room, the concentration that 208 determines the flux to the floor is also uniform so that in the absence of generation within the plenum 209 ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "because C i in Eq. 7 become C post , and C OA =0 in this scenario. The initial conditions may be constructed so 218 that all of concentrations are zero at the initial time, and concentration is driven by the generation term in 219 the first of these. This contrasts with the approach of Yang and Marr (2011) who used a nonzero initial 220 condition in the source room, their only room, but forced the generation term to vanish. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "where all rooms are now connected because the source is external to the building. The initial conditions 225 require zero concentrations in all spaces with the driving force as the second term on the right of the third 226",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "For completion, these equations require a settling velocity. As a first-order approximation, the 228 ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "equation. 227"
+        },
+        {
+            "text": "where f significant is the factor at which significance begins (e.g., f significant =10% when v s /H i is 10% of \u03bb i +k decay ).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "equation. 227"
+        },
+        {
+            "text": "The analysis above specifies a well-mixed concentration in each space. However, the units of 236 concentration have not been specified (options include moles, mass, droplets, virions, or even quanta (i.e., 237 infectious dose) each per unit volume; all are valid interpretations of these equations). If C with its 238 location subscript has units of quanta per unit volume, then the risk follows directly from the Wells-Riley 239 approach, in which the cumulative probability of infection, P, is given by 240",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "235"
+        },
+        {
+            "text": "where \u00b5 is the average number of quanta breathed by a susceptible person, meaning someone who could 242 become infected (Riley, et al., 1978) . Rudnick and Milton (2003) relate the average number of quanta 243 (one quantum gives a 63% probability of inducing infection) breathed to the average quantum 244 concentration, where this average is generalized as 245",
+            "cite_spans": [
+                {
+                    "start": 120,
+                    "end": 141,
+                    "text": "(Riley, et al., 1978)",
+                    "ref_id": null
+                },
+                {
+                    "start": 144,
+                    "end": 169,
+                    "text": "Rudnick and Milton (2003)",
+                    "ref_id": "BIBREF27"
+                }
+            ],
+            "ref_spans": [],
+            "section": "235"
+        },
+        {
+            "text": "where C i is any of the concentrations in any of these rooms, p is the volumetric breathing rate, and t 1 and 247 t 2 are the starting and ending times of exposure (where t 2 >t 1 \u22650). This formulation does not include masks. 248",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "235"
+        },
+        {
+            "text": "The community's public health risk may be estimated with a replication number as 249",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "235"
+        },
+        {
+            "text": "where n is the number of people in the space (including the one shedding virus). Analysis below sets t 1 =0 251 h. 252",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "235"
+        },
+        {
+            "text": "The Wells-Riley equation as typically constructed requires that air flow rates, the emission rate, 253 and the infectious agent concentrations to be at steady state (Rudnick and Milton, 2003) . This contrasts 254 with the dynamic analysis here. The difference is important because quanta provided in the literature 255 correspond to steady emission rates. A connection may be forged by integrating the quanta rate over time 256",
+            "cite_spans": [
+                {
+                    "start": 165,
+                    "end": 191,
+                    "text": "(Rudnick and Milton, 2003)",
+                    "ref_id": "BIBREF27"
+                }
+            ],
+            "ref_spans": [],
+            "section": "235"
+        },
+        {
+            "text": "and dividing by the relevant volume. For exposure within the building, the initial concentration is then 257",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "235"
+        },
+        {
+            "text": "where q is the quanta emission rate and V source is the volume of the source room to represent a 5 minute 259 emission or exposure (e.g., the duration of a coughing bout or other exposure from coughing, sneezing, 260 singing, laughing talking, breathing, etc.), assuming spread throughout the room is instantaneous. This where C total,OA is the total outdoor air concentration and V pre is the volume of the prefiltered portion of the 266 AHU. Because Eqs. 15 and 16 are linear, they may be scaled by any non-zero scalar, here C total and 267 C total,OA , respectively. When scaling Eqs. 15 on C total , the generation term requires special attention. 268",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "235"
+        },
+        {
+            "text": "During emission, the generation term may be written as q/V source and zero otherwise so that we may write 269",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "235"
+        },
+        {
+            "text": "where q and V source are constants and G is a smooth top hat function that ranges between 0 and 1 as 271 Five microns was chosen as the nominal virus containing particle size because it is the boundary 281 between coarse and fine infective aerosols as described by Milton and colleagues (Leung, et al., 2020) . 282",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 287,
+                    "end": 308,
+                    "text": "(Leung, et al., 2020)",
+                    "ref_id": null
+                }
+            ],
+            "section": "235"
+        },
+        {
+            "text": "Filtration efficiency may decrease by more than 10% when the virus containing particle size is <2 283 microns and the droplet settling rate may decrease the virus removal rate by more than 10% relative to 284 when the virus containing particle size is >130 microns (Eq. 17 with \u00b5 f =1.8 . 10 -5 Pa . s, f significant =10%, g=9.8 285 m/s 2 , \u03c1 d =1000 kg/m 3 and \u03c1 f =1 kg/m 3 ), though larger particles may not be swept into the plenum. All of 286 these sizes are substantially larger than a naked virus but represent the sizes of respiratory droplets that 287 encapsulate virus (Leung, et al., 2020) . Fig. 1a assuming one person per each of the three rooms. Variations for Cases 5-7 set to keep the volumetric flow rate of outside air constant.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 579,
+                    "end": 600,
+                    "text": "(Leung, et al., 2020)",
+                    "ref_id": null
+                },
+                {
+                    "start": 603,
+                    "end": 610,
+                    "text": "Fig. 1a",
+                    "ref_id": "FIGREF20"
+                }
+            ],
+            "section": "235"
+        },
+        {
+            "text": "Air-handlers recirculate air and mix it with outdoor air creating an interplay between the fraction 305 of outdoor air and level of filtration, which affects viral transmission only when some air is recirculated 306 (if all air is from outdoor and outdoor air is virus free, filtration does not affect respiratory droplet 307 transmission). Figure 2 shows the influence of filtration. Figure 2 This result suggests that shorter exposures at lower ACH may be preferential relative to higher ACH. 358 infection for the largest air change rates. This is because higher air change transports infective dose into 365 the connected rooms much more quickly leading to short term infectivity risks about an order of 366 magnitude higher at higher air change rates than at lower air change rates. At longer exposure times, the 367 baseline (Case 8) condition is surprisingly among the highest risk of infection, indicating that the lowest 368 air flow rate is not the worst among these cases (the exact order of the curves at long times depends in 369 part on the parameters selected, the building dimensions and air handling system considered). This 370 finding that code conditions or higher air change rates might not reduce risk of exposure in downstream 371 rooms is an important finding of this analysis. In the absence of viral degradation (via k decay ), the 1.8 372 ACH curve would achieve a slightly higher steady state than the 12 ACH curve indicating a distinction 373 between biological and non-biological contaminant spread. These are not insights that may be obtained 374 without multiroom coupling between connected spaces but follow directly from standard and well-375 established approaches in building science and epidemiology. 376 rooms. The decrease is meaningful and is less than a factor of two from the case with no outdoor air 386 (Case 8) to 33% outdoor air (Case 10), which is smaller than the difference between MERV-8 and 387",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 341,
+                    "end": 349,
+                    "text": "Figure 2",
+                    "ref_id": null
+                },
+                {
+                    "start": 385,
+                    "end": 393,
+                    "text": "Figure 2",
+                    "ref_id": null
+                }
+            ],
+            "section": "Influence of Filtration 304"
+        },
+        {
+            "text": "MERV-11 filters suggesting that increasing filtration efficiency may be more effective than increasing 388 outdoor air fraction. Please note in Figure 3 generally decreases and is delayed as the air change rate decreases. When integrated, the cumulative 421 probability of infection rises most quickly for the highest air change rates but asymptotes to modest 422 steady states in contrast to the lowest air change rates that accumulate risk more slowly but asymptote to 423 higher cumulative probabilities. Figure 5 (e) and (f) shows the influence of outdoor air. Because the 424 pathogen comes from outdoors, increasing the outdoor air intake fraction leads to more dose, so that the 425 highest outdoor air fraction leads to the highest probability of infectivity. In this scenario, no outdoor air 426 introduction to the AHU would be preferential. strategies vary. Figure 6 shows that as the number of rooms increases the concentration within the 447 connected rooms decreases. The effect is marginal in the source room. Therefore, the conditions 448 evaluated are somewhat \"conservative\" because they may over predict the risk of infection for larger 449 buildings (e.g., larger office suites). However, with larger buildings, the potential for more than one Buonanno, et al., (2020) suggest that typical quanta rates are in the range of 1-100 quanta/h and that lower 465 doses presented (10 quanta/h) may be more representative of passive breathing, while the highest dose 466 may be representative of singing or exercise (e.g., 300 quanta/h). 2 Our analysis elsewhere in this article 467 assumes an emission rate of 100 quanta/h, recognizing that it is likely lower in many cases but could be 468 higher and may depend on the disease state of the individuals shedding the virus and likely changes 469 across the course of the disease and from person to person. 470",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 144,
+                    "end": 152,
+                    "text": "Figure 3",
+                    "ref_id": "FIGREF14"
+                },
+                {
+                    "start": 508,
+                    "end": 516,
+                    "text": "Figure 5",
+                    "ref_id": "FIGREF17"
+                },
+                {
+                    "start": 869,
+                    "end": 877,
+                    "text": "Figure 6",
+                    "ref_id": null
+                }
+            ],
+            "section": "Influence of Filtration 304"
+        },
+        {
+            "text": "The Wells-Riley approach in its original formulation required steady flows and steady 471 concentration; here the flows are steady (no active control) but the concentrations are dynamic (Sze To 472 and Chao, 2009). Rudnick and Milton (2003) provide a pathway to connect dynamic concentrations from 473 a steady source with infective doses. We extend that approach to dynamic sources that never achieve a 474 steady state. 475 476",
+            "cite_spans": [
+                {
+                    "start": 215,
+                    "end": 240,
+                    "text": "Rudnick and Milton (2003)",
+                    "ref_id": "BIBREF27"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Influence of Filtration 304"
+        },
+        {
+            "text": "Each of these probabilities of infection are based on the parameters given in Table 1 , which were 478 selected for short term exposure (5 min) to a moderately high infective dose of SARS-CoV-2. They are 479 not a worst-case scenario (higher infectivity doses are possible), and infective doses likely vary 480 significantly across individuals and as a function of disease progression. Whether these probabilities of 481 infection are large or small depends on personal and community risk tolerances. For example, an 482 individual may determine that some risk is acceptable as they balance competing individual health, social, 483 and economic needs, or, alternatively, only fully minimized risk may be acceptable to protect a vulnerable 484 person. Furthermore, a community may accept risk by balancing viral spread against access to health care 485 (\"flattening the curve\") while maintaining some economic activity in the process, or, alternatively, a 486 community may seek to eradicate viral spread in the spirit of a cordon sanitaire. Each of these involves 487 different risk tolerances, the balancing of which across a population remains outside the scope of this 488 quantitative analysis. Similarly, each of these scenarios and cases has distinct implications for building 489 energy usage, occupants' comfort, and HVAC equipment maintenance. For example, higher air filtration 490 (i.e., higher MERV rating) uses more fan energy and may impede HVAC system performance if the fan 491 does not have power to overcome resistance or too much pressure is built up. More outdoor air intake 492 increases energy use during the heating or cooling seasons. If the HVAC systems are not sized to handle 493 a high percentage of outdoor air, occupants' thermal comfort will have to be compromised when the 494 temperature setpoints cannot be met. Moreover, if outdoor air quality is in a poor condition, other risks 495 may be introduced by bringing in more outdoor air, especially when unfiltered (such as opening the 496 windows). Additional labor or material costs will likely be incurred to mitigate these other risks or side 497 effects. For some, additional costs may be acceptable, while to others, the increased cost would be 498",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 78,
+                    "end": 85,
+                    "text": "Table 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Implications 477"
+        },
+        {
+            "text": "prohibitive. While a quantitative analysis of associated costs is also outside the scope of this article, this 499 quantitative analysis may be helpful to decision makers. 500",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Implications 477"
+        },
+        {
+            "text": "Finally, we recognize that well-mixed models, while insightful for modeling the transport and 501 fate of aerosolized materials across rooms, do not account for spatial variations of virus-containing 502 particles within the breathing zone. For example, individuals in the direct pathway of a cough or sneeze 503 may experience substantially higher concentrations. Similarly, individuals in the direct pathway of air 504 coming from supply vents may breathe elevated droplet/particle concentrations compared to the well-505 mixed average. This is important because some recent and well-intentioned guidance suggests building 506 managers should substantially increase the flow rate throughout the building, which may disadvantage 507 some individuals downstream of virus emitters in rooms that are not well mixed. 508 509",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Implications 477"
+        },
+        {
+            "text": "In summary, we evaluated concentrations and probabilities of infection for both internal and 511 external exposure sources using a well-mixed model in a building with a central HVAC system. The 512",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion 510"
+        },
+        {
+            "text": "presented results indicate meaningful exposure via the ventilation system in support of our hypothesis. 513",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion 510"
+        },
+        {
+            "text": "Our findings for the select cases and exposure considered here at long times (hours of breathing) 514",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion 510"
+        },
+        {
+            "text": "for the connected rooms are: 515 J o u r n a l P r e -p r o o f \u2022 For typical levels of recirculation filtration is most effective in lowering the aerosol concentration 516 and probability of infection via HVAC systems as filters block the path of viral aerosols. For 517 example, MERV-8 filters reduce the risk of infection from 1.5% (no filter) to 0.2% in the 518 connected rooms. In theory, higher filtration level(s) result in higher level(s) of protection. For 519 example, the incremental risk reduction is 0.15% and 0.03% respectively, when the MERV rating 520 is increased from 8 to 11 to 13. 521",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion 510"
+        },
+        {
+            "text": "\u2022 Outdoor air is the second most effective measure to reduce the aerosol transmission via the 522 HVAC system. When the fraction of outdoor air is increased from 0% to 33%, the risk is 523 decreased from 0.22% to 0.16%. Given its significant impact on energy use and thermal comfort 524 in the heating-or cooling-dominated climate zones, ventilation should be increased with caution. 525",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion 510"
+        },
+        {
+            "text": "\u2022 Increasing the air change rate should also be considered with caution because it may increase the 526 rate of viral aerosol spread via HVAC systems. In our study, when the ACH is increased from 527 1.8 to 12, the time to the peak concentration of virus in the connected rooms decreases from 30 528 min to 11 min. 529",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion 510"
+        },
+        {
+            "text": "We acknowledge that buildings are heterogeneous, and it is nearly impossible to prescribe a set of 530 effective measures without knowing the building location, layout, HVAC system type and vintage. 531",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion 510"
+        },
+        {
+            "text": "Nevertheless, our study provides a foundational analysis using a generic building system and assuming 532 typical settings and infectivity levels. 533 534",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion 510"
+        },
+        {
+            "text": "In the main body of the text, calculations include both viral decay and settling. To provide a 536 sense for the relative importance of these terms, Fig. A.1 shows the concentration profiles with both viral 537 decay and settling, without viral decay but with settling, and with viral decay but without settling for the 538 baseline condition ( Table 2 ). The figure suggests that both effects are distinctive for the connected rooms, ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 149,
+                    "end": 157,
+                    "text": "Fig. A.1",
+                    "ref_id": "FIGREF20"
+                },
+                {
+                    "start": 345,
+                    "end": 352,
+                    "text": "Table 2",
+                    "ref_id": null
+                }
+            ],
+            "section": "Appendix 535"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Andrew Costinett, and the national laboratory virus fate and 560 transport team",
+            "authors": [
+                {
+                    "first": "Veronica",
+                    "middle": [],
+                    "last": "Waters",
+                    "suffix": ""
+                },
+                {
+                    "first": "Bradley",
+                    "middle": [],
+                    "last": "Adetola",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Fritz",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "All authors participated in the planning and manuscript preparation and have approved the final 564 article. LFP and TIS performed the quantitative calculations. NW and LFP secured funding",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Estimation of airborne viral emission: quanta emission rate of 571",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Buonanno",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Stabile",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Morawska",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "SARS-CoV-2 for 2 infection risk assessment",
+            "authors": [],
+            "year": 2020,
+            "venue": "Environment International",
+            "volume": "141",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Association of infected probability of COVID-19 with ventilation rates in confined 574 spaces: a Wells-Riley equation based investigation",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Dai",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "COVID-19 in a nursing home associated with aerosol transmission as a result of inadequate 578 ventilation",
+            "authors": [],
+            "year": 2020,
+            "venue": "Clinical Infectious Diseases",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/cid/ciaa1270"
+                ]
+            }
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Analysis of Transport Phenomena",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Deen",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "580",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "A tool to model the fate and transport of 582 indoor microbiological aerosols (FaTIMA)",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Dols",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Polidoro",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Poppendieck",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Emmerich",
+                    "suffix": ""
+                }
+            ],
+            "year": 2095,
+            "venue": "National Institute of Standards and Technology",
+            "volume": "583",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Assessing the role of HVAC systems in fighting COVID-19",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Elovitz",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Elovitz",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "HPAC 585 Engineering",
+            "volume": "92",
+            "issn": "",
+            "pages": "4--9",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Multizone modeling of strategies to reduce the 587 spread of airborne infectious agents in healthcare facilities",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Emmerich",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Heinzerling",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Choi",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Persily",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Building and Environment",
+            "volume": "60",
+            "issn": "",
+            "pages": "105--115",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Effects of 590 HVAC system and building characteristics on exposure of occupants to short-duration point 591 source aerosol releases",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Firrantello",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Aumpansub",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Bahnfleth",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Freihaut",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Thran",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Hutchens",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Journal of Architectural Engineering",
+            "volume": "13",
+            "issn": "",
+            "pages": "84--94",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "High SARS-CoV-2 attack rate following exposure at a choir practice-594",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Patrick",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Leibrand",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Modeling Airborne Transmission of SARS-CoV-2 (COVID-19)",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Ho",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "597",
+            "issn": "",
+            "pages": "2020--10253",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "COVID-19 outbreak 599 associated with air conditioning in restaurant",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Lu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Gu",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Su",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Lai",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "26",
+            "issn": "",
+            "pages": "1628--1631",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Transmission of SARS-CoV-2 by inhalation of respiratory aerosol in 603 the Skagit Valley Chorale superspreading event Indoor Air",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Morawska",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Noakes",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "00",
+            "issn": "",
+            "pages": "1--10",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "How can airborne transmission of COVID-19 indoors be minimized? 607 Environment International",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Floto",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Franchimon",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "142",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Infectious particles vs. quanta of Mycobacterium tuberculosis infection-609 don't get them confused",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Nardell",
+                    "suffix": ""
+                },
+                {
+                    "first": "Wells",
+                    "middle": [],
+                    "last": "Revisited",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Mycobact Dis",
+            "volume": "6",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.4172/2161-1068.1000231"
+                ]
+            }
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Toward understanding the risk of secondary airborne infection: 611 emission of respirable pathogens",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Nicas",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Nazaroff",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Hubbard",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Journal of Occupational and Environmental Hygiene",
+            "volume": "2",
+            "issn": "",
+            "pages": "612--143",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Mathematical models for assessing the role of airflow on the risk of airborne 614 infection in hospital wards",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Noakes",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Sleigh",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "J.R. Soc. Interface",
+            "volume": "6",
+            "issn": "",
+            "pages": "791--800",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Ventilation control for airborne transmission of human exhaled bio-aerosols in 616 buildings",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Qian",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zheng",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Journal of Thoracic Disease",
+            "volume": "10",
+            "issn": "",
+            "pages": "2295--2304",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Risk of indoor airborne infection transmission estimated from carbon dioxide 618 concentration",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Rudnick",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Milton",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "Indoor Air",
+            "volume": "13",
+            "issn": "",
+            "pages": "237--245",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Airborne spread of measles in a suburban elementary school",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Riley",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Murphy",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Riley",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Airborne SARS-CoV-2 is rapidly inactivated by simulated 627 sunlight",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Wahl",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Hevey",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Dabisch",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "The Journal of Infectious Diseases",
+            "volume": "222",
+            "issn": "",
+            "pages": "564--571",
+            "other_ids": {}
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Risk assessment of 629 airborne transmission of COVID-19 by asymptomatic individuals under different practical 630 settings",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Shao",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "He",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Zou",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Mallery",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Kumar",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Hong",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "9--19",
+            "other_ids": {}
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "HVAC filtration and the Wells-Riley approach to assessing risks of infectious airborne 632 diseases",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Stephens",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "NAFA Foundation Report",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Review and comparison between the Wells-Riley and dose-response 634 approaches to risk assessment of infectious respiratory diseases",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Sze To",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "Y H"
+                    ],
+                    "last": "Chao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Indoor Air",
+            "volume": "20",
+            "issn": "",
+            "pages": "2--16",
+            "other_ids": {}
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Air infiltration induced inter-unit dispersion and infectious risk assessment in a 636 high-rise residential building",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Niu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Building Simulation",
+            "volume": "11",
+            "issn": "",
+            "pages": "193--202",
+            "other_ids": {}
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "Nonpharmaceutical 638 measures for pandemic influenza in nonhealthcare settings-personal protective and 639 environmental measures",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Xiao",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "Y C"
+                    ],
+                    "last": "Shiu",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Gao",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Wong",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Fong",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Ryu",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Cowling",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Emerging Infectious Diseases",
+            "volume": "26",
+            "issn": "",
+            "pages": "967--975",
+            "other_ids": {}
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "Dynamics of airborne influenza A viruses indoors and dependence on humidity",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Marr",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "Evidence of 643 airborne transmission of the severe acute respiratory syndrome virus",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [
+                        "T S"
+                    ],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Wong",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Tam",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Chan",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "H W"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "Y C"
+                    ],
+                    "last": "Leung",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Ho",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "N Engl J Med",
+            "volume": "350",
+            "issn": "",
+            "pages": "1731--1740",
+            "other_ids": {}
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "Modeling of the 646 transmission of Coronaviruses, Measles Virus, Influenza Virus, Mycobacterium tuberculosis",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Zemouri",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Awad",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "M C"
+                    ],
+                    "last": "Volgenant",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Crielaard",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "M G"
+                    ],
+                    "last": "Laheij",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "De Soet",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "Legionella pneumophila in dental clinics",
+            "authors": [],
+            "year": 2020,
+            "venue": "Journal of Dental Research",
+            "volume": "99",
+            "issn": "",
+            "pages": "1192--1198",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "), raise 56 serious questions about the extent to which the virus may spread to connected rooms through HVAC 57 systems-questions to be evaluated quantitatively in this article. Can virus spread significantly through 58 the central air handling system? How much does filtration reduce the risk of virus spreading between 59 rooms connected by an air handling unit? Are higher air change rates inherently more protective of 60 spaces connected by air handling systems? Does increasing the outdoor air always reduce the probability 61 of infection? Without adequate knowledge of the relative effectiveness of these building interventions in 62 reducing aerosol transmission, building managers and operators are facing a difficult choice of how to 63 maintain a safe, comfortable, and efficient building. 64 Several studies have explored the aerosol spread of SARS-CoV-2 or other respiratory diseases 65 within buildings. Morawska, et al., (2020) reviewed engineering controls to minimize the indoor spread 66",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "182 where f Q is the fraction of the flow that comes from source room versus the other connected rooms, and 183 where \u03bb p and H p are the air change rates in the plenum and the typical entry height of particles in the 184 plenum. Application of Eq. 2 to the prefilter portion of the AHU with two inlets (plenum return and 185 outdoor air intake) and two outlets (to the exhaust relief and to the filter) finds 186 p r e p r e p le n u m p le n u m O A O A p r e filte r p r e filte r e x e x s s V V",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "stands for outdoor air, ex stands for the exhaust, and prefilter stands for the upstream face of 188 the filter. The physical volume of the AHU (i.e., the physical dimensions of the ductwork and other parts 189 of the AHU) is constant, and fluxes in and out of a space may be expressed as a concentration times a 190 velocity in the absence of significant diffusion, and we impose the well-mixed approximation so that the 191 outlet concentrations to the exhaust and filter are the same as in the bulk of its physical volume. Because 192 the concentration is uniform within the prefiltered portion of the AHU, the concentration that determines 193 the settling flux to the floor is also uniform so that in the absence of generation within the plenum itself 194 ( )",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "197 the volumetric flow rate entering from the plenum), and where \u03bb pre and H pre are the air change rates in and 198 height of the prefiltered portion of the AHU, respectively. The outdoor air added is exactly balanced by 199 the building air exhausted to the outside in order to maintain constant pressure. Further application of Eq. 200 2 to the portion of AHU downstream of the filter with one inlet (from the filter) and multiple outlets (to 201 the source room and connected rooms) finds 202 , p o s t p o st p o s tfilte r p o stfilte r so u rc e so u rc e c o n n e c te d c o n n e c te d s s",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": "211 because C postfilter =(1-\u03b5)C pre , where \u03bb post and H post are the air change rates in and height of the postfilter 212 portion of the AHU, respectively, and the filter has an efficiency of \u03b5 (i.e., \u03b5=0.75 for a MERV-8 filter, 213 see Fig. 5 of Dols, et al., 2020). This analysis does not include other mechanisms of virus loss in the 214 ducts (e.g., thermophoresis, turbophoresis, dehumidification, etc.).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF6": {
+            "text": "221We further consider the scenario where outdoor air containing virus enters a building via an 222 outdoor air intake.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF7": {
+            "text": "230 where \u03c1 d is the density of the droplet, \u03c1 f is the density of the fluid, g is the gravitation constant, d is the 231 diameter of the droplet, and \u00b5 f is the dynamic viscosity of the fluid. Setting v s =f significant H i (\u03bb i +k decay ), 232 determines the diameter at which the settling velocity becomes significant as 233",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF8": {
+            "text": "261 exposure time corresponds to a duration of release of virus from an infected individual, after which the 262 individual departs from the space or stops shedding virus. Similarly,",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF9": {
+            "text": "272to represent the same 5 minute emission, assuming spread throughout the room is instantaneous. For an 273 external source, C OA is taken as C total,OA multiplied by G. When scaled on C total,OA 274",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF10": {
+            "text": "one of which is the source), a plenum volume of 128 ft 3 , a prefilter AHU physical volume of 250 ft 3 including ducts from the plenum to the AHU, and a post filter AHU physical volume of 150 ft 3 including ducting to rooms. 3 This translates into a dose concentration of 0.57 quanta/m 3 in the source room and 1.18 quanta/m 3 for outdoor exposure via the AHU; see Section 3.5. 4 Rudnick and Milton (2003). 5 Fig. 5 of Dols, et al., (2020) for MERV-8 at 5 \u00b5m. 6 Schuit, et al., (2020). 7 Related to square footage by V source /H; same as the connected rooms.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF12": {
+            "text": "objective of this article is to evaluate the concentrations and probabilities of infection of 291 SARS-CoV-2 for both building interior and exterior exposure sources using a well-mixed model in a 292 multiroom building connected via a central air handling system. We present two scenarios: (1) exposure 293 from a source within one of the rooms of a building and (2) exposure from a source external to the 294 building that enters through the air intake of an air handling unit. Specifically, we explore the influence 295 of filtration, air change rates, and outdoor air in ten cases on the probability of infection. The analysis 296 does not include the effect of individual masks (which vary in efficacy with corresponding costs and 297 benefits, Xiao, et al., 2020). In the remainder of this article, the cases used to evaluate the influence of 298 filtration, air change rates, and outdoor air fraction on the temporal evolution of the droplet concentration 299 and the probability of infection are given in",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF13": {
+            "text": "(a) and (c) shows that in the absence of 308 filtration, the concentration in the source room rises sharply and then gradually decreases as the air 309 containing the virus encapsulating particles mixes with the virus-free air in the remainder of the spaces 310 (e.g., connected rooms, plenum, and AHU), outdoor air exchange continues, particles land on floors, and 311 viral decay reduces concentrations further. In the connected rooms, the concentration is initially zero but 312 rises as infective particles enter via the air handling unit. With filtration, the peak concentration in the 313 connected rooms and the duration of that exposure decrease substantially. For example, a MERV-8 filter 314 decreases the peak virus concentration in connected rooms by a factor of five, and for a MERV-13 filter 315 the decrease is over an order of magnitude. The shape of the curve does not vary significantly as the 316 MERV rating increases, but reducing the peak reduces the time for potentially meaningful concentrations317 to be present. Similarly shaped curves were observed by Emmerich, et al., (2013), who predicted the 318 spread of Mycobacterium tuberculosis in health care facility bathrooms. Because filters do not remove 319 100% of the particles, some of the virus returns back into the source room, especially when the MERV 320 rating is lower. This modestly extends the time it takes for the concentration to drop below preferred 321 levels. (b) and (d) translates these curves into cumulative probabilities of infection by 323 integrating the exposures over time, multiplying by a breathing rate, and exponentiating the product per 324 an assumed Poisson distribution of Wells-Riley. The cumulative probability starts at time zero and only 325 increases over time. In contrast to the concentration curves which, because they are normalized, may 326 represent any suitable concentration units (e.g., particles/volume, moles/volume, mass/volume, 327 droplets/volume, virions/volume, or even quanta or infectious dose), infectivity here is based only on dose 328 measured as quanta. Figure 2 (b) and (d) shows that, in the absence of effective filtration, the probability 329 of infection rises sharply in the source room with a somewhat lower probability of infection in the 330 connected rooms. With filtration, the probability of infection in the source room is attenuated by a 331 percent or two. In the connected rooms, filtration with a MERV-8 filter lowers the risk by almost an 332 order of magnitude and a MERV-13 filter further lowers the risk of infection by another order of 333 magnitude. Even so, there is still a risk of only one in ~7,300 with a MERV-13 filter in the connected 334 room, the lowest probability of infection for any of the cases considered here. Concentrations scaled on the total virus concentration, C total , shed (a and c) and cumulative 339 probabilities of infection (b and d) versus time for the source (a and b) and connected (c and d) rooms 340 across the four conditions of no filter and MERV-8, MERV-11, and MERV-13 filters ((a) and (c) evaluates the influence of the air change rate on the temporal evolution of the 345 virus containing particle concentration. Figure 3 shows that higher air change rates substantially decrease 346 the concentration in the source room. If that room has single occupancy, then this is a relatively 347 unimportant effect because the virus shedding individual does not infect others in the source room. If the 348 room has an occupancy level greater than one (consider multiple occupants in an office) then increasing 349 the ACH would be an important means of minimizing exposure (in the absence of an enhanced near-field 350 concentration (e.g., the downstream exposure in Guangzhou restaurant; Lu, et al., 2020; Ho, 2020), not 351 addressed by a well-mixed model). These results are unsurprising given the multiple reports of this effect 352 in the literature for a single room (Yang and Marr, 2011). However, this is not the end of the story in 353 connected multiroom buildings. As the virus containing particles are removed from the source room they 354proceed through the plenum and the AHU to the connected rooms. As the ACH increases, the peak 355 concentration in the connected rooms rises because more of the flow from the source room transports into 356 the connected rooms, but this concentration persists in these connected rooms for shorter time periods. 357",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF14": {
+            "text": "b) and (d) translates these observations for air change rates to cumulative probabilities 359 of infection. In the source room increasing the air flow rate substantially decreases the probability of 360 infection as suggested above. With low air change rates, the probability of infection even with a MERV-361 8 filter is ~8%, suggesting that the combination of filtration with meaningful flow rates is important. At 362 the highest air change rate considered (12 ACH) the probability of infection drops to ~2% in the source 363 room. In the connected rooms, short time exposures (~15-30 min) present the highest probability of 364",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF15": {
+            "text": "Concentrations scaled on the total virus concentration, C total , shed (a and c) and cumulative 379 probabilities of infection (b and d) versus time for the source (a and b) and connected (c and d) rooms for 380 air change rates of 1.(a) and (c) shows the effect of varying the amount of virus-free outdoor air supplied to 384 the AHU. Increasing the amount of outdoor air decreases the peak concentration in the connected 385",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF16": {
+            "text": "that increasing the ACH while decreasing the outdoor air 389 fraction holds the volumetric flow rate approximately constant in contrast to Figure 4 that holds ACH 390 constant with increasing fraction and volumetric flow rate of outdoor air. Figure 4 (b) and (d) shows the 391 risk of infection as a function of the percent of outdoor air added. In the source room, the outdoor air 392 intake makes very little difference. However, in the connected rooms, increased amounts of outdoor air 393 lower the infection probability by less than a factor of two for conditions considered. Concentrations scaled on the total virus concentration, C total , shed (a and c) and cumulative 398 probabilities of infection (b and d) versus time for the source (a and b) and connected (c and d) rooms for 399 virus-free outdoor air fractions of 0we evaluate the scenario where outdoor air provides a concentration of virus into the AHU 403 that then spreads throughout the remainder of the building. This scenario is important because outdoor air 404 is not always virus-free and outdoor spread from building to building has been tied to SARS-CoV-1 405 spread (Yu, et al., 2004; Wu, et al., 2018). Indeed, the exhaust from most buildings is not filtered and 406 virus from a neighboring building's exhaust and relief vents, open windows, or from sewer gasses may be 407 drawn into the AHU. Schuit, et al., (2020) show that high-intensity simulated sunlight, typical of a 408 summer day, drives rapid decay of SARS-CoV-2, decreasing this risk. During the other seasons, the light 409 intensity and heat are lower permitting the virus to persist longer outdoors. In this second scenario all 410rooms are identical and connected. The exposure lasts for 5 minutes as before (short compared to hours 411 of impact), after which the outdoor air is again assumed to be virus-free. Outdoor concentrations may 412 vary substantially; the intake concentration is set to the same dose rate as the indoor release to permit 413 comparison between source scenarios. 414",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF17": {
+            "text": "a) and (b) shows that, as above, no filtration results in the highest concentration in the 415 rooms for the longest duration (similar to the internal exposure scenario). Indeed, the highest 416 probabilities of infection occur in the absence of filtration. As the MERV rating increases, the probability 417 of infection decreases because the infectious dose in the outdoor air goes through a filter prior to entering 418 the connected rooms. This would suggest that removing or incorrectly installing the filter is 419 undesirable. Figure 5 (c) and (d) compares the influence of the air change rates. The peak concentration 420",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF18": {
+            "text": "Concentrations scaled on the total outdoor air concentration of virus, C total,OA , (a, c and e) and 431 cumulative probabilities of infection (b, d, and f) versus time for (a and b) no filter and MERV-8, MERV-432 11, and MERV-13 filters (Scenario 2 Cases 1-4); (c and d) air change rates of 1.Concentrations scaled on the total virus concentration, C total , shed (a and c) and cumulative 441 probabilities of infection (b and d) versus time for the source (a and b) and connected (c and d) rooms for 442 3, 10 and 30 rooms (Scenario 1 Case 1 varying f Q and corresponding supply flow rates through the AHU). 443 444 3.5 Dose and Number of Rooms 445 Each of the results above held the number of rooms and the infectious dose constant as ventilation 446",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF19": {
+            "text": "Cumulative probabilities of infection versus time for the source (a) and connected (b) rooms 454 for q=10, 30, 100, and 300 quanta/h (Scenario 1 Case 1). 455 456 Figure 7 shows that the probability of infection via the Wells-Riley approach in both types of 457 rooms increases as the infectious dose measured in quanta increases. Quanta is a unit of infectious dose 458 that may or may not correspond to a specific droplet size, size distribution, or viral load. Indeed, the 459 relationship between droplet concentrations and infective dose has at times for various diseases been 460 contentious and confusing (Nardell, 2016). Dai and Zhao (2020) estimate the infective dose for SARS-461 CoV-2 to be 14-48 quanta/h. Zemouri, et al., (2020) estimated intermediate risk for SARS-CoV-1 to be 462 ~29 quanta/h (with a range of 11.4-295.5 quanta/h for low to high risk, respectively). Miller, et al., (2020) 463 estimated an infectious dose of 970 quanta/h for the superspreading Skagit Valley choir practice. 464",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF20": {
+            "text": "539 and that neglecting either settling or viral decay overestimates the concentrations and by extension 540 probability of infectivity. Concentrations scaled on the total virus concentration, C total , shed for the baseline condition 544 with both viral decay and settling included (solid purple), without viral decay but with settling (short dash 545 red), and with viral decay but without settling (long dash blue). supported by the DOE Office of Science through the National Virtual 552 Biotechnology Laboratory (NVBL), a consortium of DOE national laboratories focused on response to 553 COVID-19, with funding provided by the Coronavirus CARES Act. This work was performed at Pacific 554 Northwest National Laboratory under contract DE-AC05-76RL01830. No funding source governed the 555 design, data collection and interpretation of this article. 556 557",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF4": {
+            "text": "shows the parameters used in the simulation. These equations were solved in Mathematica 276 (Wolfram Research, Champaign, IL). 277 Parameters used in simulation 279",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF5": {
+            "text": "300 Cases considered 302",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "J o u r n a l P r e -p r o o f",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "558"
+        },
+        {
+            "text": "J o u r n a l P r e -p r o o f",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "annex"
+        },
+        {
+            "text": "\u2612 The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.\u2610The authors declare the following financial interests/personal relationships which may be considered as potential competing interests:No funding source governed the design, data collection and interpretation of this article.J o u r n a l P r e -p r o o f",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Declaration of interests"
+        }
+    ]
+}

@@ -1,0 +1,3308 @@
+{
+    "paper_id": "e82cdd2a02c731ef5c3c619de2da83eb833e3b41",
+    "metadata": {
+        "title": "ICan, an Internet-based intervention to reduce cannabis use: study protocol for a randomized controlled trial",
+        "authors": [
+            {
+                "first": "Marleen",
+                "middle": [
+                    "I A"
+                ],
+                "last": "Olthof",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Matthijs",
+                "middle": [],
+                "last": "Blankers",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Margriet",
+                "middle": [
+                    "W"
+                ],
+                "last": "Van Laar",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Anna",
+                "middle": [
+                    "E"
+                ],
+                "last": "Goudriaan",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Background: Heavy cannabis use is associated with adverse physical and mental health effects. Despite available effective treatments, the majority of heavy cannabis users does not seek professional help. Web-based interventions can provide an alternative for cannabis users who are reluctant to seek professional help. Several web-based cannabis interventions are effective in reducing cannabis use; however, the effect sizes are typically small and attrition rates are typically high. This suggests that web-based programs can be an effective cannabis use intervention for some, while others may need additional substance use treatment after completing a web-based intervention. Therefore, it is important that web-based interventions do not solely focus on reducing cannabis use, but also on improving attitudes towards substance use treatment. The Screening Brief Intervention and Referral to Treatment (SBIRT) approach appears to be well suited for the purpose of reducing cannabis use and improving substance use treatment utilization. Based on the SBIRT approach-and based on cognitive behavioral therapy (CBT) and motivational interviewing (MI)-we developed the Internet-based cannabis reduction intervention ICan. Methods/design: This protocol paper presents the design of a randomized controlled trial (RCT) in which we evaluate the effectiveness of the ICan intervention compared to four online modules of educational information on cannabis in a sample of Dutch frequent cannabis users. The primary outcome measure is frequency of cannabis use. Secondary outcome measures include the quantity of cannabis used (grams), the attitudes towards seeking help and the number of participants who enter specialized treatment services for cannabis use-related problems. Discussion: To the best of our knowledge, ICan is the first Internet-based intervention for cannabis users that combines screening, a brief intervention-based on CBT and MI-and referral to treatment options.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Trial registration: The study is registered in the Netherlands Trial Register; identifier NL7668. Registered on 17 April 2019.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "Heavy cannabis use in adolescence and young adulthood is associated with various adverse physical and mental health effects [1] . These effects include cognitive impairment and an increased risk of depressive symptoms and suicidal ideation [1] . Heavy cannabis users are at risk for dependence [2, 3] . A longitudinal study of a cohort of (near) daily cannabis users found that almost 40% of the (near) daily cannabis users developed cannabis dependence (DSM-IV) [3] .",
+            "cite_spans": [
+                {
+                    "start": 124,
+                    "end": 127,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 240,
+                    "end": 243,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 294,
+                    "end": 297,
+                    "text": "[2,",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 298,
+                    "end": 300,
+                    "text": "3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 463,
+                    "end": 466,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "Treatment programs based on cognitive behavioral therapy (CBT), motivational interviewing (MI), and contingency management are effective in reducing cannabis use [4] . However, the majority of frequent cannabis users does not seek professional help [5, 6] . In the Netherlands, the number of people receiving treatment for cannabis use-related problems increased from 2001 to 2010 and then stabilized until 2015 [7] . In 2015, 11, 000 people received treatment for cannabis use-related problems, while according to the most recent estimates (2007) (2008) (2009) 30 ,000 people met the criteria for cannabis dependence [7, 8] . Several studies have identified possible explanations for the low numbers of cannabis users entering treatment specifically, and for substance users in general. Commonly reported barriers for seeking treatment are the desire to solve one's own problems, the feeling that treatment is not necessary, not being ready to stop using cannabis, being unaware of treatments options, not being able to attend treatment during office hours, and stigma associated with substance use disorder treatment [9, 10] .",
+            "cite_spans": [
+                {
+                    "start": 162,
+                    "end": 165,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 249,
+                    "end": 252,
+                    "text": "[5,",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 253,
+                    "end": 255,
+                    "text": "6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 412,
+                    "end": 415,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 541,
+                    "end": 547,
+                    "text": "(2007)",
+                    "ref_id": null
+                },
+                {
+                    "start": 548,
+                    "end": 554,
+                    "text": "(2008)",
+                    "ref_id": null
+                },
+                {
+                    "start": 555,
+                    "end": 561,
+                    "text": "(2009)",
+                    "ref_id": null
+                },
+                {
+                    "start": 562,
+                    "end": 564,
+                    "text": "30",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 618,
+                    "end": 621,
+                    "text": "[7,",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 622,
+                    "end": 624,
+                    "text": "8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 1119,
+                    "end": 1122,
+                    "text": "[9,",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 1123,
+                    "end": 1126,
+                    "text": "10]",
+                    "ref_id": "BIBREF9"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "Internet-based programs can overcome some of these barriers and thereby provide an alternative for frequent cannabis users who are unwilling to enter substance use treatment [11] . Internet-based programs are characterized by a high degree of anonymity; this can minimize the fear of being stigmatized [12] . Besides, they are easily accessible, as users can access the programs from any location at any time of day. In addition, the programs can be followed at their own pace, which heightens (perceived) feasibility of following the program. Internetbased programs require less therapist time per patient than face-to-face treatments; therefore, they may also be more cost-effective [13] .",
+            "cite_spans": [
+                {
+                    "start": 174,
+                    "end": 178,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 302,
+                    "end": 306,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 685,
+                    "end": 689,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "Studies show that Internet-based programs for cannabis users are effective. Boumparis et al. recently published a systematic review with meta-analyses on digital prevention and treatment interventions to reduce cannabis use [14] . The meta-analyses showed a small but significant effect in favor of digital interventions compared to control conditions (waiting list, psycho-education or assessment only) [14] . These results are in line with results found in earlier meta-analyses on Internet and computer-based interventions for cannabis use [15] [16] [17] .",
+            "cite_spans": [
+                {
+                    "start": 224,
+                    "end": 228,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 404,
+                    "end": 408,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 543,
+                    "end": 547,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 548,
+                    "end": 552,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 553,
+                    "end": 557,
+                    "text": "[17]",
+                    "ref_id": "BIBREF16"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "Thus, digital interventions for cannabis users can be effective and have the potential to overcome some commonly reported barriers to treatment-seeking, although effect sizes are generally small. Therefore, they can possibly play an important role in bridging the cannabis use disorder treatment gap. To our knowledge, four Internet-based cannabis reduction programs for the non-clinical population of frequent cannabis users have been evaluated in randomized controlled trials. The first program, a German program called Quit the shit is based on the principles of self-regulation and self-control [18] . The 50-day program has a solution-focused approach and includes weekly interaction with a therapist through instant messaging.",
+            "cite_spans": [
+                {
+                    "start": 599,
+                    "end": 603,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "The second program, the Australian program Reduce your Use consists of 6 modules based on cognitive, behavioral, and motivational principles [19] . The program is fully self-guided; the participants can go through the modules at their own pace.",
+            "cite_spans": [
+                {
+                    "start": 141,
+                    "end": 145,
+                    "text": "[19]",
+                    "ref_id": "BIBREF18"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "The third program, the Swiss program Can Reduce, is based on CBT, MI, and behavioral self-management [20] . The effectiveness of the program with and without guidance has been tested. The guidance consists of two chat sessions with a trained counselor. The chat sessions have a duration of 20-30 min.",
+            "cite_spans": [
+                {
+                    "start": 101,
+                    "end": 105,
+                    "text": "[20]",
+                    "ref_id": "BIBREF19"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "The fourth program, the Swedish program Cannabishj\u00e4lpen, is also based on CBT and MI principles [21] . The program consists of 13 modules. Participants are advised to complete one or two modules per week. At the beginning of the program, a therapist sends a welcome message to the participant including personalized feedback on the baseline assessment. Throughout the program, the participant can contact the therapist if desired.",
+            "cite_spans": [
+                {
+                    "start": 96,
+                    "end": 100,
+                    "text": "[21]",
+                    "ref_id": "BIBREF20"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "The Cannabishj\u00e4lpen program and the unguided version of the Can Reduce program were not effective in reducing cannabis use frequency (compared to the waiting list control condition) [20, 21] . The other programs-Quit the Shit, Reduce your Use and the guided version of Can Reduce-were effective in reducing cannabis use [18] [19] [20] . However, the effect sizes were small and attrition was high. These small effect sizes and high attrition rates suggest that online programs can provide an alternative for some, but not for all cannabis users who are reluctant to enter substance use treatment. Therefore, it seems important that online programs do not solely focus on reducing cannabis use, but also on improving attitudes towards substance use treatment. If a cannabis user fails to reduce his use after completing the online program, he may be willing to start/engage in substance use disorder treatment.",
+            "cite_spans": [
+                {
+                    "start": 182,
+                    "end": 186,
+                    "text": "[20,",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 187,
+                    "end": 190,
+                    "text": "21]",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 320,
+                    "end": 324,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 325,
+                    "end": 329,
+                    "text": "[19]",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 330,
+                    "end": 334,
+                    "text": "[20]",
+                    "ref_id": "BIBREF19"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "The Screening Brief Intervention and Referral to Treatment (SBIRT) approach appears to be well suited for the purpose of improving substance use treatment utilization. The SBIRT approach was developed in the 1960s [22] . The SBIRT approach enables universal screening in a variety of settings, targeting not only those who are already dependent but also those who are not seeking help for their substance use [23] . The screening procedure typically results in three possible outcomes: no risk, moderate risk, or high risk for substance use problems. Substance users at moderate risk for substance use problems receive a brief intervention. The brief intervention usually consists of one or more sessions with a health care professional. The goal of these sessions is to raise awareness about the risks associated with the substance use and to increase motivation to reduce or stop this behavior [23] . Substance users at high risk for cannabis use problems are referred to specialized substance use treatment. The main goal of the referral to treatment is to identify an appropriate treatment program and to facilitate participation of the substance user in the program [23] . The SBIRT approach seems suitable to be computerized.",
+            "cite_spans": [
+                {
+                    "start": 214,
+                    "end": 218,
+                    "text": "[22]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 409,
+                    "end": 413,
+                    "text": "[23]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 896,
+                    "end": 900,
+                    "text": "[23]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 1171,
+                    "end": 1175,
+                    "text": "[23]",
+                    "ref_id": "BIBREF22"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "Based on the SBIRT approach and based on cognitive behavioral therapy and motivational interviewing, we developed the Internet-based cannabis reduction intervention ICan. ICan is an easy to use progressive web app. ICan includes adherence focused guidance to minimize drop-out rates. Users of the ICan app receive weekly WhatsApp messages from a coach to encourage them to use the app. The guidance is minimal to ensure that the intervention remains easily accessible. This protocol paper presents the design of the randomized controlled trial (RCT) in which we evaluate the effectiveness of the ICan intervention.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "The aim of this study is to test the effectiveness of the Internet-based intervention ICan compared to four online modules of educational information on cannabis in a sample of Dutch frequent cannabis users. We address the following research questions: (1) Is the ICan intervention more effective in reducing cannabis use than the control condition? (2) Is the ICan intervention more effective in improving positive attitudes towards seeking professional help for cannabis userelated problems than the control condition?",
+            "cite_spans": [
+                {
+                    "start": 350,
+                    "end": 353,
+                    "text": "(2)",
+                    "ref_id": "BIBREF1"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Aims and hypotheses"
+        },
+        {
+            "text": "A single blind randomized controlled trial will be carried out with a duration of 6 months in an online setting. The trial will be two armed (ICan intervention x four online modules of educational information on cannabis). Participants will be assessed on cannabis-related outcome measures at T0 (baseline, before randomization), T1 (6 weeks post randomization), T2 (3 months post randomization), and T3 (6 months post randomization). The trial will be conducted and reported according to the most recent version of the Consolidated Standards of Reporting Trials (CONSORT) guidelines [24] . The study is registered in the Netherlands Trial Register; identifier NL7668. Ethical approval to carry out this study was obtained from an accredited medical research and ethics committee in the Netherlands (Medical Research Ethics Committees United, NL67449.100.18). The study is designed and will be performed in compliance with the Declaration of Helsinki, seventh revision. Figure 1 shows the CONSORT flow diagram of the trial. Applicants interested to participate fill out an online screening questionnaire to determine if they meet all of the inclusion criteria and none of the exclusion criteria. Applicants who are eligible to participate receive the patient information letter and the informed consent form. Participants have up to 30 days to decide if they want to participate. If they have any questions regarding the study or intervention, they can contact a member of the research team by phone, email, or face-to-face. They can also contact an independent expert whose contact details are listed in the patient information letter. Applicants who decide to participate in the study are asked for necessary personal data. After the participants have sent us their signed informed consent form digitally, they are directed to the baseline questionnaire. The electronic data capture platform Castor will be used for the randomization and allocation procedure and to conduct the online questionnaires. The research data are stored separately from the participants' personal data. Only the four authors of this study protocol will have access to the keys to join the research data tables with the personal data tables. After the participants have completed the baseline questionnaire, they will be allocated to one of two trial arms (1:1) using variable block randomization. Participants will be informed that they will be assigned to one of two programs, both focusing on cannabis moderation. Depending on the outcome of the allocation procedure, an email will be sent to the participants containing an access code to either the ICan intervention or the online control program (four online modules of educational information on cannabis). Participants will be blind to the condition they are in.",
+            "cite_spans": [
+                {
+                    "start": 584,
+                    "end": 588,
+                    "text": "[24]",
+                    "ref_id": "BIBREF23"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 970,
+                    "end": 978,
+                    "text": "Figure 1",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Study design"
+        },
+        {
+            "text": "The follow-up measurements will take place 6 weeks, 3 months, and 6 months post randomization. Self-reported outcome measures are used to reduce the risk of experimenter bias. If participants do not complete the online follow-up questionnaires, they will first receive an automatic email reminder; subsequently, they will receive WhatsApp (audio) messages to encourage them to fill in the questionnaires. All participants receive the same (audio) messages to reduce the risk of bias.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Study procedures"
+        },
+        {
+            "text": "After completing the 3 months' follow-up questionnaire and after completing the 6 months' follow-up questionnaire, the participants will receive a \u20ac20 gift card by email. Even if participants discontinue their use of the intervention prematurely, they will be followed up. Only if participants explicitly state that they do not want to participate in the study anymore, data collection will be stopped. After completing the last follow-up questionnaire, the participants are informed about the condition they were allocated to. If desired, they can cross over to the other condition.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Study procedures"
+        },
+        {
+            "text": "All spontaneously reported adverse events will be recorded. All serious adverse events will be reported to the accredited MREC (Medical Research Ethics Committee) that approved the protocol. Given the limited risks associated with a text-based self-help intervention, no Data Safety Monitoring Board or Safety Committee will be established for this study. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Study procedures"
+        },
+        {
+            "text": "The population base from which the subjects will be drawn are Dutch non-treatment seeking frequent cannabis users, meeting all inclusion and none of the exclusion criteria. For the purpose of the trial, a website is created containing information about the study and the possibility to register as a potential participant. To ensure the recruitment of the planned number of participants targeted Facebook and Instagram campaigns will be used. We have experienced that this is a very effective strategy for the recruitment of cannabis users. In 2018, we conducted an exploratory online survey among frequent cannabis users [25] . In just a few months the online campaigns resulted in the recruitment of more than 1000 eligible participants for the survey study. In this study protocol, \"he\" is used to refer to a participant; however, where \"he\" is stated, \"he or she\" is meant.",
+            "cite_spans": [
+                {
+                    "start": 622,
+                    "end": 626,
+                    "text": "[25]",
+                    "ref_id": "BIBREF24"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Participants Recruitment"
+        },
+        {
+            "text": "In order to be eligible to participate in the study, a subject must meet all of the following criteria:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "In-and exclusion criteria"
+        },
+        {
+            "text": "Age 18+ Cannabis use on 3 or more days a week in the past 3 months Desire to reduce or quit cannabis use Smartphone available Ability and intention to participate in the training and study for the period of 6 months Informed consent provided A potential subject who meets any of the following criteria will be excluded form participation in this study:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "In-and exclusion criteria"
+        },
+        {
+            "text": "Formal treatment (psycho-social or pharmacological) for cannabis use or any other substance use in the past 3 months Insufficient mastery of the Dutch language Self-reported suicidal ideation, acute psychosis, or severe depression Pregnant or lactating",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "In-and exclusion criteria"
+        },
+        {
+            "text": "For the RCT, conventional power (1-\u03b2 = 0.80) and levels of statistical significance are chosen (\u03b1 = .05, 2-sided). The meta-analysis conducted by Boumparis et al. revealed a small but significant effect in favor of digital prevention interventions compared to control conditions, an effect size of g = 0.33 was found [14] . However, the effect size of our online SBIRT program is expected to be somewhat larger due to the fact that the brief intervention is only one component of the program. The referral to treatment component may also have some effect on cannabis consumption. The referral to treatment component consists of information about specialized treatment services for substance use problems. Participants are encouraged to utilize these services. When participants enter treatment, it is likely that this will also have an effect on their cannabis consumption. Therefore, we expect an effect size of d = 0.4 or more. G*Power was used to calculate the required number of participants. The power calculation is based on 2-sidedtests, d = 0.40 corresponds with a sample size of at least 2 \u00d7 100 participants. Assuming a 25% non-response at 6 months' follow-up, we aim to include at least (100/(100-25)) \u00d7 100 \u00d7 2 = 267 participants. In case the dropout is higher than expected, this number may be adjusted upwards.",
+            "cite_spans": [
+                {
+                    "start": 317,
+                    "end": 321,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Sample size"
+        },
+        {
+            "text": "The experimental ICan intervention is designed according to the SAMHSA Screening Brief Intervention and Referral to Treatment (SBIRT) framework and is based on cognitive behavioral therapy (CBT) and motivational interviewing (MI). The participant receives an e-mail with an invitation to create an account. The ICan intervention includes adherence-focused guidance. From the moment the participant creates an account, he receives a weekly WhatsApp message from a coach to encourage him to use the app. In the first message(s), the participant is encouraged to complete the self-test and to create the reduce/quit plan. In the subsequent message(s), the participant is encouraged to fill in the consumption diary regularly. Besides the WhatsApp messages, the participant receives motivational push notifications. The participant can set up reminders to fill in the consumption diary. He can indicate how often he would like to receive the reminders and at what time. After 4 weeks, the participant is asked if he is satisfied with the progress he has made so far. If he is not satisfied he is referred to specialized treatment services (see part 4). After these 4 weeks, the WhatsApp messages are discontinued-unless the participant explicitly indicates that he wants to keep receiving the messages. In that case, he receives a weekly message in which he is praised for his achievements in the app-for example completing the additional problem solving exercise, posting a message on the peer support platform, or filling in the consumption diary. The participant keeps receiving these messages as long as he is actively using the app.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Intervention condition"
+        },
+        {
+            "text": "The screening procedure consists of four short self-tests. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "ICan part 1: screening"
+        },
+        {
+            "text": "After the self-test is completed, an introduction slider is displayed with the main features of the app. The main features are the homepage, consumption diary, reduce/ quit plan, personal profile page, peer support platform, and treatment info pages. The brief intervention component helps participants to create a personalized plan to stop or reduce their cannabis use step by step. The steps (with the exception of step 3b) are based on the protocol for brief cognitive behavioral treatment for substance use disorders [29] .",
+            "cite_spans": [
+                {
+                    "start": 521,
+                    "end": 525,
+                    "text": "[29]",
+                    "ref_id": "BIBREF27"
+                }
+            ],
+            "ref_spans": [],
+            "section": "ICan part 2: brief intervention (I)"
+        },
+        {
+            "text": "Step 1: Motivation to change. The participant first lists the advantages of using cannabis; then, he lists the disadvantages of using cannabis and the advantages of reducing or quitting. Based on these lists, the participant decides whether he wants to continue his cannabis use or wants to reduce/quit.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "ICan part 2: brief intervention (I)"
+        },
+        {
+            "text": "Step 2: Setting a goal. The participant determines whether he wants to reduce or quit his use and picks a quit date.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "ICan part 2: brief intervention (I)"
+        },
+        {
+            "text": "Step 3a: How to achieve your goal. The participant identifies high-risk situations: situations, thoughts, and/or feelings that trigger a strong craving to use cannabis. A short animation video explains how selfcontrol strategies can be applied to prevent cannabis use. Subsequently, the participant describes how he will apply these strategies to deal with high-risk situations in the future.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "ICan part 2: brief intervention (I)"
+        },
+        {
+            "text": "Step 3b: How to solve problems. If a participant experiences problems (e.g., financial problems) that may negatively impact his ability to reduce or stop cannabis use, he can do an additional exercise in which he learns how to solve problems step-by-step.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "ICan part 2: brief intervention (I)"
+        },
+        {
+            "text": "Step 4: Social support. The participant describes how his friends, acquaintances, and/or loved ones can support him during his reduce/quit attempt. He lists the names of the persons he wants to ask for support.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "ICan part 2: brief intervention (I)"
+        },
+        {
+            "text": "Step 5: Withdrawal symptoms, craving, and relapse. The participant is informed about withdrawal symptoms. A short animation video provides tips on how to deal with craving. The participant describes how he wants to deal with craving and relapses.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "ICan part 2: brief intervention (I)"
+        },
+        {
+            "text": "Step 6: Your personal (quit) plan. By completing step 1 through 5, the participant has created a personal reduce/quit plan, this plan is summarized in step 6.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "ICan part 2: brief intervention (I)"
+        },
+        {
+            "text": "From the set (quit) date, the participant is encouraged to stick to his (quit) plan. Based on the entries in the cannabis consumption diary, automatic tailored feedback is given. On the personal profile page, a bar graph shows the progress made by the participant. Icons are used to show in which situations (time of day, type of activity, in the presence of which emotion/feeling, alone or with others) the participant is most likely to experience craving and in which situations he is most likely to use cannabis. The number of days without cannabis use and the amount of money saved are also displayed on this page. The participant is advised to stick to his personal (quit) plan for at least 4 weeks.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "ICan part 3: brief intervention (II)"
+        },
+        {
+            "text": "After 4 weeks, the participant evaluates if he is satisfied with the progress he has made so far. If desired, a new goal can be set. Participants who fail to stick to their plan are referred to specialized treatment services (see part 4). If a participant is reluctant to engage in specialized treatment, he can continue to use the ICan (web)app.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "ICan part 3: brief intervention (II)"
+        },
+        {
+            "text": "The referral to treatment component consists of comprehensive information on specialized treatment services for substance use problems. The information is summarized in a short animation video. Participants can easily check which treatments are offered nearby based on their location/zip code.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "ICan part 4: referral to treatment"
+        },
+        {
+            "text": "On the peer support platform, participants can write messages to motivate and support each other.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Peer support platform"
+        },
+        {
+            "text": "The participants can earn badges for their achievements in the app. The earned badges are displayed on the badge page.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Badges"
+        },
+        {
+            "text": "The control condition consists of four online modules of educational information on cannabis. In the first module, some background information about cannabis is provided. This includes information on the physical and mental effects of cannabis, commonly used consumption methods and cannabis and the law. In the second module, the risks associated with cannabis use are listed. Some tips on how to reduce these risks are given. In the third module, general information about cannabis use disorder is provided. The difference between physical and psychological dependence is explained. The negative social, financial, and health consequences of cannabis use disorder are described, and the DSM-5 criteria for cannabis use disorder are presented. In the last module, some general tips on how to reduce or quit cannabis use are provided. The information used in the four online modules is based on the websites www.drugsinfo.nl and www. drugsenuitgaan.nl. The general tips on how to reduce or quit cannabis use are from an existing information brochure about cannabis use and psychosis [30] . Since the control condition consists of information that is currently available online for non-treatment seeking frequent cannabis users, we considered this to be the standard care (or treatment-as-usual). Figure 2 shows the SPIRIT diagram of the trial. The primary outcome measure is the number of cannabis use days in the past 7 days, assessed 6 months post randomization using the Timeline Follow-back (TLFB) method [31] . The TLFB method is originally developed as an interview to assess self-reported alcohol consumption [31] . Growing evidence suggests that the TLFB is a psychometrically sound measure for the assessment of licit and illicit substance use [32] . Self-reports on cannabis use measured using the TLFB method show high test-retest reliability [33] . TLFB reports administered online are consistent with TLFB reports administered faceto-face [34] .",
+            "cite_spans": [
+                {
+                    "start": 1083,
+                    "end": 1087,
+                    "text": "[30]",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 1509,
+                    "end": 1513,
+                    "text": "[31]",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 1616,
+                    "end": 1620,
+                    "text": "[31]",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 1753,
+                    "end": 1757,
+                    "text": "[32]",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 1854,
+                    "end": 1858,
+                    "text": "[33]",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 1952,
+                    "end": 1956,
+                    "text": "[34]",
+                    "ref_id": "BIBREF32"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1296,
+                    "end": 1304,
+                    "text": "Figure 2",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Control condition"
+        },
+        {
+            "text": "Cannabis use, cannabis use disorder, and cannabis use-related problems The following secondary outcome measures will be applied (see also Fig. 2 ):",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 138,
+                    "end": 144,
+                    "text": "Fig. 2",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Secondary measures"
+        },
+        {
+            "text": "a) The number of cannabis use days in the past 7 days assessed using the TLFB method 6 weeks post randomization and 3 months post randomization. b) The quantity of cannabis used (grams) in the past 7 days assessed using the TLFB method 6 weeks post randomization, 3 months post randomization, and 6 months post randomization. Participants are first asked to indicate how many joints they usually make from a single gram of cannabis. Next, they are asked to fill out the calendar. They indicate, for each of the 7 days listed on the calendar, how many joints they smoked. If they smoked only half a joint on a particular day, they are asked to fill-in \u00bd. Based on the number of joints made from a single gram and the number of joints smoked, the quantity of cannabis used (grams) is calculated. Van der Pol et al. [35] validated different self-report measures on cannabis dose against objective measures. Selfreported number of joints per gram was one of the least problematic options. c) Cannabis use-related problems as measured using the Cannabis Use Disorders Identification Test (CUDIT), a 10-item questionnaire based on the Alcohol Use Disorders Identification Test [36] . d) The cannabis use disorder severity, as measured by the number of self-reported DSM-5 criteria met [37] . e) Number of self-reported previous serious attempts to reduce or quit cannabis use. A serious quit attempt is defined as an attempt that lasted at least 24 h.",
+            "cite_spans": [
+                {
+                    "start": 813,
+                    "end": 817,
+                    "text": "[35]",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 1171,
+                    "end": 1175,
+                    "text": "[36]",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 1279,
+                    "end": 1283,
+                    "text": "[37]",
+                    "ref_id": "BIBREF35"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Secondary measures"
+        },
+        {
+            "text": "Treatment seeking behavior and attitudes f) Help seeking attitudes as measured by the Mental Help Seeking Attitudes Scale (MHSAS) [38] . MHSA S is a 9-item questionnaire designed to assess the overall attitude towards seeking help (unfavorable-favorable) from a mental health professional if one had to deal with a mental health problem. Each item is rated on a 7-point-scale. We adapted the questionnaire to measure attitudes towards seeking professional help specifically for cannabis userelated problems. g) Based on Ajzen's Theory of Planned behavior, we constructed a questionnaire to assess intention, social norm, perceived behavioral control, and attitudes towards seeking professional help for cannabis use-related problems. h) The Trimbos and iMTA questionnaire on Costs associated with Pychiatric illness (TiC-P) will be used to measure the number of participants who entered specialized treatment services for cannabis use-related problems 3 months and 6 months post randomization [39] . Some questions are added to determine whether participants visited a specific health care professional for cannabis use-related problems, for other problems or for both. Complementary, participants are presented with a list of more informal types of help (e.g., seeking help from a religious confidant, seeking help from a loved one, seeking help online) and are asked to indicate whether they used any of these types of help in the past 3 months. Intervention satisfaction i) Intervention satisfaction is measured with the Dutch translation of the Fragebogen zur Messung der Patientenzufriedenheit (ZUF-8) [40] . The ZUF-8 is a free-to-use German version of the Client Satisfaction Questionnaire (CSQ-8). The questionnaire consists of 8 items; each item is rated on a 4-point-scale. The ZUF-8 has good psychometric properties [41] .",
+            "cite_spans": [
+                {
+                    "start": 130,
+                    "end": 134,
+                    "text": "[38]",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 993,
+                    "end": 997,
+                    "text": "[39]",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 1607,
+                    "end": 1611,
+                    "text": "[40]",
+                    "ref_id": "BIBREF38"
+                },
+                {
+                    "start": 1827,
+                    "end": 1831,
+                    "text": "[41]",
+                    "ref_id": "BIBREF39"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Secondary measures"
+        },
+        {
+            "text": "Cost-effectiveness j) The Trimbos and iMTA questionnaire on Costs associated with Pychiatric illness will be used to measure health care utilization and production loss (TiC-P) [39] . k) Quality of life will be measured using the SF-6D [42] .",
+            "cite_spans": [
+                {
+                    "start": 177,
+                    "end": 181,
+                    "text": "[39]",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 236,
+                    "end": 240,
+                    "text": "[42]",
+                    "ref_id": "BIBREF40"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Secondary measures"
+        },
+        {
+            "text": "The following instruments will be applied to assess their potential role as intervention effect mediator:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Mediators and other measures"
+        },
+        {
+            "text": "l) The number of self-reported cannabis withdrawal symptoms. m) Craving for cannabis will be assessed using the Marijuana Craving Questionnaire Short Form (MCQ-SF) [43] . n) The Cannabis Self-Concept Scale (CSCS) will be included to assess identification with cannabis as part of one's personality or identity [44] . o) Self-efficacy to become or stay a non-cannabis smoker will be measured by 6 items used in previous research [45] . p) The Marlowe-Crowne Social Desirability Scale (MCSDS) will be included to measure if the respondent has the tendency to give socially desirable responses [46] . q) The Brief Symptom Inventory 18 (BSI-18) will be included to assess symptoms of anxiety and depression [47] . r) Self-reported substance use (tobacco, alcohol, cocaine, amphetamine, inhalants, sedatives, hallucinogens, opioids, and other drugs). s) Utilization measures will be collected during the use of the intervention: number of logins, number of page views, time spent logged in, and use of major content elements. t) Demographic characteristics of the participant will be collected such as age, sex, and level of education. u) Knowledge obtained about CBT principles will be measured with a self-constructed 5-item questionnaire. v) Knowledge obtained about treatment options/ referral to treatment will be measured with a selfconstructed 5-item questionnaire.",
+            "cite_spans": [
+                {
+                    "start": 164,
+                    "end": 168,
+                    "text": "[43]",
+                    "ref_id": "BIBREF41"
+                },
+                {
+                    "start": 310,
+                    "end": 314,
+                    "text": "[44]",
+                    "ref_id": "BIBREF42"
+                },
+                {
+                    "start": 428,
+                    "end": 432,
+                    "text": "[45]",
+                    "ref_id": "BIBREF43"
+                },
+                {
+                    "start": 591,
+                    "end": 595,
+                    "text": "[46]",
+                    "ref_id": "BIBREF44"
+                },
+                {
+                    "start": 703,
+                    "end": 707,
+                    "text": "[47]",
+                    "ref_id": "BIBREF45"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Mediators and other measures"
+        },
+        {
+            "text": "w) The effect of the coronavirus and the coronavirus measures on cannabis use and attempts to reduce/ quit cannabis use will be measured with a selfconstructed 7-item questionnaire.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Mediators and other measures"
+        },
+        {
+            "text": "Conventions with regard to the analysis of the data and reporting of the study will be followed, in this case the CONSORT statement guidelines [24] . We recognize the importance of open data initiatives and intend to-under conditions-open the anonymized datasets collected in this research project to whoever is professionally interested and entitled to use these data, as long as it is acceptable to the research participants and ethical standards. Generalized linear mixed models (GLMM) will be applied to the primary and secondary outcome measures. Time will be modeled as a categorical variable.",
+            "cite_spans": [
+                {
+                    "start": 143,
+                    "end": 147,
+                    "text": "[24]",
+                    "ref_id": "BIBREF23"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Statistical analyses"
+        },
+        {
+            "text": "Depending on the data, we will use random slopes. When there is a lot of variation in the number of cannabis use days at baseline-we expect this will be the case-then we will at least fit a random intercept. The link function of the GLMM will be chosen depending on the data: most likely this will be a binomial distribution in the case of dichotomous outcome measures, Gaussian in the case of normally distributed data and (overdispersed) Poisson or negative binomial for count data. Covariates in the model will be variables that differ at baseline (p < .05) and the MCSDS. Missing data is expected to be missing at random and will be handled using the Multivariate Imputation via Chained Equations (MICE) package in R.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Statistical analyses"
+        },
+        {
+            "text": "This paper describes the protocol to test the effectiveness of an Internet-based intervention with adherencefocused guidance on reducing cannabis use and improving positive attitudes towards seeking professional help in a sample of frequent cannabis users via a two-armed randomized controlled trial. To the best of our knowledge, this is the first Internet-based intervention for cannabis users that combines screening, a brief intervention based on CBT and MI, and referral to treatment. All outcome measures in this study are based on selfreport questionnaires, not on biological measures such as hair or urine samples. It is not possible to determine whether participants will truthfully report their cannabis use or will give socially desirable answers. As mentioned before, the TLFB method is a psychometrically sound measure for the assessment of licit and illicit substance use [32] . Research has shown that the TLFB method for the detection of substance use, including cannabis use, has high levels of overall agreement with biological measures [32] . To control for potential socially desirable answers, the MCSDS will be included.",
+            "cite_spans": [
+                {
+                    "start": 886,
+                    "end": 890,
+                    "text": "[32]",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 1055,
+                    "end": 1059,
+                    "text": "[32]",
+                    "ref_id": "BIBREF30"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "A number of studies have been done on the effectiveness of SBIRT programs. Most of these studies focus on the screening and brief intervention components of the programs. A study initiated by the Substance Abuse and Mental Health Services Administration tested the effectiveness of an SBIRT program for alcohol and illicit drug use, implemented in a range of medical settings [48] . More than 450.000 patients were screened, 22.7% of them screened positive for risky alcohol use and/or illicit drug use. Depending on the severity of use and associated risk, people were recommended for a brief intervention, brief treatment, or referral to specialty treatment. At 6 months' follow up, rates of drug use were 67% lower [48] . This study suggests that brief interventions as part of SBIRT programs can significantly reduce substance use. However, a systematic review concluded that insufficient evidence exists to determine whether brief interventions as part of the SBIRT program are effective or ineffective in reducing substance use [49] . Besides, research addressing the effectiveness of the referral to treatment component is still scarce [23, 49] . In conclusion, more research regarding the effectiveness of SBIRT programs for the reduction of substance use seems needed. The SBIRT programs included in the systematic review were mainly face-to-face interventions. However, SBIRT programs seem highly suitable to be computerized.",
+            "cite_spans": [
+                {
+                    "start": 376,
+                    "end": 380,
+                    "text": "[48]",
+                    "ref_id": "BIBREF46"
+                },
+                {
+                    "start": 718,
+                    "end": 722,
+                    "text": "[48]",
+                    "ref_id": "BIBREF46"
+                },
+                {
+                    "start": 1034,
+                    "end": 1038,
+                    "text": "[49]",
+                    "ref_id": "BIBREF47"
+                },
+                {
+                    "start": 1143,
+                    "end": 1147,
+                    "text": "[23,",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 1148,
+                    "end": 1151,
+                    "text": "49]",
+                    "ref_id": "BIBREF47"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Studies on computerized interventions for anxiety, depression, and problematic alcohol use show that interventions guided by a coach or therapist are more effective than unguided interventions [50] [51] [52] [53] . High attrition rates in online interventions are common, especially when there is no guidance from a coach or therapist [50] . These findings suggest that guided interventions are preferred over unguided interventions. However, unguided self-help interventions are often offered free of charge and can be used without a GP referral. This makes them easily accessible, which may be in particular important for cannabis users who are still in doubt about reducing their cannabis use. We have taken these considerations into account and decided to offer adherence focused guidance to minimize drop-out rates. The guidance is minimal to ensure that the program remains easily accessible. The present trial will improve scientific knowledge regarding the effectiveness of Internet-based SBIRT programs with adherence focused guidance for frequent cannabis users. ",
+            "cite_spans": [
+                {
+                    "start": 193,
+                    "end": 197,
+                    "text": "[50]",
+                    "ref_id": "BIBREF48"
+                },
+                {
+                    "start": 198,
+                    "end": 202,
+                    "text": "[51]",
+                    "ref_id": "BIBREF49"
+                },
+                {
+                    "start": 203,
+                    "end": 207,
+                    "text": "[52]",
+                    "ref_id": "BIBREF50"
+                },
+                {
+                    "start": 208,
+                    "end": 212,
+                    "text": "[53]",
+                    "ref_id": "BIBREF51"
+                },
+                {
+                    "start": 335,
+                    "end": 339,
+                    "text": "[50]",
+                    "ref_id": "BIBREF48"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "The health and social effects of nonmedical cannabis use cannabis. Geneva: World Health Organisation",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Hall",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Renstr\u00f6m",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Poznyak",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Cannabis use patterns and their association with DSM-IV cannabis dependence and gender",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Noack",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "H\u00f6fler",
+                    "suffix": ""
+                },
+                {
+                    "first": "U",
+                    "middle": [],
+                    "last": "Lueken",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Eur Addict Res",
+            "volume": "17",
+            "issn": "6",
+            "pages": "321--329",
+            "other_ids": {
+                "DOI": [
+                    "10.1159/000333338"
+                ]
+            }
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Predicting the transition from frequent cannabis use to cannabis dependence: a three-year prospective study",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Van Der Pol",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Liebregts",
+                    "suffix": ""
+                },
+                {
+                    "first": "De",
+                    "middle": [],
+                    "last": "Graaf",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Korf",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Van Den Brink",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Van Laar",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Drug Alcohol Depend",
+            "volume": "133",
+            "issn": "2",
+            "pages": "352--361",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.drugalcdep.2013.06.009"
+                ]
+            }
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Behavioral therapies for treatment-seeking cannabis users: a meta-analysis of randomized controlled trials",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Davis",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Powers",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Handelsman",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Medina",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Zvolensky",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jaj",
+                    "middle": [],
+                    "last": "Smits",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Eval Health Prof",
+            "volume": "38",
+            "issn": "1",
+            "pages": "94--114",
+            "other_ids": {
+                "DOI": [
+                    "10.1177/0163278714529970"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Gender differences in cannabis use disorders: results from the National Epidemiologic Survey of Alcohol and Related Conditions",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Khan",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Secades-Villa",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Okuda",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "P\u00e9rez-Fuentes",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Kerridge",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Blanco",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Drug Alcohol Depend",
+            "volume": "130",
+            "issn": "0",
+            "pages": "101--109",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.drugalcdep.2012.10.015"
+                ]
+            }
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Predictors of treatment contact among individuals with cannabis dependence",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Agosti",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Levin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Am J Drug Alcohol Abuse",
+            "volume": "30",
+            "issn": "1",
+            "pages": "121--128",
+            "other_ids": {
+                "DOI": [
+                    "10.1081/ADA-120029869"
+                ]
+            }
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Kerncijfers verslavingszorg 2015 Landelijk Alcohol en Drugs Informatie Systeem (LADIS)",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Wisselink",
+                    "suffix": ""
+                },
+                {
+                    "first": "Wgt",
+                    "middle": [],
+                    "last": "Kuijpers",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Mol",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Utrecht: Trimbos-instituut",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Van Laar",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Van Gestel",
+                    "suffix": ""
+                },
+                {
+                    "first": "Aan",
+                    "middle": [],
+                    "last": "Cruts",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Van Der Pol",
+                    "suffix": ""
+                },
+                {
+                    "first": "Apm",
+                    "middle": [],
+                    "last": "Ketelaars",
+                    "suffix": ""
+                },
+                {
+                    "first": "Emt",
+                    "middle": [],
+                    "last": "Beenakkers",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Meijer",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Croes",
+                    "suffix": ""
+                },
+                {
+                    "first": "Van",
+                    "middle": [],
+                    "last": "Miltenburg",
+                    "suffix": ""
+                },
+                {
+                    "first": "Cja",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Nationale Drug Monitor: jaarbericht 2018",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Barriers and facilitators to cannabis treatment",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Gates",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Taplin",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Copeland",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Swift",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Martin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Drug Alcohol Rev",
+            "volume": "31",
+            "issn": "3",
+            "pages": "311--320",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/j.1465-3362.2011.00313.x"
+                ]
+            }
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Van den Brink W, Van Laar MW. Facilitators and barriers in treatment seeking for cannabis dependence",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Van Der Pol",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Liebregts",
+                    "suffix": ""
+                },
+                {
+                    "first": "De",
+                    "middle": [],
+                    "last": "Graaf",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Korf",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Drug Alcohol Depend",
+            "volume": "133",
+            "issn": "2",
+            "pages": "776--80",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.drugalcdep.2013.08.011"
+                ]
+            }
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Van den Brink W. Multidisciplinaire richtlijn Stoornissen in het gebruik van cannabis, coca\u00efne, amfetamine, ecstasy, GHB en benzodiazepines",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Hendriks",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Blanken",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Croes",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Schippers",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Schellekens",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Stollenga",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "E-mental health: a rapid review of the literature",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Lal",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Adair",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Psychiatr Serv",
+            "volume": "65",
+            "issn": "1",
+            "pages": "24--32",
+            "other_ids": {
+                "DOI": [
+                    "10.1176/appi.ps.201300009"
+                ]
+            }
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Computerised cognitive behavioural therapy and its uses",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Kaltenthaler",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Cavanagh",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Prog Neurol Psychiatry",
+            "volume": "14",
+            "issn": "3",
+            "pages": "22--31",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/pnp.163"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Short-and long-term effects of digital prevention and treatment interventions for cannabis use reduction: a systematic review and meta-analysis",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Boumparis",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Loheide-Niesmann",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Blankers",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Ebert",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Korf",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Schaub",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Spijkerman",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Tait",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Riper",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Drug Alcohol Depend",
+            "volume": "200",
+            "issn": "",
+            "pages": "82--94",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.drugalcdep.2019.03.016"
+                ]
+            }
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Internet and computer based interventions for cannabis use: a meta-analysis",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Tait",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Spijkerman",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Riper",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Drug Alcohol Depend",
+            "volume": "133",
+            "issn": "2",
+            "pages": "295--304",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.drugalcdep.2013.05.012"
+                ]
+            }
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Digital interventions for problematic cannabis users in non-clinical settings: findings from a systematic review and meta-analysis",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Hoch",
+                    "suffix": ""
+                },
+                {
+                    "first": "U",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Preuss",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ferri",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Simon",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Eur Addict Res",
+            "volume": "22",
+            "issn": "5",
+            "pages": "233--275",
+            "other_ids": {
+                "DOI": [
+                    "10.1159/000445716"
+                ]
+            }
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "The efficacy of computerized interventions to reduce cannabis use: a systematic review and metaanalysis",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Olmos",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Tirado-Mu\u00f1oz",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Farr\u00e9",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Torrens",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Addict Behav",
+            "volume": "79",
+            "issn": "",
+            "pages": "52--60",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.addbeh.2017.11.045"
+                ]
+            }
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "A controlled trial of an internet-based intervention program for cannabis users",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Tossmann",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jonas",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Tensil",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Lang",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Str\u00fcber",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Cyberpsychol Behav Soc Netw",
+            "volume": "14",
+            "issn": "11",
+            "pages": "673--682",
+            "other_ids": {
+                "DOI": [
+                    "10.1089/cyber.2010.0506"
+                ]
+            }
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Effectiveness of a self-guided web-based cannabis treatment program: randomized controlled trial",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Rooke",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Copeland",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Norberg",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Hine",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Mccambridge",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "J Med Internet Res",
+            "volume": "15",
+            "issn": "2",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.2196/jmir.2256"
+                ]
+            }
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "A webbased self-help intervention with and without chat counseling to reduce cannabis use in problematic cannabis users: Three-arm randomized controlled trial",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Schaub",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Wenger",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Berg",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Beck",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Stark",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Buehler",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Haug",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "J Med Internet Res",
+            "volume": "17",
+            "issn": "10",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.2196/jmir.4860"
+                ]
+            }
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Guided web-based treatment program for reducing cannabis use: a randomized controlled trial",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Sinadinovic",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Johansson",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Johansson",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Lundqvist",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Lindner",
+                    "suffix": ""
+                },
+                {
+                    "first": "U",
+                    "middle": [],
+                    "last": "Hermansson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Addict Sci Clin Pract",
+            "volume": "15",
+            "issn": "9",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/s13722-020-00185-8"
+                ]
+            }
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Brief interventions for alcohol problems: a review",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Bien",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Miller",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Tonigan",
+                    "suffix": ""
+                }
+            ],
+            "year": 1993,
+            "venue": "Addiction",
+            "volume": "88",
+            "issn": "3",
+            "pages": "315--351",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/j.1360-0443.1993.tb00820.x"
+                ]
+            }
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Systems-level implementation of screening, brief intervention, and referral to treatment. Technical assistance publication series 33",
+            "authors": [],
+            "year": 2013,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "explanation and elaboration: updated guidelines for reporting parallel group randomised trials",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Moher",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Hopewell",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Schulz",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Montori",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "G\u00f8tzsche",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Devereaux",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Elbourne",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Egger",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Altman",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Consort",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "BMJ",
+            "volume": "340",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1136/bmj.c869"
+                ]
+            }
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Intentie om te minderen of te stoppen met blowen en opvattingen over hulp zoeken",
+            "authors": [
+                {
+                    "first": "Mia",
+                    "middle": [],
+                    "last": "Olthof",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Blankers",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Van Laar",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "2020",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Reliability and validity of the marijuana motives measure among young adult frequent cannabis users and associations with cannabis dependence",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Benschop",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Liebregts",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Van Der Pol",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Schaap",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Buisman",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Van Laar",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Van Den Brink",
+                    "suffix": ""
+                },
+                {
+                    "first": "De",
+                    "middle": [],
+                    "last": "Graaf",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Korf",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "Addict Behav",
+            "volume": "40",
+            "issn": "9",
+            "pages": "1183--94",
+            "other_ids": {
+                "DOI": [
+                    "10.1046/j.1360-0443.2002.00185.x"
+                ]
+            }
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "An improved brief measure of cannabis misuse: the cannabis use disorders identification test-revised (CUDIT-R)",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Adamson",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Kay-Lambkin",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Baker",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Lewin",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Thornton",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Kelly",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Sellman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Drug Alcohol Depend",
+            "volume": "110",
+            "issn": "",
+            "pages": "137--180",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.drugalcdep.2010.02.017"
+                ]
+            }
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Handboek cognitieve gedragstherapie bij middelengebruik en gokken. Amersfoort: Resultaten Scoren",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Schippers",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Smeerdijk",
+                    "suffix": ""
+                },
+                {
+                    "first": "Mjm",
+                    "middle": [],
+                    "last": "Merkx",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Informatie over cannabisgebruik bij een psychose",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Blowen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Timeline follow-back: a technique for assessing selfreported alcohol consumption",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Sobell",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Sobell",
+                    "suffix": ""
+                }
+            ],
+            "year": 1990,
+            "venue": "Measuring alcohol consumption",
+            "volume": "",
+            "issn": "",
+            "pages": "41--72",
+            "other_ids": {}
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Validity of timeline follow-back for self-reported use of cannabis and other illicit substances -systematic review and meta-analysis",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Hjorth\u00f8j",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Hjorth\u00f8j",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Nordentoft",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Addict Behav",
+            "volume": "37",
+            "issn": "3",
+            "pages": "225--258",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.addbeh.2011.11.025"
+                ]
+            }
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Reliability of the timeline followback for cocaine, cannabis, and cigarette use",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Robinson",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Sobell",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Sobell",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Leo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Psychol Addict Behav",
+            "volume": "28",
+            "issn": "1",
+            "pages": "154--62",
+            "other_ids": {
+                "DOI": [
+                    "10.1037/a0030992"
+                ]
+            }
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Concurrent validity of an online version of the timeline followback assessment",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Pedersen",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Grow",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Duncan",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Neighbors",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Larimer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Psychol Addict Behav",
+            "volume": "26",
+            "issn": "3",
+            "pages": "672--679",
+            "other_ids": {
+                "DOI": [
+                    "10.1037/a0027945"
+                ]
+            }
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Validation of self-reported cannabis dose and potency: an ecological study",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Van Der Pol",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Liebregts",
+                    "suffix": ""
+                },
+                {
+                    "first": "De",
+                    "middle": [],
+                    "last": "Graaf",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Korf",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Van Den Brink",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Van Laar",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Addiction",
+            "volume": "108",
+            "issn": "10",
+            "pages": "1801--1809",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/add.12226"
+                ]
+            }
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "A prototype screening instrument for cannabis use disorder: the cannabis use disorders identification test (CUDIT) in an alcohol-dependent clinical sample",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Adamson",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Sellman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "Drug Alcohol Rev",
+            "volume": "22",
+            "issn": "",
+            "pages": "309--324",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/0959523031000154454"
+                ]
+            }
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Nederlandse vertaling van Diagnostic and Statistical Manual of Mental Disorders",
+            "authors": [],
+            "year": 2014,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Mental help seeking attitudes scale (MHSAS): development, reliability, validity, and comparison with the ATSP PH-SF and IASMHS-PO",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Hammer",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Parent",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Spiker",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "J Couns Psychol",
+            "volume": "65",
+            "issn": "1",
+            "pages": "74--85",
+            "other_ids": {
+                "DOI": [
+                    "10.1037/cou0000248"
+                ]
+            }
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Handleiding TiC-P volwassenen. Vragenlijst over zorggebruik en productiviteitsverliezen bij psychische aandoeningen. Rotterdam: Institute for Medical Technology Assessment",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Bouwmans",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Hakkaart-Van Roijen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "Fragebogen zur messung der patientenzufriedenheit",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Schmidt",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Wittmann",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "Diagnostische verfahren in der psychotherapie",
+            "volume": "",
+            "issn": "",
+            "pages": "392--398",
+            "other_ids": {}
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "Patientenzufriedenheit in der station\u00e4ren rehabilitation: psychometrische reanalyse des ZUF-8 auf der basis multizentrischer stichproben verschiedener indikation",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Kriz",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "N\u00fcbling",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Steffanowski",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Wittmann",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Schmidt",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Z Med Psychol",
+            "volume": "17",
+            "issn": "",
+            "pages": "67--79",
+            "other_ids": {}
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "The estimation of a preference-based measure of health from the SF-36",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Brazier",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Roberts",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Deverill",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "J Health Econ",
+            "volume": "21",
+            "issn": "",
+            "pages": "130--138",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/s0167-6296(01)00130-8"
+                ]
+            }
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "Reliability and validity of a short form of the marijuana craving questionnaire",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Heishman",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Evans",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Singleton",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Levin",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Copersino",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Gorelick",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Drug Alcohol Depend",
+            "volume": "102",
+            "issn": "",
+            "pages": "35--40",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.drugalcdep.2008.12.010"
+                ]
+            }
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "Identity as a cannabis user is related to problematic patterns of consumption among emerging adults",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Blevins",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Abrantes",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Anderson",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Caviness",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Herman",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Stein",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Addict Behav",
+            "volume": "79",
+            "issn": "",
+            "pages": "138--181",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.addbeh.2017.12.021"
+                ]
+            }
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "The theory of planned behavior: precursors of marijuana use in early adolescence?",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Malmberg",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Overbeek",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Vermulst",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Monshouwer",
+                    "suffix": ""
+                },
+                {
+                    "first": "Wam",
+                    "middle": [],
+                    "last": "Vollebergh",
+                    "suffix": ""
+                },
+                {
+                    "first": "Rcme",
+                    "middle": [],
+                    "last": "Engels",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Drug Alcohol Depend",
+            "volume": "123",
+            "issn": "",
+            "pages": "22--30",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.drugalcdep.2011.10.011"
+                ]
+            }
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "A new scale of social desirability independent of psychopathology",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Crowne",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Marlowe",
+                    "suffix": ""
+                }
+            ],
+            "year": 1960,
+            "venue": "J Consult Psychol",
+            "volume": "24",
+            "issn": "4",
+            "pages": "349--54",
+            "other_ids": {}
+        },
+        "BIBREF45": {
+            "ref_id": "b45",
+            "title": "Brief Symptom Inventory (BSI)-18. Administration, scoring and procedures manual",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Derogatis",
+                    "suffix": ""
+                }
+            ],
+            "year": 2001,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF46": {
+            "ref_id": "b46",
+            "title": "Screening, brief interventions, referral to treatment (SBIRT) for illicit drug and alcohol use at multiple healthcare sites: comparison at intake and 6 months later",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Madras",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Compton",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Avula",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Stegbauer",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Stein",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Clark",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Drug Alcohol Depend",
+            "volume": "9",
+            "issn": "",
+            "pages": "280--95",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.drugalcdep.2008.08.003"
+                ]
+            }
+        },
+        "BIBREF47": {
+            "ref_id": "b47",
+            "title": "Effectiveness of brief interventions as part of the screening, brief intervention and referral to treatment (SBIRT) model for reducing the nonmedical use of psychoactive substances: a systematic review",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Young",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Stevens",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Galipeau",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Pirie",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Garritty",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Singh",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Syst Rev",
+            "volume": "3",
+            "issn": "1",
+            "pages": "1--18",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/2046-4053-3-50"
+                ]
+            }
+        },
+        "BIBREF48": {
+            "ref_id": "b48",
+            "title": "Computer-based psychological treatments for depression: a systematic review and meta-analysis",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Richards",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Richardson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Clin Psychol Rev",
+            "volume": "32",
+            "issn": "4",
+            "pages": "329--371",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.cpr.2012.02.004"
+                ]
+            }
+        },
+        "BIBREF49": {
+            "ref_id": "b49",
+            "title": "Internet-based cognitive behaviour therapy for symptoms of depression and anxiety: a meta-analysis",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Spek",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Cuijpers",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Nyki\u00edcek",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Riper",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Keyzer",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Pop",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Psychol Med",
+            "volume": "37",
+            "issn": "3",
+            "pages": "319--347",
+            "other_ids": {
+                "DOI": [
+                    "10.1017/S0033291706008944"
+                ]
+            }
+        },
+        "BIBREF50": {
+            "ref_id": "b50",
+            "title": "Guided and unguided internet-based treatment for problematic alcohol use -a randomized controlled pilot trial",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Sundstr\u00f6m",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Gajecki",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Johansson",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Blankers",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Sinadinovic",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Stenlund-Gens",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Berman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "PLoS One",
+            "volume": "11",
+            "issn": "7",
+            "pages": "1--19",
+            "other_ids": {
+                "DOI": [
+                    "10.1371/journal.pone.0157817"
+                ]
+            }
+        },
+        "BIBREF51": {
+            "ref_id": "b51",
+            "title": "Effectiveness and treatment moderators of internet interventions for adult problem drinking: an individual patient data meta-analysis of 19 randomised controlled trials",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Riper",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Hoogendoorn",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Cuijpers",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Karyotaki",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Boumparis",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Mira",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "PLoS Med",
+            "volume": "15",
+            "issn": "12",
+            "pages": "1--26",
+            "other_ids": {
+                "DOI": [
+                    "10.1371/journal.pmed.1002714"
+                ]
+            }
+        },
+        "BIBREF52": {
+            "ref_id": "b52",
+            "title": "Publisher's Note",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF53": {
+            "ref_id": "b53",
+            "title": "Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Trial",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "SPIRIT diagram. Schedule of enrollment, allocation, interventions, and assessments. TLFB, Timeline Follow-back; CUDIT, Cannabis Use Disorders Identification Test; DSM-5, number of DSM-5 criteria met (self-reported); MHSAS, Mental Help Seeking Attitudes Scale; ZUF-8, Fragebogen zur Messung der Patientenzufriedenheit; TiC-P, Trimbos and iMTA questionnaire on Costs associated with Pychiatric illness; SF-6D, ShortForm 6 Dimensions; MCQ-SF, Marijuana Craving Questionnaire Short Form; CSCS, Cannabis Self-Concept Scale; MCSDS, Marlowe-Crowne Social Desirability Scale; BSI-18, Brief Symptom Inventory 18",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "Protocol version 1.1. Recruitment began on 23 December 2019 and was completed on 26 May 2020. Abbreviations CBT: Cognitive behavioral therapy; MI: Motivational interviewing; SBIRT: Screening, Brief Intervention and Referral to Treatment",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "How is your cannabis consumption compared to others? The participant answers a set of questions about his cannabis use. Based on his answers,",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "Not applicable. 1 Trimbos Institute, Netherlands Institute of Mental Health and Addiction, Utrecht, The Netherlands. 2 Amsterdam UMC, Department of Psychiatry, University of Amsterdam, Amsterdam, The Netherlands. 3 Arkin Mental Health Care, Amsterdam, The Netherlands. 4 Amsterdam Public Health Research Institute, Amsterdam, The Netherlands.",
+            "cite_spans": [
+                {
+                    "start": 16,
+                    "end": 17,
+                    "text": "1",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 117,
+                    "end": 118,
+                    "text": "2",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 213,
+                    "end": 214,
+                    "text": "3",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 269,
+                    "end": 270,
+                    "text": "4",
+                    "ref_id": "BIBREF3"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Acknowledgements"
+        },
+        {
+            "text": "Authors' contributions All the authors are responsible for the design of the study. MO and MB wrote the first draft of the manuscript. AG and ML revised the manuscript critically. The authors read and approved the final manuscript.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "annex"
+        },
+        {
+            "text": "The ICan study is funded by the Dutch Ministry of Health, Welfare and Sport. The funder had no role in the design of the study and will not have a role during the data collection, data analysis, and writing of the manuscript.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Funding"
+        },
+        {
+            "text": "The anonymized datasets used and/or analyzed during the current study are available from the corresponding author on reasonable request.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Availability of data and materials"
+        },
+        {
+            "text": "The study is registered in the Netherlands Trial Register; identifier NL7668, registered on 17 April 2019, www.trialregister.nl/trial/7668. Ethical approval to carry out this study was obtained from an accredited medical research and ethics committee in the Netherlands (Medical Research Ethics Committees United, NL67449.100.18). All substantial amendments will be notified to the medical research and ethics committee. Informed consent is obtained from all participants included in the study.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Ethics approval and consent to participate"
+        },
+        {
+            "text": "Not applicable.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Consent for publication"
+        },
+        {
+            "text": "The authors declare that they have no competing interests.Author details",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Competing interests"
+        }
+    ]
+}

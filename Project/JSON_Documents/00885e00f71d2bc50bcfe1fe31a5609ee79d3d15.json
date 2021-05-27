@@ -1,0 +1,1184 @@
+{
+    "paper_id": "00885e00f71d2bc50bcfe1fe31a5609ee79d3d15",
+    "metadata": {
+        "title": "The Smart Mask: Active Closed-Loop Protection against Airborne Pathogens",
+        "authors": [
+            {
+                "first": "Naren",
+                "middle": [],
+                "last": "Vikram",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Florida",
+                    "location": {
+                        "settlement": "Gainesville",
+                        "region": "FL",
+                        "country": "USA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Raj",
+                "middle": [],
+                "last": "Masna",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Florida",
+                    "location": {
+                        "settlement": "Gainesville",
+                        "region": "FL",
+                        "country": "USA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Rohan",
+                "middle": [],
+                "last": "Reddy Kalavakonda",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Florida",
+                    "location": {
+                        "settlement": "Gainesville",
+                        "region": "FL",
+                        "country": "USA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Reiner",
+                "middle": [],
+                "last": "Dizon",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Florida",
+                    "location": {
+                        "settlement": "Gainesville",
+                        "region": "FL",
+                        "country": "USA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Anamika",
+                "middle": [],
+                "last": "Bhuniaroy",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Florida",
+                    "location": {
+                        "settlement": "Gainesville",
+                        "region": "FL",
+                        "country": "USA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Soumyajit",
+                "middle": [],
+                "last": "Mandal",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Florida",
+                    "location": {
+                        "settlement": "Gainesville",
+                        "region": "FL",
+                        "country": "USA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Swarup",
+                "middle": [],
+                "last": "Bhunia",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Florida",
+                    "location": {
+                        "settlement": "Gainesville",
+                        "region": "FL",
+                        "country": "USA"
+                    }
+                },
+                "email": "swarup@ece.ufl.edu"
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Face masks provide effective, easy-to-use, and low-cost protection against airborne pathogens or infectious agents, including SARS-CoV-2. There is a wide variety of face masks available on the market for various applications, but they are all passive in nature, i.e., simply act as air filters for the nasal passage and/or mouth. In this paper, we present a new \"active mask\" paradigm, in which the wearable device is equipped with smart sensors and actuators to both detect the presence of airborne pathogens in real time and take appropriate action to mitigate the threat. The proposed approach is based on a closed-loop control system that senses airborne particles of different sizes close to the mask and then makes intelligent decisions to reduce their concentrations. This paper presents a specific implementation of this concept in which the on-board controller determines ambient air quality via a commercial particulate matter (PM) sensor, and if necessary activates a piezoelectric actuator that generates a mist spray to load these particles, thus causing them to fall to the ground. The proposed system communicates with the user via a smart phone application that provides various alerts, including notification of the need to recharge and/or decontaminate the mask prior to reuse. The application also enables a user to override the on-board control system and manually control the mist generator if necessary. Experimental results from a functional prototype demonstrate significant reduction in airborne PM counts near the mask when the active protection system is enabled.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "The world has been witnessing the increasing spread of COVID-19 since the beginning of 2020. This novel virus has brought everyone's lives to a standstill and the economy to its knees. Although most people are actively following social distancing norms, proper hygiene, and other preventive measures, it is likely that normal day-to-day life will continue to be affected until an effective vaccine is developed. To mitigate this situation and return to some semblance of normalcy, we believe there is a need for preventive methods that actively combat the virus instead of providing passive protection (e.g., physical barriers). Implementing such improved methods requires smart devices that can detect, quantify, and actively eradicate viruses and other pathogens.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "I. INTRODUCTION"
+        },
+        {
+            "text": "Typical Personal Protective Equipment (PPE), such as face masks (cloth, surgical, or N95), face shields, eye protection, disposable gloves, and coveralls all provide passive protection: these devices only prevent pathogens from entering the body by filtering them out. By contrast, active protection devices can actively attack and destroy pathogens near vulnerable parts of the body (e.g., the nose and mouth). Here we consider closed-loop active or \"smart\" masks for use in places where potentially virus-laden respiratory droplets (typically 0.1-10 \u00b5m in diameter) are most likely to be transmitted; examples include bathrooms, doctor's offices, daycare centers, and public transportation. Fig. 1 gives an overview of the proposed smart mask architecture. A detailed comparison of existing masks with the proposed smart mask is shown in Table I . The table shows that the proposed system detects airborne droplets (potentially containing viruses for COVID-19, influenza, measles, or other diseases) and limits their spread via an appropriate situation-aware mitigation strategy. The chosen strategy should be \"smart\", i.e., adaptive based on sensor outputs that provide information on concentration, size distribution, and other properties of the droplets. In our initial implementation, mitigation is provided by a cold mist generator that loads the droplets (thus making them quickly fall to the ground), and adaptation is provided by algorithms running on an on-board controller that adjust the spray angle, intensity, and duration of the generator based on sensor data. Such active closed-loop protection can remove viruses (and other pathogens) from the air before they infect others, thereby reducing the need for periodic disinfection of the area, while providing increased protection to the wearer.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 693,
+                    "end": 699,
+                    "text": "Fig. 1",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 840,
+                    "end": 847,
+                    "text": "Table I",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "I. INTRODUCTION"
+        },
+        {
+            "text": "The paper is organized as follows. The airborne transmission of viruses is briefly reviewed in Section II. The system-level architecture and operating principles of smart masks are presented in Sections II-A and II-B, Closed Loop active sensing and protection system respectively. The experimental setup, results, and key observations are explained in Sections III-A, III-B, and III-C, respectively. The commercial feasibility of smart masks is discussed in Section III-D, and future work and conclusions are presented in Section IV.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "I. INTRODUCTION"
+        },
+        {
+            "text": "Humans naturally generate a variety of droplets (e.g., due to breathing, talking, sneezing, and coughing). These include various cell types (e.g., epithelial and immune system cells), physiological electrolytes contained in mucus and saliva (e.g., Na + , K + , Cl \u2212 ), and, potentially, various infectious agents (e.g., bacteria, fungi, and viruses). Droplets > 5 \u00b5m in diameter tend to remain trapped in the upper respiratory tract (the oropharynx, i.e., nose and throat area). By contrast, smaller droplets can be inhaled into the lower respiratory tract (the bronchi and alveoli in the lungs) [2] .",
+            "cite_spans": [
+                {
+                    "start": 596,
+                    "end": 599,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                }
+            ],
+            "ref_spans": [],
+            "section": "II. SYSTEM ARCHITECTURE AND IMPLEMENTATION"
+        },
+        {
+            "text": "Infectious aerosols are generated when pathogens from patients' respiratory tracts come into contact with exhaled air and dissolve in any droplets produced by sneezing, coughing, or talking. According to some publications [1] , [3] , a single sneeze may produce as many as 40, 000 droplets with diameters between 0.5-12 \u00b5m ( Fig. 2(a) ). These droplets may be expelled at speeds up to 100 m/s, and reach distances up to 8 meters ( Fig. 2(b) ). By contrast, a single cough may produce up to 3, 000 droplet nuclei, and similar numbers are typically recorded after talking for five minutes. Air flows can carry infectious droplets long distances; such flows occur even during the most innocuous daily activities, such as walking or opening doors. In addition, differences in temperature (and thus density) across open doorways result in convective currents that exchange air between nearby areas.",
+            "cite_spans": [
+                {
+                    "start": 222,
+                    "end": 225,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 228,
+                    "end": 231,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 325,
+                    "end": 334,
+                    "text": "Fig. 2(a)",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 431,
+                    "end": 440,
+                    "text": "Fig. 2(b)",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "II. SYSTEM ARCHITECTURE AND IMPLEMENTATION"
+        },
+        {
+            "text": "Virus particles do not float freely in the air, but are always suspended in droplet nuclei that are significantly larger than the virus itself. The SARS-CoV-2 virus is 100 nm in diameter, and can remain suspended within droplets > 0.2 \u00b5m in size. Droplets > 5 \u00b5m fall to the ground quickly, while very small droplets evaporate [4] and aerosolize in a few seconds to droplet nuclei \u223c1 \u00b5m in size [5] . Fortunately, most masks can filter out droplets of this size: many materials have \u2265 96% filtration efficacy for particles > 0.3 \u00b5m, including 600 TPI (threads per inch) cotton, cotton quilts, and cotton layered with chiffon, silk, or flannel [6] , [7] . Thus, the most important requirement for the proposed smart mask is to eliminate the small (but potentially significant) fraction of virus-laden droplets that are < 0.3 \u00b5m in size. These small droplets are removed by creating an air-flow pattern close to the mask through spraying a mist. It blows the droplets away from the wearer and also \"loads\" them (i.e., increases their mass and size), thus causing them to quickly fall to the ground (Fig. 2(c) ).",
+            "cite_spans": [
+                {
+                    "start": 327,
+                    "end": 330,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 395,
+                    "end": 398,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 643,
+                    "end": 646,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 649,
+                    "end": 652,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1096,
+                    "end": 1106,
+                    "text": "(Fig. 2(c)",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "II. SYSTEM ARCHITECTURE AND IMPLEMENTATION"
+        },
+        {
+            "text": "The smart mask has two main components: a particulate sensor and an active mitigation device. Methods for sensing airborne pathogens and allergens can be divided into sampling-based (local) and remote detection approaches. A variety of pre-concentration and sampling methods based on solid impactors, liquid impactors, and filters are available [8] . These methods have the advantage that the sampled pathogens can be analyzed, identified, and quantified using sensitive lab-based techniques, such as real-time polymerase chain reaction (RT-PCR) [9] or surface-enhanced Raman spectroscopy (SERS) [10] , [11] . However, incorporating such sensitive detectors into a wearable form factor is extremely difficult.",
+            "cite_spans": [
+                {
+                    "start": 345,
+                    "end": 348,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 546,
+                    "end": 549,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 596,
+                    "end": 600,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 603,
+                    "end": 607,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                }
+            ],
+            "ref_spans": [],
+            "section": "A. System Architecture"
+        },
+        {
+            "text": "Due to this limitation, we focus on a remote detection approach. Remote (also known as stand-off) detection of pathogens has been demonstrated using a variety of optical methods, using asymmetric microsphere resonant cavities [12] , laser-induced fluorescence [13] , and random Raman lasing [14] , as well as non-optical methods, such as THz imaging and spectroscopy [15] , [16] . Here, we propose a particulate matter (PM) sensor that makes use of laser scattering to precisely count airborne particles in multiple size \"bins\". In addition, the control algorithm also uses data from auxiliary sensors (such as relative humidity and temperature) while determining the optimal parameters for the mitigation device (i.e,. mist generator), since aerosol travel distances depend on such environmental factors [8] .",
+            "cite_spans": [
+                {
+                    "start": 226,
+                    "end": 230,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 260,
+                    "end": 264,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 291,
+                    "end": 295,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 367,
+                    "end": 371,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 374,
+                    "end": 378,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 805,
+                    "end": 808,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                }
+            ],
+            "ref_spans": [],
+            "section": "A. System Architecture"
+        },
+        {
+            "text": "The mitigation device generates aerosolized mist on-demand using a piezoelectric transducer. A variety of liquids, including pure water or mixtures of water with various impurities (to increase droplet mass) or disinfectants, can be used to generate the mist. The best disinfectant for a given pathogen can be found using guidelines provided by the U.S. Centers for Disease Control and Prevention (CDC) [17] and Environmental Protection Agency (EPA) [18] . Common disinfectants include diluted bleach, soap, and > 70% alcohol solution. ",
+            "cite_spans": [
+                {
+                    "start": 403,
+                    "end": 407,
+                    "text": "[17]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 450,
+                    "end": 454,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                }
+            ],
+            "ref_spans": [],
+            "section": "A. System Architecture"
+        },
+        {
+            "text": "The smart mask integrates a sensing module, as shown in Fig. 3(a) , that senses the presence of airborne aerosol droplets (typical diameter 0.1-10 \u00b5m) in the vicinity of the users respiratory tract. It incorporates an optical detector system and auxiliary humidity and temperature sensors (as described previously) to quantify the total number and size distribution of these droplets as they approach the protected region (i.e., the nose and mouth). The outputs of both sensors are processed by an air quality analyzer module. The latter uses algorithms to analyze sensor data and thereby classify the quality of the incoming air stream based on health risk (e.g., \"very high\", \"high\", \"moderate\", and \"low\"). These risk categories are then encrypted for security and sent to the protection module either wirelessly (e.g., over Bluetooth) or by using a wired connection. A \"high risk\" output triggers the active protection mechanism, as summarized in Fig. 3(b) . The protection mechanism sprays a mist that is safe for human exposure by using a micro nozzle. This module is triggered by an electromechanical relay driven by the system controller.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 56,
+                    "end": 65,
+                    "text": "Fig. 3(a)",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 951,
+                    "end": 960,
+                    "text": "Fig. 3(b)",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "B. Operational Principles"
+        },
+        {
+            "text": "The hardware and software required for both sensing and protection modules are implemented using low-cost commercial off-the-shelf components (a low-power microcontroller and a wireless system-on-module) built within a mask, thus enabling widespread deployment in the vulnerable population. Further, the device can be equipped with machine learning (ML) algorithms that learn when respiratory droplets are likely to be present in a location and proactively employ the proposed active protection mechanism. The smart mask can also connect to authorized mobile devices through its wireless module. Users can use a mobile application to monitor current air quality, check system status (e.g., battery and liquid levels), and also manually override the on-board mitigation algorithm if needed.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "B. Operational Principles"
+        },
+        {
+            "text": "3D views of our smart mask prototype are shown in Fig. 4(a) -(c) respectively; a photograph of the fully-assembled version is shown in Fig. 4(d, e) . The experimental setup for testing the functional prototype uses a humidifier to replicate aerosol-sized droplets generated during daily activities like talking, coughing, and sneezing. The humidifier (Fig. 4(h) ) produces mist droplets in the 0.3-2.5 \u00b5m range. Since standard face masks filter out most large droplets (as mentioned earlier) [6] , [7] , we check the smart mask's performance against droplets of size < 0.3 \u00b5m. We use two PM sensors (Sensirion SPS30, see Fig. 4 (g)): one on the smart mask (which is placed at a height of \u223c1.6 m), and the other on the ground (Fig. 4(f) ). The use of two sensors allows us to quantify both predicted effects of PM loading by the mitigation spray: i) reduction in PM count near the mask, and ii) increase in PM count on the ground (due to the rapid falling of loaded particles). Note that the PM sensor on the ground is not part of the mask, and only used during testing. The chosen PM sensor is based on laser scattering and has built-in \"contamination resistance\" feature in which artificial air flow (created using a small built-in fan) is used to drive deposited particles out of the sensor. Due to the placement of the exhaust vent, this air flow interferes with the incoming air. To reduce this effect, we provided a guided path for the exhaust as shown in Fig. 4(g) .",
+            "cite_spans": [
+                {
+                    "start": 492,
+                    "end": 495,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 498,
+                    "end": 501,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 50,
+                    "end": 59,
+                    "text": "Fig. 4(a)",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 135,
+                    "end": 147,
+                    "text": "Fig. 4(d, e)",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 351,
+                    "end": 361,
+                    "text": "(Fig. 4(h)",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 621,
+                    "end": 627,
+                    "text": "Fig. 4",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 725,
+                    "end": 735,
+                    "text": "(Fig. 4(f)",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 1461,
+                    "end": 1470,
+                    "text": "Fig. 4(g)",
+                    "ref_id": "FIGREF3"
+                }
+            ],
+            "section": "A. Test Setup"
+        },
+        {
+            "text": "The smart mitigation module uses a piezoelectric transducer (Fig. 4(i) ) that vibrates at a frequency of 110 kHz. The vibrating portion of the transducer is a mesh-like structure with one side facing the liquid and the other side facing the atmosphere. The pressure drop created by the vibration converts liquid water into vapor, which exits the transducer as shown in Fig. 4(d) . The transducer runs at 12 V while consuming up to 0.2 A of current. Power is provided by four 18650 Li-ion cells connected in series with a total capacity of 2000 mAh, which is sufficient for a typical day of heavy use. All experiments were conducted in a well-controlled indoor environment with no nearby air vents; this is because aerosols are very sensitive to weak air flows (e.g., due to air-conditioning).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 60,
+                    "end": 70,
+                    "text": "(Fig. 4(i)",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 369,
+                    "end": 378,
+                    "text": "Fig. 4(d)",
+                    "ref_id": "FIGREF3"
+                }
+            ],
+            "section": "A. Test Setup"
+        },
+        {
+            "text": "Initially, the outputs of the two sensors were checked to ensure a stable and uniform PM concentration in the area around the experimental setup. Next, we performed two calibration experiments. First, the humidifier was turned ON, which imitates droplets produced by human actions, for 15 sec with the mitigation module turned OFF. The aerosols were then allowed to settle for 160 sec, with both PM sensors recording their local number and mass concentrations. Second, the same experiment was repeated, but with the smart mask's mitigation module turned ON under normal conditions i.e., with the humidifier turned OFF. Finally, the effectiveness of the smart mask was verified, as follows. The humidifier was turned ON for 15 sec, and the smart mask activated for 15 sec once its sensor detects a significant local change in PM concentration. The outputs of both PM sensors were then monitored until all aerosols settle out (\u223c160 sec). The results of these experiments are analyzed in the next section. Clearly, the mitigation module (mist generator) significantly reduces the local PM number within this critical size range -simple analysis suggests a time-averaged reduction of \u223c20%. Moreover, the PM count with the mitigation module ON is artificially increased due to the aerosols generated by the module itself ( Fig. 5(b) ). Once this self-interference term is subtracted, the time-averaged reduction in PM count due to the mask becomes even more significant - Fig. 5 (c) suggests \u223c40%.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 1318,
+                    "end": 1327,
+                    "text": "Fig. 5(b)",
+                    "ref_id": "FIGREF4"
+                },
+                {
+                    "start": 1467,
+                    "end": 1473,
+                    "text": "Fig. 5",
+                    "ref_id": "FIGREF4"
+                }
+            ],
+            "section": "B. Experimental Results"
+        },
+        {
+            "text": "The aerosol concentrations produced by the humidifier in the 0.3-2.5 \u00b5m range resemble those produced during daily activities, and are shown in Fig. 5(d) . Next, we analyze the effect of the smart mask on the concentration of these aerosolized particles. Figs. 5(e) and (f) compare the time-averaged mass and number concentrations with the mask ON and OFF for both internal (on the mask) and external (on the ground) PM sensors. The data shows that the mass concentrations measured by the external sensor in the 0.3-1.0 \u00b5m and 1.0-2.5 \u00b5m ranges increase by \u223c63% and \u223c60%, respectively, when the mask is turned ON. Similarly, the corresponding number concentrations increase by \u223c62% and \u223c50%, respectively. These results suggest that the smart mask is loading the local aerosol particles, as expected, thus causing them to fall faster to the ground.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 144,
+                    "end": 153,
+                    "text": "Fig. 5(d)",
+                    "ref_id": "FIGREF4"
+                }
+            ],
+            "section": "B. Experimental Results"
+        },
+        {
+            "text": "The mechanical structure of the mask is based on a open-source 3D design, but was modified to include a compartment for liquid storage. This compartment has two holes: one for refilling and the other for the transducer. The transducer is placed flush with the mask's outer surface, with one of its sides facing the liquid. A plastic layer is used to ensure a watertight seal around the transducer. Small perforations backed by replaceable air filters are added on the sides of the mask to ensure adequate air intake. Additionally, the edges are lined with silicone, thus ensuring a good seal with the skin. A second compartment on the mask holds the sensor and wiring harness, while a small pocket-or belt-worn external unit houses the battery and system controller. The mask was 3D-printed for testing purposes, but can instead be injection-molded to reduce cost for bulk production. In this case, the overall manufacturing cost per mask (including the electronics) is expected to be near $25 based on the bill of materials.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "D. Mechanical Design and Cost Analysis"
+        },
+        {
+            "text": "The integration of the mask with a smartphone is a vital part of the project. It helps in the transfer and visualization of the data, changing modes, and controlling the smart mask. We developed an android application that can connect to multiple smart masks at the same time. It collects data from the smart mask using Bluetooth connection. The mask sends important particulate matter data to the application which is processed and shown to the user in the form of real-time plots. Using the transferred data, the application can also suggest the user decontaminate the mask in the form of a notification when the number of particles the mask is exposed to exceeds a threshold. The application can control the switching of the mask between turn-ON and turn-OFF. Also, the application helps in choosing different functioning modes of the mask: automatic, and manual. In manual mode, the user has the power of when to turn-ON or turn-OFF the mask. In the automatic mode, the smart mask automatically switches based on the particulate matter density in its surroundings.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "E. Integration with smartphone"
+        },
+        {
+            "text": "We have presented a new paradigm of active closed-loop defense, in the form of a smart mask, against airborne pathogens including SARS-CoV-2. We have presented the system design, and using a functional prototype of the mask, also demonstrated the major operational characteristics. Various levels of smartness can be incorporated into the proposed system to control the time, duration, and intensity of mitigation based on awareness of the location (e.g., hospitals, quarantined zones, or care centers with infected patients), ambient conditions (e.g., humidity and air temperature, human occupancy), and overall health of the user (e.g., age, pre-existing conditions, etc.). The proposed mask can also be extended to protect against pollutants, dust particles, and pollen, e.g., for vulnerable populations with pollen and/or dust allergies. It can also be extended to other usage scenarios, e.g., military personnel exposed to harmful airborne particles; dentists performing dental procedures; and day-care or elementary schools where social distancing is hard to maintain. While more testing and evaluation is needed to fully establish the merits of the smart mask and identify remaining design challenges and associated trade-offs, the initial results are highly promising. The proposed defense can be applied to existing masks as an add-on reusable assembly, as well as to new mask designs as demonstrated here. It also has the potential to completely replace traditional masks for specific applications. Our future studies will focus on these topics.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "IV. CONCLUSION AND FUTURE WORK"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Improved strategy to control aerosol-transmitted infections in a hospital suite",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Memarzadeh",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "IAQ Conference: IAQ",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Natural ventilation for infection control in health-care settings. World Health Organization",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Chartier",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Pessoa-Silva",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Violent expiratory events: on coughing and sneezing",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Bourouiba",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Dehandschoewercker",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Bush",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Journal of Fluid Mechanics",
+            "volume": "745",
+            "issn": "",
+            "pages": "537--563",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "On air-borne infection: Study ii. droplets and droplet nuclei",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Wells",
+                    "suffix": ""
+                }
+            ],
+            "year": 1934,
+            "venue": "American journal of Epidemiology",
+            "volume": "20",
+            "issn": "3",
+            "pages": "611--618",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Mechanistic insights into the effect of humidity on airborne influenza virus survival, transmission and incidence",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Marr",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Tang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Van Mullekom",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Lakdawala",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Journal of the Royal Society Interface",
+            "volume": "16",
+            "issn": "150",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Face coverings, aerosol dispersion and mitigation of virus transmission risk",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Viola",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Peterson",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Pisetta",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Pavar",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Akhtar",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Menoloascina",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Mangano",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Dunn",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Gabl",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Nila",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "arXiv": [
+                    "arXiv:2005.10720"
+                ]
+            }
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "On the utility of cloth facemasks for controlling ejecta during respiratory events",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Kumar",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Nallamothu",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Shrivastava",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Jadeja",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Nakod",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Andrade",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Doshi",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Kumaraswamy",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "arXiv": [
+                    "arXiv:2005.03444"
+                ]
+            }
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Methods for sampling of airborne viruses",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Verreault",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Moineau",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Duchaine",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Microbiology and molecular biology reviews",
+            "volume": "72",
+            "issn": "3",
+            "pages": "413--444",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Type a influenza virus detection and quantitation by real-time rt-pcr",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Spackman",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Suarez",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Avian influenza virus",
+            "volume": "",
+            "issn": "",
+            "pages": "19--26",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Rapid and sensitive detection of respiratory virus molecular signatures using a silver nanorod array sers substrate",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Shanmukh",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Jones",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Driskell",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Dluhy",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Tripp",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Nano letters",
+            "volume": "6",
+            "issn": "11",
+            "pages": "2630--2636",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "A rapid and label-free platform for virus capture and identification from clinical samples",
+            "authors": [
+                {
+                    "first": "Y.-T",
+                    "middle": [],
+                    "last": "Yeh",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Gulino",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Sabestien",
+                    "suffix": ""
+                },
+                {
+                    "first": "T.-W",
+                    "middle": [],
+                    "last": "Chou",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Albert",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Lu",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Swaminathan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Proceedings of the National Academy of Sciences",
+            "volume": "117",
+            "issn": "2",
+            "pages": "895--901",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Stand-off biodetection with free-space coupled asymmetric microsphere cavities",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Ballard",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Baaske",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Vollmer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Sensors",
+            "volume": "15",
+            "issn": "4",
+            "pages": "8968--8980",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Required spectral resolution for bioaerosol detection algorithms using standoff laser-induced fluorescence measurements",
+            "authors": [
+                {
+                    "first": "\u00d8",
+                    "middle": [],
+                    "last": "Farsund",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Rustad",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Kasen",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Haavardsholm",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "IEEE Sensors Journal",
+            "volume": "10",
+            "issn": "3",
+            "pages": "655--661",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Single-shot stand-off chemical identification of powders using random raman lasing",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Hokr",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Bixler",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Noojin",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Thomas",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Rockwell",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Yakovlev",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Scully",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Proceedings of the National Academy of Sciences",
+            "volume": "111",
+            "issn": "34",
+            "pages": "12--320",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Fighting terrorism with terahertz",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Galoda",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Singh",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Ieee Potentials",
+            "volume": "26",
+            "issn": "6",
+            "pages": "24--29",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Sensing avian influenza viruses using terahertz metamaterial reflector",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Keshavarz",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Vafapour",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "IEEE Sensors Journal",
+            "volume": "19",
+            "issn": "13",
+            "pages": "5161--5166",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "CDC: Centers for disease control and prevention",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "United states environmental protection agency, list n: Disinfectants for use against sars-cov-2",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Overall architecture of the proposed smart mask.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "(a) Estimated size distribution of particles produced during talking, coughing, and sneezing[1]. (b) Estimated spread of droplets produced while normal exhalation, coughing, and sneezing. (c) Visual representation of the active protection provided by the proposed smart mask.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "(a) System-level block diagram, and (b) operational flowchart of the proposed smart mask.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "(a) Front, (b) side, and (c) top view of the smart mask design, including dimensions. (d) A prototype of the smart mask based on the design in (a)-(c). (e) The smart mask prototype in operation, showing the sensing and mitigation modules. (f) Experimental setup showing the smart mask and humidifier. (g) Particulate matter (PM) sensor used in the experiments. (h) Humidifier used to mimic aerosols produced from human activity. (i) Piezoelectric transducer used in the mist generator.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "The PM count for sizes 0.3-1.0 \u00b5m remaining near the smart mask: (a) decreases when the mitigation module is used, (b) is increased by the aerosol droplets generated by the smart mask itself, and (c) decreases even more significantly when the self-generated PM count is subtracted. (d) The PM number concentration produced by the humidifier when set to replicate daily activities like talking, coughing, and sneezing. Comparison of (e) mass, and (b) number concentrations from the two PM sensors (int: on the mask, and ext: on the ground) when the smart mask's mitigation function is turned ON and OFF.C. Key ObservationsFig. 5(a) shows PM number concentration detected by the sensor on the smart mask, with only the size range of interest (0.3-1.0 \u00b5m) considered, in two cases: mitigation module ON and OFF.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF1": {
+            "text": "DETAILED COMPARISON OF KEY FEATURES OF VARIOUS EXISTING MASKS AND THE PROPOSED SMART MASK.",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": []
+}

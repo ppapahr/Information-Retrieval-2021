@@ -1,0 +1,885 @@
+{
+    "paper_id": "885ba05c28c1ce1bb9f9bb130afdbf655069fc7d",
+    "metadata": {
+        "title": "Critical Care Explorations Critical Care Explorations Percutaneous Tracheostomy With Apnea During Coronavirus Disease 2019 Era: A Protocol and Brief Report of Cases",
+        "authors": [
+            {
+                "first": "Abesh",
+                "middle": [],
+                "last": "Niroula",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Emory University",
+                    "location": {
+                        "settlement": "Atlanta",
+                        "region": "GA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Keriann",
+                "middle": [
+                    "M"
+                ],
+                "last": "Van Nostrand",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Emory University",
+                    "location": {
+                        "settlement": "Atlanta",
+                        "region": "GA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": ";",
+                "middle": [],
+                "last": "Onkar",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "V",
+                "middle": [],
+                "last": "Khullar",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Emory University",
+                    "location": {
+                        "settlement": "Atlanta",
+                        "region": "GA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Seth",
+                "middle": [],
+                "last": "Force",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Emory University",
+                    "location": {
+                        "settlement": "Atlanta",
+                        "region": "GA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Wissam",
+                "middle": [
+                    "S"
+                ],
+                "last": "Jaber",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Emory University",
+                    "location": {
+                        "settlement": "Atlanta",
+                        "region": "GA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Alejandro",
+                "middle": [
+                    "H"
+                ],
+                "last": "Sardi",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Emory University",
+                    "location": {
+                        "settlement": "Atlanta",
+                        "region": "GA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "David",
+                "middle": [
+                    "M"
+                ],
+                "last": "Berkowitz",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Emory University",
+                    "location": {
+                        "settlement": "Atlanta",
+                        "region": "GA"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Objective: To assess feasibility of modified protocol during percutaneous tracheostomy in coronavirus disease 2019 pandemic era. Design: A retrospective review of cohort who underwent percutaneous tracheostomy with modified protocol. Settings: Medical, surgical, and neurologic ICUs. Subjects: Patients admitted in medical, surgical, and neurologic units with prolonged need of mechanical ventilation or inability to liberate from the ventilator. Interventions: A detailed protocol was written. Steps were defined to be performed before apnea and during apnea. A feasibility study of 28 patients was conducted. The key aerosol-generating portions of the procedure were performed with the ventilator switched to standby mode with the patient apneic. Measurements and Main Results: Data including patient demographics, primary diagnosis, age, body mass index, and duration of apnea time during the tracheostomy were collected. Average ventilator standby time (apnea) during the procedure was 238 seconds (3.96 min) with range 149 seconds (2.48 min) to 340 seconds (5.66 min). Single-use (disposable) bronchoscopes (Ambu A/S [Ballerup, Denmark] or Glidescope [Verathon, Inc., Bothell, WA]) were used during all procedures except in nine. No desaturation events occurred during any procedure. Conclusions: Percutaneous tracheostomy performed with apnea protocol may help minimize aerosolization, reducing risk of exposure of coronavirus disease 2019 to staff. It can be safely performed with portable bronchoscopes to limit staff and minimize the surfaces requiring disinfection post procedure.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "T he rapid spread of coronavirus disease 2019 between December 2019 and April 2020 has left a number of unanswered questions. A total of 187 countries have now reported approximately 3.5 million cases, with 250,000 deaths across the world (1). Ten percent to 20% of patients with confirmed COVID-19 require critical care with 5-15% of patients requiring mechanical ventilation (2, 3) . As cases continue to rise, so will the number of tracheostomies performed. The safety of aerosol-generating procedures (AGPs) including tracheostomy is of concern due to lack of experimental data. Multiple societies have recommended testing to confirm lack of active disease, use of enhanced personal protective equipment (PPE), limitation of staff, and meticulous planning of steps during tracheostomy placement to limit the procedure time (4, 5) . It has been suggested to hold ventilation during the tracheostomy procedure to minimize the risk of virus aerosolization and droplet exposure to staff (6, 7) . However, details of how and when apnea should be managed have not been described. In addition, no further data on apnea time and intraprocedural problems with these protocols have been reported.",
+            "cite_spans": [
+                {
+                    "start": 377,
+                    "end": 380,
+                    "text": "(2,",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 381,
+                    "end": 383,
+                    "text": "3)",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 827,
+                    "end": 830,
+                    "text": "(4,",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 831,
+                    "end": 833,
+                    "text": "5)",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 987,
+                    "end": 990,
+                    "text": "(6,",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 991,
+                    "end": 993,
+                    "text": "7)",
+                    "ref_id": "BIBREF6"
+                }
+            ],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "Our goal is to describe a detailed stepwise approach to perform a percutaneous tracheostomy utilizing apnea to limit the risk of viral aerosolization. Through this feasibility study, we intend to describe our experience with the newly developed apnea protocol for percutaneous tracheostomy placement and demonstrate its safety.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "OBJECTIVE"
+        },
+        {
+            "text": "This protocol was implemented at two different hospitals within Emory healthcare system between March 15, 2020, and May 15, 2020. Both of them are major teaching hospitals in Atlanta, Georgia. Retrospective review of patient charts who underwent percutaneous tracheostomy under modified protocol was performed. Local institutional review board (IRB) reviewed and approved (IRB#00046825) this retrospective review. The protocol was designed to minimize the number of staff involved, the procedure time, and the length of time that viral droplets could be aerosolized. The detailed procedure protocol is included in Appendix 1 (Supplemental Digital Content 1, http://links.lww.com/CCX/ A193) and includes 20 steps.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "METHODS"
+        },
+        {
+            "text": "A brief summary of the most important steps is as follows. Preparation of kit, sedation, and neuromuscular blockade followed by positioning of the patient can be performed with limited staff inside the patient's room. Single-use (disposable) bronchoscopes (either a Scope 4 Broncho Regular endoscope with Ambu a-View [Ambu A/S, Ballerup, Denmark] or Bflex Glidescope with Glidescope Core [Verathon Inc., Bothell, WA]) are used to avoid the need for endoscopy staff. As these disposable scopes could be used with a single tablet-sized screen and stand, this minimized surfaces that required disinfection post procedure. Next, the proceduralist prepares a sterile neck field, administers local anesthetic, and makes the skin incision. The ventilator is now placed on standby mode (patient apnea) before opening the ventilator circuit. Once the bronchoscope is inserted and endotracheal tube (ETT) repositioned, the remainder of the tracheostomy procedure is performed while the patient is apneic. Once the tracheostomy tube is placed, ventilation is not resumed until the circuit is connected to the tracheostomy tube and the cuff is inflated.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "METHODS"
+        },
+        {
+            "text": "In some cases, if apnea time is prolonged due to suctioning for visibility or in case of desaturation, the bronchoscope can be removed, ETT repositioned, and ETT cuff reinflated before resuming ventilation. This will allow for reoxygenation before completing the procedure and help avoid prolonged apnea. Summary of helpful tips to consider is included in Table 1 . Refer to Appendix 1 (Supplemental Digital Content 1, http://links.lww.com/CCX/ A193) for more troubleshooting details.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 356,
+                    "end": 363,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "METHODS"
+        },
+        {
+            "text": "Once protocol was written, it was performed on 28 consecutive patients undergoing percutaneous tracheostomy. This protocol was not used for patients undergoing tracheostomy who were felt not to be able to tolerate periods of apnea such as patients with existing external ventricular drain, increased intracranial pressure, and/or hemodynamic instability. Preprocedural briefing and planning were performed before all tracheostomy procedures to determine the role of each personnel. Plans for the apnea protocol were discussed with the primary team to address any related concerns.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "METHODS"
+        },
+        {
+            "text": "Review of charts was performed to determine age, sex, body mass index (BMI), comorbidities, primary diagnosis, and days on ventilator before tracheostomy. Possible complications were predefined as acute bleeding, desaturation events during procedure (predefined as >10% from baseline), ring fracture, tracheostomy tube malposition, and pneumothorax and were monitored.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "METHODS"
+        },
+        {
+            "text": "We report details of 28 cases of percutaneous tracheotomy performed following the above apnea protocol. Eleven patients were in a neurologic ICU, three in surgical ICU, and 14 in medical ICU. All patients were hospitalized with respiratory failure during the COVID-19 pandemic. Eleven patients had unknown COVID-19 status before the procedure and seven tested negative for COVID-19. Ten patients (seven male, three female) were confirmed to have a primary diagnosis of COVID-19-related acute respiratory distress syndrome. The average age was 56 years old. Nineteen were male, and nine were female. The average BMI was 30. The average number of ventilator days before tracheostomy was 16 days. All patients had ETT of 7.5 mm or larger at the time of procedure. Average positive end-expiratory pressure (PEEP) was 7, and Fio 2 was 0.4. Two patients were on venovenous extracorporeal membrane oxygenation at the time of the tracheostomy. All staff present during all procedures used full PPE with N95, goggles or face shield, full body gown with hat, and gloves.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "RESULTS"
+        },
+        {
+            "text": "Average ventilator standby time (apnea) during the procedure was 238 seconds (3.96 min) with range 149 seconds (2.48 min) to 340 seconds (5.66 min). Disposable bronchoscopes (Ambu or Glidescope) were used during all procedures except, in nine cases, a reusable flexible diagnostic bronchoscope (Olympus BF-P190 [Olympus Corporation of the Americas, Center Valley, PA]) was used due to lack of availability of disposable scope. All tracheostomy tubes were positioned either in first-second or second-third tracheal rings. Amount of secretions in the ETT and the need of suctioning for visibility were the main contributing factors to longer time for tracheostomy placement. All patients had baseline saturation of greater than 95% on PEEP less than 10 and Fio 2 less than 0.5 before preoxygenation and positioning. The tracheostomy was performed bedside in the ICU with either three or four people inside the room. No desaturation more than 10% from baseline was noted during the period of apnea in any patients except in one neurologic ICU patient (at 4 minutes of apnea), where transient drop in saturations from 100% to 78% occurred after placement of tracheostomy tube with immediate recovery within a few seconds once ventilation was restarted. No hemodynamic instability occurred in any patients during apnea. Similarly, no complications (acute bleeding, pneumothorax, ring fracture, or tracheostomy tube malposition) occurred. One occurrence of circuit disconnect (connection of tracheostomy tube and ventilator circuit) outside of the apnea period occurred during suture placement.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "RESULTS"
+        },
+        {
+            "text": "In this brief feasibility study, we have described a modified percutaneous tracheostomy placement protocol designed to: 1) limit staff; 2) minimize droplet exposure; and 3) optimize procedural time. In addition, we have demonstrated its safety in both COVID-19-positive and COVID-19 unknown patients.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "During the severe acute respiratory syndrome outbreak, it was suggested that dedicating team members to perform certain procedures improved outcomes (7) . Similarly, preprocedural safety checks and apnea during procedure have been recommended previously by some societies and guidelines (5, 6, 8) . In our knowledge, this is a first study to describe detail steps and safety data on actual patients.",
+            "cite_spans": [
+                {
+                    "start": 149,
+                    "end": 152,
+                    "text": "(7)",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 287,
+                    "end": 290,
+                    "text": "(5,",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 291,
+                    "end": 293,
+                    "text": "6,",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 294,
+                    "end": 296,
+                    "text": "8)",
+                    "ref_id": "BIBREF7"
+                }
+            ],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "We have demonstrated that the percutaneous tracheostomy procedure can be done with three to four staff members in the room: a proceduralist, a bronchoscopist, and an ICU nurse. Fourth person to manage sedation may be helpful but is not necessary. Use of a disposable bronchoscope minimizes the amount of staff needed to support the procedure. A typical flexible bronchoscope requires endoscopy staff participation and uses a large procedure cart with transport of dirty bronchoscopes through the hospital. The use of a disposable scope can be done without support staff and without a procedure cart. This minimizes both the staff exposed and the surfaces needed to be disinfected post procedure. Limiting the number of staff for the procedure has significant implications on the use of critical PPE as well.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "AGP such as intubation, bronchoscopy, tracheostomy, or disconnection of ventilator circuit including cuff deflation risks exposure of staff to the active virus (9) (10) (11) . We modified the procedure for placement of a percutaneous tracheostomy by following a protocol that allows for the ventilator to be placed on standby during the steps with highest risk for aerosolization. Keeping the ventilator circuit closed at all times and opening only during periods of apnea provides the lowest risk of exposure to all staff in the room. This is of utmost importance in known COVID-19 patients. It is also important in patients with low suspicion or in COVID-19 polymerase chain reaction test-negative patients as there may be asymptomatic carriers with false-negative tests (12) .",
+            "cite_spans": [
+                {
+                    "start": 160,
+                    "end": 163,
+                    "text": "(9)",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 164,
+                    "end": 168,
+                    "text": "(10)",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 169,
+                    "end": 173,
+                    "text": "(11)",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 773,
+                    "end": 777,
+                    "text": "(12)",
+                    "ref_id": "BIBREF11"
+                }
+            ],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "In order to adequately determine risk of AGP to healthcare workers (HCWs) and describe the lower risk of this technique, measuring aerosol particles during these procedures, banking air samples, and analyzing them for presence of viral RNA would be necessary (13, 14) . This will require collaboration among environmental scientist, physicians, microbiologist, and hospital administration. This is an important future direction during COVID-19 era to accurately study actual risk involved with AGPs. In the meantime, we can only extrapolate from previous studies that limiting the open circuits that theoretically increase aerosol generation would mitigate the risk to HCW.",
+            "cite_spans": [
+                {
+                    "start": 259,
+                    "end": 263,
+                    "text": "(13,",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 264,
+                    "end": 267,
+                    "text": "14)",
+                    "ref_id": "BIBREF13"
+                }
+            ],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "Procedural time was minimized by combining steps which are typically performed in sequence. Preparation of the kit outside of the ICU room minimizes the amount of time staff is in the isolation room. All steps of the procedure up to the insertion of the needle into the airway are performed before the bronchoscope being inserted into the airway. The bronchoscope with adapter and ETT are repositioned simultaneously. With our procedural modifications, the average apnea time for this protocol was 3.96 minutes. No desaturation events during the procedure were noted, except one transient desaturation event with immediate recovery. We suggest that the average patient undergoing tracheostomy should be able to tolerate approximately 5 minutes of apnea. Indeed, we have demonstrated safety in all patients who underwent tracheostomy under this protocol.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "There are some limitations in terms of who is a candidate for this modified percutaneous tracheostomy protocol. Although we report that this protocol is feasible to perform in critically ill ICU patients, it may not be possible to implement this protocol for every patient. In patients with low lung reserve or exceptional high PEEP specifically in some COVID-19 patients, apnea may not be as well tolerated. Patients with elevated intracranial pressure may be excluded given risk of hypercapnia with prolonged apnea. This protocol may need modification for site-specific limitations, such as availability of equipment, staff, PPE, or other resources. Disposable bronchoscopes may not be readily available; hence, a dedicated bronchoscope cart may be used. However, in our experience, the use of bronchoscopy cart during COVID-19 era adds significant amount of time and resource for meticulous surface cleaning compared with a small screen and stand of a disposable bronchoscope.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "Steps of identifying appropriate landmarks, skin incision/dissection, and precise insertion of the needle followed by placement of tracheostomy tube become extremely important to limit apnea time. Hence, these steps may be ideal only for the most experienced operator. Inexperienced operators or patients with difficult anatomy may lead to an unsafe prolongation of apnea time. Close attention must be paid at all times to not accidentally open the ventilator circuit especially during placement of tracheostomy collar or suture placement. In all cases, we recommend preoxygenation with 100% Fio 2 before apnea. During the procedure, we recommend dedicating a team member (bronchoscopist or ICU nurse) to monitor hemodynamic parameters, including heart rate, blood pressure, and oxygen saturation. Overall, albeit small sample size, due to diverse nature of patients in our cohort (medical ICU, surigcal ICU, neurologic ICU), this protocol can be applied to various patients. With meticulous planning, troubleshooting, and team work, it could be performed safely in most of the critically ill patients.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "In our opinion, there is a lack of data over timing and indications of tracheostomy in COVID-19 patients. This discussion is beyond the scope of this procedural technique-based article. It is, however, informative to describe our process for arriving at the decision to proceed with tracheostomy. There are currently recommendations from multiple societies that tracheostomy should not be done early (4-6) on COVID-19-positive patients. This is supported by recent U.S.-based data of 2,634 patients, average time for an outcome either discharge or death was approximately 4-5 days. In the same study, among 20% of 5,700 patients who required mechanical ventilation, 24% died, 3% were discharged alive, and 72% were still in hospital (3) . Hence, how many of these patients will need tracheostomy is unclear.",
+            "cite_spans": [
+                {
+                    "start": 733,
+                    "end": 736,
+                    "text": "(3)",
+                    "ref_id": "BIBREF2"
+                }
+            ],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "We have based the criteria to safely proceed with tracheostomy on COVID-19-positive patients similar to criteria we have followed in non-COVID patients. Ventilatory support is one such factor. There is a wide variability in what is considered to be an acceptable level of Fio 2 and PEEP to be able to perform tracheostomy in a safe and low-risk manner (15) (16) (17) . It has been our general practice to consider patients with PEEP greater than 10 or Fio 2 greater than 60% to be at high risk for complications with tracheostomy. We have applied the same \"cut-offs\" to COVID-19-positive patients. In addition to being a high complication rate, patients requiring ventilatory support more than PEEP 10 and Fio 2 60%, may be at high risk for poor long-term outcomes and therefore the decision to proceed with tracheostomy should be discussed in detail. This is especially true for the COVID-19-positive patients. We have found it helpful to have formed a multidisciplinary COVID-19 tracheostomy adjudication group (including intensivists; interventional pulmonologists; cardiothoracic surgeons; ears, nose and throat physicians; infectious disease specialists; anesthesiologists; and palliative care) who have varying degree of experience with COVID-19-positive patients and can provide guidance and recommendations about proceeding with tracheostomy if there is difference in opinion between clinicians. Ultimately, the indication and timing of tracheostomy in this cohort should be based on clinician's judgment, individual patient profile, resources available, and hospital protocol.",
+            "cite_spans": [
+                {
+                    "start": 352,
+                    "end": 356,
+                    "text": "(15)",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 357,
+                    "end": 361,
+                    "text": "(16)",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 362,
+                    "end": 366,
+                    "text": "(17)",
+                    "ref_id": "BIBREF16"
+                }
+            ],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "We report on 28 patients who underwent a modification to the percutaneous tracheostomy during the COVID-19 outbreak. This modified procedure can be safely performed with 3-4 HCWs in the room with minimal equipment and with the ventilator on standby mode. By performing the procedure with a disposable bronchoscope and during a period of apnea, we have limited the staff exposed, optimized procedure time, and may have minimized aerosolization of the virus. Although it is not clear when the peak of the virus will affect the world, it is safe to conclude that there will be thousands if not millions more patients affected who will require prolonged mechanical ventilation. We hope that this protocol can provide a guideline for performing a percutaneous tracheostomy as safely as possible to minimize spread of the virus and maximize healthcare worker safety.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "CONCLUSIONS"
+        },
+        {
+            "text": "Supplemental digital content is available for this article. Direct URL citations appear in the HTML and PDF versions of this article on the journal's website (http://journals.lww.com/ccejournal).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "CONCLUSIONS"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "An interactive web-based dashboard to track COVID-19 in real time",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Dong",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Du",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Gardner",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet Infect Dis",
+            "volume": "20",
+            "issn": "",
+            "pages": "533--534",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Characteristics of and important lessons from the coronavirus disease 2019 (COVID-19) outbreak in China: Summary of a report of 72 314 cases from the Chinese center for disease control and prevention",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Mcgoogan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "JAMA",
+            "volume": "323",
+            "issn": "",
+            "pages": "1239--1242",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Presenting characteristics, comorbidities, and outcomes among 5700 patients hospitalized with COVID-19 in the New York City Area",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Richardson",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Hirsch",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Narasimhan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "JAMA",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "South African Society of Otorhinolaryngology and Head and Neck Surgery: CORONAVIRUS: Update for the ENT Surgeon",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Guidance for Surgical Tracheostomy and Tracheostomy Tube Change During the COVID-19 Pandemic",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Uk Ent",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Safety recommendations for evaluation and surgery of the head and neck during the COVID-19 pandemic",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Givi",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Schiff",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Chinn",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "JAMA Otolaryngol Head Neck Surg",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Surgical considerations for tracheostomy during the COVID-19 pandemic: Lessons learned from the severe acute respiratory syndrome outbreak",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Tay",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Khoo",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Loh",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "JAMA Otolaryngol Head Neck Surg",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "CORONA-steps for tracheotomy in COVID-19 patients: A staff-safe method for airway management",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Pichi",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Mazzola",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Bonsembiante",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Oral Oncol",
+            "volume": "105",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Aerosol generating procedures and risk of transmission of acute respiratory infections to healthcare workers: A systematic review",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Tran",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Cimon",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Severn",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "PLoS One",
+            "volume": "7",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Centers for Disease Control and Prevention Epicenters Program: Characterization of aerosols generated during patient care activities",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "O&apos;neil",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Leavey",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Clin Infect Dis",
+            "volume": "65",
+            "issn": "",
+            "pages": "1335--1341",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Centers for Disease Control and Prevention: Infection Control Precautions for Aerosol-Generating Procedures on Patients Who Have Suspected Severe Acute Respiratory Syndrome (SARS)",
+            "authors": [],
+            "year": 2013,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Detection of SARS-CoV-2 in different types of clinical specimens",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Gao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "JAMA",
+            "volume": "323",
+            "issn": "",
+            "pages": "1843--1844",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Bacteria emitted in ambient air during bronchoscopy-A risk to health care workers?",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Marchand",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Duchaine",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Lavoie",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Am J Infect Control",
+            "volume": "44",
+            "issn": "",
+            "pages": "1634--1638",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "EASE Study Consortium: Influenza aerosols in UK hospitals during the H1N1 (2009) pandemic-The risk of aerosol generation during medical procedures",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Thompson",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Pappachan",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Bennett",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "PLoS One",
+            "volume": "8",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "A prospective, randomized study comparing percutaneous with surgical tracheostomy in critically ill patients",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Freeman",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Isabella",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Cobb",
+                    "suffix": ""
+                }
+            ],
+            "year": 2001,
+            "venue": "Crit Care Med",
+            "volume": "29",
+            "issn": "",
+            "pages": "926--930",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Percutaneous tracheostomy",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Mehta",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Mehta",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Ann Card Anaesth",
+            "volume": "20",
+            "issn": "1",
+            "pages": "19--25",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Percutaneous tracheostomy: A comprehensive review",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Rashid",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Islam",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "J Thorac Dis",
+            "volume": "9",
+            "issn": "10",
+            "pages": "1128--1138",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "TABREF0": {
+            "text": "Tips to Consider During Percutaneous Tracheostomy With Apnea Protocol Plan ahead \u2022 Proper personal protective equipment (N95, goggles, face shield, hat, full body gown, double gloving) \u2022 Prepare a resource bag (extra tracheostomy tube, spare ETT, bronchoscope adapter etc) Reposition ETT to mid-trachea, reinflate ETT cuff, remove bronchoscope, closed circuit, and resume ventilation Secretions in ETT \u2022 Try to push secretions into lower airways if possible rather than suctioning \u2022 If necessary to remove bronchoscope to clear or wipe secretions, perform under apnea ETT = endotracheal tube.",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "The authors have disclosed that they do not have any potential conflicts of interest.For information regarding this article, E-mail: david.berkowitz@emoryhealthcare.org",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "acknowledgement"
+        }
+    ]
+}

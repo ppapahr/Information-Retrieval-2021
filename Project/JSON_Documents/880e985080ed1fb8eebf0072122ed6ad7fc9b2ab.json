@@ -1,0 +1,1102 @@
+{
+    "paper_id": "880e985080ed1fb8eebf0072122ed6ad7fc9b2ab",
+    "metadata": {
+        "title": "",
+        "authors": []
+    },
+    "abstract": [],
+    "body_text": [
+        {
+            "text": "As society becomes more advanced, so does the technology that accompanies it; as software and the field of artificial intelligence and machine learning begin to evolve, so must society. The most significant point against automation's progress is the idea that it can replace the complex human role in the process [1, 2] . In the field of diagnostic radiology there is a common distrust in Computer-Aided Detection (CAD) with the underlying reasons ranging anywhere from it being a somewhat recent addition to the field in the early 2000s to CAD's seemingly inability to consistently provide a benefit to the radiologist [3, 4] . This study intends to illustrate that current CAD is not an adequate replacement for the human input required to interpret mammograms accurately. This study intends to decrease the current anxiety that both current and future radiologists may have regarding the field's security. Among women in the United States, breast cancer remains the second most diagnosed type of cancer after skin cancer, with this statistic holding when extrapolated to the worldwide population [5] [6] [7] [8] . As such, one cannot neglect the importance of early detection through routine mammography screening, and the early detection of breast cancer is associated with better outcomes [5, 6] . However, with each mammogram taken, there must be a radiologist that not only reads it but does so with both high accuracy and at a high volume. CAD-based mammography systems have seen extensive use in the United States following their introduction in 2001; however, since its introduction, CAD has received mixed approval from radiologists regarding its performance [3, 4] . One of the more common thoughts is that CAD itself may adversely affect radiologist performance and increase the number of unnecessary biopsies while providing no significant improvement in cancer detection rates [3] [4] [5] [6] [7] [8] [9] . However, while CAD has seen noticeable improvements in accuracy, it could be argued that it remains in its infancy 20 years after its introduction. With that in mind, should CAD be partnered with a radiologist to emulate a double read, the overall theoretical cost could remain low [1, 10, 11] . This would allow an increase in volume to be adopted by the overseeing radiologist [1, 10, 11] . If efficiently implemented into the healthcare system, this increase in volume could accelerate the decrease in breast cancer mortality by expanding access to high-quality preventive care at a fraction of the cost [5, 6, 8, 12, 13] . During the extent of this study, patient information and data on the diagnosis was gathered post patient visit. Inclusion criteria for patient eligibility were that the patient had to be over the age of 18 and had received either craniocaudal (CC) or mediolateral oblique (MLO) mammography during their visit. The patient must have been categorized under Breast Imaging, Reporting & Data System (BI-RADS) as category 6, biopsy-proven malignancy, between January 1st, 2019, and December 31st, 2020. Patient's data was not eligible for analysis in the study if they lacked proper mammogram/breast imaging, if there was an inability to access CAD data for the patient's imaging, or if they received a pathology report negative for breast cancer (a negative report being classified as BI-RADS category 1 or 2). If the patient met all inclusion criteria and none of the exclusion criteria, their first name, last name, and medical records number (MRN) were recorded within a master data sheet for safekeeping. University of Texas Medical Branch Institutional Review Board issued approval IRB #20-0018.",
+            "cite_spans": [
+                {
+                    "start": 313,
+                    "end": 316,
+                    "text": "[1,",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 317,
+                    "end": 319,
+                    "text": "2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 620,
+                    "end": 623,
+                    "text": "[3,",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 624,
+                    "end": 626,
+                    "text": "4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 1099,
+                    "end": 1102,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 1103,
+                    "end": 1106,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 1107,
+                    "end": 1110,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 1111,
+                    "end": 1114,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 1294,
+                    "end": 1297,
+                    "text": "[5,",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 1298,
+                    "end": 1300,
+                    "text": "6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 1670,
+                    "end": 1673,
+                    "text": "[3,",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 1674,
+                    "end": 1676,
+                    "text": "4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 1892,
+                    "end": 1895,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 1896,
+                    "end": 1899,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 1900,
+                    "end": 1903,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 1904,
+                    "end": 1907,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 1908,
+                    "end": 1911,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 1912,
+                    "end": 1915,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 1916,
+                    "end": 1919,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 2204,
+                    "end": 2207,
+                    "text": "[1,",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 2208,
+                    "end": 2211,
+                    "text": "10,",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 2212,
+                    "end": 2215,
+                    "text": "11]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 2301,
+                    "end": 2304,
+                    "text": "[1,",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 2305,
+                    "end": 2308,
+                    "text": "10,",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 2309,
+                    "end": 2312,
+                    "text": "11]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 2529,
+                    "end": 2532,
+                    "text": "[5,",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 2533,
+                    "end": 2535,
+                    "text": "6,",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 2536,
+                    "end": 2538,
+                    "text": "8,",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 2539,
+                    "end": 2542,
+                    "text": "12,",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 2543,
+                    "end": 2546,
+                    "text": "13]",
+                    "ref_id": "BIBREF12"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The number of patients included in the study depended mainly on the volume seen between January 1st, 2019 and December 31st, 2020; however, a sample size between 50 and 100 was predicted based on past trends. Due to the time-limited storage of the CAD data within the institution's system, only the most recent CAD reads were used throughout this study. Mammogram imaging and CAD reads were obtained and viewed via the Hologic \"SecurView\u00ae DX\" workstation (Hologic, Marlborough, MA, USA) and the included proprietary software. Because of limitations to the CAD data storage, the CAD annotated images of the most recent CAD reads were exported to a password-encrypted disk drive that remained locked within the institution's Department of Radiology. Images were used to record CAD data and were deidentified and disposed of upon completion of the study. Once the CAD reads had been saved, a tally of all CAD markers was recorded onto a master datasheet.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Materials And Methods"
+        },
+        {
+            "text": "Variables that were recorded onto the master datasheet include patient's name, MRN, patient identifier code, CAD software used (Hologic or General Electric [Boston, MA, USA]), left and right CC CAD marks, left and right MLO view CAD marks, what was detected in CC CAD, what was detected in MLO CAD, breast density (almost entirely fat, scattered fibroglandular, heterogeneously dense, and extremely dense), radiologic findings of biopsy-proven cancer (mass, calcification, or asymmetry), and the cancer type by pathology report. Each CC and MLO view had their CAD data in terms of the amount of \"CAD markings\" recorded. The columns \"Cancer CC Detected\" and \"Cancer MLO Detected\" were both be used to determine whether or not the left and right breast were found to have one of the five findings, Cancer Hit, Cancer Missed, Cancer Missed w/ Benign Findings, Benign Findings, or No Findings. The two instances of CAD used at the institution included the Hologic and General Electronic's iteration of the CAD algorithm. The Hologic CAD software markings asterisk, triangle, and cross represent masses, calcification clusters, and a combination mass + calcifications cluster, respectively. Additionally, the General Electric CAD software marked a circle and square representing a mass and calcifications cluster, respectively. Breast density and the final pathology report findings were extracted from the institution's Epic EMR. Once data gathering has concluded, all variables recorded aside from the patient name and MRN were transferred to a separate data analysis datasheet for statistical analysis. A unique study identifier was used in the data analysis datasheet to help ensure patient privacy and confidentiality.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Materials And Methods"
+        },
+        {
+            "text": "Data from 24 female breast cancer patients from January 31st, 2019 to April 31st, 2020, was gathered from the institution's Epic emergency medical record. While the original protocol called for this study to continue for the entire 2020 year, it was decided to end the study prematurely due to the COVID-19 pandemic that began in the spring of 2020.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Results"
+        },
+        {
+            "text": "Of the 24 patients who met inclusion criteria and underwent CAD imaging, radiologists were able to detect all cancer, and CAD was able to detect most of the cancer. CAD missed the detection of cancer in one of the two views (CC and MLO) for three patients. These data are shown in Table 1 , including pathology findings and markings depicted from CAD for each of the patients. The type of breast density also plays a big part in CAD readings. It was found that CAD tends to have a hard time differentiating between malignant or benign in dense breast tissue. In dense breasts (heterogeneously dense or extremely dense), it was found that CAD had an average total marking of 5.33 compared to the fatty breast (fatty and scattered fibroglandular densities) of 4.73, shown in Table 2 . An example of dense breasts is shown in Figure 1 , and an example of fatty breasts is shown in Figure 2 . ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 281,
+                    "end": 288,
+                    "text": "Table 1",
+                    "ref_id": "TABREF2"
+                },
+                {
+                    "start": 773,
+                    "end": 780,
+                    "text": "Table 2",
+                    "ref_id": "TABREF3"
+                },
+                {
+                    "start": 823,
+                    "end": 831,
+                    "text": "Figure 1",
+                    "ref_id": null
+                },
+                {
+                    "start": 878,
+                    "end": 886,
+                    "text": "Figure 2",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "Artificial intelligence-based algorithms that incorporate machine learning and deep learning are drawing a lot of interest amongst radiologists and the public. However, at this point, those algorithms are not currently widely adopted by breast imaging centers across the nation. The current widely used CAD technology is still too unrefined at the moment. Artificial intelligence-based algorithms improving upon the current CAD would require further research in addition to further investigations into how its implementation in a clinical setting affects patient care. McKinney et al. support this by noting that clinical trials are needed for AI; however, they believe that AI has a role in the future in aiding early detection of breast cancer once refined [1, 7, 14, 15] . McKinney et al.'s [15] study illustrated that CAD is capable of excellent results in controlled testing, but the opposite may occur in real-world scenarios due to various factors including, but not limited to, the radiologists ignoring or misusing CAD due to the high frequency of marks detected that showed no signs of cancer [3, 4, 7, 14] which result in a large number of callbacks [7, 14] .",
+            "cite_spans": [
+                {
+                    "start": 759,
+                    "end": 762,
+                    "text": "[1,",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 763,
+                    "end": 765,
+                    "text": "7,",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 766,
+                    "end": 769,
+                    "text": "14,",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 770,
+                    "end": 773,
+                    "text": "15]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 794,
+                    "end": 798,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 1103,
+                    "end": 1106,
+                    "text": "[3,",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 1107,
+                    "end": 1109,
+                    "text": "4,",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 1110,
+                    "end": 1112,
+                    "text": "7,",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 1113,
+                    "end": 1116,
+                    "text": "14]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 1161,
+                    "end": 1164,
+                    "text": "[7,",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 1165,
+                    "end": 1168,
+                    "text": "14]",
+                    "ref_id": "BIBREF13"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Regarding CAD's effect on radiologist's reads, Du-Crow et al. [1] showed that observer sensitivity was significantly greater for markers detected by CAD compared to the same markers without CAD (t51=6.56, p<0.001); with no significant difference between no-CAD and CAD conditions on markers that were not detected by CAD. This shows that CAD itself may play a significant role in augmenting the radiologist's ability as a tool. The data shows that while CAD's algorithm can detect a potential instance of breast cancer, CAD is not currently able to differentiate between benign and malignant cases of breast cancer. Due to this lack of differentiation, CAD detects many benign findings that untrained eye could be falsely reported as cancer requiring further workup. In working up these cases, unnecessary harm and financial burden may be placed upon the patient through an increase in unnecessary biopsies, and all the additional imaging and procedural cost needed to confirm the findings are non-cancerous [9] . Winch et al. [9] concluded that false positives leading to unnecessary biopsy and further testing could cause patients to worry and develop a fear of cancer until the results are returned and discussed. In addition to this, the legal implication and the liability holder of having a CAD-only system in a hospital is a topic that has not been discussed and would not have a clear-cut answer in the policy.",
+            "cite_spans": [
+                {
+                    "start": 62,
+                    "end": 65,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 1008,
+                    "end": 1011,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 1027,
+                    "end": 1030,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Overall, due to the relative infancy of CAD, the diversity of the real-world setting, in addition to the program's inexperience with these demographics, has allowed conflicting information regarding the accuracy of CAD to be published. For example, Lehman et al. [3, 4] demonstrate that there was no improvement in the diagnostic accuracy of CAD from a sample of extensive data from the US Breast Cancer Surveillance Consortium registry of clinical mammography interpretations. However, another study on digital breast tomosynthesis CAD system found that detected a good amount of breast cancers that presented via masses or microcalcification clusters (89%, 99 of 111) with an acceptable false-positive rate.",
+            "cite_spans": [
+                {
+                    "start": 263,
+                    "end": 266,
+                    "text": "[3,",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 267,
+                    "end": 269,
+                    "text": "4]",
+                    "ref_id": "BIBREF3"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "While it may be impossible to truly understand whether these conflicting views on CAD are caused by varying patient population or differing technology, further studies are certainly needed to explore the interactions of radiologists and CAD systems [16] .",
+            "cite_spans": [
+                {
+                    "start": 249,
+                    "end": 253,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Technology will continue to advance, and artificial intelligence will improve. However, machines replacing humans is unlikely because studies similar to this one will likely continue to show that human plus machine is greater than machine alone. Thus, it is more likely that the technology will add a tool aiding radiologist interpretation rather than replace the radiologist.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusions"
+        },
+        {
+            "text": "Study limitations include factors such as our sample size, which may decrease the significance and generalizability of our results, limitations in the number of CAD data retrieved, differences in detection algorithms between different CAD databases, and the potential decrease of generalizability due to differences in the patient population. Of note, this study had to end prematurely due to the impact of COVID-19 on elective procedures during the Spring, Summer, and Fall of 2020. This limited the number of our patients in the study, which could have provided more support to the significant findings we found with our 24 patients. It may be challenging to be able to compare the various CAD systems used by most institutions accurately; however, it may be possible to alleviate the study limitations of sample size, patient generalizability, and CAD generalizability by creating a multi-institution partnership designed around comparing the CAD systems across the varying institutions. A study on this scale may be difficult to organize due to a lack of logistics and the potential differences the different CAD systems may have in reporting results.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusions"
+        },
+        {
+            "text": "Human subjects: Consent was obtained by all participants in this study. UTMB Institutional Review Board issued approval IRB # 20-0018. The UTMB Institutional Review Board (IRB) reviewed the above-referenced research project and determined this request met the criteria for exemption from review by the IRB in accordance with the 45 CFR 46.104. This determination was made on 02-Mar-2020. Further review of this project by the IRB is not required unless the protocol changes in the use of human subjects. In that case, the project must be resubmitted to the IRB for review. Please inform the IRB when this research project is completed. If you have any questions, please do not hesitate to contact the IRB office via email at IRB@utmb.edu. Animal subjects: All authors have confirmed that this study did not involve animal subjects or tissue. Conflicts of interest: In compliance with the ICMJE uniform disclosure form, all authors declare the following: Payment/services info: All authors have declared that no financial support was received from any organization for the submitted work. Financial relationships: All authors have declared that they have no financial relationships at present or within the previous three years with any organizations that might have an interest in the submitted work. Other relationships: All authors have declared that there are no other relationships or activities that could appear to have influenced the submitted work.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Additional Information Disclosures"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Is there a safety-net effect with computer-aided detection?",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Du-Crow",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Astley",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Hulleman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "J Med Imag",
+            "volume": "7",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1117/1.JMI.7.2.022405"
+                ]
+            }
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "CAD and AI for breast cancer-recent development and challenges",
+            "authors": [
+                {
+                    "first": "H-P",
+                    "middle": [],
+                    "last": "Chan",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Samala",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Hadjiiski",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Br J Radiol",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1259/bjr.20190580"
+                ]
+            }
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Accuracy and interpretation time of computer-aided detection among novice and experienced breast MRI readers",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Lehman",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Blume",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Demartini",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Hylton",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Herman",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Schnall",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Am J Roentgenol",
+            "volume": "",
+            "issn": "",
+            "pages": "683--689",
+            "other_ids": {
+                "DOI": [
+                    "10.2214/AJR.11.8394"
+                ]
+            }
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Diagnostic accuracy of digital screening mammography with and without computer-aided detection",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Lehman",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Wellman",
+                    "suffix": ""
+                },
+                {
+                    "first": "Dsm",
+                    "middle": [],
+                    "last": "Buist",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Kerlikowske",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ana",
+                    "middle": [],
+                    "last": "Tosteson",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Miglioretti",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "JAMA Intern Med",
+            "volume": "175",
+            "issn": "",
+            "pages": "1828--1837",
+            "other_ids": {
+                "DOI": [
+                    "10.1001/jamainternmed.2015.5231"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Breast cancer statistics 2017, racial disparity in mortality by state",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Desantis",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Ma",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Sauer",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Newman",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Jemal",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "CA Cancer J Clin",
+            "volume": "67",
+            "issn": "",
+            "pages": "439--448",
+            "other_ids": {
+                "DOI": [
+                    "10.3322/caac.21412"
+                ]
+            }
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Breast cancer statistics 2019",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Desantis",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Ma",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Gaudet",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "CA Cancer J Clin",
+            "volume": "69",
+            "issn": "",
+            "pages": "438--451",
+            "other_ids": {
+                "DOI": [
+                    "10.3322/caac.21583"
+                ]
+            }
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Artificial intelligence in breast imaging",
+            "authors": [
+                {
+                    "first": "Epv",
+                    "middle": [],
+                    "last": "Le",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Hickman",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Gilbert",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Clin Radiol",
+            "volume": "74",
+            "issn": "",
+            "pages": "357--366",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.crad.2019.02.006"
+                ]
+            }
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Incidence and mortality and epidemiology of breast cancer in the world",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ghoncheh",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Pournamdar",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Salehiniya",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Asian Pac J Cancer Prev",
+            "volume": "17",
+            "issn": "",
+            "pages": "43--46",
+            "other_ids": {
+                "DOI": [
+                    "10.7314/apjcp.2016.17.s3.43"
+                ]
+            }
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Toward the breast screening balance sheet: cumulative risk of false positives for annual versus biennial mammograms commencing at age 40 or 50",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Winch",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Sherman",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Boyages",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Breast Cancer Res Treat",
+            "volume": "149",
+            "issn": "",
+            "pages": "211--221",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s10549-014-3226-x"
+                ]
+            }
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Utilization of computer-aided detection for digital screening mammography in the United States",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Keen",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Keen",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Keen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "J Am Coll Radiol",
+            "volume": "15",
+            "issn": "",
+            "pages": "44--48",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jacr.2017.08.033"
+                ]
+            }
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Investigation of optimal use of computer-aided detection systems: the role of the \"machine\" in decision making process",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Paquerault",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Hardy",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Wersto",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Smith",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Acad Radiol",
+            "volume": "17",
+            "issn": "",
+            "pages": "1112--1121",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.acra.2010.04.010"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Effectiveness and cost-effectiveness of double reading in digital mammography screening: a systematic review and meta-analysis",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Posso",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Puig",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Carles",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ru\u00e9",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Canelo-Aybar",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Bonfill",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Eur J Radiol",
+            "volume": "96",
+            "issn": "",
+            "pages": "40--49",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ejrad.2017.09.013"
+                ]
+            }
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Artificial intelligence for mammography and digital breast tomosynthesis: current concepts and future perspectives",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Geras",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Mann",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Moy",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Radiology",
+            "volume": "293",
+            "issn": "",
+            "pages": "246--259",
+            "other_ids": {
+                "DOI": [
+                    "10.1148/radiol.2019182627"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "AI shows promise for breast cancer screening",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Pisano",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Nature",
+            "volume": "2020",
+            "issn": "",
+            "pages": "35--36",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/d41586-019-03822-8"
+                ]
+            }
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "International evaluation of an AI system for breast cancer screening",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Mckinney",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Sieniek",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Godbole",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Nature",
+            "volume": "2020",
+            "issn": "",
+            "pages": "89--94",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41586-019-1799-6"
+                ]
+            }
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Breast cancer: computer-aided detection with digital breast tomosynthesis",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Morra",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Sacchetto",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Durando",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Radiology",
+            "volume": "277",
+            "issn": "",
+            "pages": "56--63",
+            "other_ids": {
+                "DOI": [
+                    "10.1148/radiol.2015141959"
+                ]
+            }
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "CAD missed detection in one of the two views (CC or MLO) #1-First biopsy, #2-Second biopsy Computer-aided detection (CAD), Invasive Ductal Carcinoma (IDC), Ductal Carcinoma in Situ (DCIS), Mass (M), Calcifications (C), Asymmetry (",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "Hologic Computer-aided detection (CAD)* in Dense Breast Patient with Biopsy-Proven Cancer (red circle denotes location of cancer).(a) Right Breast craniocaudal (CC) view without CAD; (b) Right Breast mediolateral oblique (MLO) view without CAD; (c) Right Breast CC view with CAD; (d) Right Breast MLO view with CAD. *Hologic CAD Software Legend: Mass denoted by a black asterisk, calcification clusters denoted by a black triangle, and combinations of mass + calcification clusters are denoted by a black cross. 2020 Saenz Rios et al. Cureus 12(12): e12177. DOI 10.7759/cureus.12177 5 Hologic Computer-Aided Detection (CAD)* in Fatty Breast Patient with Biopsy-Proven Cancer (red circles denote location of cancers) (a) Left Breast craniocaudal (CC) view without CAD; (b) Left Breast mediolateral oblique (MLO) view without CAD; (c) Left Breast CC view with CAD; (d) Left Breast MLO view with CAD.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF2": {
+            "text": "CAD able to detect calcifications and masses, but unable to distinguish the malignant from benign.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF3": {
+            "text": "Computer-aided detection (CAD) marks less findings in fatty breasts (fatty and scattered fibroglandular densities) than dense breasts (heterogeneously dense and extremely dense breasts). This means CAD has a harder time and overcalls more in dense breasts.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF4": {
+            "text": "*Hologic CAD Software Legend: Mass denoted by a black asterisk, calcification clusters denoted by a black triangle, and combinations of mass + calcification clusters are denoted by a black cross Analysis of each imaging view (Right CC, Left CC, Right MLO, Left MLO) was conducted to obtain probability values. Probability values were determined from each specific imaging view from the combined interpretation from both radiology and pathology readings. Data were analyzed through the use of Fisher's exact test. Fisher's exact test revealed p=0.0417 for right CC CAD interpretation, p=1 for left CC interpretation, p=0.0417 for right MLO CAD interpretation, and p=0.0345 for left CAD interpretation. The probability value for the overall CAD interpretation was conducted using the Chi-square test. It was determined from both the combined interpretation from both radiology and pathology readings for all the views. All values revealed a significant correlation except the left CC CAD interpretation. Despite the small sample size, results showed to be significant in the regard that CAD still needs a human operator to detect cancer.",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": []
+}

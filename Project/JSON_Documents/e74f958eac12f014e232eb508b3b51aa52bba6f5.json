@@ -1,0 +1,1830 @@
+{
+    "paper_id": "e74f958eac12f014e232eb508b3b51aa52bba6f5",
+    "metadata": {
+        "title": "Learning versus habit formation: Optimal timing of lockdown for disease containment",
+        "authors": [
+            {
+                "first": "Siddhartha",
+                "middle": [],
+                "last": "Bandyopadhyay",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Birmingham",
+                    "location": {
+                        "addrLine": "Egbaston Birmingham",
+                        "country": "United Kingdom"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Kalyan",
+                "middle": [],
+                "last": "Chatterjee",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Penn State University",
+                    "location": {
+                        "addrLine": "504 Kern Building",
+                        "settlement": "University Park",
+                        "country": "United States"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Kaustav",
+                "middle": [],
+                "last": "Das",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Leicester",
+                    "location": {
+                        "addrLine": "London Road",
+                        "settlement": "Brookfield, Leicester",
+                        "country": "United Kingdom"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Jaideep",
+                "middle": [],
+                "last": "Roy",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Bath",
+                    "location": {
+                        "addrLine": "Claverton Down",
+                        "settlement": "Bath",
+                        "country": "United Kingdom"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "We analyze a model where the government has to decide whether to impose a lockdown in a country to prevent the spread of a possibly virulent disease. If the government decides to impose a lockdown, it has to determine its intensity, timing and duration. We find that there are two competing effects that push the decision in opposite directions. An early lockdown is beneficial not only to slow down the spread of the disease, but creates beneficial habit formation (such as social distancing, developing hygienic habits) that persists even after the lockdown is lifted. Against this benefit of an early lockdown, there is a cost from loss of information about the virulence and spread of the disease in the population in addition to a direct cost to the economy. Based on the prior probability of the disease being virulent, we characterize the timing, intensity and duration of a lockdown with the above mentioned tradeoffs. Specifically, we show that as the precision of learning goes up, a government tends to delay the imposition of lockdown. Conversely, if the habit formation parameter is very strong, a government is likely to impose an early lockdown.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "The entire world has been severely affected by the emergence of a new respiratory illness, named coronavirus 2 (SARS-CoV-2), popularly known as Covid-19. Since the first recorded hospitalization in China on the 12th of December, 2019 (Wu et al., 2020; Zhou et al., 2020) , the disease has rapidly spread to other regions across the globe taking on the nature of a pandemic. Yet, because of its novelty, many decisions on how to respond to the possible pandemic had to be taken at a stage when much remained unknown about the disease, including its virulence and how to mitigate against that.",
+            "cite_spans": [
+                {
+                    "start": 234,
+                    "end": 251,
+                    "text": "(Wu et al., 2020;",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 252,
+                    "end": 270,
+                    "text": "Zhou et al., 2020)",
+                    "ref_id": "BIBREF29"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "One of the common responses to preventing the spread of the disease has been through lockdown, a broad term by which we mean drastically reducing movement of individuals which includes severe restrictions on human to human contact. This has consisted of restrictions on when to leave one's residence, where to go and whom to meet with, as well as shutting down nonessential parts of the economy. While these measures no doubt lower the spread of the infection, they come with a huge cost to the economy. Additionally, given that the disease is novel, a lockdown also leads to a loss of information. 1 about the dynamics i.e. the spread and severity of the disease within the population had it been allowed to take its own course.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "In this paper, we analyze a model of lockdown where the government (either a benevolent autocrat or a democratically elected leader) has to decide when (if at all) to impose a lockdown. Imposing a lockdown lowers the harm from the disease through lowering the rate of reproduction of the disease (the socalled R number). A lockdown also signals to the population the probable seriousness of the disease and makes them conscious of the need to take precautions against the disease via e.g. social distancing, wearing masks and practicing good hygiene. We posit that these precautionary actions often turn into habits even after a lockdown is lifted through inducing non-transitory changes in the behavior of the citizenry (see Gardner and Rebar, 2019) . This behavioral response is indeed being seen in many countries where a majority of citizens maintain social distancing and continue to reduce their social contact and take precautions against the disease even after the government eases some of the restrictions imposed earlier. As Susskind and Vines (2020) point out, the use of lockdowns thus had an additional effect of signaling how important it was to change behavior, obviating the need for long drawn out draconian lockdowns for disease containment. This idea is formalized through our habit formation parameter \u03b2 which internalizes some of the messages that a lockdown conveys. Thus, an early lockdown has a benefit of inducing changes in behavior in the population that lasts beyond the lockdown. 2 Against this benefit of an early lockdown, there is a cost from loss of information (in addition to a direct cost to the economy). An early lockdown prevents the natural course of the disease and reduces its consequent public health cost but its suppression does not allow us to discover the dynamics of the disease and its consequent costs with any precision. Given the enormous cost to the economy of the lockdown, an early lockdown based on imperfect information on the severity of the disease may lead to a possibly inoptimal response e.g. imposing huge social and economic costs not warranted by the true severity of the disease.",
+            "cite_spans": [
+                {
+                    "start": 726,
+                    "end": 750,
+                    "text": "Gardner and Rebar, 2019)",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 1035,
+                    "end": 1060,
+                    "text": "Susskind and Vines (2020)",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 1509,
+                    "end": 1510,
+                    "text": "2",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "While this effect has not been emphasized, there are a group of eminent scientists who have argued against a lockdown at least partly on the grounds that the data available was not precise enough to warrant a lockdown. For example, Sunetra Gupta, a professor of theoretical epidemiology at the University of Oxford, U.K. does not believe that the disease is likely to be virulent enough to justify a lockdown given its huge economic and social costs. 3 Their model as well as a modification run by James Hay 4 point out that the limited data available at the time of the U.K. lockdown was consistent with different probabilities of the severity of the disease. Given this uncertainty, the case for waiting (i.e. not locking down early) would be to get more data which would allow us to form more precise estimates. This learning effect would push towards a delay in the timing of a lockdown. The present paper studies the interplay of these two independent aspects, namely, the informational loss and the behavioral benefit, and its net effect on the optimal timing and severity of a lockdown. We now describe the model in more detail, explain the main results and discuss what questions it allows us to answer.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "We consider a three-period model, with the third period representing the end of the current planning horizon. We assume that the decision on whether and for how long to impose a lockdown is restricted to the first two periods. In period 1, the government gets information (via a signal with a certain level of precision) and forms its belief about the probability that the disease is virulent. If it decides to impose a lockdown, it has to determine for how many periods and with what intensity. The lockdown reduces the spread of the disease but we assume no further information is forthcoming on the virulence of the disease during the lockdown. 5 If there is no lockdown in period 1, the government gets a further signal about the virulence of the disease and decides whether or not to impose a lockdown in period 2. Further, as mentioned earlier, an early lockdown changes the way people behave and induces a behavioral response whereby people continue to take voluntary steps to prevent the spread of the disease through habit formation. Lockdowns are however 2 See for example: www.kcl.ac.uk/news/uk-still-staying-home-and-even-com ing-to-terms-with-lockdown or www.piratefm.co.uk/news/latest-news/3124667 /most-people-working-from-home-want-to-stay-there-after-lockdown/ or www. independent.co.uk/life-style/fashion/news/uk-lockdown-habits-behaviour-contin ue-restrictions-lift-a9520486.html.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "3 See Lourenco et al. (2020) for the underlying research and her comments in https://www.theguardian.com/world/2020/jun/05/the-costs-are-too-high-thescientist-who-wants-lockdown-lifted-faster-sunetra-gupta. 4 See https://twitter.com/jameshay218/status/1242935853971910656. 5 This is made for tractability, and sharpens the tradeoff. However, the two competing effects-habit formation versus waiting to get better estimates about the harm from the disease remain even with information flows during the lockdown.",
+            "cite_spans": [
+                {
+                    "start": 6,
+                    "end": 28,
+                    "text": "Lourenco et al. (2020)",
+                    "ref_id": "BIBREF20"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "economically and socially costly and thus each lockdown period has a cost. 6 If the government is democratically elected, it may also face a cost from imposing a lockdown that is decreasing in the prior probability that the disease is virulent. We can think of this as a backlash from the economic hardship faced by the population. The strength of the backlash effect depends on various factors which we can think of summarily as representing trust in government. For a given belief about the probability of the disease being virulent, a lower trust is likely to cause people to impose higher electoral costs on the government. We denote this cost of public opposition to lockdown, particularly of consideration in a democracy by a parameter \u03b4.",
+            "cite_spans": [
+                {
+                    "start": 75,
+                    "end": 76,
+                    "text": "6",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "This model thus allows us to answer a number of important questions of relevance to a policy maker. Given the information in any period that the disease is virulent, we can analyze whether the government should impose a lockdown, how intense should the lockdown be and if imposed early, for how long should it be. We are further interested in understanding the cutoff probability that the disease is virulent at which a government decides to lockdown and how this shifts over time as a function of (i) the accuracy of the signal each period, (ii) the strength of the behavioral response, (iii) the cost to the economy, (iv) the magnitude of the backlash effect and (v) the expected time of arrival of a vaccine/treatment.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "We characterize the tradeoff between information and habit formation. When the strength of the habit formation parameter (\u03b2) is high, early lockdown is optimal. In particular, we show that for any given \u03b2, as long as the signal precision (p) is below a certain threshold, the cutoff belief for imposing a lockdown is lower in the first period than in the second period. Conversely, if the signal precision is higher than the threshold, the opposite holds as the possible information loss would make the government delay lockdown. Hence, the cutoff belief for imposing a lockdown is higher in the first period than in the second period.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The democracy parameter \u03b4 also plays a role, as this acts to delay the timing, duration and intensity of the lockdown given the possible public backlash against lockdowns. This also tilts towards waiting for a more precise signal that may reduce public opposition to the backlash. This suggests that democratic governments in populations distrustful of governments may delay lockdowns because of possible electoral consequences emanating from public backlash against a lockdown.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "There are a number of other important comparative static results. The intensity of lockdown is increasing in \u03b2 and the beliefs that the disease is virulent but decreasing in the loss to the economy. The parameter \u03b3 represents the extent of the economic impact of the lockdown, with a higher value indicating a more negative impact. Consistent with the intuition in Susskind and Vines (2020), we characterize how under some parameter values, optimal lockdowns are not draconian or long drawn out i.e. of low intensity and only for one period. Somewhat counterintuitively, while intensity of lockdowns go down as economic costs increase,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "we also see if \u03b2 is high, the cutoff belief for early lockdowns is lower than that for later lockdowns. This is because if economic costs of a lockdown are high, conditional on imposing a lockdown, it is better to do so early than late to get the full benefit of disease reduction because of habit formation. Our model's assumptions on disease propagation and benefits of a lockdown are consistent with standard models in epidemiology and economics. Lockdowns in epidemiological models of disease propagation are a vital tool for slowing the incidence of 6 Coibion et al. (2020) use several waves of customer surveys to analyze the effect of differential timing of lockdowns due to Covid-19 on household spending and macroeoconomic expectations at the local level. the disease. The basic models (see Anderson and May, 1992) assume that the hazard rate is an increasing function of prevalence in the population. Economic models however assume people are rational and hence even without a lockdown, they update information about disease prevalence and take precautions to reduce their chances of infection through (individually) optimal social distancing (see Geoffard and Philipson, 1996) . Nonetheless even in these fully rational models, the individual decision (i.e. choice of how much to socially distance) is not in general socially optimal as rational agents do not consider the external benefits of social distancing (see Toxvaerd, 2019) . Hence, imposing lockdowns to reduce human contact can be justified even in such models to reach the social optimum. Our model is agnostic about whether agents are fully rational and indeed abstracts from the decision of the population to focus on the government's optimal timing of lockdown.",
+            "cite_spans": [
+                {
+                    "start": 555,
+                    "end": 578,
+                    "text": "6 Coibion et al. (2020)",
+                    "ref_id": null
+                },
+                {
+                    "start": 800,
+                    "end": 823,
+                    "text": "Anderson and May, 1992)",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 1158,
+                    "end": 1187,
+                    "text": "Geoffard and Philipson, 1996)",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 1428,
+                    "end": 1443,
+                    "text": "Toxvaerd, 2019)",
+                    "ref_id": "BIBREF26"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The economic costs of lockdown as well as the public health benefits are broadly consistent with both the epidemiological and economic models. 7 Indeed in the Covid-19 context there are a large number of recent papers modeling the trade-off between the public health benefit (disease suppression) and the economy (see Alvarez et al., 2020; Favero et al., 2020; Miclo and Spiro, 2020; Pindyck, 2020) . What is novel in our model is the trade-off between acquiring information on the dynamics of an unknown disease (which acts in favor of delaying a lockdown as it will generate data points allowing for more precise estimates via Bayesian updating) versus altering habits of the population (which acts in favor of an early lockdown). This has been generally neglected in the literature. In fact, even any analysis of uncertainty in the reproduction number has been largely missing while focusing on the trade-off in a lockdown, with one of the few papers that considers this uncertainty being (Gollier, 2020) . 8 It assumes the disease is virulent and the reproduction number is uncertain. Its focus is on lockdown intensity allowing for some learning during a (partial) lockdown, though it assumes the virus is necessarily lethal. The model does not consider the trade-off between information acquisition versus allowing disease-reducing behavior to kick in early through behavioral changes.",
+            "cite_spans": [
+                {
+                    "start": 318,
+                    "end": 339,
+                    "text": "Alvarez et al., 2020;",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 340,
+                    "end": 360,
+                    "text": "Favero et al., 2020;",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 361,
+                    "end": 383,
+                    "text": "Miclo and Spiro, 2020;",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 384,
+                    "end": 398,
+                    "text": "Pindyck, 2020)",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 992,
+                    "end": 1007,
+                    "text": "(Gollier, 2020)",
+                    "ref_id": "BIBREF16"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "To the best of our knowledge, our model's insights on the trade-off between acquiring information and changing behavior have not been formalized before. It has some similarities with the literature on adoption of new technology where there is an optimal period at which one should adopt the technology where there is uncertainty in the costs and benefits of adoption. Waiting delays the potential benefits from the technology but allows us to learn more about the actual costs and benefits from adoption (see e.g. Jensen, 1982; Bhattacharya et al., 1986; Hoppe, 2002;  Chavas and Nauges, 2020 for a survey with regard to adoption in agriculture). The insight is also similar to the concept of option value (see Dixit and Pindyck, 1994) . This literature however does not consider the tradeoff with habit formation.",
+            "cite_spans": [
+                {
+                    "start": 514,
+                    "end": 527,
+                    "text": "Jensen, 1982;",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 528,
+                    "end": 554,
+                    "text": "Bhattacharya et al., 1986;",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 555,
+                    "end": 567,
+                    "text": "Hoppe, 2002;",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 568,
+                    "end": 568,
+                    "text": "",
+                    "ref_id": null
+                },
+                {
+                    "start": 711,
+                    "end": 735,
+                    "text": "Dixit and Pindyck, 1994)",
+                    "ref_id": "BIBREF9"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "At a more macro level, the impact of diseases on the economy has been looked at both empirically and theoretically including the endogeneity of diseases, labour supply and human capital accumulation and hence growth, including the possibility of a growth trap Liu, 2012, 2019; Goenka et al., 2014; Chakraborty et al., 2010) . While these papers consider the impact of interventions on growth, they do not consider interventions in the context of a novel disease that has a trade-off between the 7 We abstract from other longer term changes in behavior that may accompany pandemics e.g. fertility choice or labour supply decisions (Young, 2005; Boucekkine et al., 2009) .",
+            "cite_spans": [
+                {
+                    "start": 260,
+                    "end": 276,
+                    "text": "Liu, 2012, 2019;",
+                    "ref_id": null
+                },
+                {
+                    "start": 277,
+                    "end": 297,
+                    "text": "Goenka et al., 2014;",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 298,
+                    "end": 323,
+                    "text": "Chakraborty et al., 2010)",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 630,
+                    "end": 643,
+                    "text": "(Young, 2005;",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 644,
+                    "end": 668,
+                    "text": "Boucekkine et al., 2009)",
+                    "ref_id": "BIBREF4"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "8 Saak and Hennessy (2018) also consider the imperfection of information about the likelihood of the disease outbreak in the context of limited diagnostic capabilities and analyze when to tax or subsidize requests for additional information or confirmatory testing.",
+            "cite_spans": [
+                {
+                    "start": 2,
+                    "end": 26,
+                    "text": "Saak and Hennessy (2018)",
+                    "ref_id": "BIBREF24"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "informational value of delaying interventions and kicking in habit formation early.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "We consider a three-period discrete time model, i.e. t = 1, 2, 3. A new disease hits a population at t = 1. The transmission potential of this disease is measured by the basic rate of reproduction R > 0. Let r \u2032 be the harm caused by the disease which is dependent on the value of R. Formally, r \u2032 is defined as a continuous strictly increasing function r \u2032",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Environment"
+        },
+        {
+            "text": "Given it is a novel disease, R is unknown and can take two values; R L or R H with 0 < R L < 1 < R H . Thus the disease is either potentially virulent in which case the reproduction rate R = R H > 1, or less harmful with the reproduction rate R = R L < 1. 9 Let \u03c1 0 be the prior in period 1 that it is virulent. We define",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Environment"
+        },
+        {
+            "text": ". Thus, r reflects the added harm from the disease in the event it is virulent. Since r \u2032 is a strictly increasing function, r > 0.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Environment"
+        },
+        {
+            "text": "In periods t = 1, 2, new data on the disease produces a partially informative signal S t \u2208 {L, H} about the true value of R. Signal H (L) can be thought of as the data on the number of patients infected with the disease, which leads to Bayesian updating on the probability that the disease is virulent. The signals are iid across periods with precision p \u2208 ( 1 2 , 1); This means",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Environment"
+        },
+        {
+            "text": "Given a prior \u03c1 t\u22121 in period t (t = 1, 2), after the realization of the signal S t , \u03c1 t\u22121 is updated using Bayes' rule giving us the posterior \u03c1 t which can take two values.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Environment"
+        },
+        {
+            "text": ".",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Environment"
+        },
+        {
+            "text": "(1)",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Environment"
+        },
+        {
+            "text": "Since the signals are informative (i.e. p > 1 2 ) following a H(L) signal, the updated value \u03c1 t > (<)\u03c1 t\u22121 . In our model p < 1, i.e. signals are not fully informative.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Environment"
+        },
+        {
+            "text": "Our model consists of a population of fixed size and a government. We assume that the government is the only decision maker, and interpret period 2 as the end of the current planning horizon. Period 3 represents the expected length of time after the current planning horizon but before the arrival of a vaccine or treatment. We denote the expected length of this period by A > 0.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Environment"
+        },
+        {
+            "text": "In each period t = 1, 2, the government can take two actions. It can either implement a lockdown, or it can wait. In the event the government decides to implement a lockdown, it also determines its length and intensity. Further, if a lockdown is implemented, then during the lockdown, the precision of the signal goes down. This is because during a lockdown, we lose some information of the dynamics of the spread of the disease in the population i.e. which groups are most affected, what is the complication rate absent intervention etc. For analytical tractability, we assume the precision of the signal during a lockdown to be p = 1 2 . From (1) and (2) we can conclude that this implies 9 This formulation is consistent with SIR/SIS models and R is computed on the basis of a completely susceptible population. https://www.ncbi.nlm.nih.gov/ pmc/articles/PMC6302597/. during a lockdown there is no learning, and hence the value of \u03c1 is not updated. 10 If the government imposes a lockdown, it has to choose its intensity a. The choice set of a is (0, 1], with a = 1 representing the highest intensity. 11 The intensity of the lockdown reduces the expected harm caused by the disease slowing its transmission because of enforced changes in social behavior. This continues to an extent beyond the lockdown due to habit formation which we denote by \u03b2. If in period t(t = 1, 2) a lockdown for T periods with intensity a is implemented, then the payoff to the government is given by",
+            "cite_spans": [
+                {
+                    "start": 952,
+                    "end": 954,
+                    "text": "10",
+                    "ref_id": null
+                },
+                {
+                    "start": 1105,
+                    "end": 1107,
+                    "text": "11",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Actions and payoffs"
+        },
+        {
+            "text": "We now explain each of the terms in (3). Note that W t is strictly negative implying that the payoff reflects the net expected harm from a particular lockdown policy. During the lockdown, in the event the disease is virulent, the effective net harm per period is reduced from \u2212r to \u2212r{1 \u2212 (a \u2212 a 2 )}. 12 This implies the total net harm during the lockdown in the event the disease is virulent is",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Actions and payoffs"
+        },
+        {
+            "text": "Once the lockdown is lifted, part of the disease reducing impact stays due to habit formation which is captured by the parameter \u03b2 \u2208 (0, 1). 13 As discussed in the introduction, the idea behind this is that the rules mandated during a lockdown i.e. restricting interactions through social distancing; adopting hygiene measures continue to an extent beyond the lockdown through beneficial habit formation. This means the effective net harm per period after the lockdown is lifted is \u2212r{1 \u2212 \u03b2(a \u2212 a 2 )}. Thus for the remaining periods in the planning horizon, in the event the disease is virulent, the net harm is given by",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Actions and payoffs"
+        },
+        {
+            "text": "Finally, because of this habit formation, in the event the disease is virulent, the net harm after the planning horizon until the vaccine or treatment arrives is \u2212rA{1\u2212\u03b2(a\u2212a 2 )}. This explains the first two terms of (3). Thus in our model, periods 1 and 2 are the current planning horizon, but the actions taken in those periods have longer term consequences due to habit formation. Imposing a lockdown entails an economic cost which is directly proportional to the intensity and the duration of the lockdown captured by (a 2 + T 2 ). \u03b3 > 0 is a cost parameter which reflects the efficacy of a government in managing the economy during a lockdown. The expression (1 \u2212 \u03c1 t )\u03b4 in the final term of (3) captures an additional cost for a democratically elected leader due to public backlash against lockdown. The higher the probability the disease is virulent, the lower is the backlash while \u03b4 captures a country specific parameter with a higher \u03b4 indicating 10 This is a simplifying assumption to model a scenario where the precision of learning goes down because of a lockdown. As we will see from the mechanism of our model, relaxing this assumption does not change our results qualitatively. As mentioned earlier, this refers to learning about the dynamics of the disease across different sub-groups. Moreover, even with learning during lockdown, the tradeoff between delaying to know more about the disease virulence versus locking down early to start beneficial habit formation earlier remains. 11 Data on lockdown measures adopted around the world indeed suggest heterogeneity in the stringency of lockdown measures across countries. For example, Spain adopted very stringent measures with no one allowed to go out of their home while in the UK it was more relaxed. If we interpret lockdown more generally as a measure of social restriction, then Sweden represents a case of the lowest intensity lockdown. 12 This gives us a well behaved function which is concave in the relevant region in which a will be optimally chosen. Allowing for the harm to increase at high levels of a captures the fact that too stringent measures may increase harm by limiting access to medical care or providing social support at home. Of course, the optimal a would never lie in that region.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Actions and payoffs"
+        },
+        {
+            "text": "13 More generally, we can think of lockdown inducing a reaction [1\u2212\u03b2 1 (a\u2212a 2 )] where \u03b2 1 is a level of compliance and \u03b2 2 is compliance post lockdown with \u03b2 2 < \u03b2 1 \u2264 1. In our model we w.l.o.g we assume \u03b2 1 = 1 and \u03b2 2 = \u03b2 < 1. a greater backlash against the lockdown. This might represent trust in government such that the trust is inversely proportional to the value of \u03b4.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Actions and payoffs"
+        },
+        {
+            "text": "Note that the functional forms (1 \u2212 (a \u2212 a 2 )), (1 \u2212 \u03b2(a \u2212 a 2 )) and the convex economic cost ensure that the payoff W t is strictly concave in a for a \u2208 (0, 1].",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Actions and payoffs"
+        },
+        {
+            "text": "The habit formation parameter \u03b2 may of course affect the economy after the lockdown is lifted. Incorporating \u03b2 in the cost component of imposing the lockdown will push up the thresholds for imposing the lockdown in both periods. The qualitative features of all our results remain unchanged.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Remark 1."
+        },
+        {
+            "text": "In this section, we determine the optimal action of the government in each period t(t = 1, 2) as a function of the likelihood of the disease being virulent. We begin our analysis in the following subsection by considering period 2.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Optimal action by the government"
+        },
+        {
+            "text": "Consider a situation when the government waits until period 2, i.e. it does not impose a lockdown in period 1. In that case, the government's decision consists of two actions. It can either impose a lockdown for 1 period, or not impose it at all. Let \u03c1 2 be the posterior in period 2. If the government decides to impose a lockdown, then it chooses a to maximize:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Optimal action in period 2"
+        },
+        {
+            "text": "From the first order condition we obtain 14",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Optimal action in period 2"
+        },
+        {
+            "text": "As explained in the previous section, as a consequence of the choice of our functional forms, W 2 is strictly concave in a for a \u2208 (0, 1). Further, it is strictly increasing (decreasing) at a = 0 (a = 1 2 ). Thus the optimal a * 2 should satisfy a * 2 < 1 2 . This is confirmed by the expression in (4).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Optimal action in period 2"
+        },
+        {
+            "text": "Direct computation confirms that a * 2 is strictly increasing in A, \u03b2 and \u03c1 2 . It is strictly decreasing in \u03b3 .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Remark 2."
+        },
+        {
+            "text": "These comparative static results can be explained intuitively.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Remark 2."
+        },
+        {
+            "text": "When it is more likely that the disease is virulent i.e. \u03c1 2 is higher, the expected benefit of a lockdown is also higher. This induces the government to optimally impose a lockdown with a higher intensity, and hence it chooses a higher value of a. Coming to the habit formation parameter \u03b2, the marginal benefit of a increases with \u03b2, which implies that the optimal value of a in increasing in \u03b2. Next, an increase in A implies that the arrival of the vaccine will be delayed. This results in the government choosing a higher level of a so that the total net harm beyond the planning horizon is reduced through habit formation. Finally, the lower is the efficacy of a government in managing an economy during the lockdown (reflected in higher \u03b3 ), the lower will be the intensity of lockdown chosen by the government. Substituting the value of a * 2 from (4), we obtain the optimal welfare from lockdown in period 2. This is given by",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Remark 2."
+        },
+        {
+            "text": "14 The second order condition is guaranteed as W 2 is strictly concave in a.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Remark 2."
+        },
+        {
+            "text": "If the government on the other hand decides not to impose a lockdown in period 2, then it obtains a payoff of = \u2212\u03c1 2 r \u2212\u03c1 2 rA = \u2212\u03c1 2 r(A + 1). This implies imposing a lockdown is optimal as long as",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Remark 2."
+        },
+        {
+            "text": "Direct computation shows that \u03c1 * 2 < 1 as long as r > 2\u03b3 ( \u221a 2\u22121)(1+A\u03b2)",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Remark 2."
+        },
+        {
+            "text": ". \u03c1 * 2 > 1 means that it is not optimal to impose a lockdown in period 2. One implication of this is that the higher is the value of A, the lower is the value of \u03c1 * 2 and hence, it is more likely lockdown will be imposed in period 2. Similarly, the higher is the value of \u03b2, it is more likely lockdown will be imposed in period 2.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Remark 2."
+        },
+        {
+            "text": "We now move to the analysis of period 1 in the following subsection.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Remark 2."
+        },
+        {
+            "text": "In this subsection, we analyze the optimal action of the government in period 1. Suppose \u03c1 1 is the posterior in period 1. In the current setting, the planning horizon begins from period 1.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Optimal action in period 1"
+        },
+        {
+            "text": "As mentioned earlier, given \u03c1 1 , the government can either impose a lockdown, or it can wait. In period 1, if the government decides to impose a lockdown, then it has to decide whether the lockdown will be imposed for one period or two periods. W.L.O.G we can rule out the possibility of the government imposing a lockdown for one period in both t = 1 and t = 2 as given the informational assumptions (i.e. no updating of \u03c1 during a lockdown) of the current model, it is equivalent to imposing a lockdown in period 1 for two periods.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Optimal action in period 1"
+        },
+        {
+            "text": "We begin our analysis by determining the expected payoff to the government if it decides to wait and not impose a lockdown in period 1. In order to do that, we need to compute the continuation payoff to the government from such an action. This continuation payoff is the sum of the payoff from inaction in period 1, and the expected optimal payoff in period 2. The latter as demonstrated in the previous subsection, depends on the optimal action in period 2, which is determined by the updated belief after the realized signal in that period. This implies that the general expression for the continuation payoff to the government from waiting and not imposing a lockdown in period 1 is given by",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Optimal action in period 1"
+        },
+        {
+            "text": "The first term represents the expected payoff in period 1 if no lockdown is imposed. The second and the third term represent the expected payoff in period 2 in the event a high and low signal is received respectively. Since Pr(S 2 = S|\u03c1 1 ) and the resulting \u03c1 S 2 (S = H, L) are functions of \u03c1 1 , we can express \u0393 as a function of \u03c1 1 only.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Optimal action in period 1"
+        },
+        {
+            "text": "In order to determine \u0393 , define two thresholds of \u03c1 1 ,\u03c1 1 and \u03c1 1 such that",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Optimal action in period 1"
+        },
+        {
+            "text": "Suppose \u03c1 1 \u2264\u03c1 1 , and the government decides to wait. In this case, irrespective of the signal received next period, the updated belief will be less than the threshold \u03c1 * 2 . From our analysis in the previous subsection, we can conclude that in this case no lockdown will be imposed in period 2. Similarly, if \u03c1 1 \u2265\u03c1 1 , and the government decides to wait, irrespective of the signal next period, the updated belief will be higher than the threshold \u03c1 * 2 . Thus in this case lockdown will be imposed in period 2. Finally consider\u03c1 1 < \u03c1 1 <\u03c1 1 . Suppose the government decides to wait. In this case, if in period 2, a high (low) signal is received, then lockdown is (not) imposed in period 2. The analysis in the previous subsection along with these arguments allow us to express (please see Appendix A for a detailed derivation) \u0393 (\u03c1 1 ) as \u0393 (\u03c1 1 ) = \u2212\u03c1 1 r(A + 2)",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Optimal action in period 1"
+        },
+        {
+            "text": "The first term of (9) gives the welfare if no action is taken in both periods 1 and 2. The second and the third term reflect the net expected premium obtained from the optimal action in period 2 after receiving a high and low signal respectively. The second (third) term is strictly positive if following a high (low) signal in period 2, the government finds it optimal to impose a lockdown. From our arguments made in the previous paragraph we can conclude that \u0393 (\u03c1 1 ) \u2265 \u2212\u03c1 1 r(A + 2) with strict inequality for \u03c1 1 >\u03c1 1 .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Optimal action in period 1"
+        },
+        {
+            "text": "We now determine the payoff from imposing a lockdown of optimal length and intensity in period 1.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Optimal action in period 1"
+        },
+        {
+            "text": "In period 1, if a government imposes a lockdown, then it also has to decide whether it will be for one period or two periods. First, we evaluate the optimal payoff if the government decides to impose a lockdown in period 1 for two periods (T = 2). From",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Payoff from lockdown in period 1:"
+        },
+        {
+            "text": "(3), we can say that the government in this case chooses a to maximize",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Payoff from lockdown in period 1:"
+        },
+        {
+            "text": "Evaluating the first order condition we obtain",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Payoff from lockdown in period 1:"
+        },
+        {
+            "text": "Remark 3. As in (4), direct computation confirms that a * 1 is strictly increasing in A, \u03b2 and \u03c1 1 . It is strictly decreasing in \u03b3 .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Payoff from lockdown in period 1:"
+        },
+        {
+            "text": "Substituting the value of a * 1 from (10), we get the optimal welfare of the government from a lockdown for 2 periods in period 1 as",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Payoff from lockdown in period 1:"
+        },
+        {
+            "text": "The following lemma illustrates that the optimal payoff to the government from imposing a lockdown in period 1 for two periods intersects the continuation payoff \u0393 (\u03c1 1 ) from not imposing any lockdown in period 1 at a belief \u03c1 \u2032 1 > \u03c1 * 2 . Thus, Lemma 1 looks at what the threshold for lockdown in period 1 would be had it been restricted to a choice between a 2 period lockdown or no lockdown in period 1.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Payoff from lockdown in period 1:"
+        },
+        {
+            "text": "The formal proof of this lemma is relegated to Appendix B. Here we provide the intuition for the result. First, we show that the welfare W * 1 = \u2212\u03c1 1 r(A + 2) at a belief that is strictly higher than the threshold \u03c1 * 2 . From the expression of the continuation payoff in (9), we know that \u0393 is strictly higher than \u2212\u03c1 1 r(A + 2) for all \u03c1 1 >\u03c1 1 . Since \u03c1 * 2 >\u03c1 1 , we can conclude that \u03c1 \u2032 1 > \u03c1 * 2 . An implication of the above lemma is that if in period 1, the government is constrained to impose a lockdown for two periods or no lockdown, then the likelihood of lockdown in period 2 is higher than that in period 1. This can be intuitively explained as follows. Consider the alternate policies of imposing a lockdown in period 1 for two periods and imposing a lockdown in period 2. The benefit due to habit formation from both these policies are for the same number of periods, i.e. A. However, the latter policy has the additional advantage of acting after receiving a more precise signal about the virulence of the disease. Additionally, a later lockdown reduces the negative impact on the economy by one period. This makes imposition of lockdown more likely in period 2.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Payoff from lockdown in period 1:"
+        },
+        {
+            "text": "We will now determine the optimal payoff from imposing a lockdown in period 1 for 1 period only. From (3) we can say that the government in this case chooses a to maximize",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Payoff from lockdown in period 1:"
+        },
+        {
+            "text": "From the first order condition, we obtain",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Payoff from lockdown in period 1:"
+        },
+        {
+            "text": "Substituting the value of a * n 1 , we obtain the optimal welfare from lockdown of one period duration in period 1. 15 This is given by",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Payoff from lockdown in period 1:"
+        },
+        {
+            "text": "Thus, if in period 1 the government decides to impose a lockdown of optimal length and intensity, then welfare from lockdown is given by",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Payoff from lockdown in period 1:"
+        },
+        {
+            "text": "The government finds it beneficial to impose a lockdown in period 1 if W f 1 (\u03c1 1 ) \u2265 \u0393 (\u03c1 1 ). Both W f 1 and \u0393 are continuous functions of \u03c1 1 . Let \u03c1 * 1 be the threshold of \u03c1 1 such that when \u03c1 1 > \u03c1 * 1 , the government finds it optimal to impose a lockdown in period 1. Since at \u03c1 1 = 0, W f 1 (\u03c1 1 ) < \u0393 (\u03c1 1 ), \u03c1 * 1 > 0. It is possible to have \u03c1 * 1 > 1 which implies that under no circumstances, does the government find it beneficial to impose a lockdown in period 1.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Payoff from lockdown in period 1:"
+        },
+        {
+            "text": "In the following proposition we establish that as long as there is a positive degree of habit formation (i.e. \u03b2 > 0), then up to some precision level of the signal, the threshold for imposing the lockdown increases over time with the converse holding if the precision level is higher than the threshold. Further, for low precision level of learning, at the vicinity of the threshold in period 1, lockdown is always imposed for one period.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Payoff from lockdown in period 1:"
+        },
+        {
+            "text": "Proposition 1. For any \u03b2 > 0, there exists a p * \u2208 ( 1 2 , 1] such that if \u03c1 * t < 1 (t = 1, 2), then for all p \u2208 ( 1 2 , p * ), \u03c1 * 1 \u2264 \u03c1 * 2 15 Again, direct computation confirms that a * 1 is strictly increasing in, A, \u03b2 and \u03c1 1 . It is strictly decreasing in \u03b3 . and W f 1 (\u03c1 * 1 ) = W \u2032 * 1 (\u03c1 * 1 ). This shows that for p < p * , at the right neighborhood of the threshold \u03c1 * 1 , lockdown is always imposed for one period.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Payoff from lockdown in period 1:"
+        },
+        {
+            "text": "Further, if p * < 1, then for all p \u2208 (p * , 1),",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Payoff from lockdown in period 1:"
+        },
+        {
+            "text": "The formal proof of this proposition is relegated to Appendix C. The idea behind the proof is discussed here. In the present paragraph, by lockdown, unless otherwise stated, we will refer to lockdown imposed in period 1. We first show that the payoff from lockdown for one period is higher than \u2212\u03c1 1 r(A + 2) if \u03c1 1 exceeds a threshold \u03c1 \u2032\u2032 1 , which is strictly lower than \u03c1 * 1 , which is strictly less than that in period 2. Since payoff functions are continuous, we know that the conclusion will continue to hold for some p at the right neighborhood of 1 2 , and let p * \u2208 ( 1 2 , 1] be the supremum of such p's. This means whenever p < p * , we have \u03c1 * 1 < \u03c1 * 2 . From Lemma 1 we can further conclude that when p < p * , at the right neighborhood of \u03c1 * 1 , lockdown will always be imposed for one period. Finally, suppose p * < 1. From the definition of p * , we can conclude that at the right neighborhood of p * , the optimal welfare from lockdown at the belief \u03c1 * 2 will be less than or equal to the continuation payoff at that belief. While the optimal payoff from lockdown in period 1 is unaffected by the learning parameter p, the continuation payoff is strictly increasing in it. Hence, we can conclude that for all p > p * , we have \u03c1 * 1 > \u03c1 * 2 . The above result can be intuitively explained as follows. The tradeoff between imposing a lockdown early and waiting is as follows. If a lockdown is imposed earlier, the benefit through behavioral change in the event that the disease is virulent lasts longer. On the other hand, imposing a lockdown earlier means the government is unable to learn about the nature of the disease. Thus it may impose a lockdown when the disease happens to be relatively mild and needlessly suffer the economic costs. Given a behavioral pattern, which is captured by the parameter \u03b2, the government has a higher incentive to impose the lockdown earlier if the precision of the learning is below a certain level in which case there would not be much gain in learning by waiting for one period. This explains why the threshold for imposing a lockdown in period 1 is lower than that in period 2. In Proposition 1 we have shown that at the right neighborhood of the threshold in period 1, the government always imposes a lockdown for one period. However, if the value of \u03c1 1 is very high, it is possible that the government optimally chooses to impose a lockdown for two periods.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Payoff from lockdown in period 1:"
+        },
+        {
+            "text": "On the other hand, a higher precision of signal increases the gains from learning via the signal and hence reduces the incentive of the government to impose the lockdown earlier. As a consequence, the threshold for imposing the lockdown in period 1 is higher than that in period 2.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Payoff from lockdown in period 1:"
+        },
+        {
+            "text": "This intuition is now illustrated with a numerical example.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Payoff from lockdown in period 1:"
+        },
+        {
+            "text": "Example 1. We calibrate our model for r = 2.5; \u03b2 = 0.6; A = 2; \u03b3 = 0.45 and \u03b4 = 0.8. Fig. 1 . Ranking of thresholds with respect to precision of learning p.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 85,
+                    "end": 91,
+                    "text": "Fig. 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Payoff from lockdown in period 1:"
+        },
+        {
+            "text": "Variation of the thresholds \u03c1 * 1 and \u03c1 * 2 with respect to \u03b2. Fig. 1 exhibits how the threshold for imposing the lockdown in period 1 changes as the precision of learning p varies from 0.5 to 1. We can observe that for low values of p, \u03c1 * 1 is unaffected by p, but as p increases, \u03c1 * 1 also increases in p. To understand this, recall from our model that \u03c1 * 1 is determined by the point of intersection of the payoff from lockdown in period 1, and the continuation payoff \u0393 (\u03c1 1 ). For values of \u03c1 1 <\u03c1 1 , \u0393 (\u03c1 1 ) = \u2212\u03c1 1 r(A+2), which is independent of p. The lower is the precision of the signal, the more likely \u0393 (\u03c1 1 ) and the optimal payoff from lockdown in period 1 intersect at a point where \u0393 = \u2212\u03c1 1 r(A+2). Thus \u03c1 * 1 is independent of p. This explains the horizontal part of the \u03c1 * 1 curve. The period 2 threshold \u03c1 * 2 on the other hand is independent of p. It can be observed in Fig. 1 that there exists a threshold p * such that for all p lower (higher) than this threshold \u03c1 * 1 < (>)\u03c1 * 2 , illustrating Proposition 1.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 63,
+                    "end": 69,
+                    "text": "Fig. 1",
+                    "ref_id": null
+                },
+                {
+                    "start": 897,
+                    "end": 903,
+                    "text": "Fig. 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Fig. 2."
+        },
+        {
+            "text": "In this section we present some numerical examples of how the lockdown thresholds for periods 1 and 2 change with the strength of the habit formation parameter, the cost to the economy, the backlash from a lockdown and the expected time of the arrival of a treatment or vaccine. We also demonstrate how the variables interact e.g. we show that the impact of the economy on lockdown thresholds is different when the habit formation parameter takes high or low values.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Numerical examples"
+        },
+        {
+            "text": "In this subsection, we examine how the thresholds for imposing the lockdown in periods 1 and 2, \u03c1 * 1 and \u03c1 * 2 respectively, vary with the value of the habit formation parameter \u03b2. We calibrate our model for r = 2.5; \u03b3 = 0.45; \u03b4 = 0.8, and p = 0.6. As we will see below, the thresholds \u03c1 * 1 and \u03c1 * 2 are decreasing in \u03b2 across a range of values of A (i.e. length of period 3). However, A affects the difference between \u03c1 * 1 and \u03c1 * 2 for each \u03b2. Figs. 2 and 3 depict the variation of \u03c1 * 1 and \u03c1 * 2 with respect to \u03b2 for A = 1 and A = 3 respectively. These findings can be explained as follows. Once lockdown is imposed, the government gets a future benefit from habit formation. While an imposition of lockdown in period 2 generates the benefit from habit formation during period 3, a lockdown imposed in period 1 for one period, generates the benefit from habit formation in both periods 2 and 3. 16 In the absence of any 16 We can verify that in the current calibrated model, at the right neighbourhood of \u03c1 * 1 , optimal length of lockdown is always equal to 1. habit formation, i.e. \u03b2 = 0, it is more beneficial to impose the lockdown in period 2, as this comes with the benefit of getting a more precise signal about the likelihood of the virulence of the disease, allowing for a more informed choice of a in period 2.",
+            "cite_spans": [
+                {
+                    "start": 904,
+                    "end": 906,
+                    "text": "16",
+                    "ref_id": null
+                },
+                {
+                    "start": 929,
+                    "end": 931,
+                    "text": "16",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Variation of lockdown thresholds with respect to the habit formation parameter (\u03b2)"
+        },
+        {
+            "text": "This explains why at \u03b2 = 0, \u03c1 * 2 lies below \u03c1 * 1 . However, as \u03b2 increases, the option of imposing an early lockdown in period 1 becomes more attractive as it now comes with the benefit of habit formation for an additional period. Thus, as \u03b2 crosses a threshold, \u03c1 * 1 lies below \u03c1 * 2 . In both Figs. 2 and 3, this pattern is displayed. Next, we explain the effects of an increase in the value of A. First, the threshold of \u03b2 above which \u03c1 * 1 is below \u03c1 * 2 increases. Second, the relative difference between \u03c1 * 1 and \u03c1 * 2 goes down. These observations can be intuitively explained as follows. Irrespective of the timing of the lockdown, the benefit of habit formation is always present during the third period. The imposition of an early lockdown brings in the additional benefit of habit formation in period 2. As A, the length of period 3 goes up, the relative significance of this additional benefit in period 2 from early lockdown declines. This explains why as A increases, the difference between \u03c1 * 1 and \u03c1 * 2 (for a given \u03b2) becomes smaller.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Variation of lockdown thresholds with respect to the habit formation parameter (\u03b2)"
+        },
+        {
+            "text": "In this subsection we will analyze how the thresholds \u03c1 * 1 and \u03c1 * 2 interact with the cost parameter \u03b3 . For this exercise, we calibrate the model for r = 2.5; \u03b4 = 0.8; p = 0.6 and A = 2.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Lockdown thresholds and the cost parameter (\u03b3 )"
+        },
+        {
+            "text": "We look at the variation of the thresholds \u03c1 * 1 and \u03c1 * 2 as the value of \u03b3 continuously varies from 0.1 to 0.45. Figs. 4 and 5 depict this variation for fixing \u03b2 = 0.1 and \u03b2 = 0.6 respectively. Again, it is verified that at the right neighborhood of the threshold \u03c1 * 1 , optimal length of lockdown is always equal to 1.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Lockdown thresholds and the cost parameter (\u03b3 )"
+        },
+        {
+            "text": "It is evident from both the figures that as the magnitude of the cost parameter goes up, both the thresholds increase. This follows from the fact that the less able a government is in handling the economy during a lockdown (i.e. higher values of \u03b3 ), the more reluctant a government is to impose a lockdown in a particular period, i.e. \u03c1 * t higher (t = 1, 2). Thus, from both the figures we can observe that as \u03b3 goes up, both \u03c1 * 1 and \u03c1 * 2 go up. However, the rate of increase in \u03c1 * 1 is lower than the rate of increase in \u03c1 * 2 . This implies that for higher values of \u03b3 the relative benefit of early lockdown is higher. The first observation follows from the fact that as \u03b3 goes up, the cost of lockdown in any period goes up, raising the thresholds for lockdown in both periods. To understand the second observation, consider a government which is deciding between an early or a late lockdown. Irrespective of the timing of the lockdown, the cost incurred will be the same. However, the early lockdown has the additional benefit of habit formation in period 2. A government with a higher value of \u03b3 is less efficient in managing the economy during a lockdown. This implies, at the new optimum, the marginal benefit from imposing a lockdown should be equal to this higher marginal cost. The government achieves this by imposing an early lockdown so that it can reap the additional benefit from habit formation in period 2. This explains why \u03c1 * 1 increases less in comparison to \u03c1 * 2 as \u03b3 increases. This effect is more prominent for higher values of \u03b2 as evident from Fig. 5 .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 1577,
+                    "end": 1583,
+                    "text": "Fig. 5",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "Lockdown thresholds and the cost parameter (\u03b3 )"
+        },
+        {
+            "text": "An implication of this finding is that if a country with higher \u03b3 has to impose a lockdown, then it is better to impose an early lockdown to get the benefit of habit formation.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Lockdown thresholds and the cost parameter (\u03b3 )"
+        },
+        {
+            "text": "We begin this subsection by examining the effect of the length of period 3, i.e. A on the lockdown thresholds \u03c1 * 1 and \u03c1 * 2 . This is depicted in Fig. 6 . We can observe that as there is an increase in the expected time of the arrival of vaccine or treatment (i.e. A increases), the thresholds for imposing the lockdown goes down in both periods. 17 The intuition follows from the fact that an increase in A entails more harm in the event the disease is virulent and hence the government wants to kick in disease reduction measures earlier. 17 We calibrate our model for r = 2.5; \u03b3 = 0.45; \u03b4 = 0.6; p = 0.6 and \u03b2 = 0.6. Next, in Fig. 7 we represent the variation of the thresholds \u03c1 * 1 and \u03c1 * 2 with respect to the parameter \u03b4. In our model, the parameter \u03b4 captures the public backlash in the event a lockdown is imposed when the disease is not virulent. We can interpret this parameter as representing the trust of the public on the incumbent government. The higher is the value of \u03b4, the lower is the trust of the public in the government.",
+            "cite_spans": [
+                {
+                    "start": 349,
+                    "end": 351,
+                    "text": "17",
+                    "ref_id": null
+                },
+                {
+                    "start": 543,
+                    "end": 545,
+                    "text": "17",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 148,
+                    "end": 154,
+                    "text": "Fig. 6",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 631,
+                    "end": 637,
+                    "text": "Fig. 7",
+                    "ref_id": "FIGREF4"
+                }
+            ],
+            "section": "Effect of the length of period 3 (A) and the democracy parameter (\u03b4) on the lockdown thresholds"
+        },
+        {
+            "text": "We can observe that as the level of trust of the public goes down, the government becomes more reluctant to impose a lockdown. This is demonstrated by the increasing thresholds for both periods. However, because of the benefit from habit formation, the relative benefit of early lockdown is higher and hence, the thresholds \u03c1 * 1 is always below the threshold \u03c1 * 2 .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Effect of the length of period 3 (A) and the democracy parameter (\u03b4) on the lockdown thresholds"
+        },
+        {
+            "text": "We have presented a stylized model of a disease with unknown virulence to illustrate the trade-off between learning and habit formation that have opposing impacts on the timing of a lockdown. To isolate this trade-off, we simplify on a number of dimensions including not explicitly modeling the decision of other agents in the population as well as ruling out strategic considerations. We believe strategic considerations to be minimal in a large population. Political considerations do play a role in a government's decisions to impose a lockdown in terms of its timing and intensity. While we do not model this explicitly, political issues are partly captured by the variable \u03b4 which proxies for how much trust there is in government. A lower \u03b4 implies a higher trust and thus lower public backlash against the lockdown. We have also simplified the disease propagation mechanism by a single parameter that can be interpreted as the virulence or harm. Assuming this is proportional to the reproduction rate, this could have been embedded in a standard SIR model. 18 where this reproduction rate would need to be greater than 1 for the disease to spread over time. While the harm or virulence r being modeled as a binary variable is a simplification, we think it captures the key qualitative features of a more realistic model where the virulence can take on more values. There are other simplifying assumptions, e.g. habit formation can also directly affect the economy if people stay home post lockdown and reduce demand in certain sectors, whereas in our model this is only captured through the equilibrium choice of a. Allowing a more direct impact would push towards a later lockdown but once again preserve the qualitative features of the model. Our model suggests some interesting implications for the timing of lockdown both within and across countries. Holding everything else constant, one might have expected countries facing the pandemic later to adopt earlier lockdowns as they already had recourse to information from other countries. But as the model shows, this effect is moderated by factors such as the cost to the economy, trust in the government and country specific information (e.g. age composition) that can affect the virulence of the disease. Importantly, governments may over-estimate or under-estimate the strength of the habit formation parameter of the population. One can estimate differences in values of \u03b2 across countries by the level of compliance of the population with the suggested guidelines from the government. However, a government may not necessarily estimate the value of \u03b2 accurately. In the U.K., the government was criticized for delaying the lockdown, but it seems (from copies of meetings of the scientific advisory group) that there was a general belief that the U.K. population would not comply or reach behavioral fatigue (see Mahase, 18 See Kermack and McKendrick (1927) . 2020). 19 While the government may have underestimated the degree of compliance in the population with the guidelines on social distancing, it nonetheless rationalizes the ex ante decision of the government. Reports of the U.K.'s scientific advisory committee minutes also reveal how initial decisions were being reformulated as new data arrived on the disease and expert advice was being sought how to induce lasting behavioral changes through messaging during the lockdown 20 in line with our model. These suggest that the tradeoffs we suggest in our model indeed played a crucial role in the decision to lockdown. Further, it points out that countries that have been ex post criticized for acting late may have been gathering data before taking the extreme step of a lockdown.",
+            "cite_spans": [
+                {
+                    "start": 1064,
+                    "end": 1066,
+                    "text": "18",
+                    "ref_id": null
+                },
+                {
+                    "start": 2878,
+                    "end": 2885,
+                    "text": "Mahase,",
+                    "ref_id": null
+                },
+                {
+                    "start": 2893,
+                    "end": 2922,
+                    "text": "Kermack and McKendrick (1927)",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 2932,
+                    "end": 2934,
+                    "text": "19",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion and concluding remarks"
+        },
+        {
+            "text": "Coming to the parameters \u03b4 and \u03b3 , the early lockdown in India is consistent with the high support it enjoyed at that time (suggesting a low \u03b4) in the population as well as the fact that it had more precise signals already because of the spread in other countries. The fact that the economic cost to a lockdown in a country like India might be high is also consistent with our comparative static result that if a lockdown is imposed where \u03b3 is high, it is better to impose it early. The distrust in government seen in the U.S.A (suggesting a high \u03b4) is also consistent with the lower intensity of lockdowns in many states.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion and concluding remarks"
+        },
+        {
+            "text": "The model shows the complex tradeoffs involved in a situation where the initial signals about the nature and spread of the disease were imprecise and the decisions on when and with what intensity to lockdown were based on the ex ante beliefs of governments on not just the damage to the economy and political backlash but on the degree to which this would change habits in the population. Thus, while ex post Italy's lockdown may seem late, 21 as the first country in Europe to see the spread of the virus, it may have felt it needed to know more before taking this step, 19 The article https://www.theguardian.com/commentisfree/2020/may/05/brit ons-lockdown-obedient-exceptional-nhs-rules reports on the polling by Ipsos Mori that found 23 percent of Biritsh people would re-open the economy and business if the virus is not fully contained. This compares to just over a third of Americans, a majority of Italians, 50 percent of Chinese and 60 percent of Russians. 20 https://www.theguardian.com/world/2020/may/29/sage-minutes-reveal-ho w-uk-advisers-reacted-to-coronavirus-crisis. 21 https://www.nytimes.com/interactive/2020/04/05/world/europe/italy-coron avirus-lockdown-reopen.html. which in fact may have resulted in a somewhat more stringent lockdown later. This phenomenon is consistent with our model i.e. when lockdown is imposed in period 2 following a high signal, the value of \u03c1 2 is higher implying a high intensity of lockdown a *",
+            "cite_spans": [
+                {
+                    "start": 572,
+                    "end": 574,
+                    "text": "19",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion and concluding remarks"
+        },
+        {
+            "text": "There are a number of other things we have simplified or not considered. A more extended model would look at how different governments with different resources (e.g. ability to have track and trace in place in a short time) would use more targeted measures that allow for both some containment 22 while gaining some information on disease propagation. We leave this for future work which should also look at empirical measures on trust in government, ability of the economy to adapt to virtual working etc. to see if they affected the timing and intensity of the lockdown as predicted by the model.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "."
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "A Multi-Risk SIR Model with Optimally Targeted Lockdown (No. W27102)",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Acemoglu",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Chernozhukov",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Werning",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Whinston",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "National Bureau of Economic Research",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "A Simple Planning Problem for Covid-19 Lockdown (No. W26981)",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Alvarez",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Argente",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Lippi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "National Bureau of Economic Research",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Infectious Diseases of Humans -Dynamics and Control",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Anderson",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "May",
+                    "suffix": ""
+                }
+            ],
+            "year": 1992,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Sequential research and the adoption of innovations",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Bhattacharya",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Chatterjee",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Samuelson",
+                    "suffix": ""
+                }
+            ],
+            "year": 1986,
+            "venue": "Oxf. Econ. Pap",
+            "volume": "38",
+            "issn": "",
+            "pages": "219--243",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "How do epidemics induce behavioral changes",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Boucekkine",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Desbordes",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Latzer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "J. Econ. Growth",
+            "volume": "14",
+            "issn": "3",
+            "pages": "233--264",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "An Economic Model of the Covid-19 Epidemic: The Importance of Testing and Age-Specific Policies",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Brotherhood",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Kircher",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Santos",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Tertilt",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Diseases, infection dynamics, and development",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Chakraborty",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Papageorgiou",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Sebasti\u00e1n",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "J. Monetary Econ",
+            "volume": "57",
+            "issn": "7",
+            "pages": "859--872",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Uncertainty, learning, and technology adoption in agriculture",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Chavas",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Nauges",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Appl. Econ. Perspect. Policy",
+            "volume": "42",
+            "issn": "1",
+            "pages": "42--53",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "The cost of the covid-19 crisis: Lockdowns, macroeconomic expectations, and consumer spending",
+            "authors": [
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Coibion",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Gorodnichenko",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Weber",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Covid Econ",
+            "volume": "20",
+            "issn": "",
+            "pages": "1--51",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Investment under Uncertainty",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Dixit",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Pindyck",
+                    "suffix": ""
+                }
+            ],
+            "year": 1994,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Restarting the economy while saving lives under Covid-19",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Favero",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ichino",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Rustichini",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Habit formation and behavior change",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Gardner",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Rebar",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Oxford Research Encyclopedia of Psychology",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Rational epidemics and their public control",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Geoffard",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Philipson",
+                    "suffix": ""
+                }
+            ],
+            "year": 1996,
+            "venue": "Internat. Econom. Rev",
+            "volume": "60",
+            "issn": "",
+            "pages": "3--624",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Infectious diseases and endogenous fluctuations",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Goenka",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Econom. Theory",
+            "volume": "50",
+            "issn": "1",
+            "pages": "125--149",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Infectious diseases, human capital and economic growth",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Goenka",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "1--47",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Infectious diseases and economic growth",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Goenka",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Nguyen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "J. Math. Econom",
+            "volume": "50",
+            "issn": "",
+            "pages": "34--53",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Pandemic Economics: Optimal Dynamic Confinement under Uncertainty and Learning",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Gollier",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "1--22",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "The timing of new technology adoption: theoretical models and empirical evidence",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Hoppe",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "Manch. Sch",
+            "volume": "70",
+            "issn": "1",
+            "pages": "56--76",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Adoption and diffusion of an innovation of cncertain profitability",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Jensen",
+                    "suffix": ""
+                }
+            ],
+            "year": 1982,
+            "venue": "J. Econom. Theory",
+            "volume": "27",
+            "issn": "1",
+            "pages": "182--193",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "A contribution to the mathematical theory of epidemics",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Kermack",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Mckendrick",
+                    "suffix": ""
+                }
+            ],
+            "year": 1927,
+            "venue": "Proc. R. Soc. Lond. Ser. A Contain. Pap. Math. Phys. Character",
+            "volume": "115",
+            "issn": "772",
+            "pages": "700--721",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Fundamental principles of epidemic spread highlight the immediate need for large-scale serological surveys to assess the stage of the SARS-CoV-2 epidemic",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Lourenco",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Paton",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ghafari",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Kraemer",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Thompson",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Simmonds",
+                    "suffix": ""
+                },
+                {
+                    "first": ".",
+                    "middle": [
+                        "."
+                    ],
+                    "last": "Gupta",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Covid-19: Was the decision to delay the UK's lockdown over fears of behavioural fatigue based on evidence",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Mahase",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Optimal Epidemic Suppression under an ICU Constraint. mimeo",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Miclo",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Spiro",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Covid-19 and the Welfare Effects of Reducing Contagion. mimeo, MIT",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Pindyck",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "A model of reporting and controlling outbreaks by public health agencies",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Saak",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Hennessy",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Econom. Theory",
+            "volume": "66",
+            "issn": "1",
+            "pages": "21--64",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "The economics of the COVID-19 pandemic: an assessment",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Susskind",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Vines",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Oxf. Rev. Econ. Policy",
+            "volume": "36",
+            "issn": "",
+            "pages": "1--13",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Rational disinhibition and externalities in prevention",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Toxvaerd",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Internat. Econom. Rev",
+            "volume": "60",
+            "issn": "4",
+            "pages": "1737--1755",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "A new coronavirus associated with human respiratory disease in China",
+            "authors": [
+                {
+                    "first": "Fan",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Su",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Bin",
+                    "suffix": ""
+                },
+                {
+                    "first": "Yan-Mei",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Wen",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Song",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Zhi-Gang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Yi",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nature",
+            "volume": "579",
+            "issn": "7798",
+            "pages": "265--269",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "The gift of the dying: The tragedy of AIDS and the welfare of future african generations",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Young",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Q. J. Econ",
+            "volume": "120",
+            "issn": "2",
+            "pages": "423--466",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "A pneumonia outbreak associated with a new coronavirus of probable bat origin",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nature",
+            "volume": "579",
+            "issn": "7798",
+            "pages": "270--273",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Variation of the thresholds \u03c1 * 1 and \u03c1 * 2 with respect to \u03b2.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "Variation of the thresholds \u03c1 * 1 and \u03c1 * 2 with respect to \u03b3 .",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "Variation of the thresholds \u03c1 * 1 and \u03c1 * 2 with respect to \u03b3 .",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "Variation of thresholds with respect to A.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "Variation of the thresholds \u03c1 * 1 and \u03c1 * 2 with respect to \u03b4.",
+            "latex": null,
+            "type": "figure"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "We thank Juste Abramovaite, Matthias Dahm, two anonymous referees and the guest editors of the special issue for their comments on an earlier version of the paper and Moumita Deb for research assistance.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Acknowledgments"
+        },
+        {
+            "text": "The general expression for continuation payoff from waiting and not imposing a lockdown in period 1 is given by Consider p = 1 2 . In this case \u0393 (\u03c1 1 ) = \u2212\u03c1 1 r(A + 2). Since \u03c1 \u2032\u2032 1 < \u03c1 * 2 , and from Lemma 1, \u03c1 \u2032\u2032 1 is strictly less than the belief at which W * 1 intersects \u0393 . This means we haveThis implies at the right neighborhood of p = 1 2 , we haveSuppose p * < 1. This means for p = p * \u2212 \u03f5, \u03c1 * 1 = \u03c1 * 2 \u2212 \u03c8 such that \u03f5 > 0, \u03c8 > 0 and \u03c8 \u2192 0 as \u03f5 \u2192 0.Thus, at the right neighborhood of pis increasing in p, and W f 1 is unaffected by p. Therefore, it follows that for all p > p * , \u03c1 * 1 > \u03c1 * 2 . This concludes the proof.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Appendix A. Expected continuation payoff in period 1 from not imposing a lockdown"
+        }
+    ]
+}

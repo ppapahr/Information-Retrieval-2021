@@ -1,0 +1,2208 @@
+{
+    "paper_id": "e77caf09d86ac0a308fa11e89b7e71b4d647b03d",
+    "metadata": {
+        "title": "Journal Pre-proof Shipping Markets in Turmoil: An analysis of the Covid-19 outbreak and its implications Shipping Markets in Turmoil: An analysis of the Covid-19 outbreak and its implications",
+        "authors": [
+            {
+                "first": "Nektarios",
+                "middle": [
+                    "A"
+                ],
+                "last": "Michail",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "and Cyprus Centre for Business Research",
+                    "location": {
+                        "settlement": "Nicosia",
+                        "country": "Cyprus"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Kostis",
+                "middle": [
+                    "D"
+                ],
+                "last": "Melas",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Metropolitan College",
+                    "location": {
+                        "settlement": "Thessaloniki",
+                        "country": "Greece"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Journal Pre-proof J o u r n a l P r e -p r o o f 2",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "In the current study, we examine, for the first time in the literature, the impact of exogenous effects in the shipping industry by employing data from the recent Covid-19 pandemic outbreak and explore the reactions of freight rates for dry bulk, clean, and dirty tankers. Our results, using both GARCH (1,1) and VAR specifications, suggest that such events are directly affecting the dry bulk and the dirty tanker segments. In addition, the results also suggest that second round effects, mostly via the decline in oil prices and, in some cases, third round effects via the impact from the stock market, also exist. Finally, by employing daily port calls a proxy variable for the demand for transportation services, we show that both the dry bulk and clean tankers are highly affected by the demand side of the economy, while vessels which transport crude oil do not register such a relationship.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "J o u r n a l P r e -p r o o f 4 between the two is already well-established (Kavussanos et al., 2014; Papapostolou et al., 2016) .",
+            "cite_spans": [
+                {
+                    "start": 77,
+                    "end": 102,
+                    "text": "(Kavussanos et al., 2014;",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 103,
+                    "end": 129,
+                    "text": "Papapostolou et al., 2016)",
+                    "ref_id": "BIBREF44"
+                }
+            ],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "This research contributes to the current literature in various ways. First, it is the first time that a shipping cycle collapse is examined in the short run rather than as a point of a longer-duration cycle, allowing us to have a closer look at how freight rates are affected by rapid changes in the macroeconomic environment. Moreover, we employ, for the first time, what appears to be one of the best proxies for demand available, namely vessel port calls, which are able to better assist us in capturing the demand-side changes in the shipping. Finally, through the use of the coronavirus variable in a Vector Autoregression (VAR) model, we effectively turn an event-study methodology into an endogenous reaction, allowing us to observe how the whole system is affected when an unexpected shock occurs, and not just rely on how a variable reacts in a simple OLS framework.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "The results of our research are important both for practitioners of the industry as well as academics, as they shed light on how shipping markets react on crisis periods as well as the pass-through channels through which it is affected. Shipowners, charterers, operators, and policymakers are all affected from the pandemic. As the results suggest, the excess drop in the industry's returns that hits the market in such exogenous events affect largely the cash flow generating abilities of shipping companies. This leaves companies with income problems that affect the companies themselves and consequently their investors, management, and employees. Moreover, on a broader perspective, extended stakeholders are affected by such events, like governments on a tax perspective. To address this issue, market participants could try to reduce losses and limit volatility in freight rates by entering into paper markets J o u r n a l P r e -p r o o f 5 (FFAs, Futures) and engage in chartering activities. For policymakers, especially in locations which have been traditionally considered shipping hubs (Greece, Cyprus, Singapore, Shanghai, etc.) , adverse changes in shipping companies' cash flows can potentially mean reductions in output as well as job losses, which could hurt the local economy, and thus they may need to use targeted measures to account for that.",
+            "cite_spans": [
+                {
+                    "start": 1099,
+                    "end": 1142,
+                    "text": "(Greece, Cyprus, Singapore, Shanghai, etc.)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "The remainder of this paper is organized as follows: Section 2 provides a critical review of the literature on the issue; Section 3 described the methodology and data used; Section 4 discusses the empirical results obtained, and Section 5 concludes on the findings.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "In December 2019, an unknown virus, later named \"Covid-19\" erupted in Wuhan district of China, in the city of Hubei (Sohrabi et al., 2020) . Its fatality rate accounted for 2.5 per cent of the cases (Xu et al., 2020) , a percentage that is equivalent to previous pandemics (Grant and Giovannucci, 2009) . While this research is written, researches have not concluded on the origin of the virus, however, the most prominent theories are that it came from a human interaction either with bats (Rothan and Byrareddy, 2020) or with pangolins .",
+            "cite_spans": [
+                {
+                    "start": 116,
+                    "end": 138,
+                    "text": "(Sohrabi et al., 2020)",
+                    "ref_id": "BIBREF51"
+                },
+                {
+                    "start": 199,
+                    "end": 216,
+                    "text": "(Xu et al., 2020)",
+                    "ref_id": "BIBREF61"
+                },
+                {
+                    "start": 273,
+                    "end": 302,
+                    "text": "(Grant and Giovannucci, 2009)",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 491,
+                    "end": 519,
+                    "text": "(Rothan and Byrareddy, 2020)",
+                    "ref_id": "BIBREF48"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Review of the Related Literature"
+        },
+        {
+            "text": "Despite its origin though, the latter virus has erupted faster when compared to previous diseases mainly because of the high transportation connectivity of today's world and it has affected most countries of the world. The response to the latter threat by mostly all the national governments was a lockdown of all the citizens and businesses so as social distancing to act as a diminisher of the out-break (Lau et al., 2020) . Thus, the world economy has been hit and a new economic crisis erupted. Researches show that coronavirus has affected both the financial markets J o u r n a l P r e -p r o o f 6 (Ramelli and Wagner, 2020) as well as the national economies (Atkeson, 2020) .",
+            "cite_spans": [
+                {
+                    "start": 406,
+                    "end": 424,
+                    "text": "(Lau et al., 2020)",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 666,
+                    "end": 681,
+                    "text": "(Atkeson, 2020)",
+                    "ref_id": "BIBREF5"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Review of the Related Literature"
+        },
+        {
+            "text": "Consequently, world trade has been hit as well.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Review of the Related Literature"
+        },
+        {
+            "text": "While the shipping markets were still recovering from the new desulphurization legislation (Zis and Cullinane, 2020) , the new virus has hit the markets hard 1 . The freight rates have dropped by 73% for the dry bulk segment, by 36% for the dirty tankers segment and by 30% for the clean tanker segment, as it can be observed from Figure The latter changes affected negatively the cash flow of the shipping companies and given the strong substitution effect that exists between the different shipping segments (Kavussanos and Visvikis, 2016) as well as between the different vessel sizes (Tsouknidis, 2016) , left both ship owners and the financiers exposed.",
+            "cite_spans": [
+                {
+                    "start": 91,
+                    "end": 116,
+                    "text": "(Zis and Cullinane, 2020)",
+                    "ref_id": "BIBREF64"
+                },
+                {
+                    "start": 510,
+                    "end": 541,
+                    "text": "(Kavussanos and Visvikis, 2016)",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 588,
+                    "end": 606,
+                    "text": "(Tsouknidis, 2016)",
+                    "ref_id": "BIBREF58"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 331,
+                    "end": 337,
+                    "text": "Figure",
+                    "ref_id": null
+                }
+            ],
+            "section": "Review of the Related Literature"
+        },
+        {
+            "text": "Nevertheless, despite the fact that an exogenous event can have such a strong influence on shipping companies cash flows, literature has not focused extensively on event studies for the industry. The latter method while it is heavily used in the finance, economics, and management literature, it has not been explored adequately in the shipping literature. The researches that have used event studies in the industry are mainly driven from the equivalent alike research of the finance literature that looks into the cumulative abnormal return of a company's stock, when an endogenous effect takes place (see Kothari and Warner, 2007 for a in-depth description of the method).",
+            "cite_spans": [
+                {
+                    "start": 608,
+                    "end": 632,
+                    "text": "Kothari and Warner, 2007",
+                    "ref_id": "BIBREF33"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Review of the Related Literature"
+        },
+        {
+            "text": "Such a research is the seminal work conducted by Panayides and Gong (2002) were they have shown that mergers and acquisitions have a positive impact for the liner J o u r n a l P r e -p r o o f 7 shipping companies. In a similar manner, Samitas and Kenourgios (2007) and Syriopoulos and Theotokas (2007) show that the results are also consistent for listed companies that operate in the dry bulk and the tanker segments. Alexandrou et al.",
+            "cite_spans": [
+                {
+                    "start": 49,
+                    "end": 74,
+                    "text": "Panayides and Gong (2002)",
+                    "ref_id": "BIBREF41"
+                },
+                {
+                    "start": 237,
+                    "end": 266,
+                    "text": "Samitas and Kenourgios (2007)",
+                    "ref_id": "BIBREF49"
+                },
+                {
+                    "start": 271,
+                    "end": 303,
+                    "text": "Syriopoulos and Theotokas (2007)",
+                    "ref_id": "BIBREF55"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Review of the Related Literature"
+        },
+        {
+            "text": "(2014) on a more extended research conclude on the positive impact of mergers and acquisitions. In a different perspective, Mar\u00edn and Sicotte (2003) has shown that some oligopolistic practices that have been apparent in the shipping industry in the 50's and the 60's were having a positive effect on the stocks of the companies.",
+            "cite_spans": [
+                {
+                    "start": 124,
+                    "end": 148,
+                    "text": "Mar\u00edn and Sicotte (2003)",
+                    "ref_id": "BIBREF38"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Review of the Related Literature"
+        },
+        {
+            "text": "On a macro-level, research is more extensive. Grammenos and Arkoulis (2002) have shown that oil prices, laid up tonnage and exchange rates affect the shipping industry. Likewise, Papapostolou et al. (2014; 2016) show that industrial production and cumulative crisis periods in Asia and in the G7 countries are acting as indicators of the international demand for shipping services. Finally, oil prices have extensively being linked with the shipping markets as they have a lead-lag relationship with the freight rates (Angelopoulos et al., 2020) and thus they can provide better forecasts for the tanker and the dry bulk market (Gavriilidis et al., 2018; Michail, 2020) .",
+            "cite_spans": [
+                {
+                    "start": 46,
+                    "end": 75,
+                    "text": "Grammenos and Arkoulis (2002)",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 179,
+                    "end": 205,
+                    "text": "Papapostolou et al. (2014;",
+                    "ref_id": "BIBREF43"
+                },
+                {
+                    "start": 206,
+                    "end": 211,
+                    "text": "2016)",
+                    "ref_id": "BIBREF58"
+                },
+                {
+                    "start": 518,
+                    "end": 545,
+                    "text": "(Angelopoulos et al., 2020)",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 628,
+                    "end": 654,
+                    "text": "(Gavriilidis et al., 2018;",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 655,
+                    "end": 669,
+                    "text": "Michail, 2020)",
+                    "ref_id": "BIBREF39"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Review of the Related Literature"
+        },
+        {
+            "text": "However, while event studies and macroeconomic research has been conducted in the literature, there has not been an attempt yet to examine how exogenous macroeconomic events are affecting the shipping markets. Thus, the current paper comes to fill in this gap by exploring how a pandemic affects freight rates for the ocean-going vessels.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Review of the Related Literature"
+        },
+        {
+            "text": "J o u r n a l P r e -p r o o f",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Review of the Related Literature"
+        },
+        {
+            "text": "To examine the impact of the coronavirus on freight rates, we employ a regression model with GARCH errors, as first presented by Bollerslev (1986) . Formally, the GARCH (p,q) model can be formulated through a mean equation: Index to capture the Chinese impact), which would capture the change in the macroeconomic outlook. Similarly, the index would capture any changes in the economy-wide (and worldwide) risk sentiment. The benefit of using the abovementioned variables is that it allows us to use a higher frequency, given that they are all available on a daily basis. Furthermore, as the variables are in a daily frequency and there has undoubtedly been some noise embedded in them, the error term, t \uf065 , is allowed to evolve according to the following process in order to obtain better estimates (Hamilton, 2008; Michail, 2019) :",
+            "cite_spans": [
+                {
+                    "start": 129,
+                    "end": 146,
+                    "text": "Bollerslev (1986)",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 801,
+                    "end": 817,
+                    "text": "(Hamilton, 2008;",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 818,
+                    "end": 832,
+                    "text": "Michail, 2019)",
+                    "ref_id": "BIBREF40"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Methodology and Dataset"
+        },
+        {
+            "text": "In equation ( and q are the orders of ARCH and GARCH terms respectively. As in other studies in the literature, we limit the scope of the estimation to the GARCH (1,1) which has been shown to perform well in previous applications (see Andersen and Bollerslev, 1998; Javaheri et al., 2004; Hansen and Lunde, 2005; Gazola et al., 2008; Gazola et al., 2008; Michail, 2019) . In addition to the fact that this has been the prevalent workhorse of the literature, the GARCH (1,1) is also the best fit model for the BDTI and the BCT case. For the BDI, the ARCH (1) model has been found to be the best fit and we have thus proceeded with that specification.",
+            "cite_spans": [
+                {
+                    "start": 235,
+                    "end": 265,
+                    "text": "Andersen and Bollerslev, 1998;",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 266,
+                    "end": 288,
+                    "text": "Javaheri et al., 2004;",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 289,
+                    "end": 312,
+                    "text": "Hansen and Lunde, 2005;",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 313,
+                    "end": 333,
+                    "text": "Gazola et al., 2008;",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 334,
+                    "end": 354,
+                    "text": "Gazola et al., 2008;",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 355,
+                    "end": 369,
+                    "text": "Michail, 2019)",
+                    "ref_id": "BIBREF40"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Methodology and Dataset"
+        },
+        {
+            "text": "The use of a daily frequency has the important benefit of allowing us to utilize all the available data until very recently, without having to wait for GDP data to be released. Our expectations are that port calls should in general have a positive relationship with freight rates, given that they are a very good proxy for demand; the higher the number of vessels entering a port, the larger the demand for goods. On the other hand, the stock market impact is less clear as we expect it to be either positive or zero, given the fact that changes in the stock market which are unrelated to the macro environment but due to company earnings announcements should not affect freight rates.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Methodology and Dataset"
+        },
+        {
+            "text": "A similar case can be made for Brent oil, given that higher oil prices should mean higher freight rates, but, longer-term contracts regarding fuels and lubricants could prevent the freight rate being affected in the short run. Finally, we expect the coronavirus variable to have either a negative or a zero impact on the freight rates.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Methodology and Dataset"
+        },
+        {
+            "text": "This is because, as the equation is specified, the number of cases can only be interpreted as an additional impact to the deterioration in the overall business environment. In other words, in this specification, the variable would capture something like a \"sentiment effect\" which would measure the additional reaction to the virus. It should be noted here that we employ the lag of the change in coronavirus cases, given that these values are usually reported for the previous day.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Methodology and Dataset"
+        },
+        {
+            "text": "While a regression with GARCH(1,1) errors can provide an initial overview of the impact of the coronavirus on freight rates, it is limiting to the inferences it can provide. In particular, it does not allow us to capture any second round effects, and, even more importantly it does not allow for the coronavirus variable to be the first that is being shocked in a system of equations containing the above variables. In particular, the impact from the coronavirus is limited to the direct effect the variable can have on freight rates, and does not capture the full, systemic effects that a coronavirus can have on the other variables. To this end, we also employ a Vector AutoRegressive (VAR) specification, as first introduced by Sims (1980) .",
+            "cite_spans": [
+                {
+                    "start": 731,
+                    "end": 742,
+                    "text": "Sims (1980)",
+                    "ref_id": "BIBREF50"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Methodology and Dataset"
+        },
+        {
+            "text": "The benefit of the VAR is that it allows us to capture the full extent of the coronavirus impact and not just the additional impact which is captured in a regression estimate. In the coronavirus case, the impact from the lockdown and containment measures hits consumer activity which then has an impact on industrial activity. A reduction in industrial activity has an effect on the amount of goods traded and hence transported, lowering the derived demand for shipping services. As such, with demand declining, freight rates drop. This impact can be quantified in our estimates, with the stock market acting as a proxy for industrial and consumer activity, given that it is quick to capture changes in corporate profits and future potential. Then, this effect is passed on to oil prices and then to freight rates. The J o u r n a l P r e -p r o o f 11 VAR model assists in capturing the effects of this ripple process as it allows for a shock in one variable to be passed on to the system of variables and thus allows us to observe the stream of changes.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Methodology and Dataset"
+        },
+        {
+            "text": "Econometrically, it should be mentioned that there is no point in employing a cointegration setup like Johansen and Juselius (1990) , given the fact that the coronavirus variable has a limited lifetime and is also trend-stationary. Thus, we proceed with the estimation of a VAR in growth rates. In particular, the setup employed can be expressed such that:",
+            "cite_spans": [
+                {
+                    "start": 103,
+                    "end": 131,
+                    "text": "Johansen and Juselius (1990)",
+                    "ref_id": "BIBREF27"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Methodology and Dataset"
+        },
+        {
+            "text": "where is a matrix of all the variables employed in the estimation, as expressed in equation (1), and c is a vector of constants. The benefit of this specification is that it allows for any lagged effects to enter the equation and provides a better interpretation of the shocks as they are forced to be exogenous to the system of equations. This allows us to better capture the question at hand, namely, what is the response of freight rates and demand for shipping (port calls) from a shock to coronavirus cases. while the market indices were also positive. The largest positive value was recorded in the coronavirus dummy, which grew on average 2.37% for each day in the three months of its existence.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Methodology and Dataset"
+        },
+        {
+            "text": "The virus variable was also the one with the highest standard deviation, at 8.44%, while global calls had understandably the lowest. At is can be seen, the values of the variables fluctuated significantly through the year, ranging from -10 to +10 in the majority of cases, with the virus cases recording an impressive 64% growth at maximum, even though this was associated with the early days when the number of cases was still small. As also expected, the hypothesis of normality is rejected according to the Jarque-Bera test (1980) . Finally, the common sample has 310 observations which have been used to estimate the impact on the basis of the above two methodologies. The results from the estimations can be found the section which follows.",
+            "cite_spans": [
+                {
+                    "start": 527,
+                    "end": 533,
+                    "text": "(1980)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Methodology and Dataset"
+        },
+        {
+            "text": "<Insert Table No .2>",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 8,
+                    "end": 16,
+                    "text": "Table No",
+                    "ref_id": null
+                }
+            ],
+            "section": "Methodology and Dataset"
+        },
+        {
+            "text": "Starting from the regression with GARCH (1,1) errors, as described in equations (1) and (2), While the relationship between the BDTI and oil may seem to be counterintuitive at first, there are a few reasons with regards to how this is justified.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Estimating the impact of the coronavirus"
+        },
+        {
+            "text": "To begin with, lower oil prices can mean higher freight rates as tankers can serve as oil storage for some amount of time, as was the case in the 1990s oil crisis (Stopford, 2009 ). This has also been the case during the coronavirus crisis, where reports suggest that floating storage volumes have increased by 37% in just two months during the pandemic period. 5 Additionally, current research has provided evidence of a floating storage arbitrage opportunity when the future oil curve is in contango (Regli and Adland, 2019) . Furthermore, it should also be mentioned that Brent oil is transported with dirty tankers. This means that oil here is not only an operating expense but also the commodity that drives the demand for the transportation services. Thus, as per the J o u r n a l P r e -p r o o f 15 law of demand in classical economics, the higher the price of oil the lower the demand will be.",
+            "cite_spans": [
+                {
+                    "start": 163,
+                    "end": 178,
+                    "text": "(Stopford, 2009",
+                    "ref_id": null
+                },
+                {
+                    "start": 502,
+                    "end": 526,
+                    "text": "(Regli and Adland, 2019)",
+                    "ref_id": "BIBREF46"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Estimating the impact of the coronavirus"
+        },
+        {
+            "text": "Perhaps even more intriguing is the fact that the lag of the stock market prices has a positive sign, while its contemporaneous value has a negative sign. We attribute this to a mean-reverting behavior, one that still emphasizes the importance of the macroeconomic environment for the BDTI. Our results, are in accordance with Erdogan et al. (2013) and Gong et al., (2020) who show that the relationship between stock markets and freight markets is inter-changeable and also is stronger during the busts of the cycles. Finally, in this case the ARCH term is higher than the GARCH term, and thus past errors have a stronger impact on the variance and that these are not very persistent across time.",
+            "cite_spans": [
+                {
+                    "start": 327,
+                    "end": 348,
+                    "text": "Erdogan et al. (2013)",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 353,
+                    "end": 372,
+                    "text": "Gong et al., (2020)",
+                    "ref_id": "BIBREF16"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Estimating the impact of the coronavirus"
+        },
+        {
+            "text": "<Insert Table No .5>",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 8,
+                    "end": 16,
+                    "text": "Table No",
+                    "ref_id": null
+                }
+            ],
+            "section": "Estimating the impact of the coronavirus"
+        },
+        {
+            "text": "As discussed in the previous section, while the GARCH regression estimates provide an overview of the relationships between the variables, they are not showing the full picture which would allow us to examine not partial correlations but shocks to whole system. To alleviate this issue, we proceed with estimating a VAR model, in which all the variables are endogenous so as to observe the impact from an exogenous shock to the system. Figure 2 provides the results of this exercise, using impulse responses. It should be remembered that impulse responses provide the response of a variable following an exogenous one standard deviation (from the errors distribution) shock in the system, after the shock has been fed through to the whole system. In other words, for a shock in Brent oil, we would observe the change to global calls, which would then also impact e.g. the BCT index, which would again impact oil J o u r n a l P r e -p r o o f 16 prices and so on. As such, it allows us to obtain a more holistic view of the impact from a shock. 6",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 436,
+                    "end": 444,
+                    "text": "Figure 2",
+                    "ref_id": null
+                }
+            ],
+            "section": "Estimating the impact of the coronavirus"
+        },
+        {
+            "text": "As figure 2 suggests, the response of BDI to a shock in the coronavirus growth rate is strong, as it decreases by almost 0.25%, while the response is significant in all periods of time. The cumulative impact from a shock which increases coronavirus cases by about 5%, amounts to a drop of more than 1% within 6 days and to more than 2.30% within 20 days. Naturally, the impact from consecutive shocks in the system, i.e. when coronavirus cases increase for 2 or more consecutive days, would be even larger. For comparison purposes, the BDI is \"only\" affected by a maximum of 0.12% in the case of a rise in global port calls, while the S&P500 does not have a significant impact.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Estimating the impact of the coronavirus"
+        },
+        {
+            "text": "The BCT, on the other hand, registers a negative response when global port calls are increasing. On the other hand, an improvement in the global macroeconomic environment causes an increase in the BCT, even though this is later reversed as the movement moves to negative, showing a mean-reverting behavior. With regards to the coronavirus, the impact is delayed, as it takes around 6 days for the freight rate to respond to an increase in virus cases. As a result, the cumulated impact is also much smaller, reaching -0.50% in about 16 days.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Estimating the impact of the coronavirus"
+        },
+        {
+            "text": "For BDTI, the responses are quite different with regards to the macro variable and port calls. In particular, port calls do not appear to have an impact on the variable, as the response is insignificant throughout time. On the other hand, an increase in the S&P500 index causes a negative response from the BDTI, in accordance with the bidirectional lead-lag relationship as described by Gong et al. (2020) . Most importantly, BDTI strong reacts to a shock in coronavirus cases, with the response reaching -0.23% in period 3, and accumulating to -1% after 7 days. By the end of the 20-day horizon of the impulse responses, the accumulated response stands at -2%. The reason for the latter is, as also elaborated upon previously, that Brent oil is not only acting as an operating expense fort this type of vessels but also as the commodity that they transport.",
+            "cite_spans": [
+                {
+                    "start": 388,
+                    "end": 406,
+                    "text": "Gong et al. (2020)",
+                    "ref_id": "BIBREF16"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Estimating the impact of the coronavirus"
+        },
+        {
+            "text": "To examine how the pass-through of the virus takes place, the fourth row of Concerning the impact on freight rates, the rise in coronavirus cases has a strong effect on them, via the decline in the amount of goods transported and is more evident and direct in the BDI case. On the other hand, for BCT, the direct impact is much milder, while BCT rates are expected to decline due to the drop in the stock market, as the BCT is positively related to the S&P500. Finally, for the BDTI, the impact comes via three channels, namely the coronavirus itself, the stock markets, and the price of oil.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Estimating the impact of the coronavirus"
+        },
+        {
+            "text": "Overall, the results of this section show that there exists a strong relationship between freight rates and the coronavirus cases. In addition, second round effects, mostly via the decline in oil prices and, in some cases, third round effects via the J o u r n a l P r e -p r o o f 19 impact from the stock market, have further affected freight markets in pushed them in a downwards spiral, from which they can only escape once cases start to decline and oil prices pick up again.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Estimating the impact of the coronavirus"
+        },
+        {
+            "text": "In this study, we have tried to capture how the shipping markets are reacting to an exogenous shock by employing GARCH regressions and impulse responses from a VAR model. By employing data from the on-going coronavirus disease, Covid-19, we have examined the reaction of the dry bulk, the clean tanker and the dirty tanker markets. The main findings are as follows.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion"
+        },
+        {
+            "text": "First, the pandemic outbreak has negatively affected the dry bulk and the dirty tanker segments by more than what the decline in port calls would imply, while it has not affected the clean tanker segment. More precisely, an increase of 1% of the cases of the coronavirus reported globally, would decrease the Baltic Dry Index by 0.03% and the Baltic Dirty Tanker Index by 0.046%. While, the latter decreases do not seem large, one should consider both the daily nature of the data as well as the cumulative effect during the period of the pandemic.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion"
+        },
+        {
+            "text": "Second, by employing a proxy variable for the demand of transportation services, namely the daily number of calls of vessels in ports, we show that both the Baltic Dry Index and the Clean Tanker Index are highly affected by the demand side of the economy, while vessels which transport crude oil do not register such a relationship. This supports the importance of using tankers as storage capacity during periods of oil market distress and the oil future curve is in contango (Regli and Adland, 2019): while commodities transported by dry bulk vessels and clean tankers J o u r n a l P r e -p r o o f 20 cannot be easily stored given both their nature and the need for specific facilities, crude oil can be stored much more easily given that it can simply remain in the vessel.",
+            "cite_spans": [
+                {
+                    "start": 477,
+                    "end": 487,
+                    "text": "(Regli and",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Conclusion"
+        },
+        {
+            "text": "Third, in accordance with previous researches (Erdogan et al., 2013; Gong et al., 2020) , we confirm the bi-directional lead-lag relationship between stock markets and freight markets as contemporaneously S&P500 has a negative relationship with the Baltic Dirty Tanker Index while the 1 day lag relationship has a positive sign.",
+            "cite_spans": [
+                {
+                    "start": 46,
+                    "end": 68,
+                    "text": "(Erdogan et al., 2013;",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 69,
+                    "end": 87,
+                    "text": "Gong et al., 2020)",
+                    "ref_id": "BIBREF16"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Conclusion"
+        },
+        {
+            "text": "In general, the results from both the GARCH (1,1) and the VAR exercises",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion"
+        },
+        {
+            "text": "show that there exists a strong relationship between freight rates and the coronavirus cases. Furthermore, second-round effects, mostly via the decline in oil prices and, in some cases, third round effects via the impact from the stock market, also exist. Via a combination of these effects, freight markets have been pushed in a downwards spiral, from which they can only escape once cases start to decline and oil prices pick up again.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion"
+        },
+        {
+            "text": "Our results, which are the first to quantify the aforementioned relationships in the literature, should be of great assistance to ship-owners, charterers, shipping financiers, investors, and policy makers, as they shed light on how shipping markets react on crisis periods as well as the pass-through channels through which it is affected. Shipowners, charterers, operators could try to reduce losses and limit volatility in freight rates by entering into paper markets (FFAs, Futures) and engage in chartering activities. Furthermore, as the shipping industry has already been notoriously volatile due to its relationship with world trade and output, we expect that this will further add to this volatile nature, and the impact will highly affect shipping companies' cash flows, leaving both ship-owners and the industry's stakeholders Figure 2 reports the impulse responses from the VAR model, as specified in section 3. BDI to Global Calls refers to the response of the BDI to a shock in Global Calls. Vertical axis reports the magnitude of the variable response in percentage points. For example, a 1% increase in global calls would case a maximum of 0.1% increase in the BDI. Dotted lines are the 68% confidence interval. Horizontal axis refers to the periods (days) ahead after the shock took place. For example, the BCT response to a shock in Global Calls is zero after 10 days. ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 837,
+                    "end": 845,
+                    "text": "Figure 2",
+                    "ref_id": null
+                }
+            ],
+            "section": "Conclusion"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Market risk analysis",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Alexander",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Practical financial econometrics",
+            "volume": "2",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Mergers and acquisitions in shipping",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Alexandrou",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Gounopoulos",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Thomas",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Transp. Res. Part E Logist. Transp. Rev",
+            "volume": "61",
+            "issn": "",
+            "pages": "212--234",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Answering the Skeptics: Yes, Standard Volatility Models do Provide Accurate Forecasts",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Andersen",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Bollerslev",
+                    "suffix": ""
+                }
+            ],
+            "year": 1998,
+            "venue": "Int. Econ. Rev. (Philadelphia)",
+            "volume": "39",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.2307/2527343"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Commodity and transportation economic market interactions revisited: New evidence from a dynamic factor model",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Angelopoulos",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Sahoo",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Visvikis",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Transp. Res. Part E Logist. Transp. Rev",
+            "volume": "133",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.tre.2019.101836"
+                ]
+            }
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "What Will Be the Economic Impact of COVID-19 in the US? Rough Estimates of Disease Scenarios",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Atkeson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "NBER Work. Pap. Ser",
+            "volume": "25",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3386/w26867"
+                ]
+            }
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Baltic Exchange, 2020. Guide to Market Benchmarks",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Generalized autoregressive conditional heteroskedasticity",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Bollerslev",
+                    "suffix": ""
+                }
+            ],
+            "year": 1986,
+            "venue": "J. Econom",
+            "volume": "31",
+            "issn": "86",
+            "pages": "90063--90064",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/0304-4076"
+                ]
+            }
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "The econometrics of financial markets",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Campbell",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Lo",
+                    "suffix": ""
+                },
+                {
+                    "first": "W.-C",
+                    "middle": [],
+                    "last": "Andrew",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Mackinlay",
+                    "suffix": ""
+                }
+            ],
+            "year": 1997,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Common risk factors in the returns of shipping stocks",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Drobetz",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Schilling",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Tegtmeier",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Marit. Policy Manag",
+            "volume": "37",
+            "issn": "",
+            "pages": "93--120",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Dynamics of the comovement between stock and maritime markets",
+            "authors": [
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Erdogan",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Tata",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Karahasan",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Sengoz",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Int. Rev. Econ. Financ",
+            "volume": "25",
+            "issn": "",
+            "pages": "282--290",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.iref.2012.07.007"
+                ]
+            }
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Volatility forecasting across tanker freight rates: The role of oil price shocks",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Gavriilidis",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Kambouroudis",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Tsakou",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Tsouknidis",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Transp. Res. Part E Logist. Transp. Rev",
+            "volume": "118",
+            "issn": "",
+            "pages": "376--391",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "The log-periodic-AR(1)-GARCH(1,1) model for financial crashes",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Gazola",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Fernandes",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Pizzinga",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Riera",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Eur. Phys. J. B",
+            "volume": "61",
+            "issn": "",
+            "pages": "355--362",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Contagion risk between the shipping freight and stock markets: Evidence from the recent US-China trade war",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Gong",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "X"
+                    ],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Shi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Transp. Res. Part E Logist. Transp. Rev",
+            "volume": "136",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.tre.2020.101900"
+                ]
+            }
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Macroeconomic Factors and International Shipping Stock Returns",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Grammenos",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Arkoulis",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "Int. J. Marit. Econ",
+            "volume": "4",
+            "issn": "",
+            "pages": "81--99",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "The possible roles of solar ultraviolet-B radiation and vitamin D in reducing case-fatality rates from the 1918-1919 influenza pandemic in the United States",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Grant",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Giovannucci",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Dermatoendocrinol",
+            "volume": "1",
+            "issn": "",
+            "pages": "215--219",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Macroeconomics and ARCH",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Hamilton",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3386/w14151"
+                ]
+            }
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "A forecast comparison of volatility models: Does anything beat a GARCH(1,1)?",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Hansen",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Lunde",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "J. Appl. Econom",
+            "volume": "20",
+            "issn": "",
+            "pages": "873--889",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Efficient tests for normality, homoscedasticity and serial independence of regression residuals",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Jarque",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Bera",
+                    "suffix": ""
+                }
+            ],
+            "year": 1980,
+            "venue": "Econ. Lett",
+            "volume": "6",
+            "issn": "",
+            "pages": "255--259",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "GARCH and volatility swaps",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Javaheri",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Wilmott",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Haug",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Quant. Financ",
+            "volume": "4",
+            "issn": "",
+            "pages": "589--595",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/14697680400008700"
+                ]
+            }
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Maximum Likelihood Estimation and Inference on Cointegration -With Applications To the Demand for Money",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Johansen",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Juselius",
+                    "suffix": ""
+                }
+            ],
+            "year": 1990,
+            "venue": "Oxf. Bull. Econ",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "The International Handbook of Shipping Finance",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Kavussanos",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Visvikis",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Theory and Practice",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Economic spillovers between related derivatives markets: The case of commodity and freight markets",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Kavussanos",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Visvikis",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Dimitrakopoulos",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Econometrics of Event Studies, in: Handbook of Empirical Corporate Finance SET",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Kothari",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Warner",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "3--36",
+            "other_ids": {}
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "The positive impact of lockdown in Wuhan on containing the COVID-19 outbreak in China",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Lau",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Khosrawipour",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Kocbach",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Mikolajczyk",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Schubert",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Bania",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Khosrawipour",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J. Travel Med",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "The reproductive number of COVID-19 is higher compared to SARS coronavirus",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Gayle",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Wilder-Smith",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Rockl\u00f6v",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J. Travel Med",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/jtm/taaa021"
+                ]
+            }
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "Exclusive Contracts And Market Power: Evidence From Ocean Shipping",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Mar\u00edn",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Sicotte",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "J. Ind. Econ",
+            "volume": "51",
+            "issn": "",
+            "pages": "193--214",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/1467-6451.00198"
+                ]
+            }
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "World economic growth and seaborne trade volume: Quantifying the relationship",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Michail",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/J.TRIP.2020.100108"
+                ]
+            }
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Examining the stability of Okun's coefficient",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Michail",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Bull. Econ. Res",
+            "volume": "71",
+            "issn": "",
+            "pages": "240--256",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/boer.12157"
+                ]
+            }
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "The Stock Market Reaction to Merger and Acquisition Announcements in Liner Shipping",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Panayides",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Gong",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "Int. J. Marit. Econ",
+            "volume": "4",
+            "issn": "",
+            "pages": "55--80",
+            "other_ids": {}
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "Investor Sentiment for Real Assets: The Case of Dry Bulk Shipping Market",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Papapostolou",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Nomikos",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Pouliasis",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Kyriakou",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Rev. Financ",
+            "volume": "18",
+            "issn": "",
+            "pages": "1507--1539",
+            "other_ids": {}
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "Shipping investor sentiment and international stock return predictability",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Papapostolou",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Pouliasis",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Nomikos",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Kyriakou",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Transp. Res. Part E Logist. Transp. Rev",
+            "volume": "96",
+            "issn": "",
+            "pages": "81--94",
+            "other_ids": {}
+        },
+        "BIBREF45": {
+            "ref_id": "b45",
+            "title": "Feverish Stock Price Reactions to COVID-19",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Ramelli",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Wagner",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF46": {
+            "ref_id": "b46",
+            "title": "Crude oil contango arbitrage and the floating storage decision",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Regli",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Adland",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Transp. Res. Part E Logist. Transp. Rev",
+            "volume": "122",
+            "issn": "",
+            "pages": "100--118",
+            "other_ids": {}
+        },
+        "BIBREF48": {
+            "ref_id": "b48",
+            "title": "The epidemiology and pathogenesis of coronavirus disease (COVID-19) outbreak",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Rothan",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Byrareddy",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J. Autoimmun",
+            "volume": "109",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/J.JAUT.2020.102433"
+                ]
+            }
+        },
+        "BIBREF49": {
+            "ref_id": "b49",
+            "title": "Impact of mergers and acquisitions on stock returns of tramp shipping firms",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Samitas",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Kenourgios",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Int. J. Financ. Serv. Manag",
+            "volume": "2",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1504/ijfsm.2007.016288"
+                ]
+            }
+        },
+        "BIBREF50": {
+            "ref_id": "b50",
+            "title": "Macroeconomics and Reality",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Sims",
+                    "suffix": ""
+                }
+            ],
+            "year": 1980,
+            "venue": "Econometrica",
+            "volume": "48",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.2307/1912017"
+                ]
+            }
+        },
+        "BIBREF51": {
+            "ref_id": "b51",
+            "title": "World Health Organization declares global emergency: A review of the 2019 novel coronavirus (COVID-19)",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Sohrabi",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Alsafi",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "O&apos;neill",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Khan",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Kerwan",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Al-Jabir",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Iosifidis",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Agha",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Int. J. Surg",
+            "volume": "76",
+            "issn": "",
+            "pages": "71--76",
+            "other_ids": {}
+        },
+        "BIBREF53": {
+            "ref_id": "b53",
+            "title": "Measuring Business Cycle Time",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Stock",
+                    "suffix": ""
+                }
+            ],
+            "year": 1987,
+            "venue": "J. Polit. Econ",
+            "volume": "95",
+            "issn": "",
+            "pages": "1240--1261",
+            "other_ids": {
+                "DOI": [
+                    "10.1086/261513"
+                ]
+            }
+        },
+        "BIBREF54": {
+            "ref_id": "b54",
+            "title": "Maritime Economics",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Stopford",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.4324/9780203442661"
+                ]
+            }
+        },
+        "BIBREF55": {
+            "ref_id": "b55",
+            "title": "Value creaiton through corporate destruction? Corporate governance in shipping takeovers",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Syriopoulos",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Theotokas",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Marit. Policy Manag",
+            "volume": "34",
+            "issn": "",
+            "pages": "225--242",
+            "other_ids": {}
+        },
+        "BIBREF57": {
+            "ref_id": "b57",
+            "title": "Freight Rates in Downside and Upside Markets: Pricing of Own and Spillover Risks from Other Shipping Segments",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Theodossiou",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Tsouknidis",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Savva",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J. R. Stat. Soc. Ser. A",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.2139/ssrn.3514142"
+                ]
+            }
+        },
+        "BIBREF58": {
+            "ref_id": "b58",
+            "title": "Dynamic volatility spillovers across shipping freight markets",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Tsouknidis",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Transp. Res. Part E Logist. Transp. Rev",
+            "volume": "91",
+            "issn": "",
+            "pages": "90--111",
+            "other_ids": {}
+        },
+        "BIBREF60": {
+            "ref_id": "b60",
+            "title": "Review of Maritime Transport 2019, Review of Maritime Transport",
+            "authors": [],
+            "year": 2019,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.18356/d4f1aa11-en"
+                ]
+            }
+        },
+        "BIBREF61": {
+            "ref_id": "b61",
+            "title": "Pathological findings of COVID-19 associated with acute respiratory distress syndrome",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Shi",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zhu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Tai",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Bai",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Gao",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Song",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Xia",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Dong",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "F.-S",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet. Respir. Med",
+            "volume": "8",
+            "issn": "",
+            "pages": "420--422",
+            "other_ids": {}
+        },
+        "BIBREF63": {
+            "ref_id": "b63",
+            "title": "Probable Pangolin Origin of SARS-CoV-2 Associated with the COVID-19 Outbreak",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Curr. Biol",
+            "volume": "30",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/J.CUB.2020.03.022"
+                ]
+            }
+        },
+        "BIBREF64": {
+            "ref_id": "b64",
+            "title": "The desulphurisation of shipping: Past, present and the future under a global cap",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "P V"
+                    ],
+                    "last": "Zis",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Cullinane",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Transp. Res. Part D Transp. Environ",
+            "volume": "82",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.trd.2020.102316"
+                ]
+            }
+        }
+    },
+    "ref_entries": {
+        "FIGREF1": {
+            "text": "represents past squared values of the errors which can be interpreted as the feedthrough of shocks to the variance and tj h \uf02d represents past values J o u r n a l P r e -p r o o f 9 of the error variance (interpreted as the persistence of shocks to the error variance). 2 p",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "figure 2 presents the responses of the variables to the coronavirus. In particular, a rise in coronavirus cases would mean a negative reaction from the stock market, even though this is not statistically significant, perhaps due to the increase in volatility during the crisis period. Similarly, global calls remain relatively unmoved from the coronavirus impact. On the other hand, Brent oil drops significantly after an increase in coronavirus cases, underlying one of the most important channels through which the increase in coronavirus cases can affect freight rates. <Insert Figure No.2> Moving to the fifth and sixth row of Figure 2, we can see that global calls appear to have a positive relationship with the S&P, albeit not always statistically significant. Interestingly, in our sample, the S&P and Brent oil have a positive and significant relationship, perhaps due to the large presence of oil companies in the index",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "exposed to potential losses. For policymakers, especially in locations which have been J o u r n a l P r e -p r o o f 21 traditionally been considered shipping hubs (Greece, Cyprus, Singapore, Shanghai, etc.), adverse changes in shipping companies' cash flows can potentially mean reductions in output as well as job losses, which could hurt the local economy, and thus they may need to use targeted measures to account for that.Naturally, and as a caveat to the current results, it should be mentioned that the current research has been written during the Covid-19 pandemic period and thus the final results of this situation cannot be fully fathomed. More research is needed in the future so as to fully capture the results of such an extraordinary event to its full extent.Future research can extend our current understanding of such exogenous shocks by examining the specification of vessels that are mainly affected from such events, taking into consideration factors such as size, age, and the different types of goods transported. Evolution of Freight Rates during the COVID-19 outbreak",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "Data from Clarksons Shipping Intelligence",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF6": {
+            "text": "See notes on the previous page.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF7": {
+            "text": "Figure No.2 (cont.) Global Calls to S&P500 S&P500 to Brent BDI to Brent",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF1": {
+            "text": "To estimate the model, data from Clarksons Research Intelligence database have been used for freight rates, and notably for the Baltic Clean Tanker Index (BCT), the Baltic Dry Index (BDI), and the Baltic Dirty Tanker Index (BDTI) 3 . The same source was used for port calls, while stock market data and data for the Brent oil prices were obtained from the Federal Reserve of St. Louis Database (FRED). The J o u r n a l P r e -p r o o f number of coronavirus cases was obtained from the ourworldindata.com website, in association with World Health Organization data (www.who.int). The data range from the January 3, 2019 to June 1, 2020, on a daily basis. The data range is limited by the availability of the port calls data, while the coronavirus variable is denoted at zero prior to 2020. More details on the data sources can be found in table 1.<InsertTable No.1>Before we move on to the estimation, table 2 offers the descriptive statistics of the variables we are employing. In particular, it can be seen that the BCT and the BDTI had positive average growth in the last year, while the BDI had recorded negative growth. Global calls also registered a small positive growth rate, at 0.02%,",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "table 3 offers the results for the BDI index. Firstly, it should be noted that the regression used ARCH errors, given that the GARCH term proved to be statistically insignificant, suggesting that past values of the variance do not have an impact in current variance. In other words, it appears that long-term variance shocks are not as important as short-term shocks(Alexander, 2008). 4    As the results show, the dry bulk index has a strong relationship with global calls, standing at around 0.45 throughout specifications(1)to(5). The BDI is also dependent on its previous values, but not to a very large extent, at 0.66. Other lags of the BDI were not found to be statistically significant. Interestingly, the coronavirus impact is statistically significant, with a 1% change in virus cases implying an additional impact of -0.03% on the BDI. It should be again underlined that due to the nature of this regression, the coronavirus impact is interpreted as additional to the drop in global port calls. Finally, it should be noted that the remaining variables, including the stock market indices and Brent oil, are not statistically significant.case. In the BCT case, it appears that the GARCH term is larger than the ARCH term, suggesting that shocks are kept in the variance for longer. Brent oil has the opposite relationship to the BDTI than the once anticipated: the results in table 5 suggest that Brent oil is negatively related to the BDTI.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF3": {
+            "text": ". The remaining responses show that, as expected, the BDI does not record a statistically significant relationship with Brent oil, while BDTI responds negatively.BCT on the other hand registers a mildly negative response. Reasons for these reactions have been elaborated previously in the text. Finally, the coronavirus itself does not appear to have had any impact on risk, and as such suggesting that the and governments across the world to minimize the movement of people. Thus, even though the coronavirus does not have a direct impact on the stock market as firms continue to operate via work, it does have an indirect effect via the decrease in Brent prices which would negatively affect the stock price, given the positive relationship between the two, as the results indicate.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF5": {
+            "text": "Descriptive StatisticsNotes: SeeTable 1for definitions of variables. All data are in log differences. Min and max are the minimum and maximum values of the sample data, respectively. Skewness and kurtosis are the estimated centralized third and fourth moments of the data. J-B is theJarque and Bera (1980) test for normality; the statistic is \u03c72 distributed. Numbers in parentheses (.) report p-values.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF6": {
+            "text": "Notes: Figures in parentheses (.) indicate t-statistics. ***, ** and * indicate significance at the 1%, 5% and 10% significance levels, respectively. Figures in brackets[.]  indicate lagged values, where [-n] is the n th day before the day examined.*The GARCH term was found to be statistically insignificant",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF7": {
+            "text": "BCT Results",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF8": {
+            "text": "See notes in Table No.3 Figure No. 2 -Impulse Responses BDI to Global Calls BDI to S&P500 BDI to Coronavirus",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF10": {
+            "text": "Notes: See notes on page 32.",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "We would like to thank the editor and the five anonymous referees for their careful consideration of an earlier version of the paper and their insightful comments.Journal Pre-proof J o u r n a l P r e -p r o o f",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Acknowledgements"
+        },
+        {
+            "text": "\uf0b7 We study the impact of the Covid-19 pandemic on the shipping freight rates.\uf0b7 We find that the pandemic has directly affected dry bulks and dirty tankers.\uf0b7 Second round (oil prices) and third round (stock market) effects exist.\uf0b7 Demand affects freight rates in dry-bulk and clean tanker segments more \uf0b7 Results underline the potential use of tankers for storage when oil prices are low.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Shipping Markets in Turmoil: An analysis of the Covid-19 outbreak and its implications"
+        }
+    ]
+}

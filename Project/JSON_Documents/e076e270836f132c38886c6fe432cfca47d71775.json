@@ -1,0 +1,1029 @@
+{
+    "paper_id": "e076e270836f132c38886c6fe432cfca47d71775",
+    "metadata": {
+        "title": "The spread of COVID-19 outbreak in the first 120 days: a comparison between Nigeria and seven other countries",
+        "authors": [
+            {
+                "first": "Ayo",
+                "middle": [
+                    "Stephen"
+                ],
+                "last": "Adebowale",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Adeniyi",
+                "middle": [
+                    "F"
+                ],
+                "last": "Fagbamigbe",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Joshua",
+                "middle": [
+                    "O"
+                ],
+                "last": "Akinyemi",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Olalekan",
+                "middle": [
+                    "K"
+                ],
+                "last": "Obisesan",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Emmanuel",
+                "middle": [
+                    "J"
+                ],
+                "last": "Awosanya",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Rotimi",
+                "middle": [
+                    "F"
+                ],
+                "last": "Afolabi",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Selim",
+                "middle": [
+                    "A"
+                ],
+                "last": "Alarape",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Sunday",
+                "middle": [
+                    "O"
+                ],
+                "last": "Obabiyi",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Background: COVID-19 is an emerging public health emergency of international concern. The trajectory of the global spread is worrisome, particularly in heavily populated countries such as Nigeria. The study objective was to assess and compare the pattern of COVID-19 spread in Nigeria and seven other countries during the first 120 days of the outbreak.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Methods: Data was extracted from the World Bank's website. A descriptive analysis was conducted as well as modelling of COVID-19 spread from day one through day 120 in Nigeria and seven other countries. Model fitting was conducted using linear, quadratic, cubic and exponential regression methods (\u03b1=0.05).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Results: The COVID-19 spread pattern in Nigeria was similar to the patterns in Egypt, Ghana and Cameroun. The daily death distribution in Nigeria was similar to those of six out of the seven countries considered. There was an increasing trend in the daily COVID-19 confirmed cases in Nigeria. During the lockdown, the growth rate in Nigeria was 5.85 (R 2 =0.728, p< 0.001); however, it was 8.42 (R 2 =0.625, p< 0.001) after the lockdown was relaxed. The cubic polynomial model (CPM) provided the best fit for predicting COVID-19 cumulative cases across all the countries investigated and there was a clear deviation from the exponential growth model. Using the CPM, the predicted number of cases in Nigeria at 3-month (30 September 2020) was 155,467 (95% CI:151,111-159,824, p< 0.001), all things being equal.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Conclusions: Improvement in COVID-19 control measures and strict compliance with the COVID-19 recommended protocols are essential. A contingency plan is needed to provide care for the active cases in case the predicted target is attained.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "The novel Coronavirus disease (COVID-19) is one of the diseases that have constituted global threats in human history. The global burden of disease attributable to COVID-19 is enormous [1] [2] [3] . It is challenging to control the pandemic because of the high epidemic potential of the disease and the lack of potent vaccines to ramp up the herd immunity of populations. Thus, COVID-19 has spread to almost all countries of the world including Nigeria [3] . The first case was confirmed in Nigeria on 27 February 2020 [2] and by day 120 (25 June 2020), the cumulative cases had risen to 22,614 [2] . There was a suspicion that the reported confirmed cases did not reflect the true situation because of the low level of testing.",
+            "cite_spans": [
+                {
+                    "start": 185,
+                    "end": 188,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 189,
+                    "end": 192,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 193,
+                    "end": 196,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 453,
+                    "end": 456,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 519,
+                    "end": 522,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 595,
+                    "end": 598,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "COVID-19 testing rate in Nigeria has been considerably low compared to other African countries and countries with similar population size. This has been attributed sometimes to delays in kits and reagent supplies during the border closures although, the Nigeria Centre for Disease Control (NCDC) claimed that the strict adherence to COVID-19 protocol and guidelines was partly responsible for the low level of testing [2] . However, the number of testing centres has now increased and the COVID-19 testing capacity has improved tremendously across the country.",
+            "cite_spans": [
+                {
+                    "start": 418,
+                    "end": 421,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "Nigeria is a low-income country with a fragile health system. The control strategies instituted against COVID-19 spread in the country appeared insufficient as the number of daily cases continued to record new highs. With densely populated cities and towns, infectious diseases spread would be challenging to contain. In this study, we attempted to monitor and assess the COVID-19 situation in Nigeria using the 120-day data for confirmed cases. In addition, we compared the disease spread patterns, death, and the fitted model with seven other countries. Two research questions were consequently addressed: (i) How does COVID-19 spread and mortality compare with other countries in the first 120 days? (ii) Given the prevailing testing regime, interventional efforts and all other things being equal, what is the 3-month projected cumulative cases of COVID-19?",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "The cross-sectional study was conducted in Nigeria using data from February 27 to June 25, 2020. Nigeria has a population of about 200 million, many international land borders and a few international airports. As at the time of writing this report, situation assessment showed that the compliance with the government directive on precautionary measures against COVID-19 was low in Nigeria [2] .",
+            "cite_spans": [
+                {
+                    "start": 389,
+                    "end": 392,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Methods"
+        },
+        {
+            "text": "The secondary data utilised for this study was extracted from the World Bank Database on COVID-19 [1] . Seven other countries (Ghana, Egypt, Cameroun, South Africa, Bangladesh, Indonesia and Mexico) were purposively selected from Africa, Asia and South America. These countries were selected because they experienced the outbreak of COVID-19 almost concurrently as Nigeria and the magnitude of the cumulative confirmed cases was relatively similar to that of Nigeria on the World COVID-19 table as at the time of data extraction for this study. Additionally, the countries were similar in terms of their economic development being classified as Low-Middle Income countries by the World Bank. The extracted data were restricted to the first 120 days of the outbreak of COVID-19 in these countries. The population figure, population density [4] and number of confirmed cases of COVID-19 as at day 120 of the outbreak in the selected countries are represented in Table 1 .",
+            "cite_spans": [
+                {
+                    "start": 98,
+                    "end": 101,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 839,
+                    "end": 842,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 960,
+                    "end": 967,
+                    "text": "Table 1",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "Methods"
+        },
+        {
+            "text": "Data were presented with charts and line graphs. Four classes of regression model were used to fit the cumulative data on COVID-19. These are: linear, quadratic, cubic and exponential models. The equations representing each model are presented in Table 2 .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 247,
+                    "end": 254,
+                    "text": "Table 2",
+                    "ref_id": null
+                }
+            ],
+            "section": "Methods"
+        },
+        {
+            "text": "Further, the model with the best fit was used to predict a 3-month (30 September 2020) cumulative confirmed COVID-19 cases in Nigeria.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Methods"
+        },
+        {
+            "text": "The data as presented in Fig. 1 shows an increasing trend in the daily confirmed cases of COVID-19 in Nigeria, from day 1 through day 120. There was a consistent increase in the number of cases after the relaxation of lockdown measures. During the lockdown, the growth rate of COVID-19 in Nigeria was 5.85 (95% CI: 5.41,6.29; R 2 =0.728; p< 0.001) and this increased to 8.42 (95% CI:8.41,8.43; R 2 =0.625; p< 0.001) after the lockdown was relaxed. Figure 2 shows the cumulative daily confirmed cases of COVID-19 in the first 120 days after the outbreak in eight countries. The pattern of Nigeria's cumulative daily confirmed cases aligned with three (Ghana, Egypt and Cameroun) of the seven countries, particularly within the first 97 days. The trajectory of the spread of COVID-19 in Nigeria aligned perfectly with Ghana's pattern and slightly differs from the pattern exhibited by Cameroun after the 97th day. There was a clear difference in the pattern observed between Nigeria and Mexico, Bangladesh, South Africa and Indonesia respectively.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 25,
+                    "end": 31,
+                    "text": "Fig. 1",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 448,
+                    "end": 456,
+                    "text": "Figure 2",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "The distribution of deaths associated with COVID-19 within the first 120 days after the outbreak shows that the observed pattern for Nigeria was nearly the same with six of the seven countries compared. In particular, the Nigeria's pattern was identical to other countries in Central and West Africa (Cameroun and Ghana) (Fig. 3) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 321,
+                    "end": 329,
+                    "text": "(Fig. 3)",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "The summary of the model and estimated parameters are shown in Table 3 . Across all the eight countries included in the analyses, the Cubic Polynomial Model (CPM) was identified as the best fit to model COVID-19 data. The CPM perfectly fits the Mexico data with an R-square of 100%. The R-square for Nigeria was 99.9%, an indication that 99.9% of the variation in the cumulative daily confirmed cases of COVID-19 in Nigeria can be explained by the model with time as the main covariate. The predictive models for Nigeria are: Linear: N x = \u2212 4937.222 + 16 4.210x, Quadratic: N x = 1748.194 \u2212 164.581x + 2.717x 2 , Cubic: N x = 151.233 \u2212 9.415x \u2212 0.475x 2 + 0.018x 3 , Exponential: N x = 2.245 exp (0.090x) ( Table 3) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 63,
+                    "end": 70,
+                    "text": "Table 3",
+                    "ref_id": "TABREF2"
+                },
+                {
+                    "start": 708,
+                    "end": 716,
+                    "text": "Table 3)",
+                    "ref_id": "TABREF2"
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "The data as presented in Fig. 4 depict the observed and predicted cumulative cases of COVID-19 in the selected countries as at day 120 of the outbreak. The trajectory of observed COVID-19 cumulative cases in Nigeria deviated from the exponential and linear models but perfectly fits the quadratic and cubic regression models. The exponential model fits the data for South Africa and, to some extent, Egypt in the first 70 days of the outbreak in these countries. The simple linear regression model did not fit the data for any of the studied countries.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 25,
+                    "end": 31,
+                    "text": "Fig. 4",
+                    "ref_id": "FIGREF3"
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "The observed and estimated values of cumulative cases of COVID-19 in Nigeria using both quadratic and cubic polynomial models are presented in Fig. 5 ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 143,
+                    "end": 149,
+                    "text": "Fig. 5",
+                    "ref_id": "FIGREF4"
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "The goal of this paper was to assess the COVID-19 spread and attendant deaths in Nigeria and selected countries during the first 120 days of outbreaks. First, our analysis showed the spread of the pandemic increased following the relaxation of lockdowns. Both spread and mortality patterns in Nigeria compared closely with other African countries (Ghana, Cameroun and Egypt). Lastly, the findings suggested that different predictive models fitted the data for different countries.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "In this study, the COVID-19 data in Nigeria showed an increasing trend. The epidemic curve for Nigeria differed from the typical propagated epidemic curve that would have been expected for COVID-19 and other infectious diseases with person-to-person mode of transmission. COVID-19 reproduction number appears to gain traction with time as estimated to be from 1.4 to 2.5, 3.6 to 4.0, and 2.24 to 3.58 from earlier studies [3, [5] [6] [7] . This indicates that the infection rate continues to increase. Therefore, the observed pattern found in our study agrees with the known pattern of spread of the disease. We also found that a higher number of cases was reported after the relaxation of lockdown than was reported during the lockdown period. The increased spread of the disease after the relaxation of lockdown could be due to poor adherence to the recommended preventive measures in Nigeria. This may be expected because when restrictive measures are lifted, exposures to disease risks become higher. Consequently, an increased number of infections is likely to follow. This is in tandem with evidence from developed countries As at day 120 of the outbreak in the respective countries Table 2 The four predictive models",
+            "cite_spans": [
+                {
+                    "start": 422,
+                    "end": 425,
+                    "text": "[3,",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 426,
+                    "end": 429,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 430,
+                    "end": 433,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 434,
+                    "end": 437,
+                    "text": "[7]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1189,
+                    "end": 1196,
+                    "text": "Table 2",
+                    "ref_id": null
+                }
+            ],
+            "section": "Discussion"
+        },
+        {
+            "text": "Linear N x = a + bx + \u03b5 1",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model Equation df"
+        },
+        {
+            "text": "Quadratic",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model Equation df"
+        },
+        {
+            "text": "Cube polynomial N x = f + gx + hx 2 + jx 3 + \u03b5 3",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model Equation df"
+        },
+        {
+            "text": "Exponential",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model Equation df"
+        },
+        {
+            "text": "where a, c, f and k are intercepts; b, d, e, g, h, j and m are slopes which are estimated by least square estimation, x is the time-point and \u025b's are mutually uncorrelated random errors with mean (0) and common variance (\u03c3 2 ); df is the degree of freedom where the transmission dynamics and effectiveness of control measures have been rigorously studied [8, 9] . However, another plausible explanation for the increase in the number of confirmed cases could be the improved testing capacity in the country which coincided with the lockdown relaxation. Compared with Ghana and South Africa, the testing capacity in Nigeria was generally low. While Nigeria had only 2755 persons tested for COVID-19 per 1,000,000 people, the estimate was 16,206 and 76,067 for Ghana and South Africa respectively [10] . We found a similar pattern in the number of cumulative cases of COVID-19 in Nigeria, Ghana and Cameroon possibly due to similarity in the capacity for testing in the first 120 days of the disease outbreak. Conversely, a difference was observed in the pattern exhibited by Nigeria compared to four of the seven countries investigated (Mexico, Bangladesh, South Africa and Indonesia). As at day 120 in these four countries, the total COVID-19 tests per 1 million population was strikingly higher than that of Nigeria over the same period [1, 10] . Only Indonesia had a population size that was similar to that of Nigeria while the other countries had a considerably lower population than that of Nigeria. Mexico, Bangladesh, South Africa and Indonesia had environmental factors such as temperature and humidity that were comparable to that of Nigeria [11, 12] . Thus, the reasons that could explain the differences in disease spread pattern between these countries and Nigeria is not immediately clear except for the differences in COVID-19 testing rate. The implication is that community We further found that the distribution of COVID-19-associated deaths observed for Nigeria was comparable to six of the seven countries investigated and aligned perfectly with the Cameroun and Ghana patterns. COVID-19-related death trajectory in Mexico may be explained by the higher number of observed COVID-19 cases recorded within the study period compared to other countries. The similarity in COVID-19 deaths between Nigeria, Ghana and Cameroon may be attributed to other factors different from the COVID-19 testing capacity and case management capabilities.",
+            "cite_spans": [
+                {
+                    "start": 355,
+                    "end": 358,
+                    "text": "[8,",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 359,
+                    "end": 361,
+                    "text": "9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 795,
+                    "end": 799,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 1338,
+                    "end": 1341,
+                    "text": "[1,",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 1342,
+                    "end": 1345,
+                    "text": "10]",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 1651,
+                    "end": 1655,
+                    "text": "[11,",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 1656,
+                    "end": 1659,
+                    "text": "12]",
+                    "ref_id": "BIBREF11"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Model Equation df"
+        },
+        {
+            "text": "Cubic Polynomial Model (CPM) was identified as the best fit model among the four models used in this study. Next to the CPM is the quadratic model (QM). The CPM and QM have been identified in some previous studies as the best predictive models for some infectious diseases including Ebola and COVID-19 [13, 14] . None of the country data was suited for the exponential model except South Africa, which was suitable for the first 70 days of the outbreak. A similar observation was reported previously on the suitability of the exponential model for fitting the epidemic curve of infectious diseases [15] . Nonetheless, differences in the levels and modes of testing across countries could be responsible for South Africa's exemption. In South Africa, a community testing approach was instituted early unlike in other African countries such as Nigeria, Ghana and Cameroon. In addition, the marked differences in atmospheric and environmental conditions between countries may constitute potential explanatory variables [11, 12] .",
+            "cite_spans": [
+                {
+                    "start": 302,
+                    "end": 306,
+                    "text": "[13,",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 307,
+                    "end": 310,
+                    "text": "14]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 598,
+                    "end": 602,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 1016,
+                    "end": 1020,
+                    "text": "[11,",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 1021,
+                    "end": 1024,
+                    "text": "12]",
+                    "ref_id": "BIBREF11"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Model Equation df"
+        },
+        {
+            "text": "In our study, the predicted COVID-19 cumulative case for 30 September 2020 using QM and CPM was 93,988 and 155,467 respectively. This is premised on the assumption that the present COVID-19 testing capacity and the level of compliance with the preventive measures to mitigate the spread is sustained. The wide gap between the two estimates could be linked to differences in the equations governing the use of QM and CPM, which implied that different parameters were used for the estimation. In this study, the model with the best fit differed across countries indicating variations in the epidemiological contexts, transmission dynamics and control efforts. Although some of these countries shared similarities in demographic and developmental profile, there were potential differences in other factors such as testing capacity, risk profile, enforcement of containment measures and the level of exposure to infected individuals.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model Equation df"
+        },
+        {
+            "text": "The public health implication of our study is that there is a need for adequate emergency preparedness. The identified trajectory of COVID-19 infection in Nigeria is an impetus for increased surveillance, enhanced testing capacity and proactive planning for clinical management of cases as well as psychosocial management of discharged cases. Also, the preventive measures may have to be strengthened for containment of disease spread in Nigeria and the other countries.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model Equation df"
+        },
+        {
+            "text": "The Nigeria data was premised on testing suspected cases who reported at the testing centres or symptomatic individuals who called the NCDC response team lines at their various homes for help. The differences in the scale of testing and the environmental conditions in different countries should be considered in interpreting our findings. This is because evidence suggests a relationship between weather conditions and transmission risks of COVID-19 [11, 12] . Inaccessibility to data on socio-demographic profile and health history of the COVID-19 patients and survivors limited the opportunity to perform further statistical and mathematical modelling.",
+            "cite_spans": [
+                {
+                    "start": 451,
+                    "end": 455,
+                    "text": "[11,",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 456,
+                    "end": 459,
+                    "text": "12]",
+                    "ref_id": "BIBREF11"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Limitations"
+        },
+        {
+            "text": "The spread of COVID-19 is increasing daily and the projection provides insight into what the situation could be in days ahead in Nigeria. Thus, enhanced emergency preparedness and contingency plans to mitigate the COVID-19 spread are urgently required. There is a need to increase testing capacities both at State and Local government levels as current testing is limited. Improvement in COVID-19 control measures and strict compliance with the COVID-19 recommended protocols are strongly recommended. Preparation should be made for the case management of COVID-19 cases in Nigeria.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusions"
+        },
+        {
+            "text": "Abbreviations SARS-CoV-2: Severe acute respiratory syndrome coronavirus 2; WHO: World health organization; NCDC: Nigeria centre for disease and control; ECDC: European centre for disease prevention and control; R 2 : Coefficient of determination; FCT: Federal capital territory; CPM: Cubic polynomial model",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusions"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "European Centre for Disease Prevention and Control. Publications & data",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Nigeria Centre for Disease Control",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "World Health Organisation. Coronavirus (COVID-19) events as they happen",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "United Nations, Department of Economic and Social Affairs, Population Dynamics",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Novel coronavirus 2019-nCoV: early estimation of epidemiological parameters and epidemic predictions",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Read",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jre",
+                    "middle": [],
+                    "last": "Bridgen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Dat",
+                    "middle": [],
+                    "last": "Cummings",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ho",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Jewell",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1101/2020.01.23.20018549"
+                ]
+            }
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Early transmissibility assessment of a novel coronavirus in Wuhan",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Majumder",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Mandl",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "China. SSRN Electron J",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.2139/ssrn.3524675"
+                ]
+            }
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Transmission dynamics of the COVID-19 outbreak and effectiveness of government interventions: a data-driven analysis",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Fang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Nie",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Penny",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Med Virol",
+            "volume": "92",
+            "issn": "6",
+            "pages": "645--59",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "The effect of control measures on COVID-19 transmission in Italy: comparison with Guangdong province in China",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "He",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Rong",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Tang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Infect Dis Poverty",
+            "volume": "9",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/s40249-020-00730-2"
+                ]
+            }
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "19 coronavirus pandemic: reported cases and deaths by country, territory, or conveyance",
+            "authors": [
+                {
+                    "first": "Covid",
+                    "middle": [],
+                    "last": "Wordometer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Effect of weather on COVID-19 transmission and mortality in Lagos, Nigeria. Scientifica (Cairo)",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Ogaugwu",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Mogaji",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Ogaugwu",
+                    "suffix": ""
+                },
+                {
+                    "first": "U",
+                    "middle": [],
+                    "last": "Nebo",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Okoh",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Agbo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1155/2020/2562641"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Temperature significantly changes COVID-19 transmission in (sub)tropical cities of Brazil",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Prata",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Rodrigues",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Bermejo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Sci Total Environ",
+            "volume": "729",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.scitotenv.2020.138862"
+                ]
+            }
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Predicting subnational ebola virus disease epidemic dynamics from sociodemographic indicators",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Valeri",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Patterson-Lomba",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Gurmu",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ablorh",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Bobb",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Townes",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "PLoS One",
+            "volume": "11",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1371/journal.pone.0163544"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Covid-19 infection in Italy. Mathematical models and predictions",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Malato",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Quadratic infectious diseases mathematical models: chronic states, sanity levels, and treatment",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Solis",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Tapia",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Romero",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Moreno",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Math Comput Model",
+            "volume": "42",
+            "issn": "",
+            "pages": "1315--1339",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Publisher's Note",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Daily COVID-19 confirmed cases as at the first 120 days of the outbreak in Nigeria. A graphical display of the daily confirmed cases of COVID-19 in Nigeria",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "COVID-19 cumulative confirmed cases in selected countries as at the first 120-day of the outbreak. A graphical presentation of the cumulative daily confirmed cases of COVID-19 in the first 120 days after the outbreak in eight countries testing has not commenced fully in Nigeria as it is done in South Africa. The disease currently exhibited a sporadic cluster of local transmission in Nigeria.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "COVID-19 cumulative daily deaths for the first 120 days in selected countries. A figure showing the distribution of COVID-19-related deaths within the first 120 days after the outbreak",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "Predictive model of cumulative cases of COVID-19 in Nigeria. A graphical display of the observed and predicted cumulative cases of COVID-19 in the selected countries, using the four models",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "Observed and projected COVID-19 cumulative cases in Nigeria. A graphical display of the observed and estimated values of cumulative cases of COVID-19 in Nigeria using both quadratic and cubic polynomial models",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": ". The 30 September 2020 predicted COVID-19 cumulative case was: 93,988 (95% CI: 91,209-96,767) -Quadratic; 155,467 (95% CI:151,111-159,824) -Cubic.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "Distribution of the population figure, population density and COVID-19 confirmed cases by selected countries a",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "Model summary and parameter estimates",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "The authors acknowledge the Nigeria Centre for Disease Control, the European Centre for Disease Prevention and Control / WHO and the World Population Pyramid for granting free access to the data used for the study. Special thanks to Dr. Segun Bello for his insightful feedback and proofread on the manuscript. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Acknowledgements"
+        },
+        {
+            "text": "This research received no specific grant from any funding agency in the public, commercial or not-for-profit sectors.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Funding"
+        },
+        {
+            "text": "Data sharing does not apply to this article as no new data were created or analysed in this study. The data is publicly available and openly accessible at https://www.ecdc.europa.eu/en/publications-data [1] .Ethics approval and consent to participate Not applicable.",
+            "cite_spans": [
+                {
+                    "start": 203,
+                    "end": 206,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Availability of data and materials"
+        },
+        {
+            "text": "Not applicable.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Consent for publication"
+        },
+        {
+            "text": "The authors declare that they have no competing interests.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Competing interests"
+        }
+    ]
+}

@@ -1,0 +1,1773 @@
+{
+    "paper_id": "e76d91444184e67e7d7b3d2d4190bf6465753f28",
+    "metadata": {
+        "title": "The memory effect on fractional calculus: an application in the spread of COVID-19",
+        "authors": [
+            {
+                "first": "La\u00e9cio",
+                "middle": [],
+                "last": "Carvalho De Barros",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Michele",
+                "middle": [
+                    "Martins"
+                ],
+                "last": "Lopes",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "\u00b7",
+                "middle": [],
+                "last": "Francielle",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Santo",
+                "middle": [],
+                "last": "Pedro",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Estev\u00e3o",
+                "middle": [],
+                "last": "Esmi",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "\u00b7",
+                "middle": [],
+                "last": "Jos\u00e9",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Paulo",
+                "middle": [],
+                "last": "Carvalho",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Dos",
+                "middle": [],
+                "last": "Santos",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "\u00b7",
+                "middle": [],
+                "last": "Daniel",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Eduardo",
+                "middle": [],
+                "last": "S\u00e1nchez",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Fractional calculus has been widely used in mathematical modeling of evolutionary systems with memory effect on dynamics. The main interest of this work is to attest, through a statistical approach, how the hysteresis phenomenon, which describes a type of memory effect present in biological systems, can be treated by fractional calculus. We also analyse the contribution of the historical values of a function in the evaluation of fractional operators according to their order. To illustrate the efficiency of this non-integer order calculus, we consider the SIR (susceptible-infected-recovered) compartmental model which is widely used in epidemiology. We employ this compartmental model to study the dynamics of the spread of COVID-19 in some countries, one version with memory and one without memory.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "The fractional calculus was originated in 1695 as a generalization of the integer order calculus. This happened through a question asked by L'Hospital to Leibniz about the meaning of d n dx n , being n = 1 2 . In this way, it is possible to define integrals and derivatives with arbitrary orders. Since its inception, many contributions have been made by several researchers, including famous names such as Euler, Lagrange, Laplace, Fourier, Abel and Liouville (Camargo and Oliveira 2015; Srivastava and Saxena 2001) .",
+            "cite_spans": [
+                {
+                    "start": 489,
+                    "end": 516,
+                    "text": "Srivastava and Saxena 2001)",
+                    "ref_id": "BIBREF17"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "This calculus is one of the most effective current mathematical tools used to model realworld problems. Several definitions have been proposed for fractional integrals, for example, the fractional integrals of Liouville, Weyl and Riemann-Liouville. The fractional derivative also has several definitions such as those derived from Riemann-Liouville, Caputo, Liouville, Weyl, Riesz, Gr\u00fcnwald-Letnikov, Marchaud and Hifler (Camargo and Oliveira 2015; Saad et al. 2018) . In contrast to the Caputo's fractional derivative, most fractional derivative definitions do not satisfy the property that the derivative of a constant is null. This suggests a preference for the Caputo derivative in many situations. Other definitions that are also commonly used today are of Riemann-Liouville and Gr\u00fcnwald-Letnikov (Camargo and Oliveira 2015; Pinto and Tenreiro Machado 2014) . This is important because the past is considered to explain the present (Camargo and Oliveira 2015; Pinto and Tenreiro Machado 2014) . In Saeedian (2017) , El-Saka (2013), a system of fractional differential equations is used to study the effect of memory on epidemic evolution. One type of memory widely observed in ecology and epidemiology is hysteresis. In hysteresis, the current state of the system depends not only on current conditions but also on previous conditions, that is, past events influence the current dynamics (Beisner et al. 2008; Chen et al. 2017; Pimenov 2012; Yamana et al. 2017) . In Pimenov (2012) , the hysteresis effect is incorporated into the biological model since the defense mechanism of certain living beings is activated. For example, in a situation of spreading of an infectious disease for human beings, depending on type of disease, previous experiences can reveal that social distance or additional hygiene habits are defensive behaviors to prevent its propagation. The vaccine can also have a long-term memory effect, when it has a lasting effect, causing the body to defend itself through immune memory.",
+            "cite_spans": [
+                {
+                    "start": 358,
+                    "end": 448,
+                    "text": "Liouville, Weyl, Riesz, Gr\u00fcnwald-Letnikov, Marchaud and Hifler (Camargo and Oliveira 2015;",
+                    "ref_id": null
+                },
+                {
+                    "start": 449,
+                    "end": 466,
+                    "text": "Saad et al. 2018)",
+                    "ref_id": null
+                },
+                {
+                    "start": 830,
+                    "end": 862,
+                    "text": "Pinto and Tenreiro Machado 2014)",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 965,
+                    "end": 997,
+                    "text": "Pinto and Tenreiro Machado 2014)",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 1003,
+                    "end": 1018,
+                    "text": "Saeedian (2017)",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 1393,
+                    "end": 1414,
+                    "text": "(Beisner et al. 2008;",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 1415,
+                    "end": 1432,
+                    "text": "Chen et al. 2017;",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 1433,
+                    "end": 1446,
+                    "text": "Pimenov 2012;",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 1447,
+                    "end": 1466,
+                    "text": "Yamana et al. 2017)",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 1472,
+                    "end": 1486,
+                    "text": "Pimenov (2012)",
+                    "ref_id": "BIBREF13"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Specifically, as in Beisner et al. (2008) , Yamana et al. (2017) , in this manuscript, we consider the effect of hysteresis on the spread of the disease through the influence of all previous states in the current states of the dynamics. To illustrate the potential of fractional differential equations in epidemiological processes with hysteresis, we investigate the evolution of COVID-19 in a population. Since the spread of COVID-19 occurs through contact between infected individuals and susceptible individuals, with part of the population already recovered, we employ the famous epidemiological SIR (susceptible-infected-recovered) model, which is compartmental model proposed by Kermack and McKrendick in 1927 and is mathematically described by a system of first order differential equations (Edelstein-Keshet 1988) . However, due to the fact that this disease is little known and under-reported, parameters such as speed of propagation and recovery and contact rates are difficult to estimate. Consequently, its modeling using classical differential equations can be inappropriate to represent the dynamics of the populations involved. This is still another justification for adopting fractional equations since it is possible to adjust the order of the differential equation to the real data of the spread of the disease.",
+            "cite_spans": [
+                {
+                    "start": 20,
+                    "end": 41,
+                    "text": "Beisner et al. (2008)",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 44,
+                    "end": 64,
+                    "text": "Yamana et al. (2017)",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 685,
+                    "end": 715,
+                    "text": "Kermack and McKrendick in 1927",
+                    "ref_id": null
+                },
+                {
+                    "start": 798,
+                    "end": 821,
+                    "text": "(Edelstein-Keshet 1988)",
+                    "ref_id": "BIBREF6"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The rates of transmission and recovery (and, consequently, the time that individuals remain infected, since this time is the inverse of the recovery rate \u03b3 ) were estimated from the actual data on the number of infected individuals in each country studied. We obtain numerical solutions since the used (SIR) model is non-linear. With these parameters in hand, it is possible to make projections for new numbers of cases in the future days.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The work is organized as follows. In Sect. 2, we present some definitions necessary for the mathematical development of the work. Section 3 shows two reasons for the use of fractional calculus, namely the Tautochrone problem and the memory effect. In Sect. 4, we present the main results of the work, where we verify objectively the memory effect via statistical tools and analyse the contribution of historical values to the fractional operators. Finally, Sect. 5 presents the fractional epidemiological SIR model to describe the evolution of COVID-19 in several countries. By adjusting the model to the data, it was possible to see that fractional calculus is a good tool for modelling real phenomena. Furthermore, the fractional order of the derivative indicates whether the disease spreads more quickly or more slowly in a given country.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "In this section, we recall some of the main results of the fractional calculus needed in this work. (Teodoro et al. 2018) ",
+            "cite_spans": [
+                {
+                    "start": 100,
+                    "end": 121,
+                    "text": "(Teodoro et al. 2018)",
+                    "ref_id": "BIBREF19"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Preliminary"
+        },
+        {
+            "text": "(1)",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Definition 1 [Fractional integral of Riemann-Liouville"
+        },
+        {
+            "text": "When \u03b1 \u2208 N, we have \u0393 (\u03b1) = \u03b1! In this case, Eq. (1) becomes the Cauchy formula for iterated integrals, which is the motivation for this definition. Furthermore, for \u03b1 > 0, the integral exists for almost every t in [0, b] .",
+            "cite_spans": [
+                {
+                    "start": 215,
+                    "end": 221,
+                    "text": "[0, b]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Definition 1 [Fractional integral of Riemann-Liouville"
+        },
+        {
+            "text": "We denote by AC n [0, b] the set of functions in which the order derivative n\u22121 is absolutely continuous in [0, b] (Diethelm 2010) . (Teodoro et al. 2018 ",
+            "cite_spans": [
+                {
+                    "start": 115,
+                    "end": 130,
+                    "text": "(Diethelm 2010)",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 133,
+                    "end": 153,
+                    "text": "(Teodoro et al. 2018",
+                    "ref_id": "BIBREF19"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Definition 1 [Fractional integral of Riemann-Liouville"
+        },
+        {
+            "text": "and n = \u03b1 . The fractional derivative of Riemann-Liouville of order \u03b1 is given by",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Definition 2 [Fractional derivative of Riemann-Liouville"
+        },
+        {
+            "text": "(2) ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Definition 2 [Fractional derivative of Riemann-Liouville"
+        },
+        {
+            "text": "For \u03b1 \u2208 (0, 1), one can show that",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Definition 2 [Fractional derivative of Riemann-Liouville"
+        },
+        {
+            "text": "Next, we present some important statistics concepts for the development of the work. (Mood and Graybill 1974) ] A random variable X follows the beta distribution if its probability density function is given by",
+            "cite_spans": [
+                {
+                    "start": 85,
+                    "end": 109,
+                    "text": "(Mood and Graybill 1974)",
+                    "ref_id": "BIBREF12"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Definition 2 [Fractional derivative of Riemann-Liouville"
+        },
+        {
+            "text": "where p, q > 0 and I (0,1) the indicator function of interval (0, 1).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Definition 4 [Beta distribution"
+        },
+        {
+            "text": "Remark 1 When p = q = 1 the beta distribution becomes the uniform distribution over the range (0, 1).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Definition 4 [Beta distribution"
+        },
+        {
+            "text": "The expectation or expected value represents the mean of random variable X . Below, we present the definition of this concept for continuous random variable.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Definition 4 [Beta distribution"
+        },
+        {
+            "text": "Definition 5 (Mood and Graybill 1974) Let X be a continuous random variable with the probability density function f X (\u00b7). The expectation or expected value of X is given by",
+            "cite_spans": [
+                {
+                    "start": 13,
+                    "end": 37,
+                    "text": "(Mood and Graybill 1974)",
+                    "ref_id": "BIBREF12"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Definition 4 [Beta distribution"
+        },
+        {
+            "text": "Proposition 1 (Mood and Graybill 1974) Let g : R \u2192 R and X be a continuous random variable with the probability density function f X (\u00b7). The expectation or expected value of g(X ) is given by",
+            "cite_spans": [
+                {
+                    "start": 14,
+                    "end": 38,
+                    "text": "(Mood and Graybill 1974)",
+                    "ref_id": "BIBREF12"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Definition 4 [Beta distribution"
+        },
+        {
+            "text": "3 Motivations for using fractional calculus",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Definition 4 [Beta distribution"
+        },
+        {
+            "text": "The fractional or non-integer order calculus adds information to the classical calculus, with a more accurate description of certain natural phenomena. It can be applied to several areas of knowledge, such as physics, chemistry, engineering, technology, among others (Herrmann 2013; Li et al. 2011; Silva et al. 2004; Saad et al. 2018) . In this section, we present two motivations for the use of fractional calculus: the tautochrone problem and the effect of memory in biological models.",
+            "cite_spans": [
+                {
+                    "start": 267,
+                    "end": 282,
+                    "text": "(Herrmann 2013;",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 283,
+                    "end": 298,
+                    "text": "Li et al. 2011;",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 299,
+                    "end": 317,
+                    "text": "Silva et al. 2004;",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 318,
+                    "end": 335,
+                    "text": "Saad et al. 2018)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Definition 4 [Beta distribution"
+        },
+        {
+            "text": "The tautochrone problem (or isochronic curve) corresponds to finding a curve s for which an object spends the same time to slide though the curve for any starting point y 0 to 0. The path is considered to be frictionless and under uniform gravity. In 1823, Abel solved this problem using fractional calculus. The equation that describes the object descent time is given by Camargo and Oliveira (2015)",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "The tautochrone problem"
+        },
+        {
+            "text": "where g is gravity, y(t) is the height of the object at time t, y 0 is the initial height at which the object was launched, and s is the desired curve given as a function of y (Camargo and Oliveira 2015). The curve s can be found using the traditional calculus by applying the Laplace transform and the Convolution Theorem (Camargo and Oliveira 2015). Abel obtained the same solution using fractional calculus. In particular, he observed that except for the multiplication by 1/\u0393 ( 1 2 ) Eq. (8) corresponds to the fractional integral of order 1 2 of the function s (y). Thus, one can easily obtain the desired solution if the fractional derivative of the constant \u03c4 is known (Camargo and Oliveira 2015).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "The tautochrone problem"
+        },
+        {
+            "text": "As stated in Sect. 1, fractional calculus is a great tool that can be employed to describe real-life phenomena with so-called memory effect.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Memory effect: traditional approach"
+        },
+        {
+            "text": "Classic models of autonomous ordinary differential equations have no memory, because their solution does not depend on the previous instant. For instance, if f (t; x 0 ) is a solution of an autonomous first-order ordinary differential equation with the initial condition x 0 at t = 0, then we have the flow property f (t + s; x 0 ) = f (t; f (s; x 0 )), which means that the solution does not change by considering f (s; x 0 ) as initial condition since f (s; x 0 ) belongs to the solution. Thus, given an initial value, the solution is uniquely determined for any point of domain. In general, this assertion is not true for fractional differential equations. One way to introduce the memory effect into a mathematical model is to change the order of the derivative of a classical model so that it is non-integer (Diethelm 2010; Saeedian 2017 ).",
+            "cite_spans": [
+                {
+                    "start": 813,
+                    "end": 828,
+                    "text": "(Diethelm 2010;",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 829,
+                    "end": 842,
+                    "text": "Saeedian 2017",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Memory effect: traditional approach"
+        },
+        {
+            "text": "Let f be a real function defined in [0, t], t 1 , t 2 \u2208 [0, t] are such that 0 < t 1 < t 2 , and",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Memory effect: traditional approach"
+        },
+        {
+            "text": "Note that if \u03b1 = 1, then the second integral is canceled:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Memory effect: traditional approach"
+        },
+        {
+            "text": "In contrast, the second integral is not",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Memory effect: traditional approach"
+        },
+        {
+            "text": "is not determined by itself, it depends on what happened before t 1 which characterizes the memory effect in the process. Next, we study the memory effect in the fractional integral and in the derivatives of Liouville and Caputo. For this purpose, we use the notion of mathematical expectation which is a generalization of the arithmetic mean of observed data.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Memory effect: traditional approach"
+        },
+        {
+            "text": "In this section, we present the so-called memory effect in fractional calculus based on statistical expectation, to the best of our knowledge, which has not yet been presented in the literature. Here, we focus on the Riemann-Liouville integral and Riemann-Liouville and Caputo fractional derivatives of a f function.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Statistical approach"
+        },
+        {
+            "text": "We begin this section with the proposition below, which characterizes three well-known fractional operators depending on expected values of certain random variables. This result shows most clearly by means of mathematical expectation the so-called memory effect in fractional calculus.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Fractional operators"
+        },
+        {
+            "text": "Proposition 2 Let \u03b1 \u2208 R + and f \u2208 AC [0, b] . Under these conditions, we have",
+            "cite_spans": [
+                {
+                    "start": 37,
+                    "end": 43,
+                    "text": "[0, b]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Fractional operators"
+        },
+        {
+            "text": "where U , V and W are random variables with the distributions",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Fractional operators"
+        },
+        {
+            "text": "By the fact of",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Fractional operators"
+        },
+        {
+            "text": "is the density function of a beta distribution, we have that (11) holds true for U \u223c B(1, \u03b1). Let \u03b1 \u2208 (0, 1), from (14), we have",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Fractional operators"
+        },
+        {
+            "text": ", the product rule for derivatives reveals that",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Fractional operators"
+        },
+        {
+            "text": ". Note that the beta function is well defined since \u03b1 \u2208 (0, 1). Thus, we prove (12). Finally, from (4), we have",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Fractional operators"
+        },
+        {
+            "text": "where W \u223c B(1, 1 \u2212 \u03b1). Thus, we conclude that (13) holds true. (12), for 0 < \u03b1 < 1, we can rewrite Caputo's derivative as follows:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Fractional operators"
+        },
+        {
+            "text": "We can see that (16) coincides with (13). This follows from the pf of Proposition 2 and Definitions (3) and (4) .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Fractional operators"
+        },
+        {
+            "text": "Remark 3 Note that, for 0 < \u03b1 < 1, cD \u03b1 f (t \u03b1 ) = 0 does not imply t \u03b1 is a maximum (or minimum) point of f . In fact, suppose that f has just only local maximum in t * .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Fractional operators"
+        },
+        {
+            "text": "In this case, we have f (s) > 0 for all",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Fractional operators"
+        },
+        {
+            "text": "Next, we provide some examples of Riemann-Liouville and Caputo fractional derivatives using the formulas (12) and (13).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Fractional operators"
+        },
+        {
+            "text": "and from (13) we have cD \u03b1 t f (t) = 0.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Fractional operators"
+        },
+        {
+            "text": "From (12), we have",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Fractional operators"
+        },
+        {
+            "text": "Furthermore,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Fractional operators"
+        },
+        {
+            "text": "Replacing in (13), we obtain",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Fractional operators"
+        },
+        {
+            "text": "The results of Examples 1 and 2 coincide with those presented in the literature, showing that Eqs. (12) and (13) can be used instead of the traditional approach to fractional calculus. Moreover, in Example 2, Eqs. (17) and (18) are the same, which is correct since D \u03b1 t f (t) = cD \u03b1 t f (t) for f (0) = 0 and for all \u03b1 \u2208 (0, 1) (see Eq. (16)).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Fractional operators"
+        },
+        {
+            "text": "When the current state of a system is influenced by the dynamics of its historical past, it is said that such a system presents the phenomenon of hysteresis. Several authors have incorporated effect of hysteresis on biological systems (Beisner et al. 2008; Pimenov 2012; El-Saka 2013; Yamana et al. 2017) . In general, hysteresis is a type of non-limited window memory (that is, limited from the origin), so it can be formulated mathematically with a convolution kernel from the origin. This is a typical kernel used to define integral and differential fractional operators, such as the Caputo derivative. It is also possible to notice from formulas (1) and (4) that the kernel involved reveals that the memory of more recent times has more influence than the memory of previous times. This is in agreement with the evolutionary epidemiological systems (Saeedian 2017) . Our study goes further. It reveals that fractional operators can be interpreted from the statistical approach, through mathematical expectation, where the past history of the system follows a beta distribution. Since the parameter \u03b1 is between 0 and 1, recent times have more influence than previous times in this distribution. The hysteresis effect interpreted by fractional operators is shown in formulas (11)-(13). More specifically, the variation rate in the Caputo derivative is explicitly given by the weighted average of all past derivatives as we can see in the formula (11). The other operators have similar explanations.",
+            "cite_spans": [
+                {
+                    "start": 235,
+                    "end": 256,
+                    "text": "(Beisner et al. 2008;",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 257,
+                    "end": 270,
+                    "text": "Pimenov 2012;",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 271,
+                    "end": 284,
+                    "text": "El-Saka 2013;",
+                    "ref_id": null
+                },
+                {
+                    "start": 285,
+                    "end": 304,
+                    "text": "Yamana et al. 2017)",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 853,
+                    "end": 868,
+                    "text": "(Saeedian 2017)",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [],
+            "section": "The hysteresis phenomenon"
+        },
+        {
+            "text": "Since U has distribution B(1, \u03b1), the random variable S = tU assumes the values in the interval (0, t). Thus, from (11),",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "The hysteresis phenomenon"
+        },
+        {
+            "text": "is affected by all prior values at t because the expected value E[ f (S)] is also affected. Since E[ f (S)] appears in (12) and (16), it follows that D \u03b1 t f (t) and cD \u03b1 t f (t) also have a memory effect.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "The hysteresis phenomenon"
+        },
+        {
+            "text": "The formulas (11)-(13) reveal interesting interpretations: U \u223c B(1, 1) , that is, U has uniform distribution so that",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 59,
+                    "end": 70,
+                    "text": "U \u223c B(1, 1)",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "The hysteresis phenomenon"
+        },
+        {
+            "text": "Consequently, the fractional calculus coincides with the classic one, when \u03b1 = 1.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "The hysteresis phenomenon"
+        },
+        {
+            "text": "Items 1), 2) and 3) indicate that the values of the fractional integral, as well as the fractional derivatives in t, are affected by the historical values of f (at every time before t). Thus, the fractional calculus seems to be a more adequate mathematical tool for modeling phenomena with hysteresis than the classical calculus (that is, for the case where \u03b1 = 1).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "The hysteresis phenomenon"
+        },
+        {
+            "text": "ince each historical value (before t) acts differently for fractional operators, according to the distributions B(1, \u03b1), B(1, 1 \u2212 \u03b1) and B(2, 1 \u2212 \u03b1) , we investigate which ones contribute most to these operators in relation to the order \u03b1 \u2208 (0, 1).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 98,
+                    "end": 148,
+                    "text": "distributions B(1, \u03b1), B(1, 1 \u2212 \u03b1) and B(2, 1 \u2212 \u03b1)",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Influence of beta distribution on fractional operators of orderS"
+        },
+        {
+            "text": "According to formula (11) , the value of J \u03b1 t f (t) is affected according to the density",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Influence of beta distribution on fractional operators of orderS"
+        },
+        {
+            "text": ", which is increasing if 0 < \u03b1 < 1 and decreasing if \u03b1 > 1. For 0 < \u03b1 < 1, recent values (i.e., close to t \u21d4 u 1) contribute more to the fractional integral J \u03b1 t f (t) than the remote ones (i.e., close to 0 \u21d4 u 0). On the other hand, for \u03b1 > 1 the opposite occurs.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Influence of beta distribution on fractional operators of orderS"
+        },
+        {
+            "text": "From formulas (12) and (13) , one can note that Riemann-Liouville and Caputo derivative operators have similar influence of prior values of f to the integral for 0 < \u03b1 < 1. In particular, values close to t contribute more to fractional derivatives than remote values (those ones evaluated for times close to 0). This is due to the fact that density distributions",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Influence of beta distribution on fractional operators of orderS"
+        },
+        {
+            "text": "For the integral operator, the higher the value of \u03b1 \u2208 (0, 1) is, the more uniform are the weights of the initial and final values, that is, the closer to the uniform distribution the random variable U becomes. For derivative operators, the opposite occurs. This is illustrated in Fig.  1 . Note that the density function f U (\u00b7), for the parameter \u03b1, is equal to the density function f W (\u00b7) for the parameter 1 \u2212 \u03b1. The f V (\u00b7) density function follows the same pattern as f W (\u00b7), but with more accentuated increasing.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 281,
+                    "end": 288,
+                    "text": "Fig.  1",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Influence of beta distribution on fractional operators of orderS"
+        },
+        {
+            "text": "Regarding the fractional integral, we notice that the higher the value of \u03b1 is the greater is the contribution of remote values (u 0). In contrast, the higher \u03b1, the smaller the contribution of the values evaluated close to t (i.e., u 1). As to the Riemann-Liouville and Caputo fractional derivative operators, we obtain an opposite behaviour.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Influence of beta distribution on fractional operators of orderS"
+        },
+        {
+            "text": "Next, we admit the effect of hysteresis in an epidemiological SIR model to study the COVID-19 in four countries: South Korea, China, Switzerland and Italy.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Influence of beta distribution on fractional operators of orderS"
+        },
+        {
+            "text": "In this section, we analyze the spread of COVID-19 in some countries using an epidemiological model of the SIR type. This is a simple compartmental model that was proposed in 1927 by Kermack and McKendrick (1927) and is widely used to study the evolution of some diseases. In Pimenov (2012) , authors pointed out that the hysteresis phenomenon should ideally be considered in the analysis of the epidemiological behaviour of diseases due to actions caused by the protective instinct and immunity, that are influenced respectively by memory and the so-called immune memory of the body. Additionally, we found out in the previous section that fractional calculus is capable of describing the hysteresis effect, which is more specific than the memory effect, since it involves the complete historical past to determine the present situation. Since we desire to incorporate the memory effect characterized by hysteresis phenomenon, we use the fractional version of the SIR model.",
+            "cite_spans": [
+                {
+                    "start": 183,
+                    "end": 212,
+                    "text": "Kermack and McKendrick (1927)",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 276,
+                    "end": 290,
+                    "text": "Pimenov (2012)",
+                    "ref_id": "BIBREF13"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Application"
+        },
+        {
+            "text": "In the epidemiological SIR model, the population is divided into three compartments: susceptible, infected and recovered. Susceptible individuals correspond to those exposed to the disease, but not yet infected. Those who have already been infected but are no longer infected and have gained immunity are classified as recovered. Originally, the model is given by",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "The models"
+        },
+        {
+            "text": "where S(t), I (t) and R(t) are the number of susceptible, infected and recovered individuals at instant t, respectively. The parameter \u03b2 is the transmission rate and \u03b3 is the recovery rate (Edelstein-Keshet 1988; Kermack and McKendrick 1927) .",
+            "cite_spans": [
+                {
+                    "start": 213,
+                    "end": 241,
+                    "text": "Kermack and McKendrick 1927)",
+                    "ref_id": "BIBREF9"
+                }
+            ],
+            "ref_spans": [],
+            "section": "The models"
+        },
+        {
+            "text": "In this work, we used the fractional versions of the SIR model, given by Diethelm (2013) , as follows:",
+            "cite_spans": [
+                {
+                    "start": 73,
+                    "end": 88,
+                    "text": "Diethelm (2013)",
+                    "ref_id": "BIBREF4"
+                }
+            ],
+            "ref_spans": [],
+            "section": "The models"
+        },
+        {
+            "text": "where cD \u03b1 t X (t) is the fractional derivative of Caputo of order \u03b1 \u2208 (0, 1). According to Diethelm (2013) , the fractional derivative operator cD \u03b1 t has a dimension (time) \u2212\u03b1 instead of (time) \u22121 , so that, due to dimensional analysis, on the right side of (20) the parameters \u03b2 and \u03b3 must have power \u03b1.",
+            "cite_spans": [
+                {
+                    "start": 92,
+                    "end": 107,
+                    "text": "Diethelm (2013)",
+                    "ref_id": "BIBREF4"
+                }
+            ],
+            "ref_spans": [],
+            "section": "The models"
+        },
+        {
+            "text": "The system (20) is nonlinear and for the most fractional differential equations, there are no methods to calculate the exact analytical solution (Diethelm 2010) . Thus, the solution of (20) is given just by the numerical method.",
+            "cite_spans": [
+                {
+                    "start": 145,
+                    "end": 160,
+                    "text": "(Diethelm 2010)",
+                    "ref_id": "BIBREF3"
+                }
+            ],
+            "ref_spans": [],
+            "section": "The models"
+        },
+        {
+            "text": "To compare the classic and fractional SIR models given respectively in (19) and (20), we take data from active cases of the COVID-19, that is, cases of infected people at the analyzed moment, not accumulated (Worldometers 2020), in each of the countries: South Korea, China, Switzerland and Italy. We consider the numerical solutions for which the functions I of the number of infected which fit the real data in the most appropriate way.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Methodology and numerical solution"
+        },
+        {
+            "text": "The parameters \u03b2, \u03b3 and, in the fractional case, \u03b1, are obtained by minimizing the mean squared error:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Methodology and numerical solution"
+        },
+        {
+            "text": "where obs is the vector with n real data about COVID-19. The process to obtain the parameters \u03b2, \u03b3 and \u03b1 consists of minimizing the error given by the formula (21) where I is a numerical solution of the model (20), and similarly for the model (19) considering \u03b1 = 1. First, we define a range of values where the parameters vary and the software tests all possible combinations for the triple (\u03b2, \u03b3, \u03b1). For each value (\u03b2, \u03b3, \u03b1) the software finds a numerical solution I and then calculates the error using (21). Thus, it is possible to find the values (\u03b2, \u03b3, \u03b1) that provide the solution I with the smallest possible error, as it is desired in the data adjustment process. After having done it, we have the solution I that best fits the number of case data for each country studied in this paper. Thus, we can plot the numerical solution curve for future days, making projections of new cases of COVID-19 in that country, as in Figs We consider the values of S, I and R in the range [0, 1]. For the normalization process, the values of the vector obs must be divided by a value N corresponding to the population of the country. We found in our tests that the total population of the country is not a feasible value for N . This is due to the fact that the peak of the obtained solution is much higher than the peak of the data, resulting in an inadequate adjustment for both models. We observe that lower values for N resulted in a good fit of the models. In general, the initial susceptible population to the disease is not all inhabitants (residents) since the first cases occur only in certain regions.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 928,
+                    "end": 932,
+                    "text": "Figs",
+                    "ref_id": null
+                }
+            ],
+            "section": "Methodology and numerical solution"
+        },
+        {
+            "text": "Even during the outbreak of the disease, it is not the entire population of the country that comes into contact with an infected individual. In addition, some people may have increased resistance or genetic factors that make contamination unlikely. Thus, it seems feasible that the value of N is, in fact, not as large as the total number of inhabitants in a country. Note that, in the case of the SIR model, the average time that each individual remains infectious is the inverse of the recovery rate, that is, 1/\u03b3 , according to Edelstein-Keshet (1988) , Tavares (2017) . To choose an appropriate value of N we use the following criterion: the peak of the solutions of the models must present values close to the peak of the data and, mainly, the recovery rate should be such that \u03b3 \u2208 [0.05, 0.2], according to information on the average period (1/\u03b3 ) of infectivity by COVID-19 (World Health Organization 2020) .",
+            "cite_spans": [
+                {
+                    "start": 531,
+                    "end": 554,
+                    "text": "Edelstein-Keshet (1988)",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 557,
+                    "end": 571,
+                    "text": "Tavares (2017)",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 872,
+                    "end": 913,
+                    "text": "COVID-19 (World Health Organization 2020)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Methodology and numerical solution"
+        },
+        {
+            "text": "To obtain the numerical solution we have adopted the initial condition (S 0 , I 0 , R 0 ), for both models (19) and (20), considering I 0 equal to the first value of the normalized real data and R 0 = 0. Since this model does not consider vital dynamics, we have 1 = S + R + I and, therefore, S 0 = 1 \u2212 I 0 . The numerical solution is obtained using the Adams-Bashforth-Moulton PECE predictor-corrector method (Diethelm and Freed 1999) .",
+            "cite_spans": [
+                {
+                    "start": 410,
+                    "end": 435,
+                    "text": "(Diethelm and Freed 1999)",
+                    "ref_id": "BIBREF5"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Methodology and numerical solution"
+        },
+        {
+            "text": "In this section, we present the results obtained with the models for the number of infected by COVID-19 for four countries. It is worth pointing out that the objective of this section is to analyze the effectiveness of the SIR models (19) and (20) using COVID-19 data and compare them. The graphs in Figs. 2, 3, 4 and 5 show the real data in dotted line, the red dashed lines represent the solution of the fractional model (that is, with memory), and the black continuous lines are the solutions of the classic model. Finally, Table 1 exhibits the mean squared errors (21) obtained of each model and country as well as the corresponding fractional order \u03b1. Table 2 presents the parameters found in our simulations.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 527,
+                    "end": 534,
+                    "text": "Table 1",
+                    "ref_id": "TABREF2"
+                },
+                {
+                    "start": 657,
+                    "end": 664,
+                    "text": "Table 2",
+                    "ref_id": "TABREF3"
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "In Fig. 2 , we can observe the behavior of the infected curve obtained by both models, (19) and (20), in comparison to the real data of COVID-19 in South Korea from February 15 to July 31, 2020, where we consider N = 25,000.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 3,
+                    "end": 9,
+                    "text": "Fig. 2",
+                    "ref_id": null
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "Note that the data curve is flatter and wider than that given by the classic SIR model, that is, the disease occurs over a period of time longer than that described by the model. In this case, the fractional solution fits better the data due to the freedom of the parameter \u03b1 (that is associated with memory effect). In this example, we can see how the fractional model contributes to a better description of the phenomenon. Table 1 corroborates this fact showing that the mean squared error obtained by the fractional models is less than the one obtained by the classic models. Figure 3 shows the solutions of the fractional and classic models in comparison to the COVID-19 data of China from January 22 to July 31, 2020. In these simulations, we consider N = 175000.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 425,
+                    "end": 432,
+                    "text": "Table 1",
+                    "ref_id": "TABREF2"
+                },
+                {
+                    "start": 579,
+                    "end": 587,
+                    "text": "Figure 3",
+                    "ref_id": null
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "In Fig. 3 , the fractional model (20) did not present much difference from the classic model (19) . In fact, we can see in Table 1 that the mean squared errors are the same for both models. In this case, the outbreak of the disease occurred in a short period of time, which is already well described by the classic model.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 3,
+                    "end": 9,
+                    "text": "Fig. 3",
+                    "ref_id": null
+                },
+                {
+                    "start": 123,
+                    "end": 130,
+                    "text": "Table 1",
+                    "ref_id": "TABREF2"
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "In Fig. 4 , we compare the models by analyzing the disease data in Switzerland from February 25 to July 31, 2020, where we consider N = 45000.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 3,
+                    "end": 9,
+                    "text": "Fig. 4",
+                    "ref_id": null
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "Again, in Fig. 4 , we can note that the fractional model fits the data better than the classic one. This can also be observed in Table 1 . The dotted curve is wider with a slower decay than the one produced by the classic SIR model. This fact can best be modeled when there is a memory effect.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 10,
+                    "end": 16,
+                    "text": "Fig. 4",
+                    "ref_id": null
+                },
+                {
+                    "start": 129,
+                    "end": 136,
+                    "text": "Table 1",
+                    "ref_id": "TABREF2"
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "In Fig. 5 , we compare the models using data of Italy from February 15 to July 31, where we consider N = 600,000. From Table 1 , we can observe that this is another example where the use of the fractional model yielded solutions with mean squared error less than the one produced by the classical model.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 3,
+                    "end": 9,
+                    "text": "Fig. 5",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 119,
+                    "end": 126,
+                    "text": "Table 1",
+                    "ref_id": "TABREF2"
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "It is worth noting that the peaks obtained (in t =t) with the solutions of the model (20) are closer to reality than the solutions of the model (19) and Italy. For each country, the order \u03b1 obtained for the fractional derivative is also shown in Table 1 . Finally, Table 2 presents the parameters used for the models (19) and (20) for each country. In Figs. 2, 3, 4 and 5, the solutions of both models (19) and (20) were extended by thirty days, predicting the spread of the disease for another month. Using the best adjustment provided by the fractional model, it is possible to make more accurate predictions about the disease behavior and the peak value.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 246,
+                    "end": 253,
+                    "text": "Table 1",
+                    "ref_id": "TABREF2"
+                },
+                {
+                    "start": 265,
+                    "end": 272,
+                    "text": "Table 2",
+                    "ref_id": "TABREF3"
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "We also have observed that the order \u03b1 of the fractional model indicates whether the disease spreads more quickly or more slowly in a given country. In our simulations, we noticed that the outbreak occurs in a short period of time when \u03b1 approaches 1. On the other hand, the more \u03b1 approaches 0, the longer the period of time that outbreak occurs. For instance, in China, there was rapid action to control the disease and isolate individuals, making the disease spread more quickly, in less time. This was well described by the high value of \u03b1. In contrast, we see that in other countries the disease spreads in a slower rate, taking longer to complete all stages of the disease. For these countries, we obtain lower values for \u03b1.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Results"
+        },
+        {
+            "text": "In this section, we detail in a more illustrative way the comments made in Sect. 4.3 regarding the influence of the historical values on the fractional operators and the fractional-order \u03b1 \u2208 (0, 1). Specifically, in Sect. 4.3, we argue that the higher the contribution of the first data is (u 0), the lower the order \u03b1 of the Caputo derivative is. On the other hand, the higher the contribution of the latest data is (u 1), the higher the order \u03b1 of the Caputo derivative is. To illustrate the influence of these weights on the model (20), we focus only on data from Switzerland.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Numerical solutions for weighted data"
+        },
+        {
+            "text": "Here, the methodology for finding numerical solutions is analogous to the one described in Sect. 5.2, but we modify the formula (21) as follows:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Numerical solutions for weighted data"
+        },
+        {
+            "text": "where w i \u2208 R is the weight assigned to the data. Here, we adopt (i) w i = 2(n + 1 \u2212 i) n(n + 1) , i = 1, . . . , n, when the greatest weight is attributed to the first data.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Numerical solutions for weighted data"
+        },
+        {
+            "text": "(ii) w i = 2i n(n + 1)",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Numerical solutions for weighted data"
+        },
+        {
+            "text": ", i = 1, . . . , n, when the greatest weight is attributed to the latest data; Fig. 6 Solution of the SIR model (20) for spreading of COVID-19 with parameter estimation using weights given as in Item (i) Fig. 7 Solution of the SIR model (20) for spreading of COVID-19 with parameter estimation using weights given as in Item (ii) In our simulations in Sect. 5.3 for Switzerland, we obtain \u03b1 = 0.6149 as the fractional order of the derivative, according to the model (20). By considering the weights w i given as in Item (i), that is, the highest weights attributed to the first data, we obtain \u03b1 = 0.5596 as the order of the derivative for the fractional model. As expected, the value of the derivative order decreased. Figure 6 exhibits the numerical solution for this case.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 79,
+                    "end": 85,
+                    "text": "Fig. 6",
+                    "ref_id": null
+                },
+                {
+                    "start": 204,
+                    "end": 210,
+                    "text": "Fig. 7",
+                    "ref_id": null
+                },
+                {
+                    "start": 720,
+                    "end": 728,
+                    "text": "Figure 6",
+                    "ref_id": null
+                }
+            ],
+            "section": "Numerical solutions for weighted data"
+        },
+        {
+            "text": "In Fig. 7 , the parameters are adjusted with the highest weight attributed to the latest data, that is, according to Item (ii). In this case, we obtain \u03b1 = 0.6310 for the derivative order of the fractional model. Again as expected, the value \u03b1 increased in comparison to the adjustment made in Sect. 4.3.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 3,
+                    "end": 9,
+                    "text": "Fig. 7",
+                    "ref_id": null
+                }
+            ],
+            "section": "Numerical solutions for weighted data"
+        },
+        {
+            "text": "Given the importance of COVID-19, we will make a preliminary study on new waves, although it is not the main focus of our study. For this new wave, we estimate new peaks taking 23) for some value of k. S 1 represents the proportion of susceptible people at the moment when the first social isolation begins. S 2 represents the the proportion of susceptible people at the moment when control measures are relaxed. The evolution of the epidemic with control through social isolation is given by the green curve into account solely the government control actions such as social distance and lockdown. Such actions produce changes in the parameters of the SIR model and, consequently, in the peaks of each wave. In this sense, the SIR model is not only seen as a dynamic system, it comes to be seen as a system with control.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Numerical solutions for weighted data"
+        },
+        {
+            "text": "From the SIR model, we have (Patr\u00e3o and Reis 2020)",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Control in the SIR model"
+        },
+        {
+            "text": "where k \u2208 R. By (23), for S * = \u03b3 \u03b2 the proportion of infected reaches the maximum value. Therefore, one way to consider control in the SIR model is to change the contact rate \u03b2, where the lower the value of \u03b2, the greater the proportion of susceptible people S * (who were not infected) at peak I (S * ). It is worth noting that the peak I (S * ) depends on the value of the constant k according to (23) (see Fig. 8 ).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 410,
+                    "end": 416,
+                    "text": "Fig. 8",
+                    "ref_id": "FIGREF5"
+                }
+            ],
+            "section": "Control in the SIR model"
+        },
+        {
+            "text": "It is reasonable to consider that, in the relaxation phase in control, the contact rate is higher than the one in the phase with social isolation. Consequently, we have a value of S * 1 for the phase with isolation and a value of S * 2 for the phase after relaxation. In this case, we have the following peaks: I (S * 1 ) and I (S * 2 ). Figure 8 suggests that each plateau (i.e. stabilization at a low level of infected individuals) occurs between the first and second waves. Therefore, in this case, the plateau occurs when the proportion of susceptible individuals is around S 2 . t are, respectively, proportional to average of f (s) of the function and its classical derivative f (s), for all instants s between zero and t. So, in fact, the fractional calculus is an appropriate methodology to treat dynamical systems with memory. From this approach we also proved the loss of the memory effect when \u03b1 = 1 in (11)-(13), that is, when we return to the classic case. Moreover, since memory effect can involve the entire history before the present instant, that is, it considers all times s from 0 to t, fractional calculus can be viewed as a suitable tool for modeling of phenomenon with hysteresis. The hysteresis phenomenon can be seen in several dynamic systems, such as physical or biological systems, for which important properties depend on its entire past history.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 338,
+                    "end": 346,
+                    "text": "Figure 8",
+                    "ref_id": "FIGREF5"
+                }
+            ],
+            "section": "Control in the SIR model"
+        },
+        {
+            "text": "In addition, we show that the contribution of the function values to the fractional operators is higher or lower according to the order of the operator. In particular, the final values of the function have greater influence on the values of the fractional Riemann-Liouville and Caputo derivatives for 0 < \u03b1 < 1.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Control in the SIR model"
+        },
+        {
+            "text": "We illustrate the use of a fractional model to model a system with memory using a simple compartmental SIR model which is a well-known and applicable model in epidemiology. Specifically, we study COVID-19 by assuming that it obeys the dynamics of the SIR epidemiologic model. For the purpose of comparing the results obtained via fractional calculus and via classical calculus, we study the evolution of COVID-19 in four countries, namely South Korea, China, Switzerland and, Italy. The results for these countries show that the fractional calculus produced more satisfactory results than those obtained using the classical theory. We also have studied the control of the epidemic through policies of social isolation.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Control in the SIR model"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "What is the best fractional derivative to fit data?",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Almeida",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Appl Anal Discrete Math",
+            "volume": "11",
+            "issn": "2",
+            "pages": "358--368",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Modeling some real phenomena by fractional differential equations",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Almeida",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Bastos",
+                    "suffix": ""
+                },
+                {
+                    "first": "Mtt",
+                    "middle": [],
+                    "last": "Monteiro",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Math Methods Appl Sci",
+            "volume": "39",
+            "issn": "16",
+            "pages": "4846--4855",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Fundamental properties of cooperative contagion processes",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Beisner",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Haydon",
+                    "suffix": ""
+                },
+                {
+                    "first": "Kl ; Hysteresis",
+                    "middle": [],
+                    "last": "Cuddington",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Camargo",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Oliveira",
+                    "suffix": ""
+                },
+                {
+                    "first": "S\u00e3o",
+                    "middle": [
+                        "Paulo"
+                    ],
+                    "last": "C\u00e1lculo Fracion\u00e1rio. Livraria Da F\u00edsica",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Ghanbarnejad",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Brockmann",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "New J Phys",
+            "volume": "19",
+            "issn": "10",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "The analysis of fractional differential equations: an application-oriented exposition using differential operators of Caputo type",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Diethelm",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "A fractional calculus based model for the simulation of an outbreak of dengue fever",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Diethelm",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Nonlinear Dyn",
+            "volume": "71",
+            "issn": "4",
+            "pages": "613--619",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "The Frac PECE subroutine for the numerical solution of differential equations of fractional order, Forschung und Wissenschaftliches Rechnen",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Diethelm",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Freed",
+                    "suffix": ""
+                }
+            ],
+            "year": 1999,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "57--71",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Random House, New York El-Saka HAA (2013) The fractional-order SIR and SIRS epidemic models with variable population size",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Edelstein-Keshet",
+                    "suffix": ""
+                }
+            ],
+            "year": 1988,
+            "venue": "Math Sci Lett",
+            "volume": "2",
+            "issn": "3",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "A fractional order epidemic model for the simulation of outbreaks of influenza A (H1N1)",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Gonz\u00e1lez-Parra",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Arenas",
+                    "suffix": ""
+                },
+                {
+                    "first": "Chen-Charpentier",
+                    "middle": [],
+                    "last": "Bm",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Math Methods Appl Sci",
+            "volume": "37",
+            "issn": "15",
+            "pages": "2218--2226",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Folded potentials in cluster physics-a comparison of Yukawa and Coulomb potentials with Riesz fractional integrals",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Herrmann",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "J Phys A Math Theor",
+            "volume": "46",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "A contribution to the mathematical theory of epidemics",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Kermack",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Mckendrick",
+                    "suffix": ""
+                }
+            ],
+            "year": 1927,
+            "venue": "Proceedings of the royal society of London. Series A, containing papers of a mathematical and physical character",
+            "volume": "115",
+            "issn": "",
+            "pages": "700--721",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Fractional-order derivative spectroscopy for resolving simulated overlapped Lorenztian peaks",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Tang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Chemometr Intell Lab Syst",
+            "volume": "107",
+            "issn": "",
+            "pages": "83--89",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Fractional-derivative approximation of relaxation in complex systems",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Sen",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Pacheco-Vega",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Din\u00e2mica da Propaga\u00e7\u00e3o de Memes via Sistemas com Mem\u00f3ria. Dissertation, University of Alfenas",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Introduction to the theory of statistics",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Mood",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Graybill",
+                    "suffix": ""
+                }
+            ],
+            "year": 1974,
+            "venue": "McGraw-Hill Book Company, Auckland Patr\u00e3o M, Reis M (2020) Analisando a pandemia de COVID-19 atrav\u00e9s dos modelos SIR e SECIAR",
+            "volume": "30",
+            "issn": "",
+            "pages": "11--140",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Memory effects in population dynamics: spread of infectious disease as a case study",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Pimenov",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Math Model Nat Phenom",
+            "volume": "7",
+            "issn": "",
+            "pages": "204--226",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "New fractional derivatives applied to the Korteweg-de Vries and Korteweg-de Vries-Burger's equations",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Pinto",
+                    "suffix": ""
+                },
+                {
+                    "first": "Tenreiro",
+                    "middle": [],
+                    "last": "Machado",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Math Probl Eng Saad KM, Baleanu D, Atangana A",
+            "volume": "37",
+            "issn": "4",
+            "pages": "5203--5216",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Memory effects on epidemic evolution: the susceptible-infected-recovered epidemic model",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Saeedian",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Phys Rev",
+            "volume": "95",
+            "issn": "",
+            "pages": "224091--0224099",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Fractional order control of a hexapod robot",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Silva",
+                    "suffix": ""
+                },
+                {
+                    "first": "Tenreiro",
+                    "middle": [],
+                    "last": "Machado",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Lopes",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Nonlinear Dyn",
+            "volume": "38",
+            "issn": "",
+            "pages": "417--433",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Operators of fractional integration and their applications",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Srivastava",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Saxena",
+                    "suffix": ""
+                }
+            ],
+            "year": 2001,
+            "venue": "Appl Math Comput",
+            "volume": "118",
+            "issn": "1",
+            "pages": "1--52",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Modelo SIR em epidemiologia",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Tavares",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Revista de Ci\u00eancia Elementar",
+            "volume": "5",
+            "issn": "2",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Sobre derivadas fracion\u00e1rias",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Teodoro",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Oliveira",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Oliveira",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Revista Brasileira de Ensino de F\u00edsica",
+            "volume": "40",
+            "issn": "",
+            "pages": "23071--230726",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Report of the WHO-China joint mission on coronavirus disease",
+            "authors": [],
+            "year": 2019,
+            "venue": "World Health Organization",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Hysteresis in simulations of malaria transmission",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Yamana",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Qiu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Eab",
+                    "middle": [],
+                    "last": "Eltahir",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Adv Water Resour",
+            "volume": "108",
+            "issn": "",
+            "pages": "416--422",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Publisher's Note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "proportional to the weighted average of f (s), considering all prior values s of t, distributed according to a beta distribution; 2) D \u03b1 t f (t) is the sum of two amounts proportional to the weighted average of the f (s) and f (s) functions, considering all prior values s of t distributed according to a beta distribution; 3) cD \u03b1 t f (t) is proportional to the weighted average of the classic derivative f (s), considering all prior values s less than t, distributed according to a beta distribution; 4) If \u03b1 = 1, then",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "Density functions f U , f W and f V , for parameters \u03b1 = 0.2, \u03b1 = 0.5 and \u03b1 = 0.8. a The distribution of historical weights for fractional integral; b the distribution of historical weights for the Caputo and Riemann-Liouville derivatives; c the distribution that, combined with f W , defines the historical weights for the Riemann-Liouville derivative",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "Other examples of how to adjust fractional models can be found in Almeida (2017), Almeida et al. (2016), Gonz\u00e1lez-Parra et al. (2014), and Li et al. (2018).The adjustment is performed twice, one for the model (19), with \u03b1 = 1 and other for the model (20), where the 3 parameters are found together. Thus, the values \u03b2 and \u03b3 obtained for (19) may be different from those found for (20).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "Solutions of the(19)and(20)models in the description of the spread of COVID-19 in South Korea. For the model (19), we use \u03b2 = 0.4047 and \u03b3 = 0.1071. For the model (20), we use \u03b2 = 0.5499, \u03b3 = 0.1055 and \u03b1 = 0.Solutions of the (19) and (20) models in the description of the spread of COVID-19 in China. For the model (19), we use \u03b2 = 0.3591 and \u03b3 = 0.0907. For the model (20), we use \u03b2 = 0.3613, \u03b3 = 0.0907 and \u03b1 = 0.9937",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "Solutions of the(19)and(20)models in the description of the spread of COVID-19 in Switzerland. For the model (19), we use \u03b2 = 0.4349 and \u03b3 = 0.1207. For the model (20), we use \u03b2 = 0.5118, \u03b3 = 0.1196 and \u03b1 = 0.Solutions of the (19) and (20) models in the description of the spread of COVID-19 in Italy. For the model (19), we use \u03b2 = 0.3067 and \u03b3 = 0.1165. For the model (20), we use \u03b2 = 0.4628, \u03b3 = 0.1218 and \u03b1 = 0.7114",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": "Phase plane S \u00d7 I of the SIR model. The black dashed curve represents a scenario without control measures. The red and blue dashed curves are given by Eq. (",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF1": {
+            "text": "in all countries. Moreover, all peaks of all solutions of the model (20) are on the left of the ones of the model (19) according to Remark 3, since cD \u03b1 I (t) = 0 for all 0 < \u03b1 < 1.Table 1 exhibits the mean squared errors calculated according to Eq. (21) for the classical and fractional models in relation to the COVID-19 data from South Korea, China, Switzerland",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "Mean squared errors (MSEs) achieved by the classical and fractional models and the corresponding order \u03b1 of the fractional derivative for each country",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF3": {
+            "text": "",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "The authors would like to thank the anonymous referees for their careful reading and helpful comments. They were extremely important to improve this manuscript, especially the application.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Acknowledgements"
+        },
+        {
+            "text": "The authors declare that they have no conflict of interest.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conflict of interest"
+        }
+    ]
+}

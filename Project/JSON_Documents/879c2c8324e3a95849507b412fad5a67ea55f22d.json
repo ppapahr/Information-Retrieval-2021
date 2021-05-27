@@ -1,0 +1,1461 @@
+{
+    "paper_id": "879c2c8324e3a95849507b412fad5a67ea55f22d",
+    "metadata": {
+        "title": "Predictive Value of 5 Early Warning Scores for Critical COVID-19 Patients",
+        "authors": [
+            {
+                "first": "Hai",
+                "middle": [],
+                "last": "Hu",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Ni",
+                "middle": [],
+                "last": "Yao",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Yanru",
+                "middle": [],
+                "last": "Qiu",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Objectives: A simple evaluation tool for patients with novel coronavirus disease 2019 could assist the physicians to triage COVID-19 patients effectively and rapidly. This study aimed to evaluate the predictive value of 5 early warning scores based on the admission data of critical COVID-19 patients. Methods: Overall, medical records of 319 COVID-19 patients were included in the study. Demographic and clinical characteristics on admission were used for calculating the Standardized Early Warning Score (SEWS), National Early Warning Score (NEWS), National Early Warning Score2 (NEWS2), Hamilton Early Warning Score (HEWS), and Modified Early Warning Score (MEWS). Data on the outcomes (survival or death) were collected for each case and extracted for overall and subgroup analysis. Receiver operating characteristic curve analyses were performed. Results: The area under the receiver operating characteristic curve for the SEWS, NEWS, NEWS2, HEWS, and MEWS in predicting mortality were 0.841 (95% CI: 0.765-0.916), 0.809 (95% CI: 0.727-0.891), 0.809 (95% CI: 0.727-0.891), 0.821 (95% CI: 0.748-0.895), and 0.670 (95% CI: 0.573-0.767), respectively. Conclusions: SEWS, NEWS, NEWS2, and HEWS demonstrated moderate discriminatory power and, there-",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "fore, offer potential utility as prognostic tools for screening severely ill COVID-19 patients. However, MEWS is not a good prognostic predictor for COVID-19.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "T he 2019 novel coronavirus (SARS-CoV-2) was discovered following an unexplained viral pneumonia case in Wuhan, China, in December 2019, and was named by the World Health Organization (WHO) on January 12, 2020. Although most patients with novel coronavirus disease 2019 only suffered cold-like symptoms and recovered without special therapy, 1 a few patients became dangerously ill. 2 Previous reports described a mortality rate of 11% to 62% among severely or critically ill patients with COVID-19. [3] [4] [5] [6] The mortality inpatients aged \u226565 y was higher than that in younger patients. 2 Hitherto, identifying patients with life-threatening illness and enabling them to access early advanced medical intervention may contribute to reducing mortality. Due to the large number of patients with COVID-19 and relatively insufficient medical resources, emergency screening of such patients has become challenging. 7 Currently, although clinicians use indices such as the white blood cell count, 1 C-reactive protein concentration, 1 interleukin, 1 or d-dimer 6 to classify COVID-19 cases for severity, these prognostic factors are nonspecific and may involve a delay. Therefore, these indicators were unsuitable for screening, and there is no particular scoring system created for COVID-19 patients. Thus, the second-best choice is applying existing scoring tools. We focused on existing early warning scores (EWSs) to evaluate the prognosis of COVID-19 patients. The EWSs were widely applied in the emergency department (ED) for assisting emergency physicians to predict the risk of deterioration, monitor the evolution of the patient, and make clinical decisions, specifically to promote the safety of the critical patient. So far, many models of EWSs have been developed, such as National Early Warning Score (NEWS), National Early Warning Score 2 (NEWS2), Hamilton Early Warning Score (HEWS), Modified Early Warning Score (MEWS), and Standardized Early Warning Score (SEWS) (see Supplemental Table 1 , which is available online). In 2012, the Royal College of Physicians (RCP) proposed NEWS, 8 whose parameters included heart rate, systolic blood pressure, temperature, respiratory rate, oxygen saturation, supplemental oxygen, and mental status. NEWS has now undergone extensive validation. 9,10 Five years later, the RCP updated NEWS to NEWS2, 11 which used the same parameters but altered their weights. HEWS, whose parameters are also the same as those of NEWS but with different weights, was developed in 2015, has successfully completed pilot-testing in the ED setting, [12] [13] [14] and is being used in some medical centers in Canada. MEWS was originally developed in 2000 to facilitate timely recognition of patients with established or impending critical illness. 15 Its parameters are heart rate, systolic blood pressure, respiratory rate, body temperature, and mental status. Some studies [16] [17] [18] have suggested that MEWS may be suitable for use in the ED and may allow improvement in the quality and safety of care. SEWS was proposed by Paterson's team 19 in 2006. Its parameters are respiratory rate, temperature, systolic blood pressure, oxygen saturation, heart rate, and mental status. Paterson et al. illuminated that SEWS correlates with in-hospital mortality. 19 Currently, the EWS series is widely used in EDs. 20 Although some studies 21-23 on clinical therapies for severely ill COVID-19 patients have used EWSs as tools to stratify risk, to our knowledge, no studies comparing the performance of these scores in COVID-19 patients. Thus, the purpose of our study was to evaluate the use of these EWSs as in-hospital mortality indicators for COVID-19 patients.",
+            "cite_spans": [
+                {
+                    "start": 500,
+                    "end": 503,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 504,
+                    "end": 507,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 508,
+                    "end": 511,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 512,
+                    "end": 515,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 2583,
+                    "end": 2587,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 2588,
+                    "end": 2592,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 2593,
+                    "end": 2597,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 2909,
+                    "end": 2913,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 2914,
+                    "end": 2918,
+                    "text": "[17]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 2919,
+                    "end": 2923,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 3218,
+                    "end": 3233,
+                    "text": "Paterson et al.",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1986,
+                    "end": 2006,
+                    "text": "Supplemental Table 1",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": ""
+        },
+        {
+            "text": "This was a retrospective analysis of data obtained from an electronic register of COVID-19 patients who visited our ED in early 2020. The data accessed were anonymized.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Study Design"
+        },
+        {
+            "text": "The Diagnosis and Treatment Plan of Novel Coronavirus Pneumonia (Version 6), which was issued by the National Health Commission of China, was adopted for diagnosis, classification, and treatment of COVID patients (see Supplemental Table 2 ). The 5 EWSs were applied to the data, and their capacity to predict in-hospital mortality of patients was assessed.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 231,
+                    "end": 238,
+                    "text": "Table 2",
+                    "ref_id": "TABREF2"
+                }
+            ],
+            "section": "Study Design"
+        },
+        {
+            "text": "The emergency medical team, containing more than 100 members, was deployed to Wuhan city during the COVID-19 epidemic and managed the temporary COVID-19 ward independently in a hospital in Wuhan.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Study Setting"
+        },
+        {
+            "text": "The local Institutional Review Committee approved the study and waived the need for obtaining informed consent from the study subjects, owing to the study design. The study complied with the international ethical guidelines for human research, including the Declaration of Helsinki.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Study Setting"
+        },
+        {
+            "text": "We enrolled 367 cases aged \u226518 y diagnosed with COVID-19 between January 13 and April 13, 2020. Excluding 48 cases with missing data, 319 were analyzed ( Figure 1 ). The following data were retrieved from the electronic register: basic information (sex, age, diagnosis, and chronic diseases), initial vital signs (body temperature, heart rate, blood pressure, and respiratory rate), consciousness on patients' visit, oxygen saturation level on patients' visit, and other variables used to calculate the 5 scoring systems. The outcome was the patient's death or survival at discharge.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 154,
+                    "end": 162,
+                    "text": "Figure 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Subjects"
+        },
+        {
+            "text": "The data analysis was conducted using the IBM Statistical Program for Social Sciences Statistics 20.0 (SPSS; IBM Corp., Armonk, NY) and MedCalc Statistical Software (Version 18.2.1; MedCalc Software Ltd., Ostend, Belgium). Continuous variables are presented as mean \u00b1 standard deviation or median (25%quartile, 75%quartile), as appropriate. Categorical variables are described as composition ratios (%). The comparison of continuous variables used Student's t test or the Mann-Whitney U test, and that of categorical variables used the chi-squared test or Fisher's exact test, as appropriate. Receiver operating characteristic (ROC) curves were used to evaluate the capacities of the 5 scoring systems to predict mortality. The area under the ROC curve (AUC) and its 95% confidence interval (95% CI) were calculated. An AUC > 0.75 was regarded as indicating a test of acceptable clinical value and an AUC > 0.97 as a test of high clinical value. 24 The AUCs were compared using the DeLong test, 25 and the best demarcation point of each scoring scale was determined as the maximum value of the Youden index. Then, the corresponding accuracy, sensitivity, specificity, positive predictive value (PPV), and negative predictive value (NPV) corresponding to the best cutoff point of each score were calculated. Finally, we calculated the worst Sequential Organ Failure Assessment (SOFA) score during the first 24 h. And we analyzed the correlation between the worst SOFA score and each EWS through Spearman's rank correlation test. For all analyses, a P value < 0.05 was considered to indicate statistical significance.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Statistical Analysis"
+        },
+        {
+            "text": "Flow chart of cases exclusion.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "FIGURE 1"
+        },
+        {
+            "text": "From all 367 cases, we excluded 21 cases missing information on oxygen saturation, 16 cases missing record on oxygen therapy and 11 cases missing information on mental status. Finally, we analyzed 319 cases.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "FIGURE 1"
+        },
+        {
+            "text": "The mean age of survivors and nonsurvivors was 53.93 \u00b1 15.32 and 71.63 \u00b1 13.16 y, respectively, and this difference was significant (P < 0.05).The length of hospital stay of survivors, which refers to the duration from admission to discharge, was 17 [9.25, 29] d. And the length of hospital stay of nonsurvivors, which refers to the duration from admission to death, was 4.5 [3, 11.25] d. These 2 groups differed significantly with respect to gender, respiratory rate, pulse rate, heart rate, peripheral oxygen saturation, consciousness, and NEWS, NEWS2, HEWS, MEWS, and SEWS scores (P < 0.05). Details are shown in Table 1 .",
+            "cite_spans": [
+                {
+                    "start": 250,
+                    "end": 260,
+                    "text": "[9.25, 29]",
+                    "ref_id": null
+                },
+                {
+                    "start": 375,
+                    "end": 385,
+                    "text": "[3, 11.25]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 616,
+                    "end": 623,
+                    "text": "Table 1",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "Baseline Analysis"
+        },
+        {
+            "text": "The results of ROC curve analysis were showed in Table 2 and (Table 2) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 49,
+                    "end": 56,
+                    "text": "Table 2",
+                    "ref_id": "TABREF2"
+                },
+                {
+                    "start": 61,
+                    "end": 70,
+                    "text": "(Table 2)",
+                    "ref_id": "TABREF2"
+                }
+            ],
+            "section": "Overall Analysis"
+        },
+        {
+            "text": "Based on the best Youden index, an optimum cutoff value was used to predict in-hospital mortality using each EWS. The cutoff values for each score, together with the sensitivity, specificity, PPV, and NPV are shown in Table 2 and Supplemental Table 3 . Figure 3A ). Paired comparisons showed a significant difference between the MEWS score and all other scores. There was no statistical difference between other paired values (Table 3) . Figure 3B ).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 218,
+                    "end": 250,
+                    "text": "Table 2 and Supplemental Table 3",
+                    "ref_id": "TABREF2"
+                },
+                {
+                    "start": 253,
+                    "end": 262,
+                    "text": "Figure 3A",
+                    "ref_id": null
+                },
+                {
+                    "start": 426,
+                    "end": 435,
+                    "text": "(Table 3)",
+                    "ref_id": "TABREF3"
+                },
+                {
+                    "start": 438,
+                    "end": 447,
+                    "text": "Figure 3B",
+                    "ref_id": null
+                }
+            ],
+            "section": "Overall Analysis"
+        },
+        {
+            "text": "Pairwise comparisons showed significant differences among 2 pairs, including SEWS versus MEWS, NEWS versus MEWS, and NEWS2 versus MEWS. There was no statistical difference between other paired values (Table 3) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 200,
+                    "end": 209,
+                    "text": "(Table 3)",
+                    "ref_id": "TABREF3"
+                }
+            ],
+            "section": "Overall Analysis"
+        },
+        {
+            "text": "As 45 cases lacked the information needed to calculate the worst SOFA in the first 24 h, we exclude these cases and analyzed 274 cases for the correlation between each EWS and SOFA. The median and quartiles of SOFA score were 4 [4, 6] . The Correlation coefficients of SOFA versus SEWS, NEWS, NEWS2, HEWS and MEWS were 0.294, 0.330, 0.330, 0.278, and 0.221, respectively (P < 0.05, see Supplemental Table 4 ).",
+            "cite_spans": [
+                {
+                    "start": 228,
+                    "end": 231,
+                    "text": "[4,",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 232,
+                    "end": 234,
+                    "text": "6]",
+                    "ref_id": "BIBREF5"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 399,
+                    "end": 406,
+                    "text": "Table 4",
+                    "ref_id": null
+                }
+            ],
+            "section": "Correlation Between Each EWSs and SOFA"
+        },
+        {
+            "text": "COVID-19, a novel infectious disease caused by SARS-CoV-2, led to more than 9 million confirmed cases worldwide from outbreak to June 2020. Although most cases suffered mild symptoms, some progressed to viral pneumonia and multiorgan dysfunction. Rapid and accurate identification of severely ill patients would promote the allocation of appropriate medical resources. The application of scoring systems can facilitate effective evaluation by emergency or critical care physicians to screen severe patients. At present, however, there are no specific scoring systems for the evaluation of COVID-19 patients.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "Another option is to adopt existing scoring systems that are used for predicting the mortality of severe patients. 26 EWSs, which are generally used in the patients with sepsis, trauma, and other critical ills, are such scoring systems and are widely used in hospitals to identify patients who are clinically deteriorating. 17, 20, 27, 28 On the whole, the performance of each EWS was acceptable for screening the COVID-19 patients. However, there are differences in the performance among 5 EWSs.",
+            "cite_spans": [
+                {
+                    "start": 324,
+                    "end": 327,
+                    "text": "17,",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 328,
+                    "end": 331,
+                    "text": "20,",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 332,
+                    "end": 335,
+                    "text": "27,",
+                    "ref_id": "BIBREF26"
+                }
+            ],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "Overall cases and in both age subgroups the AUC of SEWS was acceptable, demonstrating moderate discriminatory power and potential utility as a predictor of mortality in severe COVID-19 patients. An NPV of 98.57% for SEWS would enable emergency physicians to decisively exclude COVID-19 patients with a SEWS score below 7 from the high-risk group. For COVID-19 patients, the advantage of SEWS is the inclusion of more appropriate parameters, including those that differ between survivors and nonsurvivors in univariate analysis, such as heart rate, respiratory rate, oxygen saturation, and mental status.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "The AUCs of NEWS and NEWS2 were 0.809 in overall analysis and a higher NPV of 99.28% suggest that these scores may be better screening tools for emergency physicians.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "In both age subgroups, the predictive performance of NEWS and NEWS2 was acceptable. Some therapeutic studies of COVID-19 patients 21, 22 have used NEWS or NEWS2 as baseline comparison tools. Although these studies did not evaluate ",
+            "cite_spans": [
+                {
+                    "start": 130,
+                    "end": 133,
+                    "text": "21,",
+                    "ref_id": "BIBREF20"
+                }
+            ],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "Disaster Medicine and Public Health Preparedness the predictive value of NEWS and NEWS2, the researchers believed that these EWSs could be used as tools for stratification of critical illness.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "EWSs for COVID-19"
+        },
+        {
+            "text": "HEWS performed moderately among the 5 EWSs overall and the subgroup analysis. Its AUC suggest that HEWS is similar to SEWS, NEWS, and NEWS2 for screening COVID-19 patients.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "EWSs for COVID-19"
+        },
+        {
+            "text": "As it does not take into account oxygen saturation (which is very important for COVID-19 patients), it was not surprising that MEWS performed worst in predicting mortality. Therefore, we do not recommend it as a risk stratification tool for severe COVID-19 patients.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "EWSs for COVID-19"
+        },
+        {
+            "text": "We also found that each EWS had only weak positive correlation with SOFA (P < 0.05; correlation coefficient 0.221-0.330). In our study, the SOFA includes laboratory testing parameters, which cannot be calculated at the same time as EWS being calculated while the patients just arrived at the hospital. Therefore, the difference of assessing time may be the reason why these 2 variables are only weakly correlated. This thus makes us realize that the advantage of EWSs is likely to lie in the rapid triage of COVID-19. Further study could explore the relationship between EWSs and SOFA at the same scoring time.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "EWSs for COVID-19"
+        },
+        {
+            "text": "We believe this study was the first to explore the practical value of 5 existing EWSs for rapid screening of severe COVID-19 patients. However, its limitations must be acknowledged. First, we used in-hospital mortality as the main outcome, which means all the living patients at time of discharge (discharge criteria see Supplemental Table 2 ) would be considered a survivor. Although the sudden death after discharge would not be predicted, as no report on sudden death of COVID-19 patients after discharge was found, we inferred that sudden death of COVID-19 patients after discharge is rare. Thus, we considered in-hospital mortality can be used for evaluating the performance of EWSs of identifying severely ill patients to promote the allocation of appropriate medical resources in hospital. In addition, we also used the worst SOFA as the secondary outcome. Nevertheless, further prospective studies of survival analysis could be done for COVID-19 patients.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 334,
+                    "end": 341,
+                    "text": "Table 2",
+                    "ref_id": "TABREF2"
+                }
+            ],
+            "section": "EWSs for COVID-19"
+        },
+        {
+            "text": "Second, whether an oxygen supply was given during SpO 2 measurement may be a confounder. In this study, all SpO 2 data are from the first record of the patient when they just arrive at the hospital. Although the SpO 2 measurement at this time is usually on room air or after a short time of oxygen supplying, we cannot confirm that the SpO 2 values of all patients are measured without oxygen supply due to a retrospective study design. Thus, the prospective study with well-designed should be done to control the condition during SpO 2 measurement. Third, due to the lack of COVID-19 patients with hypercapnia, our study was unable to distinguish the performance of NEWS and NEWS2. Because the difference between them is that the oxygen saturation scale of NEWS is uniform for all patients, while that of NEWS2 distinguishes patients with hypercapnic respiratory insufficiency. Fourth, we neglected prehospital care because this information was not available. Last, as the study was confined to a single center, it may have been affected by selection bias. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "EWSs for COVID-19"
+        },
+        {
+            "text": "The SEWS, NEWS, NEWS2, and HEWS have the potential to be used as tools for screening severely and critically ill COVID-19 patients. Inclusion of these tools in decision strategies could provide a more effective evaluation of mortality rate, thus avoiding delayed medical attention. And MEWS is unsuitable for COVID-19 patients because its performance is inferior to that of other 4 EWSs.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "CONCLUSIONS"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "The epidemiology and pathogenesis of coronavirus disease (COVID-19) outbreak",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Rothan",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Byrareddy",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Autoimmun",
+            "volume": "109",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jaut.2020.102433"
+                ]
+            }
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Clinical course and outcomes of critically ill patients with SARS-CoV-2 pneumonia in Wuhan, China: a singlecentered, retrospective, observational study",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet Respir Med",
+            "volume": "8",
+            "issn": "5",
+            "pages": "475--481",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S2213-2600(20)30079-5"
+                ]
+            }
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Epidemiological and clinical characteristics of 99 cases of 2019 novel coronavirus pneumonia in Wuhan, China: a descriptive study",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Dong",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet",
+            "volume": "395",
+            "issn": "20",
+            "pages": "30211--30218",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S0140-6736(20)30211-7"
+                ]
+            }
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Clinical features of patients infected with 2019 novel coronavirus in Wuhan",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "China. Lancet",
+            "volume": "395",
+            "issn": "",
+            "pages": "497--506",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S0140-6736(20)30183-5"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Clinical course and risk factors for mortality of adult inpatients with COVID-19 in Wuhan, China: a retrospective cohort study",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Du",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet",
+            "volume": "395",
+            "issn": "20",
+            "pages": "30566--30569",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S0140-6736(20)30566-3"
+                ]
+            }
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Clinical course and mortality risk of severe COVID-19",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Weiss",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Murdoch",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet",
+            "volume": "395",
+            "issn": "",
+            "pages": "30633--30637",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S0140-6736(20)30633-4"
+                ]
+            }
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Potential association between COVID-19 mortality and health-care resource availability",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Ji",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Ma",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Peppelenbosch",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet Glob Health",
+            "volume": "8",
+            "issn": "4",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S2214-109X(20)30068-1"
+                ]
+            }
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "The National Early Warning Score in practice: a reflection",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Day",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Oxton",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Br J Nurs",
+            "volume": "23",
+            "issn": "19",
+            "pages": "1036--1040",
+            "other_ids": {
+                "DOI": [
+                    "10.12968/bjon.2014.23.19.1036"
+                ]
+            }
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Validation of the National Early Warning Score in the prehospital setting",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Silcock",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Corfield",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Gowens",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Resuscitation",
+            "volume": "89",
+            "issn": "",
+            "pages": "31--35",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.resuscitation.2014.12.029"
+                ]
+            }
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "A validation of the National Early Warning Score to predict outcome in patients with COPD exacerbation",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Hodgson",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Dimitrov",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Congleton",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Thorax",
+            "volume": "72",
+            "issn": "1",
+            "pages": "23--30",
+            "other_ids": {
+                "DOI": [
+                    "10.1136/thoraxjnl-2016-208436"
+                ]
+            }
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Using the National Early Warning Score (NEWS/NEWS 2) in different intensive care units (ICUs) to predict the discharge location of patients",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Zaidi",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Bader-El-Den",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Mcnicholas",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "BMC Public Health",
+            "volume": "19",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/s12889-019-7541-3"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Examining the utility of the Hamilton Early Warning Scores (HEWS) at triage: retrospective pilot study in a Canadian emergency department",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Skitch",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Tam",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "CJEM",
+            "volume": "20",
+            "issn": "2",
+            "pages": "266--274",
+            "other_ids": {
+                "DOI": [
+                    "10.1017/cem.2017.21"
+                ]
+            }
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Attitudes of emergency department physicians and nurses toward implementation of an early warning score to identify critically ill patients: qualitative explanations for failed implementation",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Bigham",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Chan",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Skitch",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "CJEM",
+            "volume": "21",
+            "issn": "2",
+            "pages": "269--273",
+            "other_ids": {
+                "DOI": [
+                    "10.1017/cem.2018.392"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Prognostic accuracy of the Hamilton Early Warning Score (HEWS) and the National Early Warning Score 2 (NEWS2) among hospitalized patients assessed by a rapid response team",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Fernando",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Fox-Robichaud",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Rochwerg",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Crit Care",
+            "volume": "23",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/s13054-019-2355-3"
+                ]
+            }
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Validation of a modified early warning score in medical admissions",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Subbe",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Kruger",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Rutherford",
+                    "suffix": ""
+                }
+            ],
+            "year": 2001,
+            "venue": "QJM",
+            "volume": "94",
+            "issn": "10",
+            "pages": "52--526",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/qjmed/94.10.521"
+                ]
+            }
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Prognostic value of modified early warning score generated in a Chinese emergency department: a prospective cohort study",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Xie",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "BMJ Open",
+            "volume": "8",
+            "issn": "12",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1136/bmjopen-2018-024120"
+                ]
+            }
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Comparison of the National Early Warning Score (NEWS) and the Modified Early Warning Score (MEWS) for predicting admission and in-hospital mortality in elderly patients in the pre-hospital setting and in the emergency department",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Mitsunaga",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Hasegawa",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Uzura",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "PeerJ",
+            "volume": "7",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.7717/peerj.6947"
+                ]
+            }
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Performance of Modified Early Warning Score (MEWS) and Circulation, Respiration, Abdomen, Motor, and Speech (CRAMS) score in trauma severity and in-hospital mortality prediction in multiple trauma patients: a comparison study",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Jiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Jiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Mao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "PeerJ",
+            "volume": "7",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.7717/peerj.7227"
+                ]
+            }
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Prediction of in-hospital mortality and length of stay using an early warning scoring system: clinical audit",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Paterson",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Macleod",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Thetford",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Clin Med (Lond)",
+            "volume": "6",
+            "issn": "3",
+            "pages": "281--284",
+            "other_ids": {
+                "DOI": [
+                    "10.7861/clinmedicine.6-3-281"
+                ]
+            }
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Early warning system scores for clinical deterioration in hospitalized patients: a systematic review",
+            "authors": [
+                {
+                    "first": "Meb",
+                    "middle": [],
+                    "last": "Smith",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Chiovaro",
+                    "suffix": ""
+                },
+                {
+                    "first": "O&apos;",
+                    "middle": [],
+                    "last": "Neil",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Ann Am Thorac Soc",
+            "volume": "11",
+            "issn": "",
+            "pages": "1454--1465",
+            "other_ids": {
+                "DOI": [
+                    "10.1513/AnnalsATS.201403-102OC"
+                ]
+            }
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Clinical and microbiological effect of a combination of hydroxychloroquine and azithromycin in 80 COVID-19 patients with at least a six-day follow up: a pilot observational study",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Gautret",
+                    "suffix": ""
+                },
+                {
+                    "first": "J-C",
+                    "middle": [],
+                    "last": "Lagier",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Parola",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Travel Med Infect Dis",
+            "volume": "11",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.tmaid.2020.101663"
+                ]
+            }
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "A trial of lopinavir-ritonavir in adults hospitalized with severe Covid-19",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Cao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Wen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "N Engl J Med",
+            "volume": "18",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1056/NEJMoa2001282"
+                ]
+            }
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Conservative management of Covid-19 patients -emergency palliative care in action",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Fusi-Schmidhauser",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Preston",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Keller",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Pain Symptom Manage",
+            "volume": "60",
+            "issn": "1",
+            "pages": "27--30",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jpainsymman.2020.03.030"
+                ]
+            }
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Understanding receiver operating characteristic (ROC) curves",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Fan",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Upadhye",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Worster",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "CJEM",
+            "volume": "8",
+            "issn": "1",
+            "pages": "19--20",
+            "other_ids": {
+                "DOI": [
+                    "10.1017/S1481803500013336"
+                ]
+            }
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Comparing the areas under two or more correlated receiver operating characteristic curves: a nonparametric approach",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Delong",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Delong",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Clarke-Pearson",
+                    "suffix": ""
+                }
+            ],
+            "year": 1988,
+            "venue": "Biometrics",
+            "volume": "44",
+            "issn": "3",
+            "pages": "837--845",
+            "other_ids": {
+                "DOI": [
+                    "10.2307/2531595"
+                ]
+            }
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Comparing rapid scoring systems in mortality prediction of critically ill patients with novel coronavirus disease",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Yao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Qiu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Acad Emerg Med",
+            "volume": "27",
+            "issn": "6",
+            "pages": "461--468",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/acem.13992"
+                ]
+            }
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Early warning scores for detecting deterioration in adult hospital patients: systematic review and critical appraisal of methodology",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Gerry",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Bonnici",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Birks",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "BMJ",
+            "volume": "369",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1136/bmj.m1501"
+                ]
+            }
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Scottish trauma audit group sepsis steering group utility of a single early warning score in patients with sepsis in the emergency department",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Corfield",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Lees",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Zealley",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Emerg Med J",
+            "volume": "31",
+            "issn": "",
+            "pages": "482--487",
+            "other_ids": {
+                "DOI": [
+                    "10.1136/emermed-2012-202186"
+                ]
+            }
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "The AUCs of SEWS, HEWS, NEWS, NEWS2, and MEWS were 0.841, 0.821, 0.809, 0.809, and 0.670 (P < 0.05). The optimal cutoff values of SEWS, NEWS, NEWS2, HEWS, and MEWS were 7, 10, 10, 8, and 5, respectively",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "ROC curves of five EWSs for overall cases ROC: Receiver operating characteristic; NEWS: National Early Warning Score; NEWS2: National Early Warning Score2; HEWS: Hamilton Early Warning Score; MEWS: Modified Early Warning Score. SEWS: Standardized Early Warning Score.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "The ROC curves of five EWSs in the subgroup of persons aged \u226565 years; (B) The ROC curves of five EWSs in the subgroup of persons aged <65 years. NEWS: National Early Warning Score; NEWS2: National Early Warning Score2; HEWS: Hamilton Early Warning Score; MEWS: Modified Early Warning Score. SEWS:Standardized Early Warning Score.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "Pairwise comparisons of the AUCs associated with the 5 EWSs, showed significant differences among 4 pairs, including SEWS versus MEWS, NEWS versus MEWS, NEWS2 versus MEWS and HEWS versus MEWS. There was no statistical difference between other paired values(Table 3).",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "Comparison of the Baseline Characteristics of Survivors and Non-survivors",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "Performance of 5 Scoring Systems in Predicting in-Hospital Mortality of COVID-19 Patients",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF3": {
+            "text": "",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "We thank all the physicians and nurses who worked in the COVID-19 ward for helping us collect the data. We also thank Editage (www.editage.cn) for English language editing.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Acknowledgments"
+        },
+        {
+            "text": "This work was financially supported by the Novel Coronavirus Research Fund of West China Hospital, Sichuan University (HX2019nCoV063).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Funding Statement"
+        },
+        {
+            "text": "Both Hai Hu and Ni Yao contributed equally to this work and should be considered co-first authors",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Author Contributions"
+        },
+        {
+            "text": "The authors declare there are no conflicts of interest.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conflict of Interest"
+        },
+        {
+            "text": "To view supplementary material for this article, please visit https://doi.org/10. 1017/dmp.2020.324",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Supplementary Material"
+        }
+    ]
+}

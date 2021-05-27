@@ -1,0 +1,1998 @@
+{
+    "paper_id": "e77eab71d15c7c61937b7c94c7584d5bc78b6135",
+    "metadata": {
+        "title": "Parallel Shared-Memory Isogeometric Residual Minimization (iGRM) for Three-Dimensional Advection-Diffusion Problems",
+        "authors": [
+            {
+                "first": "Marcin",
+                "middle": [],
+                "last": "Lo\u015b",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "AGH University of Science and Technology",
+                    "location": {
+                        "settlement": "Krak\u00f3w",
+                        "country": "Poland"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Judit",
+                "middle": [],
+                "last": "Munoz-Matute",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "The University of the Basque Country",
+                    "location": {
+                        "settlement": "Bilbao",
+                        "country": "Spain"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Krzysztof",
+                "middle": [],
+                "last": "Podsiad Lo",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "AGH University of Science and Technology",
+                    "location": {
+                        "settlement": "Krak\u00f3w",
+                        "country": "Poland"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Maciej",
+                "middle": [],
+                "last": "Paszy\u0144ski",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "AGH University of Science and Technology",
+                    "location": {
+                        "settlement": "Krak\u00f3w",
+                        "country": "Poland"
+                    }
+                },
+                "email": "maciej.paszynski@agh.edu.pl"
+            },
+            {
+                "first": "Keshav",
+                "middle": [],
+                "last": "Pingali",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "The University of Texas at Austin",
+                    "location": {
+                        "settlement": "Austin",
+                        "country": "USA"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "In this paper, we present a residual minimization method for three-dimensional isogeometric analysis simulations of advectiondiffusion equations. First, we apply the implicit time integration scheme for the three-dimensional advection-diffusion equation. Namely, we utilize the Douglas-Gunn time integration scheme. Second, in every time step, we apply the residual minimization method for stabilization of the numerical solution. Third, we use isogeometric analysis with B-spline basis functions for the numerical discretization. We perform alternating directions splitting of the resulting system of linear equations, so the computational cost of the sequential LU factorization is linear O(N ). We test our method on the three-dimensional simulation of the advectiondiffusion problem. We parallelize the solver for shared-memory machine using the GALOIS framework.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "The alternating direction implicit method (ADI) is a popular method for performing finite difference simulations on regular grids. The first papers concerning the ADI method were published in 1960 [1, 3, 5, 19] . This method is still popular for fast solutions of different classes of problems with finite difference method [8, 9] . In its basic version, the method introduces intermediate time steps, and the differential operator splits into the x, y (and z in 3D) components. As a result of this operation, on the left-hand side, we only deal with derivatives in one direction, while the rest of the operator is on the right-hand side. The resulting system of linear equations has a multi-diagonal form, so the factorization of this system is possible with a linear O(N ) computational cost. It is a common misunderstanding that the direction splitting solvers are limited to simple geometries.",
+            "cite_spans": [
+                {
+                    "start": 197,
+                    "end": 200,
+                    "text": "[1,",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 201,
+                    "end": 203,
+                    "text": "3,",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 204,
+                    "end": 206,
+                    "text": "5,",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 207,
+                    "end": 210,
+                    "text": "19]",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 324,
+                    "end": 327,
+                    "text": "[8,",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 328,
+                    "end": 330,
+                    "text": "9]",
+                    "ref_id": "BIBREF8"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "They can be also applied to discretizations in extremely complicated geometries, as described in [10] .",
+            "cite_spans": [
+                {
+                    "start": 97,
+                    "end": 101,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "In this paper, we generalize this method for three-dimensional simulations of the time-dependent advection-diffusion problem with the residual minimization method. We use the basic version of the direction splitting algorithm, working on a regular computational cube, since this approach is straightforward and it is enough to proof our claims that the residual minimization stabilizes the advection-diffusion simulations. In particular, we apply the residual minimization method with isogeometric finite element method simulations over a threedimensional cube shape computational grids with tensor product B-spline basis functions. The resulting system of linear equations can be factorized in a linear O(N ) computational cost when executed in sequential mode.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "We use the finite element method discretizations with B-spline basis functions. This setup, as opposed to the traditional finite difference discretization, allows us to apply the residual minimization method to stabilize our simulations.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The isogeometric analysis (IGA) [4] is a modern method for performing finite element method (FEM) simulations with B-splines and NURBS. In enables higher order and continuity B-spline based approximations of the modeled phenomena. The direction splitting method has been rediscovered to solve the isogeometric L 2 projection problem over regular grids with tensor product B-spline basis functions [6, 7] . The direction splitting, in this case, is performed with respect to space, and the splitting is possible by exploiting the Kronecker product structure of the Gram matrix with tensor product structure of the B-spline basis functions. The L 2 projections with IGA-FEM were applied for performing fast and smooth simulations of explicit dynamics [11] [12] [13] [14] [15] [16] 20] . This is because the explicit dynamics with isogeometric discretization is equivalent to the solution of a sequence of isogeometric L 2 projections.",
+            "cite_spans": [
+                {
+                    "start": 32,
+                    "end": 35,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 397,
+                    "end": 400,
+                    "text": "[6,",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 401,
+                    "end": 403,
+                    "text": "7]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 749,
+                    "end": 753,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 754,
+                    "end": 758,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 759,
+                    "end": 763,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 764,
+                    "end": 768,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 769,
+                    "end": 773,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 774,
+                    "end": 778,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 779,
+                    "end": 782,
+                    "text": "20]",
+                    "ref_id": "BIBREF19"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "In this paper, we focus on the advection-diffusion equation used for simulation of the propagation of a pollutant from a chimney. We introduce implicit time integration scheme, that allows for the alternating direction splitting of the advectiondiffusion equation. We discover that the numerical simulations are unstable, and deliver some unexpected oscillations and reflections. Next, we utilize the residual minimization method in a way that it preserves the Kronecker product structure of the matrix and enables stabilized linear computational cost solutions.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The actual mathematical theory concerning the stability of the numerical method for weak formulations is based on the famous \"Babu\u015bka-Brezzi condition\" (BBC) developed in years 1971-1974 at the same time by Ivo Babu\u015bka, and Franco Brezzi [25] [26] [27] . The condition states that a weak problem is stable when",
+            "cite_spans": [
+                {
+                    "start": 238,
+                    "end": 242,
+                    "text": "[25]",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 243,
+                    "end": 247,
+                    "text": "[26]",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 248,
+                    "end": 252,
+                    "text": "[27]",
+                    "ref_id": "BIBREF26"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "However, the inf-sup condition in the above form concerns the abstract formulation where we consider all the test functions from v \u2208 V and look for solution at u \u2208 U (e.g. U = V ). The above condition is satisfied also if we restrict to the space of trial functions",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "However, if we use test functions from the finite dimensional test space",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "we do not have a guarantee that the supremum (3) will be equal to the original supremum (1), since we have restricted V to V h . The optimality of the method depends on the quality of the polynomial test functions defining the space V h = span{v h } and how far are they from the supremum defined in (1) . There are many method for stabilization of different PDEs [28] [29] [30] [31] . In 2010, the Discontinuous Petrov Galerkin (DPG) method was proposed, with the modern summary of the method described in [32] . The DPG method utilizes the residual minimization with broken test spaces. In other words, it first generates a system of linear equations",
+            "cite_spans": [
+                {
+                    "start": 300,
+                    "end": 303,
+                    "text": "(1)",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 364,
+                    "end": 368,
+                    "text": "[28]",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 369,
+                    "end": 373,
+                    "text": "[29]",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 374,
+                    "end": 378,
+                    "text": "[30]",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 379,
+                    "end": 383,
+                    "text": "[31]",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 507,
+                    "end": 511,
+                    "text": "[32]",
+                    "ref_id": "BIBREF31"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "This system of linear equations has the inner product block G over the test space, the two blocks with the actual weak form B and B T , and the zero block 0. The test space is larger than the trial space, and the inner product and the weak form blocks are rather sparse matrices. Therefore, the dimension of the system of linear equations is at least two times larger than the original system of equations arising from standard Galerkin method. In the DPG method, the test space is broken in order to obtain a block-diagonal matrix G and the Schur complements can be locally computed over each finite element. The price to pay is the presence of the additional fluxes on the element interfaces, resulting from breaking the test spaces, so the system over each finite element looks like \u23a1",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "We do not know any other reason of breaking the test spaces in the DPG method other then reduction of the computational cost of the solver. In this paper, we want to avoid dealing with fluxes and broken spaces since it is technically very complicated. Thus, we stay with the unbroken global system (4) and then we have to face one of the two possible methods. The first one would be to apply adaptive finite element method, but then the cost of factorization in 3D would be up to four times slower than in the standard finite element method and broken DPG (without the static condensation). This is because depending on the structure of the refined mesh, we will have a computational cost of the multi-frontal solver varying between O(N ) to O(N 2 ) [33] , and our N is two times bigger than in the original weak problem, and 2 2 = 4. This could be an option that we will discuss in a future paper.",
+            "cite_spans": [
+                {
+                    "start": 750,
+                    "end": 754,
+                    "text": "[33]",
+                    "ref_id": "BIBREF32"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Another method that we exploit in this paper is to keep a tensor product structure of the computational patch of elements with tensor product B-spline basis functions, decompose the system matrix into a Kronecker product structure, and utilize a linear computational cost alternating directions solver. Even for the system (4) resulting from the residual minimization we successfully perform direction splitting to obtain a Kronecker product structure of the matrix to maintain the linear computational cost of the alternating directions method.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "In order the stabilize the time-dependent advection-diffusion simulations, we perform the following steps. First, we apply the time integration scheme. We use the Douglas-Gunn second order time integration scheme [2] . Second, we stabilize a system from every time step by employing the residual minimization method [34] [35] [36] . Finally, we perform numerical discretization with isogeometric analysis [4] , using tensor product B-spline basis functions over a three-dimensional cube shape patch of elements.",
+            "cite_spans": [
+                {
+                    "start": 213,
+                    "end": 216,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 316,
+                    "end": 320,
+                    "text": "[34]",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 321,
+                    "end": 325,
+                    "text": "[35]",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 326,
+                    "end": 330,
+                    "text": "[36]",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 405,
+                    "end": 408,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The novelties of this paper with regard to our previous work are the following. In [11] , we described parallel object-oriented JAVA based implementation of the explicit dynamics version of the alternating directions solver, without any residual minimization stabilization, and for two-dimensional problems only. In [12] , we described sequential Fortran based implementation of the explicit dynamics solver, with applications of the elastic wave propagation, without implicit time integration schemes and any residual minimization stabilization. In [16] , we described the parallel distributed memory implementation of the explicit dynamics solver, again without implicit time integration scheme and residual minimization method. In [14] , we described the parallel shared-memory implementation of the explicit dynamics solver, with the same restrictions as before. In [13, 17] we applied the explicit dynamics solver for two and three-dimensional tumor growth simulations. In all of these papers, we did not used implicit time integration schemes, and we did not perform operator splitting on top of the residual minimization method. In [20] , we investigate different time integration schemes for two-dimensional residual minimization method for advection-diffusion problems. We do not go for three-dimensional computations, and we do not apply parallel computations there.",
+            "cite_spans": [
+                {
+                    "start": 83,
+                    "end": 87,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 316,
+                    "end": 320,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 550,
+                    "end": 554,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 734,
+                    "end": 738,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 870,
+                    "end": 874,
+                    "text": "[13,",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 875,
+                    "end": 878,
+                    "text": "17]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 1139,
+                    "end": 1143,
+                    "text": "[20]",
+                    "ref_id": "BIBREF19"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "In this paper, we apply the residual minimization with direction splitting for the first time in three-dimensions. We also investigate the parallel scalability of our solver, using the GALOIS framework for parallelization. For more details on the GALOIS framework itself, we refer to [21] [22] [23] [24] .",
+            "cite_spans": [
+                {
+                    "start": 284,
+                    "end": 288,
+                    "text": "[21]",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 289,
+                    "end": 293,
+                    "text": "[22]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 294,
+                    "end": 298,
+                    "text": "[23]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 299,
+                    "end": 303,
+                    "text": "[24]",
+                    "ref_id": "BIBREF23"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The structure of this paper is the following. We start in Sect. 2 with the derivation of the isogeometric alternating direction implicit method for the advection-diffusion problem. The following Sect. 3 derives the residual minimization method formulation of the advection-diffusion problem in three-dimensions. Next, in Sect. 4, we present the linear computational cost numerical results. We summarize the paper with conclusions in Sect. 5.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Let",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model Problem of Three-Dimensional Advection-Diffusion"
+        },
+        {
+            "text": "where \u03a9 x , \u03a9 y and \u03a9 z are intervals in R. Here, u t := \u2202u/\u2202t, \u0393 = \u2202\u03a9 denotes the boundary of the spatial domain \u03a9, f : \u03a9 \u00d7 I \u2212\u2192 R is a given source and u 0 : \u03a9 \u2212\u2192 R is a given initial condition. We consider constant diffusivity \u03b1 and constant velocity field",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model Problem of Three-Dimensional Advection-Diffusion"
+        },
+        {
+            "text": "We split the advection-diffusion operator Lu = \u2212\u2207 \u00b7 (\u03b1\u2207u) + \u03b2 \u00b7 \u2207u as",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model Problem of Three-Dimensional Advection-Diffusion"
+        },
+        {
+            "text": "Based on this operator splitting, we consider different Alternating Direction Implicit (ADI) schemes to discretize problem (6) . First, we perform a uniform partition of the time interval\u012a = [0, T ] as",
+            "cite_spans": [
+                {
+                    "start": 123,
+                    "end": 126,
+                    "text": "(6)",
+                    "ref_id": "BIBREF5"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Model Problem of Three-Dimensional Advection-Diffusion"
+        },
+        {
+            "text": "and denote \u03c4 := t n+1 \u2212 t n , \u2200n = 0, . . . , N \u2212 1.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model Problem of Three-Dimensional Advection-Diffusion"
+        },
+        {
+            "text": "In the Douglas-Gunn scheme, we integrate the solution from time step t n to t n+1 in three substeps as follows:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model Problem of Three-Dimensional Advection-Diffusion"
+        },
+        {
+            "text": "The variational formulation of scheme (7) is",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model Problem of Three-Dimensional Advection-Diffusion"
+        },
+        {
+            "text": "where (\u00b7, \u00b7) denotes the inner product of L 2 (\u03a9). Finally, expressing problem (8) in matrix form we have",
+            "cite_spans": [
+                {
+                    "start": 79,
+                    "end": 82,
+                    "text": "(8)",
+                    "ref_id": "BIBREF7"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Model Problem of Three-Dimensional Advection-Diffusion"
+        },
+        {
+            "text": "where M x,y,z , K x,y,z and G x,y,z are the 1D mass, stiffness and advection matrices, respectively.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model Problem of Three-Dimensional Advection-Diffusion"
+        },
+        {
+            "text": "In our method, in every time step we solve the problem with identical left-handside:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Isogeometric Residual Minimization Method"
+        },
+        {
+            "text": "Here i \u2208 {1, 2, 3}, so we have denoted here (x 1 , x 2 , x 3 ) = (x, y, z), and i means that we are not using the Einstein summation here. The right-hand-side depends on the sub-step and the time integration scheme used. In the Douglas-Gunn time integration scheme, in the first, second and third sub-step the right-hand side is defined as:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Isogeometric Residual Minimization Method"
+        },
+        {
+            "text": "(12) In our advection-diffusion problem we seek the solution in space",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Isogeometric Residual Minimization Method"
+        },
+        {
+            "text": "where i = 1, 2, 3 denotes the spatial directions. The inner product in V is defined as",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Isogeometric Residual Minimization Method"
+        },
+        {
+            "text": "where i = 1, 2, 3 depending on the sub-step index in the alternating directions method, and we do not use here the Einstein convention. For a weak problem, we define the operator",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Isogeometric Residual Minimization Method"
+        },
+        {
+            "text": "such that",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Isogeometric Residual Minimization Method"
+        },
+        {
+            "text": "so we can reformulate the problem as",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Isogeometric Residual Minimization Method"
+        },
+        {
+            "text": "We wish to minimize the residual",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Isogeometric Residual Minimization Method"
+        },
+        {
+            "text": "We introduce the Riesz operator being the isometric isomorphism",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Isogeometric Residual Minimization Method"
+        },
+        {
+            "text": "We can project the problem back to V",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Isogeometric Residual Minimization Method"
+        },
+        {
+            "text": "The minimum is attained at u h when the G\u00e2teaux derivative is equal to 0 in all directions:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Isogeometric Residual Minimization Method"
+        },
+        {
+            "text": "We define the error representation function r = R \u22121 V (Bu h \u2212 l) and our problem is reduced to",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Isogeometric Residual Minimization Method"
+        },
+        {
+            "text": "which is equivalent to",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Isogeometric Residual Minimization Method"
+        },
+        {
+            "text": "From the definition of the residual we have",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Isogeometric Residual Minimization Method"
+        },
+        {
+            "text": "Our problem reduces to the following semi-infinite problem: Find (r, u h ) V \u00d7U h such as",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Isogeometric Residual Minimization Method"
+        },
+        {
+            "text": "We discretize the test space V m \u2208 V to get the discrete problem: Find (r m , u h ) Vm\u00d7U h such as",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Isogeometric Residual Minimization Method"
+        },
+        {
+            "text": "Note that the residual minimization method is a Petrov-Galerkin method (test and trial spaces are different). We stabilize the problem by increasing the dimension of the test space. Notice that the residual minimization system here is of the following form",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Isogeometric Residual Minimization Method"
+        },
+        {
+            "text": "where the right-top and left-bottom matrices B and B T can be split according to (9) , and the inner product (14) part G can be split in the following way:",
+            "cite_spans": [
+                {
+                    "start": 81,
+                    "end": 84,
+                    "text": "(9)",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 109,
+                    "end": 113,
+                    "text": "(14)",
+                    "ref_id": "BIBREF13"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Isogeometric Residual Minimization Method"
+        },
+        {
+            "text": "where we consider three different splittings for three sub-steps, andM x,y,z , and K x,y,z are the 1D mass and stiffness matrices over the test space in direction x, y, or z, respectively. Now, in the first sub-step, we approximate the solution with tensor product of one dimensional B-splines basis functions of order p, u h = i,j,k u i,j,k B x i;p (x)B y j;p (y)B z k;p (z). We test with tensor product of one dimensional B-splines basis functions, where we enrich the order in the direction of the x axis from p to o \u2265 p, and we enrich the test space only in the direction of the alternating splitting v m \u2190 B x i;o (x)B y j;p (y)B z k;p (z). We approximate the residual with tensor product of one dimensional B-splines basis functions of order p, r m = s,t,q r s,t,q B x s;t (x)B y t;p (y)B z t;p (z), and we test with tensor product of 1D B-spline basis functions of order o and p, in the corresponding directions w h \u2190 B x k;o (x)B y l;p (y)B z m;p (z). Notice that we stabilize the problem by enriching the test space with respect to the trial space in the alternating direction manner. Now, in the first sub-step we have M y =M y , M z =M z and M x =M x , and M yT = M y , M zT = M z . Now, in the first sub-step we have (29) in the second sub-step (30) and in the third sub-step",
+            "cite_spans": [
+                {
+                    "start": 1229,
+                    "end": 1233,
+                    "text": "(29)",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 1257,
+                    "end": 1261,
+                    "text": "(30)",
+                    "ref_id": "BIBREF29"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Isogeometric Residual Minimization Method"
+        },
+        {
+            "text": "All these matrices are the Kronecker products of three multi-diagonal submatrices, and they can be factorized in a linear O(N ) computational cost.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Isogeometric Residual Minimization Method"
+        },
+        {
+            "text": "In order to verify the order and accuracy of the Douglas-Gunn time-integration schemes with IGA-FEM discretization and the direction splitting solver, we construct a time-dependent advection-diffusion problem with manufactured solution. We solve the problem with residual minimization method on 32 \u00d7 32 \u00d7 32 mesh with different time steps, as presented in Fig. 1 , using the Douglas-Gunn time integration scheme and the direction splitting solver using the Kronecker product structure of the matrices.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 356,
+                    "end": 362,
+                    "text": "Fig. 1",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Manufactured Solution Problem"
+        },
+        {
+            "text": "We compute the error between the exact solution u exact and the numerical solution u h . We present the comparisons with different time step size \u03c4 . We compute relative error u exact (t) \u2212 u h (t) L 2 / u exact (t) L 2 \u00b7 100% and plot it in Fig. 1 . The horizontal lines represent the time step size selected for the entire simulation, and the vertical lines present the numerical error with respect to the known exact solution.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 242,
+                    "end": 248,
+                    "text": "Fig. 1",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Manufactured Solution Problem"
+        },
+        {
+            "text": "The Douglas-Gunn scheme is of the second order accurate, down to the accuracy of 10 \u22125 .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Manufactured Solution Problem"
+        },
+        {
+            "text": "In this section, we describe the numerical simulation of three-dimensional model advection-diffusion problem over a 3D cube shape domain with dimensions 5000 \u00d7 5000 \u00d7 5000 m.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Pollution Propagation Simulations"
+        },
+        {
+            "text": "In our equation we have the diffusion coefficients \u03b1 = (50, 50, 0.5). We utilize tensor products of 1D B-splines along the x, y, and z. We apply the alternating direction implicit solver with three intermediate time steps. The velocity field is \u03b2 = (\u03b2 x (t), \u03b2 y (t), \u03b2 z (t)) = (cos a(t), sin a(t), v(t)) where a(t) = \u03c0 3 (sin(s) + 1 2 sin(2.3s)) + 3 8 \u03c0, v(t) = 1 3 sin(s), s = t 150 . The source is given by f (p) = (r \u2212 1) 2 (r + 1) 2 , where r = min(1, (|p \u2212 p 0 |/25) 2 ), p represents the distance from the source, and p 0 is the location of the source p 0 = (3, 3, 2). The initial state is defined as the constant concentration of the order of 10 \u22126 in the entire domain (numerical zero). Our first numerical results concern the computational mesh with a size of 50 \u00d7 50 \u00d7 50 elements with quadratic B-splines. We employ standard Galerkin formulation here with direction splitting, without the residual minimization method. We perform 300 time steps of the numerical simulation. The snapshots presented in Fig. 2 represent time steps 100, 200 and 300. We observe unexpected \"oscillations\" and \"reflections\". Since the simulation is supposed to model the propagation of the pollutant from a chimney by means of the advection (wind) and diffusion phenomena, the oscillations and reflections on the boundary are not expected there. Both these phenomena appear and disappear during the entire simulation; they do not cause a blowup of the entire simulations, just unexpected local behavior.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 1014,
+                    "end": 1020,
+                    "text": "Fig. 2",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "Pollution Propagation Simulations"
+        },
+        {
+            "text": "To improve the spatial stability of the simulation, we add now the residual minimization method on top of the Galerkin setup. Thus, the second simulation was performed again on the mesh size with 50 \u00d7 50 \u00d7 50 elements, with quadratic B-splines for trial and cubic B-Splines for test. The snapshots from the numerical results are presented in Fig. 2 . We perform 300 time steps, and we present the snapshots in time steps 100, 200, and 300. We use the implicit extension of the parallel code [14] for shared memory Linux cluster nodes. The total simulation time was 100 min on a laptop with i7 6700Q processor 2.6 GHz (8 cores with HT) and 16B or RAM. We emphasize that ADI is not an iterative solver. It is just a linear O(N ) computational cost solver that performs Gaussian elimination for matrices having Kronecker product structure. Thus, the solution obtained by the solver is exact (up to the round-off errors). In this sense, we do not present the iterations or convergence of the ADI solver, since it is executed once per each time step. In other words, we can perform 300 Gaussian elimination, each with 1,000,000 unknowns, with the high accuracy resulting from the ADI direct solver (only round-off errors are involved), on a laptop with eight cores, with the implicit method, within 1.5 h. ",
+            "cite_spans": [
+                {
+                    "start": 491,
+                    "end": 495,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 342,
+                    "end": 348,
+                    "text": "Fig. 2",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "Pollution Propagation Simulations"
+        },
+        {
+            "text": "Implementation of the ideas described in the preceding sections has been created in C++ and parallelized using our code for IGA-FEM simulations with ADI solver [14] , extended to the implicit method. We use the GALOIS framework for parallelization [21] [22] [23] [24] .",
+            "cite_spans": [
+                {
+                    "start": 160,
+                    "end": 164,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 248,
+                    "end": 252,
+                    "text": "[21]",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 253,
+                    "end": 257,
+                    "text": "[22]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 258,
+                    "end": 262,
+                    "text": "[23]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 263,
+                    "end": 267,
+                    "text": "[24]",
+                    "ref_id": "BIBREF23"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Parallel Scalability"
+        },
+        {
+            "text": "The parallelization concerns mainly the algorithm of the integration of the right-hand-side vector. The cost of generation of the one-dimensional matrices and the factorization with multiple-right-hand sides is negligible in comparison to the integration of the higher-order B-splines over the three-dimensional mesh. The parallel implementation in GALOIS involves the usage of Galois::for each, Galois::Runtime::LL::SimpleLock.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Parallel Scalability"
+        },
+        {
+            "text": "The speedup and efficiency of the code are presented in Fig. 3 we observe the improvement of the parallel scalability. This is important from the point of view of the stabilization with the residual minimization method. The order of B-splines in the test space is increased to enforce the stabilization, and when we increase the order to obtain the stabilization, we also improve the parallel scalability.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 56,
+                    "end": 62,
+                    "text": "Fig. 3",
+                    "ref_id": "FIGREF3"
+                }
+            ],
+            "section": "Parallel Scalability"
+        },
+        {
+            "text": "We introduced an isogeometric finite element method for an implicit simulations of the advection-diffusion problem with Douglas-Gunn time-integration scheme that results in a Kronecker product structure of the matrix in every time step. The application of B-spline basis functions for the approximation of the numerical solutions results in a smooth, higher order approximation of the solution. It also enables for the residual minimization stabilization with a linear computational cost O(N ) of the direct solver. The method has been verified on a three-dimensional advection-diffusion problem. Our future work will involve the extension of the model to more complicated equations and geometries. In particular, we plan to use the isogeometric alternating direction implicit solver for tumor growth simulations in two-and three-dimensions [13, 17] . Our equations can also be extended to model a pollution problem, with different chemical components, propagating and reacting together through space in time, as described in [18] .",
+            "cite_spans": [
+                {
+                    "start": 841,
+                    "end": 845,
+                    "text": "[13,",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 846,
+                    "end": 849,
+                    "text": "17]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 1026,
+                    "end": 1030,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Conclusions"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "The numerical solution of parabolic and elliptic differential equations",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Peaceman",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Rachford",
+                    "suffix": ""
+                }
+            ],
+            "year": 1955,
+            "venue": "J. Soc. Ind. Appl. Math",
+            "volume": "3",
+            "issn": "",
+            "pages": "28--41",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "A general formulation of alternating direction methods",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Douglas",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Gunn",
+                    "suffix": ""
+                }
+            ],
+            "year": 1964,
+            "venue": "Numer. Math",
+            "volume": "6",
+            "issn": "1",
+            "pages": "428--453",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Alternating direction implicit methods",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Birkhoff",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Varga",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Young",
+                    "suffix": ""
+                }
+            ],
+            "year": 1962,
+            "venue": "Adv. Comput",
+            "volume": "3",
+            "issn": "",
+            "pages": "189--273",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Isogeometric Analysis: Towards Unification of CAD and FEA",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Cottrell",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "J R"
+                    ],
+                    "last": "Hughes",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Bazilevs",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "On the numerical solution of heat conduction problems in two and three space variables",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Douglas",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Rachford",
+                    "suffix": ""
+                }
+            ],
+            "year": 1956,
+            "venue": "Trans. Am. Math. Soc",
+            "volume": "82",
+            "issn": "",
+            "pages": "421--439",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Fast isogeometric solvers for explicit dynamics",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Gao",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Calo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Comput. Methods Appl. Mech. Eng",
+            "volume": "274",
+            "issn": "1",
+            "pages": "19--41",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Preconditioners based on the alternating-direction-implicit algorithm for the 2D steady-state diffusion equation with orthotropic heterogeneous coefficients",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Gao",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Calo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "J. Comput. Appl. Math",
+            "volume": "273",
+            "issn": "1",
+            "pages": "274--295",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "A new class of fractional step techniques for the incompressible Navier-Stokes equations using direction splitting",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Guermond",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Minev",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "C.R. Math",
+            "volume": "348",
+            "issn": "9",
+            "pages": "581--585",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "An overview of projection methods for incompressible flows",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Guermond",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Minev",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Shen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Comput. Methods Appl. Mech. Eng",
+            "volume": "195",
+            "issn": "",
+            "pages": "6011--6054",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "A fast algorithm for direct simulation of particulate flows using conforming grids",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Keating",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Minev",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "J. Comput. Phys",
+            "volume": "255",
+            "issn": "",
+            "pages": "486--501",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Open source JAVA implementation of the parallel multi-thread alternating direction isogeometric L2 projections solver for material science simulations",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Gurgul",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Wo\u017aniak",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Lo\u015b",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Szeliga",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Paszy\u0144ski",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Comput. Methods Mater. Sci",
+            "volume": "17",
+            "issn": "",
+            "pages": "1--11",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Dynamics with matrices possessing Kronecker product structure",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Lo\u015b",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Wo\u017aniak",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Paszy\u0144ski",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Dalcin",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Calo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Procedia Comput. Sci",
+            "volume": "51",
+            "issn": "",
+            "pages": "286--295",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Application of fast isogeometric L2 projection solver for tumor growth simulations",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Lo\u015b",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Paszy\u0144ski",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Lusek",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Dzwinel",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Comput. Methods Appl. Mech. Eng",
+            "volume": "316",
+            "issn": "",
+            "pages": "1257--1269",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "IGA-ADS: isogeometric analysis FEM using ADS solver",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Lo\u015b",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Wo\u017aniak",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Paszy\u0144ski",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Lenharth",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Pingali",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Comput. Phys. Commun",
+            "volume": "217",
+            "issn": "",
+            "pages": "99--116",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Applications of alternating direction solver for simulations of time-dependent problems",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Lo\u015b",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Paszy\u0144ski",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Comput. Sci",
+            "volume": "18",
+            "issn": "2",
+            "pages": "117--128",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Parallel fast isogeometric solvers for explicit dynamics",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Wo\u017aniak",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Lo\u015b",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Paszy\u0144ski",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Dalcin",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Calo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Comput. Inform",
+            "volume": "36",
+            "issn": "2",
+            "pages": "423--448",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Parallel fast isogeometric L2 projection solver with GALOIS system for 3D tumor growth simulations",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Lo\u015b",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Lusek",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Hassam",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Pingali",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Dzwinel",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Paszy\u0144ski",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Comput. Methods Appl. Mech. Eng",
+            "volume": "343",
+            "issn": "",
+            "pages": "1--22",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Adaptive finite element simulation of stack pollutant emissions over complex terrain",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Oliver",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Montero",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Montenegro",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Rodr\u00edguez",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Escobar",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "P\u00e9rez-Foguet",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Energy",
+            "volume": "49",
+            "issn": "",
+            "pages": "47--60",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "An alternating-direction-implicit iteration technique",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Wachspress",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Habetler",
+                    "suffix": ""
+                }
+            ],
+            "year": 1960,
+            "venue": "J. Soc. Ind. Appl. Math",
+            "volume": "8",
+            "issn": "",
+            "pages": "403--423",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Isogeometric residual minimization method (iGRM) with direction splitting for non-stationary advectiondiffusion problems",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Lo\u015b",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Mu\u00f1oz-Matute",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Muga",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Paszy\u0144ski",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Comput. Math. Appl",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "The tao of parallelism in algorithms",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Pingali",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "SIGPLAN Not",
+            "volume": "46",
+            "issn": "6",
+            "pages": "12--25",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Ordered vs. unordered: a comparison of parallelism and work-efficiency in irregular algorithms",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Hassaan",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Burtscher",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Pingali",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Proceedings of the 16th ACM Symposium on Principles and Practice of Parallel Programming",
+            "volume": "2011",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Priority queues are not good concurrent priority schedulers",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Lenharth",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Nguyen",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Pingali",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Euro-Par 2015",
+            "volume": "9233",
+            "issn": "",
+            "pages": "209--221",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/978-3-662-48096-0_17"
+                ]
+            }
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Optimistic parallelism requires abstractions",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Kulkarni",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Pingali",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Walter",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Ramanarayanan",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Bala",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Chew",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "ACM SIGPLAN Not",
+            "volume": "42",
+            "issn": "6",
+            "pages": "211--222",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Babu\u015bka <=> Brezzi",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Demkowicz",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Error bounds for finite element method",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Babu\u015bka",
+                    "suffix": ""
+                }
+            ],
+            "year": 1971,
+            "venue": "Numer. Math",
+            "volume": "16",
+            "issn": "",
+            "pages": "322--333",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "On the existence, uniqueness and approximation of saddle-point problems arising from Lagrange multiplier",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Brezzi",
+                    "suffix": ""
+                }
+            ],
+            "year": 1974,
+            "venue": "ESAIM: Mathematical Modelling and Numerical Analysis -Mod\u00e9lisation Math\u00e9matique et Analyse Num\u00e9rique 8.R2",
+            "volume": "",
+            "issn": "",
+            "pages": "129--151",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Stabilized methods for compressible flows",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "J R"
+                    ],
+                    "last": "Hughes",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Scovazzi",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Tezduyar",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "J. Sci. Comput",
+            "volume": "43",
+            "issn": "3",
+            "pages": "343--368",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Stabilized finite element methods: I. Application to the advective-diffusive model",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Franca",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Frey",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "J R"
+                    ],
+                    "last": "Hughes",
+                    "suffix": ""
+                }
+            ],
+            "year": 1992,
+            "venue": "Comput. Methods Appl. Mech. Eng",
+            "volume": "95",
+            "issn": "2",
+            "pages": "253--276",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Stabilized finite element methods: II. The incompressible Navier-Stokes equations",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Franca",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Frey",
+                    "suffix": ""
+                }
+            ],
+            "year": 1992,
+            "venue": "Comput. Methods Appl. Mech. Eng",
+            "volume": "99",
+            "issn": "2-3",
+            "pages": "209--233",
+            "other_ids": {}
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "A relationship between stabilized finite element methods and the Galerkin method with bubble functions",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Brezzi",
+                    "suffix": ""
+                },
+                {
+                    "first": "M.-O",
+                    "middle": [],
+                    "last": "Bristeau",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Franca",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Mallet",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Rog\u00e9",
+                    "suffix": ""
+                }
+            ],
+            "year": 1992,
+            "venue": "Comput. Methods Appl. Mech. Eng",
+            "volume": "96",
+            "issn": "1",
+            "pages": "117--129",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Recent developments in discontinuous Galerkin finite element methods for partial differential equations",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Demkowicz",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Gopalakrishnan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "An Overview of the DPG Method. IMA Volumes in Mathematics and its Applications",
+            "volume": "157",
+            "issn": "",
+            "pages": "149--180",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Direct solvers performance on h-adapted grids",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Paszy\u0144ski",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Pardo",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Calo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Comput. Math. Appl",
+            "volume": "70",
+            "issn": "3",
+            "pages": "282--295",
+            "other_ids": {}
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "A Minimum-residual finite element method for the convection-diffusion equations",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Chan",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Evans",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "On the stability of DPG formulations of transport equations",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Broersen",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Dahmen",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Stevenson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Math. Comput",
+            "volume": "87",
+            "issn": "",
+            "pages": "1051--1082",
+            "other_ids": {}
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "A robust Petrov-Galerkin discretisation of convectiondiffusion equations",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Broersen",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Stevenson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Comput. Math. Appl",
+            "volume": "68",
+            "issn": "11",
+            "pages": "1605--1618",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "du dt \u2212 \u2207 \u00b7 (\u03b1\u2207u) + \u03b2 \u00b7 \u2207u = f, with \u03b1 = 10 \u22122 , \u03b2 = (1, 0, 0), with zero Dirichlet boundary conditions solved on a square [0, 1] 3 domain. We setup the forcing function f (x, y, z; t) in such a way that it delivers the manufactured solution of the form u exact (x, y, z; t) = sin(\u03c0x) sin(\u03c0y) sin(\u03c0z) sin(\u03c0t) on a time interval [0, 2].",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "Numerical error for Douglas-Gunn time integration scheme on 32 \u00d7 32 \u00d7 32 mesh for different time steps. The physical meaning of this setup is the following. We model the propagation of the pollutant generated by a single source modeled by the f function, distributed by the wind blowing with changing directions, modeled by \u03b2 function, and the diffusion phenomena modeled by the coefficients \u03b1 The computational domain unit is meter [m], the wind velocity \u03b2 is given in meters per second [ m s ], and the diffusion coefficient \u03b1 is given in square meters per second [ m 2 s ]. The units for the solution are then kilograms per cube meter [ kg m 3 ]. We expect from the numerical results to observe the propagation of the pollutant as distributed by the wind and the diffusion process.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "Top panel: simulation with Galerkin method. Snapshots from the time steps 10, 20, and 30 of with quadratic C1 B-splines over 50 \u00d7 50 \u00d7 50 mesh, without stabilization. Bottom panel: simulation with residual minimization method. Snapshots from the time steps 100, 200 and 300 of the first problem simulation with quadratic C1 B-splines for trial and cubic C2 B-splines for test over 50 \u00d7 50 \u00d7 50 mesh.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "Speedup (top line) and efficiency (bottom line) for p = 1 for trial, p = 2 for testing (first column), p = 2 for trial, p = 3 for testing (second column), and p = 3 for trial, p = 4 for testing (third column).",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": ". We can draw the following conclusions from the presented plots: -For linear B-splines for trial and quadratic B-splines for testing and large grids 32 \u00d7 32 \u00d7 32 and 64 \u00d7 64 \u00d7 64 the speedup grows up to 16 cores. It is around 10-11 for 16 cores. The corresponding efficiency for 16 cores is around 0.7. Then, for 32 cores the speedup went down since for more than 20 cores used the hyperthreading is utilized. -For quadratic B-splines for trial and cubic B-splines and large grids 32 \u00d7 32 \u00d7 32 and 64 \u00d7 64 \u00d7 64 the speedup grows up to 16 cores. It is around 12-14 for 16 cores. The corresponding efficiency for 16 cores is around 0.8-0.9. Then, for 32 cores and 32 \u00d7 32 \u00d7 32 mesh the speedup grows up to 17, and for 64 \u00d7 64 \u00d7 64 mesh is decreases slightly since for more than 20 cores the hyperthreading is used. -For cubic B-splines for trial and quartic B-splines for testing and large grids 32 \u00d7 32 \u00d7 32 and 64 \u00d7 64 \u00d7 64 the speedup grows up to 32 cores. It is around 15 for 16 cores (near perfect speedup) and around 20 for 32 cores, where we use the hyperthreading (more than 20 cores). The corresponding efficiency for 16 cores is around 0.9-1.0. Then, for 32 cores the efficiency decreases slightly down to 0.6-0.7. -Increasing the mesh size increases the parallel scalability up to 32 \u00d7 32 \u00d7 32 mesh. Larger mesh, 64 \u00d7 64 \u00d7 64 performs slightly worse than 32 \u00d7 32 \u00d7 32 mesh. -The most interesting observation is that while increasing the B-splines order",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": []
+}

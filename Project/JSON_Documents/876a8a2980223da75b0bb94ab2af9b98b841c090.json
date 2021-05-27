@@ -1,0 +1,1031 @@
+{
+    "paper_id": "876a8a2980223da75b0bb94ab2af9b98b841c090",
+    "metadata": {
+        "title": "Towards Ontology Based Data Extraction for Organizational Goals Metrics Indicator",
+        "authors": [
+            {
+                "first": "Tengku",
+                "middle": [],
+                "last": "Adil",
+                "suffix": "",
+                "affiliation": {},
+                "email": "tengkuadil@yahoo.co.uk"
+            },
+            {
+                "first": "Tengku",
+                "middle": [],
+                "last": "Izhar",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Universiti Teknologi MARA",
+                    "location": {
+                        "addrLine": "UiTM Selangor",
+                        "settlement": "Shah Alam",
+                        "country": "Malaysia"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Bernady",
+                "middle": [
+                    "O"
+                ],
+                "last": "Apduhan",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Kyushu Sangyo University",
+                    "location": {
+                        "settlement": "Fukuoka",
+                        "country": "Japan"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "In this paper, we proposed a measurement framework to evaluate the quality of results at organizational goals level. We proposed metrics indicators to guarantee and optimize the usage of data to extract useful information in organization. The framework is flexible to change without affecting things around because the framework is applicable in any domains. We discuss the review of the problems, proposed solution to the problems and draw a conclusion of this paper.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "Organizational goals ontology focus on the usage of organizational data instead of knowledge, information or tools because organizational data is a major resource in every organization and it is important to evaluate the relevance of this organizational data in achieving the organizational goals. We also suggest organizational data is important as information and knowledge to assist the decision-making process [11] [12] [13] . In an organization, it is extremely important for the manager to have access to the most relevant organizational data in relation to the organizational goals. It's pointed out that sharing important data and information can provide the required knowledge to assist successful decision-making. It is crucial for organizations to create and generate new data and evaluate it to enhance decision-making. Different ways of generating new ideas, information and knowledge will help in terms of decision-making and will enable teams within the organization to use the most relevant organizational data to successfully achieve the organizational goals [1] [2] [3] [4] [5] .",
+            "cite_spans": [
+                {
+                    "start": 414,
+                    "end": 418,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 419,
+                    "end": 423,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 424,
+                    "end": 428,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 1076,
+                    "end": 1079,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 1080,
+                    "end": 1083,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 1084,
+                    "end": 1087,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 1088,
+                    "end": 1091,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 1092,
+                    "end": 1095,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Most of the recent studies focus on the development of systems ontologies and enterprise ontologies [12, 13] . However, not many studies have been conducted on organizational goals developed an organizational ontology but this study discussed the development of knowledge mapping based on ontology. Previous study did not evaluate any organizational resources such as data, information or knowledge in their model, rather, they developed an ontology to show the relationship between the organizational role and organizational activity. ontology. There are a very limited number of studies which evaluate organizational resources, such as data, in relation to the organizational goals. An ontology shows the relationship between the knowledge domains within the organization. This domain knowledge is important for any future domain expert and entrepreneur to identify the goal elements in their organization. It is important for them to recognize the relevant data in relation to the organizational goals. In order to evaluate the organizational data, metrics is used. We suggest that a metrics model is important in measuring the extent to which the organization data are consistent with the organizational goals. The purpose of the organizational goals ontology is to improve the understanding of the organizational structure and the relationship between the organizational goals. Recent studies focus on the framework and the integration of ontology [3] [4] [5] . These two aspects are very important in the development of every ontology. However, an ontology also needs to focus on relationships and structure, especially in relation to organizational goals. Thus, other aspects that need to be considered are relationships and structure. Relationships and structure are important aspects in the achievement of the organizational goals. Therefore, an ontology is important to improve the common understanding of the structure and relationships in the achievement of the organizational goals.",
+            "cite_spans": [
+                {
+                    "start": 100,
+                    "end": 104,
+                    "text": "[12,",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 105,
+                    "end": 108,
+                    "text": "13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 1453,
+                    "end": 1456,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 1457,
+                    "end": 1460,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 1461,
+                    "end": 1464,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Literature Review"
+        },
+        {
+            "text": "In organization, it is extremely important for the manager to have access to the most relevant organizational data in relation to the organizational goals. Sharing important data and information can provide the required knowledge to assist successful decisionmaking [11] . It is crucial for organizations to create and generate new data and evaluate it to enhance decision-making. Different ways of generating new ideas, information and knowledge will help in terms of decision-making and will enable teams within the organization to use the most relevant organizational data to successfully achieve the organizational goals. Data is presented in many forms such as documents and statistics. These data are the most important resources in relation to the organizational goals.",
+            "cite_spans": [
+                {
+                    "start": 266,
+                    "end": 270,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Ontology"
+        },
+        {
+            "text": "In this paper, the first step to identify the relevant organizational data is to recognize the matching set of organizational data to identify which organizational data relate to the organizational goals. A large body of existing work uses the terms record linkage, data linkage, record matching, and data matching. We use the term data dependency in an effort to identify the dependency relationship between the organizational data and organizational goals because we attempted to identify dependency for all organizational data that relate to organizational goals (Fig. 1 ).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 566,
+                    "end": 573,
+                    "text": "(Fig. 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Ontology"
+        },
+        {
+            "text": "Metrics models are designed to address organization process which include organization objective and to assist the decision making process. Metric must be clarified.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Metric Rules"
+        },
+        {
+            "text": "A verifiable measurement used to measure both quantitative and qualitative. As the volume of data increase, metric provide data refinement.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Metrics."
+        },
+        {
+            "text": "Metric design of what need to be accomplished during the metrics process. Specific team attempts to identify the needs toward organization objective.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Metrics Requirement."
+        },
+        {
+            "text": "Verifiable: Set of data that has been agreed for converting process into measure. Measure: Characteristics in a numerical or nominal form.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Metrics Requirement."
+        },
+        {
+            "text": "Metrics Analysis. Requirement must be fulfilled. where MetReq and MetAna are the variables of Met which V erifiable and M easure are the characteristics for MetReq and C ontrol , C ommunication and I mprovement are the characteristics for MetAna.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Metrics Requirement."
+        },
+        {
+            "text": "Collection of raw resources and converting this data into useful information. Organization relies on data in every aspect of their actions. It is important for organization to identify, create, store and analyse this data. Data must be clarified.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Concepts"
+        },
+        {
+            "text": "Data. Organization relies on this data toward organization objective and action. Specific team use data and convert it into valuable information.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Concepts"
+        },
+        {
+            "text": "Quality Data. Data must be in parallel with the organization's needs. Data in organization need to be subject-oriented such component of subject matter and improve the effectiveness in responding to queries. Thus, data must be, Complete: Complete presence of the corresponding data records. Data completeness refer to the lack of needed fields. Accurate: Data is correct and set a context for further analysis. Current: Data is up to date to organization need.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Concepts"
+        },
+        {
+            "text": "We denote that complete, accurate and current as C omplete , A ccurate and C urrent . Thus,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Concepts"
+        },
+        {
+            "text": "so,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Concepts"
+        },
+        {
+            "text": "where data must be quality to support future need and performance. Data must be C omplete , A ccurate and C urrent in order to become quality.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Concepts"
+        },
+        {
+            "text": "Organization process (Org process ) can be partitioned into several processes. However, organization process can be very large, so in this paper, the focus of organization process is on their existing data. The algorithms are defined based on the organization goals and to show the entire relationship of the organization goals rather than looking at the relationship between business side and data side. Our approach is to look at the organization data flow and the impact of data toward organization goals. Our approach is also intended to look at the relationship between the organization goals.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Organizational Process"
+        },
+        {
+            "text": "Process Input. During processing, the involved data called process input (P i ), where ! is an involvement process. So decide,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Organizational Process"
+        },
+        {
+            "text": "Process Output. Every process generate output, so decide which organization process involve process output (P o ) where ! also is an involvement process.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Organizational Process"
+        },
+        {
+            "text": "Data process (D process ) can also be partitioned into several process. Here, process shows the flow of data within the organization.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Process"
+        },
+        {
+            "text": "Data Input. Every stage of the process involves data input. Every organization created data almost every day and this data is stored in data storage such as database. So data process involve data input (IN).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Process"
+        },
+        {
+            "text": "Data Output. Process generated output. Data stored in data storage need to be evaluated to make sure that the data is valuable for certain action. So decide which data process involve data output (OT)",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Process"
+        },
+        {
+            "text": "Let, Org process = P i , P o , where is a characteristic x can find in P i . For example y is an output of x",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Process"
+        },
+        {
+            "text": "Then organization process can summarize as",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Process"
+        },
+        {
+            "text": "It shows the entire Org process rely on IN and OT. Here, P i rely on IN and P o rely on OT. The process define as y depend on x and it concludes as OT rely on IN. Objective and action are the main requirement to achieve the develop target within the organization. Develop target is organization main goals. Objective here can be assumed as sub-goals in order to assist the achievement of main goals.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Process"
+        },
+        {
+            "text": "Here, we already defined organization requirement as",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Process"
+        },
+        {
+            "text": "and organization process, as Eq. (14), and assuming organization requirement as goal and objective as sub-goals",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Process"
+        },
+        {
+            "text": "So, full relationship can be develop here as",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Process"
+        },
+        {
+            "text": "Summarized as,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Process"
+        },
+        {
+            "text": "So,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Process"
+        },
+        {
+            "text": "It summarizes the entire relationship as Org goal rely on Sub goals and A ctions . But as we understand, organization relies on data to support achieving the goals. Therefore, full relationship is defined as Sub goals is an OT of Act where Sub goals and A ctions are the requirement for Org goal . Ontology has a set of organization goal OG elements.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Process"
+        },
+        {
+            "text": "a set of sub-goal SG, action A and task T relation on the elements of OG, respectively. For 2 ontologies O 1 and O 2 , the set of possible pair of element is defined as On the other issue, some issue may occur with the OG elements. \"A\" may have sub-action SA, and \"T\" may have a sub-task ST. Thus, ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Process"
+        },
+        {
+            "text": "Relationship R {Set of possible relationship} OR {Set of organization relationship} VR {Set of variables relationship} R \u0192 (OE(G(SG(A(T))))) OE \u0192 (G(SG(A(T)))) G \u0192 (SG(A(T)))) SG \u0192 (A(T))) A \u0192 (T)",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Process"
+        },
+        {
+            "text": "Define as",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Process"
+        },
+        {
+            "text": "Therefore, we show the entire relationship as",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Process"
+        },
+        {
+            "text": "where OE is a relationship between G, SG, A and T. In order to look at the possible variable, we define the relationship based on several factor where sum of P and number of size n. The factors are: if sub-goal implies cause goal",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Process"
+        },
+        {
+            "text": "if action implies cause sub-goal",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Process"
+        },
+        {
+            "text": "if task implies cause action",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Process"
+        },
+        {
+            "text": "Based on the factor definition, we defined the variable as",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Process"
+        },
+        {
+            "text": "where, variable x depend on variable y. Based on the variables, we define G as",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Process"
+        },
+        {
+            "text": "where, G depend several number of SG. For example SG1 and SG2, SG2 and SG3. Thus, we assume G depend on the number of SG as written below",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Process"
+        },
+        {
+            "text": "If we define SG, then",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Process"
+        },
+        {
+            "text": "where, SG depend several number of A. For example A1 and A2, A2 and A3. Thus, we assume SG depend on the number of A as written below",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Process"
+        },
+        {
+            "text": "If we define A, then",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Process"
+        },
+        {
+            "text": "Where, A depend several number T. For example T1 and T2, T2 and T3. Thus, we assume A depend on the number of T as written below",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Process"
+        },
+        {
+            "text": "The other situation, if organization only require one of the variable between SG and A, then we define the relationship as",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Process"
+        },
+        {
+            "text": "where, G rely on several number of SG. For example, G relies on SG1 or SG2, where SG2 depend on SG1. We define SG as",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Process"
+        },
+        {
+            "text": "where, SG rely on several number of A. For example, SG relies on A1 or A2, where A2 depend on A1. Then we define A as",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Process"
+        },
+        {
+            "text": "where, A rely on several number of T. For example, A relies on T1 or T2, where T2 depend on T1.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Process"
+        },
+        {
+            "text": "We define metric requirement as a metric design of what needs to be accomplished during the metrics process. Specific team attempts to identify the needs toward organization objective. Thus, we identify two variables toward metric requirements which are verifiable and measure. Verifiable: a set of data that been agreed for converting process into measure. Measure: characteristics in a numerical or nominal form.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Metric Requirement"
+        },
+        {
+            "text": "Metric analysis is defined as a requirement that must be fulfilled toward metric development. We identify three variables toward metric analysis which are control, communication and improvement.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Metric Analysis"
+        },
+        {
+            "text": "Control: The ability of metric to evaluate and control the source that they measure. Communication: The ability of metric to communicate externally and internally for the purpose of control. Improvement: The ability to identify the gaps for improvement.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Metric Analysis"
+        },
+        {
+            "text": "Based from the discussion of metric requirement and metric analysis, the metric can be written as Metric: (MetReq)(MetAna) and",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Metric Analysis"
+        },
+        {
+            "text": "Metric: (V erifiable , M easure ) (C ontrol , C ommunication , I mprovement ) where, the metric requirement and metric analysis are the variables of metric model. Verifiable and measure are the characteristics for metric requirement. Control, communication and improvement are the characteristics for metric analysis. Metric model in this paper allow the evaluation of organization data toward gaps, setting and change. We denote sub-goal as SG, action as A, sub-action as SA, task as T and sub-task as ST for our proposition example. We assume that SG is implied if \u2310A is true and SA is implies to achieve SG and A (A ! \u2310SA) ! (T (A ! \u2310SA) A is implied if \u2310SA is true and T is implies to achieve A and SA (SA ! \u2310T) ! (ST (SA ! \u2310T) ! (T ! \u2310ST) SA is implied if \u2310T is true and ST is implies to achieve SA and T. T is implies if \u2310ST is true.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Metric Analysis"
+        },
+        {
+            "text": "Most data in the World Bank dataset comes from the governments of individual countries. The World Bank collects data on living standards and debt, but not much else. Some also comes from various international and national agencies with which World Bank partners (see http://ucatlas.ucsc.edu/data.html). These data are grown from the commitment of the member countries that participate with the development projects since early 1950s. The variety of data types is also diverse and data are not just created in spreadsheets or tables but also in charts, maps and audio/video. Therefore, managing and analyzing these data can be very challenging.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "The World Bank"
+        },
+        {
+            "text": "The World Bank collects and processes large amounts of data and generates them on the basis of economic models. These data have gradually been made available to the public in a way that encourages reuse. The World Bank stores data of reconstruction and development for 188 countries on 20 different topics. The topics incorporate different data indicators that store data from 1960 to 2014. For example, one of the data indicators for economic growth is agriculture (value added). The data are collected from 1960-2014 for 188 countries. This dataset create large amount of data only for one indicator under one topic.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "The World Bank"
+        },
+        {
+            "text": "The World Bank provides an analysis and visualisation tool that contains collections of time series data on a variety of topics that allow us to create our own queries. Therefore, we can generate tables and dashboards as new knowledge to be shared. In this case study, we present queries as the goals. Then we capture relevant data from huge amount of the datasets in relation to the goals. We define the metrics to analyse this data and present it in the dashboard to support decision-making in light to the goals.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "The World Bank"
+        },
+        {
+            "text": "In this paper, the queries are created from the topics. We define these queries as goals. In order to evaluate these topics, we develop an ontology for the World Bank to filter large collection of data. Therefore, we can identify the relationship between the topics and data indicators. An ontology creates knowledge to helps us to define the goals that we want to evaluate. We can make a decision on which goals we want to evaluate and which data are relevant to the goals.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "An Ontology for the World Bank"
+        },
+        {
+            "text": "The amount of data stores in the World Bank make it difficult for us to identify the goals that we want to evaluate. Based on the World Bank's website, data can be identified from the topics and data indicators. Figure 2 shows the relationship based on an ontology that classifies the topics.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 212,
+                    "end": 220,
+                    "text": "Figure 2",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "An Ontology for the World Bank"
+        },
+        {
+            "text": "Based on these topics, there are few data indicators that can be identified. Figure 3 shows some examples of data indicators that relate to the certain topics. This ontology helps us to create any query.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 77,
+                    "end": 85,
+                    "text": "Figure 3",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "An Ontology for the World Bank"
+        },
+        {
+            "text": "In this paper, we refer ourselves as information professional. Using the information that we have, we set the goals that we want to evaluate. Based on the goals, we can capture relevant data that relate to the goals.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "An Ontology for the World Bank"
+        },
+        {
+            "text": "In this case study, we aim to analyse the level of the economic growth in South East Asia in 2013. We decide to analyse the development in Indonesia, Cambodia, Malaysia, Philippines and Singapore. According to the World Bank, economic growth is central to economic development. When national income grows, real people benefit. Data can help policy-makers better understand their countries' economic situations and guide any work toward improvement. Data here covers measures of economic growth that includes indicators representing factors known to be relevant to economic growth, such as industry, manufacture, services, agriculture and household.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Identify the Goals for the World Bank"
+        },
+        {
+            "text": "In order to achieve this aim, we analyse these five indicators that we believe is important to evaluate the development level of the economic growth in South East Asia. This is how we want to define the goals in this paper. We are mindful of the fact that information professionals might define the goals in a different way to the way we have undertaken to define the goal, which would require a different approach to evaluate the goals.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Identify the Goals for the World Bank"
+        },
+        {
+            "text": "Economic growth is central to economic development. When national income grows, real people benefit. While there is no known formula for stimulating economic growth, data can help information professionals to assist the policy-makers with better understand the economic situations in South East Asia and guide any work toward improvement. Data here covers measures of economic growth based on the value added for industry, agricultural, manufacturing, service and household.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Identify the Goals for the World Bank"
+        },
+        {
+            "text": "According to the World Bank website, value added is the net output of a sector after adding up all outputs and subtracting intermediate inputs. It is calculated without making deductions for depreciation of fabricated assets or depletion and degradation of natural resources. The origin of value added is determined by the International Standard Industrial Classification (ISIC), revision 3. In this case study, data are in current U.S. dollars. \u2022 Five goals in relation to the economic growth, as shown in Fig. 3 .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 507,
+                    "end": 513,
+                    "text": "Fig. 3",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Identify the Goals for the World Bank"
+        },
+        {
+            "text": "Goal 1: Development of services for wholesale and retail trade Services correspond to ISIC divisions 50-99. They include value added in wholesale and retail trade (including hotels and restaurants), transport, and government, financial, professional, and personal services such as education, health care, and real estate services. Also included are imputed bank service charges, import duties, and any statistical discrepancies noted by national compilers as well as discrepancies arising from rescaling.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Identify the Goals for the World Bank"
+        },
+        {
+            "text": "Goal 2: Development of agricultural production Agriculture corresponds to ISIC divisions 1-5 and includes forestry, hunting, and fishing, as well as cultivation of crops and livestock production.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Identify the Goals for the World Bank"
+        },
+        {
+            "text": "Goal 3: Development of manufacturing to supports industries growth Manufacturing refers to industries belonging to ISIC divisions 15-37. Goal 4: Development of industry to supports sustainable growth Industry corresponds to ISIC divisions 10-45 and includes manufacturing (ISIC divisions 15-37). It comprises value added in mining, manufacturing (also reported as a separate subgroup), construction, electricity, water, and gas.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Identify the Goals for the World Bank"
+        },
+        {
+            "text": "Goal 5: Development of household value for goods and services Household is the market value of all goods and services, including durable products (such as cars, washing machines, and home computers), purchased by households. It excludes purchases of dwellings but includes imputed rent for owner-occupied dwellings (Fig. 4 ).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 315,
+                    "end": 322,
+                    "text": "(Fig. 4",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "Identify the Goals for the World Bank"
+        },
+        {
+            "text": "The discussion include how the organizational goals are identified, the possible subgoals and variables that relate to the organizational goals, how to identify data that has been presented to the organizational goals, how to analyze organizational data and use this analysis results as a feedback to evaluate the level of the organizational goals achievement.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusions"
+        },
+        {
+            "text": "This paper discussed on how the framework aims to be applicable, repeatable, flexible and configurable in many domains. Big data analytics could be used to examine large amounts of data of a variety of types to discover useful information. Such information can provide a competitive advantage to help better decisions be made in relation to the organizational goals. The primary goal of big data analytics is to help companies make better business decisions by enabling data analyst to analyze huge volumes of transaction data which remains an unresolved challenge for conventional business intelligence programs.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusions"
+        },
+        {
+            "text": "The challenge in terms of big data analytics includes how the framework searches, transfers, captures and analyze the data from the vast collection of datasets. Due to the flexibility of the framework, it can capture large sets of data that relate to the organizational goals. This data will be analyzed and the results can assist the decisionmaking process in relation to the organizational goals.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusions"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "The gamma matrix to summarize dense and sparse data sets for big data analytics",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Ordonez",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "Q"
+                    ],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Cabrera",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "IEEE Trans. Knowl. Data Eng",
+            "volume": "28",
+            "issn": "",
+            "pages": "1905--1918",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "An ethnographic approach to digital literacy in a Compulsory Secondary Education Institute in Barcelona",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Ortega",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Subias",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Cassany",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "190--215",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "True Randomness from big data",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Papakonstantinou",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Woodruff",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Sci. Rep",
+            "volume": "6",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "The effects of leadership by types of soccer instruction on big data analysis",
+            "authors": [
+                {
+                    "first": "E.-M",
+                    "middle": [],
+                    "last": "Park",
+                    "suffix": ""
+                },
+                {
+                    "first": "J.-H",
+                    "middle": [],
+                    "last": "Seo",
+                    "suffix": ""
+                },
+                {
+                    "first": "M.-H",
+                    "middle": [],
+                    "last": "Ko",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Cluster Comput",
+            "volume": "19",
+            "issn": "3",
+            "pages": "1647--1658",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s10586-016-0609-2"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "An analysis of digital literacy skills among Thai University Seniors",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Phuapan",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Viriyavejakul",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Pimdee",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Int. J. Emerg. Technol. Learn",
+            "volume": "11",
+            "issn": "",
+            "pages": "24--31",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Big data-based deterioration prediction models and infrastructure management: towards assetmetrics",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Kobayashi",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Kaito",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Struct. Infrastruct. Eng",
+            "volume": "13",
+            "issn": "",
+            "pages": "84--93",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Harnessing the big data paradigm for ICME: shifting from materials selection to materials enabled design",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Broderick",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Santhanam",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Rajan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "JOM",
+            "volume": "68",
+            "issn": "8",
+            "pages": "2109--2115",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s11837-016-2019-6"
+                ]
+            }
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "A dynamic prime number based efficient security mechanism for big sensing data streams",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Puthal",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Nepal",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Ranjan",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "J. Comput. Syst. Sci",
+            "volume": "83",
+            "issn": "",
+            "pages": "22--42",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Big data vendor revenue and market forecast",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Wikibon",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Organization-ontology based framework for implementing the business understanding phase of data mining projects",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Sharma",
+                    "suffix": ""
+                },
+                {
+                    "first": "K.-M",
+                    "middle": [],
+                    "last": "Osei-Bryson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "International Conference on System Sciences",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Recent developments in the organization goals conformance using ontology",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "A T"
+                    ],
+                    "last": "Izhar",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Torabi",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Bhatti",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Expert Syst. Appl",
+            "volume": "40",
+            "issn": "",
+            "pages": "4252--4267",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "The communicative constitution of organization, organizing, and organizationality",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Schoeneborn",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Kuhn",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "K\u00e4rreman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Organ. Stud",
+            "volume": "40",
+            "issn": "",
+            "pages": "475--496",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "The semantic retrieval system for learning resources based on subject knowledge ontology",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Adv. Comput. Sci. Res",
+            "volume": "80",
+            "issn": "",
+            "pages": "467--469",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Data are extracting the topics from the World Bank using Prot\u00e9g\u00e9 OntoGraf.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "Data are extract using Prot\u00e9g\u00e9 OntoGraf to shows the indicators from four different topics.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "Prot\u00e9g\u00e9 OntoGraf for the World Bank to evaluate the development of economic growth in South East Asia.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "Control: Metrics enable to evaluate and control the source they are measures. Communication: Communicate externally and internally for the purpose of control. Improvement: Identify gaps for improvement.Let's denote that metrics requirement clarify as verifiable and measure as V erifiable and M easure",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "SG 1 [ A 1 [ T 1 , corresponds to on elements e 2 SG 2 [ A 2 [ T 2 , and vice versa.",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": []
+}

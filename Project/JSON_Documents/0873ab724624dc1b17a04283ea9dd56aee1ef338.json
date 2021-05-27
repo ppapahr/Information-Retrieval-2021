@@ -1,0 +1,821 @@
+{
+    "paper_id": "0873ab724624dc1b17a04283ea9dd56aee1ef338",
+    "metadata": {
+        "title": "Performance evaluation of the Simtomax \u00ae 1 CoronaCheck rapid diagnostic test 2 3 4 Ducrest P",
+        "authors": [
+            {
+                "first": "",
+                "middle": [
+                    "J"
+                ],
+                "last": "",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Freymond",
+                "middle": [
+                    "A"
+                ],
+                "last": "",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Segura",
+                "middle": [],
+                "last": "",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "J.-M",
+                "middle": [],
+                "last": "",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Manuel",
+                "middle": [],
+                "last": "Segura",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "HES-SO // University of Applied",
+                    "location": {
+                        "addrLine": "10 Sciences Western Switzerland",
+                        "settlement": "Sion",
+                        "country": "Switzerland"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "The aim of this study was to evaluate the diagnostic performance of Simtomax \u00ae CoronaCheck, a 26 serology rapid diagnostic test (RDT) for the detection of IgG and IgM against SARS-CoV-2. 48 plasma 27 samples positive for SARS-CoV-2 based on RT-PCR and 98 negative control samples were studied.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Diagnostic performance of the IgG/IgM RDT was assessed against RT-PCR and the electro-29 chemiluminescence immunoassay (ECLIA) Elecsys \u00ae Anti-SARS-CoV-2 total Ig. Overall, the RDT 30 sensitivity was 92% (95% confidence interval [95%CI]: 79-97), specificity 97% (95% CI: 91-99%), 31 PPV 94% (95% CI: 81-98) and the NPV 96% (95% CI: 89-99). When considering only samples 32 collected \u2265 15 days post-symptoms (DPS), the sensitivity increased to 98% (95%CI: 86-100) and the 33 specificity was 97% (95% CI: 91-99%). Two samples with 180 DPS were still positive for IgG.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "34 Globally, this IgG/IgM RDT displayed a high diagnostic accuracy for SARS-CoV-2 IgG/IgM detection 35 in plasma samples in high COVID-19 prevalence settings. It could be effectively used, in absence of 36 facilities for routine diagnostic serology, for samples with a DPS between 15 and 180 days.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "37 38 39 Keywords: SARS-CoV-2, COVID-19, serology, rapid test, lateral flow immunoassay 40 41 42 ; https://doi.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "is the author/funder, who has granted medRxiv a license to display the preprint in (which was not certified by peer review) preprint",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "The copyright holder for this this version posted November 1, 2020. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": ". CC-BY-ND 4.0 International license It is made available under a perpetuity.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "79"
+        },
+        {
+            "text": "is the author/funder, who has granted medRxiv a license to display the preprint in (which was not certified by peer review) preprint",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "79"
+        },
+        {
+            "text": "The copyright holder for this this version posted November 1, 2020. ; https://doi.org/10.1101/2020.10.28.20219667 doi: medRxiv preprint 4 The aim of this study was to evaluate the performance of this RDT in the case of plasma samples in a 80 high COVID-19 prevalence setting using as reference methods RT-PCR and an Electro-81 chemiluminescence immunoassay (ECLIA) Elecsys\u00ae Anti-SARS-CoV-2 total Ig (Roche, Switzerland). is the author/funder, who has granted medRxiv a license to display the preprint in (which was not certified by peer review) preprint",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "79"
+        },
+        {
+            "text": "The copyright holder for this this version posted November 1, 2020. is the author/funder, who has granted medRxiv a license to display the preprint in (which was not certified by peer review) preprint",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "79"
+        },
+        {
+            "text": "The copyright holder for this this version posted November 1, 2020. ; https://doi.org/10.1101/2020.10.28.20219667 doi: medRxiv preprint",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "79"
+        },
+        {
+            "text": "The primary end point was to assess the accuracy of IgG/IgM detection in plasma using Augurix Interquartile range (IQR). Significance (p-values) were calculated using a Mann-Whitney U test.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Study end points 117"
+        },
+        {
+            "text": "Statistical significance was defined as p < 0.05.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "127"
+        },
+        {
+            "text": "The demographic characteristics of patients' samples was as follows: the 48 COVID-19-positive 132 samples were from patients older (median = 49 years old, IQR 33-58.75) compared to the healthy 133 patients (n=98) (median = 34.5 years old, IQR 18-44.75; p < 0.05). The proportion of females was 56% 134 (n=20) and 51% (n=50) in the COVID-19 positive and in the healthy control group, respectively.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Baseline characteristics 131"
+        },
+        {
+            "text": "Among the COVID-19 samples, the median delay between symptom onset and sampling was 21 days 136 (IQR 16-32 days), but not less than 10 days. The longest DPS (one single sample) was 180 days. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "135"
+        },
+        {
+            "text": "The diagnostic specificity of the IgG/IgM RDT was assessed on the COVID-19 negative control group 142 with a sampling date before 2018 (n=98). The results are shown in Table 1 is the author/funder, who has granted medRxiv a license to display the preprint in (which was not certified by peer review) preprint",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 168,
+                    "end": 175,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Specificity of IgG/IgM RDT on the negative control group 141"
+        },
+        {
+            "text": "The copyright holder for this this version posted November 1, 2020. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Specificity of IgG/IgM RDT on the negative control group 141"
+        },
+        {
+            "text": "As shown in Table 1 is the author/funder, who has granted medRxiv a license to display the preprint in (which was not certified by peer review) preprint",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 12,
+                    "end": 19,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "154"
+        },
+        {
+            "text": "The copyright holder for this this version posted November 1, 2020. The accuracy of the IgG/IgM RDT was also assessed using an electro-chemiluminescence immunoassay ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "154"
+        },
+        {
+            "text": "The two false-negative results exhibited a DPS between 10 and 15. When using exclusively the results 180 in the \u2265 15 DPS group, there was a complete agreement between the results of the IgG/IgM RDT and 181 ECLIA. In this case, the IgG/IgM RDT sensitivity (SE) was therefore 100% (95% CI: 79-100), while 182 the PPV was 86% (95% CI: 64-96) and the NPV 100% (95% CI: 95-100). is the author/funder, who has granted medRxiv a license to display the preprint in (which was not certified by peer review) preprint",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "179"
+        },
+        {
+            "text": "The copyright holder for this this version posted November 1, 2020. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "184"
+        },
+        {
+            "text": "It is interesting to notice that the two false-negative results obtained with Augurix RDT corresponded is the author/funder, who has granted medRxiv a license to display the preprint in (which was not certified by peer review) preprint",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "198"
+        },
+        {
+            "text": "The copyright holder for this this version posted November 1, 2020. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "198"
+        },
+        {
+            "text": "The second notable finding of this study lies in the fact that IgG seropositivity is still present 180 days ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "231"
+        },
+        {
+            "text": "This study indicates also that a certain titer of SARS-CoV-2 IgG is present constantly with a 235 concentration sufficient to be detectable with RDT, from 15 days to at least 180 days post symptoms.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "234"
+        },
+        {
+            "text": ". CC-BY-ND 4.0 International license It is made available under a perpetuity.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "236"
+        },
+        {
+            "text": "is the author/funder, who has granted medRxiv a license to display the preprint in (which was not certified by peer review) preprint",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "236"
+        },
+        {
+            "text": "The copyright holder for this this version posted November 1, 2020. ; https://doi.org/10.1101/2020.10.28.20219667 doi: medRxiv preprint It would be interesting to quantitatively determine the level of IgG/IgM 180 days post symptoms onset 238 to confirm this finding obtained with a qualitative assay.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "236"
+        },
+        {
+            "text": "In addition, the test provided clear results without indeterminate or invalid measurements. There are 240 however several limitations to this study. First, we present here the results of a method evaluation study 241 and not a seroprevalence study. Therefore, the PPV obtained here (based on a 32.9% proportion of cases 242 defined as laboratory confirmed SARS-CoV-2 by RT-PCR) will be lower in a low prevalence setting, 243 e.g. when testing the asymptomatic population. Another limitation of this validation study lies in the 244 limited sample size leading to broad 95% confidence intervals, requiring confirmation of these data at a 245 larger scale. Also, here we used plasma and the test was performed in a laboratory environment; we may 246 expect different results in real-life at patients' bed and using capillary blood. Finally, our present 247 conclusions only apply to the Augurix RDT, and must not be generalized to other currently available 248 RDTs.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "239"
+        },
+        {
+            "text": "In conclusion, Augurix RDT is not meant to replace a SARS-CoV-2 RT-PCR diagnostic test in the first 250 week of the disease, but could be a reliable option for assessing the SARS-CoV-2 serology in moderate is the author/funder, who has granted medRxiv a license to display the preprint in (which was not certified by peer review) preprint",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "249"
+        },
+        {
+            "text": "The copyright holder for this this version posted November 1, 2020. ; https://doi.org/10.1101/2020.10.28.20219667 doi: medRxiv preprint . CC-BY-ND 4.0 International license It is made available under a perpetuity.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "249"
+        },
+        {
+            "text": "is the author/funder, who has granted medRxiv a license to display the preprint in (which was not certified by peer review) preprint",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "249"
+        },
+        {
+            "text": "The copyright holder for this this version posted November 1, 2020. ; https://doi.org/10.1101/2020.10.28.20219667 doi: medRxiv preprint",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "249"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Diagnostic accuracy of Augurix COVID-19 IgG 283 serology rapid test",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Andrey",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Cohen",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Meyer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Eur J Clin Invest",
+            "volume": "50",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/eci.13357"
+                ]
+            }
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "CoV-2 serological tests with different antigen targets",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "286",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1101/2020.07.09.20149864"
+                ]
+            }
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "COVID-19 (Novel Coronavirus 2019) 288 -recent trends",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Kannan",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Shaik Syed Ali",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Sheeza",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Hemalatha",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "European Review for Medical and Pharmacological Sciences",
+            "volume": "24",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Laboratory diagnosis of coronavirus disease-291 2019 (COVID-19)",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Bao",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Tang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Gu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Clin Chim Acta",
+            "volume": "510",
+            "issn": "",
+            "pages": "35--46",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.cca.2020.06.045"
+                ]
+            }
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Development and clinical application of a rapid IgM-IgG combined 293 antibody test for SARS-CoV-2 infection diagnosis",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Yi",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Luo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Med Virol",
+            "volume": "92",
+            "issn": "",
+            "pages": "1518--1524",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Antibody responses to SARS-CoV-2 in patients with COVID-296",
+            "authors": [
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Long",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Deng",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Clinical Characterization of Eleven Lateral Flow Assays for Detection of COVID-19 Antibodies 299 in a Population",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Rudolf",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Kaltenbach",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Linnik",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Ruf",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Niederhauser",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Nickel",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Gygax",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Savic",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "298",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1101/2020.08.18.20177204"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Longitudinal evaluation and decline of antibody 301 responses in SARS-CoV-2 infection",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Seow",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Graham",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Merrick",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Interpreting Diagnostic Tests for SARS-CoV-2",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Sethuraman",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Jeremiah",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ryo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "JAMA",
+            "volume": "304",
+            "issn": "22",
+            "pages": "2249--2251",
+            "other_ids": {
+                "DOI": [
+                    "10.1001/jama.2020.8259"
+                ]
+            }
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Temporal profiles of viral load in posterior oropharyngeal saliva samples and 306 serum antibody responses during infection by SARS-CoV-2: an observational cohort study",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "K W"
+                    ],
+                    "last": "To",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Infect Dis",
+            "volume": "307",
+            "issn": "",
+            "pages": "565--74",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S1473-3099(20)30196-1"
+                ]
+            }
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Antibody Responses to SARS-CoV-2 in Patients with",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Yuan",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "The rapid diagnostic test Simtomax CoronaCheck displays a high sensitivity of 98% and a high 44 specificity of 97% for SARS-CoV-2 IgG/IgM detection in plasma samples after 15 days post-The rapid diagnostic test Simtomax CoronaCheck can detect SARS-CoV-2 antibodies in plasma 47 up to 180 days after symptom onset.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "The rapid diagnostic test Simtomax CoronaCheck could be effectively used as an alternative to 49 serological analysis using laboratory facilities.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "Disease (COVID-19). Protein sequence analysis of seven proteins showed that 55 the virus is related to the Severe Acute Respiratory Syndrome Coronavirus (SARS-CoV) and the Middle 56 East Respiratory Syndrome Coronavirus (MERS-CoV) with similar epidemiology (Kannan et al. 2020; 57 Zhou et al. 2020). Currently, the detection method for SARS-CoV-2 is based on viral RNA detection 58 using Reverse-Transcription PCR (RT-PCR) but other tests such as chest computed tomography (CT)59imaging or antigen/antibody testing can also be used). Testing of specific antibodies 60 against SARS-CoV-2 in patient blood offers rapid, simple, highly sensitive diagnosis of COVID-19.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "Moreover, serological analysis may be applied to detect past exposure to the virus and possibly if a 62 patient has developed immunity against the virus. It is widely accepted that IgM provide the first line of 63 defense during viral infections, prior to the generation of adaptive, high affinity IgG responses that are 64 important for long term immunity and immunological memory (Li et al. 2020b). Several authors 65 analyzed the antibody kinetics in COVID-19 patients. Zhao et al. (2020) showed that among 173 66 patients, the seroconversion sequentially appeared for total antibody, IgM and then IgG, with a median 67 time of 11, 12 and 14 days after symptom onset. The majority of antibodies are produced against the 68 most abundant protein of the virus, which is the Nucleocapsid protein (NP). Therefore, serological tests 69 that detect antibodies to NP should be the most sensitive. In addition, because the receptor-binding 70 domain of the Spike protein (RBD-S) is the host attachment protein, antibodies against RBD-S should 71 be very specific. Therefore, according to some authors, using one or both antigens should result in high 72 sensitivity and specificity (Sethuraman et al. 2020). The rapid diagnostic test (RDT) Simtomax\u00ae 73 CoronaCheck developed by Augurix SA (Switzerland) uses both antigens as described in To et al.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": "2020). The gold nanoparticles used for detection are conjugated with SARS-CoV-2 Receptor Binding 75 Domain and Nucleocapsid protein with the aim to specifically bind IgM and/or IgG in COVID-19 76 positive samples. A recent clinical evaluation of Augurix RDT at the University Hospitals of Geneva 77 and Lausanne (Switzerland) demonstrated high diagnostic accuracy for IgG in whole-blood, plasma and 78 sera samples (Andrey et al. 2020; Coste et al. 2020).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF6": {
+            "text": "population and blood sample collection 85 48 anonymized leftovers of diagnostic plasma-EDTA specimen, supplied by INO Specimens BioBank,86ISB (Clermont-Ferrand, France), were used for this method evaluation(Fig. 1). Only laboratory-based 87 information was used in this study. All 48 samples were positive for SARS-CoV-2 based on RT-PCR",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF7": {
+            "text": "Information provided by INO Specimens based on analysis using the BD SARS-CoV-2 reagent kit for 89 the BD Max system; Becton Dickinson and Co, US. All RT-PCR tests were done on nasopharyngeal 90 secretions. The median CT value was 25.6 (IQR 20.05-29.15)) and had been collected at days post 91 symptom (DPS) of at least 10 days. 23 out of 48 RT-PCR positive samples were additionally tested for 92 total immunoglobulin against COVID-19 with an electro-chemiluminescence immunoassay (ECLIA) at 93 INO Specimens BioBank (Figure 1). As negative controls, anonymized unmatched control plasma 94 samples (n=98), supplied by AbBaltis (Kent, UK) with a collection date before 2018, were used (Fig.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF8": {
+            "text": "Description of the plasma samples used in this study.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF9": {
+            "text": "IgM/IgG immunochromatographic rapid test 102Commercial CE-labeled SARS-CoV-2 IgM/IgG RDT were from Augurix (Switzerland). These tests can 103 be used either with capillary blood, whole blood, plasma or serum. One IgM/IgG rapid test per sample104 was used. Following manufacturers' instructions, 10 \u03bcL of plasma were applied for each sample. IgG 105 and IgM responses were read after 15 minutes following manufacturer's instructions, blinded to the 106 reference method results. The tests were considered COVID-19 positive if either the IgM line or the IgG 107 line or both lines were positive.108 109 Electro-chemiluminescence immunoassay Elecsys\u00ae Anti-SARS-CoV-2 total Ig 110 ECLIA experiments were performed at INO Specimens Biobank. Elecsys\u00ae Anti-SARS-CoV-2 total Ig 111 (Roche, Switzerland) makes use of the nucleocapsid protein of SARS-CoV-2 as antigen. Total Ig was 112 analyzed according to manufacturer's instructions. The assays were run on a Cobas e 601 (Roche, 113 Switzerland) according to manufacturer's protocol. Positivity was defined by the manufacturer as a cut-114 off index (COI) \u2265 1.0.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF10": {
+            "text": "RDT against the RT-PCR reference method, within a cohort of 48 RT-PCR confirmed COVID-119 19, with day post-symptoms (DPS) of \u2265 10 days, and 98 control plasma samples. The secondary end 120 point was to assess Augurix IgG/IgM RDT performance against Electro-chemiluminescence 121 immunoassay (ECLIA), Elecsys\u00ae Anti-SARS-CoV-2 total Ig (Roche, Switzerland). tool (www.vassarstats.net) was used to calculate sensitivity (SE), specificity (SP), 125 positive and negative predictive values (PPV, NPV), 95% confidence intervals, median, and 126",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF11": {
+            "text": "detailed description of all the available information on the samples and the results of the various tests 138 is provided in the supplementary information.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF13": {
+            "text": "IgG",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF14": {
+            "text": "of IgG/IgM RDT on RT-PCR confirmed COVID-19 samples 148 IgG/IgM RDT diagnostic sensitivity was assessed on the 48 samples positive for COVID-19 based on 149 RT-PCR. The results are shown in Table 1. Both methods revealed similar results in 44 of 48 samples, 150 i.e. 91.7% (95%CI: 79-97%). Four discordant results showed a negative result with the IgG/IgM RDT 151 both for IgG and IgM (false negatives). The resulting sensitivity (SE) of the IgG/IgM RDT was 92% 152 (95% CI: 79-97), while the positive predictive value (PPV; using a prevalence of 48 / 146 = 33%) was 153 94% (95% CI: 81-98) and the negative predictive value (NPV) 96% (95% CI: 89-99).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF15": {
+            "text": ", most false-negative results (3 out of 4) exhibited a DPS between 10 and 15. Only155 one false-negative result was observed with a DPS \u2265 15. When taking into account exclusively the 156 results in the \u2265 15 DPS group, the IgG/IgM RDT sensitivity (SE) was 98% (95% CI: 86-100), while the 157 PPV (using a prevalence of 41 / 139 = 29%) was 93% (95% CI: 80-98) and the NPV 99% (95% CI: 94-158 100). It is remarkable that two samples with days post symptoms (DPS) of respectively 170 and 180 159 days were still positive for IgG (Sup. Information).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF17": {
+            "text": "Samples with DPS < 15 and negative controls (n=105); Prevalence = 7 / 105 = 6.7 % IgG/IgM RDT vs RT-PCR 57 (20-88) 97 (91-99) 57 (20-88) 97 (91-99) Samples with DPS \u2265 15 DPS and negative controls (n=139); Prevalence = 41 / 139 = 29 %",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF18": {
+            "text": "ECLIA), Elecsys\u00ae Anti-SARS-CoV-2 total Ig, as reference method. ECLIA was conducted on a 170 random selection of 23 out of the 48 COVID-19 positive samples based on RT-PCR. The median cut-171 off index (COI) was 63.4 (IQR 5-85 COI). The COI was not significant higher in the \u2265 15 DPS group 172 (76.9; IQR 5.8-86) compared to the < 15 DPS group (26.3; IQR 1-49.5; p=0.384). This might be at least 173 partly attributed to the small sample size of the < 15 DPS group (n=4). The results obtained using the 174 IgG/IgM RDT on the 23 samples are shown in Table 2. Both methods yielded similar results in 21 of 175 the 23 samples, i.e. in 91.3% of the cases (95%CI: 70-98%). Two discordant results showed an IgG/IgM 176 RDT negative result, both for IgG and IgM, while were positive by ECLIA (false negatives). This 177 resulted in an IgG/IgM RDT sensitivity (SE) of 91% (95% CI: 70-98), while the PPV (using a prevalence 178 of 23 / 121 = 19%) was 88% (95% CI: 67-97) and the NPV 98% (95% CI: 92-100) compared to ECLIA.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF19": {
+            "text": "All samples (n=121); Prevalence = 23 / 121 = 19%",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF20": {
+            "text": "199to borderline samples in ECLIA (Cut-of index of 1.43 and 1.19) with a DPS between 10 and 15 days.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF21": {
+            "text": "ECLIA manufacturer defines positive samples when the cut-off index (COI) value is \u2265 1.0. This 201 finding indicates that the analytical sensitivity of Augurix RDT is lower than the ECLIA Elecsys\u00ae Anti-202 SARS-CoV-2 total Ig (Roche, Switzerland) and that insufficient analytical sensitivity might at least 203 partly explain the poor performance of the RDT test at DPS < 15 days.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF22": {
+            "text": "samples with DPS > 15, there is a perfect agreement between ECLIA and Augurix RDT, which can 205 be explained by the fact that both assays target the immune response against the full-length N protein of 206 SARS-CoV-2. The overall good specificity of the Augurix RDT might be offered by the fact that it also 207 targets the immune response against the Receptor binding domain (RBD) of S protein,",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF23": {
+            "text": "performance, in particular for DPS > 15, indicates that Augurix RDT could be fit for purpose 209 in clinical settings where a high prevalence of COVID-19 prevails, especially in situations where ECLIA 210 is not available or cannot be reliably used. Diagnostic performance in low prevalence populations still 211 needs to be experimentally determined and it would be interesting to validate the results on larger212 populations. The results of our study on plasma samples are similar with those recently published on 213 whole blood and plasma samples, which indicated a sensitivity of Augurix RDT between 93% and 100% 214 for samples with a DPS of >15 days. By contrast, our results differ from prior studies using Augurix and 215 other RDTs that observed a lower sensitivity of 56.4% for a DPS of > 21 days (Rudolf et al. 2020). A 216 first difference between the present study and the one of Rudolf et al. (2020) is that positive samples 217 were assessed here when either the IgM or the IgG band was positive, while in Rudolf et al, the results 218 were separated for the two lines, i.e. they assessed sensitivity for either the IgM or the IgG line. A second 219 possible partial explanation for the discrepancy is that the study by Rudolf et al included a large panel 220 of samples corresponding to varying severities of the symptoms. As this information is not available for 221 the plasma samples analyzed in our study, it is possible that they were collected from patients showing 222 more severe forms of COVID-19. On the other hand, the antibody titers in the plasma samples as 223 determined by ECLIA spanned a large range of concentration, which points towards the fact that the 224 samples in our study corresponded to various severities of COVID-19. A more comprehensive study on 225 a larger panel of well-defined sample might clarify these discrepancies. Concerning the specificity of 226 the test, the excellent performance observed in this study is in line with the results of preceding 227 publications (Andrey et al. 2020; Coste et al. 2020). Three control blood sample turned out to be IgM 228 positive by RDT. These samples were collected before 2018 and it seems that a cross-reaction with the 229 IgM line occurred leading to a false positive result. But overall, Augurix RDT might be a suitable choice 230 in situations where a high PPV is instrumental.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF24": {
+            "text": "232 after symptom onset in spite of normal antibody decline (Long et al. 2020; Seow et al. 2020). To our 233 knowledge, it is the first time that SARS-CoV-2 IgG seropositivity is demonstrated with RDT 180 DPS.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF25": {
+            "text": "251to high COVID-19 prevalence settings, i.e. when testing the sub-population of individuals having 252 presented COVID-19 symptoms, especially in situations where automated ECLIA or ELISA are not 253 available, with samples collected between at least 15 days and up to 180 days after the onset was evaluated by the Ethics Committee of Canton de Vaud, Lausanne, Switzerland (CER-258 VD) and they judged that it did not deserve a specific approval being only a quality assessment of 259 diagnostic tests with foreign residual samples.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF26": {
+            "text": "All necessary patient/participant consent has been obtained by the supplier of residual samples and the 261 appropriate institutional forms have been archived.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "Diagnostic performance of Simtomax CoronaCheck RDT compared to RT-PCR as reference 162 method for different sample groups.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "RDT: Simtomax CoronaCheck rapid diagnostic test; SE: sensibility; SP: specificity; PPV: positive predictive",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "Diagnostic performance of Simtomax CoronaCheck RDT compared to ECLIA total Ig as 185 reference method for different sample groups.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF3": {
+            "text": "NPV of 96%. When compared to ECLIA positive samples, the diagnostic accuracy of IgG/IgM Augurix RDT displayed a SE of 91%, a SP of 97%, a PPV of 88% and a NPV of 98%. The sensitivity (SE) of IgG/IgM Augurix RDT is not significantly different for both reference methods (p=0.756) indicating a 194 good correlation. The diagnostic accuracy of the RDT further increased when analyses were performed",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "We thank Augurix SA (Monthey, Switzerland) for providing Simtomax CoronaCheck RDTs free-of- is the author/funder, who has granted medRxiv a license to display the preprint in (which was not certified by peer review) preprintThe copyright holder for this this version posted November 1, 2020. is the author/funder, who has granted medRxiv a license to display the preprint in (which was not certified by peer review) preprintThe copyright holder for this this version posted November 1, 2020. ; https://doi.org/10.1101/2020.10.28.20219667 doi: medRxiv preprint",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Acknowledgments 264"
+        }
+    ]
+}

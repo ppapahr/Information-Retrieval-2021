@@ -1,0 +1,1878 @@
+{
+    "paper_id": "e82bbe70ba98a804d893d9aac7ebf646b4d9ab0c",
+    "metadata": {
+        "title": "Evidence approach imprecise intervals: extensions and evaluation measures",
+        "authors": [
+            {
+                "first": "Fred",
+                "middle": [],
+                "last": "Petry",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "\u00b7",
+                "middle": [
+                    "Ronald"
+                ],
+                "last": "Yager",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "In a number of applications the data will be represented in an interval format. We consider here a nested representation of uncertain information in intervals using Dempster-Shafer evidence approaches. These representations can be used in variety of applications including spatial and temporal reasoning and economic cost valuations. Two representations of nested intervals, RP1 and RP2, are defined and used in the paper. Basically an inner interval represents the more certain data and is nested in the outer less certain interval. We illustrate how the specificity measure could be used to evaluate such nested Dempster-Shafer intervals. We then consider Gini information measures applicable to the RP1 representation. We describe an example using our interval approach to COVID contact tracing in epidemiology. Finally examples of aggregation of intervals are provided. It is seen that an aggregated result can be evaluated and shown to increase the specificity of the result. Additionally, it is not always the case that aggregation increases specificity. An example is given illustrating such a case.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "Uncertainty problems and issues arise in almost all domains of human interests. This was realized commonly by the developments of statistics and probability modeling to managing uncertainty. However some information and data are often represented by human language like \"about 50 km\", \"roughly 39 \u00b0C\", \"approximately 100 lbs.\", \"young\", and \"large\". There are many other approaches for representing linguistic, subjective uncertainty in particular in the computational intelligence domain (Kruse et al. 2016 ). These can include fuzzy sets and possibility theory (Parsons 2001) , rough sets (Zhang et al. 2016 ) and evidence (Dempster-Shafer) theory (Liu and Yager 2008) .",
+            "cite_spans": [
+                {
+                    "start": 489,
+                    "end": 507,
+                    "text": "(Kruse et al. 2016",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 563,
+                    "end": 577,
+                    "text": "(Parsons 2001)",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 591,
+                    "end": 609,
+                    "text": "(Zhang et al. 2016",
+                    "ref_id": "BIBREF41"
+                },
+                {
+                    "start": 650,
+                    "end": 670,
+                    "text": "(Liu and Yager 2008)",
+                    "ref_id": "BIBREF25"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "There are many areas for which subjective interpretation of intervals can use Dempster-Shafer approaches, such as, for example, expert estimates of the ranges for potential prices of real estate property. Also in large commodity trading markets such as in Chicago, issues of the ranges of values of various commodities involve essential uncertainty issues (Varangis and Larson 1996) and can be modeled by these sorts of intervals. Also spatial and temporal data has been represented by such intervals (Elmore et al. 2017a, b) .",
+            "cite_spans": [
+                {
+                    "start": 356,
+                    "end": 382,
+                    "text": "(Varangis and Larson 1996)",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 501,
+                    "end": 525,
+                    "text": "(Elmore et al. 2017a, b)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "In this paper we are treating uncertainty in data representation by nested intervals, I j , corresponding to focal elements in evidence theory. The uncertainty is modeled using evidence theory (Dempster-Shafer theory) (Shafer 1987 ) by basic probability assignment, bp j , associated to each interval. These bp values are typically subjective judgments as to the probability of a variable of interest's value lying in a particular interval.",
+            "cite_spans": [
+                {
+                    "start": 218,
+                    "end": 230,
+                    "text": "(Shafer 1987",
+                    "ref_id": "BIBREF31"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "In the paper's organization, we first provide a background of Dempster-Shafer theory and specificity and information measures. Next there is an overview of the basics of the interval approach and alternative representations. We then show how to use specificity measures and information theory based metrics to assess the uncertainty in the nested intervals (Yager 1983 (Yager , 2018 ). An application in the area of epidemiology for infection contact tracing is described. Finally we describe an approach to aggregation of Dempster-Shafer intervals and use measures to determine if an aggregated interval lowers uncertainty, i.e. is more specific.",
+            "cite_spans": [
+                {
+                    "start": 357,
+                    "end": 368,
+                    "text": "(Yager 1983",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 369,
+                    "end": 382,
+                    "text": "(Yager , 2018",
+                    "ref_id": "BIBREF39"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Our objective is to continue our investigations of representations and processing of uncertainty in data. We have previously carried out research with fuzzy sets, possibility theory and Dempster-Shafer evidence approaches. In particular we want to explore ways to measure and quantify such uncertainty.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Objectives and contribution"
+        },
+        {
+            "text": "So in this paper our contribution is the development of nested representations of uncertain information in intervals using Dempster-Shafer evidence approaches. Two representations of nested intervals, RP1 and RP2, are defined and used in the paper. Basically an inner interval represents the more certain data and is nested in the outer less certain interval. We illustrate how specificity measures could be used to evaluate such nested Dempster-Shafer intervals. We then consider Gini information measures applicable to the RP1 representation. An application in the area of epidemiology for infection contact tracing is also described. Contact tracing has been used extensively during the Covid pandemic and our nested interval representations can provide consistency for these efforts as the uncertainty is specifically captured. Finally examples of aggregation of intervals are developed. It is seen that an aggregated result can be evaluated and shown to increase the specificity of the result. Additionally, it is not always the case that aggregation increases specificity and this is illustrated as it affects decision-making (Yager and Petry 2016 ).",
+            "cite_spans": [
+                {
+                    "start": 1132,
+                    "end": 1153,
+                    "text": "(Yager and Petry 2016",
+                    "ref_id": "BIBREF40"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Objectives and contribution"
+        },
+        {
+            "text": "Dempster-Shafer (D-S) theory is a well-known approach to modeling uncertainty (Liu and Yager 2008) , providing representation of non-specific forms of uncertainty. A Dempster-Shafer belief structure consists of a collection of nonempty crisp subsets of a space X called focal elements: R 1 , \u2026, R q . The mass or basic probability, bp, is used to assign a belief to each element of the power set:",
+            "cite_spans": [
+                {
+                    "start": 78,
+                    "end": 98,
+                    "text": "(Liu and Yager 2008)",
+                    "ref_id": "BIBREF25"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Dempster-Shafer evidence theory"
+        },
+        {
+            "text": "Thus our knowledge of the value of a variable is inexact. For focal set, R i \u2282 X, however, bp(R i ) indicates the bp \u2236 2 X \u2192 [0, 1].",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Dempster-Shafer evidence theory"
+        },
+        {
+            "text": "probability that the value is in R i . Two important properties of bp are: 1. basic probability of the empty set is zero, and 2. the bps of the remaining elements of the power set sum to 1, Two commonly used measures for a Dempster-Shafer belief structure are measures of belief (best case) and plausibility (worst case). The belief for a specific set S, Bel (S), is the sum of the basic probabilities of all subsets of S:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Dempster-Shafer evidence theory"
+        },
+        {
+            "text": "The plausibility, Pl(S), is the sum of the bps of the sets R i that intersect S:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Dempster-Shafer evidence theory"
+        },
+        {
+            "text": "Our methodology for uncertainty evaluation is to use measures such as the Shannon entropy, the Gini index and specificity as extended to Dempster-Shafer uncertainty (Yager 2018) in order to judge the usefulness of interval-based uncertain information.",
+            "cite_spans": [
+                {
+                    "start": 165,
+                    "end": 177,
+                    "text": "(Yager 2018)",
+                    "ref_id": "BIBREF39"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Uncertainty evaluation measures"
+        },
+        {
+            "text": "The Shannon measure of information, or Shannon entropy S sh (P) is a well-known and widely used measure of information content (Cover and Thomas 2006) . For a probability distribution, P = (p 1 , p 2 , \u2026., p n ), Another measure related to information content is a dispersion measure, the Gini index, G(P). It has been widely used in economics (Giorgi and Gigliarano 2017; Berger and Balay 2019) and for decision trees in machine learning techniques such as random forests (Breiman 2001) . This index can be given by:",
+            "cite_spans": [
+                {
+                    "start": 127,
+                    "end": 150,
+                    "text": "(Cover and Thomas 2006)",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 344,
+                    "end": 372,
+                    "text": "(Giorgi and Gigliarano 2017;",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 373,
+                    "end": 383,
+                    "text": "Berger and",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 473,
+                    "end": 487,
+                    "text": "(Breiman 2001)",
+                    "ref_id": "BIBREF5"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Shannon entropy and Gini index"
+        },
+        {
+            "text": "G(P) is functionally related to S sh (P) (Yager 1995) . G(P), may be used instead of S sh (P) more conveniently in analysis since it does not involve logarithms as does S sh (P).",
+            "cite_spans": [
+                {
+                    "start": 41,
+                    "end": 53,
+                    "text": "(Yager 1995)",
+                    "ref_id": "BIBREF38"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Shannon entropy and Gini index"
+        },
+        {
+            "text": "For possibility theory, the concept of specificity has a measure that is analogous to probability entropy measures. One approach uses a linear measure that can be viewed as an intuitive measure for a possibility distribution's specificity (Pedrycz and Gomide 1996; Dubois 2006) . Consider possibility distribution \u03a0 = \u03c0 1 , \u2026 \u03c0 n ). If \u03c0 m = n Max k = 1 \u03c0 k , then specificity is formulated as the max value, \u03c0 m , minus the average of the rest of the possibility distribution (Yager 1992 ), Specificity has also been extended and can be used for Dempster-Shafer evidence theory (Yager 1983 ).",
+            "cite_spans": [
+                {
+                    "start": 239,
+                    "end": 264,
+                    "text": "(Pedrycz and Gomide 1996;",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 265,
+                    "end": 277,
+                    "text": "Dubois 2006)",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 477,
+                    "end": 488,
+                    "text": "(Yager 1992",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 579,
+                    "end": 590,
+                    "text": "(Yager 1983",
+                    "ref_id": "BIBREF36"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Specificity measure"
+        },
+        {
+            "text": "Now we must realize that, in representing uncertainty of information such as spatial or temporal data, we are really interested in an interval representation as opposed to a set representation. Intervals can be used to represent such data ranges, so we provide approaches to the use of data intervals (Moore et al. 2009 ; Kreinovich and Shary 2016) as needed. Interval arithmetic has been used previously for Dempster-Shafer applications (Lee and Zhu 1992; Auer et al., 2010) and was used in our previous approaches for calculations with spatial and temporal relations.",
+            "cite_spans": [
+                {
+                    "start": 301,
+                    "end": 319,
+                    "text": "(Moore et al. 2009",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 438,
+                    "end": 456,
+                    "text": "(Lee and Zhu 1992;",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 457,
+                    "end": 475,
+                    "text": "Auer et al., 2010)",
+                    "ref_id": "BIBREF1"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Interval representations"
+        },
+        {
+            "text": "Let X be the space which forms a frame of discernment. Intervals, I, will be represented by the lower and upper bounds, y * , y*:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Interval representations"
+        },
+        {
+            "text": "We have previously considered D-S intervals for both spatial and temporal data. Interval representations are described as a basic approach to represent such uncertainty for data. With spatial data (Elmore et al. 2017a) , basic definitions of imprecise coordinates, points and lines were developed. Dempster Shafer spatial representations can be applied to location recommendations based on users' needs (Kosmides et al. 2016) . Temporal uncertain events were represented by nested intervals (Elmore et al. 2017b ). This allows computation of interesting factors such as durations and time between events.",
+            "cite_spans": [
+                {
+                    "start": 197,
+                    "end": 218,
+                    "text": "(Elmore et al. 2017a)",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 403,
+                    "end": 425,
+                    "text": "(Kosmides et al. 2016)",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 491,
+                    "end": 511,
+                    "text": "(Elmore et al. 2017b",
+                    "ref_id": "BIBREF13"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Interval representations"
+        },
+        {
+            "text": "In this section our general methodology is to consider possible alternative interval structures using Dempster-Shafer uncertainty approaches. In particular an interval I will have a structure in which an inner interval is considered as the more certain data. The outer parts of the interval are then considered as possible but not as certain as the inner interval (Fig. 1) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 364,
+                    "end": 372,
+                    "text": "(Fig. 1)",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Interval representation"
+        },
+        {
+            "text": "The inner interval is denoted as I 1 , and its certainty as bp 1 . The rest of the interval I ( I-I 1 ) is denoted as I 2 and has associated basic probability bp 2 and is called the outer interval.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Interval representation"
+        },
+        {
+            "text": "With this approach, we can treat uncertainty in data representation by nested intervals, using evidence theory as basic probability assignment, bp j , associated to each interval. These bp values are typically subjective judgments as to the probability of a variable of interest's value lying in a particular interval; these intervals correspond to focal elements in evidence theory.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Interval representation"
+        },
+        {
+            "text": "Here we consider two representations for our Dempster-Shafer interval structure. The end points are labeled in Fig. 1 , so the entire interval I is [a, d] . Depending on the application semantics, the inner and outer interval can be treated differently. First we consider the potential interpretation that the inner interval I 1 is strictly considered to be a subset of the outer interval I 2 :",
+            "cite_spans": [
+                {
+                    "start": 148,
+                    "end": 154,
+                    "text": "[a, d]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 111,
+                    "end": 117,
+                    "text": "Fig. 1",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Interval representation"
+        },
+        {
+            "text": "The second the possibility we can allow is that the outer interval I 2 is disjoint from the inner interval I 1 :",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Interval representation"
+        },
+        {
+            "text": "Representation 1(RP1) \u2236 I 1 = [b, c] and I 2 = [a, d] so I 1 \u2286 I 2 .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Interval representation"
+        },
+        {
+            "text": "Representation 2 (RP2) \u2236 I 2 = [a, b) (c, d], so I 2 \u2229 I 1 = \ufffd. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Interval representation"
+        },
+        {
+            "text": "In the following section our methodology is to consider approaches to evaluate each alternative representation using specificity and then information theoretic measures (Xiao 2018) . A number of approaches to specificity have developed (Pedrycz and Gomide 1996; Song et al. 2016) including measures of discord and non-specificity. In particular, here, we use (Yager 1983 ) for a belief structure B, Sp B , given by For the nested interval belief structure, we will use the length of an interval to be equivalent to the set cardinality for our discrete domains, |I j | = Length (I j ). Then, we have",
+            "cite_spans": [
+                {
+                    "start": 169,
+                    "end": 180,
+                    "text": "(Xiao 2018)",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 236,
+                    "end": 261,
+                    "text": "(Pedrycz and Gomide 1996;",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 262,
+                    "end": 279,
+                    "text": "Song et al. 2016)",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 359,
+                    "end": 370,
+                    "text": "(Yager 1983",
+                    "ref_id": "BIBREF36"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Interval specificity"
+        },
+        {
+            "text": "In RP1 the total length of the uncertain outer interval, I 2 , is greater than the inner interval I 1 . But for RP2 it is quite possible that |I 2 | \u2264 |I 1 |, and we will have to consider all such possibilities.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Representation 1"
+        },
+        {
+            "text": "To be semantically meaningful as a discrete interval, we assume |I 1 |\u2265 1, i.e. there is a most certain interval, bp 1 > 0.5. For the outer interval as well |I 2 |\u2265 1 except where for the inner interval bp 1 = 1, is totally certain, then bp 2 = 0, i.e. there is no outer possible interval. First for RP1 we have and Note where R = 1, Sp B = (1 + bp 1 ( 1-1))/1|I 1 | = 1/|I 1 |. That is, there is only the one certain interval so the specificity is just dependent on that.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Representation 1"
+        },
+        {
+            "text": "Next we can analyze cases for Sp B as a function of the basic probability using bp 1 + bp 2 = 1.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Representation 1"
+        },
+        {
+            "text": "Case 1: bp 1 \u2192 1. So we have",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Representation 1"
+        },
+        {
+            "text": "That is as the inner interval becomes more certain then the specificity depends only on the extent of that interval and not the outer one since bp 2 \u2192 0. As the inner interval",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Representation 1"
+        },
+        {
+            "text": "narrows the specificity increases and is 1 when |I 1 | = 1, i.e. we know the exact value. Case 2: The other extreme case is for bp 1 \u2248 bp 2 = 1/2. Then So now we must take into account the outer interval as well since it has an almost equal basic probability. For example if the outer interval is twice as large, |I 2 | = 2 * |I 1 |, R = 2, then Then as |I 2 | becomes larger, R \u2192 \u221e, Sp B \u2192 1/2 (1/|I 1 |).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Representation 1"
+        },
+        {
+            "text": "For representation 2, we must consider the possible relationships between the inner and outer intervals, i.e. R > 1 or R < 1. To illustrate we consider an example for each case a: R = 2 as above (|I 1 | = 1/2|I 2 |), and b: R = 1/2 (|I 1 | = 2| I 2 |). a. Sp B = (1 + bp 1 ( 2-1))/2| I 1 | (1 + bp 1 )/2|I 1 | b. Sp B = (1 + bp 1 ( 1/2-1)/(|I 1 |/2) = 2(1 \u2212 1/2 bp 1 )/|I 1 | (2 \u2212 bp 1 )/|I 1 | Now we consider as before the bounding case for bp 1 = 1 a. Sp B = (1 + 1)/2|I 1 |1/|I 1 | b. Sp B = (2 \u2212 1)/|I 1 | /|I 1 | Then for bp 1 = 1/2 a. Sp B = (1 + 1/2)/2|I 1 |3/4|I 1 | b. Sp B = (2 \u2212 bp 1 )/|I 1 |3/2|I 1 |",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Representation 2"
+        },
+        {
+            "text": "We have used information theory for uncertainty of information in fuzzy and rough databases (Buckles and Petry 1983; Beaubouef et al. 1998 ). Information measures have also been developed for Dempster-Shafer belief structures (Deng et al. 2016; Jiang and Wang 2017;  Jirou\u0161ek and Shenoy 2018). In particular Yager (2018) considers the case of a consonant belief structure in which the focal elements form a nested subset structure. Now for RP1 we have a nested subset structure, I 1 \u2286 I 2 and so using the Gini entropy for this belief structure has the following bounds on information value",
+            "cite_spans": [
+                {
+                    "start": 92,
+                    "end": 116,
+                    "text": "(Buckles and Petry 1983;",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 117,
+                    "end": 138,
+                    "text": "Beaubouef et al. 1998",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 226,
+                    "end": 244,
+                    "text": "(Deng et al. 2016;",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 245,
+                    "end": 265,
+                    "text": "Jiang and Wang 2017;",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 266,
+                    "end": 266,
+                    "text": "",
+                    "ref_id": null
+                },
+                {
+                    "start": 308,
+                    "end": 320,
+                    "text": "Yager (2018)",
+                    "ref_id": "BIBREF39"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Intervals information measures"
+        },
+        {
+            "text": "The Dempster Shafer information model of Klir (2006) , G*, has a formulation that considers the size of the nested intervals. G* lies in the Yager's interval G (Yager 2018) and so we demonstrate how this occurs for our given belief structure with the inner and outer intervals Since I 1 \u2286 I 2, |I 1 \u2229 I 1 | = |I 1 \u2229 I 2 | = |I 2 \u2229 I 1 | = |I 1 | and |I 2 \u2229 I 2 | = |I 2 |. So where Now we assess if the range of G* satisfies the interval G = [0, 1 \u2212 (bp 1 2 + bp 2 2 )]. First for complete certainty for I 1 , bp 1 = 1, bp 2 = 0 and H = 1 so G* = 0. Next we note H > bp 1 2 + bp 1 2 so 1 \u2212 H < 1 \u2212 (bp 1 2 + bp 2 2 ). Clearly then G* \u2286 G.",
+            "cite_spans": [
+                {
+                    "start": 41,
+                    "end": 52,
+                    "text": "Klir (2006)",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 160,
+                    "end": 172,
+                    "text": "(Yager 2018)",
+                    "ref_id": "BIBREF39"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Intervals information measures"
+        },
+        {
+            "text": "In this section we will show how our D-S intervals approach can be used in the area of epidemiology for contact tracing. Then we will discuss how we use aggregation of these sort of intervals to enhance decision-making.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Epidemiology application example"
+        },
+        {
+            "text": "Now we describe the epidemiology problem involving disease contact tracing and how our intervals can be used for this problem. Epidemiology involves analysis of disease distribution (who, when, and where) and patterns (Porta 2014; Fos et al. 2018) . It is basic to public health, and informs health policy decisions and evidence-based practice by specifying risk factors of diseases and objectives of disease prevention. In particular we consider the uncertainties involved in contact tracing, the process of identifying persons who may have come into contact with a person who is infected. This will involve both spatial and temporal determinations and has been used extensively in disease spread such as the recent SARS and COVID pandemics. For COVID in particular the CDC (Center for Disease Control and Prevention 2020) gives the guidelines",
+            "cite_spans": [
+                {
+                    "start": 218,
+                    "end": 230,
+                    "text": "(Porta 2014;",
+                    "ref_id": null
+                },
+                {
+                    "start": 231,
+                    "end": 247,
+                    "text": "Fos et al. 2018)",
+                    "ref_id": "BIBREF16"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Contact tracing"
+        },
+        {
+            "text": "as being within 6 ft of a person who was infectious for a 15 or more total minutes over a 24-h period. It furthermore specifies that it is difficult to precisely define close contact. The basic approach starts with the infected individual who is interviewed to learn about their recent activities, and with whom they may have been in close contact. Depending on the disease and the context of the infection, family members, health care providers, and anyone else who may have knowledge of the case's contacts may also be interviewed (Hellewell et al. 2020) . We can illustrate this with a generalized example of a specification of distance and time when it was not possible to exactly determine the exact distance and the information was even possibly solicited from multiple sources or persons. Obviously it is important to make this decision as carefully as possible. If we commit to no close contact then we may face a false negative and consequently risk further infectious exposures. However a false positive also comes with costs, as by requiring isolation because of exposure, an individual may not be able to work which can be an impact economically.",
+            "cite_spans": [
+                {
+                    "start": 533,
+                    "end": 556,
+                    "text": "(Hellewell et al. 2020)",
+                    "ref_id": "BIBREF18"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Contact tracing"
+        },
+        {
+            "text": "Here are two examples in which we use normalized distance ranges. Let the max range here be 10 ft past which consideration of exposure is irrelevant. The core exposure range of concern is then half of this so that distances below 5 ft may be of most concern. An example is shown in Fig. 2 .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 282,
+                    "end": 288,
+                    "text": "Fig. 2",
+                    "ref_id": null
+                }
+            ],
+            "section": "Contact tracing"
+        },
+        {
+            "text": "In the following we consider two sources of information obtained by the contact tracing. We analyse these two cases and compare their specificity.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Contact tracing"
+        },
+        {
+            "text": "Case A:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Contact tracing"
+        },
+        {
+            "text": "So for case A the total specificity is 0.225. Case B:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Contact tracing"
+        },
+        {
+            "text": "Case B gives a total specificity is 0.20 which is less than the contact information specificity in Case A. This can be interpreted to conclude that the first case is more appropriate for making a decision about exposure and isolation. We note that we will be considering in Sect. 5.2 regarding how to aggregate these sort of intervals in order to provide a uniform approach. We believe that representations like those in the two cases above can then provide a consistent approach to contact tracing efforts as the uncertainty is specifically captured. Furthermore such representations can then eventually provide a data set to guide future decisions.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Contact tracing"
+        },
+        {
+            "text": "As discussed for contact tracing there may be more than just one specification of the data in the intervals. In this section we discuss how to deal with this using aggregation approaches.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Interval aggregation"
+        },
+        {
+            "text": "There are many fusion and aggregation techniques for uncertainty that have been developed and studied (Beliakov et al. 2007; Ribeiro et al. 2014; Dubois et al. 2016 ) However while effective decision-making should be able to make use of all the available, relevant information about such combined uncertainty, assessment of the value of an aggregation result is critical. Does the aggregation produce an interesting or valuable result? We have previously developed a number approaches to aggregations of uncertain information-probability and possibility distributions (Petry et al. 2015; Anderson et al. 2016) . To assess the effectiveness of these aggregation results we applied information and specificity measures (Elmore et al. 2020; Petry et al. 2015) . Here, in order to use these measures for nested interval aggregations, we have to consider restricted cases to illustrate that the specificity metric can determine if an aggregation produces a more specific and potentially useful result.",
+            "cite_spans": [
+                {
+                    "start": 102,
+                    "end": 124,
+                    "text": "(Beliakov et al. 2007;",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 125,
+                    "end": 145,
+                    "text": "Ribeiro et al. 2014;",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 146,
+                    "end": 164,
+                    "text": "Dubois et al. 2016",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 568,
+                    "end": 587,
+                    "text": "(Petry et al. 2015;",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 588,
+                    "end": 609,
+                    "text": "Anderson et al. 2016)",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 717,
+                    "end": 737,
+                    "text": "(Elmore et al. 2020;",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 738,
+                    "end": 756,
+                    "text": "Petry et al. 2015)",
+                    "ref_id": "BIBREF29"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Interval aggregation"
+        },
+        {
+            "text": "We consider a scenario in which contact tracing has occurred and the information may be from more than one source. Our aggregation approach for these evaluations has two components, first an average of the basic probabilities and then the computation of the aggregate inner interval location.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Interval aggregation"
+        },
+        {
+            "text": "To be well defined in the aggregation, we only consider the case where one inner interval is contained in the other. Otherwise partial overlapping would entail intersection overlap with the outer intervals, which have different basic probabilities. Our aggregation result then uses the smaller of the inner intervals, as it is most specific in the sense of size.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Interval aggregation"
+        },
+        {
+            "text": "Next we will illustrate an example in which this sort of aggregation can produce a more specific result such as would be desired for contact tracing.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Interval aggregation"
+        },
+        {
+            "text": "Case 1: bp1 1 = 0.6; |I1 1 | 4; Sp B = 0.6/4 = 0.15 Case 2: bp2 1 = 0.9;|I2 1 |8; Sp B = 0.9/8 = 0.1125",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Interval aggregation"
+        },
+        {
+            "text": "Now we use our aggregation approach. Since we are considering the case where I1 1 \u2286 I2 1 then |Iagg 1 | = |I1 1 |4. Then taking the average of the basic probabilities we can determine the specificity of the aggregated inner interval structure:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Interval aggregation"
+        },
+        {
+            "text": "So the specificity of the aggregated inner interval is greater than either Case 1 or Case 2. However we must evaluate the overall specificity of the interval I being evaluated by also computing the specificity of the outer intervals. We will let the size of the overall interval be, |I| 10. Then |I1 2 |6, |I2 2 |2, |Iagg 2 |6. So we have Then the overall specificities for I are:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Interval aggregation"
+        },
+        {
+            "text": "Thus for this example an aggregation as described can produce a more specific result. This is a desirable outcome, however, this is not true in general. If we have an example case that is already fairly specific then aggregation may not be an improvement and indeed can be worse. Consider in the above example if bp1 1 = 0.9 (so more specific) and bp2 1 = 0.6. Then the aggregation specificity would not change but the specificity of Case1 would be greater This result means that aggregation is not an improvement; based on the specificity measure, case 1 should be used.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Interval aggregation"
+        },
+        {
+            "text": "We have considered issues related to evaluation of uncertain information as captured by Dempster-Shafer nested intervals. Two representations of nested intervals, RP1 and RP2, were defined and used in the paper. We illustrated how the specificity measure could be used to evaluate such nested Dempster-Shafer intervals.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusions and future research"
+        },
+        {
+            "text": "We then considered Gini information measures applicable to these representations. Finally examples of aggregation bpagg 1 = bp1 1 + bp2 1 \u22152 = (6. + .9) \u22152 = .75 of intervals were provided. It was seen that an aggregated result could be evaluated and shown to increase the specificity of the result. Additionally it is not always the case that aggregation increases specificity, and an example was given illustrating this case.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusions and future research"
+        },
+        {
+            "text": "In our future research we will explore other health care applications for our approaches. In particular in collaboration with colleagues in the public health area (Fos and Petry 1995) , the economic problems of decision making under uncertainty for limited health care resources in underserved populations and developing countries are being explored.",
+            "cite_spans": [
+                {
+                    "start": 163,
+                    "end": 183,
+                    "text": "(Fos and Petry 1995)",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Conclusions and future research"
+        },
+        {
+            "text": "We also will explore new extensions to our interval approaches (Xiao 2020) . In particular Dempster-Shafer theory allows the specific representation of ignorance. As opposed to probability theory the sum of the basic probabilities can be less than one and this difference is considered as the degree of ignorance. Using this can potentially permit greater flexibility in many applications.",
+            "cite_spans": [
+                {
+                    "start": 63,
+                    "end": 74,
+                    "text": "(Xiao 2020)",
+                    "ref_id": "BIBREF35"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Conclusions and future research"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Fuzzy Choquet integration of homogenous possibility and probability distributions",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Anderson",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Elmore",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Petry",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Havens",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Inf Sci",
+            "volume": "363",
+            "issn": "",
+            "pages": "24--39",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "A verified MATLAB toolbox for the Dempster-Shafer theory",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Auer",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Luther",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Rebner",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Limbourg",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Proceedings of workshop on theory of belief functions",
+            "volume": "",
+            "issn": "",
+            "pages": "125--130",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Information-theoretic measures of uncertainty for rough sets and rough relational databases",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Beaubouef",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Petry",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Arora",
+                    "suffix": ""
+                }
+            ],
+            "year": 1998,
+            "venue": "Inf Sci",
+            "volume": "109",
+            "issn": "1",
+            "pages": "185--195",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Aggregation functions: a guide for practitioners",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Beliakov",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Pradera",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Calvo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Confidence intervals of Gini coefficient under unequal probability sampling",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Berger",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Balay",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Off Stat",
+            "volume": "36",
+            "issn": "2",
+            "pages": "237--249",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Random forests",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Breiman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2001,
+            "venue": "J Mach Learn",
+            "volume": "45",
+            "issn": "",
+            "pages": "5--32",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Information theoretic characterization of fuzzy relational data bases",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Buckles",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Petry",
+                    "suffix": ""
+                }
+            ],
+            "year": 1983,
+            "venue": "IEEE Trans Syst Man Cybern",
+            "volume": "13",
+            "issn": "1",
+            "pages": "74--77",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Centers for disease control and prevention",
+            "authors": [],
+            "year": null,
+            "venue": "CDC (2020) Coronavirus disease 2019 (COVID-19)",
+            "volume": "",
+            "issn": "",
+            "pages": "2020--2031",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Elements of information theory",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Cover",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Thomas",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "An improved distance-based total uncertainty measure in belief function theory",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Deng",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Xiao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Deng",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Appl Intell",
+            "volume": "46",
+            "issn": "4",
+            "pages": "898--915",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Possibility theory and statistical reasoning",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Dubois",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Comput Stat Data Anal",
+            "volume": "51",
+            "issn": "1",
+            "pages": "47--69",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "The basic principles of uncertain information fusion",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Dubois",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Ma",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Prade",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Inf Fusion",
+            "volume": "32",
+            "issn": "",
+            "pages": "12--39",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Geospatial modeling using Dempster-Shafer theory",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Elmore",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Petry",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Yager",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "IEEE Trans Cyber",
+            "volume": "47",
+            "issn": "6",
+            "pages": "1551--1561",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Dempster-Shafer approach to temporal uncertainty",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Elmore",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Petry",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Yager",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "IEEE Trans Emerg Top Comput Intel",
+            "volume": "1",
+            "issn": "5",
+            "pages": "316--325",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Evaluation of heterogeneous uncertain information fusion",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Elmore",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Anderson",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Petry",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Ambient Intell Humaniz Comput",
+            "volume": "11",
+            "issn": "",
+            "pages": "799--811",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "A decision support system for hospital bed assignment",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Fos",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Petry",
+                    "suffix": ""
+                }
+            ],
+            "year": 1995,
+            "venue": "Hosp Health Serv Admin",
+            "volume": "40",
+            "issn": "3",
+            "pages": "386--400",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Managerial epidemiology for health care organizations",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Fos",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Fine",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Zuniga",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "The Gini concentration index: a review of the inference literature",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Giorgi",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Gigliarano",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "J Econ Surv",
+            "volume": "31",
+            "issn": "4",
+            "pages": "1130--1148",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Feasibility of controlling COVID-19 outbreaks by isolation of cases and contacts",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Hellewell",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Abbott",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Gimma",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet Glob Health",
+            "volume": "8",
+            "issn": "4",
+            "pages": "488--496",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "An uncertainty measure for interval valued evidences",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Jiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Int J Comput Commun Control",
+            "volume": "12",
+            "issn": "5",
+            "pages": "631--644",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "A new definition of entropy of belief functions in the Dempster-Shafer theory",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Jirou\u0161ek",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Shenoy",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Int J Appl Reason",
+            "volume": "92",
+            "issn": "1",
+            "pages": "49--65",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Providing recommendations on location-based social networks",
+            "authors": [
+                {
+                    "first": "G ;",
+                    "middle": [],
+                    "last": "Klir",
+                    "suffix": ""
+                },
+                {
+                    "first": "Hoboken",
+                    "middle": [],
+                    "last": "Wiley",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Kosmides",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Demestichas",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Adamopoulou",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Remoundou",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Loumiotis",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Theologou",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Anagnostou",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "J Ambient Intell Humaniz Comput",
+            "volume": "7",
+            "issn": "4",
+            "pages": "567--578",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Interval methods for data fitting under uncertainty: a probabilistic treatment",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Kreinovich",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Shary",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Reliab Comput",
+            "volume": "23",
+            "issn": "",
+            "pages": "105--141",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Computational intelligence: a methodological introduction",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Kruse",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Borgelt",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Braune",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Mostaghim",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Steinbrecher",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "An interval Dempster-Shafer approach",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Zhu",
+                    "suffix": ""
+                }
+            ],
+            "year": 1992,
+            "venue": "Comput Math Appl",
+            "volume": "24",
+            "issn": "7",
+            "pages": "89--95",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Classic works of the Dempster-Shafer theory of belief functions: an introduction",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Yager",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Classic works of the Dempster-Shafer theory of belief functions",
+            "volume": "",
+            "issn": "",
+            "pages": "1--34",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Introduction to interval analysis",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Moore",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Kearfott",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Cloud",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Qualitative methods for reasoning under uncertainty",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Parsons",
+                    "suffix": ""
+                }
+            ],
+            "year": 2001,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "An introduction to fuzzy sets: analysis and design",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Pedrycz",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Gomide",
+                    "suffix": ""
+                }
+            ],
+            "year": 1996,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Combining uncertain information of differing modalities",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Petry",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Elmore",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Yager",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Inf Sci",
+            "volume": "322",
+            "issn": "",
+            "pages": "237--256",
+            "other_ids": {}
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "FIF: a fuzzy information fusion algorithm based on multi-criteria decision making",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "York Ribeiro",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Falcao",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Mora",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Fonseca",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Knowl-Based Syst",
+            "volume": "58",
+            "issn": "",
+            "pages": "23--32",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Belief functions and possibility measures. In: Bezdek J (ed) The analysis of fuzzy information",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Shafer",
+                    "suffix": ""
+                }
+            ],
+            "year": 1987,
+            "venue": "",
+            "volume": "1",
+            "issn": "",
+            "pages": "51--84",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Uncertainty measure for interval-valued belief structures",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Song",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Lei",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Yue",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Measure",
+            "volume": "80",
+            "issn": "",
+            "pages": "241--250",
+            "other_ids": {}
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Dealing with commodity price uncertainty. Policy research working paper 1667, Commodity Policy and Analysis Unit",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Varangis",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Larson",
+                    "suffix": ""
+                }
+            ],
+            "year": 1996,
+            "venue": "Int Econ Department, World Bank NY",
+            "volume": "15",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1596/1813-9450-1667"
+                ]
+            }
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "An improved method for combining conflicting evidences based on the similarity measure and belief function entropy",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Xiao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Int J Fuzzy Syst",
+            "volume": "20",
+            "issn": "",
+            "pages": "1256--1266",
+            "other_ids": {}
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Generalization of Dempster-Shafer theory: a complex mass function",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Xiao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Appl Intell",
+            "volume": "50",
+            "issn": "",
+            "pages": "3266--3275",
+            "other_ids": {}
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Entropy and specificity in a mathematical theory of evidence",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Yager",
+                    "suffix": ""
+                }
+            ],
+            "year": 1983,
+            "venue": "Int J Gen Syst",
+            "volume": "9",
+            "issn": "",
+            "pages": "249--260",
+            "other_ids": {}
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "On the specificity of a possibility distribution",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Yager",
+                    "suffix": ""
+                }
+            ],
+            "year": 1992,
+            "venue": "Fuzzy Sets Syst",
+            "volume": "50",
+            "issn": "3",
+            "pages": "279--292",
+            "other_ids": {}
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "Measures of entropy and fuzziness related to aggregation operators",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Yager",
+                    "suffix": ""
+                }
+            ],
+            "year": 1995,
+            "venue": "Inf Sci",
+            "volume": "82",
+            "issn": "",
+            "pages": "147--166",
+            "other_ids": {}
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "Interval valued entropies for Dempster Shafer structures",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Yager",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Knowl-Based Sys",
+            "volume": "161",
+            "issn": "",
+            "pages": "390--397",
+            "other_ids": {}
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "An intelligent quality based approach to fusing multi-source probabilistic information",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Yager",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Petry",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Inf Fusion",
+            "volume": "31",
+            "issn": "",
+            "pages": "127--136",
+            "other_ids": {}
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "A survey on rough set theory and its applications",
+            "authors": [
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Xie",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "CAAI Trans Intell Technol",
+            "volume": "1",
+            "issn": "4",
+            "pages": "323--333",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Dempster-Shafer interval structure",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "Sp B = .7\u22154 = 0.175; bp 2 = .3; | | I 2 | | = 6;Sp B = .3\u22156 = 0.05 bp 1 = .6; | | I 1 | | = 5;Sp B = .6\u22155 = 0.12; bp 2 = .4; | | I 2 | | = 5;Sp B = .4\u22155 = 0.COVID contact tracing distance example",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "1 \u2212 .75\u22156 = 0.042 Sp1 = .15 + .067 = .2167; Sp2 = 0.1125 + 0.0125 = .125; Spagg = 0.1875 + .042 = .2295 Sp1 = .25 + .0167 = .24167",
+            "latex": null,
+            "type": "figure"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "Petry would like to thank the Naval Research Laboratory's Base Program for sponsoring this research.Author contributions FP-developed basic interval approach and wrote paper. RY-contributed to use of specificity and information measures in paper.Funding Petry would like to thank the Naval Research Laboratory's Base Program for sponsoring this research.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Acknowledgements"
+        },
+        {
+            "text": "The author(s) declare no competing interests.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conflict of interest"
+        }
+    ]
+}

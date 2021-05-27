@@ -1,0 +1,2266 @@
+{
+    "paper_id": "873c608156964a23d22ec6d327a367c96822798b",
+    "metadata": {
+        "title": "Mortality trends among hospitalised COVID-19 patients in Sweden: A nationwide observational cohort study-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/)",
+        "authors": [
+            {
+                "first": "Kristoffer",
+                "middle": [],
+                "last": "Stra Lin",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Karolinska University Hospital",
+                    "location": {
+                        "settlement": "Stockholm",
+                        "country": "Sweden"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Erik",
+                "middle": [],
+                "last": "Wahlstr",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "National Board of Health and Welfare",
+                    "location": {
+                        "country": "Sweden"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Sten",
+                "middle": [],
+                "last": "Walther",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "V\u20ac armland County Council",
+                    "location": {
+                        "settlement": "Karlstad",
+                        "country": "Sweden"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Anna",
+                "middle": [
+                    "M"
+                ],
+                "last": "Bennet-Bark",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "National Board of Health and Welfare",
+                    "location": {
+                        "country": "Sweden"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Mona",
+                "middle": [],
+                "last": "Heurgren",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "National Board of Health and Welfare",
+                    "location": {
+                        "country": "Sweden"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Thomas",
+                "middle": [],
+                "last": "Lind En D",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "National Board of Health and Welfare",
+                    "location": {
+                        "country": "Sweden"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Johanna",
+                "middle": [],
+                "last": "Holm",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "National Board of Health and Welfare",
+                    "location": {
+                        "country": "Sweden"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Ha",
+                "middle": [],
+                "last": "Kan Hanberger",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Link\u20ac oping University",
+                    "location": {
+                        "addrLine": "SE-581 83 Link\u20ac oping",
+                        "country": "Sweden"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "with SARS-CoV-2 RNA positivity 14 days before to 5 days after admission and a discharge code for COVID-19 were included. Outcome was 60-day all-cause mortality. Patients were categorised according to month of hospital admission. Poisson regression was used to estimate the relative risk of death by month of admission, adjusting for, age, sex, comorbidities, care dependency, country of birth, healthcare region, and Simplified Acute Physiology, version 3 (patients in intensive care units; ICU). Findings: A total of 17,140 patients were included, of which 2943 died within 60 days of admission. The overall 60-day mortality was thus 17\u00a22% (95% CI, 16\u00a26%-17\u00a27%), and it decreased from 24\u00a27% (95% CI, 23\u00a20%-26\u00a25%) in March to 10\u00a24% (95% CI, 8\u00a29%-12\u00a21%) post-wave (July-September). Adjusted relative risk (RR) of death was 0\u00a246 (95% CI, 0\u00a239\u00c00\u00a254) post-wave, using March as reference. Corresponding RR for patients not admitted to ICU and those admitted to ICU were 0\u00a249 (95% CI, 0\u00a242\u00c00\u00a259) and 0\u00a249 (95% CI, 0\u00a233\u00c00\u00a272), respectively. The proportion of patients admitted to ICU decreased from 19\u00a24% (95% CI, 17\u00a29%-21\u00a21%) in the March cohort to 8\u00a29% (95% CI, 7\u00a25%-10\u00a26%) post-wave. Interpretation: There was a gradual decline in mortality during the spring of 2020 in Swedish hospitalised COVID-19 patients, independent of baseline patient characteristics. Future research is needed to explain the reasons for this decline. The changing COVID-19 mortality should be taken into account when management and results of studies from the first pandemic wave are evaluated.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "The Coronavirus Disease 2019 (COVID-19) pandemic has put enormous pressure on the healthcare system in general and on hospitals in particular, despite extensive interventions to reduce spread of the coronavirus SARS-CoV-2 [1] . Patients admitted for COVID- 19 have been reported to have mortality fractions of 20% overall [2] [3] [4] [5] and of >34% among patients admitted to an intensive care unit (ICU) [2, [6] [7] [8] . The proportion of patients requiring ICU admission is reported to be 17\u00c032% [2, [9] [10] [11] .",
+            "cite_spans": [
+                {
+                    "start": 222,
+                    "end": 225,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 257,
+                    "end": 259,
+                    "text": "19",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 322,
+                    "end": 325,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 326,
+                    "end": 329,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 330,
+                    "end": 333,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 334,
+                    "end": 337,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 406,
+                    "end": 409,
+                    "text": "[2,",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 410,
+                    "end": 413,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 414,
+                    "end": 417,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 418,
+                    "end": 421,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 500,
+                    "end": 503,
+                    "text": "[2,",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 504,
+                    "end": 507,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 508,
+                    "end": 512,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 513,
+                    "end": 517,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Most studies on COVID-19 mortality have included patients admitted between February and April 2020, i.e. early in the COVID-19 pandemic [1] . Since the outbreak of the pandemic, there has been a gradual and substantial increase in our understanding of COVID-19. This may have contributed to the improved survival that has been noted among ICU-treated COVID-19 patients. In an ICU study of COVID-19 patients in England, Wales and Northern Ireland by Doidge et al. [8] , a decline in 28-day mortality was noted from 43\u00a25% before the peak of the first pandemic wave to 34\u00a23% after the peak. A metaanalysis of Armstrong et al. [12] showed lower ICU mortalities in studies published April-May than in those published January-March. However, a large proportion of hospitalised COVID-19 patients are never admitted to ICU, and to our knowledge it has not been clarified if mortality has changed among non-ICU treated hospitalised patients. Karagiannidis et al. [5] reported no considerable change in mortality over time in a large German cohort of unselected hospitalised COVID-19 patients.",
+            "cite_spans": [
+                {
+                    "start": 136,
+                    "end": 139,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 463,
+                    "end": 466,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 623,
+                    "end": 627,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 954,
+                    "end": 957,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The present Swedish study was undertaken to examine whether mortality has changed with time in a nationwide cohort of hospitalised COVID-19 patients. The specific aim was to evaluate nationwide 60-day mortality separately for non-ICU treated and ICU treated patients, during the first 7 months of the pandemic, using data compiled by the Swedish National Board of Health and Welfare (NBHW).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Nationwide observational cohort study on SARS-CoV-2-positive individuals treated for COVID-19 in Swedish hospitals.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Study design and setting"
+        },
+        {
+            "text": "The study population was derived from cross-linked national population-based registers using the unique personal identity number assigned to each Swedish resident at birth or on immigration to Sweden [13] .",
+            "cite_spans": [
+                {
+                    "start": 200,
+                    "end": 204,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Participants"
+        },
+        {
+            "text": "From the National Patient Register, held by the NBHW, all patients admitted to hospitals in Sweden between March 1 and September 30, 2020 were identified, see flowchart in Fig. 1 . Cross-linking with the Swedish reporting system for notifiable infectious diseases (SmiNet) [14] provided data on SARS-CoV-2 PCR test results. Hospitalised patients with a PCR test result positive for SARS-CoV-2 RNA 14 days before to 5 days after admission were then identified. Finally, those with a discharge code of COVID-19, i.e. U07.1 according to the 10th International Statistical Classification of Diseases (ICD-10), (n = 17,140) constituted the study population of the present study.",
+            "cite_spans": [
+                {
+                    "start": 273,
+                    "end": 277,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 172,
+                    "end": 178,
+                    "text": "Fig. 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Participants"
+        },
+        {
+            "text": "Study outcome was 60-day mortality, defined as the proportion of patients that died (from any cause) within 60 days of admission date. Sixty days was considered to be a reasonable follow-up time since very few patients remain in hospital for longer periods, but patients in ICU often remain hospitalised beyond 30 days [5] . Date of death was obtained from the Swedish Cause of Death Register [15] (held by NBHW). Since the beginning of the COVID-19 pandemic, the register has been updated daily with all dates of death, as reported to the Swedish Tax Agency (mandatory reporting by law), resulting in no loss to follow-up.",
+            "cite_spans": [
+                {
+                    "start": 319,
+                    "end": 322,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 393,
+                    "end": 397,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Outcome"
+        },
+        {
+            "text": "Our main exposure of interest was time period of hospital admission. To this end, patients were categorised according to month of admission, either 'March', 'April', 'May', 'June', or 'Post-wave'. Due to the low number of patients admitted during the summer/autumn post-wave, patients admitted from July through September were pooled into one category denoted 'post-wave'. This categorisation enables analysis by calendar time and captures changes in the Swedish distribution of new admission for COVID-19 during the study period, i.e. rapid increase in admissions in March, relatively stable high admission rate during the peak of the first wave in April, declining but moderately high admission rate in May, lower and still decreasing admissions in June and a stable, low admission rate during the months post-wave ( Fig. 2 upper panel) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 819,
+                    "end": 838,
+                    "text": "Fig. 2 upper panel)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Covariate data"
+        },
+        {
+            "text": "Discharge diagnoses were identified through the National Patient Register, which contains information on all reported cases of inpatient care and/or visits to a physician at a specialised outpatient clinic in Sweden. The validity of the register is generally high with positive predictive values of 85% to 95% for most diagnoses in validation studies [16] .",
+            "cite_spans": [
+                {
+                    "start": 351,
+                    "end": 355,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Covariate data"
+        },
+        {
+            "text": "Resarch in context thelancet regional health europe_210,121",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Covariate data"
+        },
+        {
+            "text": "Evidence before this study COVID-19 was initially reported to have mortality proportions of >20% overall among hospitalised patients and of >40% among patients admitted to intensive care units (ICU). A few studies indicate that mortality among COVID-19 patients treated in ICU has decreased over time.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Covariate data"
+        },
+        {
+            "text": "In the present study comprising all hospital admissions in Sweden from March through September 2020 we show a distinct decline in mortality for both ICU treated and non-ICU treated hospitalised patients with COVID-19. In the present study comprising all hospital admissions for COVID-19 in Sweden from March through September 2020 we show a distinct decline in mortality for both ICU treated and non-ICU treated patients. A total of 17,140 patients were included, of which 2943 died within 60 days of admission. The overall 60-day mortality was thus 17\u00a22% (95% CI, 16\u00a26%\u00c017\u00a27%), and it decreased from 24\u00a27% (95% CI, 23\u00a20%\u00c026\u00a25%) in March to 10\u00a24% (95% CI, 8\u00a29%\u00c012\u00a21%) post-wave (July-September). Adjusted relative risk (RR) of death was 0\u00a246 (95% CI, 0\u00a239\u00c00\u00a254) post-wave, using March as reference. Corresponding RR for patients not admitted to ICU and those admitted to ICU were 0\u00a249 (95% CI, 0\u00a242\u00c00\u00a259) and 0\u00a249 (95% CI, 0\u00a233\u00c00\u00a272), respectively. The proportion of patients admitted to ICU decreased from 19\u00a24% (95% CI, 17\u00a29%\u00c021\u00a21%) in the March cohort to 8\u00a29% (95% CI, 7\u00a25%\u00c010\u00a26%) post-wave (July-September).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Added value"
+        },
+        {
+            "text": "The findings of this study shed new light on the mortality of COVID-19 and enable more appropriate evaluation of its management. For instance, in studies using mortality as endpoint, the timing of inclusion may play a crucial role regarding outcome. The results of a before-and-after study on a specific intervention should thus be interpreted with caution. The impact of an intervention during a high-mortality period does not necessarily apply to the same intervention during a period with significantly lower mortality. This is important when planning the healthcare resources required to meet the next phase of the pandemic.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Implications of all the available evidence"
+        },
+        {
+            "text": "Data on drugs dispensed were obtained from the Swedish Prescribed Drug Register (held by NBHW), which contains all prescribed and pharmacy-dispensed medicines in the community classified according to the Anatomic Therapeutic Chemical (ATC) Classification System. The register has almost complete coverage (data missing <1%) [17] .",
+            "cite_spans": [
+                {
+                    "start": 324,
+                    "end": 328,
+                    "text": "[17]",
+                    "ref_id": "BIBREF16"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Implications of all the available evidence"
+        },
+        {
+            "text": "Comorbidities were defined using discharge diagnoses for the last five years and/or prescribed drugs dispensed during the year preceding index admission. A 30-day wash-out window prior to index admission date was applied. Codes defining each comorbidity are provided in Supplementary Table S1 . In addition, Charlson Comorbidity Index (CCI) was calculated as described in Supplementary  Table S2 .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 270,
+                    "end": 292,
+                    "text": "Supplementary Table S1",
+                    "ref_id": "TABREF1"
+                },
+                {
+                    "start": 372,
+                    "end": 395,
+                    "text": "Supplementary  Table S2",
+                    "ref_id": "TABREF2"
+                }
+            ],
+            "section": "Implications of all the available evidence"
+        },
+        {
+            "text": "Information on care dependency (nursing home resident or homecare) prior to admission was obtained from the Care and Social Services for the Elderly and for Persons with Impairments Register (held by NBHW). Date and country of birth were obtained from the National Patient Register. ICU episodes were identified by linkage to the Swedish Intensive Care Registry, a national quality register for intensive care in Sweden including 83 of 84 ICUs in the country [18] .",
+            "cite_spans": [
+                {
+                    "start": 459,
+                    "end": 463,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Implications of all the available evidence"
+        },
+        {
+            "text": "Since the outbreak of the pandemic the register has had complete coverage of all ICU treated COVID-19 patients in Sweden. ICU episodes were included irrespective of length of stay in ICU for patients needing either observation or organ support. From this register we also obtained information on Simplified Acute Physiology Score, version 3 (SAPS3) [19] , oxygenation index (PaO 2 /FiO 2 ), medication, and procedures during ICU care. For SAPS3 and PaO 2 /FiO 2 , information from the first admission only was used. If a patient had several ICU admissions, medication and procedure information was retrieved for all episodes of ICU care for the study patient.",
+            "cite_spans": [
+                {
+                    "start": 349,
+                    "end": 353,
+                    "text": "[19]",
+                    "ref_id": "BIBREF18"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Implications of all the available evidence"
+        },
+        {
+            "text": "Duration of hospital stay was defined as number of days between index admission date and last discharge date in cases with sequential admissions in the National Patient Register. This was done in order to account for patient transfer within or between hospitals, resulting in multiple entries in the register. A sequential admission was defined as a readmission occurring within 1 day of the previous one, starting with the index admission. Duration of hospital stay in days was compared using the outcome discharge status (alive/deceased) rather than 60-day mortality, in order to account for hospital stays exceeding 60 days.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Implications of all the available evidence"
+        },
+        {
+            "text": "Baseline patient characteristics age, sex, comorbidity, care dependency, country of birth, and healthcare region were tabulated as numbers and percentages for the whole cohort as well as by month of admission, ICU treatment, and survival outcome.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Descriptive analysis of study cohort and setting"
+        },
+        {
+            "text": "To illustrate the time dynamics of hospital burden in Sweden during the study period, incident number of COVID-19 patients admitted to hospital each day was plotted by index admission date for the whole patient cohort (Fig. 2 upper panel) . Patients admitted to ICU were additionally plotted with the index ICU admission date. Daily point prevalence of COVID-19 patients residing in hospital care and ICU care each day was also plotted ( Fig. 2 lower panel) . Lines were smoothed using a seven-day rolling average, centered on the admission date.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 218,
+                    "end": 238,
+                    "text": "(Fig. 2 upper panel)",
+                    "ref_id": null
+                },
+                {
+                    "start": 438,
+                    "end": 457,
+                    "text": "Fig. 2 lower panel)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Descriptive analysis of study cohort and setting"
+        },
+        {
+            "text": "To provide context to our analysis, the number of COVID-19 admissions per 100,000 residents was calculated, using population figures for the Swedish population of December 31, 2019 (Statistics Sweden). Admission rate was calculated both nation-wide and per healthcare region, overall and per month of admission. [20] were estimated using the Kaplan-Meier estimator [21] , plotted by month of admission with all-cause mortality as event. End of follow-up was 60 days after index admission or death, whichever occurred first.",
+            "cite_spans": [
+                {
+                    "start": 312,
+                    "end": 316,
+                    "text": "[20]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 365,
+                    "end": 369,
+                    "text": "[21]",
+                    "ref_id": "BIBREF20"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Descriptive analysis of study cohort and setting"
+        },
+        {
+            "text": "The log-rank test was used to test for differences in survival between groups, with a two-sided alpha of 0\u00a205. Furthermore, crude 60-day mortality proportions were plotted by month of admission as well as by other covariates of interest; Age groups (<60, 60\u00c069, 70\u00c079, 80), sex, CCI categories, country of birth, care dependency level, and healthcare region. Confidence intervals (95% CI) were calculated for the proportions using the Wilson Score interval [22] and expressed as percentages.",
+            "cite_spans": [
+                {
+                    "start": 457,
+                    "end": 461,
+                    "text": "[22]",
+                    "ref_id": "BIBREF21"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Descriptive analysis of study cohort and setting"
+        },
+        {
+            "text": "To assess if any of our measured covariates influenced the association between mortality and calendar time of hospital admission, we performed multivariable analysis using modified Poisson regression models [23] . Relative risk (RR) with 95% CI was estimated for the outcome 60-day mortality, with month of admission as exposure of interest. We estimated the effect of month of admission adjusted for age (continuous, both a linear and quadratic term), sex (male/female), CCI (categorical, 0, 1\u00c02, 3\u00c04, 5+), care dependency (nursing home, homecare, neither), country of birth (Sweden/other), and healthcare region (North, Uppsala-\u20ac Orebro, Stockholm-Gotland, South-East, West, and South), all modelled as main effects. We additionally stratified the analysis according to ICU status, to see whether time trends held in both settings, and to enable further adjustments for the analysis of ICU treated patients where we had more detailed register information. For this purpose, patients were categorised according to admission into ICU during the hospital stay, defined as a binary variable of \"ever ICU-treated\" versus \"never ICU-treated\". In the model for the ICU-treated strata, the SAPS3 score (continuous) for the first ICU episode was added, to adjust for degree of illness upon ICU admission.",
+            "cite_spans": [
+                {
+                    "start": 207,
+                    "end": 211,
+                    "text": "[23]",
+                    "ref_id": "BIBREF22"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Multivariable analysis"
+        },
+        {
+            "text": "To test for statistical interaction between our main exposure and the remaining covariates, we additionally included an interaction term between month of admission and each covariate in separate models, i.e. an interaction term for age, sex, comorbidity categories, care dependency, country of birth, and healthcare region, respectively. For the purpose of evaluating interaction between age and month of admission, we estimated age as a categorical variable (<60, 60\u00c069, 70\u00c079, 80) for increased interpretability. In all regression models, missing data were handled by complete case analysis. Data were complete on all variables except for country of birth and CCI (5% missing) and SAPS3 (<1% missing). Sensitivity analyses were performed comparing adjusted RR when imputing missing country of birth to 'Sweden' or 'Outside of Sweden', and when imputing missing CCI to extreme values '0 0 or '5+'.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Multivariable analysis"
+        },
+        {
+            "text": "All data management and statistical analyses were performed using SAS Software SAS Enterprise guide v7.15, SAS Institute Inc., Cary, NC.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Multivariable analysis"
+        },
+        {
+            "text": "Ethical approval for the study was obtained from the Swedish Ethics Review Authority, Uppsala (Dnr 2020\u00c004,278). The study conforms to the Reporting of Observational Studies in Epidemiology (STROBE) statement [24] .",
+            "cite_spans": [
+                {
+                    "start": 209,
+                    "end": 213,
+                    "text": "[24]",
+                    "ref_id": "BIBREF23"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Ethics and reporting"
+        },
+        {
+            "text": "Most of the co-authors of this article are employees of the National Board of Health and Welfare, thus contributing to study design, data collection, data analysis, interpretation, writing of the report. However, no specific funding was designated for the analysis in question. The NBHW routinely performs epidemiological analysis as part of its mission.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Role of the funding source"
+        },
+        {
+            "text": "Altogether, 17,140 patients admitted for COVID-19 at Swedish hospitals March-September 2020 were studied, median age 64 years (interquartile range [IQR], 50 to 78 years), 57\u00a23% men and 42\u00a27% women. Fig. 2 shows the number of new hospital admissions and the total numbers of in-patients on each time point. The peak numbers of patients admitted and in hospital care occurred during April. The overall proportion of patients admitted to ICU was 13\u00a29% (95% CI, 13\u00a24% to 14\u00a24%). Patient characteristics, categorised according to month of admission, are shown in Table 1 . The proportion of men decreased from 60\u00a21% (95% CI, 58\u00a21% to 62\u00a21%) in March to 54\u00a27% (95% CI, 52\u00a21% to 57\u00a23%) post-wave. Age distribution changed over time with the number of patients < 40 years and 90 years increasing from March to post-wave. The median age was 66 years (IQR, 53\u00c078 years) in March and 61 years (IQR, 44\u00c077 years) post-wave. The proportion of patients with a CCI of zero increased from 58\u00a21% (95% CI, 56\u00a21% to 60\u00a21%) in March to 63\u00a20% (95% CI, 60\u00a24% to 65\u00a25%) post-wave. However, the proportion of patients living in nursing homes prior to admission increased from 3\u00a20% (95% CI, 2\u00a24% to 3\u00a28%) in March to 6\u00a26% (95% CI, 5\u00a27% to 7\u00a27%) in June, and it was 4\u00a29% (95% CI, 3\u00a29% to 6\u00a22%) post-wave. In March 42\u00a22% (95% CI, 40\u00a22% to 44\u00a22%) of patients were born outside Sweden compared to 34\u00a28% (95% CI 32\u00a23% to 37\u00a24%) post-wave.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 198,
+                    "end": 204,
+                    "text": "Fig. 2",
+                    "ref_id": null
+                },
+                {
+                    "start": 558,
+                    "end": 565,
+                    "text": "Table 1",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "Study population"
+        },
+        {
+            "text": "The duration of hospital stay is presented in Supplementary Table  S3 . The duration was clearly longer for patients admitted to ICU than for those not. There was no change in duration of hospital stay during March-May, but shorter durations were observed in June and onwards.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 46,
+                    "end": 69,
+                    "text": "Supplementary Table  S3",
+                    "ref_id": "TABREF7"
+                }
+            ],
+            "section": "Study population"
+        },
+        {
+            "text": "As 2943 patients died during the 60-day follow-up window after admission, the overall 60-day mortality proportion was 17\u00a22% (95% CI, 16\u00a26% to 17\u00a24%), it was 25\u00a23% (95% CI, 23\u00a26% to 27\u00a21%) among patients admitted to ICU and 15\u00a29% (95% CI, 15\u00a23% to 16\u00a25%) among patients not admitted to ICU. Table 2 shows patient characteristics of survivors and non-survivors at 60-day follow-up, stratified according to admission or no admission to ICU during hospital stay. Among patients with CCI of zero the 60-day mortality was 11\u00a25%, i.e. 9\u00a25% among non-ICUtreated and 22\u00a24% among ICU-treated patients.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 290,
+                    "end": 297,
+                    "text": "Table 2",
+                    "ref_id": "TABREF2"
+                }
+            ],
+            "section": "Overall mortality"
+        },
+        {
+            "text": "A multivariable analysis of RR of 60-day death is shown in Fig. 3 , in which sex, comorbidity, care dependency, country of birth, healthcare region, and month of admission are modeled as main effects. Established risk factors such as being male, nursing home resident and having a CCI of 5+ were all associated with increased mortality with RR of 1\u00a251 (95% CI, 1\u00a242 to 1\u00a261), 2\u00a221 (95% CI, 2\u00a202 to 2\u00a241), and 1\u00a258 (95% CI, 1\u00a238 to 1\u00a281), respectively. Additionally, after adjusting for baseline patient characteristics, all healthcare regions except South-East were associated with higher mortality than the reference Stockholm-Gotland (Fig. 3) . The single largest risk factor for death was however age, with a RR of 10\u00a27 (95% CI 9\u00a207 to 12\u00a270) for being 80 years of age relative to < 60 years (obtained when modeling age as categorical variable, adjusting for month of admission, sex, CCI, care dependency, country of birth, and healthcare region). Fig. 4 shows that the overall 60-day mortality decreased from 24\u00a27% (95% CI, 23\u00a20% to 26\u00a25%) in March to 10\u00a24% (95% CI, 8\u00a29% to 12\u00a21%) post-wave. Likewise, it decreased from 36\u00a21% (95% CI, 31\u00a28% to 40\u00a26%) to 21\u00a23% (95% CI, 14\u00a29% to 29\u00a24%) for patients admitted to ICU, and from 21\u00a29% (95% CI, 20\u00a21% to 23\u00a29%) to 9\u00a21% (95% CI, 7\u00a28% to 11\u00a21%) for patients not admitted to ICU.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 59,
+                    "end": 65,
+                    "text": "Fig. 3",
+                    "ref_id": null
+                },
+                {
+                    "start": 636,
+                    "end": 644,
+                    "text": "(Fig. 3)",
+                    "ref_id": null
+                },
+                {
+                    "start": 951,
+                    "end": 957,
+                    "text": "Fig. 4",
+                    "ref_id": null
+                }
+            ],
+            "section": "Overall mortality"
+        },
+        {
+            "text": "Kaplan-Meier analysis confirmed mortality differences according to month of admission, with a log-rank p-value <0\u00a2001 for both non-ICU and ICU treated patients ( Supplementary Fig. S1 ). The survival curves showed a higher initial mortality rate for the March cohort than for the other months of admission, most clearly so for those admitted to ICU. As noted in Fig. 3 , the decrease in mortality remained throughout the study period with an adjusted RR of 0\u00a279 (95% CI, 0\u00a272 to 0\u00a285) in April, 0\u00a263 (95% CI, 0\u00a257 to 0\u00a269) in May, and 0\u00a246 (95% CI 0\u00a239 to 0\u00a254) post-wave, with March as reference. Accordingly it decreased in patients not treated in ICU with RR 0\u00a249 (95% CI, 0\u00a242 to 0\u00a259) post-wave, and in patients treated in ICU with RR 0\u00a249 (95% CI, 0\u00a233 to 0\u00a272) post-wave, with March as reference (Fig. 5, Supplementary Fig. S2-S3) . Sensitivity analysis showed no impact on estimates for admission month when imputing missing data on country of birth as 'Sweden' or 'Outside Sweden' or imputing missing CCI as either of the two extreme values. Fig. 6 shows the crude 60-day mortality proportions over time by age categories, sex, CCI, care dependency, and country of birth. As noted, mortality decreased over the study period for all these levels of covariates, although the magnitude of change varied. However, when looking at different healthcare regions, greater variance in crude mortality over time was noted (Fig. 7) . Fig. 8 shows the adjusted RR for 60-day death of month of admission stratified by each covariate of interest, from the models including both main effect and interaction term. There was a significant interaction between month of admission and age, country of birth, care dependency levels, and healthcare region (p Joint test of interaction term all <0\u00a201). No interaction was found for sex or CCI levels. The magnitude of mortality change over time decreased with increasing age, consistently across age categories (Fig. 8) . In contrast, mortality by healthcare region showed strong regional heterogeneity; decline in 60-day mortality was most pronounced in the healthcare regions with the highest initial mortality, i.e. Stockholm-Gotland and Uppsala-\u20ac Orebro (Figs. 7 and 8). In contrast, there was no decline in 60-day mortality over time for the North region, and a very small decline if any, for South-East, West, and South (Fig. 8) . The 60-day mortality ranged from 15\u00a20% to 28\u00a20% in March, and between 10\u00a23% to 19\u00a21% in June across healthcare regions, and it further declined or stabilised post-wave (Fig. 7) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 162,
+                    "end": 183,
+                    "text": "Supplementary Fig. S1",
+                    "ref_id": null
+                },
+                {
+                    "start": 362,
+                    "end": 368,
+                    "text": "Fig. 3",
+                    "ref_id": null
+                },
+                {
+                    "start": 803,
+                    "end": 837,
+                    "text": "(Fig. 5, Supplementary Fig. S2-S3)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1051,
+                    "end": 1057,
+                    "text": "Fig. 6",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 1421,
+                    "end": 1429,
+                    "text": "(Fig. 7)",
+                    "ref_id": "FIGREF4"
+                },
+                {
+                    "start": 1432,
+                    "end": 1438,
+                    "text": "Fig. 8",
+                    "ref_id": null
+                },
+                {
+                    "start": 1947,
+                    "end": 1955,
+                    "text": "(Fig. 8)",
+                    "ref_id": null
+                },
+                {
+                    "start": 2362,
+                    "end": 2370,
+                    "text": "(Fig. 8)",
+                    "ref_id": null
+                },
+                {
+                    "start": 2541,
+                    "end": 2549,
+                    "text": "(Fig. 7)",
+                    "ref_id": "FIGREF4"
+                }
+            ],
+            "section": "Changes in mortality over time"
+        },
+        {
+            "text": "The highest number of COVID-19 admissions per 100,000 residents was seen for Stockholm-Gotland region, followed by Uppsala-\u20ac Orebro and South-East regions (Supplementary Table S4 ). Stockholm-Gotland showed the highest admission rate per population consistently for every month, although the differences between regions diminished over time.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 155,
+                    "end": 178,
+                    "text": "(Supplementary Table S4",
+                    "ref_id": null
+                }
+            ],
+            "section": "Changes in mortality over time"
+        },
+        {
+            "text": "As shown in Fig. 9 , the proportion of patients admitted to ICU decreased from 19\u00a24% (95% CI, 17\u00a29% to 21\u00a21%) in the March cohort to 8\u00a29% (95% CI, 7\u00a25% to 10\u00a25%) during post-wave, and the overall proportion receiving invasive mechanical ventilation decreased from 16\u00a28% (95% CI, 15\u00a24% to 18\u00a24%) to 4\u00a24% (95% CI, 3\u00a24% to 5\u00a26%). Table 3 presents characteristics over time of patients admitted to ICU. The proportion of ICU patients receiving invasive mechanical ventilation decreased from 86\u00a25% to 49\u00a22% and the proportion receiving dialysis decreased from 22\u00a28% to 6\u00a26%, while the proportion of patients treated in the prone position increased during April and May com- unchanged during the study period. There was a gradual increase in corticosteroid use from 6\u00a21% in March to 59\u00a28% post-wave. Remdesivir was given to < 2% in March-June, but was given to 31\u00a22% post-wave.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 12,
+                    "end": 18,
+                    "text": "Fig. 9",
+                    "ref_id": "FIGREF5"
+                },
+                {
+                    "start": 327,
+                    "end": 334,
+                    "text": "Table 3",
+                    "ref_id": "TABREF7"
+                }
+            ],
+            "section": "Change in characteristics over time among patients admitted to ICU"
+        },
+        {
+            "text": "The present nationwide study on patients hospitalised for COVID-19 in Sweden showed a distinct gradual decline in 60-day mortality during the first wave, i.e. March to June 2020, both for non-ICU treated and ICU treated patients, and it stabilised during July-September, i.e. the months post-wave. The results remained after adjustment for age, sex, comorbidities, level of care dependency, country of birth, healthcare region, and SAPS3 (ICU treated patients).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "The mortalities of 17\u00a22% among hospitalised COVID-19 patients overall and 25\u00a23% among ICU treated COVID-19 patients were lower compared to reported mortalities from other countries, i.e. 20% [2] [3] [4] [5] and > 34% [2,6-8], respectively. Reasons for differences in outcome are difficult to analyse since studies use different outcome definitions, provide different patient characteristics, and often include patients that are still treated in hospital. Importantly, the time period of inclusion is probably crucial for the overall mortality and for differences between studies, since the mortality has clearly been changing over time [25] . In the present study, the overall 60-day mortality declined from 24\u00a27% in March to 10\u00a24% post-wave, it declined correspondingly from 36\u00a21% to 21\u00a23% among ICU treated patients, and from 21\u00a29% to 9\u00a21% among non-ICU treated patients (Fig. 4) . In addition, adjusted 60-day mortality decreased significantly (Figs. 3 and 5) . Accordingly, both crude and adjusted 60-day mortality declined over time by age categories, sex, CCI, care dependency, and country of birth (Figs. 6 and 8) , However, the mortality dynamics over time varied between the Swedish healthcare regions (Figs. 7 and 8) . The reasons for these variations are not known, but a number of factors may have contributed to those and to the overall decline in mortality. First, improvements of management and care have probably been of great importance for the declining mortality. For instance, the present study shows that even though acute severity of illness (SAPS3 and PaO 2 /FiO 2 ) among ICU-treated patients remained unchanged over time, the proportion of patients managed in the prone position increased from March to May, and the proportion receiving invasive mechanical ventilation decreased considerably (Table 3) . Thus, respiratory care improved in ICU. In addition, the proportion receiving renal dialysis decreased, most likely due to improved circulation support. According to our experience, the respiratory care was significantly improved in hospital wards as well.",
+            "cite_spans": [
+                {
+                    "start": 191,
+                    "end": 194,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 195,
+                    "end": 198,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 199,
+                    "end": 202,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 203,
+                    "end": 206,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 636,
+                    "end": 640,
+                    "text": "[25]",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 954,
+                    "end": 962,
+                    "text": "3 and 5)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 873,
+                    "end": 881,
+                    "text": "(Fig. 4)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1105,
+                    "end": 1120,
+                    "text": "(Figs. 6 and 8)",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 1211,
+                    "end": 1226,
+                    "text": "(Figs. 7 and 8)",
+                    "ref_id": "FIGREF4"
+                },
+                {
+                    "start": 1817,
+                    "end": 1826,
+                    "text": "(Table 3)",
+                    "ref_id": "TABREF7"
+                }
+            ],
+            "section": "Discussion"
+        },
+        {
+            "text": "During the study period the drug therapy of patients with COVID-19 changed continuously. In March 2020, many COVID-19 patients in Sweden received off-label treatment with chloroquine phosphate/ hydroxychloroquine [26] , until this use was not recommended by the European Medicines Agency on April 1. However, this use may not have affected outcome, since a randomised control trial (RCT) by Horby et al. [27] found that patients treated with hydroxychloroquine had similar mortality as those receiving standard of care treatment. In March and early April, publications showed that anticoagulant therapy with low molecular weight heparin (LMWH)",
+            "cite_spans": [
+                {
+                    "start": 213,
+                    "end": 217,
+                    "text": "[26]",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 404,
+                    "end": 408,
+                    "text": "[27]",
+                    "ref_id": "BIBREF26"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "was associated with a better prognosis [28] and that thromboembolic events occurred despite standard doses thromboprophylaxis [29] . Accordingly, high-dose LMWH treatment became standard in Swedish ICUs in April. We are still awaiting the results of ongoing RCT of LMWH at different doses (NCT04345848; NCT04344756) [ ",
+            "cite_spans": [
+                {
+                    "start": 39,
+                    "end": 43,
+                    "text": "[28]",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 126,
+                    "end": 130,
+                    "text": "[29]",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 316,
+                    "end": 317,
+                    "text": "[",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Relative risk estimates and 95% confidence intervals ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Relative risk estimates and 95% confidence intervals oxygen therapy after June 16, when the RECOVERY RCT showed survival benefits from corticosteroids [31] . Prior to that, corticosteroids were predominantly used on the ICU, and their use increased over the study period (Table 3) . However, the infrequent use of corticosteroid treatment in March-May suggests that corticosteroids were unlikely to be a major cause for the decline in mortality among ICU patients. Meanwhile, the decreased mortality post-wave compared to that of May-June among non-ICU treated patients (Figs. 3 and 5) could perhaps to some extent be explained by corticosteroids, which was then used as standard of care treatment in Sweden. Remdesivir became a treatment option in Sweden from the end of June 2020. As it was rarely used prior to that time point (Table 3) , Remdesivir use was most likely not a major cause of the declining COVID-19 mortality between March and June. However, it cannot be excluded that Remdesivir use could have influenced survival during the post-wave months (July-September). Second, the high load of new admissions and of patients in hospital care for COVID-19 in March and April (Fig. 2) may have contributed to the high initial mortality. This notion is supported by the result from healthcare region Stockholm-Gotland, which had the highest number of new COVID-19 admissions per resident in March-April (Supplementary Table S4 ) and also the most prominent decline in mortality. However, the message is complex, as Stockholm-Gotland region had the lowest mortality in June despite still having the highest rate of COVID-19 admissions per population (Supplementary  Table S4 ), and its adjusted overall RR of 60-day death was lower than that of four other regions (Fig. 3) .",
+            "cite_spans": [
+                {
+                    "start": 151,
+                    "end": 155,
+                    "text": "[31]",
+                    "ref_id": "BIBREF30"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 271,
+                    "end": 280,
+                    "text": "(Table 3)",
+                    "ref_id": "TABREF7"
+                },
+                {
+                    "start": 830,
+                    "end": 839,
+                    "text": "(Table 3)",
+                    "ref_id": "TABREF7"
+                },
+                {
+                    "start": 1184,
+                    "end": 1192,
+                    "text": "(Fig. 2)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1410,
+                    "end": 1433,
+                    "text": "(Supplementary Table S4",
+                    "ref_id": null
+                },
+                {
+                    "start": 1656,
+                    "end": 1680,
+                    "text": "(Supplementary  Table S4",
+                    "ref_id": null
+                },
+                {
+                    "start": 1770,
+                    "end": 1778,
+                    "text": "(Fig. 3)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Discussion"
+        },
+        {
+            "text": "Third, the decline in mortality may have been due to a change in the selection of COVID-19 patients for hospital care. Demographic factors changed over time (Table 1) , the median age decreased and the proportion of patients without comorbidity (CCI zero) increased, although the proportion of patients living in nursing homes prior to admission increased. Importantly, the proportion of hospitalised COVID-19 patients that were admitted to ICU and receiving invasive mechanical ventilation decreased substantially over time (Fig. 9 ) This may indicate that the overall hospitalised COVID-19 population was gradually less severely ill during the study period. This explanation is supported by an Italian study of COVID-19 patients diagnosed in the emergency department between March and May, showing that the SARS-CoV-2 viral load in the upper respiratory tract gradually decreased and the proportion of patients requiring ICU care decreased over time [32] .",
+            "cite_spans": [
+                {
+                    "start": 952,
+                    "end": 956,
+                    "text": "[32]",
+                    "ref_id": "BIBREF31"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 157,
+                    "end": 166,
+                    "text": "(Table 1)",
+                    "ref_id": "TABREF1"
+                },
+                {
+                    "start": 525,
+                    "end": 532,
+                    "text": "(Fig. 9",
+                    "ref_id": "FIGREF5"
+                }
+            ],
+            "section": "Discussion"
+        },
+        {
+            "text": "Fourth, the decline in mortality could perhaps be due to changes in virulence of the SARS-CoV-2 virus. Young et al. [33] showed that a major deletion in the SARS-CoV-2 genome was associated with milder infection [33] . Among 521 virus strains in Sweden with complete genome sequences, 19 different SARS-CoV-2 strain sequences were identified, 11 of which were identified in strains collected in March only [34] . It will be important to investigate if the most prevalent SARS-CoV-2 strains from May had an inherent reduced virulence or had undergone genetic changes that reduced virulence.",
+            "cite_spans": [
+                {
+                    "start": 116,
+                    "end": 120,
+                    "text": "[33]",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 212,
+                    "end": 216,
+                    "text": "[33]",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 406,
+                    "end": 410,
+                    "text": "[34]",
+                    "ref_id": "BIBREF33"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "The results of the present study, showing declining mortality over time in both non-ICU treated and ICU treated patients, combined with some previous studies showing declining mortality among ICU treated patients [8, 12] , shed new light on COVID-19 mortality and enables a more appropriate evaluation of the management of the pandemic. For instance, in studies using mortality as endpoint, the timing of inclusion may play a crucial role regarding outcome. The results of before-and-after studies on specific interventions should thus be interpreted with caution. The impact of an intervention during a high-mortality period does not necessarily apply to the same intervention during a period with significantly lower mortality. This is important when planning for allocation of healthcare resources to meet the next phases of the pandemic.",
+            "cite_spans": [
+                {
+                    "start": 213,
+                    "end": 216,
+                    "text": "[8,",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 217,
+                    "end": 220,
+                    "text": "12]",
+                    "ref_id": "BIBREF11"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "The present study has a number of strengths. First, it was a nationwide study including all hospitals in Sweden, with both non-ICU treated and ICU treated COVID-19 patients, providing minimised risk of selection bias. Second, it was based on national registers with standardised reporting on a national level, minimising bias of ascertainment. The unique national personal identification number of all Swedish residents enabled cross-linkage of registers at the individual level. Third, the use of 60-day mortality provided a robust outcome measure with a follow-up long enough to enable hospital discharge or death of most patients. Forth, the present study replicated previous findings of increased risk of mortality for older ages, men, and people born outside of Sweden [35] .",
+            "cite_spans": [
+                {
+                    "start": 774,
+                    "end": 778,
+                    "text": "[35]",
+                    "ref_id": "BIBREF34"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "The study also has limitations. First, clinical data regarding organ function was not available for non-ICU treated patients. Thus, it was not possible to determine degree of respiratory failure within the whole cohort. Second, data on do-not-resuscitate orders were not available and thus, it is not known if criteria for admission to ICU changed with time. However, SAPS3 scores on ICU admission were constant throughout the study period, indicating that the criteria for ICU admission had probably not changed considerably. Third, we did not have access to data on drug therapy on wards during hospital stay, and thus we could not appropriately assess the impact of different drug therapy for outcome. Forth, the study lacked information on hospital bed occupancy and caregiver-to-patient ratio, which could have enabled further investigation of reasons for temporal as well as regional variation in mortality [36] . Fifth, the National Patient Register lacks information from primary care, hence the CCI may be underestimated. However, replacing CCI with the individual comorbidities measured from both the National Patient Register and the Prescribed Drug Register (thus catching primary care) in the models did not attenuate RR estimates further (not shown).",
+            "cite_spans": [
+                {
+                    "start": 913,
+                    "end": 917,
+                    "text": "[36]",
+                    "ref_id": "BIBREF35"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "In conclusion, there was a distinct gradual decline in mortality for both non-ICU treated and ICU treated hospitalised COVID-19 patients during the first pandemic wave. Future studies are needed to address and explain this decline. The changing COVID-19 mortality should be considered when the management and results of studies from the first pandemic wave are evaluated.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Pathophysiology, transmission, diagnosis, and treatment of coronavirus disease 2019 (COVID-19): a review",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Wiersinga",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Rhodes",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Cheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Peacock",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Prescott",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "JAMA",
+            "volume": "324",
+            "issn": "",
+            "pages": "782--93",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Characteristics and predictors of death among 4,035 consecutively hospitalized patients with COVID-19 in Spain",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Berenguer",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Ryan",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Rodr\u00edguez-Ba\u00f1o",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Clin Microbiol Infect",
+            "volume": "26",
+            "issn": "",
+            "pages": "1525--1561",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Patient characteristics and outcomes of 11,721 patients with COVID19 hospitalized across the United States",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Fried",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Crawford",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Mospan",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Clin",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Characteristics and predictors of hospitalization and death in the first 11 122 cases with a positive RT-PCR test for SARS-CoV-2 in Denmark: a nationwide cohort",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Reilev",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Kristensen",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Pottega Rd",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Int J Epidemiol",
+            "volume": "49",
+            "issn": "",
+            "pages": "1468--81",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Case characteristics, resource use, and outcomes of 10 021 patients with COVID-19 admitted to 920 German hospitals: an observational study",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Karagiannidis",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Mostert",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Hentschker",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet Respir Med",
+            "volume": "8",
+            "issn": "",
+            "pages": "853--62",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Outcomes from intensive care in patients with COVID-19: a systematic review and meta-analysis of observational studies",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Armstrong",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Kane",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Cook",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Anaesthesia",
+            "volume": "75",
+            "issn": "",
+            "pages": "1340--1349",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Clinical characteristics and outcomes of critically ill patients with novel coronavirus infectious disease (COVID-19) in China: a retrospective multicenter study",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Xie",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Intensive Care Med",
+            "volume": "46",
+            "issn": "",
+            "pages": "1863--72",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Trends in intensive care for patients with COVID-19 in England, Wales and Northern Ireland",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Doidge",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Gould",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Ferrando-Vivas",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Am J Respir Crit Care Med",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Features of 20 133 UK patients in hospital with covid-19 using the ISARIC WHO clinical characterisation protocol: prospective observational cohort study",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Docherty",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Harrison",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Green",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "BMJ",
+            "volume": "369",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Epidemiology, clinical course, and outcomes of critically ill adults with COVID-19 in New York City: a prospective cohort study",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Cummings",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Baldwin",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Abrams",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet",
+            "volume": "395",
+            "issn": "",
+            "pages": "1763--70",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Risk factors for intensive care unit admission and in-hospital mortality among hospitalized adults identified through the U.S. coronavirus disease 2019 (COVID-19)-associated hospitalization surveillance network (COVID-NET)",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Kim",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Garg",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "O&apos;halloran",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Clin",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Decreasing mortality rates in ICU during the COVID-19 pandemic",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Armstrong",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Kane",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Cook",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Anaesthesia",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "The Swedish personal identity number: possibilities and pitfalls in healthcare and medical research",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Ludvigsson",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Otterblad-Olausson",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "U"
+                    ],
+                    "last": "Pettersson",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ekbom",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Eur J Epidemiol",
+            "volume": "24",
+            "issn": "",
+            "pages": "659--67",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "SmiNet-2: description of an internet-based surveillance system for communicable diseases in Sweden",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Rolfhamre",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Jansson",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Arneborn",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Ekdahl",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Euro Surveill",
+            "volume": "11",
+            "issn": "",
+            "pages": "103--110",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "The Swedish cause of death register",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Brooke",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Talb\u20ac Ack",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "H\u20ac Ornblad",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Eur J Epidemiol",
+            "volume": "32",
+            "issn": "",
+            "pages": "765--73",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "External review and validation of the Swedish national inpatient register",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Ludvigsson",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Andersson",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ekbom",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "BMC Public Health",
+            "volume": "11",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "The new Swedish prescribed drug register\u00c0opportunities for pharmacoepidemiological research and experience from the first six months",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Wettermark",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Hammar",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Fored",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Pharmacoepidemiol Drug Saf",
+            "volume": "16",
+            "issn": "",
+            "pages": "726--761",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "No association with cardiac death after sepsis: a nationwide observational cohort study",
+            "authors": [
+                {
+                    "first": "De",
+                    "middle": [],
+                    "last": "Geer",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                },
+                {
+                    "first": "Oscarsson",
+                    "middle": [],
+                    "last": "Tibblin",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Fredrikson",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Walther",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Acta Anaesthesiol Scand",
+            "volume": "63",
+            "issn": "",
+            "pages": "344--51",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Comparing time-fixed mortality prediction models and their effect on ICU performance metrics using the simplified acute physiology Score 3",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Engerstr\u20ac Om",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Kramer",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Nolin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Crit Care Med",
+            "volume": "44",
+            "issn": "11",
+            "pages": "1038--1082",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Confidence bands for a survival curve from censored data",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Hall",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Wellner",
+                    "suffix": ""
+                }
+            ],
+            "year": 1980,
+            "venue": "Biometrika",
+            "volume": "67",
+            "issn": "",
+            "pages": "133--176",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Nonparametric estimation from incomplete observations",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Kaplan",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Meier",
+                    "suffix": ""
+                }
+            ],
+            "year": 1958,
+            "venue": "J Am Statist Assoc",
+            "volume": "53",
+            "issn": "",
+            "pages": "457--81",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Probable inference, the law of succession, and statistical inference",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Wilson",
+                    "suffix": ""
+                }
+            ],
+            "year": 1927,
+            "venue": "J Am Statist Assoc",
+            "volume": "22",
+            "issn": "",
+            "pages": "209--221",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "A modified poisson regression approach to prospective studies with binary data",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Zou",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Am J Epidemiol",
+            "volume": "159",
+            "issn": "",
+            "pages": "702--708",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "The strengthening the reporting of observational studies in epidemiology (STROBE) statement: guidelines for reporting observational studies",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Von Elm",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Altman",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Egger",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Pocock",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "G\u00f8tzsche",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Vandenbroucke",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Int J Surg",
+            "volume": "12",
+            "issn": "",
+            "pages": "1495--1504",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Variation in US hospital mortality rates for patients admitted with COVID-19 during the first 6 months of the pandemic",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Asch",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Sheils",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Islam",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "JAMA Intern Med",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Characteristics and outcomes of patients with COVID-19 admitted to ICU in a tertiary hospital in Stockholm, Sweden",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Larsson",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Brattstr\u20ac Om",
+                    "suffix": ""
+                },
+                {
+                    "first": "Agvald-\u20ac",
+                    "middle": [],
+                    "last": "Ohman",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Acta Anesthesiol Scand",
+            "volume": "65",
+            "issn": "",
+            "pages": "76--81",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Effect of hydroxychloroquine in hospitalized patients with Covid-19",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Horby",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Mafham",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Linsell",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "N Engl J Med",
+            "volume": "383",
+            "issn": "",
+            "pages": "2030--2070",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Anticoagulant treatment is associated with decreased mortality in severe coronavirus disease 2019 patients with coagulopathy",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Tang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Bai",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Gong",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Thromb Haemost",
+            "volume": "18",
+            "issn": "",
+            "pages": "1094--1103",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Incidence of thrombotic complications in critically ill ICU patients with COVID-19",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Klok",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Kruip",
+                    "suffix": ""
+                },
+                {
+                    "first": "Njm",
+                    "middle": [],
+                    "last": "Van Der Meer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Thromb Res",
+            "volume": "191",
+            "issn": "",
+            "pages": "145--152",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Coagulopathy, venous thromboembolism, and anticoagulation in patients with COVID-19",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Dobesh",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Trujillo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Pharmacotherapy",
+            "volume": "40",
+            "issn": "",
+            "pages": "1130--51",
+            "other_ids": {}
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Dexamethasone in hospitalized patients with Covid-19 -preliminary report",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Horby",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Lim",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Emberson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "N Engl J Med",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Overall decrease of SARS-CoV-2 viral load and reduction of clinical burden: the experience of a Northern Italy hospital",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Piubelli",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Deiana",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Pomari",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Silva",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Clin Microbiol Infect",
+            "volume": "27",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Effects of a major deletion in the SARS-CoV-2 genome on the severity of infection and the inflammatory response: an observational cohort study",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Young",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Fong",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Chan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet",
+            "volume": "396",
+            "issn": "",
+            "pages": "603--614",
+            "other_ids": {}
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Helgenomsekvensering av svenska SARS-CoV-2 som orsakar covid-19, delrapport 2",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "A population-based cohort study of sociodemographic risk factors for COVID-19 deaths in Sweden",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Drefahl",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Wallace",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Mussino",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nat Commun",
+            "volume": "11",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "The role of organizational characteristics on the outcome of COVID-19 patients admitted to the ICU in Belgium",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Taccone",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Vangoethem",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Depauw",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Relative risk of death from any cause within 60 days of hospital admission, for all patients in the cohort. Model adjusted for month of admission, sex, age (continuous, linear and quadratic terms, not shown in the plot), Charlson Comorbidity Index, care dependency, country of birth and healthcare region. Crude 60-day mortality proportion related to month of hospital admission. Proportions with 95% confidence intervals are shown per month of admission, total and separately for ICU-and non-ICU treated patients.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "pared to March, but had similar proportions post-wave as March. However, SAPS3 and PaO 2 /FiO 2 on ICU admission remained",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "Panel figure: Crude 60-day mortality proportion by sex, age, care dependency, Charlson comorbidity index categories and country of birth. Shown are proportions with 95% confidence intervals per month of hospital admission, separately by categories of each factor.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "Panel figure: Crude 60-day mortality proportion by Swedish healthcare regions. Top left; Map outlining the six healthcare regions in Sweden. Due to pooled reporting under one hospital code from all hospitals in Halland County to the National Board of Health and Welfare, the county hospitals cannot be split correctly between West and South. All Halland hospitals have therefore been assigned to healthcare region West. Top right, middle and lower panels; Overall 60-day mortality with 95% confidence intervals per month of hospital admission, separately by healthcare region.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": "Proportion of patients treated in ICU and proportion receiving invasive mechanical ventilation during the hospital stay, according to month of hospital admission. Shown are proportions with 95% confidence intervals.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF1": {
+            "text": "Baseline patient characteristics total and stratified by month of admission. CCI = Charlson Comorbidity Index.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "Baseline patient characteristics stratified by intensive care unit (ICU) treatment and survival outcome at 60-days follow-up.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF3": {
+            "text": "Fig. 5.Relative risks with 95% confidence intervals (CI) of death from any cause within 60 days from hospital admission. Upper panel: All hospitalised patients, model adjusted for sex, age (continuous, linear and quadratic terms, not shown in the plot), Charlson Comorbidity Index, care dependency, country of birth and healthcare region. Middle panel:Patients not treated in ICU, model adjusted for sex, age (continuous, linear and quadratic terms, not shown in the plot), Charlson Comorbidity Index, care dependency, country of birth and healthcare region. Lower panel: ICU-treated patients, model adjusted for sex, age (continuous, linear and quadratic terms, not shown in the plot), Charlson Comorbidity Index, care dependency, country of birth, healthcare region and SAPS3 score at first ICU-admission.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF6": {
+            "text": "CI) of death from any cause within 60 days of hospitalisation, by month of hospital admission, stratified by each level of covariates examined. Estimates were obtained from the models adding an interaction term between month and covariate of interest. One model per covariate of interest underlies the estimates shown, i.e. one for modeling interaction with age, one for modeling interaction with care dependency and so on.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF7": {
+            "text": "Characteristics of the patient population treated on intensive care units (ICU), by month of hospital admission and survival outcome at 60 days follow-up.",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "All authors conceived and designed the study. KS, EW, SW, ABB, MH, JH and HH acquired data. EW and JH performed analyses and interpreted these together with KS, SW and HH.EW and JH verified the underlying data in the article. EW and JH drafted and finalised all tables and figures. KS and EW contributed equally. KS drafted the first version of the manuscript. All authors had full access to data in the study and accept responsibility for submission for publication.All authors revised the manuscript critically for important intellectual content and approved the final version for submission.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Author Contributions"
+        },
+        {
+            "text": "This study was funded by Sweden's National Board of Health and Welfare. The authors thank Anastasia Nyman for valuable discussion and support.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Acknowledgements"
+        },
+        {
+            "text": "Supplementary material associated with this article can be found, in the online version, at doi:10.1016/j.lanepe.2021.100054.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Supplementary materials"
+        },
+        {
+            "text": "The data underlying this article cannot be shared publicly due to regulations under the Swedish law. According to the Swedish Ethical Review Act, the General Data Protection Regulation, the Public Access to Information and Secrecy Act, data can only be made available, after legal review, for researchers who meet the criteria for access to this type of confidential data. Requests regarding the data may be made to the senior author.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data sharing"
+        },
+        {
+            "text": "The authors declare no competing interests.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Declaration of Interests"
+        }
+    ]
+}

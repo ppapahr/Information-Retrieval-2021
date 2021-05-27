@@ -1,0 +1,4837 @@
+{
+    "paper_id": "876ddafafd40fc61153443b71f4382159feebd0a",
+    "metadata": {
+        "title": "Journal Pre-proof Quantifying the Risk of Indoor Drainage System in Multi-unit Apartment Building as a Transmission Route of SARS-CoV-2 Kuang",
+        "authors": [
+            {
+                "first": "Wei",
+                "middle": [],
+                "last": "Shi",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Yen-Hsiang",
+                "middle": [],
+                "last": "Huang",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Hunter",
+                "middle": [],
+                "last": "Quon",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Zi-Lu",
+                "middle": [],
+                "last": "Ou-Yang",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Chengwen",
+                "middle": [],
+                "last": "Wang",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Sunny",
+                "middle": [
+                    "C"
+                ],
+                "last": "Jiang",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [],
+    "body_text": [
+        {
+            "text": "The ongoing COVID-19 pandemic 1 caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) has had a profound impact on human society and the world economy [2] [3] . Despite the time and money invested in COVID-19 research and medical treatments around the world 4-8 , at the time of this writing, the diverse routes of transmission and effective treatment methods for this disease are still unclear. The fecal-oral transmission of SARS-CoV-2 has been a concern 9 since the first detection of SARS-CoV-2 RNA from patients' feces 10 . However, the infectivity of SARS-CoV-2 in feces and its hazard to human health is an ongoing debate although high concentrations of viral RNA have been found in both patient's feces [11] [12] [13] and in human sewage 14 . Only a handful of papers 10, [15] [16] [17] reported the isolation of infectious viruses from feces on human tissue culture. The most recent report by Zang et al. 13 provides evidence of SARS-CoV-2 replication in human small intestine but shows that most of ",
+            "cite_spans": [
+                {
+                    "start": 168,
+                    "end": 171,
+                    "text": "[2]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 172,
+                    "end": 175,
+                    "text": "[3]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 474,
+                    "end": 475,
+                    "text": "9",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 541,
+                    "end": 543,
+                    "text": "10",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 728,
+                    "end": 732,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 733,
+                    "end": 737,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 738,
+                    "end": 742,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 763,
+                    "end": 765,
+                    "text": "14",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 793,
+                    "end": 796,
+                    "text": "10,",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 797,
+                    "end": 801,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 802,
+                    "end": 806,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 807,
+                    "end": 811,
+                    "text": "[17]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 919,
+                    "end": 933,
+                    "text": "Zang et al. 13",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Many studies reported the detection of SARS-CoV-2 in COVID-19 patients' feces 11-12, 16, 18, 32-35 . At the time of this analysis, only a handful of the studies quantified viral load in human feces using qPCR 11-12, 16, 32 . Pan et al. 32 reported 9 of 17 positive samples with a range of viral concentrations between 10 3 and 10 5 genome copies (gc) of viral RNA/mL of liquid stool sample (Table S1 ). The viral load varied over the course of the disease but was within 2 orders of magnitude. Wolfel et al. 11 reported positive detection in 68 of 81 samples over 21 days for multiple COVID-19 patients. The SARS-CoV-2 concentrations ranged between 10 2 and over 10 7 gc/ gram of feces (Table S1 ). More recently, Zheng et al. 12 followed patients for 60 days and detected 55 positive samples among 93 samples tested and reported the concentration in the range of less than 10 2 and over 10 8 gc/mL of feces (Table S1 ). Xiao et al. 16 followed a single patient and quantified the viral load in feces by qPCR but used a standard curve based on known plaque forming unit (pfu). The viral load was expressed as pfu equivalence /mL of feces but indicated that fecal viral load does not necessarily imply infectivity.",
+            "cite_spans": [
+                {
+                    "start": 78,
+                    "end": 98,
+                    "text": "11-12, 16, 18, 32-35",
+                    "ref_id": null
+                },
+                {
+                    "start": 209,
+                    "end": 222,
+                    "text": "11-12, 16, 32",
+                    "ref_id": null
+                },
+                {
+                    "start": 236,
+                    "end": 238,
+                    "text": "32",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 508,
+                    "end": 510,
+                    "text": "11",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 727,
+                    "end": 729,
+                    "text": "12",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 933,
+                    "end": 935,
+                    "text": "16",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 390,
+                    "end": 399,
+                    "text": "(Table S1",
+                    "ref_id": null
+                },
+                {
+                    "start": 686,
+                    "end": 695,
+                    "text": "(Table S1",
+                    "ref_id": null
+                },
+                {
+                    "start": 908,
+                    "end": 917,
+                    "text": "(Table S1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Viral Concentration in Toilet Water and Aerosols"
+        },
+        {
+            "text": "The raw data reported in Pan et al. 32 were provided to this study by the authors upon request. Individual data points from each of the other three reports were extracted from published figures using GetData Graph Digitizer 36 . In addition, a SARS-CoV-2 concentration of 19 gc/m 3 of air measured directly in the aerosol from a hospital toilet room was also included in the analysis 18 . The data described above are compiled in Table S1 and the viral concentration in aerosols was assumed to be produced solely from flushing patients' feces down the toilet.",
+            "cite_spans": [
+                {
+                    "start": 36,
+                    "end": 38,
+                    "text": "32",
+                    "ref_id": "BIBREF31"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 430,
+                    "end": 438,
+                    "text": "Table S1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Viral Concentration in Toilet Water and Aerosols"
+        },
+        {
+            "text": "To compare and contrast SARS-CoV-2 viral load in feces, we also searched and compiled data for SARS-CoV-1. As shown in Table S1 , SARS-CoV-1 viral loads varied more J o u r n a l P r e -p r o o f Journal Pre-proof significantly over the course of disease according to three different studies [37] [38] [39] . The SARS-CoV-1 concentration expanded over 6 orders of magnitude among different individuals and at different stages of disease.",
+            "cite_spans": [
+                {
+                    "start": 292,
+                    "end": 296,
+                    "text": "[37]",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 297,
+                    "end": 301,
+                    "text": "[38]",
+                    "ref_id": null
+                },
+                {
+                    "start": 302,
+                    "end": 306,
+                    "text": "[39]",
+                    "ref_id": "BIBREF38"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 119,
+                    "end": 127,
+                    "text": "Table S1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Viral Concentration in Toilet Water and Aerosols"
+        },
+        {
+            "text": "Note that the viral concentration was reported as liquid volume of feces except in the study by Wolfel et al. 11 , in which viral RNA gc/gram was given (Table S1 ). Wolfel et al. 11 indicated that the COVID-19 patients included in the study only had very mild symptoms and diarrhea was uncommon. To compile the data set, the values in per gram of feces were transformed to values in per mL using a fecal density of 0.97 g/mL 40 . The fecal viral concentration for both SARS-CoV-2 and SARS-CoV-1 were plotted in histograms and fitted with a cumulative density function curve shown in Fig. 2 . The negative detections in each report were treated as below the lowest detection limit of 1.95 log 10 gc/mL by qPCR assay (Table S2) . The values were generated by randomly sampling a uniform distribution U(0,1.95) for the fraction of negative detection reported (Fig. 2) . Similarly, the below detection values for SARS-CoV-1 data were generated using U(0,0.35).",
+            "cite_spans": [
+                {
+                    "start": 96,
+                    "end": 112,
+                    "text": "Wolfel et al. 11",
+                    "ref_id": null
+                },
+                {
+                    "start": 179,
+                    "end": 181,
+                    "text": "11",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 425,
+                    "end": 427,
+                    "text": "40",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 152,
+                    "end": 161,
+                    "text": "(Table S1",
+                    "ref_id": null
+                },
+                {
+                    "start": 583,
+                    "end": 589,
+                    "text": "Fig. 2",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 715,
+                    "end": 725,
+                    "text": "(Table S2)",
+                    "ref_id": null
+                },
+                {
+                    "start": 856,
+                    "end": 864,
+                    "text": "(Fig. 2)",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "Viral Concentration in Toilet Water and Aerosols"
+        },
+        {
+            "text": "The three data points from Xiao et al. 16 was not included in the SARS-CoV-2 data distribution curve because they were expressed as pfu/mL. Instead a triangular (2.52, 2.97, 3.37) distribution was used to capture the range of viral load from this report (Table S2 ). The only direct toilet room aerosol measurement of 19 gc/m 3 air was used as a single point estimate in risk analysis to represent an event as \"aerosol measurement\". Table S1 and S2 in Data in Supporting Information for data source). Note that the left side of cumulative distribution curve includes negative detection data from each report, which was presented as randomly generated data points using uniform distribution from zero to lower detection limit (doted vertical line).",
+            "cite_spans": [
+                {
+                    "start": 39,
+                    "end": 41,
+                    "text": "16",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 161,
+                    "end": 179,
+                    "text": "(2.52, 2.97, 3.37)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 254,
+                    "end": 263,
+                    "text": "(Table S2",
+                    "ref_id": null
+                },
+                {
+                    "start": 433,
+                    "end": 441,
+                    "text": "Table S1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Viral Concentration in Toilet Water and Aerosols"
+        },
+        {
+            "text": "An empirical distribution of human fecal volume (range 82 to 196mL, mean 135mL) per day 40 and a uniform(3.78, 6.00) distribution of flushing water 41 were used to estimate the concentration of virus in toilet water after defecation. The fraction of the infectious SARS-CoV-2 among reported genome equivalent viral RNA in feces is an important uncertainty.",
+            "cite_spans": [
+                {
+                    "start": 88,
+                    "end": 90,
+                    "text": "40",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Viral Concentration in Toilet Water and Aerosols"
+        },
+        {
+            "text": "J o u r n a l P r e -p r o o f",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Viral Concentration in Toilet Water and Aerosols"
+        },
+        {
+            "text": "Previous studies of SARS-CoV-1 reported a wide range of conversion factor for viral genome number to infections unit (pfu), from 360:1 to 1600:1 [42] [43] . To include the uncertainty, a triangular(360, 980, 1600) distribution was used to capture the variability of this parameter (Table S2 ). Note that this conversion was not applied to the data reported by Xiao et al. 16 since the fecal load was presented as pfu/mL. In the toilet, the patient's stool was assumed to be completely mixed with flushing water. Thus, viral concentration in the flushing water after ",
+            "cite_spans": [
+                {
+                    "start": 145,
+                    "end": 149,
+                    "text": "[42]",
+                    "ref_id": "BIBREF41"
+                },
+                {
+                    "start": 150,
+                    "end": 154,
+                    "text": "[43]",
+                    "ref_id": "BIBREF42"
+                },
+                {
+                    "start": 372,
+                    "end": 374,
+                    "text": "16",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 281,
+                    "end": 290,
+                    "text": "(Table S2",
+                    "ref_id": null
+                }
+            ],
+            "section": "Journal Pre-proof"
+        },
+        {
+            "text": "where represents infectious units per viral gc (pfu/gc), and 10 \u22123 is the unit conversion factor from per milliliter to per liter.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Journal Pre-proof"
+        },
+        {
+            "text": "Aerosols generated from toilet flushing were assumed to contain the same viral concentration as the toilet water post defecation. The detailed data and assumptions are presented in Table S2 .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 181,
+                    "end": 189,
+                    "text": "Table S2",
+                    "ref_id": null
+                }
+            ],
+            "section": "Journal Pre-proof"
+        },
+        {
+            "text": "Two exposure scenarios were considered to represent the generic living conditions in a multi-unit apartment building. The first scenario considers a shared bathroom by two suitemates in the same apartment suite. One resident is a COVID-19 patient under self-quarantine in J o u r n a l P r e -p r o o f Journal Pre-proof his/her own room. The second scenario considers a COVID-19 patient under self-quarantine in an isolated apartment in the building. A neighbor in the apartment one floor below the patient's apartment shares the main sewer soil-stack and has a floor drain missing water-seal to block the aerosol from the sewer pipe (Fig. 1 ).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 635,
+                    "end": 642,
+                    "text": "(Fig. 1",
+                    "ref_id": "FIGREF5"
+                }
+            ],
+            "section": "Exposure Assessment for Aerosol Inhalation"
+        },
+        {
+            "text": "Under scenario 1, the aerosol concentration in the toilet room generated after a toilet flushing was adopted from a study by O'Toole et al. 44 . Since the aerosol concentrations were collected at different heights above the toilet in the original study, we adopted data collected at a sampling height of 420 mm above the toilet to represent aerosol concentrations inhaled by a person when using the toilet (Table S3) . O'Toole et al. 44 also showed a bimodal distribution of two median diameter aerosol sizes, d 1 =0.6 \u03bcm and d 2 =2.5 \u03bcm, at this height 44 . Although several other studies [45] [46] also reported the mass of aerosols generated by toilet flushing, the data were not comparable with the O'Toole et al. 44 due to different types of toilet and different measurement approaches. These data were not included in aerosol estimation due to the need for assumptions of air volume and dispersion rate in the toilet room, which could induce additional uncertainty.",
+            "cite_spans": [
+                {
+                    "start": 140,
+                    "end": 142,
+                    "text": "44",
+                    "ref_id": "BIBREF43"
+                },
+                {
+                    "start": 434,
+                    "end": 436,
+                    "text": "44",
+                    "ref_id": "BIBREF43"
+                },
+                {
+                    "start": 554,
+                    "end": 556,
+                    "text": "44",
+                    "ref_id": "BIBREF43"
+                },
+                {
+                    "start": 590,
+                    "end": 594,
+                    "text": "[45]",
+                    "ref_id": "BIBREF44"
+                },
+                {
+                    "start": 595,
+                    "end": 599,
+                    "text": "[46]",
+                    "ref_id": "BIBREF45"
+                },
+                {
+                    "start": 718,
+                    "end": 720,
+                    "text": "44",
+                    "ref_id": "BIBREF43"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 406,
+                    "end": 416,
+                    "text": "(Table S3)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Toilet-flushing scenario"
+        },
+        {
+            "text": "The decay of SARS-CoV-2 in the toilet-generated aerosols was computed using the half-life of 2.7 hours reported by van Doremalen et al. 29 . The healthy suitemate was assumed to be exposed to contaminated aerosols once a day between 0 and 2 hours after the patient flushed the fecal waste using U(0,2). The risk of exposure declines with the time after the prior flush due to viral decay in aerosols.",
+            "cite_spans": [
+                {
+                    "start": 136,
+                    "end": 138,
+                    "text": "29",
+                    "ref_id": "BIBREF28"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Toilet-flushing scenario"
+        },
+        {
+            "text": "The aerosol deposition efficiencies in human respiratory tract were derived from Heyder's study 47 , which was reported as a function of particle size and breathing patterns. The aerosol J o u r n a l P r e -p r o o f inhalation efficiency was based on an individuals' breathing pattern during light activities 48 . The duration of exposure for the healthy individual was set using a uniform distribution of 10 to 30 minutes U (10, 30) to represent the various activities from urination to defecation and hand washing in the bathroom.",
+            "cite_spans": [
+                {
+                    "start": 96,
+                    "end": 98,
+                    "text": "47",
+                    "ref_id": "BIBREF46"
+                },
+                {
+                    "start": 311,
+                    "end": 313,
+                    "text": "48",
+                    "ref_id": "BIBREF47"
+                },
+                {
+                    "start": 427,
+                    "end": 431,
+                    "text": "(10,",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 432,
+                    "end": 435,
+                    "text": "30)",
+                    "ref_id": "BIBREF29"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Toilet-flushing scenario"
+        },
+        {
+            "text": "The dose of virus ( , , in pfu/case) inhaled and deposited in the healthy resident's respiratory tract under the toilet flushing scenario was estimated using equation 3:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Toilet-flushing scenario"
+        },
+        {
+            "text": "where , is the mass of aerosol according to median diameter size (d i , in ) deposited in the exposed person's respiratory tract (L/L of air), is the decay rate of virus in aerosols (unitless), is the mean flow rate of air breathed by the exposed person (L of air/min), and is the time spent in the toilet room each exposure event (min/case). The ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Toilet-flushing scenario"
+        },
+        {
+            "text": "where 0 is the interval between the prior toilet flushing of patient's feces and the healthy suitemate using the toilet room (min), and \u210e is the half-life of the SARS-CoV-1 or J o u r n a l P r e -p r o o f SARS-CoV-2 in aerosol (min) according to van Doremalen et al. 29 . Parameters and assumptions used are summarized in Table S3 .",
+            "cite_spans": [
+                {
+                    "start": 269,
+                    "end": 271,
+                    "text": "29",
+                    "ref_id": "BIBREF28"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 324,
+                    "end": 332,
+                    "text": "Table S3",
+                    "ref_id": null
+                }
+            ],
+            "section": "Toilet-flushing scenario"
+        },
+        {
+            "text": "In this scenario, aerosols containing virus were assumed to be generated from the same flushing water and were suspending along the entire sewer soil-stack after the waste passed through the pipe. The aerosols in the sewer pipe were characterized once again by data from O'Toole's study 44 for samples collected immediately above the toilet (50 mm). The aerosol volume in the sewer pipe equals the volume of the pipe between two apartments (0.1 m diameter and 2.8 m long between two floors). A worst-case assumption was made that all contaminated aerosols in the sewer pipe was drew into the toilet room at the apartment one-story below through a floor drain that is missing the water-seal ( Table S3 .",
+            "cite_spans": [
+                {
+                    "start": 287,
+                    "end": 289,
+                    "text": "44",
+                    "ref_id": "BIBREF43"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 692,
+                    "end": 700,
+                    "text": "Table S3",
+                    "ref_id": null
+                }
+            ],
+            "section": "Faulty drain scenario"
+        },
+        {
+            "text": "The doses of exposure under different scenarios were compared. The simulated doses from fecal viral load were also compared with the exposure dose calculated using the SARS-CoV-2 concentration measured directly from the hospital toilet room 18 . Moreover, the model derived dose for SARS-CoV-1 under faulty drain scenario was compared to the dose estimated by",
+            "cite_spans": [
+                {
+                    "start": 241,
+                    "end": 243,
+                    "text": "18",
+                    "ref_id": "BIBREF17"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Faulty drain scenario"
+        },
+        {
+            "text": "Watanabe et al. 49 in Amoy Gardens using a back calculation of attack rate and the dose-response model.",
+            "cite_spans": [
+                {
+                    "start": 16,
+                    "end": 18,
+                    "text": "49",
+                    "ref_id": "BIBREF48"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Faulty drain scenario"
+        },
+        {
+            "text": "There has not been a dose-response model developed for SARS-CoV-2 for human or animals. SARS-CoV-2 shares 79% nucleic acid sequence identity to SARS-CoV-1, and uses the same cell entry receptor (ACE2) as SARS-CoV-1 50 . Structural analysis revealed SARS-CoV-2 protein binds ACE2 with 10-20 folds higher affinity than SARS-CoV-1, which indicates that SARS-CoV-2 may be more infectious to humans than SARS-CoV-1 50 . Moreover, SARS-CoV-2 triggers receptor dependent cell-cell fusion that helps the virus rapidly spread from cell-to-cell 51 .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Dose-response Assessment"
+        },
+        {
+            "text": "The basic reproductive values (R0) of COVID-19 at the early stage were calculated between 2 and 3.5, indicating that infected people on average could infect two to more than three other people, which was higher than SARS 52 . The effective reproduction number may be much lower due to less-susceptible hosts such as young adults 4, 53-54 . This infective pattern of SARS-CoV-2",
+            "cite_spans": [
+                {
+                    "start": 221,
+                    "end": 223,
+                    "text": "52",
+                    "ref_id": "BIBREF51"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Dose-response Assessment"
+        },
+        {
+            "text": "is highly similar to SARS-CoV-1 55 . Based on the comparative biological property of the two viruses, we adopted SARS-CoV-1 dose-response model 49 ",
+            "cite_spans": [
+                {
+                    "start": 144,
+                    "end": 146,
+                    "text": "49",
+                    "ref_id": "BIBREF48"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Dose-response Assessment"
+        },
+        {
+            "text": "The parameters used in the dose-response assessments are presented in (Table S4 ).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 70,
+                    "end": 79,
+                    "text": "(Table S4",
+                    "ref_id": null
+                }
+            ],
+            "section": "Dose-response Assessment"
+        },
+        {
+            "text": "To estimate the risk of developing COVID-19 by the suitemate or the downstairs neighbor, we assume a once-a-day encounter rate of polluted aerosols over a 15-day course of disease (Table S4 ). The estimations were carried out using equation 9 and the illness rate for COVID-19 was compared to the simulated outcomes for SARS, to provide a relative risk perspective.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 180,
+                    "end": 189,
+                    "text": "(Table S4",
+                    "ref_id": null
+                }
+            ],
+            "section": "Risk Characterization"
+        },
+        {
+            "text": "Where is the extension of the course of COVID-19 assuming 15 days (day), is the frequency of a scenario occurring in a day (event/day).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Risk Characterization"
+        },
+        {
+            "text": "Moreover, the aerosol concentration measured directly in the toilet room used by multiple COVID-19 patients in a Wuhan hospital of 19 genome copies/m 3 air 18 was included in the risk estimation to represent the worst case scenario of COVID-19 transmission. The risk estimation J o u r n a l P r e -p r o o f using data from Xiao et al. 16 , where the fecal viral shedding was presented as pfu/mL, was presented separately.",
+            "cite_spans": [
+                {
+                    "start": 337,
+                    "end": 339,
+                    "text": "16",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Risk Characterization"
+        },
+        {
+            "text": "The pseudo-algorithm information flow is shown in Figure S1 . The input parameters were randomly sampled from their established probability distributions. 100,000 iterations of each output parameter were computed to ensure the distributions reach a steady state.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 50,
+                    "end": 59,
+                    "text": "Figure S1",
+                    "ref_id": "FIGREF5"
+                }
+            ],
+            "section": "Monte Carlo Simulation and Sensitivity Analysis"
+        },
+        {
+            "text": "Reproducibility of the outputs is examined by a variation of less than 1% 56 . All computations were carried using MATLAB R2019b 57 .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Monte Carlo Simulation and Sensitivity Analysis"
+        },
+        {
+            "text": "A sensitivity analysis was conducted to determine which model inputs were the most influential contributors to the predicted illness risk. The rank of importance was introduced through incorporation of parameter sensitivity with the relative order of uncertainty to assess the confidence in the model. The importance factor ( ) contributing to illness risk for each input parameter (unitless) was calculated using equation 10:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Monte Carlo Simulation and Sensitivity Analysis"
+        },
+        {
+            "text": "where is the sensitivity of illness risk related to the input parameter (unitless), and is the coefficient of variation of the input parameter (unitless). was incorporated to represent the uncertainty of input parameter distribution, and was calculated using equation 12:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Monte Carlo Simulation and Sensitivity Analysis"
+        },
+        {
+            "text": "where is the standard deviation of the input parameter. J o u r n a l P r e -p r o o f",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Monte Carlo Simulation and Sensitivity Analysis"
+        },
+        {
+            "text": "The exposure doses of SARS-CoV-1 and SARS-CoV-2 per event under different scenarios are presented in Fig. 3 . The simulated doses based on fecal load had a bimodal distribution because of the inclusion of non-detectable results. The median values for SARS-CoV-1 and 2",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 101,
+                    "end": 107,
+                    "text": "Fig. 3",
+                    "ref_id": "FIGREF8"
+                }
+            ],
+            "section": "Comparison of Exposure Dose Under Different Scenarios"
+        },
+        {
+            "text": "were similar, in the range of 1.15 to 8.45 x 10 -9 pfu per exposure event (see Table S5 for summary descriptors). However, comparing the two viruses, SARS-CoV-1 had a wide range of exposure dose with a long flat tail (95 th percentile is 1.58 x 10 -3 pfu for toilet flushing scenario) on the right side of the distribution curve ( Fig. 3 and Table S5 ).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 79,
+                    "end": 87,
+                    "text": "Table S5",
+                    "ref_id": null
+                },
+                {
+                    "start": 331,
+                    "end": 337,
+                    "text": "Fig. 3",
+                    "ref_id": "FIGREF8"
+                },
+                {
+                    "start": 342,
+                    "end": 350,
+                    "text": "Table S5",
+                    "ref_id": null
+                }
+            ],
+            "section": "Comparison of Exposure Dose Under Different Scenarios"
+        },
+        {
+            "text": "Using fecal load data reported by Xiao et al. 16 (in pfu/mL) to calculate the exposure dose shifted the median exposure dose to the right by over 2 to 3 log10 units (Fig. 3 , Table S5 ).",
+            "cite_spans": [
+                {
+                    "start": 46,
+                    "end": 48,
+                    "text": "16",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 165,
+                    "end": 172,
+                    "text": "(Fig. 3",
+                    "ref_id": "FIGREF8"
+                },
+                {
+                    "start": 175,
+                    "end": 183,
+                    "text": "Table S5",
+                    "ref_id": null
+                }
+            ],
+            "section": "Comparison of Exposure Dose Under Different Scenarios"
+        },
+        {
+            "text": "However, this exposure dose was likely an overestimation of infectious SARS-CoV-2 because the authors of the fecal shedding study indicated that the pfu equivalent numbers reported do not indicate infectivity number 16 . It is important to note that the pfu equivalent presented in Xiao et al. is not the same as the viral infectious unit presented elsewhere in the study. The worst case scenario of exposure to SARS-CoV-2 was represented by exposure to an aerosol concentration measured directly in the hospital's toilet room (Fig. 3) . The median exposure dose of this scenario was 5.34 x 10 -5 pfu per exposure event (Table S5 ).",
+            "cite_spans": [
+                {
+                    "start": 216,
+                    "end": 218,
+                    "text": "16",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 527,
+                    "end": 535,
+                    "text": "(Fig. 3)",
+                    "ref_id": "FIGREF8"
+                },
+                {
+                    "start": 620,
+                    "end": 629,
+                    "text": "(Table S5",
+                    "ref_id": null
+                }
+            ],
+            "section": "Comparison of Exposure Dose Under Different Scenarios"
+        },
+        {
+            "text": "There is a dramatic mismatch when comparing the exposure dose estimated based on any of the scenario with the exposure dose calculated by Watanabe et al. 49 2) Our aerosol concentrations are underestimated by several orders of magnitude. Since the initial infectious viral load (pfu) in feces is a sensitive input parameter that influences the aerosol dose in the toilet room, the major uncertainty could be from the conversion of viral genome copy to infectious unit. We used SARS-CoV-1 as the surrogate to get the conversion factor from laboratory studies by different researchers [42] [43] . We used triangular distribution to derive the range. The outcomes of the conversion were ~100 times lower than the report presented by Xiao et al. 16 Fig. 4 shows the outcomes of risk estimation for different scenarios. The median COVID-19 illness risk for a single day exposure is 1.11 x 10 -10 and 3.52 x 10 -11 for toilet flushing (Fig 4a and Table S6a ) and faulty drain (Fig 4b and Table S6a ) scenario, respectively.",
+            "cite_spans": [
+                {
+                    "start": 154,
+                    "end": 156,
+                    "text": "49",
+                    "ref_id": "BIBREF48"
+                },
+                {
+                    "start": 583,
+                    "end": 587,
+                    "text": "[42]",
+                    "ref_id": "BIBREF41"
+                },
+                {
+                    "start": 588,
+                    "end": 592,
+                    "text": "[43]",
+                    "ref_id": "BIBREF42"
+                },
+                {
+                    "start": 742,
+                    "end": 744,
+                    "text": "16",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 745,
+                    "end": 751,
+                    "text": "Fig. 4",
+                    "ref_id": "FIGREF11"
+                },
+                {
+                    "start": 929,
+                    "end": 940,
+                    "text": "(Fig 4a and",
+                    "ref_id": "FIGREF11"
+                },
+                {
+                    "start": 941,
+                    "end": 950,
+                    "text": "Table S6a",
+                    "ref_id": null
+                },
+                {
+                    "start": 970,
+                    "end": 981,
+                    "text": "(Fig 4b and",
+                    "ref_id": "FIGREF11"
+                },
+                {
+                    "start": 982,
+                    "end": 991,
+                    "text": "Table S6a",
+                    "ref_id": null
+                }
+            ],
+            "section": "Comparison of Exposure Dose Under Different Scenarios"
+        },
+        {
+            "text": "These values are nearly one log higher in comparison with the SARS illness risk predicted using SARS-CoV-1 fecal loading estimation, which have a median value of 1.75 x 10 -11 for toilet flushing and 5.5 x 10 -12 for the faulty drain scenario (Table S6a) Table   S6a ). The estimates for exposure to contaminated aerosols in the hospital toilet room yielded a median risk value of 1.9 x 10 -6 and 95 th percentile risk of 3.85 x 10 -5 for each single exposure (Table 6a) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 243,
+                    "end": 254,
+                    "text": "(Table S6a)",
+                    "ref_id": null
+                },
+                {
+                    "start": 255,
+                    "end": 266,
+                    "text": "Table   S6a",
+                    "ref_id": null
+                },
+                {
+                    "start": 460,
+                    "end": 470,
+                    "text": "(Table 6a)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Risk Quantification Per Exposure Event and Per Course of Disease"
+        },
+        {
+            "text": "When multiple exposures were considered over the 15-day course of the disease, assuming once a day exposure frequency, the estimated risk of COVID-19 increased by approximately one log for all scenarios (Fig 4c, d and Table S6b ). Again, these values were about one log higher than median illness risks for SARS under the same scenarios but SARS outcomes spanned a much greater range (Fig. 4 c, d and Table 6S ). The worst case scenario, exposure to aerosol in a hospital toilet room used by multiple patients, predicted the high end of COVID-19 risk for toilet flushing scenario at 5.78 x 10 -4 (95 th percentile). Comparing risks from the toilet flushing with the faulty drain scenario, it's obvious that direct exposure to aerosols generated J o u r n a l P r e -p r o o f from toilet flushing had greater risk than exposure to aerosols entered from a faulty drain in the building (Fig. 4) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 203,
+                    "end": 217,
+                    "text": "(Fig 4c, d and",
+                    "ref_id": "FIGREF11"
+                },
+                {
+                    "start": 218,
+                    "end": 227,
+                    "text": "Table S6b",
+                    "ref_id": null
+                },
+                {
+                    "start": 384,
+                    "end": 391,
+                    "text": "(Fig. 4",
+                    "ref_id": "FIGREF11"
+                },
+                {
+                    "start": 401,
+                    "end": 409,
+                    "text": "Table 6S",
+                    "ref_id": null
+                },
+                {
+                    "start": 884,
+                    "end": 892,
+                    "text": "(Fig. 4)",
+                    "ref_id": "FIGREF11"
+                }
+            ],
+            "section": "Risk Quantification Per Exposure Event and Per Course of Disease"
+        },
+        {
+            "text": "These risk estimates are at odds with the conclusion of Amoy Gardens' investigation,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Risk Quantification Per Exposure Event and Per Course of Disease"
+        },
+        {
+            "text": "where the epidemiological study presented a very different picture, a much higher attack rate from the faulty drain scenario. The uncertainties of a number of input parameters in the model are worthy of analysis to offer better insights into the discrepancies observed from the two investigations. These input parameters include the concentration of viruses in the feces, the conversion factor from genome equivalent of virus to infectious unit, the daily fecal volume, the toilet flushing water volume, the aerosols generated during toilet flushing, the duration of exposure in the toilet room, the viral decay and the best fit parameter for dose-response model.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Risk Quantification Per Exposure Event and Per Course of Disease"
+        },
+        {
+            "text": "The analyses for model uncertainties were assessed using the joint estimation of local sensitivity of each parameter and the coefficient of variant for the parameter to evaluate the relative order of uncertainty. Note that the analysis was only carried out for models starting with genome equivalent SARS-CoV-2 fecal loadings. The single aerosol measurement from the hospital toilet room was not a good representation of the normal living condition in the multi-unit apartment building and only presented here as the worst case scenario. The results",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Sensitivity Analysis and Model Uncertainties"
+        },
+        {
+            "text": "showed that the concentration of genome equivalent virus in toilet flushing water ( , , 2 ) was the most important input parameter in the risk estimation for both scenarios (Fig. 5) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 173,
+                    "end": 181,
+                    "text": "(Fig. 5)",
+                    "ref_id": "FIGREF14"
+                }
+            ],
+            "section": "Sensitivity Analysis and Model Uncertainties"
+        },
+        {
+            "text": "Variability of this parameter contributed to 48% of the variability of model outcome and",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Sensitivity Analysis and Model Uncertainties"
+        },
+        {
+            "text": "represented the most uncertainty. The conversion factor (PFU/GC) that bridges the genome copies of virus to pfu of the infectious virus, in comparison, was only a minor contributor (1 to 2% of variability) to the overall model outcome (Fig. 5) . in the faulty drain scenario.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 235,
+                    "end": 243,
+                    "text": "(Fig. 5)",
+                    "ref_id": "FIGREF14"
+                }
+            ],
+            "section": "Sensitivity Analysis and Model Uncertainties"
+        },
+        {
+            "text": "We initially expected the conversion factor from genome copy virus to infectious virus pfu was a major source of model uncertainty since determining the concentration of infectious SARS-CoV-2 in the fecal samples had been challenging 11 . The above analyses showed, however, the wide range of the viral load in the fecal shedding played an important role. In the effort of the data collection, we focused on literature that provided quantitative analysis of fecal loading in patients at different stage of the disease development and from different regions. We also included data reported as non-detection by setting the lower detection limit as the upper bound to generate estimations using a uniform distribution between zero and the detection limit.",
+            "cite_spans": [
+                {
+                    "start": 234,
+                    "end": 236,
+                    "text": "11",
+                    "ref_id": "BIBREF10"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Sensitivity Analysis and Model Uncertainties"
+        },
+        {
+            "text": "The SARS-CoV-2 data compiled here represent the state of knowledge and are comparable with SARS-CoV-1 data, which served as a proxy for the new virus.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Sensitivity Analysis and Model Uncertainties"
+        },
+        {
+            "text": "J o u r n a l P r e -p r o o f Figure S2 . The analysis showed that based on reported cases and fecal viral load, the median concentration of SARS-CoV-2 was estimated to be 1.25log 10 gc/L of raw sewage without including viral decay during transport from households to NCWTP (Table S7 ). If assuming reported cases were only 50% of the total number of cases in the community (due to underreporting, asymptomatic and pre-symptomatic cases), the 49 . Therefore, this analysis suggests additional routes of transmission may have contributed to Amoy Gardens outbreak 59 .",
+            "cite_spans": [
+                {
+                    "start": 444,
+                    "end": 446,
+                    "text": "49",
+                    "ref_id": "BIBREF48"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 31,
+                    "end": 40,
+                    "text": "Figure S2",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 275,
+                    "end": 284,
+                    "text": "(Table S7",
+                    "ref_id": null
+                }
+            ],
+            "section": "Sensitivity Analysis and Model Uncertainties"
+        },
+        {
+            "text": "The risk estimation presented relatively low median health risks of two viral transmission scenarios through ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Implications and Recommendations"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Clinical features of patients infected with 2019 novel coronavirus in Wuhan, China. The Lancet",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Ren",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Fan",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Gu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Cheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Xia",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wei",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Xie",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Yin",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Xiao",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Gao",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Guo",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Xie",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Jiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Gao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Jin",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Cao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "395",
+            "issn": "",
+            "pages": "497--506",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "United-Nations COVID-19",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Clinical course and risk factors for mortality of adult inpatients with COVID-19 in Wuhan, China: a retrospective cohort study",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Du",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Fan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Xiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Song",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Gu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Guan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wei",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Tu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Cao",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Lancet",
+            "volume": "2020",
+            "issn": "",
+            "pages": "1054--1062",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Pathological findings of COVID-19 associated with acute respiratory distress syndrome",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Shi",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zhu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Tai",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Bai",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Gao",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Song",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Xia",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Dong",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "F.-S",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Lancet Respiratory Medicine",
+            "volume": "2020",
+            "issn": "4",
+            "pages": "420--422",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Treatment of 5 Critically Ill Patients With COVID-19 With Convalescent Plasma",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Shen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Yuan",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Xing",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Wei",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Xiao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Qu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Qing",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Peng",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Zheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Jiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "2020",
+            "issn": "",
+            "pages": "1582--1589",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Chloroquine and hydroxychloroquine as available weapons to fight COVID-19",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Colson",
+                    "suffix": ""
+                },
+                {
+                    "first": "J.-M",
+                    "middle": [],
+                    "last": "Rolain",
+                    "suffix": ""
+                },
+                {
+                    "first": "J.-C",
+                    "middle": [],
+                    "last": "Lagier",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Brouqui",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Raoult",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Int. J. Antimicrob. Agents",
+            "volume": "2020",
+            "issn": "4",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "A Review of Coronavirus Disease-2019 (COVID-19)",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Singhal",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Indian J. Pediatr",
+            "volume": "2020",
+            "issn": "4",
+            "pages": "281--286",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "COVID-19 faecal-oral transmission: Are we asking the right questions?",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Heller",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Mota",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Greco",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Sci. Total Environ",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Detection of SARS-CoV-2 in Different Types of Clinical Specimens",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Gao",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Lu",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Han",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Tan",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "2020",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Virological assessment of hospitalized patients with COVID-2019",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Wolfel",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Corman",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Guggemos",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Seilmaier",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Zange",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Muller",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Niemeyer",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Jones",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Vollmar",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Rothe",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Hoelscher",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Bleicker",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Brunink",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Schneider",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Ehmann",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Zwirglmaier",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Drosten",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Wendtner",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nature",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Viral load dynamics and disease severity in patients infected with SARS-CoV-2 in Zhejiang province",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Zheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Fan",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Feng",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Lou",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Zou",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Xie",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Gong",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Ma",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Lu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Xiao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Gu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Yao",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Lu",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Wei",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Fang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Cai",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Qiu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Sheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Liang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Bmj-British Medical Journal",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "TMPRSS2 and TMPRSS4 promote SARS-CoV-2 infection of human small intestinal enterocytes",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Zang",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Gomez Castro",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Mccune",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Zeng",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Rothlauf",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Sonnek",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Brulois",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Greenberg",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Diamond",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Ciorba",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "P J"
+                    ],
+                    "last": "Whelan",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Ding",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Science immunology",
+            "volume": "2020",
+            "issn": "47",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "How sewage could reveal true scale of coronavirus outbreak",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Gibney",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Nature",
+            "volume": "2020",
+            "issn": "7802",
+            "pages": "176--177",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Evidence for Gastrointestinal Infection of SARS-CoV-2",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Xiao",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Tang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Shan",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Gastroenterology",
+            "volume": "2020",
+            "issn": "6",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Infectious SARS-CoV-2 in Feces of Patient with Severe COVID-19",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Xiao",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Emerging Infect. Dis",
+            "volume": "2020",
+            "issn": "8",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Isolation of 2019-nCoV from a Stool Specimen of a Laboratory-Confirmed Case of the Coronavirus Disease 2019 (COVID-19)",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Zhu",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Shu",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Song",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Song",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Zhen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Feng",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "China CDC Weekly",
+            "volume": "2020",
+            "issn": "8",
+            "pages": "123--124",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Aerodynamic Characteristics and RNA Concentration of SARS-CoV-2 Aerosol in Wuhan Hospitals during COVID-19 Outbreak",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Ning",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Guo",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Gali",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Duan",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Cai",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Westerdahl",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Ho",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Kan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Fu",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Lan",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Environmental transmission of SARS at Amoy Gardens",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Mckinney",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Gong",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Lewis",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "J. Environ. Health",
+            "volume": "68",
+            "issn": "9",
+            "pages": "51--53",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Assessment of public health risk associated with viral contamination in harvested urban stormwater for domestic applications",
+            "authors": [
+                {
+                    "first": "K.-Y",
+                    "middle": [],
+                    "last": "Lim",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Hamilton",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Jiang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Sci. Total Environ",
+            "volume": "523",
+            "issn": "",
+            "pages": "95--108",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Quantitative microbial risk assessment of Greywater on-site reuse",
+            "authors": [
+                {
+                    "first": "K.-W",
+                    "middle": [],
+                    "last": "Shi",
+                    "suffix": ""
+                },
+                {
+                    "first": "C.-W",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Jiang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "The Science of the total environment",
+            "volume": "635",
+            "issn": "",
+            "pages": "1507--1519",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Role of two-way airflow owing to temperature difference in severe acute respiratory syndrome transmission: revisiting the largest nosocomial severe acute respiratory syndrome outbreak in Hong Kong",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "J R Soc Interface",
+            "volume": "8",
+            "issn": "58",
+            "pages": "699--710",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Evidence of airborne transmission of the severe acute respiratory syndrome virus",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Wong",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Tam",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Chan",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Leung",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Ho",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "N. Engl. J. Med",
+            "volume": "350",
+            "issn": "17",
+            "pages": "1731--1740",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Health risks from exposure to Legionella in reclaimed water aerosols: Toilet flushing, spray irrigation, and cooling towers",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Hamilton",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Hamilton",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Johnson",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Jjemba",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Bukhari",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Lechevallier",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Haas",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Water Res",
+            "volume": "134",
+            "issn": "",
+            "pages": "261--279",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Critical review of mathematical approaches for quantitative microbial risk assessment (QMRA) of Legionella in engineered water systems: research gaps and a new framework",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Hamilton",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Haas",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Environmental Science-Water Research & Technology",
+            "volume": "2016",
+            "issn": "4",
+            "pages": "599--613",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "An in-premise model for Legionella exposure during showering events",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Schoen",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Ashbolt",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Water Res",
+            "volume": "45",
+            "issn": "18",
+            "pages": "5826--5836",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Greywater reuse -Assessment of the health risk induced by Legionella pneumophila",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Blanky",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Sharaby",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Rodriguez-Martinez",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Halpern",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Friedler",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Water Res",
+            "volume": "125",
+            "issn": "",
+            "pages": "410--417",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Quantitative microbial risk assessment of Legionella pneumophila in a drinking water supply system in Israel",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Sharaby",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Rodriguez-Martinez",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Hoefle",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Brettar",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Halpern",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Sci. Total Environ",
+            "volume": "671",
+            "issn": "",
+            "pages": "404--410",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Aerosol and Surface Stability of SARS-CoV-2 as Compared with SARS-CoV-1. New Engl",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Van Doremalen",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Bushmaker",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Morris",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Holbrook",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Gamble",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Williamson",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Tamin",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Harcourt",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Thornburg",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Gerber",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Lloyd-Smith",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "De Wit",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Munster",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "J. Med",
+            "volume": "2020",
+            "issn": "16",
+            "pages": "1564--1567",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Forecasting in the unseeable: A mixed methods model of planktonic and biofilm-bound in building water systems",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Mraz",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Ph.D",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "COVID-19: mitigating transmission via wastewater plumbing systems",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Gormley",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Aspray",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Kelly",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "The Lancet. Global",
+            "volume": "2020",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Viral load of SARS-CoV-2 in clinical samples",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Pan",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "L M"
+                    ],
+                    "last": "Poon",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "The Lancet. Infectious",
+            "volume": "2020",
+            "issn": "4",
+            "pages": "411--412",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "First Case of 2019 Novel Coronavirus in the United States",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Holshue",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Debolt",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Lindquist",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Lofy",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Wiesman",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Bruce",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Spitters",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Ericson",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Wilkerson",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Tural",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Diaz",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Cohn",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Fox",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Patel",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Gerber",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Kim",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Tong",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Lu",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Lindstrom",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Pallansch",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Weldon",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Biggs",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Uyeki",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Pillai",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "New Engl. J. Med",
+            "volume": "2020",
+            "issn": "10",
+            "pages": "929--936",
+            "other_ids": {}
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Prolonged presence of SARS-CoV-2 viral RNA in faecal samples. The lancet",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Guo",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Tang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Hong",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Dong",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Yin",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Xiao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Tang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Qu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Kuang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Fang",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Mishra",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Lu",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Shan",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Jiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Gastroenterology &",
+            "volume": "2020",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Detection of SARS coronavirus in patients with severe acute respiratory syndrome by conventional and real-time quantitative reverse transcription-PCR assays",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "L M"
+                    ],
+                    "last": "Poon",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Chan",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Wong",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "K W"
+                    ],
+                    "last": "Cheung",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Ng",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Zheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Seto",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Yuen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Guan",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "S M"
+                    ],
+                    "last": "Peiris",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Clin. Chem",
+            "volume": "50",
+            "issn": "1",
+            "pages": "67--72",
+            "other_ids": {}
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Viral loads in clinical specimens and SARS manifestations",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Peiris",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "S M"
+                    ],
+                    "last": "Yuen",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Emerging Infect. Dis",
+            "volume": "10",
+            "issn": "9",
+            "pages": "1550--1557",
+            "other_ids": {}
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "Detection for severe acute respiratory syndrome (SARS) coronavirus RNA in stool of SARS patients",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "He",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Dong",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Song",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "He",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Zhuang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Zhonghua Yufang Yixue Zazhi",
+            "volume": "38",
+            "issn": "2",
+            "pages": "90--91",
+            "other_ids": {}
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Handbook of Green Building Design and Construction: LEED, BREEAM, and Green Globes",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Kubba",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "1--1021",
+            "other_ids": {}
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "Coronaviridae and SARS-associated coronavirus strain HSR1",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Vicenzi",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Canducci",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Pinna",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Mancini",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Carletti",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Lazzarin",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Bordignon",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Poli",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Clementi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Emerging Infect. Dis",
+            "volume": "10",
+            "issn": "3",
+            "pages": "413--418",
+            "other_ids": {}
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "Development and evaluation of an efficient 3 '-noncoding region based SARS coronavirus (SARS-CoV) RT-PCR assay for detection of SARS-CoV infections",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "S H"
+                    ],
+                    "last": "Houng",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Norwood",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Ludwig",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Vaughn",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "J. Virol. Methods",
+            "volume": "120",
+            "issn": "1",
+            "pages": "33--40",
+            "other_ids": {}
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "Risk in the mist? Deriving data to quantify microbial health risks associated with aerosol generation by water-efficient devices during typical domestic water-using activities",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "O&apos;toole",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Keywood",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Sinclair",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Leder",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Water Sci Technol",
+            "volume": "60",
+            "issn": "11",
+            "pages": "2913--2933",
+            "other_ids": {}
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "Emission strength of airborne pathogens during toilet flushing",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "C K"
+                    ],
+                    "last": "Lai",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Tan",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "K M"
+                    ],
+                    "last": "Ip",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Indoor Air",
+            "volume": "28",
+            "issn": "1",
+            "pages": "73--79",
+            "other_ids": {}
+        },
+        "BIBREF45": {
+            "ref_id": "b45",
+            "title": "Aerosol generation by modern flush toilets",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Johnson",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Lynch",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Marshall",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Mead",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Hirst",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Aerosol Sci. Technol",
+            "volume": "47",
+            "issn": "9",
+            "pages": "1047--1057",
+            "other_ids": {}
+        },
+        "BIBREF46": {
+            "ref_id": "b46",
+            "title": "Deposition of particles in the human respiratory tract in the size range 0.005-15 \u03bcm",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Heyder",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Gebhart",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Rudolf",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Schiller",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Stahlhofen",
+                    "suffix": ""
+                }
+            ],
+            "year": 1986,
+            "venue": "J. Aerosol Sci",
+            "volume": "17",
+            "issn": "5",
+            "pages": "811--825",
+            "other_ids": {}
+        },
+        "BIBREF47": {
+            "ref_id": "b47",
+            "title": "Exposure Factors Handbook",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Moya",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Phillips",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Schuda",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Wood",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Diaz",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Clickner",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Birch",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Adjei",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Blood",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF48": {
+            "ref_id": "b48",
+            "title": "Development of a Dose-Response Model for SARS Coronavirus",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Watanabe",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Bartrand",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Weir",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Omura",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Haas",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Risk Anal",
+            "volume": "",
+            "issn": "7",
+            "pages": "1129--1138",
+            "other_ids": {}
+        },
+        "BIBREF49": {
+            "ref_id": "b49",
+            "title": "Unique epidemiological and clinical features of the emerging 2019 novel coronavirus pneumonia (COVID-19) implicate special control measures",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Qin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J. Med. Virol",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF50": {
+            "ref_id": "b50",
+            "title": "Characterization of spike glycoprotein of SARS-CoV-2 on virus entry and its immune cross-reactivity with SARS-CoV",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Ou",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Lei",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Mi",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Ren",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Guo",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Guo",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Xiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Mu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Jin",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Qian",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Nature communications",
+            "volume": "2020",
+            "issn": "1",
+            "pages": "1620--1620",
+            "other_ids": {}
+        },
+        "BIBREF51": {
+            "ref_id": "b51",
+            "title": "Preliminary estimation of the basic reproduction number of novel coronavirus (2019-nCoV) in China, from 2019 to 2020: A data-driven analysis in the early phase of the outbreak",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Ran",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Musa",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Lou",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Gao",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "He",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Int. J. Infect. Dis",
+            "volume": "2020",
+            "issn": "",
+            "pages": "214--217",
+            "other_ids": {}
+        },
+        "BIBREF53": {
+            "ref_id": "b53",
+            "title": "Susceptibility to and transmission of COVID-19 amongst children and adolescents compared with adults: a systematic review and meta-analysis",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Viner",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Mytton",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Bonell",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Melendez-Torres",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Ward",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Hudson",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Waddington",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Thomas",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Russell",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Van Der Klis",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Panovska-Griffiths",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Davies",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Booy",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Eggo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF54": {
+            "ref_id": "b54",
+            "title": "Epidemiological determinants of spread of causal agent of severe acute respiratory syndrome in Hong Kong",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Donnelly",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Ghani",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Leung",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Hedley",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Fraser",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Riley",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Abu-Raddad",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Ho",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "Q"
+                    ],
+                    "last": "Thach",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Chau",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Chan",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Lam",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Tse",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Tsang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "H B"
+                    ],
+                    "last": "Kong",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "M C"
+                    ],
+                    "last": "Lau",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Ferguson",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Anderson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "Lancet",
+            "volume": "361",
+            "issn": "9371",
+            "pages": "1761--1766",
+            "other_ids": {}
+        },
+        "BIBREF55": {
+            "ref_id": "b55",
+            "title": "Reevaluation of health risk benchmark for sustainable water practice through risk analysis of rooftop-harvested rainwater",
+            "authors": [
+                {
+                    "first": "K.-Y",
+                    "middle": [],
+                    "last": "Lim",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Jiang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Water Res",
+            "volume": "47",
+            "issn": "20",
+            "pages": "7273--7286",
+            "other_ids": {}
+        },
+        "BIBREF57": {
+            "ref_id": "b57",
+            "title": "Severe Acute Respiratory Syndrome Beyond Amoy Gardens: Completing the Incomplete Legacy",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": ".-S",
+                    "middle": [],
+                    "last": "Qiu",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Tse",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Wong",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Clin. Infect. Dis",
+            "volume": "58",
+            "issn": "5",
+            "pages": "683--686",
+            "other_ids": {}
+        },
+        "BIBREF58": {
+            "ref_id": "b58",
+            "title": "Possible role of an animal vector in the SARS outbreak at Amoy Gardens",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "K C"
+                    ],
+                    "last": "Ng",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "Lancet",
+            "volume": "362",
+            "issn": "9383",
+            "pages": "570--572",
+            "other_ids": {}
+        },
+        "BIBREF59": {
+            "ref_id": "b59",
+            "title": "Pathogenicity of severe acute respiratory coronavirus deletion mutants in hACE-2 transgenic mice",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Dediego",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Pewe",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Alvarez",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Rejas",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Perlman",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Enjuanes",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Virology",
+            "volume": "376",
+            "issn": "2",
+            "pages": "379--389",
+            "other_ids": {}
+        },
+        "BIBREF60": {
+            "ref_id": "b60",
+            "title": "EFFECTS OF A NEW HUMAN RESPIRATORY VIRUS IN VOLUNTEERS",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Bradburne",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Bynoe",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "A J"
+                    ],
+                    "last": "Tyrrell",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "1967",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF61": {
+            "ref_id": "b61",
+            "title": "Information-Office-of-Guangzhou-Municipal-People's-Government The 125th press conference on epidemic prevention and control in Guangzhou",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "63",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF62": {
+            "ref_id": "b62",
+            "title": "Beijing-TV How are people without direct contact to Xinfadi Market infected by COVID-19",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "the viruses are inactivated by simulated colonic fluid. This report explains the low frequency of viral isolation from fecal samples but it does not rule out the presence of infectious viruses in the patients' feces as demonstrated by the other studies. 10, 15-17 The rate of inactivation as the viruses passing through colon is likely dependent on time and protective effect of fecal material in colon. A fraction of viruses may survive the passage. Another contributor for the low frequency of fecal viral isolation on tissue culture may be due to the difficulties of measuring infectious virus in feces. Multiple purification steps are necessary to remove bacteria and other interferences before the samples can be loaded onto cell cultures. Such purification steps perhaps can inactivate or remove SARS-CoV-2. The methodological challenges can result in the uncertainties of the number of infectious virus in feces. However, based on what we know so far, Illustration of indoor drainage in a multi-unit apartment building.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "Histogram plots and cumulative density function curves of SARS-CoV-2 and SARS-CoV-1 viral loads in human feces (see",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": ", , is the concentration of virus in feces (gc/mL), is the volume of human feces per flush (mL), and is the volume of flush water per flush (mL). Viral concentration in the flushing water is then transformed into unit of pfu/L (",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "concentration of aerosols in the specific height above toilet after each toilet flush (# of aerosol/L of air) at range of diameter size ( , in ), , , is the volume of spherical aerosol (L/# of aerosol) , , is the deposition efficiency of aerosols according to size in respiratory tract (unitless). The decay of virus in aerosols was calculated using equation 5:",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": ". A toilet room size of 3 m 2 x 2.4 m height, a typical toilet room in Amoy Gardens, was used to calculate the aerosol concentration. The dispersion of the aerosols in the toilet room was assumed to follow a Uniform( 10 0.03,0) distribution. Inhalation of polluted aerosols by the neighbor in the apartment below when using the toilet was modeled in the same way as the toilet flushing scenario. The dose of viruses through the faulty drain with no water seal ( , , pfu/event) deposited in the exposed person's respiratory tract was estimated using the equation 6: mass of aerosol according to median diameter size (d fd , ) deposited in the exposed person's respiratory tract (L/L of air) in faulty drain scenario. It was calculated using equation 7: rate of aerosol (unitless) in the toilet room. Parameters and assumptions used in this scenario are also summarized in",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF6": {
+            "text": "for SARS-CoV-2. To manage the J o u r n a l P r e -p r o o f uncertainty of this model, the probability distribution of value in the exponential dose-response model was incorporated in the simulation to determine its impact on the uncertainty of model output. The normal distribution lnN(6.01,1.75) as originally reported for SARS-CoV-1 dose-response by Watanabe et al. 49 was used in the simulation. Moreover, the was customized to SARS-CoV-2 by including the enhanced infectivity factor using uniform distribution U(10, 20) to capture the 10 to 20 times higher cell-receptor affinity and viral spread through cells. Since it is currently unclear that the ACE2 receptor binding affinity would linearly translate to infectivity in doses, this general model was subjected to sensitivity analysis. Therefore, the same dose-response model (equation 8) for SARS-CoV-1 and SARS-CoV-2 was used with the different best fit value (pfu/event).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF7": {
+            "text": "was assessed by a local sensitivity analysis method to represent the variability propagation of input parameters through modeling of the health risk. The true means of distributions (or the values of point-estimates) were adopted as baseline point values for each input parameter and output variable. Then the baseline input parameter value was decreased by 10%, and a differential value for output variable was calculated as shown mean value of the original output variable distribution, \u2206 is the difference in means between the original output distribution and the altered output distribution, is the original baseline point value, and \u2206 is the difference between the original baseline value and the altered value.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF8": {
+            "text": "Distribution plots showing doses of SARS-CoV-2 and SARS-CoV-1 per exposure event, respectively, estimated using different scenarios and data source. SARS-CoV-2 worst-case is from the aerosol measurement from Wuhan hospital toilet room. Dotted lines represent the medians of distributions. The vertical blue bar is the range of doses estimated by Watanabe et al. for Amoy Gardens' incident.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF9": {
+            "text": ". Watanabe et al. based their estimation on the attack rate in Amoy Gardens and the dose-response relationship derived using an animal model (Figure 3). The explanations for the mismatch are complicated and may include the following reasons: et al.49 assumed that all infections in Amoy Gardens were resulting from the faulty drainage system in the building and calculated the attack rate based on estimated number of residents per unit. This attack rate may be an overestimation because other modes of transmission (i.e. surface contact and in person transmission in shared elevators or space) besides aerosols through faulty drains were not considered[58][59] .",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF10": {
+            "text": "who used pfu equivalent directly as the standard curve in the estimation of viral load in feces. Another source of underestimation is from the literature reports of fecal loading among COVID-19 patients. The data collected in this study include a total of 191 human fecal samples (exclude the 3 samples form Xiao et al. 16 ) at different stage of disease development. It represents the state of knowledge at the time of this analysis.3) The dose-response model derived from animal study and used by Watanabe et al.49 in model fitting is an overestimation of the infectious dose of the SARS-CoV-1. Based on the animal trial study[60][61] , the SARS-CoV-1 requires higher dose of infectious than HCoV-229E, the common human cold virus. The SARS-CoV-1 dose-response was investigated using genetically modified mice, which may not be a good representation of human infection rate.Based on these above analyses, the unmatched dose in aerosol exposure between Watanabe et al. 49 and our model prediction cannot be easily resolved. The uncertainty analysis that J o u r n a l P r e -p r o o f incorporates the sensitivity with the coefficient of variation of the input parameter (as presented in the section 3.3) weighs the importance of the input parameters to the model outcomes. This first attempt at the risk analysis of the specific scenario offers a starting point for looking into data collection needs.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF11": {
+            "text": "Box-and-Whiskers plots showing COVID-19 and SARS illness risks per exposure event (a & b) and per disease course (c & d) using data collected for SARS-CoV-2 and SARS-CoV-1, respectively. Each box represents the 25 th , median (50 th ), and 75 th percentile values of the distribution, where the whiskers extend 1.5 \u00d7 (75 th percentile value \u2212 25 th percentile value) from each end of the box.J o u r n a l P r e -p r o o f",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF12": {
+            "text": ". However, there is a large variability of predicted risk for SARS with the 95 th percentile risk of 5.28 x 10 -6 and 1.82 x 10 -6 for toilet flushing and faulty drain scenario, respectively. The corresponding 95 th percentile risks for COVID-19 are 1 to 1.5 log lower. Xiao et al.'s fecal load data 16 predicted much higher risks for both scenarios with the median risk in the order of 10 -8 and 95 th percentile risk in the order of 10 -6 (Fig. 4 and",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF13": {
+            "text": "attributed to 4 and 5% of the variability in the model output. Unique to the faulty drain scenario, the aerosol dispersion rate ( , ) from the drain to the toilet room was a sensitive and uncertain parameter, which contributed to 7% of the variability in the risk outcome. The fecal volume ( ), time spent in the toilet room ( ), the SARS-CoV-2 decay half life (\u210e 2 ), and time delay ( 0 ) after the prior toilet flushing all contributed to 2% of the variability in the model outcome and were less important in comparison with the concentration of the virus in the flush water ( , , 2 ). Aside from the factors influencing the exposure risk, the dose-response best fit parameter 2 in the exponential dose-response model was the second most important contributor to the variability of the illness risk estimation. 37% of variability in illness estimation was due to this parameter in the toilet flushing scenario and 34%",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF14": {
+            "text": "Ranked importance analysis of model outcomes. Concentration of the virus and the best fit parameter used in dose-illness model are the most sensitive parameters contribute to the model outcomes. Other contributors include aerosol concentration generated during toilet flushing and dispersion of aerosols in toilet room. To further assess the confidence of fecal viral load among COVID-19 patients, we compared the estimated total viral load from all COVID-19 cases (15-day accumulated cases) in a sewage treatment plant's service area with the reported concentration of SARS-CoV-2 in sewage. The back-of-the-envelope calculation was carried out using the City of New York COVID-19 cases reported during their peak outbreak. The case numbers were collected in Newtown Creek Wastewater Treatment Plant (NCWTP) service area, including Manhattan, Brooklyn and Queens 62 . The case numbers were multiplied by the fecal loading rate and divided by the influent volume of raw sewage to NCWTP. The details of the calculation and outcomes are presented in the supporting materials and",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF15": {
+            "text": "all residents in the plant service area were COVID-19 patients and shed virus in the feces, the median concentration of SARS-CoV-2 was still in the range of 3.1log 10 gc/L of raw sewage. In comparison with the reports of SARS-CoV-2 concentration in sewage from different municipal sewage treatment plants (median value of 5.23log 10 gc/L), the estimates based on fecal loading were much lower (Figure S2andTable S7). This result suggests that the fecal loading is either underestimated or sewage SARS-CoV-2 concentration is several orders overestimated. The underestimation of fecal viral load could be due to the methodological challenges relating to sample extraction and purification of viruses for qPCR. Since the uncertainty of this parameter plays a key role in the risk estimation, future data in this area will no doubt improve the confidence in the risk estimation.Regardless of the contribution of the conversion factor to model variability, the infectivity of the viruses shed in feces is a critical factor to establish the hazard in discussion. At the time of this writing, there are two sides of the expert opinions regarding the infectivity of SARS-CoV-2 in feces. One side believes that viruses shed in feces are mostly inactivated by colonic fluid 13 , therefore, there is low or no hazard from fecal shed virus. So far, there has not been any direct evidence to support fecal transmitted infection in human or in animal model for either SARS-CoV-2 or SARS-CoV-1. The conclusion from the Amory Gardens investigation was challenged by previous reports[58][59] . The other side of the opinion points to the successful isolation of infectious virus from fecal samples from the handful of presence and absence studies to support the hypothesis of fecal-oral transmission10,[15][16][17] . Several reports also indicate that viral shedding in feces long after patients recovered from COVID-19 and tested negative for SARS-CoV-2 in respiratory samples. They suggested that prolonged viral shedding could J o u r n a l P r e -p r o o f pose repeated exposure risks to others even after the patient has recovered from disease34 . In addition to the case report of Amoy Gardens for SARS-CoV-1 transmission, two recent governmental reports from China concluded that fecal exposure was the likely source of COVID-19 transmission. One was a press release of the Infectious Disease Control Authority in the City of Guangzhou, China, which pin-pointed the COVID-19 patient feces as the source of infection of three families residing in the floor below a COVID-19 patient 63 . The second was a report by Beijing Center for Disease Control and Prevention identifying that an isolated incident of a COVID-19 case was linked to a known cluster of outbreak through a visit to a public bathroom64 . More research is needed to understand infectious potential of feces. We adopted the genome copy to infectious unit conversion of SARS-CoV-1 reported in the lab experiments as a proxy for SARS-CoV-2. It is important to point out that the SARS-CoV-1 used in these experiments was not derived from fecal samples[42][43] . They were lab viral cultures, and the relationship between genome copies and infectious units depended on the methods for virus preparation, the storage condition and time delay before the assay. If we believe the colonic fluid can effectively inactivate SARS-CoV-2, the conversation factor adopted from lab cultured viruses could be an overestimation of infectious virus in feces and the final risks. The conversion factor used in the model covers a range based on the lab experimental outcome but it may not be the right representation of fecal shed virus. The degree of uncertainty in this factor may not be adequately represented by the importance analysis. Until further data on infectivity of SARS-CoV-2 in feces is made available, this is the best proxy for converting genome equivalent to infectious unit.The aerosol generation during toilet flushing has been well studied[20][21] . Aerosol concentration varies with types of toilet. The aerosol concentrations presented by O'Toole's J o u r n a l P r e -p r o o f study 44 are the best representation of the low flow toilet commonly installed in the multi-unit apartment buildings. The importance analyses indicated both aerosol concentration and dispersion in a room could have important impact on the risk outcomes. However, they were unlikely to change the magnitude of the risk that could match the risk outcome of Amoy Gardens. In comparison with the direct measurements of aerosols generated by toilet flushing, the dispersion of aerosols through a faulty drains is less certain. The commonly known sewer smell only provides indirect evidence for aerosol intake from the main sewer pipe to individual toilet rooms. We built a uniform distribution for the dispersion rate to capture the variability of this parameter. Additional research is needed to understand the building drainage system and aerosol transmission. Human dose-response model for SARS-CoV-2 requires intentionally exposing humans to known doses of SARS-CoV-2, which is unlikely due to the ethical concerns. Animal models may be developed in the future as that has been done for SARS-CoV-1. Although there are remarkable differences between SARS-CoV-2 and SARS-CoV-1 during infection, the disease development shares similarity, which promotes us to use the SARS-CoV-1 model as the proxy. Analyses showed that this was a critical parameter of the risk model and contributed to a large degree of uncertainty in the risk outcome. Adjustment made in the through incorporation of enhanced affinity to cell receptor, did not dramatically increase the risk. The uncertainty was largely embedded in the original model parameter, where data were pooled from both the animal model and comparison with other coronavirus including HCoV-229E to generate the best fit . Together with viral load, k had the biggest impact on risk outcomes. However, even after removing the uncertainty of the dose-response relationship, the comparison of the exposure dose estimated by the model still could not resolve the large gap with the dose J o u r n a l P r e -p r o o f estimation from Watanabe et al.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF16": {
+            "text": "building drainage system. However, there are large degrees of uncertainty among several model input parameters. Although uncertainties are inevitable, risk assessment should always be conducted in an iterative manner that allows refinement of the risk assessment question(s), key assumptions, and data used in the model. As the first attempt to understand the risk of a novel virus, we expect the risk analysis to offer the fundamental understanding of associated risk based on the risk analysis framework. The model and outcomes can be refined in the later time with the emergence of new data on the property of the virus, human and environmental interactions. The mismatch of the exposure dose and illness estimation of this study with Amoy Gardens' report is worthy of further investigation. Although the high end of the risk estimation does not exclude the transmission scenario, it has a lower possibility or is only under extreme conditions. The extreme conditions may include a partially stopped up drainage system that can trap human waste containing virus in the sewer pipe, overloading ventilating fan to draw contaminated aerosols constantly into the toilet room 19 . Therefore, attentions should be given to proper maintenance of building drainage systems during the outbreak of aerosol transmitted diseases. It should be noted that the existing indoor drainage systems, if used and maintained properly, are able to protect healthy habitants from the possible exposures to pathogens, which is validated by the lack of more incidents like Amoy Gardens. Recommendations such as J o u r n a l P r e -p r o o f keeping the toilet cover closed while flushing to prevent the aerosols from being splashed into the air, and a regular inspection of water seals to prevent the aerosols in drainage pipes from being released into the indoor air could be made to further reduce the risk. Such simple habits could effectively keep habitants from microbial risks associated with the building drainage system. The toilet flushing and faulty floor drain scenarios are examples of potential hazards of the fecal contamination derived risk. The aerosolization of fecal derived virus can also be applied to risk analysis in shared public restrooms since the restroom can be filled with aerosols generated by multiple toilet flushes within a short time window. The viral concentration in the air could be significantly higher if there were large numbers of COVID-19 patients or asymptomatic carriers using the restroom (maybe closer to the direct measurements in the Wuhan Hospital toilet room). Another potential application is to look into the aerosol generation from aerated sewage during wastewater treatment process to estimate the risk of personnel working in wastewater treatment plants. J o u r n a l P r e -p r o o f",
+            "latex": null,
+            "type": "figure"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.J o u r n a l P r e -p r o o f",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Declaration of competing interest"
+        }
+    ]
+}

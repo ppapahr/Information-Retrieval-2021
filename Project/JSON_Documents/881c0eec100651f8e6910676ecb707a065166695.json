@@ -1,0 +1,667 @@
+{
+    "paper_id": "881c0eec100651f8e6910676ecb707a065166695",
+    "metadata": {
+        "title": "Supplemental Materials Early detection of change patterns in COVID-19 incidence and the implementation of public health policies: a multi-national study Blinded copy",
+        "authors": []
+    },
+    "abstract": [
+        {
+            "text": "A main mathematical model used in studying COVID-19 data is the traditional mathematical infectious disease model known as the \"susceptible (S), infected (I), and recovered (R)\" model, or SIR model 1 and its variations, such as stochastic SIR models, for the purpose of determining the total numbered of infected, the reproductive number, R0, etc. SIR models are powerful and used for implied purposes. We propose an innovative analytic approach by applying statistical change point models, which have been previously employed to model volatility in stock markets, to detect changes in genomic data and data dynamics in other scientific disciplines, to segment the transformed case data. This allowed us to identify possible change or turning points as indicated by the dynamics of daily COVID-19 incidences. Specifically, our analytic approach consisted of two parts. The first was to use a B-spline model 2 to estimate the trend of the original cases (say cases at day , = 1, \u2026 , , where n is the number of days available in the particular country's data). The spline regression models are traditional nonparametric methods used in trend fitting of data. The B-splines are constructed from polynomial pieces joined by some points called knots (indicated by blue vertical lines in panel A of all figures). These knots are determined by a model selection criterion so that piecewise local polynomials between the knots can together give the best prediction of the overall trend of the incidences. These knots, however, are not necessarily the statistical change points of the trend.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "With the daily case trend fitted by the splines, we hope to find where the potential changes are in the trend for each country. This question can be answered by using a statistical change point",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "model, 3 which is the second part of our analytics. The daily incidences in many countries have shown different moving average with varying dispersion (volatility) over different period, indicating piecewise changing mean and variance. Therefore, a statistical change point model is a natural choice for identifying change points in the mean and variance of the data. The model assumes that the data are approximately normally distributed. To satisfy this assumption, we first transformed the number of cases to a normally distributed number of cases (say with = \u221a + 3/8). While the probability distribution of the coronavirus cases ( 's) can be assumed to be Poisson, 4 the transformed values 's are approximately normal. 5 For situations when the mean and variance change point is not able to detect any change points due to the reasons such as the transformed data may actually deviate from the normality assumption or the changes in mean and variance were not exactly piecewise, we used a Bayesian Note that at the time of this analysis, the WHO data had some negative new cases reported for a few countries; those negative case numbers were replaced by 0.",
+            "cite_spans": [
+                {
+                    "start": 7,
+                    "end": 8,
+                    "text": "3",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 669,
+                    "end": 670,
+                    "text": "4",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 723,
+                    "end": 724,
+                    "text": "5",
+                    "ref_id": "BIBREF6"
+                }
+            ],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "In the European region, Turkey had its first COVID-19 confirmed case on March 11, and in the next few days, the case numbers lingered in single digits, but picked up quickly thereafter. Turkey instituted travel restrictions and other measures (e.g., public education about hygienic measures such as hand washing) to control the spread of the epidemic. 8, 9 The first change point occurred on March 26 followed by an increasing trend (Supplemental Figure 5) . It was observed that on and after March 26, transportation by air, bus, train etc. were restricted by the Turkey government's policy. 10 The cases continued to increase until April 26 (the second change point in Supplemental Figure 5 ) where a slow downturn point was observed. The downturn was slow moving and continued to linger, evidenced by the 95% CI of (1182,1604) ( Table 2) , for Turkey from April 27 to June 5.",
+            "cite_spans": [
+                {
+                    "start": 352,
+                    "end": 354,
+                    "text": "8,",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 355,
+                    "end": 356,
+                    "text": "9",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 593,
+                    "end": 595,
+                    "text": "10",
+                    "ref_id": "BIBREF11"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 447,
+                    "end": 456,
+                    "text": "Figure 5)",
+                    "ref_id": null
+                },
+                {
+                    "start": 684,
+                    "end": 692,
+                    "text": "Figure 5",
+                    "ref_id": null
+                },
+                {
+                    "start": 832,
+                    "end": 840,
+                    "text": "Table 2)",
+                    "ref_id": null
+                }
+            ],
+            "section": "More Results on other countries:"
+        },
+        {
+            "text": "Our analysis of the COVID-19 case data of two other countries in the Americas region, Canada and Mexico, revealed that Canada saw a gradually flattened curve after three change points observed in March and April (Supplemental Figure 6 ) and Mexico still saw an increasing trend after May 11 th (Supplemental Figure 7) . The 95% CI for each of these two countries from the last detected change date (see Table 1 ) to June 5 shows the similar situation (see Table 2 ).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 226,
+                    "end": 234,
+                    "text": "Figure 6",
+                    "ref_id": null
+                },
+                {
+                    "start": 308,
+                    "end": 317,
+                    "text": "Figure 7)",
+                    "ref_id": null
+                },
+                {
+                    "start": 403,
+                    "end": 410,
+                    "text": "Table 1",
+                    "ref_id": null
+                },
+                {
+                    "start": 456,
+                    "end": 463,
+                    "text": "Table 2",
+                    "ref_id": null
+                }
+            ],
+            "section": "More Results on other countries:"
+        },
+        {
+            "text": "In the region of Africa, thirteen nations with close ties to China, including Kenya, South Africa, and Nigeria, were identified as high-risk priority zones for proactive surveillance, detection and containing the spread of COVID-19. 11 Kenya introduced mandatory screening at all ports of entry, and established isolation facilities and a rapid response team to handle suspected cases. 11 Analysis of Kenya's incidence data of Kenya demonstrated two spikes (after the first two change points, see Supplemental Figure 8 ) with the second spike higher than the first one and the cases were lingering around 20 beyond May 11 th . South Africa assigned 300 health officials to ports of entry and began screening all travelers from China. In addition, national and provincial response teams were set up in South Africa. 11 Nigeria showed a worse picture than Kenya and the cases beyond May 11 th were still rising (see Supplemental Figure 9 ). Likewise, the cases in South Africa still demonstrated an upwards trend (see Supplemental Figure 10 ). The last CI for each of these three countries was wider in the last period from the last detected change date to June 5 than the previous period (see Table 2 ) indicates the upward trend for each of them and stricter policy made need to be implemented in order to flatten the curve in these countries.",
+            "cite_spans": [
+                {
+                    "start": 233,
+                    "end": 235,
+                    "text": "11",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 386,
+                    "end": 388,
+                    "text": "11",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 815,
+                    "end": 817,
+                    "text": "11",
+                    "ref_id": "BIBREF12"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 510,
+                    "end": 518,
+                    "text": "Figure 8",
+                    "ref_id": null
+                },
+                {
+                    "start": 927,
+                    "end": 935,
+                    "text": "Figure 9",
+                    "ref_id": null
+                },
+                {
+                    "start": 1029,
+                    "end": 1038,
+                    "text": "Figure 10",
+                    "ref_id": null
+                },
+                {
+                    "start": 1192,
+                    "end": 1199,
+                    "text": "Table 2",
+                    "ref_id": null
+                }
+            ],
+            "section": "More Results on other countries:"
+        },
+        {
+            "text": "In the Eastern Mediterranean region, the cases in Iran peaked between March 2 and April 10, then started a downtrend thereafter but was moving towards a predicted upward direction after April 17 (the third change point, see Supplemental Figure 11 ). The last CI for Iran from April 18 to June 5 ranges from 1,431 to 1,865 cases, showing an upward trend for Iran (see Table 2 ).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 237,
+                    "end": 246,
+                    "text": "Figure 11",
+                    "ref_id": null
+                },
+                {
+                    "start": 367,
+                    "end": 374,
+                    "text": "Table 2",
+                    "ref_id": null
+                }
+            ],
+            "section": "More Results on other countries:"
+        },
+        {
+            "text": "Saudi Arabia instituted travel restrictions and other measures (e.g., public education about hygienic measures such as hand washing) to control the spread of the epidemic. 8, 9 The cases in Saudi Arabia had a slow increasing trend until April 16, and quickly picked up an upward trend thereafter (see Supplemental Figure 12 ). The CI for the average case number from April 17 to June 5 ranges from 1,479 to 1,862 cases (see Table 2 ) indicating a continuing upward trend. Table 2 . The cases in Singapore were contained very well in early months from January to mid-March, a gradual increase trend was seen after March 16 (the first green vertical line, see Supplemental Figure 18 ), the trend progressed until April 13 and beyond April 16 it took a steeper upward trend. The trend is predicted to continue to progress with 3-digit numbers beyond May 11 th and the last CI for the period from April 17 to June 5, (591, 707) (see Table 2 ) confirms this observation.",
+            "cite_spans": [
+                {
+                    "start": 172,
+                    "end": 174,
+                    "text": "8,",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 175,
+                    "end": 176,
+                    "text": "9",
+                    "ref_id": "BIBREF10"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 314,
+                    "end": 323,
+                    "text": "Figure 12",
+                    "ref_id": null
+                },
+                {
+                    "start": 424,
+                    "end": 431,
+                    "text": "Table 2",
+                    "ref_id": null
+                },
+                {
+                    "start": 472,
+                    "end": 479,
+                    "text": "Table 2",
+                    "ref_id": null
+                },
+                {
+                    "start": 671,
+                    "end": 680,
+                    "text": "Figure 18",
+                    "ref_id": null
+                },
+                {
+                    "start": 929,
+                    "end": 936,
+                    "text": "Table 2",
+                    "ref_id": null
+                }
+            ],
+            "section": "More Results on other countries:"
+        },
+        {
+            "text": "Supplemental Figure 1 ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 13,
+                    "end": 21,
+                    "text": "Figure 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Supplematal Figures:"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Mathematical models of SIR disease spread with combined non-sexual and sexual transmission routes",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Miller",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Infect Dis Model",
+            "volume": "2",
+            "issn": "1",
+            "pages": "35--55",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Flexible smoothing with B-splines and penalties",
+            "authors": [
+                {
+                    "first": "Phc",
+                    "middle": [],
+                    "last": "Eilers",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Marx",
+                    "suffix": ""
+                }
+            ],
+            "year": 1996,
+            "venue": "Statistical Science",
+            "volume": "11",
+            "issn": "2",
+            "pages": "89--121",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Parametric Statistical Change Point Analysis -With Applications to Genetics, Medicine, and Finance",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Gupta",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Association of Public Health Interventions With the Epidemiology of the COVID-19 Outbreak in Wuhan, China",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Pan",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Modeling the Next Generation Sequencing Read Count Data for DNA Copy Number Variant Study",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Ji",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Statistical Applications in Genetics and Molecular Biology",
+            "volume": "14",
+            "issn": "",
+            "pages": "361--374",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "A Statistical Change Point Model Approach for the Detection of DNA Copy Number Variations in Array CGH Data",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "IEEE/ACM Transactions on Computational Biology and Bioinformatics",
+            "volume": "6",
+            "issn": "",
+            "pages": "529--541",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "An online copy number variant detection method for short sequencing reads",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Yi\u011fiter",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "An",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Danacio\u011flu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Journal of Applied Statistics",
+            "volume": "42",
+            "issn": "7",
+            "pages": "1556--1571",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Saudi Arabia's drastic measure to curb the COVID-19 outbreak: temporary suspension of the Umrah pilgrimage",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Ebrahim",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Memish",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J of Travel Medicine",
+            "volume": "",
+            "issn": "",
+            "pages": "1--2",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "COVID-19 outbreak control, example of ministry of health of Turkey",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Demirbilek",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Pehlivanturk",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Ozge",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Turkish Journal of Medical Sciences. Turk J Med Sci",
+            "volume": "50",
+            "issn": "",
+            "pages": "489--94",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Coronavirus Travel Restrictions, Across the Globe. The New York Times",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Salcedo",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Yar",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Cherelus",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Is Africa prepared for tackling the COVID-19 (SARS-CoV-2) epidemic. Lessons from past outbreaks, ongoing pan-African public health efforts, and implications for the future",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Kapata",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Ihekweazu",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Ntoumi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Int J Infectious Diseases",
+            "volume": "93",
+            "issn": "",
+            "pages": "233--239",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Successful containment of COVID-19: the WHOreport on the COVID-19 outbreak in China",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Salzberger",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Gluck",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Ehrenstein",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Infection",
+            "volume": "48",
+            "issn": "",
+            "pages": "151--154",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "The French response to COVID-19: intrinsic difficulties at the interface of science, public health, and policy",
+            "authors": [
+                {
+                    "first": "J-P",
+                    "middle": [],
+                    "last": "Moatti",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "The Lancet",
+            "volume": "5",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Effectiveness of the measures to flatten the epidemic cure of COVID-19. The case of Spain",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Saez",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Tobias",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Varga",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Science of the Total Environment",
+            "volume": "727",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "The significant change points are detected, where the significance is determined if the p-value is small. The p-value is calculated according to: 6 \u2212 = 1 \u2212 exp{\u22122 exp[2 ln(ln( )) + ln(ln(ln( ))) \u2212 (2ln(ln( ) ) \u0305 = \u2211 =1 \u2044 , for the change point position k in the range between 1 and n.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "are carried out using our own codes written in Matlab (R2019b) and in R software (version 3.6), and SAS JMP Pro 14.0 software.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "In the Western Pacific (WPRO) region, China saw the earliest breakout in Wuhan. The Chinese government restricted travel from and to Hubei province and implemented a number of measures to contain the outbreak, including quarantine measures affecting 60 million people and strict limitations on travel.12 The public health interventions included intensive case and contact tracking, isolation of moderately ill patients in containment centers, social distancing, and shutting down public life in the province.12 The virus was contained after the whole country was on lock-down for roughly two months (see SupplementalFigure 13). The last CI for China showed the estimated average case number from March 25 to June 5 ranged from 18 to 35, indicting a containment. In Korea, there were 12 cases of the novel coronavirus disease on February 1, 2020. Korea was able to better control the outbreak through a strategy of mass screening, quarantines in local areas, contact tracing, physical distancing, and a national mobile phone alert system to warn residents of the movements of affected individuals to detect possible outbreaks.13,14 Our analysis results showed that Japan, Korea, Australia and New Zealand have seen spikes in earlier days of the breakout in their respective countries and are now in containment (see Supplemental and the last CI for each of these four countries in",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": ". B-spline fitting of the trend of new daily cases for Italy (A) with change points identified according to a change point model (B). The middle vertical green line is marked at the change point (red cricle in panel B) identified by the online change point detection algorithm with the posterior probability of 0.8145. Supplemental Figure 2. B-spline fitting of the trend of new daily cases for Germany (A) with change points identified according to a change point model (B). The three vertical green lines are marked at the change points identified by the online change point detection algorithm with posterior probability respectively as 0.6445, 0.7786, and 0.7455. Supplemental Figure 3. B-spline fitting of the trend of new daily cases for Spain (A) with change points identified according to a change point model (B). The three vertical green lines are marked at the change points (red cricles in panel B) identified by the mean and variance change point model with p-values respectively as 0B-spline fitting of the trend of new daily cases for France (A) with change points identified according to a change point model (B). The two vertical green lines in panel A are marked at the change points (red cricles in panel B) identified by the online change point detection algorithm with posterior probability respectively as 0.5383 and 0.7029. Supplemental Figure 5. B-spline fitting of the trend of new daily cases for Turkey (A) with change points identified according to a change point model (B). The two vertical green lines are marked at the change points (red cricles in panel B) identified by the mean and variance change point model with p-values respectively as 0B-spline fitting of the trend of new daily cases for Canada (A) with change points identified according to a change point model (B). The three vertical green lines are marked at the change points (red cricles in panel B) identified by the online change point detection algorithm with posterior probability respectively as 0.5367, 0.5535, and 0.5751. Supplemental Figure 7. B-spline fitting of the trend of new daily cases for Mexico (A) with change points identified according to a change point model (B). The two vertical green lines are marked at the change points identified (red cricles in panel B) by the online change point detection algorithm with posterior probability respectively as 0.5698 and 0.5172. Supplemental Figure 8. B-spline fitting of the trend of new daily cases for Kenya (A) with change points identified according to a change point model (B). The first two vertical green lines are marked at the change points (red circles in panel B) identified by the mean and variance change point model with p-values respectively as 0.0009 and 0.0230. Supplemental Figure 9. B-spline fitting of the trend of new daily cases for Nigeria (A) with change points identified according to a change point model (B). The four vertical green lines are the marked at change points (red cricles in panel B) identified by the online change point detection algorithm with posterior probability respectively as 0B-spline fitting of the trend of new daily cases for South Africa (A) with change points identified according to a change point model (B). The two vertical green lines are marked at the change points (red cricles in panel B) identified by the mean and variance change point model with p-values respectively as 0B-spline fitting of the trend of new daily cases for Iran (A) with change points identified according to a change point model (B). The three vertical green lines in panle A are the change points (red cricles in panel B) identified by the mean and variance change point modell with p-values respectively as 0B-spline fitting of the trend of new daily cases for Saudi Arabia (A) with change points identified according to a change point model (B). The vertical green line is marked at the two adjcent change points (red cicles in panel B) identified by the mean and variance change point model with p-values respectively as 0.0000 and 0.0672. Supplemental Figure 13. B-spline fitting of the trend of new daily cases for China (A) with change points identified according to a change point model (B). The three vertical green lines are marked at the change points (red cicles in panel B) identified by the online change point detection algorithm with posterior probability respectively as 0.5555, 0.5535, 0.5031. Supplemental Figure 14. B-spline fitting of the trend of new daily cases for Japan (A) with change points identified according to a change point model (B). The four vertical green lines are marked at the change points (red cicles in panel B) identified by the mean and variance change point model with p-values respectively as 0.0000, 0.0312, 0.0083, and 0.0548. Supplemental Figure 15. B-spline fitting of the trend of new daily cases for Korea (A) with change points identified according to a change point model (B). The three vertical green lines are marked at the change points (red cicles in panel B) identified by the online change point detection algorithm with posterior probability respectively as 0.6314, 0.9517, 0.8482. Supplemental Figure 16. B-spline fitting of the trend of new daily cases for Australia (A) with change points identified according to a change point model (B). The two vertical green lines are marked at the change points (red cricles in panel B) indetified by the mean and variance change point model with p-values respectively as 0.0000 and 0.0000. Supplemental Figure 17. B-spline fitting of the trend of new daily cases for New Zealand (A) with change points identified according to a change point model (B). The first two vertical green lines in panel A are marked at the change points (red cicles in panel B) identified by the mean and variance change point model with p-values respectively as 0.0000 and 0.0016. The last vertical green line in panel A is marked at a point whose p-value of 0.3966 is not small enough for being considered as a change point according to the algorithm. The possible interpretation of that point is that it may indicates the start of the next downturn phase on April 20 for New Zealand. B-spline fitting of the trend of new daily cases for Singapore (A) with change points identified according to a change point model (B). The three vertical green lines in panle A are marked at the change points (red circles in panel B) identified by the mean and variance change point model with p-values respectively as 0.000, 0.0000, and 0.0802.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "online change point algorithm 7 that places a Markov chain assumption on the change point location and use a Bayesian approach to calculate the posterior probability that any day being a change point sequentially. This is an iterative computing process via a Bayesian framework by assuming the mean and variance follow certain prior distributions, respectively. A point (date index) is found to be a change point if its posterior probability of being a change point > 0.50. The posterior probability is calculated according to the algorithm developed.7 The identified change points combined with the spline-fitted trend can provide interpretation of how the change points may have provided better or sooner mandate dates for the implementation of public restrictive interventions in each country. The proposed analytics were applied to the WHO daily new cases",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": []
+}

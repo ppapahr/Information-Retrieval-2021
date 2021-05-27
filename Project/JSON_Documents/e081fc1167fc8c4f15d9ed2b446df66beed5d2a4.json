@@ -1,0 +1,1402 @@
+{
+    "paper_id": "e081fc1167fc8c4f15d9ed2b446df66beed5d2a4",
+    "metadata": {
+        "title": "HYPOTHESIS AND THEORY GSK-3 Inhibition as a Therapeutic Approach Against SARs CoV2: Dual Benefit of Inhibiting Viral Replication While Potentiating the Immune Response",
+        "authors": [
+            {
+                "first": "Kjetil",
+                "middle": [],
+                "last": "Task\u00e9n",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Jerry",
+                "middle": [
+                    "M"
+                ],
+                "last": "Parks",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Christoph",
+                "middle": [],
+                "last": "W\u00fclfing",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Ana",
+                "middle": [],
+                "last": "Martinez",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Christopher",
+                "middle": [
+                    "E"
+                ],
+                "last": "Rudd",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Centre de Recherche-Maisonneuve-Rosemont Hospital (CR-HMR)",
+                    "institution": "",
+                    "location": {
+                        "settlement": "Montreal",
+                        "region": "QC, Canada"
+                    }
+                },
+                "email": "christopher.e.rudd@umontreal.ca"
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "The SARS-CoV2 (COVID-19) pandemic and uncertainties in developing a vaccine have created an urgent need for new therapeutic approaches. A key question is whether it is possible to make rational predictions of new therapies based on the presently available scientific and medical information. In this regard, I have noticed an omission in the present analysis in the literature related to the exploitation of glycogen synthase kinase 3 (GSK-3) as a therapeutic approach. This is based on two key observations, that GSK-3 inhibitors can simultaneously block SARs viral replication, while boosting CD8+ adaptive T-cell and innate natural killer (NK) responses. Firstly, it is already clear that GSK-3 phosphorylation of SARs CoV1 N protein on key serine residues is needed for viral replication such that small molecule inhibitors (SMIs) of GSK-3 can inhibit viral replication. In comparing protein sequences, I show here that the key sites in the N protein of SARs CoV1 N for replication are conserved in SARs CoV2. This strongly suggests that GSK-3 SMIs will also inhibit SARs Cov2 replication. Secondly, we and others have previously documented that GSK-3 SMIs markedly enhance CD8+ cytolytic T-cell (CTL) and NK cell anti-viral effector functions leading to a reduction in both acute and chronic viral infections in mice. My hypothesis is that the repurposing of low-cost inhibitors of GSK-3 such as lithium will limit SARS-CoV2 infections by both reducing viral replication and potentiating the immune response against the virus. To date, there has been no mention of this dual connection between GSK-3 and SARs CoV2 in the literature. To my knowledge, no other drugs exist with the potential to simultaneously target both viral replication and immune response against SARs CoV2.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "The SARS-CoV2 (COVID- 19) pandemic and uncertainties in developing a vaccine have created an urgent need for new therapeutic approaches. A key question is whether it is possible to make rational predictions of new therapies based on the presently available scientific and medical information. In this regard, I have noticed an omission in the present analysis in the literature related to the exploitation of glycogen synthase kinase 3 (GSK-3) as a therapeutic approach. This is based on two key observations, that GSK-3 inhibitors can simultaneously block SARs viral replication, while boosting CD8+ adaptive T-cell and innate natural killer (NK) responses. Firstly, it is already clear that GSK-3 phosphorylation of SARs CoV1 N protein on key serine residues is needed for viral replication such that small molecule inhibitors (SMIs) of GSK-3 can inhibit viral replication. In comparing protein sequences, I show here that the key sites in the N protein of SARs CoV1 N for replication are conserved in SARs CoV2. This strongly suggests that GSK-3 SMIs will also inhibit SARs Cov2 replication. Secondly, we and others have previously documented that GSK-3 SMIs markedly enhance CD8+ cytolytic T-cell (CTL) and NK cell anti-viral effector functions leading to a reduction in both acute and chronic viral infections in mice. My hypothesis is that the repurposing of low-cost inhibitors of GSK-3 such as lithium will limit SARS-CoV2 infections by both reducing viral replication and potentiating the immune response against the virus. To date, there has been no mention of this dual connection between GSK-3 and SARs CoV2 in the literature. To my knowledge, no other drugs exist with the potential to simultaneously target both viral replication and immune response against SARs CoV2. (Tocilizumab), inhibitors of the co-receptor serine protease TMPRSS2 (such as camostat mesylate), soluble receptor ACE2 as a decoy, amongst others (2). A key objective will be to inhibit SARs CoV2 transcription while potently boosting the immune response against the viruses and limiting the cytokine release syndrome (CRS) associated with severe disease. CRS is mediated predominately by T-cells and inflammatory myeloid lineage cells, the latter pathogenically licensed primarily by CD4+ Tcells. In this light, the potential for the use of inhibitors of the serine/threonine kinase glycogen synthase kinase 3 (GSK-3) has passed somewhat unnoticed. The hypothesis underlying this article is that GSK-3 inhibitors will both inhibit SARS-CoV2 replication and potentiate CD8+ T-cell responses for enhanced viral clearance. It should therefore be considered as a new therapeutic approach.",
+            "cite_spans": [
+                {
+                    "start": 22,
+                    "end": 25,
+                    "text": "19)",
+                    "ref_id": "BIBREF16"
+                }
+            ],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "The SARS-CoV2 has four structural proteins, known as the S (spike), E (envelope), M (membrane), and N (nucleocapsid) proteins. The N protein holds the RNA genome and is needed for transcription of the viral genome, while the S, E, and M proteins together create the viral envelope (3). The SARs CoV1 N protein is phosphorylated by GSK-3, an event that is needed for viral replication (4-6). The inhibition of GSK-3 with small molecule inhibitors (SMIs) prevents SARs CoV1 N1 phosphorylation, and in the process, limits SARs CoV1 viral replication (4, 5, 7). As seen in Figure 1A , in comparing sequences, it is clear that the SARs CoV2 N protein sequence has the same conserved key serine residues (serine 189 and 207) as found in the SARs CoV1 N protein. Most residues surrounding these key phosphorylation sites are identical between SARs CoV1 and SARs CoV2. It therefore seems likely that GSK-3 phosphorylation of the serine residues in SARs CoV2 will occur as in related SARs CoV1. GSK-3 inactivators also inhibit the coronovirus protease (M pro ) (or 3C-like protease) (8) that cleaves the SARS-CoV-2 encoded polyproteins (pp1a and pp1ab) needed for viral replication and transcription (9) . From these two angles, it is a reasonable hypothesis that the inhibitors of GSK-3 that inhibit SARs CoV1 replication will inhibit SARs CoV2 replication. To date, this has not been interrogated, but could be rapidly tested in in vitro assays using Vero6 or 293T cells.",
+            "cite_spans": [
+                {
+                    "start": 1191,
+                    "end": 1194,
+                    "text": "(9)",
+                    "ref_id": "BIBREF6"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 569,
+                    "end": 578,
+                    "text": "Figure 1A",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": ""
+        },
+        {
+            "text": "Secondly, studies from my lab and others have shown that GSK-3 negatively regulates T-cell proliferation and function (10) (11) (12) . GSK-3 is most active in resting T-cells, keeping cells in a quiescent state. This function is unlike of other kinases such as p56 lck which initiate the activation of T-cells (13) . As a consequence, the inhibition of GSK-3 with the small molecule inhibitors (SMIs) such as SB415286 markedly enhance adaptive CD8+ cytolytic cell (CTL) function (11, (14) (15) (16) (Figure 1B) . This potentiating effect is due in part to the upregulation in expression of the transcription factor T-bet (Tbx21) (11), a central regulator of Th1 differentiation (17) . T-bet, in turn, inhibits the transcription and expression of inhibitory receptors PD-1 and LAG3, while promoting the expression of cytolytic effector molecules in CD8+ T-cells, granzyme B, perforin and interferongamma (16, 18) . Further, and salient to this hypothesis, GSK-3 SMIs help resolve viral infections in mice, acute infection by the murine gamma-herpesvirus 68, and chronic infection with the lymphocytic choriomeningitis clone 13 (LCMV) (11) . The effects of GSK-3 were preferentially seen in CD8 CTLs, and to a lesser extent, CD4+ T-cells, the latter contributing to the CRS seen in the more severe clinical manifestations of COVID-19. GSK-3 inhibitors have also been found to induce the suppressive cytokine interleukin 10 (IL-10) in CD4+ T-cells which might dampen CRS in severe disease (19) . IL-10 limits the immune response and prevents tissue damage in infection and autoimmune disease (20) . Lastly, GSK-3 inhibition drives the maturation and function of natural killer (NK) cells (21) . Natural killer (NK) cells are effector cells of the innate immune system and also important in the control of viral infections (22) . The inhibition of the GSK-3 pathway, therefore, plays central roles in promoting both the adaptive and innate immune responses against viruses.",
+            "cite_spans": [
+                {
+                    "start": 118,
+                    "end": 122,
+                    "text": "(10)",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 123,
+                    "end": 127,
+                    "text": "(11)",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 128,
+                    "end": 132,
+                    "text": "(12)",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 310,
+                    "end": 314,
+                    "text": "(13)",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 479,
+                    "end": 483,
+                    "text": "(11,",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 484,
+                    "end": 488,
+                    "text": "(14)",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 489,
+                    "end": 493,
+                    "text": "(15)",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 494,
+                    "end": 498,
+                    "text": "(16)",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 678,
+                    "end": 682,
+                    "text": "(17)",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 903,
+                    "end": 907,
+                    "text": "(16,",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 908,
+                    "end": 911,
+                    "text": "18)",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 1133,
+                    "end": 1137,
+                    "text": "(11)",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 1486,
+                    "end": 1490,
+                    "text": "(19)",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 1589,
+                    "end": 1593,
+                    "text": "(20)",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 1685,
+                    "end": 1689,
+                    "text": "(21)",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 1819,
+                    "end": 1823,
+                    "text": "(22)",
+                    "ref_id": "BIBREF19"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 499,
+                    "end": 510,
+                    "text": "(Figure 1B)",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": ""
+        },
+        {
+            "text": "The evidence presented here strongly suggests for the first time that GSK-3 inhibitors could constitute an effective therapy in restraining the progression of SARs CoV-2 infections. To my knowledge, no other drugs exist which might simultaneously target both SARs CoV-2 viral replication, and the immune response against the virus. It would be a novel and affordable therapeutic approach with the potential dual targeting both the virus and immune system in the treatment of COVID-19 patients. In the immediate term, lithium chloride could be administered to patients on a compassionate basis given that citrate, orotate, and carbonate salt formations of the drug are in wide clinical use for the treatment of bipolar disorders. Various side effects such as nausea have been reported, although these can be minimized by gradually increasing doses to the desired strength. Renal side effects seen in some patients can also be ameliorated with proper drug monitoring (23) . Relative to the life-saving potential of GSK-3 inhibition in the treatment of COVID-19, the side effects are a minor consideration. With time, more specific GSK-3 reagents such as SB415286 could be tested in clinical trials. Both ATP competitive and potentially more selective allosteric non-competitive inhibitors could be used. The inhibitor TDZD-8 has been tested in preclinical models of cancer (24) , while another inhibitor Tideglusib has been in Phase II clinical trials for Alzheimer's disease and progressive supranuclear palsy where it is welltolerated (25, 26) . Others recently noted the potential of GSK-3 inhibitors given effects on other viral infections, but failed to note the homologous regulatory phosphorylation sites in SARS CoV2 and CoV1 (27) . It is these known and previously unknown target effects which I argue are key to the potential success of GSK-3 inhibition in the treatment of COVID-19. All risks should be understood prior to administration of any treatments and precautions taken under the close supervision of a physician.",
+            "cite_spans": [
+                {
+                    "start": 965,
+                    "end": 969,
+                    "text": "(23)",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 1371,
+                    "end": 1375,
+                    "text": "(24)",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 1535,
+                    "end": 1539,
+                    "text": "(25,",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 1540,
+                    "end": 1543,
+                    "text": "26)",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 1732,
+                    "end": 1736,
+                    "text": "(27)",
+                    "ref_id": "BIBREF24"
+                }
+            ],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "The original contributions presented in the study are included in the article/supplementary material, further inquiries can be directed to the corresponding author/s.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "DATA AVAILABILITY STATEMENT"
+        },
+        {
+            "text": "The SARS-CoV-2 (COVID-19) pandemic and uncertainties in developing a vaccine have created an urgent need for new therapeutic approaches. In this Opinion or Hypothesis article, I propose the exploitation of glycogen synthase kinase 3 (GSK-3) as a therapeutic approach. This is based on two key observations, that GSK-3 inhibitors can simultaneously block SARs viral replication, while boosting CD8+ adaptive T-cell and innate natural killer (NK) responses. My hypothesis is that the repurposing of low-cost inhibitors of GSK-3 such as lithium chloride will limit SARS-CoV-2 infections by both limiting viral replication and potentiating the immune response against the virus.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "AUTHOR'S NOTE"
+        },
+        {
+            "text": "The author confirms being the sole contributor of this work and has approved it for publication. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "AUTHOR CONTRIBUTIONS"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "SARS-CoV-2 vaccines: status report",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Amanat",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Krammer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Immunity",
+            "volume": "52",
+            "issn": "",
+            "pages": "583--592",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.immuni.2020.03.007"
+                ]
+            }
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "News feature: to counter the pandemic, clinicians bank on repurposed drugs",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Madhusoodanan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Proc Natl Acad Sci",
+            "volume": "117",
+            "issn": "",
+            "pages": "10616--10636",
+            "other_ids": {
+                "DOI": [
+                    "10.1073/pnas.2007346117"
+                ]
+            }
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Analysis of therapeutic targets for SARS-CoV-2 and discovery of potential drugs by computational syndrome coronavirus nucleocapsid protein and viral replication",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Zhong",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "J Biol Chem",
+            "volume": "284",
+            "issn": "",
+            "pages": "5229--5268",
+            "other_ids": {
+                "DOI": [
+                    "10.1074/jbc.M805747200"
+                ]
+            }
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Identification of phosphorylation sites in the nucleocapsid protein (N protein) of SARS-coronavirus",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Shao",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Int J Mass Spectrom",
+            "volume": "268",
+            "issn": "",
+            "pages": "296--303",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ijms.2007.05.009"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Inhibition of cell proliferation by SARS-CoV infection in Vero E6 cells",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Mizutani",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Fukushi",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Iizuka",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Inanami",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Kuwabara",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Takashima",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "FEMS Immunol Med Microbiol",
+            "volume": "46",
+            "issn": "",
+            "pages": "236--279",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/j.1574-695X.2005.00028.x"
+                ]
+            }
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Structure of M(pro) from SARS-CoV-2 and discovery of its inhibitors",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Jin",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Du",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Deng",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nature",
+            "volume": "582",
+            "issn": "",
+            "pages": "289--93",
+            "other_ids": {
+                "DOI": [
+                    "10.1101/2020.02.26.964882"
+                ]
+            }
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "The crystal structures of severe acute respiratory syndrome virus main protease and its complex with an inhibitor",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Ding",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Lou",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "Proc Natl Acad Sci",
+            "volume": "100",
+            "issn": "",
+            "pages": "13190--13195",
+            "other_ids": {
+                "DOI": [
+                    "10.1073/pnas.1835675100"
+                ]
+            }
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Glycogen synthase kinase 3: a kinase for all pathways?",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Patel",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Woodgett",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Curr Top Dev Biol",
+            "volume": "123",
+            "issn": "",
+            "pages": "277--302",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/bs.ctdb.2016.11.011"
+                ]
+            }
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Glycogen synthase kinase 3 inactivation drives T-bet-mediated downregulation of co-receptor PD-1 to enhance CD8(+) cytolytic T cell responses",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Taylor",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Harker",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Chanthong",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Stevenson",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Zuniga",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Rudd",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Immunity",
+            "volume": "44",
+            "issn": "",
+            "pages": "274--86",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.immuni.2016.01.018"
+                ]
+            }
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Negative regulation of T cell proliferation and interleukin 2 production by the serine threonine kinase GSK-3",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Ohteki",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Parsons",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Zakarian",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Jones",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Nguyen",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Woodgett",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Ohashi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2000,
+            "venue": "J Exp Med",
+            "volume": "192",
+            "issn": "",
+            "pages": "99--104",
+            "other_ids": {
+                "DOI": [
+                    "10.1084/jem.192.1.99"
+                ]
+            }
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "The CD4 receptor is complexed in detergent lysates to a protein-tyrosine kinase (pp58) from human T lymphocytes",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Rudd",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Trevillyan",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Dasgupta",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Wong",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Schlossman",
+                    "suffix": ""
+                }
+            ],
+            "year": 1988,
+            "venue": "Proc Natl Acad Sci",
+            "volume": "85",
+            "issn": "",
+            "pages": "5190--5194",
+            "other_ids": {
+                "DOI": [
+                    "10.1073/pnas.85.14.5190"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Two strings in one bow: PD-1 negatively regulates via co-receptor CD28 on T cells",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Krueger",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Rudd",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "",
+            "volume": "46",
+            "issn": "",
+            "pages": "529--560",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.immuni.2017.04.003"
+                ]
+            }
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Small-molecule inhibition of PD-1 transcription is an effective alternative to antibody blockade in cancer therapy",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Taylor",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Rothstein",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Rudd",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Cancer Res",
+            "volume": "78",
+            "issn": "",
+            "pages": "706--723",
+            "other_ids": {
+                "DOI": [
+                    "10.1158/0008-5472.CAN-17-0491"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Glycogen synthase kinase 3 inactivation compensates for the lack of CD28 in the priming of CD8(+) cytotoxic T-Cells: implications for anti-PD-1 immunotherapy. Front Immunol",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Taylor",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Rudd",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "",
+            "volume": "8",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3389/fimmu.2017.01653"
+                ]
+            }
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "T-bet in disease",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Lazarevic",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Glimcher",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Nat Immunol",
+            "volume": "12",
+            "issn": "",
+            "pages": "597--606",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/ni.2059"
+                ]
+            }
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Small molecule inhibition of GSK-3 specifically inhibits the transcription of inhibitory co-receptor LAG-3 for enhanced anti-tumor immunity",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Rudd",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Chanthong",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Taylor",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Cell Rep",
+            "volume": "30",
+            "issn": "",
+            "pages": "2075--82",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.celrep.2020.01.076"
+                ]
+            }
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Glycogen synthase kinase-3 controls IL-10 expression in CD4(+) effector T-cell subsets through epigenetic modification of the IL-10 promoter",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Hill",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Ng",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Burton",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Oakley",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Malik",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Wraith",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Eur J Immunol",
+            "volume": "45",
+            "issn": "",
+            "pages": "1103--1118",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/eji.201444661"
+                ]
+            }
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "The regulation of IL-10 production by immune cells",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Saraiva",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Garra",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Nat Rev Immunol",
+            "volume": "10",
+            "issn": "",
+            "pages": "170--81",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/nri2711"
+                ]
+            }
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "GSK3 inhibition drives maturation of NK cells and enhances their antitumor activity",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Cichocki",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Valamehr",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Bjordahl",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Rezner",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Rogers",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Cancer Res",
+            "volume": "77",
+            "issn": "",
+            "pages": "5664--75",
+            "other_ids": {
+                "DOI": [
+                    "10.1158/0008-5472.CAN-17-0799"
+                ]
+            }
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "NK cells in host responses to viral infections",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Lam",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Lanier",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Curr Opin Immunol",
+            "volume": "44",
+            "issn": "",
+            "pages": "43--51",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.coi.2016.11.003"
+                ]
+            }
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "What we need to know about the effect of lithium on the kidney",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Gong",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Dworkin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Am J Physiol Renal Physiol",
+            "volume": "311",
+            "issn": "",
+            "pages": "1168--71",
+            "other_ids": {
+                "DOI": [
+                    "10.1152/ajprenal.00145.2016"
+                ]
+            }
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Rapid and selective death of leukemia stem and progenitor cells induced by the compound 4-benzyl, 2-methyl, 1,2,4-thiadiazolidine, 3,5 dione (TDZD-8)",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Guzman",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Corbett",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Rossi",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Bushnell",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Liesveld",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Blood",
+            "volume": "110",
+            "issn": "",
+            "pages": "4436--4480",
+            "other_ids": {
+                "DOI": [
+                    "10.1182/blood-2007-05-088815"
+                ]
+            }
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Treatment of Alzheimer's disease with the GSK-3 inhibitor tideglusib: a pilot study",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Del Ser",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Steinwachs",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Gertz",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Andres",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Gomez-Carrillo",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Medina",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "J Alzheimers Dis",
+            "volume": "33",
+            "issn": "",
+            "pages": "205--220",
+            "other_ids": {
+                "DOI": [
+                    "10.3233/JAD-2012-120805"
+                ]
+            }
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "GSK-3 inhibitors: preclinical focus on CNS",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Eldar-Finkelman",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Martinez",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Front Mol Neurosci",
+            "volume": "4",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3389/fnmol.2011.00032"
+                ]
+            }
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "International Group for The Study of Lithium Treated, Lithium's antiviral effects: a potential drug for CoViD-19 disease?",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Murru",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Manchia",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Hajek",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Nielsen",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Rybakowski",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Sani",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Schulze",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Int J Bipolar Disord",
+            "volume": "8",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/s40345-020-00191-4"
+                ]
+            }
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Keywords: T-Cells (or lymphocytes), COVID, CD8+: T lymphocyte subsets, viral (or virus), therapy COMMENTARY The SARS-CoV2 (COVID-19) pandemic has put unprecedented pressure on the economy and health of individuals around the world (1). Given the delays and potential complications in generating a vaccine, there is an urgent need for other therapeutic modalities. Possible avenues have been proposed including the use of hydroxychloroquine, anti-interleukin 7 receptor (IL7R)",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "GSK-3 as a potentially important target for SARs CoV2 therapy. (A) A comparison of the N protein residues of SARs CoV1 and CoV2 around key serine residues 189 and 207. The critical serine phosphorylation sites on SARs CoV1 N protein needed for viral replication are conserved in SARs CoV2 (see circled P*). (B) Model for the action GSK-3 in modulating SARs CoV2 infection and the response of the T-cell immune response. GSK-3 inhibition is predicted to simultaneously inhibit SARs CoV2 N protein replication and as shown against other viruses, to preferentially boost CD8+ T-cell response against the virus. Left circle: GSK-3 inhibition is predicted to inhibit SARs CoV2 N protein phosphorylation and viral replication. Right circle: GSK-3 inhibition boosts CD8+ T-cell responses against the virus. GSK-2 blockade inhibits the expression of inhibitory receptors PD-1 and LAG3, in part, by increasing the expression of the transcription factor Tbet (Tbx21), while promoting the expression of cytolytic effector molecules in CD8+ T-cells such as granzyme B (GMZB) and interferon-gamma (IFNg1). GSK-2 inhibition also augments natural killer (NK) function.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "Acta Pharm Sin B. (2020) 10:766-88. doi: 10.1016/j.apsb.2020. 02.008 4. Wu CH, Chen PJ, Yeh SH. Nucleocapsid phosphorylation Cell Host Microbe. (2014) 16:462-72. doi: 10.1016/j.chom.2014. 09.009 5. Wu CH, Yeh SH, Tsay YG, Shieh YH, Kao CL, Chen YS, et al. Glycogen synthase kinase-3 regulates the phosphorylation of severe acute respiratory",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "The author declares that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.Copyright \u00a9 2020 Rudd. This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conflict of Interest:"
+        }
+    ]
+}

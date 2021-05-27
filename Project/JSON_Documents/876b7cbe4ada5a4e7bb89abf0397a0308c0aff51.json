@@ -1,0 +1,1890 @@
+{
+    "paper_id": "876b7cbe4ada5a4e7bb89abf0397a0308c0aff51",
+    "metadata": {
+        "title": "Whole genome analysis of more than 10 000 SARS-CoV-2 virus unveils global genetic diversity and target region of NSP6",
+        "authors": [
+            {
+                "first": "Indrajit",
+                "middle": [],
+                "last": "Saha",
+                "suffix": "",
+                "affiliation": {},
+                "email": "indrajit@nitttrkol.ac.in"
+            },
+            {
+                "first": "Nimisha",
+                "middle": [],
+                "last": "Ghosh",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Ayan",
+                "middle": [],
+                "last": "Pradhan",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Nikhil",
+                "middle": [],
+                "last": "Sharma",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Her research interest includes computational intelligence, computational biology, machine learning, wireless sensor network and internet of things. Ayan Pradhan Mr Pradhan is a faculty member in the . His research interest includes computational biology and machine learning. Debasree Maity Ms Maity is a faculty member in the Abstract Whole genome analysis of SARS-CoV-2 is important to identify its genetic diversity. Moreover, accurate detection of SARS-CoV-2 is required for its correct diagnosis. To address these, first we have analysed publicly available 10 664 complete or near-complete SARS-CoV-2 genomes of 73 countries globally to find mutation points in the coding regions as substitution, deletion, insertion and single nucleotide polymorphism (SNP) globally and country wise. In this regard, multiple sequence alignment is performed in the presence of reference sequence from NCBI. Once the alignment is done, a consensus sequence is build to analyse each genomic sequence to identify the unique mutation points as substitutions, deletions, insertions and SNPs globally, thereby resulting in 7209, 11700, 119 and 53 such mutation points respectively. Second, in such categories, unique mutations for individual countries are determined with respect to other 72 countries. In case of India, unique 385, 867, 1 and 11 substitutions, deletions, insertions and SNPs are present in 566 SARS-CoV-2 genomes while 458, 1343, 8 and 52 mutation points in such categories are common with other countries. In majority (above 10%) of virus population, the most frequent and common mutation points between global excluding India and India are L37F, P323L, F506L, S507G, D614G and Q57H in NSP6, RdRp, Exon, Spike and ORF3a respectively. While for India, the other most frequent mutation points are T1198K, A97V, T315N and P13L in NSP3, RdRp, Spike and ORF8 respectively. These mutations are further visualised in protein structures and phylogenetic analysis has been done to show the diversity in virus genomes. Third, a web application is provided for searching mutation points globally and country wise. Finally, we have identified the potential conserved region as target that belongs to the coding region of ORF1ab, specifically to the NSP6 gene. Subsequently, we have provided the primers and probes using that conserved region so that it can be used for detecting SARS-CoV-2. Contact: indrajit@nitttrkol.ac.in Supplementary information: Supplementary data are available at http://www. nitttrkol.ac.in/indrajit/projects/COVID-Mutation-10K",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "SARS-CoV-2, the virus that causes COVID-19, is thought to have first spread from an animal host to humans in Wuhan, China, in December 2019 [1] . Since then the virus entrenched in most of the countries and became an epidemic with an exponential growth rate creating an alarming situation around the globe. The World Health Organization (WHO) on 11 March 2020 declared COVID-19 to be a pandemic by citing international public health emergency. Mostly exposed population experiences few mild to moderate symptoms, such as high body temperature in conjunction with some respiratory symptoms such as cough, sore throat and headache while some remain asymptomatic [2] . Several measures such as proper nationwide lockdown, social distancing [3] and face masks are adopted around the globe to bring the effect of the virus under control but still more than 79.05 million people are already affected globally with a death count of more than 1737 thousand [4] increasing the need for a cure against this global pandemic.",
+            "cite_spans": [
+                {
+                    "start": 140,
+                    "end": 143,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 660,
+                    "end": 663,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 737,
+                    "end": 740,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 949,
+                    "end": 952,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "SARS-CoV-2 virus is a single-stranded enveloped RNA virus of length 29.9 kilobase pairs [5] [6] [7] [8] [9] . It has 11 coding regions where ORF1ab occupies majority of the genome, whereas spike (S), envelope (E), membrane (M), nucleocapsid (N) and 6 accessory regions such as ORF3a, ORF6, ORF7a, ORF7b, ORF8 and ORF10 occupying the rest of the genome [5, 6] . The genetic diversity and functionality of many of the coding regions are yet to be discovered. In this early phase of research, it is very important to understand the genetic diversity of this virus globally so that proper drug and vaccine can be developed [10, 11] . In this regard, few small-scale genomic analysis has been performed in [12] [13] [14] [15] [16] to show the evolution of SARS-CoV-2. Similarly, we have also analysed Indian SARS-CoV-2 genomes in [17] . On the other hand, the virus detection and epitope-based synthetic vaccine design require genome-wide analysis of pool of virus genomes in order to find the most conserved regions so that RT-PCR kits can be developed to detect virus globally. To the best of our knowledge, analysis of global genetical diversity on such a large scale (of more than 10 thousand SARS-CoV-2 genomes) and subsequently finding conserved regions for those genomes are not reported yet. For studying genetic diversity, it is important to identify the mutation points such as substitution, deletion, insertion and single nucleotide polymorphism (SNP) in virus population. Among the mutation points, SNPs create a high linkage disequilibrium, which can be then targeted to determine the correct dose of vaccine for a heterogeneous population [18] . Based on the measles genotype-specific SNPs, in [19] , Tran et al. describe a process to rapidly determine whether a measles-positive sample is vaccine associated or a wild-type virus. A rapid differentiation of wildtype virus from vaccine strains is done to avoid any further escalation of spread of the disease. Moreover, designing and defining the dose of the vaccine is also a very challenging task [20] . SNPs can be very helpful for this purpose as well. As per the study by [21] , candidate SNPs were identified that may be important in regulating humoral immunity to smallpox vaccination. In [22] , the authors used SNP-based PCR assay for the detection of a live vaccine strain of Erysipelothrix rhusiopathiae. Chothe et al. [23] performed whole-genome sequencing of Bovine herpesvirus-1 (BoHV-1), which causes reproductive disorders in cattle and used SNPs to cluster them into two different vaccine groups and one distinct cluster of field isolates. Consequently, they developed an SNP-based PCR assay to differentiate between vaccine and clinical strains to accurately determine the prevalence of BoHV-1 in cattle. In [24] , detailed analysis of SNPs for Varicella-zoster virus (VZV) was carried out, which suggested 24 potential vaccine-specific sites. For the detection of SARS-CoV-2, [25] have identified targets, primers and probes using Basic Local Alignment Search Tool (BLAST) and reported RdRp, E and N as the target proteins for SARS-CoV-2 detection. In [26] , the authors identified ORF8 to be the potential target for SARS-CoV-2 detection. However, these studies were conducted on a small number of virus genomes. Furthermore, since the studies were conducted around four months back, the virus has evolved making it necessary for further analysis to find its new potential target, primers and probes. Taking cues from all the aforementioned studies, we have analysed publicly available 10 664 complete or near-complete SARS-CoV-2 genomes of 73 countries around the globe to find mutation points to determine the SNPs, identify the conserved region as target and subsequently propose the primers and probes for SARS-CoV-2 detection.",
+            "cite_spans": [
+                {
+                    "start": 88,
+                    "end": 91,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 92,
+                    "end": 95,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 96,
+                    "end": 99,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 100,
+                    "end": 103,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 104,
+                    "end": 107,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 352,
+                    "end": 355,
+                    "text": "[5,",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 356,
+                    "end": 358,
+                    "text": "6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 619,
+                    "end": 623,
+                    "text": "[10,",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 624,
+                    "end": 627,
+                    "text": "11]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 701,
+                    "end": 705,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 706,
+                    "end": 710,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 711,
+                    "end": 715,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 716,
+                    "end": 720,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 721,
+                    "end": 725,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 825,
+                    "end": 829,
+                    "text": "[17]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 1648,
+                    "end": 1652,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 1703,
+                    "end": 1707,
+                    "text": "[19]",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 2058,
+                    "end": 2062,
+                    "text": "[20]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 2136,
+                    "end": 2140,
+                    "text": "[21]",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 2255,
+                    "end": 2259,
+                    "text": "[22]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 2389,
+                    "end": 2393,
+                    "text": "[23]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 2785,
+                    "end": 2789,
+                    "text": "[24]",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 2954,
+                    "end": 2958,
+                    "text": "[25]",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 3130,
+                    "end": 3134,
+                    "text": "[26]",
+                    "ref_id": "BIBREF25"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Initially, we have analyzed publicly available 10 664 complete or near-complete SARS-CoV-2 genomes of 73 countries around the globe to find mutation points as substitution, deletion and insertion as well as SNPs. For this purpose, multiple sequence alignment (MSA) [27] , called Clustal Omega (ClustalO) [28, 29] , is performed in the presence of reference sequence from the National Center for Biotechnology Information (NCBI). Multiple sequence alignment methods are algorithmic solutions to align evolutionarily related sequences by considering evolutionary events such as mutations, substitutions, deletions, insertions and rearrangements under certain conditions. These methods can be applied to DNA, RNA or protein sequences. MSA methods are responsible for a large number of in silico analysis, which include phylogenetic reconstruction, domain analysis, motif finding and other applications as well [30] . Once the alignment is done, a consensus sequence is built to analyse each genomic sequence to identify the mutation points. As a result, we have found 7209, 11700, 119 and 53 as substitutions, deletions, insertions and SNPs globally across 29.9 kbp. Thereafter, unique mutations as substitutions, deletions, insertions and SNPs are shown for individual countries with respect to other 72 countries. The results have been illustrated taking India as an example where 385, 867, 1 and 11 unique substitutions, deletions, insertions and SNPs are present while 458, 1343, 8 and 52 mutation points in such categories are common with other countries. The outcomes of our analysis are shown quantitatively and visually by providing BioCircos, showing major mutation points in protein structures and genetic diversity through phylogenetic analysis. Moreover, a web application has also been provided for browsing through the mutation points globally and across 73 countries individually. Finally, we have identified a conserved region as target, which is more than 100 nt long. This conserved region belongs to ORF1ab coding region, specifically to the NSP6 gene. This ultimately resulted in the identification of primers and probes using that conserved region for SARS-CoV-2 detection. To summarise, the main contributions of this works are the following: (a) more than 10000 SARS-CoV-2 genomes are aligned in high-performance computing environment so that the mutation in virus sequences globally can be determined, (b) unique mutations in terms of substitutions, deletions and SNPs are shown for individual countries with respect to other 72 countries, (c) a website is prepared to help the researchers to conduct further research after having the mutation information and (d) identify the conserved region as target in ORF1ab, specifically NSP6 gene and subsequently provide primers and probes for SARS-CoV-2 detection. Thus, the target region of NSP6 gene can be used as a confirmatory assay in current context. ",
+            "cite_spans": [
+                {
+                    "start": 265,
+                    "end": 269,
+                    "text": "[27]",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 304,
+                    "end": 308,
+                    "text": "[28,",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 309,
+                    "end": 312,
+                    "text": "29]",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 907,
+                    "end": 911,
+                    "text": "[30]",
+                    "ref_id": "BIBREF29"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "In this section, the source of 10 664 virus genomes across 73 countries and methods used to analyse such genomes are discussed to identify the genetic diversity and target gene.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Materials and Methods"
+        },
+        {
+            "text": "SARS-CoV-2 has 11 coding regions and 25 coded proteins, which are shown and reported in Figure 1 and Table S1 , respectively. Initially, the Reference Genome (NC_045512.2) of SARS-CoV-2 virus is collected from NCBI (https://www.ncbi. nlm.nih.gov/nuccore/1798174254) followed by the collection of 10 664 complete or near complete SARS-CoV-2 genomes or sequences from the Global Initiative on Sharing All Influenza Data (GISAID) (https://www.gisaid.org/) in fasta format. These sequences are distributed in 73 countries. The same is shown using geoplot in Figure 2A while day and month wise statistics are shown in 2B. The distribution of the sequences in different countries is reported in supplementary Table S2 . It is important to note that GISAID contains many incomplete sequences or virus genome that we have filtered out while preparing our dataset. The dataset contains sequence ID and virus genome as a fasta format. The maximum and average length of the 10 664 virus genome are 29 903 and 28 831 bp. Please note that for the data visualization and editing, BioEdit was used, and for the alignment of sequences, high-performance computing (HPC) facility of NITTTR, Kolkata, was used. ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 88,
+                    "end": 96,
+                    "text": "Figure 1",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 101,
+                    "end": 109,
+                    "text": "Table S1",
+                    "ref_id": "TABREF1"
+                },
+                {
+                    "start": 554,
+                    "end": 563,
+                    "text": "Figure 2A",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 703,
+                    "end": 711,
+                    "text": "Table S2",
+                    "ref_id": null
+                }
+            ],
+            "section": "Data Collection and Preparation"
+        },
+        {
+            "text": "The pipeline of the workflow is shown in Figure 3A . In order to find the mutation points from 10 664 SARS-CoV-2 sequences globally and country wise, the sequences are aligned first using MSA technique called ClustalO in the presence of reference sequence from NCBI. The choice of selecting ClustalO is taken because of its popularity, speed and accuracy. k-tuple method is used in ClustalO to produce pairwise alignment followed by mBed, which is used to cluster the sequences. Thereafter, kmeans clustering algorithm is used. Guide tree is then built using unweighted pair group method with arithmetic mean (UPGMA) method. Finally, HHalign package is used to construct the MSA. After performing ClustalO, a consensus sequence is built so that mutation points such as substitution, deletion and insertion can be extracted from each genome. The preparation of consensus sequence is done based on the (a) higher frequency of nucleotides and (b) in case, if there is a tie in the frequency of the nucleotides, then such genomic places are replaced by the nucleotides of reference sequence. In this process of consensus building, the consent of population and reference sequence can be taken. The overall detection scheme is shown in Figure 3B to identify substitution, deletion and insertion. This is applied for each virus genome. There are three ways in which substitution can be identified in virus genomes. With respect to consensus sequence, these changes are the following: (i) only one change in the nucleotide of the genomic sequence, (ii) two changes in the nucleotide of the genomic sequence and (iii) three changes in the nucleotide of the genomic sequence. A mutation is considered as deletion if there is a nucleotide present in the consensus sequence, which is replaced by a gap in the genomic sequence while for insertion, the vice-versa is true. After having the lists of substitution, deletion and insertion, SNP is further computed from substitution list as the SNPs occur in more than 1% of the virus population and create variants in the population. Figure 3C shows examples of substitution, deletion and SNP after multiple alignment of sequences. Once we have done the mutation analysis globally and country wise sequences, these mutation details are further used to compute unique mutations as substitutions, deletions and insertions and SNPs are shown for individual countries with respect to other 72 countries. Moreover, we have developed a web application for searching the mutation points. This web application has its front end designed in PHP while the back end uses MySQL server.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 41,
+                    "end": 50,
+                    "text": "Figure 3A",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 1231,
+                    "end": 1240,
+                    "text": "Figure 3B",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 2068,
+                    "end": 2077,
+                    "text": "Figure 3C",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "Pipeline of the Workflow"
+        },
+        {
+            "text": "Furthermore, to identify the conserved regions, entropy (E) is computed as where S y x represents the frequency of each residue x occurring at position y and 5 represents the four possible residues as nucleotides plus gap. To identify the conserved regions, a minimum segment length of 15 is considered with maximum average entropy as 0.2. Furthermore, after finding the consensus sequence, maximum entropy per position is taken as 0.2 with no gaps. All these values are taken after following the literature. Subsequently, a particular conserved region with more than 100 nucleotides is considered as potential target. This is ultimately used in the identification of primers and probes using Primer-BLAST (https://www.ncbi.nlm.nih.gov/tools/primer-blast/) for the detection of SARS-CoV-2. Moreover, the genetic diversity of the virus genomes is depicted through phylogenetic analysis and the important mutation points are shown in protein structures.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Pipeline of the Workflow"
+        },
+        {
+            "text": "In the result section, initially identification of mutation points as substitutions, deletions, insertions and SNPs are discussed. Next, unique mutation points in individual countries with respect to 72 other countries are shown. Apart from this, the steps of identifying SNPs are elaborated followed by the discussion on the development of web application. Furthermore, potential conserved region of SARS-CoV-2 as target is determined to identify the primers and probes.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Results"
+        },
+        {
+            "text": "Initially, we have found 7209, 11700, 119 and 53 mutation points as substitutions, deletions, insertions and SNPs globally by considering all the 73 countries. In total, 19028 mutation points are found by considering substitutions, deletions and insertions. It is to be noted that in this work, we have only considered the mutation points in the coding regions. To understand the mutation of virus population in a particular country as compared to the global mutation, as an example, we have shown the mutation of Indian virus population. In this regard, there are 17775, 6824, 10833, 118 and 48 global mutation excluding India while in the case of India, we have found 3062, 843, 2210, 9 and 63 mutations as all mutations, substitutions, deletions, insertions and SNPs. This is reported in Table 1 . It is found from the table that the Indian sequences have 59.08% ((1809/3062)*100%), 54.32% ((458/843)*100%), 60.76% ((1343/2210)*100%), 88.88% ((8/9)*100%) and 28.57% ((18/63)*100%) common mutation points with global sequences in the five categories. In order to compute such common points, Venn diagrams are prepared and shown in Figure 4 (a). As can be seen from the Venn diagrams, though the mutations in Indian sequences have 59.08%, 54.32%, 60.76%, 88.88% and 28.57% common mutation points with global sequences, when seen from the global perspective, these percentage of common mutations become 10.17% ((1809/17775)*100%), 6.71% ((458/6824)*100%), 12.39% ((1343/10833)*100%), 6.78% ((8/118)*100%) and 37.50% ((18/48)*100%), respectively. For other countries, similar calculations can be performed as well. Apart from this representation, circos plots are reported in Figure 4B to show the frequency of mutation points through different tracks as substitution, deletion, insertion and SNP. It gives a clear visualization regarding mutation in different coding regions of SARS-CoV-2. Unique mutations, substitutions, deletions, insertions and SNPs for individual countries are computed and reported in Table 2 . The details of mutation globally and country wise are provided in supplementary Tables S3 and S4 while BioCircos of 72 countries are also given in supplementary Figure S1 .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 791,
+                    "end": 798,
+                    "text": "Table 1",
+                    "ref_id": "TABREF1"
+                },
+                {
+                    "start": 1133,
+                    "end": 1141,
+                    "text": "Figure 4",
+                    "ref_id": null
+                },
+                {
+                    "start": 1675,
+                    "end": 1684,
+                    "text": "Figure 4B",
+                    "ref_id": null
+                },
+                {
+                    "start": 2008,
+                    "end": 2015,
+                    "text": "Table 2",
+                    "ref_id": null
+                },
+                {
+                    "start": 2179,
+                    "end": 2188,
+                    "text": "Figure S1",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Identification of Mutation Points"
+        },
+        {
+            "text": "Furthermore, unique mutations as substitutions, deletions, insertions and SNPs for individual countries with respect to other 72 countries are reported in Table 3 . Let us take an example to illustrate the difference between Tables 2 and 3 . Suppose, country A has mutation points such as 574, 575, 576, 577 and 578 and the mutation points of country B are 575, 578, 582, 583, 584 and 590. In case of Table 2 , the results that will be reported are 5 and 6 mutation points, respectively, for countries A and B. So, these are the mutation points that are unique to each individual country. On the other hand, Table 3 will report the value as 3 mutation points for country A as the points 574, 576 and 577 are present only in country A and nowhere else. Similarly, for country B, the value is 4 as 582, 583 and 584 and 590 are the mutation points completely unique to country B. To further illustrate, India has a total of 843, 2210, 9 and 63 unique mutations as substitutions, deletions, insertions and SNPs while with respect to other 72 countries India has 385, 867, 1 and 11 unique mutations as substitutions, deletions, insertions and SNPs, respectively. This can be visualised through Venn diagrams in Figure 4A .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 155,
+                    "end": 162,
+                    "text": "Table 3",
+                    "ref_id": null
+                },
+                {
+                    "start": 225,
+                    "end": 239,
+                    "text": "Tables 2 and 3",
+                    "ref_id": null
+                },
+                {
+                    "start": 401,
+                    "end": 408,
+                    "text": "Table 2",
+                    "ref_id": null
+                },
+                {
+                    "start": 608,
+                    "end": 615,
+                    "text": "Table 3",
+                    "ref_id": null
+                },
+                {
+                    "start": 1206,
+                    "end": 1215,
+                    "text": "Figure 4A",
+                    "ref_id": null
+                }
+            ],
+            "section": "Identification of Mutation Points"
+        },
+        {
+            "text": "SNPs are computed based on the occurrence of substitution for a given genomic coordinate if it is more than 1% of the population. Therefore, the calculation of SNPs is dependent on the number of genomic sequences of a country. For example, since there are 566 sequences in India, those substitutions will be considered as SNPs whose occurrence is more than 5. On the other hand, for global excluding India, SNPs are those substitutions that have occurred more than 100 (0.01*(10664-566)) times in the population. Considering this, while computing unique SNPs for India out of 63 with respect to 48 global SNPs excluding India as mentioned in Table 1 , it results in 45 unique SNPs for India. However, out of these 45 SNPs, 34 SNPs are present in other countries as well and only 11 SNPs are unique in India. This can be attributed to the fact that 48 SNPs are calculated globally based on the substitutions that have occurred more than 100 times in the population while for India, such occurrences are more than 5 in the 63 SNPs. Similarly, while computing SNPs for individual countries, it is obvious that the other countries can have same mutation points as SNPs because their population size varies. As a consequence, when the 48 and 63 SNPs are taken, 34 SNPs out of 45 are present in other countries, which crop up in Indian SNPs. To overcome this, unique SNPs are calculated by following the given steps: (i) initially, unique substitutions need to be identified for a country, (ii) with these unique substitutions, unique SNPs are identified that are present in these substitutions and (iii) such SNPs are excluded from all the identified SNPs in a country to identify the common and unique SNPs in Global. In this way, all those SNPs can be identified, which are unique to a particular country with respect to other 72 countries. For example, in case of India after executing step (i), we identified 385 substitutions. Subsequently 11 SNPs are identified by following step (ii) while 30 SNPs are unique globally and India shares 52 (34 and 18) common SNPs with other countries as identified in step (iii). These calculations can be carried out for the other countries as well. In Figure 4 (a), the Venn diagram for the aforementioned SNPs are visualised where (i) 30 represents the SNPs unique in global excluding India, (ii) 18 represents the SNPs common in both global excluding India and India, (iii) 34 represents the SNPs common in other 72 countries and India and (iv) 11 represents the SNPs unique in India. The details of these SNPs are reported in Table 4 . SNPs in the protein structures for RdRp and Spike are shown in Figures 5 and 6 respectively while the rest of the protein structures with SNPs are provided in the supplementary. Further to the aforementioned analysis, signicant SNPs e.g. that are present in more than 10% of the virus population is shown in Figure 4 (c) for global excluding India and only India and reported in Table 5 . The table also reports their corresponding change in nucleotide, amino acid, entropy value and coding region. It is to be noted that for certain mutation points, there may be multiple changes in nucleotide which may lead to multiple changes in amino acid as well. For example, in Table 5 , at mutation point 14408, the two nucleotide changes C>T and C>A have led to two amino acid changes, P>L and P>H. t",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 642,
+                    "end": 649,
+                    "text": "Table 1",
+                    "ref_id": "TABREF1"
+                },
+                {
+                    "start": 2188,
+                    "end": 2196,
+                    "text": "Figure 4",
+                    "ref_id": null
+                },
+                {
+                    "start": 2565,
+                    "end": 2572,
+                    "text": "Table 4",
+                    "ref_id": null
+                },
+                {
+                    "start": 2638,
+                    "end": 2653,
+                    "text": "Figures 5 and 6",
+                    "ref_id": "FIGREF4"
+                },
+                {
+                    "start": 2883,
+                    "end": 2891,
+                    "text": "Figure 4",
+                    "ref_id": null
+                },
+                {
+                    "start": 2954,
+                    "end": 2961,
+                    "text": "Table 5",
+                    "ref_id": null
+                },
+                {
+                    "start": 3244,
+                    "end": 3251,
+                    "text": "Table 5",
+                    "ref_id": null
+                }
+            ],
+            "section": "Identification of SNPs"
+        },
+        {
+            "text": "Also, a web application is provided to extract the mutation points globally for 10 664 sequences as well as country wise by providing either genomic coordinates of the virus genome or name of the coding region and mutation type. The screen shots of the web application are provided in Figure 4D . Moreover, the aligned sequences are provided as supplementary (http://www.nitttrkol. ac.in/indrajit/projects/COVID-Mutation-10K/) for further use.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 285,
+                    "end": 294,
+                    "text": "Figure 4D",
+                    "ref_id": null
+                }
+            ],
+            "section": "Development of Web Application for Identification of Mutation Points"
+        },
+        {
+            "text": "Furthermore, we have identified a conserved region as target, which belongs to ORF1ab coding region, specifically to the NSP6 gene that is shown in Table 6 . The specificity of conserved region is verified by Nucleotide BLAST with the BLAST score of 220 and specificity score as query coverage equal to 100%. It confirms global stability of this conserved region as a potential target. In order to highlight the conserved region in NSP6 protein, the structure of NSP6 is taken from Zhanglab (https:// zhanglab.ccmb.med.umich.edu/COVID-19/) in the form of a PDB file and subsequently shown in Table 6 where the target conserved region is highlighted in red. The structure of NSP6 protein is generated by using C-I-TASSER [31] . Using the targeted conserved region, 10 primers and probes are identified from Primer-BLAST and reported in Table 7 . In this regard, both the forward and the reverse primers are reported in this table. The GC score is found to be high for the identified primers and lie around 40%-50%. It shows these primers can be used for virus detection in RT-PCR. Moreover, the primers and probes are shown in Figure 4E . In this regard, it is worth mentioning that Griffoni et al. [32] have also identified NSP6 gene as a possible target for vaccine design while in this work the aforementioned primers and probes are the regions in NSP6 gene, which can be used for the detection of SARS-CoV-2 to diagnose COVID-19 patients correctly.",
+            "cite_spans": [
+                {
+                    "start": 720,
+                    "end": 724,
+                    "text": "[31]",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 1198,
+                    "end": 1202,
+                    "text": "[32]",
+                    "ref_id": "BIBREF31"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 148,
+                    "end": 155,
+                    "text": "Table 6",
+                    "ref_id": "TABREF3"
+                },
+                {
+                    "start": 592,
+                    "end": 599,
+                    "text": "Table 6",
+                    "ref_id": "TABREF3"
+                },
+                {
+                    "start": 835,
+                    "end": 842,
+                    "text": "Table 7",
+                    "ref_id": "TABREF4"
+                },
+                {
+                    "start": 1126,
+                    "end": 1135,
+                    "text": "Figure 4E",
+                    "ref_id": null
+                }
+            ],
+            "section": "Identification of Conserved Region as Target and corresponding Primers and Probes"
+        },
+        {
+            "text": "SARS-CoV-2 has gripped the whole world and has caused a pandemic of epic proportions. In this situation, it is very important to understand the genetic diversity among the SARS-CoV-2 genomes. In this regard, the genome-wide analysis of 10 664 SARS-CoV-2 sequences has resulted in four outcomes:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussions"
+        },
+        {
+            "text": "(a) global and country wise mutation points are identified, (b) with this mutation information, unique mutations as substitutions, deletions, insertions and SNPs for individual countries with respect to other 72 countries are identified, (c) development of a web application for searching the mutation points with the mutation information and (d) identification of a conserved region as target that belongs to ORF1ab coding region, specifically NSP6 gene that provides 10 primers and probes to detect SARS-CoV-2. Initially, we have found mutation points as substitutions, deletions, insertions and SNPs. Next, unique mutations as substitutions, deletions, insertions and SNPs for individual countries with respect to other 72 countries are identified. Also, comparative studies of global excluding India and India are performed for both the aforementioned cases. Figure 4C depicts the SNPs in global excluding India and Indian SARS-CoV-2 sequences. It can be seen from the figure that the SNPs at 3037, 14 408 and 23 403 genomic coordinates occur close or more than 60% of the virus population. The coding regions of these SNPs are ORF1ab and Spike. It is to be noted that these genomic coordinates have been identified as frequent mutation points in the literature [33] as well, especially A23403G in virus genome that corresponds to D614G in Spike protein has been associated with enhancing viral replication in the upper respiratory tract, thereby increasing its susceptibility to neutralisation by antibodies [34] . Apart from A23403G, other significant SNPs which occur frequently include C3037T (Synonymous mutation) in NSP3 gene of ORF1ab and C14408T (P323L) in RdRp gene of ORF1ab in both global excluding India and Indian sequences. In addition to these mutation points, the most frequent (in more than 10% of virus population) and common mutation points between global excluding India and India are G11083T (L37F), T19557A (F506L), A19558G (S507G) and G25563T (Q57H) in NSP6, Exon and ORF3a respectively. Similarly for India, the other most frequent mutation points are C6312A (T1198K), C13730T (A97V), C22506A (T315N) and C28311T (P13L) in NSP3, RdRp, Spike and ORF8 respectively. All these SNPs have high entropy values, which signify that the corresponding change in nucleotide is more informative. As discussed earlier, the details of these SNPs are reported in Table 4 and 5.",
+            "cite_spans": [
+                {
+                    "start": 1266,
+                    "end": 1270,
+                    "text": "[33]",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 1513,
+                    "end": 1517,
+                    "text": "[34]",
+                    "ref_id": "BIBREF33"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 863,
+                    "end": 872,
+                    "text": "Figure 4C",
+                    "ref_id": null
+                },
+                {
+                    "start": 2376,
+                    "end": 2383,
+                    "text": "Table 4",
+                    "ref_id": null
+                }
+            ],
+            "section": "Discussions"
+        },
+        {
+            "text": "In order to see the common mutation points as all mutations, substitutions, deletions, insertions and SNPs among the 73 countries, five heatmaps are created. In the heatmaps, deep blue indicates lesser number of common mutation points as opposed to yellow, which shows more number of common mutation points. The heatmap for all mutations is shown in Figure 7 for 73 countries. This heatmap is not symmetric. For example, if we consider row wise, then India has 27.91% of common mutation points with England while considering column wise, England shares 15.28% common mutation points with India. Thus, India and England have mostly different mutation points. The row and column for India are marked in red in the figure. This genetic diversity can be seen from the phylogenetic tree as well, which is discussed later. The rest of the heatmaps for substitution, Moreover, to understand the spread and evolution of SARS-CoV-2, Nextstrain [35] is used to create phylogenetic tree.",
+            "cite_spans": [
+                {
+                    "start": 935,
+                    "end": 939,
+                    "text": "[35]",
+                    "ref_id": "BIBREF34"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 350,
+                    "end": 358,
+                    "text": "Figure 7",
+                    "ref_id": "FIGREF6"
+                }
+            ],
+            "section": "Discussions"
+        },
+        {
+            "text": "Nextstrain is a collection of open-source tools, which helps to understand pathogen spread and evolution, especially during outbreak. Nextstrain is one of the very recent tools through which evolution of large number of virus genomes can be visualised properly and meaningfully. It consists of auspice that is a web-based visualisation program used to present and interact with phylogenomic and phylogeographic data. There are a sequence of tools in Nextstrain that perform phylodynamic analysis [36] that includes subsampling, alignment, phylogenetic inference, temporal dating of ancestral nodes and discrete trait geographic reconstruction and inference of the most likely transmission events. The spread and evolution of virus genomes can be visualised at nextstrain.org using auspice. By taking the advantage of this tool, in this work the evolution of SARS-CoV-2 genomes is visualised by creating the metadata in our HPC environment. The evolution of 10664 SARS-CoV-2 genomes is shown in Figure 8A . As can be visualised from the figure, there are five major clades of SARS-CoV-2: 19A: China/Thailand, 19B: China, 20A: USA, Belgium, India, 20B: UK, Belgium, Sweden and 20C: USA. Separate clades identify different genetic groupings. For example, 20A and 20B, respectively, have India and England as primary countries, thereby supporting the earlier statistics that India and England do not share many common mutation points among them. To show the spread of SARS-CoV-2, phylogeographic spread and the transmission lines are shown in Figure 8B and C, respectively. Also, a web application is developed to help other researchers to explore all the mutation points. Although some target genes have already been discovered to detect SARS-CoV-2, new target locations can be further helpful in this task as the virus is evolving. In this regard, NSP6 is a new target gene that has not been considered before. Thereafter, the conserved region as target that belongs to ORF1ab coding region, specifically to the NSP6 gene, is subsequently used to identify primers and probes for the detection of SARS-CoV-2. Therefore, the target region of NSP6 gene can be considered as a confirmatory assay.",
+            "cite_spans": [
+                {
+                    "start": 496,
+                    "end": 500,
+                    "text": "[36]",
+                    "ref_id": "BIBREF35"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 994,
+                    "end": 1003,
+                    "text": "Figure 8A",
+                    "ref_id": "FIGREF7"
+                },
+                {
+                    "start": 1539,
+                    "end": 1548,
+                    "text": "Figure 8B",
+                    "ref_id": "FIGREF7"
+                }
+            ],
+            "section": "Discussions"
+        },
+        {
+            "text": "It is worth mentioning the reason for using ClustalO in this work, though there are other techniques as well for MSA like ClustalW, MUSCLE and MAFFT. As we have already mentioned, ClustalO has high speed and accuracy making it a highly likely candidate for MSA. Now, when executed in HPC cluster environment, ClustalO provided alignment results of 10 664 sequences near about in one month, while the other techniques were unable to provide results due to overflow of memory. Thus, for the timely publication of this research work, we have proceeded with the alignment results of ClustalO. It is also to be noted that the online MSA tool EMBL-EBI [37] uses ClustalO and has discontinued the use of ClustalW. However, even this tool can align only up to 4000 sequences. Hence, for the 10 664 virus sequences we have used our HPC cluster environment to get the alignment results. This alignment result is provided in the supplementary website so that research community can get the benefit out of this. Therefore, apart from the four major contributions as mentioned in this article, this can also be considered as an additional contribution.",
+            "cite_spans": [
+                {
+                    "start": 646,
+                    "end": 650,
+                    "text": "[37]",
+                    "ref_id": "BIBREF36"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussions"
+        },
+        {
+            "text": "This work has four major contributions. Initially, we have analysed publicly available 10 664 complete or near-complete SARS-CoV-2 genomes of 73 countries around the globe in order to find unique mutation points as substitution, deletion and insertion as well as SNPs. This analysis has identified 7209, 11700, 119 and 53 as substitutions, deletions, insertions and SNPs globally, respectively. Next, mutation details are taken into consideration to find the unique mutations as substitutions, deletions, insertions and SNPs for individual countries with respect to other 72 countries. For example, in the case of India, unique 385, 867, 1 and 11 substitutions, deletions, insertions and SNPs are present while 458, 1343, 8 and 52 mutation points in such categories are common with other countries. Furthermore, SNPs are visualised using protein structures and to show the genetic diversity, phylogenetic analysis has been performed using Nextstrain. Moreover, to help researchers conduct further research, a web application is also provided for browsing through the mutation points globally and across 73 countries individually. Finally, a conserved region is identified as target that belongs to ORF1ab coding region, specifically to the NSP6 gene that provided 10 primers and probes for SARS-CoV-2 detection. It can also be studied for designing epitope-based synthetic vaccine in future research. Additionally, the multiple sequence alignment result of ClustalO, which was executed on an HPC facility, is also shared in the supplementary website to help the research community.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion"
+        },
+        {
+            "text": "\u2022 This study performs genome-wide analysis of 10 664 SARS-CoV-2 genomes around the globe.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Key Points"
+        },
+        {
+            "text": "\u2022 Genetic mutation has been found as substitution, deletion, insertion and SNP.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Key Points"
+        },
+        {
+            "text": "\u2022 Unique mutations for individual countries have been identified.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Key Points"
+        },
+        {
+            "text": "\u2022 Virus genomes are collected from GISAID database.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Key Points"
+        },
+        {
+            "text": "\u2022 Web application is provided for finding mutation points in SARS-CoV-2 genomes.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Key Points"
+        },
+        {
+            "text": "\u2022 NSP6 as target is identified and provide primers and probes for virus detection.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Key Points"
+        },
+        {
+            "text": "Supplementary materials are available online at Briefings in Bioinformatics.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Supplementary Data"
+        },
+        {
+            "text": "The ethical approval or individual consent was not applicable.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Ethics approval and consent to participate"
+        },
+        {
+            "text": "The aligned 10664 SARS-CoV-2 genomes with reference and consensus sequences, software to find mutation and supplementary are available at 'http://www.nitttrkol.ac.in/ indrajit/projects/COVID-Mutation-10K/'. Moreover, all the virus genomes used in this work are publicly available at GISAID database.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Availability of data and materials"
+        },
+        {
+            "text": "Not applicable.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Consent for publication"
+        },
+        {
+            "text": "There is no competing interest.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Competing interests"
+        },
+        {
+            "text": "I.S. is responsible for the following: conceptualization; data curation; supervision; funding acquisition; formal analysis; investigation; methodology; web development; project administration; resources; validation; visualization; writing-review and editing; writing-review and editing. N.G. is responsible for the following: conceptualization; formal analysis; software; validation; visualization; writing-original draft. A.P. is responsible for the following: methodology; web development; writing-review and editing. N.S. is responsible for the following: methodology; web development; writing-review and editing. D.M. is responsible for the following: conceptualization; data curation; methodology; writing-review and editing. K.M. is responsible for the following: conceptualization; methodology; writing-review and editing.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Author contributions statement"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "A novel coronavirus from patients with pneumonia in China",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Zhu",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "N Engl J Med",
+            "volume": "382",
+            "issn": "8",
+            "pages": "727--760",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Viral dynamics in asymptomatic patients with covid-19",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Int J Infect Dis",
+            "volume": "96",
+            "issn": "",
+            "pages": "228--90",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Social network-based distancing strategies to flatten the covid-19 curve in a postlockdown world",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Block",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Hoffman",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Raabe",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nat Hum Behav",
+            "volume": "4",
+            "issn": "",
+            "pages": "588--96",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Coronavirus disease 2019 (covid-19) cases in India",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Worldometer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "A pneumonia outbreak associated with a new coronavirus of probable bat origin",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nature",
+            "volume": "579",
+            "issn": "",
+            "pages": "270--273",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "A sars-cov-2 protein interaction map reveals targets for drug repurposing",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Gordon",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Jang",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Bouhaddou",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nature",
+            "volume": "583",
+            "issn": "",
+            "pages": "459--68",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Applying next-generation sequencing to unravel the mutational landscape in viral quasispecies",
+            "authors": [
+                {
+                    "first": "I-N",
+                    "middle": [],
+                    "last": "Lu",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Muller",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "Q"
+                    ],
+                    "last": "He",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Virus Res",
+            "volume": "283",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Genotyping coronavirus sars-cov-2: methods and implications",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Yin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Genomics",
+            "volume": "112",
+            "issn": "5",
+            "pages": "3588--96",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Molecular conservation and differential mutation on orf3a gene in Indian sars-cov2 genomes",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Sk",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Hassan",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Choudhury",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Genomics",
+            "volume": "112",
+            "issn": "5",
+            "pages": "3226--3263",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Tortoises, hares, and vaccines: a cautionary note for SARS-CoV-2 vaccine development",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Poland",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Vaccine",
+            "volume": "38",
+            "issn": "",
+            "pages": "4219--4239",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Sars-cov2 envelope protein: non-synonymous mutations and its consequences",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Hassan",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Choudhury",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Roy",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Genomics",
+            "volume": "112",
+            "issn": "6",
+            "pages": "3890--3892",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Genetic diversity and evolution of SARS-CoV-2",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Phan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Infect Genet Evol",
+            "volume": "81",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Genomic characterization of a novel sars-cov-2",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Khailany",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Safdar",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ozaslan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Gene Reports",
+            "volume": "19",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Overwhelming mutations or snps of sars-cov-2: a point of caution",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Vankadari",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Gene",
+            "volume": "752",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Understanding sars-cov-2: genetic diversity, transmission and cure in human",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Bajaj",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Purohit",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Indian J Microbiol",
+            "volume": "60",
+            "issn": "",
+            "pages": "398--401",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Emergence of genomic diversity and recurrent mutations in sars-cov-2",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Van Dorp",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Acman",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Richard",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Infect Genet Evol",
+            "volume": "83",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Genome-wide analysis of Indian sars-cov-2 genomes for the identification of genetic mutation and snp",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Saha",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Ghosh",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Maity",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Infect Genet Evol",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Bioinformatics analysis of sars coronavirus genome polymorphism",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Pavlovic-Lazetic",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Mitic",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Beljanski",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "BMC Bioinform",
+            "volume": "65",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Utility of a stressed single nucleotide polymorphism (SNP) real-time pcr assay for rapid identification of measles vaccine strains in patient samples",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Tran",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Kostecki",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Catton",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "J Clin Microbiol",
+            "volume": "56",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Inter nation social lockdown versus medical care against covid-19, a mild environmental insight with special reference to India",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Paital",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Das",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Parida",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Sci Total Environ",
+            "volume": "728",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Genomewide association study of antibody response to smallpox vaccine",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Ovsyannikova",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Kennedy",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Byrne",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Vaccine",
+            "volume": "30",
+            "issn": "28",
+            "pages": "4182--4191",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Development of an snp-based pcr assay for rapid differentiation of a Japanese live vaccine strain from field isolates of erysipelothrix rhusiopathiae",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Shiraiwa",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Ogawa",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Eguchi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Journal of Microbiological Methods",
+            "volume": "117",
+            "issn": "",
+            "pages": "11--14",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Whole-genome sequence analysis reveals unique snp profiles to distinguish vaccine and wild-type strains of bovine herpesvirus-1 (bohv-1)",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Chothe",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Sebastian",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Thomas",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Virology",
+            "volume": "522",
+            "issn": "",
+            "pages": "27--36",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Analysis of single nucleotide polymorphism among varicella-zoster virus and identification of vaccine-specific sites",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Jeon",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Won",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Kim",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Virology",
+            "volume": "496",
+            "issn": "",
+            "pages": "277--86",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Detection of 2019 novel coronavirus (2019-ncov) by real-time rt-pcr",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Corman",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Landt",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Kaiser",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Eurosurveillance",
+            "volume": "25",
+            "issn": "3",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Covid-19 target: a specific target for novel coronavirus detection",
+            "authors": [
+                {
+                    "first": "Kamali",
+                    "middle": [],
+                    "last": "Kakhki",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                },
+                {
+                    "first": "Kamali",
+                    "middle": [],
+                    "last": "Kakhki",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Neshani",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Gene Rep",
+            "volume": "20",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Multiple sequence alignments",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Wallace",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Blackshields",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Higgins",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Curr Opin Struct Biol",
+            "volume": "15",
+            "issn": "3",
+            "pages": "261--267",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Fast, scalable generation of high-quality protein multiple sequence alignments using clustal omega",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Sievers",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Wilm",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Dineen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Mol Syst Biol",
+            "volume": "7",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Clustal Omega, accurate alignment of very large numbers of sequences",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Sievers",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Higgins",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Methods Mol Biol",
+            "volume": "1079",
+            "issn": "",
+            "pages": "105--121",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Multiple sequence alignment modeling: methods and applications",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Chatzou",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Magis",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Chang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Briefings in Bioinformatics",
+            "volume": "17",
+            "issn": "6",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Deep-learning contact-map guided protein structure prediction in casp13",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Zheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Proteins",
+            "volume": "87",
+            "issn": "12",
+            "pages": "1149--64",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Targets of t cell responses to sars-cov-2 coronavirus in humans with covid-19 disease and unexposed individuals",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Grifoni",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Weiskopf",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Ramirez",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Cell",
+            "volume": "",
+            "issn": "05",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Sars-cov-2 reverse genetics reveals a variable infection gradient in the respiratory tract",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Hou",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Okuda",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Edwards",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Cell",
+            "volume": "182",
+            "issn": "2",
+            "pages": "429--446",
+            "other_ids": {}
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Spike mutation d614g alters sarscov-2 fitness",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Plante",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nature",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Nextstrain: real-time tracking of pathogen evolution",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Hadfield",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Megill",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Bell",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Bioinformatics",
+            "volume": "34",
+            "issn": "23",
+            "pages": "4121--4124",
+            "other_ids": {}
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Viral phylodynamics",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Volz",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Koelle",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Bedford",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "PLoS Comput Biol",
+            "volume": "9",
+            "issn": "3",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "The embl-ebi search and sequence analysis tools apis in 2019",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Madeira",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Park",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Nucleic Acids Res",
+            "volume": "47",
+            "issn": "W1",
+            "pages": "636--677",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Coding regions and corresponding proteins of SARS-CoV-2 genome.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "(a) Geoplot to show the distribution of SARS-CoV-2 genomes around the globe and (b) bar and pie charts show the daily and monthly statistics of SARS-CoV-2 genomes from January 2020 to May 2020.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "(a) Pipeline of the workflow. (b) Mutation detection schemes. (c) Examples of mutation in multiple aligned sequences.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "Statistics of unique mutations, substitutions, deletions, insertions and SNPs in individual Statistics of unique mutations, substitutions, deletions, insertions and SNPs for individual countries with respect to other 72 Mutation as SNPs in more than 10% of population of global SARS-CoV-2 genomes excluding India and only India Mutation as SNPs in 10098 SARS-CoV-(a) Venn diagrams between global without India and India for all unique mutation, substitutions, deletions, insertions and SNP, (b) BioCircos to illustrate the frequency of mutations across the global excluding India and Indian SARS-CoV-2 genomes through different tracks e.g. substitution as outer track 1, deletion as track 2, insertion as track 3 and SNP as inner track 4 while in other images substitution as outer track 1 and SNP as inner track 2, (c) SNPs present in more than 10% of SARS-CoV-2 population for global and India, (d) screen shots of the web application before and after executing search query, (e) identified primers and probes from Primer-BLAST. deletion, insertion and SNP are reported in supplementary Figures S2 to S5.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "SNPs highlighted in protein structure of RNA-directed RNA polymerase (RdRp) where (a) represents the SNPs common in both global excluding India and India, (b) represents the SNPs common in other 72 countries and India and (c) represents the SNPs unique in India.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": "SNPs highlighted in protein structure of Spike where (a) represents the SNPs common in both global excluding India and India, (b) represents the SNPs common in other 72 countries and India (c) represents the SNPs unique in India. t",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF6": {
+            "text": "Heatmap to represent the common mutation points among 73 countries.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF7": {
+            "text": "(A) Phylogenetic tree to show the evolution of SARS-CoV-2 genomes, (B) phylogeographic spread of SARS-CoV-2 genomes, (C) transmission of SARS-CoV-2 genomes in 73 countries.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF1": {
+            "text": "Number of unique mutations, substitutions, deletions, insertions and SNPs",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF3": {
+            "text": "Targeted Conserved Region in SARS-CoV-2 Genome and its corresponding protein sequence in NSP6 which is highlighted by red colour in NSP6 gene",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF4": {
+            "text": "Details of primers and probes in NSP6 gene for SARS-CoV-2 detection Primer",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "We thank all those who have contributed sequences to GISAID and NCBI databases. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Acknowledgments"
+        }
+    ]
+}

@@ -1,0 +1,2680 @@
+{
+    "paper_id": "e82c4b33648d4e522d11f1bf488f86fb7e594dad",
+    "metadata": {
+        "title": "",
+        "authors": [
+            {
+                "first": "Nejat",
+                "middle": [],
+                "last": "Duzgunes",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Jesus",
+                "middle": [],
+                "last": "Perez-Gil",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Clinton",
+                "middle": [],
+                "last": "Burtram",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "",
+                "middle": [],
+                "last": "Fielding",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Frans",
+                "middle": [],
+                "last": "Walther",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Ralf",
+                "middle": [],
+                "last": "Weiskirchen",
+                "suffix": "",
+                "affiliation": {},
+                "email": "rweiskirchen@ukaachen.de\u2020orcid:ralfweiskirchenorcid.org@0000-0003-3888-0931"
+            }
+        ]
+    },
+    "abstract": [],
+    "body_text": [
+        {
+            "text": "Worldwide, the Coronavirus disease 2019 pandemic has led to health and economic damage that cannot yet be accurately predicted. First clinical studies of hospitalized patients have shown that there are risk factors majorly contributing to the outcome of COVID-19 infection. However, a complete picture of disease pathogenesis and underlying mechanisms is still missing. Therefore, new theories that lead to a better understanding of COVID-19 are urgently needed. The understanding will lead to new diagnostic and of course therapeutic possibilities to target the severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). Here it is hypothesized that lowered concentrations or altered composition of pulmonary surfactant is a critical risk factor for COVID-19.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "INTRODUCTION"
+        },
+        {
+            "text": "As we continue to learn more about the virus, there are still many key questions that scientists are urgently try to answer: 1. Age: Children seem to be a less susceptible to COVID-19 and disease severity at young age is lower than in adults (Lee et al., 2020) . Why? 2. Obesity/diabetes: Obesity (high body mass index) and diabetes seems to be a risk factor for poor adverse outcomes of COVID-19 (Malavazos et al., 2020) . Why? 3. Smoking: The estimated prevalence of current smoking among hospitalized patients with COVID-19 is rather low (Farsalinos et al., 2020a) . Why? 4. Blood pressure: Hypertension and intake angiotensin converting enzyme (ACE) inhibitors and angiotensin receptor blockers (ARBs) increase risk of developing severe and fatal COVID-19 (Fang et al., 2020) . Why? 5. Coagulation: Hypercoagulability is associated with disease severity . Why? 6. Gender: Men with COVID-19 are more at risk for worse outcomes and death (Jin et al., 2020) . Why? 7. Infection: The coronavirus by no means affects all persons, some seems to be resistant. Why? 8. Immunity: Do COVID-19 patients develop long-term immunity? 9. Diagnosis: The presence of virus in patients is verified in sputum, salvia, or a swab from deep in the nasal passages using antigen-based methods and RT-PCR tests. Serological tests are used to demonstrate previous infections with SARS-CoV-2. Can diagnosis be improved and/or simplified? 10. Therapy: Several vaccines, neutralizing antibodies and drugs are in the pipeline for COVID-19 therapy. Are there better alternatives?",
+            "cite_spans": [
+                {
+                    "start": 242,
+                    "end": 260,
+                    "text": "(Lee et al., 2020)",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 397,
+                    "end": 421,
+                    "text": "(Malavazos et al., 2020)",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 541,
+                    "end": 567,
+                    "text": "(Farsalinos et al., 2020a)",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 760,
+                    "end": 779,
+                    "text": "(Fang et al., 2020)",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 940,
+                    "end": 958,
+                    "text": "(Jin et al., 2020)",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "Experts from all over the world are presently discussing these topics and a number of plausible theories arose. In regard to age, suggested reasons are a more active innate immune response, healthier respiratory tracts, differences in the distribution/maturation/function of viral receptors, fewer outdoor activities and less international travel making younger persons less likely to contract the virus (Lee et al., 2020) . The propensity of people with obesity to develop more serious complications if exposed to a virus is attributed to multiple factors, such as a chronic inflammatory status and delayed and ineffective immune response (Malavazos et al., 2020) . Regarding smoking, a preliminary hypothesis assumes that the virus enters the body through neurons of the olfactory systems. In this scenario, nicotine inhibits the respective receptor (nAChR) explaining the low frequencies of smokers in the COVID-19 cohorts and suspecting nicotine or other pharmaceutical nicotine products as therapeutic agents to target COVID-19 (Farsalinos et al., 2020b; Kloc et al., 2020) . It is suggested that there is a complex interplay between COVID-19 and the renin-angiotensin-aldosterone system (RAS), in which SARS-CoV-2 has a spike protein receptor-binding domain with high affinity for human angiotensin-converting enzyme 2 (ACE2) (Andersen et al., 2020) , which regulate both the cross-species and human-to-human transmission of the virus. The virus likely recognizes ACE2 orthologous from many other species, except mouse and rat (Wan et al., 2020) . It was found that the expression of this receptor is very low in healthy young persons, while it increases in patients with vascular diseases (Singh et al., 2020) . ACE and ARBs increase expression of the metallopeptidase ACE2, which is expressed primarily in alveolar epithelial type II cells and serves as a viral reservoir and functional entry receptor of SARS-CoV (Li et al., 2003) . Therefore, these drugs were proposed to increase viral uptake and risk of developing severe and fatal COVID-19 (Fang et al., 2020) . In line, it was proposed that the SARS-CoV-2 spike protein activates RAS in the lung, thereby promoting platelet adhesion and aggregation and increasing the risk for pulmonary embolism, hypertension and fibrosis. On the contrary, anticoagulation agents improve the clinical outcome of COVID-19 .",
+            "cite_spans": [
+                {
+                    "start": 404,
+                    "end": 422,
+                    "text": "(Lee et al., 2020)",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 640,
+                    "end": 664,
+                    "text": "(Malavazos et al., 2020)",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 1033,
+                    "end": 1059,
+                    "text": "(Farsalinos et al., 2020b;",
+                    "ref_id": null
+                },
+                {
+                    "start": 1060,
+                    "end": 1078,
+                    "text": "Kloc et al., 2020)",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 1332,
+                    "end": 1355,
+                    "text": "(Andersen et al., 2020)",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 1533,
+                    "end": 1551,
+                    "text": "(Wan et al., 2020)",
+                    "ref_id": "BIBREF43"
+                },
+                {
+                    "start": 1696,
+                    "end": 1716,
+                    "text": "(Singh et al., 2020)",
+                    "ref_id": "BIBREF38"
+                },
+                {
+                    "start": 1922,
+                    "end": 1939,
+                    "text": "(Li et al., 2003)",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 2053,
+                    "end": 2072,
+                    "text": "(Fang et al., 2020)",
+                    "ref_id": "BIBREF8"
+                }
+            ],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "The risk factor \"male gender\" and the higher dying rate of men in COVID-19 is supposed to be consequence of the general demographic fact of a general shorter expectancy in men compared to women (Jin et al., 2020) . However, there is already clear indication that there exist sex differences in surfactant biosynthesis putatively be ascribed to the stimulating effects of estrogens. This \"male disadvantage\" has been recognized clinically and in many experimental models (Torday and Nielsen, 1987; McCoy et al., 1999) .",
+            "cite_spans": [
+                {
+                    "start": 194,
+                    "end": 212,
+                    "text": "(Jin et al., 2020)",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 470,
+                    "end": 496,
+                    "text": "(Torday and Nielsen, 1987;",
+                    "ref_id": "BIBREF42"
+                },
+                {
+                    "start": 497,
+                    "end": 516,
+                    "text": "McCoy et al., 1999)",
+                    "ref_id": "BIBREF30"
+                }
+            ],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "Genetic host resistance to coronaviruses is assumed to occur at three levels, namely genetic control of the level of cellular entry receptors, genetic control at the level of macrophage activity, and genetic control at the level of acquired immunity (Buschman and Skamene, 1995) . Resistance as a host response to coronavirus infection is predominantly mediated by adaptive immunity comprising humoral and cell-mediated immunity . A different susceptibility to COVID-19 might therefore be evoked by many factors related to the innate or adaptive immune system. It should be mentioned, that the human population has a small pre-existing immunity against SARS-CoV-2 and the T cell response to the structural proteins S, M, and N of the SARS virus are long-lasting and persistent (Grifoni et al., 2020) . However, these findings do not mean that persons that were infected are protected from reinfection.",
+            "cite_spans": [
+                {
+                    "start": 250,
+                    "end": 278,
+                    "text": "(Buschman and Skamene, 1995)",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 777,
+                    "end": 799,
+                    "text": "(Grifoni et al., 2020)",
+                    "ref_id": "BIBREF13"
+                }
+            ],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "Reliable laboratory diagnostic for COVID-19 is required to prevent false negative and positive results which both have fatal consequences. Presently, RT-PCR is used as a diagnostic tool using nasal swab, tracheal aspirate or bronchoalveolar lavage (BAL) samples. However, they don't provide data about disease outcome and have only an estimated sensitivity rate around 66-80% (Pascarella et al., 2020) . Simple analysis of most common COVID19-related symptoms such as fever (98%), cough (77%), and dyspnea (63.5%) are suitable to estimate mortality of critically ill patients (Yang et al., 2020) . Similarly, the combination of three biomarkers (lactic dehydrogenase, high-sensitivity Creactive protein, and lymphocyte count) identified by machine learning tools were shown to predict the mortality of individual patients more than 10 days in advance with more than 90% accuracy, suggesting that the combination of clinical symptoms and biomarkers can reflect the entire spectrum of disease from the earliest manifestations to the terminal stages (Yan et al., 2020) . Currently, there are no effective vaccine or approved specific antiviral COVID-19 agents available. However, convalescent plasma therapy was effective to achieve serum SARS-CoV-2 RNA negativity in severe COVID-19 patients (Duan et al., 2020) . So there are already promising strategies to limit or delay the spread of COVID-19 in the near future. Certainly, increasing funding in the research area \"Corona\" will further drive discovery providing the basis for successful targeting SARS-CoV-2. Undoubtedly, biased or unbiased biomarker discovery will be one important piece in the puzzle to target the COVID-19 pandemic.",
+            "cite_spans": [
+                {
+                    "start": 376,
+                    "end": 401,
+                    "text": "(Pascarella et al., 2020)",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 576,
+                    "end": 595,
+                    "text": "(Yang et al., 2020)",
+                    "ref_id": "BIBREF45"
+                },
+                {
+                    "start": 1047,
+                    "end": 1065,
+                    "text": "(Yan et al., 2020)",
+                    "ref_id": "BIBREF44"
+                },
+                {
+                    "start": 1290,
+                    "end": 1309,
+                    "text": "(Duan et al., 2020)",
+                    "ref_id": "BIBREF7"
+                }
+            ],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "Although never working in the field of Corona, I would highlight several features of pulmonary surfactant rendering this surface-active lipoprotein complex relevant for the pathogenesis, diagnostics or therapy of COVID-19. Pulmonary surfactant is composed primarily of phospholipids and four surfactantassociated proteins, namely SP-A, SP-B, SP-C, and SP-D. This lipid-protein complex is essential for the biophysical function of the lung. It stabilizes the delicate structure of the mammalian alveoli along with successive compression-expansion respiratory cycles by reducing surface tension at the air-liquid interface (Autilio and P\u00e9rez-Gil, 2019 ). In addition, this mixture of lipids and proteins constitute a first barrier to the access of pathogens to the rest of the organism via the large respiratory surface, preventing the dissemination of pathogens and modulating immune responses (Han and Mallampalli, 2015; Autilio and P\u00e9rez-Gil, 2019) . In this regard, most important are SP-A and SP-D, which are members of a family of innate immune proteins termed collectins involved in bacterial and viral clearance (Han and Mallampalli, 2015) . These collagen-containing C-type lectins further have ability to opsonize pathogens and facilitate their phagocytosis by cells of the innate immune system, such as macrophages and monocytes (Han and Mallampalli, 2015) . Most important, a paper published already 13 years ago demonstrated that SP-D could bind to the SARS-CoV carbohydrate moieties presented on the S-protein of the virus, thereby preventing activation of macrophages and potentially preventing pulmonary inflammation suggesting that SP-D might independent of surfactant itself act as a COVID-19-related factor at the alveolar spaces (Leth-Larsen et al., 2007) . Although the exact domains in the SARS-CoV S-protein interacting with SP-D were not dissected in the mentioned study and natural carbohydrate moiety of SARS-CoV-2 might be rather different, the study supports the view that deficiencies in collectins acting as host lectins will have significant impact on innate immunity. In line, SP-A deficient mice exhibited impaired clearance against viruses (e.g., RSV) and showed greater pulmonary infiltration with polymorphonuclear leukocytes (LeVine et al., 1999) . Similarly, SP-A inhibited influenza A virus infection of lung epithelial cells (Al-Qahtani et al., 2019) , while a recombinant fragment of human SP-D was sufficient to act as an entry inhibitor of influenza A virus in vitro (Al-Ahdal et al., 2018) .",
+            "cite_spans": [
+                {
+                    "start": 621,
+                    "end": 649,
+                    "text": "(Autilio and P\u00e9rez-Gil, 2019",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 893,
+                    "end": 920,
+                    "text": "(Han and Mallampalli, 2015;",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 921,
+                    "end": 949,
+                    "text": "Autilio and P\u00e9rez-Gil, 2019)",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 1118,
+                    "end": 1145,
+                    "text": "(Han and Mallampalli, 2015)",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 1338,
+                    "end": 1365,
+                    "text": "(Han and Mallampalli, 2015)",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 1747,
+                    "end": 1773,
+                    "text": "(Leth-Larsen et al., 2007)",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 2260,
+                    "end": 2281,
+                    "text": "(LeVine et al., 1999)",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 2363,
+                    "end": 2388,
+                    "text": "(Al-Qahtani et al., 2019)",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 2508,
+                    "end": 2531,
+                    "text": "(Al-Ahdal et al., 2018)",
+                    "ref_id": "BIBREF0"
+                }
+            ],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "SP-A protein levels are increased in the serum, plasma and sputum of smokers (Kida et al., 1997; Nomori et al., 1998; Mazur et al., 2011) , providing another rationale for the proposed beneficial effects of smoking or nicotine consumption in preventing COVID-19 (Farsalinos et al., 2020a) . Furthermore, the composition of surfactant highly significant changes rapidly with exercise in a manner related to fitness and training (Doyle et al., 1994 (Doyle et al., , 2000 . In line, there is an inverse association between serum SP-D and body mass index (Zhao et al., 2007) , and moreover inverse association with human obesity (Sorensen et al., 2006) . Similarly, it was shown that SP-A levels negatively correlate with body mass index (Lugogo et al., 2018) , possibly explaining why persons with high body mass index (BMI) having lower SP-A and SP-D levels are more susceptible to COVID-19.",
+            "cite_spans": [
+                {
+                    "start": 77,
+                    "end": 96,
+                    "text": "(Kida et al., 1997;",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 97,
+                    "end": 117,
+                    "text": "Nomori et al., 1998;",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 118,
+                    "end": 137,
+                    "text": "Mazur et al., 2011)",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 262,
+                    "end": 288,
+                    "text": "(Farsalinos et al., 2020a)",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 427,
+                    "end": 446,
+                    "text": "(Doyle et al., 1994",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 447,
+                    "end": 468,
+                    "text": "(Doyle et al., , 2000",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 551,
+                    "end": 570,
+                    "text": "(Zhao et al., 2007)",
+                    "ref_id": "BIBREF46"
+                },
+                {
+                    "start": 625,
+                    "end": 648,
+                    "text": "(Sorensen et al., 2006)",
+                    "ref_id": "BIBREF39"
+                },
+                {
+                    "start": 734,
+                    "end": 755,
+                    "text": "(Lugogo et al., 2018)",
+                    "ref_id": "BIBREF26"
+                }
+            ],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "In regard to age, it was shown that the quantities of alveolar and total SP-A to body weight and in relationship to alveolar surface area decrease significantly during aging in rats (Ohashi et al., 1994) . In humans, the total SP-A serum levels are not affected by age (Nomori et al., 1998) . However, human SP-A consists of two functional genes (SP-A1, SP-A2) and a gradual decrease in the SP-A1/SP-A ratio was observed in healthy subjects with increased age (Tagaram et al., 2007) . Moreover, the total phospholipid concentration in bronchoalveolar lavage fluid was found higher in children <8 years of age and shown to decrease with age (Ratjen et al., 1996) .",
+            "cite_spans": [
+                {
+                    "start": 182,
+                    "end": 203,
+                    "text": "(Ohashi et al., 1994)",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 269,
+                    "end": 290,
+                    "text": "(Nomori et al., 1998)",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 460,
+                    "end": 482,
+                    "text": "(Tagaram et al., 2007)",
+                    "ref_id": "BIBREF40"
+                },
+                {
+                    "start": 640,
+                    "end": 661,
+                    "text": "(Ratjen et al., 1996)",
+                    "ref_id": "BIBREF37"
+                }
+            ],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "Historical experiments conducted in lambs and newborn piglets revealed that surfactant therapy results in a significant increase in pulmonary blood flow, decrease in pulmonary vascular resistance, reduction in right-to-left shunting, and decrease in mean arterial blood pressure (Moen et al., 1996; O'Toole et al., 1996) . Conversely, it can be concluded that lowering surfactant compounds are causative involved in hypertension presenting a risk factor for developing severe and fatal COVID-19.",
+            "cite_spans": [
+                {
+                    "start": 279,
+                    "end": 298,
+                    "text": "(Moen et al., 1996;",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 299,
+                    "end": 320,
+                    "text": "O'Toole et al., 1996)",
+                    "ref_id": "BIBREF35"
+                }
+            ],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "Collectively, lowered concentrations or altered composition of pulmonary surfactant might be a critical risk factor for COVID-19. Furthermore, it is well-known that polymorphisms in surfactant proteins can predispose individuals to community acquired pneumonia and/or acute respiratory distress syndrome (Lin et al., 2000; Gong et al., 2004) . This provides another argument why surfactant proteins or surfactant constituents are critical factors contributing to COVID-19 susceptibility and outcome.",
+            "cite_spans": [
+                {
+                    "start": 304,
+                    "end": 322,
+                    "text": "(Lin et al., 2000;",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 323,
+                    "end": 341,
+                    "text": "Gong et al., 2004)",
+                    "ref_id": "BIBREF12"
+                }
+            ],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "The potential connection of SARS-CoV-2 virus infection with a deficit in pulmonary surfactant or factors thereof and the administration of surfactant as a treatment modality for different phenotypes of COVID-19 are presently intensively discussed (Koumbourlis and Motoyama, 2020) . Some authors speculate that the early administration of natural lung surfactant could improve the pulmonary function to restore pulmonary barrier function in patients with COVID-19 pneumonia, thereby reducing the duration of ventilation therapy and contributing to patients' recovery (Mirastschijski et al., 2020) . Indeed, this could be easily done by adding the reconstituted lyophilizate powder into the trachea tube of the ventilated COVID-19 patient. In another hypothesis, it is argued that pulmonary or some chemical surfactants or stimulants of natural surfactant production may be effective not only for the treatment but also for the prophylactic protection for SARS-CoV-2 (Takano, 2020) . In the respective theory, it is argued that the pulmonary surfactant not only is beneficial to reduce surface tension or to increase lung compliance, but also is a strong defender against the virus itself. However, none of the theories is actually supported with true experimental evidence. Even more, COVID-19 pathogenesis is rather complex consisting of three distinct phases classified on the site the respiratory epithelium infected (Mason, 2020) . Consequently, the potential therapeutic outcome after surfactant treatment will strongly depend on the location (i.e., nose, conducting airways, alveoli) to which the virus has advanced.",
+            "cite_spans": [
+                {
+                    "start": 247,
+                    "end": 279,
+                    "text": "(Koumbourlis and Motoyama, 2020)",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 566,
+                    "end": 595,
+                    "text": "(Mirastschijski et al., 2020)",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 965,
+                    "end": 979,
+                    "text": "(Takano, 2020)",
+                    "ref_id": "BIBREF41"
+                },
+                {
+                    "start": 1419,
+                    "end": 1432,
+                    "text": "(Mason, 2020)",
+                    "ref_id": "BIBREF28"
+                }
+            ],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "Presently, there are no studies available analyzing COVID-19 susceptibility and surfactant biology. However, such studies will be of fundamental importance. If surfactant protects against COVID-19, supplementation after early SARS-CoV-2 infection with purified or recombinant forms of surfactant compounds will offer novel therapeutic avenues in controlling pulmonary infection during COVID-19. It would be desirable if the biomarker \"surfactant\" would be included in as many COVID-19 studies as possible and to assess the fate of endogenous surfactant in bronchoalveolar lavage material of patients in ongoing and future investigations or trials.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "RW has drafted this contribution.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "AUTHOR CONTRIBUTIONS"
+        },
+        {
+            "text": "Author's laboratory receives funds from the German Research Foundation (SFB/TRR57, projects P13 and Q3) and the Interdisciplinary Centre for Clinical Research within the Faculty of Medicine at the RWTH Aachen University (IZKF Aachen, project O3-1). None of the funding sources exerted influence on the content or decision to publish this Communication.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "FUNDING"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Entry inhibition and modulation of pro-inflammatory immune response against influenza A virus by a recombinant truncated surfactant protein D",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Al-Ahdal",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Murugaiah",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Varghese",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Abozaid",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Saba",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Al-Qahtani",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Front. Immunol",
+            "volume": "9",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3389/fimmu.2018.01586"
+                ]
+            }
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Full-length human surfactant protein A inhibits influenza A virus infection of A549 lung epithelial cells: a recombinant form containing neck and lectin domains promotes infectivity",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Al-Qahtani",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Murugaiah",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Bashir",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Pathan",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Abozaid",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Makarov",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Immunobiology",
+            "volume": "224",
+            "issn": "",
+            "pages": "408--418",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.imbio.2019.02.006"
+                ]
+            }
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "The proximal origin of SARS-CoV-2",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Andersen",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Rambaut",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Lipkin",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Holmes",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Garry",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nat. Med",
+            "volume": "26",
+            "issn": "",
+            "pages": "450--452",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41591-020-0820-9"
+                ]
+            }
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Understanding the principle biophysics concepts of pulmonary surfactant in health and disease",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Autilio",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "P\u00e9rez-Gil",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Arch. Dis. Child. Fetal Neonatal Ed",
+            "volume": "104",
+            "issn": "",
+            "pages": "443--451",
+            "other_ids": {
+                "DOI": [
+                    "10.1136/archdischild-2018-315413"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Genetic resistance to coronavirus infection",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Buschman",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Skamene",
+                    "suffix": ""
+                }
+            ],
+            "year": 1995,
+            "venue": "Corona-and Related Viruses",
+            "volume": "380",
+            "issn": "",
+            "pages": "1--11",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Composition of human pulmonary surfactant varies with exercise and level of fitness",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Doyle",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Jones",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Barr",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Orgeig",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Crockett",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Mcdonald",
+                    "suffix": ""
+                }
+            ],
+            "year": 1994,
+            "venue": "Am. J. Respir. Crit. Care Med",
+            "volume": "149",
+            "issn": "",
+            "pages": "1619--1627",
+            "other_ids": {
+                "DOI": [
+                    "10.1164/ajrccm.149.6.8004321"
+                ]
+            }
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Composition of alveolar surfactant changes with training in humans",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Doyle",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Morton",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Crockett",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Barr",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Davidson",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Jones",
+                    "suffix": ""
+                }
+            ],
+            "year": 2000,
+            "venue": "Respirology",
+            "volume": "5",
+            "issn": "",
+            "pages": "211--220",
+            "other_ids": {
+                "DOI": [
+                    "10.1046/j.1440-1843.2000.00251.x"
+                ]
+            }
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Effectiveness of convalescent plasma therapy in severe COVID-19 patients",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Duan",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Zahnbag",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Qu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Proc. Natl. Acad. Sci. U.S.A",
+            "volume": "117",
+            "issn": "",
+            "pages": "9490--9496",
+            "other_ids": {
+                "DOI": [
+                    "10.1073/pnas.2004168117"
+                ]
+            }
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Are patients with hypertension and diabetes mellitus at increased risk for COVID-19 infection?",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Fang",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Karakiulakis",
+                    "suffix": ""
+                },
+                {
+                    "first": "Roth",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet Respir. Med",
+            "volume": "8",
+            "issn": "",
+            "pages": "30116--30124",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S2213-2600(20)30116-8"
+                ]
+            }
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "COVID-19 and the nicotinic cholinergic system",
+            "authors": [],
+            "year": 2001,
+            "venue": "Eur. Respir. J",
+            "volume": "56",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1183/13993003.01589-2020"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Systematic review of the prevalence of current smoking among hospitalized COVID-19 patients in China: could nicotine be a therapeutic option?",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Farsalinos",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Barbouni",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Niaura",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Intern. Emerg. Med",
+            "volume": "15",
+            "issn": "",
+            "pages": "845--852",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s11739-020-02355-7"
+                ]
+            }
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Polymorphism in the surfactant protein-B gene, gender, and the risk of direct pulmonary injury and ARDS",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Gong",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Wei",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Miller",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Thompson",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Christiani",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Chest",
+            "volume": "125",
+            "issn": "",
+            "pages": "203--211",
+            "other_ids": {
+                "DOI": [
+                    "10.1378/chest.125.1.203"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Targets of T cell responses to SARS-CoV-2 coronavirus in humans with COVID-19 disease and unexposed individuals",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Grifoni",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Weiskopf",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Ramirez",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Mateus",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Dan",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Moderbacher",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Cell",
+            "volume": "181",
+            "issn": "",
+            "pages": "1489--1501",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.cell.2020.05.015"
+                ]
+            }
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "The role of surfactant in lung disease and host defense against pulmonary infections",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Han",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Mallampalli",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Ann. Am. Thorac. Soc",
+            "volume": "12",
+            "issn": "",
+            "pages": "765--774",
+            "other_ids": {
+                "DOI": [
+                    "10.1513/AnnalsATS.201411-507FR"
+                ]
+            }
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Gender differences in patients with COVID-19: focus on severity and mortality",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Jin",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Bai",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "He",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X.-F",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "D.-M",
+                    "middle": [],
+                    "last": "Han",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Front. Public Health",
+            "volume": "8",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3389/fpubh.2020.00152"
+                ]
+            }
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Effects of cigarette smoking on the serum concentration of lung surfactant protein A (SP-A)",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Kida",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Oda",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Yamano",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Kagawa",
+                    "suffix": ""
+                }
+            ],
+            "year": 1997,
+            "venue": "Eur. Respir. J",
+            "volume": "10",
+            "issn": "",
+            "pages": "2124--2126",
+            "other_ids": {
+                "DOI": [
+                    "10.1183/09031936.97.10092124"
+                ]
+            }
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "How nicotine can inhibit cytokine storm in the lungs and prevent or lessen the severity of COVID-19 infection?",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Kloc",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Ghobrial",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "Z"
+                    ],
+                    "last": "Kubiak",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Immunol. Lett",
+            "volume": "224",
+            "issn": "",
+            "pages": "28--29",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.imlet.2020.06.002"
+                ]
+            }
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Lung mechanics in COVID-19 resemble RDS not ARDS: Could surfactant be a treatment?",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Koumbourlis",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Motoyama",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Am. J. Respir. Crit. Care Med",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1164/rccm.202004-1471LE"
+                ]
+            }
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Are children less susceptible to COVID-19?",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Hsueh",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J. Microbiol. Immunol. Infect",
+            "volume": "53",
+            "issn": "",
+            "pages": "371--372",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jmii.2020.02.011"
+                ]
+            }
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "The SARS coronavirus spike glycoprotein is selectively recognized by lung surfactant protein D and activates macrophages",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Leth-Larsen",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Zhong",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Chow",
+                    "suffix": ""
+                },
+                {
+                    "first": "U",
+                    "middle": [],
+                    "last": "Holmskov",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Lu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Immunobiology",
+            "volume": "212",
+            "issn": "",
+            "pages": "201--211",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.imbio.2006.12.001"
+                ]
+            }
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Surfactant protein-A enhances respiratory syncytial virus clearance in vivo",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Levine",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Gwozdz",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Stark",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Bruno",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Whitsett",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Korfhagen",
+                    "suffix": ""
+                }
+            ],
+            "year": 1999,
+            "venue": "J. Clin. Invest",
+            "volume": "103",
+            "issn": "",
+            "pages": "1015--1021",
+            "other_ids": {
+                "DOI": [
+                    "10.1172/JCI5849"
+                ]
+            }
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Coronavirus infections and immune responses",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Fan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Lai",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Han",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J. Med. Virol",
+            "volume": "92",
+            "issn": "",
+            "pages": "424--432",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/jmv.25685"
+                ]
+            }
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Angiotensin-converting enzyme 2 is a functional receptor for the SARS coronavirus",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Moore",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Vasilieva",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Sui",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Wong",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Berne",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "Nature",
+            "volume": "426",
+            "issn": "",
+            "pages": "450--454",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/nature02145"
+                ]
+            }
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Polymorphisms of human SP-A, SP-B, and SP-D genes: association of SP-B Thr131Ile with ARDS",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Pearson",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Chinchilli",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Pietschmann",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Luo",
+                    "suffix": ""
+                },
+                {
+                    "first": "U",
+                    "middle": [],
+                    "last": "Pison",
+                    "suffix": ""
+                }
+            ],
+            "year": 2000,
+            "venue": "Clin. Genet",
+            "volume": "58",
+            "issn": "",
+            "pages": "181--191",
+            "other_ids": {
+                "DOI": [
+                    "10.1034/j.1399-0004.2000.580305.x"
+                ]
+            }
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Potential therapeutic effects of dipyridamole in the severely ill patients with COVID-19",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Jiang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Acta Pharm. Sin. B",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.apsb.2020.04.008"
+                ]
+            }
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Obese asthmatic patients have decreased surfactant protein A levels: mechanisms and implications",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Lugogo",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Francisco",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Addison",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Manne",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Pederson",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Ingram",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "J. Allergy Clin. Immunol",
+            "volume": "141",
+            "issn": "",
+            "pages": "918--926",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jaci.2017.05.028"
+                ]
+            }
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Targeting the adipose tissue in COVID-19",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Malavazos",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Corsi Romanelli",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Bandera",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Iacobellis",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Obesity",
+            "volume": "28",
+            "issn": "",
+            "pages": "1178--1179",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/oby.22844"
+                ]
+            }
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Thoughts on the alveolar phase of COVID-19",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Mason",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Am. J. Physiol. Lung Cell. Mol. Physiol",
+            "volume": "319",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1152/ajplung.00126.2020"
+                ]
+            }
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Elevation of surfactant protein A in plasma and sputum in cigarette smokers",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Mazur",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Toljamo",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Ohlmeier",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Vuopala",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Nieminen",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Kobayshi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Eur. Respir. J",
+            "volume": "38",
+            "issn": "",
+            "pages": "277--284",
+            "other_ids": {
+                "DOI": [
+                    "10.1183/09031936.00110510"
+                ]
+            }
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Identification of sex-specific differences in surfactant synthesis in rat lung",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Mccoy",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Salome",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Kusner",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Iyar",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Mallampalli",
+                    "suffix": ""
+                }
+            ],
+            "year": 1999,
+            "venue": "Pediatr. Res",
+            "volume": "46",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1203/00006450-199912000-00003"
+                ]
+            }
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Lung surfactant for pulmonary barrier restoration in patients with COVID-19 pneumonia",
+            "authors": [
+                {
+                    "first": "U",
+                    "middle": [],
+                    "last": "Mirastschijski",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Dembinski",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Maedler",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Front. Med",
+            "volume": "7",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3389/fmed.2020.00254"
+                ]
+            }
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Hemodynamics and tissue blood flow after porcine surfactant replacement in surfactant-depleted newborn piglets",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Moen",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Rootwelt",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Robertson",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Curstedt",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Hall",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Saugstad",
+                    "suffix": ""
+                }
+            ],
+            "year": 1996,
+            "venue": "Pediatr. Res",
+            "volume": "40",
+            "issn": "",
+            "pages": "215--224",
+            "other_ids": {
+                "DOI": [
+                    "10.1203/00006450-199608000-00006"
+                ]
+            }
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Serum surfactant protein A levels in healthy individuals are increased in smokers",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Nomori",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Horio",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Fuyuno",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Kobayashi",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Morinaga",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Suemasu",
+                    "suffix": ""
+                }
+            ],
+            "year": 1998,
+            "venue": "Lung",
+            "volume": "176",
+            "issn": "",
+            "pages": "355--361",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/PL00007617"
+                ]
+            }
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Changes in alveolar surface area, surfactant protein A, and saturated phosphatidylcholine with postnatal rat lung growth",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Ohashi",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Pinkerton",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ikegami",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Jobe",
+                    "suffix": ""
+                }
+            ],
+            "year": 1994,
+            "venue": "Pediatr. Res",
+            "volume": "35",
+            "issn": "",
+            "pages": "685--689",
+            "other_ids": {
+                "DOI": [
+                    "10.1203/00006450-199406000-00013"
+                ]
+            }
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Surfactant decreases pulmonary vascular resistance and increases pulmonary blood flow in the fetal lamb model of congenital diaphragmatic hernia",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "O&apos;toole",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Karamanoukian",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Morin",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Iii",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Holm",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Egan",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Azizkhan",
+                    "suffix": ""
+                }
+            ],
+            "year": 1996,
+            "venue": "J. Pediatr. Surg",
+            "volume": "31",
+            "issn": "",
+            "pages": "507--511",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S0022-3468(96)90484-4"
+                ]
+            }
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "COVID-19 diagnosis and management: a comprehensive review",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Pascarella",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Strumia",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Piliego",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Bruno",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Del Buono",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Costa",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J. Intern. Med",
+            "volume": "288",
+            "issn": "",
+            "pages": "192--120",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/joim.13091"
+                ]
+            }
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Age-dependency of surfactant phospholipids and surfactant protein A in bronchoalveolar lavage fluid of children without bronchopulmonary disease",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Ratjen",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Rehn",
+                    "suffix": ""
+                },
+                {
+                    "first": "U",
+                    "middle": [],
+                    "last": "Costabel",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Bruch",
+                    "suffix": ""
+                }
+            ],
+            "year": 1996,
+            "venue": "Eur. Respir. J",
+            "volume": "9",
+            "issn": "",
+            "pages": "328--333",
+            "other_ids": {
+                "DOI": [
+                    "10.1183/09031936.96.09020328"
+                ]
+            }
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "Gender and age differences reveal risk patterns in COVID-19 outbreak",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Singh",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Gupta",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Mishra",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Chellappan",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Dua",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Altern. Ther. Health Med. AT6476",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "Surfactant protein D of the innate immune defence is inversely associated with human obesity and SP-D deficiency infers increased body weight in mice",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Sorensen",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Hjelmborg",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Leth-Larsen",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Schmidt",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Fenger",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Poulain",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Scand. J. Immunol",
+            "volume": "64",
+            "issn": "",
+            "pages": "633--638",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/j.1365-3083.2006.01853.x"
+                ]
+            }
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Characterization of a human surfactant protein A1 (SP-A1) gene-specific antibody; SP-A1 content variation among individuals of varying age and pulmonary health",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Tagaram",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Umstead",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Mikerov",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Thomas",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Graff",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Am. J. Physiol. Lung Cell. Mol. Physiol",
+            "volume": "292",
+            "issn": "",
+            "pages": "1052--1063",
+            "other_ids": {
+                "DOI": [
+                    "10.1152/ajplung.00249.2006"
+                ]
+            }
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "Pulmonary surfactant itself must be a strong defender against SARS-CoV-2",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Takano",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Med. Hypotheses",
+            "volume": "144",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.mehy.2020.110020"
+                ]
+            }
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "The sex difference in fetal lung surfactant production",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Torday",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Nielsen",
+                    "suffix": ""
+                }
+            ],
+            "year": 1987,
+            "venue": "Exp. Lung Res",
+            "volume": "12",
+            "issn": "",
+            "pages": "1--19",
+            "other_ids": {
+                "DOI": [
+                    "10.3109/01902148709068811"
+                ]
+            }
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "Receptor recognition by the novel coronavirus from Wuhan: an analysis based on decade-long structural studies of SARS coronavirus",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wan",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Shang",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Graham",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Baric",
+                    "suffix": ""
+                },
+                {
+                    "first": "Li",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J. Virol",
+            "volume": "94",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1128/JVI.00127-20"
+                ]
+            }
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "An interpretable mortality prediction model for COVID-19 patients",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Yan",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "A T"
+                    ],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Gonvalves",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Xiao",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Guo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nat. Mach. Intell",
+            "volume": "2",
+            "issn": "",
+            "pages": "283--288",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s42256-020-0180-7"
+                ]
+            }
+        },
+        "BIBREF45": {
+            "ref_id": "b45",
+            "title": "Clinical course and outcomes of critically ill patients with SARS-CoV-2 pneumonia in Wuhan, China: a single-centered, retrospective, observational study",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Shu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Xia",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet Respir. Med",
+            "volume": "8",
+            "issn": "",
+            "pages": "475--481",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S2213-2600(20)30079-5"
+                ]
+            }
+        },
+        "BIBREF46": {
+            "ref_id": "b46",
+            "title": "Plasma surfactant protein D levels and the relation to body mass index in a chinese population",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Wei",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "X"
+                    ],
+                    "last": "Cai",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Tornoe",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Han",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Scand. J. Immunol",
+            "volume": "66",
+            "issn": "",
+            "pages": "71--76",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/j.1365-3083.2007.01943.x"
+                ]
+            }
+        }
+    },
+    "ref_entries": {},
+    "back_matter": [
+        {
+            "text": "The author declares that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.Copyright \u00a9 2020 Weiskirchen. This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conflict of Interest:"
+        }
+    ]
+}

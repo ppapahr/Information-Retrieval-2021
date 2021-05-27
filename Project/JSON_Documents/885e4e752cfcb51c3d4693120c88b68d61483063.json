@@ -1,0 +1,1627 @@
+{
+    "paper_id": "885e4e752cfcb51c3d4693120c88b68d61483063",
+    "metadata": {
+        "title": "Journal Pre-proof Association of inhaled and systemic corticosteroid use with Coronavirus Disease 2019 (COVID-19) test positivity in patients with chronic pulmonary diseases",
+        "authors": [
+            {
+                "first": "Shu-Yi",
+                "middle": [],
+                "last": "Liao",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Colorado Denver -Anschutz Medical Campus",
+                    "location": {
+                        "settlement": "Aurora",
+                        "region": "CO",
+                        "country": "United States"
+                    }
+                },
+                "email": "liaos@njhealth.org"
+            },
+            {
+                "first": "Irina",
+                "middle": [],
+                "last": "Petrache",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "National Jewish Health",
+                    "location": {
+                        "settlement": "Denver",
+                        "region": "CO",
+                        "country": "United States"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Tasha",
+                "middle": [
+                    "E"
+                ],
+                "last": "Fingerlin",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Colorado Denver -Anschutz Medical Campus",
+                    "location": {
+                        "settlement": "Aurora",
+                        "region": "CO",
+                        "country": "United States"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Lisa",
+                "middle": [
+                    "A"
+                ],
+                "last": "Maier",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "National Jewish Health",
+                    "location": {
+                        "settlement": "Denver",
+                        "region": "CO",
+                        "country": "United States"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "word count: 247 Title: Association of inhaled and systemic corticosteroid use with Coronavirus Disease 2019 (COVID-19) test positivity in patients with chronic pulmonary diseases Running title: Corticosteroids and COVID-19 Occupational Health Sciences] (to SL and LM) Prior presentations: None J o u r n a l P r e -p r o o f Abbreviation list COVID-19: Coronavirus Disease 2019 SARS-CoV-2: SARS-coronavirus 2 COPD: chronic obstructive pulmonary disease NJH: National Jewish Health ACE/ARBs: angiotensin-converting enzyme inhibitors and angiotensin-receptor blockers ICD-10: International Classification of Disease-10 BMI: body mass index ATO: overlap weights for estimating the average treatment effect among the overlap population CI: confidence interval J o u r n a l P r e -p r o o f Abstract Background: The effects of chronic inhaled and systemic corticosteroids use on COVID-19 susceptibility and severity are unclear. Since many patients with chronic pulmonary diseases rely on corticosteroids to control disease, it is important to understand the risks of their use during the pandemic. We aim to study if the use of inhaled or systemic corticosteroids affects the likelihood of developing COVID-19 infection. Methods: We used the National Jewish Health electronic medical record research database to identify a cohort of all subjects who were tested for suspected COVID-19 between March 11 -June 23, 2020. Testing results, medication use, and comorbidities were obtained from the medical record. Following a comparison of different propensity score weighting methods, overlap propensity score weighting was used to analyze the association between medication use and COVID-19 diagnosis. Results: The cohort consisted of 928 patients, of which 12% tested positive. The majority (66%) of patients had a history of chronic pulmonary diseases. There was no significant association between inhaled corticosteroid use and testing positive for COVID-19. Interestingly, systemic corticosteroid use was associated with a lower odds ratio (0.95, 95% CI: 0.91-0.99) of testing positive for COVID-19. Similar results were noted when the analysis was restricted to those with any chronic pulmonary diseases, with asthma or with chronic obstructive pulmonary disease (COPD). Conclusions: Our study supports the recommendation that patients with chronic pulmonary diseases, including asthma and COPD who require treatment with either inhaled or systemic corticosteroids, should continue their use during the COVID-19 pandemic. J o u r n a l P r e -p r o o f Highlights \u2022 Systemic corticosteroids may lower the likelihood of testing positive for COVID-19",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "\u2022 An analysis of EMR using overlap propensity score weighting methods",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "\u2022 Patients with indications for corticosteroid therapy should continue using them J o u r n a l P r e -p r o o f",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "Coronavirus Disease 2019 (COVID-19) has become a pandemic and morbidity and mortality remain high worldwide. Patients with COVID-19 with pre-existing comorbidities, including chronic pulmonary diseases, have worse outcomes including greater hospitalizations, intensive care unit admission, and mortality. 1,2 Surprisingly, different from diabetes, the prevalence of chronic pulmonary diseases among patients with severe acute respiratory syndrome (SARS) and COVID-19 was lower compared to the general population. 3 One possibility for the low prevalence of chronic pulmonary diseases in COVID-19 patients is that therapies used to treat these diseases may be protective and/or decrease the susceptibility to infection with SARS-Coronavirus-2 (SARS-CoV-2), the virus that causes COVID-19. One of the most commonly prescribed medications used in chronic pulmonary diseases, especially asthma and chronic obstructive pulmonary disease (COPD), is corticosteroids, administered by inhalation and less often, systemically. A recent systematic review and meta-analysis of COVID-19 outcomes in patients with chronic pulmonary diseases using inhaled corticosteroids concluded that there was insufficient evidence to support whether the use of inhaled corticosteroids resulted in adverse or beneficial outcomes for COVID-19. 4 One explanation is that different inhaled corticosteroids (e.g.",
+            "cite_spans": [
+                {
+                    "start": 447,
+                    "end": 453,
+                    "text": "(SARS)",
+                    "ref_id": null
+                },
+                {
+                    "start": 513,
+                    "end": 514,
+                    "text": "3",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 1315,
+                    "end": 1316,
+                    "text": "4",
+                    "ref_id": "BIBREF3"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "fluticasone v.s. budesonide) may have different effects on the risk of pneumonia 5 and thus by analogy potentially COVID-19. Despite recent evidence of beneficial effects of dexamethasone in treating COVID-19-associated acute lung injury 6, 7 , systemic corticosteroids, and other immunosuppressive drugs or biologics are known to dose-dependently increase the risk for a variety of other infections. Therefore, they are intuitively thought to also increase the risk of acquiring COVID-19. Currently, there is no sufficient evidence whether and/or how corticosteroids affect COVID-19 susceptibility. In our study, we sought to investigate the association between the use of inhaled or systemic corticosteroid and the likelihood of testing positive for COVID-19 in symptomatic individuals suspected of having acute viral respiratory J o u r n a l P r e -p r o o f disease, drawn from a cohort of subjects with a high prevalence of pre-existing chronic pulmonary diseases. The goal of this study is to provide insight into potential risks and/or benefits of the continuation of inhaled or systemic corticosteroids in patients with chronic pulmonary disease who may be vulnerable to COVID-19.",
+            "cite_spans": [
+                {
+                    "start": 81,
+                    "end": 82,
+                    "text": "5",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 238,
+                    "end": 240,
+                    "text": "6,",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 241,
+                    "end": 242,
+                    "text": "7",
+                    "ref_id": "BIBREF6"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "J o u r n a l P r e -p r o o f",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "This is a retrospective cohort analysis of a prospective, observational study of all patients tested for COVID-19 at National Jewish Health (NJH). Data were extracted and validated by the clinical informatics team from electronic health records (Allscripts Analytics) using NJH data SCOUT software.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Study Design"
+        },
+        {
+            "text": "The cohort included all adult patients (\u2265 18 years old) tested for COVID-19 at NJH from March 11 to June 23, 2020. As a respiratory hospital, the majority of patients have underlying pulmonary diseases. The exclusion criteria are shown in the Supplement. Initial indications for testing included any symptoms of fever, cough (new or worsening), shortness of breath (new or worsening), or direct personal contact with known COVID-19 suspects or actual cases. After March 24, 2020, sore throat and persistent nausea or vomiting, diarrhea, or abdominal pain were added to the testing indications.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Study Population"
+        },
+        {
+            "text": "All the laboratory specimens were collected by nasopharyngeal swab by trained medical staff.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Laboratory Testing"
+        },
+        {
+            "text": "Before March 20, 2020, specimens were sent to ARUP or Quest laboratory. After March 20,  testing was performed by the NJH Advanced Diagnostics (ADx) laboratory using a reverse transcription-polymerase chain reaction SARS-CoV-2 assay that was Clinical Laboratory Improvement Amendments (CLIA) validated.",
+            "cite_spans": [
+                {
+                    "start": 78,
+                    "end": 87,
+                    "text": "March 20,",
+                    "ref_id": null
+                },
+                {
+                    "start": 88,
+                    "end": 88,
+                    "text": "",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Laboratory Testing"
+        },
+        {
+            "text": "J o u r n a l P r e -p r o o f",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Study Outcome, Medication, and Medical History Assessment"
+        },
+        {
+            "text": "The study outcome was a positive laboratory test for COVID-19. We extracted medication data for each patient based on the history in the electronic health record. We defined the medication used as any active prescription that began between March 1, 2019 (preceding 12-15 months) and remained active at the time of COVID-19 testing. Details are shown in the Supplement. We reported the following classes of medication in this study: 1) systemic corticosteroids including oral and injected; 2) inhaled corticosteroids including stand-alone corticosteroids or in combination with other drugs (e.g. long-acting beta-agonist); 3) immunosuppressants other than corticosteroids including methotrexate, mycophenolate mofetil, azathioprine, leflunomide, cyclosporine, tacrolimus, mycophenolic acid, sirolimus, and everolimus; 4) hydroxychloroquine; 5) biologics and JAK inhibitors including anti-IL-5, -IL-6, -IL-12/23, -IL-17, -IgE, -CD20, and -TNF-\u03b1 inhibitors; 6) angiotensin-converting enzyme inhibitors and angiotensin-receptor blockers (ACE/ARBs).",
+            "cite_spans": [
+                {
+                    "start": 240,
+                    "end": 278,
+                    "text": "March 1, 2019 (preceding 12-15 months)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Study Outcome, Medication, and Medical History Assessment"
+        },
+        {
+            "text": "Medical history was extracted for each patient based on presence in the electronic health record.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Study Outcome, Medication, and Medical History Assessment"
+        },
+        {
+            "text": "Diagnoses were based on the International Classification of Disease-10 (ICD-10) codes. We characterized patients as having or not having a history of the following: myocardial infarction, congestive heart failure, rheumatic disease, diabetes, and renal disease based on ICD-10 codes. These diagnoses were included as outlined in the Charlson comorbidity index, a wellvalidated tool used widely in healthcare-related research. 8, 9 For chronic pulmonary disease, we included interstitial lung disease, cystic fibrosis, and sarcoidosis to chronic pulmonary disease defined by the Charlson comorbidity index. We also added hypertension as a comorbidity of interest. A full disease group definition with ICD-10 codes are shown in e- Table 1 .",
+            "cite_spans": [
+                {
+                    "start": 426,
+                    "end": 428,
+                    "text": "8,",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 429,
+                    "end": 430,
+                    "text": "9",
+                    "ref_id": "BIBREF8"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 729,
+                    "end": 736,
+                    "text": "Table 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Study Outcome, Medication, and Medical History Assessment"
+        },
+        {
+            "text": "We extracted information on race, body mass index (BMI), smoking status, and pack-years through the medical records. We did not include race in our analysis as this variable was J o u r n a l P r e -p r o o f unknown for 35% of patients due to a combination of declining reporting, self-reported as unknown, and/or more than two races. BMI, smoking status, and pack-year history were extracted from the most recent visit after March 1, 2019 (preceding 12-15 months to the time of testing). Smoking status was missing in 24% of our study cohort.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Other covariates to be considered"
+        },
+        {
+            "text": "To address confounding by indication, given that patients who are prescribed medications are more likely to have underlying comorbidities associated with COVID-19 susceptibility, the propensity score method was used for this observational study. The propensity score was interpreted as the likelihood of receiving the medication of interest. The propensity score was estimated from a multivariate logistic regression model using age, gender, comorbidities, and other medication classes mentioned (except for the medication of interest). Race (35% unknown), BMI (24% missing), smoking status (24% missing), and pack-years (24% missing)",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Statistical Analysis"
+        },
+        {
+            "text": "were not included in our main model due to missing values. Using the method developed by Li and Thomas's group 10 and the R package PSweight for the analysis, we first compared different propensity score weighting methods then chose the method with the best performance for the analysis (Supplement). Each patient's weight was the likelihood of that patient being assigned to the opposite medication group. The propensity score weighting method was then applied to test the association between the medication of interest and testing positive for COVID-19. We also performed subgroup analysis by stratifying subjects: 1) with chronic pulmonary diseases, 2) without chronic pulmonary diseases, and 3) with asthma or COPD (with or without other concurrent pulmonary diseases), respectively. We also performed conventional logistic regression analysis adjusted for all the variables above to test for association between the medication of interest and testing positive for COVID-19.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Statistical Analysis"
+        },
+        {
+            "text": "Besides inhaled and systemic corticosteroids, we performed the ancillary analyses of immunosuppressants, hydroxychloroquine, and biologics/JAK inhibitors since the power to detect true associations were low due to the small number of patients using those medications.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "J o u r n a l P r e -p r o o f"
+        },
+        {
+            "text": "We also used ancillary analysis of models that included BMI, smoking status, and pack-years as covariates due to similar concerns of lack of power to detect true associations.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "J o u r n a l P r e -p r o o f"
+        },
+        {
+            "text": "To assess the sensitivity of our results to the diagnostic test used, we re-analyzed data using the same protocol but restricting it to patients in whom COVID-19 testing was performed exclusively in the NJH ADx laboratory. All analyses, including data cleaning, were performed in R (R Foundation for Statistical Computing, Vienna, Austria).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "J o u r n a l P r e -p r o o f"
+        },
+        {
+            "text": "The Institutional Review Board (IRB) committee at NJH through BRANY (Biomedical Research Alliance of New York) has rendered a decision for exemption of IRB approval.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Study Approval"
+        },
+        {
+            "text": "The results are reported following the STROBE (Strengthening the Reporting of Observational Studies in Epidemiology) guideline. 11 The study population consisted of 928 patients tested for COVID-19. The mean age was 53 and 310 (33%) were male ( Table 1) . 708 of the 928 patients had information on BMI, smoking status, and pack-years. The mean BMI was 29, 7% were current smokers and 38% were past smokers with mean pack-years of 10 ( Table 1) . Most patients, 612 (66%) had chronic pulmonary diseases, of whom 524 (56% of the whole cohort) had asthma or COPD. Some may have had other concurrent pulmonary diseases, for example, both asthma and cystic fibrosis ( Table 1) . A positive COVID-19 result was observed in 113 tested patients (12%), a group that had a lower prevalence of chronic pulmonary diseases (Pvalue <0.001), a higher prevalence of being male (P-value =0.002), and less systemic corticosteroid use (P-value =0.001) compared to the group that tested negative. The full details of the patients' characteristics are shown in Table 1 .",
+            "cite_spans": [
+                {
+                    "start": 128,
+                    "end": 130,
+                    "text": "11",
+                    "ref_id": "BIBREF10"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 245,
+                    "end": 253,
+                    "text": "Table 1)",
+                    "ref_id": null
+                },
+                {
+                    "start": 436,
+                    "end": 444,
+                    "text": "Table 1)",
+                    "ref_id": null
+                },
+                {
+                    "start": 664,
+                    "end": 672,
+                    "text": "Table 1)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1041,
+                    "end": 1048,
+                    "text": "Table 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "Among all patients, 348 (38%) used inhaled corticosteroids, and 214 (23%) used systemic corticosteroids. The results of propensity score weighting methods comparisons showed that overlap weighting (ATO) had the best performance (Supplement and e- Figure) . The patient characteristics after the overlap propensity score weighting are shown in Table 2 . Therefore, we used the overlap weighting method for the remainder of our analyses.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 247,
+                    "end": 254,
+                    "text": "Figure)",
+                    "ref_id": null
+                },
+                {
+                    "start": 343,
+                    "end": 350,
+                    "text": "Table 2",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "There was no significant association between inhaled corticosteroids use and testing positive for COVID-19 in either overlap propensity score-weighted analysis or conventional logistic regression analysis using all or subgroups of patients (The 95% CI of the odds ratio across one). using overlap propensity score weighting and 0.39 (95% CI: 0.18-0.84) using conventional logistic regression in subgroups of patients with chronic pulmonary disease. An odds ratio of 0.93 (95% CI: 0.89-0.97) using overlap propensity score weighting and 0.33 (95% CI: 0.14-0.78) using conventional logistic regression were observed in subgroups of patients with asthma and/or COPD. However, these findings were not observed in patients without chronic pulmonary diseases ( Table 3 ).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 755,
+                    "end": 762,
+                    "text": "Table 3",
+                    "ref_id": "TABREF2"
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "In the conventional logistic regression model including all patients ( Table 4) We performed a sensitivity analysis by re-analyzing data following the same protocol, restricted to patients whose COVID-19 testing was performed only at the NJH laboratory, which generated similar results (data not shown).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 71,
+                    "end": 79,
+                    "text": "Table 4)",
+                    "ref_id": "TABREF3"
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "Since corticosteroids are often used as the primary treatment for many patients with underlying chronic diseases, we used the rigorous method of overlap propensity score weighting to account for confounding by indications. In summary, being treated with systemic corticosteroids was associated with a decrease in the likelihood of testing positive for COVID-19, especially in patients with chronic pulmonary disease or airway diseases (asthma or COPD). However, using inhaled corticosteroids was not associated with a change in the likelihood of testing positive for COVID-19 in our study. We also observed a lower likelihood of testing positive for COVID-19 in patients with chronic pulmonary disease and a higher likelihood in males adjusting for other covariates.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "J o u r n a l P r e -p r o o f"
+        },
+        {
+            "text": "The prevalence of positive COVID-19 tests in our study cohort (residents from Colorado) during the study period was 12.1%, which is similar to the 10.7 % prevalence of COVID-19 in the state of Colorado as of June 23, 2020 (https://covid19.colorado.gov/; P-value =0.14). While we do not know if the indications for the COVID-19 testing were similar between our cohort and other Colorado residents, these rates suggest that we did not have over or under testing at NJH.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "J o u r n a l P r e -p r o o f"
+        },
+        {
+            "text": "Reports of the effect of inhaled corticosteroids on COVID-19 susceptibility are limited to date. 4 Inhaled corticosteroids have been associated with a higher risk for respiratory tract infections 12,13 and a higher prevalence of pneumonia in patients with asthma or COPD. 14, 15 Interestingly, a recent study of asthma patients showed that inhaled corticosteroids may reduce ACE2 and TMPRSS2 gene expression in sputum cells which might suggest a protective effect on COVID-19 susceptibility since these molecules play important roles in SARS-CoV-2 infectivity. 16 However, there was no direct analysis of gene expression data and COVID-19 susceptibility as the study population was enrolled before the COVID-19 pandemic. Several in vitro studies 17, 18 have shown that the inhaled corticosteroid ciclesonide may have antiviral effects on coronavirus, which spurred several ongoing clinical trials (www.clinicaltrials.gov). Our results did not identify either a beneficial or an adverse effect of inhaled corticosteroid on J o u r n a l P r e -p r o o f COVID-19 susceptibility, after controlling for other comorbidities and medication use, in either the entire cohort, those with chronic pulmonary diseases, or those with airway diseases.",
+            "cite_spans": [
+                {
+                    "start": 97,
+                    "end": 98,
+                    "text": "4",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 272,
+                    "end": 275,
+                    "text": "14,",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 276,
+                    "end": 278,
+                    "text": "15",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 561,
+                    "end": 563,
+                    "text": "16",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 746,
+                    "end": 749,
+                    "text": "17,",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 750,
+                    "end": 752,
+                    "text": "18",
+                    "ref_id": "BIBREF17"
+                }
+            ],
+            "ref_spans": [],
+            "section": "J o u r n a l P r e -p r o o f"
+        },
+        {
+            "text": "Although our findings may be limited due to power, they suggest that the continuation of inhaled corticosteroids for their original indication may not increase the risk of SARS-CoV-2 infection during the COVID-19 pandemic.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "J o u r n a l P r e -p r o o f"
+        },
+        {
+            "text": "Most studies to date have evaluated the effectiveness of corticosteroids as treatment for COVID-19, with the most recent (RECOVERY) showing that dexamethasone reduced mortality by up to 30% in those with severe disease (ventilated patients). 6, 7 Another study in patients with inflammatory bowel diseases found that preexistent use of systemic corticosteroids for inflammatory bowel diseases was associated with severe COVID-19 infection. 19 However, those studies were not designed to explore the association between systemic corticosteroid and COVID-19 susceptibility. There are, to our knowledge, no studies that have reported this association. A recent editorial cautioned that patients who are taking corticosteroids may have increased susceptibility to COVID-19, although our study suggests the contrary. 20 Guidelines from the American College of Rheumatology, based on expert opinion, recommend using the lowest effective dose of corticosteroids to control the underlying rheumatic disease. 21 Our study offers evidence that individuals on systemic corticosteroid treatment may have reduced COVID-19 susceptibility, especially those with airway diseases. Systemic corticosteroids might play an important role in preventing SARS-CoV-2 cellular uptake or they may render infected individuals asymptomatic since we only tested individuals presenting with symptoms suggestive of respiratory viral illness.",
+            "cite_spans": [
+                {
+                    "start": 242,
+                    "end": 244,
+                    "text": "6,",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 245,
+                    "end": 246,
+                    "text": "7",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 440,
+                    "end": 442,
+                    "text": "19",
+                    "ref_id": null
+                },
+                {
+                    "start": 812,
+                    "end": 814,
+                    "text": "20",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 1000,
+                    "end": 1002,
+                    "text": "21",
+                    "ref_id": "BIBREF20"
+                }
+            ],
+            "ref_spans": [],
+            "section": "J o u r n a l P r e -p r o o f"
+        },
+        {
+            "text": "Our study showed that male gender is associated with a higher likelihood of testing positive for COVID-19. A previous study in six European countries indicated that sex differences in COVID-19 susceptibility varied with age, with a higher risk of males being noted in those above 50years old 22 . This association may also be related to gender-specific (e.g. occupational) J o u r n a l P r e -p r o o f exposure risks. Emerging evidence supports that male gender is also associated with higher COVID-19 mortality, with a 1.7 times higher average case fatality rate in males than in females, based on sex-disaggregated data from 37 countries. 23 Our study revealed that patients with chronic pulmonary diseases have a lower prevalence of COVID-19 test positivity. This finding is consistent with observations in a recent editorial, 3 implicating the possibility of underdiagnosed (missed) chronic pulmonary disease diagnoses in their population. However, this is unlikely in our cohort, where the prevalence of chronic pulmonary diseases was high (66%) with the population drawn from a health care center dedicated to respiratory conditions. Another explanation proposed in the above editorial was that medications used by patients with chronic pulmonary diseases may reduce COVID-19 susceptibility; this is in fact supported by our study. Interestingly, in our study, the protective effect of corticosteroids on COVID-19 susceptibility in patients with chronic pulmonary diseases remained significant even after adjusting for medication use and other comorbidities. This suggests that individuals with chronic pulmonary diseases may exhibit immunological differences that are protective against SARS-CoV-2 infection. Another potential explanation that seems more likely is that individuals with chronic pulmonary disease are more likely to practice preventive measures such as social distancing or face mask usage more effectively than those without chronic pulmonary disease. Besides, the difference in the prevalence may be related to the disproportionately higher numbers of COPD/asthma patients in our study cohort. Given this limitation and the fact that this outcome was not the primary focus of the study design, further investigations are needed to determine the interaction between underlying comorbidities and COVID-19 risk.",
+            "cite_spans": [
+                {
+                    "start": 292,
+                    "end": 294,
+                    "text": "22",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 643,
+                    "end": 645,
+                    "text": "23",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 832,
+                    "end": 833,
+                    "text": "3",
+                    "ref_id": "BIBREF2"
+                }
+            ],
+            "ref_spans": [],
+            "section": "J o u r n a l P r e -p r o o f"
+        },
+        {
+            "text": "We did not find a significant association between smoking and COVID-19 susceptibility in our subset of patients who had documented smoking history. This result may be due to the limited power of the smaller sample size (76% of the original cohort). Two recent studies 24,25 of human J o u r n a l P r e -p r o o f airway epithelium have shown that ACE2 expression is induced by active smoking and therefore may increase the susceptibility of smokers to SARS-CoV-2. In turn, a recent systemic metaanalysis indicated that current smokers had reduced the risk of SARS-CoV-2 infection, but increased risk of COVID-19 severity. However, the studies included in the meta-analysis only met \"fair quality\" criteria, 26 suggestings that additional research is needed to help define the role of cigarette smoking on COVID-19 susceptibility and outcomes.",
+            "cite_spans": [
+                {
+                    "start": 708,
+                    "end": 710,
+                    "text": "26",
+                    "ref_id": "BIBREF25"
+                }
+            ],
+            "ref_spans": [],
+            "section": "J o u r n a l P r e -p r o o f"
+        },
+        {
+            "text": "No association between ACE/ARBs and COVID-19 susceptibility was found in our study which is consistent with a recent large cohort study (18,472 patients) . 27 We also did not find an association between immunosuppressants (besides corticosteroid), hydroxychloroquine, or biologics/JAK2 inhibitors and COVID-19 susceptibility. Although this may be due to the smaller numbers, the results are consistent with a recent review article 28 in which morbidity and mortality rates in immunosuppressed patients did not differ from the general population. Current best practice guidelines worldwide recommend the continuation of immunosuppression treatment in patients requiring it for control of the underlying disease. 28 However, all current studies on this topic, including ours, are small, indicating that larger cohort studies of patients with diverse chronic diseases are needed.",
+            "cite_spans": [
+                {
+                    "start": 136,
+                    "end": 153,
+                    "text": "(18,472 patients)",
+                    "ref_id": null
+                },
+                {
+                    "start": 156,
+                    "end": 158,
+                    "text": "27",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 711,
+                    "end": 713,
+                    "text": "28",
+                    "ref_id": "BIBREF27"
+                }
+            ],
+            "ref_spans": [],
+            "section": "J o u r n a l P r e -p r o o f"
+        },
+        {
+            "text": "There are certain limitations to our study. First, confounding factors are the main source of bias for any observational study. To minimize this bias, we used the overlap propensity scoreweighted analysis. However, like all propensity score methods, overlap weighting cannot adjust for unmeasured variables and therefore, bias may still exist. As an example, if patients with chronic lung disease on corticosteroids were more like to self-isolate than other patient populations this might confound our studies as it could not be addressed. We think that this is unlikely as we made these recommendations to all of our patients. Second, our study population may not be generalizable to the general population as we have a well-defined population of patients with chronic pulmonary diseases, and potentially even those with more severe disease.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "J o u r n a l P r e -p r o o f"
+        },
+        {
+            "text": "Also, our study focuses on the outpatient setting and did not have information on hospitalization to address the severity of the infection. This limitation may explain why we did not find diabetes as a risk factor for COVID-19 susceptibility. However, our findings may be applied to patients with chronic pulmonary diseases Third, we do not have sufficient information about the dosage or duration of medication use and cannot assess how those might have affected the likelihood of testing positive for COVID-19 Fourth, the mean age of our study population is relatively young (53 years old) which may not be representative of the total population. This may be an important confounder and limitation to our study results since age is an independent factor of COVID severity and mortality. 29 Finally, similar to other electronic medical research, non-differential misclassification of binary variables may reduce the power of detecting a true association.",
+            "cite_spans": [
+                {
+                    "start": 789,
+                    "end": 791,
+                    "text": "29",
+                    "ref_id": "BIBREF28"
+                }
+            ],
+            "ref_spans": [],
+            "section": "J o u r n a l P r e -p r o o f"
+        },
+        {
+            "text": "Further studies including a larger population mixed with a variety of comorbidities and a detailed medical history and medication history assessment are needed.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "J o u r n a l P r e -p r o o f"
+        },
+        {
+            "text": "To the best of our knowledge, this is the first report of the association between inhaled or systemic corticosteroid, diagnosis of chronic pulmonary diseases including airway diseases, and risk of testing positive for COVID-19. Our finding that systemic corticosteroids decreased COVID-19 susceptibility should be interpreted with caution due to the above-mentioned limitations. However, our study supports the recommendation that patients with chronic pulmonary diseases who have indications for either inhaled or systemic corticosteroid therapy should continue using them during the ongoing COVID-19 pandemic. Discontinuation of those medications for concern regarding COVID-19 risk may be unnecessary and detrimental, as corticosteroids may be essential to control asthma, COPD, and other chronic pulmonary diseases such as sarcoidosis, and autoimmune lung diseases.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusions"
+        },
+        {
+            "text": "J o u r n a l P r e -p r o o f ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusions"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Characteristics of and Important Lessons From the Coronavirus Disease 2019 (COVID-19) Outbreak in China: Summary of a Report of 72314 Cases From the Chinese Center for Disease Control and Prevention",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Mcgoogan",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "JAMA",
+            "volume": "2020",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "COVID-19 with Different Severities: A Multicenter Study of Clinical Features",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Feng",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Ling",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Bai",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Am J Respir Crit Care Med",
+            "volume": "201",
+            "issn": "11",
+            "pages": "1380--1388",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Do chronic respiratory diseases or their treatment affect the risk of SARS-CoV-2 infection?",
+            "authors": [
+                {
+                    "first": "Dmg",
+                    "middle": [],
+                    "last": "Halpin",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Faner",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Sibila",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Badia",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Agusti",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet Respir Med",
+            "volume": "8",
+            "issn": "5",
+            "pages": "436--438",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Inhaled corticosteroids and COVID-19: a systematic review and clinical perspective",
+            "authors": [
+                {
+                    "first": "Dmg",
+                    "middle": [],
+                    "last": "Halpin",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Singh",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Hadfield",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Eur Respir J",
+            "volume": "55",
+            "issn": "5",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Differences in the efficacy and safety among inhaled corticosteroids (ICS)/long-acting beta2-agonists (LABA) combinations in the treatment of chronic obstructive pulmonary disease (COPD): Role of ICS",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Latorre",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Novelli",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Vagaggini",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Pulm Pharmacol Ther",
+            "volume": "30",
+            "issn": "",
+            "pages": "44--50",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Dexamethasone in Hospitalized Patients with Covid-19 -Preliminary Report",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Group",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Horby",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Lim",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "N Engl J Med",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Prolonged Low-Dose Methylprednisolone in Patients With Severe COVID-19 Pneumonia",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Salton",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Confalonieri",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "U"
+                    ],
+                    "last": "Meduri",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Open Forum Infect Dis",
+            "volume": "7",
+            "issn": "10",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "A new method of classifying prognostic comorbidity in longitudinal studies: development and validation",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Charlson",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Pompei",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Ales",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Mackenzie",
+                    "suffix": ""
+                }
+            ],
+            "year": 1987,
+            "venue": "J Chronic Dis",
+            "volume": "40",
+            "issn": "5",
+            "pages": "373--383",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Coding algorithms for defining comorbidities in ICD-9-CM and ICD-10 administrative data",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Quan",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Sundararajan",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Halfon",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Med Care",
+            "volume": "43",
+            "issn": "11",
+            "pages": "1130--1139",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Overlap Weighting: A Propensity Score Method That Mimics Attributes of a Randomized Clinical Trial",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Thomas",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Pencina",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "JAMA",
+            "volume": "2020",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "The Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) statement: guidelines for reporting observational studies",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Von Elm",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Altman",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Egger",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Lancet",
+            "volume": "370",
+            "issn": "9596",
+            "pages": "1453--1457",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Inhaled corticosteroids and risk of upper respiratory tract infection in patients with asthma: a meta-analysis",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zeng",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Infection",
+            "volume": "47",
+            "issn": "3",
+            "pages": "377--385",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Long-term use of inhaled corticosteroids and risk of upper respiratory tract infection in chronic obstructive pulmonary disease: a meta-analysis",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Inhal Toxicol",
+            "volume": "29",
+            "issn": "5",
+            "pages": "219--226",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Inhaled corticosteroids and the risk of pneumonia in people with asthma: a case-control study",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Mckeever",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Harrison",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Hubbard",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Shaw",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Chest",
+            "volume": "144",
+            "issn": "6",
+            "pages": "1788--1794",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Inhaled corticosteroids for stable chronic obstructive pulmonary disease",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Clarke",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Sim",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Fong",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Cochrane Database Syst Rev",
+            "volume": "2012",
+            "issn": "7",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "COVID-19-related Genes in Sputum Cells in Asthma. Relationship to Demographic Features and Corticosteroids",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Peters",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Sajuthi",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Deford",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Am J Respir Crit Care Med",
+            "volume": "202",
+            "issn": "1",
+            "pages": "83--90",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Identification of Antiviral Drug Candidates against SARS-CoV-2 from FDA-Approved Drugs",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Jeon",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ko",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Antimicrob Agents Chemother",
+            "volume": "64",
+            "issn": "7",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Inhibitory effects of glycopyrronium, formoterol, and budesonide on coronavirus HCoV-229E replication and cytokine production by primary cultures of human nasal and tracheal epithelial cells",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Yamaya",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Nishimura",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Deng",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Respir Investig",
+            "volume": "58",
+            "issn": "3",
+            "pages": "155--168",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "But Not TNF Antagonists, Are Associated With Adverse COVID-19 Outcomes in Patients With Inflammatory Bowel Diseases: Results From an International Registry",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Brenner",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Ungaro",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Gearry",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Gastroenterology",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Our Response to COVID-19 as Endocrinologists and Diabetologists",
+            "authors": [
+                {
+                    "first": "U",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Kaiser",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Mirmira",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Stewart",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Clin Endocrinol Metab",
+            "volume": "",
+            "issn": "5",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "American College of Rheumatology Guidance for the Management of Rheumatic Disease in Adult Patients During the COVID-19 Pandemic: Version 1. Arthritis Rheumatol",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Mikuls",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Johnson",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Fraenkel",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Gender and Age Effects on the Rates of Infection and Deaths in Individuals with Confirmed SARS-CoV-2 Infection in Six European Countries",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Marina",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Piemonti",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Considering how biological sex impacts immune responses and COVID-19 outcomes",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Scully",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Haverfield",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Ursin",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Tannenbaum",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Klein",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nat Rev Immunol",
+            "volume": "20",
+            "issn": "7",
+            "pages": "442--447",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "ACE-2 expression in the small airway epithelia of smokers and COPD patients: implications for COVID-19",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Leung",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "X"
+                    ],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Tam",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Eur Respir J",
+            "volume": "55",
+            "issn": "5",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Expression of the SARS-CoV-2 ACE2 Receptor in the Human Airway Epithelium",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Rostami",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Leopold",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Am J Respir Crit Care Med",
+            "volume": "202",
+            "issn": "2",
+            "pages": "219--229",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "SARS-CoV-2 and COVID-19: A review of reviews considering implications for public health policy and practice",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Grundy",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Suddek",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Filippidis",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Majeed",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Coronini-Cronberg",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Smoking",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Tob Induc Dis",
+            "volume": "18",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Association of Use of Angiotensin-Converting Enzyme Inhibitors and Angiotensin II Receptor Blockers With Testing Positive for Coronavirus Disease 2019 (COVID-19)",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Mehta",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Kalra",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Nowacki",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "JAMA Cardiol",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "COVID-19 and immunosuppression: a review of current clinical experiences and implications for ophthalmology patients taking immunosuppressive drugs",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [
+                        "X"
+                    ],
+                    "last": "Thng",
+                    "suffix": ""
+                },
+                {
+                    "first": "De",
+                    "middle": [],
+                    "last": "Smet",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Br J Ophthalmol",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Severity of respiratory failure at admission and inhospital mortality in patients with COVID-19: a prospective observational multicentre study",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Santus",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Radovanovic",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Saderi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "BMJ Open",
+            "volume": "10",
+            "issn": "10",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "For the analysis of systemic corticosteroid use, we observed an odds ratio of 0.95 (95% CI: 0.91-0.99) using overlap propensity score weighting and 0.50 (95% CI: 0.26-0.94) using conventional logistic regression adjusted for all covariates in all patients. In the subgroup",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": ", we observed a higher likelihood of testing positive for COVID-19 in males, with an odds ratio of 1.95 (95% CI:1.29-2.95) and lower likelihood in patients with chronic pulmonary diseases, with an odds ratio of 0.53 (95% CI:0.34-0.89). There were no significant associations between ACE/ARBs, immunosuppressants, hydroxychloroquine, or biologics/JAK inhibitors use and testing positive for COVID-19 in either overlap propensity score-weighted analysis or conventional logistic regression analysis using all or subgroups of patients. To further explore the effects of different corticosteroid formulations on susceptibility COVID-19, we have compared the prevalence of testing positive for COVID-19 among patients using different types of corticosteroids. For systemic corticosteroids, 191 of the 214 patients (89%) who received systemic corticosteroids used prednisone while 18 patients (8%) used methylprednisolone and the remaining 5 patients (3%) used other systemic corticosteroids. The prevalence of testing positive for COVID-19 in patients using prednisone was 5.7% compared to 5.6% of patients using methylprednisolone(Chi-square P-value =0.97), suggesting no significant difference in the prevalence on the two different main systemic corticosteroid formulations use. For inhaled corticosteroids, we exclude 10 patients out of 348 patients who used more than one J o u r n a l P r e -p r o o f inhaled corticosteroid formulations. Among the remaining 338 patients, 156 patients (46%) who received inhaled corticosteroids used fluticasone while 138 patients (41%) used budesonide, and 44 patients (13%) used other inhaled corticosteroids (24 patients used beclomethasone, 16 patients used mometasone, and 4 patients used ciclesonide). The prevalence of testing positive for COVID-19 in patients using fluticasone was 12.2% compared to 8.7% of patients using budesonide (Chi-square P-value =0.33), suggesting no significant difference in the prevalence on the two different main inhaled corticosteroid formulations use. For commonly used biologics in asthma such as anti-IL5 and anti-IgE, we observed a COVID-19 prevalence of 8.3% in patients using anti-IL5 (2 out of 24) and in patients using anti-IgE 11.1% (2 out of 18) (Chisquare P-value =0.76), suggesting no difference in the prevalence on the two different biologicsuse. We performed analyses restricted to 708 patients (76% of the overall cohort) with recorded data on BMI, smoking status, and pack-years. When including these variables in the model, there was no significant association between any medication use and testing positive for COVID-19 in the overlap propensity score-weighted analysis. Conventional logistic regression analysis indicated that testing positive for COVID-19 was higher in males (OR 1.76; 95% CI:1.01-3.08, e-",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": ", borderline higher in patients using inhaled corticosteroids (OR 1.76; 95% CI:1.00-3.07, e-Table 2), borderline lower in those with chronic pulmonary diseases treated with systemic corticosteroids (OR 0.46; 95% CI: 0.21-1.00; e-Table 3), and significantly lower in asthma or COPD patients (OR 0.38; 95% CI: 0.16-0.91; e-Table 4). Full results were shown in the Supplement.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "Characteristics of patients in the study Characteristics* Total Definition of abbreviations: SD: standard deviation; COPD: chronic obstructive pulmonary disease; ACEI: angiotensin conversion enzyme inhibitor; ARB: angiotensin II receptor blocker Bold when P-value < 0.05 *All characteristics except age are reported as number and percentage \u2020 Calculated based on 708 patients (63, 8% positive, and 645, 92% negative) with complete information on BMI, smoking status, and pack-years. \u2021 Patients may have several concurrent pulmonary diseases, e.g. patients may have both asthma and interstitial lung diseases Overlap propensity score-weighted characteristics among corticosteroid usage groups (n=928) Inhaled corticosteroid* Systemic corticosteroid*",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "Association between corticosteroid use and testing positive for COVID-19 in different subgroups Definition of abbreviations: COPD: chronic obstructive pulmonary disease *Reported as odds ratio and 95% confidence interval; bold when odds ratio is significant \u2020 Adjusted for all other covariates",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF3": {
+            "text": "Conventional logistic regression in all patients (n=928) Definition of abbreviations: CI: confidence interval; ACEI: angiotensin conversion enzyme inhibitor; ARB: angiotensin II receptor blocker Bold when the odds ratio is significant",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "The authors would like to thank Joy Zimmer for help with the data query and Briana Barkes for help with the institutional review board application. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Acknowledgments"
+        }
+    ]
+}

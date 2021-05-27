@@ -1,0 +1,1645 @@
+{
+    "paper_id": "e82c088f7610010df60817927a90698bea30b514",
+    "metadata": {
+        "title": "Impact of age-selective vs non-selective physi- cal-distancing measures against coronavirus disease 2019: a mathematical modelling study",
+        "authors": [
+            {
+                "first": "Daniel",
+                "middle": [],
+                "last": "Ortega-Quijano",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Noe",
+                "middle": [],
+                "last": "Ortega-Quijano",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [],
+    "body_text": [
+        {
+            "text": "On 23 January 2020, with <400 accumulated confirmed diagnoses of coronavirus disease (COVID- 19) , an unprecedented lockdown that lasted for >10 weeks was established in the city of Wuhan, China. 1 Control measures enacted by local and national authorities included a travel ban; non-selective social-distancing policies; the obligation to wear masks; the extension of the Chinese Lunar New Year holiday; and the closure of schools, universities, factories, government offices and, ultimately, of all non-essential services. 2, 3 As a result of these measures, on 8 April, with just one new case of local transmission reported over the preceding 2 weeks, local authorities began to ease restrictions in Wuhan. 4 Meanwhile, the disease spread globally to become a pandemic and >50 000 people were infected and another 2500 died in Wuhan according to local authorities. 1, 5 Non-selective physical-distancing measures have substantially halted transmission of COVID-19 worldwide, giving extra time to the unprecedented global effort that is underway to find treatments and vaccines in a context of successive epidemic waves. [6] [7] [8] However, as various mathematical models predicted, uncontrolled community transmission might make it necessary to alternate periods of relaxation of measures with repeated periods of lockdown in the near and mid-term, with potentially devastating consequences for the public health and economy of countries. 9 In fact, Israel was the world's first country to reimpose lockdown in September 2020. 10 To put the economic consequences into perspective, the monthly losses during Wuhan's closure have been estimated at >52% of the 2019 first-quarter municipal gross domestic product. 11 The purpose of this study is to present an alternative approach to the design of social-distancing measures. In particular, we investigate the impact of age-selective physical-distancing measures focused on older age groups on the cumulative number of COVID-19-related deaths and the number of people in the active workforce in the setting of Wuhan. It is an exercise of a mathematical nature and, although the practical limitations are outlined in the discussion, the specific design and application of the measures are beyond the scope of this study.",
+            "cite_spans": [
+                {
+                    "start": 93,
+                    "end": 96,
+                    "text": "19)",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 196,
+                    "end": 197,
+                    "text": "1",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 525,
+                    "end": 527,
+                    "text": "2,",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 528,
+                    "end": 529,
+                    "text": "3",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 710,
+                    "end": 711,
+                    "text": "4",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 868,
+                    "end": 870,
+                    "text": "1,",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 871,
+                    "end": 872,
+                    "text": "5",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 1123,
+                    "end": 1126,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 1127,
+                    "end": 1130,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 1131,
+                    "end": 1134,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 1443,
+                    "end": 1444,
+                    "text": "9",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 1531,
+                    "end": 1533,
+                    "text": "10",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 1715,
+                    "end": 1717,
+                    "text": "11",
+                    "ref_id": "BIBREF10"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "To simulate Wuhan's outbreak and the effect of alternative lockdown scenarios, we programmed a deterministic agedependent and location-specific Susceptible, Exposed, Infected, Removed (SEIR) model in order to introduce epidemiologically relevant age classes into the outbreak-dynamics analysis. Initial parameters, including the Wuhan-population structure and Prem's synthetic age-dependent and locationspecific contact matrices for modelling social interactions among the population in Wuhan, 8 were obtained from the literature (Table 1) . All the data used to calculate these parameters were ultimately extracted from official publications from the National Health Commission, China CDC, World Bank, United Nations Statistics Division, International Labor Organization, POLYMOD study and other publicly available sources. 1, 18, 19 Procedures Compartments In deterministic compartmental models, individuals are divided into classes solely based on their infection status.",
+            "cite_spans": [
+                {
+                    "start": 494,
+                    "end": 495,
+                    "text": "8",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 825,
+                    "end": 827,
+                    "text": "1,",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 828,
+                    "end": 831,
+                    "text": "18,",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 832,
+                    "end": 834,
+                    "text": "19",
+                    "ref_id": "BIBREF17"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 530,
+                    "end": 539,
+                    "text": "(Table 1)",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Sources of data"
+        },
+        {
+            "text": "\u2022 Age is an independent risk factor for mortality in patients with coronavirus disease (COVID-19).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Key Messages"
+        },
+        {
+            "text": "\u2022 Non-selective physical-distancing measures enacted by the Chinese authorities effectively contributed to controlling Wuhan's outbreak.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Key Messages"
+        },
+        {
+            "text": "\u2022 No published article has modelled and compared the effect of age-selective vs non-selective physical-distancing interventions against COVID-19 on both mortality and economic workforce, nor proposed age-structured control measures based on both aspects.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Key Messages"
+        },
+        {
+            "text": "\u2022 We assessed the effect of age-selective physical-distancing interventions compared with non-selective interventions on mortality and workforce reduction in Wuhan.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Key Messages"
+        },
+        {
+            "text": "\u2022 We found that age-selective social restrictions specifically balanced for overprotecting vulnerable age groups would likely reduce the total number of deaths while allowing a higher percentage of the workforce to remain at their workplace.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Key Messages"
+        },
+        {
+            "text": "Susceptible (S) individuals have not been exposed to the pathogen yet and are not immunized against it, so they are prone to be infected. Susceptible individuals become Exposed (E) when they are infected but not yet infectious, and they eventually become Infected (I) when they can further transmit the infection. Finally, infected individuals are Removed (R) when the infectious period is finished. Under the close-system assumption ignoring population dynamics, the total population is N \u00bc S \u00fe E \u00fe I \u00fe R.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Key Messages"
+        },
+        {
+            "text": "In view of the strongly asymmetric impact of COVID-19 on different age groups, with a much higher mortality for the elderly compared with the younger population, this work incorporates age groups into the SEIR model described above in order to include the age-structured results into the simulations outcome. 17 We have grouped the population into 10-year bands except for the last group, which includes all individuals >70 years old, which results in eight age categories. This decision arises from the convenience to harmonize our agedependent SEIR model with the age categories used by Chinese authorities to disseminate the official mortality data of the COVID-19 outbreak. 1, 19 As a result, the number of individuals and the total population in each compartment are no longer quantified by a single number, but by a column vector of eight values corresponding to the age groups, where index i denotes the age group.",
+            "cite_spans": [
+                {
+                    "start": 309,
+                    "end": 311,
+                    "text": "17",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 678,
+                    "end": 680,
+                    "text": "1,",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 681,
+                    "end": 683,
+                    "text": "19",
+                    "ref_id": "BIBREF17"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Age groups"
+        },
+        {
+            "text": "Our SEIR model and the transitions of individuals across the model compartments are presented in Figure 1 . The number of days for which exposed individuals remain in the incubation period before becoming infected follows an Erlang-probability density function of shape factor 2 and the rate of becoming infected r \u00bc 1=d L , where d L is the mean incubation period. Likewise, the infectious period is modelled by an Erlang distribution of shape factor 2 and mean infectious period d I , which determines the removal rate c \u00bc 1=d I that describes the transition of individuals from the Infected to the Removed compartment.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 97,
+                    "end": 105,
+                    "text": "Figure 1",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "SEIR-model parameters"
+        },
+        {
+            "text": "The interaction between susceptible and infectious individuals generates exposed individuals at a rate denoted as k and better known as force of infection, defined as the rate at which susceptible individuals become infected but not yet infectious. In conventional age-independent SEIR models, the per-capita infection rate is k \u00bc bI=N, which means that it is governed by the transmission rate b and by the infection prevalence expressed as the fraction of infectious individuals I=N, where N is the total population. Importantly, the transmission rate encompasses both the underlaying social-contact dynamics and the probability of infection transmission. 20 The rate of becoming infected (r) and the removal rate (c) are considered to be age-independent. Regarding the force of infection (k), the transmission rate can now be written as b \u00bc sC, where s is the probability of infection transmission and C is the contact matrix. Each element C i;j of the contact matrix in a given scenario quantifies the average number of daily contacts made by an individual in age group i with an individual in age group j. 21 The basic reproduction number R 0 is defined as the average number of secondary cases produced by a primary infectious individual in a susceptible population. 20 It is calculated as the ratio between the transmission rate and the recovery rate, which can in turn be expressed as:",
+            "cite_spans": [
+                {
+                    "start": 657,
+                    "end": 659,
+                    "text": "20",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 1110,
+                    "end": 1112,
+                    "text": "21",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 1272,
+                    "end": 1274,
+                    "text": "20",
+                    "ref_id": "BIBREF18"
+                }
+            ],
+            "ref_spans": [],
+            "section": "SEIR-model parameters"
+        },
+        {
+            "text": "where C is the average number of contacts of the overall population, which can be readily calculated by the weightaveraging the contact matrix C by the age-structured population vector\u00d1. The median basic reproduction number in Wuhan before the lockdown has been previously estimated. 13 As for the infection period, it can easily be derived from clinical data and approximate values are known from the beginning of the outbreak (see Table 1 ). Knowing all these values, the calculation of the mean probability of transmission prior to lockdown yields a value of 7.08%. Assuming that the probability of transmission per contact is a biologically stable parameter, we introduced it into the model as a constant.",
+            "cite_spans": [
+                {
+                    "start": 284,
+                    "end": 286,
+                    "text": "13",
+                    "ref_id": "BIBREF11"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 433,
+                    "end": 440,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "SEIR-model parameters"
+        },
+        {
+            "text": "With the aim of quantifying the number of deceases produced by the COVID-19 outbreak, as well as the effect of the physical-distancing measures proposed in this work, we used age-specific case-fatality ratios adjusted by the method proposed by Verity et al. 17",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "SEIR-model parameters"
+        },
+        {
+            "text": "As a result, the SEIR model describing the number of individuals in each compartment for age group i is described by the following system of coupled ordinary differential equations:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "SEIR-model equations"
+        },
+        {
+            "text": "All parameters intervening in the equations and their description are listed in Table 1 . The subscript of the contact-matrix location has been omitted for the sake of simplicity.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 80,
+                    "end": 87,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "SEIR-model equations"
+        },
+        {
+            "text": "Due to the fact that COVID-19 is a new disease, it is assumed that the entire Wuhan population was initially susceptible. Following Kucharski and colleagues, it is assumed that the outbreak was generated by a single infectious individual on 22 November 2019. 16 The final dates for each scenario are specified in Table 1 and the end-date criteria are detailed in the Supplementary Material, pp. 8-9, 14, 16 and 17-18, available as Supplementary data at IJE online. The initial infectious individual is assigned to age group 5 (40-49 years) in our model, since it is the group that includes the median age of the first 41 reported cases that were reported in Wuhan. 22 The system of ordinary differential equations governing the SEIR model is numerically solved by the Runge-Kutta method using the Dormand-Price pair.",
+            "cite_spans": [
+                {
+                    "start": 259,
+                    "end": 261,
+                    "text": "16",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 665,
+                    "end": 667,
+                    "text": "22",
+                    "ref_id": "BIBREF20"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 313,
+                    "end": 320,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Outbreak-simulation parameters"
+        },
+        {
+            "text": "Several scenarios have been considered. In order to gain an insight into the outbreak dynamics and to provide a meaningful approach to the impact of the dominant factors on the efficiency of the physical-distancing measures, we grouped the location-specific contact matrices into two ( Figure 2 ): one for work and another one for the rest, the latter encompassing Prem's school, home and others. 8 The next paragraphs provide an overview of each simulated scenario. A detailed description can be found in the Supplementary Material, pp. 8-18, available as Supplementary data at IJE online.",
+            "cite_spans": [
+                {
+                    "start": 397,
+                    "end": 398,
+                    "text": "8",
+                    "ref_id": "BIBREF7"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 286,
+                    "end": 294,
+                    "text": "Figure 2",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Simulated scenarios"
+        },
+        {
+            "text": "Scenario 1 (no physical distancing) models the theoretical evolution of a COVID-19 outbreak in Wuhan without any control measure, taking into account the school Winter Break from 15 January to 10 February 2020 and the Lunar New Year holidays from 24 to 30 January 2020. 23, 24 Scenario 2 (Wuhan's lockdown) simulates the effect on population mixing and the mortality of non-selective socialdistancing interventions taken in Wuhan. We assumed that 5% of the workforce remained at their workplace throughout the lockdown to provide essential services, so the workcontact matrix was weighted accordingly. Regarding the contact matrix for the rest, we used a constrained linear leastsquares algorithm using the minimum norm criterion to fit the estimated total number of deceased individuals to the official death toll ( Figure 3 and Supplementary Material, p. 6, available as Supplementary data at IJE online). This method provides a plausible contact matrix that best fits the Wuhan situation. This scenario will be used as the baseline for comparatively analysing the outcome of the Wuhan lockdown with the proposed alternative physical-distancing measures.",
+            "cite_spans": [
+                {
+                    "start": 270,
+                    "end": 273,
+                    "text": "23,",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 274,
+                    "end": 276,
+                    "text": "24",
+                    "ref_id": "BIBREF22"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 817,
+                    "end": 825,
+                    "text": "Figure 3",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "Simulated scenarios"
+        },
+        {
+            "text": "Scenario 3 (public-health lockdown) introduced additional selective, age-specific physical-distancing measures consisting of an additional 30% reduction in the number of contacts for people >60 years old with the aim of minimizing the number of deaths compared with the Wuhan lockdown (Scenario 2) while keeping a similar workforce.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Simulated scenarios"
+        },
+        {
+            "text": "Finally, Scenario 4 (health-economy trade-off lockdown) exploited the efficiency of the 30% reduction in the number of contacts for people >60 years old of Scenario 3 for balancing the trade-off between public health and economic activity, and quantified the additional workforce that could be maintained at their workplaces while keeping the same death toll as in Wuhan's scenario. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Simulated scenarios"
+        },
+        {
+            "text": "All analyses were done with R software (version 3.6.2) and Matlab (version R2020a Update 2). A sensitivity analysis on the key assumptions can be found in the Supplementary Material, pp. 18-20, available as Supplementary data at IJE online.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Statistical-analysis overview"
+        },
+        {
+            "text": "We found in Scenarios 3 and 4 that age-selective physicaldistancing measures preferentially targeting the older population can have an impact on the total number of deaths and make it possible to design alternative control measures with a tailored balance between public health and economic activity in order to minimize the overall stress produced by the outbreak on society as a whole.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Results"
+        },
+        {
+            "text": "In Figures 4 and 5 , we represent the daily and cumulative infected individuals per age group, the aggregated daily and cumulative infections for all age groups and the cumulative deaths per age group between January and April/May 2020 for the Wuhan lockdown (Scenario 2) and alternative social-distancing (Scenarios 1, 3 and 4). Our deterministic age-structured SEIR model enables epidemicdynamics analyses in two different axes. The first axis represents the epidemic curve as a function of time for either a specific age group or the population as a whole, whereas the second axis provides information about the epidemic distribution as a function of age at a given time, which provides an insight into the outbreak dynamics and its impact on different population age groups.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 3,
+                    "end": 18,
+                    "text": "Figures 4 and 5",
+                    "ref_id": "FIGREF3"
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "The school Winter Break and the Lunar New Year holidays alone (Scenario 1) would result in the smallest reduction in the incidence and number of deaths of all the scenarios considered (first scenario, Figure 4A -E). By contrast, Wuhan's lockdown enacted by the Chinese authorities (Scenario 2) effectively reduced the number of contacts ( Figure 2H ), the incidence, the number of deaths and the size of the outbreak compared with the 'no physical distancing' scenario ( Figures 4F-J and 6-figures  6A-B) . We found that non-selective measures in Scenario 2 apparently decreased contacts more effectively in the intermediate age groups than in the extreme age groups ( Figure 2H ) and that contacts were reduced by !80% to produce a number of deaths and an epidemic curve similar to that of Wuhan ( Figure 3) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 201,
+                    "end": 210,
+                    "text": "Figure 4A",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 339,
+                    "end": 348,
+                    "text": "Figure 2H",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 471,
+                    "end": 504,
+                    "text": "Figures 4F-J and 6-figures  6A-B)",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 669,
+                    "end": 678,
+                    "text": "Figure 2H",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 799,
+                    "end": 808,
+                    "text": "Figure 3)",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "Additional age-selective physical-distancing interventions targeting vulnerable age groups, modelled in Scenario 3 as an additional restriction of 30% further reduction in the number of contacts for people >60 years old in the rest of locations, achieved a reduction of 33% in the death toll in the simulated period ( Figure 5A-E) . The importance lies in the fact that this reduction in contacts represents only 5% of the total, but its impact on the number of deaths is disproportionate due to the high mortality for the elderly. Scenario 4 revealed that additional specific interventions would have allowed an increase in the workforce returning to work by 800% in the age group of 20 years, 600% in the age group 30 years, 400% in the age group 40 years, 100% in the age group 50 years and 100% in the age group 60 years without an increase in the number of accumulated deaths compared with Scenario 2. Although this increase in workforce would have prolonged the duration of the epidemic by roughly an additional month ( Figure 5 , date axes), Figure 6 shows that the effective workforce is 400% relative to Scenario 2 even taking this factor into account. These findings have been summarized and plotted in Figure 6D , which specifically shows that, on the one hand, measures in Scenario 3 would have resulted in the same number of people at work but a lower death toll compared with the Wuhan lockdown (Scenario 2), whereas, on the other hand, Scenario 4 would have had a comparable death toll with Wuhan lockdown but a large increase in the workforce. Changing initial parameters in the sensitivity analysis had an impact on several aspects such as the size of the epidemic, but the overall trends were maintained and the age-selective measures of Scenarios 3 and 4 were shown to have beneficial effects independently of the parameter variations (Supplementary Material, pp. 18-20, available as Supplementary data at IJE online).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 318,
+                    "end": 330,
+                    "text": "Figure 5A-E)",
+                    "ref_id": "FIGREF4"
+                },
+                {
+                    "start": 1026,
+                    "end": 1034,
+                    "text": "Figure 5",
+                    "ref_id": "FIGREF4"
+                },
+                {
+                    "start": 1049,
+                    "end": 1057,
+                    "text": "Figure 6",
+                    "ref_id": "FIGREF5"
+                },
+                {
+                    "start": 1213,
+                    "end": 1222,
+                    "text": "Figure 6D",
+                    "ref_id": "FIGREF5"
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "We have presented a deterministic age-structured SEIR model that enables the investigation of alternative control measures for effectively protecting the most vulnerable age groups while keeping a balanced active workforce. The relevance of this approach lies in the fact that one of the main prognostic factors regarding hospitalization and mortality of COVID-19 is age. 22 Compartmentalized evaluation of the outbreak impact in each age group allowed us to design and quantify the effects of hypothetical age-selective physical-distancing interventions (Scenarios 3 and 4) on the number of deaths and workforce compared with the Wuhan lockdown (Scenario 2) between January and April/ May 2020. In order to exemplify the possibilities of the model, we decided to use the Wuhan setting (Scenario 2) and then simulate the effect of different social-mixing-pattern interventions on the outbreak dynamics and workforce in a defined period of time. 1, 17 From a public-health point of view, the ideal objective of interventions would be to achieve the lowest number of infected patients and no deaths. We decided to fit our model to the official death toll, as it was considered more stable and reliable than the number of confirmed cases. 25, 26 Similarly, for a given number of cumulative deaths, the percentage of the workforce that could return to work as a result of the establishment of age-selective social-mixing measures directed at vulnerable age groups was considered a relevant measure of the economic efficacy of interventions.",
+            "cite_spans": [
+                {
+                    "start": 372,
+                    "end": 374,
+                    "text": "22",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 945,
+                    "end": 947,
+                    "text": "1,",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 948,
+                    "end": 950,
+                    "text": "17",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 1236,
+                    "end": 1239,
+                    "text": "25,",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 1240,
+                    "end": 1242,
+                    "text": "26",
+                    "ref_id": "BIBREF24"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Wuhan's lockdown has been the model followed by many countries to control COVID-19 outbreaks. 27, 28 Other countries have chosen to carry out massive tests and established measures with less economic impact. 29, 30 However, for many reasons, not all countries have these capabilities. 31 Under the context of successive epidemic waves and without widespread access to vaccination to date, governments need to find a suitable balance and adopt measures adjusted to the health and economic reality of their country.",
+            "cite_spans": [
+                {
+                    "start": 94,
+                    "end": 97,
+                    "text": "27,",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 98,
+                    "end": 100,
+                    "text": "28",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 208,
+                    "end": 211,
+                    "text": "29,",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 212,
+                    "end": 214,
+                    "text": "30",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 285,
+                    "end": 287,
+                    "text": "31",
+                    "ref_id": "BIBREF29"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "We have found in Scenario 3 that an additional 30% reduction in the number of contacts in people >60 years old would reduce by >30% the accumulated number of deaths at the end of the simulation period. Similarly, these measures would allow governments to increase the population at work by >400% while containing the impact on public health.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "According to our calculations, the non-selective measures of physical distance in Wuhan caused an 80% decrease in contacts and were precisely less effective in extreme age groups, which is consistent with the available evidence in China and the UK. 32, 33 In fact, attempting to shield the elderly may have important mental-and physical-health consequences. 34 National health systems are not designed to combat pandemics. In an extreme situation, the relevance of the opportunity cost becomes palpable and the lowest opportunity cost in terms of saved lives is achieved when the available resources are allocated primarily to the most vulnerable groups. It is essential to design protocols with the best available evidence to guarantee individual protection and asepsis in interactions within age groups and vulnerable groups. 35 In the Wuhan lockdown (Scenario 2), our model accurately predicts the timescale of the outbreak, the number of deaths and their age distribution. 1, 19 However, we have found a higher number of infected individuals than reported by the Chinese authorities. 1 This issue has been previously highlighted by other authors and may be affected by changes in the definition of cases, health-system saturation, undetected subclinical or asymptomatic cases and lack of diagnostic tests. 16, 26 The study has several important limitations. On the one hand, with regard to practical issues, it is worth highlighting that this model focuses on a specific location (Wuhan) and does not explore the restrictions necessary to curtail the geographic spread of the virus. There are also social difficulties arising from keeping the elderly separated from the rest of the population for long time periods (i.e. difficulties in childcare if parents return to the workforce but schools remain closed), in addition to the direct negative medical consequences discussed above. On the other hand, there are additional technical limitations. First, despite the biological plausibility of the parameters we used, they may undergo changes as new evidence accumulates. Second, as it happened in the models on which we based our analyses, we assume that the latency period is equivalent to the incubation period. 16 Third, we assumed no heterogeneity in susceptibility and transmissibility between children and adults, although there are conflicting results regarding this issue. 32, 36 We also did not explicitly include individuallevel heterogeneity in contact, clustering of household transmission and nosocomial transmission. Fourth, we did not model the limited capacity of the health system/intensive care units (ICUs), as the official data from the Chinese government did not record daily or global ICU admissions/ COVID-case severity in Wuhan, and it should be kept in mind that long-term effects beyond May 2020 were not investigated. Finally, contact matrices were synthetic and, even though the official death toll is probably more stable and reliable than the official number of confirmed cases, it may also underestimate the actual number of deaths. As a result, there is a high level of uncertainty in the parameter values (including contact matrices), deaths data and the chosen model structure. Therefore, we carried out a sensitivity analysis for different values of R 0 , the start date of the outbreak, the number of initial patients and the ages of the first infected patients. Although contact matrices are synthetic, the constrained linear least-squares method used to fit the simulate scenarios to the available data yields more rigorous and realistic results than simply multiplying contact matrices by a fixed coefficient and provides added value over previous COVID-19 studies modelling socialdistancing or age-selective interventions. [7] [8] [9] 37 To conclude, our results suggest that age-selective interventions could achieve either a reduction on the death toll or an increase in the population working on site without a detrimental impact on the death toll for a comparable time period. However, the practical feasibility of such measures as well as their long-term effects remain to be investigated.",
+            "cite_spans": [
+                {
+                    "start": 249,
+                    "end": 252,
+                    "text": "32,",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 253,
+                    "end": 255,
+                    "text": "33",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 358,
+                    "end": 360,
+                    "text": "34",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 828,
+                    "end": 830,
+                    "text": "35",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 977,
+                    "end": 979,
+                    "text": "1,",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 980,
+                    "end": 982,
+                    "text": "19",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 1088,
+                    "end": 1089,
+                    "text": "1",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 1310,
+                    "end": 1313,
+                    "text": "16,",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 1314,
+                    "end": 1316,
+                    "text": "26",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 2217,
+                    "end": 2219,
+                    "text": "16",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 2388,
+                    "end": 2390,
+                    "text": "36",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 3766,
+                    "end": 3769,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 3770,
+                    "end": 3773,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 3774,
+                    "end": 3777,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 3778,
+                    "end": 3780,
+                    "text": "37",
+                    "ref_id": "BIBREF35"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Supplementary data are available at IJE online.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Supplementary data"
+        },
+        {
+            "text": "None.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Funding"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "National Health Commission of the People's Republic of China. Updates on the Epidemic",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "23",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "The State Council of the People's Republic of China. The Announcement from Wuhan's Headquarter on the Novel Coronavirus Prevention and Control",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "The State Council of the People's Republic of China. The State Council's announcement on extending the Lunar New Year Holiday in 2020",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "27",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Wuhan reopens after 76-day lockdown",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "The Government Of Wuhan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "speeches/detail/who-director-general-s-opening-remarks-at-the-me dia-briefing-on-covid",
+            "authors": [],
+            "year": 2020,
+            "venue": "WHO Director-General's opening remarks at the media briefing on COVID19. 11",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Impact assessment of nonpharmaceutical interventions against coronavirus disease 2019 and influenza in Hong Kong: an observational study",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Cowling",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Ali",
+                    "suffix": ""
+                },
+                {
+                    "first": "Twy",
+                    "middle": [],
+                    "last": "Ng",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet Public Health",
+            "volume": "5",
+            "issn": "",
+            "pages": "279--88",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "First-wave COVID-19 transmissibility and severity in China outside Hubei after control measures, and second-wave scenario planning: a modelling impact assessment",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Leung",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Leung",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet",
+            "volume": "395",
+            "issn": "",
+            "pages": "1382--93",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "The effect of control strategies to reduce social mixing on outcomes of the COVID-19 epidemic in Wuhan, China: a modelling study",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Prem",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Russell",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet Public Health",
+            "volume": "5",
+            "issn": "",
+            "pages": "261--70",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Impact of non-pharmaceutical interventions (NPIs) to reduce COVID-19 mortality and healthcare demand",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Ferguson",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Laydon",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Nedjati-Gilani",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "The government of Israel. Ministry of Health guidelines for lockdown",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Assessment of monthly economic losses in Wuhan under the lockdown against COVID-19",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "You",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Humanit Soc Sci Commun",
+            "volume": "7",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Early transmissibility assessment of a novel coronavirus in Wuhan",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Majumder",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Mandl",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Early transmission dynamics in Wuhan, China, of novel coronavirus-infected pneumonia",
+            "authors": [
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Guan",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "N Engl J Med",
+            "volume": "382",
+            "issn": "",
+            "pages": "1199--207",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Transmission dynamics of 2019 novel coronavirus (2019-nCoV)",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Kang",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Early dynamics of transmission and control of COVID-19: a mathematical modelling study. The Lancet Infectious Diseases",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Kucharski",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Russell",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Diamond",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Estimates of the severity of coronavirus disease 2019: a model-based analysis",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Verity",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Okell",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Dorigatti",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet Infect Dis",
+            "volume": "20",
+            "issn": "",
+            "pages": "669--77",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Projecting social contact matrices in 152 countries using contact surveys and demographic data",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Prem",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Cook",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Jit",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "PLoS Comput Biol",
+            "volume": "13",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "The Novel Coronavirus Pneumonia Emergency Response Epidemiology Team. The epidemiological characteristics of an outbreak of 2019 novel coronavirus diseases (COVID-19)-China",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Modeling Infectious Diseases in Humans and Animals, 1st edn",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Keeling",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Rohani",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Social contact patterns and control strategies for influenza in the elderly",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Towers",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Feng",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Math Biosci",
+            "volume": "240",
+            "issn": "",
+            "pages": "241--290",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Clinical features of patients infected with 2019 novel coronavirus in Wuhan, China",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet",
+            "volume": "395",
+            "issn": "",
+            "pages": "497--506",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Curriculum Plan for the Primary and Middle School Kindergartens in the 2019-2020 School Year",
+            "authors": [],
+            "year": 2019,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "The State Council of the People's Republic of China. Notice of partial holiday arrangements",
+            "authors": [],
+            "year": 2019,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Wrong but useful-what Covid-19 epidemiologic models can and cannot tell us",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Holmdahl",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Buckee",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "N Engl J Med",
+            "volume": "383",
+            "issn": "",
+            "pages": "303--308",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Effect of changing case definitions for COVID-19 on the epidemic curve and transmission parameters in mainland China: a modelling study",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Tsang",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ehy",
+                    "middle": [],
+                    "last": "Lau",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Leung",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Cowling",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet Public Health",
+            "volume": "5",
+            "issn": "",
+            "pages": "289--96",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "COVID-19 in Italy: momentous decisions and many uncertainties",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Lazzerini",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Putoto",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet Glob Health",
+            "volume": "8",
+            "issn": "",
+            "pages": "641--683",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Covid-19-the law and limits of quarantine",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Parmet",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Sinha",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "N Engl J Med",
+            "volume": "382",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Spread of SARS-CoV-2 in the Icelandic population",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Gudbjartsson",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Helgason",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Jonsson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "N Engl J Med",
+            "volume": "382",
+            "issn": "",
+            "pages": "2302--2317",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Coronavirus cases have dropped sharply in South Korea",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Normalie",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "The South African Response to the Pandemic",
+            "authors": [
+                {
+                    "first": "Abdool",
+                    "middle": [],
+                    "last": "Karim",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "N Engl J Med",
+            "volume": "382",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Changes in contact patterns shape the dynamics of the COVID-19 outbreak in China",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Litvinova",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Liang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Science",
+            "volume": "368",
+            "issn": "",
+            "pages": "1481--86",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "CMMID COVID-19 working group et al. Quantifying the impact of physical distance measures on the transmission of COVID-19 in the UK",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Jarvis",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Van Zandvoort",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Gimma",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "BMC Med",
+            "volume": "18",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "COVID-19 and the consequences of isolating the elderly",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Armitage",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Nellums",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet Public Health",
+            "volume": "5",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Physical distancing, face masks, and eye protection to prevent person-to-person transmission of SARS-CoV-2 and COVID-19: a systematic review and meta-analysis. The Lancet",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Derek",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Elie",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Stephanie",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "31142--31151",
+            "other_ids": {}
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Epidemiology and transmission of COVID-19 in 391 cases and 1286 of their close contacts in Shenzhen, China: a retrospective cohort study",
+            "authors": [
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Bi",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Mei",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "The Lancet Infectious Diseases",
+            "volume": "20",
+            "issn": "",
+            "pages": "911--930",
+            "other_ids": {}
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Effects of nonpharmaceutical interventions on COVID-19 cases, deaths, and demand for hospital services in the UK: a modelling study",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Davies",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Kucharski",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Eggo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "The Lancet Public Health",
+            "volume": "5",
+            "issn": "",
+            "pages": "375--85",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Age-dependent SEIR-model diagram. Individuals are classified as Susceptible (S), Exposed (E), Infected (I) and Removed (R). The flow between compartments is governed by the force of infection k, the infection rate r and the removal rate c. The force of infection results from the mixing between infected and susceptible individuals, which is driven by the contact matrix C modelling the underlying social-contact patterns and by the probability of infection transmission s:",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "Wuhan age-structured location-specific contact matrices for the simulated control measures. The normal contact patterns at work, in the rest of the locations and across all locations are shown in panels (A)-(C) (Scenario 1: no physical-distancing measures), whereas panel (D) displays the total number of daily contacts per individuals of each age group. The contact matrices for the three physical-distancing scenarios considered in this work are shown in panels (E)-(P). Note the numerical differences between the scale bars for each scenario.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "Comparison of our model against the officially reported number of deaths and age distribution. The number of deceased individuals are shown as a function of age according to the officially reported data from the National Health Commission of the People's Republic of China distributed according to Verity et al. vs the results of our model for Scenario 2 following the fitting procedure described in this section.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "Effect of Wuhan lockdown on the outbreak control through social-distancing measures. Outbreak dynamics in the absence of control measures (Scenario 1, (A)-(E)) vs the Wuhan lockdown (Scenario 2, (F)-(J)). Daily infected individuals per age group in 2D ((A) and (F)) and 3D ((B) and (G)) over time. (C) and (H) Aggregated daily (blue) and cumulated (orange) infected individuals over time. (D) and (I) Cumulated infections by age group. (E) and (J) Cumulated deceased individuals by age group.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "Alternative age-specific control measures aiming at diminishing the number of deaths for the same workforce as in the Wuhan lockdown (Scenario 3, (A)-(E)) or at finding a balanced trade-off between them (Scenario 4, (F)-(J)). Daily infected individuals per age group in 2D ((A) and (F)) and 3D ((B) and (G)) over time. (C) and (H) Aggregated daily (blue) and cumulated (orange) infected individuals over time. (D) and (I) Cumulated infections by age group. (E) and (J) Cumulated deceased individuals by age group.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": "Control-measures comparison in terms of cumulated infected individuals (A), cumulated deceased individuals (B), daily contacts at work per individual by age group (C) and relative death toll vs relative workforce (D). The bars in (A) and (B) represent the age-specific total number of infected and deceased individuals per population group, respectively. (C) Daily work contacts per individual by age group. (D) Relative death toll vs the relative workforce taking the Wuhan lockdown as a reference. The same colour legend is used through (A)-(D): the Wuhan lockdown is depicted in blue, whereas the alternative control measures simulated in Scenarios 3 and 4 are shown in orange and yellow. The Wuhan lockdown obviously yields 100% in both relative parameters shown in (D), but it has been kept just as a reference.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "Parameters used in the age-structured Susceptible, Exposed, Infected, Recovered (SEIR) model CI, 95% confidence interval; SD, standard deviation.",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "The data underlying this article are available in GitHub repository IJE_2021_Covid19AgeStructuredSEIR at https://github.com/nortega quijano/IJE_2021_Covid19AgeStructuredSEIR and can be publicly accessed. Ethics approval was not required for this mathematicalmodelling study.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Acknowledgements"
+        },
+        {
+            "text": "None declared.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conflict of interest"
+        }
+    ]
+}

@@ -1,0 +1,1090 @@
+{
+    "paper_id": "e081b93b644d316f8b6a55c7ece3c4183c75b465",
+    "metadata": {
+        "title": "Physics of Fluids LETTER scitation.org/journal/phf Measurement of small droplet aerosol concentrations in public spaces using handheld particle counters",
+        "authors": [
+            {
+                "first": "G",
+                "middle": [
+                    "Aernout"
+                ],
+                "last": "Somsen",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Cardiology Centers of the Netherlands",
+                    "location": {
+                        "settlement": "Amsterdam",
+                        "country": "The Netherlands"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Cees",
+                "middle": [
+                    "J M"
+                ],
+                "last": "Van Rijn",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Amsterdam",
+                    "location": {
+                        "settlement": "Amsterdam",
+                        "country": "The Netherlands"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Stefan",
+                "middle": [],
+                "last": "Kooij",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Amsterdam",
+                    "location": {
+                        "settlement": "Amsterdam",
+                        "country": "The Netherlands"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Reinout",
+                "middle": [
+                    "A"
+                ],
+                "last": "Bem",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Amsterdam University Medical Centers",
+                    "location": {
+                        "addrLine": "Location AMC",
+                        "settlement": "Amsterdam",
+                        "country": "The Netherlands"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Daniel",
+                "middle": [],
+                "last": "Bonn",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Amsterdam",
+                    "location": {
+                        "settlement": "Amsterdam",
+                        "country": "The Netherlands"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "We measure aerosol persistence to assess the risk of transmission of severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) in public spaces. Direct measurement of aerosol concentrations, however, has proven to be technically difficult; we propose the use of handheld particle counters as a novel and easily applicable method to measure aerosol concentrations. This allows us to perform measurements in typical public spaces, each differing in volume, the number of people, and the ventilation rate. These data are used to estimate the relation between the aerosol persistence time and the risk of infection with SARS-CoV-2.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Published under license by AIP Publishing. https://doi.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "The World Health Organization, in its recent scientific brief, 1 has highlighted the possible role of aerosols in the transmission of severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) [1] [2] [3] [4] and stated that \"much more research is needed given the possible implications of such route of transmission.\" 1 This is particularly relevant for public spaces where the risk of aerosol transmission of SARS-CoV-2 is highest. Direct measurement of aerosol concentrations, however, has proven to be technically difficult, [5] [6] [7] hampering such research. We validate the use of handheld particle counters as a novel and easily applicable method to measure aerosol concentrations. Particle counting has been used before (see, e.g., Ref. 8 ), but the method has not been validated; the main challenges are to distinguish aerosols from background dust and the fact that due to external conditions such as temperature and relative humidity, the persistence and dispersion of both small and large droplets may evolve over time. [9] [10] [11] [12] [13] To demonstrate the usefulness of our novel method, we perform measurements in typical public spaces that can play a role in aerosol transmission of SARS-CoV-2, each differing in volume, the number of people, and the ventilation rate. These data are used to estimate the relation between the aerosol persistence time and the risk of infection with SARS-CoV-2.",
+            "cite_spans": [
+                {
+                    "start": 63,
+                    "end": 64,
+                    "text": "1",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 195,
+                    "end": 198,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 199,
+                    "end": 202,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 203,
+                    "end": 206,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 207,
+                    "end": 210,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 531,
+                    "end": 534,
+                    "text": "[5]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 535,
+                    "end": 538,
+                    "text": "[6]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 539,
+                    "end": 542,
+                    "text": "[7]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 749,
+                    "end": 750,
+                    "text": "8",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 1036,
+                    "end": 1039,
+                    "text": "[9]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 1040,
+                    "end": 1044,
+                    "text": "[10]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 1045,
+                    "end": 1049,
+                    "text": "[11]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 1050,
+                    "end": 1054,
+                    "text": "[12]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 1055,
+                    "end": 1059,
+                    "text": "[13]",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [],
+            "section": "INTRODUCTION"
+        },
+        {
+            "text": "Aerosol concentration is often measured using the laser sheet diffraction technique, in which the number of pixels that light up is a measure for the number and volume of the droplets. 4, 5 However, this technique can only be operated by highly specialized personnel and, because of laser safety issues, only in laboratory settings. Using this technique as the standard, we validate a novel method using a handheld particle counter (Fluke 985, Fluke B.V. Europe, Eindhoven, The Netherlands), which is frequently used for air quality assessment and overcomes most of the above-mentioned drawbacks of the laser sheet diffraction technique. The specifications of the Fluke device are six size channels of 0.3 \u03bcm, 0.5 \u03bcm, 1.0 \u03bcm,",
+            "cite_spans": [
+                {
+                    "start": 185,
+                    "end": 187,
+                    "text": "4,",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 188,
+                    "end": 189,
+                    "text": "5",
+                    "ref_id": "BIBREF5"
+                }
+            ],
+            "ref_spans": [],
+            "section": "METHODS"
+        },
+        {
+            "text": "scitation.org/journal/phf 2.0 \u03bcm, 5.0 \u03bcm, and 10.0 \u03bcm. Air is pumped into the device at a flow rate of 2.83 l/min and flows through the detection region where a 90 mW laser beam of 775 nm-795 nm wavelength illuminates the dust or aerosol particles, and the scattered and diffracted light from these is detected with a counting efficiency of 50% for the 0.3 \u03bcm channel and 100% for particles in all the other channels. The accuracy and reproducibility of these measurements are both 1%. The Fluke instrument is the one we discuss here, but similar results were obtained with other particle counters, notably Lighthouse and Trotec instruments. As a reference, we used a SprayScan \u00ae (Spraying Systems, Glendale Heights, IL, USA) laser sheet to track the aerosols by filming the laser light scattering of the aerosol droplets directly using a CCD camera and image analysis software. For each measurement, the aerosol concentration is determined by correcting for the background (measured for \u223c8 min), consisting of dust particles.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "LETTER"
+        },
+        {
+            "text": "First, we validate the particle counting method by comparing the results with those obtained previously using the laser sheet scattering and laser diffraction techniques. 4 The typical validation scenario is that of a single person coughing once inside a poorly ventilated restroom of volume 8 m 3 . The results for both techniques in this specific example are shown in Fig. 1 . We find that coughing leads to the generation of an amount of aerosol particles an order of magnitude above the background level of the particle counter; both techniques next reveal that the number of aerosols per liter of air decreases exponentially in time, with a time constant of \u223c4 min (Fig. 1 ). This was done in this and three other rooms, and the FIG. 1. Concentration of airborne particles of diameters 5.0 \u03bcm-10.0 \u03bcm as a function of time as measured using a handheld particle counter (purple symbols) and the laser sheet diffraction technique 4 in a poorly ventilated space of volume 8 m 3 . The other channels of the particle counter yield comparable results. The arrow indicates the moment of coughing, coinciding with a sharp increase followed by an exponential decay, with a half-life of roughly 4 min. The yellow line is a guide to the eye. The green data points are the reference data from the laser sheet technique published previously in Ref. 4. correlation coefficient between the results of the two techniques was always better than 0.97. Figure 2 shows the size distribution of the particles as obtained by the two techniques. The comparison is more difficult here, as the handheld particle counter has less channels to separate ranges of particle sizes as the laser diffraction technique used in Ref. 5 (Malvern Spraytech \u00ae ). The resulting drop size distribution is a compound Gamma distribution, as explained in Refs. 5 and 14. The distribution obtained with the Fluke instrument is much coarser due to the smaller number of channels. However, the results are compatible with comparable mean values of 4.9 \u00b1 1.7 and 3.6 \u00b1 0.4, respectively, for the Fluke and the Spraytech results; importantly, it also shows that the particle counter covers the whole range of aerosol sizes produced by coughing. We also find that the results obtained using the handheld particle counter were reproducible to within 10%. We conclude that the particle counter technique is, indeed, a reliable method to determine aerosol concentrations as a function of time and as well to give a rough indication of the size distribution of droplets.",
+            "cite_spans": [
+                {
+                    "start": 171,
+                    "end": 172,
+                    "text": "4",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 1341,
+                    "end": 1343,
+                    "text": "4.",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 370,
+                    "end": 376,
+                    "text": "Fig. 1",
+                    "ref_id": null
+                },
+                {
+                    "start": 670,
+                    "end": 677,
+                    "text": "(Fig. 1",
+                    "ref_id": null
+                },
+                {
+                    "start": 1439,
+                    "end": 1447,
+                    "text": "Figure 2",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "VALIDATION"
+        },
+        {
+            "text": "We now use the technique to characterize a wide range of realworld public spaces, each selected as a typical example of a certain type of public space (Table I ). In these public spaces, we measure all aerosols resulting from breathing, speaking, coughing, and sneezing by people present (1-25 at the time of the measurements). Background measurements indicate that the dust generated by the people moving around is mostly (>98%) contained in the first two channels of the particle counter (diameters between 0.3 \u03bcm and 0.5 \u03bcm), out of the range of the characteristic diameter of aerosols produced by breathing, speaking, coughing, and sneezing. 4 They are, therefore, not considered when evaluating the aerosol density. Separate from the measurements involving multiple people producing aerosols, we also investigate the decrease in aerosol concentration over time by generating a known quantity of artificial aerosols using a specially designed spray nozzle as used in Ref. 4 , which is known to produce aerosols of the same size distribution as respiratory droplets resulting from coughing (i.e., between 1 \u03bcm and 10 \u03bcm with a maximum at 4 \u03bcm). The risk assessment was done and explained in detail in Ref. 5 and is based on the persistence time of the aerosols: the analysis is done for the same particle size distribution with different persistence times. In Table I , we summarize the results, indicating the number of people involved, the air change rate per hour (ACH) of the ventilation system used, and the measured droplet concentration half-times. All measurements were done at least in five different locations at the measurement site so that differences in the airflow and proximity of walls were averaged out. The results for a given site were found to be identical to within 5%. In the public spaces investigated by us, aerosol concentrations are \u223c20 to more than 100 times lower in all ventilated public spaces compared to the poorly ventilated restroom used for calibration measurements. In addition, in a public elevator and in a poorly ventilated living room, aerosol concentrations are high. The characteristic times for a 50% decrease in aerosol concentration are on the order of 1 min in well-ventilated spaces, compared to 4 min-5 min in the poorly ventilated restroom, elevator, and living room. This is due to both the air renewal (given by the ACH) and further dilution by dispersion throughout the space and therefore depends on both the ACH and the absolute size of the given space (Table I) . All the ACH values given in Table I were from the installation companies.",
+            "cite_spans": [
+                {
+                    "start": 646,
+                    "end": 647,
+                    "text": "4",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 976,
+                    "end": 977,
+                    "text": "4",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 1209,
+                    "end": 1210,
+                    "text": "5",
+                    "ref_id": "BIBREF5"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 151,
+                    "end": 159,
+                    "text": "(Table I",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 1363,
+                    "end": 1370,
+                    "text": "Table I",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 2510,
+                    "end": 2519,
+                    "text": "(Table I)",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 2550,
+                    "end": 2557,
+                    "text": "Table I",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "APPLICATION TO PUBLIC SPACES"
+        },
+        {
+            "text": "This study shows that the particle counter technique is a reliable method to investigate aerosol concentrations and their evolution in time. Using this easily applicable method, aerosol concentrations can be measured in any public space, which is important to determine the risk of aerosol transmission of SARS-CoV-2 and to evaluate the impact of risk reducing measures (i.e., improving ventilation).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "Aerosol persistence times in the tested spaces are relatively short due to adequate space ventilation. Current standards for the air change rate by mechanical room ventilation depend on the occupation of the room(s) but roughly vary between 2 air changes/h and 15 air changes/h. An air change rate of 10 times/h means that for every 6 min, the given space has received fresh air of a volume similar to that of the space. Our measurements of aerosol persistence suggest that a half-life of the aerosol concentration of 1 min or 2 min minimizes the aerosol concentration and is achieved for air change rates in excess of 10 air changes/h. Using the half-times as measured by us, we calculate that the decrease in the number of aerosol particles after these 6 min will vary between 50% and 100%, depending on the ventilation method and the size of the public space. We also note that since the Fluke instrument has its own pump, the results do not notably depend on the air flow in a room since the flow through the instrument is dominated by its pump.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "When translating our findings to practical risk assessments in the context of SARS-CoV-2 transmission by aerosols, we conclude that the risk of transmission via airborne aerosols is low in all but the restroom, elevator, and unventilated living room scenarios. The reason for this is twofold: First, good ventilation significantly decreases the density of aerosols in a short time (Table I) . Second, the number of viral particles in very small aerosol drops is low. Sputum droplets from COVID-19 patients carry typically between 10 4 and 10 9 RNA copies/ml. 15 This implies between 0.001 and 100 RNA copies per thousand aerosol drops. 15, 16 The minimum infectious dose for SARS-CoV-2 has not been reported; the severity of COVID-19 is, however, believed to be proportional to the dose of the initial inoculum, implying that transmission by aerosols may lead to relatively milder symptoms. 5, 16 In our risk analysis, we assume that exposure to less than 10 3 microdroplets (corresponding to less than 100 RNA copies) imposes a low risk, between 10 3 and 10 5 microdroplets (corresponding to 100-10 000 RNA copies) imposes an intermediate risk, and more than 10 5 microdroplets (corresponding to more than 10 000 RNA copies) imposes a high risk of transmission. 5, 15 Further research on the transmissibility of the virus is",
+            "cite_spans": [
+                {
+                    "start": 559,
+                    "end": 561,
+                    "text": "15",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 636,
+                    "end": 639,
+                    "text": "15,",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 640,
+                    "end": 642,
+                    "text": "16",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 891,
+                    "end": 893,
+                    "text": "5,",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 894,
+                    "end": 896,
+                    "text": "16",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 1263,
+                    "end": 1265,
+                    "text": "5,",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 1266,
+                    "end": 1268,
+                    "text": "15",
+                    "ref_id": "BIBREF17"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 381,
+                    "end": 390,
+                    "text": "(Table I)",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "scitation.org/journal/phf needed to validate this assumption and possibly correct these risk values. Our measurements together with the risk analysis of Refs. 5 and 15, however, underline the importance of good ventilation and suggest that health authorities can advise a minimal ventilation rate to minimize the probability of SARS-CoV-2 transmission in public spaces.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "LETTER"
+        },
+        {
+            "text": "This study demonstrates a novel aerosol measurement method that is easily implemented in different environments. With reasonable assumptions on the viral load and infectivity, this allows for a rough estimate of the probability of aerosol transmission of SARS-CoV-2 following Refs. 5 and 16. To reduce the spread of such infections, healthcare authorities should consider this method to evaluate the ventilation of public spaces, especially in spaces, such as hospital and dentistry settings, where aerosolization is common.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "CONCLUSION"
+        },
+        {
+            "text": "The data that support the findings of this study are available from the corresponding author upon reasonable request.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "DATA AVAILABILITY"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Transmission of SARS-CoV-2: Implications for infection prevention precautions: Scientific brief",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Droplets and aerosols in the transmission of SARS-CoV-2",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Meselson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "N. Engl. J. Med",
+            "volume": "382",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1056/NEJMc2009324"
+                ]
+            }
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Evidence of airborne transmission of the severe acute respiratory syndrome virus",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [
+                        "T S"
+                    ],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Wong",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Tam",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Chan",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "H W"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "Y C"
+                    ],
+                    "last": "Leung",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Ho",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "N. Engl. J. Med",
+            "volume": "350",
+            "issn": "",
+            "pages": "1731--1739",
+            "other_ids": {
+                "DOI": [
+                    "10.1056/NEJMoa032867"
+                ]
+            }
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Visualizing speech-generated oral fluid droplets with laser light scattering",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Anfinrud",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Stadnytskyi",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Bax",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Bax",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "N. Engl. J. Med",
+            "volume": "382",
+            "issn": "",
+            "pages": "2061--2063",
+            "other_ids": {
+                "DOI": [
+                    "10.1056/NEJMc2007800"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "The airborne lifetime of small speech droplets and their potential importance in SARS-CoV-2 transmission",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Stadnytskyi",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Bax",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Bax",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Anfinrud",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Proc. Natl. Acad. Sci. U. S. A",
+            "volume": "117",
+            "issn": "22",
+            "pages": "11875--11877",
+            "other_ids": {
+                "DOI": [
+                    "10.1073/pnas.2006874117"
+                ]
+            }
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Small droplet aerosols in poorly ventilated spaces; the need for specific measures to prevent SARS-CoV-2 transmission",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Somsen",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Van Rijn",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet Respir. Med",
+            "volume": "8",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S2213-2600(20)30245-9"
+                ]
+            }
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Aerosol persistence in relation to possible transmission of SARS-CoV-2",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Smith",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Somsen",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Van Rijn",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Kooij",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Van Der Hoek",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Bem",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Bonn",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Phys. Fluids",
+            "volume": "32",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1063/5.0027844"
+                ]
+            }
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Reducing aerosol transmission of SARS-CoV-2 in hospital elevators",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Van Rijn",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Somsen",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Hofstra",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Dahhan",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Bem",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Kooij",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Bonn",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Indoor Air",
+            "volume": "30",
+            "issn": "6",
+            "pages": "1065--1066",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/ina.12744"
+                ]
+            }
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Airborne transmission of SARS-CoV-2: The world should face the reality",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Morawska",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Cao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Environ. Int",
+            "volume": "139",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.envint.2020.105730"
+                ]
+            }
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Recharging and rejuvenation of decontaminated N95 masks",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Hossain",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Phys. Fluids",
+            "volume": "32",
+            "issn": "9",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1063/5.0023940"
+                ]
+            }
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Dispersion of evaporating cough droplets in tropical outdoor environment",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Phys. Fluids",
+            "volume": "32",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1063/5.0026360"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Aerosol and surface stability of SARS-CoV-2 as compared with SARS-CoV-1",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Van Doremalen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "N. Engl. J. Med",
+            "volume": "382",
+            "issn": "",
+            "pages": "1564--1567",
+            "other_ids": {
+                "DOI": [
+                    "10.1056/nejmc2004973"
+                ]
+            }
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Likelihood of survival of coronavirus in a respiratory droplet deposited on a solid surface",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Bhardwaj",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Phys. Fluids",
+            "volume": "32",
+            "issn": "6",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1063/5.0012009"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Reducing chances of COVID-19 infection by a cough cloud in a closed space",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Agrawal",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Bhardwaj",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Phys. Fluids",
+            "volume": "32",
+            "issn": "10",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1063/5.0029186"
+                ]
+            }
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Transmission of airborne virus through sneezed and coughed droplets",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Das",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Alam",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Plumari",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Greco",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Phys. Fluids",
+            "volume": "32",
+            "issn": "9",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1063/5.0022859"
+                ]
+            }
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Transport and fate of human expiratory droplets-A modeling approach",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X.-F",
+                    "middle": [],
+                    "last": "Wan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Phys. Fluids",
+            "volume": "32",
+            "issn": "8",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1063/5.0021280"
+                ]
+            }
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "What determines the drop size in sprays?",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Kooij",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Sijs",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Denn",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Villermaux",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Bonn",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Phys. Rev. X",
+            "volume": "8",
+            "issn": "3",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1103/physrevx.8.031019"
+                ]
+            }
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Virological assessment of hospitalized patients with COVID-2019",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "W\u00f6lfel",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Corman",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Guggemos",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nature",
+            "volume": "581",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41586-020-2196-x"
+                ]
+            }
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Estimation of viral aerosol emissions from simulated individuals with asymptomatic to moderate coronavirus disease 2019",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Riediker",
+                    "suffix": ""
+                },
+                {
+                    "first": "D.-H",
+                    "middle": [],
+                    "last": "Tsai",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "JAMA Network Open",
+            "volume": "3",
+            "issn": "7",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1001/jamanetworkopen.2020.13807"
+                ]
+            }
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Number particle size distributions measured by laser diffraction (yellow bars) compared with the distribution inferred from the particle counter (blue bars). The limited number of channels of the particle counter makes for a crude distribution, but the two are compatible.Phys. Fluids 32, 121707 (2020); doi: 10.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "Aerosol concentrations and persistence times in different public spaces characterized by the number of people present, volume, and rate of ventilation. In all but the club scenario where aerosols were artificially generated, the aerosol origin is from speaking, coughing, and sneezing of the people. Spaces were sampled, which gave us permission to do so-these were mainly well-ventilated spaces in modern buildings. Each space was typically sampled in five different places. Estimated viral load based on calculations.",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": []
+}

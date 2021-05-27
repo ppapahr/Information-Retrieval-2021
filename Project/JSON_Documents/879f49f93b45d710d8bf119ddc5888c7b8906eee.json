@@ -1,0 +1,3407 @@
+{
+    "paper_id": "879f49f93b45d710d8bf119ddc5888c7b8906eee",
+    "metadata": {
+        "title": "",
+        "authors": []
+    },
+    "abstract": [],
+    "body_text": [
+        {
+            "text": "The disease caused by SARS-CoV-2 (COVID-19) constitutes the most significant public health calamity in recent decades and imposes great medical, social, economic and political challenges (Wang & Flessa, 2020) . Since the initial outbreak of pneumonia due to the new coronavirus, a rapid spread has occurred in the country and the world, with exponential growth in the number of infected people (Guan et al., 2020; Huang et al., 2020; .",
+            "cite_spans": [
+                {
+                    "start": 187,
+                    "end": 208,
+                    "text": "(Wang & Flessa, 2020)",
+                    "ref_id": "BIBREF54"
+                },
+                {
+                    "start": 394,
+                    "end": 413,
+                    "text": "(Guan et al., 2020;",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 414,
+                    "end": 433,
+                    "text": "Huang et al., 2020;",
+                    "ref_id": "BIBREF19"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Around the world, the epidemiological behaviour of the pandemic was associated with significant levels of fear (Huang et al., 2020) , and the appearance of stigmatisation related to the coronavirus (Lin, 2020) , which has been expressed by avoidance behaviours, of rejection and, even, of psychological and physical violence against patients and health professionals (Bagcchi, 2020; Ng, 2020) .",
+            "cite_spans": [
+                {
+                    "start": 111,
+                    "end": 131,
+                    "text": "(Huang et al., 2020)",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 198,
+                    "end": 209,
+                    "text": "(Lin, 2020)",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 367,
+                    "end": 382,
+                    "text": "(Bagcchi, 2020;",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 383,
+                    "end": 392,
+                    "text": "Ng, 2020)",
+                    "ref_id": "BIBREF32"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Regarding stigma, Ervin Goffman (2009) defines it as a characteristic or attribute that represents negative responses or unwanted effects for the person carrying it. Later, Link and Phelan (2001) defined it as a process that involves five components: (1) the labelling of human differences; (2) the dominant cultural beliefs that link people with undesirable characteristics and harmful stereotypes; (3) the location of people tagged in different categories (separation between them and us); (4) discrimination and a loss of status that stigmatised people experience; and (5) the exercise of the difference in economic, political and social power that characterises the stigmatisation process. The phenomenon of stigmatisation is configured when the prejudice adopts a negative social connotation (stereotype) (Katz, 1991) and that validates the hegemonic culture with behaviours that deny some right (discrimination) to the members of the group with the stigmatised characteristic (Klik et al., 2019) .",
+            "cite_spans": [
+                {
+                    "start": 24,
+                    "end": 38,
+                    "text": "Goffman (2009)",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 173,
+                    "end": 195,
+                    "text": "Link and Phelan (2001)",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 810,
+                    "end": 822,
+                    "text": "(Katz, 1991)",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 982,
+                    "end": 1001,
+                    "text": "(Klik et al., 2019)",
+                    "ref_id": "BIBREF24"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Based on the labelling theory of Goffman (2009) and Scheff (1971) , and the attribution theory of Weiner (1995) , it is considered that stigma, prejudice, stereotype and discrimination overlap in a non-linear way (Cox et al., 2012; Major et al., 2002) . This overlap has led them to be considered together as the stigma-discrimination complex (SDC), associated and inseparable concepts, which allows a more holistic look at this phenomenon (Campo-Arias & Herazo, 2015; Pescosolido & Martin, 2015) . In this sense, the current pandemic generates another collateral phenomenon: The SDC associated with COVID-19 (SDC-CV-19) (Cassiani-Miranda & Campo-Arias, 2020).",
+            "cite_spans": [
+                {
+                    "start": 33,
+                    "end": 47,
+                    "text": "Goffman (2009)",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 52,
+                    "end": 65,
+                    "text": "Scheff (1971)",
+                    "ref_id": "BIBREF42"
+                },
+                {
+                    "start": 98,
+                    "end": 111,
+                    "text": "Weiner (1995)",
+                    "ref_id": "BIBREF56"
+                },
+                {
+                    "start": 213,
+                    "end": 231,
+                    "text": "(Cox et al., 2012;",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 232,
+                    "end": 251,
+                    "text": "Major et al., 2002)",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 440,
+                    "end": 468,
+                    "text": "(Campo-Arias & Herazo, 2015;",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 469,
+                    "end": 496,
+                    "text": "Pescosolido & Martin, 2015)",
+                    "ref_id": "BIBREF36"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "While social distancing could be an effective way to reduce morbidity and mortality (Anderson et al., 2020) , such distancing could inadvertently increase SDC towards affected populations (Bruns et al., 2020) . As the COVID-19 pandemic progresses worldwide, the fear of infection increases and, with it, the stigma-discrimination of people, which makes it an additional problem of the epidemic (Devakumar et al., 2020) . Thus, both health workers, people with active COVID-19 infection and their families, as well as those who have recovered from the disease face significant levels of stigma-discrimination (Singh & Subedi, 2020) . It is possible that faced with a new disease, with severe symptoms and negative consequences such as death, fear of contagion and limited knowledge can generate a stigma-discrimination complete towards this disease (Lupia et al., 2020; Ren et al., 2020; Villa et al., 2020) .",
+            "cite_spans": [
+                {
+                    "start": 84,
+                    "end": 107,
+                    "text": "(Anderson et al., 2020)",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 188,
+                    "end": 208,
+                    "text": "(Bruns et al., 2020)",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 394,
+                    "end": 418,
+                    "text": "(Devakumar et al., 2020)",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 608,
+                    "end": 630,
+                    "text": "(Singh & Subedi, 2020)",
+                    "ref_id": "BIBREF45"
+                },
+                {
+                    "start": 848,
+                    "end": 868,
+                    "text": "(Lupia et al., 2020;",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 869,
+                    "end": 886,
+                    "text": "Ren et al., 2020;",
+                    "ref_id": "BIBREF41"
+                },
+                {
+                    "start": 887,
+                    "end": 906,
+                    "text": "Villa et al., 2020)",
+                    "ref_id": "BIBREF53"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "SDC-CV-19 is most likely the consequence of multiple ecological drivers (misinformation) and enablers (racism or poverty) (Logie & Turan, 2020; Phelan et al., 2008) . Besides, disinformation through traditional media, and especially through social networks (Islam et al., 2020) , may increase the risk of stigmatisation and undesirable behaviours (physical and psychological violence) (Sotgiu et al., 2020; Turner-Musa et al., 2020) towards the affected population.",
+            "cite_spans": [
+                {
+                    "start": 122,
+                    "end": 143,
+                    "text": "(Logie & Turan, 2020;",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 144,
+                    "end": 164,
+                    "text": "Phelan et al., 2008)",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 257,
+                    "end": 277,
+                    "text": "(Islam et al., 2020)",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 385,
+                    "end": 406,
+                    "text": "(Sotgiu et al., 2020;",
+                    "ref_id": "BIBREF46"
+                },
+                {
+                    "start": 407,
+                    "end": 432,
+                    "text": "Turner-Musa et al., 2020)",
+                    "ref_id": "BIBREF50"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "In Latin America, the SDC-CV-19 has led to health workers as victims of threats, violence and intimidation (Taylor, 2020) . SDC and xenophobia have historically accompanied epidemic outbreaks. For example, during the SARS outbreak of 2003, stigma-discrimination prevailed against Asian populations and, which increased the search for mental health care by these people (Person et al., 2004) .",
+            "cite_spans": [
+                {
+                    "start": 107,
+                    "end": 121,
+                    "text": "(Taylor, 2020)",
+                    "ref_id": "BIBREF49"
+                },
+                {
+                    "start": 369,
+                    "end": 390,
+                    "text": "(Person et al., 2004)",
+                    "ref_id": "BIBREF35"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Regardless of the context, research has consistently shown that SDC is associated with adverse physical and mental health outcomes (Budenz et al., 2020; Budhwani & De, 2019; Ho et al., 2017; Karamouzian et al., 2018; Pachankis et al., 2018) . Thus, such behaviours can undermine strategies to mitigate the disease and can lead to denial of medical care, lead to people not having the diagnostic test and not practising healthy behaviours, such as wearing face masks (Bruns et al., 2020; Turner-Musa et al., 2020) .",
+            "cite_spans": [
+                {
+                    "start": 131,
+                    "end": 152,
+                    "text": "(Budenz et al., 2020;",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 153,
+                    "end": 173,
+                    "text": "Budhwani & De, 2019;",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 174,
+                    "end": 190,
+                    "text": "Ho et al., 2017;",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 191,
+                    "end": 216,
+                    "text": "Karamouzian et al., 2018;",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 217,
+                    "end": 240,
+                    "text": "Pachankis et al., 2018)",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 466,
+                    "end": 486,
+                    "text": "(Bruns et al., 2020;",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 487,
+                    "end": 512,
+                    "text": "Turner-Musa et al., 2020)",
+                    "ref_id": "BIBREF50"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The SDC-CV-19 has added burden to healthcare providers and administrators leading to more difficulties in tracking the contact of people infected with COVID-19, which could lead to an increase in cases and deaths from COVID-19 (Singh & Subedi, 2020; Sotgiu et al., 2020) . Furthermore, the SDC-CV-19 can increase existing social inequalities by generating more unemployment and poverty and preventing various processes such as social integration (Shoib et al., 2020 : Villa et al., 2020 .",
+            "cite_spans": [
+                {
+                    "start": 227,
+                    "end": 249,
+                    "text": "(Singh & Subedi, 2020;",
+                    "ref_id": "BIBREF45"
+                },
+                {
+                    "start": 250,
+                    "end": 270,
+                    "text": "Sotgiu et al., 2020)",
+                    "ref_id": "BIBREF46"
+                },
+                {
+                    "start": 446,
+                    "end": 465,
+                    "text": "(Shoib et al., 2020",
+                    "ref_id": "BIBREF44"
+                },
+                {
+                    "start": 466,
+                    "end": 486,
+                    "text": ": Villa et al., 2020",
+                    "ref_id": "BIBREF53"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Therefore, addressing the SDC-CV-19 towards affected people and the highest risk groups has become a priority for medical and public health care providers (Bruns et al., 2020) and the need for the reduction of SDC-CV-19 as the most critical global challenges of the pandemic ('Stop the Coronavirus Stigma Now Yoshioka & Maeda, 2020) .",
+            "cite_spans": [
+                {
+                    "start": 155,
+                    "end": 175,
+                    "text": "(Bruns et al., 2020)",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 309,
+                    "end": 332,
+                    "text": "Yoshioka & Maeda, 2020)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Consequently, understanding how the social determinants of health and SDC contribute to the incidence, treatment and mortality associated with COVID-19 can help the development of more effective interventions to mitigate the transmission of the disease (Sotgiu et al., 2020; Turner-Musa et al., 2020; Villa et al., 2020) . Despite the urgent need to study SDC-CV-19 in-depth, primary studies specifically designed to evaluate the subject in the general population have been scarce in the world, especially in Latin America (Bagcchi, 2020) . In Colombia, there is a study carried out on general practitioners, which found that 40% of doctors have felt discriminated and that 84% experience fear of COVID-19 (Monterrosa-Castro et al., 2020) . However, there are no published studies in the general Latin American population on SDC-CV-19.",
+            "cite_spans": [
+                {
+                    "start": 253,
+                    "end": 274,
+                    "text": "(Sotgiu et al., 2020;",
+                    "ref_id": "BIBREF46"
+                },
+                {
+                    "start": 275,
+                    "end": 300,
+                    "text": "Turner-Musa et al., 2020;",
+                    "ref_id": "BIBREF50"
+                },
+                {
+                    "start": 301,
+                    "end": 320,
+                    "text": "Villa et al., 2020)",
+                    "ref_id": "BIBREF53"
+                },
+                {
+                    "start": 523,
+                    "end": 538,
+                    "text": "(Bagcchi, 2020)",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 697,
+                    "end": 738,
+                    "text": "COVID-19 (Monterrosa-Castro et al., 2020)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The present study aims to determine the association between experiences of stigmatisation associated with COVID-19 and fear of the coronavirus in the general population of Colombia.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "An observational, analytical and cross-sectional study was carried out. A convenience sample was obtained from the general population of Colombia, and it included those over 18 years of age who voluntarily wanted to respond to an online survey on stigmatisation related to COVID-19.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Study design"
+        },
+        {
+            "text": "Demographic characteristics. Variables such as age, sex, marital status, level of education and occupation were investigated through an electronic, anonymous and confidential survey designed by the researchers.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Measurements"
+        },
+        {
+            "text": "Questionnaire on COVID-19 Stigma-Discrimination. The questionnaire is made up of 11 items with dichotomous answers 'yes' or 'no', of these, seven were constructed from the scale of stigma towards tuberculosis (Upegui-Arango & Orozco, 2014 , and the four additional items were designed by the authors of the present study, which represented more specific aspects of COVID-19 infection and its epidemiological dynamics. Since the homogeneity tests and the factorial analysis did not show satisfactory indices for the 11 items evaluated (Cronbach's alpha of 0.51), the results of the questionnaire are presented with each question independently and not as a scale that measures a latent construct.",
+            "cite_spans": [
+                {
+                    "start": 209,
+                    "end": 238,
+                    "text": "(Upegui-Arango & Orozco, 2014",
+                    "ref_id": "BIBREF51"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Measurements"
+        },
+        {
+            "text": "Scale. The COVID-19 Fear Scale was adapted from the original 7-item scale developed by Ahorsu et al. (2020) , after the adaptation and psychometric evaluation process carried out by the researchers of this study, it was conducted to obtain of a 5-item version (COVID-5 fear scale), which showed high internal consistency in this sample, with a Cronbach's alpha of 0.75. The fear of COVID-5 scale has four response options, and the total scores are between 0 and 15. The distribution of the data defined high fear of COVID-19; scores equal to or higher than four, corresponding to the third quartile, were categorised as high fear related to Covid-19.",
+            "cite_spans": [
+                {
+                    "start": 87,
+                    "end": 107,
+                    "text": "Ahorsu et al. (2020)",
+                    "ref_id": "BIBREF0"
+                }
+            ],
+            "ref_spans": [],
+            "section": "COVID-19 Fear"
+        },
+        {
+            "text": "To collect the information, the researchers sent through emails and publications on their social networks (WhatsApp, Instagram and Facebook) an invitation to participate in the study to those interested, who had to fill out a selfadministered online survey that it had an average completion duration of 7 minutes. Prior approval was obtained by the Research Ethics Committee of the Universidad del Magdalena.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Process"
+        },
+        {
+            "text": "The description of the variables with frequencies and percentages was carried out for the qualitative data, and mean with standard deviation for the quantitative data. Measures of central tendency, dispersion and position were calculated according to the distribution of the COVID-19 fear scale scores. Subsequently, responses on the Stigma-Discrimination questionnaire related to COVID-19 and a high level of fear of COVID-19 were compared according to the occupation. Odds ratios with their 95% confidence intervals were calculated. The analysis was completed using the SPSS version 24 program.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Statistical analysis"
+        },
+        {
+            "text": "A total of 1,687 adults between 18 and 76 years of age participated (M = 36.3, SD = 12.5). A total of 993 people from the general population and 694 workers in the health care. See more information in Table 1 . Scores on the COVID-5 fear scale were observed between 0 and 15 (M = 2.96, SD = 2.63, Me = 2.0, IQR = 1.0-4.0), 34.1% scored for high COVID-19 fear.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 201,
+                    "end": 208,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "The frequencies of affirmative responses on the stigmadiscrimination questionnaire and comparison, according to the occupation, are presented in Table 2 . The difference was significantly more significant in the general population than health care workers in seven of the eleven questions. Likewise, it was observed that seven questions from the stigma-discrimination questionnaire (63.6%) were associated with a high COVID-19 fear. See the associations in Table 3 .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 145,
+                    "end": 152,
+                    "text": "Table 2",
+                    "ref_id": "TABREF1"
+                },
+                {
+                    "start": 457,
+                    "end": 464,
+                    "text": "Table 3",
+                    "ref_id": null
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "The results indicate a high level of stigmatisation in most of the situations evaluated. Also, an association between high fear of COVID-19 and stigma was evidenced in most of the questions in the questionnaire, especially in people with work occupations not related to the health care area and with a high level of COVID-19 fear.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "The association between high fear and stigma related to the perception of the evaluated population, about the greater risk of transmission of COVID-19 by foreigners (OR = 1.58, 95% CI 1.29-1.94) is consistent with previous studies that have reported association of previous outbreaks of infectious diseases (e.g. influenza A (H1N1), bubonic plague, Asian flu, cholera, Ebola virus disease, Zika virus, HIV, tuberculosis, SARS and MERS) with levels of fear, stigma and discrimination against some populations (Fischer et al., 2019) . For example, during the SARS outbreak in 2003, the National Center for Infectious Diseases of the Center for Disease Control and Prevention formed a multidisciplinary community group as part of its global response to the SARS emergency. This team monitored stigmatising ideas and behaviours in the general population and the media, particularly towards of Asian origin, finding in the respondents a disproportionate level of fear, stigmatisation and discrimination towards this population (Person et al., 2004) . Most of the stigmatisation experiences related to COVID-19 in the present study (level of stigma in the general population of 42.3%, and health care workers of 35.4% related to the perception in these population groups about the greater risk of transmission of COVID-19 by foreigners), are similar to the experience of stigmatisation processes that occurred during outbreaks of previous infections (Fischer et al., 2019) . This situation suggests the need for monitoring and intervention to reduce the levels of stigma towards these populations, especially those with a high level of social vulnerability, such as the Venezuelan migrant population. In the context of the COVID-19 epidemic in Colombia and other countries in the southern cone of Latin America, Venezuelan people would be highly exposed to COVID-19 infection in many cases due to their homeless condition, and limited access to basic hygiene practices such as frequent hand washing, as well as a low nutritional level and even high levels of fear and stigma within these migrant groups that could limit their practices for the prevention of contagion, the transmission of the virus and the recognition of their rights as citizens (Fern\u00e1ndez-Ni\u00f1o & Orozco, 2018) . Situations such as those previously described reflect the existence of a series of pre-existing stigmas, which were amplified during the development of the COVID-19 pandemic, found new spaces to deploy or joined those created by this new situation (Turner-Musa et al., 2020) .",
+            "cite_spans": [
+                {
+                    "start": 508,
+                    "end": 530,
+                    "text": "(Fischer et al., 2019)",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 1022,
+                    "end": 1043,
+                    "text": "(Person et al., 2004)",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 1444,
+                    "end": 1466,
+                    "text": "(Fischer et al., 2019)",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 2241,
+                    "end": 2272,
+                    "text": "(Fern\u00e1ndez-Ni\u00f1o & Orozco, 2018)",
+                    "ref_id": null
+                },
+                {
+                    "start": 2523,
+                    "end": 2549,
+                    "text": "(Turner-Musa et al., 2020)",
+                    "ref_id": "BIBREF50"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "On the other hand, health care workers linked to the care of patients diagnosed with COVID-19 have experienced and continue to experience SDC-CV-19, which has made them victims of experiences of discrimination such as the denial of entry to their homes, verbal abuse or the generation of rumours against them and social devaluation. Added to this, their family and friends are experiencing 'secondary' or 'associative' stigma. (Villa et al., 2020) . This point was evidenced in the present study by associating experiences of stigmatisation towards health worker as 'I feel a fear of being infected by the health personnel I meet in public transport, on the street or at home' with fear of COVID-19 infection (OR = 2.82; 95% CI 2.19-3.63), which indicates a strong association between the high level of fear of the disease and stigmatising attitudes towards health workers, which must be taken into consideration in the framework of controlling the epidemic by COVID-19.",
+            "cite_spans": [
+                {
+                    "start": 427,
+                    "end": 447,
+                    "text": "(Villa et al., 2020)",
+                    "ref_id": "BIBREF53"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Most of the stigmatisation experiences described in this study were significantly associated with a high level of fear of COVID-19. These findings go in the same direction as a study conducted with psychiatrists from several countries from real-life experiences; they found that SDC-CV-19 was associated with similar factors (e.g. fear associated with infection or quarantine), beliefs (supra-natural or religious), shame and blame on oneself or others for contracting the disease (Villa et al., 2020) Additionally, the 'infodemic' (excessive circulation of misinformation) played as a driving factor and SDC-CV-19 facilitator . This aspect was represented in the present study as 'When I see news and stories about COVID-19 on television, press or social networks, I get nervous or anxious', and it was positively associated with fear of COVID-19 (OR = 7.43; 95% CI 5.92-9.33).",
+            "cite_spans": [
+                {
+                    "start": 481,
+                    "end": 501,
+                    "text": "(Villa et al., 2020)",
+                    "ref_id": "BIBREF53"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Due to the current reach of social networks and the mass media and immediate global communication through the Internet, during the COVID-19 pandemic, the stigmatisation phenomena promoted by these networks can reach even more significant proportions, even in populations with academic training in the health area. As could be observed in the present study, when evaluating the level of stigma between the general population and health care personnel, the percentage of stigma-stigmatisation expressed by both populations about this aspect was very similar, without a statistical significance in the probabilities of having a higher level of stigma according to the population group (level of stigma in the general population of 43.4%, and health care workers 42.9%, OR = 1.02; CI95% 0.84-1.24) therefore, The 'infodemic' becomes an essential factor associated with the stigma that must be studied in greater detail, in order to characterise its effects on various populations, including populations such as health care workers. Since they have a fundamental role in the control of diseases, such as COVID-19 (Islam et al., 2020) .",
+            "cite_spans": [
+                {
+                    "start": 1108,
+                    "end": 1128,
+                    "text": "(Islam et al., 2020)",
+                    "ref_id": "BIBREF20"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Fear and its association with stigmatisation constitute a phenomenon that shows the high impact of the COVID-19 pandemic from a public health perspective (Dubey et al., 2020) . Thus, previous studies have shown that fear associated with stigma and discrimination has negatively affected public health efforts with chronic conditions such as mental illness, HIV/AIDS, tuberculosis, leprosy, and epilepsy (Carey et al., 1997; Herek, 2002; MacLeod & Austin, 2003; Schulze & Angermeyer, 2003; WHO, 2003) . For example, the stigmatisation associated with fear and the AIDS epidemic has negatively influenced voluntary testing, counselling and treatment of those infected with the disease (Chesney & Smith, 1999) , revealing the adverse effects of the stigma/fear in the framework of control of several diseases. Being the case of the epidemic by COVID-19 a similar scenario, possibly with high sensitivity to the effects of these phenomena in crucial aspects of the control of the epidemic, which in light of the results of the present study are reflected, for example, in the association evidenced between aspects such as 'People sick with COVID-19 should feel afraid of telling others that they have this disease' and a higher level of fear of the disease (OR = 2.21; 95% CI 1.62-3.03). This specific association could lead to the concealment of the disease, limiting, for example, epidemic control activities such as the identification of contacts, and even, in those individuals with symptoms, but without a diagnosis, it could limit the search for medical attention (Ornell et al., 2020) . Situations that, in addition to limiting control, could generate the rapid spread of the virus in the absence of a timely response (Harper et al., 2020) . Therefore, interventions to reduce the SDC-CV-19 are increasingly necessary for the adequate control of the COVID-19 pandemic (Bagcchi, 2020) .",
+            "cite_spans": [
+                {
+                    "start": 154,
+                    "end": 174,
+                    "text": "(Dubey et al., 2020)",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 403,
+                    "end": 423,
+                    "text": "(Carey et al., 1997;",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 424,
+                    "end": 436,
+                    "text": "Herek, 2002;",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 437,
+                    "end": 460,
+                    "text": "MacLeod & Austin, 2003;",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 461,
+                    "end": 488,
+                    "text": "Schulze & Angermeyer, 2003;",
+                    "ref_id": "BIBREF43"
+                },
+                {
+                    "start": 489,
+                    "end": 499,
+                    "text": "WHO, 2003)",
+                    "ref_id": null
+                },
+                {
+                    "start": 683,
+                    "end": 706,
+                    "text": "(Chesney & Smith, 1999)",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 1566,
+                    "end": 1587,
+                    "text": "(Ornell et al., 2020)",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 1721,
+                    "end": 1742,
+                    "text": "(Harper et al., 2020)",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 1871,
+                    "end": 1886,
+                    "text": "(Bagcchi, 2020)",
+                    "ref_id": "BIBREF2"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "The results of this study should be analysed in light of the following limitations. The cross-sectional nature of the study does not allow establishing a causality criterion between the reported associations, so subsequent studies such as cohorts should be carried out to establish a causal association between occupation, fear and the stigma associated with COVID-19. The fact that the sample is not probabilistic does not allow making inferences from the results to the general population of Colombia. Studies with probabilistic samples are recommended to establish the real prevalence of the phenomenon in Colombia.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Additionally, since there was no specific scale to measure stigma towards COVID-19, seven items from a pool of 25 items previously validated were adapted to measure stigma towards tuberculosis, and four items oriented to the context of the COVID-19 epidemic were added. These questions allowed evaluating some experiences of stigmatisation; however, it did not guarantee a reliable measure of the complex construct of stigma discrimination related to COVID-19. Therefore, it is recommended to design specific valid and reliable scales that more accurately measure the complex stigma discrimination towards COVID-19 as a construct, in the same way as fear of COVID-19 was evaluated with the specific fear scale to COVID-5. However, the findings presented here provide novel and crucial information on the dynamics of the SDC-CV-19 in a Latin American context. Although the measurement of experiences related to stigma was not carried out using a specific and valid scale concerning COVID-19, the statements evaluated allowed identifying critical aspects of the dynamics of stigma-discrimination in the population studied. This information allows not only to generate hypotheses of the possible associations between the phenomena of stigma and fear of COVID-19, but also to raise questions to consider in future research, such as the different mechanisms by which the infodemic exerts its effects on the levels of stigma towards COVID-19 in various populations, especially in the health care area.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Additionally, the results allowed the general exploration of specific situations in the current regional context, such as forced migration and the stigmatisation of these people (Keys et al., 2019) and the risk of transmitting COVID-19, a situation that could be a determining factor for the mitigation of the epidemic in places with high migrant traffic such as borders. If not addressed, the SDC-CV-19 can have severe consequences on the health outcomes of the population and the well-being of the community (Villa et al., 2020) . Therefore, health professionals must understand the importance of protecting public health with strategies aimed at preventing fear, stigmatisation and discrimination associated with infectious diseases such as COVID-19 (Person et al., 2004) .",
+            "cite_spans": [
+                {
+                    "start": 178,
+                    "end": 197,
+                    "text": "(Keys et al., 2019)",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 510,
+                    "end": 530,
+                    "text": "(Villa et al., 2020)",
+                    "ref_id": "BIBREF53"
+                },
+                {
+                    "start": 753,
+                    "end": 774,
+                    "text": "(Person et al., 2004)",
+                    "ref_id": "BIBREF35"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Preventing SDC-CV-19 in a cultural context as complex as that of Latin America is a difficult task. Prevention depends on controlling or treating the coronavirus itself, increasing the level of knowledge about the disease, countering the tendencies of those who stigmatise others and supporting those who are stigmatised through emotional support and social policies (Rao et al., 2019) . This complex task warrants an intersectoral and multilevel approach that could well be achieved through work in scientific networks (Eaton & Kalichman, 2020) . The data collected during the evaluation of stigmatisation situations is the first input to guide the development of informed intervention strategies since it generates a characterisation of the magnitude of the phenomenon and associated variables in each specific cultural context (Stangl et al., 2019) .",
+            "cite_spans": [
+                {
+                    "start": 367,
+                    "end": 385,
+                    "text": "(Rao et al., 2019)",
+                    "ref_id": "BIBREF40"
+                },
+                {
+                    "start": 520,
+                    "end": 545,
+                    "text": "(Eaton & Kalichman, 2020)",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 830,
+                    "end": 851,
+                    "text": "(Stangl et al., 2019)",
+                    "ref_id": "BIBREF47"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Further studies are needed on stigmatisation during the final phases of the pandemic and post-pandemic, including the analysis of perceptions and other qualitative categories that help to understand the phenomenon in a more holistic way, better understand the needs of communities and identify critical sources of information within populations to facilitate strategies with a participatory approach (Eaton & Kalichman, 2020) . Likewise, establish the association between the SDC-CV-19, level of knowledge and perceptions, myths and rumours, as well as role of culture in stigma process, the implications in the process of seeking help, and other elements such as the impact of the media in generating stigmatisation. Besides, we believe that researchers working on the stigma associated with COVID-19 should develop and standardise stigma measures, which will allow them to compare outcomes and help to build more effective cross-cultural interventions .",
+            "cite_spans": [
+                {
+                    "start": 400,
+                    "end": 425,
+                    "text": "(Eaton & Kalichman, 2020)",
+                    "ref_id": "BIBREF12"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "It is concluded that SDC-CV-19 is frequent in the Colombian population and is associated with a high level of fear of COVID-19 and occurs in a higher proportion in people who are not health workers compared to the latter.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion"
+        },
+        {
+            "text": "The author(s) disclosed receipt of the following financial support for the research, authorship, and/or publication of this article: This work was financed by the The Research Vice-rectory of Universidad del Magdalena through Resolution No 266 of 2020.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Funding"
+        },
+        {
+            "text": "Carlos Arturo Cassiani-Miranda https://orcid.org/0000-0002 -2288-1027 Adalberto Campo-Arias https://orcid.org/0000-0003-2201 -7404",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "ORCID iDs"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "The fear of COVID-19 scale: Development and initial validation",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Ahorsu",
+                    "suffix": ""
+                },
+                {
+                    "first": "C.-Y",
+                    "middle": [],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Imani",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Saffari",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Griffiths",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Pakpour",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "International Journal of Mental Health and Addiction",
+            "volume": "",
+            "issn": "",
+            "pages": "1--9",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s11469-020-00270-8"
+                ]
+            }
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "How will country-based mitigation measures influence the course of the COVID-19 epidemic? The Lancet",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Anderson",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Heesterbeek",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Klinkenberg",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Hollingsworth",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "395",
+            "issn": "",
+            "pages": "30567--30572",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S0140-6736(20)30567-5"
+                ]
+            }
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Stigma during the COVID-19 pandemic. The Lancet Infectious Diseases",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Bagcchi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "20",
+            "issn": "",
+            "pages": "30498--30507",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S1473-3099(20)30498-9"
+                ]
+            }
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "COVID-19: Facts, cultural considerations, and risk of stigmatization",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Bruns",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Kraguljac",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Bruns",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Journal of Transcultural Nursing",
+            "volume": "31",
+            "issn": "4",
+            "pages": "326--332",
+            "other_ids": {
+                "DOI": [
+                    "10.1177/1043659620917724"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Mental illness and bipolar disorder on Twitter: Implications for stigma and social support",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Budenz",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Klassen",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Purtle",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Yom Tov",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Yudell",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Massey",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Journal of Mental Health",
+            "volume": "29",
+            "issn": "2",
+            "pages": "191--199",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/09638237.2019.1677878"
+                ]
+            }
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Perceived stigma in health care settings and the physical and mental health of people of color in the United States. Health Equity",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Budhwani",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "De",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "",
+            "volume": "3",
+            "issn": "",
+            "pages": "73--80",
+            "other_ids": {
+                "DOI": [
+                    "10.1089/heq.2018.0079"
+                ]
+            }
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "El complejo estigmadiscriminaci\u00f3n asociado a trastorno mental como factor de riesgo de suicidio",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Campo-Arias",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Herazo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Revista Colombiana de Psiquiatr\u00eda",
+            "volume": "44",
+            "issn": "4",
+            "pages": "243--250",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Tuberculosis beliefs among recent Vietnamese refugees in New York State",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Carey",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Oxtoby",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Nguyen",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Huynh",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Morgan",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Jeffery",
+                    "suffix": ""
+                }
+            ],
+            "year": 1997,
+            "venue": "Indian Journal of Psychiatry",
+            "volume": "112",
+            "issn": "1",
+            "pages": "610--611",
+            "other_ids": {
+                "PMCID": [
+                    "PMC1381842"
+                ]
+            }
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Critical delays in HIV testing and care: The potential role of stigma",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Chesney",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Smith",
+                    "suffix": ""
+                }
+            ],
+            "year": 1999,
+            "venue": "American Behavioral Scientist",
+            "volume": "42",
+            "issn": "7",
+            "pages": "1162--1174",
+            "other_ids": {
+                "DOI": [
+                    "10.1177/00027649921954822"
+                ]
+            }
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Stereotypes, prejudice, and depression: The integrated perspective",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [
+                        "T L"
+                    ],
+                    "last": "Cox",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Abramson",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Devine",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Hollon",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Perspectives on Psychological Science",
+            "volume": "7",
+            "issn": "5",
+            "pages": "427--449",
+            "other_ids": {
+                "DOI": [
+                    "10.1177/1745691612455204"
+                ]
+            }
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Racism and discrimination in COVID-19 responses",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Devakumar",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Shannon",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Bhopal",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Abubakar",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "The Lancet",
+            "volume": "395",
+            "issn": "",
+            "pages": "30792--30795",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S0140-6736(20)30792-3"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Psychosocial impact of COVID-19",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Dubey",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Biswas",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Ghosh",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Chatterjee",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Dubey",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Chatterjee",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Lahiri",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Lavie",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Diabetes & Metabolic Syndrome",
+            "volume": "14",
+            "issn": "5",
+            "pages": "779--788",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.dsx.2020.05.035"
+                ]
+            }
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Social and behavioral health responses to COVID-19: Lessons learned from four decades of an HIV pandemic",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Eaton",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Kalichman",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Ni\u00f1o",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Orozco",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Journal of Behavioral Medicine",
+            "volume": "43",
+            "issn": "3",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s10865-020-00157-y"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Addressing disease-related stigma during infectious disease outbreaks",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Fischer",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Mansergh",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Lynch",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Santibanez",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "",
+            "volume": "13",
+            "issn": "",
+            "pages": "989--994",
+            "other_ids": {
+                "DOI": [
+                    "10.1017/dmp.2018.157"
+                ]
+            }
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Estigma: La identidad deteriorada",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Goffman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Clinical characteristics of coronavirus disease 2019 in china",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Guan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Ni",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Liang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Ou",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "He",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Shan",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Lei",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "S C"
+                    ],
+                    "last": "Hui",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Du",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Zeng",
+                    "suffix": ""
+                },
+                {
+                    "first": "K.-Y",
+                    "middle": [],
+                    "last": "Yuen",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Tang",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Xiang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "New England Journal of Medicine",
+            "volume": "382",
+            "issn": "18",
+            "pages": "1708--1720",
+            "other_ids": {
+                "DOI": [
+                    "10.1056/NEJMoa2002032"
+                ]
+            }
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Functional fear predicts public health compliance in the COVID-19 pandemic",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Harper",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Satchell",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Fido",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Latzman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "International Journal of Mental Health and Addiction",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s11469-020-00281-5"
+                ]
+            }
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Thinking about aids and stigma: A psychologist's perspective. The Journal of Law",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Herek",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "Medicine & Ethics",
+            "volume": "30",
+            "issn": "4",
+            "pages": "594--607",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/j.1748-720X.2002.tb00428.x"
+                ]
+            }
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Stigma of HIV testing on online HIV forums: Self-stigma and the unspoken",
+            "authors": [
+                {
+                    "first": "C.-L",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Ho",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Pan",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Taylor",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Journal of Psychosocial Nursing and Mental Health Services",
+            "volume": "55",
+            "issn": "12",
+            "pages": "34--43",
+            "other_ids": {
+                "DOI": [
+                    "10.3928/02793695-20170905-01"
+                ]
+            }
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Clinical features of patients infected with 2019 novel coronavirus in Wuhan",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Ren",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Fan",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Gu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Cheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Xia",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wei",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Xie",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Yin",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "China. The Lancet",
+            "volume": "395",
+            "issn": "10223",
+            "pages": "497--506",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S0140-6736(20)30183-5"
+                ]
+            }
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "COVID-19-related infodemic and its impact on public health: A global social media analysis",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Islam",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Sarkar",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Khan",
+                    "suffix": ""
+                },
+                {
+                    "first": "A.-H",
+                    "middle": [],
+                    "last": "Kamal",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "M M"
+                    ],
+                    "last": "Hasan",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Kabir",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Yeasmin",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Islam",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Amin Chowdhury",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Anwar",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Chughtai",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Seale",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "The American Journal of Tropical Medicine and Hygiene",
+            "volume": "103",
+            "issn": "",
+            "pages": "1621--1629",
+            "other_ids": {
+                "DOI": [
+                    "10.4269/ajtmh.20-0812"
+                ]
+            }
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Stigma associated with sexually transmissible infection testing in an online testing environment: Examining the perspectives of youth in Vancouver",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Karamouzian",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Knight",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Davis",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Gilbert",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Shoveller",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Canada. Sexual Health",
+            "volume": "15",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1071/SH17089"
+                ]
+            }
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Gordon Allport's 'the nature of prejudice",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Katz",
+                    "suffix": ""
+                }
+            ],
+            "year": 1991,
+            "venue": "Political Psychology",
+            "volume": "12",
+            "issn": "1",
+            "pages": "125--157",
+            "other_ids": {
+                "DOI": [
+                    "10.2307/3791349"
+                ]
+            }
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Cholera control and anti-Haitian stigma in the Dominican Republic: From migration policy to lived experience",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Keys",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Kaiser",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Foster",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Freeman",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Stephenson",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Lund",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Kohrt",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Anthropology & Medicine",
+            "volume": "26",
+            "issn": "2",
+            "pages": "123--141",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/13648470.2017.1368829"
+                ]
+            }
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Toward understanding mental illness stigma and help-seeking: A social identity perspective",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Klik",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Williams",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Reynolds",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Social Science & Medicine",
+            "volume": "222",
+            "issn": "",
+            "pages": "35--43",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.socscimed.2018.12.001"
+                ]
+            }
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Social reaction toward the 2019 novel coronavirus (COVID-19). Social Health and Behavior",
+            "authors": [
+                {
+                    "first": "C.-Y",
+                    "middle": [],
+                    "last": "Lin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "3",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.4103/SHB.SHB_11_20"
+                ]
+            }
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Conceptualizing stigma",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Link",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Phelan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2001,
+            "venue": "Annual Review of Sociology",
+            "volume": "27",
+            "issn": "1",
+            "pages": "363--385",
+            "other_ids": {
+                "DOI": [
+                    "10.1146/annurev.soc.27.1.363"
+                ]
+            }
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "How do we balance tensions between COVID-19 public health responses and stigma mitigation? Learning from HIV research",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Logie",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Turan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "AIDS and Behavior",
+            "volume": "24",
+            "issn": "7",
+            "pages": "2003--2006",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s10461-020-02856-8"
+                ]
+            }
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "2019 novel coronavirus (2019-nCoV) outbreak: A new challenge",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Lupia",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Scabini",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Mornese Pinna",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Di Perri",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "De Rosa",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Corcione",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Journal of Global Antimicrobial Resistance",
+            "volume": "21",
+            "issn": "",
+            "pages": "22--27",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jgar.2020.02.021"
+                ]
+            }
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Stigma in the lives of adolescents with epilepsy: A review of the literature",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Macleod",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Austin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "Epilepsy & Behavior",
+            "volume": "4",
+            "issn": "2",
+            "pages": "7--13",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S1525-5050(03)00007-6"
+                ]
+            }
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Antecedents and consequences of attributions to discrimination: Theoretical and empirical advances",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Major",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Quinton",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Mccoy",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "Advances in Experimental Social Psychology",
+            "volume": "34",
+            "issn": "02",
+            "pages": "80007--80014",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S0065-2601(02)80007-7"
+                ]
+            }
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Estr\u00e9s laboral, ansiedad y miedo al COVID-19 en m\u00e9dicos generales colombianos",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Monterrosa-Castro",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "D\u00e1vila-Ruiz",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Mej\u00eda-Mantilla",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Contreras-Saldarriaga",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Mercado-Lara",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Florez-Monterrosa",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "MedUNAB",
+            "volume": "23",
+            "issn": "2",
+            "pages": "195--213",
+            "other_ids": {
+                "DOI": [
+                    "10.29375/01237047.3890"
+                ]
+            }
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "The pandemic of hate is giving COVID-19 a helping hand",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Ng",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "The American Journal of Tropical Medicine and Hygiene",
+            "volume": "102",
+            "issn": "6",
+            "pages": "1158--1159",
+            "other_ids": {
+                "DOI": [
+                    "10.4269/ajtmh.20-0285"
+                ]
+            }
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Pandemic fear' and COVID-19: Mental health burden and strategies",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Ornell",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Schuch",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Sordi",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "H P"
+                    ],
+                    "last": "Kessler",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Brazilian Journal of Psychiatry",
+            "volume": "42",
+            "issn": "3",
+            "pages": "232--235",
+            "other_ids": {
+                "DOI": [
+                    "10.1590/1516-4446-2020-0008"
+                ]
+            }
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "The burden of stigma on health and well-being: A taxonomy of concealment, course, disruptiveness, aesthetics, origin, and peril across 93 stigmas",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Pachankis",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Hatzenbuehler",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Burton",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Crawford",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Phelan",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Link",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Personality and Social Psychology Bulletin",
+            "volume": "44",
+            "issn": "4",
+            "pages": "451--474",
+            "other_ids": {
+                "DOI": [
+                    "10.1177/0146167217741313"
+                ]
+            }
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Fear and stigma: The epidemic within the SARS outbreak",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Person",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Sy",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Holton",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Govert",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Liang",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Garza",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Gould",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Hickson",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Mcdonald",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Meijer",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Smith",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Veto",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Williams",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zauderer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "SARS Community Outreach Team",
+            "volume": "10",
+            "issn": "",
+            "pages": "358--363",
+            "other_ids": {
+                "DOI": [
+                    "10.3201/eid1002.030750"
+                ]
+            }
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "The stigma complex",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Pescosolido",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Martin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Annual Review of Sociology",
+            "volume": "41",
+            "issn": "1",
+            "pages": "87--116",
+            "other_ids": {
+                "DOI": [
+                    "10.1146/annurev-soc-071312-145702"
+                ]
+            }
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Stigma and prejudice: One animal or two?",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Phelan",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Link",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Dovidio",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Social Science & Medicine",
+            "volume": "67",
+            "issn": "3",
+            "pages": "358--367",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.socscimed.2008.03.022"
+                ]
+            }
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "Mental health interventions during the COVID-19 pandemic: A conceptual framework by early career psychiatrists",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Ransing",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Adiukwu",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Pereira-Sanchez",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Ramalho",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Orsolini",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "L S"
+                    ],
+                    "last": "Teixeira",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Gonzalez-Diaz",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Pinto Da Costa",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Soler-Vidal",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Byty\u00e7i",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "El Hayek",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Larnaout",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Shalbafan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Syarif",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Nofal",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Kundadak",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Asian Journal of Psychiatry",
+            "volume": "51",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ajp.2020.102085"
+                ]
+            }
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "Can COVID-19 related mental health issues be measured?",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Ransing",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Ramalho",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Orsolini",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Adiukwu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Gonzalez-Diaz",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Larnaout",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Pinto Da Costa",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Grandinetti",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Byty\u00e7i",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Shalbafan",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Patil",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Nofal",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Pereira-Sanchez",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Kilic",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Brain, Behavior, and Immunity",
+            "volume": "88",
+            "issn": "",
+            "pages": "32--34",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.bbi.2020.05.049"
+                ]
+            }
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "A systematic review of multilevel stigma interventions: State of the science and future directions",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Rao",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Elshafei",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Nguyen",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Hatzenbuehler",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Frey",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Go",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "BMC Medicine",
+            "volume": "17",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/s12916-018-1244-y"
+                ]
+            }
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "Fear can be more harmful than the severe acute respiratory syndrome coronavirus 2 in controlling the coronavirus disease 2019 epidemic",
+            "authors": [
+                {
+                    "first": "S.-Y",
+                    "middle": [],
+                    "last": "Ren",
+                    "suffix": ""
+                },
+                {
+                    "first": "R.-D",
+                    "middle": [],
+                    "last": "Gao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y.-L",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "World Journal of Clinical Cases",
+            "volume": "8",
+            "issn": "4",
+            "pages": "652--657",
+            "other_ids": {
+                "DOI": [
+                    "10.12998/wjcc.v8.i4.652"
+                ]
+            }
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "Being mentally ill: A sociological theory",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Scheff",
+                    "suffix": ""
+                }
+            ],
+            "year": 1971,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "Subjective experiences of stigma. A focus group study of schizophrenic patients, their relatives and mental health professionals",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Schulze",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Angermeyer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "Social Science & Medicine",
+            "volume": "56",
+            "issn": "2",
+            "pages": "299--312",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S0277-9536(02)00028-X"
+                ]
+            }
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "Factors associated with COVID-19 outbreakrelated suicides in India",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Shoib",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Nagendrappa",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Grigo",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Rehman",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Ransing",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Asian Journal of Psychiatry",
+            "volume": "53",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ajp.2020.102223"
+                ]
+            }
+        },
+        "BIBREF45": {
+            "ref_id": "b45",
+            "title": "COVID-19 and stigma: Social discrimination towards frontline healthcare providers and COVID-19 recovered patients in Nepal",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Singh",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Subedi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Asian Journal of Psychiatry",
+            "volume": "53",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ajp.2020.102222"
+                ]
+            }
+        },
+        "BIBREF46": {
+            "ref_id": "b46",
+            "title": "How to demystify COVID-19 and reduce social stigma",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Sotgiu",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Carta",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Suelzu",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Carta",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Migliori",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "info:doi/10.5588/ijtld.20.0233"
+                ]
+            }
+        },
+        "BIBREF47": {
+            "ref_id": "b47",
+            "title": "The Health Stigma and Discrimination Framework: A global, crosscutting framework to inform research, intervention development, and policy on health-related stigmas",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Stangl",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Earnshaw",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Logie",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Van Brakel",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Simbayi",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Barr\u00e9",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Dovidio",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "BMC Medicine",
+            "volume": "17",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/s12916-019-1271-3"
+                ]
+            }
+        },
+        "BIBREF48": {
+            "ref_id": "b48",
+            "title": "Stop the Coronavirus Stigma Now",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "165--165",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/d41586-020-01009-0"
+                ]
+            }
+        },
+        "BIBREF49": {
+            "ref_id": "b49",
+            "title": "COVID-19 misinformation sparks threats and violence against doctors in Latin America",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Taylor",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "BMJ",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1136/bmj.m3088"
+                ]
+            }
+        },
+        "BIBREF50": {
+            "ref_id": "b50",
+            "title": "Examining social determinants of health, stigma, and COVID-19 disparities",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Turner-Musa",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Ajayi",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Kemp",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Healthcare",
+            "volume": "8",
+            "issn": "2",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3390/healthcare8020168"
+                ]
+            }
+        },
+        "BIBREF51": {
+            "ref_id": "b51",
+            "title": "Dise\u00f1o de un instrumento para medir estigma hacia; la tuberculosis",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Upegui-Arango",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Orozco",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "",
+            "volume": "46",
+            "issn": "",
+            "pages": "22--34",
+            "other_ids": {}
+        },
+        "BIBREF52": {
+            "ref_id": "b52",
+            "title": "Estigma hacia la tuberculosis: Validaci\u00f3n psicom\u00e9trica de un instrumento para su medici\u00f3n",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Upegui-Arango",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Orozco",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Anales de la Facultad de Medicina",
+            "volume": "80",
+            "issn": "1",
+            "pages": "12--20",
+            "other_ids": {
+                "DOI": [
+                    "10.15381/anales.v80i1.15656"
+                ]
+            }
+        },
+        "BIBREF53": {
+            "ref_id": "b53",
+            "title": "Stigma at the time of the COVID-19 pandemic. Clinical Microbiology and Infection",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Villa",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Jaramillo",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Mangioni",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Bandera",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Gori",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Raviglione",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.cmi.2020.08.001"
+                ]
+            }
+        },
+        "BIBREF54": {
+            "ref_id": "b54",
+            "title": "Modelling COVID-19 under uncertainty: What can we expect?",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Flessa",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "The European Journal of Health Economics",
+            "volume": "21",
+            "issn": "5",
+            "pages": "665--668",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s10198-020-01202-y"
+                ]
+            }
+        },
+        "BIBREF55": {
+            "ref_id": "b55",
+            "title": "Updated understanding of the outbreak of 2019 novel coronavirus (2019-nCoV) in Wuhan",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Tang",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Wei",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "China. Journal of Medical Virology",
+            "volume": "92",
+            "issn": "4",
+            "pages": "441--447",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/jmv.25689"
+                ]
+            }
+        },
+        "BIBREF56": {
+            "ref_id": "b56",
+            "title": "COVID-19 stigma induced by local government and media reporting in Japan: It's time to reconsider risk communication lessons from the Fukushima Daiichi nuclear disaster",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [
+                        "; T"
+                    ],
+                    "last": "Weiner",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Maeda",
+                    "suffix": ""
+                }
+            ],
+            "year": 1995,
+            "venue": "Journal of Advanced Nursing",
+            "volume": "42",
+            "issn": "8",
+            "pages": "372--373",
+            "other_ids": {
+                "DOI": [
+                    "10.2188/jea.JE20200247"
+                ]
+            }
+        }
+    },
+    "ref_entries": {
+        "TABREF0": {
+            "text": "Demographical characteristics of sample (N = 1,687).",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "Affirmative response (%) in questionnaire stigma towards COVID-19 according to the occupation.",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": []
+}

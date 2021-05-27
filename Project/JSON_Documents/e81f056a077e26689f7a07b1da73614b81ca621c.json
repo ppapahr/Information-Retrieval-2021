@@ -1,0 +1,1876 @@
+{
+    "paper_id": "e81f056a077e26689f7a07b1da73614b81ca621c",
+    "metadata": {
+        "title": "Inactivating SARS-CoV-2 by electrochemical oxidation",
+        "authors": [
+            {
+                "first": "Yunchuan",
+                "middle": [],
+                "last": "Tu",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "State Key Laboratory of Catalysis",
+                    "institution": "Chinese Academy of Sciences",
+                    "location": {
+                        "postCode": "116023",
+                        "settlement": "Dalian",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Wei",
+                "middle": [],
+                "last": "Tang",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Key Laboratory of Special Pathogens and Biosafety",
+                    "institution": "Chinese Academy of Sciences",
+                    "location": {
+                        "postCode": "430071",
+                        "settlement": "Wuhan",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Liang",
+                "middle": [],
+                "last": "Yu",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "State Key Laboratory of Catalysis",
+                    "institution": "Chinese Academy of Sciences",
+                    "location": {
+                        "postCode": "116023",
+                        "settlement": "Dalian",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Zheyi",
+                "middle": [],
+                "last": "Liu",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "CAS Key Laboratory of Separation Sciences for Analytical Chemistry",
+                    "institution": "Chinese Academy of Sciences",
+                    "location": {
+                        "postCode": "116023",
+                        "settlement": "Dalian",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Yanting",
+                "middle": [],
+                "last": "Liu",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "State Key Laboratory of Catalysis",
+                    "institution": "Chinese Academy of Sciences",
+                    "location": {
+                        "postCode": "116023",
+                        "settlement": "Dalian",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Huicong",
+                "middle": [],
+                "last": "Xia",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Chinese Academy of Sciences",
+                    "location": {
+                        "postCode": "100049",
+                        "settlement": "Beijing",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Haiwei",
+                "middle": [],
+                "last": "Zhang",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Key Laboratory of Special Pathogens and Biosafety",
+                    "institution": "Chinese Academy of Sciences",
+                    "location": {
+                        "postCode": "430071",
+                        "settlement": "Wuhan",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Shiyun",
+                "middle": [],
+                "last": "Chen",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Key Laboratory of Special Pathogens and Biosafety",
+                    "institution": "Chinese Academy of Sciences",
+                    "location": {
+                        "postCode": "430071",
+                        "settlement": "Wuhan",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Jia",
+                "middle": [],
+                "last": "Wu",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Chinese Academy of Sciences",
+                    "location": {
+                        "postCode": "430071",
+                        "settlement": "Wuhan",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Xiaoju",
+                "middle": [],
+                "last": "Cui",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "State Key Laboratory of Catalysis",
+                    "institution": "Chinese Academy of Sciences",
+                    "location": {
+                        "postCode": "116023",
+                        "settlement": "Dalian",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Jianan",
+                "middle": [],
+                "last": "Zhang",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Zhengzhou University",
+                    "location": {
+                        "postCode": "450001",
+                        "settlement": "Zhengzhou",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Fangjun",
+                "middle": [],
+                "last": "Wang",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "CAS Key Laboratory of Separation Sciences for Analytical Chemistry",
+                    "institution": "Chinese Academy of Sciences",
+                    "location": {
+                        "postCode": "116023",
+                        "settlement": "Dalian",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Yangbo",
+                "middle": [],
+                "last": "Hu",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Key Laboratory of Special Pathogens and Biosafety",
+                    "institution": "Chinese Academy of Sciences",
+                    "location": {
+                        "postCode": "430071",
+                        "settlement": "Wuhan",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Dehui",
+                "middle": [],
+                "last": "Deng",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "State Key Laboratory of Catalysis",
+                    "institution": "Chinese Academy of Sciences",
+                    "location": {
+                        "postCode": "116023",
+                        "settlement": "Dalian",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Fully inactivating SARS-CoV-2, the virus causing coronavirus disease 2019, is of key importance for interrupting virus transmission but is currently performed by using biologically or environmentally hazardous disinfectants. Herein, we report an eco-friendly and efficient electrochemical strategy for inactivating the SARS-CoV-2 using in-situ formed nickel oxide hydroxide as anode catalyst and sodium carbonate as electrolyte. At a voltage of 5 V, the SARS-CoV-2 viruses can be rapidly inactivated with disinfection efficiency reaching 95% in only 30 s and 99.99% in 5 min. Mass spectrometry analysis and theoretical calculations indicate that the reactive oxygen species generated on the anode can oxidize the peptide chains and induce cleavage of the peptide backbone of the receptor binding domain of the SARS-CoV-2 spike glycoprotein, and thereby disables the virus. This strategy provides a sustainable and highly efficient approach for the disinfection of the SARS-CoV-2 viruliferous aerosols and wastewater.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "The pandemic coronavirus disease 2019 (COVID-19), a pneumonia caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), has killed millions of people worldwide since its outbreak in late 2019 [1] . Effective vaccines or drugs are still under development for the treatment of the SARS-CoV-2 infection as of press time [2] [3] [4] [5] . Governments implement strict measures such as social isolation, wearing medical face mask, and timely disinfection to interrupt transmission of the infection and ensure public health [6] [7] [8] . However, the extremely high infectivity of the SARS-CoV-2 makes it a great challenge to prevent and control the pandemic. With daily increase of over 200,000 new infections worldwide recently, the COVID-19 patients in hospitals, communities, or public places produce enormous quantity of viruliferous aerosols and effluents with high infectious risk [9] [10] [11] [12] . More importantly, the SARS-CoV-2 was found to be able to survive in the wastewater for several days and thus the potential spread of the virus via sewage must not be neglected [13] [14] [15] . Such situations exert great pressure in the disinfection of wastewater and aerosols containing the SARS-CoV-2.",
+            "cite_spans": [
+                {
+                    "start": 206,
+                    "end": 209,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 331,
+                    "end": 334,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 335,
+                    "end": 338,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 339,
+                    "end": 342,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 343,
+                    "end": 346,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 532,
+                    "end": 535,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 536,
+                    "end": 539,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 540,
+                    "end": 543,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 896,
+                    "end": 899,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 900,
+                    "end": 904,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 905,
+                    "end": 909,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 910,
+                    "end": 914,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 1093,
+                    "end": 1097,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 1098,
+                    "end": 1102,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 1103,
+                    "end": 1107,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Several strategies, including numerous disinfectants [16] and UV-C light [17] , have been suggested for the disinfection against the COVID-19, in which chlorination is the most popular disinfection technology [16, 18] . As strong oxidants, chlorine-containing disinfectants, e.g., liquid chlorine, chlorine dioxide and sodium hypochlorite, can damage the cell wall of microbes or viruses and intervene their metabolism, and consequently destroy them by oxidation [9, 19] . Despite its high effectiveness in disinfection, chlorination is still disadvantaged in generating toxic and carcinogenic by-products such as chloroform or haloacetic acids [18] . Under the increasingly serious situation of the pandemic, disinfection against the SARS-CoV-2 tends to be normalized in a long period of time. Relying on heavy use of chlorine-containing disinfectants results in great environmental pressure. Thus, it is of critical importance and urgent to develop green and sustainable methods for efficiently disinfecting SARS-CoV-2 viruliferous aerosols and wastewater without forming environmentally hazardous by-products.",
+            "cite_spans": [
+                {
+                    "start": 53,
+                    "end": 57,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 73,
+                    "end": 77,
+                    "text": "[17]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 209,
+                    "end": 213,
+                    "text": "[16,",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 214,
+                    "end": 217,
+                    "text": "18]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 463,
+                    "end": 466,
+                    "text": "[9,",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 467,
+                    "end": 470,
+                    "text": "19]",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 645,
+                    "end": 649,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Herein, we report an environmental-friendly and efficient electrochemical disinfection method for inactivating the SARS-CoV-2 in chlorine-free aqueous solution, in which the virus is oxidized and killed by the oxidative species generated on an ultra-stable Ni foam anode. At a voltage of 5 V, a disinfection efficiency of 95% is reached in only 30 s and 99.99% in 5 min. Spectroscopic and spectrometric analyses combined density function theory calculations demonstrate that the formed O* on the lattice oxygen (O lat O*) of in-situ formed nickel oxide hydroxide (NiOOH) anode surface, can oxidize the peptide chains and decompose the peptide backbone of the receptor binding domain (RBD) of the SARS-CoV-2 spike glycoprotein, and thereby disables the virus.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Ni foam (5 mm thick) was purchased from Kunshan Yinghuixiong Electronic Technology Co., Ltd. Sodium carbonate (Na 2 CO 3 ) was purchased from Sinopharm Chemical Reagent Co., Ltd. The American green monkey kidney (Vero-E6) cells were obtained from China Center for Type Culture Collection (CCTCC, No. GDC146). Vero-E6 cells were cultured in Dulbecco's modified minimal essential medium (DMEM, Gibco), supplemented with 10% fetal bovine serum (FBS, Gibco), 100 lg/mL Streptomycin and 100 IU/mL Penicillin (Beyotime). SARS-CoV-2 (IVCAS 6.7512) was isolated from a COVID-19 patient in December of 2019 in Wuhan, China [3, 20] and propagated and titrated using Vero E6 cells.",
+            "cite_spans": [
+                {
+                    "start": 614,
+                    "end": 617,
+                    "text": "[3,",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 618,
+                    "end": 621,
+                    "text": "20]",
+                    "ref_id": "BIBREF19"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Chemicals, cell line and virus"
+        },
+        {
+            "text": "The inactivation efficacy was measured by 50% tissue culture infective dose (TCID 50 ) values. Briefly, 0.1 mL of SARS-CoV-2 stocks (around 2.5 \u00c2 10 7 TCID 50 /mL) was mixed with 4.9 mL of 2 mol/L Na 2 CO 3 solution. The mixture was then exposed to a twoelectrode configuration with nickel foam as both the anode and cathode electrodes. After that, virus mixtures were treated with different voltages for different time. The temperature and current values were also recorded at a constant voltage for each time point. Together with the control group without any treatment, viruses were serially diluted by DMEM containing 2% FBS and inoculated onto Vero E6 cells, which were cultured overnight in 96-well plates to a density of 1.5 \u00c2 10 4 cells/well before use. The sample at each dilution was tested in four wells. After incubation for 72 h, the TCID 50 /mL values were determined by observing cytopathic effects (CPE) and calculated by the method of Reed and Muench [21] .",
+            "cite_spans": [
+                {
+                    "start": 968,
+                    "end": 972,
+                    "text": "[21]",
+                    "ref_id": "BIBREF20"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Electrochemical inactivation"
+        },
+        {
+            "text": "The RBDs of Spike protein (Asn331-Val524 with 6 \u00c2 his tag in its C-termini) were purchased from Novoprotein (Shanghai, China).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Mass spectrometry characterization"
+        },
+        {
+            "text": "At first, 250 lg RBD was resuspended in 5 mL 2 mol/L Na 2 CO 3 aqueous solution and then added to the electrochemical cell. A constant voltage of 5 V was applied to the electrodes and 400 lL of the electrolyte solution was collected after 15 s, 30 s, 1 min, 2 min and 5 min of electrolysis. Then, the buffer of RBD samples was exchanged to 10 mmol/L NH 4 HCO 3 by ultrafiltration. After reduction and alkylation with tris(2-carboxyethyl)phosphine (TCEP) and iodoacetamide (IAA), the RBD samples were digested by trypsin overnight. The digests of RBD samples were analyzed by Vanquish Flex HPLC system coupled with Thermo Fusion Lumos orbitrap mass spectrometry (Thermo Fisher Scientific, Waltham, USA). 0.5 lg digests were first loaded onto a C18 trap column (3 cm \u00c2 150 lm, 5 lm C18 (SunChrom, Friedrichsdorf, Germany)) and separated by a C18 capillary column (15 cm \u00c2 150 lm, 1.9 lm C18 (Dr. Maisch, Ammerbuch, Germany)). The mass spectrometry (MS) was operated in positive mode with a data-dependent manner. The MS1 spectra were collected with orbitrap with a resolution of 120,000. The MS2 spectra were collected in a ''top-speed\" manner (3 s) with a resolution of 15,000 by orbitrap. The precursor ions with a charge state of 2 to 5 were isolated with an m/z window of 1.4 m/z and subjected to HCD with a normalized energy of 28%. The dynamic exclusion was enabled with an exclusion time of 60 s.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Mass spectrometry characterization"
+        },
+        {
+            "text": "All the MS data were processed by Maxquant (version 1.6.7). The data were searched against a customized database including S1 RBD and trypsin (bovine). The digestion rule was set as semispecific trypsin. The carbamidomethylation of cysteine was set as fix modification and the oxidation of all the amino acid residues expect cysteine was set as variable modification. The false detection rate (FDR) was set below 1%. The identified peptides with a score below 20 were excluded. The semi-peptides and peptides with oxidation only identified in sample with electrolytic treatment were used for oxidation sequence region and cleavage site analysis. Only the C-termini or N-termini of newly generated semi-peptides were considered as oxidation cleavage sites. The crystal structure of RBD from PDB file 6m0j was utilized for the structure analysis of the oxidation region and cleavage sites.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Mass spectrometry characterization"
+        },
+        {
+            "text": "Scan electron microscopy (SEM) was carried out on a Quanta 200F operated at an accelerating voltage of 20 kV. X-ray diffraction (XRD) measurements were measured on a SmartLab diffractometer with Cu Ka radiation. Spherical aberration corrected Transmission Electron Microscope (ACTEM) was conducted on an ARM300 microscope operated at an accelerating voltage of 300 kV. X-ray absorption spectroscopy (XAS) measurement was carried out at BL14W1 beamline of the Shanghai Synchrotron Radiation Facility (SSRF) operated at 3.5 GeV under ''top-up\" mode with a constant current of 160 mA. Energy calibration was recorded with a standard Ni foil using transmission mode, while all the in-situ XAS data about Ni foam were collected in fluorescence mode using a customdesigned cell. The in-situ cell was carried out on a two-electrode configuration with nickel foam as both the anode and cathode electrodes in 2 mol/L Na 2 CO 3 solution, which was performed under the condition as the electrochemical disinfection test except for the addition of SARS-CoV-2 virus. To probe the valence state and coordination structure of Ni foam at anode under the operating electrocatalytic condition, the Ni foam anode was pressed to a slice and put it onto the Kapton film (polyimide film) contacting with electrolyte. In-situ XAS measurements were firstly recorded under open-circuit voltage, and then operated at a constant voltage of 5 V.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Materials characterization"
+        },
+        {
+            "text": "Calibration of the anodic electrode potential to reversible hydrogen electrode (RHE) was conducted on a three-electrode configuration in 2 mol/L Na 2 CO 3 solution. At the applied voltage of 5 V between the anode and cathode in 2 mol/L Na 2 CO 3 solution, the anodic potential was measured as 3.12 V vs. Hg/HgO. The potential of the Hg/HgO electrode in 2 mol/L Na 2 CO 3 solution was determined to be 0.69 V vs. RHE. Therefore, the anodic potential was obtained as 3.81 V vs. RHE (3.12 + 0.69 = 3.81). The double layer charging curves were measured using cyclic voltammograms in the potential range of 0.3-0.4 V vs. Hg/HgO with the different scan rate from 20 to 200 mV/s. The current density difference at 0.35 V vs. Hg/HgO was plotted against the scan rate and the slope is the double layer capacitance (C dl ) of the commercial Ni foam.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Electrochemical measurement"
+        },
+        {
+            "text": "Density functional theory (DFT) calculations were performed using the Vienna Ab-initio Simulation Package (VASP) [22] [23] [24] [25] .",
+            "cite_spans": [
+                {
+                    "start": 113,
+                    "end": 117,
+                    "text": "[22]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 118,
+                    "end": 122,
+                    "text": "[23]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 123,
+                    "end": 127,
+                    "text": "[24]",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 128,
+                    "end": 132,
+                    "text": "[25]",
+                    "ref_id": "BIBREF24"
+                }
+            ],
+            "ref_spans": [],
+            "section": "DFT calculations"
+        },
+        {
+            "text": "The projector augmented-wave pseudopotential method with Perdew-Burke-Ernzerhof (PBE) exchange-correlation functional and a plane-wave cutoff energy of 400 eV was adopted [26] [27] [28] . The standard version of PAW pseudopotentials without using semi-core states were used for all elements. Van der Waals correction was calculated using the Zero-damping DFT-D3 method of Grimme [29, 30] . A two-dimensionally periodic model of the NiOOH was built in a 4 \u00c2 4 supercell to simulate the basal plane. A nanoribbon model of the NiOOH with 4 repeated units along the belt direction was built to simulate the edge. The vacuum thicknesses were set larger than 15 \u00c5 between the layers or the ribbons. A Monkhorst-Pack k-point sampling of 3 \u00c2 3 \u00c2 1 was selected for the two-dimensional models and 1 \u00c2 3 \u00c2 1 for the nanoribbon models [31] . In structural optimizations, the residual forces between atoms were converged below 0.03 eV/\u00c5. Dipole correction was applied to decouple the interactions between the slabs or nanoribbons.",
+            "cite_spans": [
+                {
+                    "start": 171,
+                    "end": 175,
+                    "text": "[26]",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 176,
+                    "end": 180,
+                    "text": "[27]",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 181,
+                    "end": 185,
+                    "text": "[28]",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 379,
+                    "end": 383,
+                    "text": "[29,",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 384,
+                    "end": 387,
+                    "text": "30]",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 824,
+                    "end": 828,
+                    "text": "[31]",
+                    "ref_id": "BIBREF30"
+                }
+            ],
+            "ref_spans": [],
+            "section": "DFT calculations"
+        },
+        {
+            "text": "The free energy of (H + + e \u00c0 ) was calculated as that of 1 / 2 H 2 . The free energy of gas molecules was calculated as E total + ZPE -TS, where E total is DFT-calculated total energy, ZPE is the zero-point energy, T is temperature, and S is the entropy. The experimental values of the ZPE -TS parts from the NIST database were used for molecules. The free energies of adsorbed species were calculated as E total + ZPE \u00c0 TS vib , where the S vib are the entropy parts from non-imaginary vibrations based on harmonic oscillation approximation. At the applied voltage of 5 V for the electrolysis, the anodic potential corresponds to 3.81 V vs. the relative hydrogen electrode (RHE), at which the basal plane of NiOOH can be fully dehydrogenated and oxidized to NiO 2 (Fig. S8 online) . Thus, NiO 2 is used as the final surface for studying the reactions in the basal plane.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 766,
+                    "end": 782,
+                    "text": "(Fig. S8 online)",
+                    "ref_id": null
+                }
+            ],
+            "section": "DFT calculations"
+        },
+        {
+            "text": "We set up an electrochemical system to inactivate the SARS-CoV-2 in a two-electrode electrolytic cell by using porous nickel foam as the cathode and in-situ formed NiOOH over the nickel foam as the anode in 2 mol/L Na 2 CO 3 aqueous solution (Fig. 1a, b and Fig. S1 online) . The skeleton of the original nickel foam is in metallic state (Fig. S1 online) , which ensures high conductivity of the electrodes. The pore size of the nickel foam electrode is of a few hundred micrometers (Fig. 1c and Fig. S2 online) , which is beneficial for increasing the number of active sites and promoting the diffusion of the SARS-CoV-2 virus during the electrochemical oxidation process. The double layer capacitance C dl of the nickel foam is 5.4 mF/cm 2 , which was measured by cyclic voltammograms in the potential range of 0.3-0.4 V vs. Hg/HgO with different scan rates (Fig. S3 online) . In open circuit case, the SARS-CoV-2 virus can hardly be inactivated in the 2 mol/L Na 2 CO 3 aqueous solution for 5 or 10 min (Fig. 1d, e) , as the 50% TCID 50 values for group incubation were similar to that of the SARS-CoV-2 stock without any treatment. In contrast, the virus titer was significantly reduced along with the increase of applied voltage in the electrolysis. Within 5 min, more than 99% of the viruses can be inactivated at applied voltages up to 4 V and further increasing the applied voltage obviously enhances the inactivation efficiency (Fig. 1d) . At 5 V, the inactivation ratio reaches 95% in only 30 s and 99% in 2 min and the virus titer reduces to below the detection limit (>99.99%) after electrolytic treatment for 5 min, exhibiting prominently higher inactivation rate than that at 4 V (Fig. 1e) . Parallel experiments were conducted at applied voltages of 2, 4 and 5 V for 5 min (Fig. 1b) , respectively, which shows that the inactivation ratios above 90% are all very close and thereby demonstrates the well replicability of the electrochemical inactivation efficiency. The temperature of the electrolyte solution was kept below 37\u00b0C at 5 V for 2 min or at 4 V for 10 min (Fig. S4 online) , indicating that the virucidal activity is not caused by the heat. Together, these results suggest that the SARS-CoV-2 virus can be effectively and efficiently inactivated in the water electrolysis process. For application of the process, the viruliferous aerosols can be ventilated into the system and then be disinfected via flowing through the microporous and air-permeable Ni-foam electrode. Viruliferous wastewater can be directly disinfected combined with a water circulation system through the Ni-foam electrode to ensure full inactivation of the virus in the solution. Long-term stability test shows that the electrolytic system can run stably for more than 1000 h at the working voltage of 4 or 5 V (Fig. S5 online) , exhibting significant potential in continuous inactivation of the SARS-CoV-2.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 242,
+                    "end": 253,
+                    "text": "(Fig. 1a, b",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 258,
+                    "end": 273,
+                    "text": "Fig. S1 online)",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 338,
+                    "end": 354,
+                    "text": "(Fig. S1 online)",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 483,
+                    "end": 511,
+                    "text": "(Fig. 1c and Fig. S2 online)",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 860,
+                    "end": 876,
+                    "text": "(Fig. S3 online)",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 1006,
+                    "end": 1018,
+                    "text": "(Fig. 1d, e)",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 1437,
+                    "end": 1446,
+                    "text": "(Fig. 1d)",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 1694,
+                    "end": 1703,
+                    "text": "(Fig. 1e)",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 1788,
+                    "end": 1797,
+                    "text": "(Fig. 1b)",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 2082,
+                    "end": 2098,
+                    "text": "(Fig. S4 online)",
+                    "ref_id": null
+                },
+                {
+                    "start": 2808,
+                    "end": 2824,
+                    "text": "(Fig. S5 online)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Electrochemical inactivation of SARS-CoV-2"
+        },
+        {
+            "text": "The RBD of the SARS-CoV-2 spike (S1) glycoprotein directly interacts with the human cellular receptor ACE2, which is essential for virus entry in causing the pneumonia [20, 32, 33] . Thus, we speculate that the structures of the RBD may be broken during the electrochemical inactivation process, which thereby blocks infection. MS-based proteomic analysis was carried out to explore the decomposition of RBDs in the dynamic electrolysis process. The RBDs were resuspended in 2 mol/L Na 2 CO 3 in the electrochemical system at a constant voltage of 5 V. Significant reduction in the quantity of the RBDs during the electrolysis process was observed as time increases (Fig. 2a) . After electrolysis for 5 min, the relative abundance of the RBDs was reduced to about 6.5% (Fig. 2b) . Reactive oxygen species (ROS) are recognized as efficient reagents for degradation of organic water contaminants and also proteins [34, 35] . Several cleavage sites were identified after electrochemical decomposition of the RBDs, which confirmed the degradation of the RBDs during the electrolysis (Fig. 2c) . Interestingly, 13 of 27 identified electrochemical cleavage sites are aromatic amino acids including tyrosine, phenylalanine and tryptophan, which all have high reactivity towards the ROS [36] . Moreover, these cleavage sites are all closely located in the structure of the RBD (Fig. 2c) . The high percentage of aromatic amino acids (15 tyrosines, 2 tryptophans and 14 phenylalanines) in the RBD sequence makes it easy to be attacked by the ROS and subsequently decomposed. In order to further gain a detailed picture of the oxidation and degradation process of the RBDs, we further analyzed the RBDs oxidation statuses at different electrolysis time. Several peptides with different oxidation levels were characterized, most of which can be identified in the RBDs processed with 15 s of electrolysis (Table S2 online). As the treatment time increases, the oxidized proteins were further degraded and cleaved into small peptides or amino acid fragments. These results suggest that the electrochemical inactivation of the SARS-CoV-2 is at least partially due to the oxidative cleavage and decomposition of the RBDs.",
+            "cite_spans": [
+                {
+                    "start": 168,
+                    "end": 172,
+                    "text": "[20,",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 173,
+                    "end": 176,
+                    "text": "32,",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 177,
+                    "end": 180,
+                    "text": "33]",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 912,
+                    "end": 916,
+                    "text": "[34,",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 917,
+                    "end": 920,
+                    "text": "35]",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 1279,
+                    "end": 1283,
+                    "text": "[36]",
+                    "ref_id": "BIBREF35"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 666,
+                    "end": 675,
+                    "text": "(Fig. 2a)",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 769,
+                    "end": 778,
+                    "text": "(Fig. 2b)",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 1079,
+                    "end": 1088,
+                    "text": "(Fig. 2c)",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 1369,
+                    "end": 1378,
+                    "text": "(Fig. 2c)",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 1893,
+                    "end": 1902,
+                    "text": "(Table S2",
+                    "ref_id": null
+                }
+            ],
+            "section": "Characterization of RBD decomposition"
+        },
+        {
+            "text": "DFT calculations were further performed to simulate the oxidation cleavage of the virus proteins such as RBD during the electrochemical inactivation of the SARS-CoV-2 virus on the anode catalyst surface, where the oxidation of water takes place and the ROS species are generated. A single-layer NiOOH was adopted to represent the anode catalyst, since the anodic nickel foam was in-situ oxidized to NiOOH as indicated in the XRD pattern and SEM of the used anode after the electrolysis, which show newly formed composition of NiOOH except for the metallic nickel skeleton (Figs. S1 and S6 online). This is also confirmed by in-situ XAS data of Ni K-edge of the anode, showing that the absorption edge shifts to higher energy levels during the water electrolysis (Fig. 3a, b) . High-angle annular dark field-scanning transmission electron microscopy (HAADF-STEM) characterizations also show that the anode catalyst is in a layered morphology with d-spacing of 2.4 \u00c5 in the crystal lattice corresponding to the (0 0 2) plane of NiOOH ( Fig. 3c and Fig. S7 online) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 762,
+                    "end": 774,
+                    "text": "(Fig. 3a, b)",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 1034,
+                    "end": 1041,
+                    "text": "Fig. 3c",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 1046,
+                    "end": 1061,
+                    "text": "Fig. S7 online)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Understanding the inactivation mechanism"
+        },
+        {
+            "text": "The oxygen evolution reaction (OER) at the lattice oxygen (O lat ) site in the basal plane requires an equilibrium potential of only 1.99 V vs. RHE (Fig. 3d , see more details in the Supplementary material). Thus, at the applied voltage of 5 V for the electrolysis, which corresponds to anodic potential of 3.81 V vs. the RHE (see more details in Supplementary material), the abundant O lat sites in the basal plane can serve as active sites for the OER. To simplify the oxidation and cleavage mechanism of the virus protein, we adopted a propionyl ethylamine molecule containing a peptide bond and two a-carbon atoms to represent a typical unit of protein. The reaction intermediate O lat O* as the most oxidative surface species can facilely abstract a hydrogen atom from both a-carbon sites, generating a-carbon free radicles and O lat OH* species (Fig. 3e) . The OH part of the O lat OH* may transfer to the free radicle sites to form a-carbon alcohols with significant free energy gains of around 2.7 eV. The formation of a-carbon radicles can also induce the cleavage of the peptide backbone with the help of O 2 [36] . The propionyl ethylamine can also be adsorbed on the oxygen vacancy (O v ) site generated from desorption of the O lat O* in the OER process (Fig. 3f) . After four steps of electron-coupled OH \u00c0 attack on the adsorbed peptide bond, the propionyl ethylamine can be favorably decomposed to acetyl hydroxylamine and propionic acid even at the equilibrium potential of 1.99 V for the OER at the basal plane O lat sites (Fig. 3f) . Similar scenarios are also obtained at the edge of the NiOOH catalyst, where the propionyl ethylamine can be oxidized by the O* species and the adsorbed peptide bond can be easily decomposed at the Ni site (Fig. S9 online) . Oxidation of another peptide molecule, i.e., glycylglycine, by the O lat O* in the basal plane and O* at the edge were also calculated which presents similar free energy pathways compared with those of the propionyl ethylamine molecule (Fig. S10 online) . These results point out a feasible way of deactivating the virus via oxidizing and decomposing the virus protein by the ROS with the help of active sites on the anodic catalyst surface.",
+            "cite_spans": [
+                {
+                    "start": 1119,
+                    "end": 1123,
+                    "text": "[36]",
+                    "ref_id": "BIBREF35"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 148,
+                    "end": 156,
+                    "text": "(Fig. 3d",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 851,
+                    "end": 860,
+                    "text": "(Fig. 3e)",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 1267,
+                    "end": 1276,
+                    "text": "(Fig. 3f)",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 1541,
+                    "end": 1550,
+                    "text": "(Fig. 3f)",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 1759,
+                    "end": 1775,
+                    "text": "(Fig. S9 online)",
+                    "ref_id": null
+                },
+                {
+                    "start": 2014,
+                    "end": 2031,
+                    "text": "(Fig. S10 online)",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Understanding the inactivation mechanism"
+        },
+        {
+            "text": "In summary, we present an eco-friendly and efficient electrochemical disinfection approach to treat with the COVID-19 via inactivating the SARS-CoV-2 virus in a water electrolysis process. It employs Ni-foam electrodes and Na 2 CO 3 aqueous solution and is free of hazardous products. High inactivation efficiency can be achieved at an applied voltage of 5 V, where the inactivation ratio reaches 95% in only 30 s, up to 99% in 2 min and 99.99% in 5 min. The electrolytic system can run stably for more than 1000 h at the working voltage. Experimental and theoretical studies of the inactivation mechanism indicate that the RBDs of the SARS-CoV-2 virus could be oxidized and degraded on the in-situ formed NiOOH surface at the anode during the electrolysis, which disables the virus and blocks the infection. This strategy provides an environmental-friendly route for highly efficient disinfection of the SARS-CoV-2 viruliferous effluents and could offer significant help for preventing the pandemic COVID-19.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "On the origin and continuing evolution of SARS-CoV-2",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Lu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Cui",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Qian",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nat Sci Rev",
+            "volume": "7",
+            "issn": "",
+            "pages": "1012--1035",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "A trial of Lopinavir-Ritonavir in adults hospitalized with severe Covid-19",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Cao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Wen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "N Engl J Med",
+            "volume": "382",
+            "issn": "",
+            "pages": "1787--99",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Remdesivir and chloroquine effectively inhibit the recently emerged novel coronavirus (2019-nCoV) in vitro",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Cao",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Cell Res",
+            "volume": "30",
+            "issn": "",
+            "pages": "269--71",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "A human neutralizing antibody targets the receptor-binding site of SARS-CoV-2",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Shi",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Shan",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Duan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nature",
+            "volume": "584",
+            "issn": "",
+            "pages": "120--124",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Preliminary evidence from a multicenter prospective observational study of the safety and efficacy of chloroquine for the treatment of COVID-19",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Xiao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nat Sci Rev",
+            "volume": "7",
+            "issn": "",
+            "pages": "1428--1464",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Countries test tactics in ''war\" against COVID-19",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Cohen",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Kupferschmidt",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Science",
+            "volume": "367",
+            "issn": "",
+            "pages": "1287--1295",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Thoughts on what chemists can contribute to fighting SARS-CoV-2 -a short note on hand sanitizers, drug candidates and outreach",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Opatz",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Senn-Bilfinger",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Richert",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Angew Chem Int Ed",
+            "volume": "59",
+            "issn": "",
+            "pages": "9236--9276",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "A systematic approach is needed to contain COVID-19 globally",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Meadows",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Sci Bull",
+            "volume": "65",
+            "issn": "",
+            "pages": "876--884",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Disinfection technology of hospital wastes and wastewater: suggestions for disinfection strategy during coronavirus Disease 2019 (COVID-19) pandemic in China",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Shen",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Ye",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Environ Pollut",
+            "volume": "262",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "An environmental and health perspective for COVID-19 outbreak: meteorology and air quality influence, sewage epidemiology indicator, hospitals disinfection, drug therapies and recommendations",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Barcelo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Environ Chem Eng",
+            "volume": "8",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Aerodynamic analysis of SARS-CoV-2 in two Wuhan hospitals",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Ning",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nature",
+            "volume": "582",
+            "issn": "",
+            "pages": "557--60",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Sanitizing agents for virus inactivation and disinfection",
+            "authors": [
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jyc",
+                    "middle": [],
+                    "last": "Lim",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Xue",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "View",
+            "volume": "1",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "COVID-19: The environmental implications of shedding SARS-CoV-2 in human faeces",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Quilliam",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Weidmann",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Moresco",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Environ Int",
+            "volume": "140",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Rethinking wastewater risks and monitoring in light of the COVID-19 pandemic",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Bogler",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Packman",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Furman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nat Sustain",
+            "volume": "3",
+            "issn": "",
+            "pages": "981--90",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Measurement of SARS-CoV-2 RNA in wastewater tracks community infection dynamics",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Peccia",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Zulli",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Brackney",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nat Biotechnol",
+            "volume": "38",
+            "issn": "",
+            "pages": "1164--1171",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Hypochlorous acid: a review",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Block",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Rowan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Oral Maxillofac Surg",
+            "volume": "78",
+            "issn": "",
+            "pages": "1461--1467",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Back to normal: an old physics route to reduce SARS-CoV-2 transmission in indoor spaces",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Garc\u00eda De Abajo",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Hern\u00e1ndez",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Kaminer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "ACS Nano",
+            "volume": "14",
+            "issn": "",
+            "pages": "7704--7717",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Disinfection threatens aquatic ecosystems",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Sills",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Tang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Science",
+            "volume": "368",
+            "issn": "",
+            "pages": "146--153",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Sustainability of coronavirus on different surfaces",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Suman",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Javaid",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Haleem",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Clin Exp Hepatol",
+            "volume": "10",
+            "issn": "",
+            "pages": "386--90",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "A pneumonia outbreak associated with a new coronavirus of probable bat origin",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "X-L",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X-G",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nature",
+            "volume": "579",
+            "issn": "",
+            "pages": "270--273",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "A simple method of estimating fifty per cent endpoints",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Reed",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Muench",
+                    "suffix": ""
+                }
+            ],
+            "year": 1938,
+            "venue": "Am J Hyg",
+            "volume": "27",
+            "issn": "",
+            "pages": "493--500",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Ab initio molecular dynamics for liquid metals",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Kresse",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Hafner",
+                    "suffix": ""
+                }
+            ],
+            "year": 1993,
+            "venue": "Phys Rev B",
+            "volume": "47",
+            "issn": "",
+            "pages": "558--61",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Efficient iterative schemes for ab initio total-energy calculations using a plane-wave basis set",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Kresse",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Furthm\u00fcller",
+                    "suffix": ""
+                }
+            ],
+            "year": 1996,
+            "venue": "Phys Rev B",
+            "volume": "54",
+            "issn": "",
+            "pages": "11169--86",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Ab initio molecular-dynamics simulation of the liquidmetal-amorphous-semiconductor transition in germanium",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Kresse",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Hafner",
+                    "suffix": ""
+                }
+            ],
+            "year": 1994,
+            "venue": "Phys Rev B",
+            "volume": "49",
+            "issn": "",
+            "pages": "14251--69",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Efficiency of ab-initio total energy calculations for metals and semiconductors using a plane-wave basis set",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Kresse",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Furthm\u00fcller",
+                    "suffix": ""
+                }
+            ],
+            "year": 1996,
+            "venue": "Comput Mater Sci",
+            "volume": "6",
+            "issn": "",
+            "pages": "15--50",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "From ultrasoft pseudopotentials to the projector augmented-wave method",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Kresse",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Joubert",
+                    "suffix": ""
+                }
+            ],
+            "year": 1999,
+            "venue": "Phys Rev B",
+            "volume": "59",
+            "issn": "",
+            "pages": "1758--75",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Generalized gradient approximation made simple",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Perdew",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Burke",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ernzerhof",
+                    "suffix": ""
+                }
+            ],
+            "year": 1996,
+            "venue": "Phys Rev Lett",
+            "volume": "77",
+            "issn": "",
+            "pages": "3865--3873",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Projector augmented-wave method",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Bl\u00f6chl",
+                    "suffix": ""
+                }
+            ],
+            "year": 1994,
+            "venue": "Phys Rev B",
+            "volume": "50",
+            "issn": "",
+            "pages": "17953--79",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "A consistent and accurate ab initio parametrization of density functional dispersion correction (DFT-D) for the 94 elements H-Pu",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Grimme",
+                    "suffix": ""
+                },
+                {
+                    "first": "Antony",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Ehrlich",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "J Chem Phys",
+            "volume": "132",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Effect of the damping function in dispersion corrected density functional theory",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Grimme",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Ehrlich",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Goerigk",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "J Comput Chem",
+            "volume": "32",
+            "issn": "",
+            "pages": "1456--65",
+            "other_ids": {}
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Special points for Brillouin-zone integrations",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Monkhorst",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Pack",
+                    "suffix": ""
+                }
+            ],
+            "year": 1976,
+            "venue": "Phys Rev B",
+            "volume": "13",
+            "issn": "",
+            "pages": "5188--92",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Bat-to-human: spike features determining ''host jump\" of coronaviruses SARS-CoV, MERS-CoV, and beyond",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Lu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Gao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Trends Microbiol",
+            "volume": "23",
+            "issn": "",
+            "pages": "468--78",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "A noncompeting pair of human neutralizing antibodies block COVID-19 virus binding to its receptor ACE2",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Shen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Science",
+            "volume": "368",
+            "issn": "",
+            "pages": "1274--1282",
+            "other_ids": {}
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Characterization of a stirred tank electrochemical cell for water disinfection processes",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Polcaro",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Vacca",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Mascia",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Electrochim Acta",
+            "volume": "52",
+            "issn": "",
+            "pages": "2595--602",
+            "other_ids": {}
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "The effect of electrode material on the generation of oxidants and microbial inactivation in the electrochemical disinfection processes",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Jeong",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Kim",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Yoon",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Water Res",
+            "volume": "43",
+            "issn": "",
+            "pages": "895--901",
+            "other_ids": {}
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Hydroxyl radical-mediated modification of proteins as probes for structural proteomics",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Chance",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Chem Rev",
+            "volume": "107",
+            "issn": "",
+            "pages": "3514--3557",
+            "other_ids": {}
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Then he subsequently joined DICP as a postdoctoral fellow. His research focuses on novel non-precious metal catalysts for electrochemical energy-related catalysis",
+            "authors": [],
+            "year": 2018,
+            "venue": "Chinese Academy of Sciences",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "His current research interest focuses on structural proteomics and advanced light source-mass spectrometry, including intact protein and protein complex analyses by using self",
+            "authors": [],
+            "year": null,
+            "venue": "Fangjun Wang received his B.S. degree at Zhejiang University in 2005 and Ph.D. degree in Analytical Chemistry at Dalian Institute of Chemical Physics in 2011 with the supervision of Prof. Hanfa Zou",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "He subsequently joined CAS Key Laboratory of Special Pathogens and Biosafety, as an associate Professor in 2012, and became a full Professor in 2020. His research interest is fundamental researches in regulation of virulence genes and drug-resistance in human pathogens",
+            "authors": [],
+            "year": 2010,
+            "venue": "Microbiology from Wuhan Institute of Virology, CAS in 2011. Since",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "he has served as an iChEM Research fellow at Xiamen University. He also served as a visiting scholar at Stanford University between 2015 and 2016. His research interest includes fundamental and applied research in heterogeneous catalysis and electrocatalysis, aiming at highly efficient activation and conversion of energy molecules such as O 2",
+            "authors": [],
+            "year": 2015,
+            "venue": "Dehui Deng received his Ph.D. degree in Physical Chemistry from DICP, CAS in 2013",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "(Color online) Electrochemical inactivation of the SARS-CoV-2 virus in water electrolysis using nickel foam as the cathode and in-situ formed NiOOH over the nickel foam as the anode in Na 2 CO 3 aqueous solution. (a) Schematic diagram of the electrochemical inactivation process. (b) Photograph and (c) SEM image of the pristine Ni foam for both electrodes. (d) Inactivation ratio of the virus as a function of applied voltage in the electrolysis. The inactivation process was conducted for 5 min at each voltage. (e) Inactivation ratio as a function of time at open circuit (0 V) and constant voltages of 2, 4 and 5 V. All inactivation experiments were conducted using porous nickel foam electrodes with sizes of 1 \u00c2 1 \u00c2 0.5 cm as the anode and cathode in 2 mol/L Na 2 CO 3 aqueous electrolyte solution.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "MS analysis of the decomposition of the RBDs in the water electrolysis. (a) The LC-MS/MS base peak chromatograms and (b) relative abundances of the RBD samples treated with different electrolysis times in 2 mol/L Na 2 CO 3 . (c) The oxidation sequence regions and electrochemical oxidative cleavage sites in the RBD (PDB: 6m0j). The other electrochemical inactivation conditions are the same as those inFig. 1.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "(Color online) The oxidation and cleavage mechanism of a peptide bond on the anode. (a) In-situ electrolytic cell for the XAS characterization of the anodic Ni foam in the water electrolysis. (b) The in-situ XAS data of the Ni K-edge of the anode at different electrolysis time. The subtle change of the spectra in the initial stage is probably because the main part of the anode is still metallic Ni foam with only surface oxidized. (c) HAADF-STEM image of the anodic Ni foam after electrochemical inactivation of the SARS-CoV-2 virus at a constant voltage of 5 V. (d) DFT calculated oxygen evolution rection (OER) mechanism at the lattice oxygen (O lat ) site in the basal plane of the dehydrogenated NiOOH (NiO 2 ) at electrode potentials of 0 and 1.99 V vs. RHE. The insets show the model of NiO 2 and the atomic structures of the reaction intermediates. (e) DFT calculated oxidation mechanism of propionyl ethylamine by the O lat O* species. (f) DFT calculated cleavage mechanism of the adsorbed propionyl ethylamine at the oxygen vacancy (O v ) site. (g) Reaction cycle for the cleavage of the peptide bond under the electro-coupled OH \u00c0 attack.",
+            "latex": null,
+            "type": "figure"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "This work was supported by the National Natural Science Foundation of China (21890753, 21988101 to Dehui Deng, 91853101 to Fangjun Wang, and 91845106 to Liang Yu), the Strategic Priority Research Program of the Chinese Academy of Sciences (XDB36030200 to Dehui Deng), the Youth Innovation Promotion Association of the Chinese Academy of Sciences (Y201936 to Dehui Deng, Y201750 to Yangbo Hu). We thank Prof. Zhengli Shi's lab for providing the SARS-CoV-2 virus and colleagues from BSL-3 Laboratory of Wuhan Institute of Virology for their help during this study. We also thank the staff at the BL14W1 beamline of Shanghai Synchrotron Radiation Facilities (SSRF) for assistance with the XAS measurements. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Acknowledgments"
+        },
+        {
+            "text": "The authors declare that they have no conflict of interest.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conflict of interest"
+        }
+    ]
+}

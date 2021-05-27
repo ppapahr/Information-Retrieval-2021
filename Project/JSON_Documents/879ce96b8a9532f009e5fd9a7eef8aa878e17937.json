@@ -1,0 +1,846 @@
+{
+    "paper_id": "879ce96b8a9532f009e5fd9a7eef8aa878e17937",
+    "metadata": {
+        "title": "Journal Pre-proof Nano-size Dependence in the Adsorption by the SARS-CoV-2 Spike Protein over Gold Colloid Kazushige Yokoyama (Conceptualization) (Data curation) (Formal analysis) (Funding acquisition) (Methodology) (Project administration) (Resources) (Supervision) (Validation) (Visualization) (Writing -original draft) (Writing -review and editing), Akane Ichiki (Data curation) (Formal analysis) (Methodology) (Resources) (Writing -review and editing) Nano-size Dependence in the Adsorption by the SARS-CoV-2 Spike Protein over Gold Colloid AUTHOR INFORMATION Corresponding Author",
+        "authors": [
+            {
+                "first": "Kazushige",
+                "middle": [],
+                "last": "Yokoyama",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "The State University of New York Geneseo College",
+                    "location": {
+                        "postCode": "14454",
+                        "settlement": "Geneseo",
+                        "region": "New York",
+                        "country": "United States"
+                    }
+                },
+                "email": "yokoyama@geneseo.edu"
+            },
+            {
+                "first": "Akane",
+                "middle": [],
+                "last": "Ichiki",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Gold nano-particles were coated with the spike protein (S protein) of SARS-CoV-2 and exposed to increasingly acidic conditions. Their responses were investigated by monitoring the surface plasmon resonance (SPR) band shift. As the external pH was gradually changed from neutral pH to pH ~2 the peak of the SPR band showed a significant red-shift, with a sigmoidal feature implying the formation of the gold-protein aggregates. The coating of S protein changed the surface property of the gold enough to extract the coverage fraction of protein over nano particles, \u0398, which did not exhibit clear nano-size dependence. The geometrical simulation to explain \u0398 showed the average axial length to be a = 7. 25 nm and b = 8.00 nm when the S-protein was hypothesized as a prolate shape with spiking-out orientation. As the pH value externally hopped between pH~3 and pH~10, a behavior of reversible protein folding was observed for particles with diameters >30 nm. It was concluded that S protein adsorption conformation was impacted by the size (diameter, d) of a core nano-gold, where head-to-head dimerized S protein J o u r n a l P r e -p r o o f 2 was estimated for d \uf0a3 80 nm and a parallel in opposite directions formation for d = 100 nm.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "A critical initial stage of the infection of SARS-CoV-2 (Severe Acute Reparatory Syndrome Corona Virus 2) is attributed to receptor binding domain (RBD) of spike protein (S protein) of SARS-CoV-2 to the human ACE2 (angiotensin converting enzyme 2) receptor. Extensive studies identified that S protein consists of an S1 region (mainly RBD) and S2 region (a mechanical thruster for the cell fusion process). [22] [23] [24] [25] [26] [27] [28] A priming of the S protein by a protease [29] [30] [31] [32] [33] promotes a drastic conformational change in S2 segment of the S protein into a hair-pin intermediate accessing the target cell surface at the pre-fusion process, 23, 34-36 a sequential protein folding enables the virus to conduct cell fusion and launch the RNA embedded in SARS-CoV-2 [37] [38] [39] into the cell and initiating the virus replications. Tremendous effort and clinical trials have been conducted to investigate the inhibition or inhibitors of SARS-CoV-2. [40] [41] [42] As one of major approaches in the vaccine development, preventing the cell-fusion process by deactivating s protein could be considered as one of effective approaches. Because of nano-size dimension of SARS-CoV-2, several efforts of decorating S protein over the nano-particle (i.e., nano-particles functionalized with S protein) have been providing information on an interaction of S protein by taking advantage of spectroscopic signals originating from nano-particles. [43] [44] [45] [46] [47] [48] [49] [50] [51] [52] For example, Gorshkov and et. al. , probed a binding of S protein to ACE2 by utilizing fluorescent quantum dots (QDs) functionalized with S proteins. 44 A model system of the S protein can be potentially used as an in vitro tool for drug screening. 23 Our prior studies revealed that a relatively wider range of pH value can prepare critical conformation for a protein networking as it is adsorbed over the gold surface. Especially, the acidic condition creates the unfolded conformation leading to the aggregation of the gold colloids through an interaction between the adsorbed proteins. The basic condition, on the other J o u r n a l P r e -p r o o f hand, forms folded protein conformation avoiding the protein-protein networking and preventing the aggregates. As an advantage of utilizing the gold colloid, the formation or deformation of gold colloid aggregates are sensitively reflected by the peak position of the SPR (Surface Plasmon Resonance) band. Above pH 7, the absorption peak around 525 nm corresponding to the dispersed gold colloids is exhibited. On the other hand, below pH 4, the formation of the gold colloid aggregates shows a red-shift (i.e., peak around 630 nm). The SPR band peak shift as a function of the pH was best explained by a sigmoidal feature, and our group established a method to use the parameters from the fit to transform the coverage ratio of the protein over the gold colloidal surface. 53 In order to reproduce the coverage ratio, it required to involve a geometrical information of the protein adsorption. As of now, our spectroscopic study utilizing the pH induced conformational change is the only successful approach explains the most plausible adsorption orientation. 54 As another reasons to require us to cover the wider pH range, it should be noted that the highly acidic condition (i.e., around pH 4) is speculated to prepares the up conformation in one of three protomers of the RBD side of an S protein before initiating the binding to the ACE2 and also is considered to model the pH condition after endocytosis of SARS-CoV-2 to achieve a cell fusion process. 8, 22, 35, 55, 56 ",
+            "cite_spans": [
+                {
+                    "start": 407,
+                    "end": 411,
+                    "text": "[22]",
+                    "ref_id": null
+                },
+                {
+                    "start": 412,
+                    "end": 416,
+                    "text": "[23]",
+                    "ref_id": null
+                },
+                {
+                    "start": 417,
+                    "end": 421,
+                    "text": "[24]",
+                    "ref_id": null
+                },
+                {
+                    "start": 422,
+                    "end": 426,
+                    "text": "[25]",
+                    "ref_id": null
+                },
+                {
+                    "start": 427,
+                    "end": 431,
+                    "text": "[26]",
+                    "ref_id": null
+                },
+                {
+                    "start": 432,
+                    "end": 436,
+                    "text": "[27]",
+                    "ref_id": null
+                },
+                {
+                    "start": 437,
+                    "end": 441,
+                    "text": "[28]",
+                    "ref_id": null
+                },
+                {
+                    "start": 483,
+                    "end": 487,
+                    "text": "[29]",
+                    "ref_id": null
+                },
+                {
+                    "start": 488,
+                    "end": 492,
+                    "text": "[30]",
+                    "ref_id": null
+                },
+                {
+                    "start": 493,
+                    "end": 497,
+                    "text": "[31]",
+                    "ref_id": null
+                },
+                {
+                    "start": 498,
+                    "end": 502,
+                    "text": "[32]",
+                    "ref_id": null
+                },
+                {
+                    "start": 503,
+                    "end": 507,
+                    "text": "[33]",
+                    "ref_id": null
+                },
+                {
+                    "start": 792,
+                    "end": 796,
+                    "text": "[37]",
+                    "ref_id": null
+                },
+                {
+                    "start": 797,
+                    "end": 801,
+                    "text": "[38]",
+                    "ref_id": null
+                },
+                {
+                    "start": 802,
+                    "end": 806,
+                    "text": "[39]",
+                    "ref_id": null
+                },
+                {
+                    "start": 977,
+                    "end": 981,
+                    "text": "[40]",
+                    "ref_id": null
+                },
+                {
+                    "start": 982,
+                    "end": 986,
+                    "text": "[41]",
+                    "ref_id": null
+                },
+                {
+                    "start": 987,
+                    "end": 991,
+                    "text": "[42]",
+                    "ref_id": null
+                },
+                {
+                    "start": 1463,
+                    "end": 1467,
+                    "text": "[43]",
+                    "ref_id": null
+                },
+                {
+                    "start": 1468,
+                    "end": 1472,
+                    "text": "[44]",
+                    "ref_id": null
+                },
+                {
+                    "start": 1473,
+                    "end": 1477,
+                    "text": "[45]",
+                    "ref_id": null
+                },
+                {
+                    "start": 1478,
+                    "end": 1482,
+                    "text": "[46]",
+                    "ref_id": null
+                },
+                {
+                    "start": 1483,
+                    "end": 1487,
+                    "text": "[47]",
+                    "ref_id": null
+                },
+                {
+                    "start": 1488,
+                    "end": 1492,
+                    "text": "[48]",
+                    "ref_id": null
+                },
+                {
+                    "start": 1493,
+                    "end": 1497,
+                    "text": "[49]",
+                    "ref_id": null
+                },
+                {
+                    "start": 1498,
+                    "end": 1502,
+                    "text": "[50]",
+                    "ref_id": null
+                },
+                {
+                    "start": 1503,
+                    "end": 1507,
+                    "text": "[51]",
+                    "ref_id": null
+                },
+                {
+                    "start": 1508,
+                    "end": 1512,
+                    "text": "[52]",
+                    "ref_id": null
+                },
+                {
+                    "start": 1526,
+                    "end": 1546,
+                    "text": "Gorshkov and et. al.",
+                    "ref_id": null
+                },
+                {
+                    "start": 1663,
+                    "end": 1665,
+                    "text": "44",
+                    "ref_id": null
+                },
+                {
+                    "start": 1762,
+                    "end": 1764,
+                    "text": "23",
+                    "ref_id": null
+                },
+                {
+                    "start": 2942,
+                    "end": 2944,
+                    "text": "53",
+                    "ref_id": "BIBREF52"
+                },
+                {
+                    "start": 3229,
+                    "end": 3231,
+                    "text": "54",
+                    "ref_id": null
+                },
+                {
+                    "start": 3627,
+                    "end": 3629,
+                    "text": "8,",
+                    "ref_id": null
+                },
+                {
+                    "start": 3630,
+                    "end": 3633,
+                    "text": "22,",
+                    "ref_id": null
+                },
+                {
+                    "start": 3634,
+                    "end": 3637,
+                    "text": "35,",
+                    "ref_id": null
+                },
+                {
+                    "start": 3638,
+                    "end": 3641,
+                    "text": "55,",
+                    "ref_id": null
+                },
+                {
+                    "start": 3642,
+                    "end": 3644,
+                    "text": "56",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "INTRODUCTION"
+        },
+        {
+            "text": "A total of nine different sizes of gold colloidal particles with diameter (d) of 10, 15, 20, 30, 40, 50, 60, 80 , and 100 nm were prepared (Ted Pella Inc., Redding, California, USA), and the detailed description can be found in our previous report. 54 The Spike protein (S protein) of SARS-CoV-2 (COVID-19) containing residues spanning Val 16-Pro 1213 as a trimer construct J o u r n a l P r e -p r o o f was purchased from ACRO Biosystems (Newark, Delaware, USA; Catalog # SPN-C52H9). 57 The fixed concentration of S protein (~100 picomol) was mixed with each gold nano particles with the ratio of [S protein] / [Gold Colloid] ranging from ~5 to ~3400. 58 We examined the shift of the Surface Plasmon Resonance (SPR) band of S protein coated nano-gold colloids as a function of the change of an external pH at 24. ",
+            "cite_spans": [
+                {
+                    "start": 81,
+                    "end": 84,
+                    "text": "10,",
+                    "ref_id": null
+                },
+                {
+                    "start": 85,
+                    "end": 88,
+                    "text": "15,",
+                    "ref_id": null
+                },
+                {
+                    "start": 89,
+                    "end": 92,
+                    "text": "20,",
+                    "ref_id": null
+                },
+                {
+                    "start": 93,
+                    "end": 96,
+                    "text": "30,",
+                    "ref_id": null
+                },
+                {
+                    "start": 97,
+                    "end": 100,
+                    "text": "40,",
+                    "ref_id": null
+                },
+                {
+                    "start": 101,
+                    "end": 104,
+                    "text": "50,",
+                    "ref_id": null
+                },
+                {
+                    "start": 105,
+                    "end": 108,
+                    "text": "60,",
+                    "ref_id": null
+                },
+                {
+                    "start": 109,
+                    "end": 111,
+                    "text": "80",
+                    "ref_id": null
+                },
+                {
+                    "start": 249,
+                    "end": 251,
+                    "text": "54",
+                    "ref_id": null
+                },
+                {
+                    "start": 486,
+                    "end": 488,
+                    "text": "57",
+                    "ref_id": null
+                },
+                {
+                    "start": 654,
+                    "end": 656,
+                    "text": "58",
+                    "ref_id": "BIBREF56"
+                }
+            ],
+            "ref_spans": [],
+            "section": "EXPERIMENTAL"
+        },
+        {
+            "text": "The gradual pH change to the acidic condition (~pH 2) reflected on the gradual red shift of SPR band as shown in Fig. 1a , and the trace of the average peak band position (\uf06c \u0305\u0305\u0305\u0305\u0305\u0305\u0305 ) (given in the white dotted line in Fig. 1a) exhibited sigmoidal curve as shown in Fig. 1b . This sigmoidal feature was analyzed by the Boltzmann model and the inflection point (pH o ) and the tangential slope at pH o , \uf06c (1) , where dpH = (\u03bb max -\u03bb min )/4\u03bb peak (1) . 57 The difference of pH o between S protein coated gold colloid and bare gold colloids, \uf044pH o , were postulated to reflect the change of the J o u r n a l P r e -p r o o f surface property due to the adsorption of S protein over the gold surface. The best and accessible correlation was observed between 1/dpH (\uf0b5 \uf06c (1) ) and \uf044pH o, as shown in Fig.2 , and it is not the most ideal fit (R 2 = 0.192) but the reasonable starting point of an interpretation. This relationship was used to extract the protein coverage fraction, \uf051 (See Fig. 3 )",
+            "cite_spans": [
+                {
+                    "start": 405,
+                    "end": 408,
+                    "text": "(1)",
+                    "ref_id": null
+                },
+                {
+                    "start": 447,
+                    "end": 450,
+                    "text": "(1)",
+                    "ref_id": null
+                },
+                {
+                    "start": 453,
+                    "end": 455,
+                    "text": "57",
+                    "ref_id": null
+                },
+                {
+                    "start": 768,
+                    "end": 771,
+                    "text": "(1)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 113,
+                    "end": 120,
+                    "text": "Fig. 1a",
+                    "ref_id": null
+                },
+                {
+                    "start": 219,
+                    "end": 227,
+                    "text": "Fig. 1a)",
+                    "ref_id": null
+                },
+                {
+                    "start": 266,
+                    "end": 273,
+                    "text": "Fig. 1b",
+                    "ref_id": null
+                },
+                {
+                    "start": 797,
+                    "end": 802,
+                    "text": "Fig.2",
+                    "ref_id": null
+                },
+                {
+                    "start": 984,
+                    "end": 990,
+                    "text": "Fig. 3",
+                    "ref_id": null
+                }
+            ],
+            "section": "RESULTS"
+        },
+        {
+            "text": "The extracted \uf051 values were reproduced by conducting the geometric simulation reported previously. 53, 54 The simplification of the S protein structure was treated by assuming it to the prolate top as shown in Fig. 3 . While S protein possesses the shape of blot head with stem (mushroom like shape ( Fig. 3 (i) ), the justification of prolate shape approximation is because \uf051 can be determined by the projected area onto the sphere. The area dominates to occupying the sphere can be replaced by transposing the same dimension onto the equatorial region of the prolate ( Fig. 3 (ii) and 3(iii)). Based on the reported geometrical structure from crystal structure reported by Wrapp and et. al. the initial values for the simulation were set as a = 5.3 nm and b = 8.9 nm with a \"spiking-out\" orientation of the protein from the particle surface. 59 The axial lengths were optimized to match with extracted \uf051 for each gold colloid of diameter d (conventional size) and reported diameter size d was used for the fit as shown in Fig. 4 . It failed to reproduce the drastically low \uf051 observed for d = 40 nm and d = 60 nm, and an empirical factor (\uf067) was employed in order to indicate that the adsorbed S proteins did not impact \uf044pH o (\uf067 ~ 5 %). In Fig. 4 , the average \uf051 of S protein, \u0398 \u0305 (S protein), showed the lowest compared to the \u0398 \u0305 's of three amyloidogenic peptides (amyloid beta 1-40 (A\uf062 1-40 ), alpha synuclein (\uf061-syn), and beta 2 microglobulin (\uf0622m)), where \u0398 \u0305 (\uf0622m) > \u0398 \u0305 (A\uf062 1-40 ) > \u0398 \u0305 (\uf061-syn) > \u0398 \u0305 (S-protein). Another unique point in S protein was that a low contribution of the secondary layer was observed (i.e., ~100% first layer), except for the gold colloid with 100 nm diameter, where 40% of the coverage J o u r n a l P r e -p r o o f was contributed from the second layer ( Table 1) . The average contribution of the second layer in amyloidogenic peptides coated gold colloids was ~40%. 60 Under the pH hopping scheme, the undulation of \uf06c \u0305\u0305\u0305\u0305\u0305\u0305\u0305 was observed for the S protein gold colloid with d > 30 nm. The representative examples for S protein coated 40 nm and 80 nm gold colloids are shown in Fig. 5a and 5b . Here, the pH value at the n (operation number) = 1 is an initial pH and it was around pH 7. Then, the pH at an even operation number indicates around pH ~ 3 and pH ~ 10 for any odd operation numbers \uf0b3 2. The analytical formula was applied to explain this behavior and was concluded that there was a reversible aggregation/disaggregation of gold nano-colloid mediated by S protein at the interface. 57 A reversible process was interpreted to be the stage of gold nano particle dispersed and aggregated. The aggregation of the gold colloid was presumed to be due to the mediation of the S protein over the gold colloid surface. The obvious reversible process was observed for the gold colloid over diameter of 30 nm. 57 In reversible undulation feature, there was two patterns which contained a discontinuity in amplitude as well as damping factor as represented in d = 40 nm gold colloid (see Fig. 5a ). On the other hand, we observed one single amplitude and damping factor for the reversible undulation in d = 80 nm and 100 nm (See Fig. 5b) . The discontinuity of the undulation amplitude (and damping factor) was observed for d = 40 nm, 50 nm, and 60 nm. The undulation feature was explained by Eqn. (1) 57",
+            "cite_spans": [
+                {
+                    "start": 99,
+                    "end": 102,
+                    "text": "53,",
+                    "ref_id": "BIBREF52"
+                },
+                {
+                    "start": 103,
+                    "end": 105,
+                    "text": "54",
+                    "ref_id": null
+                },
+                {
+                    "start": 675,
+                    "end": 692,
+                    "text": "Wrapp and et. al.",
+                    "ref_id": null
+                },
+                {
+                    "start": 844,
+                    "end": 846,
+                    "text": "59",
+                    "ref_id": null
+                },
+                {
+                    "start": 1909,
+                    "end": 1911,
+                    "text": "60",
+                    "ref_id": null
+                },
+                {
+                    "start": 2536,
+                    "end": 2538,
+                    "text": "57",
+                    "ref_id": null
+                },
+                {
+                    "start": 2853,
+                    "end": 2855,
+                    "text": "57",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 210,
+                    "end": 216,
+                    "text": "Fig. 3",
+                    "ref_id": null
+                },
+                {
+                    "start": 301,
+                    "end": 311,
+                    "text": "Fig. 3 (i)",
+                    "ref_id": null
+                },
+                {
+                    "start": 571,
+                    "end": 577,
+                    "text": "Fig. 3",
+                    "ref_id": null
+                },
+                {
+                    "start": 1024,
+                    "end": 1030,
+                    "text": "Fig. 4",
+                    "ref_id": null
+                },
+                {
+                    "start": 1242,
+                    "end": 1248,
+                    "text": "Fig. 4",
+                    "ref_id": null
+                },
+                {
+                    "start": 1796,
+                    "end": 1804,
+                    "text": "Table 1)",
+                    "ref_id": null
+                },
+                {
+                    "start": 2121,
+                    "end": 2135,
+                    "text": "Fig. 5a and 5b",
+                    "ref_id": null
+                },
+                {
+                    "start": 3030,
+                    "end": 3037,
+                    "text": "Fig. 5a",
+                    "ref_id": null
+                },
+                {
+                    "start": 3171,
+                    "end": 3179,
+                    "text": "Fig. 5b)",
+                    "ref_id": null
+                }
+            ],
+            "section": "RESULTS"
+        },
+        {
+            "text": "An initial peak position at neutral pH (i.e., \u0305\u0305\u0305\u0305\u0305\u0305\u0305 (n = 1)) is given by \u2212 , and the parameters and show the average wave peak position shift as pH varies between pH ~3 and pH ~10. The parameters represents a degree of reversibility amplitude, where \u0305\u0305\u0305\u0305\u0305\u0305\u0305 ( = ) \u2212 \u0305\u0305\u0305\u0305\u0305\u0305\u0305 ( = ), and E is a damping (E < 0) or amplifying (E > 0) factor for the repetitive undulation. The undulation pattern for S protein coated gold colloid with d = 40 nm needs to be explained by two different set of D and E parameters before and after of n = 9. (See Fig. 5a ) On the other hand, S protein coated gold nano particle with d = 80 nm can be explained by single set of parameters D and E (See Fig. 5b) for an entire range of the observed n's. The detailed analysis on the discontinuity and their parameters are shown in Table 2 . The parameters which explained all undulation patterns with one single set were presented in our previous report. 57",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 534,
+                    "end": 546,
+                    "text": "(See Fig. 5a",
+                    "ref_id": null
+                },
+                {
+                    "start": 677,
+                    "end": 685,
+                    "text": "Fig. 5b)",
+                    "ref_id": null
+                },
+                {
+                    "start": 804,
+                    "end": 811,
+                    "text": "Table 2",
+                    "ref_id": null
+                }
+            ],
+            "section": "RESULTS"
+        },
+        {
+            "text": "The optimized geometry through geometric simulation revealed that the spiking-out orientation of the protein from the particle surface is the most probable condition. This was also observed in the amyloidogenic peptides coated over nano-gold colloid, 54 and is consistent with the orientation observed in SARS-CoV-2. For 50 nm and 80 nm gold colloid supported a spherical shape (i.e., a = b), and it was interpreted that the prolate was tilted and rotate to create a circular area of coverage with the \"spiking-out\" orientation. (See Fig. 6 ) The optimized tilting angle, \uf071 \uf074 , was extracted to be 28.5 o , when b was set to be an initial axial b length of 8.9 nm.",
+            "cite_spans": [
+                {
+                    "start": 251,
+                    "end": 253,
+                    "text": "54",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 529,
+                    "end": 540,
+                    "text": "(See Fig. 6",
+                    "ref_id": null
+                }
+            ],
+            "section": "DISCUSSIONS"
+        },
+        {
+            "text": "While the relatively lower \uf051 was easily reproduced by taking a \"lie-down\" orientation, this orientation would not present protein available to form the protein-protein interactions needed to form particle aggregates. Thus, the spiking-out orientation was concluded as the most plausible orientation based on the experimentally observed protein-protein interaction particle aggregates.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "DISCUSSIONS"
+        },
+        {
+            "text": "The relatively lower \uf051 suggests a particular interfacial condition between nano-colloidal surfaces as they form the aggregates. Based on the previous studies, the higher \uf051 was J o u r n a l P r e -p r o o f significantly contributed by a second layer of protein (e.g., 32.2 %, 47.2 %, and 37.5 % of the coverage was contributed from the second layer for A\uf0621-40, \uf061-syn, and \uf0622m, respectively). 53 The average contribution of the second layer in \uf051 was 5.7 % in this study, implying no significant 2 nd layer contribution. Assuming that gold nano-surface possesses enough affinity for S protein compared to the dimerization of S protein, the competition of protein adsorption over the nanospherical surface may inhibit landing on the surface when d \uf020\uf0a3 80 nm. When particle d = 100",
+            "cite_spans": [
+                {
+                    "start": 393,
+                    "end": 395,
+                    "text": "53",
+                    "ref_id": "BIBREF52"
+                }
+            ],
+            "ref_spans": [],
+            "section": "DISCUSSIONS"
+        },
+        {
+            "text": "nm, it may allow enough surface area for S protein on adjacent particles to be contacting with the gold surface of neighboring particles and thus resulting in the high \uf051 with a significant contribution from 2 nd layer, ca. 40% (see Table 1 ). To date there is no direct measurement of the binding energy for S protein dimerization, based on the binding energy estimated for RBD domain and ACE2 receptor to be around a few kcal/ mol range, 20 the dimerization binding energy may be around the same order. Since drastic red-shift of the SPR band implies the formation of the gold nano colloid aggregates, the S protein involved aggregation must be reversible and completed without making tangled protein-protein network. Thus, it implies the formation of dimer of S protein at the edge exposed to the outside. (See the state B in Fig. 7) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 232,
+                    "end": 239,
+                    "text": "Table 1",
+                    "ref_id": null
+                },
+                {
+                    "start": 828,
+                    "end": 835,
+                    "text": "Fig. 7)",
+                    "ref_id": null
+                }
+            ],
+            "section": "DISCUSSIONS"
+        },
+        {
+            "text": "However, the high \uf051 must be supported by 2 nd layer (i.e., layer contributed from the other surface) involved as shown in the state C in Fig. 7 for 100 nm.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 137,
+                    "end": 143,
+                    "text": "Fig. 7",
+                    "ref_id": null
+                }
+            ],
+            "section": "DISCUSSIONS"
+        },
+        {
+            "text": "Although there was no experimental evidence to elaborate the conformational information of S protein at a given pH value, three distinct conformations (A, B, and C shown in Fig. 7) . At the 7 \uf0a3 pH \uf0a3 10, the S protein may be adsorbed as spiking-out orientation with the cytoplasmic domain (1237 -1273) anchoring on the gold surface with a charge-charge interaction between -NH + in imidazole ring of the Histidine ( 1250 H-1257 H) and a partially negative gold surface. 58 The protein conformation at the acidic condition is highly plausible to be J o u r n a l P r e -p r o o f unfolded. Based on the observed high reversibility, the folding or unfolding process must be minimal enough to be repeatable and reversible. There is a report of up position in one of three protomers at S1 region of RBD in order to initiate cell fusion by binding to ACE2 receptor under the lower pH condition. 8, 22, 37, 38 It is, therefore, considered that the up position of the protomer may play a key role of conducting networking, and dimerization or adsorption over the other nano-surface. The recent computational simulation led by Rommie Amaro's group pointed out the importance of glycan shielding over the S protein playing the key role to form the up conformation, 34 suggesting that it requires further investigation if external pH change to the acidic is a real trigger to form up conformation.",
+            "cite_spans": [
+                {
+                    "start": 469,
+                    "end": 471,
+                    "text": "58",
+                    "ref_id": "BIBREF56"
+                },
+                {
+                    "start": 889,
+                    "end": 891,
+                    "text": "8,",
+                    "ref_id": null
+                },
+                {
+                    "start": 892,
+                    "end": 895,
+                    "text": "22,",
+                    "ref_id": null
+                },
+                {
+                    "start": 896,
+                    "end": 899,
+                    "text": "37,",
+                    "ref_id": null
+                },
+                {
+                    "start": 900,
+                    "end": 902,
+                    "text": "38",
+                    "ref_id": null
+                },
+                {
+                    "start": 1255,
+                    "end": 1257,
+                    "text": "34",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 173,
+                    "end": 180,
+                    "text": "Fig. 7)",
+                    "ref_id": null
+                }
+            ],
+            "section": "DISCUSSIONS"
+        },
+        {
+            "text": "The analysis of a discontinuous feature observed in the pH hopping procedure for d = 40, 50, and 60 nm are summarized in Table 2 . The feature of the reversibility before and after the discontinuity was different between d = 40, 50 nm and d = 60 nm. As for d = 40 and 50 nm, the damping feature was the same before and after the discontinuity with a drastic decrease in amplitude. On the other hand, for d = 60 nm, the damping feature reversed to become amplifying after the discontinuity with approximately the same amplitude. Therefore, there may be two different path of aggregation formation depending on the core nano-particle size. However, no further detailed information was extracted from the current observations. The possible rational would be that the kinetic factor may be involved. In pH hopping process, we maintained the interval time between each operation number to be roughly the same, i.e., 5 minutes. It is conceivable that after initial acidic condition was achieved at the operation number n = 2, it may take 39 \uf0b1 3 minutes to reach to the other reversible channel. The current study was designed to be insensitive to the kinetic factor and the interval times of each spectrum collection was not J o u r n a l P r e -p r o o f precisely consistent. The errors or deviations in collection time could cause the difference in the operation number of the discontinuity ranging between n = 8 and n = 10.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 121,
+                    "end": 128,
+                    "text": "Table 2",
+                    "ref_id": null
+                }
+            ],
+            "section": "DISCUSSIONS"
+        },
+        {
+            "text": "In this communication, we focused on the adsorption orientation of S protein over the gold surface. By simplifying the S protein as a prolate shape, the adsorption orientation was concluded to be \"spiking-out\" orientation. These data suggest that the gold colloids could successfully reproduce the orientation of the S protein as that seen in SARS -CoV-2. However, the current study did not extract the direction of the RBD of the S protein. Although beyond the scope of the present work, one way to confirm if the RBD side is facing toward the outside can be to interact the S protein coated gold colloid with ACE2. The binding of the ACE2 to RBD is expected to cause a cleavage of the RBD followed by the formation of pre-hairpin by an extension of protomers of fusion proteins. 7, 9, 11, [61] [62] [63] [64] [65] On the other hand, no further conformational change of S protein in response to ACE2 would be observed, if the RBD side is used for anchoring on the gold surface. Two limitations of the current spectroscopic approach is that it is unable to determine if the RBD side is facing inward or outward and would not be able to probe the conformational change of the S protein induced by the ACE2 binding. However, based on this study into S protein adsorption onto gold we can now use the gold protein system to probe the interaction of SARS-CoV-2 with the ACE2 and the corresponding conformational change of an S protein using more complex spectroscopic techniques.",
+            "cite_spans": [
+                {
+                    "start": 781,
+                    "end": 783,
+                    "text": "7,",
+                    "ref_id": null
+                },
+                {
+                    "start": 784,
+                    "end": 786,
+                    "text": "9,",
+                    "ref_id": null
+                },
+                {
+                    "start": 787,
+                    "end": 790,
+                    "text": "11,",
+                    "ref_id": null
+                },
+                {
+                    "start": 791,
+                    "end": 795,
+                    "text": "[61]",
+                    "ref_id": null
+                },
+                {
+                    "start": 796,
+                    "end": 800,
+                    "text": "[62]",
+                    "ref_id": null
+                },
+                {
+                    "start": 801,
+                    "end": 805,
+                    "text": "[63]",
+                    "ref_id": null
+                },
+                {
+                    "start": 806,
+                    "end": 810,
+                    "text": "[64]",
+                    "ref_id": null
+                },
+                {
+                    "start": 811,
+                    "end": 815,
+                    "text": "[65]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "DISCUSSIONS"
+        },
+        {
+            "text": "The observation confirmed in this study made the first step of utilizing the S protein located over the nano-surface for further investigating the structural information associated with the behavior of S protein in vitro. One of the major inhibition tactics has been to prevent viral protein by targeting the S protein with antibodies. 66 The S protein coated over gold colloid can act as a simplified model of the SARS-CoV-2, and the gold-protein system can be used as a ",
+            "cite_spans": [
+                {
+                    "start": 336,
+                    "end": 338,
+                    "text": "66",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "DISCUSSIONS"
+        },
+        {
+            "text": "The indication of high affinity of S protein on to gold colloid (diameter, d > 30 nm) was confirmed by observing the pH induced reversible self-assembly of S protein mediated gold colloid aggregates. The geometrical simulation to reproduce surface coverage ratio, \uf051, successfully explained the spiking-out orientation of the S protein and the plausible conformation of S proteins at the interface were speculated to be \"head-to-head dimer\" or \"parallel in opposite direction\" depending on the nano-size of the gold colloid. However, a conclusive evidence of the direction of RBD side was not obtained. Table  1 . Fig. 7 . Estimated S protein conformational change observed in the current study over the nanogold colloidal surface. The major change was estimated to transition from down to up conformational change of RBD and leading to either dimerization processes of S1 trimers (B) or a parallel in opposite directions conformation (C). The conformational change at pH-hopping is estimated as a quasi-reversible process between state A and B (for d = 30 -80 nm) or C (d = 100 nm), where one of the protomer's (RBD: receptor binding domain) gets up position. ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 602,
+                    "end": 610,
+                    "text": "Table  1",
+                    "ref_id": null
+                },
+                {
+                    "start": 613,
+                    "end": 619,
+                    "text": "Fig. 7",
+                    "ref_id": null
+                }
+            ],
+            "section": "Conclusions"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF52": {
+            "ref_id": "b52",
+            "title": "Oligomerization and Adsorption Orientation of Amyloidogenic Peptides over Nano-Gold Colloidal Particle Surfaces",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Yokoyama",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ichiki",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Advances in Chemical Research",
+            "volume": "61",
+            "issn": "",
+            "pages": "139--194",
+            "other_ids": {}
+        },
+        "BIBREF56": {
+            "ref_id": "b56",
+            "title": "Colloid and Interfaces Science Communications in press",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Yokoyama",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ichiki",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "UV-VIS-NIR Spectrophotometer of Agilent (Santa Clara, CA, USA). Two different schemes of pH changes were used. (1) a gradual change of pH with by adding hydrochloric acid (HCl), and (2) pH was hopped between acidic at pH 3.1 \uf0b1 0.6 and basic condition around pH 9.7",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "\uf0b1 0.5 by inserting HCl and sodium hydroxide (NaOH) with pre-tested amount to maintain pH ~3 and pH~10, respectively. There were no fine adjustments of pH made after each HCl or NaOH infusion in order to keep the kinetic condition (time for equilibrium) at each condition the same for all measurement points. In both schemes each spectrum was processed with component of the band expressed by a Gaussian profile by Peak Fit function of OriginPro 2018b (Origin Lab), and the spectrum area weight average peak position of the spectrum in the region between 400 nm and 850 nm was extracted.57",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "for investigating the various inhibitor or drugs response and impact to the S protein. For example, having characterized the S protein system's behavior during pH changes, compounds could now be screened based on their ability to alter the S protein's pH response using this SPR technique described above. As the future project, investigation of the cell fusion kinetics of the S protein as it is interacted with ACE2 is expected to provide a prototypeapproach of mimicking viral cell fusion process. There are a number of pathogenic viruses, which possesses same type of viral structure as SARS-CoV-2, such as Chikungunya virus, Dengue virus, HIV (Human Immunodeficiency Virus), Influenza virus, Zaire Ebola virus, SARS-CoV, and MERS-CoV. These viruses are protected by a viral membrane requiring the viral capsid to fuse with a cell as an initial step in the infection process. 25, 67 Thus, by utilizing corresponding glycoprotein coated nano gold colloid, the general rule of fusion process involving glycoproteins can be investigated.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "a) The SPR band for visible range (400 nm -825 nm) as a function of pH. The contour implying the \u0305\u0305\u0305\u0305\u0305\u0305\u0305 is shown by a white dotted line on the surface contour map. b) The plot of \u0305\u0305\u0305\u0305\u0305\u0305\u0305 vs. pH for S-protein mixed with 80 nm gold nano particles. The optimized fit by Boltzmann model is shown by the dotted line as a guide.57 Here, the \u03bbmin and \u03bbmax stand for the minimum and maximum of the band peak positions, respectively. The pHo (a) is the inflection point of the S protein coated 80 nm gold colloid, and the pHo (b) is that of bare 80 nm gold colloid. The plot of 1/dpH vs. \u0394pHo, where 1/dpH is proportional to \uf06c (1) .The optimized fit is shown by a dotted line.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "(i) The schematic sketch of the structure of an entire SARS-CoV-2 spike protein. The edge of the protein is indicated by the dotted lines. (ii) The dimension of the top region was J o u r n a l P r e -p r o o f transformed to be the central area (i.e., perimeter of circle by an axis) in a prolate. (iii) The utilized prolate model for simulating the coverage fraction of the proteins over the nano-gold sphere with axial lengths a and b (a < b). The peptide coverage fraction, \u0398, as a function of d (nm) for S-protein. The black line shows the average \u0398 for the S protein. The blue, red, and green lines show the average \u0398 for A\uf0621-40, \uf061-syn, and \uf0622m, respectively. The trend of shift in SPR band, \u0394\uf06c \u0305\u0305\u0305\u0305\u0305\u0305\u0305 , as a function of n, where pH ~7 at n = 1, pH ~10 for odd n (red tick marks), and pH ~3 for even n (blue tick marks) for a) d = 40 nm and b) d = 80 nm. The pair of dotted line implies the trend of the undulation amplitude. The red dotted line guided at the lower-side of the undulations (even n) indicates the state A shown in Fig. 6. The blue dotted line shown at upper side at even n are considered to be at the stage B shown in Fig. 6. Fig. 6. a) A sketch of the side view of a rotating prolate. The tilting of a prolate over the nanogold surface with a tilting angle, \uf071 \uf074 . b) Birds eye view of the rotating tilted prolate. Here, the diameter of a colloid and the axes of prolate are not shown in the scale of any examples in",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "In each box, optimized axial length of a prolate (a and b), observed \uf051, n f,tot , and circular graph indicating % of occupied surface area by adsorption (first layer in blue and second layer in red) as a function of gold size d (and d) nm. The optimized parameters for the \u0305\u0305\u0305\u0305\u0305\u0305\u0305 (n) responses to the pH hopping using the analytical formula shown in Eqn. (1) for a mixture of S protein coated gold nanoparticle of size d = 40, 50, and 60 nm at 24.5 \uf0b1 0.2 o C.",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": []
+}

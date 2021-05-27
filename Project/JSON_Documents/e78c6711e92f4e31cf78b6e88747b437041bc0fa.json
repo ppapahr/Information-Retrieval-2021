@@ -1,0 +1,2267 @@
+{
+    "paper_id": "e78c6711e92f4e31cf78b6e88747b437041bc0fa",
+    "metadata": {
+        "title": "Resilient Capacity-Aware Routing",
+        "authors": [
+            {
+                "first": "Stefan",
+                "middle": [],
+                "last": "Schmid",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Vienna",
+                    "location": {
+                        "settlement": "Vienna",
+                        "country": "Austria"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Nicolas",
+                "middle": [],
+                "last": "Schnepf",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Aalborg University",
+                    "location": {
+                        "settlement": "Aalborg",
+                        "country": "Denmark"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Ji\u0159\u00ed",
+                "middle": [],
+                "last": "Srba",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Aalborg University",
+                    "location": {
+                        "settlement": "Aalborg",
+                        "country": "Denmark"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "To ensure a high availability, communication networks provide resilient routing mechanisms that quickly change routes upon failures. However, a fundamental algorithmic question underlying such mechanisms is hardly understood: how to verify whether a given network reroutes flows along feasible paths, without violating capacity constraints, for up to k link failures? We chart the algorithmic complexity landscape of resilient routing under link failures, considering shortest path routing based on link weights as e.g. deployed in the ECMP protocol. We study two models: a pessimistic model where flows interfere in a worst-case manner along equal-cost shortest paths, and an optimistic model where flows are routed in a best-case manner, and we present a complete picture of the algorithmic complexities.We further propose a strategic search algorithm that checks only the critical failure scenarios while still providing correctness guarantees. Our experimental evaluation on a benchmark of Internet and datacenter topologies confirms an improved performance of our strategic search by several orders of magnitude.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "Routing and traffic engineering are most fundamental tasks in a communication network. Internet Service Providers (ISPs) today use several sophisticated strategies to efficiently provision their backbone network to serve intra-domain traffic. This is challenging as in addition to simply providing reachability, routing protocols should also account for capacity constraints: to meet quality-ofservice guarantees, congestion must be avoided. Intra-domain routing protocols are usually based on shortest paths, and in particular the Equal-Cost-MultiPath (ECMP) protocol [24] . Flows are split at nodes where several outgoing links are on shortest paths to the destination, based on per-flow static hashing [7, 30] . In addition to default routing, most modern communication networks also provide support for resilient routing: upon the detection of a link failure, the network nodes quickly and collaboratively recompute the new shortest paths [21] .",
+            "cite_spans": [
+                {
+                    "start": 569,
+                    "end": 573,
+                    "text": "[24]",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 705,
+                    "end": 708,
+                    "text": "[7,",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 709,
+                    "end": 712,
+                    "text": "30]",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 943,
+                    "end": 947,
+                    "text": "[21]",
+                    "ref_id": "BIBREF20"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "However, today, we still do not have a good understanding of the algorithmic complexity of shortest path routing subject to capacity constraints, especially under failures. In particular, in this paper we are interested in the basic question: \"Given a capacitated network based on shortest path routing (defined by link weights), can the network tolerate up to k link failures without violating capacity constraints?\" Surprisingly only little is known about the complexity aspects. Our Contributions. We provide a complete characterization of the algorithmic complexity landscape of resilient routing and introduce two basic models of how traffic is distributed across the multiple shortest paths. A pessimistic (P) one where flows add up in a worst-case manner; if a network is resilient in the pessimistic model, it is guaranteed that routing succeeds along any shortest path without overloading links. In the optimistic (O) model flows add up in a bestcase manner; if a network is resilient in the optimistic model, it may be that the specific routing does not overload the links. The two models hence cover the two extremes in the spectrum and alternative routing schemes, e.g., (pseudo)random routing hence lies in between. Figure 1 illustrates the situations that can arise in a network: depending on the scenario, pessimistic (P) or optimistic (O), and whether the routing feasibility test is positive or negative, we can distinguish between three regimes. (1) If routing is feasible even in the pessimistic case, then flows can be safely forwarded by any routing policy without violating any capacity constraints. (2) If the pessimistic test is negative but positive in the optimistic case, then further considerations are required to ensure that flows use the feasible paths (e.g., a clever routing algorithm to find the suitable paths is needed). (3) If even the optimistic test is negative then no feasible routing solution exists; to be able to successfully route flows in this case, we need to change the network characteristics, e.g., to increase the link capacities. We further distinguish between splittable (S) and nonsplittable (N) flows, and refer to the four possible problems by PS, PN, ON, and OS. Our main complexity results are summarized in Figure 2 . We can see that without link failures (Figure 2a ), the problems are solvable in polynomial time, except for the ON problem that becomes NP-complete. Moreover, the pessimistic variants of the problem can be solved even in nondeterministic logarithmic space, implying that they allow for efficient parallelization [33] . On the other hand, the optimistic splittable problem is hard for the class P. For the problems with link failures ( Figure 2b ) the complexity increases and the problems become co-NPcomplete, apart from the ON problem that becomes more difficult to solve and is complete for the second level of the polynomial hierarchy [33] .",
+            "cite_spans": [
+                {
+                    "start": 1622,
+                    "end": 1625,
+                    "text": "(2)",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 2590,
+                    "end": 2594,
+                    "text": "[33]",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 2917,
+                    "end": 2921,
+                    "text": "[33]",
+                    "ref_id": "BIBREF32"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1229,
+                    "end": 1237,
+                    "text": "Figure 1",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 2266,
+                    "end": 2274,
+                    "text": "Figure 2",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 2315,
+                    "end": 2325,
+                    "text": "(Figure 2a",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 2713,
+                    "end": 2722,
+                    "text": "Figure 2b",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Introduction"
+        },
+        {
+            "text": "The high computational complexity of the instances with link failures may indicate that a brute-force search algorithm exploring all failure scenarios is needed to verify whether routing is feasible. However, we present a more efficient solution, by defining a partial ordering on the possible failure scenarios with the property that for the pessimistic model, we only need to explore the minimum failure scenarios, and for the optimistic model, it is sufficient to explore the maximum failure scenarios. We present an efficient strategic search algorithm implementing these ideas, formally prove its correctness, and demonstrate the practical applicability of strategic search on a benchmark of Internet and datacenter topologies. In particular, we find that our algorithm achieves up to several orders of magnitude runtime savings compared to the brute-force search.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Related Work. Efficient traffic routing has received much attention in the literature, and there also exist empirical studies on the efficiency of ECMP deployments, e.g., in Internet Service Provider Networks [17] or in datacenters [22] . A systematic algorithmic study of routing with ECMP is conducted by Chiesa et al. in [10] . The authors show that in the splittable-flow model [16] , even approximating the optimal link-weight configuration for ECMP within any constant factor is computationally intractable. Before their work, it was only known that minimizing congestion is NP-hard (even to just provide \"satisfactory\" quality [2] and also under path cardinality constraints [5] ) and cannot be approximated within a factor of 3/2 [19] . For specific topologies the authors further show that traffic engineering with ECMP remains suboptimal and computationally hard for hypercube networks. We significantly extend these insights into the algorithmic complexity of traffic engineering and introduce the concept of pessimistic and optimistic variants of routing feasibility and provide a complete characterization of the complexity of routing subject to capacity constraints, also in scenarios with failures. Accounting for failures is an important aspect in practice [13, 31] but has not been studied rigorously in the literature before; to the best of our knowledge, so far there only exist heuristic solutions [18] with some notable exceptions such as Lancet [8] (which however does not account for congestion). We propose to distinguish between optimistic and pessimistic flow splitting; existing literature typically revolves around the optimistic scenario.",
+            "cite_spans": [
+                {
+                    "start": 209,
+                    "end": 213,
+                    "text": "[17]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 232,
+                    "end": 236,
+                    "text": "[22]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 324,
+                    "end": 328,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 382,
+                    "end": 386,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 634,
+                    "end": 637,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 682,
+                    "end": 685,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 738,
+                    "end": 742,
+                    "text": "[19]",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 1273,
+                    "end": 1277,
+                    "text": "[13,",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 1278,
+                    "end": 1281,
+                    "text": "31]",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 1418,
+                    "end": 1422,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 1467,
+                    "end": 1470,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "We note that while we focus on IP networks (and in particular shortest path routing and ECMP), there exist many interesting results on the verification and reachability testing in other types of networks and protocols, including BGP [4, 15] , MPLS [25, 38] , OpenFlow [1] networks, or stateful networks [29, 32, 41] . While most existing literature focuses on verifying logical properties, such as reachability without considering capacity constraints, there also exist first works dealing with quantitative properties [20, 26, 29 ].",
+            "cite_spans": [
+                {
+                    "start": 233,
+                    "end": 236,
+                    "text": "[4,",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 237,
+                    "end": 240,
+                    "text": "15]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 248,
+                    "end": 252,
+                    "text": "[25,",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 253,
+                    "end": 256,
+                    "text": "38]",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 268,
+                    "end": 271,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 303,
+                    "end": 307,
+                    "text": "[29,",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 308,
+                    "end": 311,
+                    "text": "32,",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 312,
+                    "end": 315,
+                    "text": "41]",
+                    "ref_id": "BIBREF40"
+                },
+                {
+                    "start": 519,
+                    "end": 523,
+                    "text": "[20,",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 524,
+                    "end": 527,
+                    "text": "26,",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 528,
+                    "end": 530,
+                    "text": "29",
+                    "ref_id": "BIBREF28"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "We shall now define the model of network with link capacities and flow demands and formally specify the four variants of the resilient routing problem. Let N be the set of natural numbers and N 0 the set of nonnegative integers.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Network with Capacities and Demands"
+        },
+        {
+            "text": "Capacities and Demands (NCD) is a triple N = (V, C, D) where V is a finite set of nodes, C : V \u00d7 V \u2192 N 0 is the capacity function for each network edge (capacity 0 implies the absence of a network link), and D : V \u00d7 V \u2192 N 0 is the end-to-end flow demand between every pair of nodes such that D(v, v) = 0 for all v \u2208 V (demand 0 means that there is no flow). By Paths(s, t) we denote the set of all paths from s to t.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 358,
+                    "end": 372,
+                    "text": "By Paths(s, t)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Definition 1 (Network with Capacities and Demands). A Network with"
+        },
+        {
+            "text": "Routes in an NCD are traditionally determined by annotating the links with weights and employing shortest path routing (e.g. ECMP). In case of multiple shortest paths, traffic engineers select either one of the shortest paths or decide to split the flow among the different shortest paths for load-balancing purposes. When one or multiple links fail, the set of shortest paths may change and the routes need to be updated. The weight assignment is usually provided by the network operators and is primarily used for traffic engineering purposes.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Definition 1 (Network with Capacities and Demands). A Network with"
+        },
+        {
+            "text": "Assume now a fixed weight assignment for a given NCD N = (V, C, D). Let \u03c0 = v 1 v 2 \u00b7 \u00b7 \u00b7 v n \u2208 V + be a path from v 1 to v n . The weight of the path \u03c0 is denoted by W (\u03c0) and defined by W (\u03c0) =",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Definition 2 (Weight Assignment). Let"
+        },
+        {
+            "text": "The set of shortest paths from s to t is defined by SPaths(s, t) = {\u03c0 \u2208 Paths(s, t) | W (\u03c0) = \u221e and W (\u03c0) \u2264 W (\u03c0 ) for all \u03c0 \u2208 Paths(s, t)}. As the weights are positive, all shortest paths in the set SPaths(s, t) are acyclic and hence the set is finite (though of possibly exponential size).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Definition 2 (Weight Assignment). Let"
+        },
+        {
+            "text": "For a given NCD N and a set of failed links F , we can now define the NCD N F where all links from F are removed. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Definition 2 (Weight Assignment). Let"
+        },
+        {
+            "text": "By Paths F (s, t) and SPaths F (s, t) we denote the sets of the paths and shortest paths between s and t in the network",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Definition 2 (Weight Assignment). Let"
+        },
+        {
+            "text": "We shall now define a flow assignment that for each nonempty flow demand between s and t and every failure scenario, determines the amount of traffic that should be routed through the shortest paths between s and t.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Definition 2 (Weight Assignment). Let"
+        },
+        {
+            "text": "A flow assignment f in a capacity network N = (V, C, D) with weight assignment W and with the set",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Definition 4 (Flow Assignment)."
+        },
+        {
+            "text": "1} for all s, t \u2208 V and all \u03c0 \u2208 SPaths F (s, t). Otherwise the flow assignment is splittable.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Definition 4 (Flow Assignment)."
+        },
+        {
+            "text": "The notation [0, 1] denotes the interval of all rational numbers between 0 and 1 and it determines how the load demand between the nodes s and t is split among the routing paths between the two nodes. A nonsplittable flow assignment assigns the value 1 to exactly one routing path between any two nodes s and t. If for a given failure scenario F there is no path between s and t for two nodes with D(s, t) > 0, then there is no flow assignment as the network is disconnected.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Definition 4 (Flow Assignment)."
+        },
+        {
+            "text": "For a connected NCD, we now define a feasible flow assignment that avoids congestion: the sum of portions of flow demands (determined by the flow assignment) that are routed through each link, may not exceed the link capacity.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Definition 4 (Flow Assignment)."
+        },
+        {
+            "text": "We consider four different variants of the capacity problem.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Definition 6 (Feasible Flow Assignment). Let"
+        },
+        {
+            "text": "Given an NCD N with a weight assignment and nonnegative integer k, is it the case that for every set F of failed links of cardinality at most k, the network remains connected and every splittable/nonsplittable flow assignment on N with the set F of failed links is feasible? A positive answer to the PN capacity problem implies positive answers to both PS and ON problems. A positive answer to either the PS or ON problem implies a positive answer to the OS problem. This is summarized in Figure 3 and it is easy to argue that the hierarchy is strict.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 489,
+                    "end": 497,
+                    "text": "Figure 3",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Definition 7 (Pessimistic Splittable/Nonsplittable (PS/PN))."
+        },
+        {
+            "text": "We now provide the arguments for the upper and lower bounds from Figure 2 . ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 65,
+                    "end": 73,
+                    "text": "Figure 2",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Analysis of Algorithmic Complexity"
+        },
+        {
+            "text": "Complexity Upper Bounds. We present first a few useful observations. Because network connectivity can be checked independently for each source s and target t where D(s, t) > 0 by computing the maximum flow [14] between s and t, we obtain the following lemma.",
+            "cite_spans": [
+                {
+                    "start": 206,
+                    "end": 210,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Analysis of Algorithmic Complexity"
+        },
+        {
+            "text": "Next, we present an algorithm that for an NCD N = (V, C, D) with the weight assignment W : V \u00d7 V \u2192 N \u222a {\u221e} and a given pair of nodes s, t \u2208 V computes in polynomial time the function spg s,t : V \u00d7 V \u2192 {0, 1} that assigns the value 1 to exactly all edges that appear on at least one shortest path (w.r.t. to the weight assignment W ) between s and t. The edges that get assigned the value 1 hence form the shortest path subgraph between s and t. The algorithm uses the function dist(v, v ) that for every two nodes v, v \u2208 V returns the length of the shortest path (again w.r.t. to the assignment W ) from v to v and if v and v are not connected then it returns \u221e. Such an all-pairs shortest path function can be precomputed in polynomial time using e.g. the Johnson's algorithms [27] . The function spg s,t is defined by Algorithm 1. ",
+            "cite_spans": [
+                {
+                    "start": 778,
+                    "end": 782,
+                    "text": "[27]",
+                    "ref_id": "BIBREF26"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Lemma 1. Given an NCD N = (V, C, D) and a nonnegative integer k, it is polynomial-time decidable if N remains connected for all sets of failed links"
+        },
+        {
+            "text": "We first present results for k = 0 (no link failures) and start by showing that the optimistic splittable variant of the capacity problem is decidable in polynomial time by reducing it to the feasibility of a linear program. Let N = (V, C, D) be an NCD with weight assignment W and let spg s,t be precomputed for all pairs of s and t. We construct a linear program over the variables x s,t (v, v ) for all s, t, v, v \u2208 V where the variable x s,t (v, v ) represents the percentage of the total demand D(s, t) between s and t that is routed through the link (v, v ). In the equations below, we let s and t range over all nodes that satisfy D(s, t) > 0.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Lemma 1. Given an NCD N = (V, C, D) and a nonnegative integer k, it is polynomial-time decidable if N remains connected for all sets of failed links"
+        },
+        {
+            "text": "Equation 1 imposes that the flow portion on any link must be between 0 and 1. Equation 2 makes sure that portion of the demand D(s, t) must be split along all outgoing links from s that belong to the shortest path graph. Similarly Equation 3 guarantees that the flows on incoming links to t in the shortest path graph deliver the total demand. Equation 4 is a flow preservation equation among all incoming and outgoing links (in the shortest path graph) connected to every node v. The first four equations define all possible splittings of the flow demands for all s and t such that D(s, t) > 0. Finally, Equation 5 checks that for every link in the network, the total sum of the flows for all s-t pairs does not exceed the link capacity. The size of the constructed system is quadratic in the number of nodes and its feasibility, that can be verified in polynomial time [39] , corresponds to the existence of a solution for the OS problem.",
+            "cite_spans": [
+                {
+                    "start": 871,
+                    "end": 875,
+                    "text": "[39]",
+                    "ref_id": "BIBREF38"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Lemma 1. Given an NCD N = (V, C, D) and a nonnegative integer k, it is polynomial-time decidable if N remains connected for all sets of failed links"
+        },
+        {
+            "text": "If we now restrict the variables to nonnegative intergers, we get an instance of integer linear program where feasibility checking is NP-complete [39] , and corresponds to the solution for the nonsplittable optimistic problem.",
+            "cite_spans": [
+                {
+                    "start": 146,
+                    "end": 150,
+                    "text": "[39]",
+                    "ref_id": "BIBREF38"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Theorem 1. The OS capacity problem without any link failures is decidable in polynomial time."
+        },
+        {
+            "text": "Next, we present a theorem stating that both the splittable and nonsplittable variants of the pessimistic capacity problem are decidable in polynomial time and in fact also in nondeterministic logarithmic space (the complexity class NL). Proof. Let N = (V, C, D) be a given NCD with a weight assignment W . Let us consider the shortest path graph represented by spg s,t as defined by Algorithm 1. Clearly, if the set SPaths(s, t) for some s, t \u2208 V where D(s, t) > 0 is empty, the answer to both the splittable and nonsplittable problem is negative. Otherwise, for each pair s, t \u2208 V where D(s, t) > 0, the entire demand D(s, t) can be routed (both in the splittable and nonsplittable case) through any edge (v, v ) that satisfies spg s,t (v, v ) = 1. Hence we can check whether for every edge (",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Theorem 2. The ON capacity problem without any link failures is decidable in nondeterministic polynomial time."
+        },
+        {
+            "text": "If this is the case, then the answer to both the splittable and the nonsplittable pessimistic problem is positive as there is no flow assignment that can exceed the capacity of any link. On the other hand, if for some link (v, v ) the sum of all demands that can be possibly routed through (v, v ) exceeds the link capacity, the answer to the problem (both splittable and nonsplittable) is negative. The algorithm can be implemented to run in nondeterministic logarithmic space.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Theorem 2. The ON capacity problem without any link failures is decidable in nondeterministic polynomial time."
+        },
+        {
+            "text": "Let us now turn our attention to the four variants of the problem under the assumption that up to k links can fail (where k is part of the input to the decision problem). Given an NCD N = (V, C, D) with a weight assignment W , we are asked to check, for all (exponentially many) failure scenarios F \u2286 V \u00d7 V where |F | \u2264 k, whether the pruned NCD N F with the weight assignment W F (as defined in Definition 3) satisfies that the network N F is connected and every flow assignment is feasible (in case of the pessimistic case) or there exists a feasible flow assignment (in case of the optimistic case). As these problems are decidable in polynomial time for PN, PS and OS, we can conclude that the variants of the problems with failures belong to the complexity class co-NP: for the negation of the problems we can guess the failure scenario F for which the problem does not have a solution-this can be verified in polynomial time by Theorems 1 and 3. Finally, the same arguments can be used also for the optimistic nonsplittable problem with failures. However, as deciding the ON problem without failures is solvable only in nondeterministic polynomial time, the extra quantification of all failure scenarios means that the problem belongs to the class \u03a0 P 2 on the second level of the polynomial hierarchy [33] . This complexity class is believed to be computationally more difficult than the problems on the first level of the hierarchy (where the NP and co-NP problems belong to).",
+            "cite_spans": [
+                {
+                    "start": 1308,
+                    "end": 1312,
+                    "text": "[33]",
+                    "ref_id": "BIBREF32"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Theorem 2. The ON capacity problem without any link failures is decidable in nondeterministic polynomial time."
+        },
+        {
+            "text": "Complexity Lower Bounds. We now prove the complexity lower bounds.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Theorem 5. The ON problem with link failures is in the complexity class"
+        },
+        {
+            "text": "Proof sketch. By NC-reduction from the P-complete maximum flow problem for directed acyclic graphs [35] : given a directed acyclic graph G with nonnegative edge capacities, two nodes s and t and a number m, is there a flow between s and t that preserves the capacity of all edges and has the volume of at least m? This problem can be rephrased as our OS problem by setting the demand D(s, t) = m and defining a weight assignment so that every relevant edge in G is on some shortest path from s to t. This can be achieved by topologically sorting the nodes (in NC 2 [11, 12] ) and assigning the weights accordingly.",
+            "cite_spans": [
+                {
+                    "start": 99,
+                    "end": 103,
+                    "text": "[35]",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 565,
+                    "end": 569,
+                    "text": "[11,",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 570,
+                    "end": 573,
+                    "text": "12]",
+                    "ref_id": "BIBREF11"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Theorem 6. The OS capacity problem without any link failures is P-hard under NC-reducibility."
+        },
+        {
+            "text": "Proof sketch. Follows from NL-hardness of reachability in digraphs [33] .",
+            "cite_spans": [
+                {
+                    "start": 67,
+                    "end": 71,
+                    "text": "[33]",
+                    "ref_id": "BIBREF32"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Theorem 7. The PS/PN problems without any link failures are NL-hard."
+        },
+        {
+            "text": "Next, we show that the ON problem is NP-hard, even with no failures. Figure 4a we give an example of the reduction for a given satisfiable formula. As we consider the nonsplittable problem, the flow demand from s 0 to s k means that the whole demand of n units must go through either the link (x i , s i ) or (x i , s i ), for every i. This corresponds to choosing an assignment of the variables to true or false. For every clause c i we now have a unit flow from c s i to c e i that goes through the link ( j , s j ) for every literal j appearing in the clause c i . This is only possible if this link is not already occupied by the flow demand from s 0 to s k ; otherwise we exceed the capacity of the link. For each clause c i we need to find at least one literal j so that the flow can go through the edge ( j , s j ). As the capacity of the edge ( j , s j ) is n, it is possible to use this edge for all n clauses if necessary. We can observe that the capacity network can be constructed in polynomial time and we shall argue for the correctness of the reduction.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 69,
+                    "end": 78,
+                    "text": "Figure 4a",
+                    "ref_id": "FIGREF6"
+                }
+            ],
+            "section": "Theorem 7. The PS/PN problems without any link failures are NL-hard."
+        },
+        {
+            "text": "We can now observe that if \u03d5 is satisfiable, we can define a feasible flow assignment f by routing the flow demand of n between s 0 and s k so that it does ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Theorem 7. The PS/PN problems without any link failures are NL-hard."
+        },
+        {
+            "text": "Capacity of all links is 4 and weight of links is 1. Double arrows are 2-unbreakable links. For the other direction where \u03d5 is not satisfieable, we notice that any routing of the flow demand between s 0 and s k (corresponding to some truth assignment of \u03d5) leaves at least one clause unsatisfied and it is then impossible to route the flow for such a clause without violating the capacity constraints.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Theorem 7. The PS/PN problems without any link failures are NL-hard."
+        },
+        {
+            "text": "We now extend the reduction from Theorem 8 to the OS case with link failures and prove its hardness for the second level of the polynomial hierarchy. variables y 1 , . . . , y m , x 1 , . . . , x k . The validity problem of such quantified formula is \u03a0 P 2 -hard (see e.g. [33] ). For a given quantified formula, we shall construct an instance of the ON problem such that the formula is valid if and only if the ON problem with up to m link failures (where m is the number of y-variables) has a positive answer. The reduction uses the construction from Theorem 8 where we described a reduction from the validity of the formula \u2203x 1 , x 2 , . . . , x k . \u03d5. The construction is further enhanced by introducing new nodes y j , y j , e j and new edges of capacity 2n (where n is the number of clauses) such that C(y j , y j ) = C(y j , e j ) = 2n, for all i, 1 \u2264 j \u2264 m. Now for every clause c i we add the so-called m-unbreakable edge of capacity n from c s i to y j and from e j to c e i for all 1 \u2264 i \u2264 n and 1 \u2264 j \u2264 m. Moreover, whenever the literal y j appears in the clause c i , we also add an m-unbreakable edge from y j to c e i and whenever the literal y j appears in the clause c i , we add m-unbreakable edge from c s i to y j . The construction of m-unbreakable edges (denoted by double arrows) is given in Figure 4c where the capacity of each link is set to n. Finally, for each j, 1 \u2264 j \u2264 m, we add the unbreakable edges from s 1 to y j and from e j to s k . The flow demands in the newly constructed network are identical to those from the proof of Theorem 8 and the weights of all newly added edges are set to 1 and we set the weight of the two links s 0 to x 1 and s 0 to x 1 to 6. The reduction can be clearly done in polynomial time. Figure 4b demonstrates an extension of the construction from Figure 4a with additional nodes and links that complete the reduction. Observe, that even in case of m link failures, the unbreakable links that consist of m + 1 edge disjoint paths are still capable of carrying all the necessary flow traffic.",
+            "cite_spans": [
+                {
+                    "start": 273,
+                    "end": 277,
+                    "text": "[33]",
+                    "ref_id": "BIBREF32"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 150,
+                    "end": 189,
+                    "text": "variables y 1 , . . . , y m , x 1 , . .",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 1316,
+                    "end": 1325,
+                    "text": "Figure 4c",
+                    "ref_id": "FIGREF6"
+                },
+                {
+                    "start": 1750,
+                    "end": 1759,
+                    "text": "Figure 4b",
+                    "ref_id": "FIGREF6"
+                },
+                {
+                    "start": 1811,
+                    "end": 1820,
+                    "text": "Figure 4a",
+                    "ref_id": "FIGREF6"
+                }
+            ],
+            "section": "Theorem 7. The PS/PN problems without any link failures are NL-hard."
+        },
+        {
+            "text": "We shall now argue that if the formula \u2200y 1 , y 2 , . . . , y m . \u2203x 1 , x 2 , . . . , x k . \u03d5 is valid then the constructed instance of the ON problem with up to m link failures has a solution. We notice that any subset of up to m failed links either breaks exactly one of the newly added edges (y j , y j ) and (y j , e j ) for all j, 1 \u2264 j \u2264 m, in which case this determines a valid truth assignment for the y-variables and as in the previous proof, the flow from s 0 to s k can now be routed so that for each clause there is at least one satisfied literal. Otherwise, there is a variable y j such that both of the edges (y j , y j ) and (y j , e j ) are present and all flow demands can now be routed through these two edges (that have sufficient capacity for this) by using the m-unbreakable edges. The opposite direction where the formula is not valid means that there is a truth assignment to the y-variables so that irrelevant of the assignment for x-variables there is at least one clause that is not satisfied. We simply fail the edges that correspond to such a y-variables assigment and the same arguments as in the previous proof imply that there is not any feasible flow assignment for this failure scenario. Proof sketch. By reduction from the NP-complete shortest path most vital edges problem (SP-MVE) [3, 36] . The input to SP-MVE is a directed graph G = (V, E) with positive edge weights, two nodes s, t \u2208 V and two positive numbers k and ",
+            "cite_spans": [
+                {
+                    "start": 1318,
+                    "end": 1321,
+                    "text": "[3,",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 1322,
+                    "end": 1325,
+                    "text": "36]",
+                    "ref_id": "BIBREF35"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Theorem 7. The PS/PN problems without any link failures are NL-hard."
+        },
+        {
+            "text": "construct network N F and weight assignment W F by Definition 3 5:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Theorem 7. The PS/PN problems without any link failures are NL-hard."
+        },
+        {
+            "text": "switch \u03c4 do 6:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Theorem 7. The PS/PN problems without any link failures are NL-hard."
+        },
+        {
+            "text": "case OS: use Theorem 1 on N F and W F (without failed links) 7:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Theorem 7. The PS/PN problems without any link failures are NL-hard."
+        },
+        {
+            "text": "case ON: use Theorem 2 on N F and W F (without failed links) 8:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Theorem 7. The PS/PN problems without any link failures are NL-hard."
+        },
+        {
+            "text": "case PS/PN: use Theorem 3 on N F and W F (without failed links) 9 :",
+            "cite_spans": [
+                {
+                    "start": 64,
+                    "end": 65,
+                    "text": "9",
+                    "ref_id": "BIBREF8"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Theorem 7. The PS/PN problems without any link failures are NL-hard."
+        },
+        {
+            "text": "if the answer to the \u03c4 -problem on N F and W F is negative then return false 10: endfor 11: return true H. The question is whether there exist at most k edges in E such that their removal creates a graph with the length of the shortest path between s and t being at least H. We reduce the SP-MVE to the negation of the PN/PS in order to demonstrate co-NP-hardness.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Theorem 7. The PS/PN problems without any link failures are NL-hard."
+        },
+        {
+            "text": "We modify the G by inserting a new edge between s and t of weight H and capacity 1, while setting the capacity 2 for all other edges in G. If the SP-MVE problem has a solution F \u2286 E where |F | \u2264 k, then the added edge (s, t) becomes one of the shortest paths between s and t under the failure scenario F and a flow demand of size 2 between s and t can be routed through this edge, violating the capacity constraints. If the SP-MVE problem does not have a solution, then after the removal of at most k links, the length of the shortest path between s and t remains strictly less than H and any flow assignment along the shortest paths is feasible. We hence conclude that PN/PS problems are co-NP-hard. A small modification of the construction is needed for hardness of the OS problem.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Theorem 7. The PS/PN problems without any link failures are NL-hard."
+        },
+        {
+            "text": "In order to solve the PS, PN, ON and OS problems, we can enumerate all failure scenarios for up to k failed links (omitting the links with zero capacity), construct the pruned network for each such failure scenario and then apply our algorithms in Theorems 1, 2 and 3. This brute-force search approach is formalized in Algorithm 2 and its worst-case running time is exponential.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "A Fast Strategic Search Algorithm"
+        },
+        {
+            "text": "Our complexity results indicate that the exponential behavior of any algorithm solving a co-NP-hard (or even \u03a0 P 2 -hard) problem is unavoidable (unless P=NP). However, in practice many concrete instances can be solved fast if more refined search algorithms are used. To demonstrate this, we present a novel strategic search algorithm for verifying the feasibility of shortest path routing under failures. At the heart of our algorithm lies the idea to reduce the number of explored failure scenarios by skipping the \"uninteresting\" ones. Let us fix an NCD N = (V, C, D) with the weight assignment W . We define a relation \u227a on failure scenarios such that F \u227a F iff for all flow demands we preserve in F at least one of the shortest paths that are present under the failure scenario F .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "A Fast Strategic Search Algorithm"
+        },
+        {
+            "text": "We first show that if F \u227a F and the failure scenario F has a feasible routing solution for the pessimistic problem, then F also has a solution. Thus instead of exploring all possible failure scenarios like in the brute-force algorithm, it is sufficient to explore only failure scenarios that are minimal w.r.t. \u227a relation. Hence for the pessimistic scenario, the idea of strategic search is to ignore failure scenarios that remove only some of the shortest paths but preserve at least one of such shortest paths. For the optimistic scenario, we on the other hand explore only the maximal failure scenarios where removing one additional link causes the removal of all shortest paths for at least one source and destination.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "A Fast Strategic Search Algorithm"
+        },
+        {
+            "text": "In our algorithm, we use the notation spg s,t F for the shortest path graph as defined in Algorithm 1 for the input graph N F with weight assignment W F . The function min cuts(spg s,t F , s, t) returns the set of all minimum cuts separating the nodes s and t (sets of edges that disconnect the source node s from the target node t in the shortest-path graph spg s,t F ). This function can be computed e.g. using the Provan and Shier algorithm [34] , assuming that each edge has a unit weight and hence minimizing the number of edges in the minimum cut. There can be several incomparable minimum cuts (with the same number of edges) and by mincut size(spg s,t F , s, t) we denote the number of edges in each the minimum cuts from the set min cuts(spg s,t F , s, t). Algorithm 3 now presents our fast search strategy, called strategic search. The input to the algorithm is the same as for the brute-force search. The algorithm initializes the pending set of failure scenarios to be explored to the empty failure scenario and it remembers the set of passed failure scenarios that were already verified. In the main while loop, a failure scenario F is removed from the pending set and depending on the type \u03c4 of the problem, we either directly verify the scenario F in the case of the pessimistic problems, or we call the function MaxFailureCheck (F ) that instead verifies all maximal failure scenarios F such that F \u227a F . The correctness of Algorithm 3 is formally stated as follows.",
+            "cite_spans": [
+                {
+                    "start": 444,
+                    "end": 448,
+                    "text": "[34]",
+                    "ref_id": "BIBREF33"
+                }
+            ],
+            "ref_spans": [],
+            "section": "A Fast Strategic Search Algorithm"
+        },
+        {
+            "text": "Theorem 11. Algorithm 3 terminates and returns true iff the answer to the \u03c4 -problem is positive. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "A Fast Strategic Search Algorithm"
+        },
+        {
+            "text": "To evaluate the practical performance of our strategic search algorithms, we conducted experiments on various wide-area and datacenter network topologies. The reproducibility package with our Python implementation can be found at [37] .",
+            "cite_spans": [
+                {
+                    "start": 230,
+                    "end": 234,
+                    "text": "[37]",
+                    "ref_id": "BIBREF36"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Experiments"
+        },
+        {
+            "text": "We study the algorithms' performance on a range of network topologies, and consider both sparse and irregular wide-area networks (using the Internet Topology Zoo [28] data set) as well as dense and regular datacenter topologies (namely fat-tree [9] , BCube [23] , and Xpander [40] ). To model demands, for each topology, we consider certain nodes to serve as core nodes which have significant pairwise demands. Overall, we created 24,388 problem instances for our experimental benchmark, out of which we were able to solve 23,934 instances within a 2-hour timeout. In our evaluation, we filter out the trivial instances where the runtime is less than 0.1 second for both the brute-force and strategic search (as some of the instances e.g. contain a disconnected flow demand already without any failed links). The benchmark contains a mixture of both positive and negative instances for each problem for increasing number k of failed links. Table 5 shows the median times for each series of experiments for the different scenarios. All experiments for each topology and given problem instance are sorted by the speedup ratio, i.e. B.time divided by S.time; we display the result for the experiment in the middle of each table. Clearly, our strategic search algorithm always outperforms the brute-force one by a significant factor in all the scenarios. We also report on the number of iterations (B.iter and S.iter) of the two algorithms, showing the number of failure scenarios to be explored.",
+            "cite_spans": [
+                {
+                    "start": 162,
+                    "end": 166,
+                    "text": "[28]",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 245,
+                    "end": 248,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 257,
+                    "end": 261,
+                    "text": "[23]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 276,
+                    "end": 280,
+                    "text": "[40]",
+                    "ref_id": "BIBREF39"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 940,
+                    "end": 947,
+                    "text": "Table 5",
+                    "ref_id": null
+                }
+            ],
+            "section": "Experiments"
+        },
+        {
+            "text": "Let us first discuss the pessimistic scenarios in more detail. Figure 6 shows a cactus plot [6] for the wide-area network setting (on the left) and for the datacenter setting (on the right). We note that y-axis in the figure is logarithmic. For example, to solve the 1500th fastest instances in the wide-area network (left), the brute-force algorithm uses more than 100 seconds, while the strategic algorithm solves the problem in less than a second; this corresponds to a speedup of more than two orders of magnitude. For more difficult instances, the difference in runtime continues to grow exponentially, and becomes several orders of magnitude. For datacenter networks (right), the difference is even larger. The latter can be explained by the fact that datacenters provide a higher path diversity and multiple shortest paths between source and target nodes and hence more opportunities for a clever skipping of \"uninteresting instances\". As the pessimistic problems we aim to solve are co-NP-hard, there are necessarily some hard instances also for our strategic search; this is demonstrated by the S-shaped curve showing a significantly increased runtime for the most difficult instances.",
+            "cite_spans": [
+                {
+                    "start": 92,
+                    "end": 95,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 63,
+                    "end": 71,
+                    "text": "Figure 6",
+                    "ref_id": "FIGREF16"
+                }
+            ],
+            "section": "Experiments"
+        },
+        {
+            "text": "We next discuss the optimistic scenarios, including the experiments both for splittable and nonsplittable cases. Figure 7 shows a cactus plot for the wide-area network setting (on the left) and for the datacenter setting (on the right). Again, our strategic algorithm significantly outperforms the baseline in both scenarios. Interestingly, in the optimistic scenario, the relative performance benefit is larger for wide-area networks as the optimistic strategic search explores all the maximum failure scenarios and there are significantly more of such scenarios in the highly connected datacenter topologies. Hence, while for datacenters (right) the strategic search maintains about one order of magnitude better performance, the performance for the wide-area networks improves exponentially.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 113,
+                    "end": 121,
+                    "text": "Figure 7",
+                    "ref_id": "FIGREF17"
+                }
+            ],
+            "section": "Experiments"
+        },
+        {
+            "text": "We presented a comprehensive study of the algorithmic complexity of verifying feasible routes under failures without violating capacity constraints, covering both optimistic and pessimistic, as well as splittable and nonsplittable scenarios. We further presented algorithms, based on strategic failure scenario enumerations, which we proved efficient in realistic scenarios. While our paper charts the complete landscape, there remain several interesting avenues for future research like further scalability improvements and a parallelization of the algorithm.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Netkat: Semantic foundations for networks",
+            "authors": [
+                {
+                    "first": "Carolyn",
+                    "middle": [
+                        "Jane"
+                    ],
+                    "last": "Anderson",
+                    "suffix": ""
+                },
+                {
+                    "first": "Nate",
+                    "middle": [],
+                    "last": "Foster",
+                    "suffix": ""
+                },
+                {
+                    "first": "Arjun",
+                    "middle": [],
+                    "last": "Guha",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jean-Baptiste",
+                    "middle": [],
+                    "last": "Jeannin",
+                    "suffix": ""
+                },
+                {
+                    "first": "Dexter",
+                    "middle": [],
+                    "last": "Kozen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Cole",
+                    "middle": [],
+                    "last": "Schlesinger",
+                    "suffix": ""
+                },
+                {
+                    "first": "David",
+                    "middle": [],
+                    "last": "Walker",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Acm sigplan notices",
+            "volume": "49",
+            "issn": "1",
+            "pages": "113--126",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Multipath routing algorithms for congestion minimization",
+            "authors": [
+                {
+                    "first": "Ron",
+                    "middle": [],
+                    "last": "Banner",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ariel",
+                    "middle": [],
+                    "last": "Orda",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "IEEE/ACM Transactions on Networking",
+            "volume": "15",
+            "issn": "",
+            "pages": "92--122",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "A refined complexity analysis of finding the most vital edges for undirected shortest paths",
+            "authors": [
+                {
+                    "first": "Cristina",
+                    "middle": [],
+                    "last": "Bazgan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Andr\u00e9",
+                    "middle": [],
+                    "last": "Nichterlein",
+                    "suffix": ""
+                },
+                {
+                    "first": "Rolf",
+                    "middle": [],
+                    "last": "Niedermeier",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "International Conference on Algorithms and Complexity",
+            "volume": "9079",
+            "issn": "",
+            "pages": "47--60",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Don't mind the gap: Bridging network-wide objectives and device-level configurations",
+            "authors": [
+                {
+                    "first": "Ryan",
+                    "middle": [],
+                    "last": "Beckett",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ratul",
+                    "middle": [],
+                    "last": "Mahajan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Todd",
+                    "middle": [],
+                    "last": "Millstein",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jitendra",
+                    "middle": [],
+                    "last": "Padhye",
+                    "suffix": ""
+                },
+                {
+                    "first": "David",
+                    "middle": [],
+                    "last": "Walker",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Proceedings of the 2016 ACM SIGCOMM Conference",
+            "volume": "",
+            "issn": "",
+            "pages": "328--341",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Network utility maximization with path cardinality constraints",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Bi",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Tan",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Tang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Proceedings of the 35th Annual IEEE International Conference on Computer Communications (IEEE INFOCOM 2016)",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Benchmarking solvers, SAT-style",
+            "authors": [
+                {
+                    "first": "James",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Martin Nyx Brain",
+                    "suffix": ""
+                },
+                {
+                    "first": "Alberto",
+                    "middle": [],
+                    "last": "Davenport",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Griggio",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Proceedings of the 2nd International Workshop on Satisfiability Checking and Symbolic Computation co-located with the 42nd International Symposium on Symbolic and Algebraic Computation (ISSAC'17), volume 1974 of CEUR",
+            "volume": "",
+            "issn": "",
+            "pages": "1--15",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Performance of hashing-based schemes for internet load balancing",
+            "authors": [
+                {
+                    "first": "Zhiruo",
+                    "middle": [],
+                    "last": "Cao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Zheng",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ellen",
+                    "middle": [],
+                    "last": "Zegura",
+                    "suffix": ""
+                }
+            ],
+            "year": 2000,
+            "venue": "Proceedings of IEEE INFOCOM",
+            "volume": "1",
+            "issn": "",
+            "pages": "332--341",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Lancet: Better network resilience by designing for pruned. SIGMETRICS Perform",
+            "authors": [
+                {
+                    "first": "Yiyang",
+                    "middle": [],
+                    "last": "Chang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Chuan",
+                    "middle": [],
+                    "last": "Jiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ashish",
+                    "middle": [],
+                    "last": "Chandra",
+                    "suffix": ""
+                },
+                {
+                    "first": "Sanjay",
+                    "middle": [],
+                    "last": "Rao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Mohit",
+                    "middle": [],
+                    "last": "Tawarmalani",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Eval. Rev",
+            "volume": "48",
+            "issn": "1",
+            "pages": "53--54",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Fat-trees: Universal networks for hardware-efficient supercomputing",
+            "authors": [
+                {
+                    "first": "Charles",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Leiserson",
+                    "suffix": ""
+                }
+            ],
+            "year": 1985,
+            "venue": "",
+            "volume": "34",
+            "issn": "",
+            "pages": "892--901",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Traffic engineering with equal-costmultipath: An algorithmic perspective",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Chiesa",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Kindler",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Schapira",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "IEEE/ACM Transactions on Networking",
+            "volume": "25",
+            "issn": "2",
+            "pages": "779--792",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "A taxonomy of problems with fast parallel algorithms. Information and Control",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Stephen",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Cook",
+                    "suffix": ""
+                }
+            ],
+            "year": 1985,
+            "venue": "",
+            "volume": "64",
+            "issn": "",
+            "pages": "2--22",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Parallel matrix and graph algorithms",
+            "authors": [
+                {
+                    "first": "Eliezer",
+                    "middle": [],
+                    "last": "Dekel",
+                    "suffix": ""
+                },
+                {
+                    "first": "David",
+                    "middle": [],
+                    "last": "Nassimi",
+                    "suffix": ""
+                },
+                {
+                    "first": "Sartaj",
+                    "middle": [],
+                    "last": "Sahni",
+                    "suffix": ""
+                }
+            ],
+            "year": 1981,
+            "venue": "SIAM Journal on Computing",
+            "volume": "10",
+            "issn": "4",
+            "pages": "657--675",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Rezaul Chowdhury, and Vijaya Ramachandran. Oracles for distances avoiding a failed node or link",
+            "authors": [
+                {
+                    "first": "Camil",
+                    "middle": [],
+                    "last": "Demetrescu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Mikkel",
+                    "middle": [],
+                    "last": "Thorup",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "SIAM J. Comput",
+            "volume": "37",
+            "issn": "",
+            "pages": "1299--1318",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Theoretical improvements in algorithmic efficiency for network flow problems",
+            "authors": [
+                {
+                    "first": "Jack",
+                    "middle": [],
+                    "last": "Edmonds",
+                    "suffix": ""
+                },
+                {
+                    "first": "Richard",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Karp",
+                    "suffix": ""
+                }
+            ],
+            "year": 1972,
+            "venue": "",
+            "volume": "19",
+            "issn": "",
+            "pages": "248--264",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Network-wide configuration synthesis",
+            "authors": [
+                {
+                    "first": "Ahmed",
+                    "middle": [],
+                    "last": "El-Hassany",
+                    "suffix": ""
+                },
+                {
+                    "first": "Petar",
+                    "middle": [],
+                    "last": "Tsankov",
+                    "suffix": ""
+                },
+                {
+                    "first": "Laurent",
+                    "middle": [],
+                    "last": "Vanbever",
+                    "suffix": ""
+                },
+                {
+                    "first": "Martin",
+                    "middle": [],
+                    "last": "Vechev",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "International Conference on Computer Aided Verification",
+            "volume": "",
+            "issn": "",
+            "pages": "261--281",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Internet traffic engineering by optimizing OSPF weights",
+            "authors": [
+                {
+                    "first": "Bernard",
+                    "middle": [],
+                    "last": "Fortz",
+                    "suffix": ""
+                }
+            ],
+            "year": 2000,
+            "venue": "Proc. IEEE INFOCOM",
+            "volume": "",
+            "issn": "",
+            "pages": "519--528",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Traffic engineering with traditional IP routing protocols",
+            "authors": [
+                {
+                    "first": "Bernard",
+                    "middle": [],
+                    "last": "Fortz",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jennifer",
+                    "middle": [],
+                    "last": "Rexford",
+                    "suffix": ""
+                },
+                {
+                    "first": "Mikkel",
+                    "middle": [],
+                    "last": "Thorup",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "IEEE Comm. Magazine",
+            "volume": "40",
+            "issn": "10",
+            "pages": "118--124",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Optimizing OSPF/IS-IS weights in a changing world",
+            "authors": [
+                {
+                    "first": "Bernard",
+                    "middle": [],
+                    "last": "Fortz",
+                    "suffix": ""
+                },
+                {
+                    "first": "Mikkel",
+                    "middle": [],
+                    "last": "Thorup",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "IEEE Journal on Selected Areas in Communications (JSAC)",
+            "volume": "20",
+            "issn": "4",
+            "pages": "756--767",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Increasing internet capacity using local search",
+            "authors": [
+                {
+                    "first": "Bernard",
+                    "middle": [],
+                    "last": "Fortz",
+                    "suffix": ""
+                },
+                {
+                    "first": "Mikkel",
+                    "middle": [],
+                    "last": "Thorup",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Computational Optimization and Applications",
+            "volume": "29",
+            "issn": "1",
+            "pages": "13--48",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Probabilistic NetKAT",
+            "authors": [
+                {
+                    "first": "Nate",
+                    "middle": [],
+                    "last": "Foster",
+                    "suffix": ""
+                },
+                {
+                    "first": "Dexter",
+                    "middle": [],
+                    "last": "Kozen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Konstantinos",
+                    "middle": [],
+                    "last": "Mamouras",
+                    "suffix": ""
+                },
+                {
+                    "first": "Mark",
+                    "middle": [],
+                    "last": "Reitblatt",
+                    "suffix": ""
+                },
+                {
+                    "first": "Alexandra",
+                    "middle": [],
+                    "last": "Silva",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Programming Languages and Systems (ESOP'16)",
+            "volume": "9632",
+            "issn": "",
+            "pages": "282--309",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Achieving sub-second igp convergence in large IP networks",
+            "authors": [
+                {
+                    "first": "Pierre",
+                    "middle": [],
+                    "last": "Francois",
+                    "suffix": ""
+                },
+                {
+                    "first": "Clarence",
+                    "middle": [],
+                    "last": "Filsfils",
+                    "suffix": ""
+                },
+                {
+                    "first": "John",
+                    "middle": [],
+                    "last": "Evans",
+                    "suffix": ""
+                },
+                {
+                    "first": "Olivier",
+                    "middle": [],
+                    "last": "Bonaventure",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "ACM SIGCOMM Computer Communication Review",
+            "volume": "35",
+            "issn": "3",
+            "pages": "35--44",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Vl2: a scalable and flexible data center network",
+            "authors": [
+                {
+                    "first": "Albert",
+                    "middle": [],
+                    "last": "Greenberg",
+                    "suffix": ""
+                },
+                {
+                    "first": "Navendu",
+                    "middle": [],
+                    "last": "James R Hamilton",
+                    "suffix": ""
+                },
+                {
+                    "first": "Srikanth",
+                    "middle": [],
+                    "last": "Jain",
+                    "suffix": ""
+                },
+                {
+                    "first": "Changhoon",
+                    "middle": [],
+                    "last": "Kandula",
+                    "suffix": ""
+                },
+                {
+                    "first": "Parantap",
+                    "middle": [],
+                    "last": "Kim",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Lahiri",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "David",
+                    "suffix": ""
+                },
+                {
+                    "first": "Parveen",
+                    "middle": [],
+                    "last": "Maltz",
+                    "suffix": ""
+                },
+                {
+                    "first": "Sudipta",
+                    "middle": [],
+                    "last": "Patel",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Sengupta",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Proceedings of the ACM SIGCOMM 2009 conference on Data communication",
+            "volume": "",
+            "issn": "",
+            "pages": "51--62",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Bcube: A high performance, server-centric network architecture for modular data centers",
+            "authors": [
+                {
+                    "first": "Chuanxiong",
+                    "middle": [],
+                    "last": "Guo",
+                    "suffix": ""
+                },
+                {
+                    "first": "Guohan",
+                    "middle": [],
+                    "last": "Lu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Dan",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Haitao",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Xuan",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Yunfeng",
+                    "middle": [],
+                    "last": "Shi",
+                    "suffix": ""
+                },
+                {
+                    "first": "Chen",
+                    "middle": [],
+                    "last": "Tian",
+                    "suffix": ""
+                },
+                {
+                    "first": "Yongguang",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Songwu",
+                    "middle": [],
+                    "last": "Lu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Guohan",
+                    "middle": [],
+                    "last": "Lv",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "ACM SIGCOMM",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Analysis of an equal-cost multi-path algorithm",
+            "authors": [
+                {
+                    "first": "Christian",
+                    "middle": [],
+                    "last": "Hopps",
+                    "suffix": ""
+                }
+            ],
+            "year": 2000,
+            "venue": "",
+            "volume": "2992",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Fast verification of MPLS networks with multiple link failures",
+            "authors": [
+                {
+                    "first": "Troels",
+                    "middle": [],
+                    "last": "Jesper Stenbjerg Jensen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jonas",
+                    "middle": [
+                        "Sand"
+                    ],
+                    "last": "Beck Kr\u00f8gh",
+                    "suffix": ""
+                },
+                {
+                    "first": "Stefan",
+                    "middle": [],
+                    "last": "Madsen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ji\u0159\u00ed",
+                    "middle": [],
+                    "last": "Schmid",
+                    "suffix": ""
+                },
+                {
+                    "first": "Marc",
+                    "middle": [],
+                    "last": "Srba",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Tom Thorgersen",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "P-Rex",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Proc. 14th International Conference on emerging Networking EXperiments and Technologies (CoNEXT)",
+            "volume": "",
+            "issn": "",
+            "pages": "217--227",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Aalwines: A fast and quantitative what-if analysis tool for mpls networks",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Jensen",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Kristiansen",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Schmid",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Schou",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Schrenk",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Srba",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Proceedings of the 16th International Conference on Emerging Networking EXperiments and Technologies (CoNEXT'20)",
+            "volume": "",
+            "issn": "",
+            "pages": "474--481",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Efficient algorithms for shortest paths in sparse networks",
+            "authors": [
+                {
+                    "first": "Donald",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Johnson",
+                    "suffix": ""
+                }
+            ],
+            "year": 1977,
+            "venue": "Journal of ACM",
+            "volume": "24",
+            "issn": "1",
+            "pages": "1--13",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "The internet topology Zoo. Selected Areas in Communications",
+            "authors": [
+                {
+                    "first": "Simon",
+                    "middle": [],
+                    "last": "Knight",
+                    "suffix": ""
+                },
+                {
+                    "first": "Hung",
+                    "middle": [],
+                    "last": "Nguyen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Nickolas",
+                    "middle": [],
+                    "last": "Falkner",
+                    "suffix": ""
+                },
+                {
+                    "first": "Rhys",
+                    "middle": [],
+                    "last": "Bowden",
+                    "suffix": ""
+                },
+                {
+                    "first": "Matthew",
+                    "middle": [],
+                    "last": "Roughan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "IEEE Journal on",
+            "volume": "29",
+            "issn": "",
+            "pages": "1765--1775",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "WNetKAT: A weighted SDN programming and verification language",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Kim",
+                    "suffix": ""
+                },
+                {
+                    "first": "Stefan",
+                    "middle": [],
+                    "last": "Larsen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Bingtian",
+                    "middle": [],
+                    "last": "Schmid",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Xue",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Proc. 20th International Conference on Principles of Distributed Systems (OPODIS)",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "OSPF version 2",
+            "authors": [
+                {
+                    "first": "John",
+                    "middle": [],
+                    "last": "Moy",
+                    "suffix": ""
+                }
+            ],
+            "year": 1998,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Complexity of column generation in network design with path-based survivability mechanism. Networks",
+            "authors": [
+                {
+                    "first": "Sebastian",
+                    "middle": [],
+                    "last": "Orlowski",
+                    "suffix": ""
+                },
+                {
+                    "first": "Michal",
+                    "middle": [],
+                    "last": "Pioro",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "59",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Verifying reachability in networks with mutable datapaths",
+            "authors": [
+                {
+                    "first": "Aurojit",
+                    "middle": [],
+                    "last": "Panda",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ori",
+                    "middle": [],
+                    "last": "Lahav",
+                    "suffix": ""
+                },
+                {
+                    "first": "Katerina",
+                    "middle": [],
+                    "last": "Argyraki",
+                    "suffix": ""
+                },
+                {
+                    "first": "Mooly",
+                    "middle": [],
+                    "last": "Sagiv",
+                    "suffix": ""
+                },
+                {
+                    "first": "Scott",
+                    "middle": [],
+                    "last": "Shenker",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "14th USENIX Symposium on Networked Systems Design and Implementation (NSDI'17)",
+            "volume": "",
+            "issn": "",
+            "pages": "699--718",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Computational complexity",
+            "authors": [
+                {
+                    "first": "Christos",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Papadimitriou",
+                    "suffix": ""
+                }
+            ],
+            "year": 1994,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "A paradigm for listing (s, t)-cuts in graphs",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Provan",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Shier",
+                    "suffix": ""
+                }
+            ],
+            "year": 1996,
+            "venue": "Algorithmica",
+            "volume": "15",
+            "issn": "4",
+            "pages": "351--372",
+            "other_ids": {}
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "The complexity of minimum cut and maximum flow problems in an acyclic network",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Ramachandran",
+                    "suffix": ""
+                }
+            ],
+            "year": 1987,
+            "venue": "",
+            "volume": "17",
+            "issn": "",
+            "pages": "387--392",
+            "other_ids": {}
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "The complexity of finding most vital arcs and nodes",
+            "authors": [
+                {
+                    "first": "Baruch",
+                    "middle": [],
+                    "last": "Schieber",
+                    "suffix": ""
+                },
+                {
+                    "first": "Amotz",
+                    "middle": [],
+                    "last": "Bar-Noy",
+                    "suffix": ""
+                },
+                {
+                    "first": "Samir",
+                    "middle": [],
+                    "last": "Khuller",
+                    "suffix": ""
+                }
+            ],
+            "year": 1995,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Reproducibility Package for TACAS'21 Paper Resilient Capacity-Aware Routing",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Schmid",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Schnepf",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Srba",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.5281/zenodo.4421365"
+                ]
+            }
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Polynomial-time what-if analysis for prefix-manipulating MPLS networks",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Schmid",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Srba",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Proc. IEEE INFOCOM",
+            "volume": "",
+            "issn": "",
+            "pages": "1799--1807",
+            "other_ids": {}
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "Theory of Linear and Integer Programming",
+            "authors": [
+                {
+                    "first": "Alexander",
+                    "middle": [],
+                    "last": "Schrijver",
+                    "suffix": ""
+                }
+            ],
+            "year": 1986,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "Xpander: Towards optimalperformance datacenters",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Valadarsky",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Shahaf",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Dinitz",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Schapira",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "CoNEXT",
+            "volume": "",
+            "issn": "",
+            "pages": "205--219",
+            "other_ids": {}
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Some complexity results for stateful network verification",
+            "authors": [
+                {
+                    "first": "Yaron",
+                    "middle": [],
+                    "last": "Velner",
+                    "suffix": ""
+                },
+                {
+                    "first": "Kalev",
+                    "middle": [],
+                    "last": "Alpernas",
+                    "suffix": ""
+                },
+                {
+                    "first": "Aurojit",
+                    "middle": [],
+                    "last": "Panda",
+                    "suffix": ""
+                },
+                {
+                    "first": "Alexander",
+                    "middle": [],
+                    "last": "Rabinovich",
+                    "suffix": ""
+                },
+                {
+                    "first": "Mooly",
+                    "middle": [],
+                    "last": "Sagiv",
+                    "suffix": ""
+                },
+                {
+                    "first": "Scott",
+                    "middle": [],
+                    "last": "Shenker",
+                    "suffix": ""
+                },
+                {
+                    "first": "Sharon",
+                    "middle": [],
+                    "last": "Shoham",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Proc. of TACAS'16",
+            "volume": "",
+            "issn": "",
+            "pages": "811--830",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "co-NP-complete co-NP-complete Nonsplit. co-NP-complete \u03a0 P 2 -complete (b) With link failures (k \u2265 0) Summary of complexity results for capacity problems",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "Let N = (V, C, D) be an NCD with weight assignment W , and let F \u2286 V \u00d7 V be a set of failed links. We define the pruned NCD N F = (V, C F , D) with an updated weight assignment W F by",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "k, is there a feasible splittable/nonsplittable flow assignment on N for every set of failed links F of cardinality at most k?",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "Computation of the shortest path graph function spg s,t Input: NCD N = (V, C, D), weight assignment W and s, t \u2208 V Output: Shortest path graph function spg s,t :",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "Let N = (V, C, D) be an NCD with weight assignment W and s, t \u2208 V . Algorithm 1 runs in polynomial time and the value of spg s,t",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": "The PS and PN capacity problems without any link failures are decidable in nondeterministic logarithmic space.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF6": {
+            "text": "The PN, PS and OS problems with link failures are in co-NP.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF7": {
+            "text": "The ON capacity problem without any link failures is NP-hard, even for the case where all weights are equal to 1.Proof. By a polynomial-time reduction from the NP-complete problem CNF-SAT[33].Let \u03d5 = c 1 \u2227 c 2 \u2227 . . . \u2227 c n be a CNF-SAT instance where every clause c i , 1 \u2264 i \u2264 n, is a disjunction of literals. A literal is either a variable x 1 , . . . , x k or its negation x 1 , . . . , x k . If a literal j \u2208 {x j , x j } appears in the disjunction for the clause c i , we write j \u2208 c i . A formula \u03d5 is satisfiable ifthere is an assignment of the variables x 1 , . . . , x k to true or false, so that the formula \u03d5 is satisfied (evaluates to true under this assignment). For a given formula \u03d5 we now construct an NCD N = (V, C, D) where-V = {s 0 , s 1 , . . . , s k } \u222a {x 1 , . . . , x k } \u222a {x 1 , . . . , x k } \u222a {c s i , c e i | 1 \u2264 i \u2264 n}, -C(s i\u22121 , x i ) = C(s i\u22121 , x i ) = C(x i , s i ) = C(x i , s i ) = n for all i, 1 \u2264 i \u2264 k, -C(c s i , j ) = C(s j ,c e i ) = 1 for all i, 1 \u2264 i \u2264 n and every literal j \u2208 {x j , x j } such that j \u2208 c i , -D(s 0 , s k ) = n, and D(c s i , c e i ) = 1 for all i, 1 \u2264 i \u2264 n. The capacities of edges and flow demands that are not mentioned above are all set to 0 and the weights of all edges are equal to 1. In",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF8": {
+            "text": ") NCD for the formula (x1 \u2228 x3) \u2227 (x1 \u2228 x2 \u2228 x3). The capacity of unlabelled links is 1, otherwise 2; link weights are 1. Thick lines show a feasible nonsplittable flow assignment.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF10": {
+            "text": "of m-unbreakable link of capacity n with m + 1 intermediate nodes Fig. 4: Reduction to ON capacity problem without/with failures not use the links corresponding to the satisfying assignment for \u03d5 and then every clause in \u03d5 can be routed through the links corresponding to one of the satisfied literals.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF11": {
+            "text": "The ON problem with link failures is \u03a0 P 2 -hard. Proof. By reduction from the validity of the quantified Boolean formula of the form\u2200y 1 , y 2 , . . . , y m . \u2203x 1 , x 2 , . .. , x k . \u03d5 where \u03d5 = c 1 \u2227 c 2 \u2227 . . . \u2227 c n is a Boolean formula in CNF over the",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF12": {
+            "text": "The PN, PS and OS problems with link failures are co-NP-hard.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF13": {
+            "text": "Input: NCD N = (V, C, D) with weigth assignment W , a number k \u2265 0 and type of the capacity problem \u03c4 \u2208 {PS, PN, ON, OS} 2: Output: true if the answer to the \u03c4 -problem is positive, else false 3: for all",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF14": {
+            "text": "positive answer to the PS/PN problem for the network N F with weight assignment W F implies a positive answer to the PS/PN problem for the network N F with weight assignment W F .For the optimistic scenario, the implication is valid in the opposite direction: it is sufficient to explore only the maximum failure scenarios w.r.t. \u227a.Lemma 4. Let F, F \u2208 V \u00d7 V where F \u227a F . Apositive answer to the OS/ON problem for the network N F with weight assignment W F implies a positive answer to the OS/ON problem for the network N F with weight assignment W F .",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF15": {
+            "text": "Median results, time in seconds (B: brute-force search, S: strategic search)",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF16": {
+            "text": "Pessimistic scenario. Left: wide-area networks, right:",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF17": {
+            "text": "Optimistic scenario. Left: wide-area networks, right: datacenter networks",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "Algorithm 3 Strategic search 1: Input: NCD N = (V, C, D) with weigth assignment W , a number k \u2265 0 and type of capacity problem \u03c4 \u2208 {PS, PN, ON, OS} 2: Output: true if the answer to the \u03c4 -problem is positive, else false 3: pending := {\u2205} \\* initialize the pending set with the empty failure scenario *\\ 4: passed := \u2205 \\ * already processed failure scenarios *\\ 5: while pending = \u2205 do 6: let F \u2208 pending; pending := pending \\ {F } 7: switch \u03c4 do 8: case \u03c4 \u2208 {PS, PN}: Build N F and W F by Definition 3, use Theorem 3 9:if the answer to the \u03c4 -problem was negative then return false pending := pending \u222a succ 16: endwhile 17: return true 18: 19: procedure MaxFailureCheck (F ) \\* to be run only for the optimistic cases *\\ 20: for s, t \u2208 V such that D(s, t) > 0 do21:   for C \u2208 min cuts(spg s,t F , s, t) do22:for all C \u2282 C such that |F \u222a C | = min(k, |F \u222a C| \u2212 1) do 23: if F \u222a C / \u2208 passedthen 24: construct N F \u222aC and W F \u222aC by Definition 3 25: switch \u03c4 do 26: case \u03c4 = OS: use Theorem 1 and if negative then return false 27: case \u03c4 = ON: use Theorem 2 and if negative then return false 28: passed := passed \u222a {F \u222a C }",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "Topology Problem B.iter B.time S.iter S.time Speedup",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "Research supported by the Vienna Science and Technology Fund (WWTF) project ICT19-045 and by the DFF project QASNET.Resilient Capacity-Aware Routing",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Acknowledgements."
+        }
+    ]
+}

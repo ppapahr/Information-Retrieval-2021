@@ -1,0 +1,2721 @@
+{
+    "paper_id": "881d440abe7339a63c91cefac09b75967da7f05e",
+    "metadata": {
+        "title": "0123456789) 1 3 International Archives of Occupational and Environmental Health",
+        "authors": [
+            {
+                "first": "Radwa",
+                "middle": [],
+                "last": "Sehsah",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "\u00b7",
+                "middle": [],
+                "last": "Mohammed",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Hassan",
+                "middle": [],
+                "last": "Gaballah",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Abdel-Hady",
+                "middle": [],
+                "last": "El-Gilany",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Ahmed",
+                "middle": [
+                    "A"
+                ],
+                "last": "Albadry",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Objective The current study's main objective was to measure the prevalence of psychological distress and its associated factors among Egyptian physicians during the COVID-19 pandemic. Perceived stressors and coping strategies were also explored. Methods A cross-sectional study on 714 physicians was carried out using an online administered questionnaire. The questionnaire included sociodemographic and occupational data, data related to the current pandemic, Kessler psychological distress scale, and the brief resilient coping scale. Multivariable logistic regression analysis was performed to identify significant predictors. Results About 50% of physicians had severe psychological distress. Among studied physicians, the significant predictors were being female, having a pre-existing illness, having an elderly family member, and being in close contact with a case (AOR 1.6, 1.6, 1.4 and 1.7, respectively). Meanwhile, significant occupational predictors were less experienced and frontline physicians (AOR 2.0 and 1.8, respectively). The most distressful concern was fear for families and personal health and safety, while religious coping was the most effective coping strategy. Conclusion During the current pandemic, Egyptian physicians have a high prevalence of psychological distress. Frontline, low-experienced, female, previously ill physicians are more likely to have severe psychological distress. Therefore, psychological preparedness and psychological support services should be implemented and made easily accessible during pandemics.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Publisher's Note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "On March 11, 2020, the World Health Organization (WHO) declared COVID-19 a pandemic, with a sustained risk of further global spread [World Health Organization (WHO) 2020a).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "Epidemics represent a significant threat to public health; they can also trigger an intense, international healthcare response, with thousands of healthcare workers (HCWs) finding themselves at the frontline facing the outbreak and exposed to several hazards. Hazards include pathogen exposure, long working hours, psychological distress, fatigue, occupational burnout, stigma, and physical and psychological violence (Kiesly et al. 2020; WHO 2020b) .",
+            "cite_spans": [
+                {
+                    "start": 165,
+                    "end": 171,
+                    "text": "(HCWs)",
+                    "ref_id": null
+                },
+                {
+                    "start": 418,
+                    "end": 438,
+                    "text": "(Kiesly et al. 2020;",
+                    "ref_id": null
+                },
+                {
+                    "start": 439,
+                    "end": 449,
+                    "text": "WHO 2020b)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "Pandemics' unique characteristics can pose much stress on healthcare workers who are in charge of providing care to patients. Moreover, their load can be aggravated by the high and persistent risk of being infected, separation from their families for more long work shifts, and working during spurt situations in overloaded health facilities with insufficient supplies. Witnessing colleagues get infected and human losses despite their finest efforts, exhaustion, and burnout are a few of the many sufferings they must undergo during pandemics (Levin 2019) .",
+            "cite_spans": [
+                {
+                    "start": 544,
+                    "end": 556,
+                    "text": "(Levin 2019)",
+                    "ref_id": "BIBREF22"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "Systematic reviews have explored previous research on psychological outcomes in HCWs during previous epidemics (SARS, H1N1, MERS) and their associated social and occupational factors. Clinically significant common mental health symptoms, most frequently psychological distress, post-traumatic stress disorder, anxiety, depression, affective disturbances, sleep problems, and burnout, were reported (Brooks et al. 2018; Kiesly et al. 2020) .",
+            "cite_spans": [
+                {
+                    "start": 111,
+                    "end": 117,
+                    "text": "(SARS,",
+                    "ref_id": null
+                },
+                {
+                    "start": 118,
+                    "end": 123,
+                    "text": "H1N1,",
+                    "ref_id": null
+                },
+                {
+                    "start": 124,
+                    "end": 129,
+                    "text": "MERS)",
+                    "ref_id": null
+                },
+                {
+                    "start": 398,
+                    "end": 418,
+                    "text": "(Brooks et al. 2018;",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 419,
+                    "end": 438,
+                    "text": "Kiesly et al. 2020)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "Early studies from China, highlighted the psychiatric morbidities among HCWs during the current COVID-19 pandemic. Anxiety, depression, sleep quality disorders, somatization, and psychological distress (among others) are significantly higher in HCWs facing the current pandemic (da Silva and Neto 2021; Lai et al. 2020) .",
+            "cite_spans": [
+                {
+                    "start": 303,
+                    "end": 319,
+                    "text": "Lai et al. 2020)",
+                    "ref_id": "BIBREF21"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "Such psychological distress, mostly if it remains underdetected and subsequently unprevented, can lead to severe psychiatric complications. Thus, understanding the psychological impact of the current pandemic on HCWs is crucial for designing intervention strategies to mitigate the current pandemic's adverse psychological effects. Moreover, it is critical for planning for future outbreaks of emerging infectious diseases.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "Nevertheless, to the extent of our knowledge, no research has been conducted on Egyptian physicians' psychological distress during the current pandemic. Thus, this study aims to measure the psychological distress and determine its associated factors among Egyptian physicians during the current COVID-19 pandemic. Besides, perceived stressors and coping strategies of physicians were explored.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "This observational descriptive cross-sectional study was conducted over one month (June 2020).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Study design"
+        },
+        {
+            "text": "This study targeted different specialty Egyptian physicians who are employed as registered physicians for at least one year, currently working in a health care facility either inside Egypt or abroad and are not on any type of leave.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Study population"
+        },
+        {
+            "text": "The sample size was calculated using the OpenEpi program (https ://www.opene pi.com/Menu/OE_Menu.htm) with the following assumptions: an internal pilot study on 100 doctors revealed that 47% of them have severe distress. With a 99% confidence level and 5% precision, the calculated size was at least 661 physicians.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Sample size"
+        },
+        {
+            "text": "A predesigned self-administered questionnaire (in English) was created after extensive literature review and based on related studies (Grace et al. 2005; Khalid et al. 2016; Lai et al. 2020; Maunder et al. 2006) Each of the ten questions is scored 1 (none of the time), 2 (a little of the time), 3 (some of the time), 4 (most of the time), and 5 (all of the time), and scores are summed to provide a total K10 score (minimum score is ten and a maximum score is fifty) (Kessler et al. 2002) . The total score was interpreted as follows: well (10-19), mild distress (20-24), moderate distress (25-29), and severe distress (30-50) (Andrews and Slade 2001) . K10 has excellent internal consistency and reliability (Cronbach's alpha = 0.93) (Kessler et al. 2002) . 6. Brief Resilient Coping Scale (BRCS): A 4-item measure designed to capture tendencies to cope with stress in a highly adaptive manner. It is useful for identifying individuals in need of interventions aimed to develop resilient coping skills. The items have a five options response format, where 1 = \"does not describe you at all\", 2 = \"does not describe me\", 3 = \"neutral\", 4 = \"describes me\", and 5 = \"it describes you very well\". The total score ranges from 4 to 20, which is interpreted as follows: low-resilient copers (4-13), medium-resilient copers (14-16), and high resilient copers (17-20). The BRCS had adequate internal consistency and reliability estimated by Cronbach's alpha coefficient of 0.76 (Sinclair and Wallston 2004).",
+            "cite_spans": [
+                {
+                    "start": 134,
+                    "end": 153,
+                    "text": "(Grace et al. 2005;",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 154,
+                    "end": 173,
+                    "text": "Khalid et al. 2016;",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 174,
+                    "end": 190,
+                    "text": "Lai et al. 2020;",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 191,
+                    "end": 211,
+                    "text": "Maunder et al. 2006)",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 468,
+                    "end": 489,
+                    "text": "(Kessler et al. 2002)",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 628,
+                    "end": 652,
+                    "text": "(Andrews and Slade 2001)",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 736,
+                    "end": 757,
+                    "text": "(Kessler et al. 2002)",
+                    "ref_id": "BIBREF17"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Study tools"
+        },
+        {
+            "text": "The questionnaire was designed on the SurveyMonkey platform (https ://www.surve ymonk ey.com), delivered via an online link through physicians' groups within Egypt and abroad. Using online data collection was the most feasible for this period because of the lockdown, and it also has the advantage of obtaining information from an enormous and broader geographical distribution. All completed forms (714) during three days were analyzed.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data collection"
+        },
+        {
+            "text": "Data were collected, coded, and analyzed using IBM SPSS version 23. No missing data were detected. Data were tested for normality using the Kolmogorov-Smirnov test. Quantitative data were summarized as mean and standard deviation. Qualitative data were summarized as number and percent. A Chi-square test was done for comparison of categorical variables. Bivariate analysis was performed to find out factors contributing to psychological distress. Crude odds ratios (OR) and their 95% confidence interval (CI) were calculated. Significant associations in bivariate analysis were entered into a multivariate binary logistic regression model to identify the independent predictors of psychological distress. Adjusted odds ratios (AOR) and their 95% confidence interval were calculated. P value \u2264 0.05 was considered statistically significant.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Statistical analysis"
+        },
+        {
+            "text": "The proposal was approved by the Institutional Research Board (IRB), Faculty of Medicine-Mansoura University (Reference number R.20.05.858). Informed consent was obtained from all physicians who were willing to participate in the study after ensuring confidentiality.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Ethical considerations"
+        },
+        {
+            "text": "A total of 714 physicians consented and completed the questionnaire. About half (48.3%) of respondent physicians reported severe psychological distress related to the COVID-19 pandemic. No, mild, and moderate psychological distress were reported by 19.3%, 15.7%, and 16.7%, respectively. Bivariate analysis of sociodemographic and occupational factors showed that physicians with severe psychological distress were more likely to be females (OR 1.5; 95% CI 1.1-2.0), younger (< 40 years) (OR 2.2; 95% CI 1.6-3.0), currently unmarried (OR 1.4; 95% CI 0.98-2.1), not having children (OR 1.7; 95% CI 1.2-2.5), have a chronic illness (OR 1.5; 95% CI 1.03-2.1), with only MBBCh degree (OR 2.6; 95% CI 1.6-4.4), currently working in Egypt (OR 1.8; 95% CI 1.3-2.4) and with short (< 15 years) work duration (OR 2.1; 95% CI 1.6-2.9) ( Table 1) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 827,
+                    "end": 835,
+                    "text": "Table 1)",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "Results of bivariate analysis of COVID-19-related social and behavioral factors associated with severe psychological distress showed that physicians with severe distress were more likely to be currently living with an elderly family member (OR 1.6; 95% CI 1.2-2.2), involved in the direct care of a COVID-19 patient (OR 1.9; 95% CI 1.4-2.5), a close contact to a confirmed COVID-19 case outside work (OR 1.8; 95% CI 1.2-2.7), himself/herself a suspected/confirmed COVID-19 case (OR 1.6; 95% CI 1.1-2.1), and a low-resilient coper (OR 2.4; 95% CI 1.6-3.8) ( Table 2) . Table 3 shows that severe psychological distress independent significant predictors were being a female (AOR 1.6; 95% CI 1.2-2.2), having a chronic illness (AOR 1.6; 95% CI 1.1-2.3), living with an elderly family member (AOR 1.4; 95% CI 1.4-2.7), being a close contact to a COVID-19 case outside work (AOR 1.7; 95% CI 1.1-2.5), job experience less than 15 years (AOR 2.0; 95% CI 1.4-2.7), and being involved in direct COVID-19 patient care (AOR 1.8; 95% CI 1.3-2.4).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 557,
+                    "end": 565,
+                    "text": "Table 2)",
+                    "ref_id": "TABREF2"
+                },
+                {
+                    "start": 568,
+                    "end": 575,
+                    "text": "Table 3",
+                    "ref_id": "TABREF3"
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "The most stressful situations for physicians during the COVID-19 pandemic were the fear of transmitting COVID-19 to their family or friends, the fear of getting COVID-19 infection themselves because of their profession, not knowing when the COVID-19 pandemic will be controlled, small lapses in concentration could result in their infection and occasional shortage of staff. On the other hand, the most effective stress coping strategies, according to participating physicians were, relying on their religious faith, avoiding going out in crowded public places, dealing with every patient as having COVID-19 infection, and doing several relaxation activities. Venting emotions by crying or screaming was considered ineffective by 44.7% of physicians (Table 4) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 750,
+                    "end": 759,
+                    "text": "(Table 4)",
+                    "ref_id": "TABREF4"
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "Moreover, 37.8% of physicians strongly agree to the importance of access to psychological support/intervention during a pandemic (38.8% agree, 20.7% neutral, 2.4% disagree, and 0.3% strongly disagree) (data not shown in tables).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Results"
+        },
+        {
+            "text": "COVID-19 pandemic has resulted in a global crisis. At present, the main focus is on how to prevent COVID-19 infection, different protocols of treatment, and its physical health consequences. However, it is crucial to realize that while a few will suffer serious negative physical health consequences, the majority will confront the pandemic's negative mental health consequences (Grover et al. 2020) .",
+            "cite_spans": [
+                {
+                    "start": 379,
+                    "end": 399,
+                    "text": "(Grover et al. 2020)",
+                    "ref_id": "BIBREF14"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "The current study found that 80.7% of studied physicians reported variable degrees of psychological distress. This result is comparable to previous studies in China during the (Lai et al. 2020 ).",
+            "cite_spans": [
+                {
+                    "start": 176,
+                    "end": 192,
+                    "text": "(Lai et al. 2020",
+                    "ref_id": "BIBREF21"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "In studies during previous outbreaks, variable degrees of psychological distress were reported. During the SARS outbreak, in Hong Kong, almost 90% of HCWs who were in high-risk situations reported psychological symptoms (Chua et al. 2004 ), 70% of HCWs in 9 hospitals in Singapore (Koh et al. 2005) , and 45.7% of those providing direct care to SARS patients in Canada (Grace et al. 2005) . During the H1N1 outbreak in Greece, 27.5% of hospital staff experienced psychological distress (Goulia et al. 2010) . Lastly, in a systematic review by De Pablo et al. (2020), a 37.8% overall prevalence of psychological distress related to coronaviruses (SARS/MERS/COVID-19) among HCWs was reported.",
+            "cite_spans": [
+                {
+                    "start": 220,
+                    "end": 237,
+                    "text": "(Chua et al. 2004",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 281,
+                    "end": 298,
+                    "text": "(Koh et al. 2005)",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 369,
+                    "end": 388,
+                    "text": "(Grace et al. 2005)",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 486,
+                    "end": 506,
+                    "text": "(Goulia et al. 2010)",
+                    "ref_id": "BIBREF12"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Results of the current study showed that physicians experiencing severe psychological distress are more likely to be female. Nearly all previous studies had found that being female is not only one of the most common independent risk factors of different psychological symptoms but also is associated with higher levels of psychological distress (Bukhari et al. 2016; Kang, Ma et al. 2020a, b; Kiesly et al. 2020; Lai et al. 2020; Luo et al. 2020; Ng et al. 2020; Salman et al. 2020; Tam et al. 2004; Tang et al. 2017; Zhang et al. 2020) . Several authors offered different explanations. Proposed concepts include being a biological or personality trait related to gender, multiple sociocultural risk factors (work, marriage, parenthood), and increased female vulnerability to them, and females are more expressive of their emotions (Drapeau et al. 2012) .",
+            "cite_spans": [
+                {
+                    "start": 345,
+                    "end": 366,
+                    "text": "(Bukhari et al. 2016;",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 367,
+                    "end": 392,
+                    "text": "Kang, Ma et al. 2020a, b;",
+                    "ref_id": null
+                },
+                {
+                    "start": 393,
+                    "end": 412,
+                    "text": "Kiesly et al. 2020;",
+                    "ref_id": null
+                },
+                {
+                    "start": 413,
+                    "end": 429,
+                    "text": "Lai et al. 2020;",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 430,
+                    "end": 446,
+                    "text": "Luo et al. 2020;",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 447,
+                    "end": 462,
+                    "text": "Ng et al. 2020;",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 463,
+                    "end": 482,
+                    "text": "Salman et al. 2020;",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 483,
+                    "end": 499,
+                    "text": "Tam et al. 2004;",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 500,
+                    "end": 517,
+                    "text": "Tang et al. 2017;",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 518,
+                    "end": 536,
+                    "text": "Zhang et al. 2020)",
+                    "ref_id": "BIBREF42"
+                },
+                {
+                    "start": 832,
+                    "end": 853,
+                    "text": "(Drapeau et al. 2012)",
+                    "ref_id": "BIBREF11"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Furthermore, the current study results reported that having a chronic illness significantly predicts severe psychological distress among physicians. This finding agrees with previous studies and can be explained by increased worries of being more susceptible to infection and its complications (Kiesly et al. 2020; Luo et al. 2020; Tam et al. 2004; Zhang et al. 2020) .",
+            "cite_spans": [
+                {
+                    "start": 294,
+                    "end": 314,
+                    "text": "(Kiesly et al. 2020;",
+                    "ref_id": null
+                },
+                {
+                    "start": 315,
+                    "end": 331,
+                    "text": "Luo et al. 2020;",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 332,
+                    "end": 348,
+                    "text": "Tam et al. 2004;",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 349,
+                    "end": 367,
+                    "text": "Zhang et al. 2020)",
+                    "ref_id": "BIBREF42"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Moreover, the current study described a significant association between living with an elderly family member and the severity of psychological distress. Similarly, it was concluded in previous studies that some HCWs suffering from distress were caring for elderly parents, with high fears to transmit the infection to them as they may be more prone to infection, have more severe disease symptoms, and more complications (Grace et al. 2005; Kiesly et al. 2020; Luo et al. 2020; Tsamakis et al. 2020) .",
+            "cite_spans": [
+                {
+                    "start": 421,
+                    "end": 440,
+                    "text": "(Grace et al. 2005;",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 441,
+                    "end": 460,
+                    "text": "Kiesly et al. 2020;",
+                    "ref_id": null
+                },
+                {
+                    "start": 461,
+                    "end": 477,
+                    "text": "Luo et al. 2020;",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 478,
+                    "end": 499,
+                    "text": "Tsamakis et al. 2020)",
+                    "ref_id": "BIBREF37"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Also, exposure to infected people, even outside work, is a significant predictor of severe psychological distress in the current study. This exposure carries the same worry of transmitting the infection to loved ones besides getting infected themselves. If such close contact was with an infected family member, the stress is even more (Kang, Li et al. 2020a, b; Kiesly et al. 2020; Ng et al. 2020; Wu et al. 2009 ). The current study shows that being involved in the direct care of COVID-19 patients (frontline HCWs) is a significant occupational predictor of severe psychological distress. During previous outbreaks and current pandemic, almost all studies pointed out that working in the frontline caring of suspected or confirmed cases is a significant predictor of several psychiatric morbidities and higher levels of psychological distress. Frontline work is naturally demanding, both physically and mentally, with longer working hours, pose a higher risk of getting the infection, and more concern of passing it to households (De Brier et al. 2020; Grace et al. 2005; Kang, Li et al. 2020a, b; Kiesly et al. 2020; Koh et al. 2005; Lai et al. 2020; Maunder 2004; Ng et al. 2020; Que et al. 2020; Zhang et al. 2020) .",
+            "cite_spans": [
+                {
+                    "start": 336,
+                    "end": 362,
+                    "text": "(Kang, Li et al. 2020a, b;",
+                    "ref_id": null
+                },
+                {
+                    "start": 363,
+                    "end": 382,
+                    "text": "Kiesly et al. 2020;",
+                    "ref_id": null
+                },
+                {
+                    "start": 383,
+                    "end": 398,
+                    "text": "Ng et al. 2020;",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 399,
+                    "end": 413,
+                    "text": "Wu et al. 2009",
+                    "ref_id": "BIBREF41"
+                },
+                {
+                    "start": 1033,
+                    "end": 1055,
+                    "text": "(De Brier et al. 2020;",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 1056,
+                    "end": 1074,
+                    "text": "Grace et al. 2005;",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 1075,
+                    "end": 1100,
+                    "text": "Kang, Li et al. 2020a, b;",
+                    "ref_id": null
+                },
+                {
+                    "start": 1101,
+                    "end": 1120,
+                    "text": "Kiesly et al. 2020;",
+                    "ref_id": null
+                },
+                {
+                    "start": 1121,
+                    "end": 1137,
+                    "text": "Koh et al. 2005;",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 1138,
+                    "end": 1154,
+                    "text": "Lai et al. 2020;",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 1155,
+                    "end": 1168,
+                    "text": "Maunder 2004;",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 1169,
+                    "end": 1184,
+                    "text": "Ng et al. 2020;",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 1185,
+                    "end": 1201,
+                    "text": "Que et al. 2020;",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 1202,
+                    "end": 1220,
+                    "text": "Zhang et al. 2020)",
+                    "ref_id": "BIBREF42"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Another finding of the current study is that having less job experience (< 15 years) is a significant occupational predictor of severe psychological distress. Being less experienced or in the middle of a professional career is associated with severe symptoms of psychological distress; meanwhile, more clinical experience gained through work years is one of the factors that decrease the risk of adverse psychological outcomes (Kiesly et al. 2020; Lai et al. 2020; Maunder et al. 2004; Tang et al. 2017 ).",
+            "cite_spans": [
+                {
+                    "start": 427,
+                    "end": 447,
+                    "text": "(Kiesly et al. 2020;",
+                    "ref_id": null
+                },
+                {
+                    "start": 448,
+                    "end": 464,
+                    "text": "Lai et al. 2020;",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 465,
+                    "end": 485,
+                    "text": "Maunder et al. 2004;",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 486,
+                    "end": 502,
+                    "text": "Tang et al. 2017",
+                    "ref_id": "BIBREF36"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "The current study described some confounders in relation to severe psychological distress, in the bivariate analysis, excluded in the regression analysis, namely being younger, currently single, with no children, with a lower educational degree, currently working in Egypt, being a suspected/confirmed case, and being a low/medium-resilient coper.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Nearly all previous studies reported younger age as a predictor of adverse psychological outcomes during outbreaks, which might be related to lower clinical experience (Kiesly et al. 2020; Tam et al. 2004; Sim et al. 2004; Wu et al. 2009 ). Also, Lung et al. (2009) had reported that lower educational degree of health professionals was associated with poorer mental health during the SARS outbreak.",
+            "cite_spans": [
+                {
+                    "start": 168,
+                    "end": 188,
+                    "text": "(Kiesly et al. 2020;",
+                    "ref_id": null
+                },
+                {
+                    "start": 189,
+                    "end": 205,
+                    "text": "Tam et al. 2004;",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 206,
+                    "end": 222,
+                    "text": "Sim et al. 2004;",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 223,
+                    "end": 237,
+                    "text": "Wu et al. 2009",
+                    "ref_id": "BIBREF41"
+                },
+                {
+                    "start": 247,
+                    "end": 265,
+                    "text": "Lung et al. (2009)",
+                    "ref_id": "BIBREF23"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Results on the association between marital status and psychological distress from previous studies were inconsistent. Chan and Huak (2004) reported that single HCWs are 1.4 more likely to experience psychological distress, mostly because of a lack of psychological support. On the other hand, Sim et al. (2004) noted that higher psychiatric morbidity was associated with being married. This situation might be related to the fear of transmitting the infection to their families.",
+            "cite_spans": [
+                {
+                    "start": 118,
+                    "end": 138,
+                    "text": "Chan and Huak (2004)",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 293,
+                    "end": 310,
+                    "text": "Sim et al. (2004)",
+                    "ref_id": "BIBREF32"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Several studies had pointed out that being a parent is a significant predictor of psychological distress, contrary to the current study. This condition can also be related to high worries of being the cause of their children's infection (Kisely et al. 2020; Koh et al. 2005; Maunder et al. 2004 ).",
+            "cite_spans": [
+                {
+                    "start": 237,
+                    "end": 257,
+                    "text": "(Kisely et al. 2020;",
+                    "ref_id": null
+                },
+                {
+                    "start": 258,
+                    "end": 274,
+                    "text": "Koh et al. 2005;",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 275,
+                    "end": 294,
+                    "text": "Maunder et al. 2004",
+                    "ref_id": "BIBREF28"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Being a suspected or confirmed case can carry much stress to HCWs. Indeed, several studies had concluded that infected HCWs had more anxiety than uninfected (Cheng et al. 2004) . HCWs who were quarantined as suspected cases had experienced tremendous stress (Bai et al. 2004) , and being quarantined (diagnosed with SARS or suspected of having SARS) are 2-3 times more likely to develop high post-traumatic stress disorder (PTSD) after the outbreak is controlled (Wu et al. 2009 ).",
+            "cite_spans": [
+                {
+                    "start": 157,
+                    "end": 176,
+                    "text": "(Cheng et al. 2004)",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 258,
+                    "end": 275,
+                    "text": "(Bai et al. 2004)",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 463,
+                    "end": 478,
+                    "text": "(Wu et al. 2009",
+                    "ref_id": "BIBREF41"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Resilience (positive adaptation to the existence of risk) is a personal characteristic that allows a person to thrive in the face of risk. Low resilience was both directly and indirectly associated with a high perception of risk and a higher possibility of emotional disruption and PTSD and reduce readiness to work during a future outbreak (Son et al. 2019) .",
+            "cite_spans": [
+                {
+                    "start": 341,
+                    "end": 358,
+                    "text": "(Son et al. 2019)",
+                    "ref_id": "BIBREF34"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "The current study results pointed out that the most stressful concerns among participant physicians are the fear of transmitting the infection to their families and friends or getting the infection themselves. Several previous researchers had ranked the same concerns as the top sources of stress to HCWs during outbreaks (Goulia et al. 2010; Grace et al. 2005; Khalid et al. 2016; Koh et al. 2005; Maunder et al. 2003 Maunder et al. , 2004 Ng et al. 2020; Tsamakis et al. 2020) .",
+            "cite_spans": [
+                {
+                    "start": 322,
+                    "end": 342,
+                    "text": "(Goulia et al. 2010;",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 343,
+                    "end": 361,
+                    "text": "Grace et al. 2005;",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 362,
+                    "end": 381,
+                    "text": "Khalid et al. 2016;",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 382,
+                    "end": 398,
+                    "text": "Koh et al. 2005;",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 399,
+                    "end": 418,
+                    "text": "Maunder et al. 2003",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 419,
+                    "end": 440,
+                    "text": "Maunder et al. , 2004",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 441,
+                    "end": 456,
+                    "text": "Ng et al. 2020;",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 457,
+                    "end": 478,
+                    "text": "Tsamakis et al. 2020)",
+                    "ref_id": "BIBREF37"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Previous studies also agree with other highly stressful concerns reported by the current study, uncertainties in the COVID-19 pandemic, understaffing at times, witnessing colleagues becoming patients, and shortage of protective measures (Khalid et al. 2016; Kiesly et al. 2020; Maunder et al. 2003) .",
+            "cite_spans": [
+                {
+                    "start": 237,
+                    "end": 257,
+                    "text": "(Khalid et al. 2016;",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 258,
+                    "end": 277,
+                    "text": "Kiesly et al. 2020;",
+                    "ref_id": null
+                },
+                {
+                    "start": 278,
+                    "end": 298,
+                    "text": "Maunder et al. 2003)",
+                    "ref_id": "BIBREF25"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Regarding measures used by participating physicians to alleviate stress, i.e., coping strategies, the current study shows that trusting one's religious faith (religious coping) was the most effective strategy. Besides, participant physicians perceived other strategies as effective in handling their stressors which were mostly active coping mechanisms. They include planning in the form of, avoiding crowded places, dealing with every patient as infected, and following strict personal protective measures, in addition to seeking social/emotional support. The most frequently adopted coping strategies reported by previous studies were religious coping, acceptance, and planning (Salman et al. 2020) , social support and religion (Chan and Huak 2004) , active coping (Wong et al. 2005) , and planning (strict infection control practices, restriction of contacts and social distancing) (Goulia et al. 2010; Khalid et al. 2016) .",
+            "cite_spans": [
+                {
+                    "start": 680,
+                    "end": 700,
+                    "text": "(Salman et al. 2020)",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 731,
+                    "end": 751,
+                    "text": "(Chan and Huak 2004)",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 768,
+                    "end": 786,
+                    "text": "(Wong et al. 2005)",
+                    "ref_id": "BIBREF38"
+                },
+                {
+                    "start": 886,
+                    "end": 906,
+                    "text": "(Goulia et al. 2010;",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 907,
+                    "end": 926,
+                    "text": "Khalid et al. 2016)",
+                    "ref_id": "BIBREF18"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "A very recent review was the first to address post-traumatic stress symptoms (PTSS), post-traumatic stress disorder (PTSD) in relation to the three major corona virus epidemics (SARS, MERS, . The reported possible risk factors were in line with the results of the current study. Female gender, younger age, fewer years of experience, being a frontline HCWs, being previously infected, and fear of transmitting the infection to the family were the predictors of PTSS and PTSD. At the same time, active coping was reported as an effective resilience strategy that can mitigate distress and reduce PTSS. Targeting such factors in intervention strategies can prevent adverse mental health outcomes (Carmassi et al. 2020) .",
+            "cite_spans": [
+                {
+                    "start": 177,
+                    "end": 183,
+                    "text": "(SARS,",
+                    "ref_id": null
+                },
+                {
+                    "start": 184,
+                    "end": 189,
+                    "text": "MERS,",
+                    "ref_id": null
+                },
+                {
+                    "start": 694,
+                    "end": 716,
+                    "text": "(Carmassi et al. 2020)",
+                    "ref_id": "BIBREF4"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Former studies had shown that HCWs at hospitals with supportive psychiatric services (adequate counseling and psychological support) reported significantly less psychological impact and was reported as a protective factor against psychological distress (De Brier et al. 2020; Kiesly et al. 2020) . In other words, some studies showed that limited, fewer, and inadequate access to psychological services was a significant predictor of severe psychological distress (Li et al. 2020a, b; Tam et al. 2004) . Ma et al. (2020a, b) reported that HCWs agreed that psychological health services are a critical resource to alleviate stress, as did 76.6% of physicians in the current study.",
+            "cite_spans": [
+                {
+                    "start": 253,
+                    "end": 275,
+                    "text": "(De Brier et al. 2020;",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 276,
+                    "end": 295,
+                    "text": "Kiesly et al. 2020)",
+                    "ref_id": null
+                },
+                {
+                    "start": 464,
+                    "end": 484,
+                    "text": "(Li et al. 2020a, b;",
+                    "ref_id": null
+                },
+                {
+                    "start": 485,
+                    "end": 501,
+                    "text": "Tam et al. 2004)",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 504,
+                    "end": 524,
+                    "text": "Ma et al. (2020a, b)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "This study undergoes some limitations inherent to online data collection. First is the inability to recruit a genuinely random sample that is representative of Egyptian physicians. Second, only physicians who happen to be online at the time of data collection can participate. Third, self-selection bias is a significant limitation of online data collection. Fourth, systematic bias due to some physicians' tendency to accept the invitation to participate in an online study, while others ignore it. These sampling problems inhibit researchers' ability to generalize study results. Finally, the response rate cannot be calculated as the target population is unknown.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "In conclusion, the current study shows a high prevalence of psychological distress among Egyptian physicians during the current COVID-19 pandemic with a high percentage of severe distress. Among studied physicians, the main sociodemographic predictors of severe psychological distress were being female, having a pre-existing illness, having an elderly family member, and being in close contact with a case. Meanwhile, significant occupational predictors were less experience and being a frontline physician. The most distressful concern was fear for families and personal health and safety, while religious coping was the most effective coping strategy.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion"
+        },
+        {
+            "text": "Recommendations There should be an acknowledgment of the psychological burden of a pandemic on HCWs. Then, psychological, and mental health services (available resources, support, and intervention) should be provided to health professionals emphasizing the importance of emotional support from colleagues, family, and friends. HCWs should receive regular screening for psychological distress, and timely counseling or psychotherapy should be provided for those in need. Considering a 'resilience training' program based on different psychotherapeutic approaches that consider modifiable resilience factors can improve resilience and reduce depression and stress symptoms. Implementing strict infection control procedures and adequate protective equipment supplies in hospitals may help lower personal safety concerns. Unique and tailored arrangements should also be made for individuals with pre-existing illnesses. Psychological preparedness should be integrated into the overall public health responses to pandemics. Further studies should be conducted to investigate the long-term psychological impact of COVID-19 pandemic.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion"
+        },
+        {
+            "text": "Funding None.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion"
+        },
+        {
+            "text": "Conflict of interest The authors declare that they have no conflict of interest.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Compliance with ethical standards"
+        },
+        {
+            "text": "Ethics approval The proposal was approved by the Institutional Research Board (IRB), Faculty of Medicine-Mansoura University (Reference number R.20.05.858).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Compliance with ethical standards"
+        },
+        {
+            "text": "Consent to participate/consent for publication Informed consent was obtained from all participants in the study after ensuring confidentiality, and that data will be used in scientific publishing.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Compliance with ethical standards"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Interpreting scores on the Kessler psychological distress scale (K10)",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Andrews",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Slade",
+                    "suffix": ""
+                }
+            ],
+            "year": 2001,
+            "venue": "Aust N Z J Public Health",
+            "volume": "25",
+            "issn": "",
+            "pages": "494--497",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/j.1467-842X.2001.tb00310.x"
+                ]
+            }
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Survey of stress reactions among health care workers involved with the SARS outbreak",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Bai",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Chue",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Chou",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Psychiatr Serv",
+            "volume": "55",
+            "issn": "",
+            "pages": "1055--1057",
+            "other_ids": {
+                "DOI": [
+                    "10.1176/appi.ps.55.9.1055"
+                ]
+            }
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "A systematic, thematic review of social and occupational factors associated with psychological outcomes in healthcare employees during an infectious disease outbreak",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Brooks",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Dunn",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Aml\u00f4t",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Rubin",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Greenberg",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "J Occup Environ Med",
+            "volume": "60",
+            "issn": "",
+            "pages": "248--257",
+            "other_ids": {
+                "DOI": [
+                    "10.1097/JOM.0000000000001235"
+                ]
+            }
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Middle East respiratory syndrome coronavirus (MERS-CoV) outbreak perceptions of risk and stress evaluation in nurses",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Bukhari",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Temsah",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Aleyadhy",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Alrabiaa",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Alhboob",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Jamal",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Binsaeed",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "J Infect Dev Ctries",
+            "volume": "10",
+            "issn": "",
+            "pages": "845--850",
+            "other_ids": {
+                "DOI": [
+                    "10.3855/jidc.6925"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "PTSD symptoms in healthcare workers facing the three coronavirus outbreaks: What can we expect after the COVID-19 pandemic",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Carmassi",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Foghi",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Dell&apos;oste",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Cordone",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Bertelloni",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Bui",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Dell&apos;osso",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Psychiatry Res",
+            "volume": "292",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.psychres.2020.113312"
+                ]
+            }
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Psychological impact of the 2003 severe acute respiratory syndrome outbreak on health care workers in a medium-size regional general hospital in Singapore",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Chan",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Huak",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Occup Med",
+            "volume": "54",
+            "issn": "",
+            "pages": "190--196",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/occmed/kqh027"
+                ]
+            }
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Psychological distress and negative appraisals in survivors of severe acute respiratory syndrome (SARS)",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Cheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Wong",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Tsang",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Wong",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Psychol Med",
+            "volume": "34",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1017/S0033291704002272"
+                ]
+            }
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Psychological effects of the SARS outbreak in Hong Kong on high-risk health care workers",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Chua",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Cheung",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Cheung",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Can J Psychiatry",
+            "volume": "49",
+            "issn": "",
+            "pages": "4900--609",
+            "other_ids": {
+                "DOI": [
+                    "10.1177/070674370404900609"
+                ]
+            }
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Psychiatric symptomatology associated with depression, anxiety, distress, and insomnia in health professionals working in patients affected by COVID-19: a systematic review with meta-analysis",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Da Silva",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Neto",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Prog Neuropsychopharmacol Biol Psychiatry",
+            "volume": "104",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.pnpbp.2020.110057"
+                ]
+            }
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Factors affecting mental health of health care workers during coronavirus disease outbreaks: a rapid systematic review",
+            "authors": [
+                {
+                    "first": "De",
+                    "middle": [],
+                    "last": "Brier",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Stroobants",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Vandekerckhove",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                },
+                {
+                    "first": "De",
+                    "middle": [],
+                    "last": "Buck",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.31234/osf.io/w9uxs"
+                ]
+            }
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Impact of coronavirus syndromes on physical and mental health of health care workers: systematic review and meta-analysis",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "De Pablo",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Serrano",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Catalan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Affect Disord",
+            "volume": "275",
+            "issn": "",
+            "pages": "48--57",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jad.2020.06.022"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "ed) Mental illnessesunderstanding, prediction and control",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Drapeau",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Marchand",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Beaulieu-Pr\u00e9vost",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "105--134",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "General hospital staff worries, perceived sufficiency of information and associated psychological distress during the A/ H1N1 influenza pandemic",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Goulia",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Mantas",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Dimitroula",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Mantis",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Hyphantis",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "BMC Infect Dis",
+            "volume": "10",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/1471-2334-10-322"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "The occupational and psychosocial impact of SARS on academic physicians in three affected hospitals",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Grace",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Hershenfield",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Robertson",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Stewart",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Psychosomatics",
+            "volume": "46",
+            "issn": "",
+            "pages": "385--391",
+            "other_ids": {
+                "DOI": [
+                    "10.1176/appi.psy.46.5.385"
+                ]
+            }
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Why all COVID-19 Hospitals should have Mental Health Professionals: the importance of mental health in a worldwide crisis",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Grover",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Dua",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Sahoo",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Mehra",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Nehra",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Chakrabarti",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Asian J Psychiatr",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ajp.2020.102147"
+                ]
+            }
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "The mental health of medical workers in Wuhan, China dealing with the 2019 novel coronavirus",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Kang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet Psychiatry",
+            "volume": "7",
+            "issn": "20",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S2215-0366(20)30047-X"
+                ]
+            }
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Impact on mental health and perceptions of psychological care among medical and nursing staff in Wuhan during the 2019 novel coronavirus disease outbreak: a cross-sectional study",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Kang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Ma",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Brain Behav Immun",
+            "volume": "87",
+            "issn": "",
+            "pages": "11--17",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.bbi.2020.03.028"
+                ]
+            }
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Short screening scales to monitor population prevalences and trends in non-specific psychological distress",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Kessler",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Andrews",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Colpe",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "Psychol Med",
+            "volume": "32",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1017/S0033291702006074"
+                ]
+            }
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Healthcare workers emotions, perceived stressors and coping strategies during a MERS-CoV outbreak",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Khalid",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Khalid",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Qabajah",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Barnard",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Qushmaq",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Clin Med Res",
+            "volume": "14",
+            "issn": "",
+            "pages": "7--14",
+            "other_ids": {
+                "DOI": [
+                    "10.3121/cmr.2016.1303"
+                ]
+            }
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "2020) Occurrence, prevention, and management of the psychological effects of emerging virus outbreaks on healthcare workers: rapid review and meta-analysis",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Kisely",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Warren",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Mcmahon",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Dalais",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Henry",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Siskind",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "BMJ",
+            "volume": "369",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1136/bmj.m1642"
+                ]
+            }
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Risk perception and impact of severe acute respiratory syndrome (SARS) on work and personal lives of healthcare workers in Singapore What Can We Learn?",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Koh",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Lim",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Chia",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Med Care",
+            "volume": "43",
+            "issn": "",
+            "pages": "676--682",
+            "other_ids": {
+                "DOI": [
+                    "10.1097/01.mlr.0000167181.36730.cc"
+                ]
+            }
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Factors associated with mental health outcomes among health care workers exposed to coronavirus disease 2019",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Lai",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Ma",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "JAMA Netw Open",
+            "volume": "3",
+            "issn": "",
+            "pages": "203976--203976",
+            "other_ids": {
+                "DOI": [
+                    "10.1001/jamanetworkopen.2020.3976"
+                ]
+            }
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Mental health care for survivors and healthcare workers in the aftermath of an outbreak",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Levin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "127--141",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/978-3-030-15346-5_11"
+                ]
+            }
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Mental symptoms in different health professionals during the SARS attack: a followup study",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Lung",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Lu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Chang",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Shu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Psychiatr Q",
+            "volume": "80",
+            "issn": "",
+            "pages": "107--116",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s11126-009-9095-5"
+                ]
+            }
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "The Psychological and Mental Impact of Coronavirus Disease 2019 (COVID-19) on medical staff and general public-a systematic review and meta-analysis",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Luo",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Guo",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Psychiatry Res",
+            "volume": "291",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.psychres.2020.113190"
+                ]
+            }
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "The immediate psychological and occupational impact of the 2003 SARS outbreak in a teaching hospital",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Maunder",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Hunter",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Vincent",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "CMAJ",
+            "volume": "168",
+            "issn": "",
+            "pages": "1245--1251",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "The experience of the 2003 SARS outbreak as a traumatic stress among frontline healthcare workers in Toronto: lessons learned",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Maunder",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Philos Trans R Soc Lond B Biol Sci",
+            "volume": "359",
+            "issn": "",
+            "pages": "1117--1125",
+            "other_ids": {
+                "DOI": [
+                    "10.1098/rstb.2004.1483"
+                ]
+            }
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Long-term psychological and occupational effects of providing hospital healthcare during SARS outbreak",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Maunder",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Lancee",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Balderson",
+                    "suffix": ""
+                }
+            ],
+            "year": 1924,
+            "venue": "Emerg Infect Dis",
+            "volume": "12",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3201/eid1212.060584"
+                ]
+            }
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Factors associated with the psychological impact of severe acute respiratory syndrome on nurses and other hospital workers in Toronto",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Maunder",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Lancee",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Rourke",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Psychosom Med",
+            "volume": "66",
+            "issn": "",
+            "pages": "938--942",
+            "other_ids": {
+                "DOI": [
+                    "10.1097/01.psy.0000145673.84698.18"
+                ]
+            }
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "The wounded healer: a narrative review of the mental health effects of the COVID-19 pandemic on healthcare workers",
+            "authors": [
+                {
+                    "first": "Q",
+                    "middle": [
+                        "X"
+                    ],
+                    "last": "Ng",
+                    "suffix": ""
+                },
+                {
+                    "first": "Mlzq",
+                    "middle": [],
+                    "last": "De Deyn",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Lim",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Chan",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Yeo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Asian J Psychiatr",
+            "volume": "54",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ajp.2020.102258"
+                ]
+            }
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Psychological impact of the COVID-19 pandemic on healthcare workers: a cross-sectional study in China",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Que",
+                    "suffix": ""
+                },
+                {
+                    "first": "Le",
+                    "middle": [],
+                    "last": "Shi",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Gen Psychiatr",
+            "volume": "33",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1136/gpsych-2020-100259"
+                ]
+            }
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "The psychological effects of COVID-19 on frontline healthcare workers and how they are coping: a web-based, cross-sectional study from Pakistan",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Salman",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Raza",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [
+                        "U"
+                    ],
+                    "last": "Mustafa",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1101/2020.06.03.20119867"
+                ]
+            }
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Severe acute respiratory syndrome-related psychiatric and post-traumatic morbidities and coping responses in medical staff within a primary health care setting in Singapore",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Sim",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Phui",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Yiong",
+                    "suffix": ""
+                },
+                {
+                    "first": "Wsw",
+                    "middle": [],
+                    "last": "Soon",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "J Clin Psychiatry",
+            "volume": "65",
+            "issn": "",
+            "pages": "1120--1127",
+            "other_ids": {
+                "DOI": [
+                    "10.4088/JCP.v65n0815"
+                ]
+            }
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "The development and psychometric evaluation of the Brief Resilient Coping Scale",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Sinclair",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Wallston",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Assessment",
+            "volume": "11",
+            "issn": "",
+            "pages": "94--101",
+            "other_ids": {
+                "DOI": [
+                    "10.1177/1073191103258144"
+                ]
+            }
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Hospital workers' psychological resilience after the 2015 Middle East respiratory syndrome outbreak",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Son",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Kim",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "You",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Soc Behav Personal Int J",
+            "volume": "47",
+            "issn": "",
+            "pages": "1--13",
+            "other_ids": {
+                "DOI": [
+                    "10.2224/sbp.7228"
+                ]
+            }
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Severe acute respiratory syndrome (SARS) in Hong Kong in 2003: stress and psychological impact among frontline healthcare workers",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Tam",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Pang",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Lam",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Chiu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Psychol Med",
+            "volume": "34",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1017/S0033291704002247"
+                ]
+            }
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Prevalence and related factors of post-traumatic stress disorder among medical staff members exposed to H7N9 patients",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Tang",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Pan",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Yuan",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zha",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Int J Nurs Sci",
+            "volume": "4",
+            "issn": "",
+            "pages": "63--67",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ijnss.2016.12.002"
+                ]
+            }
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Comment] COVID-19 pandemic and its impact on mental health of healthcare professionals",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Tsamakis",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Rizos",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Manolis",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Exp Ther Med",
+            "volume": "19",
+            "issn": "",
+            "pages": "3451--3453",
+            "other_ids": {
+                "DOI": [
+                    "10.3892/etm.2020.8646"
+                ]
+            }
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "The psychological impact of severe acute respiratory syndrome outbreak on healthcare workers in emergency departments and how they cope",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Wong",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Yau",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Chan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Eur J Emerg Med",
+            "volume": "12",
+            "issn": "",
+            "pages": "13--18",
+            "other_ids": {}
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "World Health Organization (WHO) (2020a) WHO Director-General's opening remarks at the media briefing on COVID-19",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Covid-19) outbreak: rights, roles and responsibilities of health workers, including key considerations for occupational safety and health. interim guidance",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "The psychological impact of the SARS epidemic on hospital employees in China: exposure, risk perception, and altruistic acceptance of risk",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Fang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Guan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Can J Psychiatry",
+            "volume": "54",
+            "issn": "",
+            "pages": "5400--504",
+            "other_ids": {
+                "DOI": [
+                    "10.1177/070674370905400504"
+                ]
+            }
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "Mental health and psychosocial problems of medical health workers during the COVID-19 epidemic in China",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Yin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Psychother Psychosom",
+            "volume": "89",
+            "issn": "",
+            "pages": "242--250",
+            "other_ids": {
+                "DOI": [
+                    "10.1159/000507639"
+                ]
+            }
+        }
+    },
+    "ref_entries": {
+        "TABREF0": {
+            "text": ", to collect:1. Personal data: Sex, age, marital status, highest edu-Kessler Psychological Distress Scale (K10): A 10-item simple measure of psychological distress based on questions about anxiety and depressive symptoms that a person has experienced in the most recent 4-week period.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "Sociodemographic and occupational factors associated with severe psychological distress among study participants M.B.B.Ch bachelor degree, CI confidence interval, COR crude odds ratio, M.Sc. master degree, MD medical doctorate, OB/GYN obstetrics and gynecology, PHC primary health care, Ph.D. philosophical doctorate, PPE personal protective equipment, r reference a 6 in non-Arab countries b Health insurance, military, special companies, non-governmental hospitals",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF3": {
+            "text": "",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF4": {
+            "text": "Self-reported severity of potential stressors and degree of effectiveness of selected coping strategies of studied physicians",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "Data are available upon request from the corresponding author.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Availability of data and material"
+        }
+    ]
+}

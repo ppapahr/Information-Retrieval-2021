@@ -1,0 +1,1402 @@
+{
+    "paper_id": "884cb071204671abd29061354bbd64628bfa819e",
+    "metadata": {
+        "title": "Attention-Based LSTM Network for COVID-19 Clinical Trial Parsing",
+        "authors": [
+            {
+                "first": "Xiong",
+                "middle": [],
+                "last": "Liu",
+                "suffix": "",
+                "affiliation": {},
+                "email": "xiong.liu@novartis.com"
+            },
+            {
+                "first": "Luca",
+                "middle": [
+                    "A"
+                ],
+                "last": "Finelli",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Novartis International AG",
+                    "location": {
+                        "settlement": "Basel",
+                        "country": "Switzerland"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Greg",
+                "middle": [
+                    "L"
+                ],
+                "last": "Hersch",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Novartis Pharma AG",
+                    "location": {
+                        "settlement": "Basel",
+                        "country": "Switzerland"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Iya",
+                "middle": [],
+                "last": "Khalil",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "COVID-19 clinical trial design is a critical task in developing therapeutics for the prevention and treatment of COVID-19. In this study, we apply a deep learning approach to extract eligibility criteria variables from COVID-19 trials to enable quantitative analysis of trial design and optimization. Specifically, we train attention-based bidirectional Long Short-Term Memory (Att-BiLSTM) models and use the optimal model to extract entities (i.e., variables) from the eligibility criteria of COVID-19 trials. We compare the performance of Att-BiLSTM with traditional ontology-based method. The result on a benchmark dataset shows that Att-BiLSTM outperforms the ontology model. Att-BiLSTM achieves a precision of 0.942, recall of 0.810, and F1 of 0.871, while the ontology model only achieves a precision of 0.715, recall of 0.659, and F1 of 0.686. Our analyses demonstrate that Att-BiLSTM is an effective approach for characterizing patient populations in COVID-19 clinical trials.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "COVID-19 is an infectious disease caused by a new coronavirus [1] . As of September 26, 2020, more than 32.6 million coronavirus cases have been confirmed worldwide, with over 989,000 related deaths [2] . In the U.S. alone, there are more than 7 million coronavirus infections, with a death toll above 203,000 [2] , [3] . Given the ongoing trend of the infection and a lack of effective interventions, pharmaceutical companies and research organizations are racing to develop life-saving treatments. According to ClinicalTrials.gov, there are 3438 studies for COVID-19 as of September 28, 2020 [4] . Only 10.7% of the studies (368) are completed. 76.6% of the studies (2634) are either still recruiting patients or not yet recruiting [4] . Best practices are not available for clinical trial design and patient recruitment remains a significant challenge.",
+            "cite_spans": [
+                {
+                    "start": 62,
+                    "end": 65,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 199,
+                    "end": 202,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 310,
+                    "end": 313,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 316,
+                    "end": 319,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 594,
+                    "end": 597,
+                    "text": "[4]",
+                    "ref_id": null
+                },
+                {
+                    "start": 734,
+                    "end": 737,
+                    "text": "[4]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "I. INTRODUCTION"
+        },
+        {
+            "text": "Clinical trial planning with clear foresight is crucial. Fundamental requirements in clinical trial design include defining the research questions, endpoints, study arms, randomization, and eligibility criteria of the patient population [5] . Patient eligibility is often guided by the goal to generalize the results and minimize bias [5] . Overly restrictive patient selection has been reported to compromise study generalizability, reduce the benefit-cost ratio of clinical studies, and lead to the difficulty in interpreting and disseminating study results [6] . Recently, the FDA released new guidance on COVID-19 drug development, emphasizing the need for flexible trial designs and diverse patient populations [7] .",
+            "cite_spans": [
+                {
+                    "start": 237,
+                    "end": 240,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 335,
+                    "end": 338,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 560,
+                    "end": 563,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 716,
+                    "end": 719,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                }
+            ],
+            "ref_spans": [],
+            "section": "I. INTRODUCTION"
+        },
+        {
+            "text": "Eligibility criteria play an essential role in defining the patient population or cohort. They describe the characteristics of the target populations of clinical studies. The criteria provide clinical practice guidelines for investigators to screen patients. The quality of criteria directly affects patient enrollment and study generalizability. The trial and error approach to define criteria often leads to many protocol amendments [6] . Feasibility assessment tools are needed to help investigators discover potential patient selection problems and make better eligibility criteria choices [8] .",
+            "cite_spans": [
+                {
+                    "start": 435,
+                    "end": 438,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 594,
+                    "end": 597,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                }
+            ],
+            "ref_spans": [],
+            "section": "I. INTRODUCTION"
+        },
+        {
+            "text": "Clinical study design information is increasingly available publicly through public registries (e.g., ClinicalTrials.gov). In addition, the adoption of electronic health records, clinical data warehouses, and clinical data networks have generated enormous amounts of electronic patient data [6] . This has provided a new opportunity to transform the design of eligibility criteria using a data-driven approach.",
+            "cite_spans": [
+                {
+                    "start": 291,
+                    "end": 294,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                }
+            ],
+            "ref_spans": [],
+            "section": "I. INTRODUCTION"
+        },
+        {
+            "text": "Eligibility criteria are documented as unstructured free-text, which is not readily suitable for automated cohort definition and knowledge reuse or sharing [9] , [10] . Natural language processing (NLP) methods can be used to parse free-text eligibility criteria into a structured and computable representation. The core NLP task is information extraction, which includes named entity recognition (NER) and entity attributes and relations extraction [10] .",
+            "cite_spans": [
+                {
+                    "start": 156,
+                    "end": 159,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 162,
+                    "end": 166,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 450,
+                    "end": 454,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                }
+            ],
+            "ref_spans": [],
+            "section": "I. INTRODUCTION"
+        },
+        {
+            "text": "A number of NER methods have been developed for criteria parsing including rule-based methods and machine learning based methods. Rule-based methods use knowledge bases or ontologies to transform criteria text into computable concepts [11] , [12] . Rule-based NER strongly relies on the terms and their interrelations defined in the ontology. It cannot identify new terms or entities. Machine learning methods can address the offdictionary issue by learning from the way various concepts are used in written medical or life science language. For example, Kang et al. [13] annotated eligibility criteria from 230 Alzheimer's clinical trials to train conditional random field (CRF) models for entity recognition. However, traditional machine learning methods require sophisticated feature engineering to build accurate models.",
+            "cite_spans": [
+                {
+                    "start": 235,
+                    "end": 239,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 242,
+                    "end": 246,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 567,
+                    "end": 571,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                }
+            ],
+            "ref_spans": [],
+            "section": "I. INTRODUCTION"
+        },
+        {
+            "text": "More recently, deep learning methods have been introduced to enable more automatic and accurate extraction of entities in criteria parsing [14] . Deep learning is capable of understanding the semantic and syntactic relationship between words using a technique called \"word embedding\". Another competitive edge is from the deep neural architectures which can capture more context and semantics in the data. Deep learning can recognize terms and concepts not present in the ontology and reduce the overhead of feature engineering in traditional machine learning.",
+            "cite_spans": [
+                {
+                    "start": 139,
+                    "end": 143,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                }
+            ],
+            "ref_spans": [],
+            "section": "I. INTRODUCTION"
+        },
+        {
+            "text": "We explore a deep learning neural network, attention-based bidirectional Long Short-Term Memory (Att-BiLSTM), to extract entities from the eligibility criteria of COVID-19 trials. We leverage the annotation datasets described in [14] to train Att-BiLSTM models. We then apply an optimal model to all the COVID-19 eligibility criteria. To evaluate extraction quality, we develop an evaluation dataset from randomly sampled trials to measure the performance of Att-BiLSTM. We also compare its performance with that of ontology-based extraction using MeSH. We demonstrate that Att-BiLSTM outperforms the ontology-based method. This provides the rationale to choose the Att-BiLSTM extracted entities to represent the variables of cohort definition in COVID-19 trials.",
+            "cite_spans": [
+                {
+                    "start": 229,
+                    "end": 233,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                }
+            ],
+            "ref_spans": [],
+            "section": "I. INTRODUCTION"
+        },
+        {
+            "text": "We retrieved COVID-19 clinical trials registered in ClinicalTrials.gov as of August 15, 2020. The initial dataset included 3012 trials. We excluded trials with no eligibility text and trials without clear headings of \"inclusion criteria:\" and \"exclusion criteria:\", which led to 2998 trials. For each trial, we extracted the inclusion and exclusion criteria text and segmented it into sentences, where each sentence is a criterion. We obtained 27,352 criteria in total for the 2998 trials.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "A. COVID-19 Dataset"
+        },
+        {
+            "text": "Attention mechanism has gained popularity in image, speech and NLP fields [17] , [18] . For NER task, attention mechanism has been introduced to enhance the BiLSTM model [14] , [16] .",
+            "cite_spans": [
+                {
+                    "start": 74,
+                    "end": 78,
+                    "text": "[17]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 81,
+                    "end": 85,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 170,
+                    "end": 174,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 177,
+                    "end": 181,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [],
+            "section": "B. Attention-based BiLSTM"
+        },
+        {
+            "text": "We use a multi-layer BiLSTM based representation with attention over words [15] . Fig. 1 shows the architecture of attention-based BiLSTM for parsing a criterion. In the embedding layer, the criterion sentence is represented as a sequence of vectors = ( ! , \" , \u2026 , # , \u2026 , $ ), where # is the embedding vector of the word i, and n is the length of the sentence. We use the word2vec vectors that were pre-trained on the trial descriptions and eligibility criteria of over 300K trials present in ClinicalTrials.gov [14] .",
+            "cite_spans": [
+                {
+                    "start": 75,
+                    "end": 79,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 514,
+                    "end": 518,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 82,
+                    "end": 88,
+                    "text": "Fig. 1",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "B. Attention-based BiLSTM"
+        },
+        {
+            "text": "Next, the embeddings are given as input to a BiLSTM layer. A forward LSTM computes a vector \u210e % )))\u20d7 to represent the word i and its left context, and another backward LSTM computes a vector \u210e % \u20d6))) to represent the word i and its right context. Concatenating the two vectors yield one representation of the word i in its context, \u210e # .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "B. Attention-based BiLSTM"
+        },
+        {
+            "text": "In the attention layer, an attention matrix A is used to calculate the similarity between the current target word and all words in the sentence. The attention weight value #,' in the attention matrix is derived by comparing the i th current target word representation # with the j th word representation ' in the sentence:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "B. Attention-based BiLSTM"
+        },
+        {
+            "text": "Here, the score is defined as an alignment function with three alternatives including \"Dot\", \"Multiply\" and \"Add\". For Dot Attention, we simply dot the two representations together. For Multiply, we add in a single linear layer to Dot attention. For Add, we concatenate the representation together and then execute a 2-layer tanh multilayer perceptron (MLP).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "B. Attention-based BiLSTM"
+        },
+        {
+            "text": "Then a context vector # is computed as weighted sum of each BiLSTM output \u210e ' :",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "B. Attention-based BiLSTM"
+        },
+        {
+            "text": "Next, the context vector and the BiLSTM output of the target word are concatenated as a vector to be fed to a tanh function to produce the output of attention layer # .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "B. Attention-based BiLSTM"
+        },
+        {
+            "text": "The CRF layer uses the # as features to make tagging decisions for each output # . For a sequence of predictions = ( ! , \" , \u2026 , $ ), its score is defined by the sum of transition scores and network scores:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "B. Attention-based BiLSTM"
+        },
+        {
+            "text": "is a tagging transition matrix such that #,' represents the score of a transition from tag i to tag j. + and $ are the start and end tags of the sentence. is the matrix of scores output, where the element #,' of the matrix is the score of the tag j of the word i in the sentence.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "B. Attention-based BiLSTM"
+        },
+        {
+            "text": "Then a softmax function is used to compute the conditional probability for the sequence by normalizing the above score over all possible tag sequences @ :",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "B. Attention-based BiLSTM"
+        },
+        {
+            "text": "During training, the objective of the model is to maximize the log probability of the correct tag sequence. During inference, the best tag sequence (output) with the maximum score is given by:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "B. Attention-based BiLSTM"
+        },
+        {
+            "text": "This is computed by dynamic programming [15] .",
+            "cite_spans": [
+                {
+                    "start": 40,
+                    "end": 44,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                }
+            ],
+            "ref_spans": [],
+            "section": "B. Attention-based BiLSTM"
+        },
+        {
+            "text": "Ontology-based NER is a rule-based approach. It recognizes terms and concepts in unstructured text by checking against the pre-defined concepts and relationships. We use the MeSH ontology to scan text mentions of conditions, treatments, clinical measures and demographics. The model checks the standard name and synonyms of each ontological concept to find the matching terms in the criteria and automatically standardize the terms by assigning the concept label. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "C. Ontology-based Entity Extraction"
+        },
+        {
+            "text": "We normalize the extracted entities and use them as design variables to quantify clinical trials. The normalization process takes the following steps: 1) using fuzzy matching to link the extracted terms to MeSH ontologies; 2) using simple rules to standardize the non-matched terms, e.g., \"pao2/fio2\", \"pao2/fio2 ratio\", and \"pao2 to fio2 ratio\" are standardized to \"pao2/fio2\"; 3) using rule-based method to further standardize the same concept in heterogeneous formats, e.g., \"hcq\" and \"hydroxychloroquine\" are standardized to the same concept of \"hydroxychloroquine\".",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "D. Entity Normalization"
+        },
+        {
+            "text": "We leverage the labeled dataset described in [14] to train NER models. This dataset includes 3,314 trials randomly sampled from ClinicalTrials.gov. We selected 11 entity types, including allergy, chronic disease, cancer, pregnancy, consent, treatment, clinical variables, language fluency, technology access, gender and age. This led to 92,937 entities for 42,542 criteria. This dataset becomes the training data. We randomly sampled 10% of the data as the test data used for performance measure.",
+            "cite_spans": [
+                {
+                    "start": 45,
+                    "end": 49,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                }
+            ],
+            "ref_spans": [],
+            "section": "A. Att-BiLSTM Models"
+        },
+        {
+            "text": "As described in the Methods section, three attention methods (Dot, Multiply, Add) are designed for our Att-BiLSTM model. We trained the models with different attention methods on the training data using PyText [21] . The major hyper-parameters include LSTM dimension of 128, attention dimension of 64, MLP decoder hidden dimension of 256, dropout of 0.2, batch size of 64, and epochs of 10.",
+            "cite_spans": [
+                {
+                    "start": 210,
+                    "end": 214,
+                    "text": "[21]",
+                    "ref_id": "BIBREF20"
+                }
+            ],
+            "ref_spans": [],
+            "section": "A. Att-BiLSTM Models"
+        },
+        {
+            "text": "To select the best method, we tested the effect of these methods on the model performance. Table I shows the accuracy and loss of the attention-based models with different alignment functions on the test data. The result shows that the model using the multiply attention method achieves the highest accuracy of 92.87% and lowest loss of 0.172. The dot attention achieves the lowest accuracy of 92.52% and highest loss of 0.181. The reason could be that the dot attention is just a transformation of the input without any trainable weights. We select the multiply attention model as our final model for prediction.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 91,
+                    "end": 98,
+                    "text": "Table I",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "A. Att-BiLSTM Models"
+        },
+        {
+            "text": "We use the selected Att-BiLSTM model to annotate the COVID-19 trials. We removed entities with a probability score less than 0.7 computed by Att-BiLSTM. Finally, 42,344 entities were extracted from 20,164 criteria for 2821 trials. We also use ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "B. Entity Extraction and Normalization"
+        },
+        {
+            "text": "Attention Vector \"disease\" mention in text Predicted \"disease\" label Predicted \"disease\" label \"disease\" mention in text the MeSH ontology model to annotate the same set of trials for comparison. Table II shows some samples of the extracted entities and the entity types. We can see that Att-BiLSTM deep learning result shows more details than the ontology modeling result. For example, given a term \"known hypersensitivity to nivolumab\", Att-BiLSTM recognizes it as an allergy, while the ontology model only recognizes part of the term \"nivolumab\" as a drug. Also, the ontology model does not recognize terms not defined in the MeSH ontology, such as immune checkpoint inhibitors, arterial oxygen saturation, and language fluency. ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 196,
+                    "end": 204,
+                    "text": "Table II",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Context Vector"
+        },
+        {
+            "text": "We further evaluate the NER performance using a quantitative approach. We create a benchmark dataset by randomly sampling 10 COVID-19 trials and manually labeled 179 correct entities. We then use the dataset to evaluate the NER performance of Att-BiLSTM and the ontology model. Table III shows the performance of our models as evaluated on the 10 trial benchmark dataset.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 278,
+                    "end": 287,
+                    "text": "Table III",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "C. NER Performance Evaluation"
+        },
+        {
+            "text": "BiLSTM achieves a precision of 0.942, recall of 0.810, F1 of 0.871, while MeSH ontology method only achieves a precision of 0.715, recall of 0.659, and F1 of 0.686. Since the quality of Att-BiLSTM deep learning is higher, we use the Att-BiLSTM extracted entities rather than the ontologybased extracted entities. We then normalize the entity terms using the rule-based approached described in the Methods section. The normalized entities are used as variables to characterize clinical trials.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "C. NER Performance Evaluation"
+        },
+        {
+            "text": "The extracted variables can be used to quantify clinical trials. We show one example to demonstrate the utility of the extracted variables to find design patterns across COVID-19 trials. We categorize the variable types by the medical conditions labeled by ClinicalTrials.gov. Fig. 2 shows the heat map on the frequency of variable types across conditions. The row is the variable type, the column is the COVID-19 related conditions, and the value is the unique count of trials. Note only variables that occur over 10 times are shown.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 277,
+                    "end": 283,
+                    "text": "Fig. 2",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "D. Design Patterns"
+        },
+        {
+            "text": "For COVID-19 specific studies, the most frequent entity types include chronic disease, treatment, age, pregnancy, and clinical variables. Other than COVID-19, acute respiratory distress syndrome and pneumonia are most frequent cooccurring conditions. For acute respiratory distress syndrome, the most frequent entity types include chronic disease, treatment, clinical variable, and pregnancy. For pneumonia, the most frequent entity types include chronic disease, treatment, pregnancy, and age. For all trials, there is a general tendency to consider chronic diseases and treatments.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "D. Design Patterns"
+        },
+        {
+            "text": "We drill down the detailed variables for COVID-19 specific trials. The most frequent disease variables include HIV, pneumonia, respiratory failure, diabetes mellitus, and heart failure. The most frequent diagnosis and treatment variables include RT-PCR, mechanical ventilation, immunosuppressive agents, investigation therapies, and hydroxychloroquine. The most frequent clinical variables include oxygen saturation, spo2, respiratory rate, aspartate aminotransferases, and pao2/fio2. age  99  11  17  1303  10  10  77  14  10  allergy_name  59  729  32  cancer  39  25  459  34  chronic_disease  10  160  11  14  16  15  1991  18  11  14  10  127  26  10  12  clinical_variable  105  1074  76  15  contraception_consent  50  10  776  52  gender  60  817  52  language_fluency  11  88  pregnancy  113  1191  12  85  10  17  10  technology_access  11  103  10  treatment  11  150  19  24  1869  16  10  14  18  11  114  28  11  12 IV. DISCUSSIONS Previous studies have tried to characterize COVID-19 trials in terms of treatments, single or double blinded design, randomization, and enrollment [19] . However, the authors are not aware of any studies that have focused on eligibility criteria analysis and cohort definition.",
+            "cite_spans": [
+                {
+                    "start": 1093,
+                    "end": 1097,
+                    "text": "[19]",
+                    "ref_id": "BIBREF18"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 485,
+                    "end": 929,
+                    "text": "age  99  11  17  1303  10  10  77  14  10  allergy_name  59  729  32  cancer  39  25  459  34  chronic_disease  10  160  11  14  16  15  1991  18  11  14  10  127  26  10  12  clinical_variable  105  1074  76  15  contraception_consent  50  10  776  52  gender  60  817  52  language_fluency  11  88  pregnancy  113  1191  12  85  10  17  10  technology_access  11  103  10  treatment  11  150  19  24  1869  16  10  14  18  11  114  28  11  12",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "D. Design Patterns"
+        },
+        {
+            "text": "We demonstrate that entity extraction provides an effective way to quantify clinical trial parameters in eligibility criteria and that deep learning returns more detailed result than the ontologybased method.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "D. Design Patterns"
+        },
+        {
+            "text": "The ontology-based method (e.g., using MeSH) suffers from finding terms/entities (variables) that are not defined in the dictionary, which leads to low recall. The deep learning Att-BiLSTM model can greatly improve the recall by finding offdictionary terms/entities with finer granularity. For example, given a term \"known hypersensitivity to nivolumab\", Att-BiLSTM recognizes it as an allergy, while the ontology model only recognizes the term \"nivolumab\" as a drug.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "D. Design Patterns"
+        },
+        {
+            "text": "The extracted entities/variables can be used for knowledge reuse and downstream machine learning applications such as predicting trial success rates [22] . We demonstrated a utility of the variables to find common design variables or patterns across trials. The most common disease variables include HIV, pneumonia, and respiratory failure; the most frequent diagnosis and treatment variables include RT-PCR, mechanical ventilation, and immunosuppressive agents; and the most frequent clinical variables include oxygen saturation, spo2, respiratory rate, aspartate aminotransferases, and pao2/fio2. These results correspond with previous findings. Recent studies have shown that pneumonia and acute respiratory distress syndrome are common comorbidities of COVID-19 [23] , [24] . RT-PCR is a common diagnosis method to confirm COVID-19 [25] , [26] . A recent work on the COVID-19 severity index (CSI) shows that oxygen requirement is an important measure of critical illness [20] .",
+            "cite_spans": [
+                {
+                    "start": 149,
+                    "end": 153,
+                    "text": "[22]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 766,
+                    "end": 770,
+                    "text": "[23]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 773,
+                    "end": 777,
+                    "text": "[24]",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 836,
+                    "end": 840,
+                    "text": "[25]",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 843,
+                    "end": 847,
+                    "text": "[26]",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 975,
+                    "end": 979,
+                    "text": "[20]",
+                    "ref_id": "BIBREF19"
+                }
+            ],
+            "ref_spans": [],
+            "section": "D. Design Patterns"
+        },
+        {
+            "text": "The results also reveal the frequent design variables in cooccurring conditions or comorbidities of COVID-19, such as acute respiratory distress syndrome and pneumonia. For all trials, there is a tendency to consider chronic diseases and treatments. This may imply that COVID-19 related clinical studies are very careful about selecting patient populations by considering patient history of chronic diseases and prior treatments.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "D. Design Patterns"
+        },
+        {
+            "text": "Our study has limitations in modeling the attributes of design variables, such as numeric values, negation, and temporal constraints. To support more detailed eligibility assessment for clinical studies, it is necessary to model all possible eligibility variables and all possible values. Therefore, more sophisticated information extraction models will be required. These variables and values will provide a more structured representation of the criteria, which unlocks the potential for more advanced pattern analysis and machine learning tasks.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "D. Design Patterns"
+        },
+        {
+            "text": "Another limitation is that we only used MeSH as an example ontology for the ontology-based model. Other ontologies such as UMLS and NCI Thesaurus will need to be tested.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "D. Design Patterns"
+        },
+        {
+            "text": "V. CONCLUSIONS In this study, we investigated the performances of different versions of Att-BiLSTM models to extract design variables from the COVID-19 eligibility criteria. The multiply attention method achieves the best performance with an accuracy of 92.87, while the dot attention method achieves the worst performance with an accuracy of 92.52. BiLSTM without attention achieves an accuracy of 92.55. This shows the impact of attention methods on the BiLSTM model performance.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "D. Design Patterns"
+        },
+        {
+            "text": "Our evaluation on a benchmark data shows that Att-BiLSTM outperforms the ontology model in parsing COVID-19 trials. Att-BiLSTM achieves a F1 of 0.871, while the MeSH ontology method only achieves a F1 of 0.686. Qualitative analysis also shows that Att-BiLSTM can extract more detailed entities than the ontology model.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "D. Design Patterns"
+        },
+        {
+            "text": "The extracted eligibility criteria variables provide a mechanism for characterizing patient populations eligible in COVID-19 trials. We used the extracted variables to find design patterns in COVID-19 eligibility criteria. Our result not only confirmed previous findings about COVID-19, but also discovered new knowledge about comorbidities. In summary, our study demonstrated the effectiveness of Att-BiLSTM deep learning in protocol criteria parsing.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "D. Design Patterns"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "A novel coronavirus from patients with pneumonia in China",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Zhu",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "N Engl J Med",
+            "volume": "382",
+            "issn": "",
+            "pages": "727--733",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "COVID-19 tracker",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "CBS",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Fundamentals of clinical trial design",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Evans",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Journal of Experimental Stroke & Translational Medicine",
+            "volume": "3",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Optimizing Clinical Research Participant Selection with Informatics",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Weng",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Trends Pharmacol Sci",
+            "volume": "36",
+            "issn": "",
+            "pages": "706--709",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Developing Drugs and Biological Products for Treatment or Prevention",
+            "authors": [
+                {
+                    "first": "Covid-19",
+                    "middle": [],
+                    "last": "Fda",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Patient centric approach for clinical trials: current trend and new opportunities",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Sharma",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Perspect. Clin. Res",
+            "volume": "6",
+            "issn": "",
+            "pages": "134--138",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Formal representation of eligibility criteria: a literature review",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Weng",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Tu",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Sim",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Richesson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Journal of biomedical informatics",
+            "volume": "43",
+            "issn": "",
+            "pages": "451--467",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Criteria2Query: a natural language interface to clinical databases for cohort definition",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Yuan",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Ryan",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Ta",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Guo",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Hardin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Journal of the American Medical Informatics Association",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "A practical method for transforming free-text eligibility criteria into computable criteria",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Tu",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Peleg",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Carini",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "J Biomed Inform",
+            "volume": "44",
+            "issn": "2",
+            "pages": "239--50",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Analysis of eligibility criteria representation in industry-standard clinical trial protocols",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Bhattacharya",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Cantor",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "J Biomed Inform",
+            "volume": "46",
+            "issn": "5",
+            "pages": "805--818",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "EliIE: An open-source information extraction system for clinical trial eligibility criteria",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Kang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "J Am Med Inform Assoc",
+            "volume": "24",
+            "issn": "",
+            "pages": "1062--1071",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Information extraction of clinical trial eligibility criteria",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Tseo",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Salkola",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Mohamed",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Kumar",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Abnousi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "arXiv": [
+                    "arXiv:2006.07296"
+                ]
+            }
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Neural architectures for named entity recognition",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Lample",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Proceedings of NAACL-HLT",
+            "volume": "",
+            "issn": "",
+            "pages": "260--270",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "An attention based BiLSTM-CRF approach to document-level chemical named entity recognition",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Luo",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Bioinformatics",
+            "volume": "32",
+            "issn": "8",
+            "pages": "1381--1388",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Neural machine translation by jointly learning to align and translate",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Bahdanau",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "International Conference on Learning Representations",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Recurrent models of visual attention",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Mnih",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Adv. Neural Inf. Process. Syst",
+            "volume": "2",
+            "issn": "",
+            "pages": "2204--2212",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Characteristics of COVID-19 clinical trials registered with ClinicalTrials.gov: crosssectional analysis",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Jones",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Woodford",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Platts-Mills",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "BMJ Open",
+            "volume": "10",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Development and validation of the COVID-19 severity index (CSI): a prognostic tool for early respiratory decompensation. medRxiv",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Haimovich",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Pytext: A seamless path from nlp research to production",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Aly",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Lakhotia",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Mohit",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Oguz",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Arora",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Gupta",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Dewan",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Nelson-Lindall",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Shah",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "arXiv": [
+                    "arXiv:1812.08729"
+                ]
+            }
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Estimation of clinical trial success rates and related parameters",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Wong",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Siah",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Lo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Biostatistics",
+            "volume": "20",
+            "issn": "",
+            "pages": "273--286",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Clinical course and outcomes of critically ill patients with SARS-CoV-2 pneumonia in Wuhan, China: a singlecentered, retrospective, observational study",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet Respir Med",
+            "volume": "8",
+            "issn": "",
+            "pages": "475--481",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Pathophysiology of COVID-19-associated acute respiratory distress syndrome: a multicentre prospective observational study. The Lancet Respiratory Medicine",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Grasselli",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Tonetti",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Protti",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S2213-2600(20)30370-2"
+                ]
+            }
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Correlation of Chest CT and RT-PCR Testing in Coronavirus Disease 2019 (COVID-19) in China: A Report of 1014 Cases. Radiology",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Ai",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Hou",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Zhan",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Lv",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Tao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Xia",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "296",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Patients with RT-PCR-confirmed COVID-19 and normal chest CT",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Yan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Radiology",
+            "volume": "295",
+            "issn": "2",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "The architecture of the attention-based BiLSTM model for criteria parsing. Figure adapted from[16].",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "Frequent eligibility criteria variables across COVID-19 and comorbidities",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "PERFORMANCES OF DIFFERENT ATT-BILSTM MODELS ON THE TEST DATA",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "EXAMPLE ENTITIES AND TYPES",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF3": {
+            "text": "PERFORMANCE MEASURE OF THE MODELS ON THE 10-TRIAL",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF4": {
+            "text": "Sum of trials by entity type Conditions",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": []
+}

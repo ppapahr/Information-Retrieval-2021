@@ -1,0 +1,2653 @@
+{
+    "paper_id": "e80fd2add7178c1b08851f0d1900589f674119cc",
+    "metadata": {
+        "title": "HISNAPI: a bioinformatic tool for dynamic hot spot analysis in nucleic acid-protein interface with a case study",
+        "authors": [
+            {
+                "first": "Long-Can",
+                "middle": [],
+                "last": "Mei",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Yu-Liang",
+                "middle": [],
+                "last": "Wang",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Feng-Xu",
+                "middle": [],
+                "last": "Wu",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Fan",
+                "middle": [],
+                "last": "Wang",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Ge-Fei",
+                "middle": [],
+                "last": "Hao",
+                "suffix": "",
+                "affiliation": {},
+                "email": "gefei_hao@foxmail.com."
+            },
+            {
+                "first": "Guang-Fu",
+                "middle": [],
+                "last": "Yang",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Protein-nucleic acid interactions play essential roles in many biological processes, such as transcription, replication and translation. In protein-nucleic acid interfaces, hotspot residues contribute the majority of binding affinity toward molecular recognition. Hotspot residues are commonly regarded as potential binding sites for compound molecules in drug design projects. The dynamic property is a considerable factor that affects the binding of ligands. Computational approaches have been developed to expedite the prediction of hotspot residues on protein-nucleic acid interfaces. However, existing approaches overlook hotspot dynamics, despite their essential role in protein function. Here, we report a web server named Hotspots In silico Scanning on Nucleic Acid and Protein Interface (HISNAPI) to analyze hotspot residue dynamics by integrating molecular dynamics simulation and one-step free energy perturbation. HISNAPI is capable of not only predicting the hotspot residues in protein-nucleic acid interfaces but also providing insights into their intensity and correlation of dynamic motion. Protein dynamics have been recognized as a vital factor that has an effect on the interaction specificity and affinity of the binding partners. We applied HISNAPI to the case of SARS-CoV-2 RNA-dependent RNA polymerase, a vital target of the antiviral drug for the treatment of coronavirus disease 2019. We identified the hotspot residues and characterized their dynamic behaviors, which might provide insight into the target site for antiviral drug design. The web server is freely available via a user-friendly web interface at",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "Proteins and nucleic acids are the two fundamental and significant components of living organisms. Protein is the product of gene expression, and gene expression depends on protein. Protein-nucleic acid interactions exist at almost all is applied to identify hotspot residues [7] [8] [9] . Rigorous approaches have been developed to calculate the binding free energy, such as free energy perturbation (FEP) [10] , thermodynamic integration (TI) [11] and Molecular Mechanics/Poisson-Boltzmann Surface Area (MM/PBSA) [12] . The decomposition of free energy is performed toward individual residues. These hotspot residues are the main favorable contributors to the binding interactions between protein and nucleic acid molecules. Modulating these regions contributes to an increased knowledge of protein function and thus uncovers their pathological implications. For example, targeting the hot regions of the protein-nucleic acid interface is an important modality in the treatment of cancer [13] [14] [15] . Hence, studying favored nucleic acid binding hotspots on proteins may provide essential information for identifying the targetable region of the protein-nucleic acid interface in disease treatment.",
+            "cite_spans": [
+                {
+                    "start": 276,
+                    "end": 279,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 280,
+                    "end": 283,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 284,
+                    "end": 287,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 407,
+                    "end": 411,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 445,
+                    "end": 449,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 515,
+                    "end": 519,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 990,
+                    "end": 994,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 995,
+                    "end": 999,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 1000,
+                    "end": 1004,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Recently, the dynamic properties of hotspot are receiving more and more attention [16] . The flexibility of hotspots plays a key role in allosteric regulation of protein surfaces. The nucleic acid could induce conformational changes in hotspot residues to form a substantially concave topology, which may be a potential binding pocket in drug discovery [17] . Conformational change is important for the formation of binding pockets and interactions with other partners. Structural flexibility has an effect on conformational movement, which may change an existent pocket or form a new pocket. Hotspots In silico Scanning on Nucleic acid and Protein Interface (HISNAPI) gives a good description of the pattern of hotspot movement, which allows the regulation of pocket formation on binding campaigns. The dynamic properties of these binding pockets are crucial for drug binding affinity and specificity [18] . For example, the binding and dissociation constants vary with different dynamics in the case of a maltose-binding protein and a series of mutants [16] . Another example is the consideration of protein binding pocket dynamics in p38 mitogen-activated protein kinase, which helped to find an inhibitor [19] . Hence, knowledge of nucleic acid binding-induced protein hotspot dynamics may facilitate a more comprehensive understanding of protein function, which is particularly relevant to drug discovery.",
+            "cite_spans": [
+                {
+                    "start": 82,
+                    "end": 86,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 353,
+                    "end": 357,
+                    "text": "[17]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 902,
+                    "end": 906,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 1055,
+                    "end": 1059,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 1209,
+                    "end": 1213,
+                    "text": "[19]",
+                    "ref_id": "BIBREF18"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "To date, numerous computational methods based on various principles have been developed to accelerate the prediction of the effects of mutations on protein-nucleic acid binding. Scoring methods have been developed for evaluating protein-RNA binding affinity, such as QUASI-RNP and DARS-RNP [20] , ITScore-PR [21] and 3dRPC-Score [22] . Machine learning-based methods have increasingly emerged to model binding interactions [23] [24] [25] [26] [27] . These approaches could be utilized in the form of standalone programs, while their operational complexity may daunt a researcher without skillful computational chemistry knowledge. Several methods have been developed into web servers for public use, such as mCSM-NA [28] , SAMPDI [29] , PrabHot [30] and PrPDH [31] . However, the goal of these methods is only to identify the hotspot residues, regardless of their dynamic properties associated with protein functions.",
+            "cite_spans": [
+                {
+                    "start": 290,
+                    "end": 294,
+                    "text": "[20]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 308,
+                    "end": 312,
+                    "text": "[21]",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 329,
+                    "end": 333,
+                    "text": "[22]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 423,
+                    "end": 427,
+                    "text": "[23]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 428,
+                    "end": 432,
+                    "text": "[24]",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 433,
+                    "end": 437,
+                    "text": "[25]",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 438,
+                    "end": 442,
+                    "text": "[26]",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 443,
+                    "end": 447,
+                    "text": "[27]",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 716,
+                    "end": 720,
+                    "text": "[28]",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 730,
+                    "end": 734,
+                    "text": "[29]",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 745,
+                    "end": 749,
+                    "text": "[30]",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 760,
+                    "end": 764,
+                    "text": "[31]",
+                    "ref_id": "BIBREF30"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "To this end, we introduced a web server, named HISNAPI, to assist in describing the dynamic motions of hotspot residues in protein-nucleic acid binding interactions. Molecular dynamic (MD) simulation and one-step FEP have been integrated to develop a fast and accurate de novo method for binding free energy calculations [32] . HISNAPI was validated using different types of cross-validation on diverse and large sets of single alanine mutations from the ProNIT [33] and dbAMEPNI [34] databases, and compared with several other tools. The correlation we achieved for the binding free energy changes of 299 mutants from 40 protein-nucleic acid systems was R = 0.77. The sensitivity, specificity and precision were 74.4, 87.8 and 81.6%, respectively, with AUC = 0.86. Because of conformational sampling by molecular simulations, HISNAPI has an exclusive advantage in generating the dynamic information contained in simulation trajectories. HISNAPI provides a reliable way to predict the effect of single alanine mutations on protein-DNA/RNA binding and to characterize the dynamic properties of hotspot amino acids.",
+            "cite_spans": [
+                {
+                    "start": 321,
+                    "end": 325,
+                    "text": "[32]",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 462,
+                    "end": 466,
+                    "text": "[33]",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 480,
+                    "end": 484,
+                    "text": "[34]",
+                    "ref_id": "BIBREF33"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The interfacial residues are identified against a distance criterion: those amino acids within a distance cut-off from any atoms in a nucleic acid molecule are defined as interfacial residues. A default 4 \u00c5 cut-off is recommended, which is accepted in most cases [35] .",
+            "cite_spans": [
+                {
+                    "start": 263,
+                    "end": 267,
+                    "text": "[35]",
+                    "ref_id": "BIBREF34"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Interfacial residues detection"
+        },
+        {
+            "text": "Considering conformational flexibility, we performed conventional MD simulation on protein-nucleic acid complexes to obtain conformational ensembles by AMBER 16 program [36] . Each complex was prepared by the tleap module in AMBER. Protein and nucleic acid molecules were parameterized by ff14SB force field [37] , RNA by RNA OL3 force field [38] and DNA by DNA OL15 force field [39] . Each system was solvated in a TIP3P water [40] box with 10 \u00c5 distance between the solute and box. Counter-ions, Na+ and Cl\u2212, were added to neutralize the unbalanced charges. Following the standard protocol of energy minimization, each system was then minimized by two steps: firstly, all the heavy atoms in the backbone of the protein were restrained with an elastic constant of 50 kcal\u00b7mol \u22121 \u00b7\u00c5 \u22122 (2500 cycles of steepest descent and 2500 cycles of conjugate gradient minimizations); secondly, the whole system was minimized for 5000 steps without any restraint (2500 cycles of steepest descent and 2500 cycles of conjugate gradient minimizations). Each system was gradually heated from 0 to 300 K during a period of 500 ps in the NVT ensemble. Then, 1 ns equilibration simulation was performed in the NTP (T = 300 K and P = 1 atm) ensemble. In the production MD simulation process, the SHAKE algorithm [41] was used to constrain all of the covalent bonds involving hydrogen atoms. The cut-off for calculating the short-range interactions (electrostatic and Van der Waals interactions) was set to 10 \u00c5, and the Particle Mesh Ewald (PME) algorithm [42] was used to handle the longrange electrostatic interactions. The time step was set to 2 fs, and the snapshots were collected at an interval of 10 ps. At least 1 ns production simulation is performed in the sampling phase, but we add an evaluation of the equilibration. The root mean square deviation is evaluated during the simulation. Once the fluctuation of the root mean square deviation value of the backbone of the whole system is smaller than 1.0 \u00c5, the simulation will be terminated. Elsewise, the simulation will proceed to the next 1 ns until the maximum duration of 10 ns. Finally, the last 1000 frames were extracted for the following binding free energy calculation.",
+            "cite_spans": [
+                {
+                    "start": 169,
+                    "end": 173,
+                    "text": "[36]",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 308,
+                    "end": 312,
+                    "text": "[37]",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 342,
+                    "end": 346,
+                    "text": "[38]",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 379,
+                    "end": 383,
+                    "text": "[39]",
+                    "ref_id": "BIBREF38"
+                },
+                {
+                    "start": 428,
+                    "end": 432,
+                    "text": "[40]",
+                    "ref_id": "BIBREF39"
+                },
+                {
+                    "start": 1292,
+                    "end": 1296,
+                    "text": "[41]",
+                    "ref_id": "BIBREF40"
+                },
+                {
+                    "start": 1536,
+                    "end": 1540,
+                    "text": "[42]",
+                    "ref_id": "BIBREF41"
+                }
+            ],
+            "ref_spans": [],
+            "section": "MD simulation"
+        },
+        {
+            "text": "We have previously developed computational mutation scanning (CMS) method [32] to predict binding affinity change in protein-organic compound system upon residue mutation. Here, we produce alanine variant structure following the method. More details can be found in the literature [43] , the following is a brief protocol: (1) single-alanine substitution was performed in sequence on wild-type conformations by PyMOL software (Version 1.2, Schr\u00f6dinger, LLC); (2) a standard energy minimization for relaxing mutant conformations by AMBER program and (3) a short period of MD simulation to refine the orientation of residue side chains. The unreasonable conformation of the side chains after mutation may influence the conformation of the backbone. Thus, the backbone of the protein is restrained with an elastic constant of 50 kcal\u00b7mol \u22121 \u00b7\u00c5 \u22122 , and other atoms are free to move. Energy minimization is performed by 5000 cycles of steepest descent and 5000 cycles of conjugate gradient. Subsequently, 50 ps MD simulation is performed in NPT ensemble.",
+            "cite_spans": [
+                {
+                    "start": 74,
+                    "end": 78,
+                    "text": "[32]",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 281,
+                    "end": 285,
+                    "text": "[43]",
+                    "ref_id": "BIBREF42"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Computational alanine mutations"
+        },
+        {
+            "text": "For each protein-nucleic acid complex system, the binding free energy was calculated by the FoldX algorithm [44] based on the conformational ensemble extracted from 1 ns MD trajectory. FoldX is an empirical force field that is applicable to evaluate the binding affinity of macromolecule complex based on its threedimensional structure. It shows good performance in computing free energies over protein-DNA structures [45] and allows calculations on structures containing RNA molecules [46] . In brief, free energy calculation by FoldX is based on the sum of empirical energy terms:",
+            "cite_spans": [
+                {
+                    "start": 108,
+                    "end": 112,
+                    "text": "[44]",
+                    "ref_id": "BIBREF43"
+                },
+                {
+                    "start": 418,
+                    "end": 422,
+                    "text": "[45]",
+                    "ref_id": "BIBREF44"
+                },
+                {
+                    "start": 486,
+                    "end": 490,
+                    "text": "[46]",
+                    "ref_id": "BIBREF45"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Binding free energy calculation"
+        },
+        {
+            "text": "(1) where G is the folding free energy. The terms G vdw , G solH , G solP , G wb , G hbond , G el , S mc and S sc represent the contributions from Van der Waals, solvation energy for apolar, polar groups, extra stabilizing free energy provided by water molecules, hydrogen bond formation, electrostatic of charged groups, the entropic cost for fixing the backbone and side chain in the folded state, respectively. For protein-nucleic acid interactions, FoldX calculates G of interaction:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Binding free energy calculation"
+        },
+        {
+            "text": "G com is the binding free energy of protein and nucleic acid molecules. The terms G com , G prot , G na , G kon and S sc represent the folding free energy of the complex, mono-protein, mono-nucleic acid, the effect of electrostatic interactions on the k on and the loss of translational and rotational entropy for complex formation, respectively.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Binding free energy calculation"
+        },
+        {
+            "text": "The binding free energy change ( G \u03b5 ) as a consequence of single alanine mutation is the difference of binding affinity between the mutant ( G com,mut ) and wild-type ( G com,wt ) complexes:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Binding free energy calculation"
+        },
+        {
+            "text": "Hotspot residues are a small subset of residues that have a more significant contribution to the binding free energy than other residues. In protein-nucleic acid systems, hotspot residues can be defined operationally as those for which alanine mutations have destabilizing effects on the total binding free energy of more than 1.0 kcal\u00b7mol \u22121 [24, 31] . In most studies, researchers achieved consensus on the threshold value of 1.0 kcal\u00b7mol \u22121 to define hotspot residues [26, 47, 48] . Thus, we chose the same criterion to compare the performance of HISNAPI with the other methods. We defined hotspot residues as the ones which cause the binding free energy change of greater than 1.0 kcal\u00b7mol \u22121 .",
+            "cite_spans": [
+                {
+                    "start": 343,
+                    "end": 347,
+                    "text": "[24,",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 348,
+                    "end": 351,
+                    "text": "31]",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 471,
+                    "end": 475,
+                    "text": "[26,",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 476,
+                    "end": 479,
+                    "text": "47,",
+                    "ref_id": "BIBREF46"
+                },
+                {
+                    "start": 480,
+                    "end": 483,
+                    "text": "48]",
+                    "ref_id": "BIBREF47"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Binding free energy calculation"
+        },
+        {
+            "text": "The movement stability of per residue is represented by root mean square fluctuation (RMSF). The RMSF is a measure of the deviation between the position of atom i (r i ) and the reference position (r ref i ):",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Dynamical properties analysis"
+        },
+        {
+            "text": "where T is the time over the MD simulation and r ref i is the reference position of atom i. Here, the reference position is the time-averaged position of atom i.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Dynamical properties analysis"
+        },
+        {
+            "text": "The movement correlation of pairwise residues is represented by the dynamical cross-correlation matrix (DCCM). The correlation between the atom i and atom j is defined by the following equation,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Dynamical properties analysis"
+        },
+        {
+            "text": "where r i and r j are the fluctuations of atom i and j from the time-average positions, and the angle brackets represent the average over the simulation time.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Dynamical properties analysis"
+        },
+        {
+            "text": "Normal mode analysis (NMA) provides the information about the direction of large-amplitude movement of a protein in MD simulation. Normal mode calculation is based on the harmonic approximation of the potential energy function (V) around a minimum energy conformation:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Dynamical properties analysis"
+        },
+        {
+            "text": "where r is the distance between atoms i and j, R is the average distance, v is the difference of average distance and \u03b1 and \u03b2 represent the direction of the motion. The routines for NMA include a Hessian construction, Newton-Raphson minimization and normal mode calculations. More details can be found in the previous literature [49] . The snapshots extracted from the simulations need to be fully minimized. Conformational optimization was conducted by a maximum of 10 000 cycles of conjugate gradient minimization with a convergence criterion of 0.0001 kcal\u00b7mol \u22121 \u00b7\u00c5 \u22121 . Then, a maximum of 200 cycles of Newton-Raphson minimization is applied, and the convergence criterion is the root-mean-square of the gradient less than 1.0 \u00d7 10 \u221212 kcal\u00b7mol \u22121 \u00b7\u00c5 \u22121 . To speed up the calculation, NMA is performed on the \u03b1-carbon atoms of the protein.",
+            "cite_spans": [
+                {
+                    "start": 329,
+                    "end": 333,
+                    "text": "[49]",
+                    "ref_id": "BIBREF48"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Dynamical properties analysis"
+        },
+        {
+            "text": "To evaluate the performance of our method, we collected 23 protein-RNA and 17 protein-DNA complexes from ProNIT [33] and dbAMEPNI [34] databases, which contains 299 experimental measured binding free energy changes upon alanine mutations (Supplementary Table S1 available online at https://academic.oup.com/bib). The distribution of experimental measured binding free energy changes is shown in Supplementary Figure S1A available online at https://academic. oup.com/bib, in which 135 residues upon alanine mutations with larger binding affinity change ( G \u2265 1.0 kcal\u00b7mol \u22121 ) are considered as hotspot residues while other 164 residues are considered as neutral residues. The distribution of proteinnucleic acid complex type is shown in Supplementary Figure S1B available online at https://academic.oup.com/bib, including 5 double-stranded RNA (dsRNA), 18 single-stranded RNA (ssRNA), 12 double-stranded DNA (dsDNA) and 5 single-stranded DNA (ssDNA). HISNAPI was evaluated using the linear regression against the experimental data and the receiver operating characteristic (ROC) analysis to distinguish hotspot residues from neutral residues.",
+            "cite_spans": [
+                {
+                    "start": 112,
+                    "end": 116,
+                    "text": "[33]",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 130,
+                    "end": 134,
+                    "text": "[34]",
+                    "ref_id": "BIBREF33"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 238,
+                    "end": 261,
+                    "text": "(Supplementary Table S1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Datasets and validation"
+        },
+        {
+            "text": "We have implemented our method via a user-friendly freely available web server HISNAPI (http://chemyang.ccnu.edu.cn/ ccb/server/HISNAPI/ and http://agroda.gzu.edu.cn:9999/ccb/se rver/HISNAPI/). HISNAPI web server runs on a Linux system computer cluster [50, 51] . The web application uses PHP, HTML and JavaScript to serve web pages [52] . The data are stored in a database implemented in MySQL [53] . Molecular structure visualization is based on NGL Viewer [54] [55] [56] web application, which runs on all modern browsers with no additional plugins.",
+            "cite_spans": [
+                {
+                    "start": 253,
+                    "end": 257,
+                    "text": "[50,",
+                    "ref_id": "BIBREF49"
+                },
+                {
+                    "start": 258,
+                    "end": 261,
+                    "text": "51]",
+                    "ref_id": "BIBREF50"
+                },
+                {
+                    "start": 333,
+                    "end": 337,
+                    "text": "[52]",
+                    "ref_id": "BIBREF51"
+                },
+                {
+                    "start": 395,
+                    "end": 399,
+                    "text": "[53]",
+                    "ref_id": "BIBREF52"
+                },
+                {
+                    "start": 459,
+                    "end": 463,
+                    "text": "[54]",
+                    "ref_id": "BIBREF53"
+                },
+                {
+                    "start": 464,
+                    "end": 468,
+                    "text": "[55]",
+                    "ref_id": "BIBREF54"
+                },
+                {
+                    "start": 469,
+                    "end": 473,
+                    "text": "[56]",
+                    "ref_id": "BIBREF55"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Web server configuration"
+        },
+        {
+            "text": "The HISNAPI prediction workflow is shown in Figure 1 . HISNAPI could define the interfacial residues as candidates that will undergo the following mutation scanning. The method employs MD simulation to generate the conformational ensemble of a protein-nucleic acid complex in the wild-type residue environment. A total of 1000 snapshots are collected from the equilibrated MD trajectory at regular intervals to obtain an ensemble of wild-type complex structures. Then, single-alanine mutagenesis of the wild-type ensemble is performed sequentially on mutation sites to obtain mutant conformational ensembles. Both wild-type and mutant structural conformations are refined by a standard energy minimization protocol. Following structural optimization, the average binding free energy of a conformational ensemble is calculated by the FoldX algorithm. The consequences of alanine mutations are represented by the difference in the binding free energy between the mutant and wild-type (Equation 3). According to the consensus from previous studies [30] , the residues that cause large binding affinity reduction ( G \u03b5 \u2265 1.0 kcal\u00b7mol \u22121 ) are identified as hotspot residues. In addition, the dynamic properties of key residues could be analyzed from simulation trajectories, including the stability, correlation and direction of the residue movement.",
+            "cite_spans": [
+                {
+                    "start": 1045,
+                    "end": 1049,
+                    "text": "[30]",
+                    "ref_id": "BIBREF29"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 44,
+                    "end": 52,
+                    "text": "Figure 1",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Computational workflow"
+        },
+        {
+            "text": "The server provides two options for the user to perform hotspot prediction, as shown in the job submission interface (Figure 2A ). The 'Site-directed mutations' allow the user to predict the effects of alanine mutations at specific sites on the binding affinity of a protein-nucleic acid complex. The user should upload the initial structure file of the protein-nucleic acid complex or input the PDB ID collected in the Protein Data Bank database. A standard PDB-format file is recommended. The users need to input the chain ID of a single protein chain, as well as residue numbers of mutation sites in the structure file. The 'Single-chain scanning' allows the user to perform alanine scanning on all interfacial residues which are defined by the distance criterion. In addition to a complex structure file and a protein chain ID, users need to input a distance cut-off value. Amino acids within the distance of nucleic acids are considered mutation sites. Generally, a default parameter of 4 \u00c5 is advisable to detect all the interfacial residues. User may input any reasonable parameter value to suit her or his studies. Users are allowed to perform MD simulations with a certain ionic strength. They can either assign the concentration of sodium ion and chloride ion in the prompt boxes, or ignore the prompt boxes to neutralize the system by counter ions. Example input is present in the textbox to guide the user to input the parameters. Some extra information is optional for users, including task name, emails and passwords, which help users mark the job, receive the notice and keep the job private. A sample submission entry is available on the submission page to guide users to submit their jobs. A help page has been implemented and is accessible via the top navigation bar.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 117,
+                    "end": 127,
+                    "text": "(Figure 2A",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "The usage of web server"
+        },
+        {
+            "text": "The simplified exhibition of the results page is shown in Figure 2B . ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 58,
+                    "end": 67,
+                    "text": "Figure 2B",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "The usage of web server"
+        },
+        {
+            "text": "We performed ROC analysis to evaluate the performance in distinguishing hotspot residues from neutral residues. The total test dataset contains 135 hotspot residues and 164 neutral residues. HISNAPI accurately predicted 93 hotspot residues and 153 neutral residues with a true positive rate (sensitivity) of 74.4% and a true negative rate (specificity) of 87.8% (Tables 1-3) . HISNAPI achieved good performance in protein-RNA and protein-DNA datasets. Figure 3A -C shows the ROC curve for classification capability. The area under the curve (AUC) value was 0.86 for the total dataset ( Figure 3A) , indicating the satisfactory capability of HISNAPI to distinguish different types of mutations. The AUC values for the protein-RNA and protein-DNA datasets were 0.89 and 0.81, respectively ( Figure 3B and C). binding free energy change. Figure 4 depicts the linear regression plots between the experimental and predicted data. The analysis showed a Pearson correlation coefficient of 0.78 for the protein-RNA dataset ( Figure 4A ) and 0.76 for the protein-DNA dataset ( Figure 4B ). The performance of HISNAPI seems as good in the protein-RNA dataset as in the protein-DNA dataset. For the total dataset, HISNAPI achieved a Pearson correlation coefficient of R = 0.77 ( Figure 4C ). In our previous works [43, 57] , we demonstrated that compared with that based on static structures, the calculation accuracy based on conformational ensemble could be improved. Here, we also performed alanine scanning based on static structures of the protein-nucleic acid complex. The results showed a Pearson correlation coefficient of 0.41 for the total dataset, with 0.39 for the protein-RNA dataset and 0.44 for the protein-DNA dataset (Supplementary Figure S2 available online at https://academic.oup.com/bib). This outcome indicates that conformational sampling has an effect on the accuracy of the binding free energy calculation. Sufficient conformations could provide more reliable prediction results. We finally compared the hotspot prediction performance of HISNAPI with some up-to-date and widely used approaches.",
+            "cite_spans": [
+                {
+                    "start": 1303,
+                    "end": 1307,
+                    "text": "[43,",
+                    "ref_id": "BIBREF42"
+                },
+                {
+                    "start": 1308,
+                    "end": 1311,
+                    "text": "57]",
+                    "ref_id": "BIBREF56"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 362,
+                    "end": 374,
+                    "text": "(Tables 1-3)",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 452,
+                    "end": 461,
+                    "text": "Figure 3A",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 586,
+                    "end": 596,
+                    "text": "Figure 3A)",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 789,
+                    "end": 798,
+                    "text": "Figure 3B",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 835,
+                    "end": 843,
+                    "text": "Figure 4",
+                    "ref_id": "FIGREF4"
+                },
+                {
+                    "start": 1017,
+                    "end": 1026,
+                    "text": "Figure 4A",
+                    "ref_id": "FIGREF4"
+                },
+                {
+                    "start": 1068,
+                    "end": 1077,
+                    "text": "Figure 4B",
+                    "ref_id": "FIGREF4"
+                },
+                {
+                    "start": 1268,
+                    "end": 1277,
+                    "text": "Figure 4C",
+                    "ref_id": "FIGREF4"
+                },
+                {
+                    "start": 1738,
+                    "end": 1747,
+                    "text": "Figure S2",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "Performance"
+        },
+        {
+            "text": "These approaches use force field or machine learning-based techniques to predict the mutation effects, and are available by online web servers or stand alone. We constructed a dataset consisting of 299 mutants to test HISNAPI, while other approaches used smaller datasets ( Table 4 ). The test datasets for HISNAPI and mCSM-NA include protein-DNA and protein-RNA complex systems. HISNAPI achieved a correlation coefficient (R) of 0.77, which demonstrates its good capability to predict the effects of alanine mutations. Except for PrPDH, which has a minimum R value of 0.51, the other approaches have R values greater than 0.6. Both HISNAPI and PrabHot have the largest AUC value of 0.86 among those methods. This only indicated the considerable ability of HISNAPI and PrabHot to distinguish hotspot residues from neutral residues. We observed that all approaches obtained satisfactory AUC values greater than 0.7. In addition, we collected a benchmark protein-RNA dataset and a benchmark protein-DNA dataset (Supplementary Table S2 available online at https://academic.oup.com/bib) to evaluate the performance of HISNAPI and the other methods. These datasets are not used to train models for the machine learning-based methods. The benchmark protein-RNA dataset consists of 15 complexes, a total of 99 alanine mutations. The benchmark protein-DNA dataset consists of 10 complexes, a total of 73 alanine mutations. As shown in Supplementary Table S3 and Figure S3 available online at https://academic.oup.com/bib, the prediction accuracy of HISNAPI is 0.71 for protein-RNA dataset and 0.75 for protein-DNA dataset. The AUC value is 0.84 for protein-RNA dataset and 0.79 for protein-RNA dataset. In protein-RNA system, HIS-NAPI and XGBPRH have the same accuracy of 0.71. The lowest accuracy achieved by SPHot is 0.58. In protein-DNA system, HISNAPI has the highest accuracy of 0.75. The other three methods achieved the accuracy above 0.6. The results prove that HISNAPI has a comparative performance in predicting proteinnucleic acid hotspot residues. HISNAPI and mCSM-NA are applicable to both protein-DNA and protein-RNA complex systems. Most of those approaches are developed exclusively for a single system. HISNAPI, mCSM-NA and SAMPDI can quantitatively predict the binding free energy changes, while PrabHot, PrPDH, XGBPRH and SPHot score the probability of whether a residue is a hotspot. XGBPRH and SPHot provide the source code, which can predict locally in batches. Among all approaches, HISNAPI is the only one for not only hotspot prediction but also dynamic behavior analysis of those hotspots. However, we still need to realize the limitations in HISNAPI. The HISNAPI method simulates the flexibility of protein-nucleic acid complexes at the cost of computational resources and time. It costs much calculation time for a large complex system. We recorded the time taken by all the methods to complete a benchmark task. The average time spent by each method to complete a job represented its calculation speed. The computational time is listed in Table 4 . HISNAPI needs a longer calculation time of \u223c150 minutes for a job, while other methods can complete a job in \u223c30 minutes. Compared with the machine learning-based scoring methods, computational speed is one of the limitations of the structurebased computational method. Currently, HISNAPI is only capable of predicting the effects of alanine mutations and is thus not suitable for other natural amino acid mutations.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 274,
+                    "end": 281,
+                    "text": "Table 4",
+                    "ref_id": "TABREF3"
+                },
+                {
+                    "start": 1009,
+                    "end": 1032,
+                    "text": "(Supplementary Table S2",
+                    "ref_id": "TABREF1"
+                },
+                {
+                    "start": 1454,
+                    "end": 1463,
+                    "text": "Figure S3",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 3060,
+                    "end": 3067,
+                    "text": "Table 4",
+                    "ref_id": "TABREF3"
+                }
+            ],
+            "section": "Performance"
+        },
+        {
+            "text": "SARS-CoV-2 RNA-dependent RNA polymerase (RdRp), a vital component for the replication of the virus, is an attractive drug target for the treatment of COVID-19 disease. The cryo-EM structures of SARS-CoV-2 RdRp in apo form and in complex with a template-primer RNA and remdesivir have been reported [58] . RdRp is a so stable enzyme that no significant conformational changes between the apo and the holo form structures are observed. This work revealed the inhibition mechanism by remdesivir and provided a structural basis for designing antiviral drugs based on nucleotide analogs. We applied HISNAPI to the RdRp-RNA complex to provide a basic understanding of RNA recognition by RdRp. A total of 29 residues (except alanine and glycine) in RdRp were found to be within 4 \u00c5 of the RNA molecule ( Figure 5A ). HISNAPI performed alanine scanning on these interfacial residues. The results showed 7 hotspot residues (V560, F594, Y595, Y689, I847, L862 and Y915) and 22 neutral residues ( Figure 5B ). The binding affinity changes upon alanine substitution are shown in the histogram ( Figure 5C ). We observed the large reductions of binding affinity in Y595A and Y915A mutations. The results revealed that the residues Y595 and Y915 contribute mostly to the interaction between RdRp and RNA molecules.",
+            "cite_spans": [
+                {
+                    "start": 298,
+                    "end": 302,
+                    "text": "[58]",
+                    "ref_id": "BIBREF57"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 797,
+                    "end": 806,
+                    "text": "Figure 5A",
+                    "ref_id": "FIGREF5"
+                },
+                {
+                    "start": 986,
+                    "end": 995,
+                    "text": "Figure 5B",
+                    "ref_id": "FIGREF5"
+                },
+                {
+                    "start": 1083,
+                    "end": 1092,
+                    "text": "Figure 5C",
+                    "ref_id": "FIGREF5"
+                }
+            ],
+            "section": "Case study"
+        },
+        {
+            "text": "HISNAPI also provides insights into the dynamic properties of hotspot residues in the RdRp protein. Binding site dynamics have been recognized as a vital factor that has an effect on the interaction specificity and affinity of the binding partners in drug design [59] . Figure 5D shows the routine analysis of residue movement, including RMSF (left), PCA (middle) and DCCM (right). In the RMSF plot, the RMSF value reports on the fluctuations that take place on a per residue basis during the simulation. The movements of RdRp protein in apo form (blue) and in holo form (orange) are recorded. The red dotted lines highlight the positions of the predicted hotspot residues. The larger the RMSF value is, the more flexible the residue is. RMSF analysis revealed that the whole structures of RdRp in apo and holo forms share a similar tendency for residue fluctuation. The regions around the RNA binding interface decreased the fluctuation upon RNA recognition. We observed that the hotspot residues tend to be located in locally stable regions with smaller RMSF values than that of the flank. The movements of the hotspots on V560, F594, Y595 and Y689 were not affected by RNA binding. The PCA plot shows the dominant changes in the conformation ensemble during the simulation. The conformation space sampled by MD simulation is used to build and diagonalize the covariance matrix to determine the principal modes of structural variations. The red dotted lines highlight the positions of the predicted hotspot residues. The apo form (blue) RdRp has dramatic conformational changes in some regions compared with the holo form (orange). However, these hotspot residues of V560, F594, Y595 and Y689 in both forms maintain stable conformations. This revealed the conformational stability on these sites, which is consistent with the RMSF analysis. 'Stability patches' have been reported to exist on protein surfaces, regulating protein recognition interactions [60] . The stable backbone of hotspot residues may contribute to their role in facilitating the binding of small ligands to the binding sites. DCCM describes the movement correlation of all pairwise residues. The DCCM plot shows the difference in the correlation coefficient between the holo form and the apo form RdRp. Positive values (red) represent the motion that becomes more correlated, while negative values (blue) represent the motion that becomes more anti-correlated. In DCCM plot, we observed that the changes of movement correlation are low-scale and occurred in small local regions throughout the RdRp protein structure. This indicates that RNA binding had no substantial effect on the correlation of protein motion. It may be explained by the structural stability of RdRp in response to the perturbation of RNA binding. Protein flexibility plays a vital role in molecular recognition. The dynamic behaviors may help to predict the binding interaction at the residue level. Computational approaches to identify hotspot residues and describe their dynamics provide a means to reveal potential binding pockets to expand the possibility for improving drug design.",
+            "cite_spans": [
+                {
+                    "start": 263,
+                    "end": 267,
+                    "text": "[59]",
+                    "ref_id": "BIBREF58"
+                },
+                {
+                    "start": 1956,
+                    "end": 1960,
+                    "text": "[60]",
+                    "ref_id": "BIBREF59"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 270,
+                    "end": 279,
+                    "text": "Figure 5D",
+                    "ref_id": "FIGREF5"
+                }
+            ],
+            "section": "Case study"
+        },
+        {
+            "text": "In our previous work, we developed the PIIMS (Protein Interface In silico Mutation Scanning) web server for predicting the hotspot residues in protein-protein complex interfaces and the effects of hotspot mutations on protein-protein interactions. The calculation strategies of HISNAPI and PIIMS are both based on the CMS protocol. However, HISNAPI is designed to characterize the dynamic properties of hotspot residues, while PIIMS is designed to predict the effects of hotspot mutations. HISNAPI utilizes an empirical force field FoldX to evaluate the binding free energy, and PIIMS uses the MM/PBSA method.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusions"
+        },
+        {
+            "text": "HISNAPI was developed to predict the hotspot residues in protein-nucleic acid interfaces and provide dynamic information of the hotspots. Considering the flexibility of interfacial residues, HISNAPI evaluates the binding affinity based on conformational ensemble by conformational sampling rather than static structure. And HISNAPI utilizes an empirical force field FoldX to evaluate the binding affinity, which is applicable not only to the protein-DNA system but also to the protein-RNA system. The method achieved a correlation of up to 0.77 between experimental and predicted data and was able to classify the large and small effects upon alanine mutations with an AUC value of 0.86, showing its high capability to identify hotspot amino acids. HISNAPI provides a way to connect structure, dynamics and function in macromolecule binding processes by extracting dynamic properties from molecular simulations. MD simulations allow the motion of a protein to be predicted over time. It is a powerful approach to study the dynamic properties at the atomic level. Simulation time is a main limitation for accurate analysis of protein motion. A basic assumption is made in our method that affects the applicability of HISNAPI and the interpretation of the results. It is assumed that there are no dramatic conformational changes in a protein-nucleic acid complex. Nanosecond time-scale MD simulations are possible to describe the dominant conformational space for a rigid protein system. For a flexible or disordered protein system, HISNAPI could not well describe the dynamic properties. We believe that HISNAPI is a multifunctional tool for mutagenesis research to guide experimentation, shedding light on the mechanism of protein-nucleic acid binding at the molecular level.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusions"
+        },
+        {
+            "text": "\u2022 Accurate and fast predictions of hotspots on proteinnucleic acid interfaces are essential for understanding the mechanisms of protein-nucleic acid interactions.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Key Points"
+        },
+        {
+            "text": "\u2022 We have made our method available as a webserver HISNAPI for prediction of the hotspot residues on protein-nucleic acid interface.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Key Points"
+        },
+        {
+            "text": "\u2022 Besides the superior performance in prediction of hotspot residues, HISNAPI has unique capability to describe the dynamic properties of hotspots, leading to the connection between structure, dynamics and function.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Key Points"
+        },
+        {
+            "text": "\u2022 HISNAPI is free access for public without registration.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Key Points"
+        },
+        {
+            "text": "Supplementary data are available online at Briefings in Bioinformatics.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Supplementary Data"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Structure and function analysis of protein-nucleic acid complexes",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Kuznetsova",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Oretskaya",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Russ Chem Rev",
+            "volume": "85",
+            "issn": "",
+            "pages": "445--63",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Nucleic acids and their protein partners",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Puglisi",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Doudna",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Curr Opin Struct Biol",
+            "volume": "18",
+            "issn": "",
+            "pages": "279--81",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Hot spots-a review of the protein-protein interface determinant amino-acid residues",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Moreira",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Fernandes",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Ramos",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Proteins",
+            "volume": "68",
+            "issn": "",
+            "pages": "803--815",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "A simple physical model for binding energy hot spots in protein-protein complexes",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Kortemme",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Baker",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "Proc Natl Acad Sci U S A",
+            "volume": "99",
+            "issn": "",
+            "pages": "14116--14137",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Unraveling hot spots in binding interfaces: progress and challenges",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Delano",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "Curr Opin Struct Biol",
+            "volume": "12",
+            "issn": "",
+            "pages": "14--20",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Hot regions in proteinprotein interactions: the organization and contribution of structurally conserved hot spot residues",
+            "authors": [
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Keskin",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Ma",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Nussinov",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "J Mol Biol",
+            "volume": "345",
+            "issn": "",
+            "pages": "1281--94",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Prediction of the binding affinities and selectivity for CB1 and CB2 ligands using homology Modeling, molecular docking, molecular dynamics simulations, and MM-PBSA binding free energy calculations",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Ji",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "He",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "ACS Chem Neurosci",
+            "volume": "11",
+            "issn": "",
+            "pages": "1139--58",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Insight into the binding mechanism of p53/pDIQ-MDMX/MDM2 with the interaction entropy method",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Cong",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Front Chem",
+            "volume": "7",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "A molecular dynamics study of the complete binding process of meropenem to New Delhi metallo-beta-lactamase 1",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Duan",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Guo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Phys Chem Chem Phys",
+            "volume": "20",
+            "issn": "",
+            "pages": "6409--6429",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Calculation of absolute protein-ligand binding free energy from computer simulations",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Woo",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Roux",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Proc Natl Acad Sci U S A",
+            "volume": "102",
+            "issn": "",
+            "pages": "6825--6855",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Toward fast and accurate binding affinity prediction with pmemdGTI: an efficient implementation of GPU-accelerated thermodynamic integration",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Sherborne",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "J Chem Theory Comput",
+            "volume": "13",
+            "issn": "",
+            "pages": "3077--84",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "End-point binding free energy calculation with MM/PBSA and MM/GBSA: strategies and applications in drug design",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Chem Rev",
+            "volume": "119",
+            "issn": "",
+            "pages": "9478--508",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Targeting transcription factors for cancer treatment",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Lambert",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Jambon",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Depauw",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Molecules",
+            "volume": "23",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Small-molecule inhibitors of the SOX18 transcription factor",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Fontaine",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Overman",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Moustaqil",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Cell Chem Biol",
+            "volume": "24",
+            "issn": "",
+            "pages": "346--59",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "A rapid and sensitive high-throughput screening method to identify compounds targeting protein-nucleic acids interactions",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Alonso",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Guillen",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Chambers",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Nucleic Acids Res",
+            "volume": "43",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Protein conformational dynamics dictate the binding affinity for a ligand",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Seo",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Park",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Kim",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Nat Commun",
+            "volume": "5",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Relationship between hot spot residues and ligand binding hot spots in proteinprotein interfaces",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Zerbe",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Hall",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Vajda",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "J Chem Inf Model",
+            "volume": "52",
+            "issn": "",
+            "pages": "2236--2280",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "LARMD: integration of bioinformatic resources to profile ligand-driven protein dynamics with a case on the activation of estrogen receptor",
+            "authors": [
+                {
+                    "first": "J-F",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y-Z",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Brief Bioinform",
+            "volume": "21",
+            "issn": "",
+            "pages": "2206--2224",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Inhibition of p38 MAP kinase by utilizing a novel allosteric binding site",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Pargellis",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Tong",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Churchill",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "Nat Struct Biol",
+            "volume": "9",
+            "issn": "",
+            "pages": "268--72",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "DARS-RNP and QUASI-RNP: new statistical potentials for protein-RNA docking",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Tuszynska",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Bujnicki",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "BMC Bioinformatics",
+            "volume": "12",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "A knowledge-based scoring function for protein-RNA interactions derived from a statistical mechanics-based iterative method",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zou",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Nucleic Acids Res",
+            "volume": "42",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "A pair-conformation-dependent scoring function for evaluating 3D RNA-protein complex structures",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Xiao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "PLoS One",
+            "volume": "12",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "PreDBA: a heterogeneous ensemble approach for predicting protein-DNA binding affinity",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Deng",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Sci Rep",
+            "volume": "10",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "SPHot: prediction of hot spots in protein-RNA complexes by protein sequence information and ensemble classifier",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Xia",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "IEEE Access",
+            "volume": "7",
+            "issn": "",
+            "pages": "104941--104947",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Modeling in-vivo protein-DNA binding by combining multiple-instance learning with a hybrid deep neural network",
+            "authors": [
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Shen",
+                    "suffix": ""
+                },
+                {
+                    "first": "D-S",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Sci Rep",
+            "volume": "9",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "XGBPRH: prediction of binding hot spots at protein(\u2212)RNA interfaces utilizing extreme gradient boosting",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Deng",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Sui",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Genes (Basel)",
+            "volume": "10",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Solvent accessible surface area-based hot-spot detection methods for protein-protein and protein-nucleic acid interfaces",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Munteanu",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Pimenta",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Fernandez-Lozano",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "J Chem Inf Model",
+            "volume": "55",
+            "issn": "",
+            "pages": "1077--86",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "mCSM-NA: predicting the effects of mutations on protein-nucleic acids interactions",
+            "authors": [
+                {
+                    "first": "Dev",
+                    "middle": [],
+                    "last": "Pires",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Ascher",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Nucleic Acids Res",
+            "volume": "45",
+            "issn": "",
+            "pages": "241--247",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Predicting protein-DNA binding free energy change upon missense mutations using modified MM/PBSA approach: SAMPDI webserver",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Peng",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Jia",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Bioinformatics",
+            "volume": "34",
+            "issn": "",
+            "pages": "779--86",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Computational identification of binding energy hot spots in protein-RNA complexes using an ensemble approach",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Pan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Zhan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Bioinformatics",
+            "volume": "34",
+            "issn": "",
+            "pages": "1473--80",
+            "other_ids": {}
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "A feature-based approach to predict hot spots in protein-DNA binding interfaces",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Zheng",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Brief Bioinform",
+            "volume": "21",
+            "issn": "",
+            "pages": "1038--1084",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Computational mutation scanning and drug resistance mechanisms of HIV-1 protease inhibitors",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Hao",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Zhan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "J Phys Chem B",
+            "volume": "114",
+            "issn": "",
+            "pages": "9663--76",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "ProTherm and ProNIT: thermodynamic databases for proteins and protein-nucleic acid interactions",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Kumar",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Bava",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Gromiha",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Nucleic Acids Res",
+            "volume": "34",
+            "issn": "",
+            "pages": "204--210",
+            "other_ids": {}
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "dbAMEPNI: a database of alanine mutagenic effects for protein-nucleic acid interactions",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Xiong",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Gao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Database (Oxford)",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Analysing six types of protein-protein interfaces",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Ofran",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Rost",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "J Mol Biol",
+            "volume": "325",
+            "issn": "",
+            "pages": "377--87",
+            "other_ids": {}
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "The amber biomolecular simulation programs",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Case",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Cheatham",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Darden",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "J Comput Chem",
+            "volume": "26",
+            "issn": "",
+            "pages": "1668--88",
+            "other_ids": {}
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "ff14SB: improving the accuracy of protein side chain and backbone parameters from ff99SB",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Maier",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Martinez",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Kasavajhala",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "J Chem Theory Comput",
+            "volume": "11",
+            "issn": "",
+            "pages": "3696--713",
+            "other_ids": {}
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Revised RNA dihedral parameters for the amber force field improve RNA molecular dynamics",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Aytenfisu",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Spasic",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Grossfield",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "J Chem Theory Comput",
+            "volume": "13",
+            "issn": "",
+            "pages": "900--915",
+            "other_ids": {}
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "Assessing the current state of amber force field modifications for DNA",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Galindo-Murillo",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Robertson",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Zgarbova",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "J Chem Theory Comput",
+            "volume": "12",
+            "issn": "",
+            "pages": "4114--4141",
+            "other_ids": {}
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "A modified TIP3P water potential for simulation with Ewald summation",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Price",
+                    "suffix": ""
+                },
+                {
+                    "first": "Iii",
+                    "middle": [],
+                    "last": "Clb",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "J Chem Phys",
+            "volume": "121",
+            "issn": "",
+            "pages": "10096--103",
+            "other_ids": {}
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Numerical integration of the cartesian equations of motion of a system with constraints: molecular dynamics of n-alkanes",
+            "authors": [
+                {
+                    "first": "J-P",
+                    "middle": [],
+                    "last": "Ryckaert",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Ciccotti",
+                    "suffix": ""
+                },
+                {
+                    "first": "Hjc",
+                    "middle": [],
+                    "last": "Berendsen",
+                    "suffix": ""
+                }
+            ],
+            "year": 1977,
+            "venue": "J Comput Phys",
+            "volume": "23",
+            "issn": "",
+            "pages": "327--368",
+            "other_ids": {}
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "Particle mesh Ewald: an N\u00b7log(N) method for Ewald sums in large systems",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Darden",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "York",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Pedersen",
+                    "suffix": ""
+                }
+            ],
+            "year": 1993,
+            "venue": "J Chem Phys",
+            "volume": "98",
+            "issn": "",
+            "pages": "10089--92",
+            "other_ids": {}
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "AIMMS suite: a web server dedicated for prediction of drug resistance on protein mutation",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [
+                        "X"
+                    ],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Yang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Brief Bioinform",
+            "volume": "21",
+            "issn": "",
+            "pages": "318--346",
+            "other_ids": {}
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "The FoldX web server: an online force field",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Schymkowitz",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Borg",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Stricher",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Nucleic Acids Res",
+            "volume": "33",
+            "issn": "",
+            "pages": "382--390",
+            "other_ids": {}
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "FoldX accurate structural protein-DNA binding prediction using PADA1 (protein assisted DNA assembly 1)",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Blanco",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Radusky",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Climente-Gonzalez",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Nucleic Acids Res",
+            "volume": "46",
+            "issn": "",
+            "pages": "3852--63",
+            "other_ids": {}
+        },
+        "BIBREF45": {
+            "ref_id": "b45",
+            "title": "FoldX 5.0: working with RNA, small molecules and a new graphical interface",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Delgado",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Radusky",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Cianferoni",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Bioinformatics",
+            "volume": "35",
+            "issn": "",
+            "pages": "4168--4177",
+            "other_ids": {}
+        },
+        "BIBREF46": {
+            "ref_id": "b46",
+            "title": "Anatomy of hot spots in protein interfaces",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Bogan",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Thorn",
+                    "suffix": ""
+                }
+            ],
+            "year": 1998,
+            "venue": "J Mol Biol",
+            "volume": "280",
+            "issn": "",
+            "pages": "1--9",
+            "other_ids": {}
+        },
+        "BIBREF47": {
+            "ref_id": "b47",
+            "title": "A hot spot of binding energy in a hormone-receptor interface",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Clackson",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Wells",
+                    "suffix": ""
+                }
+            ],
+            "year": 1995,
+            "venue": "Science",
+            "volume": "267",
+            "issn": "",
+            "pages": "383--389",
+            "other_ids": {}
+        },
+        "BIBREF48": {
+            "ref_id": "b48",
+            "title": "Develop and test a solvent accessible surface area-based model in conformational entropy calculations",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Hou",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "J Chem Inf Model",
+            "volume": "52",
+            "issn": "",
+            "pages": "1199--212",
+            "other_ids": {}
+        },
+        "BIBREF49": {
+            "ref_id": "b49",
+            "title": "ACID: a free tool for drug repurposing using consensus inverse docking strategy",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "F-X",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "C-Z",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "J Chemother",
+            "volume": "11",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF50": {
+            "ref_id": "b50",
+            "title": "ACFIS: a web server for fragment-based drug discovery",
+            "authors": [
+                {
+                    "first": "G-F",
+                    "middle": [],
+                    "last": "Hao",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Jiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y-N",
+                    "middle": [],
+                    "last": "Ye",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Nucleic Acids Res",
+            "volume": "44",
+            "issn": "",
+            "pages": "550--556",
+            "other_ids": {}
+        },
+        "BIBREF51": {
+            "ref_id": "b51",
+            "title": "FungiPAD: a free web tool for compound property evaluation and fungicide-likeness analysis",
+            "authors": [
+                {
+                    "first": "M-Y",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Hao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "J Agric Food Chem",
+            "volume": "67",
+            "issn": "",
+            "pages": "1823--1853",
+            "other_ids": {}
+        },
+        "BIBREF52": {
+            "ref_id": "b52",
+            "title": "Graph attention convolutional neural network model for chemical poisoning of honey bees' prediction",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J-F",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "M-Y",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Sci Bull",
+            "volume": "65",
+            "issn": "",
+            "pages": "1184--91",
+            "other_ids": {}
+        },
+        "BIBREF53": {
+            "ref_id": "b53",
+            "title": "The Nucleome Data Bank: web-based resources to simulate and analyze the three-dimensional genome",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Contessoto",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Cheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Hajitaheri",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nucleic Acids Res",
+            "volume": "48",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF54": {
+            "ref_id": "b54",
+            "title": "NGL viewer: webbased molecular graphics for large complexes",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Rose",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Bradley",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Valasatava",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Bioinformatics",
+            "volume": "34",
+            "issn": "",
+            "pages": "3755--3763",
+            "other_ids": {}
+        },
+        "BIBREF55": {
+            "ref_id": "b55",
+            "title": "NGL viewer: a web application for molecular visualization",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Rose",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Hildebrand",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Nucleic Acids Res",
+            "volume": "43",
+            "issn": "",
+            "pages": "576--585",
+            "other_ids": {}
+        },
+        "BIBREF56": {
+            "ref_id": "b56",
+            "title": "Auto in Silico ligand directing evolution to facilitate the rapid and efficient discovery of drug lead",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zhuo",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "2020",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF57": {
+            "ref_id": "b57",
+            "title": "Structural basis for inhibition of the RNA-dependent RNA polymerase from SARS-CoV-2 by remdesivir",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Yin",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Mao",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Luan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Science",
+            "volume": "368",
+            "issn": "",
+            "pages": "1499--504",
+            "other_ids": {}
+        },
+        "BIBREF58": {
+            "ref_id": "b58",
+            "title": "Protein binding pocket dynamics",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Stank",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Kokh",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Fuller",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Acc Chem Res",
+            "volume": "49",
+            "issn": "",
+            "pages": "809--824",
+            "other_ids": {}
+        },
+        "BIBREF59": {
+            "ref_id": "b59",
+            "title": "Protein hot spots: the islands of stability",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Kuttner",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Engel",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "J Mol Biol",
+            "volume": "415",
+            "issn": "",
+            "pages": "419--447",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "The user can access the results page by the link on the Jobs web page. All the result files can be downloaded as text and image files by the link at the top of the results page. The results page contains three main panels: (1) The 'Hotspots Identification' panel shows the predicted hotspot residues. A figure of the protein-nucleic acid complex structure is shown, in which mutation sites are highlighted by sphere style and hotspots are colored red. The wild-type structure uploaded by the user can be visualized directly by the NGL Viewer web application. Protein and DNA/RNA molecules are shown as cartoon style, and mutation sites are highlighted in red stick style. The user can interactively operate the style of the threedimensional structure mode to have a profile of residue packing at an atomic level. (2) The 'Binding Free Energy Change' panel shows the predicted change in binding free energy upon alanine mutations. Additional structural characteristics corresponding to a mutation site are analyzed, including secondary structure elements, hydrogen bonds and changes in solvent accessible surface area. The main components of the binding free energy change are also provided for analysis of dominant interactions. In addition, the energy terms are displayed in a histogram.(3)The 'Hotspots Dynamics Analysis' panel presents the dynamical properties focusing on the predicted hotspots, including RMSF, principal component analysis (PCA), NMA, DCCM and hydrogen bonds formation between protein and DNA/RNA molecules. RMSF represents the movement fluctuation of each residue based on the alpha-carbon atoms. The larger the RMSF value is, the more flexible the residues are. PCA describes the dominant changes in the conformational ensemble obtained by MD simulation. A PCA object stores the covariance matrix and principal modes. NMA is one of the vector quantization-based techniques used to probe large-scale motions in biomolecules. A typical application is for the prediction of functional motions in proteins. DCCM allows the identification of the correlated and anti-correlated motions of all pairwise residues. In the heatmap plot, positive values (red) represent a correlated motion between the corresponding residue pair, while negative values (blue) represent an anti-correlated motion. The value of 1 or \u22121 means a fully correlated and anti-correlated motion. The formation of H-bonds during the MD simulation is listed in the table. Detailed H-bonds components are recorded, including the H-bonds acceptor (Acceptor), donor and hydrogen atom in donor (Donor, DonorH), average distance (AvgDist) and angle (AvgAng).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "HISNAPI workflow. The method employs molecular simulation to generate the conformational ensemble of a protein-nucleic acid complex on the wild-type residue environment. Then, the alanine mutagenesis is performed to obtain mutant conformations. The average binding free energy change between wild-type and mutant is calculated by FoldX algorithm. In addition, dynamical behaviors of the hotspots residues are characterized from simulation trajectories.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "Example of job submission and results web page. (A) 'Site-directed mutations' and 'Single-chain scanning' are two alternative ways for hotspots prediction. (B) The results provided by HISNAPI consist of three aspects, including hotspots identification, binding free energy change and dynamic analysis.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "The ROC curve of classification of hotspots ( G \u2265 1.0 kcal\u00b7mol \u22121 ) and neutral residues ( G < 1.0 kcal\u00b7mol \u22121 ) in protein-RNA (A), protein-DNA (B) and the total datasets (C).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "Regression plot between the experimental and the conformational ensemble predicted changes in binding affinity for protein-RNA (A), protein-DNA (B) and all dataset (C).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": "Case study of RdRp complex from SARS-CoV-2. (A) The cryo-EM structure of RdRp (white cartoon) and RNA (orange cartoon) complex (PDB ID: 7BV2). Those interfacial residues are highlighted by cyan spheres. (B) The hotspot residues predicted by HISNAPI. The hotspot residues are represented by red spheres, and the neutral residues by gray spheres. (C) The binding free energy changes upon alanine substitutions of RdRp complex from HISNAPI prediction data. (D) Characterization of dynamic properties of RdRp protein in apo and holo forms, including RMSF (left), PCA (middle) and DCCM (right).",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "Statistical analysis of prediction results in protein-RNA dataset",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "Statistical analysis of prediction results in protein-DNA dataset",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "Statistical analysis of prediction results in the total dataset",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF3": {
+            "text": "Prediction performance of HISNAPI in comparison with other approaches",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": []
+}

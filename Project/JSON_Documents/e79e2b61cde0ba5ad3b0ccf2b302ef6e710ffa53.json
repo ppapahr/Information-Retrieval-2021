@@ -1,0 +1,397 @@
+{
+    "paper_id": "e79e2b61cde0ba5ad3b0ccf2b302ef6e710ffa53",
+    "metadata": {
+        "title": "Lentiviral vector production",
+        "authors": []
+    },
+    "abstract": [
+        {
+            "text": "Lentiviral vector (rSIV.F/HN), pseudotyped with the lung-targeting F and HN proteins from Sendai Virus, was produced via five-plasmid transient transfection of HEK293T cells as described [1]. In brief, genome plasmids were constructed expressing a codon-optimised T1-3B bnAb (GenBank: KP231622.1; KP231643.1)[2] in the single-ORF expression configuration described previously [3], or a CpG-free Gaussia Luciferase (soGLux), inserted via unique NheI and PsPOMI sites, and driven by the hCEF promoter [4]. Vectors were purified using anion exchange chromatography and tangential flow filtration and formulated into either FreeStyle293 media or TSSM buffer (tromethamine 20 mM, NaCl 100 mM, sucrose 10 mg/mL, and mannitol 10 mg/mL). The functional titre of lentiviral vectors was determined based on the genomic integration of WPRE DNA sequence. Suspension HEK293F cells were transduced with dilutions of purified lentiviral vectors in FreeStyle293 media in the presence of 8 \u00b5g/mL of polybrene. Cells were incubated for 72 hours before genomic DNA was extracted. The integrated WPRE DNA was quantified against a standard curve of DNA mimics containing the WPRE sequence using the following primers: Forward: TGGCGTGGTGTGCACTGT; Reverse: CCCGGAAAGGAGCTGACA; Probe: FAM-TTGCTGACGCAACCCCCACTGG-TAMRA in triplicate using TaqMan FAST Universal Master Mix, normalised against total ng DNA. The PCR profile used was as following: 50\u00baC for 2 min, 95\u00baC for 10 min followed by 40 cycles of 95\u00baC for 15 sec and 60\u00baC for 1 min. Functional transducing units per mL of virus supernatant (TU/mL) was determined from the slope of a linear regression curve generated from the dilution series.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Recombinant rAAV was produced as described [5] . In brief, HEK293T cells were transfected with the plasmids pAdDeltaF6, and pAAV2/8 using Polyethylenimine (PEI; Polysciences Inc.). After 72 hours, cells were resuspended in lysis buffer (1M Tris(hydroxymethyl)aminomethane, 150 mM NaCl) and EDTA-free protease inhibitor cocktail and underwent four freeze-thaw cycles. Cell lysates were incubated (37\u02daC for 30 min) with Benzonase (50 U/mL final concentration) and clarified via centrifugation,",
+            "cite_spans": [
+                {
+                    "start": 43,
+                    "end": 46,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "and purified using iodixanol gradient fractionation and diafiltration into D-PBS using Amicon Ultra-15 100K MWCO filters. The number of Genome Copies (GC/ml) was determined by qPCR. Purified rAAV was incubated with DNAse I (100\u00b0C for 10 min) BMJ Publishing Group Limited (BMJ) disclaims all liability and responsibility arising from any reliance Supplemental material placed on this supplemental material which has been supplied by the author(s) (1:1600) (dako P0214). TCID50 was calculated using the method of Reed and Muench [7] .",
+            "cite_spans": [
+                {
+                    "start": 527,
+                    "end": 530,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                }
+            ],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "All procedures involving laboratory mice were carried out at the Biomedical Services was administrated via nasal instillation in a single, continuous droplet with the mouse held vertically with mouth closed. For intramuscular dosing, mice were anaesthetised, the surface of the gastrocnemius muscle was cleaned with 70% ethanol and rAAV vector (in 40 \u00b5L) was delivered via injection. Following influenza challenge, mice were monitored daily and mice with weight loss \uf0b320 percent were euthanized by rising concentration of CO2. At indicated time-points post dosing, sera and lavage fluid was collected as previously described [8] . Plates were read at OD450 after developing with 3,3\u2032,5,5\u2032-tetramethylbenzidine (TMB) substrate and reaction stopped with 0.18 M H2SO4 solution. The concentration of human IgG in the samples was determined using a standard curve. Expression levels in ELF were corrected for the dilution using lavage fluid collection urea assay as described previously [1] . ",
+            "cite_spans": [
+                {
+                    "start": 625,
+                    "end": 628,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 982,
+                    "end": 985,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                }
+            ],
+            "ref_spans": [],
+            "section": "In vivo viral vectors transduction and influenza challenge"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "The murine lung as a factory to produce secreted intrapulmonary and circulatory proteins",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Michael",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "M P"
+                    ],
+                    "last": "Paul-Smith",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Jean-Fran\u00e7ois",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jenny",
+                    "middle": [],
+                    "last": "Gelinas",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ian",
+                    "middle": [],
+                    "last": "Mcintosh",
+                    "suffix": ""
+                },
+                {
+                    "first": "Lee",
+                    "middle": [],
+                    "last": "Pringle",
+                    "suffix": ""
+                },
+                {
+                    "first": "Mario",
+                    "middle": [],
+                    "last": "Davies",
+                    "suffix": ""
+                },
+                {
+                    "first": "Cuixiang",
+                    "middle": [],
+                    "last": "Chan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Robyn",
+                    "middle": [],
+                    "last": "Meng",
+                    "suffix": ""
+                },
+                {
+                    "first": "Lidia",
+                    "middle": [],
+                    "last": "Bell",
+                    "suffix": ""
+                },
+                {
+                    "first": "Caroline",
+                    "middle": [],
+                    "last": "Cammack",
+                    "suffix": ""
+                },
+                {
+                    "first": "Loren",
+                    "middle": [],
+                    "last": "Moran",
+                    "suffix": ""
+                },
+                {
+                    "first": "Makoto",
+                    "middle": [],
+                    "last": "Cameron",
+                    "suffix": ""
+                },
+                {
+                    "first": "Shu",
+                    "middle": [],
+                    "last": "Inoue",
+                    "suffix": ""
+                },
+                {
+                    "first": "Takashi",
+                    "middle": [],
+                    "last": "Tsugumine",
+                    "suffix": ""
+                },
+                {
+                    "first": "Deborah",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Hironaka",
+                    "suffix": ""
+                },
+                {
+                    "first": "Stephen",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Gill",
+                    "suffix": ""
+                },
+                {
+                    "first": "Amit",
+                    "middle": [],
+                    "last": "Hyde",
+                    "suffix": ""
+                },
+                {
+                    "first": "Eric",
+                    "middle": [
+                        "W F W"
+                    ],
+                    "last": "Nathwani",
+                    "suffix": ""
+                },
+                {
+                    "first": "Uta",
+                    "middle": [],
+                    "last": "Alton",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Griesenbach",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Gene Therapy",
+            "volume": "23",
+            "issn": "",
+            "pages": "345--358",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Focused antibody response to influenza linked to antigenic drift",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Huang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "J Clin Invest",
+            "volume": "125",
+            "issn": "7",
+            "pages": "2631--2676",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Broad protection against influenza infection by vectored immunoprophylaxis in mice",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Balazs",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Nat Biotechnol",
+            "volume": "31",
+            "issn": "7",
+            "pages": "647--52",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "CpG-free plasmids confer reduced inflammation and sustained pulmonary gene expression",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Hyde",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Nat Biotechnol",
+            "volume": "26",
+            "issn": "5",
+            "pages": "549--51",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Adeno-Associated Viral Gene Therapy for Retinal Disorders. Gene Delivery and Therapy for Neurological Disorders",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "R D"
+                    ],
+                    "last": "Silva",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "",
+            "volume": "98",
+            "issn": "",
+            "pages": "203--228",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Pseudotyped influenza A virus as a vaccine for the induction of heterotypic immunity",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Powell",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "J Virol",
+            "volume": "86",
+            "issn": "24",
+            "pages": "13397--406",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "A simple method of estimating fifty per cent endpoints",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 1938,
+            "venue": "Am. J. Hyg",
+            "volume": "27",
+            "issn": "",
+            "pages": "493--497",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Secreted Gaussia luciferase as a sensitive reporter gene for in vivo and ex vivo studies of airway gene transfer",
+            "authors": [
+                {
+                    "first": "U",
+                    "middle": [],
+                    "last": "Griesenbach",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Biomaterials",
+            "volume": "32",
+            "issn": "10",
+            "pages": "2614--2624",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "virus containing the H1 and N1 from the 2009 pandemic A/California/7/2009 strain and internal genes of PR8) were produced and propagated in MDCK-SIAT1 cells in the presence of TPCK-treated trypsin as described previously [6]. Tissue culture infectious dose (TCID50) of the viruses were determined in MDCK-SIAT1 infected with a \u00bd-log dilution series of viruses prepared in VGM (Viral Growth Media; DMEM, 1% BSA, 10 mM HEPES buffer and 100 U/mL penicillin and 100 \u00b5g/mL streptomycin) for 1 hour in eight replicates on a 96-well flat-bottomed plate. The cells were then topped with 150 \u00b5l of VGM with TPCK-treated trypsin (1 \u00b5g/mL) and incubated for 48 hours at 37\u00b0C. Infection was determined by staining for anti-NP (virus nucleoprotein) expression in the cells. In house human anti-NP antibody 2-8C was used at 1 \u00b5g/ml with the secondary antibody HRP labelled rabbit anti-human IgG",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "Unit (BMS) (University of Oxford, John Radcliffe Hospital, Oxford, UK) in accordance with the UK Home Office approved project and personal licenses under the terms of the Animals (Scientific Procedures) Act 1986 (ASPA 1986). Female BALB/cOlaHsd or DBA/2OlaHsd (for X-179A challenge) mice aged 5 to 7 weeks at point of procedure were purchased from the BMS or Envigo RMS UK. For intranasal dosing, mice were lightly anesthetised by isofluorane and 50 \uf06dl or 100 \uf06dl of viral vector or influenza virus",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "T1-3B is a Group 1 HA (H1, H2 and H5) broad reactive stem-targeting antibody isolated via single antigen-specific plasmablast cloning from vaccinated donor.Expression of T1-3B in mouse sera and lavage fluid was determined using anti-human IgG Enzyme-Linked Immunosorbent Assay (ELISA), performed using Human IgG ELISA kit (Bethyl Laboratories) according to the manufacturer's instructions. In brief, dilutions of serum and neat lavage fluid samples were added to 96-well plates coated with goat anti-human IgG-Fc antibody and blocked overnight. After 1 hour incubation, HRP-conjugated goat anti-human IgG antibody (1:200,000) was added for 1 hour.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "IgG concentrations in time-course studies were determined using Dunnett's post-hoc tests after significant ANOVA analyses on areaunder-the-curve values calculated for individual animals. Differences in ELF human IgG concentrations at a single time-point were determined using Dunnett's post-hoc tests after significant ANOVA analyses on log-transformed individual animal values. Differences in survival during influenza challenge studies were determined using Kaplan-Meir survival curves and the Mantel-Cox log-rank test. A probability value (pvalue) of less than 0.05 was considered statistically significantly different from",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "to denature viral capsids and release the viral DNA and qPCR performed using Taqman Fast Universal PCR Master Mix against a standard curve of DNA mimics containing the WPRE sequence using the following primers: Forward:TGGCGTGGTGTGCACTGT; Reverse: CCCGGAAAGGAGCTGACA; Probe: FAM-TTGCTGACGCAACCCCCACTGG-TAMRA. Amplification data generated were used to determine the GC/mL.",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "unlabelled comparator; exact p-values are presented to three decimal places or indicated as <0.001. Numerical manipulations were performed in Excel (Microsoft,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "annex"
+        }
+    ]
+}

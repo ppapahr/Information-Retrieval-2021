@@ -1,0 +1,1784 @@
+{
+    "paper_id": "884ae876ab8839f04253da80a087a9a7b981580c",
+    "metadata": {
+        "title": "Feasibility of a quality improvement project to increase adherence to evidence-based pulmonary embolism diagnosis in the emergency department",
+        "authors": [
+            {
+                "first": "Federico",
+                "middle": [],
+                "last": "Germini",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Yang",
+                "middle": [],
+                "last": "Hu",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Sarah",
+                "middle": [],
+                "last": "Afzal",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Fayad",
+                "middle": [],
+                "last": "Al-Haimus",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Srikanth",
+                "middle": [
+                    "A"
+                ],
+                "last": "Puttagunta",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Saghar",
+                "middle": [],
+                "last": "Niaz",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Teresa",
+                "middle": [],
+                "last": "Chan",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Natasha",
+                "middle": [],
+                "last": "Clayton",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Shawn",
+                "middle": [],
+                "last": "Mondoux",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Lehana",
+                "middle": [],
+                "last": "Thabane",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Kerstin",
+                "middle": [],
+                "last": "De Wit",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Background: Many evidence-based clinical decision tools are available for the diagnosis of pulmonary embolism (PE). However, these clinical decision tools have had suboptimal uptake in the everyday clinical practice in emergency departments (EDs), despite numerous implementation efforts. We aimed to test the feasibility of a multi-faceted intervention to implement an evidence-based PE diagnosis protocol. Methods: We conducted an interrupted time series study in three EDs in Ontario, Canada. We enrolled consecutive adult patients accessing the ED with suspected PE from January 1, 2018, to February 28, 2020. Components of the intervention were as follows: clinical leadership endorsement, a new pathway for PE testing, physician education, personalized confidential physician feedback, and collection of patient outcome information. The intervention was implemented in November 2019. We identified six criteria for defining the feasibility outcome: successful implementation of the intervention in at least two of the three sites, capturing data on \u2265 80% of all CTPAs ordered in the EDs, timely access to electronic data, rapid manual data extraction with feedback preparation before the end of the month \u2265 80% of the time, and time required for manual data extraction and feedback preparation \u2264 2 days per week in total. Results: The intervention was successfully implemented in two out of three sites. A total of 5094 and 899 patients were tested for PE in the period before and after the intervention, respectively. We captured data from 90% of CTPAs ordered in the EDs, and we accessed the required electronic data. The manual data extraction and individual emergency physician audit and feedback were consistently finalized before the end of each month. The time required for manual data extraction and feedback preparation was \u2264 2 days per week (14 h).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "We proved the feasibility of implementing an evidence-based PE diagnosis protocol in two EDs. We were not successful implementing the protocol in the third ED.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "The study was not registered.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "We were not sure data could be accessed in a timely manner, and to what extent they could be automatically downloaded from the hospital's database. Moreover, we were not sure if our inclusion criteria were capturing the right population. One of the three participating centers could not implement the intervention, mainly for lack of dedicated financial and human resources. Substantial efforts were required to access the electronic data, and some of the data had to be extracted manually. The main changes implemented after the feasibility assessment were as follows: adapting the inclusion criteria, reducing the frequency of the feedback, and making the feedback content lighter and simpler to understand.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "The diagnosis of pulmonary embolism (PE) is a multistep process. At least 10 different clinical decision tools are available [1] , mainly aimed at reducing the use of advanced imaging techniques such as computed tomography pulmonary angiography (CTPA) or ventilationperfusion scan (VQ). When PE prevalence is 15%, clinician's Gestalt, the Wells score, and the Revised Geneva score all have an estimated sensitivity greater than 80%. When combined with D-dimer testing, the failure rate for PE diagnosis is below 2% [1] . These standards are now used to benchmark the safety of new PE tests. Clinical decision tool use is endorsed by recent guidelines [2] . Despite high-quality evidence supporting the use of these diagnostic algorithms, published data show that these tools are seldom used in everyday clinical practice [3] [4] [5] [6] . The main effect of this is the overuse of CTPA, which translates into excess radiation exposure, the possibility of contrast-induced nephropathy, overtreatment, and reduction of health system efficiency and resources. According to some simulations, 0.6 to 2.0% of all cancers in the USA may be attributable to the radiation from CT studies [7, 8] . Contrast-induced nephropathy is reported in 1-2% of patients with normal renal function and 5% of patients with chronic renal failure undergoing an intravenous low-osmolality contrast-medium injection for computed tomography [9] . Contrast-induced nephropathy is associated with increased mortality, need for dialysis, and longer hospital stays [10] . The knowledge translation gap persists despite numerous efforts to improve the implementation of evidence-based diagnostic pathways [6, 11] . The reasons why implementation studies to date had minimal or no impact on the use of CTPA include the perception that clinical decision support systems are complicated, have a negative impact on productivity, are not supported by a sufficient body of evidence, and are not better than clinical judgment [6, 11] . Moreover, defensive behaviors, such as \"fear of missing PE,\" have been identified as associated with a lower CTPA positive yield [12] , and might be a barrier to the implementation of quality improvement interventions. This tendency toward overtesting seems to be more rooted in the North American environment, than in European [13] .",
+            "cite_spans": [
+                {
+                    "start": 125,
+                    "end": 128,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 515,
+                    "end": 518,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 651,
+                    "end": 654,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 821,
+                    "end": 824,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 825,
+                    "end": 828,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 829,
+                    "end": 832,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 833,
+                    "end": 836,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 1179,
+                    "end": 1182,
+                    "text": "[7,",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 1183,
+                    "end": 1185,
+                    "text": "8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 1413,
+                    "end": 1416,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 1533,
+                    "end": 1537,
+                    "text": "[10]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 1672,
+                    "end": 1675,
+                    "text": "[6,",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 1676,
+                    "end": 1679,
+                    "text": "11]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 1986,
+                    "end": 1989,
+                    "text": "[6,",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 1990,
+                    "end": 1993,
+                    "text": "11]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 2125,
+                    "end": 2129,
+                    "text": "[12]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 2324,
+                    "end": 2328,
+                    "text": "[13]",
+                    "ref_id": "BIBREF13"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "Why the evidence-practice gap?",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "de Wit and colleagues conducted a nationwide thinkaloud interview study with 63 emergency department (ED) physicians from nine sites (unpublished data). This study found that the sources of variance in decisionmaking arose from the following: (1) physicians' risk tolerance for missing a PE diagnosis being very low, (2) physicians are confident in their gestalt and think their suspicion is sufficient to order a CTPA, (3) the Wells score is perceived as complicated and can lead to either under-or overestimation of clinical probability (this might apply to the other tools, but only the Wells score was investigated in this study), and (4) having to order a D-dimer blood test, waiting for the results, and then ordering a CTPA if needed is perceived as delaying an inevitable scan. Using the Theoretical Domains Framework, this same group interviewed ED physicians within 2 weeks of them having deviated for evidencebased protocol for PE diagnosis (unpublished data). They found the following themes: (1) reserved confidence in the clinical guidelines and ability to apply them, (2) belief that strong clinical gestalt is crucial when testing for PE, (3) fear of not diagnosing PE, and (4) belief that the advantages of the standard protocol outweigh the disadvantages. Lastly, our research group has also performed semi-structured interviews with ED patients who were being tested for PE [14] . Patient interviews revealed zero tolerance for false positive and false negative diagnoses, association of rapid ED assessment with better quality testing, preference for individualized testing, contradictory acceptance of CT limitations for PE diagnosis, overestimation of pretest probability for PE, association between more tests with better quality testing, preference for imaging over clinical examination to exclude PE, primary concern being testing related to previous heart-related issue, a focus on pain symptoms rather than underlying diagnosis, and a preference for direct interaction with ED physician.",
+            "cite_spans": [
+                {
+                    "start": 317,
+                    "end": 320,
+                    "text": "(2)",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 1083,
+                    "end": 1086,
+                    "text": "(2)",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 1393,
+                    "end": 1397,
+                    "text": "[14]",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "It is time to create a new implementation method for evidence-based PE diagnosis in the ED. An effective strategy would be safe for patients, use resources judiciously, and benefit physicians as well as patients. Considering the barriers to the successful implementation of evidence-based diagnostic strategies highlighted in previous studies [6, 11, 14] , we thought it is crucial to use a clinical decision tool that is simple, safe, and supported by high-level quality of evidence. Furthermore, we decided to design a multi-faceted intervention, ensuring leadership endorsement and targeting patients and healthcare workers, with a focus on physicians. However, given the challenges and the negative results from previous quality improvement studies for PE diagnosis, we decided to assess the feasibility of our intervention in two centers in Hamilton, ON, and one in Ottawa, ON, before attempting to assess its effect or to implement the protocol on a larger scale. This report will focus on the feasibility aspects of the study.",
+            "cite_spans": [
+                {
+                    "start": 343,
+                    "end": 346,
+                    "text": "[6,",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 347,
+                    "end": 350,
+                    "text": "11,",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 351,
+                    "end": 354,
+                    "text": "14]",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "The primary objective of this study was to assess the feasibility of implementing an evidence-based PE diagnosis protocol in three EDs. The secondary objective was to report data on the period preceding the intervention and preliminary data on the first 3 months postintervention.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "This is a study on the feasibility of a quality improvement intervention, with a before-after design.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Study design"
+        },
+        {
+            "text": "The study was conducted in three EDs: Hamilton Health Sciences (HHS) EDs (Hamilton General and Juravinski Hospitals, Hamilton, ON) and the Montfort Hospital, Ottawa, ON. These are teaching hospitals and are staffed with approximately 50 physicians (Hamilton Hospitals) and 32 physicians (Montfort Hospital) who manage 100, 000 and 55,000 patient visits per year, respectively. A chart review of HHS EDs 2013-2015 showed that 290 patients were investigated for PE in the HHS EDs every 6 months [15] .",
+            "cite_spans": [
+                {
+                    "start": 493,
+                    "end": 497,
+                    "text": "[15]",
+                    "ref_id": "BIBREF16"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Context/study setting"
+        },
+        {
+            "text": "This implementation study used electronic data to identify patients tested for PE in the ED. The population was consecutive adults (aged 18 years and older) with suspected PE, for whom a D-dimer blood test and/or imaging for PE (CTPA or VQ scan) were performed in the ED. When a patient books into the ED, the triage nurse assigns a chief complaint from a selection of predefined categories, classified based on the Canadian Emergency Department Information Systems (CEDIS) Presenting Complaint List [16] . D-dimer blood test is used to diagnose both deep vein thrombosis and PE, so to ensure we captured only patients tested for PE (and not deep vein thrombosis), we aimed to restrict our population to those who presented to the ED with the presenting complaint \"chest pain\" (cardiac and non-cardiac) and/or \"shortness of breath.\" To evaluate whether a sufficient proportion of all patients tested for PE were registered under these two presenting complaints, we retrieved a list of CTPAs ordered in the ED in 2018. We manually extracted the presenting complaints for each case. We aimed to capture a minimum of 80% of the CTPAs ordered in the ED. The rationale for the use of predefined triage categories to identify the study population was to reduce inter-person variability in this process.",
+            "cite_spans": [
+                {
+                    "start": 500,
+                    "end": 504,
+                    "text": "[16]",
+                    "ref_id": "BIBREF17"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Population studied"
+        },
+        {
+            "text": "We led a Canadian Association of Emergency Physician (CAEP) working group consisting of six emergency physicians from across Canada with expertise in PE diagnosis and knowledge translation. This knowledge broker group systematically reviewed the literature and identified all optimal PE diagnostic strategies for the ED, as well as optimal ways to encourage adherence to this diagnostic strategy. As a result, we decided to test a multimodal intervention aimed at promoting the uptake of D-dimer in everyday clinical practice. The implementation strategy is based on the knowledge translation recommendations from CAEP [17] . The components of the intervention are detailed in Table 1 . This implementation strategy was discussed at each site by engaging with local champions, hospital managers, nurses, diagnostic imaging staff, support staff, and physicians to identify and implement strategies to overcome local barriers.",
+            "cite_spans": [
+                {
+                    "start": 619,
+                    "end": 623,
+                    "text": "[17]",
+                    "ref_id": "BIBREF18"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 677,
+                    "end": 684,
+                    "text": "Table 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Implementation"
+        },
+        {
+            "text": "A flow chart describing the timeline is reported in Fig. 1 . Data on baseline clinical practice were collected from January 1, 2018, to October 31, 2019. The intervention was implemented in November 2019. Data on the period after the comparison were collected starting in December 2019, since November was considered as a run-in period (this was specified before accessing the data). For the purpose of this report, we present the postimplementation data up till the end of February 2020.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 52,
+                    "end": 58,
+                    "text": "Fig. 1",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Comparison and timelines"
+        },
+        {
+            "text": "Primary outcome-feasibility Feasibility was described using 6 criteria, established through discussion between the study investigator:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Outcomes"
+        },
+        {
+            "text": "1 Implementation of the new diagnostic PE protocol at the participating hospitals (yes/no for each center). To consider the intervention feasible, it should have been implemented in at least two of the three participating sites. 2 Electronic identification of our population of interest capturing \u2265 80% of all CTPAs ordered in the EDs.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Outcomes"
+        },
+        {
+            "text": "3 Establishing access to the required electronic data with monthly data updates (yes/no). 4 Timely manual chart data extraction. To be considered feasible, the data extraction had to be completed 5 days before the end of the following month \u2265 80% of the times. 5 Implementation of individual emergency physician audit and feedback. To be considered feasible, we required that feedback data on the previous month was complete before the end of the following month \u2265 80% of the time. 6 An estimate of the number of hours of research assistant time to extract the required data and synthesize the physician feedback reports (total number of hours per week). To be considered feasible if \u2264 2 days/week.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Outcomes"
+        },
+        {
+            "text": "The outcomes used for the preliminary estimate of the effect of the intervention were the following:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Secondary outcomes-preliminary estimates of effect"
+        },
+        {
+            "text": "a Proportion of patients tested for PE among the whole study population. b Proportion of patients tested for PE in adherence to the protocol among the total number of patients tested for PE.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Secondary outcomes-preliminary estimates of effect"
+        },
+        {
+            "text": "c Proportion of eligible patients with an imaging test. d Diagnostic yield of imaging tests requested:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Secondary outcomes-preliminary estimates of effect"
+        },
+        {
+            "text": "(number of exams positive for PE) \u00d7 100/(total number of exams requested). e Proportion of imaging tests ordered without Ddimer or despite a negative D-dimer: (number of cases in which the algorithm was not followed in patients receiving imaging)/(total number of imaging test performed). f Proportion of imaging tests not ordered, despite D-dimer positivity: (number of cases in which imaging was indicated and not performed)/(total cases in which imaging was indicated). g We also described the prevalence of PE, as follows:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Secondary outcomes-preliminary estimates of effect"
+        },
+        {
+            "text": "all PEs, central PE (segmental or more), and distal PE (sub-segmental).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Secondary outcomes-preliminary estimates of effect"
+        },
+        {
+            "text": "This is a before-after comparison of the number of Ddimer blood tests ordered in the ED.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Balancing measure"
+        },
+        {
+            "text": "Baseline patient characteristics and the feasibility measures were reported using standard descriptors of central tendency and variability (mean and standard deviation or median and ranges as appropriate). The secondary Table 1 Description of the components of the intervention",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 220,
+                    "end": 227,
+                    "text": "Table 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Analysis"
+        },
+        {
+            "text": "We obtained approval from the clinical and managerial leads for the ED, radiology, hematology, and thrombosis for a new protocol for the diagnosis of PE.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Leadership endorsement"
+        },
+        {
+            "text": "Ordering D-dimer and CTPA/VQ scan We moved from the concept of ordering D-dimer or imaging for PE, to the broader concept of \"testing for PE.\" We created a new order set (Appendix A) which guides ED testing for PE.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Leadership endorsement"
+        },
+        {
+            "text": "The new diagnostic PE pathway starts with D-dimer blood testing in all patients. We no longer asked the physician to calculate the Wells score to simplify the process and to avoid having physicians artificially increasing the score in order to avoid using D-dimer.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Leadership endorsement"
+        },
+        {
+            "text": "The testing process has been semi-automated. If the D-dimer result is lower than the threshold, the attending physician is notified by the nurse and PE is excluded. If the D-dimer result is higher than the threshold, the patients go directly for a CTPA without the need for physician reassessment. The physician is notified when the imaging report is available. We made the new PE diagnostic pathway attractive to use by enabling ordering of CTPA without the requirement to first discuss with a radiologist.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Leadership endorsement"
+        },
+        {
+            "text": "We met with the ED physicians and nurses with educational material to support the use of the proposed diagnostic workflow.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Physicians' education"
+        },
+        {
+            "text": "We sent each physician a quarterly confidential personalized report containing the following:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Personalized confidential physician feedback"
+        },
+        {
+            "text": "The proportion of eligible patients (based on the presenting complain) who had an imaging test, expressed as a percentage: (number of exams requested) \u00d7 100/(total number of eligible patients).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Personalized confidential physician feedback"
+        },
+        {
+            "text": "The proportion of imaging tests ordered without D-dimer or despite a negative D-dimer, expressed as a percentage: (number of cases in which the algorithm has not been followed in patients receiving imaging) \u00d7 100/(total number of imaging test performed). These metrics were calculated for the individual physician, and compared to the average of all the physicians working in the same ED.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Personalized confidential physician feedback"
+        },
+        {
+            "text": "The form was piloted with some of the study clinical investigators (the research manager and two ED physicians with expertise in quality improvement and knowledge translation) and then with a convenience sample of four physicians. The form was modified according to their feedback.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Personalized confidential physician feedback"
+        },
+        {
+            "text": "We developed patient information about the testing process, as well as the risks and benefits of undergoing CT scanning. Moreover, the PE testing order set incorporated nurse facilitated identification of patient-specific goals (for example treatment of pain) so the treating ED physician can focus their treatment and advice on patient-specific needs.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Patients' information"
+        },
+        {
+            "text": "ED emergency department, PE pulmonary embolism, CTPA computed tomography pulmonary angiography outcomes regarding effect and balancing measure were reported descriptively, with the 95% confidence intervals (CIs) for the proportions' differences. To facilitate visual inspection, the outcomes were also plotted against time with two regression lines, before and after the intervention. All the analyses were conducted with STATA/IC v. 16 (StataCorp LP, College Station, TX, USA). We intentionally avoided formally testing our hypothesis, because the study is continuing.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Patients' information"
+        },
+        {
+            "text": "Research ethics approval was obtained from participating sites prior to commencing the study (Hamilton Integrated Research Ethics Board # 5339-C).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Ethics"
+        },
+        {
+            "text": "Primary outcome: feasibility of the study A summary of the results for the feasibility of the study is reported in Table 2 .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 115,
+                    "end": 122,
+                    "text": "Table 2",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "The intervention was implemented at the Hamilton sites, but not at the Montfort Hospital in Ottawa. The PE diagnostic order set was initiated on October 28, 2019. The topic of PE diagnosis was discussed at the HHS ED physicians' rounds, and three educational podcasts were recorded and remain freely available for streaming and download [18] [19] [20] . All emergency physicians received an email explaining the rationale for the intervention and its objective, accompanied by a Frequently Asked Question section and educational material (email text available in Appendix B). As a reminder to the ED physician group, we attached laminated stickers with a logo and the invitation to \"rule out PE without CT\" to each computer in their offices (Fig. 2) . A team of three nurse educators engaged in individual meetings with the ED nurses, explaining the aim of the intervention and the new workflow. A multidisciplinary team including managers, radiologists, emergency physicians, educators, radiation technologists, and nurses met monthly to review progress and problems arising with the new order set. A number of logistical changes were made including automatic population of the CTPA request form with the D-dimer result and estimated glomerular filtration rate for the radiology technicians and streamlining of process. We collaborated with regular project meetings with the Montfort Hospital ED. In May 2019, our colleagues let us know they were not able to participate in the study due to lack of data access and resources.",
+            "cite_spans": [
+                {
+                    "start": 337,
+                    "end": 341,
+                    "text": "[18]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 342,
+                    "end": 346,
+                    "text": "[19]",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 347,
+                    "end": 351,
+                    "text": "[20]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 741,
+                    "end": 749,
+                    "text": "(Fig. 2)",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Implementation at participating hospitals"
+        },
+        {
+            "text": "We found that the two selected CEDIS presenting complaints (chest pain and shortness of breath) only captured 70% of all CTPAs ordered by emergency physicians. Therefore, inclusion criteria were expanded to 13 presenting ED presenting complaints (Table 3) , allowing us to capture 90% of the ED-ordered CTPAs. The remaining 10% were dispersed among 40 presenting complaints, each one accounting for 0.1-0.9% of all CTPAs (Table S1 ).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 246,
+                    "end": 255,
+                    "text": "(Table 3)",
+                    "ref_id": "TABREF1"
+                },
+                {
+                    "start": 421,
+                    "end": 430,
+                    "text": "(Table S1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Identification of the population"
+        },
+        {
+            "text": "We requested data from three sources: the hospital decision support services, an internal hospital research database, and the eHealth Information Technology Services (eHITS) office. The first two sources were unable to provide timely data (at the end of each month). The eHITS department was able to provide us with the required data in the required turnaround time. After working together to define the database queries and to validate the data, we received the first finalized dataset in January 2019. The system is now automated with monthly updates.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Obtaining electronic data"
+        },
+        {
+            "text": "We found the variable \"ordering doctor\" for the CTPAs in the electronic medical record (EMR) was not accurate due to some scans being ordered by an admitting service but the order was logged under the emergency physician's name. It was crucial for us to have accurate data for the ordering physician, or the physician audit and feedback would lose credibility. Therefore, we manually checked the ordering physician data. Despite this increase in the workload, the manual extraction was always completed before the end of the following month.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Manual data extraction"
+        },
+        {
+            "text": "Audit and feedback intervention are effective for improving healthcare professionals' compliance with desired practice [21] , and individual feedback has a potential additional role as compared to group feedback alone [22] . The path toward the implementation of physician feedback proved to be challenging, and many adaptations of the original plan were required. Initially, we aimed to provide individual feedback to physicians on a monthly base. When reviewed, we realized that the CEDIS Canadian Emergency Department Information System, CTPA computed tomography pulmonary angiography *Hyperventilation was added even if it is seldom used in our emergency departments and no CTPA was ordered. The rationale is that it can be a typical presentation of PE number of CTPAs ordered per month per physician was too low (range 0-6 CTPAs per month per physician). The proportion of inappropriate CTPAs would have been subject to enormous variability for very small variations in the actual number of non-appropriate CTPAs ordered. We decided to reduce the frequency of feedback from monthly to quarterly, and the feedback was issued at the end of the first 3 months post-",
+            "cite_spans": [
+                {
+                    "start": 119,
+                    "end": 123,
+                    "text": "[21]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 218,
+                    "end": 222,
+                    "text": "[22]",
+                    "ref_id": "BIBREF23"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Implementation of individual physician feedback"
+        },
+        {
+            "text": "implementation. An example of the physician feedback is reported in Fig. 3 .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 68,
+                    "end": 74,
+                    "text": "Fig. 3",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "Implementation of individual physician feedback"
+        },
+        {
+            "text": "Based on the first 3 months, we calculated that a research assistant is required for 12 h per week on the project. In addition, a physician should spend 2 h per month to resolve queries. Preparing and checking individual feedback require an additional 6 h per month, on average. Therefore, the total amount of time required to complete these tasks was approximately 14 h per week (less than 2 days), thereby meeting the feasibility criterion.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Estimate of research assistant time"
+        },
+        {
+            "text": "The patients' characteristics and outcome distribution are reported in Table 4 . In total, 81,103 patients accessed the HHS EDs for one of the selected presenting complaints between January 1, 2018, and February 28, 2020 (70,932 in the before-intervention period and 10,171 after the intervention). Of these, 5993 patients were tested for PE and 2267 patients underwent CTPA or VQ scanning. A total of 285 patients (0.4% of the study population) were diagnosed with acute PE. 7.2% and 8.8% of the study population were tested for PE before and after the intervention, respectively. There was an 8.1% (95% CI 5.0; 11.2) increase in the adherence to the proposed protocol. The imaging positive yield showed a trend toward reduction (\u2212 2.6%, 95% CI \u2212 13.1; 8.0). The time trends for PE testing are reported in Fig. 4 , and the time trends for the remaining secondary outcomes are reported in the appendix (Figures S1, S2 , S3, S4, S5 and S6).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 71,
+                    "end": 78,
+                    "text": "Table 4",
+                    "ref_id": "TABREF2"
+                },
+                {
+                    "start": 807,
+                    "end": 813,
+                    "text": "Fig. 4",
+                    "ref_id": null
+                },
+                {
+                    "start": 902,
+                    "end": 917,
+                    "text": "(Figures S1, S2",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Secondary outcomes: preliminary estimates of effect"
+        },
+        {
+            "text": "In our study population, a D-dimer was ordered in 6.6% and 8.5% of the patients before and after the intervention, respectively.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Secondary outcomes: balancing measures"
+        },
+        {
+            "text": "In our study, we proved the feasibility of implementing an evidence-based PE diagnosis protocol in the two EDs in Hamilton, ON. The implementation was not successful at a hospital in Ottawa, ON, due to the lack of availability of dedicated resources for data access and manual data extraction. We were able to obtain timely electronic data which identified 90% of the CTPAs ordered in the Hamilton EDs. We found that this implementation protocol takes approximately 14 h per week of research assistant and investigator time. While we successfully implemented the intervention in two out of three centers, we faced numerous barriers. We were expecting to meet some resistance to change due to bureaucracy and human nature, but this translated in delays greater than expected: we were aiming at implementing the intervention in May 2019, but we actually implemented it in November 2019. We encountered measurement barriers, in that it took some time to identify a timely source of electronic data, which required additional manual chart extraction. The secondary outcome preliminary results showed a signal of improved adherence to the proposed intervention, with fewer imaging tests ordered without D-dimer or despite a negative D-dimer, and more imaging tests ordered after a positive D-dimer. However, for now, this did not translate into a reduction of the use of imaging tests, nor in an increase of the positive yield of imaging. The results suggest an increase in the use of D-dimer and imaging tests, and the prevalence of PE in the population remained the same. It is still too soon to claim that the intervention is futile, but these preliminary results should not be ignored. For this intervention to be meaningful and before scaling it up to a multicenter study, we will need to carefully assess its effect in our population. Historically, most implementation strategies have failed to reduce the number of imaging tests and improve the diagnostic yield of imaging [11] . By embedding a clinical decision support tool for ordering CTPAs in the computerized order entry system, Prevedello et al. showed a small reduction in the use of CTPAs (from 26.5 to 24.3/1000 patient visits, p < 0.2) and an increase in the yield of CTPAs (from 9.2 to 12.6%, p < .01) [23] . Later on, the same research group failed to further improve these outcomes implementing a performance feedback report for ED physicians. One explanation for our finding may be that we chose not to implement an adjusted D-dimer strategy (such as the YEARS algorithm [24] , clinical probability [25] , or age-adjusted [26] Ddimer). We chose this plan for simplicity. It may be that implementing an adjusted D-dimer strategy would have been more effective and we are considering changing the intervention in this direction.",
+            "cite_spans": [
+                {
+                    "start": 1975,
+                    "end": 1979,
+                    "text": "[11]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 2266,
+                    "end": 2270,
+                    "text": "[23]",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 2538,
+                    "end": 2542,
+                    "text": "[24]",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 2566,
+                    "end": 2570,
+                    "text": "[25]",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 2589,
+                    "end": 2593,
+                    "text": "[26]",
+                    "ref_id": "BIBREF27"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Strengths of our study are as follows: (1) the careful review of the existing evidence on the topic and the mixed methods research program that preceded and informed the design of the intervention, (2) the involvement of a multidisciplinary team both for designing and endorsing the intervention, (3) the multi-faceted nature of the intervention aimed at tackling the problem from several angles, (4) the piloting and consequent adaptation of the intervention, and (5) the assessment of its feasibility.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Strengths"
+        },
+        {
+            "text": "The main limitation of the study is the before-after nature of the comparison. The results might be biased by confounders that changed over time. The generalizability of the study results, both in terms of feasibility and evaluation of the effect of the intervention, may be reduced because the intervention was implemented only in Hamilton EDs. A multicenter step-wedge trial would have mitigated these limitations. For example, the ongoing COVID-19 pandemic appears to be changing the population attending EDs. We expect to see a reduction of visits for complaints that are not related to COVID-19. We also expect the ED personnel to work under a higher level of stress, which might jeopardize the adherence to our protocol. Another limitation is that we were not able to present data on the safety of the intervention. To address this limitation, we are collecting data on the EDs access of any patient with PE in the 30 days preceding the diagnosis. This will increase the data extraction workload but will allow us to find out if these patients could have been diagnosed before and were not, and if Fig. 4 Time trend of testing for PE. The aim of this figure is to display our collected data to show how we will analyze the data in the future. The regression line for the period after the intervention is based on only three points and might not be a reliable estimate of the effect of the intervention this is due to lack of adherence to the protocol or to insufficient safety of the protocol itself.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 1104,
+                    "end": 1110,
+                    "text": "Fig. 4",
+                    "ref_id": null
+                }
+            ],
+            "section": "Limitations"
+        },
+        {
+            "text": "We will continue implementing and improving the intervention until July 2021, at which point we will have a firm understanding of how to maximize adherence to evidence-based PE testing. We estimated the cost to run the study in three sites for 1 year to be 55,000 CAD, equating to 0.1 full time equivalent (FTE) of a research coordinator, 0.6 FTE of a research assistant, and 0.04 FTE of a statistician. We recently secured funding by being awarded with the DxQI Seed Grant from the Society to Improve Diagnosis in Medicine (SIDM).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Future directions"
+        },
+        {
+            "text": "We proved the feasibility of implementing an evidencebased PE diagnosis protocol in two Hamilton EDs, but we were unable to implement the protocol in an Ottawa ED. The lessons we learned could be useful to researchers willing to implement similar interventions in the future.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusions"
+        },
+        {
+            "text": "The online version contains supplementary material available at https://doi. org/10.1186/s40814-020-00741-8.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Supplementary Information"
+        },
+        {
+            "text": "Additional file 1: Appendix A. PE testing order set. Appendix B. Text of the email sent to the ED physician before introducing the order set. Table S1. Figure S1 . Time trend for testing in adherence to the protocol. Figure S2 . Time trend for positive yield of image tests. Figure  S3 . Time trend for imaging tests ordered not following the protocol. Figure S4 . Time trend for PE prevalence. Figure S5 . Time trend for prevalence of central PE. Figure S6 . Time trend for prevalence of distal PE.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 152,
+                    "end": 161,
+                    "text": "Figure S1",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 217,
+                    "end": 226,
+                    "text": "Figure S2",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 275,
+                    "end": 285,
+                    "text": "Figure  S3",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 353,
+                    "end": 362,
+                    "text": "Figure S4",
+                    "ref_id": null
+                },
+                {
+                    "start": 395,
+                    "end": 404,
+                    "text": "Figure S5",
+                    "ref_id": null
+                },
+                {
+                    "start": 448,
+                    "end": 457,
+                    "text": "Figure S6",
+                    "ref_id": null
+                }
+            ],
+            "section": "Supplementary Information"
+        },
+        {
+            "text": "Abbreviations CEDIS: Canadian Emergency Department Information System; CI: Confidence interval; CTPA: Computed tomography pulmonary angiography; ED: Emergency department; EHR: Electronic health record; HHS: Hamilton Health Sciences; PE: Pulmonary embolism; VTE: Venous thromboembolism; VQ scan: Ventilation/perfusion scan",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Supplementary Information"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Clinical decision rules for excluding pulmonary embolism: a meta-analysis",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Lucassen",
+                    "suffix": ""
+                },
+                {
+                    "first": "G-J",
+                    "middle": [],
+                    "last": "Geersing",
+                    "suffix": ""
+                },
+                {
+                    "first": "Pmg",
+                    "middle": [],
+                    "last": "Erkens",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Ann Intern Med",
+            "volume": "155",
+            "issn": "7",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.7326/0003-4819-155-7-201110040-00007"
+                ]
+            }
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "ESC Guidelines on the diagnosis and management of acute pulmonary embolism",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Konstantinides",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Torbicki",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Agnelli",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Eur Heart J",
+            "volume": "35",
+            "issn": "43",
+            "pages": "3033--73",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/eurheartj/ehu283"
+                ]
+            }
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Variation in the utilization and positivity rates of CT pulmonary angiography among emergency physicians at a tertiary academic emergency department",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Gray",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Bandiera",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Mackinnon",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Deva",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Emerg Radiol",
+            "volume": "22",
+            "issn": "3",
+            "pages": "221--230",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s10140-014-1265-6"
+                ]
+            }
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Overuse of computed tomography pulmonary angiography in the evaluation of patients with suspected pulmonary embolism in the emergency department",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Crichlow",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Cuker",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Mills",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Acad Emerg Med",
+            "volume": "19",
+            "issn": "11",
+            "pages": "1219--1245",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/acem.12012"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "CT pulmonary angiography: using decision rules in the emergency department",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Stojanovska",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Carlos",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Kocher",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "J Am Coll Radiol",
+            "volume": "12",
+            "issn": "10",
+            "pages": "1023--1032",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jacr.2015.06.002"
+                ]
+            }
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Making decisions in the era of the clinical decision rule",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Chan",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Mercuri",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Turcotte",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Gardiner",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Sherbino",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "De Wit",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Acad Med",
+            "volume": "1",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1097/acm.0000000000003098"
+                ]
+            }
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Computed tomography -an increasing source of radiation exposure",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Brenner",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Hall",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "N Engl J Med",
+            "volume": "357",
+            "issn": "22",
+            "pages": "2277--84",
+            "other_ids": {
+                "DOI": [
+                    "10.1056/NEJMra072149"
+                ]
+            }
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Risk of cancer from diagnostic X-rays: estimates for the UK and 14 other countries",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "De Gonz\u00e1lez",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Darby",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Lancet",
+            "volume": "363",
+            "issn": "9406",
+            "pages": "345--51",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S0140-6736(04)15433-0"
+                ]
+            }
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Prevention of Contrast-induced Complications DynaMed",
+            "authors": [],
+            "year": 2018,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "EBSCO Information Services",
+            "authors": [
+                {
+                    "first": "(",
+                    "middle": [],
+                    "last": "Ipswich",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Ma",
+                    "suffix": ""
+                }
+            ],
+            "year": 1995,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Canadian Association of Radiologists consensus guidelines for the prevention of contrast-induced nephropathy: update 2012",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Owen",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Hiremath",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Myers",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Fraser-Hill",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Barrett",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Can Assoc Radiol J",
+            "volume": "65",
+            "issn": "2",
+            "pages": "96--105",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.carj.2012.11.002"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Interventions to reduce the overuse of imaging for pulmonary embolism: a systematic review",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Deblois",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Chartrand-Lefebvre",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Toporowicz",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Lepanto",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "J Hosp Med",
+            "volume": "13",
+            "issn": "1",
+            "pages": "52--61",
+            "other_ids": {
+                "DOI": [
+                    "10.12788/jhm.2902"
+                ]
+            }
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Ordering CT pulmonary angiography to exclude pulmonary embolism: defense versus evidence in the emergency room",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Rohacek",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Buatsi",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Szucs-Farkas",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Intensive Care Med",
+            "volume": "38",
+            "issn": "8",
+            "pages": "1345--51",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s00134-012-2595-z"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Abstract title: Prevalence of pulmonary embolism in patients accessing the emergency department, reported by country of study: a systematic review and meta-analysis",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Germini",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Zarabi",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Eventov",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "LO23: Identifying patient values and expectations for pulmonary embolism CT scanning in the emergency department",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Swarup",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Soomro",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Abdulla",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "De Wit",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "CJEM",
+            "volume": "21",
+            "issn": "S1",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1017/cem.2019.66"
+                ]
+            }
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Evaluating the use of the YEARS clinical decision rule for diagnosing pulmonary embolism in the Emergency Department",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Sharif",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Kearon",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Eventov",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "CJEM",
+            "volume": "20",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1017/cem.2018.334"
+                ]
+            }
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "CTAS National Working Group. Revision of the Canadian Emergency Department Information System (CEDI S) Presenting Complaint List version 1.1",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Grafstein",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Bullard",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Warren",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Unger",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "CJEM",
+            "volume": "10",
+            "issn": "2",
+            "pages": "151--73",
+            "other_ids": {
+                "DOI": [
+                    "10.1017/s1481803500009878"
+                ]
+            }
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Review of implementation strategies to change healthcare provider behaviour in the emergency department",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "De Wit",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Curran",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Thoma",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "CJEM",
+            "volume": "20",
+            "issn": "03",
+            "pages": "453--60",
+            "other_ids": {
+                "DOI": [
+                    "10.1017/cem.2017.432"
+                ]
+            }
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Pulmonary embolism challenges in diagnosis part 1 | Emergency Medicine Cases",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Helman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "PE Challenges in Diagnosis | Imaging, Subsegmental, Pregnancy | EM Cases",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Helman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Audit and feedback: effects on professional practice and healthcare outcomes",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Ivers",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Jamtvedt",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Flottorp",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Cochrane Database Syst Rev",
+            "volume": "",
+            "issn": "6",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/14651858.CD000259.pub3"
+                ]
+            }
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Meta-analysis: audit and feedback features impact effectiveness on care quality",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Hysong",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Med Care",
+            "volume": "47",
+            "issn": "3",
+            "pages": "356--63",
+            "other_ids": {
+                "DOI": [
+                    "10.1097/MLR.0b013e3181893f6b"
+                ]
+            }
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Does clinical decision support reduce unwarranted variation in yield of CT pulmonary angiogram?",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Prevedello",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Raja",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Ip",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Sodickson",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Khorasani",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Am J Med",
+            "volume": "126",
+            "issn": "11",
+            "pages": "975--81",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.amjmed.2013.04.018"
+                ]
+            }
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Simplified diagnostic management of suspected pulmonary embolism (the YEARS study): a prospective, multicentre, cohort study",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Van Der Hulle",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Cheung",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Kooij",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Lancet",
+            "volume": "390",
+            "issn": "",
+            "pages": "30885--30886",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S0140-6736(17)30885-1"
+                ]
+            }
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Diagnosis of pulmonary embolism with d-dimer adjusted to clinical probability",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Kearon",
+                    "suffix": ""
+                },
+                {
+                    "first": "De",
+                    "middle": [],
+                    "last": "Wit",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Parpia",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "N Engl J Med",
+            "volume": "381",
+            "issn": "22",
+            "pages": "2125--2159",
+            "other_ids": {
+                "DOI": [
+                    "10.1056/NEJMoa1909159"
+                ]
+            }
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Age-adjusted D-dimer cutoff levels to rule out pulmonary embolism",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Righini",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Van Es",
+                    "suffix": ""
+                },
+                {
+                    "first": "Den",
+                    "middle": [],
+                    "last": "Exter",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "JAMA",
+            "volume": "311",
+            "issn": "11",
+            "pages": "1117--1141",
+            "other_ids": {
+                "DOI": [
+                    "10.1001/jama.2014.2135"
+                ]
+            }
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Publisher's Note",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Flow chart describing the components of the intervention",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "Sticker attached to the computers in the ED physicians' office",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "An example of the personalized physician feedback",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "Results for the feasibility of the study PE pulmonary embolism, CTPA computed tomography pulmonary angiography",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "Distribution of CTPAs by presenting complaint in 2018",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "Characteristics of the study population (all patients accessing the ED with a relevant presenting complaint), effect outcome, and balancing measure",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "We thank Drs. Eddy Lang, Shawn Dowling, and James Andruchow for their contribution to the design of the intervention. Discussing their approach to quality improvement was inspiring. Dr. Clive Kearon contributed decisively to a (successful) funding application. Without Bill Butler, we would have not been able to access the required data; we will never thank him enough.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Acknowledgements"
+        },
+        {
+            "text": "The study was not registered.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Registration"
+        },
+        {
+            "text": "KdW conceived the study. FG, KdW, TC, and SM designed the intervention. NC built the database and facilitated the data extraction. SA, YH, FAH, SAP, and SN extracted the data. KdW, FG, NC, YH, and FAH implemented the intervention. SAP contributed to identifying the presenting complaints to be added to the inclusion criteria. TC and SM helped in refining the physician feedback. LT contributed with expertise in health research methodology and feasibility studies. FG drafted the first version of the manuscript. KdW and LT gave important contribution to the manuscript drafting. All authors read, edited, and approved the final manuscript. Availability of data and materials The datasets used and/or analyzed during the current study are available from the corresponding author on reasonable request.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Authors' contributions"
+        },
+        {
+            "text": "The present project was approved by the Hamilton Integrated Research Ethics Board (HiREB) project number 5339.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Ethics approval and consent to participate"
+        },
+        {
+            "text": "Not applicable.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Consent for publication"
+        },
+        {
+            "text": "All authors declare that they have no competing interests. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Competing interests"
+        }
+    ]
+}

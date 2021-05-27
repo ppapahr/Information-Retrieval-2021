@@ -1,0 +1,938 @@
+{
+    "paper_id": "883a687b993ba9dd7cb911fcd653c8fa062d5640",
+    "metadata": {
+        "title": "Assessment of dengue and COVID-19 antibody rapid diagnostic tests cross-reactivity in Indonesia",
+        "authors": [
+            {
+                "first": "Marsha",
+                "middle": [
+                    "S"
+                ],
+                "last": "Santoso",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Sri",
+                "middle": [],
+                "last": "Masyeni",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Sotianingsih",
+                "middle": [],
+                "last": "Haryanto",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Benediktus",
+                "middle": [],
+                "last": "Yohan",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Martin",
+                "middle": [
+                    "L"
+                ],
+                "last": "Hibberd",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "R",
+                "middle": [],
+                "last": "Tedjo Sasmono",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Background: The coronavirus disease 2019 (COVID-19) pandemic remains ongoing around the world, including in areas where dengue is endemic. Dengue and COVID-19, to some extent, have similar clinical and laboratory features, which can lead to misdiagnosis, delayed treatment and patient's isolation. The use of rapid diagnostic tests (RDT) is easy and convenient for fast diagnosis, however there may be issues with cross-reactivity with antibodies for other pathogens.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "We assessed the possibility of cross-reactivity between SARS-CoV-2 and dengue antibodies by: (1) testing five brands of COVID-19 IgG / IgM RDTs on 60 RT-PCR-confirmed dengue samples; (2) testing 95 RT-PCR-confirmed COVID-19 samples on dengue RDT; and (3) testing samples positive for COVID-19 IgG and/or IgM on dengue RDT.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "We observed a high specificity across all five brands of COVID-19 RDTs, ranging from 98.3 to 100%. Out of the confirmed COVID-19 samples, one patient tested positive for dengue IgM only, another tested positive for dengue IgG only. One patient tested positive for dengue IgG, IgM, and NS1, suggesting a co-infection. In COVID-19 IgG and/ or IgM samples, 6.3% of COVID-19 IgG-positive samples also tested positive for dengue IgG, while 21.1% of COVID-19",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "IgM-positive samples also tested positive for dengue IgG.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "Severe acute respiratory coronavirus 2 (SARS-CoV-2) emerged in Wuhan, China, causing a respiratory disease, coronavirus disease 2019 (COVID-19), and has now resulted in a global pandemic [1] . The pandemic remains ongoing in many countries, including areas where dengue is endemic, such as Indonesia, which adds a burden to health systems [2, 3] . There were over 130 000 reported cases of dengue in Indonesia in 2019 with an incidence rate of 51.48 cases per 100 000 population, an increase from the previous year's incidence of 24.75 cases per 100 000 population. As of 21 June, there are 68 000 cases of dengue reported across Indonesia in 2020, while COVID-19 cases continue to increase [4] . As of 26 Open Access *Correspondence: sasmono@eijkman.go.id 1 Dengue Research Unit, Eijkman Institute for Molecular Biology, Ministry of Research and Technology/National Agency for Research and Innovation of the Republic Indonesia, Jl. Diponegoro 69, Jakarta 10430, Indonesia Full list of author information is available at the end of the article Jan 2021, there are over one million confirmed cases of COVID-19 in Indonesia [5] . Dengue fever and COVID-19 have similar clinical and laboratory features, which can lead to misdiagnosis, delayed treatment, and isolation [3] . In both cases, patients often report acute fever, myalgia, fatigue, and other flu-like symptoms, as well as present with thrombocytopenia and leukopenia [1, 3] . Most commercial rapid diagnostic tests (RDT) available in the market are for the detection of SARS-CoV-2 antibodies, with relatively high sensitivity and specificity, especially when samples are taken later in the disease progression [6] . However, it is hampered by the apparent cross-reactivity resulting in false-positive results [7] . For dengue, immunochromatographic tests for the detection of dengue virus nonstructural protein 1 (NS1) antigen, IgM, IgG, and IgA antibodies have been developed by a number of commercial companies and have found wide application because of their ease of use and rapidity of results [8, 9] .",
+            "cite_spans": [
+                {
+                    "start": 187,
+                    "end": 190,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 339,
+                    "end": 342,
+                    "text": "[2,",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 343,
+                    "end": 345,
+                    "text": "3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 691,
+                    "end": 694,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 1122,
+                    "end": 1125,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 1266,
+                    "end": 1269,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 1425,
+                    "end": 1428,
+                    "text": "[1,",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 1429,
+                    "end": 1431,
+                    "text": "3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 1668,
+                    "end": 1671,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 1767,
+                    "end": 1770,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 2056,
+                    "end": 2059,
+                    "text": "[8,",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 2060,
+                    "end": 2062,
+                    "text": "9]",
+                    "ref_id": "BIBREF8"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "In this study, we assessed the possibility of dengue and SARS-CoV-2 antibody cross-reactivity using three strategies. Firstly, we evaluate the specificity of five COVID-19 RDT brands against 60 well-characterized For COVID-19 RDT specificity evaluation, which is the proportion of non-COVID-19 samples who are correctly identified as negative for SARS-CoV-2 antibodies using the COVID-19 RDTs, sample size was calculated based on the three-step method [10] with an expected specificity of 96%, a precision of 7.5%, and 90% power, which yields 60 presumed COVID-19-negative samples. Overall specificity of each RDT brand, as well as when stratified into variable groups, were compared using Z-tests for proportions. Specificity, confidence intervals, and other statistical analyses were performed using R Studio software, with p-value of less than 0.05 denoting statistical significance.",
+            "cite_spans": [
+                {
+                    "start": 452,
+                    "end": 456,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Methods"
+        },
+        {
+            "text": "We observed a high specificity across all COVID-19 RDT brands against dengue-confirmed samples, ranging from 98.3 to 100% and no statistically significant difference in overall performance between brands, or when grouped by age, gender, day of fever onset, DENV serotype, and immunologic status ( Table 2 ). One sample which tested positive for COVID-19 IgG using SD Biosensor Dengue RDT was a 17-year-old male, with fever day onset of 2 days, infected with DENV-4, and tested positive for anti-dengue IgG and IgM. One other sample which tested positive for COVID-19 IgM using Cellex and SD Biosensor Dengue RDT was a 23-year-old male, with fever day onset of 8 days, infected with DENV-2, and tested positive for anti-dengue IgM and negative for anti-dengue IgG. However, neither of these samples tested positive for IgG or IgM using SARS-CoV-2 ELISA, suggesting falsepositive results on the RDT.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 297,
+                    "end": 304,
+                    "text": "Table 2",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "Among 95 RT-PCR confirmed COVID-19 patient samples, one patient tested positive for dengue IgM only, another tested positive for dengue IgG only. One patient tested positive for both dengue IgG and IgM as well as NS1, demonstrating the possibility of coinfection of dengue and COVID-19 or recent dengue infection (Table 3) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 313,
+                    "end": 322,
+                    "text": "(Table 3)",
+                    "ref_id": "TABREF2"
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "In healthy/asymptomatic samples, out of 33 samples that tested positive for COVID-19 IgG, 2 samples (6.1%) also tested positive for dengue IgG, while out of 19 samples that tested positive for COVID-19 IgM, 4 samples (21.1%) also tested positive for dengue IgG (Table 3 ).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 261,
+                    "end": 269,
+                    "text": "(Table 3",
+                    "ref_id": "TABREF2"
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "While there is a possibility of cross-reactivity between SARS-CoV-2 and DENV antibodies, there is good overall performance of COVID-19 RDTs. Another study shows no cross reactivity with other respiratory [11] . Apparent cross-reactivity between DENV and SARS-CoV-2 antibodies in dengue RDT has been reported in two confirmed COVID-19 cases in Singapore [7] . However, more in-depth studies are needed to fully understand the interaction between these antibodies. We found that in terms of specificity, different COVID-19 RDT brands perform similarly to each other, comparable to findings in other studies [12] . However, these studies also show that different RDT brands have varying levels of sensitivity [12] . A metaanalysis of COVID-19 serological tests measured the pooled sensitivity of lateral flow immunoassays to be 66.0% (95% CI 49.3-79.3%) [13] . Taking that sensitivity as a reference, the rapid tests in our study have a negative predictive value (NPV) of 92.2% even at populations with 20% prevalence. The ability to rapidly confirm the absence of COVID-19 would be useful in allocating resources for isolation and protecting the patient from nosocomial COVID-19 infections especially in settings where the patient may have other viral infections that require hospitalization, such as dengue. Additionally, the ability to accurately rule out dengue in acutely febrile patients would quickly lead to the investigation and management of other differential diagnoses such COVID-19 that would require timely isolation and contact tracing.",
+            "cite_spans": [
+                {
+                    "start": 204,
+                    "end": 208,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 353,
+                    "end": 356,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 605,
+                    "end": 609,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 706,
+                    "end": 710,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 851,
+                    "end": 855,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "One of the limitations in this study is we did not assess the sensitivity of COVID-19 RDT data. Another limitation is that we could not conduct repeat testing of dengue antibodies in the COVID-19 confirmed samples and therefore cannot rule out the possibility of recent but not concurrent dengue infection. Additionally, conditions on site unfortunately did not make it possible to follow-up with RT-PCR for DENV. However, the positive anti dengue virus NS1 antigen result has been widely accepted as \"confirmed dengue\" (WHO SEARO Dengue Guidelines 2011). We also could not assess for cross-reactivity with other coronavirus infections, auto-immune disease, or immunodeficiency. Nevertheless, our data provide important information on the prospective use of these RDTs in regions that are endemic for dengue during the COVID-19 pandemic.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Our study observed that despite the high specificity of the COVID-19 RDT, cross-reactions and false-positive results between dengue and COVID-19 are very likely. Dengue and COVID-19 co-infection can also occur. To the authors' knowledge, this is the first study reporting on the performance of COVID-19 rapid tests on dengueconfirmed samples. Our study adds important information on the possible cross-reaction between dengue and COVID-19 in Indonesia, though more studies are needed to further evaluate these interactions. Health practitioners should be careful when using antibody RDT for the diagnosis of dengue during the COVID-19 pandemic to avoid misdiagnosis. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Clinical characteristics of laboratory confirmed positive cases of SARS-CoV-2 infection in Wuhan, China: a retrospective single center analysis",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Tu",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Travel Med Infect Dis",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.tmaid.2020.101606"
+                ]
+            }
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "To alert coinfection of COVID-19 and dengue virus in developing countries in the dengue-endemic area",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Lu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Ma",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "He",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Infect Control Hosp Epidemiol",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1017/ice.2020.187"
+                ]
+            }
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Covid-19 and dengue: double punches for dengue-endemic countries in Asia",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Harapan",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ryan",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Yohan",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Abidin",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Nainu",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Rakib",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Rev Med Virol",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/rmv.2161"
+                ]
+            }
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Outbreak of dengue fever in Southeast Asia is \"exploding\" amid the coronavirus fight",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "2020",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "COVID-19 GTPP. Berita Terkini | Gugus Tugas Percepatan Penanganan COVID-19",
+            "authors": [],
+            "year": 2021,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "COVID-19: a meta-analysis of diagnostic test accuracy of commercial assays registered in Brazil",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Castro",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Luz",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Wakimoto",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Veloso",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Grinsztejn",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Perazzo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Braz J Infect Dis",
+            "volume": "24",
+            "issn": "",
+            "pages": "180--187",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.bjid.2020.04.003"
+                ]
+            }
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Covert COVID-19 and false-positive dengue serology in Singapore",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Yan",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ltm",
+                    "middle": [],
+                    "last": "Lam",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Yan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "X"
+                    ],
+                    "last": "Chua",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ayn",
+                    "middle": [],
+                    "last": "Lim",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet Infect Dis",
+            "volume": "20",
+            "issn": "20",
+            "pages": "30158--30162",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S1473-3099(20)30158-4"
+                ]
+            }
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Commercial dengue rapid diagnostic tests for point-of-care application: recent evaluations and future needs?",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Blacksell",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "J Biomed Biotechnol",
+            "volume": "2012",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1155/2012/151967"
+                ]
+            }
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Diagnostic accuracy of 5 different brands of dengue virus non-structural protein 1 (NS1) antigen rapid diagnostic tests (RDT) in Indonesia",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Santoso",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Yohan",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Denis",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Hayati",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Haryanto",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Trianty",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Diagn Microbiol Infect Dis",
+            "volume": "98",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.diagmicrobio.2020.115116"
+                ]
+            }
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Methods and recommendations for evaluating and reporting a new diagnostic test",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Hess",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Shardell",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Johnson",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Thom",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Strassle",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Netzer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Eur J Clin Microbiol Infect Dis",
+            "volume": "31",
+            "issn": "",
+            "pages": "2111--2117",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s10096-012-1602-1"
+                ]
+            }
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Four point-of-care lateral flow immunoassays for diagnosis of COVID-19 and for assessing dynamics of antibody responses to SARS-CoV-2",
+            "authors": [
+                {
+                    "first": "J-L",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "W-P",
+                    "middle": [],
+                    "last": "Tseng",
+                    "suffix": ""
+                },
+                {
+                    "first": "C-H",
+                    "middle": [],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "T-F",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "M-Y",
+                    "middle": [],
+                    "last": "Chung",
+                    "suffix": ""
+                },
+                {
+                    "first": "C-H",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Infect",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jinf.2020.06.023"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Diagnostic performance of seven rapid IgG/IgM antibody tests and the Euroimmun IgA/IgG ELISA in COVID-19 patients",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Van Elslande",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Houben",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Depypere",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Brackenier",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Desmet",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Andr\u00e9",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Clin Microbiol Infect",
+            "volume": "26",
+            "issn": "",
+            "pages": "1082--1089",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.cmi.2020.05.023"
+                ]
+            }
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Diagnostic accuracy of serological tests for covid-19: systematic review and meta-analysis",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Bastos",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Tavaziva",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Abidi",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Campbell",
+                    "suffix": ""
+                },
+                {
+                    "first": "L-P",
+                    "middle": [],
+                    "last": "Haraoui",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Johnston",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "BMJ",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1136/bmj.m2516"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Abbreviations COVID-19: coronavirus disease 2019; DENV: dengue virus; ELISA: enzymelinked immunosorbent assay; IgA: immunoglobulin A; IgG: immunoglobulin G; IgM: immunoglobulin M; NS1: nonstructural protein 1; RDT: rapid diagnostic test; RNA: ribonucleic acid; RT-PCR: reverse transcription polymerase chain reaction; SARS-CoV-2: severe acute respiratory coronavirus 2.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "RT-PCR-confirmed dengue patient's serum panel. Secondly, we test 95 RT-PCR-confirmed clinical COVID-19 samples on dengue RDT. And thirdly, we test 49 sera from healthy, asymptomatic individuals that are positives for COVID-19 IgG and/or IgM antibodies on dengue RDT (Table 1). The use of archived dengue patients' samples has been approved by Eijkman Institute Research Ethics Committee, approval number 151/2020, while the use of COVID-19 RT-PCR confirmed samples has been approved by Bali Mandara District Hospital Health Research Ethics Committee, approval number 007/EA/ KEPK.RSBM.DISKES/2020, while the use of COVID-19 IgG and/or IgM positive samples has been approved by Raden Mattaher Hospital Research Ethics Committee, approval number S.32/SPE/VII/2020. The specificity evaluation of COVID-19 IgG / IgM RDTs against confirmed dengue samples was performed in a laboratory that is internationally certified for Good Clinical Laboratory Practice (GCLP) at the Eijkman Institute, Jakarta, Indonesia. The laboratory testing on RT-PCR-confirmed COVID-19 samples was performed at Bali Mandara and Sanjiwani hospitals, Bali, Indonesia while the laboratory testing on healthy/ asymptomatic samples positive for COVID-19 IgG and/or IgM was performed at Siloam Hospital, Jambi, Table 1 Characteristics of samples used in the study *Incomplete data for 15 samples Indonesia, both with appropriate biosafety protocols. Dengue virus (DENV) RNA in the sera were extracted using QIAamp Viral RNA mini kit (Qiagen, Germany) according to the manufacturer's instructions. Detection and serotyping of DENV was performed using CDC DENV-1-4 real-time RT-PCR assay according to given instructions (Package Insert, KK0128 available at www. cdc.gov/dengu e). Molecular detection of SARS-CoV-2 was performed using A*Star Fortitude COVID-19 Real-The COVID-19 IgG and IgM RDTs that we evaluated were Cellex Inc. (USA), Dynamiker Biotechnology (Tianjin, China), Genbody Inc. (Korea), Standard Diagnostics (Korea), and VivaDiag (Vivacheck Biotech Hangzhou,, China). Each dengue-confirmed sample was tested using different brands of IgG/IgM COVID-19 RDT simultaneously, under uniform conditions, according to their respective manufacturers' instructions. Positive COVID-19 RDT results were confirmed using SARS-CoV-2 Spike S1-RBD IgG & IgM ELISA Detection Kit (Genscript, USA). The dengue RDT kit used on confirmed COVID-19 samples and healthy/asymptomatic samples was Standard Q Dengue Duo (SD Biosensor, Korea, for the detection of dengue NS1 antigen and IgG and IgM antibodies), while the COVID-19 kit used on the healthy/ asymptomatic samples are VivaDiag COVID-19 IgG/ IgM.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "Specificity comparison of five brands of COVID-19 RDTs against dengue-confirmed samples",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "Positivity of COVID-19-related samples on dengue NS1, IgG, and IgM RDT",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "We would like to thank patients, nurses, and health practitioners involved in this study.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Acknowledgements"
+        },
+        {
+            "text": "RTS and MLH set the conceptual design of the study; MSS, SM, and SH performed diagnosis, patients' recruitment, data collection, and analysis on patients' status. MSS and RTS made the first draft of the manuscript; BY, RTS and MLH contributed to the generation of final manuscript.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Authors' contributions"
+        },
+        {
+            "text": "This work was supported by PT ASTRA International and the Ministry of Research and Technology / National Agency for Research and Innovation of the Republic Indonesia.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Funding"
+        },
+        {
+            "text": "RDT evaluation raw data available upon request.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Availability of data and materials"
+        },
+        {
+            "text": "The use of archived dengue patients' samples has been approved by Eijkman Institute Research Ethics Committee, approval number 151/2020, while the use of COVID-19 RT-PCR confirmed samples has been approved by Bali Mandara District Hospital Health Research Ethics Committee, approval number 007/EA/KEPK.RSBM.DISKES/2020, while the use of COVID-19 IgG and/or IgM positive samples has been approved by Raden Mattaher Hospital Research Ethics Committee, approval number S.32/SPE/VII/2020.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Ethics approval and consent to participate"
+        },
+        {
+            "text": "The authors declare that they have no competing interests. PT Kirana Jaya Lestari donated the VivaDiag RDT. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Competing interests"
+        },
+        {
+            "text": "Ready to submit your research Ready to submit your research ? Choose BMC and benefit from:? Choose BMC and benefit from:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Learn more biomedcentral.com/submissions"
+        }
+    ]
+}

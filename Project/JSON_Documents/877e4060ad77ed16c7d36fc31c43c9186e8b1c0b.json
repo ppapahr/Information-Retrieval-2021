@@ -1,0 +1,3455 @@
+{
+    "paper_id": "877e4060ad77ed16c7d36fc31c43c9186e8b1c0b",
+    "metadata": {
+        "title": "Retinoic acid improves baseline barrier function and attenuates TNF-\u03b1-induced barrier leak in human bronchial epithelial cell culture model, 16HBE 14o",
+        "authors": [
+            {
+                "first": "Patrick",
+                "middle": [
+                    "J"
+                ],
+                "last": "Callaghan",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Lankenau Institute for Medical Research",
+                    "location": {
+                        "settlement": "Wynnewood",
+                        "region": "PA",
+                        "country": "United States of America"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Elizabeth",
+                "middle": [],
+                "last": "Rybakovsky",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Lankenau Institute for Medical Research",
+                    "location": {
+                        "settlement": "Wynnewood",
+                        "region": "PA",
+                        "country": "United States of America"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Bryan",
+                "middle": [],
+                "last": "Ferrick",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Drexel University",
+                    "location": {
+                        "settlement": "Philadelphia",
+                        "region": "PA",
+                        "country": "United States of America"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Sunil",
+                "middle": [],
+                "last": "Thomas",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Lankenau Institute for Medical Research",
+                    "location": {
+                        "settlement": "Wynnewood",
+                        "region": "PA",
+                        "country": "United States of America"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "James",
+                "middle": [
+                    "M"
+                ],
+                "last": "Mullin Id",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Lankenau Institute for Medical Research",
+                    "location": {
+                        "settlement": "Wynnewood",
+                        "region": "PA",
+                        "country": "United States of America"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Retinoic acid (RA) has been shown to improve epithelial and endothelial barrier function and development and even suppress damage inflicted by inflammation on these barriers through regulating immune cell activity. This paper thus sought to determine whether RA could improve baseline barrier function and attenuate TNF-\u03b1-induced barrier leak in the human bronchial epithelial cell culture model, 16HBE14o-(16HBE). We show for the first time that RA increases baseline barrier function of these cell layers indicated by an 89% increase in transepithelial electrical resistance (TER) and 22% decrease in 14 C-mannitol flux. A simultaneous, RA-induced 70% increase in claudin-4 attests to RA affecting the tight junctional (TJ) complex itself. RA was also effective in alleviating TNF-\u03b1-induced 16HBE barrier leak, attenuating 60% of the TNF-\u03b1-induced leak to 14 C-mannitol and 80% of the leak to 14 C-inulin. Interleukin-6induced barrier leak was also reduced by RA. Treatment of 16HBE cell layers with TNF-\u03b1 resulted in dramatic decrease in immunostaining for occludin and claudin-4, as well as a downward \"band-shift\" in occludin Western immunoblots. The presence of RA partially reversed TNF-\u03b1's effects on these select TJ proteins. Lastly, RA completely abrogated the TNF-\u03b1-induced increase in ERK-1,2 phosphorylation without significantly decreasing the TNF-driven increase in total ERK-1,2. This study suggests RA could be effective as a prophylactic agent in minimizing airway barrier leak and as a therapeutic in preventing leak triggered by inflammatory cascades. Given the growing literature suggesting a \"cytokine storm\" may be related to COVID-19 morbidity, RA may be a useful adjuvant for use with anti-viral therapies.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Citation: Callaghan PJ, Rybakovsky E, Ferrick B, Thomas S, Mullin JM (2020) Retinoic acid improves baseline barrier function and attenuates TNF-\u03b1-induced barrier leak in human bronchial epithelial cell culture model, 16HBE 14o-. PLoS ONE 15(12): e0242536. https://doi.org/10.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "Epithelial tissues are physical barriers between the outside environment and our systemic circulation and interstitial tissue. Examples are the epidermis of the skin and the linings of organs defining luminal spaces in our body such as our gastrointestinal tract, renal tubes, and alveoli in the lungs [1] . Cells constituting these protective sheets are unique in that they polarize (form a distinct apical side directed toward the lumen and a basolateral side connected to an underlying basement membrane) and form specialized junctional seals termed tight junctions (TJ) around and between adjacent cells [2] . A family of proteins including tricellulin, occludin, and 27 distinct claudins comprise the barrier element of TJs in a variety of different combinations throughout different epithelia [1] [2] [3] . These proteins extend from the cell into the intercellular space, forming oligomeric complexes with TJ proteins of adjacent epithelial cells to create a circumferential seal around the subapical perimeter [1] [2] [3] [4] [5] . Establishment of apico-basal polarity and regulation of paracellular permeability to fluid and solutes (barrier function) is dependent on these TJ proteins and their intracellular complexes [1] [2] [3] [4] [5] . TJs are pivotal in the development and maintenance of epithelial barriers throughout the body, and epithelial barriers are vital to any organism's homeostasis. Conversely, epithelial barrier leak is associated with disease in many different organ systems such as inflammatory bowel disease in the gastrointestinal tract, acute renal failure in the kidneys, and acute respiratory distress syndrome (ARDS) in the lungs [2, 6]. The airway epithelium limits infiltration of inhaled noxious stimuli into underlying tissue and vasculature, and in the process prevents damaging immune reactions [1, 7] . In addition to inhibiting pathogens, allergens, carcinogens, and other detrimental compounds from entering the body, this barrier also prevents interstitial and vascular fluid from leaking into the lungs and interfering with gas exchange [4, 5] . Altered structure/function of this barrier and its associated TJs is observed in a variety of lung disorders such as rhinitis, chronic obstructive pulmonary disease (COPD), allergic asthma, ARDS, and lung cancer [4, 7, [8] [9] [10] . The lifethreatening nature of these diseases highlights why it is crucial to maintain an intact epithelium that lines the airways and alveoli and restore any compromised barrier function.",
+            "cite_spans": [
+                {
+                    "start": 302,
+                    "end": 305,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 608,
+                    "end": 611,
+                    "text": "[2]",
+                    "ref_id": null
+                },
+                {
+                    "start": 799,
+                    "end": 802,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 803,
+                    "end": 806,
+                    "text": "[2]",
+                    "ref_id": null
+                },
+                {
+                    "start": 807,
+                    "end": 810,
+                    "text": "[3]",
+                    "ref_id": null
+                },
+                {
+                    "start": 1018,
+                    "end": 1021,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 1022,
+                    "end": 1025,
+                    "text": "[2]",
+                    "ref_id": null
+                },
+                {
+                    "start": 1026,
+                    "end": 1029,
+                    "text": "[3]",
+                    "ref_id": null
+                },
+                {
+                    "start": 1030,
+                    "end": 1033,
+                    "text": "[4]",
+                    "ref_id": null
+                },
+                {
+                    "start": 1034,
+                    "end": 1037,
+                    "text": "[5]",
+                    "ref_id": null
+                },
+                {
+                    "start": 1230,
+                    "end": 1233,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 1234,
+                    "end": 1237,
+                    "text": "[2]",
+                    "ref_id": null
+                },
+                {
+                    "start": 1238,
+                    "end": 1241,
+                    "text": "[3]",
+                    "ref_id": null
+                },
+                {
+                    "start": 1242,
+                    "end": 1245,
+                    "text": "[4]",
+                    "ref_id": null
+                },
+                {
+                    "start": 1246,
+                    "end": 1249,
+                    "text": "[5]",
+                    "ref_id": null
+                },
+                {
+                    "start": 1840,
+                    "end": 1843,
+                    "text": "[1,",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 1844,
+                    "end": 1846,
+                    "text": "7]",
+                    "ref_id": null
+                },
+                {
+                    "start": 2087,
+                    "end": 2090,
+                    "text": "[4,",
+                    "ref_id": null
+                },
+                {
+                    "start": 2091,
+                    "end": 2093,
+                    "text": "5]",
+                    "ref_id": null
+                },
+                {
+                    "start": 2308,
+                    "end": 2311,
+                    "text": "[4,",
+                    "ref_id": null
+                },
+                {
+                    "start": 2312,
+                    "end": 2314,
+                    "text": "7,",
+                    "ref_id": null
+                },
+                {
+                    "start": 2315,
+                    "end": 2318,
+                    "text": "[8]",
+                    "ref_id": null
+                },
+                {
+                    "start": 2319,
+                    "end": 2322,
+                    "text": "[9]",
+                    "ref_id": null
+                },
+                {
+                    "start": 2323,
+                    "end": 2327,
+                    "text": "[10]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "16HBE14o-(16HBE) is an immortalized human bronchial epithelial cell line obtained from a 1-year old male and has served as a longstanding model for the study of various lung disorders, a number of which relate to epithelial barrier function [11] [12] [13] [14] [15] [16] .",
+            "cite_spans": [
+                {
+                    "start": 241,
+                    "end": 245,
+                    "text": "[11]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 246,
+                    "end": 250,
+                    "text": "[12]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 251,
+                    "end": 255,
+                    "text": "[13]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 256,
+                    "end": 260,
+                    "text": "[14]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 261,
+                    "end": 265,
+                    "text": "[15]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 266,
+                    "end": 270,
+                    "text": "[16]",
+                    "ref_id": "BIBREF6"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Retinoic acid (RA), a biologically active form of vitamin A, has been shown to promote the development and/or elevate the strength of a variety of epithelial and endothelial barriers [17] [18] [19] [20] . While RA has been shown to be effective in reducing inflammation in the airway, these studies have mostly focused on it modulating immune cell differentiation/activity rather than on epithelial cells and barrier function per se [21] [22] [23] . This study sought to test whether this micronutrient could be useful in elevating basal barrier strength of this bronchial cell culture model as well as determine whether RA can alleviate 16HBE barrier leak triggered by proinflammatory cytokines such as TNF-\u03b1 and Interleukin-6 (IL-6).",
+            "cite_spans": [
+                {
+                    "start": 183,
+                    "end": 187,
+                    "text": "[17]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 188,
+                    "end": 192,
+                    "text": "[18]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 193,
+                    "end": 197,
+                    "text": "[19]",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 198,
+                    "end": 202,
+                    "text": "[20]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 433,
+                    "end": 437,
+                    "text": "[21]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 438,
+                    "end": 442,
+                    "text": "[22]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 443,
+                    "end": 447,
+                    "text": "[23]",
+                    "ref_id": "BIBREF13"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The 16HBE cell culture was obtained from Millipore Sigma (St. Louis, MO). Cells were passaged weekly for no more than 17 weeks before returning to frozen cell stocks. This correlates to actual serial passages 47-64 from the establishment of the original immortalized cell line. No discernible changes in morphology or physiology were observed within this window of passages. After reaching confluence, cells were trypsinized (0.25% trypsin and 2.2mM EDTA) (Corning Cellgro, Manassas, VA) and then passaged on a weekly basis by seeding 3.0 x 106 cells per Falcon 150 cm2 culture flask with 50ml of Dulbecco's Modified Minimum Essential",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Cell culture"
+        },
+        {
+            "text": "Cells were seeded for transepithelial electrical resistance (TER) and radiolabeled flux measurements into sterile Millicell polycarbonate (PCF) cell culture inserts (30mm diameter with 0.4 \u03bcm pore size) [EMD Millipore, Burlington, MA] on day 0 at a seeding density of 2.0 x 106 cells/insert. Four Millicell PCF inserts were placed in a 100mm petri dish. On day 1, all cell layers were refed with medium containing 50U/ml penicillin and 50\u03bcg/ml streptomycin (2ml apical, 15ml basolateral). The same refeed procedure was performed on day 4. All treatments with TNF-\u03b1 or RA were begun on day 5 or 6 (when the cell layers were post-confluent).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Transepithelial permeability measurements"
+        },
+        {
+            "text": "Cell layers were refed with control medium on the morning of experiments and allowed to incubate at 37\u02daC for 90-minutes prior to electrophysiological readings. Transepithelial potential difference was measured at 37\u02daC using 1M NaCl salt bridges in series with calomel electrodes. TER was measured at room temperature (RT) using 1 second, 40 \u03bcamp, direct current pulses (through 1M NaCl salt bridges in series with Ag/AgCl electrodes) in a custom-made polycarbonate chamber designed to hold the Millicell PCF inserts. With current-passing and voltage-measuring salt bridges positioned above and below the center point of the cell layers, voltage deflections and Ohm's law were used to calculate TER (V = iR).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Transepithelial permeability measurements"
+        },
+        {
+            "text": "Following TER measurements, the basal-lateral medium was removed and replaced with 15ml of medium containing 0.1mM, 0.1\u03bcCi/ml 14C-D-mannitol (Perkin-Elmer, Boston, MA), 0.1mM, 0.1\u03bcCi/ml 3H-lactulose (D-galactose) (American Radiolabeled Chemicals, Inc., St. Louis, MO), or 0.1mM, 0.1 uCi/ml 14 C-inulin (Perkin-Elmer, Boston, MA) and incubated at 37\u02daC. Triplicate 50\u03bcl samples were taken from the basolateral medium to determine the specific activity via liquid scintillation counting (LSC). Duplicate 250\u03bcl samples were taken from the apical medium at either 90 or 180 minutes for liquid scintillation counting (LSC) to determine transepithelial flux rates (J m ). The flux rate (in picomoles/min/cm2) was calculated for the aforementioned probes diffusing across the cell layer.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Transepithelial permeability measurements"
+        },
+        {
+            "text": "Medium containing the cytokines, TNF-\u03b1 and IL-6 (Peprotech, Inc., Rocky Hill, NJ), at a concentration of 125ng/ml and 200 ng/ml, respectively, were applied to the apical and basolateral cell surfaces day 6 post-seeding. Physiological measurements were taken at 24-, and 48-hours after the initial exposure. For experiments observing pERK expression, cell layers exposed to TNF-\u03b1 were harvested at 30 minutes, 60 minutes, and 4 hours after initial exposure. Both TNF-\u03b1 and IL-6 were dissolved directly in culture medium.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Treatment with TNF-\u03b1"
+        },
+        {
+            "text": "All-trans RA (EMD Millipore, Burlington, MA) was dissolved in 100% EtOH to make a 33.3mM stock and then diluted to concentrations of 5-, 15-, or 50uM in culture medium. The appropriate concentration was then added to the apical and basolateral compartments. Physiological measurements were taken at 24-and 48-hours after initial exposure. In all experiments using RA, the controls reported are actually solvent (ethanol-containing) controls. The ethanol concentrations were made equal in all conditions, and never exceeded 0.5% (v/v).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Treatment with retinoic acid"
+        },
+        {
+            "text": "Basal-lateral culture medium samples from control or RA-treated cell layers were assessed for TNF-\u03b1 concentration by ELISA (Invitrogen, part of Thermo Fisher). 50uL of biotinylated antibody reagent were added to each well of the kit, then 50uL of supernatant or TNF-\u03b1 standard were added to each well. After incubating at room temperature for 2-hours, each well was rinsed with wash buffer. After three washes, 100uL of 0.25% strepdavin-HRP was added to each well for 30-minutes. After rinsing with wash buffer three times, 100uL of TMB substrate was added to each well and the plate was placed in the dark for 30-minutes. Finally, 100uL of stop solution was added to each well and the plate was read at 450nm using a plate reader.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "TNF-\u03b1 enzyme linked immunosorbent assay"
+        },
+        {
+            "text": "Cells were seeded at 2.0e 5 cells per 2.55 cm 2 glass cover slip (Fisher Scientific, Waltham, MA). Cell layers were washed 3X in PBS. 2mL of 4% formalin were added to cover each cell layer for 3-minutes. The cell layer was once again washed three times with PBS and then blocked with 1% goat serum (Jackson ImmunoResearch, West Grove, PA). After blocking, preparations were exposed to rabbit anti-human occludin (1:300 dilution in 1% goat serum) and mouse anti-human claudin-4 (1:300 dilution in 1% goat serum) for 40-minutes (Fisher Scientific, Waltham, MA), washed and exposed to Alexa-flour 488 (green) goat anti-rabbit (1:400 dilution in 1% goat serum) and Cyanine3 (red) goat anti-mouse (1:400 dilution in 1% goat serum) for 40-minutes (Fisher Scientific, Waltham, MA). Finally, cell layers were exposed to DAPI (Fisher Scientific, Waltham, MA) for 1-minute, washed three times in PBS, and stored overnight at 4\u02daC.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Immunofluorescent staining of occludin and claudin-4"
+        },
+        {
+            "text": "The following day, green and red fluorescence were observed via confocal laser scanning microscopy (Nikon A1 HD25 confocal microscope Melville, NY) and images were obtained using Nikon NIS Elements Viewer.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Immunofluorescent staining of occludin and claudin-4"
+        },
+        {
+            "text": "For occludin and claudin-4 analyses, cells were harvested from Millicell PCF inserts by washing 5X in cold PBS. Then 500\u03bcL of Buffer A with protease and phosphatase inhibitors were added to each PCF [24] . The cell layer was physically scraped away from the filter and the suspension was collected, sonicated, and ultracentrifuged. The supernatant was transferred to a separate tube and prepared for analysis by PAGE (cytosolic fraction). 300\u03bcl of lysis buffer was then added to the pellet, which was then placed on a rotator for 90 minutes and ultracentrifuged. The supernatant (detergent-soluble fraction) was removed to a separate tube and prepared for analysis by PAGE.",
+            "cite_spans": [
+                {
+                    "start": 199,
+                    "end": 203,
+                    "text": "[24]",
+                    "ref_id": "BIBREF14"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Immunoblot analysis of claudin-4, occludin, ERK-1,2 and phosphorylated ERK-1,2"
+        },
+        {
+            "text": "For ERK-1,2 and p-ERK1,2 analyses, cells were harvested from Millicell PCF inserts by washing 5X in cold PBS. Then 500\u03bcL of lysis buffer with protease and phosphatase inhibitors were added to each PCF. The cell layer was physically scraped away from the filter, and the suspension was collected, flash-frozen, and stored at \u221280\u02daC. Whole-cell lysates were prepared by sonication and ultracentrifugation.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Immunoblot analysis of claudin-4, occludin, ERK-1,2 and phosphorylated ERK-1,2"
+        },
+        {
+            "text": "Samples of all of these lysates were analyzed by PAGE using a 4\u221220% gradient Tris-glycine gel (Invitrogen, a division of Thermo Fisher Scientific) at 120 V for 1 h 20 min. Precision Plus Kaleidoscope Protein Standards (Bio-Rad, Inc., Hercules, CA) were also included on each gel. Proteins were transferred at 30 V for 1 h from the gel to a nitrocellulose membrane. The membranes were then washed three times with PBS-T (0.3% Tween 20) for 10 min each and blocked with 5% milk/PBS-T at RT for 1 hr. Membranes were incubated with the specific primary antibody (occludin, claudin-4 and phospho-ERK1,2, from Fisher Scientific) at 0.5 \u03bcg/mL in 5% milk/PBS-T for overnight incubation at 4\u02daC. (Anti-ERK-1,2 in 5% bovine serum albumin/PBST was a product of Cell Signaling, Inc.). The membranes were again washed 3X, for 10 minutes each with PBS-T, and then incubated with the secondary antibody (rabbit anti-mouse-or goat anti-rabbit-IgG antibody labeled with horseradish peroxidase, from Southern Biotech, Birmingham, AL) for 1 h at RT. The membranes were washed four times, 10 min each with PBS-T, and then treated for 1 min with Western Lightning Plus-ECL chemiluminescence reagents (Perki-nElmer). The membranes and band densities were quantified on the BioRad ChemiDoc Imaging System. Band densities of the normalized experimentally-treated cell samples were compared to normalized averages of the corresponding control cell sample densities.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Immunoblot analysis of claudin-4, occludin, ERK-1,2 and phosphorylated ERK-1,2"
+        },
+        {
+            "text": "In place of a traditional loading control such as GAPDH or actin, we routinely use densitometry of MemCode (Thermo Fisher, Inc.) staining of total protein on our immunoblots as described by [25] . Optical density of protein bands such as occludin or pERK are normalized based upon total protein staining (bands) of the immunoblot in question, quantitating the optical density of (total) protein bands in molecular weight ranges close to the proteins of interest.",
+            "cite_spans": [
+                {
+                    "start": 190,
+                    "end": 194,
+                    "text": "[25]",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Immunoblot analysis of claudin-4, occludin, ERK-1,2 and phosphorylated ERK-1,2"
+        },
+        {
+            "text": "All reported statistics utilized paired Student's t-tests (experimental condition vs appropriate control), with all data expressed as the mean \u00b1 standard error of the mean. N/S (not significant): P > 0.05.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Statistics"
+        },
+        {
+            "text": "Retinoic acid improved barrier strength of 16HBE in a dose-dependent manner 48-hours after exposure. At a concentration of 50\u03bcM, RA increased TER by 89% ( Fig 1A) and reduced mannitol flux by 22% (Fig 1B) , indicating a true increase in barrier function. Simultaneously, RA significantly increased levels of claudin-4 (CL-4), though without any effect on occludin (Fig 1C) . While no concentration of RA significantly influenced barrier function at 24 hours (S1 File), RA was found to significantly reduce endogenous TNF-\u03b1 production by 13% at this timepoint (Fig 2) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 155,
+                    "end": 162,
+                    "text": "Fig 1A)",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 196,
+                    "end": 204,
+                    "text": "(Fig 1B)",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 364,
+                    "end": 372,
+                    "text": "(Fig 1C)",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 559,
+                    "end": 566,
+                    "text": "(Fig 2)",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Retinoic acid enhances 16HBE barrier strength and suppresses endogenous TNF-\u03b1 production"
+        },
+        {
+            "text": "TNF-\u03b1 consistently produced leak in 16HBE at both 24 and 48 hours after exposure. Like its time course of action on baseline barrier strength, RA did not significantly alter TNF-\u03b1's effect on barrier function until 48 hours. At 48 hours, RA alleviated both the decline in TER and the increase in mannitol flux induced by TNF-\u03b1 in a dose-dependent manner, with 50\u03bcM RA attenuating the reduction in TER and the increase in mannitol by 74% and 60% respectively (Fig 3) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 458,
+                    "end": 465,
+                    "text": "(Fig 3)",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "Retinoic acid alleviates TNF-\u03b1-induced 16HBE barrier leak"
+        },
+        {
+            "text": "In addition to having increased permeability to mannitol (mw 182), 16HBE cell layers treated with TNF-\u03b1 were leakier to larger molecular weight probes such as lactulose (mw 342) and inulin (mw 5,500) (Fig 4) . At 48 hours, lactulose flux was increased by approximately 35% after TNF exposure while inulin flux was increased over 50%. As was true for D-mannitol, retinoic acid almost completely inhibited the TNF-induced increases in both lactulose and inulin flux (Fig 4A and 4B ).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 200,
+                    "end": 207,
+                    "text": "(Fig 4)",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 464,
+                    "end": 478,
+                    "text": "(Fig 4A and 4B",
+                    "ref_id": "FIGREF3"
+                }
+            ],
+            "section": "Retinoic acid alleviates TNF-\u03b1-induced 16HBE barrier leak"
+        },
+        {
+            "text": "In Calu-3 (immortalized bronchial cell culture model), primary bronchial epithelial cells, and intestinal HT-29/B6 cells, changes in transepithelial permeability caused by TNF-\u03b1 have been shown to correlate with changes in TJ structure [26] [27] [28] . Here, it was tested whether similar changes would be observed in 16HBE and whether RA could exert any influence on TJ structure in the presence of TNF-\u03b1. Immunofluorescence methods applied to control cell layers revealed well-formed perijunctional staining of occludin, while staining for claudin-4 showed higher immunoreactivity within the cell (Fig 5) . Cell layers treated with TNF-\u03b1 for 24 hours were observed to have severely diminished intensity for both occludin and claudin-4. The addition of RA appeared to blunt both these effects of TNF-\u03b1, preserving immunostaining of both of these TJ proteins as well as occludin's perijunctional ring localization specifically.",
+            "cite_spans": [
+                {
+                    "start": 236,
+                    "end": 240,
+                    "text": "[26]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 241,
+                    "end": 245,
+                    "text": "[27]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 246,
+                    "end": 250,
+                    "text": "[28]",
+                    "ref_id": "BIBREF18"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 599,
+                    "end": 606,
+                    "text": "(Fig 5)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Retinoic acid inhibits the TNF-\u03b1-induced decreased immunostaining of occludin and claudin-4"
+        },
+        {
+            "text": "TNF-\u03b1 has been shown to produce a \"band-shift\" for occludin in Western immunoblots, namely a change in the band densities of two occludin phosphoproteins. This suggests TNF-\u03b1 may play a role in altering the phosphorylation state for this TJ protein [29] . Occludin band densities were analyzed in detergent soluble fractions of 16HBE cell layers to determine whether any changes in intensity would be observed in occludin protein bands present in TJs. As shown in Fig 6A, two prominent bands were observed in Western immunoblots of occludin in detergent soluble fractions. Prior work by our group and others suggests that these bands represent phosphoproteins of occludin [30] . After 48 hours of exposure, TNF-\u03b1 induced an obvious decrease in the upper band intensity while slightly increasing the lower band density (downward band-shift) (Fig 6) . The proportion of upper to lower band densities were quantified, which revealed that TNF-\u03b1 produced a 33% decrease in the ratio while the addition of RA produced a 55% increase, indicating that TNF-\u03b1 and the combination of TNF-\u03b1 and RA are modulating occludin phosphorylation in opposite directions (Fig 6C) .",
+            "cite_spans": [
+                {
+                    "start": 249,
+                    "end": 253,
+                    "text": "[29]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 672,
+                    "end": 676,
+                    "text": "[30]",
+                    "ref_id": "BIBREF20"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 464,
+                    "end": 471,
+                    "text": "Fig 6A,",
+                    "ref_id": "FIGREF4"
+                },
+                {
+                    "start": 840,
+                    "end": 847,
+                    "text": "(Fig 6)",
+                    "ref_id": "FIGREF4"
+                },
+                {
+                    "start": 1149,
+                    "end": 1157,
+                    "text": "(Fig 6C)",
+                    "ref_id": "FIGREF4"
+                }
+            ],
+            "section": "Retinoic acid reverses the downward band-shift of occludin triggered by TNF-\u03b1"
+        },
+        {
+            "text": "Activation of extracellular-signal-regulated kinase (ERK-1,2) has been implicated in cytokineinduced TJ disassembly in Calu-3 and other epithelial cell culture models [28] . Here in 16HBE, TNF-\u03b1 increased the amount of phosphorylated ERK-1,2 by approximately 40% at 30-minutes (Fig 7) .This effect was completely abrogated by 24 hour pre-treatment with RA (Fig 7) .This effect by TNF-\u03b1 was constant through one hour, but then completely dissipated by four hours (S1 and S2 Figs).",
+            "cite_spans": [
+                {
+                    "start": 167,
+                    "end": 171,
+                    "text": "[28]",
+                    "ref_id": "BIBREF18"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 277,
+                    "end": 284,
+                    "text": "(Fig 7)",
+                    "ref_id": null
+                },
+                {
+                    "start": 356,
+                    "end": 363,
+                    "text": "(Fig 7)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Retinoic acid blocks the TNF-\u03b1-induced increase in phosphorylated ERK-1,2 expression"
+        },
+        {
+            "text": "Examining levels of total ERK-1,2 shows that TNF is likewise inducing an increase in total ERK-1,2 levels by 60 mins of TNF exposure (Fig 7, Panel C) as well as increasing pERK levels. However, 50 \u03bcM RA did not significantly reduce the total ERK-1,2 levels increased by TNF exposure, unlike the case with pERK (Panels A & B) , suggesting that RA is in fact blocking the increased ERK-1,2 phosphorylation seen with TNF.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 133,
+                    "end": 149,
+                    "text": "(Fig 7, Panel C)",
+                    "ref_id": null
+                },
+                {
+                    "start": 310,
+                    "end": 324,
+                    "text": "(Panels A & B)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Retinoic acid blocks the TNF-\u03b1-induced increase in phosphorylated ERK-1,2 expression"
+        },
+        {
+            "text": "The strong association of elevated systemic IL-6 levels with COVID-19 infection [31, 32] prompted an examination of IL-6 effects on 16HBE barrier function as well as possible antagonism of that induced leakiness by RA. As shown in Fig 8, 200 ng/ml IL-6 induced a statistically significant, 40% increase in transepithelial leak of 14 C-D-mannitol, 48 hrs after IL-6 exposure. A simultaneous incubation of 5, 10 or 50 \u03bcM RA with IL-6 completely blocked the IL-6-induced leak to 14 C-D-mannitol. However, unlike the effect of TNF, a corresponding decrease of TER was not observed as a result of IL-6 exposure.",
+            "cite_spans": [
+                {
+                    "start": 80,
+                    "end": 84,
+                    "text": "[31,",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 85,
+                    "end": 88,
+                    "text": "32]",
+                    "ref_id": "BIBREF22"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 231,
+                    "end": 241,
+                    "text": "Fig 8, 200",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Effect of interleukin-6 on 16HBE barrier function"
+        },
+        {
+            "text": "Confluent cell layers were treated with control or 50\u03bcM RA-supplemented medium for 24-hours prior to treatment with TNF-\u03b1 or TNF-\u03b1 + RA for 30 minutes. Phosphorylated ERK-1,2 immunoblots were prepared (A) and band densities were quantified (B) as described in Materials and Methods. (Lanes A1-A3 represents control, lanes B1-B3 represents TNF-\u03b1, and lanes C1-C3 represents pre-treatment with RA prior to TNF-\u03b1). Panel C shows the effects of the TNF \u00b1 RA exposure on total ERK-1,2 levels, evidencing a relatively rapid, TNF-induced, 50% increase in total ERK at 60 minutes without a significant reduction of total ERK-1,2 by RA. \ufffd indicates P < 0.05, \ufffd\ufffd indicates P < 0.01 (Student's t test, two-tailed).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Fig 7. Effect of TNF-\u03b1 or TNF-\u03b1 + retinoic acid on phosphorylated ERK-1,2 expression in 16HBE cell layers."
+        },
+        {
+            "text": "https://doi.org/10.1371/journal.pone.0242536.g007 ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Fig 7. Effect of TNF-\u03b1 or TNF-\u03b1 + retinoic acid on phosphorylated ERK-1,2 expression in 16HBE cell layers."
+        },
+        {
+            "text": "Retinoic acid produced the following effects on 16HBE cell layers: 1) increase of basal barrier strength evidenced by an 89% increase in TER and 22% decrease in mannitol flux (Fig 1) ; 2) moderate but significant suppression of endogenous TNF-\u03b1 production (Fig 2) ; 3) attenuation of TNF-\u03b1-induced barrier leak to mannitol, lactulose and inulin (small and moderately high molecular weight probes) (Figs 3 and 4) ; 4) attenuation of the IL-6-induced increase in barrier leak to mannitol; 5) preservation of occludin and claudin-4 immunostaining in the presence of TNF-\u03b1 (Fig 5) ; 6) reversal of the downward \"band-shift\" of occludin triggered by TNF-\u03b1 ( Fig  6); and 7) inhibition of the increase in ERK-1,2 phosphorylation induced by TNF-\u03b1 (Fig 7) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 175,
+                    "end": 182,
+                    "text": "(Fig 1)",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 256,
+                    "end": 263,
+                    "text": "(Fig 2)",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 397,
+                    "end": 411,
+                    "text": "(Figs 3 and 4)",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 569,
+                    "end": 576,
+                    "text": "(Fig 5)",
+                    "ref_id": null
+                },
+                {
+                    "start": 653,
+                    "end": 668,
+                    "text": "Fig  6); and 7)",
+                    "ref_id": "FIGREF4"
+                },
+                {
+                    "start": 740,
+                    "end": 747,
+                    "text": "(Fig 7)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Discussion"
+        },
+        {
+            "text": "As mentioned above, RA has been shown to be beneficial to barrier function in several other epithelial models both in vitro and in vivo including oral, blood-retinal, blood-brain, and intestinal barriers [17] [18] [19] [20] . To our knowledge, this is the first study showing improvement in airway basal barrier function using RA. Suppression of endogenous TNF-\u03b1 production may be partially responsible for RA's induced elevation in basal barrier strength given TNF-\u03b1's detrimental effect on the 16HBE barrier (Figs 1 and 2) . While only TNF-\u03b1 production was assessed here, RA could also be dampening production of other cytokines as is the case in mouse hepatocytes, in human and mouse adipocytes, in rats with collagen-induced arthritis, and in the kidneys of diabetic rats [33] [34] [35] [36] [37] . More experimentation would be needed to reveal the distinct mechanisms involved in RA enhancing barrier function of 16HBE cell layers, but the physiological results presented here do suggest that RA could be useful prophylactically in preventing lung barrier dysfunction in vivo.",
+            "cite_spans": [
+                {
+                    "start": 204,
+                    "end": 208,
+                    "text": "[17]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 209,
+                    "end": 213,
+                    "text": "[18]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 214,
+                    "end": 218,
+                    "text": "[19]",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 219,
+                    "end": 223,
+                    "text": "[20]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 776,
+                    "end": 780,
+                    "text": "[33]",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 781,
+                    "end": 785,
+                    "text": "[34]",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 786,
+                    "end": 790,
+                    "text": "[35]",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 791,
+                    "end": 795,
+                    "text": "[36]",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 796,
+                    "end": 800,
+                    "text": "[37]",
+                    "ref_id": "BIBREF27"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 510,
+                    "end": 524,
+                    "text": "(Figs 1 and 2)",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Discussion"
+        },
+        {
+            "text": "TNF-\u03b1 has been shown to produce barrier leak in a variety of other different epithelial cell models [6, 26, [38] [39] [40] [41] [42] [43] . The purpose of this study-with respect to TNF-\u03b1-induced barrier leak -was not to delve into the molecular mechanisms of how TNF-\u03b1 produces leak in 16HBE cell layers, but rather initially characterize the type of leak that occurs. Transepithelial leak can be produced by either perturbation of TJs or through the creation of actual holes in the epithelial sheet arising from cell death and detachment [3, 38, 39] . Here, we note that barrier compromise triggered by TNF-\u03b1 correlated with changes in TJ proteins.",
+            "cite_spans": [
+                {
+                    "start": 100,
+                    "end": 103,
+                    "text": "[6,",
+                    "ref_id": null
+                },
+                {
+                    "start": 104,
+                    "end": 107,
+                    "text": "26,",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 108,
+                    "end": 112,
+                    "text": "[38]",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 113,
+                    "end": 117,
+                    "text": "[39]",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 118,
+                    "end": 122,
+                    "text": "[40]",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 123,
+                    "end": 127,
+                    "text": "[41]",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 128,
+                    "end": 132,
+                    "text": "[42]",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 133,
+                    "end": 137,
+                    "text": "[43]",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 544,
+                    "end": 547,
+                    "text": "38,",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 548,
+                    "end": 551,
+                    "text": "39]",
+                    "ref_id": "BIBREF29"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "While it is unclear whether TNF-\u03b1 is producing actual holes in 16HBE cell layers, the physiological data collected here may suggest such holes are present. In LLC-PK 1 , renal cell layers, both TNF-\u03b1 and the phorbol ester, TPA, induced leak [40] . However, the leak produced by these two inducers exhibited very different characteristics [40] . A size limit existed as to which probe molecules manifested increased leak triggered by TNF-\u03b1, while no such size limit existed for TPA-induced leak. The presence of holes (or complete loss of TJs) created by TPA would be consistent with the absence of any size limitation, while the lack of holes in TNF-\u03b1 treated cell layers would result in only low MW probes crossing cell layers [40] . Since no size limit was observed for TNF-\u03b1-induced leak in 16HBE (increased leak for mannitol, lactulose and inulin), holes may be present in addition to alterations in TJs. In any event, what is most important is that RA almost completely restores barrier strength of this airway model in the presence of TNF-\u03b1 to all three probes (Figs 3 and 4) . The implications of this could be very important for patients with high systemic levels of cytokines, placing them at an increased risk of lung water accumulation and subsequent respiratory distress. This data suggests that RA could be helpful either therapeutically or prophylactically.",
+            "cite_spans": [
+                {
+                    "start": 241,
+                    "end": 245,
+                    "text": "[40]",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 338,
+                    "end": 342,
+                    "text": "[40]",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 728,
+                    "end": 732,
+                    "text": "[40]",
+                    "ref_id": "BIBREF30"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1067,
+                    "end": 1081,
+                    "text": "(Figs 3 and 4)",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "Discussion"
+        },
+        {
+            "text": "Occludin expression and localization have been shown to be causal to changes in transepithelial permeability, with higher expression of occludin at TJs correlating with decreased permeability/leak [44] . Further, the degree of phosphorylation of occludin correlates with its localization, with increased phosphorylation of occludin associating with TJ localization and less phosphorylation associating with non-TJ localization [45] . Here, immunostaining of occludin was greatly diminished in TNF-\u03b1-treated cell layers (Fig 5) . Additionally, TNF-\u03b1 caused a downward \"band-shift\" of occludin, suggesting a decrease in occludin phosphorylation (Fig 6) , though this contrasts with what was observed in hCMEC/D3 cells where an upwardshift of occludin was rapidly initiated by TNF-\u03b1 [28] . These results could suggest TNF-\u03b1induced leak in 16HBE cell layers is partially carried out through induced change in occludin phosphorylation with subsequent or concurrent loss of occludin from TJs. In addition to altering occludin-and potentially other TJ proteins'-phosphorylation states, TNF-\u03b1 could also induce paracellular leak by triggering MLCK-dependent endocytosis of TJ proteins [46] .",
+            "cite_spans": [
+                {
+                    "start": 197,
+                    "end": 201,
+                    "text": "[44]",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 427,
+                    "end": 431,
+                    "text": "[45]",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 780,
+                    "end": 784,
+                    "text": "[28]",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 1177,
+                    "end": 1181,
+                    "text": "[46]",
+                    "ref_id": "BIBREF36"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 519,
+                    "end": 526,
+                    "text": "(Fig 5)",
+                    "ref_id": null
+                },
+                {
+                    "start": 643,
+                    "end": 650,
+                    "text": "(Fig 6)",
+                    "ref_id": "FIGREF4"
+                }
+            ],
+            "section": "Discussion"
+        },
+        {
+            "text": "While in this study, occludin is being highlighted and the changes in occludin band densities and junctional staining correlate nicely with physiological results, we by no means suggest that changes in occludin or claudin-4 account for the changes in 16HBE barrier function that we observed here. As we have shown (Figs 1 and 5) , TNF-and RA-induced changes in claudin-4 are also pronounced. Investigations into many other TJ proteins are clearly required and will be the subject of future studies by our group. In this regard, it is worth noting that RA is not only reducing the changes in occludin and claudin-4 abundance caused by TNF (Fig 5) but is itself capable of causing increased levels of claudin-4 in control cell layers (Fig 1C) . It should be noted however that whereas in immunofluorescence the sharply decreased claudin-4 signal caused by TNF is partially reversed by RA, this was not observed in Western immunoblotting. Therefore, a focal effect regarding RA reversal of TNF action on claudin-4 cannot be ruled out here.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 314,
+                    "end": 328,
+                    "text": "(Figs 1 and 5)",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 638,
+                    "end": 645,
+                    "text": "(Fig 5)",
+                    "ref_id": null
+                },
+                {
+                    "start": 732,
+                    "end": 740,
+                    "text": "(Fig 1C)",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Discussion"
+        },
+        {
+            "text": "ERK signaling has been shown to influence TJ integrity differently in different epithelia [28, 47] . For example, reducing ERK-1,2 activity in MDCK (canine kidney) and LLC-PK 1 (porcine kidney) epithelial cell layers promotes TJ assembly, while increased ERK-1,2 activity appears to be protective concerning barrier function in differentiated CACO-2 (human intestinal) epithelial cell layers [48, 49] . Our data indicates that TNF-\u03b1 increases ERK-1,2 phosphorylation and that RA can inhibit this phosphorylation increase. Future work is needed to show whether these observed changes in ERK-1,2 phosphorylation are in fact causal to the barrier function changes observed here.",
+            "cite_spans": [
+                {
+                    "start": 90,
+                    "end": 94,
+                    "text": "[28,",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 95,
+                    "end": 98,
+                    "text": "47]",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 392,
+                    "end": 396,
+                    "text": "[48,",
+                    "ref_id": "BIBREF38"
+                },
+                {
+                    "start": 397,
+                    "end": 400,
+                    "text": "49]",
+                    "ref_id": "BIBREF39"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "In all data reported here, we are showing time points at which observed effects were most obvious. These can be 24 or 48 hrs. or as short as 30 mins in the case of ERK phosphorylation. It is worth noting that we are not always reporting on the same induced phenomena. The mechanisms by which RA improves basal barrier function may not be the same by which RA opposes TNF-induced barrier compromise. They may quite likely have differing time courses. Similarly, the effects of RA on TJ proteins' expression or phosphorylation may have a different time course than effects on actual barrier function.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "In the midst of the current SARS-CoV-2 pandemic, it is worth noting that an increasing published literature suggests a significant source of COVID-19 morbidity may be traceable to a \"cytokine storm\" that occurs in a meaningful percentage of infected patients [50] [51] [52] [53] . Furthermore, evidence for an association between the cytokine storm and resulting lung water may be building [32, 54] . It is therefore very noteworthy that our work indicates that RA may not only be capable of improving basal lung barrier function but also protecting lung barrier function during assault by cytokines such as TNF-\u03b1 and IL-6. This therefore suggests the potential for RA as a prophylactic and therapeutic adjuvant therapy in COVID-19 treatment, alongside direct anti-viral therapies.",
+            "cite_spans": [
+                {
+                    "start": 259,
+                    "end": 263,
+                    "text": "[50]",
+                    "ref_id": "BIBREF40"
+                },
+                {
+                    "start": 264,
+                    "end": 268,
+                    "text": "[51]",
+                    "ref_id": "BIBREF41"
+                },
+                {
+                    "start": 269,
+                    "end": 273,
+                    "text": "[52]",
+                    "ref_id": "BIBREF42"
+                },
+                {
+                    "start": 274,
+                    "end": 278,
+                    "text": "[53]",
+                    "ref_id": "BIBREF43"
+                },
+                {
+                    "start": 390,
+                    "end": 394,
+                    "text": "[32,",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 395,
+                    "end": 398,
+                    "text": "54]",
+                    "ref_id": "BIBREF44"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "More work is required to identify molecular mechanisms that are responsible for RA's action on 16HBE barrier function. Work on additional airway epithelial barrier models is needed to determine if the results reported here might accurately reflect in vivo actions. However, the results contained here do suggest that RA may be effective prophylactically in strengthening airway barriers as well as therapeutically in preventing barrier leak triggered by inflammatory cascades and disease pathogens.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion"
+        },
+        {
+            "text": "Supporting information S1 File. Raw immunoblot images. This file contains the raw immunoblot images for Figs 6A and 7A and S1 and S2 (PDF) S2 File. Data used throughout manuscript. This file contains the data used to construct all graphs as well as the effects of retinoic acid on 16HBE barrier function after 24-hours of exposure. (XLSX) S1 Fig. Effect of 1 -hour TNF-\u03b1 or TNF-\u03b1 + retinoic acid on phosphorylated ERK-1,2 expression in 16HBE. Confluent cell layers were treated with control or 50\u03bcM RA-supplemented medium for 24-hours prior to treatment with TNF-\u03b1 or TNF-\u03b1 + RA for 1 hour. Phosphorylated ERK-1,2 immunoblots were prepared and band densities were quantified as described in Materials and Methods. \ufffd indicates P < 0.05, \ufffd\ufffd indicates P < 0.01 (Student's t test, two-tailed). (TIF) S2 Fig. Effect of 4 -hour TNF-\u03b1 or TNF-\u03b1 + retinoic acid on phosphorylated ERK-1,2 expression in 16HBE. Confluent cell layers were treated with control or 50\u03bcM RA-supplemented medium for 24-hours prior to treatment with TNF-\u03b1 or TNF-\u03b1 + RA for 4 hours. Phosphorylated ERK-1,2 immunoblots were prepared and band densities were quantified as described in Materials and Methods. (TIF)",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 342,
+                    "end": 358,
+                    "text": "Fig. Effect of 1",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 799,
+                    "end": 815,
+                    "text": "Fig. Effect of 4",
+                    "ref_id": "FIGREF3"
+                }
+            ],
+            "section": "Conclusion"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Keynote review: epithelial and endothelial barriers in human disease",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Mullin",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Agostino",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Rendon-Huerta",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Thornton",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Drug Discovery Today",
+            "volume": "10",
+            "issn": "6",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S1359-6446(05)03379-9"
+                ]
+            }
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "CFTR expression and chloride secretion in polarized immortal human bronchial epithelial cells",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Cozens",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Yezzi",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Kunzelmann",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Ohrui",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Chin",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Eng",
+                    "suffix": ""
+                }
+            ],
+            "year": 1994,
+            "venue": "American journal of respiratory cell and molecular biology",
+            "volume": "10",
+            "issn": "",
+            "pages": "38--47",
+            "other_ids": {
+                "DOI": [
+                    "10.1165/ajrcmb.10.1.7507342"
+                ],
+                "PMID": [
+                    "7507342"
+                ]
+            }
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Human airway epithelial cells investigated by atomic force microscopy: a hint to cystic fibrosis epithelial pathology",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Lasalvia",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Castellani",
+                    "suffix": ""
+                },
+                {
+                    "first": "D&apos;",
+                    "middle": [],
+                    "last": "Antonio",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Perna",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Carbone",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Colia",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Experimental cell research",
+            "volume": "348",
+            "issn": "",
+            "pages": "46--55",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.yexcr.2016.08.025"
+                ],
+                "PMID": [
+                    "27590528"
+                ]
+            }
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "HSP60 activity on human bronchial epithelial cells",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Sangiorgi",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Vallese",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Gnemmi",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Bucchieri",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Balbi",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Brun",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "International journal of immunopathology and pharmacology",
+            "volume": "30",
+            "issn": "",
+            "pages": "333--340",
+            "other_ids": {
+                "DOI": [
+                    "10.1177/0394632017734479"
+                ],
+                "PMID": [
+                    "28976240"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Human normal bronchial cells: a novel in vitro cell model for toxicity evaluation",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Feng",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Guo",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Xia",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "PLos one",
+            "volume": "10",
+            "issn": "",
+            "pages": "15267--15282",
+            "other_ids": {
+                "DOI": [
+                    "10.1371/journal.pone.0123520"
+                ],
+                "PMID": [
+                    "25861018"
+                ]
+            }
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Glucocorticoids enhance airway epithelial barrier integrity",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Sekiyama",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Gon",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Terakado",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Takeshita",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Kozu",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Maruoka",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "International immunopharmacology",
+            "volume": "12",
+            "issn": "",
+            "pages": "350--357",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.intimp.2011.12.006"
+                ],
+                "PMID": [
+                    "22210372"
+                ]
+            }
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "The human bronchial epithelial cell line 16HBE14o-as a model system of the airways for studying drug transport",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Forbes",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Shah",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Martin",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Lansley",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "International journal of pharmaceutics",
+            "volume": "257",
+            "issn": "",
+            "pages": "129--136",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/s0378-5173(03)00129-7"
+                ],
+                "PMID": [
+                    "12711171"
+                ]
+            }
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Improvement of humanoral-epithelial-barrier function and of tight junctions by micronutrients",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Rybakovsky",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Valenzano",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Deis",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Diguilio",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Thomas",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Mullin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "",
+            "volume": "65",
+            "issn": "",
+            "pages": "10950--10958",
+            "other_ids": {
+                "DOI": [
+                    "10.1021/acs.jafc.7b04203"
+                ],
+                "PMID": [
+                    "29172516"
+                ]
+            }
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Retinoic acid signaling is essential for maintenance of the blood-retinal barrier",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Pollock",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Xie",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Bell",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Anand-Apte",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "The Journal of the federation of American societies for experimental biology",
+            "volume": "32",
+            "issn": "10",
+            "pages": "5674--5684",
+            "other_ids": {
+                "DOI": [
+                    "10.1096/fj.201701469R"
+                ],
+                "PMID": [
+                    "29874129"
+                ]
+            }
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Retinoic acid induces blood-brain barrier development",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Mizee",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Wooldrik",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Lakeman",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Van Het Hof",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Geerts",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Bugiani",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Journal of neuroscience",
+            "volume": "33",
+            "issn": "4",
+            "pages": "1660--1671",
+            "other_ids": {
+                "DOI": [
+                    "10.1523/JNEUROSCI.1338-12.2013"
+                ],
+                "PMID": [
+                    "23345238"
+                ]
+            }
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Retinoic acid promotes barrier functions in human iPSC-derived intestinal epithelial monolayers",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Yamada",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Kanda",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Journal of pharmacological sciences",
+            "volume": "140",
+            "issn": "4",
+            "pages": "337--344",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jphs.2019.06.012"
+                ],
+                "PMID": [
+                    "31399314"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Vitamin A and D in allergy: from experimental animal models and cellular studies to human disease",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Hufnagl",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Jensen-Jarolim",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Allergo journal international",
+            "volume": "27",
+            "issn": "3",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s40629-018-0054-2"
+                ]
+            }
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Effects of bacterial lysates and all trans-retinoic acid on airway inflammation in asthmatic mice",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Lei",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Kuang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Liao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Chinese journal of contemporary pediatrics",
+            "volume": "22",
+            "issn": "2",
+            "pages": "171--176",
+            "other_ids": {
+                "DOI": [
+                    "10.7499/j.issn.1008-8830.2020.02.016"
+                ],
+                "PMID": [
+                    "32051086"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "All-trans retinoic acid attenuates airway inflammation by inhibiting Th2 and Th17 response in experimental allergic asthma",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Zhong",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Xia",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "BMC immunology",
+            "volume": "14",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/1471-2172-14-28"
+                ],
+                "PMID": [
+                    "23800145"
+                ]
+            }
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Chronic exposure of LLC-PK 1 epithelia to the phorbol ester TPA produces poly-like foci with leaky tight junctions and altered Protein Kinase C-\u03b1 expression and localization",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Mullin",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Soler",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Laughlin",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Kampherstein",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Russo",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Saladik",
+                    "suffix": ""
+                }
+            ],
+            "year": 1996,
+            "venue": "Experimental cell research",
+            "volume": "227",
+            "issn": "1",
+            "pages": "12--22",
+            "other_ids": {
+                "DOI": [
+                    "10.1006/excr.1996.0244"
+                ],
+                "PMID": [
+                    "8806446"
+                ]
+            }
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Krishna Mallia A. A high-affinity reversible protein stain for Western blots",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Antharavally",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Carter",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Bell",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Anal Biochem",
+            "volume": "329",
+            "issn": "2",
+            "pages": "276--80",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ab.2004.02.049"
+                ],
+                "PMID": [
+                    "15158487"
+                ]
+            }
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "TNF-\u03b1-mediated bronchial barrier disruption and regulation by src-family kinase activation",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Hardyman",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Wilkinson",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Martin",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Jayasekera",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Blume",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Swindle",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "The Journal of allergy and clinical immunology",
+            "volume": "132",
+            "issn": "3",
+            "pages": "665--675",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jaci.2013.03.005"
+                ],
+                "PMID": [
+                    "23632299"
+                ]
+            }
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Tumor necrosis factor-alpha (TNF-\u03b1) regulates the epithelial barrier in the human intestinal cell line HT-29/B6",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Schmitz",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Fromm",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Bentzel",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Scholz",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Detjen",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Mankertz",
+                    "suffix": ""
+                }
+            ],
+            "year": 1999,
+            "venue": "Journal of cell science",
+            "volume": "112",
+            "issn": "",
+            "pages": "137--146",
+            "other_ids": {
+                "PMID": [
+                    "9841910"
+                ]
+            }
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Cytokines induce tight junction disassembly in airway cells via an EGFR-dependent MAPK/ERK1/2-pathway. Laboratory investigation",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Petecchia",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Sabatini",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Usai",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Caci",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Varesio",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Rossi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "",
+            "volume": "92",
+            "issn": "",
+            "pages": "1140--1148",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/labinvest.2012.67"
+                ],
+                "PMID": [
+                    "22584669"
+                ]
+            }
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "TNF\u03b1 alters occludin and cerebral endothelial permeability: Role of p38MAPK",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Ni",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Teng",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Simonyi",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Sun",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "PLoS ONE",
+            "volume": "12",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1371/journal.pone.0170346"
+                ],
+                "PMID": [
+                    "28170408"
+                ]
+            }
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Protein Kinase C activation leads to dephosphorylation of occludin and tight junction permeability increase in LLC-PK1 epithelial cell sheets",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Clarke",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Soler",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Mullin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2000,
+            "venue": "Journal of cell science",
+            "volume": "113",
+            "issn": "",
+            "pages": "3187--3196",
+            "other_ids": {
+                "PMID": [
+                    "10954417"
+                ]
+            }
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "COVID-19 and the immune system",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Paces",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Strizova",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Smrz",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Cerny",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Physiol Res",
+            "volume": "69",
+            "issn": "3",
+            "pages": "379--388",
+            "other_ids": {
+                "DOI": [
+                    "10.33549/physiolres.934492"
+                ],
+                "PMID": [
+                    "32469225"
+                ]
+            }
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "The COVID-19 Cytokine Storm; What We Know So Far. Front Immunol",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Ragab",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Salah Eldin",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Taeimah",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Khattab",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Salem",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "11",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3389/fimmu.2020.01446"
+                ],
+                "PMID": [
+                    "32612617"
+                ]
+            }
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Retinoic acid modulates IL-4, IL-10 and MCP-1 pathways in immune mediated hepatitis and interrupts CD4+ T cells infiltration. International immunopharmacology",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Elshal",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Abu-Elsaad",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "El-Karef",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Ibrahim",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "",
+            "volume": "75",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.intimp.2019.105808"
+                ],
+                "PMID": [
+                    "31419710"
+                ]
+            }
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Prophylactic administration of all-trans retinoic acid alleviates inflammation in rats with collagen-induced arthritis",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zeng",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Shan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Ning",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Xie",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Shen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Journal of Southern Medical University",
+            "volume": "37",
+            "issn": "2",
+            "pages": "172--177",
+            "other_ids": {
+                "DOI": [
+                    "10.3969/j.issn.1673-4254.2017.02.05"
+                ],
+                "PMID": [
+                    "28219859"
+                ]
+            }
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "All-trans-retinoic acid represses chemokine expression in adipocytes and adipose tissue by inhibiting NF-kB signaling. The Journal of nutritional biochemistry",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Karkeni",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Bonnet",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Astier",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Couturier",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Dalifard",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "",
+            "volume": "42",
+            "issn": "",
+            "pages": "101--107",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jnutbio.2017.01.004"
+                ],
+                "PMID": [
+                    "28157617"
+                ]
+            }
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "The effects of all-trans retinoic acid on the expression of inflammatory cytokines and cartilage damage related proteases in rats with collageninduced arthritis",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Xie",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Shen",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Song",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Zhong",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Ning",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zeng",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Journal of Sichuan University",
+            "volume": "47",
+            "issn": "4",
+            "pages": "479--484",
+            "other_ids": {
+                "PMID": [
+                    "28591946"
+                ]
+            }
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "All-trans retinoic acid ameliorates inflammatory response mediated by TLR4/NFkB during initiation of diabetic nephropathy",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Sierra-Mondragon",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Molina-Jijon",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Namorado-Tonix",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Rodriguez-Munoz",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Pedraza-Chaverri",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Reyes",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "The Journal of nutritional biochemistry",
+            "volume": "60",
+            "issn": "",
+            "pages": "47--60",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jnutbio.2018.06.002"
+                ],
+                "PMID": [
+                    "30193155"
+                ]
+            }
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Tissue remodeling during tumor necrosis factorinduced apoptosis in LLC-PK1 renal epithelial cells. The American journal of physiology-renal physiology",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Soler",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Mullin",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Knudsen",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Marano",
+                    "suffix": ""
+                }
+            ],
+            "year": 1996,
+            "venue": "",
+            "volume": "270",
+            "issn": "",
+            "pages": "869--879",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Sieving characteristics of cytokine-and peroxide-induced epithelial barrier leak: Inhibition by berberine",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Diguilio",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Mercogliano",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Born",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Ferraro",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "To",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Mixson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "World J Gastrointest Pathophysiol",
+            "volume": "7",
+            "issn": "2",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.4291/wjgp.v7.i2.223"
+                ],
+                "PMID": [
+                    "27190695"
+                ]
+            }
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Different size limiations for increased transepithelial paracellular solute flux across phorbol ester and tumor necrosis factor-treated epithelial cell sheets",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Mullin",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Marano",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Laughlin",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Nuciglio",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Stevenson",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Soler",
+                    "suffix": ""
+                }
+            ],
+            "year": 1996,
+            "venue": "Journal of cellular physiology",
+            "volume": "171",
+            "issn": "",
+            "pages": "226--233",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Leaks in the epithelial barrier caused by spontaneous and TNF-\u03b1-induced single-cell apoptosis",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Gitter",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Bendfeldt",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Schulzke",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Fromm",
+                    "suffix": ""
+                }
+            ],
+            "year": 2000,
+            "venue": "The FASEB journal",
+            "volume": "14",
+            "issn": "",
+            "pages": "1749--1752",
+            "other_ids": {
+                "DOI": [
+                    "10.1096/fj.99-0898com"
+                ],
+                "PMID": [
+                    "10973924"
+                ]
+            }
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Regulation of airway tight junctions by proinflammatory cytokines",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Coyne",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Vanhook",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Gambling",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Carson",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Boucher",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Johnson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "Molecular biology of the cell",
+            "volume": "13",
+            "issn": "9",
+            "pages": "3218--3234",
+            "other_ids": {
+                "DOI": [
+                    "10.1091/mbc.e02-03-0134"
+                ],
+                "PMID": [
+                    "12221127"
+                ]
+            }
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Activation of NF-kB is necessary for restoration of the barrier function of an epithelium undergoing TNF-\u03b1-induced apoptosis",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Soler",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Marano",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Bryans",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Miller",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Garulacan",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Mauldin",
+                    "suffix": ""
+                }
+            ],
+            "year": 1999,
+            "venue": "European journal of cell biology",
+            "volume": "78",
+            "issn": "",
+            "pages": "80007--80014",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/s0171-9335(99)80007-7"
+                ],
+                "PMID": [
+                    "10082424"
+                ]
+            }
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Multiple domains of occludin are involved in the regulation of paracellular permeability",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Balda",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Flores-Maldonado",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Cereijido",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Matter",
+                    "suffix": ""
+                }
+            ],
+            "year": 2000,
+            "venue": "Journal of cellular biochemistry",
+            "volume": "78",
+            "issn": "",
+            "pages": "85--96",
+            "other_ids": {
+                "PMID": [
+                    "10797568"
+                ]
+            }
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Possible involvement of phosphorylation of occludin in tight junction formation",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Sakakibara",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Furuse",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Saitou",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Ando-Akatsuka",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Tsukita",
+                    "suffix": ""
+                }
+            ],
+            "year": 1997,
+            "venue": "Journal of cell biology",
+            "volume": "137",
+            "issn": "",
+            "pages": "1393--1401",
+            "other_ids": {
+                "DOI": [
+                    "10.1083/jcb.137.6.1393"
+                ],
+                "PMID": [
+                    "9182670"
+                ]
+            }
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Contributions of myosin light chain kinase to regulation of epithelial paracellular permeability and mucosal homeostasis",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [
+                        "Q"
+                    ],
+                    "last": "He",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Sheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Zha",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Graham",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Turner",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "International journal of molecular sciences",
+            "volume": "21",
+            "issn": "3",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3390/ijms21030993"
+                ],
+                "PMID": [
+                    "32028590"
+                ]
+            }
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Tumor necrosis factor \u03b1 activates the phosphorylation of ERK, SAPK/ JNK, and P38 kinase in primary cultures of neurons",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Barbin",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Roisin",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Zalc",
+                    "suffix": ""
+                }
+            ],
+            "year": 2001,
+            "venue": "Neurochemical research",
+            "volume": "26",
+            "issn": "",
+            "pages": "107--112",
+            "other_ids": {
+                "DOI": [
+                    "10.1023/a:1011086426652"
+                ],
+                "PMID": [
+                    "11478736"
+                ]
+            }
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "Ras mutation impairs epithelial barrier function to a wide range of nonelectrolytes",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Mullin",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Leatherman",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Valenzano",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Huerta",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Verrechio",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Smith",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Mol Biol Cell",
+            "volume": "16",
+            "issn": "12",
+            "pages": "5538--50",
+            "other_ids": {
+                "DOI": [
+                    "10.1091/mbc.e05-04-0294"
+                ],
+                "PMID": [
+                    "16176977"
+                ]
+            }
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "Contrasting effects of ERK on tight junction integrity in differentiated and under-differentiated Caco-2 cell monolayers",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Aggarwal",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Suzuki",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Taylor",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Bhargava",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Rao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Journal of biochemistry",
+            "volume": "433",
+            "issn": "1",
+            "pages": "51--63",
+            "other_ids": {
+                "DOI": [
+                    "10.1042/BJ20100249"
+                ],
+                "PMID": [
+                    "20961289"
+                ]
+            }
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Targeting T-cell senescence and cytokine storm with rapamycin to prevent severe progression in COVID-19",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Omarjee",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Janin",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Perrot",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Laviolle",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Meilhac",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Mahe",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Clinical immunology",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.clim.2020.108464"
+                ],
+                "PMID": [
+                    "32405269"
+                ]
+            }
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "Should we stimulate or suppress immune responses in COVID-19? Cytokine and anti-cytokine interventions",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Jamilloux",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Henry",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Belot",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Viel",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Fauter",
+                    "suffix": ""
+                },
+                {
+                    "first": "El",
+                    "middle": [],
+                    "last": "Jammal",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Autoimmunity reviews",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.autrev.2020.102567"
+                ],
+                "PMID": [
+                    "32376392"
+                ]
+            }
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "Cytokine storm syndrome in severe COVID-19",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Ruscitti",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Berardicurti",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Iagnocco",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Giacomelli",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Autoimmunity reviews",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.autrev.2020.102562"
+                ],
+                "PMID": [
+                    "32376400"
+                ]
+            }
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "Melatonin inhibits COVID-19-induced cytokine storm by reversing aerobic clycolysis in immune cells: a mechanistic analysis. Medicine in drug discovery",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Reiter",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Sharma",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Ma",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Dominquez-Rodriguez",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Marik",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Abreu-Gonzalez",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.medidd.2020.100044"
+                ],
+                "PMID": [
+                    "32395713"
+                ]
+            }
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "The imperfect cytokine storm: severe COVID-19 with ARDS in patient on durable LVAD support. JACC: Case reports",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [
+                        "Q"
+                    ],
+                    "last": "Chau",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Oliveros",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Mahmood",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Singhvi",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Lala",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Moss",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jaccas.2020.04.001"
+                ],
+                "PMID": [
+                    "32292915"
+                ]
+            }
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Effect of retinoic acid on 16HBE barrier function. Transepithelial electrical resistance (A) and flux of 14 Cmannitol (B) were measured as described in Materials and Methods 48 hours after treatment. n = 4 cell layers per condition. Western immunoblots (C) were performed for the tight junctional proteins, occludin and claudin-4, on total cell lysates from cell layers treated for 48 hrs with 50 \u03bcM RA, n = 4 cell layers per condition. Bars indicate the mean \u00b1 standard error of the mean. N/S indicates no significant difference between experimental and control condition, \ufffd\ufffd indicates P<0.01, \ufffd\ufffd\ufffd indicates P<0.001 (Student's t test, two-tailed). RA: retinoic acid. https://doi.org/10.1371/journal.pone.0242536.g001",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "Effect of retinoic acid on endogenous 16HBE TNF-\u03b1 production. TNF-\u03b1 levels were measured as described in Materials and Methods 24 hours after treatment. Data are expressed as percent of mean control value. \ufffd indicates P<0.05 (Student's t test, two-tailed). RA: retinoic acid. https://doi.org/10.1371/journal.pone.0242536.g002",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "Effect of retinoic acid on TNF-\u03b1-induced 16HBE barrier leak. TER (A) and transepithelial flux of 14 Cmannitol (B) were measured as described in Materials and Methods 48 hours after treatment. n = 4 cell layers per condition, N/S indicates no significant difference between experimental and control condition, \ufffd indicates P<0.05, \ufffd\ufffd indicates P<0.01, \ufffd\ufffd\ufffd indicates P<0.001 (Student's t test, two-tailed). RA: retinoic acid. https://doi.org/10.1371/journal.pone.0242536.g003",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "Effect of TNF-\u03b1 and retinoic acid on flux of 3 H-lactulose and 14 C-inulin across 16HBE cell layers. Transepithelial flux of 3 H-lactulose (A) and 14 C-inulin (B) were measured as described in Materials and Methods, 48 hours after TNF exposure. Simultaneous incubation with 50 \u03bcM RA inhibited the TNF-induced permeability increase to both probe molecules. n = 4 cell layers per condition, \ufffd\ufffd\ufffd indicates P<0.001 (Student's t test, two-tailed). RA: retinoic acid. https://doi.org/10.1371/journal.pone.0242536.g004 Fig 5. Effect of retinoic acid on TNF-\u03b1-induced 16HBE TJ disruption. Cell layers were treated with TNF-\u03b1 or TNF\u03b1 and RA as described in Materials and Methods after reaching confluence. After 24 hours, staining for occludin (green), claudin-4 (red), and DAPI (blue) were performed and images observed as described in Materials and Methods. RA: 50\u03bcM retinoic acid. https://doi.org/10.1371/journal.pone.0242536.g005",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "Effect of TNF-\u03b1 or TNF-\u03b1 and retinoic acid on occludin band-shift in detergent soluble 16HBE cell fractions. Confluent cell layers were treated for 48 hours with TNF-\u03b1 or TNF-\u03b1 + RA as described in Materials and Methods. Western immunoblots for occludin in detergent soluble fractions of cell layers were produced as described in Materials and Methods. (A. Control cell samples [lanes D1-D3] TNF-\u03b1-treated cell samples [lanes E1-E3], and TNF-\u03b1 + RA-treated cell samples [lanes F1-F3]; B. band densities of upper and lower bands were obtained; C. the ratios of upper to lower band densities). n = 3 cell layers per condition; N/S indicates no significant difference between experimental and control conditions; \ufffd\ufffd\ufffd indicates P < 0.001 (Student's t test, two-tailed); \ufffd ' indicates P < 0.05 (Student's t test, one-tailed). https://doi.org/10.1371/journal.pone.0242536.g006",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": "Effect of retinoic acid on IL-6-induced 16HBE barrier leak. Transepithelial flux of 14 C-mannitol was measured as described in Materials and Methods, 48-hours after treatment. n = 4 cell layers per condition, \ufffd\ufffd\ufffd indicates P<0.001 (Student's test, two-tailed) for IL-6 vs. IL-6 + RA (all concentrations). https://doi.org/10.1371/journal.pone.0242536.g008",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "PLOS ONE | https://doi.org/10.1371/journal.pone.",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "We would like to thank Ms. Sandra Alyanakian and Ms. Terri Olshefski for editorial assistance in submission of manuscript.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Acknowledgments"
+        }
+    ]
+}

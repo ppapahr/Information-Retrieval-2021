@@ -1,0 +1,1727 @@
+{
+    "paper_id": "873f7e66a681c4010ea697b3a4cf46dd4694676f",
+    "metadata": {
+        "title": "Journal Pre-proofs Degradation of hydroxychloroquine by electrochemical advanced oxidation processes Degradation of hydroxychloroquine by electrochemical advanced oxidation processes",
+        "authors": [
+            {
+                "first": "Nasr",
+                "middle": [],
+                "last": "Bensalah",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Qatar University",
+                    "location": {
+                        "postBox": "PO Box 2713",
+                        "settlement": "Doha",
+                        "country": "Qatar"
+                    }
+                },
+                "email": "nasr.bensalah@qu.edu.qa"
+            },
+            {
+                "first": "Sondos",
+                "middle": [],
+                "last": "Midassi",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Gabes",
+                    "location": {
+                        "postCode": "6072",
+                        "settlement": "Gabes",
+                        "country": "Tunisia"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Mohammad",
+                "middle": [
+                    "I"
+                ],
+                "last": "Ahmad",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Central Laboratories Unit",
+                    "institution": "Qatar University",
+                    "location": {
+                        "postBox": "PO Box 2713",
+                        "settlement": "Doha",
+                        "country": "Qatar"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Ahmed",
+                "middle": [],
+                "last": "Bedoui",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Gabes",
+                    "location": {
+                        "postCode": "6072",
+                        "settlement": "Gabes",
+                        "country": "Tunisia"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "In this work, the degradation of hydroxychloroquine (HCQ) drug in aqueous solution by electrochemical advanced oxidation processes including electrochemical oxidation (EO) using boron doped diamond (BDD) and its combination with UV irradiation (photo-assisted electrochemical oxidation, PEO) and sonication (sonoassisted electrochemical oxidation, SEO) was investigated. EO using BDD anode achieved the complete depletion of HCQ from aqueous solutions in regardless of HCQ concentration, current density, and initial pH value. The decay of HCQ was more rapid than total organic carbon (TOC) indicating that the degradation of HCQ by EO using BDD anode involves successive steps leading to the formation of organic intermediates that end to mineralize. Furthermore, the results demonstrated the release chloride (Cl -) ions at the first stages of HCQ degradation. In addition, the organic nitrogen was converted mainly into NO 3 and NH 4 + and small amounts of volatile nitrogen species (NH 3 and NO x ). Chromatography analysis confirmed the formation of 7-chloro-4-quinolinamine (CQLA), oxamic and oxalic acids as intermediates of HCQ degradation by EO using BDD anode. The combination of EO with UV irradiation or sonication enhances the kinetics and the efficacy of HCQ oxidation. PEO requires the lowest energy consumption (EC) of 63 kWh/m 3 showing its cost-effectiveness. PEO has the potential to be an excellent alternative method for the treatment of wastewaters contaminated with HCQ drug and its derivatives. Introduction. 4-aminoquinolone derivatives are widely used as drugs for the treatment of several diseases in rheumatology and dermatology [1-3]. Hydroxychloroquine (HCQ), a derivative of 4-aminoquinolone, is prescribed as an antimalarial prevention drug [1] and to treat diseases such as rheumatoid arthritis [4], and systemic lupus erythematosus [5,6]. It is also used for polymorphic light eruptions and porphyria cutanea retardant [7,8]. Recently, national and international medical organizations over the word allowed the treatment of Coronavirus (COVID-19) in certain hospitalized patients by chloroquine and hydroxychloroquine [9-11]. The possible use of HCQ to treat COVID-19 is only an unproven hypothesis still being investigated. Huge amounts of HCQ are needed for the treatment of different diseases over the world. This certainly results in the discharge of large quantities of wastewaters contaminated with hydroxychloroquine into the environment. Due to its chemical and biological properties, HCQ has high potential to persist, bioaccumulate, and transfer to living organisms in intensified toxic forms [12,13]. It can also contaminate air (ozone depleting substance) [14], soil (bioaccumation in vegetation) [15,16], and groundwater (persistent substance) [16,17]. The high risks of natural water contamination due to the large production and utilization of HCQ [16,18,19], necessitates more attention to limit its hazardous effects on human health and environment. Few studies can be found in literature related to the degradation and fate of HCQ in water [12,13,20]. Mostly, the studies cited in literature have been focused on the photochemical stability of HCQ in aqueous solution and none of them investigated its removal from aqueous solution. Dabic et al. [12] investigated the abiotic degradation of HCQ in pure and natural waters by sunlight photolysis. The photodegradation of HCQ into simpler molecules was [26] P. V. Nidheesh, M. Zhou, M.A. Oturan, An overview on the removal of synthetic 87 dyes from water by electrochemical advanced oxidation processes, 88",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "confirmed by both High performance liquid chromatography-mass spectrometry (HPLC-MS/MS) and Nuclear magnetic resonance (NMR) spectroscopy [12] ; however, the degradation products themselves can pause substantial environmental concerns due to their high toxicity and bioresistance [21] . Therefore, the search for an effective method to eliminate this micropollutant from wastewater before its discharge in natural water bodies is needed to minimize its hazardous effects. This work aims to conduct the degradation of HCQ in aqueous solution using EAOPs (Electrochemical oxidation (EO), sono-assisted electrochemical oxidation (SEO), photoassisted electrochemical oxidation (PEO)). The results offer significant information needed in the future to depollute large quantities of wastewaters contaminated with HCQ drug and its metabolites especially this drug is adopted as the first treatment of COVID-19 by many health organizations. HCQ degradation was monitored by UVvisible spectrophotometry and total organic carbon (TOC) analysis. The analysis of organic and inorganic intermediates was conducted using high performance liquid chromatography (HPLC) and ion chromatography (IC).",
+            "cite_spans": [
+                {
+                    "start": 138,
+                    "end": 142,
+                    "text": "[12]",
+                    "ref_id": null
+                },
+                {
+                    "start": 280,
+                    "end": 284,
+                    "text": "[21]",
+                    "ref_id": "BIBREF5"
+                }
+            ],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "HCQ (7-Chloro-4-[4-[N-ethyl-N-(2-hydroxyethyl)amino]-1-methylbutyl-amino]quinolone sulfate) was purchased from Acros Organics (with purity \u2265 98%). 7-chloro-4quinolinamine (4-Amino-7-chloroquinoline) (CQLA) was obtained from Sigma-Aldrich.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Chemicals."
+        },
+        {
+            "text": "Oxalic acid (OAA) (anhydrous, \u2265 98.0) and oxamic acid (OAMA) (anhydrous, \u2265 97.0) were received from VWR. The other chemicals used for pH adjustment and in chromatography analysis are HPLC analytical grade from Sigma Aldrich or Fluka. All aqueous solutions were prepared with deionized water obtained from Mill-Q TM system having > 18 M\u2126 cm \u22121 resistivity.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Chemicals."
+        },
+        {
+            "text": "All the samples withdrawn at desired times, underwent a filtration through 0.2 \u03bcm membrane filters before analysis. The pH was monitored using a pH-meter (Seven Compact S210, METTLER TOLEDO\u00ae). TOC and total nitrogen (TN) analysis was conducted using Skalar Formacs HT TOC/TN analyzer. UV-Visible spectrophotometer (Perkin Elmer Lambda 5) was used for rapid measurements of HCQ concentration at 340 nm using a 1 cm-quartz cells. Chloride and nitrate ions were monitored using Dionex ICS 2000 ion chromatograph equipped with EGC eluent generator, Ion Pac AS 19 (4mm 250mm) analytical separation column, ASRS 300mm-4mm suppressor, and DS6 conductometric cell. Ammonium ions were analyzed by ion-selective electrode for ammonium ion (ELIT 8051 PVC membrane). HCQ and CQLA concentrations were measured by HPLC using Shimadzu 20A Gradient LC System with UV-VIS Detector equipped with Shim-pack GWS C18 (150x4.6, 5 um) separation column. The separation was performed using a mobile phase composed of a mixture of eluent A (0.1% H 3 PO 4 in water) and eluent B (acetonitrile, CH 3 CN) in gradient elution mode at a fixed flow rate of 1 mL/min and constant column temperature at 40 \u00b0C. By injecting 10 \uf06dL of each sample, the gradient elution begun with 90 % of eluent A during 5 min, then eluent A decreased to 40% within 15 min, and after that the elution gradient remains constant (40% A+60% B) until the end of analysis. The UV detector was set at a wavelength of 340 nm. Oxalic and oxamic acids were measured by HPLC using a Supelcogel H column (mobile phase, 0.15% phosphoric acid solution; flow rate, 0.15 mL/min) with UV detection at 210 nm. Linear calibration curves based on external standardization were obtained in chromatography analysis for all analytes with regression coefficients higher than 98%.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Analytical methods."
+        },
+        {
+            "text": "A single compartment electrochemical flow cell working in batch-operation mode was used to perform all experiments (see Figure 1 ). BDD anodes were purchased from Adamant Technologies (Neuchatel, Switzerland). They were fabricated by hot filament chemical vapor deposition (HF CVD) technique of boron-doped diamond thin film deposited on single-crystal p-type Si (100) substrates (0.1 \u2126 cm Siltronix) as described elsewhere [51] . The BDD coating has a film thickness of 2 \uf06dm, a resistivity of 100 m\u2126 cm, and a boron concentration of 500 ppm, and the sp 3 /sp 2 ratio is 150. Stainless steel (AISI 304) was used as cathode material for all the electrolytic tests. Circular electrodes More than 60% of HCQ can be removed by EO using BDD anode after 1h for initial pH values in the range 2.0 -12.0. As can be seen, the percentage of HCQ removals were 78.4, 77.9, 74.4, 68.1, and 60.3 % for initial pH values of 2.1, 4.2, 7.1, 9.0, and 12.1, respectively. It seems that acidic, slightly acidic, and neutral initial pH resulted in better EO performance in terms of HCQ removal than alkaline initial conditions. This can be correlated to the changes of pH during the electrochemical oxidation of HCQ with BDD anode as shown in Figure 4 .b. As can be observed, the pH abruptly declined at beginning the treatment, then it stabilized (except for pH = 2.1, pH remained constant).",
+            "cite_spans": [
+                {
+                    "start": 424,
+                    "end": 428,
+                    "text": "[51]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 120,
+                    "end": 128,
+                    "text": "Figure 1",
+                    "ref_id": "FIGREF7"
+                },
+                {
+                    "start": 1222,
+                    "end": 1230,
+                    "text": "Figure 4",
+                    "ref_id": "FIGREF4"
+                }
+            ],
+            "section": "Experimental setup."
+        },
+        {
+            "text": "For initial alkaline pH, the pH stabilized at values between 6 and 7, while for neutral and acid initial values of pH, it reached values lower than pH 4. The decrease of pH at the beginning of the treatment can be explained by the formation of acid intermediates during EO of HCQ [56] . HCQ has three functional groups with pKa values of < 4.0, 8.3, and 9.7 [57,58]. At acid and neutral conditions, two of the functional groups exist in protonated forms, which may facilitate the rupture of C -N bonds by HO \uf09f radicals attack and thus release the branched group. Furthermore, because small differences were observed in HCQ depletion yield for pH in the range (2-7), the detailed HCQ degradation was studied at pH 7.1 to minimize the additional costs related to preacidification and post-neutralization steps in the overall process. ",
+            "cite_spans": [
+                {
+                    "start": 280,
+                    "end": 284,
+                    "text": "[56]",
+                    "ref_id": "BIBREF56"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Degradation of HCQ by EO using BDD anode"
+        },
+        {
+            "text": "In order to improve the performance of the electrochemical treatment of HCQ in aqueous solution and reduce the energy requirements, the electrochemical oxidation using BDD was combined with sonication (SEO) and UV irradiation (PEO). As can be seen from Figure 7 ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 253,
+                    "end": 261,
+                    "text": "Figure 7",
+                    "ref_id": null
+                }
+            ],
+            "section": "Comparative study of HCQ degradation by EO, PEO, and SEO"
+        },
+        {
+            "text": "This work confirmed that EO using BDD anode is an effective EAOP to completely deplete HCQ in aqueous solution at different operating conditions (current density, initial pH, and HCQ concentration). Low current densities results in better efficacy of EO using BDD due to mass transport limitations and less competitive parasitic reactions. The degradation of HCQ by EO using BBD anode leads to the formation of aromatic intermediates such 4-quinolinamine and carboxylic acids (i.e. oxamic and oxalic acids) that undergo several oxidative stages accompanied with the release of Cl -, NO 3 -, and NH 4 + ions to finally end to be mostly mineralized. The coupling of EO using BDD with UV irradiation (PEO) and sonication (SEO) significantly improves the kinetics and the efficiency of HCQ oxidation and TOC removal. The degradation intermediates (OAMA and OAA) were depleted quickly when combined EO with UV irradiation or sonication were used to oxidize HCQ in aqueous solution. This is probably due to the activation of the electrogenerated strong oxidants (persulfates) to produce supplementary radical species capable to contribute with the hydroxyl radicals in the oxidation of HCQ drug and its intermediates. In addition, PEO seems to be the most cost-effective process since lower EC and Q were required to realize same depletion yields of HCQ and TOC.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion."
+        },
+        {
+            "text": "These results demonstrate that combined EAOPs have the potential to be implemented in large scale to eliminate HCQ from water.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion."
+        },
+        {
+            "text": "[ ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "References."
+        }
+    ],
+    "bib_entries": {
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Compositional space: A guide for environmental chemists 63 on the identification of persistent and bioaccumulative organics using mass 64 spectrometry",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Sled",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Jobst",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Environ. Int",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.envint.2019.05.002.65"
+                ]
+            }
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Characterization of four new photodegradation products of 66 hydroxychloroquine through LC-PDA, ESI-MSn and LC-MS-TOF studies",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Saini",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Bansal",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Ecotoxicity of 69 quinoline and hydroxylated derivatives and their occurrence in groundwater of a 70 tar-contaminated field site",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Neuwoehner",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Reineke",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Hollender",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Eisentraeger",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Ecotoxicol. Environ. Saf",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Electrochemical 73 advanced oxidation processes: A review on their application to synthetic and real 74 wastewaters",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Moreira",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "A R"
+                    ],
+                    "last": "Boaventura",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Brillas",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "J P"
+                    ],
+                    "last": "Vilar",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Appl. Catal. B Environ",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Advanced oxidation processes in water/wastewater 77 treatment: Principles and applications. A review",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Oturan",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Aaron",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Crit. Rev. Environ. Sci. Technol",
+            "volume": "78",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/10643389.2013.829765"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Electrochemical Processes and Reactors for the Abatement of Organic Water 81 Pollutants: A Critical Review",
+            "authors": [],
+            "year": 2015,
+            "venue": "Chem. Rev",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Electrochemical Advanced Oxidation Processes (EAOPs) 84 for Environmental Applications",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Oturan",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Brillas",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "The contribution of mediated oxidation 100 mechanisms in the electrolytic degradation of cyanuric acid using diamond 101",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Bensalah",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Dbira",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Bedoui",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Electrogeneration of Hydroxyl Radicals on Boron-Doped Diamond Electrodes",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Electrochemical oxidation of organic pollutants 106 for wastewater treatment",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Mart\u00ednez-Huitle",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Panizza",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Curr. Opin. Electrochem",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Oxidation of organic pollutants on BDD 109 anodes using modulated current electrolysis",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Panizza",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Kapalka",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Comninellis",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Electrochim. Acta",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Treatment of aqueous wastes 112 contaminated with Congo Red dye by electrochemical oxidation and ozonation 113 processes",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Elahmadi",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Bensalah",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Gadri",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "J. Hazard. Mater",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Effect of the electrolyte on the 116 electrolysis and photoelectrolysis of synthetic methyl paraben polluted 117 wastewater",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Dionisio",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Motheo",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "S\u00e1ez",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Rodrigo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Sep. Purif. Technol",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Applied Catalysis B : Environmental 120 Decontamination of wastewaters containing synthetic organic dyes by 121 electrochemical methods : A general review",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Brillas",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Mart\u0131nez-Huitle",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Appl. Catal. B Environ",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "The effect of electrode material on the generation of 124 oxidants and microbial inactivation in the electrochemical disinfection processes",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Jeong",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Kim",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Yoon",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Electrochemical synthesis of peroxomonophosphate using boron-doped diamond 140",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Application of Boron-Doped Diamond 142 Electrodes for Wastewater Treatment",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Panizza",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Brillas",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Comninellis",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "J. Environ. Eng. Manag",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Importance of electrode material in the electrochemical treatment of 144 wastewater containing organic pollutants",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Panizza",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "",
+            "volume": "145",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/978-0-387-68318-8_2"
+                ]
+            }
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "Sonoelectrochemical degradation of the anti-inflammatory drug diclofenac in 148 water",
+            "authors": [],
+            "year": 2015,
+            "venue": "Chem. Eng. J",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.cej.2015.03.070.149"
+                ]
+            }
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Degradation of endocrine 150 disruptor bisphenol A by ultrasound-assisted electrochemical oxidation in water",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Dietrich",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Franke",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Stelter",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Braeutigam",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "Removal of 153 triclosan by conductive-diamond electrolysis and sonoelectrolysis",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Mart\u00edn De Vidales",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "S\u00e1ez",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Ca\u00f1izares",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Rodrigo",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "J. Chem",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "Degradation of sodium dodecyl sulfate by 156 photoelectrochemical and electrochemical processes",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Nguyen",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Phan",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Sen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Chem. Eng. J",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF46": {
+            "ref_id": "b46",
+            "title": "Modeling and Simulations in Photoelectrochemical 159 Water Oxidation: From Single Level to Multiscale Modeling",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Bieberle-H\u00fctter",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "ChemSusChem",
+            "volume": "160",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/cssc.201600214"
+                ]
+            }
+        },
+        "BIBREF48": {
+            "ref_id": "b48",
+            "title": "Combining bioadsorption and photoelectrochemical 163 oxidation for the treatment of soil-washing effluents polluted with herbicide 2",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Ca\u00f1izares",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Rodrigo",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "164",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF50": {
+            "ref_id": "b50",
+            "title": "New perspectives for 166",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Dewil",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Mantzavinos",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Poulios",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Rodrigo",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF51": {
+            "ref_id": "b51",
+            "title": "Advanced Oxidation Processes",
+            "authors": [],
+            "year": 2017,
+            "venue": "J. Environ. Manage",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF53": {
+            "ref_id": "b53",
+            "title": "Electrochemical 180 treatment of wastewater from almond industry using DSA-type anodes: Direct 181 connection to a PV generator",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Nasr",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Abdellatif",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Ca\u00f1izares",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "S\u00e1ez",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Lobato",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Rodrigo",
+                    "suffix": ""
+                },
+                {
+                    "first": "; D",
+                    "middle": [],
+                    "last": "Valero",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Garc\u00eda-Garc\u00eda",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Exp\u00f3sito",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Aldaz",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Montiel",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Sep. Purif. Technol",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF55": {
+            "ref_id": "b55",
+            "title": "Electrochemical 184 treatment of waters with BDD anodes: Kinetics of the reactions involving 185 chlorides",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Polcaro",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Vacca",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Mascia",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Palmas",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "Rodiguez"
+                    ],
+                    "last": "Ruiz",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "J. Appl. Electrochem",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s10800-009-9870-"
+                ]
+            }
+        },
+        "BIBREF56": {
+            "ref_id": "b56",
+            "title": "Electrochemical oxidation of 188 organics in water: Role of operative parameters in the absence and in the 189 presence of NaCl",
+            "authors": [
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Scialdone",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Randazzo",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Galia",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Silvestri",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Water Res",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF58": {
+            "ref_id": "b58",
+            "title": "Chloroquine and hydroxychloroquine binding to 192 melanin: Some possible consequences for pathologies",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Schroeder",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Gerber",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Toxicol. Reports",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF61": {
+            "ref_id": "b61",
+            "title": "Hydroxychloroquine is much less active than chloroquine against chloroquine-196 resistant Plasmodium falciparum, in agreement with its physicochemical 197 properties",
+            "authors": [],
+            "year": 2003,
+            "venue": "J. Antimicrob. Chemother",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/jac/dkg319.198"
+                ]
+            }
+        },
+        "BIBREF62": {
+            "ref_id": "b62",
+            "title": "Electrochemical 199 treatment of wastewater from almond industry using DSA-type anodes: Direct 200 connection to a PV generator",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Garc\u00eda-Garc\u00eda",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Aldaz",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Montiel",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Exp\u00f3sito",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Valero",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Sep. Purif. Technol",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF64": {
+            "ref_id": "b64",
+            "title": "The effect of the 203 sp3/sp2 carbon ratio on the electrochemical oxidation of 2,4-D with p-Si BDD 204 anodes",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Souza",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Sa\u00e9z",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "R V"
+                    ],
+                    "last": "Lanza",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Ca\u00f1izares",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Rodrigo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Electrochim. Acta",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF66": {
+            "ref_id": "b66",
+            "title": "Recent developments and 207 advances in boron-doped diamond electrodes for electrochemical oxidation of 208 organic pollutants",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "He",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Guo",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Sep. Purif. Technol",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF67": {
+            "ref_id": "b67",
+            "title": "Electrochemical 211 oxidation/disinfection of urine wastewaters with different anode materials",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.seppur.2018.11.056.210"
+                ]
+            }
+        },
+        "BIBREF69": {
+            "ref_id": "b69",
+            "title": "Unprecedented total mineralization of atrazine 214 and cyanuric acid by anodic oxidation and electro-Fenton with a boron-doped Ti-Pt/PbO2 electrodes in the electrooxidation of the Blue Reactive 19 dye in 220 simulated textile wastewater",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Oturan",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Brillas",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Oturan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Chemosphere",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF71": {
+            "ref_id": "b71",
+            "title": "Electrochemical oxidation 223 of 3-methylpyridine at a boron-doped diamond electrode: Application to 224 electroorganic synthesis and wastewater treatment",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Iniesta",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Michaud",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Panizza",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Comninellis",
+                    "suffix": ""
+                }
+            ],
+            "year": 2001,
+            "venue": "Electrochem. Commun",
+            "volume": "225",
+            "issn": "",
+            "pages": "174--180",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S1388-2481(01"
+                ]
+            }
+        },
+        "BIBREF72": {
+            "ref_id": "b72",
+            "title": "Mineralization of the recalcitrant oxalic and oxamic 227 acids by electrochemical advanced oxidation processes using a boron-doped 228 diamond anode",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Garcia-Segura",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Brillas",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Water Res",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.watres.2011.03.017.229"
+                ]
+            }
+        },
+        "BIBREF73": {
+            "ref_id": "b73",
+            "title": "Treatment of 230 synthetic urine by electrochemical oxidation using conductive-diamond anodes",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Dbira",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Bensalah",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Bedoui",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Ca\u00f1izares",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Rodrigo",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF75": {
+            "ref_id": "b75",
+            "title": "Specific energy consumption 233 in electrochemical treatment of food industry wastewaters",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "G\u00fcven",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Perendeci",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "\u00d6zdemir",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Tanyola\u00e7",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "J. Chem. Technol",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF77": {
+            "ref_id": "b77",
+            "title": "Abdel-Magid, Specific energy 236 consumption reduction during pulsed electrochemical oxidation of phenol using 237 graphite electrodes",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Mu&apos;azu",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Al-Yahya",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Al-Haj-Ali",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "J. Environ. Chem. Eng",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF79": {
+            "ref_id": "b79",
+            "title": "Upgrading of the fenton and electrochemical 240 combined reactor (fered fenton) for optimum waste-activated sludge stabilization 241 and energy consumption",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Gholikandi",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Ardakani",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "J. Environ. Stud",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF80": {
+            "ref_id": "b80",
+            "title": "Comparative 243 study on the degradation of cephalexin by four electrochemical advanced 244 oxidation processes: Evolution of oxidation intermediates and antimicrobial 245 activity",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Antonin",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Aquino",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Silva",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Silva",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Rocha-Filho",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Chem. Eng. J",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.cej.2019.04.185.246"
+                ]
+            }
+        },
+        "BIBREF81": {
+            "ref_id": "b81",
+            "title": "Electrochemical 247 treatment of wastewaters containing organic pollutants on boron-doped diamond 248",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Panizza",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Michaud",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Cerisola",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Comninellis",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Electrochemical advanced oxidation processes (EAOPs) are among the processes capable to mineralize a myriad of organic micropollutants or transform them into substances easy to biodegrade [22-29]. The high efficacy of EAOPs is correlated to the electrogeneration of strong oxidants including hydroxyl radicals from the oxidation of the water [30-33], and persulfates [34,35], active chlorine [36-39], and others [40,41] from the oxidation of supporting electrolyte anions. The electrogenerated oxidants contribute in the degradation of organic and inorganic pollution contained in aqueous solution. It is well documented that anodes fabricated by the deposition of thin films of boron doped diamond anodes (BDD) on silicon or titanium substrates have higher chemical and electrochemical stability than other materials and can produce large amounts of hydroxyl radicals that are weakly adsorbed on the surface of the electrode [30,31,42,43]. In addition, EAOPs are distinguished by their sustainability (use of only electrons as reagents), their cost-effectiveness due to simple installations, and their potentiality to be scaled up for large applications. Recently, several studies confirmed that the efficacy of EAOPs are highly improved by combination of electrochemical oxidation (EO) with physical activation methods including sonication and ultraviolet irradiation [44-50].",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "100 mm diameter) with a geometric area of 78 cm 2 and separated by 9 mm to each other. A centrifugal pump was employed to circulate the electrolytic solution stored in a glass tank (600 mL) through the electrolytic cell at a constant flow rate of 200 L/h. The temperature was maintained at 25 \u00b0C using a thermostatic bath/heat exchanger. The same electrochemical flow cell was used in SEO and PEO experiments. In SEO experiments, the same electrochemical setup was combined with an ultrasonic generator (UP200S, Hielscher Ultrasonics GmbH, Germany) equipped with a sonication probe (40 mm diameter, 100 mm length, 12 Wcm -2 , 24 kHz) that is immersed in the glass tank. The ultrasound generator delivered a continuous power of 9.0 W. In PEO experiments, the electrochemical set up was combined with a UV lamp mercury medium pressure (TNN 15/32, = 254 nm, 15 W, 370 mm) located in an axial position submerged in a vertical immersion tube contained in a vertical quartz cooling tube and immersed in glass tank. All electrochemical experiments were performed under galvanostatic mode (constant current density). The electrodes were connected to a digital dc power supply (Monacor PS-430) providing current and voltage in the ranges 0\u221230 A and 0\u221220 V.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "presents the changes of [HCQ]/[HCQ] 0 ([HCQ] and [HCQ] 0 are the concentrations of HCQ at time t and at t =0 min) with time during the electrochemical oxidation of HCQ in aqueous solution using BDD anode at different initial concentrations of HCQ in the range 36-250 mg/L holding the other operating conditions constant (j = 20 mA/cm 2 , initial pH = 7.1, T = 25 \u00b0C, 0.05 M Na 2 SO 4 ). As can be observed, [HCQ]/[HCQ] 0 dropped to zero in regardless of the initial concentration of HCQ indicating that the electrochemical oxidation with BDD anode achieved the complete removal of HCQ from aqueous solution. In addition, the smaller the initial concentration of HCQ, the shorter is the time needed to reach the complete elimination of HCQ from aqueous solution. These results confirm the high effectiveness of EO using BDD in degrading persistent organic pollutants in aqueous solutions [27,32,52,53]. This is due to the large production of hydroxyl radicals (HO \uf09f ) from electrochemical oxidation of water at the surface of BDD [30,38]. The HO \uf09f radicals (weakly adsorbed on BDD surface and having high standard potentials and very short lifetime) attack immediately HCQ at the vicinity of BDD surface and decompose it into small fragments. The curves [HCQ]/[HCQ] 0 via time have similar exponential trend for all the HCQ initial concentrations studied. The exponential profile of the curves indicates that the electrochemical oxidation of HCQ using BDD anode follows a pseudo-first order kinetics. From the inset graph of Figure 2, it seems that the pseudo-first order rate constant k obs decreased linearly with [HCQ] 0 for [HCQ] 0 \u2264 125 mg/L, then it became slightly dependent on [HCQ] 0 for [HCQ] 0 > 125 mg/L. This behavior is in good correlation with a mass transfer kinetics limitations for [HCQ] 0 \u2264 125 mg/L [42]. It seems that for [HCQ] 0 > 125 mg/L, the charge transfer becomes the limiting step in the overall kinetics.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "presents the changes of HCQ concentration with the applied electric charge Q (Ah/L) during the electrochemical oxidation of HCQ in aqueous solutions using BDD anode at different current densities in the range 20-100 mA/cm 2 keeping the other operating conditions unvaried ([HCQ] 0 = 250 mg/L, initial pH = 7.1, T = 25 \u00b0C, 0.05 M Na 2 SO 4 ). HCQ concentration was decreased to non-detectable values at all the current densities applied in the range 20 -100 mA/cm 2 . An increase in current density from 20 to 100 mA/cm 2 did not improve the efficacy of EO using BDD anode [54,55]. Increased values of Q were consumed to accomplish the complete elimination of HCQ from aqueous solutions for higher current densities than 20 mA/cm 2 (15.0, 25.1, 37.5, and 62.5 Ah/L for 20, 40, 60, and 100 mA/cm 2 , respectively). These results can be explained by both kinetic limitations and competitiveness of secondary reactions with the main reactions involved in HCQ electrochemical degradation. High values of current density probably result in higher charge transfer rate; however, no enhancement in the degradation of HCQ was observed. This implicitly demonstrates that the mass transfer/transport of the target substance from the bulk solution to the vicinity of BDD anode limits the kinetics of the process [54,55]. Another important point resides on the fact that Q increased with the increase of the current density, which indicates that the secondary reactions of oxygen evolution and production of oxidants (persulfate ions, H 2 O 2 , O 3 , \u2026etc.) consume a significant part of the applied electric charge and then reduce the efficiency of the process [32,42].",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "a shows the effect of initial pH value on the percentage of HCQ removal after 1 h of electrochemical treatment of HCQ (250 mg/L) using BDD anode at 20 mA/cm 2 .",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": "presents the changes of the concentrations of HCQ, TOC, three organic HCQ degradation intermediates (4-quinolamine, oxamic and oxalic acids), and three inorganic ions (chloride, nitrate, and ammonium) released during HCQ mineralization, with the applied electric charge during the electrochemical oxidation of HCQ (both HCQ (in mg C/L) and TOC declined with the applied electric charge from the beginning of the treatment. The decay of TOC indicates the evolution of CO 2 and the mineralization of organic carbon contained in HCQ molecule. Furthermore, the decay of HCQ was more rapid than TOC demonstrating that HCQ undergoes successive steps leading to the formation of organic intermediates that end to mineralize by EO using BDD anode. EO using BDD achieved the complete eliminationof HCQ and the depletion of > 82 % of TOC after the consumption of a applied electric charge 15 Ah/L. The mineralization of HCQ during EO using BDD anode was validated by the release of Cl -, NO 3 -, and NH 4 + ions as shown in Figure 5.b. Chloride ions concentration increased from the starting of EO experiment to reach a maximum value of 26.2 mg Cl/L (> 99 % of theoretical yield of Cl (26.4 mg Cl/L)) after the consumption a applied electric charge of 5.2 Ah/L, then it started to decay to reach 18.2 mg Cl/L at the end of the treatment (15 Ah/L was consumed). These results demonstrate that Clions were released at the first stages of EO of HCQ using BDD anode, which is in agreement with several studies in literature related to the degradation of chlorinated aromatic compounds [59-61]. The decay of Clions is probably due to their partial conversion into active chlorine (HClO) by direct oxidation of chloride ions at BDD anode surface and by reaction with the electrogenerated hydroxyl radicals [30,38]. In addition, NO 3 and NH 4 + concentrations started to be detectable after the consumption of a applied electric charge of 1.1 Ah/L, indicating the formation of aromatic and aliphatic organic nitrogen intermediates at the beginning of the treatment. After consumption of a of theoretical nitrogen of 31.25 mg N/L) and small amounts of other volatile nitrogen species (NH 3 and NO x ). The opening of the pyridine ring is known to be highly resistive moiety in organic nitrogen compounds towards oxidation via hydroxyl radicals [62-65]. The HPLC chromatograms of HCQ samples before EO treatment and after 30 min (see Figure 5.c) confirmed the formation of CQLA (7-chloro-4-quinolinamine) as an organic aromatic intermediate. Figure 5.d presents the changes of the concentrations of CQLA, OAMA, and OAA with applied electric charge during the electrochemical oxidation of HCQ by BDD anode. These intermediates were formed from the starting of the treatment indicating that EO using BDD anode decompose HCQ into aromatic and aliphatic intermediates. The concentrations of CQLA increased to reach a maximum of 3.8 mg C/L at 1.1 Ah/L, then it declined to zero after 5.2 Ah/L. Similar trend was observed for the concentration of OAMA that reached a maximum of 13.7 mg C/L at 2.4 Ah/L and it decreased slowly to reach 1.1 mg C/L at the end of the treatment. In contrast to CQLA and OAMA, the concentration of OAA increased to reach a maximum 25.9 mg C/L at 5.2 Ah/L, it slightly decreased to 20.5 mg C/L, and then it persisted until the end of the treatment. Comparing the results of TOC in Figure 5.a and OAA in figure 5.d, it can be inferred that the amount of TOC remained after the consumption of 15 Ah/L is mostly due to the persistence of OAA and other short chain carboxylic acids such as formic acid (not measured in this work). These results demonstrated that the degradation of HCQ starts by the dealkylation the aromatic moiety through breaking up of N-C bond in the aliphatic tertiary amine chain (attached to the nitrogen atom substituting the aromatic pyridine ring) to form CQLA and its hydroxylated derivatives, immediately followed by the rupture of the C-Cl bond and release chlorides ions. These intermediates undergo oxidative decomposition including aromatic ring opening to form carboxylic acids (among them OAMA and OAA), and release inorganic nitrogen species predominantly in the form of NO 3 and NH 4 + . The carboxylic acids are slowly oxidized, and require the consumption of high applied electric charge to be mineralized [66,67]. A proposed mechanism involving all these stages is illustrated in Figure 6. The mechanism of HCQ degradation involves direct oxidation of HCQ molecules on BDD surface and mediated oxidation via oxidizing radical species (mainly hydroxyl radicals) in the region close to BDD anode, and by the strong oxidants electrogenerated during electrolysis (persulfate ions, H 2 O 2 , \u2026etc.). The results presented in Figures S1 and S2 confirmed the contribution of persulfates ions and H 2 O 2 in the degradation of carboxylic acids. CLQ degradation starts by dealkylation of the aromatic ring and formation of CQLA, followed by the release of chloride ions. The aromatic intermediates undergo an oxidative ring opening to form aliphatic carboxylic acids among them oxamic and oxalic acids and release of organic nitrogen as nitrates and ammonium ions. The former are slowly mineralized into CO 2 .",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF6": {
+            "text": ".a, HCQ concentration decreased with time for PEO, SEO, and EO and HCQ ended to be completely depleted within 60 min, 180 min, and 300 min, PEO, SEO, and EO respectively (under same electrolysis operating conditions: [HCQ] 0 = 250 mg/L, j =20 mA/cm2, pH = 7.1, T = 25 C). The degradation of HCQ by the three EAOPs obeys to a pseudo-first order rate law. The rate constants from the fitted data to pseudofirst order kinetics calculate (determined from the slope of the linear curves of ln[HC] 0 /[HCQ] vs. time) were 0.0842, 0.0402, and 0.0226 min -1 for PEO, SEO, and EO respectively. These results demonstrate that PEO is two times more rapid than SEO in degrading HCQ in aqueous solution, while the uncombined EO exhibits lower rate of degradation than SEO. Furthermore, the changes of TOC with time during the same experiments showed the same trend than HCQ concentration(Figure 7.b). PEO is more efficient than SEO, which is more efficient than EO. The pseudo-first order rate constants calculated from the fitted data were 0.014, 0.009, and 0,006 min -1 for PEO,SEO, and EO, respectively. The rate constants of TOC removal are smaller than those of HCQ depletion in all cases. In addition, the changes of the concentrations of OAMA and OAA during the treatment of HCQ by EO, SEO, PEO under same electrolysis operating conditions ([HCQ] 0 = 250 mg/L, j =20 mA/cm2, pH = 7.1, T = 25 C) given in Figure 7 c-d confirmed the higher efficiency of the combined EO with sonication and UV irradiation compared to the uncombined EO. OAMA formed during the treatment required applied electric charges of 8 and 12 Ah/L to be completely depleted by PEO and SEO (Figure 7.c), respectively; whereas, small amounts of OAMA were measured at the end of EO after the consumption of a applied electric charge of 15 Ah/L. A more pertinent observation is shown inFigure 7.d, in which OAA concentration increased to reach maximum values, and then it declined with a rate increasing in the order: EO < SEO < PEO. In addition, the amounts of OAA measured at the end of the treatment were 2.5, 7.5, and 20.5 mg C/L for PEO, SEO, and EO, respectively. Direct sonolysis and UV photolysis can remove 26% and 40% of HCQ from aqueous solutions containing 125 mg/L HCQ (Figure S3). The higher efficiency of combined EO with sonication and UV irradiation is due to the activation of the electrogenerated persulfate ions to produce sulfate radicals (SO 4 -\uf09f) that can contribute in the degradation of organic compounds. Furthermore, direct photolysis and sonolysis of water molecules can produce additional quantities of hydroxyl radicals (seeFigure S3), which is in good accordance with previous studies reported in literature[46,47].Another important aspect related to the electrical energy requirements should be considered when EAOPs are utilized for water and wastewater treatment. To do this, the energy consumption (EC) was calculated for each EAOP using the is the applied electric charge consumed for complete elimination of HCQ, U is the voltage of the electrochemical cell (6.8 V), P US is the power of ultrasound probe (12.5 W), P UV is the power of UV lamp (15 W), t is the time needed for complete elimination of HCQ, and V is the solution volume.The estimated values of EC (in kWh/m 3 ), the values of Q (in kAh/m 3 ) required to achieve complete depletion of HCQ (0.25 kg/m 3 ), and EC (kWh/kg TOC) to reach 80% TOC removal by each EAOP are given inTable 1. As can be seen, lower applied electric charges are required by PEO (3.75 kAh/m 3 ) and SEO (8.2 kAh/m 3 ) than uncombined EO (15 kAh/m 3 ). PEO has the lowest EC (63 kWh/m 3 and 556 kWh/kg TOC) indicating that in addition to its rapid depletion of HCQ and higher efficiency in terms of mineralization, PEO is the most cost-effective EAOP. Although SEO required lower Q than EO to accomplish complete depletion of HCQ, a little difference was observed between the EC requirements of SEO (101 kWh/m 3 and 769 kWh/kg TOC) and EO (102 kWh/m 3 and 778 kWh/kg TOC). It should be noted that higher values of EC were estimated for the degradation of HCQ than those reported in literature for the treatment of organic pollutants by EO using BDD [72-74]. An optimization of the hydrodynamic conditions of the flow cell would decrease the EC values. The coupling of EO with UV irradiation enhanced the kinetics and the efficacy of HCQ oxidation and diminished the energy requirements and eventually reduced the overall costs of the electrochemical treatment.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF7": {
+            "text": "Experimental set up used for the treatment of HCQ aqueous solution by EAOPs.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF8": {
+            "text": "Changes of [HCQ]/[HCQ] 0 with time during electrochemical oxidation of HCQ in aqueous solution using BDD anode at different HCQ concentrations; inset: Changes of pseudo-first order rate constant with HCQ concentration. Operating conditions: 0.05 M Na 2 SO 4 , j = 20 mA/cm 2 ; initial pH = 7.1; T = 25 \u00b0C.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF9": {
+            "text": "Changes of HCQ concentration with applied electric charge during electrochemical oxidation of HCQ in aqueous solution using BDD anode at different current densities. Operating conditions: 0.05 M Na 2 SO 4 , [HCQ] 0 = 250 mg/L; initial pH = 7.1; T = 25 \u00b0C.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF10": {
+            "text": "Changes of: (a) % HCQ removal (measured after 1 h) with the initial pH, (b) pH with time during electrochemical oxidation of HCQ in aqueous solution using BDD anode at different initial pH values. Operating conditions: 0.05 M Na 2 SO 4 , [HCQ] 0 = 250 mg/L; j = 20 mA/cm 2 ; T = 25 \u00b0C.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF11": {
+            "text": "Changes of: (a) HCQ and TOC, (b) released ions, (d) organic intermediates, with the applied electric charge, (c) HPLC chromatograms of samples withdrawn at t=0 min and t = 30 min during electrochemical oxidation of HCQ in aqueous solution using BDD anode. Operating conditions: 0.05 M Na 2 SO 4 , [HCQ] 0 = 250 mg/L; j = 20 mA/cm 2 ; initial pH = 7.1; T = 25 \u00b0C.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF12": {
+            "text": "Simple mechanism of HCQ degradation by electrogenerated oxidants using BDD anodes Changes of: (a) HCQ, (b) TOC with time and (c) OAMA, (d) OAA with the applied electric charge during EO, SEO, PEO of HCQ in aqueous solution using BDD anode. Operating conditions: 0.05 M Na 2 SO 4 , [HCQ] 0 = 250 mg/L; j = 20 mA/cm 2 ; initial pH = 7.1; T = 25 \u00b0C.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF13": {
+            "text": "Figure 1.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF14": {
+            "text": "Figure 2",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF15": {
+            "text": "Figure 3",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF16": {
+            "text": "Figure 4",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF17": {
+            "text": "Hydroxychloroquine (HCQ) has the potential to be a persistent pollutant in water 262 -Electrochemical oxidation with BDD anode (EO) degraded HCQ in all tested 263 conditions 264 -EO led to the release of Clions and conversion of organic nitrogen to Due to higher production of oxidants, EO combined with UV light used much less The authors declare that they have no known competing financial interests or personal relationships 273 that could have appeared to influence the work reported in this paper. 274 275 \u2610The authors declare the following financial interests/personal relationships which may be considered 276 as potential competing interests: 277 278",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "review on the efficacy and safety of chloroquine for the treatment of COVID-19, J. Crit. Care. (2020). https://doi.org/10.1016/j.jcrc.2020.03.005. [12] D. Dabi\u0107, S. Babi\u0107, I. \u0160kori\u0107, The role of photodegradation in the environmental fate of hydroxychloroquine, Chemosphere. (2019). https://doi.org/10.1016/j.chemosphere.2019.05.032. [13] V. Gosu, B.R. Gurjar, T.C. Zhang, R.Y. Surampalli, Oxidative degradation of quinoline using nanoscale zero-valent iron supported by granular activated Carbon, J. Environ. Eng. (United States). (2016). https://doi.org/10.1061/(ASCE)EE.1943-7870.0000981. [14] R. Hossaini, M.P. Chipperfield, A. Saiz-Lopez, J.J. Harrison, R. Von Glasow, R. Sommariva, E. Atlas, M. Navarro, S.A. Montzka, W. Feng, S. Dhomse, C. Harth, J. M\u00fchle, C. Lunder, S. O'Doherty, D. Young, S. Reimann, M.K. Vollmer, P.B. Krummel, P.F. Bernath, Growth in stratospheric chlorine from short-lived chemicals not controlled by the Montreal Protocol, Geophys. Res. Lett. (2015). https://doi.org/10.1002/2015GL063783. [15] B.H. Tuo, J.B. Yan, B.A. Fan, Z.H. Yang, J.Z. Liu, Biodegradation characteristics and bioaugmentation potential of a novel quinoline-degrading strain of Bacillus sp. isolated from petroleum-contaminated soil, Bioresour. Technol. (2012). https://doi.org/10.1016/j.biortech.2011.12.114. [16] P.H. Howard, D.C.G. Muir, Identifying new persistent and bioaccumulative organics among chemicals in commerce II: Pharmaceuticals, Environ. Sci. Technol. (2011). https://doi.org/10.1021/es201196x. [17] Y.S. Chen, S. Yu, Y.W. Hong, Q.Y. Lin, H.B. Li, Pharmaceutical residues in tidal surface sediments of three rivers in southeastern China at detectable and measurable levels, Environ. Sci. Pollut. Res. (2013). https://doi.org/10.1007/s11356-013-1871-y. lacking environmental monitoring: Case study of an exposure-assessment vulnerability, Sci. Total Environ. (2014). water treatment applications, Environ. Sci. Process. Impacts. (2014).",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": ". Energy consumption during EO, SEO, PEO of HCQ using BDD anode in aqueous solutions. Operating conditions: 0.05 M Na 2 SO 4 , [HCQ] 0 = 250 mg/L; j = 20 mA/cm 2 ; initial pH = 7.1; T = 25 \u00b0C, Sonication power: 8.5 W, UV-irradiation: \uf06c = 254 nm, 15 W.",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": []
+}

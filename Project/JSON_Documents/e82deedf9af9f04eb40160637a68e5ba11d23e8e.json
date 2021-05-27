@@ -1,0 +1,1296 @@
+{
+    "paper_id": "e82deedf9af9f04eb40160637a68e5ba11d23e8e",
+    "metadata": {
+        "title": "A News Recommender System Considering Temporal Dynamics and Diversity *",
+        "authors": [
+            {
+                "first": "Shaina",
+                "middle": [],
+                "last": "Raza",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Ryerson University",
+                    "location": {
+                        "settlement": "Toronto",
+                        "region": "ON",
+                        "country": "Canada"
+                    }
+                },
+                "email": "shaina.raza@ryerson.ca"
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "In a news recommender system, a reader's preferences change over time. Some preferences drift quite abruptly (short-term preferences), while others change over a longer period of time (long-term preferences). Although the existing news recommender systems consider the reader's full history, they often ignore the dynamics in the reader's behavior. Thus, they cannot meet the demand of the news readers for their timevarying preferences. In addition, the state-of-the-art news recommendation models are often focused on providing accurate predictions, which can work well in traditional recommendation scenarios. However, in a news recommender system, diversity is essential, not only to keep news readers engaged, but also to play a key role in a democratic society. In this PhD dissertation, our goal is to build a news recommender system to address these two challenges. Our system should be able to: (i) accommodate the dynamics in reader behavior; and (ii) consider both accuracy and diversity in the design of the recommendation model. Our news recommender system can also work for unprofiled, anonymous and short-term readers, by leveraging the rich side information of the news items and by including the implicit feedback in our model. We evaluate our model with multiple evaluation measures (both accuracy and diversity-oriented metrics) to demonstrate the effectiveness of our methods.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "With the advancement in internet technology, more and more news readers start to read news online. The news readers' preferences are not fixed and tend to change over time [1] . A reader's interests may be triggered by certain events or contexts [14] , for example, breaking news, weather alert, a political riot in the region and such. A reader's reading behavior is also affected by temporal factors such as the time of a day or the day of a week. For example, the highest news consumption usually happens in the evening from 6-8pm, followed by a peak at 7am or sometimes around the noon [15] . We refer to these types of dynamic interests as a user's short-term preferences. A news reader may also have long-term preferences. For example, a user who is a fan of Raptors (a basketball team) may have read many basketball news about this team consistently in the past. These long-term preferences are stable and may evolve over a long period of time, possibly due to the change in the user's personality or habits or the outside environment. Besides being long or short-term, reader preferences show sequential dependencies. For example, a news reader reads about 'COVID-19 emergency' at time t1, then his next action may be reading about 'COVID-19 recoveries' at t2, followed by 'Stock markets after pandemic' at t3. In this scenario, each of the reader's next actions sequentially depends on the prior ones.",
+            "cite_spans": [
+                {
+                    "start": 172,
+                    "end": 175,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 246,
+                    "end": 250,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 590,
+                    "end": 594,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                }
+            ],
+            "ref_spans": [],
+            "section": "INTRODUCTION"
+        },
+        {
+            "text": "The news recommender systems (NRS) are developed to relieve the information overload problem and suggest news items that the readers might be interested in. The traditional NRS may fail to capture the temporal dynamics (the phenomenon in which a user's preferences drift over time) in readers' preferences. Since these systems typically provide the recommendation according to the reader's full reading history, they may lose focus on the short-term preferences. Also, these systems often emphasize on high prediction accuracy. As a result, they are typically evaluated using accuracy metrics such as RMSE (root mean square error). High accuracy in a recommender system is generally associated with high personalization [9] , which is no doubt important. However, in an NRS, matching everything according to readers' preferences may have adverse effects. A news reader may only be exposed to the content that conforms to his existing preferences as a consequence. This will create an echo-chamber [9] around the user where he gets all the information echoing what he already thinks. At the society level, this will create a filter bubble around the like-minded news readers and they tend to isolate themselves from different viewpoints and perspectives [9] . For example, the readers in a filter bubble might only get news items that are aligned with their political beliefs, not the ones that contradict with them. Adding diversity can solve this problem to a certain degree.",
+            "cite_spans": [
+                {
+                    "start": 720,
+                    "end": 723,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 997,
+                    "end": 1000,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 1253,
+                    "end": 1256,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                }
+            ],
+            "ref_spans": [],
+            "section": "INTRODUCTION"
+        },
+        {
+            "text": "There always exists a trade-off between the accuracy and the diversity. Currently in the literature, the NRS could go beyond accuracy by expanding the reader's current list of recommendations to include some diverse or novel items. In this re-ranking process to include diversity, the dynamics in readers' preferences are ignored. To address this issue, we need to include diversity, just like accuracy, in the design phase of an NRS. We also need to have the right balance between the accuracy and the diversity in the NRS.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "INTRODUCTION"
+        },
+        {
+            "text": "A few recent NRS [1, 23] have started to focus on timeliness to address the temporal dynamics issue. However, these models suffer from the data sparsity problem because of the limited reader interactions on the news platform. There are also anonymous or short-term users without any explicit profiling information. These readers may click a few or no news items displayed in a session. A possible solution is to exploit the rich information from items' metadata such as titles [19] . For example, the user representations are learnt from the browsed and matching candidate news titles. However, relying on a single piece of information such as titles may not be enough to learn accurate news and user representations. There are other pieces of information that may be more descriptive (e.g., the text of a news story) or that are better indicators of the reader's short-term or long-term preferences (e.g., topics, categories). Also, these models are accuracycentric (built to improve the recommendation accuracy), without considering diversity in the design of NRS.",
+            "cite_spans": [
+                {
+                    "start": 17,
+                    "end": 20,
+                    "text": "[1,",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 21,
+                    "end": 24,
+                    "text": "23]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 477,
+                    "end": 481,
+                    "text": "[19]",
+                    "ref_id": "BIBREF18"
+                }
+            ],
+            "ref_spans": [],
+            "section": "INTRODUCTION"
+        },
+        {
+            "text": "Motivated by the above line of reasoning, we aim to find solutions that can include the temporal dynamics in an NRS and in the meantime model diversity as a key factor in the design stage. In this PhD research, we have the following long-term goals: (i) temporal dynamics in readers' preferences; (ii) diversity as the key design principle; and (iii) data sparsity problem. Besides these long-term goals, we also have these shortterm objectives: (i) to identify the sequential patterns in the reader's consumption history, along with shortterm and long-term reader preferences, in order to have a more complete view of temporal dynamics; (ii) to exploit the rich side information from the news items to learn more accurate item and user representations; and (iii) to include diversity in the design and optimization phase of the recommendation model.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "INTRODUCTION"
+        },
+        {
+            "text": "The rest of the paper is organized as follows: Section 2 is about the related work. Section 3 discusses about our proposed approach. Section 4 briefly summarizes some of the results we have obtained so far. Finally, Section 5 gives the conclusion and briefly discusses the future work.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "INTRODUCTION"
+        },
+        {
+            "text": "Temporal dynamics in recommender systems refer to the concept of accurately capturing user preferences over time. The earlier model uses simple time-decay functions [6] . It favours users' short-term preferences, and the older data is often discarded. To determine the long-term preferences, the full user history is needed. This can be accomplished by models such as timeSVD++ [11] , in which the timeline of the user's preferences is split into static time bins. This model favours users' long-term preferences. There is another model [20] that combines both the long-term and short-term user preferences, however, time-decay is not considered in terms of item popularity and drifting user interests. There are also the graph-based methods, where users, items and the time factors are included as nodes, thus making a tri-partite graph [21] . An issue with graphbased models is that they rely heavily on content-based features that are not always available to the system and could be quite costly to collect. The temporal models listed above are for general recommender systems.",
+            "cite_spans": [
+                {
+                    "start": 165,
+                    "end": 168,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 378,
+                    "end": 382,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 537,
+                    "end": 541,
+                    "text": "[20]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 838,
+                    "end": 842,
+                    "text": "[21]",
+                    "ref_id": "BIBREF20"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Temporal dynamics"
+        },
+        {
+            "text": "There is limited work on NRS that addresses the temporal dynamics issues. CLEF NewsREEL [12] offered a campaign-style evaluation lab where the goal was to make news recommendation that must respond to a request within a given time frame (100ms). It emphasizes on the timeliness of the news recommendation. However, it is not capturing the dynamics part in readers' preferences. A general limitation of these traditional methods is that they all rely on hand-crafted feature engineering to model users' preferences and they treat time as the static feature of user preferences.",
+            "cite_spans": [
+                {
+                    "start": 88,
+                    "end": 92,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Temporal dynamics"
+        },
+        {
+            "text": "The above-mentioned methods do not consider the sequential dependencies among the user interactions. A sequential recommendation task takes into account users' short-term interests with all interactions happening within a close proximity of time (i.e., in a session). Thus, news reading activity can be considered as a sequential task. The Markov model is a well-known sequence modeling technique, which has been used in NRS [3] . The Markov model represents sequential data as a stochastic process over discreate random states (variables) where every state depends on the previous state. A limitation of this model is that when including higher states, the computational complexity of the model is drastically increased. Another sequential modeling approach used in NRS is the Reinforcement Learning (RL) model with actions and rewards [23] , where the model dynamically adapts recommendations to future rewards. This model also suffers from the computational complexity problem brought by the growing states. Due to the importance of the sequential modeling to a recommender system, reducing complexity of these models is an ongoing research topic.",
+            "cite_spans": [
+                {
+                    "start": 425,
+                    "end": 428,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 837,
+                    "end": 841,
+                    "text": "[23]",
+                    "ref_id": "BIBREF22"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Temporal dynamics"
+        },
+        {
+            "text": "The Recurrent Neural Network (RNN) and its variants Long short-term memory (LSTM) and Gated recurrent unit (GRU) are well-known models to handle the sequential patterns in user behaviors for the session-based recommendation tasks. RNNs are used in a few NRS to learn user representations (patterns in a user's browsing history) [1, 16, 22] . These methods have hidden states unlike Markov and RL methods, they are faster and they are more robust. On top of temporal factors, it is also possible to include other feasible contextual factors as the intermediary layers in an RNN model. This is yet to be explored, but it could be useful in an NRS with news and user related side information used as contextual factors.",
+            "cite_spans": [
+                {
+                    "start": 328,
+                    "end": 331,
+                    "text": "[1,",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 332,
+                    "end": 335,
+                    "text": "16,",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 336,
+                    "end": 339,
+                    "text": "22]",
+                    "ref_id": "BIBREF21"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Temporal dynamics"
+        },
+        {
+            "text": "Lately, the transformer-based methods [18] that use attention mechanisms are being widely adopted for sequence-to-sequence (Seq2Seq) tasks. The well-known Bidirectional Encoder Representations from Transformers (BERT) could extract the sequential relations from the text (sentences). However, this is not equivalent to including the time-ordered user interactions in the model. Attempts have been made to apply BERT on a recommender system as the downstream task [17] . In this model [17] , a sequence of readers' interactions that are chronologically ordered are being created to feed into the transformer model to make recommendations. These models do not have a separate user model, which could be essential for temporal dynamics. There is also no consideration of the explicit user or item side information.",
+            "cite_spans": [
+                {
+                    "start": 38,
+                    "end": 42,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 463,
+                    "end": 467,
+                    "text": "[17]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 484,
+                    "end": 488,
+                    "text": "[17]",
+                    "ref_id": "BIBREF16"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Temporal dynamics"
+        },
+        {
+            "text": "Recommendation is a two-step process, i.e., the rating prediction and the top-N item recommendation based on predicted ratings. Diversity is usually incorporated into the second step as re-ranking of recommendations. Re-ranking is an expensive process since recommendations are made for each user independently. There is very limited work that considers the diversity in the design phase of the recommendation models. For example, the variance-minimization penalty is used in a diversity-oriented recommender system [8] to reduce the bias in the predicted ratings towards particular item groups. In another recommender system [2] , the minimum-cost network flow with subgraphs is used to include diversity in the recommendation process. An issue with these models is that they are good for small-scaled synthetic data and may suffer from data sparsity problem when dealing with the high-dimensional news datasets. There is also limited work in DL-based recommenders [23] that considers diversity. However, when we ran these models, we observe that the output from these DL models are quite similar (not diverse) at different time steps when the training samples at each time step are the same.",
+            "cite_spans": [
+                {
+                    "start": 516,
+                    "end": 519,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 626,
+                    "end": 629,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 966,
+                    "end": 970,
+                    "text": "[23]",
+                    "ref_id": "BIBREF22"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Diversity"
+        },
+        {
+            "text": "The recommender systems mostly adopt the Tikhonov regularization in the learning algorithm to achieve accuracy in approximate solutions [11] . The literature shows that Tikhonov regularization with 2 -norm (or penalty) is a desirable approach when we aim for high prediction accuracy [7] . However, it is not optimal for achieving diversity. There are other diversity-promoting regularization terms, but this is rather an unexplored area in the state-of-the-art.",
+            "cite_spans": [
+                {
+                    "start": 136,
+                    "end": 140,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 284,
+                    "end": 287,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Diversity"
+        },
+        {
+            "text": "We have identified the research gaps in the previous section. In this section, we define our research directions and briefly explain how we address these issues in our dissertation work. First, we conduct an in-depth study of the NRS and then we put more focus on the special features of news domain as discussed below.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "PROPOSED APPROACH"
+        },
+        {
+            "text": "We aim to propose novel mechanisms to address the temporal dynamics issue in an NRS by exploring news readers' long-term, short-term and sequential reading preferences. Based on our extensive literature review, we find that the temporal dynamics in user behavior is not just a time-dependent activity but there are many other factors that influence it. The side information associated with either users or items plays a crucial role in this regard. The title, text body, category, subcategory, topics are all useful for representing news. Different type of side information contains different level of details, e.g., the full text of a news story is more descriptive than the title alone. We also find that news articles accessed by a reader during different time windows convey different types of information regarding his reading patterns. For example, if we analyze the full interaction history of a news reader, we may find the general likings of the reader on news such as Sports, Politics, Entertainment. If we analyze the interaction history in a session, we may find different sets of topics or words that reflect his sequential and short-term interests.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Temporal dynamics in NRS"
+        },
+        {
+            "text": "We plan to perform this part of the work using two types of algorithms: first using a computationally less expensive and more interpretable approach such as matrix factorization (MF) [15] , and then using more powerful and robust DL approaches for sequential modeling, such as RNNs (LSTM and GRU), attentionmechanisms. The goal is to test the efficacy of using different algorithms under a certain experimental setup. We also adopt a time-aware evaluation strategy. This includes a time-series analysis on the data (before the experiments) and the time-based split of the data for the train and test sets (after tuning all hyper-parameters).",
+            "cite_spans": [
+                {
+                    "start": 183,
+                    "end": 187,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Temporal dynamics in NRS"
+        },
+        {
+            "text": "Based on our time-series analysis, we find that different temporal resolutions when being added as the side information with the full timestamp of the user's rating help us differentiate the long-lasting reader preferences from the transient ones. The coarser-level time units (year, month, day) reflect a reader's longterm preference, whereas the finer-grained time units (hour, minute, second) help us understand the reader's short-term preferences. We also find that if we simply look at the user ratings on individual news items, it might not be easy to get a clear view of their general interests. If we link these ratings to the side information of the news items such as sources, topics, or categories, it would be easier to identify the pattern. The longterm user interests can be utilized to identify the type (category) of news that users are interested in, and then the short-term interests help the NRS filter specific news items for a reader at that time. This part of the work is implemented using MF methods.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Temporal dynamics in NRS"
+        },
+        {
+            "text": "During our experiments, we have made two observations. First, explicit user feedback is scarce, and second, it is difficult to differentiate the positive implicit feedback signals (e.g., clicks, scrolls, time spent) from the negative ones. To solve the sparse explicit feedback problem, we may consider the implicit signals, where we treat everything a reader interacts with as a positive feedback and everything a reader does not interact with as a negative feedback. The assumption is that an interaction is an indicator that the user likes the news item. However, some of the interactions in the implicit feedback could be the result of the reader's boredom, random clicks or idle time. Also, some of the non-interactions could be the result of the reader's unawareness of those news items. Although currently we take a simplified approach, treating all interactions as positive implicit feedbacks, we still explore other options to better deal with this issue.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Temporal dynamics in NRS"
+        },
+        {
+            "text": "In order to train our model, we need the negative samples besides the positive samples for the implicit reader feedback. For that, we randomly generate sample news items from the same session which are not clicked by this reader [10] . We implement a DL-based model where we learn both the readers' long-term and short-term preferences. We learn readers' long-term preferences using their whole consumption history. In order to learn the readers' short-term preferences, we consider their recently browsed history through the RNN models. We also consider the rich side information from the news items to learn news representations. We make use of attention mechanism [18] to learn useful information from both the news and readers' representations.",
+            "cite_spans": [
+                {
+                    "start": 229,
+                    "end": 233,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 667,
+                    "end": 671,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Temporal dynamics in NRS"
+        },
+        {
+            "text": "In our work, we include both the accuracy and the diversity in the optimization phase. We again adopt two different algorithms here: the computationally inexpensive and linear approach using the latent factor model and the DL-based approach. By default, a recommender system is built to reduce the sum of squared errors in the known ratings and the predicted ratings. The Tikhonov regularization with 2 -norm (Ridge regression) is considered as de-facto regularization in this regard. It gives us the approximate solution to produce a lower (not exactly zero) mean squared error in predictions. However, we may utilize other forms of regularizations such as 1 -norm that chooses the highly correlated features from the data and gives more absolute solutions (close to zero). In this way, we sacrifice some level of accuracy at the cost of diversity. We can also control the relative balance and the intensity of these regularizations to get a trade-off. Although the usage of these regularizations is not novel, no previous work has applied both regularization terms to address the accuracy and diversity in a unified optimization framework. In our latent factor model, we test different form of regularization terms from the Ridge, Lasso and Elastic-net regressions. The goal is to include both the accuracy term and the diversity term in our model. In our work, we also use the reweighted optimization algorithms to optimize the model on different form of penalties (l\uf061-norm) from these regularizations.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Diversity in NRS"
+        },
+        {
+            "text": "In our DL-based approach, our work is motivated by the observation that reader interests in a news domain are quite volatile and diverse and are triggered by specific contexts and temporal factors. Some of reader interests may last for a longer time and are quite constant for the same user. However, if we check the reader preference in a session, we may find that it could be changing quite abruptly. Based on this observation, we use RNN models to reflect diversity in the short-term preference model.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Diversity in NRS"
+        },
+        {
+            "text": "Normally, the machine learning models are evaluated using RMSE to check for the prediction accuracy. However, in a recommender system, we also need to see if the user is getting the relevant (good) recommendations. So, we need to evaluate our models using other measures such as precision @k (the proportion of the top k results that are relevant) and recall @k (the proportion of all relevant results included in the top k). We also take the F1-score @k (harmonic mean of both) as one metric. We take RMSE, precision, recall and F1-score as our accuracy metrics.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Multi-criteria evaluation"
+        },
+        {
+            "text": "Since diversity is a key principle in our design, we also need to evaluate our model on diversity and novelty. In our work, we take both (diversity and novelty) as our diversity metrics. We compute the diversity as the average dissimilarity of all pairs of items in a user's recommended list. We compute the novelty as the ratio of how many recommended items are unknown to a user.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Multi-criteria evaluation"
+        },
+        {
+            "text": "Recommendations high on accuracy metrics are more biased towards popular items or items that are rated extensively by users. The diverse recommendations, on the other hand, are less biased towards popular items and less aligned with users' preferences. Both diversity and novelty trade off recommendation accuracy but the difference between these two is that the former recommends less biased items from the seen list of recommended items, whereas the latter makes recommendations from the unseen items. Since our primary goal is to include both diversity and accuracy in a unified optimization framework, we define a composite metric to measure the trade-off between these measures, which is the weighted sum of the F1-score and the combined diversity scores (mean of diversity and novelty).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Multi-criteria evaluation"
+        },
+        {
+            "text": "In this section, we briefly describe our models first and then we summarize the results we have obtained so far for the research goals described above.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "PRELIMINARY RESULTS"
+        },
+        {
+            "text": "In our MF model [15] , we consider the reader's time of rating and the taxonomy (category-subcategory) of news items as the baseline predictors. A baseline predictor represents the effects associated with the biases (effect of one entity on the other) without involving user-item interactions [11] . The goal of this model is to predict the ratings of a news reader for the unrated news items and to make recommendations based on predicted ratings. We consider different combinations of time-varying factors to integrate the temporal dynamics. In that, we first include the main timestamp associated with the reader's rating as the baseline predictor, and then we supplement the varying time unit (year, month, day, hour, minute, second) along with the whole timestamp. The point is to capture either the rapidly changing effects (through fine-grained timing information as biases) or the steady temporal effects (through coarser time units as biases) in readers' behavior. We also add the category and the subcategory information in the baseline predictors. The category information is item-related, and it also reflects a news reader's long-term preferences. In this model, the timestamp of rating, the time units, the category and the subcategory are considered as side information.",
+            "cite_spans": [
+                {
+                    "start": 16,
+                    "end": 20,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 293,
+                    "end": 297,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                }
+            ],
+            "ref_spans": [],
+            "section": "PRELIMINARY RESULTS"
+        },
+        {
+            "text": "Our second approach to implement temporal dynamics is a DL-based approach. We make use of the Transformer architecture [4] in this model for two prominent tasks: to capture the sequential reading behavior of a news reader and to perform the next click prediction. We build separate reader and news components in our proposed framework. Our reader component consists of two modules: the long-term preference module and the short-term preference module. In the long-term module, we consider the reader's full consumption history. In the short-term module, we apply the LSTMs on the current session in which the reader has interacted with news items. We also learn rich news representations in our news component by including the side information from the headline, category, subcategory and snippet (body) of each news item. We use the attention mechanism [18] to learn important information from each piece of side information in the news component. The news component is then made available for the reader component to learn reader representations.",
+            "cite_spans": [
+                {
+                    "start": 119,
+                    "end": 122,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 854,
+                    "end": 858,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                }
+            ],
+            "ref_spans": [],
+            "section": "PRELIMINARY RESULTS"
+        },
+        {
+            "text": "To include diversity in NRS, we also consider two approaches: a simple latent-factor model and the DLbased approach. We encode the reader information and their past interactions in our latent factor model. The typical latent factor models in the recommender system [11] generally suffer from the scalability issue. Also, these models tend to favor popular items (no diversity). Therefore, we use Generalized Linear Model (GLM) (regression-based methods) to factorize a large user-item rating matrix and include diversity in our model through different regularization terms (other than Tikhonov). GLM is found to be mathematically suitable for larger datasets that uses probabilistic modeling to represent uncertainty in ratings [5] . It also allows us to include rich user-item interactions and regularize the model for both accuracy and diversity.",
+            "cite_spans": [
+                {
+                    "start": 265,
+                    "end": 269,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 728,
+                    "end": 731,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                }
+            ],
+            "ref_spans": [],
+            "section": "PRELIMINARY RESULTS"
+        },
+        {
+            "text": "In our second approach to diversity, we consider the short-term preference model in our DL-based approach. We use the RNNs, specifically, LSTM to learn short-term reader representations from their recent browsing histories. We use the word-level attention in the news component. Since our reader component depends on the news component, the same attention-mechanism is also used by our short-term preference module to learn diverse but important reader representations. We represent the short-term reader representation in the final hidden state of the LSTM network.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "PRELIMINARY RESULTS"
+        },
+        {
+            "text": "The findings from the results of running these models are given below. First, we observe that including the temporal information in all the models gives us better results on prediction accuracy (lower RMSE) and recommendation accuracy (higher F1-score). In our first approach using MF methods, as we continue to include more side information such as categories and subcategories, the prediction accuracy and recommendation results get better, compared to those with partial or no side information. We also find that including more fine-grained timing information as the side information in our MF model further improves the results. In terms of the recommendation results, our MF model outperforms the DL-based baselines for F1-score @10 and 20, i.e., when the k value is small. However, as we increase the value of k, the DL-based recommenders show better accuracy. Typically, in a real recommendation scenario, readers only have the patience to check the first 10 or 20 recommended results. So, our model works better in typical cases. Overall, our MF-based model is simpler, takes much less training time and is comparable to (sometimes even better than) the contemporary computationally complex DL-based recommenders.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "PRELIMINARY RESULTS"
+        },
+        {
+            "text": "In our approach to include diversity as the design principle in the recommendation model, we observe that there is a negative correlation between the accuracy and the diversity of the recommendation results. When we optimize our model for higher accuracy, the diversity drops, and vice versa. We also find that the better prediction accuracy (lower RMSE) of a model does not necessarily guarantee the better recommendation accuracy (higher F1-score). Another observation from our results is that as we include more dataset features to train the model, the accuracy of the model gets better. The same observation can be made in both MF and DL-based approaches. However, the DL-based approach gives us the best results in terms of model accuracy and the recommendation results, because they have higher capacity to easily integrate the side information.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "PRELIMINARY RESULTS"
+        },
+        {
+            "text": "In our latent factor model, we get the best results when we include both the accuracy and the diversity in our NRS. This is also validated by the better trade-off score (composite metric combining accuracy and diversity) of our model compared to others. By including both the accuracy and diversity terms within a single optimization framework, we can get better results than the related baselines such as SLIM model [13] and the state-of-the-art DL-based recommenders. A few baselines might have obtained better diversity scores at some points, but if we look at the overall results, our models provide the right balance.",
+            "cite_spans": [
+                {
+                    "start": 417,
+                    "end": 421,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                }
+            ],
+            "ref_spans": [],
+            "section": "PRELIMINARY RESULTS"
+        },
+        {
+            "text": "In our DL-based approach, we find that when we include both the short-term and long-term user preferences, we get better results compared to the case when we include only one of them. Our results show that the short-term preference module plays an important role in the diversity score of our model. Another observation we get from our results is that the attention mechanism helps us select important words within the context of each news item and its side information. As we increase the number of heads in our model, the results get better, however, with more layers and more heads, the computational performance of the model degrades, and the precision of the results drops.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "PRELIMINARY RESULTS"
+        },
+        {
+            "text": "The results also show that an NRS works better if we consider the implicit reader feedback (i.e., everything that a reader clicks, whether he likes it or not). This is demonstrated by the results when comparing among our own approaches. We could also deal with the data sparsity problem when including implicit feedbacks. The explicit feedback is derived from the readers' comments (sentiment scores) on news items and is used in our MF and latent-factor GLM-based approaches. We consider the implicit feedback in our DL-based approach. A preliminary test on including both the explicit and implicit feedbacks showed us that results with implicit feedbacks are better than those without them. This is because in an NRS, a news reader may still read about a topic or a news story which he has not liked in the past, just for gaining knowledge, getting information, or learning the latest update on an event. Although the implicit feedback may bring some inaccuracy into the model as we discussed earlier, it is kind of aligned with the real-world scenario where people consume different news articles even if they don't like them. Overall, our DL-based model with more side information included in the news component and with the combination of both the long-term and shortterm components in the reader model achieves the best results.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "PRELIMINARY RESULTS"
+        },
+        {
+            "text": "In this paper we present the current status of a dissertation aimed at developing a news recommender system. Among the challenges of the news domain, we aim to address the most pressing ones (temporal dynamics, diversity and the data sparsity) in our work. The goal is to enhance the reader experience through the use of the NRS. We first address the temporal dynamics issue in user preferences. We learn both the long-term and short-term preferences of news readers. We also learn the sequential patterns from the reader's consumption history. Next, we include the diversity as the key design principle in the NRS. We propose to include different forms of regularization terms during the optimization phase to trade off accuracy with diversity. We find that it is important to retain the accuracy with the requisite level of diversity. For both the temporal dynamics and the diversity in the NRS, we adopt two different approaches: computationally simple, interpretable and linear models, and the DL-based model. We also evaluate our system using different criteria to check the results of our models from different perspectives.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "CONCLUSION"
+        },
+        {
+            "text": "Although we have conducted a preliminary test on our models and some of the results are validated through publication, we believe that we need more research to explore further. Specifically, we would like to know whether and how we should have more detailed considerations (e.g., a threshold for the level of accuracy and diversity) to address the accuracy-diversity dilemma in an NRS. We would like to investigate more on how to include diversity in the design of the recommendation model in our DL-based approach. We need to explore more on the issue of missing and negative implicit feedbacks. We also want our NRS to be a democratic recommender. For that, we need to consider other aspects such as assimilating bias, neutralizing polarization, or breaking filter bubbles. We also need to study various post-algorithmic effects from news recommenders on reader's behavior.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "CONCLUSION"
+        },
+        {
+            "text": "Special thanks to my advisor Dr. Chen Ding for her valuable support and guidance.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "ACKNOWLEDGEMENT"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Neural News Recommendation with Long-and Short-term User Representations",
+            "authors": [
+                {
+                    "first": "Mingxiao",
+                    "middle": [],
+                    "last": "An",
+                    "suffix": ""
+                },
+                {
+                    "first": "Fangzhao",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Chuhan",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Kun",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Zheng",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Xing",
+                    "middle": [],
+                    "last": "Xie",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics",
+            "volume": "",
+            "issn": "",
+            "pages": "336--345",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Post Processing Recommender Systems for Diversity",
+            "authors": [
+                {
+                    "first": "Arda",
+                    "middle": [],
+                    "last": "Antikacioglu",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Ravi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Proceedings of the 23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining -KDD '17",
+            "volume": "",
+            "issn": "",
+            "pages": "707--716",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "You Should Read This! Let Me Explain You Why: Explaining News Recommendations to Users",
+            "authors": [
+                {
+                    "first": "Roi",
+                    "middle": [],
+                    "last": "Blanco",
+                    "suffix": ""
+                },
+                {
+                    "first": "Diego",
+                    "middle": [],
+                    "last": "Ceccarelli",
+                    "suffix": ""
+                },
+                {
+                    "first": "Claudio",
+                    "middle": [],
+                    "last": "Lucchese",
+                    "suffix": ""
+                },
+                {
+                    "first": "Raffaele",
+                    "middle": [],
+                    "last": "Perego",
+                    "suffix": ""
+                },
+                {
+                    "first": "Fabrizio",
+                    "middle": [],
+                    "last": "Silvestri",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Proceedings of the 21st ACM International Conference on Information and Knowledge Management (CIKM '12)",
+            "volume": "",
+            "issn": "",
+            "pages": "1995--1999",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Behavior sequence transformer for e-commerce recommendation in Alibaba",
+            "authors": [
+                {
+                    "first": "Qiwei",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Huan",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Wei",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Pipei",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Wenwu",
+                    "middle": [],
+                    "last": "Ou",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Proceedings of the 1st International Workshop on Deep Learning Practice for High-Dimensional Sparse Data",
+            "volume": "",
+            "issn": "",
+            "pages": "1--4",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Collaborative filtering with interlaced generalized linear models",
+            "authors": [
+                {
+                    "first": "Nicolas",
+                    "middle": [],
+                    "last": "Delannay",
+                    "suffix": ""
+                },
+                {
+                    "first": "Michel",
+                    "middle": [],
+                    "last": "Verleysen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Neurocomputing",
+            "volume": "71",
+            "issn": "",
+            "pages": "1300--1310",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Time weight collaborative filtering",
+            "authors": [
+                {
+                    "first": "Yi",
+                    "middle": [],
+                    "last": "Ding",
+                    "suffix": ""
+                },
+                {
+                    "first": "Xue",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Proceedings of the 14th ACM international conference on Information and knowledge management -CIKM '05",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Regularization Paths for Generalized Linear Models via Coordinate Descent",
+            "authors": [
+                {
+                    "first": "Jerome",
+                    "middle": [],
+                    "last": "Friedman",
+                    "suffix": ""
+                },
+                {
+                    "first": "Trevor",
+                    "middle": [],
+                    "last": "Hastie",
+                    "suffix": ""
+                },
+                {
+                    "first": "Robert",
+                    "middle": [],
+                    "last": "Tibshirani",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "J. Stat. Soft",
+            "volume": "33",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "DiABlO: Optimization based design for improving diversity in recommender system",
+            "authors": [
+                {
+                    "first": "Anupriya",
+                    "middle": [],
+                    "last": "Gogna",
+                    "suffix": ""
+                },
+                {
+                    "first": "Angshul",
+                    "middle": [],
+                    "last": "Majumdar",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Information Sciences",
+            "volume": "378",
+            "issn": "",
+            "pages": "59--74",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "On the Democratic Role of News Recommenders",
+            "authors": [
+                {
+                    "first": "Natali",
+                    "middle": [],
+                    "last": "Helberger",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Digital Journalism",
+            "volume": "0",
+            "issn": "0",
+            "pages": "1--20",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Learning deep structured semantic models for web search using clickthrough data",
+            "authors": [
+                {
+                    "first": "Po-Sen",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Xiaodong",
+                    "middle": [],
+                    "last": "He",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jianfeng",
+                    "middle": [],
+                    "last": "Gao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Li",
+                    "middle": [],
+                    "last": "Deng",
+                    "suffix": ""
+                },
+                {
+                    "first": "Alex",
+                    "middle": [],
+                    "last": "Acero",
+                    "suffix": ""
+                },
+                {
+                    "first": "Larry",
+                    "middle": [],
+                    "last": "Heck",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Proceedings of the 22nd ACM international conference on Conference on information & knowledge management -CIKM '13",
+            "volume": "",
+            "issn": "",
+            "pages": "2333--2338",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Collaborative filtering with temporal dynamics",
+            "authors": [
+                {
+                    "first": "Yehuda",
+                    "middle": [],
+                    "last": "Koren",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Proceedings of the 15th ACM SIGKDD international conference on Knowledge discovery and data mining -KDD '09",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "NewsREEL Overview: A Stream-Based Recommender Task for Evaluation and Education",
+            "authors": [
+                {
+                    "first": "Andreas",
+                    "middle": [],
+                    "last": "Lommatzsch",
+                    "suffix": ""
+                },
+                {
+                    "first": "Benjamin",
+                    "middle": [],
+                    "last": "Kille",
+                    "suffix": ""
+                },
+                {
+                    "first": "Frank",
+                    "middle": [],
+                    "last": "Hopfgartner",
+                    "suffix": ""
+                },
+                {
+                    "first": "Martha",
+                    "middle": [],
+                    "last": "Larson",
+                    "suffix": ""
+                },
+                {
+                    "first": "Torben",
+                    "middle": [],
+                    "last": "Brodt",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jonas",
+                    "middle": [],
+                    "last": "Seiler",
+                    "suffix": ""
+                },
+                {
+                    "first": "\u00d6zlem",
+                    "middle": [],
+                    "last": "\u00d6zg\u00f6bek",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Experimental IR Meets Multilinguality, Multimodality, and Interaction",
+            "volume": "",
+            "issn": "",
+            "pages": "239--254",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "SLIM: Sparse Linear Methods for Top-N Recommender Systems",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Ning",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Karypis",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "2011 IEEE 11th International Conference on Data Mining",
+            "volume": "",
+            "issn": "",
+            "pages": "497--506",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Progress in context-aware recommender systems-an overview",
+            "authors": [
+                {
+                    "first": "Shaina",
+                    "middle": [],
+                    "last": "Raza",
+                    "suffix": ""
+                },
+                {
+                    "first": "Chen",
+                    "middle": [],
+                    "last": "Ding",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Computer Science Review",
+            "volume": "31",
+            "issn": "",
+            "pages": "84--97",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "News Recommender System Considering Temporal Dynamics and News Taxonomy",
+            "authors": [
+                {
+                    "first": "Shaina",
+                    "middle": [],
+                    "last": "Raza",
+                    "suffix": ""
+                },
+                {
+                    "first": "Chen",
+                    "middle": [],
+                    "last": "Ding",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Proceedings of the 2019 IEEE International Conference on Big Data",
+            "volume": "",
+            "issn": "",
+            "pages": "920--929",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Multi-Rate Deep Learning for Temporal Recommendation",
+            "authors": [
+                {
+                    "first": "Yang",
+                    "middle": [],
+                    "last": "Song",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ali",
+                    "middle": [
+                        "Mamdouh"
+                    ],
+                    "last": "Elkahky",
+                    "suffix": ""
+                },
+                {
+                    "first": "Xiaodong",
+                    "middle": [],
+                    "last": "He",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Proceedings of the 39th International ACM SIGIR conference on Research and Development in Information Retrieval -SIGIR '16",
+            "volume": "",
+            "issn": "",
+            "pages": "909--912",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "BERT4Rec: Sequential Recommendation with Bidirectional Encoder Representations from Transformer",
+            "authors": [
+                {
+                    "first": "Fei",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jun",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jian",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Changhua",
+                    "middle": [],
+                    "last": "Pei",
+                    "suffix": ""
+                },
+                {
+                    "first": "Xiao",
+                    "middle": [],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "Wenwu",
+                    "middle": [],
+                    "last": "Ou",
+                    "suffix": ""
+                },
+                {
+                    "first": "Peng",
+                    "middle": [],
+                    "last": "Jiang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "arXiv": [
+                    "arXiv:1904.06690"
+                ]
+            }
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Attention is all you need",
+            "authors": [
+                {
+                    "first": "Ashish",
+                    "middle": [],
+                    "last": "Vaswani",
+                    "suffix": ""
+                },
+                {
+                    "first": "Noam",
+                    "middle": [],
+                    "last": "Shazeer",
+                    "suffix": ""
+                },
+                {
+                    "first": "Niki",
+                    "middle": [],
+                    "last": "Parmar",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jakob",
+                    "middle": [],
+                    "last": "Uszkoreit",
+                    "suffix": ""
+                },
+                {
+                    "first": "Llion",
+                    "middle": [],
+                    "last": "Jones",
+                    "suffix": ""
+                },
+                {
+                    "first": "Aidan",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Gomez",
+                    "suffix": ""
+                },
+                {
+                    "first": "Lukasz",
+                    "middle": [],
+                    "last": "Kaiser",
+                    "suffix": ""
+                },
+                {
+                    "first": "Illia",
+                    "middle": [],
+                    "last": "Polosukhin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Advances in neural information processing systems",
+            "volume": "",
+            "issn": "",
+            "pages": "5998--6008",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "DKN: Deep knowledge-aware network for news recommendation",
+            "authors": [
+                {
+                    "first": "Hongwei",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Fuzheng",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Xing",
+                    "middle": [],
+                    "last": "Xie",
+                    "suffix": ""
+                },
+                {
+                    "first": "Minyi",
+                    "middle": [],
+                    "last": "Guo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Proceedings of the 2018 World Wide Web Conference, International World Wide Web Conferences Steering Committee",
+            "volume": "",
+            "issn": "",
+            "pages": "1835--1844",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Feature-Based Matrix Factorization via Long-and Short-Term Interaction",
+            "authors": [
+                {
+                    "first": "Fei",
+                    "middle": [],
+                    "last": "Ye",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jean",
+                    "middle": [],
+                    "last": "Eskenazi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Knowledge Engineering and Management (Advances in Intelligent Systems and Computing)",
+            "volume": "",
+            "issn": "",
+            "pages": "473--484",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Graph-based Point-of-interest Recommendation with Geographical and Temporal Influences",
+            "authors": [
+                {
+                    "first": "Quan",
+                    "middle": [],
+                    "last": "Yuan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Gao",
+                    "middle": [],
+                    "last": "Cong",
+                    "suffix": ""
+                },
+                {
+                    "first": "Aixin",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Proceedings of the 23rd ACM International Conference on Conference on Information and Knowledge Management -CIKM '14",
+            "volume": "",
+            "issn": "",
+            "pages": "659--668",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Dynamic attention-integrated neural network for session-based news recommendation",
+            "authors": [
+                {
+                    "first": "Lemei",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Peng",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jon",
+                    "middle": [
+                        "Atle"
+                    ],
+                    "last": "Gulla",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Mach Learn",
+            "volume": "108",
+            "issn": "",
+            "pages": "1851--1875",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "DRN: A deep reinforcement learning framework for news recommendation",
+            "authors": [
+                {
+                    "first": "Guanjie",
+                    "middle": [],
+                    "last": "Zheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "Fuzheng",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Zihan",
+                    "middle": [],
+                    "last": "Zheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "Yang",
+                    "middle": [],
+                    "last": "Xiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Nicholas",
+                    "middle": [
+                        "Jing"
+                    ],
+                    "last": "Yuan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Xing",
+                    "middle": [],
+                    "last": "Xie",
+                    "suffix": ""
+                },
+                {
+                    "first": "Zhenhui",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Proceedings of the 2018 World Wide Web Conference, International World Wide Web Conferences Steering Committee",
+            "volume": "",
+            "issn": "",
+            "pages": "167--176",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {},
+    "back_matter": []
+}

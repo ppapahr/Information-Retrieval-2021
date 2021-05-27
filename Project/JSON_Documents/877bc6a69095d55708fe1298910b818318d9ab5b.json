@@ -1,0 +1,1355 @@
+{
+    "paper_id": "877bc6a69095d55708fe1298910b818318d9ab5b",
+    "metadata": {
+        "title": "Energy Performance of a Service Building: Comparison Between EnergyPlus and Revit",
+        "authors": [
+            {
+                "first": "Jo\u00e3o",
+                "middle": [],
+                "last": "Silva",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Minho",
+                    "location": {
+                        "settlement": "Guimar\u00e3es",
+                        "country": "Portugal"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Jos\u00e9",
+                "middle": [],
+                "last": "Br\u00e1s",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Minho",
+                    "location": {
+                        "settlement": "Guimar\u00e3es",
+                        "country": "Portugal"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Ricardo",
+                "middle": [],
+                "last": "Noversa",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Minho",
+                    "location": {
+                        "settlement": "Guimar\u00e3es",
+                        "country": "Portugal"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Nelson",
+                "middle": [],
+                "last": "Rodrigues",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Minho",
+                    "location": {
+                        "settlement": "Guimar\u00e3es",
+                        "country": "Portugal"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Lu\u00eds",
+                "middle": [],
+                "last": "Martins",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Mechanical Engineering and Resource Sustainability Centre (MEtRICs)",
+                    "institution": "University of Minho",
+                    "location": {
+                        "settlement": "Guimar\u00e3es",
+                        "country": "Portugal"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Jos\u00e9",
+                "middle": [],
+                "last": "Teixeira",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Mechanical Engineering and Resource Sustainability Centre (MEtRICs)",
+                    "institution": "University of Minho",
+                    "location": {
+                        "settlement": "Guimar\u00e3es",
+                        "country": "Portugal"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Senhorinha",
+                "middle": [],
+                "last": "Teixeira",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Minho",
+                    "location": {
+                        "settlement": "Guimar\u00e3es",
+                        "country": "Portugal"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Currently, the energy consumption study in buildings is very important, since it is one of the sectors of activity where there is great potential to improve energy efficiency. On the market, there are several simulation software, and the aim of this work consists in conducting a comparison between two dynamic simulation software, EnergyPlus, and Revit, with respect to the results obtained of thermal loads and annual energy consumption of a service building.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "In the simulation using EnergyPlus, an annual energy consumption of 442 MWh was obtained, that compares with 533 MWh when using Revit. Concerning the thermal loads in the sales area of the hypermarket, the simulation results for the thermal loads were the following: 761 kW for heating and 79 kW for cooling, versus 924 kW for heating and 86 kW for cooling when using the EnergyPlus and the Revit software, respectively. This discrepancy between the values obtained could be due to the limited selection of climatic files in Revit as well as the different definitions of the HVAC systems.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "One of the most important energy consumers in the European Union (EU) is the building sector. This sector is responsible for approximately 36% of CO 2 emissions and 40% of the final energy demands [1, 2] . In Portugal, the Building sector is responsible for around 30% of the final energy consumption and Ara\u00fajo et al. [3] reported that 50% of this consumption can be reduced by using energy efficiency measures corresponding to 400 million tons of saved CO 2 emissions. Therefore, buildings may provide an important opportunity to reduce energy consumption and thus to minimize the negative impacts on global warming. Consequently, great challenges to achieve the decarbonization agenda of the EU and make this sector energy efficient are occurring in the building sector.",
+            "cite_spans": [
+                {
+                    "start": 197,
+                    "end": 200,
+                    "text": "[1,",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 201,
+                    "end": 203,
+                    "text": "2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 319,
+                    "end": 322,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "For this purpose, the EU has implemented several Directives since 2002 and more recently the Directive 2010/31/EU on the energy performance of buildings and Directive 2012/27/EU on energy efficiency [2] . These set of Directives are important measures to phase out inefficient buildings. They are the major legislative and policy package in the EU, focusing on existing and new buildings and are usually referred to as the Energy Performance of Buildings Directive. Recently, one indication of these rules is the transformation of existing buildings into nearly zero-energy buildings, to be required by 2050.",
+            "cite_spans": [
+                {
+                    "start": 199,
+                    "end": 202,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Following the regulatory approach, to optimize and develop sustainable design and efficient energy analysis, several novel methods have been used [4] . Computer simulation tools are an effective method to analyze different systems such as manufacturing procedures, construction processes, and energy analysis [5, 6] . Building dynamic simulations play an important role in determining the optimal design variables since the building's response to these new features can be highly sensitive to local climate factors. The major tools in the building energy field are whole-building energy simulation programs that consider key performance indicators such as energy demand and costs [7] . De Boeck et al. [8] provide a recent literature review on improving the energy performance of residential buildings by the following topics: area of application and design variables, objectives and performance measures, type of analysis, solution methodology, software tools, case study location and type of building. There is a recent trend in more papers leading to energy objectives. However, the author recommended some important future research opportunities, based on imperfections of past studies, such as the specific trade-off between winter and summer energy consumptions that should be considered to find suitable energy efficiency solutions. Furthermore, the author highlighted the most applied tools in the literature and EnergyPlus is one of them.",
+            "cite_spans": [
+                {
+                    "start": 146,
+                    "end": 149,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 309,
+                    "end": 312,
+                    "text": "[5,",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 313,
+                    "end": 315,
+                    "text": "6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 680,
+                    "end": 683,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 702,
+                    "end": 705,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Regarding this subject, energy analysis of buildings, some interesting review works present the capabilities, importance, and developments of this type of tool. For instance, \u00d8sterg\u00e5rd et al. [9] reviewed the recent developments in both academia and in the commercial software industry that target challenges in building energy simulation. Based on this review, the authors proposed a simulation framework that facilitates proactive, intelligent and experience-based building simulation. Lopes et al. [10] recently provided an important literature review concerning energy efficiency policies and regulations for buildings, highlighting how the Brazilian labeling program can be improved compared to the Portugal and United States programs. Previously, in 2009, P\u00e9rez-Lombard et al. [11] analyzed the origin and the historic development of energy certification schemes in buildings along with the definition, scope and critical aspects of a building energy certificate. Other interesting works in this area are the works developed by Ara\u00fajo et al. [3] , Abela et al. [12] and Li et al. [13] . The first author analyzed the Portuguese thermal regulation for residential buildings and studied the influence of some parameters considered as important to the energy efficiency of buildings on energy performance and the energy certification rate. Abela et al. [12] , in its turn, investigated if the current calculation methodologies in utilization for the generation of energy performance certification processes in the Mediterranean countries are appropriated. The authors analyzed different national methodologies from Cyprus, Italy, Malta, and Spain on four test case study dwellings. Finally, Li et al. [13] provided a review of the current energy performance certificate situations in the EU and discusses the direction of future improvements.",
+            "cite_spans": [
+                {
+                    "start": 192,
+                    "end": 195,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 501,
+                    "end": 505,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 783,
+                    "end": 787,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 1048,
+                    "end": 1051,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 1067,
+                    "end": 1071,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 1086,
+                    "end": 1090,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 1356,
+                    "end": 1360,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 1704,
+                    "end": 1708,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Shrivastava et al. [14] report a critical literature review of the solar water heating system simulation. This work presents a comparative analysis of popular simulation tools and their architecture from the perspective of TRNSYS. The author stated that this simulation software provided good agreement within error between 5 and 10%. Furthermore, the author recommends the simultaneous analysis of the same system on different programs to avoid bias results. The different programs and recent technology developments in Building Information Modeling (BIM) and Building Energy Modeling (BEM) were reviewed by Farzaneh et al. [15] . Garcia et al. [16] propose a new idea to facilitate the information exchange of BIM and BEM software applications under the support of open standard schemes.",
+            "cite_spans": [
+                {
+                    "start": 19,
+                    "end": 23,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 625,
+                    "end": 629,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 646,
+                    "end": 650,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "In addition to these works, some authors investigated the energy performance and savings in specific applications. Sadeghifam et al. [17] examined the energy saving in building elements and how its interaction in conjunction with effective air quality factors can contribute towards an ultimate energy efficient design. These works were based on a typical house in Malaysia and the building was modeled using Revit software and then imported to EnergyPlus software to evaluate the best option in terms of energy savings.",
+            "cite_spans": [
+                {
+                    "start": 133,
+                    "end": 137,
+                    "text": "[17]",
+                    "ref_id": "BIBREF16"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Herrando et al. [18] established a systematic method to perform and analyze in detail the Energy Performance Certification of 21 Faculty Buildings located at the University of Zaragoza (Spain), according to the transposition of Directive 2010/31/EU. The results provided by this tool have been analyzed in detail to extract as much information as possible about the building's energy performance as well as to identify limitations of the software and propose potential improvements to shorten the difference between real and estimated energy consumption.",
+            "cite_spans": [
+                {
+                    "start": 16,
+                    "end": 20,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Gerrish et al. [19] evaluated the potential for the use of BIM as a tool to support the visualization and management of a building's performance.",
+            "cite_spans": [
+                {
+                    "start": 15,
+                    "end": 19,
+                    "text": "[19]",
+                    "ref_id": "BIBREF18"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Nizam et al. [20] presented a framework to estimate the embodied energy content within the BIM environment. This framework facilitated the incorporation of the embodied energy assessment procedure into an integrated building model for the design process by highlighting major contributors during different phases.",
+            "cite_spans": [
+                {
+                    "start": 13,
+                    "end": 17,
+                    "text": "[20]",
+                    "ref_id": "BIBREF19"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Shiel et al. [21] examined two different buildings and the influence of some parameters within a design stage on the predicted energy usage. However, as the majority of the BIM software programs do not provide the possibility to inform the actions that will improve the building energy performance and how much they will cost, Ruiz et al. [22] applied a new methodology to design the annual energy demand, life-cycle cost, and energy rating of a building.",
+            "cite_spans": [
+                {
+                    "start": 13,
+                    "end": 17,
+                    "text": "[21]",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 339,
+                    "end": 343,
+                    "text": "[22]",
+                    "ref_id": "BIBREF21"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "In this way, the objective of this paper is to study the energy performance in a new service building in Portugal and to perform the same analysis using two different programs to avoid bias results as suggested by Srivastava et al. [14] . This is an important work to provide answers to very specific questions during design of the new building since with building energy simulation tools the energy performance can be evaluated and the influence of some key variables can be analyzed in an easy and fast way. Regarding this is added value, the owners of the service building will be able to see the building energy demand that is a consequence of what is being projected and what will be its cost and energy performance.",
+            "cite_spans": [
+                {
+                    "start": 232,
+                    "end": 236,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The methodology used in this study to analyze the energy consumption in a service building is presented in this chapter. Firstly, the building, its main characteristics, and equipment are described. Then, the procedure used to analyze the energy performance using two different simulation tools is presented.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Case Study"
+        },
+        {
+            "text": "Building. The building is located at S\u00e3o Jo\u00e3o da Madeira, in the district of Aveiro, Portugal. The building, still under construction, will be a hypermarket, consisting of three floors. The first floor, called Floor \u22121, is below ground level. This floor will have a technical space and a parking area. The second floor, identified as Floor 0, will mainly consist of the spaces affected by the commercial/sales area, where customers may access the services authorized by the hypermarket itself. Also, this floor will have technical spaces, warehouses, toilets, a coordination room, and a garage. The third floor, defined as Floor 1, will consist of a training room, a break room, changing rooms, toilets, and technical spaces.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Building Description"
+        },
+        {
+            "text": "The building will have a height of 12 m, presenting the main front oriented to the east, with east-west lighting. Figure 1 shows the orientation of the building and its rotation to the north. Considering that 0\u00ba refers to the north, it appears that the upper front is rotated by 26\u00ba to the northwest.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 114,
+                    "end": 122,
+                    "text": "Figure 1",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Building Description"
+        },
+        {
+            "text": "HVAC Equipment. The air conditioning system will consist of three Rooftop units (heat pumps) inserted in the roof of the building, producing heating and cooling for the sales area. For the remaining climate zones, there are split units. As for the air renewal of the sales space, it will be provided by three rooftop units, through the mixture of fresh air from outside. The ventilation of the remaining spaces with permanent occupation will be ensured through an air handling unit (AHU) with energy recovery flow. Extraction and insufflation units were also accounted for in various areas, such as technical areas, bakery and kitchen, toilets, garage, and car park. Table 1 presents the characteristic of the proposed building's air conditioning system.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 667,
+                    "end": 674,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Building Description"
+        },
+        {
+            "text": "The EnergyPlus is a robust energy simulation software with a high potential for simulation of the building energy consumption under different thermomechanical conditions. This open-source software is approved by the Portuguese Department of Energy and used worldwide. With excellent precision for radiant and convection heat fluxes between indoor and outdoor, HVAC systems performance, heat exchanges with all external surfaces, thermal comfort, natural, artificial and hybrid systems can be modeled through this software. The core of this energy simulation tool is a model of the building that is based on fundamental heat balance principles.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Simulation Study"
+        },
+        {
+            "text": "Regarding the Revit software, this software is essentially used for design and allows to perform some calculations, from structural to energetic analyzes. However, the analytical part of this software is still under development. Regarding the numerical procedure, this software is based on steady state for heating and cooling load calculation of non-residential buildings according to radiant time series calculation method, a simplified method based directly on a heat balance method.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Simulation Study"
+        },
+        {
+            "text": "The next subsections will present each of the needed tasks to perform the energy simulation with both tools.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Simulation Study"
+        },
+        {
+            "text": "3D Model. In order to perform energy simulations, the first step is to define the geometry of the building in question. Regarding the EnergyPlus software, for modeling purposes, the SketchUp software was used, and the final model was modeled through Fig. 2 a) , with the characteristics of the surfaces and thermal zones, the model was exported to OpenStudio plugin that is connected to the EnergyPlus. This is a friendlier and simpler interface than working directly with EnergyPlus software. Concerning the Revit model, the architecture of the building was initially imported from an AutoCAD program file. In this way, it allowed modeling the building with the best possible accuracy. However, an effort was taken in creating a model as close as possible to the one the developed with SketchUp, in order to minimize possible differences between the two software. Figure 2 b) presents the model developed with Revit software.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 250,
+                    "end": 259,
+                    "text": "Fig. 2 a)",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 865,
+                    "end": 873,
+                    "text": "Figure 2",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Simulation Study"
+        },
+        {
+            "text": "Climatic Zone. Climate data is one of the most important parameters in the thermal simulation of buildings. Through the CLIMAS-SCE software, the municipality in question was selected, obtaining information such as geographic coordinates, altitude, climatological statistics, among others. Figure 3 presents an overview of this information.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 289,
+                    "end": 297,
+                    "text": "Figure 3",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "Input Data."
+        },
+        {
+            "text": "The selection of the climate file in Revit is quite different compared to OpenStudio. While in OpenStudio, a \".epw\" file created using the spreadsheet provided by the SCE is imported, in Revit, it is not necessary to proceed with this import, because only the building geographical coordinates are introduced.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Input Data."
+        },
+        {
+            "text": "As expected, Revit does not have a library of climatic files for each location in the world, therefore, the software selects a location that has a climatic file closest to the location of the building coordinates defined. As there is no climatic file referring to S\u00e3o Jo\u00e3o da Madeira in Revit libraries, a climatic file from Porto, which is approximately 35 km away, was used. However, the profiles of the variables that characterize the use of the different thermal zones were defined, such as occupation, use of electrical equipment, lighting, ventilation, thermostats, metabolic rate, fans, among others, since they have different working periods. Correct determination of a profile requires defining its typical behavior on a day, defining the corresponding period (weekly, monthly, or yearly), as well as including possible constraints (holidays). The different periods were all defined individually in both energy programs. The process of schedules definition in Revit is much more restrictive, compared to OpenStudio. While in OpenStudio it is possible to define an opening time for different periods of the week, month and year, in Revit it is only possible to define a time which is constant throughout the year. Since in a hypermarket the rate of equipment operation and occupancy is different on weekends than the rest of the week this is a significative simplification.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Input Data."
+        },
+        {
+            "text": "Constructive Solutions. EnergyPlus supports an online component library to define the properties of the various surfaces, considering the materials and their position in the building envelope. However, the user can customize and create its own constitution of the building elements. In the present work, several materials were created, defining their properties, to obtain the real constitution of all the building's envelope solutions. The constituent materials of walls, ground surfaces, roofs, and glass walls, were defined in terms of roughness, thickness, conductivity, density and specific heat. The procedure was the same as the Revit software. Table 2 presents the main material properties considered in energy simulation for both software. Loads. The loads refer to the internal gains existing in the various thermal zones of the building. These gains are associated with the number of occupants, the power of electrical equipment and lighting. Thus, it is important to define these variables. Table 3 presents the number of occupants, as a function of the thermal zone, as well as the power of electrical and lighting equipment. Other types of loads associated with other areas were accounted for, such as the lighting in the outdoor area, parking lot and warehouses, the consumption of fans present in these areas, as well as the electric consumption of the elevator and escalators. Revit software provided the same capabilities as EnergyPlus and all this information was inserted in the same way.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 652,
+                    "end": 659,
+                    "text": "Table 2",
+                    "ref_id": "TABREF2"
+                },
+                {
+                    "start": 1003,
+                    "end": 1010,
+                    "text": "Table 3",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "Input Data."
+        },
+        {
+            "text": "HVAC System. As for the building's HVAC system, it was necessary to create several systems that met the building's HVAC requirements. In EnergyPlus it is not possible to insert different HVAC systems for the same zone, so the three rooftop units were joined in one to acclimate the sales area. A system illustrated in Fig. 4 , was created in this zone, consisting of a Coil Cooling DX Single Speed and a Coil Heating DX Single Speed, a diffuser, a thermostat and ventilation conditions were defined. Insufflation and exhaust fans were not included because they were accounted for equipment efficiency. The operation of rooftops is controlled according to a thermostat which implements a temperature of air insufflation dependent on the heating or cooling thermal load to ensure a temperature setpoint temperature of 25\u00b0C in summer and 21\u00b0C in winter. In the present case, the air is inflated with a minimum value at 16\u00b0C for summer and a maximum of 33\u00b0C for winter. In the other air-conditioned spaces, identical systems were used, and heat recovery units were included. Regarding Revit modeling, the creation of HVAC systems is not allowed, and it is only possible to select an HVAC system that belongs to the software libraries. Furthermore, it is not possible to change the characteristics of these HVAC systems. In this way, the Package Terminal Heat Pump system was used, which is the most identical system to a Rooftop.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 318,
+                    "end": 324,
+                    "text": "Fig. 4",
+                    "ref_id": "FIGREF3"
+                }
+            ],
+            "section": "Input Data."
+        },
+        {
+            "text": "In this section, the simulation results are presented and discussed. The two subsections concern the results of the energy consumption and thermal loads obtained with the two different simulation tools. Furthermore, an analysis of the differences between the two software is presented. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Results and Discussion"
+        },
+        {
+            "text": "Initially, the annual energy consumptions obtained with the simulation tool are presented and, later, the daily ones. Daily consumptions refer to the two-day energy consumption of the climate file considered to have peak representative environmental conditions of the summer and winter periods. That is two days whose temperatures were the most extreme, in S\u00e3o Jo\u00e3o da Madeira, resulting in the selection of January 21 and August 22. Figure 5 presents the distribution of annual energy consumption, and most of the consumption is due to lighting and air conditioning purposes, representing 66.5% of final consumption. Furthermore, it should be noted that regarding the different zones of the building, the sales area represented, in two typical day days of winter and summer season, energy expenses equivalent to 91% of the general consumption, becoming the most consuming thermal zone of the building.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 434,
+                    "end": 442,
+                    "text": "Figure 5",
+                    "ref_id": "FIGREF4"
+                }
+            ],
+            "section": "EnergyPlus Results"
+        },
+        {
+            "text": "Through the analysis of the EnergyPlus results, the months with the highest electrical consumption are January (%45,000 kWh), July (%42,500 kWh), August (%42,000 kWh) and December (%42,000 kWh). This increase in energy consumption is due to the building's heating and/or cooling needs to maintain the interior temperature and ensure thermal comfort. The obtained results in the simulation regarding the heating and cooling section were increased by 5% since in the simulation linear thermal bridges were not considered.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "EnergyPlus Results"
+        },
+        {
+            "text": "Unlike EnergyPlus in Revit it is only possible to determine the annual energy consumption. With this software, the annual energy consumption of 533.5 MWh was obtained, with the main sector responsible for being the lighting sector (27.7%). Figure 6 presents the annual energy consumption of the building according to the main components.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 240,
+                    "end": 248,
+                    "text": "Figure 6",
+                    "ref_id": "FIGREF5"
+                }
+            ],
+            "section": "Revit Results"
+        },
+        {
+            "text": "Regarding the thermal loads and annual electricity consumption, the results obtained with the two simulation tools are quite different about the annual energy consumption. With EnergyPlus 442 MWh was obtained, while with Revit software 533 MWh was the annual energy consumption prediction. The thermal loads in the sales area of the hypermarket, in the simulation using EnergyPlus, the following maximum thermal loads in the sales area were obtained: 761 kW and 79 kW for heating and cooling, respectively. However, with Revit, 924 kW of heating and 86 kW of cooling were obtained.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Revit Results"
+        },
+        {
+            "text": "This discrepancy is expected since Revit is not a software whose main functionality is the dynamic simulation, unlike EnergyPlus, but a software-oriented for design. The level of complexity of Revit compared with EnergyPlus is lower, which makes difficult to obtain a correct dynamic simulation of the building. The two limitations already pointed of the restriction in the definition of the climate file and the definition of the HVAC system, can difficult the right simulations.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Revit Results"
+        },
+        {
+            "text": "On the market, there are several building energy simulation software and EnergyPlus and Revit programs were selected to analyze the results obtained for thermal loads and annual energy consumption of a service building.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusions"
+        },
+        {
+            "text": "In the simulation using EnergyPlus, the annual energy consumption of 442 MWh was obtained, that compares with a value of 533 MWh when using Revit. Concerning the thermal loads, the simulation using EnergyPlus showed results for heating and cooling 10% lower when compared with the values predicted by the Revit software. This discrepancy between the values is mainly because Revit is very limited in the selection of climatic files and the definition of the HVAC systems.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusions"
+        },
+        {
+            "text": "However, it is important to emphasize in this work, independently of the characteristics of each software, the different options included and the influence on the results, this will be minimized depending on the user experience. This is nevertheless a characteristic of any simulation program. This aspect was noted in the present case study which has a simple air conditioning system and a diversified building, promoting the qualities of the EnergyPlus software. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusions"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "The renewing of energy performance certificates -reaching comparability between decade-apart energy records",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Von Platten",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Holmberg",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Mangold",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Appl. Energy",
+            "volume": "255",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Review of building energy performance certification schemes towards future improvement",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Kubicki",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Guerriero",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Rezgui",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Renew. Sustain. Energy Rev",
+            "volume": "113",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Analysis of some Portuguese thermal regulation parameters",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Ara\u00fajo",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Almeida",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Bragan\u00e7a",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Energy Build",
+            "volume": "58",
+            "issn": "",
+            "pages": "141--150",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Energy efficient design of building: a review",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Pacheco",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Ord\u00f3\u00f1ez",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Mart\u00ednez",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Renew. Sustain. Energy Rev",
+            "volume": "16",
+            "issn": "",
+            "pages": "3559--3573",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "A review of energy simulation tools for the manufacturing sector",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Garwood",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Hughes",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Oates",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Renew. Sustain. Energy Rev",
+            "volume": "81",
+            "issn": "",
+            "pages": "895--911",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Building information modelling based building energy modelling: a review",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Gao",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Koch",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Appl. Energy",
+            "volume": "238",
+            "issn": "",
+            "pages": "320--343",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Optimization of passive solar design strategies: a review",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Stevanovi\u0107",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Renew. Sustain. Energy Rev",
+            "volume": "25",
+            "issn": "",
+            "pages": "177--196",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Improving the energy performance of residential buildings: a literature review",
+            "authors": [
+                {
+                    "first": "De",
+                    "middle": [],
+                    "last": "Boeck",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Verbeke",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Audenaert",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "De Mesmaeker",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Renew. Sustain. Energy Rev",
+            "volume": "52",
+            "issn": "",
+            "pages": "960--975",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Building simulations supporting decision making in early design -a review",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "\u00d8sterg\u00e5rd",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Jensen",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Maagaard",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Renew. Sustain. Energy Rev",
+            "volume": "61",
+            "issn": "",
+            "pages": "187--201",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Energy efficiency labeling program for buildings in Brazil compared to the United States' and Portugal's",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "C P"
+                    ],
+                    "last": "Lopes",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Oliveira Filho",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Altoe",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Renew. Sustain. Energy Rev",
+            "volume": "66",
+            "issn": "",
+            "pages": "207--219",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "A review of benchmarking, rating and labelling concepts within the framework of building energy certification schemes",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "P\u00e9rez-Lombard",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Ortiz",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Gonz\u00e1lez",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Maestre",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Energy Build",
+            "volume": "41",
+            "issn": "",
+            "pages": "272--278",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "An investigation of the appropriateness of current methodologies for energy certification of mediterranean housing",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Abela",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Hoxley",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Mcgrath",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Goodhew",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Energy Build",
+            "volume": "130",
+            "issn": "",
+            "pages": "210--218",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Review of building energy performance certification schemes towards future improvement",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Kubicki",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Guerriero",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Rezgui",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Renew. Sustain. Energy Rev",
+            "volume": "113",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Modeling and simulation of solar water heater: a TRNSYS perspective",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Shrivastava",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Kumar",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Untawale",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Renew. Sustain. Energy Rev",
+            "volume": "67",
+            "issn": "",
+            "pages": "126--143",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Review of using building information modeling for building energy modeling during the design process",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Farzaneh",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Monfet",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Forgues",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "J. Build. Eng",
+            "volume": "23",
+            "issn": "",
+            "pages": "127--135",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Interoperability from building design to building energy modeling",
+            "authors": [
+                {
+                    "first": "Guzm\u00e1n",
+                    "middle": [],
+                    "last": "Garcia",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Zhu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "J. Build. Eng",
+            "volume": "1",
+            "issn": "",
+            "pages": "33--41",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Combined use of design of experiment and dynamic building simulation in assessment of energy efficiency in tropical residential buildings",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Sadeghifam",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Zahraee",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Meynagh",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Kiani",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Energy Build",
+            "volume": "86",
+            "issn": "",
+            "pages": "525--533",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Energy performance certification of faculty buildings in spain: the gap between estimated and real energy consumption",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Herrando",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Cambra",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Navarro",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Energy Convers. Manag",
+            "volume": "125",
+            "issn": "",
+            "pages": "141--153",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "BIM application to building energy performance visualisation and management: challenges and potential",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Gerrish",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Ruikar",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Cook",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Energy Build",
+            "volume": "144",
+            "issn": "",
+            "pages": "218--228",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "A BIM based tool for assessing embodied energy for buildings",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Nizam",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Tian",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Energy Build",
+            "volume": "170",
+            "issn": "",
+            "pages": "1--14",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.enbuild.2018.03.067"
+                ]
+            }
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Parametric analysis of design stage building energy performance simulation models",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Shiel",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Tarantino",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Fischer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Energy Build",
+            "volume": "172",
+            "issn": "",
+            "pages": "78--93",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "An integrated optimisation method for residential building design: a case",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Aparicio Ruiz",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Guadix Mart\u00edn",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Salmer\u00f3n Liss\u00e9n",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "S\u00e1nchez De La Flor",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Spain. Energy Build",
+            "volume": "80",
+            "issn": "",
+            "pages": "158--168",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Illustration of the building orientation plan.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "Exterior view of the 3D building: a) EnergyPlus model and b) Revit model. Thermal Zones. The building is open every day of the week from 9 am to 8 pm.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "Climas",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "Sales area climate control system at EnergyPlus. Energy Performance of a Service Building",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "Distribution of annual energy consumption as a percentage in EnergyPlus.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": "Distribution of annual energy consumption as a percentage in Revit.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "Characteristic of the building's air conditioning system. blocks, resulting in the definition of thirty-six spaces of which sixteen are defined as thermal zones. After the definition of the 3D model, represented in",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "Loads defined in the energy simulation programs.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "Material properties of the envelope surface.",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "Acknowledgments. The authors would like to express their gratitude for the support given by FCT within the R&D Units Project Scope UIDB/00319/2020 (ALGORITMI) and R&D Units Project Scope UIDP/04077/2020 (MEtRICs).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "acknowledgement"
+        }
+    ]
+}
