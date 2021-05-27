@@ -21,7 +21,7 @@ public class MainWindow {
 		//this.homeScreen = new HomeScreen();
 		//JPanel homeScreenPanel = homeScreen.getScreen();
 		
-		this.resultsScreen = new ResultScreen();
+		this.resultsScreen = new ResultsScreen();
 		JPanel resultsScreenPanel = resultsScreen.getScreen();
 
 		JScrollPane resultsPanel = new JScrollPane(resultsScreenPanel);

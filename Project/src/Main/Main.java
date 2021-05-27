@@ -8,10 +8,9 @@ import java.io.IOException;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
-import controller.MainWindowController;
-import model.Indexer;
-import model.TextFileFilter;
-import view.MainWindow;
+import Command.MainWindowCommander;
+import Model.FileIndexer;
+import View.MainWindow;
 
 public class Main {
 	
