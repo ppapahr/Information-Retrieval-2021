@@ -89,6 +89,7 @@ public class ResultsScreen extends Screen {
 		group.add(body);
 		group.add(all);
 		
+		/*/
 		Button logoButton = new LogoButton(140, 56);
 		JButton logoJButton = logoButton.getButton();
 		logoJButton.addActionListener(new ActionListener() {
@@ -101,7 +102,7 @@ public class ResultsScreen extends Screen {
 				
 			}
 		});
-		
+		/*/
 		SearchBar searchBar = new SearchBar(40);
 		searchBar.setSize(40, 30);
 		JTextField searchBarTextField = searchBar.getSearchBar();
@@ -123,7 +124,8 @@ public class ResultsScreen extends Screen {
 			}
 		});
 
-		createTopPanelLayout(logoJButton, searchBarTextField, searchJButton, title, body, all);
+		//createTopPanelLayout(logoJButton, searchBarTextField, searchJButton, title, body, all);
+		createTopPanelLayout(searchBarTextField, searchJButton, title, body, all);
 		
 		topPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
 	}
