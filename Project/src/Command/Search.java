@@ -17,7 +17,7 @@ public class Search implements ActionListener {
 	private String query;
 	private String field;
 	
-	private static final String indexDirectoryPath = System.getProperty("user.dir") + File.separator + "Index";
+	private static final String indexDirectoryPath = System.getProperty("user.dir") + File.separator + "dir";
 	
 	public void update(String field, String query) {
 		this.field = field;
