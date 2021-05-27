@@ -125,7 +125,7 @@ public class ResultsScreen extends Screen {
 		});
 
 		//createTopPanelLayout(logoJButton, searchBarTextField, searchJButton, title, body, all);
-		createTopPanelLayout(searchBarTextField, searchJButton, title, body, all);
+		createTopPanelLayout(searchBarTextField, searchJButton, authors, abstractB, title, body, all);
 		
 		topPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
 	}
@@ -158,8 +158,10 @@ public class ResultsScreen extends Screen {
 										.addComponent(component[3]))
 								.addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING)
 										.addComponent(component[4]))
-								//.addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING)
-										//.addComponent(component[5]))
+								.addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING)
+										.addComponent(component[5]))
+								.addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING)
+										.addComponent(component[6]))
 						)
 				)
 				.addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING)
@@ -177,7 +179,8 @@ public class ResultsScreen extends Screen {
 			    				.addGroup(layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
 			    						.addComponent(component[3])
 			    						.addComponent(component[4])
-			    						//.addComponent(component[5])
+			    						.addComponent(component[5])
+			    						.addComponent(component[6])
 			    						)
 			    		)
 			    )
