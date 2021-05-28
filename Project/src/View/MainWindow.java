@@ -10,27 +10,21 @@ public class MainWindow {
 
 	private JFrame frame;
 	private JPanel container;
-	//private Screen homeScreen;
-	private Screen resultsScreen;
+	private Screen resultsScreen; //extends screen class
 	
 	public void initialize() {
 		
 		this.container = new JPanel(new CardLayout());
 		this.frame = initializeFrame();
 		
-		//this.homeScreen = new HomeScreen();
-		//JPanel homeScreenPanel = homeScreen.getScreen();
-		
+		//main screen used for the app
 		this.resultsScreen = new ResultsScreen();
 		JPanel resultsScreenPanel = resultsScreen.getScreen();
 
 		JScrollPane resultsPanel = new JScrollPane(resultsScreenPanel);
 		resultsPanel.getVerticalScrollBar().setUnitIncrement(16);
 
-		//this.container.add(homeScreenPanel);
 		this.container.add(resultsPanel);
-		
-		//homeScreen.setContainer(container);
 		resultsScreen.setContainer(container);
 		
 		this.frame.add(this.container);
@@ -41,7 +35,7 @@ public class MainWindow {
 	private JFrame initializeFrame() {
 		
 		JFrame frame = new JFrame("COVID-19 Database Search");
-		frame.setSize(1024, 768);
+		frame.setSize(1024, 768); //classic 4:3 res
 		frame.setLocationRelativeTo(null);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
@@ -49,10 +43,8 @@ public class MainWindow {
 	}
 	
 	public Screen getScreen(String screen) {
-		
+		// only one page is used for the app, in any other case there's something wrong
 		switch (screen) {
-		//case "Home":
-		//	return this.homeScreen;
 		case "Results":
 			return this.resultsScreen;
 		default:

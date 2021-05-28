@@ -354,10 +354,8 @@ public class ResultsScreen extends Screen {
 	}
 	
 	// Creates the <<Previous 1 2 3 Next>> button pane in a JPanel with a BoxLayout
-	// residing 
-	// Each of the above mentioned buttons has its own method implementing it.
+	// Each of the buttons has its own method implementing it
 	// This button pane will be created if the resulting documents are more than 10
-	// (therefore we need a second page).
 	private JPanel createButtonPane(ArrayList<Document> documents, int currentPage) {
 		
 		JPanel buttonPane = new JPanel();
@@ -370,11 +368,12 @@ public class ResultsScreen extends Screen {
 		buttonPane.add(previous);
 		buttonPane.add(Box.createRigidArea(new Dimension(0, 0)));
 
-		// For example, if 11 documents match the query,
-		// we will need 2 pages for displaying them, 11 / 10 (=1) + 1 (=2).
+		
+		// For 9 documents, 9 / 10 (=0 pages) + 1 (=0+1=1 page),
+		// For 15 documents, 15 / 10 (=1 page) + 1 (=1+1=2 pages) etc
 		int numberOfPages = documents.size() / 10 + 1;
 		
-		// For every page, create the corresponding "number button".
+		// For every page, create the corresponding "number button"
 		for (int i = 0; i < numberOfPages; i++) {
 			
 			JButton number = createNumberButton(documents, currentPage, i);
@@ -391,8 +390,7 @@ public class ResultsScreen extends Screen {
 		return buttonPane;
 	}
 	
-	// Creates the "Previous" button.
-	// Upon clicking it calls displayResults for the previous page.
+	//Creates the "Previous" button, when pushed calls displayResults for the previous page
 	private JButton createPreviousButton(ArrayList<Document> documents, int currentPage) {
 		
 		JButton previous = new JButton("Previous");
@@ -407,7 +405,7 @@ public class ResultsScreen extends Screen {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 
-				if (currentPage == 0)	// First page.
+				if (currentPage == 0)	//  page no.1
 					return;
 				
 				removePreviousResults();
@@ -427,9 +425,8 @@ public class ResultsScreen extends Screen {
 		number.setBorderPainted(false);
 		number.setBackground(new Color(240, 240, 240));
 		number.setForeground(new Color(0, 0, 0));
-		
-		// We want to use the local variable index inside the inner class ActionListener.
-		// To do this, it has to be final.
+
+		// final int because we have to use the var inside ACtionListener
 		final int assignedPage = index;
 		
 		number.addActionListener(new ActionListener() {
@@ -448,8 +445,7 @@ public class ResultsScreen extends Screen {
 		return number;
 	}
 	
-	// Creates the "Next" button.
-	// Upon clicking it calls displayResults for the next page.
+	//Creates the "Next" button, when pushed calls displayResults for the next page
 	private JButton createNextButton(ArrayList<Document> documents, int currentPage) {
 		
 		JButton next = new JButton("Next");

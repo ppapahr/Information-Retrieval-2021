@@ -60,13 +60,13 @@ public class Main {
 
 		FileIndexer indexer = new FileIndexer(indexPath);
 		
-		
+		//vars to hold the amount of articles and the start/end time to calculate elapsed time
 		long startTime = System.currentTimeMillis();
 		int numberOfIndexedArticles = indexer.createIndex(txtPath);
 		long finishTime = System.currentTimeMillis();
 		
 		indexer.closeWriter();
-		
+		//prints the information
 		System.out.println("Indexed " + numberOfIndexedArticles + " articles in " + (finishTime - startTime) + "ms.");
 	}
 	
