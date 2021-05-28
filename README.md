@@ -90,7 +90,7 @@ This is the list of software and plugins that we are going to use in order to co
 * [Eclipse](https://www.eclipse.org/downloads) will be used to manage all the plug-ins and create the final executable
 
 ## About The Dataset
-The dataset that was used was taken from <a href="https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge">Kaggle</a> and consists of documents related to COVID-19. These documents are mainly scientific articles and research focused. All of them are in .json format, and more specifically they have been separated into fields (inside the json file). In general, each document has fields for a unique "paper-id", a title, a list of authors and a body-text that consists of paragraphs. Other fields inside the json format contain information such as references, citations, acknowledgements etc.   
+The dataset that was used was taken from <a href="https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge">Kaggle</a> and consists of documents related to COVID-19. These documents are mainly scientific articles and research focused. All of them are in .json format, and more specifically they have been separated into fields (inside the json file). In general, each document has fields for a unique "paper-id", a title, a list of authors and a body-text that consists of paragraphs. Other fields inside the json format contain information such as references, citations, acknowledgements etc. The whole collection the was kept for the purposes of the project consists of 550 documents.
 
 <!-- USAGE EXAMPLES -->
 ## Usage
