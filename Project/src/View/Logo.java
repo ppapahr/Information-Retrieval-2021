@@ -13,12 +13,6 @@ public class Logo {
 	private JLabel logoLabel;
 	private ImageIcon logoIcon;
 	
-	/*
-	 * In order to keep the logo image 
-	 * from distorting the aspect ratio, 
-	 * the image's height has to have 
-	 * a 20% relation to the image's width.
-	 */
 	
 	public Logo(int width, int height) {
 		
