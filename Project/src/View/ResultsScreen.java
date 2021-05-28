@@ -1,6 +1,5 @@
 package View;
 
-import java.awt.CardLayout;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Dimension;
@@ -61,10 +60,9 @@ public class ResultsScreen extends Screen {
 	}
 	
 	/*
-	 * topPanel is comprised of a home button (referred to as logoButton),
-	 * a search bar and it's radio buttons plus a search button.
+	 * topPanel includes a search bar , it's radio buttons plus a search button.
 	 * It has a GroupLayout that is set with createTopPanelLayout().
-	 * The topPanel must remain intact through changes in results.
+	 * The topPanel has to remain intact through changes in the result pages.
 	 */
 	private void createTopPanel() {
 		
@@ -89,25 +87,12 @@ public class ResultsScreen extends Screen {
 		group.add(body);
 		group.add(all);
 		
-		/*/
-		Button logoButton = new LogoButton(140, 56);
-		JButton logoJButton = logoButton.getButton();
-		logoJButton.addActionListener(new ActionListener() {
-
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				
-				CardLayout layout = (CardLayout) container.getLayout();
-				layout.previous(container);
-				
-			}
-		});
-		/*/
+		
 		SearchBar searchBar = new SearchBar(40);
 		searchBar.setSize(40, 30);
 		JTextField searchBarTextField = searchBar.getSearchBar();
 		
-		Button searchButton = new SearchButton(140, 56);
+		Button searchButton = new SearchButton(150, 60);
 		JButton searchJButton = searchButton.getButton();
 		searchJButton.addActionListener(new ActionListener() {
 
@@ -124,13 +109,13 @@ public class ResultsScreen extends Screen {
 			}
 		});
 
-		//createTopPanelLayout(logoJButton, searchBarTextField, searchJButton, title, body, all);
+		// creates the TopPanel with the necessary buttons
 		createTopPanelLayout(searchBarTextField, searchJButton, authors, abstractB, title, body, all);
 		
 		topPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
 	}
 
-	// Sets the decorations for the RadioButtons.
+	// Sets the decorations for the RadioButtons
 	private void setRadioButton(JRadioButton radioButton) {
 		
 		radioButton.setFont(new Font("Arial", Font.PLAIN, 16));
@@ -139,11 +124,8 @@ public class ResultsScreen extends Screen {
 		radioButton.setActionCommand(radioButton.getText());
 	}
 	
-	// Sets the GroupLayout for topPanel.
+	// Sets the GroupLayout for topPanel
 	private void createTopPanelLayout(JComponent... component) {
-		
-		// For the workflow of GroupLayout, check:
-		// https://docs.oracle.com/javase/tutorial/uiswing/layout/groupExample.html
 		
 		layout.setAutoCreateGaps(true);
 		layout.setAutoCreateContainerGaps(true);
@@ -187,16 +169,16 @@ public class ResultsScreen extends Screen {
 		);
 	}
 	
-	/*
-	 * createResults is called upon search action in controller.Search
-	 * Creates the Result panels for display based on search results.
-	 */
+	
+	/* createResults is called through controller.Search when a search action is executed
+	 * Creates the Result panels for display based on search results. */
+	 
 	public void createResults(ArrayList<Document> documents, String query) {
 		
-		// Clear the screen of previously displayed results.
+		// Clears the screen of previously displayed results
 		removePreviousResults();
 
-		// If no results are found, create a panel with the appropriate message.
+		// If no results are found, creates a panel with the proper message
 		if (documents.size() == 0) {
 			
 			Result result = new Result("", "Your search - " + query + " - did not match any documents.");
@@ -213,17 +195,16 @@ public class ResultsScreen extends Screen {
 		}
 	}
 
-	// Removes previously displayed result panels.
+	// Removes previously displayed result panels
 	private void removePreviousResults() {
 
-		// screenPanel contains topPanel and RigidArea at positions 0 & 1.
-		// We want them to stay intact.
+		// screenPanel contains topPanel and RigidArea at positions 0 & 1
+		// They need to stay intact
 		if (this.screenPanel.getComponentCount() > 2) {
 			
 			int componentCount = this.screenPanel.getComponentCount();
 			
-			// Starting from the end due to component array rearranging after
-			// removing elements.
+			// Starting from the end due to component array rearranging after removing elements
 			for (int i = componentCount - 1; i > 1; i--) {
 				this.screenPanel.remove(this.screenPanel.getComponent(i));
 			}
@@ -235,9 +216,9 @@ public class ResultsScreen extends Screen {
 	
 	private void displayResults(ArrayList<Document> documents, int currentPage) {
 		
-		int documentsSize = documents.size(); // Calculate once, it's cheaper.
+		int documentsSize = documents.size(); 
 		
-		// For each page display the page number and the number of matched documents.
+		// For each page display the page number and the number of matched documents
 		JLabel resultsDisplayInfo = new JLabel("Page " + (currentPage + 1) + " of " + documentsSize + " results.");
 		resultsDisplayInfo.setFont(new Font("Arial", Font.PLAIN, 18));
 		
@@ -248,13 +229,13 @@ public class ResultsScreen extends Screen {
 			
 			if (currentPage != 0) {
 				
-				if (documentsSize - (currentPage * 10) < 10)	// Last page.
-					if (i == documentsSize % 10)				// Next of last document.
+				if (documentsSize - (currentPage * 10) < 10)	// Last page
+					if (i == documentsSize % 10)				// Next of last document
 						break;
 			}
 			else {
-				if (documentsSize < 10)				// We only have a single results page.
-					if (i == documentsSize % 10)	// Next of last document.
+				if (documentsSize < 10)				// Single results page
+					if (i == documentsSize % 10)	// Next of last document
 						break;
 			}
 
@@ -276,10 +257,8 @@ public class ResultsScreen extends Screen {
 		screenPanel.repaint();
 	}
 	
-	/*
-	 * Create a new resultPanel displaying matched document's title,
-	 * highlighted text matching the query and an "open" button.
-	 */
+	
+	 //Creates a new resultPanel that displays the matched document's title with highlighted text and an "open" button
 	private JPanel createResultPanel(ArrayList<Document> documents, int currentPage, int index) {
 		
 		Result result = new Result(documents.get((currentPage * 10) + index).get("Title"),
@@ -297,17 +276,15 @@ public class ResultsScreen extends Screen {
 		return resultPanel;
 	}
 	
-	// Creates the "open" button for the result panel.
-	// Upon action, it creates a new JFrame displaying the corresponding article.
+	// Creates the "open" button for the result panel, on call creates a new JFrame displaying the correct article
 	private JButton createOpenButton(Document document) {
 		
-		// TODO Button "open" should be aligned to the right.
 		JButton open = new JButton("Open");
 		
 		open.setFont(new Font("Arial", Font.PLAIN, 16));
 		open.setBorderPainted(false);
 		open.setBackground(new Color(240, 240, 240));
-		open.setForeground(new Color(246, 102, 15));
+		open.setForeground(new Color(216, 47, 47));
 		
 		open.addActionListener(new ActionListener() {
 
@@ -323,9 +300,8 @@ public class ResultsScreen extends Screen {
 		return open;
 	}
 	
-	// Creates a new JFrame displaying the contents of the article.
-	// (new JFrame results in a new window, app runs independently)
-	// Made up of a scrollable JTextArea.
+	// Creates a new JFrame displaying the contents of the article (new JFrame results are in a new window that runs independently)
+	// New window consists of a scrollable JTextArea.
 	private JFrame createOpenArticleFrame(Document document) {
 		
 		JFrame newFrame = new JFrame(document.get("Title"));
@@ -352,8 +328,8 @@ public class ResultsScreen extends Screen {
 		return newFrame;
 	}
 	
-	// Get a somewhat formated version of resulting document.
-	// createResultFrame() uses it to open the document in question.
+	// Tries to format the resulting document
+	// createResultFrame() uses it to open the document in question
 	private String getBody(File article) throws IOException {
 		
 		try {
@@ -377,8 +353,8 @@ public class ResultsScreen extends Screen {
 		return null;
 	}
 	
-	// Creates the <<Previous 1 2 3 Next>> button pane
-	// residing in a JPanel with a BoxLayout.
+	// Creates the <<Previous 1 2 3 Next>> button pane in a JPanel with a BoxLayout
+	// residing 
 	// Each of the above mentioned buttons has its own method implementing it.
 	// This button pane will be created if the resulting documents are more than 10
 	// (therefore we need a second page).
@@ -424,7 +400,7 @@ public class ResultsScreen extends Screen {
 		previous.setFont(new Font("Arial", Font.PLAIN, 16));
 		previous.setBorderPainted(false);
 		previous.setBackground(new Color(240, 240, 240));
-		previous.setForeground(new Color(123, 64, 174));
+		previous.setForeground(new Color(51, 0, 255));
 		
 		previous.addActionListener(new ActionListener() {
 
@@ -450,7 +426,7 @@ public class ResultsScreen extends Screen {
 		number.setFont(new Font("Arial", Font.PLAIN, 16));
 		number.setBorderPainted(false);
 		number.setBackground(new Color(240, 240, 240));
-		number.setForeground(new Color(100, 146, 107));
+		number.setForeground(new Color(0, 0, 0));
 		
 		// We want to use the local variable index inside the inner class ActionListener.
 		// To do this, it has to be final.
@@ -481,7 +457,7 @@ public class ResultsScreen extends Screen {
 		next.setFont(new Font("Arial", Font.PLAIN, 16));
 		next.setBorderPainted(false);
 		next.setBackground(new Color(240, 240, 240));
-		next.setForeground(new Color(123, 64, 174));
+		next.setForeground(new Color(51, 0, 255));
 		
 		next.addActionListener(new ActionListener() {
 
