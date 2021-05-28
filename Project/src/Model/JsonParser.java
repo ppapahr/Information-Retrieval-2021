@@ -82,14 +82,4 @@ public class JsonParser {
 		
 	}
 	
-	/*/
-	public static void main(String[] args) throws FileNotFoundException, IOException, ParseException {
-		String path = System.getProperty("user.dir") + File.separator;
-		System.out.println(path);
-		JsonParser test = new JsonParser(path);
-		test.parseJSONFiles();
-		
-	}
-	/*/
-
 }

@@ -1,7 +1,7 @@
 package View;
 
 import javax.swing.JPanel;
-
+//used for resultsScreen and for future expansion
 public abstract class Screen {
 
 	JPanel screenPanel;

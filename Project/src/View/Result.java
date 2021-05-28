@@ -17,6 +17,7 @@ public class Result {
 	private JPanel result;
 	private String articleBody;
 	
+	//formats the page and text
 	public Result(String title, String articleBody) {
 		
 		this.result = new JPanel();
@@ -43,8 +44,7 @@ public class Result {
 		
 		JEditorPane editorPane = new JEditorPane(new HTMLEditorKit().getContentType(), articleBody);
 
-		// Add a CSS rule to force body tags to use the selected font
-        // instead of default value.
+		// CSS rule to force body tags to use the selected Arial font instead of default value
 		String bodyRule = "body { font-family: " + "Arial" + "; " +
         		"font-size: " + 16 + "pt; }";
         ((HTMLDocument)editorPane.getDocument()).getStyleSheet().addRule(bodyRule);
