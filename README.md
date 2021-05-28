@@ -94,7 +94,7 @@ The dataset that was used was taken from <a href="https://www.kaggle.com/allen-i
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-The usage of the program is easy, thanks to a simple user interface where queries can be submitted through a Search bar, and results will be accessible after the user presses the " search " button, with his desired criteria chosen on a secondary set of buttons. The results will be presented in a list with the relevant document IDs as well as other highlighted information as explained furthermore below. 
+The usage of the search engine is easy, thanks to a simple graphic user interface, developed with Java Swing. The GUI consists of a search bar, where the user can write his queries, a search button and five field buttons to choose from, depending on where on the documents the user wants to search. The available choices are search by author, search by abstract, search by title, search by body-text and search in all of the above fields.  The results found by the search engine are returned in the main page of the application, with the words from the query highlighted inside. More information to this is explained below. 
 
 ## General
 The purpose of the search engine that is going to be implemented is the retrieval of COVID-19 related articles, by several search criteria that the user can define. The scientificity of the stored documents will make it easier for a user to safely and accurately search for possible correlations between COVID and other diseases or even statistical data about the growth of the virus. Another use case of the search could be as simple as searching for specific authors based on their credibility in order to read their articles.
@@ -116,13 +116,3 @@ The search engine is based on keyword searching, where the user submits a query 
   If the query has more than 10 results, we need more than one result page. Hence, we check if the results are more than 10 (by default there's always one page created, with more added depending on the amount of results), and create the pages necessary, given the number of results that the program returned. The relevancy of the shown results is decided through the scoreDocs variable that the FileSearcher class creates. Per Query, the results are printed based on that variable's value, fetched from the ScoreDoc[] array on the FileSearcher class.
   
   The user can then shuffle through the results with the buttons created at the bottom of the page.  The "previous" button will fetch the last 10 results (or nothing if the user is in the first page) and the "next" button the next 10 results. On top of that, per page of results created we also create a numbered list of buttons than the user can click, so e.g. if he wants to see the 55th result, he can click on the "6" button, which will bring on the foreground the 6th result page. This gives total control of the results to the user, so that he can he can find and read the specific article we wants to.
-
-
-
-
-
-
-
-
-
-
