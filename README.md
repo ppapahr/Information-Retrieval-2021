@@ -78,8 +78,6 @@
 This project was developed for the course of "Information Retrieval" in Department of Computer Science and Engineering in the University of Ioannina under the supervision
 of Professor Evaggelia Pitoura. The project is about the development of a search engine specifically for COVID-19 related documents, using the open-source library Lucene in java.
 
-## Explanatory Video of the Project
-### <b>  Link for video demo in youtube: https://youtu.be/2oTMRRr7W6E </b> 
 
 ### Built With
 
